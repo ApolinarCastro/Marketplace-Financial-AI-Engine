@@ -1,0 +1,20 @@
+# Runtime
+pandas
+duckdb
+pyarrow
+python-calamine
+openpyxl
+xlrd
+numpy
+python-dateutil
+PyYAML
+fastparquet
+fsspec
+fastapi
+uvicorn
+
+# Dev / CI
+pytest
+ruff
+mypy
+types-python-dateutil

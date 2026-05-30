@@ -1,0 +1,31 @@
+# Parametros principales del sistema de conciliación
+
+paths:
+  raw: "01_Raw"
+  curated: "02_Curated"
+  ledger: "03_Ledger"
+  reconciliations: "04_Conciliaciones"
+  exceptions: "05_Excepciones"
+  proposals: "06_IA_Propuestas"
+  config: "00_Config"
+
+marketplaces:
+  - name: ML
+    folder: "ML"
+  - name: FALABELLA
+    folder: "FALABELLA"
+  - name: PARIS
+    folder: "PARIS"
+  - name: RIPLEY
+    folder: "RIPLEY"
+  - name: SAP
+    folder: "SAP"
+  - name: BANCO
+    folder: "BANCO"
+
+registry_file: "00_Config/stg_file_registry.csv"
+mapping_file: "00_Config/dim_mapping_conceptos.xlsx"
+reconciliation_rules: "00_Config/dim_reglas_conciliacion.xlsx"
+
+default_currency: "CLP"
+tolerance_clp: 1.0

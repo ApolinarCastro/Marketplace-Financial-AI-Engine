@@ -1,0 +1,111 @@
+FREEZE ACTIVO — BASELINE_ESTABLE_V6
+=====================================
+Fecha: 2026-05-29 (actualizado)
+Estado: OFICIAL
+Baseline anterior: V5 (SUPERSEDED)
+
+Este freeze congela el estado actual del sistema como referencia obligatoria.
+Ningún cambio puede violar estos contratos sin autorización explícita.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REGLA 1 — FREEZE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONGELADO:
+  - esquema DB (21 tablas, 4 vistas)
+  - taxonomía financiera (financial_group, clasificacion_operativa)
+  - include_in_operational_pnl
+  - endpoints validados (/api/v4/ledger, /api/v4/cierre/desglose)
+  - dashboard validado (templates/dashboard.html)
+
+PROHIBIDO:
+  - refactor, rebuild global, reclasificación global, migraciones masivas
+  - cambios a financial_group, clasificacion_operativa, include_in_operational_pnl
+  - cambios a la estructura de respuesta de API
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REGLA 2 — SNAPSHOTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Snapshot oficial: data/db/snapshot_baseline_v6_20260529_105928/
+Contiene:
+  - meli_financial_v4.db (414,314 rows, SHA256: e1e341ef44e0a61c4e846d34e05d14a4c291dcd904869f20fdf6e9a37fef1c29)
+  - MANIFEST_V6.json (hashes SHA256, row counts, stats globales + por marketplace)
+  - STATS_V6.md (detalle completo)
+  - _REPORTE_FALABELLA_REBUILD.md (evidencia de fix)
+
+Nuevos snapshots: generar ante cada cambio autorizado.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REGLA 3 — CONTRATOS INMUTABLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DB clasifica → API expone → Frontend renderiza.
+Nadie más interpreta.
+
+Prohibido en API y Frontend:
+  - contains(), startswith(), in (para clasificación financiera)
+  - catMap, rowMatchesCategory, FINANCIAL_STRUCTURE (runtime)
+  - fallbacks, mappings runtime, traducciones
+  - cualquier lógica que derive financial_group, clasificacion_operativa
+
+Única fuente autorizada:
+  - marketplace_ledger_v1.financial_group
+  - marketplace_ledger_v1.clasificacion_operativa
+  - marketplace_ledger_v1.include_in_operational_pnl
+
+Test obligatorio: pytest tests/test_regression_contracts.py (14 tests)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REGLA 4 — TESTS DE REGRESIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+tests/test_regression_contracts.py
+
+Obligatorios (8 casos):
+  ML:       Ajuste por Arrepentimiento, Cargo por venta (Venta)
+  RIPLEY:   Importe del pedido, Pedidos reembolsados
+  PARIS:    Venta, Devolucion
+  FALABELLA: Cobro por comision por venta, Cobro por cofinanciamiento logistico
+
+Validación: SQL SUM = API total_sum = UI total = DIFF 0
+
+Adicionales (6 tests):
+  - Contratos endpoints (sin heurísticas)
+  - SQL injection bloqueada
+  - Desglose: categoria = financial_group directo
+  - API sin contains/startswith/FINANCIAL_STRUCTURE
+  - Dashboard sin catMap/heurísticas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REGLA 5 — PROTECCIÓN DB
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  - uvicorn --reload: PROHIBIDO (reload=False en run_app.py)
+  - CREATE OR REPLACE VIEW en startup: DOCUMENTADO (4 vistas idempotentes)
+  - Schema rebuild automático: PROHIBIDO (solo CREATE IF NOT EXISTS)
+  - Writers concurrentes DuckDB: 1 writer, N readers
+  - 3 módulos con conexión directa: IDENTIFICADO (surgical_*.py, run_full_closing.py)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REGLA 6 — CAMBIOS FUTUROS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TODO cambio requiere CHANGE_TEMPLATE.txt completo.
+Sin template: CAMBIO RECHAZADO.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REGLA 7 — INCIDENTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Antes de corregir:
+  1. Evidencia
+  2. Trazabilidad
+  3. Causa raíz
+  4. Validación (SQL = API = UI, DIFF=0)
+
+Patch mínimo. Nunca refactor. Nunca al revés.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OBJETIVO FINAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ESTABILIDAD > FUNCIONALIDADES
+RESILIENCIA > VELOCIDAD
+TRAZABILIDAD > SUPOSICIONES
+
+NO MÁS CAMBIOS GLOBALES.
+NO MÁS HEURÍSTICAS.
+NO MÁS INTERPRETACIONES.

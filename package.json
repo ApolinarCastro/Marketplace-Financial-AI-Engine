@@ -1,0 +1,12 @@
+{
+  "name": "marketplace-financial-ai-engine",
+  "version": "4.0.0",
+  "description": "Surgical Financial Truth Engine for Marketplaces",
+  "scripts": {
+    "test:all": "pytest tests/ -v --tb=short",
+    "lint": "ruff check .",
+    "typecheck": "mypy api/ engine/ --ignore-missing-imports"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

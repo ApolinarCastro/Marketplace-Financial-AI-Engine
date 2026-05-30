@@ -1,0 +1,20 @@
+[
+    {
+        "file_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace_Conciliacion\\01_Raw\\ML\\2026\\03\\ventas_ml.csv",
+        "marketplace": "ML",
+        "period": "2026/03",
+        "hash": "cd1fca9b923e40d86e459ea91aecbf303826dabc9348b7c44d2a6446618d34f3",
+        "load_timestamp": "2026-03-03T08:48:56.864357",
+        "status": "NORMALIZED",
+        "curated_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace_Conciliacion\\02_Curated\\ML_2026_03_cd1fca9b.json"
+    },
+    {
+        "file_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace_Conciliacion\\01_Raw\\SAP\\2026\\03\\sap_report.csv",
+        "marketplace": "SAP",
+        "period": "2026/03",
+        "hash": "62816a5abbe870271ad1acf5c4b59e666334ceef3d70fd3d1c316d0949f684e2",
+        "load_timestamp": "2026-03-03T08:48:56.864893",
+        "status": "NORMALIZED",
+        "curated_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace_Conciliacion\\02_Curated\\SAP_2026_03_62816a5a.json"
+    }
+]

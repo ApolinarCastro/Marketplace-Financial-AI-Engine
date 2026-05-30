@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-03-03T09:35:09.973776",
+  "period": "2026/03",
+  "period_id": "202603",
+  "status": "OK",
+  "ml": {
+    "required_pattern": "01_Raw/ML/YYYY/MM/**/Liberaciones*.csv|xlsx",
+    "found": true,
+    "file_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace_Conciliacion\\01_Raw\\ML\\2026\\03\\ventas_ml.csv",
+    "file_name": "ventas_ml.csv"
+  },
+  "sap": {
+    "required_pattern": "01_Raw/SAP/YYYY/MM/**/sap_report*.csv|xlsx",
+    "found": true,
+    "file_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace_Conciliacion\\01_Raw\\SAP\\2026\\03\\sap_report.csv",
+    "file_name": "sap_report.csv"
+  },
+  "version": "PROD_V1"
+}

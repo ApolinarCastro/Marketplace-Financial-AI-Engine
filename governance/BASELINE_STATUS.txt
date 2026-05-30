@@ -1,0 +1,24 @@
+BASELINE STATUS
+===============
+2026-05-29
+
+V5 — BASELINE_ESTABLE_V5 — SUPERSEDED (2026-05-29)
+  Snapshot: data/db/snapshot_baseline_v5_20260529_094539/
+  Rows: 414,183
+  SUM: $1,505,252,594
+  Nota: Baseline original, congelada antes del rebuild FALABELLA.
+
+V6 — BASELINE_ESTABLE_V6 — CURRENT_STABLE (2026-05-29)
+  Snapshot: data/db/snapshot_baseline_v6_20260529_105928/
+  Rows: 414,314
+  SUM: $1,507,835,610
+  Cambio: Fix column detection FALABELLA (+131 rows, +$2,583,016).
+  Evidencia: _REPORTE_FALABELLA_REBUILD.md
+  Tests: 14/14 regression tests PASS, SQL=API=UI DIFF=0 todos marketplaces.
+  Fixes:
+    - surgical_loader.py: c_id→Falabella-Id, c_fecha→transacción, c_monto→Sin IVA
+    - marketplace_auditor.py: +4 conceptos, propagation ledger_v1, ML op_flag fix
+    - database.py: temp_directory fix Windows
+
+PRÓXIMA BASELINE:
+  Solo tras RFC formal + snapshot previo + validación completa + test regresión.

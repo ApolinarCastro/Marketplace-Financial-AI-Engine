@@ -1,0 +1,52 @@
+DB PROTECTION AUDIT — REGLA 5
+================================
+Fecha: 2026-05-29
+Auditado: BASELINE_ESTABLE_V5
+
+1. uvicorn --reload
+─────────────────────────
+run_app.py: reload=False ✅
+START_APP.bat: no --reload flag ✅
+STATUS: PROTEGIDO
+
+2. CREATE OR REPLACE VIEW en startup
+─────────────────────────────────────
+engine/v4/database.py:121-134 — 4 vistas se crean con CREATE OR REPLACE VIEW
+  - vw_dashboard_kpis
+  - vw_ml_misclassifications
+  - financial_operational_view_v1
+  - risk_postsale_view_v1
+Se ejecutan cada vez que DatabaseV4 se instancia (read_only=False).
+Las vistas son derivaciones del schema estable (WHERE, SELECT *).
+No modifican datos. No son DDL destructivo.
+RIESGO: BAJO (vistas idempotentes, solo lectura)
+STATUS: DOCUMENTADO — no modificable sin este protocolo.
+
+3. Schema rebuild automático
+─────────────────────────────
+CREATE TABLE IF NOT EXISTS (idempotente) ✅
+No hay CREATE OR REPLACE TABLE ni DROP TABLE automático ✅
+Hot-migration: 3 ALTER TABLE ADD COLUMN con try/except (idempotente) ✅
+STATUS: PROTEGIDO
+
+4. Writers concurrentes DuckDB
+───────────────────────────────
+DatabaseV4 singleton con threading.Lock:
+  1 writer (read_only=False) + N readers (read_only=True) ✅
+
+PROHIBIDO:
+- Varios procesos con read_only=False simultáneos
+- Scripts scratch conectándose en modo escritura mientras API corre
+- surgical_xml_justifier.py (crea conexión directa duckdb.connect)
+- surgical_recovery_flow.py (crea 2 conexiones directas)
+- run_full_closing.py (crea conexión directa)
+
+RIESGO: MEDIO — 3 módulos engine/v4 crean conexiones directas → violan el singleton.
+RECOMENDACIÓN: Refactorizar para usar DatabaseV4.get() en lugar de duckdb.connect directo.
+STATUS: IDENTIFICADO — 3 módulos con conexión directa.
+
+RESUMEN:
+  - reload:  PROTEGIDO ✅
+  - views:   DOCUMENTADO ⚠️
+  - schema:  PROTEGIDO ✅
+  - writers: IDENTIFICADO ⚠️ (3 módulos con conexión directa)

@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETED",
+  "stage": "SAP_VS_ML_RECONCILIATION",
+  "timestamp": "2026/03",
+  "period": "2026/03",
+  "version": "PROD_V1",
+  "summary": {
+    "conciliados": 1,
+    "diferencias": 1,
+    "no_conciliados_ml": 1,
+    "no_conciliados_sap": 1
+  }
+}

@@ -1,0 +1,71 @@
+{
+    "database": "data/db/meli_financial_v4.db",
+    "tables": {
+        "TABLA_MAPEO": {
+            "total_rows": 0
+        },
+        "ai_suggestions_log": {
+            "total_rows": 0
+        },
+        "bank_statement": {
+            "total_rows": 0
+        },
+        "cargos_no_clasificados": {
+            "total_rows": 0
+        },
+        "dte_truth_v1": {
+            "total_rows": 762
+        },
+        "exceptions": {
+            "total_rows": 0
+        },
+        "file_registry": {
+            "total_rows": 0
+        },
+        "financial_reconciliation": {
+            "total_rows": 0
+        },
+        "inconsistencias_financieras": {
+            "total_rows": 0
+        },
+        "liberaciones": {
+            "total_rows": 0
+        },
+        "marketplace_auditoria_v1": {
+            "total_rows": 38728
+        },
+        "marketplace_cierre_financiero_v1": {
+            "total_rows": 192
+        },
+        "marketplace_correcciones_v1": {
+            "total_rows": 15
+        },
+        "marketplace_ledger_clasificado_v1": {
+            "total_rows": 609258
+        },
+        "marketplace_ledger_v1": {
+            "total_rows": 609258
+        },
+        "order_reconciliation": {
+            "total_rows": 0
+        },
+        "pipeline_log": {
+            "total_rows": 0
+        },
+        "retiros": {
+            "total_rows": 0
+        },
+        "transaction_ledger": {
+            "total_rows": 0
+        },
+        "ventas_marketplace": {
+            "total_rows": 83690
+        },
+        "vw_dashboard_kpis": {
+            "total_rows": 1
+        },
+        "vw_ml_misclassifications": {
+            "total_rows": 14605
+        }
+    }
+}

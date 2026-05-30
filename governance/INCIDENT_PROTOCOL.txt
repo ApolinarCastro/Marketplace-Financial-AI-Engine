@@ -1,0 +1,33 @@
+INCIDENT PROTOCOL — REGLA 7
+============================
+Antes de corregir cualquier incidente:
+
+FASE 1 — EVIDENCIA
+  - Capturar estado actual (SQL dump, API response, UI screenshot)
+  - Documentar el comportamiento incorrecto con valores concretos
+  - Ejemplo: "Click en A muestra $X, click en B muestra $Y, debería ser $X"
+
+FASE 2 — TRAZABILIDAD
+  - Identificar ruta exacta: DB → API (endpoint:param) → Frontend (line:col)
+  - Ejemplo: "dashboard.html:467 envía &subgroup= que no existe en api.py:47"
+
+FASE 3 — CAUSA RAÍZ
+  - Determinar por qué ocurre (no cómo se manifiesta)
+  - Verificar si es violación de contrato (heurística, interpretación, mapping)
+  - Si aplica REGLA 1 (freeze), causa raíz debe estar fuera de lo congelado
+
+FASE 4 — VALIDACIÓN
+  - Proponer fix mínimo (NUNCA refactor, NUNCA rebuild)
+  - Validar con SQL = API = UI: DIFF=0 para todos los marketplaces afectados
+  - Ejecutar: pytest tests/test_regression_contracts.py
+  - Si falla: ROLLBACK
+
+REGLAS:
+  1. Patch mínimo, no refactor.
+  2. NUNCA arreglar suposiciones. Solo datos comprobables.
+  3. Si el fix requiere cambiar schema DB, financial_group,
+     clasificacion_operativa, o include_in_operational_pnl:
+     REQUIERE AUTORIZACIÓN ESPECIAL (viola REGLA 1).
+  4. Después del fix: nuevo snapshot BASELINE.
+  5. Incidente se cierra solo cuando SQL = API = UI = DIFF=0
+     para todos los marketplaces con datos.

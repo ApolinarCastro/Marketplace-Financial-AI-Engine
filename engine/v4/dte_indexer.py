@@ -1,0 +1,98 @@
+import xml.etree.ElementTree as ET
+from pathlib import Path
+import logging
+import pandas as pd
+from engine.v4.database import DatabaseV4
+
+logger = logging.getLogger("meli.dte_indexer")
+
+class DTEIndexer:
+    def __init__(self, marketplace='ML'):
+        self.db = DatabaseV4.get()
+        if marketplace.upper() == 'ML':
+            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\ML\Facturacion")
+        elif marketplace.upper() == 'PARIS':
+            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\PARIS\Facturacion")
+        else:
+            raise ValueError(f"Unsupported marketplace: {marketplace}")
+        self.marketplace = marketplace.upper()
+
+    def parse_xml(self, xml_path):
+        """Parses a single DTE XML and returns a dict with its header data."""
+        try:
+            tree = ET.parse(xml_path)
+            root = tree.getroot()
+            
+            # SII XMLs often use namespaces
+            ns = {'ns': 'http://www.sii.cl/SiiDte'}
+            
+            # Find the first 'Encabezado' (it can be inside DTE or EnvioDTE)
+            enc = root.find('.//ns:Encabezado', ns)
+            if enc is None:
+                # Try without namespace
+                enc = root.find('.//Encabezado')
+            
+            if enc is None:
+                return None
+            
+            def get_text(parent, path, ns_dict):
+                elem = parent.find(path, ns_dict)
+                if elem is None and ns_dict:
+                    # Retry without namespace
+                    elem = parent.find(path.replace('ns:', ''))
+                return elem.text if elem is not None else None
+            
+            # Extract Folio
+            folio = get_text(enc, './/ns:Folio', ns)
+            
+            # Extract Emisor
+            rut_emisor = get_text(enc, './/ns:RUTEmisor', ns)
+            nombre_emisor = get_text(enc, './/ns:RznSoc', ns)
+            fecha_emision = get_text(enc, './/ns:FchEmis', ns)
+            
+            # Extract Totals
+            neto = get_text(enc, './/ns:MntNeto', ns)
+            iva = get_text(enc, './/ns:MntIVA', ns)
+            total = get_text(enc, './/ns:MntTotal', ns)
+            
+            return {
+                'folio': folio,
+                'monto_neto': float(neto) if neto else 0.0,
+                'monto_iva': float(iva) if iva else 0.0,
+                'monto_total': float(total) if total else 0.0,
+                'fecha_emision': fecha_emision,
+                'emisor_rut': rut_emisor,
+                'emisor_nombre': nombre_emisor,
+                'marketplace': self.marketplace
+            }
+        except Exception as e:
+            logger.error(f"Error parsing XML {xml_path.name}: {e}")
+            return None
+    
+    def run(self):
+        logger.info(f"Starting DTE Indexing process for marketplace: {self.marketplace}...")
+        xml_files = list(self.raw_dir.glob("*.xml"))
+        
+        records = []
+        for f in xml_files:
+            data = self.parse_xml(f)
+            if data:
+                records.append(data)
+        
+        if not records:
+            logger.info("No valid XML records found to index.")
+            return 0
+        
+        df = pd.DataFrame(records)
+        # Deduplicate by folio before inserting
+        df = df.drop_duplicates(subset=['folio'])
+        
+        # We use insert_df with folio as dedup col
+        n = self.db.insert_df(df, "dte_truth_v1", dedup_cols=['folio'])
+        logger.info(f"DTE Indexing completed for {self.marketplace}. {n} new legal records registered.")
+        return n
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    indexer = DTEIndexer()
+    indexer.run()

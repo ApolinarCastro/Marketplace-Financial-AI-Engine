@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: |
+          python -m venv .venv
+          .\.venv\Scripts\python.exe -m pip install --upgrade pip
+          .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+      - name: Lint
+        continue-on-error: true
+        run: .\.venv\Scripts\python.exe -m ruff check . --exit-zero
+
+      - name: Type check
+        continue-on-error: true
+        run: .\.venv\Scripts\python.exe -m mypy api/ engine/v4/ --ignore-missing-imports
+
+      - name: Run tests
+        run: .\.venv\Scripts\python.exe -m pytest tests/ -v --tb=short

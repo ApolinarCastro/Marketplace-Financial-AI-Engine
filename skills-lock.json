@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "skills": {
+    "brainstorming": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "dispatching-parallel-agents": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "executing-plans": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "finishing-a-development-branch": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "receiving-code-review": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "requesting-code-review": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "subagent-driven-development": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "systematic-debugging": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "test-driven-development": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "using-git-worktrees": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "using-superpowers": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "verification-before-completion": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "writing-plans": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "writing-skills": {
+      "source": "github/obra/superpowers",
+      "sourceType": "github"
+    },
+    "stack-detector": {
+      "source": "local",
+      "sourceType": "local"
+    },
+    "fastapi-python": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "computedHash": "4521c6090735152b7b8df670cefe5c1c6d1dcaa115de67bb96e74ebf802d4f24"
+    },
+    "fastapi-templates": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "1a5fe66bd2683afd1db9afdf37a25cd8b9195c369c98489333badf0406fc91b3"
+    },
+    "python-performance-optimization": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "6390615b25e5922057b15eb900d69a90db563c5f2d6bd3182be707592fc25f09"
+    },
+    "python-testing-patterns": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "a16a6d7d7e0a5154a5058fd9aacf8e675368b2a4a0dc5edf0fee775169c6abe0"
+    },
+    "senior-data-engineer": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "computedHash": "16514d8e6382d6d3377d57a09f04cccbfc1fbed274c4fadd64d2340dea61fe2c"
+    },
+    "senior-data-scientist": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "computedHash": "42804288d4f9036199a5e8ff73ceda214ae8c12bf04e712577b0eb9751c69710"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "f3bc47f890f42a44db1007ab390709ec368e4b8c089baee6b0007182236ac474"
+    }
+  }
+}

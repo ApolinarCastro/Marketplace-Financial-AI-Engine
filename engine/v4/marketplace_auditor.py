@@ -1,0 +1,629 @@
+import pandas as pd
+
+import logging
+from engine.v4.database import DatabaseV4
+from engine.v4.logging_config import log_event
+
+logger = logging.getLogger("meli.auditor")
+
+RAW_TO_CLASSIFICATION_MAP = {
+    # Mercado Libre (Facturación limpia y Poscobro)
+    "Cargo por venta (Venta)": "Cargo por venta (Venta)",
+    "Cargo por venta (Comisión)": "Cargo por venta (Comisión)",
+    "Devolución de venta": "Devolución de venta",
+    "Cargo por Mercado Envíos": "Cargo por Mercado Envíos",
+    "Cargo por envíos de Mercado Libre": "Cargo por envíos de Mercado Libre",
+    "Cargo por servicio de almacenamiento Full": "Cargo por servicio de almacenamiento Full",
+    "Cargo por retiro de stock Full": "Cargo por retiro de stock Full",
+    "Cargo por stock antiguo en Full": "Cargo por stock antiguo en Full",
+    "Cargo por sobrepasar espacio Full": "Cargo por sobrepasar espacio Full",
+    "Cargo por devolución": "Cargo por devolución",
+    "Cargo por diferencias en las medidas y el peso del paquete": "Cargo por diferencias en las medidas y el peso del paquete",
+    "Cargo por campaña de publicidad - Product Ads": "Cargo por campaña de publicidad - Product Ads",
+    "Cargo por campaña de publicidad - Brand Ads": "Cargo por campaña de publicidad - Brand Ads",
+    "Campañas de publicidad - Display": "Campañas de publicidad - Display",
+    "Cargo por Asesoría Comercial": "Cargo por Asesoría Comercial",
+    "Cargo por mantenimiento de Mi página": "Cargo por mantenimiento de Mi página",
+    "Bonificación": "Bonificación",
+    "Anulación del cargo por venta": "Anulación del cargo por venta",
+    "Anulación del cargo por Mercado Envíos": "Anulación del cargo por Mercado Envíos",
+    "Anulación del cargo por envíos de Mercado Libre": "Anulación del cargo por envíos de Mercado Libre",
+    "Anulación del cargo por devolución": "Anulación del cargo por devolución",
+    "Envío": "Envío",
+    "Envio": "Envío",
+    "Devolución de dinero\nEnvío": "Devolución de dinero\nEnvío",
+    "Abono manual": "Abono manual",
+    "Importe del pedido": "Importe del pedido",
+    "Pago": "Pago",
+    "Ajuste histórico (pre-2026)": "Ajuste histórico (pre-2026)",
+    "Ajuste Poscobro": "Ajuste Poscobro General",
+
+    # Mercado Libre — Conceptos crudos del ledger real (Adopción Diccionario Maestro)
+    "fee_for_divergence_in_package_dimensions": "Cargo por diferencias en las medidas y el peso del paquete",
+
+    # Mercado Libre — Nuevos conceptos Master Spec
+    "Cargo": "Abono manual",
+
+    # Mercado Libre — Variantes con errores de codificación
+    "Devolucin de dinero\nEnvo": "Devolución de dinero\nEnvío",
+    "Devolucin de dinero\nEnvio": "Devolución de dinero\nEnvío",
+
+    # Mercado Libre — Nuevas reservas e identificadores masivos
+
+    # Mercado Libre (Poscobro Técnico Inglés) -> Mapeo a Clasificación Limpia
+    "smaller_than_expected_fashion": "Ajuste por Talla/Garantía",
+    "bigger_than_expected_fashion": "Ajuste por Talla/Garantía",
+    "size_not_useful_repentant": "Ajuste por Talla/Garantía",
+    "not_match_size_guide_fashion": "Ajuste por Talla/Garantía",
+    "broken_item_fashion": "Ajuste por Producto Dañado/Vacío",
+    "empty_box": "Ajuste por Producto Dañado/Vacío",
+    "damaged_package_empty_box": "Ajuste por Producto Dañado/Vacío",
+    "repentant_buyer": "Ajuste por Arrepentimiento",
+    "undelivered_repentant_buyer": "Ajuste por Arrepentimiento",
+    "dont_want_it_another_cause_fashion": "Ajuste por Arrepentimiento",
+    "buy_out_of_ml": "Ajuste por Arrepentimiento",
+    "different_than_published": "Ajuste por Diferencia de Publicación",
+    "different_color_or_size_fashion": "Ajuste por Diferencia de Publicación",
+    "different_item_other": "Ajuste por Diferencia de Publicación",
+    "missing_item": "Ajuste por Ítem Faltante",
+    "out_of_stock": "Ajuste por Falta de Stock",
+    "delivery_date_was_not_met": "Ajuste por Retraso en Entrega",
+    "estimated_delivery_out_of_time": "Ajuste por Retraso en Entrega",
+    "change_receiver_address": "Ajuste por Cambio de Dirección",
+    "undelivered_other": "Ajuste por Falla en Entrega",
+    "delivered_but_not_receive_package": "Ajuste por Falla en Entrega",
+    "reconciled": "Ajuste Poscobro Conciliado",
+    "bpp_refunded": "Ajuste por Compra Protegida (BPP)",
+    "respondent_unanswered": "Ajuste por Disputa no Respondida",
+    "nan": "Ajuste Poscobro General",
+    "bpp_covered": "Ajuste por Compra Protegida (BPP)",
+    "partially_bpp_refunded": "Ajuste por Compra Protegida (BPP)",
+    "compensated": "Ajuste Poscobro Conciliado",
+    "by_admin": "Ajuste Poscobro General",
+
+    # Mercado Libre — Mediaciones y Cashback
+    "Cancelación de la mediación": "Cancelación de la mediación",
+    "Cancelacion de la mediacion": "Cancelación de la mediación",
+    "Cancelacin de la mediacin": "Cancelación de la mediación",
+    "cashback": "cashback",
+    "cashback_cancel": "cashback_cancel",
+
+    # Mercado Libre — Orphan codes que caían en fallback "histórico"
+    "bought_by_mistake": "Ajuste por Arrepentimiento",
+    "CREDIT_NOT_PROCESSED": "Ajuste Poscobro General",
+    "damaged_package_broken_item_fashion": "Ajuste por Producto Dañado/Vacío",
+    "different_color_or_size": "Ajuste por Diferencia de Publicación",
+    "different_color_or_size_fashion_change": "Ajuste por Diferencia de Publicación",
+    "different_item_other_change": "Ajuste por Diferencia de Publicación",
+    "INVALID_AUTHORIZATION": "Ajuste Poscobro General",
+    "item_not_useful_fashion_different": "Ajuste por Arrepentimiento",
+    "item_not_useful_fashion_different_change": "Ajuste por Arrepentimiento",
+    "missing_accessories": "Ajuste por Ítem Faltante",
+    "missing_invoice": "Ajuste Poscobro General",
+    "not_expected_quality_different": "Ajuste por Diferencia de Publicación",
+    "not_reconciled": "Ajuste Poscobro General",
+    "ppv_covered_melienvio": "Ajuste por Compra Protegida (BPP)",
+    "ppv_valid": "Ajuste por Compra Protegida (BPP)",
+    "refund_account_money": "Ajuste Poscobro General",
+    "refunded": "Ajuste Poscobro General",
+    "unauthorized_purchase": "Ajuste por Disputa no Respondida",
+
+    # RIPLEY
+    "Gastos de envío pagados por el operador": "Gastos de envío pagados por el operador",
+    "Gastos de envio pagados por el operador": "Gastos de envío pagados por el operador",
+    "Gastos de envo pagados por el operador": "Gastos de envío pagados por el operador",
+    "Gastos de envÃ­o pagados por el operador": "Gastos de envío pagados por el operador",
+    "Comisiones sobre pedidos": "Comisiones sobre pedidos",
+    "Pedidos reembolsados": "Pedidos reembolsados",
+    "A pagar": "A pagar",
+    "Comisiones sobre pedidos reembolsados": "Comisiones sobre pedidos reembolsados",
+    "Envío reembolsado": "Envío reembolsado",
+    "Envio reembolsado": "Envío reembolsado",
+    "Envo reembolsado": "Envío reembolsado",
+    "EnvÃ­o reembolsado": "Envío reembolsado",
+    "Gastos de envío reembolsados pagados por el operador": "Gastos de envío reembolsados pagados por el operador",
+    "Gastos de envio reembolsados pagados por el operador": "Gastos de envío reembolsados pagados por el operador",
+    "Gastos de envo reembolsados pagados por el operador": "Gastos de envío reembolsados pagados por el operador",
+    "Gastos de envÃ­o reembolsados pagados por el operador": "Gastos de envío reembolsados pagados por el operador",
+    "Abono oferta TC - OPEX": "Abono oferta TC - OPEX",
+    "Descuento por cancelacion": "Descuento por cancelación",
+    "Descuento por cancelacin": "Descuento por cancelación",
+    "Descuento por cancelaciÃ³n": "Descuento por cancelación",
+    "Otros abonos": "Otros abonos",
+    "Otros descuentos": "Otros descuentos",
+    "Abono postventa": "Abono postventa",
+    # Ripley — Nuevos Conceptos Master Spec
+    
+    # Ripley — Additional operational/commercial fee mappings
+    "Abono por formalización a OPL": "Abono por formalización a OPL",
+    "Abonos por cupón promocional": "Abonos por cupón promocional",
+    "Cobro despacho primera milla": "Cobro despacho primera milla",
+    "Descuento FF - Otros": "Descuento FF - Otros",
+    "Descuento FF - pick and pack": "Descuento FF - pick and pack",
+    "Descuento FF - sobreestadía": "Descuento FF - sobreestadía",
+    "Descuento oferta TC - OPEX": "Descuento oferta TC - OPEX",
+    "Descuento operacional": "Descuento operacional",
+    "Descuento por PDM": "Descuento por PDM",
+    "Descuento por cancelación": "Descuento por cancelación",
+    "Descuento por compensación a cliente": "Descuento por compensación a cliente",
+    "Descuento por costo logístico": "Descuento por costo logístico",
+    "Descuento por cupones de despacho": "Descuento por cupones de despacho",
+    "Descuento por error de clase logistica": "Descuento por error de clase logistica",
+    "Abono por uso de flota propia": "Abono por uso de flota propia",
+    "Abono por error de comisión": "Abono por error de comisión",
+    "Abonos soluciones comerciales": "Abonos soluciones comerciales",
+    "Abono extraordinario - error de precio": "Abono extraordinario - error de precio",
+
+    # PARIS
+    "Cobro por despacho": "Cobro por despacho",
+    "Venta": "Venta",
+    "Devolución": "Devolución",
+    "Devolucion": "Devolución",
+    "Devolucin": "Devolución",
+    "DevoluciÃ³n": "Devolución",
+    "Despacho": "Despacho",
+    "Logística inversa": "Logística inversa",
+    "Logistica inversa": "Logística inversa",
+    "Logstica inversa": "Logística inversa",
+    "LogÃ­stica inversa": "Logística inversa",
+    "Compensación logística": "Compensación logística",
+    "Compensacion logistica": "Compensación logística",
+    "Compensacin logstica": "Compensación logística",
+    "CompensaciÃ³n logÃ­stica": "Compensación logística",
+    # París — Nuevos Conceptos Master Spec
+    "Cobro por campaña": "Cobro por campaña",
+    "Rebate": "Rebate",
+    "Cobro stock antiguo": "Cobro stock antiguo",
+    "Ajuste Inventario Activo": "Ajuste Inventario Activo",
+    "Retiro stock bodega Paris": "Retiro stock bodega Paris",
+    "Merma": "Merma",
+    "Multa": "Multa",
+    "Multa por stock": "Multa por stock",
+
+    # FALABELLA
+    "Cobro por cofinanciamiento logístico": "Cobro por cofinanciamiento logístico",
+    "Cobro por comisión por venta": "Cobro por comisión por venta",
+    "Reversa de pago de envío comprador": "Reversa de pago de envío comprador",
+    "Cobro Promo envío falabella.com": "Cobro Promo envío falabella.com",
+    "Reembolso por Promo envío falabella.com": "Reembolso por Promo envío falabella.com",
+    "Reembolso por comisión por venta": "Reembolso por comisión por venta",
+    "Reembolso por comision por venta": "Reembolso por comisión por venta",
+    "Reembolso por comisin por venta": "Reembolso por comisión por venta",
+    "Reembolso por comisiÃ³n por venta": "Reembolso por comisión por venta",
+    "Cobro por logística inversa": "Cobro por logística inversa",
+    "Cobro por logistica inversa": "Cobro por logística inversa",
+    "Cobro por logstica inversa": "Cobro por logística inversa",
+    "Cobro por logÃ­stica inversa": "Cobro por logística inversa",
+    # Falabella — Nuevos Conceptos Master Spec
+    "Pago por precio del producto": "Pago por precio del producto",
+    "Descuento por devolución de producto": "Descuento por devolución de producto",
+    "Pago de envío comprador": "Pago de envío comprador",
+    "Corrección de cobro por envío directo": "Corrección de cobro por envío directo",
+
+    # SHOPIFY / MERCADO PAGO (Nuevos Conceptos Master Spec)
+    # MASTER_MARKETPLACE_DICTIONARY_V1 — New canonical aliases
+    "Campañas de publicidad - Product Ads": "Campañas de publicidad - Product Ads",
+    "Campañas de publicidad - Brand Ads": "Campañas de publicidad - Brand Ads",
+    "Cargo por campaña de publicidad - Display programático": "Cargo por campaña de publicidad - Display programático",
+    "Descuento por logística inversa": "Descuento por logística inversa",
+    "Pago por envío directo": "Pago por envío directo",
+    "Corrección de pago envio directo": "Corrección de pago envio directo",
+    "Corrección de cobro por envío directo": "Corrección de cobro por envío directo",
+
+    # Mercado Libre — Mapeos Canónicos y Reservas
+    "Pago": "Pago",
+    "Mediación": "Mediación",
+    "Mediacin": "Mediación",
+    "Mediacion": "Mediación",
+    "Reserva para pago de deuda": "Reserva para pago de deuda",
+    "Reserva para devolución en envío BBP": "Reserva para devolución en envío BBP",
+    "Reserva para devolucin en envo BBP": "Reserva para devolución en envío BBP",
+    "Reserva para devolucion en envio BBP": "Reserva para devolución en envío BBP",
+    "Devolución de dinero": "Devolución de dinero",
+    "Devolucion de dinero": "Devolución de dinero",
+    "Devolucin de dinero": "Devolución de dinero",
+    "Reserva para pago": "Reserva para pago",
+    "Reserva para reembolso": "Reserva para reembolso",
+
+    # Falabella — Aportes Promocionales
+    "Pago de aporte promocionales a cliente (Promo)": "Pago de aporte promocionales a cliente (Promo)",
+    "Descuento por aportes promocionales a clientes (Promo)": "Descuento por aportes promocionales a clientes (Promo)",
+}
+
+# ---------------------------------------------------------------------------
+# FINANCIAL_STRUCTURE — Clasificación Contable según MASTER_DICTIONARY_V1
+# ---------------------------------------------------------------------------
+FINANCIAL_STRUCTURE = {
+    "ingresos": [
+        "Cargo por venta", "Cargo por venta (Venta)", "Venta", "Bonificación", "Rebate",
+        "Compensación comercial", "Importe del pedido", "Pago",
+        "Despacho", "Sale amount", "Gross sales",
+        "Pago por precio del producto",
+    ],
+    "devoluciones": [
+        "Pedidos reembolsados", "Devolución", "Devolución de venta", "Devolución de dinero",
+        "Descuento por devolución de producto",
+    ],
+    "costos_operacionales": [
+        "Cargo por envíos de Mercado Libre", "Cargo por Mercado Envíos",
+        "Anulación del cargo por envíos de ML", "Anulación del cargo por Mercado Envíos",
+        "Anulación del cargo por envíos de Mercado Libre",
+        "Cargo por devolución", "Anulación del cargo por devolución",
+        "Cargo por servicio de almacenamiento Full", "Cargo por retiro de stock Full",
+        "Cargo por stock antiguo en Full", "Cargo por sobrepasar espacio Full",
+        "Cargo por servicio de colecta Full", "Cargo por diferencias medidas/peso",
+        "Cargo por diferencias en las medidas y el peso del paquete",
+        "Gastos de envío pagados por el operador",
+        "Gastos de envío reembolsados pagados por el operador",
+        "Descuento por costo logístico", "Descuento por logística inversa",
+        "Descuento por logistica inversa",
+        "Cobro por despacho", "Logística inversa", "Retiro stock bodega Paris",
+        "Cobro stock antiguo",
+        "Cobro por cofinanciamiento logístico", "Reversa de pago de envío comprador",
+        "Cobro por logística inversa", "Pago por envío directo",
+        "Cobro despacho primera milla",
+        "Descuento FF - Otros", "Descuento FF - pick and pack", "Descuento FF - sobreestadía",
+        "Descuento operacional", "Descuento por error de clase logistica",
+        "Abono por uso de flota propia",
+        "Envío reembolsado",
+        "Reembolso por Promo envío falabella.com", "Cobro Promo envío falabella.com",
+        "Pago de envío comprador",
+        "Envío", "Gastos de envío",
+    ],
+    "costos_comerciales": [
+        "Cargo por venta (Comisión)", "Anulación del cargo por venta",
+        "Reembolso por comisión",
+        "Cargo por campaña de publicidad - Product Ads",
+        "Campañas de publicidad - Product Ads",
+        "Cargo por campaña de publicidad - Brand Ads",
+        "Campañas de publicidad - Brand Ads", "Campañas de publicidad - Display",
+        "Cargo por campaña de publicidad - Display programático",
+        "Anulación cargo publicidad Product Ads",
+        "Cargo por Asesoría Comercial", "Cargo por mantenimiento de Mi página",
+        "Anulación del cargo por mantenimiento de Mi página",
+        "Anulación mantenimiento Mi página",
+        "Comisiones sobre pedidos", "Comisiones sobre pedidos reembolsados",
+        "Cobro por comisión por venta", "Reembolso por comisión por venta",
+        "Abono oferta TC - OPEX", "Descuento oferta TC - OPEX",
+        "Abonos por cupón promocional", "Descuento por cupones de despacho",
+        "Abonos soluciones comerciales", "Descuento por PDM",
+        "Pago de aporte promocionales a cliente (Promo)", "Descuento por aportes promocionales a clientes (Promo)",
+    ],
+    "ajustes": [
+        "Descuento por cancelación", "Otros descuentos",
+        "Compensación logística", "Ajuste Inventario Activo",
+        "Cobro por campaña", "Merma",
+        "Multa", "Multa por stock",
+        "Corrección de pago envio directo", "Corrección de cobro por envío directo",
+        "Abono extraordinario - error de precio", "Abono por error de comisión",
+        "Abono postventa", "Abono por formalización a OPL",
+        "Otros abonos", "Descuento por compensación a cliente",
+        # Legacy concepts (non-dictionary but still in ledger)
+        "Mediación", "Reserva para devolución en envío BBP", "Reserva para reembolso",
+        "Reserva para pago de deuda", "reserve_for_dispute", "Reserva para pago",
+        "Abono manual", "Importe de reembolso", "Ajuste histórico (pre-2026)",
+        "Ajuste Poscobro General", "Ajuste por Talla/Garantía",
+        "Ajuste por Producto Dañado/Vacío", "Ajuste por Arrepentimiento",
+        "Ajuste por Diferencia de Publicación", "Ajuste por Ítem Faltante",
+        "Ajuste por Falta de Stock", "Ajuste por Retraso en Entrega",
+        "Ajuste por Cambio de Dirección", "Ajuste por Falla en Entrega",
+        "Ajuste Poscobro Conciliado", "Ajuste por Compra Protegida (BPP)",
+        "Ajuste por Disputa no Respondida", "Cargo",
+        "Cancelación de la mediación", "cashback", "cashback_cancel",
+    ],
+    "tesoreria": [
+        "Retiro de dinero",
+    ]
+}
+
+def normalize_detail(text):
+    if not isinstance(text, str): return ""
+    import unicodedata
+    import re
+    # Lowercase
+    t = text.lower().strip()
+    # Normalize unicode to NFD and strip Mn category (accents)
+    t = ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')
+    # Replace any weird characters/symbols (like replacement character) or multiple spaces
+    t = re.sub(r'[^a-z0-9\s_]', '', t)
+    # Simplify spaces
+    t = re.sub(r'\s+', ' ', t).strip()
+    return t
+
+NORMALIZED_CLASSIFICATION_MAP = {
+    normalize_detail(k): v for k, v in RAW_TO_CLASSIFICATION_MAP.items() if k
+}
+
+# Reverse map: clasificacion_operativa → financial_group
+CLASIFICACION_TO_FINANCIAL_GROUP = {}
+for group_name, labels in FINANCIAL_STRUCTURE.items():
+    for label in labels:
+        CLASIFICACION_TO_FINANCIAL_GROUP[label] = group_name
+
+class MarketplaceAuditorEngine:
+    def __init__(self):
+        self.db = DatabaseV4.get()
+
+    def run_classification(self):
+        logger.info("Iniciando clasificación v4.0 (Full Reset Vectorizado)")
+        self.db.execute("DELETE FROM marketplace_ledger_clasificado_v1")
+        
+        source = self.db.query("SELECT marketplace, id_transaccion, id_orden, detalle, tipo_movimiento, monto, fecha FROM marketplace_ledger_v1")
+        
+        if source.empty: return 0
+
+        # Vectorized classification for high performance
+
+        details = source['detalle'].astype(str).str.strip()
+        
+        # Handle blank/null/0/nan raw details
+        blank_mask = details.isna() | details.str.lower().isin(['', '0', '0.0', 'nan', 'none', 'null'])
+        details[blank_mask] = "Ajuste Poscobro"
+
+        # Apply normalization and map
+        norm_details = details.apply(normalize_detail)
+        clean_names = norm_details.map(NORMALIZED_CLASSIFICATION_MAP)
+        
+        clasif = clean_names.copy()
+        conf = pd.Series(1.0, index=source.index)
+        origen = pd.Series("atomic_match", index=source.index)
+        
+        # Identify missing matches
+        unmatched_mask = clean_names.isna()
+        
+        # 1. REGLA DINÁMICA DE TESORERÍA (Payouts y Retiros de Mercado Pago)
+        payout_mask = unmatched_mask & (
+            details.str.lower().str.contains('pre_payout_', na=False) |
+            details.str.lower().str.contains('post_payout_', na=False) |
+            details.str.lower().str.contains('withdraw', na=False) |
+            details.str.lower().str.contains('retiro de dinero', na=False) |
+            details.str.lower().str.contains('reserve_for_dispute', na=False)
+        )
+        clasif[payout_mask] = "Retiro de dinero"
+        conf[payout_mask] = 1.0
+        origen[payout_mask] = "payout_rule"
+        
+        # Update unmatched mask to exclude payouts
+        unmatched_mask = unmatched_mask & ~payout_mask
+        
+        # Apply date and history rules for unmatched rows
+        fechas = source['fecha'].astype(str).str[:10]
+        ids = source['id_transaccion'].astype(str)
+        
+        # Historic pre-2026 rule
+        historic_mask = unmatched_mask & (
+            ((fechas != 'nan') & (fechas != 'NaT') & (fechas != 'None') & (fechas <= '2025-12-31')) |
+            (ids.str.contains('2023') | ids.str.contains('2024') | ids.str.contains('2025'))
+        )
+        
+        clasif[historic_mask] = "Ajuste histórico (pre-2026)"
+        conf[historic_mask] = 1.0
+        origen[historic_mask] = "auto_history"
+        
+        # Unrecognized rows mask
+        unrecognized_mask = unmatched_mask & ~historic_mask
+        clasif[unrecognized_mask] = "NO_CLASIFICADO"
+        conf[unrecognized_mask] = 0.0
+        origen[unrecognized_mask] = "unrecognized"
+        
+        # Determine include_in_operational_pnl (default is True)
+        op_flag = pd.Series(True, index=source.index)
+        
+        # Isolated Mercado Libre Exclusion Patch: all rows operational except specific exclusions
+        ml_mask = source['marketplace'] == 'ML'
+        
+        ml_mandatory_exclusions = {
+            "reserve_for_dispute",
+            "Mediación",
+            "bpp_refunded",
+            "repentant_buyer",
+            "broken_item_fashion",
+            "bigger_than_expected_fashion",
+            "smaller_than_expected_fashion",
+            "reconciled",
+            "AJUSTE POSCOBRO",
+            "cashback",
+            "cashback_cancel",
+            "Reserva para devolución en envío BBP",
+            "Retenciones & Provisiones"
+        }
+
+        is_excluded = (
+            clasif.isin(ml_mandatory_exclusions) | 
+            details.isin(ml_mandatory_exclusions) |
+            details.str.lower().str.contains('reserve_for_dispute|withdraw|retiro de dinero|mediacion|mediacin|mediación', na=False)
+        )
+        
+        op_flag[ml_mask] = ~is_excluded[ml_mask]
+
+        # General treasury/payable exclusion across all marketplaces
+        general_exclusions = {"A pagar"}
+        op_flag[clasif.isin(general_exclusions) | details.isin(general_exclusions)] = False
+
+        results = pd.DataFrame({
+            'clasificacion_operativa': clasif,
+            'confianza_clasificacion': conf,
+            'origen_clasificacion': origen,
+            'include_in_operational_pnl': op_flag
+        })
+
+        out = pd.concat([source[['marketplace', 'id_transaccion', 'id_orden', 'detalle', 'tipo_movimiento', 'monto', 'fecha']], results], axis=1)
+        n = self.db.insert_df(out, "marketplace_ledger_clasificado_v1")
+        
+        # Aplicar correcciones manuales guardadas para que persistan
+        try:
+            self.db.execute("SELECT 1 FROM marketplace_correcciones_v1 LIMIT 1")
+            self.db.execute("""
+                UPDATE marketplace_ledger_clasificado_v1
+                SET clasificacion_operativa = mc.detalle_corregido,
+                    origen_clasificacion = 'manual_correction',
+                    confianza_clasificacion = 1.0
+                FROM marketplace_correcciones_v1 mc
+                WHERE marketplace_ledger_clasificado_v1.id_transaccion = mc.id_transaccion
+            """)
+        except Exception:
+            pass # Tabla aún no creada
+
+        # Propagar clasificacion_operativa y financial_group a marketplace_ledger_v1
+        try:
+            case_clauses = " ".join(
+                f"WHEN '{co.replace(chr(39), chr(39)+chr(39))}' THEN '{fg}'"
+                for co, fg in CLASIFICACION_TO_FINANCIAL_GROUP.items()
+                if co
+            )
+            import tempfile
+            tmp_dir = tempfile.gettempdir().replace("\\", "/")
+            self.db.execute(f"SET temp_directory='{tmp_dir}';")
+            # Match on (id_transaccion, detalle) because id_transaccion is not unique per row
+            sql = f"""
+                UPDATE marketplace_ledger_v1
+                SET clasificacion_operativa = sub.clasificacion_operativa,
+                    include_in_operational_pnl = sub.include_in_operational_pnl,
+                    financial_group = CASE sub.clasificacion_operativa
+                        {case_clauses}
+                        ELSE NULL
+                    END
+                FROM marketplace_ledger_clasificado_v1 sub
+                WHERE marketplace_ledger_v1.id_transaccion = sub.id_transaccion
+                  AND marketplace_ledger_v1.detalle = sub.detalle
+            """
+            self.db.execute(sql)
+            logger.info("Propagated classification to marketplace_ledger_v1")
+        except Exception as e:
+            logger.warning(f"SQL propagation failed: {e}")
+            # Fallback: propagation via Python (only if SQL fails)
+            try:
+                logger.info("Fallback: propagating via Python loop...")
+                rows = self.db.query("""
+                    SELECT id_transaccion, detalle, clasificacion_operativa, include_in_operational_pnl
+                    FROM marketplace_ledger_clasificado_v1
+                """)
+                for _, r in rows.iterrows():
+                    fg = CLASIFICACION_TO_FINANCIAL_GROUP.get(r['clasificacion_operativa'])
+                    self.db.execute(
+                        "UPDATE marketplace_ledger_v1 SET clasificacion_operativa=?, include_in_operational_pnl=?, financial_group=? WHERE id_transaccion=? AND detalle=?",
+                        [r['clasificacion_operativa'], bool(r['include_in_operational_pnl']), fg, r['id_transaccion'], r['detalle']]
+                    )
+                logger.info(f"Fallback propagation complete: {len(rows)} rows")
+            except Exception as e2:
+                logger.warning(f"Fallback propagation also failed: {e2}")
+
+        log_event(logger, "classification_completed", table="marketplace_ledger_clasificado_v1", count=n)
+        return n
+
+    def run_financial_closing(self, marketplace, periodo_inicio, periodo_fin):
+        self.db.execute("DELETE FROM marketplace_cierre_financiero_v1 WHERE marketplace = ? AND CAST(periodo_inicio AS DATE) = CAST(? AS DATE) AND CAST(periodo_fin AS DATE) = CAST(? AS DATE)", [marketplace, periodo_inicio, periodo_fin])
+        
+        def fmt(items): return "'" + "','".join(items) + "'"
+        
+        sql = f"""
+            SELECT 
+                SUM(CASE WHEN clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["ingresos"])}) THEN monto ELSE 0 END) as total_ingresos,
+                SUM(CASE WHEN clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["devoluciones"])}) THEN monto ELSE 0 END) as total_devoluciones,
+                SUM(CASE WHEN clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["costos_operacionales"])}) THEN monto ELSE 0 END) as total_costos_op,
+                SUM(CASE WHEN clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["costos_comerciales"])}) THEN monto ELSE 0 END) as total_costos_com,
+                SUM(CASE WHEN clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["ajustes"])}) THEN monto ELSE 0 END) as total_ajustes
+            FROM marketplace_ledger_clasificado_v1
+            WHERE marketplace = ? AND fecha BETWEEN ? AND ?
+        """
+        
+        stats = self.db.query(sql, [marketplace, periodo_inicio, periodo_fin]).iloc[0]
+        
+        def _safe(v):
+            """Guard against NaN/None from empty SUM(): NaN or 0 == NaN in Python!"""
+            import math
+            try:
+                f = float(v)
+                return 0.0 if (math.isnan(f) or math.isinf(f)) else f
+            except (TypeError, ValueError):
+                return 0.0
+
+        ing = _safe(stats['total_ingresos'])
+        dev = _safe(stats['total_devoluciones'])
+        cop = _safe(stats['total_costos_op'])
+        ccm = _safe(stats['total_costos_com'])
+        aju = _safe(stats['total_ajustes'])
+        neto = ing + dev + cop + ccm + aju
+
+        # total_ajustes en la tabla almacena devoluciones+ajustes para compatibilidad
+        self.db.execute("""
+            INSERT INTO marketplace_cierre_financiero_v1 
+            (marketplace, periodo_inicio, periodo_fin, total_ingresos, total_costos_operacionales, 
+             total_costos_comerciales, total_ajustes, resultado_neto)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """, [marketplace, periodo_inicio, periodo_fin, ing, cop, ccm, dev + aju, neto])
+        
+        logger.info(f"CIERRE {periodo_inicio}: Ing={ing:,.0f} Dev={dev:,.0f} CostOp={cop:,.0f} CostCom={ccm:,.0f} Aju={aju:,.0f} NETO={neto:,.0f}")
+        return {"neto": neto, "ingresos": ing, "devoluciones": dev, "costos_op": cop, "costos_com": ccm, "ajustes": aju}
+
+    def run_audit(self):
+        self.db.execute("DELETE FROM marketplace_auditoria_v1")
+        
+        # 1. No Clasificados
+        self.db.execute("""
+            INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken, order_id)
+            SELECT marketplace, 'movimientos_no_clasificados', 'Detalle "' || detalle || '" desconocido', 'Radar Alert', id_transaccion
+            FROM marketplace_ledger_clasificado_v1 WHERE clasificacion_operativa = 'NO_CLASIFICADO'
+        """)
+        
+        # 2. Validación OTROS <= 5% (Monto Absoluto)
+        total_monto = self.db.query("SELECT COALESCE(SUM(ABS(monto)), 0) as total FROM marketplace_ledger_v1").iloc[0]['total']
+        if total_monto > 0:
+            unclassified_monto = self.db.query("""
+                SELECT COALESCE(SUM(ABS(monto)), 0) as total 
+                FROM marketplace_ledger_clasificado_v1
+                WHERE clasificacion_operativa = 'NO_CLASIFICADO'
+            """).iloc[0]['total']
+            
+            porcentaje = (unclassified_monto / total_monto) * 100
+            if porcentaje > 5.0:
+                self.db.execute(f"""
+                    INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken, order_id)
+                    VALUES ('ML', 'limite_otros_excedido', 'Movimientos NO_CLASIFICADO representan el {porcentaje:.2f}% del total absoluto ({unclassified_monto:,.2f}/{total_monto:,.2f})', 'Reclasificación Requerida', 'GLOBAL_AUDIT')
+                """)
+        
+        # 3. Integración de Auditoría de clasificación ML (MISCLASSIFIED)
+        try:
+            from engine.v4.marketplace_auditor_ml import audit_ml_misclassifications
+            # Ponemos a salvo la instancia de la DB para que no de error
+            audit_ml_misclassifications()
+        except Exception as e:
+            logger.error(f"Error running audit_ml_misclassifications: {e}")
+        
+        # 4. Certificación Legal (Crucial)
+        self.db.execute("""
+            INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken, order_id)
+            SELECT 
+                l.marketplace, 
+                'cargo_sin_respaldo_legal', 
+                'Folio ' || l.folio_xml || ' no existe en DTE Truth',
+                'Certificación Fallida',
+                l.id_orden
+            FROM marketplace_ledger_v1 l
+            LEFT JOIN dte_truth_v1 t ON l.folio_xml LIKE '%' || t.folio
+            WHERE l.folio_xml IS NOT NULL 
+              AND l.folio_xml <> 'None' 
+              AND l.folio_xml NOT LIKE '%disponible%'
+              AND l.folio_xml NOT LIKE 'A%n%'
+              AND t.folio IS NULL
+            AND (
+                l.fecha > '2025-12-31' 
+                OR 
+                (l.fecha IS NULL AND l.id_transaccion NOT LIKE '%2023%' AND l.id_transaccion NOT LIKE '%2024%' AND l.id_transaccion NOT LIKE '%2025%')
+            )
+        """)
+
+        return self.db.count("marketplace_auditoria_v1")
+
+    def add_correction(self, id_transaccion, detalle_original, detalle_corregido, motivo, usuario="system"):
+        self.db.execute("""
+            INSERT INTO marketplace_correcciones_v1 (id_transaccion, detalle_original, detalle_corregido, motivo, usuario)
+            VALUES (?, ?, ?, ?, ?)
+        """, [id_transaccion, detalle_original, detalle_corregido, motivo, usuario])
+        
+        self.db.execute("""
+            UPDATE marketplace_ledger_clasificado_v1
+            SET clasificacion_operativa = ?, origen_clasificacion = 'manual_correction', confianza_clasificacion = 1.0
+            WHERE id_transaccion = ?
+        """, [detalle_corregido, id_transaccion])
+        log_event(logger, "manual_correction", id=id_transaccion, new_detail=detalle_corregido)

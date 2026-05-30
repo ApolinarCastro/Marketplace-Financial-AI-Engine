@@ -1,0 +1,42 @@
+CHANGE TEMPLATE — REGLA 6
+==========================
+TODO cambio debe completar este template ANTES de ser autorizado.
+
+CAMBIOS RECHAZADOS sin template completo.
+
+┌─────────────────────────────────────────────────┐
+│ CAMBIO: <nombre corto>                          │
+├─────────────────────────────────────────────────┤
+│ Marketplaces afectados: [ML | RIPLEY | PARIS |  │
+│   FALABELLA | SHOPIFY | TODOS | N/A]            │
+├─────────────────────────────────────────────────┤
+│ Tablas afectadas: [lista de tablas, o NINGUNA]  │
+├─────────────────────────────────────────────────┤
+│ Endpoints afectados: [lista de endpoints, o     │
+│   NINGUNO]                                       │
+├─────────────────────────────────────────────────┤
+│ Riesgo: [ALTO | MEDIO | BAJO]                   │
+├─────────────────────────────────────────────────┤
+│ Rollback: [descripción de cómo revertir]         │
+├─────────────────────────────────────────────────┤
+│ ¿Requiere nuevo snapshot? [SI | NO]              │
+├─────────────────────────────────────────────────┤
+│ ¿Requiere nuevo test de regresión? [SI | NO]     │
+├─────────────────────────────────────────────────┤
+│ ¿Requiere modificar DB schema? [SI | NO]         │
+│   (Si SI, congelamiento requiere autorización    │
+│    especial por violar REGLA 1)                  │
+├─────────────────────────────────────────────────┤
+│ ¿Usa heurísticas (contains, startswith,          │
+│  catMap, FINANCIAL_STRUCTURE)? [SI | NO]         │
+│   (Si SI, cambio RECHAZADO automático)           │
+├─────────────────────────────────────────────────┤
+│ Validación pre-merge:                            │
+│   [ ] pytest tests/test_regression_contracts.py  │
+│   [ ] SQL = API = UI DIFF=0                      │
+│   [ ] Nuevos tests si aplica                     │
+├─────────────────────────────────────────────────┤
+│ Autor:   <nombre>                                │
+│ Fecha:   <YYYY-MM-DD>                            │
+│ Revisor: <nombre>                                │
+└─────────────────────────────────────────────────┘

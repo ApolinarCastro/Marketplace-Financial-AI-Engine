@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-03-03T09:24:11.793065",
+  "period_scanned": "2026/03",
+  "status": "OK",
+  "coverage": [
+    {
+      "marketplace": "ML",
+      "period": "2026/03",
+      "exists": true,
+      "files": [
+        {
+          "name": "ventas_ml.csv",
+          "type": ".csv",
+          "size_bytes": 147
+        }
+      ],
+      "categories_found": [
+        "operacion"
+      ],
+      "operacion": {
+        "status": "COMPLETE",
+        "required": [
+          "ventas_ml.csv"
+        ],
+        "optional": []
+      },
+      "financiero": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "caja": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      }
+    },
+    {
+      "marketplace": "FALABELLA",
+      "period": "2026/03",
+      "exists": true,
+      "files": [],
+      "categories_found": [],
+      "operacion": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "financiero": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "caja": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      }
+    },
+    {
+      "marketplace": "PARIS",
+      "period": "2026/03",
+      "exists": false,
+      "files": [],
+      "categories_found": [],
+      "operacion": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "financiero": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "caja": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      }
+    },
+    {
+      "marketplace": "RIPLEY",
+      "period": "2026/03",
+      "exists": false,
+      "files": [],
+      "categories_found": [],
+      "operacion": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "financiero": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "caja": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      }
+    },
+    {
+      "marketplace": "BANCO",
+      "period": "2026/03",
+      "exists": true,
+      "files": [],
+      "categories_found": [],
+      "operacion": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "financiero": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "caja": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      }
+    },
+    {
+      "marketplace": "SAP",
+      "period": "2026/03",
+      "exists": true,
+      "files": [
+        {
+          "name": "sap_report.csv",
+          "type": ".csv",
+          "size_bytes": 146
+        }
+      ],
+      "categories_found": [],
+      "operacion": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "financiero": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      },
+      "caja": {
+        "status": "MISSING",
+        "required": [],
+        "optional": []
+      }
+    }
+  ],
+  "missing_required": []
+}

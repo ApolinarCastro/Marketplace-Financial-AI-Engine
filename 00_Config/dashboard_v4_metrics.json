@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-16T17:07:44.146168",
+  "version": "4.0",
+  "kpis": {
+    "total_sales_marketplace": 2490178949.61,
+    "total_sales_sap": 2391650641.0,
+    "orders_reconciled": 3399,
+    "orders_with_difference": 23687,
+    "orders_without_match": 132592,
+    "total_orders": 159678
+  },
+  "financial_chain": {
+    "ledger_total": 717611040.73,
+    "liberaciones_total": 2490178949.6099997,
+    "retiros_total": -1096952477.0,
+    "bank_total": 0.0,
+    "ledger_vs_liberaciones": "DIFERENCIA (1,772,567,909 CLP)",
+    "liberaciones_vs_retiros": "DIFERENCIA (3,587,131,427 CLP)",
+    "retiros_vs_bank": "DIFERENCIA (1,096,952,477 CLP)",
+    "chain_status": "BROKEN"
+  },
+  "exceptions_summary": [
+    {
+      "exception_type": "LEDGER_NOT_FOUND",
+      "severity": "ERROR",
+      "count": 59848
+    },
+    {
+      "exception_type": "DUPLICATE_RECORD",
+      "severity": "ERROR",
+      "count": 51047
+    },
+    {
+      "exception_type": "MISSING_KEY",
+      "severity": "WARNING",
+      "count": 10834
+    },
+    {
+      "exception_type": "AMOUNT_DIFFERENCE",
+      "severity": "ERROR",
+      "count": 23570
+    },
+    {
+      "exception_type": "AMOUNT_DIFFERENCE",
+      "severity": "WARNING",
+      "count": 117
+    },
+    {
+      "exception_type": "ORDER_NOT_FOUND",
+      "severity": "ERROR",
+      "count": 72344
+    }
+  ]
+}
