@@ -509,6 +509,10 @@ class MarketplaceAuditorEngine:
                 logger.warning(f"Fallback propagation also failed: {e2}")
 
         log_event(logger, "classification_completed", table="marketplace_ledger_clasificado_v1", count=n)
+        try:
+            self.db.execute("INSERT INTO pipeline_log (event, status, details) VALUES ('classification', 'COMPLETED', ?)", [f"Clasificadas {n} filas en marketplace_ledger_clasificado_v1"])
+        except Exception:
+            pass  # pipeline_log table may not exist
         return n
 
     def run_financial_closing(self, marketplace, periodo_inicio, periodo_fin):
@@ -554,6 +558,11 @@ class MarketplaceAuditorEngine:
         """, [marketplace, periodo_inicio, periodo_fin, ing, cop, ccm, dev + aju, neto])
         
         logger.info(f"CIERRE {periodo_inicio}: Ing={ing:,.0f} Dev={dev:,.0f} CostOp={cop:,.0f} CostCom={ccm:,.0f} Aju={aju:,.0f} NETO={neto:,.0f}")
+        try:
+            self.db.execute("INSERT INTO pipeline_log (event, status, details) VALUES ('closing', 'COMPLETED', ?)",
+                            [f"{marketplace} {periodo_inicio} a {periodo_fin}: Neto=${neto:,.0f}"])
+        except Exception:
+            pass
         return {"neto": neto, "ingresos": ing, "devoluciones": dev, "costos_op": cop, "costos_com": ccm, "ajustes": aju}
 
     def run_audit(self):
@@ -613,7 +622,12 @@ class MarketplaceAuditorEngine:
             )
         """)
 
-        return self.db.count("marketplace_auditoria_v1")
+        n = self.db.count("marketplace_auditoria_v1")
+        try:
+            self.db.execute("INSERT INTO pipeline_log (event, status, details) VALUES ('audit', 'COMPLETED', ?)", [f"Auditoría completada: {n} hallazgos en marketplace_auditoria_v1"])
+        except Exception:
+            pass
+        return n
 
     def add_correction(self, id_transaccion, detalle_original, detalle_corregido, motivo, usuario="system"):
         self.db.execute("""

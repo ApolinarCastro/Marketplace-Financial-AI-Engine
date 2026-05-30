@@ -1,0 +1,7 @@
+DB PROTECTION AUDIT — REGLA 5 (ARCHIVED — V5 original)
+
+Archived: 2026-05-30
+Reason: Document contaminado — referenciaba BASELINE_ESTABLE_V5 como versión auditada.
+Current version: governance/DB_PROTECTION_AUDIT.txt (updated to V6)
+
+Key change: Auditado: BASELINE_ESTABLE_V5 → BASELINE_ESTABLE_V6

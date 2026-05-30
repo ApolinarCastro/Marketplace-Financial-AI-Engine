@@ -35,7 +35,36 @@
       "total": -279914703.0
     }
   },
-  "marketplaces": {},
+  "marketplaces": {
+    "ML": {
+      "rows": 101603,
+      "total": 842250301,
+      "folio_xml_pct": 89.4,
+      "certificado_pct": 86.9,
+      "financial_group_null": 0
+    },
+    "RIPLEY": {
+      "rows": 269216,
+      "total": 284897360,
+      "folio_xml_pct": 0.0,
+      "certificado_pct": 0.0,
+      "financial_group_null": 8413
+    },
+    "PARIS": {
+      "rows": 42487,
+      "total": 378104933,
+      "folio_xml_pct": 0.0,
+      "certificado_pct": 0.0,
+      "financial_group_null": 0
+    },
+    "FALABELLA": {
+      "rows": 1008,
+      "total": 2583016,
+      "folio_xml_pct": 61.5,
+      "certificado_pct": 0.0,
+      "financial_group_null": 0
+    }
+  },
   "previous_baseline": "V5",
   "previous_baseline_label": "BASELINE_ESTABLE_V5 (SUPERSEDED)",
   "current_baseline_label": "BASELINE_ESTABLE_V6 (CURRENT_STABLE)"

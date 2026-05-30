@@ -1,71 +1,37 @@
 {
     "database": "data/db/meli_financial_v4.db",
+    "baseline": "V6",
+    "note": "CORRECTED V6 — Previous version had inflated row counts (609,258 vs 414,314). Archived at governance/archive/data_state_duckdb_V5_CONTAMINATED.json",
     "tables": {
-        "TABLA_MAPEO": {
-            "total_rows": 0
-        },
-        "ai_suggestions_log": {
-            "total_rows": 0
-        },
-        "bank_statement": {
-            "total_rows": 0
-        },
-        "cargos_no_clasificados": {
-            "total_rows": 0
-        },
-        "dte_truth_v1": {
-            "total_rows": 762
-        },
-        "exceptions": {
-            "total_rows": 0
-        },
-        "file_registry": {
-            "total_rows": 0
-        },
-        "financial_reconciliation": {
-            "total_rows": 0
-        },
-        "inconsistencias_financieras": {
-            "total_rows": 0
-        },
-        "liberaciones": {
-            "total_rows": 0
-        },
-        "marketplace_auditoria_v1": {
-            "total_rows": 38728
-        },
-        "marketplace_cierre_financiero_v1": {
-            "total_rows": 192
-        },
-        "marketplace_correcciones_v1": {
-            "total_rows": 15
-        },
-        "marketplace_ledger_clasificado_v1": {
-            "total_rows": 609258
-        },
-        "marketplace_ledger_v1": {
-            "total_rows": 609258
-        },
-        "order_reconciliation": {
-            "total_rows": 0
-        },
-        "pipeline_log": {
-            "total_rows": 0
-        },
-        "retiros": {
-            "total_rows": 0
-        },
-        "transaction_ledger": {
-            "total_rows": 0
-        },
-        "ventas_marketplace": {
-            "total_rows": 83690
-        },
-        "vw_dashboard_kpis": {
-            "total_rows": 1
-        },
-        "vw_ml_misclassifications": {
-            "total_rows": 14605
-        }
-    }
+        "TABLA_MAPEO": { "total_rows": 0, "status": "OBSOLETE" },
+        "ai_suggestions_log": { "total_rows": 0, "status": "OBSOLETE" },
+        "bank_statement": { "total_rows": 0, "status": "OBSOLETE" },
+        "cargos_no_clasificados": { "total_rows": 0, "status": "OBSOLETE" },
+        "dte_truth_v1": { "total_rows": 762, "status": "ACTIVE" },
+        "exceptions": { "total_rows": 0, "status": "OBSOLETE" },
+        "file_registry": { "total_rows": 0, "status": "OBSOLETE" },
+        "financial_reconciliation": { "total_rows": 0, "status": "OBSOLETE" },
+        "inconsistencias_financieras": { "total_rows": 0, "status": "OBSOLETE" },
+        "liberaciones": { "total_rows": 0, "status": "OBSOLETE" },
+        "marketplace_auditoria_v1": { "total_rows": 1, "status": "ACTIVE" },
+        "marketplace_cierre_financiero_v1": { "total_rows": 94, "status": "ACTIVE" },
+        "marketplace_correcciones_v1": { "total_rows": 14, "status": "ACTIVE" },
+        "marketplace_ledger_clasificado_v1": { "total_rows": 414314, "status": "ACTIVE" },
+        "marketplace_ledger_v1": { "total_rows": 414314, "status": "ACTIVE — PRIMARY" },
+        "order_reconciliation": { "total_rows": 0, "status": "OBSOLETE" },
+        "pipeline_log": { "total_rows": 0, "status": "ACTIVE — NOT YET WRITTEN" },
+        "retiros": { "total_rows": 0, "status": "OBSOLETE" },
+        "transaction_ledger": { "total_rows": 0, "status": "OBSOLETE" },
+        "ventas_marketplace": { "total_rows": 83728, "status": "ACTIVE" }
+    },
+    "views": {
+        "vw_dashboard_kpis": { "total_rows": 1, "status": "NON-FUNCTIONAL (queries order_reconciliation — 0 rows)" },
+        "vw_ml_misclassifications": { "total_rows": 0, "status": "ACTIVE" },
+        "financial_operational_view_v1": { "total_rows": 397475, "status": "ACTIVE" },
+        "risk_postsale_view_v1": { "total_rows": 16839, "status": "ACTIVE" }
+    },
+    "sha256": "e1e341ef44e0a61c4e846d34e05d14a4c291dcd904869f20fdf6e9a37fef1c29",
+    "total_rows": 414314,
+    "total_sum": 1507835610,
+    "snapshot": "data/db/snapshot_baseline_v6_20260529_105928/"
 }
