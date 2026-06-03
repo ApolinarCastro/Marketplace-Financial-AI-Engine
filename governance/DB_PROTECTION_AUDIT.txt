@@ -1,7 +1,7 @@
 DB PROTECTION AUDIT — REGLA 5
 ================================
-Fecha: 2026-05-30 (updated from V5)
-Auditado: BASELINE_ESTABLE_V6
+Fecha: 2026-05-29
+Auditado: BASELINE_ESTABLE_V5
 
 1. uvicorn --reload
 ─────────────────────────
