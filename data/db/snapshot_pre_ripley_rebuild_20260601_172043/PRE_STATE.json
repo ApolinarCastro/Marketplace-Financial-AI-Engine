@@ -1,0 +1,152 @@
+{
+  "ripley_rows": 269216,
+  "ripley_total": 284897360.0,
+  "importe_rows": 8413,
+  "importe_total": 240979600.0,
+  "apr2026": 1500432.0,
+  "ventas_count": 10647,
+  "other_marketplaces": {
+    "ML": {
+      "rows": 101603,
+      "total": 842250300.6499997
+    },
+    "PARIS": {
+      "rows": 42487,
+      "total": 378104933.0
+    },
+    "FALABELLA": {
+      "rows": 1008,
+      "total": 2583016.0
+    }
+  },
+  "concepts": {
+    "Importe del pedido": {
+      "rows": 8413,
+      "total": 240979600.0
+    },
+    "A pagar": {
+      "rows": 8413,
+      "total": 142448680.0
+    },
+    "Env\u00edo": {
+      "rows": 8413,
+      "total": 12536704.0
+    },
+    "Comisiones sobre pedidos reembolsados": {
+      "rows": 8413,
+      "total": 9853670.0
+    },
+    "Gastos de env\u00edo reembolsados pagados por el operador": {
+      "rows": 8413,
+      "total": 1125187.0
+    },
+    "Abono postventa": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Descuento por compensaci\u00f3n a cliente": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Abono oferta TC - OPEX": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Descuento FF - pick and pack": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Cobro despacho primera milla": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Descuento oferta TC - OPEX": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Abono extraordinario - error de precio": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Abono por error de comisi\u00f3n": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Otros abonos": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Abono por formalizaci\u00f3n a OPL": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Descuento operacional": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Descuento por error de clase logistica": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Descuento FF - Otros": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Descuento FF - sobreestad\u00eda": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Descuento por cupones de despacho": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Abonos por cup\u00f3n promocional": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Abonos soluciones comerciales": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Descuento por PDM": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Abono por uso de flota propia": {
+      "rows": 8413,
+      "total": 0.0
+    },
+    "Otros descuentos": {
+      "rows": 8413,
+      "total": -3960.0
+    },
+    "Descuento por cancelaci\u00f3n": {
+      "rows": 8413,
+      "total": -26412.0
+    },
+    "Descuento por logistica inversa": {
+      "rows": 8413,
+      "total": -886714.0
+    },
+    "Env\u00edo reembolsado": {
+      "rows": 8413,
+      "total": -1125187.0
+    },
+    "Descuento por costo log\u00edstico": {
+      "rows": 8413,
+      "total": -9527643.0
+    },
+    "Gastos de env\u00edo pagados por el operador": {
+      "rows": 8413,
+      "total": -12536704.0
+    },
+    "Comisiones sobre pedidos": {
+      "rows": 8413,
+      "total": -43881350.0
+    },
+    "Pedidos reembolsados": {
+      "rows": 8413,
+      "total": -54058511.0
+    }
+  }
+}

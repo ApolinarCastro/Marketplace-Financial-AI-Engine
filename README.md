@@ -1,38 +1,42 @@
-# Marketplace Conciliacion V6
+# Marketplace Conciliacion V4
 
 ## Ruta canonica
 
 - Backend FastAPI: `Scripts\run_python.bat run_app.py`
-- API base V4 (frozen): `http://127.0.0.1:8004/api/v4`
+- Frontend React/Vite: `cd src/frontend && npm run dev`
+- API base V4: `http://127.0.0.1:3001/api/v4`
 - Arranque rapido Windows: `START_APP.bat`
-- Dashboard: `http://127.0.0.1:8004/`
+- Frontend oficial: `http://127.0.0.1:3001/app`
+- Legacy HTML: `http://127.0.0.1:3001/legacy`
 - `START_APP.bat` inicia el backend con el wrapper oficial y abre la UI principal
 
 ## Estructura principal
 
-- `api/api.py`: contrato API canonico (FastAPI, endpoints /api/v4/*)
-- `engine/v4`: motor de ingestion, clasificacion financiera, cierres y auditoria
-- `tests/`: test suite (14 regression tests, smoke, ML audit, classification)
-- `governance/`: freeze, baseline, estrategia git, matriz de remediacion
-- `01_Raw`: archivos fuente por marketplace y XML DTE
-- `data/db/`: base de datos DuckDB + snapshots de baseline
+- `01_Raw`: archivos fuente por marketplace y SAP
+- `02_Curated/Antigravity_V4_Reports`: reportes exportados por el motor V4
+- `04_Conciliaciones`: datasets parquet de salida
+- `api/api.py`: contrato API canonico para la app
+- `engine/v4`: motor de ingestion, conciliacion, excepciones y reporting
+- `src/frontend`: panel operativo React
+- `analysis/`: analisis puntuales y generacion de artefactos auxiliares
+- `legacy/`: entrypoints y prototipos archivados para referencia
+- `tests/test_api_smoke.py`: verificacion minima del contrato API
 
 ## Raiz minima
 
 - La raiz operativa debe contener solo entrypoints vigentes, configuracion y documentacion principal.
-- El runtime oficial en raiz es `run_app.py`, `START_APP.bat`, `config.py`, `requirements.txt`.
-- Scratch code y prototipos retirados estan excluidos via .gitignore.
+- El runtime oficial en raiz es `run_app.py`, `START_APP.bat`, `package.json`, `requirements.txt` y documentacion.
+- Los prototipos retirados de servicio fueron movidos a `legacy/root_legacy/`.
 
 ## CLI de pipeline
 
 - El entrypoint del pipeline operativo es `Scripts/pipeline_cli.py`.
+- `npm run pipeline` ejecuta ese CLI con el wrapper oficial.
 
-## Base de datos V6
+## Base de datos V4
 
-- Base oficial: `data/db/meli_financial_v4.db` (DuckDB)
-- Snapshot oficial: `data/db/snapshot_baseline_v6_20260529_105928/`
-- SHA256: `e1e341ef44e0a61c4e846d34e05d14a4c291dcd904869f20fdf6e9a37fef1c29`
-- Rows: 414,314 | SUM: $1,507,835,610
+- La base oficial del motor V4 vive en `data/db/antigravity_v4.db`.
+- Si existe una base anterior en `database/antigravity_v4.db`, el motor la migra automaticamente a `data/db/` cuando puede.
 
 ## Instalacion
 
@@ -57,48 +61,46 @@ cd src/frontend
 npm run dev
 ```
 
-El dashboard HTML se sirve en `/` desde `templates/dashboard.html`. No hay frontend React en V6.
+El frontend usa proxy a `127.0.0.1:3001`, por lo que no necesita URLs hardcodeadas. El contrato oficial del panel React es `api/v4`.
+
+Si existe build en `src/frontend/dist`, el backend sirve esa UI en `/app`. El dashboard HTML heredado queda disponible en `/legacy`.
 
 ## Runtime oficial
 
-- `run_app.py` es el entrypoint oficial del backend (FastAPI + uvicorn).
-- Puerto: 8004 (configurado en `config.py`).
-- Legacy endpoints V3 desactivados.
+- Toda ejecucion Python soportada pasa por `Scripts\run_python.bat`.
+- `run_app.py` es el entrypoint oficial del backend.
+- V3 legacy queda fuera del arranque principal y solo debe habilitarse con `ENABLE_LEGACY_V3=1`.
+- Los endpoints legacy en `/api/*` se mantienen temporalmente como aliases de compatibilidad.
 
-## Comandos
+## Scripts utiles
 
 ```bash
-python run_app.py                  # Iniciar API
-START_APP.bat                      # Inicio rapido Windows
-pytest tests/ -v --tb=short        # Ejecutar tests (14 regression)
-.\.venv\Scripts\python.exe -m pytest tests/ -v --tb=short
+npm run server
+npm run frontend
+npm run build:frontend
+npm run check:python
+npm run pipeline
+npm run smoke
+npm run test:engine
+npm run test:etl
+npm run test:integration
+npm run test:all
 ```
 
-## Baseline V6 — Estado
+## Validacion recomendada
 
-- **Baseline**: BASELINE_ESTABLE_V6 (CURRENT_STABLE)
-- **Freeze**: ACTIVO — ver `governance/FREEZE_ACTIVO.txt`
-- **Git**: Inicializado con tag `BASELINE_V6`
-- **CI/CD**: `.github/workflows/ci.yml` — requiere DB snapshot para CI (trabajo en progreso)
-- **Tests**: 14/14 regression tests PASS
+- `npm run check:python`: confirma que el proyecto esta usando `.venv` y que las dependencias Python criticas estan disponibles.
+- `npm run test:all`: ejecuta chequeo de entorno, smoke API, tests del motor, tests ETL, integracion y build del frontend.
+- CI: el workflow de `.github/workflows/ci.yml` ejecuta esa misma validacion en Windows.
 
-### Baseline anteriores
-- V5 (SUPERSEDED, 2026-05-29) — snapshot en `data/db/snapshot_baseline_v5_20260529_094539/`
-- V4-V1 (SUPERSEDED) — snapshots preservados en `data/db/`
+## Flujo operativo
 
-## Contratos inmutables (FREEZE)
+1. Cargar archivos en `01_Raw`
+2. Abrir el panel y ejecutar `Pipeline V4`
+3. Revisar KPIs globales, conciliacion por orden, excepciones y reportes exportados
 
-DB clasifica → API expone → UI renderiza.
-Nadie más interpreta.
+## Regla de orden
 
-Ver `governance/FREEZE_ACTIVO.txt` — Regla 3 para detalle completo.
-
-## Baseline historica
-
-| Baseline | Fecha | Rows | SUM | Estado |
-|---|---|---|---|---|
-| V6 | 2026-05-29 | 414,314 | $1,507,835,610 | CURRENT_STABLE |
-| V5 | 2026-05-29 | 414,183 | $1,505,252,594 | SUPERSEDED |
-| V4 | 2026-05-28 | — | — | SUPERSEDED |
-| V3 | 2026-05-28 | — | — | SUPERSEDED |
-| V2 | 2026-05-28 | — | — | SUPERSEDED |
+- La raiz debe contener solo entrypoints, configuracion y documentacion principal.
+- Los scripts manuales nuevos deben entrar en areas auxiliares y no en el flujo productivo por defecto.
+- Si un script pasa a ser parte del flujo productivo, debe migrarse a `engine/`, `api/` o `tests/`.

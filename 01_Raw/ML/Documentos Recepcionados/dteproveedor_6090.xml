@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioDTE xmlns="http://www.sii.cl/SiiDte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd">
+  <SetDTE ID="envio_2507111555421376925">
+    <Caratula version="1.0">
+      <RutEmisor>77398220-1</RutEmisor>
+      <RutEnvia>13698268-0</RutEnvia>
+      <RutReceptor>77898100-9</RutReceptor>
+      <FchResol>2006-04-11</FchResol>
+      <NroResol>39</NroResol>
+      <TmstFirmaEnv>2025-07-11T15:55:43</TmstFirmaEnv>
+      <SubTotDTE>
+        <TpoDTE>33</TpoDTE>
+        <NroDTE>1</NroDTE>
+      </SubTotDTE>
+    </Caratula>
+    <DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+      <Documento ID="DTE_ML_33_9544707">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>33</TipoDTE>
+            <Folio>9544707</Folio>
+            <FchEmis>2025-07-10</FchEmis>
+            <IndServicio>3</IndServicio>
+            <FmaPago>1</FmaPago>
+            <MedioPago>OT</MedioPago>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>77398220-1</RUTEmisor>
+            <RznSoc>MercadoLibre Chile Ltda.</RznSoc>
+            <GiroEmis>Otras Actividades de Venta al por Menor en Comercios no Especializados</GiroEmis>
+            <Acteco>619090</Acteco>
+            <DirOrigen>Avenida Apoquindo,4800,Torre 2, Oficina 2101</DirOrigen>
+            <CmnaOrigen>Las Condes</CmnaOrigen>
+            <CiudadOrigen>Santiago</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>77898100-9</RUTRecep>
+            <RznSocRecep>IMPORTADORA Y COMERCIALIZADORA NANDA SPA</RznSocRecep>
+            <GiroRecep>VENTA AL POR MENOR DE PRENDAS Y ACCESORI</GiroRecep>
+            <DirRecep>Eusebio Lillo 333</DirRecep>
+            <CmnaRecep>Recoleta</CmnaRecep>
+            <CiudadRecep>RM (Metropolitana)</CiudadRecep>
+          </Receptor>
+          <Totales>
+            <MntNeto>18370992</MntNeto>
+            <MntExe>0</MntExe>
+            <TasaIVA>19</TasaIVA>
+            <IVA>3490488</IVA>
+            <MntTotal>21861480</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <NmbItem>Servicios de publicación y ventas en MercadoLibre.Com</NmbItem>
+          <MontoItem>18370992</MontoItem>
+        </Detalle>
+        <TED version="1.0">
+          <DD>
+            <RE>77398220-1</RE>
+            <TD>33</TD>
+            <F>9544707</F>
+            <FE>2025-07-10</FE>
+            <RR>77898100-9</RR>
+            <RSR>IMPORTADORA Y COMERCIALIZADORA NANDA SPA</RSR>
+            <MNT>21861480</MNT>
+            <IT1>Servicios de publicación y ventas en Mer</IT1>
+            <CAF version="1.0">
+              <DA>
+                <RE>77398220-1</RE>
+                <RS>MERCADOLIBRE CHILE LIMITADA</RS>
+                <TD>33</TD>
+                <RNG>
+                  <D>9522689</D>
+                  <H>9642688</H>
+                </RNG>
+                <FA>2025-06-24</FA>
+                <RSAPK>
+                  <M>uviUiv2btOyn2JFDNcvIEiLbGFdqBRRXbom34IohRGXUKnPG8qadYVgh8dx+ddt31e86Hl5fpWIns8mTee4UDw==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo="SHA1withRSA">hLNNUDw6HHJaG7vh3812swoIPkW4uG0J/uzuEehzkM2+ODCbfI0heMfyWvihziIAOz2JYFk+aHaH9O+AFwTxIQ==</FRMA>
+            </CAF>
+            <TSTED>2025-07-11T15:55:43</TSTED>
+          </DD>
+          <FRMT algoritmo="SHA1withRSA">CkYpBCR7M8J6z1R2QxnoN1Rgzn4IJHsWogSBQCEO+PW7cvnbbjy3bgS1W3XysOj6RS7FPj6VUzJjsY9G/tTOzA==</FRMT>
+        </TED>
+        <TmstFirma>2025-07-11T15:55:43</TmstFirma>
+      </Documento>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#DTE_ML_33_9544707">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>/Nzh6yfLBMGD6Yz6tSl8Gkmmo8Y=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>ANLiCHrVKjJRbjiU43slB0RfWlzMPIbsv640cBe8P3OThwsNgBElB3PgO2/ZK6eWa08qOckB6PXc
+WKF/ooNc8qOilZcxe8xbXILQ9mc4x519oCz35O7YbaoDDSyLGA0GV+EGBncwywbQQAOuxOTlO8Mg
+h/k0o9RwEyiXh2zwLvNMgaqfVss18JC3W+FTbOXYocIq6wjgIvsaE1B+G4WkAIfeRuCwzMjF4E9N
+7RVV6GyTf0KU/+2R3Q/u+PTCQsvpOhA7E9GRQ0fkA+F9l8WGsgJvr4IF0AWDKxqy7nzJbigeaQaa
+zE80DNBl1g2DNx6iI8J/xlYcfcVdWHmoVCXp3w==</SignatureValue>
+        <KeyInfo>
+          <KeyValue>
+            <RSAKeyValue>
+              <Modulus>k06zu4tGBqfhAzu+lzX5Byqv86cdu5U/OYXmYppqKSFJvOFSgswjszk2FeU9EnqNFKxxUnKGwl2e
+qGKjysqnDg3qGGL/oKSjfK1jJmsUjP+b6nyJBAeZkJ3T34Hm+VOR8zN8PfwbNIGhbyJ5EMkPqq4o
+84AoUDl3EbbyFwCk96bzqpAFUm6EEWOJTpxMz334E7kmBrjfE9qg++U7hg44njI7vQTxyyf6cvre
+XM90eCNvhz/SqzF0UEAQ1gHOry57rZLdh810cfXiIQwRfeS8PLbwpqabA/Al9wEEzh98t3yVBV+8
+lXjkMwNpyn2PULgLHvbdOwTm4fl8FG1lmUqBTQ==</Modulus>
+              <Exponent>AQAB</Exponent>
+            </RSAKeyValue>
+          </KeyValue>
+          <X509Data>
+            <X509Certificate>MIIH4zCCBcugAwIBAgIKJUkvmgABAAtj/TANBgkqhkiG9w0BAQsFADCBvzELMAkGA1UEBhMCQ0wx
+HTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQHEwhTYW50aWFnbzEUMBIGA1UE
+ChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhMR4wHAYDVQQD
+ExVFLUNFUlRDSElMRSBDQSBGRVMgMDIxJjAkBgkqhkiG9w0BCQEWF3NjbGllbnRlQGUtY2VydGNo
+aWxlLmNsMB4XDTI0MDgyODIwNTQ0MloXDTI3MDgyODIwNTQ0Mlowgd8xCzAJBgNVBAYTAkNMMSIw
+IAYDVQQIExlNRVRST1BPTElUQU5BIERFIFNBTlRJQUdPMREwDwYDVQQHEwhTQU5USUFHTzEsMCoG
+A1UEChMjSkVTU0lDQSBNQVJDRUxBIEZVRU5URUFMQkEgQ0FSUkFTQ08xCjAIBgNVBAsMASoxLDAq
+BgNVBAMTI0pFU1NJQ0EgTUFSQ0VMQSBGVUVOVEVBTEJBIENBUlJBU0NPMTEwLwYJKoZIhvcNAQkB
+FiJKRVNTSUNBLkZVRU5URUFMQkFATUVSQ0FET0xJQlJFLkNMMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEAk06zu4tGBqfhAzu+lzX5Byqv86cdu5U/OYXmYppqKSFJvOFSgswjszk2FeU9
+EnqNFKxxUnKGwl2eqGKjysqnDg3qGGL/oKSjfK1jJmsUjP+b6nyJBAeZkJ3T34Hm+VOR8zN8Pfwb
+NIGhbyJ5EMkPqq4o84AoUDl3EbbyFwCk96bzqpAFUm6EEWOJTpxMz334E7kmBrjfE9qg++U7hg44
+njI7vQTxyyf6cvreXM90eCNvhz/SqzF0UEAQ1gHOry57rZLdh810cfXiIQwRfeS8PLbwpqabA/Al
+9wEEzh98t3yVBV+8lXjkMwNpyn2PULgLHvbdOwTm4fl8FG1lmUqBTQIDAQABo4ICvTCCArkwggFf
+BgNVHSAEggFWMIIBUjCCAU4GCCsGAQQBw1IFMIIBQDA9BggrBgEFBQcCARYxaHR0cHM6Ly93d3cu
+ZS1jZXJ0Y2hpbGUuY2wvcG9saXRpY2FzLXktcHJhY3RpY2FzLzCB/gYIKwYBBQUHAgIwgfEege4A
+RQBsACAAcgBlAHMAcABvAG4AZABlAHIAIABlAHMAdABlACAAZgBvAHIAbQB1AGwAYQByAGkAbwAg
+AGUAcwAgAHUAbgAgAHIAZQBxAHUAaQBzAGkAdABvACAAaQBuAGQAaQBzAHAAZQBuAHMAYQBiAGwA
+ZQAgAHAAYQByAGEAIABkAGEAcgAgAGkAbgBpAGMAaQBvACAAYQBsACAAcAByAG8AYwBlAHMAbwAg
+AGQAZQAgAGMAZQByAHQAaQBmAGkAYwBhAGMAaQDzAG4ALgAgAFAAbwBzAHQAZQByAGkAbwByAG0A
+ZQBuAHQAZQAsMB0GA1UdDgQWBBTshh0JbLOv5ZA9zYE+tkQUKcltuDALBgNVHQ8EBAMCBPAwIwYD
+VR0RBBwwGqAYBggrBgEEAcEBAaAMFgoxMzY5ODI2OC0wMB8GA1UdIwQYMBaAFHTWIbP0WugtfLtZ
+BmND72m0OpMEMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuZWNlcnRjaGlsZS5jbC9FLUNF
+UlRDSElMRUNBRkVTMDIuY3JsMD0GCCsGAQUFBwEBBDEwLzAtBggrBgEFBQcwAYYhaHR0cDovL29j
+c3BmZXMuZWNlcnRjaGlsZS5jbC9vY3NwMDwGCSsGAQQBgjcVBwQvMC0GJSsGAQQBgjcVCIHd0k2X
+1DqGiZ0Gh4jOb4OvzGBFhtLsCIbHyn0CAWQCAQcwIwYDVR0SBBwwGqAYBggrBgEEAcEBAqAMFgo5
+NjkyODE4MC01MA0GCSqGSIb3DQEBCwUAA4ICAQA0C2CjLrdeYGkhLackiJL24BPuMeo9F4DCLIv9
+DDapERVy2jtv8fm+kXKdvFdH0mjRrWQotSXp5Q4q8YKs7qs6qpYqNEyD5yKpYqPFEre9le4L8VvX
+kp9N+fcUQ9SbiUTdR7HeBjhuiQPala+qhMUEFuupYVurf0SwBWtUOmVPe6Vn0Ce2wU2epw+bsQ/L
+mb6QdVcwtxYvVkUpEM9GzrFpv9mK9GBRhuCN2qe4O8WetKl5vAEX8AQFlh+kGpQ0W0kqKbrx2soi
+clakuzCEIwpM7z8XcRsW8QkjgJaAWJvyUYGdPfFB7JYfLG6H6dSeN68BG2JWxyW3sKnFO+oCeulv
+pmRmtij+i79mgJ2+VumswGAEgNS3OaOfwwd+Cv4neGhk87Ye4m5+doaZVK59AlpL7drZzvmqpISg
+oHohTPGYyD+GdMpVkzAMGyn52OBNXxIY5/7i2LKHNhaDPnBP1N3ohNUUrE8O/1X7n5iJwXIclWwg
+1ZEe9Agnzbd27YQxQmkogKtahymw+6KvkY79g6T4HgiHYGgeSYdGDE8NR0yi1PZRD0HhoSYiOZ+F
+B0VjQm9AM7U6u1ttu9i96ioTv09o94LG7yXB+rANs2OYcXB/qNYGBelrYhha/tyAod/vVdpxE2l4
+UjSMlCqKxokS4hevXcEYnsFhKZz9NIvzEjaxDQ==</X509Certificate>
+          </X509Data>
+        </KeyInfo>
+      </Signature>
+    </DTE>
+  </SetDTE>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="#envio_2507111555421376925">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>p6nEqmbBvfX5NaXFvz9wMj0Nf/w=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>WvvJzROLrBgCWco+ViE1yOCVvetbD5/kk2VZZYRt8YiqnFfATNhrSg1+JmQsUexnlFMNc9RjntQu
+S02R+s/J/ijpr3SHvMrRAB0tcBKr3QytaQquA7PPbihxzm2huK5kvsMAHHrm7WnFkJ4jwicPL9h1
+tB3VaJbZXzKMlhLb+TInt1lJUZNsxlYyuyMDBgi0AEFs4i0uQUPBZOgzieWU2Ath+otD879hrCaT
+hKqFtBuOkxhYzu2LxXCXA+B40wM8VyXN9yvit3NdRPFmRSixZQLRCcfD1E3EjPFc8XcnHoqL+5Hl
+96DQoi1f5mLSD7QNuhpkSvOkEWsdEKq57gZfrg==</SignatureValue>
+    <KeyInfo>
+      <KeyValue>
+        <RSAKeyValue>
+          <Modulus>k06zu4tGBqfhAzu+lzX5Byqv86cdu5U/OYXmYppqKSFJvOFSgswjszk2FeU9EnqNFKxxUnKGwl2e
+qGKjysqnDg3qGGL/oKSjfK1jJmsUjP+b6nyJBAeZkJ3T34Hm+VOR8zN8PfwbNIGhbyJ5EMkPqq4o
+84AoUDl3EbbyFwCk96bzqpAFUm6EEWOJTpxMz334E7kmBrjfE9qg++U7hg44njI7vQTxyyf6cvre
+XM90eCNvhz/SqzF0UEAQ1gHOry57rZLdh810cfXiIQwRfeS8PLbwpqabA/Al9wEEzh98t3yVBV+8
+lXjkMwNpyn2PULgLHvbdOwTm4fl8FG1lmUqBTQ==</Modulus>
+          <Exponent>AQAB</Exponent>
+        </RSAKeyValue>
+      </KeyValue>
+      <X509Data>
+        <X509Certificate>MIIH4zCCBcugAwIBAgIKJUkvmgABAAtj/TANBgkqhkiG9w0BAQsFADCBvzELMAkGA1UEBhMCQ0wx
+HTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQHEwhTYW50aWFnbzEUMBIGA1UE
+ChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhMR4wHAYDVQQD
+ExVFLUNFUlRDSElMRSBDQSBGRVMgMDIxJjAkBgkqhkiG9w0BCQEWF3NjbGllbnRlQGUtY2VydGNo
+aWxlLmNsMB4XDTI0MDgyODIwNTQ0MloXDTI3MDgyODIwNTQ0Mlowgd8xCzAJBgNVBAYTAkNMMSIw
+IAYDVQQIExlNRVRST1BPTElUQU5BIERFIFNBTlRJQUdPMREwDwYDVQQHEwhTQU5USUFHTzEsMCoG
+A1UEChMjSkVTU0lDQSBNQVJDRUxBIEZVRU5URUFMQkEgQ0FSUkFTQ08xCjAIBgNVBAsMASoxLDAq
+BgNVBAMTI0pFU1NJQ0EgTUFSQ0VMQSBGVUVOVEVBTEJBIENBUlJBU0NPMTEwLwYJKoZIhvcNAQkB
+FiJKRVNTSUNBLkZVRU5URUFMQkFATUVSQ0FET0xJQlJFLkNMMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEAk06zu4tGBqfhAzu+lzX5Byqv86cdu5U/OYXmYppqKSFJvOFSgswjszk2FeU9
+EnqNFKxxUnKGwl2eqGKjysqnDg3qGGL/oKSjfK1jJmsUjP+b6nyJBAeZkJ3T34Hm+VOR8zN8Pfwb
+NIGhbyJ5EMkPqq4o84AoUDl3EbbyFwCk96bzqpAFUm6EEWOJTpxMz334E7kmBrjfE9qg++U7hg44
+njI7vQTxyyf6cvreXM90eCNvhz/SqzF0UEAQ1gHOry57rZLdh810cfXiIQwRfeS8PLbwpqabA/Al
+9wEEzh98t3yVBV+8lXjkMwNpyn2PULgLHvbdOwTm4fl8FG1lmUqBTQIDAQABo4ICvTCCArkwggFf
+BgNVHSAEggFWMIIBUjCCAU4GCCsGAQQBw1IFMIIBQDA9BggrBgEFBQcCARYxaHR0cHM6Ly93d3cu
+ZS1jZXJ0Y2hpbGUuY2wvcG9saXRpY2FzLXktcHJhY3RpY2FzLzCB/gYIKwYBBQUHAgIwgfEege4A
+RQBsACAAcgBlAHMAcABvAG4AZABlAHIAIABlAHMAdABlACAAZgBvAHIAbQB1AGwAYQByAGkAbwAg
+AGUAcwAgAHUAbgAgAHIAZQBxAHUAaQBzAGkAdABvACAAaQBuAGQAaQBzAHAAZQBuAHMAYQBiAGwA
+ZQAgAHAAYQByAGEAIABkAGEAcgAgAGkAbgBpAGMAaQBvACAAYQBsACAAcAByAG8AYwBlAHMAbwAg
+AGQAZQAgAGMAZQByAHQAaQBmAGkAYwBhAGMAaQDzAG4ALgAgAFAAbwBzAHQAZQByAGkAbwByAG0A
+ZQBuAHQAZQAsMB0GA1UdDgQWBBTshh0JbLOv5ZA9zYE+tkQUKcltuDALBgNVHQ8EBAMCBPAwIwYD
+VR0RBBwwGqAYBggrBgEEAcEBAaAMFgoxMzY5ODI2OC0wMB8GA1UdIwQYMBaAFHTWIbP0WugtfLtZ
+BmND72m0OpMEMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuZWNlcnRjaGlsZS5jbC9FLUNF
+UlRDSElMRUNBRkVTMDIuY3JsMD0GCCsGAQUFBwEBBDEwLzAtBggrBgEFBQcwAYYhaHR0cDovL29j
+c3BmZXMuZWNlcnRjaGlsZS5jbC9vY3NwMDwGCSsGAQQBgjcVBwQvMC0GJSsGAQQBgjcVCIHd0k2X
+1DqGiZ0Gh4jOb4OvzGBFhtLsCIbHyn0CAWQCAQcwIwYDVR0SBBwwGqAYBggrBgEEAcEBAqAMFgo5
+NjkyODE4MC01MA0GCSqGSIb3DQEBCwUAA4ICAQA0C2CjLrdeYGkhLackiJL24BPuMeo9F4DCLIv9
+DDapERVy2jtv8fm+kXKdvFdH0mjRrWQotSXp5Q4q8YKs7qs6qpYqNEyD5yKpYqPFEre9le4L8VvX
+kp9N+fcUQ9SbiUTdR7HeBjhuiQPala+qhMUEFuupYVurf0SwBWtUOmVPe6Vn0Ce2wU2epw+bsQ/L
+mb6QdVcwtxYvVkUpEM9GzrFpv9mK9GBRhuCN2qe4O8WetKl5vAEX8AQFlh+kGpQ0W0kqKbrx2soi
+clakuzCEIwpM7z8XcRsW8QkjgJaAWJvyUYGdPfFB7JYfLG6H6dSeN68BG2JWxyW3sKnFO+oCeulv
+pmRmtij+i79mgJ2+VumswGAEgNS3OaOfwwd+Cv4neGhk87Ye4m5+doaZVK59AlpL7drZzvmqpISg
+oHohTPGYyD+GdMpVkzAMGyn52OBNXxIY5/7i2LKHNhaDPnBP1N3ohNUUrE8O/1X7n5iJwXIclWwg
+1ZEe9Agnzbd27YQxQmkogKtahymw+6KvkY79g6T4HgiHYGgeSYdGDE8NR0yi1PZRD0HhoSYiOZ+F
+B0VjQm9AM7U6u1ttu9i96ioTv09o94LG7yXB+rANs2OYcXB/qNYGBelrYhha/tyAod/vVdpxE2l4
+UjSMlCqKxokS4hevXcEYnsFhKZz9NIvzEjaxDQ==</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</EnvioDTE>

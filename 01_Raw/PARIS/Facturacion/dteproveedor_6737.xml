@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioDTE xmlns="http://www.sii.cl/SiiDte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd">
+  <SetDTE ID="EDTE201169600D1852722279">
+    <Caratula version="1.0">
+      <RutEmisor>81201000-K</RutEmisor>
+      <RutEnvia>13039736-0</RutEnvia>
+      <RutReceptor>77898100-9</RutReceptor>
+      <FchResol>2005-03-22</FchResol>
+      <NroResol>36</NroResol>
+      <TmstFirmaEnv>2025-12-26T07:41:50</TmstFirmaEnv>
+      <SubTotDTE>
+        <TpoDTE>33</TpoDTE>
+        <NroDTE>1</NroDTE>
+      </SubTotDTE>
+    </Caratula>
+    <DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+      <Documento ID="DOCT33F25813166P2426">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>33</TipoDTE>
+            <Folio>25813166</Folio>
+            <FchEmis>2025-12-22</FchEmis>
+            <IndServicio>3</IndServicio>
+            <MntBruto>1</MntBruto>
+            <FmaPago>1</FmaPago>
+            <FchVenc>2025-12-22</FchVenc>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>81201000-K</RUTEmisor>
+            <RznSoc>CENCOSUD RETAIL S.A.</RznSoc>
+            <GiroEmis>Comercial</GiroEmis>
+            <Acteco>471100</Acteco>
+            <Sucursal>1762</Sucursal>
+            <DirOrigen>AV. LOS TRAPENSES 3515</DirOrigen>
+            <CmnaOrigen>LO BARNECHEA</CmnaOrigen>
+            <CiudadOrigen>SANTIAGO</CiudadOrigen>
+            <CdgVendedor>43</CdgVendedor>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>77898100-9</RUTRecep>
+            <CdgIntRecep>778981009</CdgIntRecep>
+            <RznSocRecep>IMPORT Y COMERC NANDA LTDA</RznSocRecep>
+            <GiroRecep>VENT PREN VEST</GiroRecep>
+            <DirRecep>EUCEBIO LILLO 333</DirRecep>
+            <CmnaRecep>RECOLETA</CmnaRecep>
+            <CiudadRecep>SANTIAGO</CiudadRecep>
+          </Receptor>
+          <RUTSolicita>14493264-1</RUTSolicita>
+          <Totales>
+            <MntNeto>59302</MntNeto>
+            <MntExe>0</MntExe>
+            <TasaIVA>19.0</TasaIVA>
+            <IVA>11267</IVA>
+            <MntTotal>70569</MntTotal>
+            <MontoNF>0</MontoNF>
+            <MontoPeriodo>0</MontoPeriodo>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>2499114039903</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PAN BAGEL TRADICIONAL JUMBO 4 UN</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>3990</PrcItem>
+          <MontoItem>3990</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>2</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>2499114039903</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PAN BAGEL TRADICIONAL JUMBO 4 UN</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>3990</PrcItem>
+          <MontoItem>3990</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>3</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>8436551192291</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PAN TOSTADO VALENTINA ROMERO 150GR</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>1690</PrcItem>
+          <MontoItem>1690</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>4</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7804627651088</VlrCodigo>
+          </CdgItem>
+          <NmbItem>CHIPS MIX DE VEGETALES BUKA 150G</NmbItem>
+          <DscItem>JUMBO OFERTA $ 400</DscItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>2890</PrcItem>
+          <DescuentoMonto>400</DescuentoMonto>
+          <MontoItem>2490</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>5</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7896211830603</VlrCodigo>
+          </CdgItem>
+          <NmbItem>TENEDORES DESECHABLE DROP IT 10UN</NmbItem>
+          <QtyItem>3.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>1090</PrcItem>
+          <MontoItem>3270</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>6</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7805475006365</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PLATO CANA AZU 22CM BIO DROP IT 20UN</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>4790</PrcItem>
+          <MontoItem>4790</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>7</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7805475011697</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PLATO GRANDE CARTON 12UN</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>2290</PrcItem>
+          <MontoItem>2290</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>8</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7805475012359</VlrCodigo>
+          </CdgItem>
+          <NmbItem>VASO BICOLOR DORADO 500CC 10 UN</NmbItem>
+          <QtyItem>2.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>2090</PrcItem>
+          <MontoItem>4180</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>9</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7806500000228</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PANUELO NORMAL ELITE 18UN</NmbItem>
+          <DscItem>JUMBO OFERTA $ 1300</DscItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>4290</PrcItem>
+          <DescuentoMonto>1300</DescuentoMonto>
+          <MontoItem>2990</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>10</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7806500406747</VlrCodigo>
+          </CdgItem>
+          <NmbItem>TOALLA ELITE DECO MAXI ROLLO 20MT 2UN</NmbItem>
+          <DscItem>JUMBO OFERTA $ 940</DscItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>3790</PrcItem>
+          <DescuentoMonto>940</DescuentoMonto>
+          <MontoItem>2850</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>11</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7806500241416</VlrCodigo>
+          </CdgItem>
+          <NmbItem>SERVILLETA NOVA CLASICA COCTEL 50UN</NmbItem>
+          <QtyItem>2.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>410</PrcItem>
+          <MontoItem>820</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>12</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7805475012366</VlrCodigo>
+          </CdgItem>
+          <NmbItem>VASO BICOLOR PLATEADO 500CC 10 UN</NmbItem>
+          <QtyItem>2.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>2090</PrcItem>
+          <MontoItem>4180</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>13</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7806500406792</VlrCodigo>
+          </CdgItem>
+          <NmbItem>TOALLA DE PAPEL NOVA EVOLUTION X3</NmbItem>
+          <DscItem>OFERTA SEMANAL $ 1400</DscItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>4090</PrcItem>
+          <DescuentoMonto>1400</DescuentoMonto>
+          <MontoItem>2690</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>14</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7802095185111</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PANCHITOS CON SESAMO 280GR</NmbItem>
+          <DscItem>JUMBO OFERTA $ 300</DscItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>2990</PrcItem>
+          <DescuentoMonto>300</DescuentoMonto>
+          <MontoItem>2690</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>15</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7801930018270</VlrCodigo>
+          </CdgItem>
+          <NmbItem>JAMON PIERNA ARTESANAL RDA 200 GR</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>3150</PrcItem>
+          <MontoItem>3150</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>16</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7802000020230</VlrCodigo>
+          </CdgItem>
+          <NmbItem>SNACK DORITOS QUESO 380 GR</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>4050</PrcItem>
+          <MontoItem>4050</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>17</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7802000013577</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PAPAS FRITAS LAY S ARTESANAS SAL 270 GR</NmbItem>
+          <DscItem>JUMBO OFERTA $ 440</DscItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>3430</PrcItem>
+          <DescuentoMonto>440</DescuentoMonto>
+          <MontoItem>2990</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>18</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7802420010323</VlrCodigo>
+          </CdgItem>
+          <NmbItem>SNACK CRUNCHIS MANI MARCO POLO 200 GR</NmbItem>
+          <DscItem>JUMBO OFERTA $ 490</DscItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>1880</PrcItem>
+          <DescuentoMonto>490</DescuentoMonto>
+          <MontoItem>1390</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>19</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7802095000667</VlrCodigo>
+          </CdgItem>
+          <NmbItem>SNACK TORTILLA VILLANOS CHIPS RED 320 GR</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>2520</PrcItem>
+          <MontoItem>2520</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>20</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7807910046561</VlrCodigo>
+          </CdgItem>
+          <NmbItem>QUESO CREM POTE 200G CUISINE CO NBE MP</NmbItem>
+          <DscItem>JUMBO OFERTA $ 600</DscItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>2690</PrcItem>
+          <DescuentoMonto>600</DescuentoMonto>
+          <MontoItem>2090</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>21</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7802225688994</VlrCodigo>
+          </CdgItem>
+          <NmbItem>GALLETAS CRACKERS TRADICIONAL 3PACK 270G</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>1390</PrcItem>
+          <MontoItem>1390</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>22</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>8410134025220</VlrCodigo>
+          </CdgItem>
+          <NmbItem>ACEITUNA FRAGATA RELLE D PASTA ALCA 150G</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>2290</PrcItem>
+          <MontoItem>2290</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>23</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>7803111003303</VlrCodigo>
+          </CdgItem>
+          <NmbItem>CARAMELIZ COCKTAIL PCH PIMIENTO 360 GR</NmbItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>3899</PrcItem>
+          <MontoItem>3899</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>24</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>EAN13</TpoCodigo>
+            <VlrCodigo>614143280443</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PIMIENTO CARAMELIZADO C VINO OPORTO</NmbItem>
+          <DscItem>JUMBO OFERTA $ 600</DscItem>
+          <QtyItem>1.0</QtyItem>
+          <UnmdItem>Und</UnmdItem>
+          <PrcItem>4490</PrcItem>
+          <DescuentoMonto>600</DescuentoMonto>
+          <MontoItem>3890</MontoItem>
+        </Detalle>
+        <SubTotInfo>
+          <NroSTI>1</NroSTI>
+          <GlosaSTI>SUBTOTAL</GlosaSTI>
+          <ValSubtotSTI>70569</ValSubtotSTI>
+        </SubTotInfo>
+        <TED version="1.0">
+          <DD>
+            <RE>81201000-K</RE>
+            <TD>33</TD>
+            <F>25813166</F>
+            <FE>2025-12-22</FE>
+            <RR>77898100-9</RR>
+            <RSR>IMPORT Y COMERC NANDA LTDA</RSR>
+            <MNT>70569</MNT>
+            <IT1>PAN BAGEL TRADICIONAL JUMBO 4 UN</IT1>
+            <CAF version="1.0">
+              <DA>
+                <RE>81201000-K</RE>
+                <RS>CENCOSUD RETAIL S.A.</RS>
+                <TD>33</TD>
+                <RNG>
+                  <D>25797535</D>
+                  <H>25847534</H>
+                </RNG>
+                <FA>2025-12-01</FA>
+                <RSAPK>
+                  <M>uR7PJ8624EAwOjNu7Twsk+Q+jgLoJ4FupR8nLp0TbFUpMLN3A1YZ/yRtJc2D1XrPNAAOXjGOd80fDWWMkVW+Jw==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo="SHA1withRSA">bBW7+UmrQr4lkjEJXKWr4h6J44O8Z6Fky4O4AybAdmBaKxw2NARGU4ze8XTWarajMICinjxMoy23Lm+RqL9iWA==</FRMA>
+            </CAF>
+            <TSTED>2025-12-22T17:25:02</TSTED>
+          </DD>
+          <FRMT algoritmo="SHA1withRSA">GbUK1Tn5LRHiki+7d/ornntN9jYTTCfPm+YBEeulKDwnwa+4S5YEpjYvyU5mtojumLiHmyawDA4i
+7MBvmSm3OA==</FRMT>
+        </TED>
+        <TmstFirma>2025-12-22T17:25:02</TmstFirma>
+      </Documento>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#DOCT33F25813166P2426">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>akcWdi3vnwLqSoqQ7NaiQ5LB7cg=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>CrfgfUx0zgA8sWAnMc2fYlFVNRS67bIpoUlTcmqZ8KFtdWqnzJhfz7SOdkJfYUmqJDJ9wwcc4OR2
+2RSNPKBeL9EgbW3zqbaPwa4Qa2eFgIz4VOje73nk/htY4STmHz1jQyqbDeIWlnBXR4rHbRvjOdAC
+HiqAGe0rKbizOgn7Ynio3o8e5QKgVlGrpHUBN/YrHU3wW91OP46kVS76LW1bMBy26vPvXGAYKCGX
+cRIOR0oE/JsC37uRo2J9k2zOfNqeLKMq6Dxdu72z3UXoAD8te3q4Ym9UlA34H6F4l8E5JDBJFAQE
+qexnv1ZKowWSyaF7Cwb3lrLwzO5eBdfd4aiHPw==</SignatureValue>
+        <KeyInfo>
+          <KeyValue>
+            <RSAKeyValue>
+              <Modulus>wd4H34Tv3PJ0pZa9vptWZ2sEMZiHEm2vw+Vz/mx1GbT62lLUGGIvkPjHLRmagt53xWDGhAtl6VD3
+t0pyd4JzH0u5wp8tpyn0IvioDXzBD9TL9VEyekiyLNoqmoqe9rCoxDLsENzVfeENNXIFoQAxpsoQ
+KylQnPgAxPXl+zv12DJ6bvD/SG2Rc24+BMDom1f8NvxHVDRWrjatxbTxjzPw+yriHvqe4Hs8LpJe
+vxa3xLbzB+sm3HvsJlYcgfbEd/f4TFvI0s7wZzMjhYbNGO8sJ0np2E7xPdaPvX1WLBWvZfW+kN0X
+y8gM7Tc2QFJ593ojAsX3sLoiLNY7sVoGmZVIXQ==</Modulus>
+              <Exponent>AQAB</Exponent>
+            </RSAKeyValue>
+          </KeyValue>
+          <X509Data>
+            <X509Certificate>MIIGjzCCBXegAwIBAgIDBEMCMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJDTDEYMBYGA1UE
+ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29tIEF1dG9yaWRhZCBDZXJ0aWZp
+Y2Fkb3JhIENsYXNlIDMgUGVyc29uYSBOYXR1cmFsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A
+YWNlcHRhLmNvbTETMBEGA1UEBRMKOTY5MTkwNTAtODAeFw0yNDA0MTgyMDA1MTVaFw0yNzA0MTgy
+MDA1MTVaMIGWMQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMSgwJgYDVQQD
+Ex9DQVRBTElOQSBNQVJJQSBWQUxERVJSQU1BIFJPTkNPMS4wLAYJKoZIhvcNAQkBFh9DQVRBTElO
+QS5WQUxERVJSQU1BQENFTkNPU1VELkNMMRMwEQYDVQQFEwoxMzAzOTczNi0wMIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwd4H34Tv3PJ0pZa9vptWZ2sEMZiHEm2vw+Vz/mx1GbT62lLU
+GGIvkPjHLRmagt53xWDGhAtl6VD3t0pyd4JzH0u5wp8tpyn0IvioDXzBD9TL9VEyekiyLNoqmoqe
+9rCoxDLsENzVfeENNXIFoQAxpsoQKylQnPgAxPXl+zv12DJ6bvD/SG2Rc24+BMDom1f8NvxHVDRW
+rjatxbTxjzPw+yriHvqe4Hs8LpJevxa3xLbzB+sm3HvsJlYcgfbEd/f4TFvI0s7wZzMjhYbNGO8s
+J0np2E7xPdaPvX1WLBWvZfW+kN0Xy8gM7Tc2QFJ593ojAsX3sLoiLNY7sVoGmZVIXQIDAQABo4IC
+0jCCAs4wHwYDVR0jBBgwFoAUqv29xek3TfaZTVeOwXEa+evDBuMwHQYDVR0OBBYEFAKpdf87VTcp
+hNOdZMfvAbGHLgl9MAsGA1UdDwQEAwIE8DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwQw
+EQYJYIZIAYb4QgEBBAQDAgWgMIH6BgNVHSAEgfIwge8wgewGCCsGAQQBtWsCMIHfMDEGCCsGAQUF
+BwIBFiVodHRwczovL2FjZzQuYWNlcHRhLmNvbS9DUFMtQWNlcHRhY29tMIGpBggrBgEFBQcCAjCB
+nDAWFg9BY2VwdGEuY29tIFMuQS4wAwIBAhqBgUVsIHRpdHVsYXIgaGEgc2lkbyB2YWxpZGFkbyBl
+biBmb3JtYSBwcmVzZW5jaWFsLCBxdWVkYW5kbyBoYWJpbGl0YWRvIGVsIENlcnRpZmljYWRvIHBh
+cmEgdXNvIHRyaWJ1dGFyaW8sIHBhZ29zLCBjb21lcmNpbyB5IG90cm9zLjBaBgNVHRIEUzBRoBgG
+CCsGAQQBwQECoAwWCjk2OTE5MDUwLTigJAYIKwYBBQUHCAOgGDAWDAo5NjkxOTA1MC04BggrBgEE
+AcEBAoEPaW5mb0BhY2VwdGEuY29tMGoGA1UdEQRjMGGgGAYIKwYBBAHBAQGgDBYKMTMwMzk3MzYt
+MKAkBggrBgEFBQcIA6AYMBYMCjEzMDM5NzM2LTAGCCsGAQQBwQECgR9DQVRBTElOQS5WQUxERVJS
+QU1BQENFTkNPU1VELkNMMEcGCCsGAQUFBwEBBDswOTA3BggrBgEFBQcwAYYraHR0cHM6Ly9hY2c0
+LmFjZXB0YS5jb20vYWNnNC9vY3NwL0NsYXNlMy1HNDA/BgNVHR8EODA2MDSgMqAwhi5odHRwczov
+L2FjZzQuYWNlcHRhLmNvbS9hY2c0L2NybC9DbGFzZTMtRzQuY3JsMA0GCSqGSIb3DQEBCwUAA4IB
+AQBVoXWEBhsMrwVNbEM0aIMU3OOJshBrYxeA1RJE+QRIlkSbFwzC1+wphmbG7aYqMwEkIbRLC9up
+RV5An7g7FIcgbKUNa70YmmNLqDOGayUvzMK1jB1l+n+D+jNJsF9zDWD0/TnBfhphyrntzA1RiMl1
+taFUo7Nm6OpejZB1DV7nhRn/i4ZPrf+DFYiP7j9rIY8TZYzGIzmCVHJg/4PebaPjljmq6f1ftFdp
+S3DsU5COTaCeX69KCyODKebT4jf2LR0qydKztYW9xcGF/rLThVCJbLUIyUGSkKX95PuS2iUofr8Y
+WjqQOeWx8rDb9XIiytq5kll4cNrf7sDM88yfh4FK</X509Certificate>
+          </X509Data>
+        </KeyInfo>
+      </Signature>
+    </DTE>
+  </SetDTE>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="#EDTE201169600D1852722279">
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>zyUJTGFHSFf79F2VD8T4MH2zOwA=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+    bpo86let7x2+8z8iSaXQQ26lL6z+qwTx9Pdz7R7jz9FcvwTRIAErm98s3PGZ4Egy
+    jSsVI5m4y9w2ILN7InB/22y1rThO9pU9q1AOC4FwkGSnw+byBuglOzOM6c2iCmjd
+    V2G+GEHh0Wm1B8jiq7MBC8ktEab23diQOjYxwfUOPmLGWUQykOayJMKNTKCWk8tB
+    svx6nt869Fbp15v4WBxITZ2W0HCGEDdiAzPQXJDrbL/GfmyUF79ewRGz0dP45Vgi
+    TjTNh/eCxlVs1MU90ipGFnrsbklCVv4jJeQ5Fgc5w2DISsOoTqi6Wf2b4Ue9z2Hd
+    BrH/6j5KQeah3/AOw00rfQ==
+  </SignatureValue>
+    <KeyInfo>
+      <KeyValue>
+        <RSAKeyValue>
+          <Modulus>
+          wd4H34Tv3PJ0pZa9vptWZ2sEMZiHEm2vw+Vz/mx1GbT62lLUGGIvkPjHLRmagt53
+          xWDGhAtl6VD3t0pyd4JzH0u5wp8tpyn0IvioDXzBD9TL9VEyekiyLNoqmoqe9rCo
+          xDLsENzVfeENNXIFoQAxpsoQKylQnPgAxPXl+zv12DJ6bvD/SG2Rc24+BMDom1f8
+          NvxHVDRWrjatxbTxjzPw+yriHvqe4Hs8LpJevxa3xLbzB+sm3HvsJlYcgfbEd/f4
+          TFvI0s7wZzMjhYbNGO8sJ0np2E7xPdaPvX1WLBWvZfW+kN0Xy8gM7Tc2QFJ593oj
+          AsX3sLoiLNY7sVoGmZVIXQ==
+        </Modulus>
+          <Exponent>AQAB</Exponent>
+        </RSAKeyValue>
+      </KeyValue>
+      <X509Data>
+        <X509Certificate>
+        MIIGjzCCBXegAwIBAgIDBEMCMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+        TDEYMBYGA1UEChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29t
+        IEF1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhIENsYXNlIDMgUGVyc29uYSBOYXR1cmFs
+        IC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9AYWNlcHRhLmNvbTETMBEGA1UEBRMK
+        OTY5MTkwNTAtODAeFw0yNDA0MTgyMDA1MTVaFw0yNzA0MTgyMDA1MTVaMIGWMQsw
+        CQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMSgwJgYDVQQDEx9D
+        QVRBTElOQSBNQVJJQSBWQUxERVJSQU1BIFJPTkNPMS4wLAYJKoZIhvcNAQkBFh9D
+        QVRBTElOQS5WQUxERVJSQU1BQENFTkNPU1VELkNMMRMwEQYDVQQFEwoxMzAzOTcz
+        Ni0wMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwd4H34Tv3PJ0pZa9
+        vptWZ2sEMZiHEm2vw+Vz/mx1GbT62lLUGGIvkPjHLRmagt53xWDGhAtl6VD3t0py
+        d4JzH0u5wp8tpyn0IvioDXzBD9TL9VEyekiyLNoqmoqe9rCoxDLsENzVfeENNXIF
+        oQAxpsoQKylQnPgAxPXl+zv12DJ6bvD/SG2Rc24+BMDom1f8NvxHVDRWrjatxbTx
+        jzPw+yriHvqe4Hs8LpJevxa3xLbzB+sm3HvsJlYcgfbEd/f4TFvI0s7wZzMjhYbN
+        GO8sJ0np2E7xPdaPvX1WLBWvZfW+kN0Xy8gM7Tc2QFJ593ojAsX3sLoiLNY7sVoG
+        mZVIXQIDAQABo4IC0jCCAs4wHwYDVR0jBBgwFoAUqv29xek3TfaZTVeOwXEa+evD
+        BuMwHQYDVR0OBBYEFAKpdf87VTcphNOdZMfvAbGHLgl9MAsGA1UdDwQEAwIE8DAd
+        BgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwQwEQYJYIZIAYb4QgEBBAQDAgWg
+        MIH6BgNVHSAEgfIwge8wgewGCCsGAQQBtWsCMIHfMDEGCCsGAQUFBwIBFiVodHRw
+        czovL2FjZzQuYWNlcHRhLmNvbS9DUFMtQWNlcHRhY29tMIGpBggrBgEFBQcCAjCB
+        nDAWFg9BY2VwdGEuY29tIFMuQS4wAwIBAhqBgUVsIHRpdHVsYXIgaGEgc2lkbyB2
+        YWxpZGFkbyBlbiBmb3JtYSBwcmVzZW5jaWFsLCBxdWVkYW5kbyBoYWJpbGl0YWRv
+        IGVsIENlcnRpZmljYWRvIHBhcmEgdXNvIHRyaWJ1dGFyaW8sIHBhZ29zLCBjb21l
+        cmNpbyB5IG90cm9zLjBaBgNVHRIEUzBRoBgGCCsGAQQBwQECoAwWCjk2OTE5MDUw
+        LTigJAYIKwYBBQUHCAOgGDAWDAo5NjkxOTA1MC04BggrBgEEAcEBAoEPaW5mb0Bh
+        Y2VwdGEuY29tMGoGA1UdEQRjMGGgGAYIKwYBBAHBAQGgDBYKMTMwMzk3MzYtMKAk
+        BggrBgEFBQcIA6AYMBYMCjEzMDM5NzM2LTAGCCsGAQQBwQECgR9DQVRBTElOQS5W
+        QUxERVJSQU1BQENFTkNPU1VELkNMMEcGCCsGAQUFBwEBBDswOTA3BggrBgEFBQcw
+        AYYraHR0cHM6Ly9hY2c0LmFjZXB0YS5jb20vYWNnNC9vY3NwL0NsYXNlMy1HNDA/
+        BgNVHR8EODA2MDSgMqAwhi5odHRwczovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L2Ny
+        bC9DbGFzZTMtRzQuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBVoXWEBhsMrwVNbEM0
+        aIMU3OOJshBrYxeA1RJE+QRIlkSbFwzC1+wphmbG7aYqMwEkIbRLC9upRV5An7g7
+        FIcgbKUNa70YmmNLqDOGayUvzMK1jB1l+n+D+jNJsF9zDWD0/TnBfhphyrntzA1R
+        iMl1taFUo7Nm6OpejZB1DV7nhRn/i4ZPrf+DFYiP7j9rIY8TZYzGIzmCVHJg/4Pe
+        baPjljmq6f1ftFdpS3DsU5COTaCeX69KCyODKebT4jf2LR0qydKztYW9xcGF/rLT
+        hVCJbLUIyUGSkKX95PuS2iUofr8YWjqQOeWx8rDb9XIiytq5kll4cNrf7sDM88yf
+        h4FK
+      </X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</EnvioDTE>

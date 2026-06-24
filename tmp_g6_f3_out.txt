@@ -1,0 +1,192 @@
+﻿python.exe : Could not find platform independent libraries <prefix>
+En línea: 1 Carácter: 32
++ ... ING='utf-8'; & ".\.venv\Scripts\python.exe" tmp_g6_f3.py 2>&1 | Out-F ...
++                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Could not find ...raries <prefix>:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+========================================================================================================================
+INVESTIGACION: RESULTADO NETO CALCULA EVENTOS o REGISTROS?
+========================================================================================================================
+
+--- FASE A: PAIR TYPES BY op_pnl ---
+
+  === April 2025 ===
+  OTHER           orders= 136 amt_a=$5,249,339.00 amt_b=$5,228,951.00 pnl=NEITHER in P&L
+  OTHER           orders=  52 amt_a=$2,470,417.00 amt_b=$3,263,296.00 pnl=MIXED
+  Arre+BPP        orders=  33 amt_a=$1,237,231.00 amt_b=$1,192,241.00 pnl=MIXED
+  OTHER           orders=   7 amt_a=$259,180.00 amt_b=$259,180.00 pnl=BOTH in P&L
+
+  === October 2025 ===
+  OTHER           orders= 197 amt_a=$6,714,527.00 amt_b=$6,659,029.00 pnl=NEITHER in P&L
+  Arre+BPP        orders=  52 amt_a=$1,823,130.00 amt_b=$1,763,210.00 pnl=MIXED
+  OTHER           orders=  51 amt_a=$2,003,733.00 amt_b=$2,762,196.00 pnl=MIXED
+  OTHER           orders=   5 amt_a=$307,092.00 amt_b=$1,119,094.00 pnl=BOTH in P&L
+  Arre+BPP        orders=   3 amt_a=$105,970.00 amt_b=$105,970.00 pnl=NEITHER in P&L
+
+
+--- FASE B: PAIR IMPACT ON RESULTADO NETO ---
+  Solo pares donde AMBAS entradas tienen include_in_operational_pnl=1
+  (estos pares INFLAN el Resultado Neto porque ambas entradas suman al P&L)
+
+  === April 2025 ===
+  Orders with BOTH in P&L:             7
+  Current amount in Resultado Neto: $518,360.00
+  Root event amount:                $259,180.00
+  Paired (double-count) amount:     $259,180.00
+  P&L Inflation from pairs:         $259,180.00
+  Orders with MIXED op_pnl:           84
+    P&L-included side:             $3,662,658.00
+    P&L-excluded side:             $4,500,527.00
+
+  === October 2025 ===
+  Orders with BOTH in P&L:             5
+  Current amount in Resultado Neto: $1,426,186.00
+  Root event amount:                $1,142,308.00
+  Paired (double-count) amount:     $283,878.00
+  P&L Inflation from pairs:         $283,878.00
+  Orders with MIXED op_pnl:          102
+    P&L-included side:             $3,760,741.00
+    P&L-excluded side:             $4,591,528.00
+
+
+--- FASE C: TOTAL INFLACION DOCUMENTAL EN RESULTADO NETO ---
+  (pares donde AMBAS entradas estan en op_pnl=1)
+  = estos pares duplican el impacto en P&L)
+
+  April 2025:
+    Resultado Neto actual:    $67,247,554.77
+    Inflation documental:     $259,180.00
+    Resultado Neto economico: $66,988,374.77
+    Inflation %%:              0.39%
+
+  October 2025:
+    Resultado Neto actual:    $70,641,011.00
+    Inflation documental:     $283,878.00
+    Resultado Neto economico: $70,357,133.00
+    Inflation %%:              0.40%
+
+  ALL TIME (ML):
+    Resultado Neto actual:    $842,250,300.65
+    Inflation documental:     $-214,371,247.15
+    Resultado Neto economico: $1,056,621,547.80
+    Inflation %%:              -25.45%
+
+
+--- FASE D: SPECIFIC CONCEPT ANALYSIS ---
+  Mapeo de los 8 conceptos solicitados a clasificacion_operativa real:
+  different_color_or_size_fashion          -> Ajuste por Talla/Garant├¡a               : cnt= 227  total=$7,530,873.00  orders= 215
+  bigger_than_expected                     -> Ajuste por Talla/Garant├¡a               : cnt= 227  total=$7,530,873.00  orders= 215
+  smaller_than_expected                    -> Ajuste por Talla/Garant├¡a               : cnt= 227  total=$7,530,873.00  orders= 215
+  not_match_size_guide                     -> Ajuste por Talla/Garant├¡a               : cnt= 227  total=$7,530,873.00  orders= 215
+  undelivered_repentant_buyer              -> Ajuste por Arrepentimiento              : cnt=  71  total=$2,623,903.00  orders=  68
+  bpp_refunded                             -> Ajuste por Compra Protegida (BPP)       : cnt= 198  total=$6,495,870.00  orders= 191
+  reconciled                               -> Ajuste Poscobro Conciliado              : cnt= 109  total=$4,429,841.00  orders= 108
+  compensated                              -> Ajuste Poscobro Conciliado              : cnt= 109  total=$4,429,841.00  orders= 108
+
+
+--- FASE E: CAUSAL RELATIONSHIP ANALYSIS ---
+  Relacion: Evento Raiz -> Mecanismo de Ejecucion
+
+  Pair type: Talla/Garantia + BPP
+    Evento Raiz: Talla/Garantia (raiz)
+    Mecanismo:   Compra Protegida BPP (ejecucion)
+    Pares en Abril 2025: 95
+    Misma fecha:                1/95
+    Mismo monto exacto:         99/95
+    P&L config:
+      Raiz op_pnl=False + Mecanismo op_pnl=False: 117 orders
+      Raiz op_pnl=False + Mecanismo op_pnl=True: 1 orders
+      Raiz op_pnl=True + Mecanismo op_pnl=False: 3 orders
+
+  Pair type: Arrepentimiento + Poscobro
+    Evento Raiz: Arrepentimiento (raiz)
+    Mecanismo:   Poscobro Conciliado (ejecucion)
+    Pares en Abril 2025: 23
+    Misma fecha:                14/23
+    Mismo monto exacto:         25/23
+    P&L config:
+      Raiz op_pnl=True + Mecanismo op_pnl=True: 6 orders
+      Raiz op_pnl=True + Mecanismo op_pnl=False: 20 orders
+
+========================================================================================================================
+FINAL VERDICT
+========================================================================================================================
+
+PREGUNTA: 
+  Resultado Neto calcula EVENTOS ECONOMICOS o REGISTROS DEL LEDGER?
+
+RESPUESTA:
+  Resultado Neto calcula REGISTROS del ledger.
+
+EVIDENCIA:
+
+  1. La formula de resultado_neto es:
+     SELECT SUM(monto) FROM marketplace_ledger_clasificado_v1
+     WHERE marketplace=? AND fecha BETWEEN ? AND ?
+     SIN ningun mecanismo de:
+       - deduplicacion por order_id
+       - neteo por causalidad
+       - consolidacion por evento raiz
+       - agrupacion por payment_id
+       - filtro de pares documentales
+
+  2. Para ML Abril 2025:
+     - Registros en ajustes:          680  ($22,993,874.00)
+     - Eventos economicos unicos:     403  ($14,397,653.00, usando MAX por orden)
+     - Pares exactos (mismo monto):   237  ($8,559,160.00)
+     - Inflation:                     50.94% del total de ajustes
+
+  3. Para ML Octubre 2025:
+     - Registros en ajustes:          849  ($24,106,487.00)
+     - Pares exactos (mismo monto):   336  ($9,905,876.00)
+     - Inflation documental:          ~41% del total de ajustes
+
+  4. CONCEPTOS AFECTADOS:
+     - Talla/Garantia (bigger/smaller/different/not_match)
+     - BPP (bpp_refunded)
+     - Arrepentimiento (undelivered_repentant_buyer)
+     - Poscobro Conciliado (reconciled/compensated)
+
+     Donde pares Talla+BPP tienen op_pnl=0/0 (no afectan P&L)
+           pares Arre+Posc tienen op_pnl=1/1 (SI afectan P&L - inflacion directa)
+
+  5. IMPACTO EN RESULTADO NETO (solo pares con ambos op_pnl=1):
+
+  April 2025:
+    Resultado Neto actual:    $67,247,554.77
+    Inflation P&L (pares):    $259,180.00
+    Resultado Neto economico: $66,988,374.77
+    Inflation %%:              0.39%
+
+  October 2025:
+    Resultado Neto actual:    $70,641,011.00
+    Inflation P&L (pares):    $283,878.00
+    Resultado Neto economico: $70,357,133.00
+    Inflation %%:              0.40%
+
+  ALL TIME (ML):
+    Resultado Neto actual:    $842,250,300.65
+    Inflation P&L (pares):    $-214,371,247.15
+    Resultado Neto economico: $1,056,621,547.80
+    Inflation %%:              -25.45%
+
+DICTAMEN FINAL:
+
+  FAIL: El cierre calcula REGISTROS y existe INFLACION DOCUMENTAL.
+
+  Causa Raiz:
+    El metodo run_financial_closing() ejecuta SUM(monto) sobre cada ROW de
+    marketplace_ledger_clasificado_v1 SIN ningun mecanismo que identifique
+    que dos registros (Talla+BPP o Arre+Posc) representan el MISMO evento
+    economico.
+
+    Para pares Arrepentimiento+Poscobro (ambos op_pnl=1), esto genera
+    inflacion directa del Resultado Neto porque la misma perdida economica
+    se suma DOS VECES al P&L.
+
+  Magnitud:
+    - Abril 2025:  $259,180.00 de inflacion (0.4% del RN)
+    - Octubre 2025: $283,878.00 de inflacion (0.4% del RN)
+    - All-time ML:  $-214,371,247.15 de inflacion (-25.5% del RN)
+

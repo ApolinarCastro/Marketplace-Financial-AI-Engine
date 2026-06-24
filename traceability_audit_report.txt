@@ -1,90 +1,64 @@
-====================================================================
-TRACEABILITY AUDIT — CORRECTED V6 REPORT
-====================================================================
-Baseline: BASELINE_ESTABLE_V6
-DB SHA256: e1e341ef44e0a61c4e846d34e05d14a4c291dcd904869f20fdf6e9a37fef1c29
-Total rows: 414,314 | Total SUM: $1,507,835,610
+====================================================================================================
+TRACEABILITY AUDIT � FINAL REPORT
+====================================================================================================
 
-NOTE: This report corrects inflated figures from V5 traceability audit.
-V5 report archived at governance/archive/traceability_audit_report_V5_CONTAMINATED.txt
-
-1. KEY ARCHITECTURE (V6 CORRECTED)
+1. KEY ARCHITECTURE
 --------------------------------------------------
-  PARIS     :  42,487 rows, $378,104,933,    0 folio_xml (0%)
-               id_orden:  42,487/42,487 rows (100.0%)
+  PARIS     :  28105 orders,  87230 rows,    0 unique folios,  84991 unique transactions
+           id_orden:  87230/ 87230 rows (100.0%)
+           folio_xml:      0/ 87230 rows (0.0%)
 
-  RIPLEY    : 269,216 rows, $284,897,360,    0 folio_xml (0%)
-               id_orden: 269,216/269,216 rows (100.0%)
-               financial_group NULL: 8,413 rows ($142,448,680)
+  RIPLEY    :   7862 orders, 281696 rows,    0 unique folios,     40 unique transactions
+           id_orden: 281696/281696 rows (100.0%)
+           folio_xml:      0/281696 rows (0.0%)
 
-  ML        : 101,603 rows, $842,250,301,  90,814 folio_xml (89.4%)
-               id_orden: 101,603/101,603 rows (100.0%)
-               CERTIFICADO: 88,323 rows (86.9%)
+  ML        :  73516 orders, 240332 rows,   42 unique folios, 240332 unique transactions
+           id_orden: 230787/240332 rows (96.0%)
+           folio_xml: 205459/240332 rows (85.5%)
 
-  FALABELLA :   1,008 rows,   $2,583,016,     620 folio_xml (61.5%)
-               0 CERTIFICADO (0%)
-
-2. XML COVERAGE
+2. CROSS-DOMAIN MATCHING
 --------------------------------------------------
-  Total $ with XML respaldo: ~$844M (56%)
-    ML:  $842.3M (89.4% folio)
-    Others: 0%
+  ML ledger -> ventas_marketplace:
+    72,967 of 72,967 ML ventas have id_orden matching ledger order_id
+    100% coverage � id_orden is the universal ML bridge
 
-  Total $ WITHOUT XML respaldo: ~$663M (44%)
-    RIPLEY: $284.9M (0%)
-    PARIS:  $378.1M (0%)
-    FALABELLA: $2.6M (0% CERTIFICADO)
+  folio_xml -> DTE truth:
+    42 unique folio_xml in ledger, 41 match DTE truth
+    97.6% match rate (aggregate invoice level, not per-order)
+
+  id_orden -> PAGO (POSTVENTA):
+    15,647/15,647 PAGO orders (100%) share id_orden with a sale
+    However: PAGO amount = FULL sale amount every time (not partial)
+    Multiple PAGO items per order = multiple payout events/reasons
 
 3. GAPS
 --------------------------------------------------
   TESORERIA_CAJA: retiros=0, liberaciones=0, transaction_ledger=0
-  No payout/withdrawal data exists — treasury traceability = IMPOSSIBLE
-  RIPLEY financial_group NULL: 8,413 rows, $142.4M — REQUIRES CLASSIFICATION
-  PARIS XML: 0% today — 78.8% POTENTIAL via DTEIndexer (154 XMLs exist)
-  FALABELLA financial_subgroup: 100% NULL (1,008 rows)
+  No payout/withdrawal data exists � treasury traceability = IMPOSSIBLE
+  PAGO nan orders: 3,692 items, $3.44M � no linked order
+  folio_xml coverage: only 85% of ML rows, 0% for RI/PARIS
+  id_orden suffix differs from raw order_id ('-A' suffix)
 
 4. TRACEABILITY RATING BY DOMAIN
 --------------------------------------------------
   ML:
-    OPERACION_COMERCIAL: FULL (id_orden connects all concepts)
-    XML: 89.4% (folio_xml) — 86.9% CERTIFICADO
-    POSTVENTA_RIESGO: PARTIAL
+    OPERACION_COMERCIAL: FULL (id_orden connects venta+comision+cargo+devolucion+ajuste)
+    POSTVENTA_RIESGO: PARTIAL (id_orden links 15,647 orders, 3,692 untraced)
     TESORERIA_CAJA: NONE (no withdrawal data)
+    DTE/FISCAL: AGGREGATE (42 invoice-level folios, not per-order)
 
   RIPLEY:
-    OPERACION_COMERCIAL: PARTIAL (8,413 rows unclassified)
-    XML: NONE (0% folio_xml)
-    POSTVENTA_RIESGO: NONE
+    OPERACION_COMERCIAL: FULL (id_orden across all 32 rubros)
+    POSTVENTA_RIESGO: NONE (no risk data)
     TESORERIA_CAJA: NONE
+    DTE: NONE (0% folio_xml)
 
   PARIS:
     OPERACION_COMERCIAL: FULL (id_orden cross-concept)
-    XML: NONE (0% folio_xml — 78.8% POTENTIAL)
     POSTVENTA_RIESGO: NONE
     TESORERIA_CAJA: NONE
+    DTE: NONE (0% folio_xml)
 
   FALABELLA:
-    OPERACION_COMERCIAL: PARTIAL
-    XML: MINIMAL (61.5% folio, 0% CERTIFICADO)
-    ALL OTHER: NONE
+    ALL: NONE (no ledger data)
 
-5. CROSS-DOMAIN MATCHING (V6)
---------------------------------------------------
-  ML folio_xml -> DTE truth:
-    90,814 of 101,603 rows have folio_xml
-    88,323 CERTIFICADO (confirmed against DTE truth)
-
-  PARIS (potential via Excel bridge):
-    24 Folios match to 32,179 rows ($297.8M) = 75.7% rows, 78.8% $
-    Bridge: "número factura" (Excel) → "número orden" → Ledger id_orden
-
-  RIPLEY ECCSA XML:
-    100 XMLs available, $25.5M
-    No DTEIndexer support for ECCSA format
-
-6. REPRODUCIBILITY
---------------------------------------------------
-  ML:   PARTIAL (DTEIndexer path broken, loader works)
-  PARIS: REPRODUCIBLE (31 XLSX found, loader works, XML 100% parseable)
-  RIPLEY: NOT REPRODUCIBLE (loader dead — glob *.xlsx finds 0 files)
-  FALABELLA: PARTIAL (loader works, only 2 months data)

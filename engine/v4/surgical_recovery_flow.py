@@ -1,23 +1,18 @@
-import duckdb
-from pathlib import Path
 import logging
 import pandas as pd
 from engine.v4.marketplace_auditor import MarketplaceAuditorEngine
+from engine.v4.database import DatabaseV4
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("surgical.recovery")
 
-ROOT = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine")
-DB_PATH = ROOT / "data" / "db" / "meli_financial_v4.db"
-
 def run():
     logger.info("Starting Surgical Recovery Flow...")
     
-    conn = duckdb.connect(str(DB_PATH))
+    db = DatabaseV4.get()
     logger.info("Resetting classifications...")
-    conn.execute("DELETE FROM marketplace_ledger_clasificado_v1")
-    conn.close()
+    db.execute("DELETE FROM marketplace_ledger_clasificado_v1")
 
     engine = MarketplaceAuditorEngine()
     logger.info("Executing Re-Classification with new rules...")
@@ -25,14 +20,12 @@ def run():
     logger.info(f"Classified {n} records.")
 
     # Get all months present in ledger
-    conn = duckdb.connect(str(DB_PATH))
-    months_df = conn.execute("""
+    months_df = db.query("""
         SELECT DISTINCT strftime('%Y-%m', fecha) as periodo 
         FROM marketplace_ledger_v1 
         WHERE fecha IS NOT NULL 
         ORDER BY 1
-    """).df()
-    conn.close()
+    """)
     
     logger.info("Running Financial Closing for each period...")
     for month in months_df['periodo']:

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Gerencial — Marketplace Financial AI Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+        body { background: #f1f5f9; color: #1e293b; font-family: 'Outfit', sans-serif; }
+        .card { background: white; border-radius: 1rem; border: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+        .card-soft { background: white; border-radius: 0.75rem; border: 1px solid #f1f5f9; }
+        .amount-pos { color: #059669; font-weight: 600; }
+        .amount-neg { color: #dc2626; font-weight: 600; }
+        .kpi-value { font-size: 1.875rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+        .kpi-value-primary { font-size: 2.5rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+        .kpi-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #94a3b8; }
+        .scorecard { transition: all 0.2s ease; }
+        .scorecard:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.06); }
+        .scorecard-active { ring: 2px solid #6366f1; box-shadow: 0 0 0 2px #6366f1, 0 4px 12px rgba(99,102,241,0.15); }
+        .fade-in { animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .nav-link { transition: all 0.15s ease; }
+        .tooltip-trigger { cursor: help; border-bottom: 1px dashed #94a3b8; }
+        .waterfall-step { transition: all 0.2s ease; }
+        .waterfall-step:hover { transform: scaleX(1.005); }
+        .explain-box { background: #1e293b; color: #f1f5f9; border-radius: 0.75rem; padding: 1.25rem; max-width: 22rem; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+        .explain-box h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .explain-box p { font-size: 0.75rem; line-height: 1.5; color: #cbd5e1; margin-bottom: 0.5rem; }
+        .explain-box ul { font-size: 0.7rem; line-height: 1.6; color: #94a3b8; padding-left: 1rem; list-style: disc; }
+        .select-clean { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 600; padding: 0.375rem 0.75rem; cursor: pointer; outline: none; }
+        .select-clean:focus { ring: 2px solid #6366f1; border-color: #6366f1; }
+        .waterfall-bar-base { height: 1.75rem; border-radius: 0.375rem; transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
+        .arrow-flow { color: #94a3b8; font-size: 0.65rem; display: flex; align-items: center; justify-content: center; gap: 0.25rem; padding: 0.125rem 0; }
+    </style>
+</head>
+<body>
+    <header class="bg-white border-b border-slate-200 px-8 py-0 sticky top-0 z-50">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="bg-slate-900 text-white p-2 rounded-lg"><i class="fas fa-chart-line"></i></div>
+                    <h1 class="text-lg font-bold tracking-tight">Reporte Gerencial <span class="text-slate-400 font-normal text-sm">UX1.2</span></h1>
+                </div>
+                <nav class="flex gap-1 bg-slate-100 p-1 rounded-xl">
+                    <a href="/exec" class="nav-link px-4 py-2 text-sm font-semibold rounded-lg bg-white text-slate-900 shadow-sm"><i class="fas fa-chart-pie mr-2"></i>Gerencial</a>
+                    <a href="/app" class="nav-link px-4 py-2 text-sm font-semibold rounded-lg text-slate-500 hover:text-slate-800 hover:bg-white/60"><i class="fas fa-microscope mr-2"></i>Auditor</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-3">
+                <button onclick="showExplicabilidad()" class="text-[10px] font-semibold text-slate-500 hover:text-slate-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-all"><i class="fas fa-question-circle mr-1.5"></i>Explicabilidad</button>
+                <label for="exec-mp" class="sr-only">Marketplace</label>
+                <select id="exec-mp" onchange="onFilterChange()" class="select-clean">
+                    <option value="">Todos los Marketplaces</option>
+                    <option value="ML">Mercado Libre</option>
+                    <option value="RIPLEY">Ripley</option>
+                    <option value="PARIS">Paris</option>
+                    <option value="FALABELLA">Falabella</option>
+                </select>
+                <label for="exec-period" class="sr-only">Periodo</label>
+                <select id="exec-period" onchange="onFilterChange()" class="select-clean">
+                    <option value="YTD">Year to Date</option>
+                </select>
+                <span id="audit-status-badge" class="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg px-2.5 py-1.5">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>Certificado
+                </span>
+                <span class="text-[10px] text-slate-400 hidden lg:inline">Sin alertas visibles</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="p-8 max-w-7xl mx-auto space-y-6 fade-in">
+        <!-- FASE 3+6: Hierarchy KPIs: Ventas → Devoluciones → Cobros → Disponible -->
+        <section id="hierarchy-kpis">
+            <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">
+                Estado de Cuenta
+                <span class="text-slate-300 font-normal normal-case ml-2">Ventas − Devoluciones − Cobros = Disponible</span>
+                <span id="estado-periodo" class="text-[10px] text-slate-400 font-normal normal-case ml-2"></span>
+            </h2>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="card p-5 border-l-4 border-l-emerald-500">
+                    <span class="kpi-label"><i class="fas fa-arrow-up mr-1 text-emerald-400"></i>Ventas</span>
+                    <div class="kpi-value amount-pos mt-1" id="kpi-ventas">—</div>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-medium flex items-center gap-2">
+                        <span>Ingreso bruto del período</span>
+                        <span class="tooltip-trigger text-indigo-400 text-[9px]" onclick="event.stopPropagation(); showExplain('ventas')"><i class="fas fa-question-circle"></i></span>
+                    </p>
+                </div>
+                <div class="card p-5 border-l-4 border-l-rose-500">
+                    <span class="kpi-label"><i class="fas fa-arrow-down mr-1 text-rose-400"></i>Devoluciones</span>
+                    <div class="kpi-value amount-neg mt-1" id="kpi-devoluciones">—</div>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-medium flex items-center gap-2">
+                        <span>Productos devueltos y reembolsos</span>
+                        <span class="tooltip-trigger text-indigo-400 text-[9px]" onclick="event.stopPropagation(); showExplain('devoluciones')"><i class="fas fa-question-circle"></i></span>
+                    </p>
+                </div>
+                <div class="card p-5 border-l-4 border-l-amber-500">
+                    <span class="kpi-label"><i class="fas fa-hand-holding-usd mr-1 text-amber-400"></i>Cobros</span>
+                    <div class="kpi-value amount-neg mt-1" id="kpi-cobros">—</div>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-medium flex items-center gap-2">
+                        <span>Comisiones, tarifas y cargos</span>
+                        <span class="tooltip-trigger text-indigo-400 text-[9px]" onclick="event.stopPropagation(); showExplain('cobros')"><i class="fas fa-question-circle"></i></span>
+                    </p>
+                </div>
+                <div class="card p-5 border-l-4 border-l-blue-600 bg-gradient-to-br from-blue-600 to-blue-800 text-white shadow-lg">
+                    <span class="kpi-label text-blue-200"><i class="fas fa-wallet mr-1"></i>Disponible</span>
+                    <div class="kpi-value-primary mt-1" id="kpi-disponible">—</div>
+                    <p class="text-[11px] text-blue-200 mt-1.5 font-medium flex items-center gap-2">
+                        <span>Ventas − Devoluciones − Cobros</span>
+                        <span class="tooltip-trigger text-blue-300 text-[9px]" onclick="event.stopPropagation(); showExplain('disponible')"><i class="fas fa-question-circle"></i></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FASE 4: Distribution by Marketplace (P3: Ventas/Devoluciones/Cobros/Disponible) -->
+        <section id="scorecard">
+            <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Distribución por Marketplace</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5" id="scorecard-grid">
+            </div>
+        </section>
+
+        <!-- P1: Estado Auditoría — sin contador visible, solo Certificado + botón -->
+        <section id="audit-status" class="card p-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full"></span>
+                <span class="text-xs font-bold text-slate-700">Estado Auditoría</span>
+                <span class="pill bg-emerald-100 text-emerald-700 text-[9px] font-bold px-2 py-0.5 rounded-full">Certificado</span>
+            </div>
+            <a href="/app" class="text-[11px] font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-all">
+                <i class="fas fa-external-link-alt mr-1.5"></i>Ver Auditoría
+            </a>
+        </section>
+
+        <!-- P4: Waterfall as visual center + Cobros Breakdown -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- Waterfall — expanded (P4) -->
+            <section id="waterfall-section" class="lg:col-span-7 card p-6 lg:p-8">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Waterfall</h2>
+                        <p class="text-[12px] text-slate-500 mt-0.5 font-medium" id="waterfall-subtitle">Cargando...</p>
+                    </div>
+                    <span class="text-[10px] text-slate-400 bg-slate-50 px-2 py-1 rounded">Ventas → Devoluciones → Cobros → Disponible</span>
+                </div>
+
+                <div id="waterfall-bars" class="space-y-2">
+                    <!-- CSS bars, built dynamically -->
+                </div>
+
+                <div class="flex gap-5 mt-6 pt-4 border-t border-slate-100 text-[10px] text-slate-400">
+                    <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-emerald-500"></span> Ingreso</span>
+                    <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-rose-400"></span> Deducción</span>
+                    <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-blue-600"></span> Resultado</span>
+                    <span class="flex items-center gap-1.5 ml-auto"><i class="fas fa-arrow-down text-slate-300 text-[8px]"></i> Narrativa descendente</span>
+                </div>
+            </section>
+
+            <!-- Cobros Breakdown -->
+            <section id="cobros-section" class="lg:col-span-5 card p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Composición de Cobros</h2>
+                    <span class="text-[10px] text-slate-400 tooltip-trigger" onclick="showExplain('cobros')"><i class="fas fa-question-circle mr-1"></i>¿Qué incluye?</span>
+                </div>
+                <div id="cobros-grid" class="space-y-2">
+                    <div class="text-center text-slate-400 text-sm py-8"><i class="fas fa-spinner fa-spin mr-2"></i>Cargando...</div>
+                </div>
+                <div id="cobros-total" class="mt-4 pt-3 border-t border-slate-100 hidden">
+                    <div class="flex justify-between text-sm font-bold">
+                        <span>Total Cobros</span>
+                        <span id="cobros-sum" class="amount-neg"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Explicabilidad Modal (P5: business language, no technical terms) -->
+    <div id="explain-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4" onclick="closeExplain()">
+        <div class="explain-box max-w-lg w-full" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-start mb-3">
+                <h3 id="explain-title" class="text-lg font-bold text-white">—</h3>
+                <button onclick="closeExplain()" class="text-slate-400 hover:text-white transition-colors"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="explain-body"></div>
+        </div>
+    </div>
+
+    <footer class="px-8 py-4 text-center text-[10px] text-slate-400">
+        Marketplace Financial AI Engine — <span class="font-semibold text-slate-500">Ventas − Devoluciones − Cobros = Disponible</span>
+    </footer>
+
+    <script>
+        const fmtCLP = v => new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 }).format(v);
+        const fmtNumber = v => new Intl.NumberFormat('es-CL', { maximumFractionDigits: 0 }).format(v);
+        const fmtShort = v => {
+            const abs = Math.abs(v);
+            if (abs >= 1e9) return '$' + (v / 1e9).toFixed(2) + 'B';
+            if (abs >= 1e6) return '$' + (v / 1e6).toFixed(1) + 'M';
+            if (abs >= 1e3) return '$' + (v / 1e3).toFixed(0) + 'K';
+            return '$' + v.toFixed(0);
+        };
+        // ── Explicabilidad (P5: business language, no technical terms) ──
+        const EXPLAIN = {
+            ventas: {
+                title: 'Ventas',
+                body: `
+                    <p><strong>Qué es:</strong> El valor total de todos los productos vendidos en el período, antes de cualquier descuento, devolución o cargo de los marketplaces.</p>
+                    <p><strong>Cómo se calcula:</strong> Suma de todas las ventas registradas en los marketplaces (Mercado Libre, Ripley, Paris, Falabella). Corresponde al Ingreso Bruto o facturación total.</p>
+                    <p><strong>Qué incluye:</strong> Ventas de todos los marketplaces. Tanto ventas de productos propios (Paris) como ventas de terceros (Mercado Libre, Ripley, Falabella).</p>
+                    <p><strong>Qué no incluye:</strong> No incluye devoluciones, reembolsos, comisiones, costos de envío, publicidad, ni ningún cargo. Es el valor bruto antes de cualquier deducción.</p>
+                `
+            },
+            devoluciones: {
+                title: 'Devoluciones',
+                body: `
+                    <p><strong>Qué es:</strong> El monto total de productos que los clientes devolvieron y que fueron reembolsados durante el período.</p>
+                    <p><strong>Cómo se calcula:</strong> Suma de todas las devoluciones de venta y reembolsos de pedidos procesados por los marketplaces.</p>
+                    <p><strong>Qué incluye:</strong> Devoluciones de productos, reembolsos de pedidos completos, y contracargos por disputas de clientes (chargebacks).</p>
+                    <p><strong>Qué no incluye:</strong> No incluye comisiones que se devuelven al mismo tiempo, ni ajustes por incentivos. Solo el valor del producto devuelto.</p>
+                `
+            },
+            cobros: {
+                title: 'Cobros (Comisiones, Tarifas y Cargos)',
+                body: `
+                    <p><strong>Qué es:</strong> El total de comisiones, tarifas, cargos y costos que los marketplaces descuentan sobre las ventas. Representa lo que los marketplaces cobran por usar sus plataformas y servicios.</p>
+                    <p><strong>Cómo se calcula:</strong> Suma de todas las comisiones, tarifas de envío, costos de publicidad, servicios de asesoría, costos de almacenamiento, y cualquier otro cargo que los marketplaces aplican. Luego se restan las bonificaciones o descuentos que los marketplaces otorgan.</p>
+                    <p><strong>Qué incluye:</strong></p>
+                    <ul>
+                        <li><strong>Comisiones:</strong> Porcentaje sobre cada venta</li>
+                        <li><strong>Logística:</strong> Costos de envío, despacho y logística inversa</li>
+                        <li><strong>Publicidad:</strong> Product Ads, campañas y promociones</li>
+                        <li><strong>Servicios:</strong> Asesoría Comercial, suscripciones</li>
+                        <li><strong>Fulfillment:</strong> Almacenamiento, picking, packing</li>
+                        <li><strong>Bonificaciones:</strong> Descuentos que reducen los cobros totales</li>
+                    </ul>
+                    <p><strong>Qué no incluye:</strong> No incluye devoluciones (están en su propia categoría). No incluye IVA ni impuestos.</p>
+                `
+            },
+            disponible: {
+                title: 'Disponible (Resultado Neto)',
+                body: `
+                    <p><strong>Qué es:</strong> El monto final que queda disponible después de restar todas las devoluciones y todos los cobros a las ventas. Es el resultado neto del período.</p>
+                    <p><strong>Cómo se calcula:</strong> Disponible = Ventas − Devoluciones − Cobros</p>
+                    <p><strong>Qué incluye:</strong> Todas las ventas del período, menos todos los productos devueltos y menos todas las comisiones, tarifas y cargos de los marketplaces.</p>
+                    <p><strong>Qué no incluye:</strong> No incluye impuestos corporativos, gastos de la empresa fuera de los marketplaces (sueldos, arriendo, oficinas), ni costos financieros.</p>
+                `
+            }
+        };
+
+        function showExplain(key) {
+            const e = EXPLAIN[key];
+            if (!e) return;
+            document.getElementById('explain-title').textContent = e.title;
+            document.getElementById('explain-body').innerHTML = e.body;
+            document.getElementById('explain-modal').classList.remove('hidden');
+        }
+        function closeExplain() { document.getElementById('explain-modal').classList.add('hidden'); }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeExplain(); });
+        function showExplicabilidad() { showExplain('disponible'); }
+
+        // ── Detalle → Gerencial Sub-concept Mapping ──
+        const DETALLE_TO_CONCEPT = {
+            'Cargo por venta (Comisión)': 'Comisiones',
+            'Comisiones sobre pedidos': 'Comisiones',
+            'Comisión por venta': 'Comisiones',
+            'Comisiones': 'Comisiones',
+            'Comisión de reembolso': 'Comisiones',
+            'Cargo por envíos de Mercado Libre': 'Logística',
+            'Cargo por Mercado Envíos': 'Logística',
+            'Envío': 'Logística',
+            'Gastos de envío (RIPLEY) pagados por el operador': 'Logística',
+            'Gastos de envío (RIPLEY)': 'Logística',
+            'Importe del envío del pedido': 'Logística',
+            'Despacho': 'Logística',
+            'Cobro por despacho': 'Logística',
+            'Logística inversa': 'Logística',
+            'Compensación logística': 'Logística',
+            'Cofinanciamiento logístico': 'Logística',
+            'Recargo por precio mínimo': 'Logística',
+            'Descuento por costo logístico': 'Logística',
+            'Descuento por logística inversa': 'Logística',
+            'Mercado Envíos': 'Logística',
+            'Descuento logistico': 'Logística',
+            'Cobro por cofinanciamiento logistico': 'Logística',
+            'Product Ads': 'Publicidad',
+            'Cargo por publicidad': 'Publicidad',
+            'Cargo por publicación': 'Publicidad',
+            'Publicidad': 'Publicidad',
+            'Costo de Marketing': 'Publicidad',
+            'Cargo por Asesoría Comercial': 'Servicios',
+            'Asesoría Comercial': 'Servicios',
+            'Cargo por Mi Página': 'Servicios',
+            'Mi Página': 'Servicios',
+            'Full': 'Fulfillment',
+            'Costo Full': 'Fulfillment',
+            'Almacenamiento': 'Fulfillment',
+            'Retiro stock': 'Fulfillment',
+            'Stock antiguo': 'Fulfillment',
+            'Cobro por almacenamiento': 'Fulfillment',
+        };
+
+        function mapDetalleToConcept(detalle) {
+            if (!detalle) return 'Otros';
+            const direct = DETALLE_TO_CONCEPT[detalle];
+            if (direct) return direct;
+            const lower = detalle.toLowerCase();
+            for (const [key, val] of Object.entries(DETALLE_TO_CONCEPT)) {
+                if (lower.includes(key.toLowerCase())) return val;
+            }
+            if (lower.includes('bonificación') || lower.includes('incentivo')) return 'Bonificaciones';
+            if (lower.includes('comisión') || lower.includes('comision')) return 'Comisiones';
+            if (lower.includes('envío') || lower.includes('envio') || lower.includes('logísti') || lower.includes('despacho')) return 'Logística';
+            if (lower.includes('publicidad') || lower.includes('ads')) return 'Publicidad';
+            if (lower.includes('full') || lower.includes('almacen')) return 'Fulfillment';
+            if (lower.includes('asesoría')) return 'Servicios';
+            if (lower.includes('devolución') || lower.includes('devolucion') || lower.includes('reembolso') || lower.includes('refund')) return 'Devoluciones';
+            return 'Otros';
+        }
+
+        // ── P2: Single filter change handler ──
+        function onFilterChange() {
+            loadExecutiveDashboard();
+        }
+
+        // ── Populate periods from unified endpoint (Single Temporal Context) ──
+        fetch('/api/v4/periodos')
+            .then(r => r.json())
+            .then(periodos => {
+                const sel = document.getElementById('exec-period');
+                const currentVal = sel.value;
+                sel.innerHTML = periodos.map(p => `<option value="${p.value}"${p.value === currentVal ? ' selected' : ''}>${p.label}</option>`).join('');
+            })
+            .catch(() => {});
+
+        // ── Main Load (P2: period + mp control everything) ──
+        async function loadExecutiveDashboard() {
+            const period = document.getElementById('exec-period').value;
+            const mp = document.getElementById('exec-mp').value;
+            const summaryUrl = '/api/v4/exec/summary' + (period !== 'YTD' ? '?periodo=' + period : '');
+
+            const summaryRes = await fetch(summaryUrl);
+            const summary = await summaryRes.json();
+
+            // ── KPI Cards (Estado de Cuenta) ──
+            const ventas = summary.total_gross_revenue;
+            const neto = summary.total_net_revenue;
+
+            const wfRes = await fetch('/api/v4/exec/waterfall' + (period !== 'YTD' ? '?periodo=' + period : ''));
+            const wf = await wfRes.json();
+            const devoluciones = wf.values[1];
+            const calculatedCobros = ventas + wf.values[1] - neto;
+
+            document.getElementById('kpi-ventas').textContent = fmtCLP(ventas);
+            document.getElementById('kpi-devoluciones').textContent = fmtCLP(devoluciones);
+            document.getElementById('kpi-cobros').textContent = fmtCLP(-calculatedCobros);
+            document.getElementById('kpi-disponible').textContent = fmtCLP(neto);
+            document.getElementById('estado-periodo').textContent = ' · ' + summary.period;
+
+            // ── Scorecard per-MP (P2+P3: inactive badge + leader detection) ──
+            const grid = document.getElementById('scorecard-grid');
+            const mpNames = { ML: 'Mercado Libre', RIPLEY: 'Ripley', PARIS: 'Paris', FALABELLA: 'Falabella' };
+            const selectedMp = mp || '';
+
+            // P3: Find líder — MP with highest Disponible
+            let leaderId = '';
+            let maxNet = -Infinity;
+            summary.marketplaces.forEach(m => {
+                if (m.net_revenue > maxNet) { maxNet = m.net_revenue; leaderId = m.id; }
+            });
+
+            grid.innerHTML = summary.marketplaces.map(mpItem => {
+                const name = mpNames[mpItem.id] || mpItem.id;
+                const gross = mpItem.gross_revenue;
+                const dev = Math.abs(mpItem.devoluciones || 0);
+                const cob = Math.abs(mpItem.cobros || 0);
+                const net = mpItem.net_revenue;
+                const isSelected = selectedMp && selectedMp === mpItem.id;
+                const isLeader = mpItem.id === leaderId && leaderId !== '';
+                const isInactive = gross === 0 && net === 0;
+                let activeClass = isSelected ? 'ring-2 ring-indigo-500 shadow-md' : '';
+                if (isInactive) activeClass += ' opacity-60';
+
+                // P2: inactive MP — show badge only, no metrics
+                if (isInactive) {
+                    return `
+                        <div class="card p-5 scorecard ${activeClass}">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xs font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-lg">${name}</span>
+                            </div>
+                            <div class="py-4 text-center">
+                                <span class="text-[10px] font-semibold text-slate-400 bg-slate-100 px-3 py-1.5 rounded-full inline-block">
+                                    <i class="fas fa-pause-circle mr-1.5"></i>Sin actividad en el período
+                                </span>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                return `
+                    <div class="card p-5 scorecard cursor-pointer ${activeClass}" onclick="selectMarketplace('${mpItem.id}')">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg">${name}
+                                ${isLeader ? ' <span class="text-amber-500 ml-1">🏆</span>' : ''}
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                ${isLeader ? '<span class="text-[9px] font-bold text-amber-600 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">Mayor aporte</span>' : ''}
+                                <span class="text-[10px] text-slate-400 font-medium">${fmtCLP(net)} disp.</span>
+                            </span>
+                        </div>
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between items-center">
+                                <span class="kpi-label">Ventas</span>
+                                <span class="text-sm font-bold text-slate-800">${fmtCLP(gross)}</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="kpi-label">Devoluciones</span>
+                                <span class="text-sm font-bold amount-neg">${fmtCLP(-dev)}</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="kpi-label">Cobros</span>
+                                <span class="text-sm font-bold text-amber-600">${fmtCLP(-cob)}</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-2 border-t border-slate-100">
+                                <span class="kpi-label">Disponible</span>
+                                <span class="text-sm font-bold ${net >= 0 ? 'amount-pos' : 'amount-neg'}">${fmtCLP(net)}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // ── Waterfall + Cobros (P2: use global mp filter) ──
+            await loadWaterfall();
+            await loadCobrosBreakdown();
+        }
+
+        // P2: select marketplace from scorecard click
+        function selectMarketplace(mpId) {
+            const globalMp = document.getElementById('exec-mp');
+            if (globalMp.value === mpId) {
+                globalMp.value = ''; // deselect = show all
+            } else {
+                globalMp.value = mpId;
+            }
+            onFilterChange();
+        }
+
+        // ── Waterfall ──
+        async function loadWaterfall() {
+            const period = document.getElementById('exec-period').value;
+            const mp = document.getElementById('exec-mp').value;
+            const params = new URLSearchParams();
+            if (mp) params.set('marketplace', mp);
+            if (period !== 'YTD') params.set('periodo', period);
+
+            const res = await fetch('/api/v4/exec/waterfall?' + params.toString());
+            const data = await res.json();
+
+            const mpLabel = data.marketplace === 'CONSOLIDADO' ? 'Consolidado' : data.marketplace;
+            document.getElementById('waterfall-subtitle').textContent = mpLabel + ' · ' + (period !== 'YTD' ? period : 'YTD');
+
+            const values = data.values;
+            const ventas = values[0];
+            const devoluciones = values[1];
+            const costosOp = values[2];
+            const costosCom = values[3];
+            const ajustes = values[4];
+            const neto = values[5];
+
+            const absDev = Math.abs(devoluciones);
+            const absCobros = Math.abs(costosOp) + Math.abs(costosCom) + (ajustes < 0 ? Math.abs(ajustes) : -ajustes);
+            const absNeto = Math.abs(neto);
+
+            const steps = [
+                { label: 'Ventas', value: ventas, color: 'bg-emerald-500', pct: 100, arrow: '↓' },
+                { label: 'Devoluciones', value: devoluciones, color: 'bg-rose-400', pct: Math.min(100, (absDev / ventas) * 100), arrow: '↓' },
+                { label: 'Cobros', value: -(costosOp + costosCom + ajustes), color: 'bg-amber-400', pct: Math.min(100, (absCobros / ventas) * 100), arrow: '↓' },
+                { label: 'Disponible', value: neto, color: 'bg-blue-600', pct: Math.min(100, Math.abs(neto / ventas) * 100), arrow: '' },
+            ];
+
+            const container = document.getElementById('waterfall-bars');
+            let html = '';
+            steps.forEach((s, i) => {
+                const isNeg = s.value < 0;
+                const cls = isNeg ? 'amount-neg' : (s.label === 'Disponible' ? 'text-blue-700 font-bold' : 'amount-pos');
+                const remainingPct = Math.max(0, 100 - s.pct);
+
+                if (i > 0 && s.arrow) {
+                    html += `<div class="arrow-flow"><i class="fas fa-arrow-down text-slate-300 text-[10px]"></i></div>`;
+                }
+
+                html += `
+                    <div class="waterfall-step">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="font-semibold text-slate-700">${s.label}</span>
+                            <span class="${cls} font-mono text-sm">${fmtCLP(s.value)}</span>
+                        </div>
+                        <div class="flex w-full bg-slate-100 rounded-lg h-7 overflow-hidden shadow-inner">
+                            ${isNeg
+                                ? `<div class="h-full rounded-r-lg ${s.color} opacity-80" style="width: ${s.pct}%"></div><div class="flex-1"></div>`
+                                : `<div class="flex-1"></div><div class="h-full rounded-l-lg ${s.color}" style="width: ${s.pct}%"></div>`
+                            }
+                        </div>
+                        <div class="flex justify-between text-[10px] text-slate-400 mt-0.5 px-0.5">
+                            <span>${isNeg ? '-$' + fmtShort(Math.abs(s.value)) : fmtShort(s.value)}</span>
+                            <span>${s.pct.toFixed(0)}%</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        // ── Cobros Breakdown ──
+        async function loadCobrosBreakdown() {
+            const period = document.getElementById('exec-period').value;
+            const activeMp = document.getElementById('exec-mp').value;
+            const periodVal = period !== 'YTD' ? period : '';
+            const mpNames = { ML: 'Mercado Libre', RIPLEY: 'Ripley', PARIS: 'Paris', FALABELLA: 'Falabella' };
+
+            // Determine which MPs to fetch
+            const mps = activeMp ? [activeMp] : ['ML', 'RIPLEY', 'PARIS', 'FALABELLA'];
+            const promises = mps.map(async mp => {
+                const params = new URLSearchParams({ marketplace: mp, exclude_non_operational: 'true' });
+                if (periodVal) params.set('periodo', periodVal);
+                try {
+                    const res = await fetch('/api/v4/cierre/desglose?' + params.toString());
+                    return { mp, data: await res.json() };
+                } catch { return { mp, data: [] }; }
+            });
+            const results = await Promise.all(promises);
+
+            const conceptTotals = {};
+            const mpConceptTotals = {};
+
+            results.forEach(({ mp, data }) => {
+                mpConceptTotals[mp] = mpConceptTotals[mp] || {};
+                data.forEach(row => {
+                    const cat = row.categoria;
+                    const detalle = row.detalle || '';
+                    const total = row.total;
+                    if (cat === 'ingresos' || cat === 'devoluciones' || cat === 'sin_clasificar') return;
+                    const concept = mapDetalleToConcept(detalle);
+                    mpConceptTotals[mp][concept] = (mpConceptTotals[mp][concept] || 0) + total;
+                    conceptTotals[concept] = (conceptTotals[concept] || 0) + total;
+                });
+            });
+
+            const sortedConcepts = Object.entries(conceptTotals)
+                .sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]))
+                .map(([k]) => k);
+
+            const grid = document.getElementById('cobros-grid');
+            const footer = document.getElementById('cobros-total');
+
+            if (sortedConcepts.length === 0) {
+                grid.innerHTML = '<div class="text-center text-slate-400 text-sm py-8"><i class="fas fa-search"></i> No hay datos de cobros</div>';
+                footer.classList.add('hidden');
+                return;
+            }
+
+            const colCount = mps.length;
+            const colSpan = colCount > 1 ? 'grid-cols-' + (colCount + 1) : 'grid-cols-2';
+
+            let html = `
+                <div class="grid ${colSpan} gap-1 text-[9px] font-bold text-slate-400 uppercase tracking-wider pb-1.5 border-b border-slate-100">
+                    <span>Concepto</span>
+                    ${mps.map(mp => `<span class="text-right">${mpNames[mp] || mp}</span>`).join('')}
+                </div>
+            `;
+
+            let totalCobros = 0;
+            sortedConcepts.forEach(concept => {
+                const total = conceptTotals[concept] || 0;
+                totalCobros += total;
+                const vals = mps.map(mp => (mpConceptTotals[mp] && mpConceptTotals[mp][concept]) || 0);
+                html += `
+                    <div class="grid ${colSpan} gap-1 text-xs py-1.5 border-b border-slate-50 last:border-0 hover:bg-slate-50/50 rounded transition-colors">
+                        <span class="font-medium text-slate-700">${concept}</span>
+                        ${vals.map(v => `<span class="text-right font-mono ${v < 0 ? 'amount-neg' : 'amount-pos'}">${v !== 0 ? fmtCLP(v) : '—'}</span>`).join('')}
+                    </div>
+                `;
+            });
+
+            grid.innerHTML = html;
+
+            footer.classList.remove('hidden');
+            document.getElementById('cobros-sum').textContent = fmtCLP(totalCobros);
+            document.getElementById('cobros-sum').className = totalCobros < 0 ? 'amount-neg font-bold' : 'amount-pos font-bold';
+        }
+
+        // ── Init ──
+        loadExecutiveDashboard();
+    </script>
+</body>
+</html>

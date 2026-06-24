@@ -1,0 +1,43 @@
+{
+  "1_financial_group_null_pl": {
+    "value": 0,
+    "pass": true
+  },
+  "2_clasificacion_null": {
+    "value": 0,
+    "pass": true
+  },
+  "3_pnl_flag_populated": {
+    "value": "62502/62502",
+    "pass": true
+  },
+  "4_dashboard_not_zero": {
+    "value": 206946843.0,
+    "pass": true
+  },
+  "5_db_equals_cierre": {
+    "ledger_pl": 206946843.0,
+    "cierre_neto": 206946843.0,
+    "pass": true
+  },
+  "6_seventeen_months": {
+    "value": 17,
+    "pass": true
+  },
+  "7_ml_unchanged": {
+    "periods": 50,
+    "neto": 1684500601.3,
+    "pass": true
+  },
+  "8_paris_unchanged": {
+    "periods": 18,
+    "neto": 756209866.0,
+    "pass": true
+  },
+  "9_falabella_unchanged": {
+    "periods": 24,
+    "neto": 2583016.0,
+    "pass": true
+  },
+  "all_pass": true
+}

@@ -787,9 +787,11 @@ FOR MANAGEMENT:
 THE PRODUCT: Financial Evidence Chain (this design)
 THE MARKET: Marketplace operators, auditors, accountants managing
             multi-marketplace financial operations
-THE PROBLEM: Financial data is scattered across 4+ marketplaces,
+THE PROBLEM (solved): Financial data was scattered across 4+ marketplaces,
              920 XML files, 156 XLSX files, 47 CSV files.
              No single source of truth. No audit trail. No confidence metric.
+             Marketplace Financial (DuckDB + API + Dashboard) now resolves
+             this — see governance/TRUTH_CONSOLIDATION_APPROVAL.md (DEC-001).
 THE SOLUTION: A unified evidence chain from source document to financial close,
               with per-row confidence scoring and one-click explainability.
 THE MOAT: Multi-marketplace normalization + XML legal evidence linking +

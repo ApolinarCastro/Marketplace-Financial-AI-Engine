@@ -1,0 +1,138 @@
+{
+  "2025-01": {
+    "neto": 9261744.0,
+    "ingresos": 17389770.0,
+    "devoluciones": -4878080.0,
+    "costos_op": -796830.0,
+    "costos_com": -2449058.0,
+    "ajustes": -4058.0
+  },
+  "2025-02": {
+    "neto": 5988604.0,
+    "ingresos": 11033720.0,
+    "devoluciones": -2957590.0,
+    "costos_op": -472300.0,
+    "costos_com": -1615226.0,
+    "ajustes": 0.0
+  },
+  "2025-03": {
+    "neto": 12428730.0,
+    "ingresos": 20815600.0,
+    "devoluciones": -4570050.0,
+    "costos_op": -806510.0,
+    "costos_com": -3005312.0,
+    "ajustes": -4998.0
+  },
+  "2025-04": {
+    "neto": 19179846.0,
+    "ingresos": 32299842.0,
+    "devoluciones": -7466770.0,
+    "costos_op": -1183420.0,
+    "costos_com": -4469806.0,
+    "ajustes": 0.0
+  },
+  "2025-05": {
+    "neto": 13863692.0,
+    "ingresos": 23650151.0,
+    "devoluciones": -5764095.0,
+    "costos_op": -791460.0,
+    "costos_com": -3219386.0,
+    "ajustes": -11518.0
+  },
+  "2025-06": {
+    "neto": 15516744.0,
+    "ingresos": 26613865.0,
+    "devoluciones": -6418200.0,
+    "costos_op": -1042850.0,
+    "costos_com": -3635081.0,
+    "ajustes": -990.0
+  },
+  "2025-07": {
+    "neto": 17203465.0,
+    "ingresos": 28925960.0,
+    "devoluciones": -6146070.0,
+    "costos_op": -1476197.0,
+    "costos_com": -4100228.0,
+    "ajustes": 0.0
+  },
+  "2025-08": {
+    "neto": 13791372.0,
+    "ingresos": 22689830.0,
+    "devoluciones": -4987510.0,
+    "costos_op": -723657.0,
+    "costos_com": -3186301.0,
+    "ajustes": -990.0
+  },
+  "2025-09": {
+    "neto": 10149660.0,
+    "ingresos": 17166790.0,
+    "devoluciones": -3518940.0,
+    "costos_op": -1038972.0,
+    "costos_com": -2456520.0,
+    "ajustes": -2698.0
+  },
+  "2025-10": {
+    "neto": 14846228.0,
+    "ingresos": 26330680.0,
+    "devoluciones": -6517510.0,
+    "costos_op": -1399738.0,
+    "costos_com": -3566214.0,
+    "ajustes": -990.0
+  },
+  "2025-11": {
+    "neto": 16677516.0,
+    "ingresos": 29745544.0,
+    "devoluciones": -8020872.0,
+    "costos_op": -1136884.0,
+    "costos_com": -3910272.0,
+    "ajustes": 0.0
+  },
+  "2025-12": {
+    "neto": 13585893.0,
+    "ingresos": 24527230.0,
+    "devoluciones": -6655636.0,
+    "costos_op": -1068967.0,
+    "costos_com": -3216734.0,
+    "ajustes": 0.0
+  },
+  "2026-01": {
+    "neto": 6103538.0,
+    "ingresos": 10847112.0,
+    "devoluciones": -2734810.0,
+    "costos_op": -548621.0,
+    "costos_com": -1460143.0,
+    "ajustes": 0.0
+  },
+  "2026-02": {
+    "neto": 5668898.0,
+    "ingresos": 9292280.0,
+    "devoluciones": -1876330.0,
+    "costos_op": -412606.0,
+    "costos_com": -1327248.0,
+    "ajustes": -7198.0
+  },
+  "2026-03": {
+    "neto": 14014771.0,
+    "ingresos": 22929720.0,
+    "devoluciones": -5035250.0,
+    "costos_op": -659922.0,
+    "costos_com": -3219777.0,
+    "ajustes": 0.0
+  },
+  "2026-04": {
+    "neto": 10025549.0,
+    "ingresos": 16460180.0,
+    "devoluciones": -3654690.0,
+    "costos_op": -475033.0,
+    "costos_com": -2304908.0,
+    "ajustes": 0.0
+  },
+  "2026-05": {
+    "neto": 8640593.0,
+    "ingresos": 12442050.0,
+    "devoluciones": -1694470.0,
+    "costos_op": -172493.0,
+    "costos_com": -1934494.0,
+    "ajustes": 0.0
+  }
+}

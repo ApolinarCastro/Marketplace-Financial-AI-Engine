@@ -36,16 +36,16 @@ CASES = [
 ]
 
 
-def _sql_sum(mp, periodo, co):
+def _sql_sum(mp, periodo, co, use_pnl_filter=True):
     _db = DatabaseV4.get()
     year, month = periodo.split('-')
     last_day = calendar.monthrange(int(year), int(month))[1]
+    pnl_clause = "AND COALESCE(include_in_operational_pnl,1)=1 " if use_pnl_filter else ""
     try:
         r = _db.query(
             "SELECT COALESCE(SUM(COALESCE(monto,0)),0) as total, COUNT(*) as cnt "
             "FROM marketplace_ledger_v1 "
-            "WHERE marketplace=? AND fecha BETWEEN ? AND ? "
-            "AND COALESCE(include_in_operational_pnl,1)=1 "
+            f"WHERE marketplace=? AND fecha BETWEEN ? AND ? {pnl_clause}"
             "AND clasificacion_operativa=? AND monto!=0",
             [mp, f"{year}-{month}-01", f"{year}-{month}-{last_day}", co]
         )
@@ -55,8 +55,7 @@ def _sql_sum(mp, periodo, co):
         r = _db.query(
             "SELECT COALESCE(SUM(COALESCE(monto,0)),0) as total, COUNT(*) as cnt "
             "FROM marketplace_ledger_v1 "
-            "WHERE marketplace=? AND fecha BETWEEN ? AND ? "
-            "AND COALESCE(include_in_operational_pnl,1)=1 "
+            f"WHERE marketplace=? AND fecha BETWEEN ? AND ? {pnl_clause}"
             "AND clasificacion_operativa=? AND monto!=0",
             [mp, f"{year}-{month}-01", f"{year}-{month}-{last_day}", co]
         )
@@ -119,7 +118,11 @@ class TestRegresionObligatoria(unittest.TestCase):
     """REGLA 4: 8 casos obligatorios. SQL = API = UI -> DIFF = 0."""
 
     def _run_case(self, mp, periodo, co):
-        s, cnt = _sql_sum(mp, periodo, co)
+        # DEC-001: ALL rows is canonical (no P&L filter)
+        s_all, _ = _sql_sum(mp, periodo, co, use_pnl_filter=False)
+        # P&L rows (legacy, matches ledger API filter)
+        s_pnl, cnt_pnl = _sql_sum(mp, periodo, co, use_pnl_filter=True)
+
         encoded = urllib.parse.quote(co)
         url = f"/api/v4/ledger?marketplace={mp}&periodo={periodo}&limit=10000&offset=0&filter_zero=true&clasificacion_operativa={encoded}"
         resp = client.get(url)
@@ -130,20 +133,25 @@ class TestRegresionObligatoria(unittest.TestCase):
 
         rows_sum = sum(float(r['monto']) for r in data['data'] if r.get('monto') is not None)
 
-        # Panel (desglose)
+        # Panel (desglose) — returns ALL rows per DEC-001 (Fix #3)
         desg = client.get(f"/api/v4/cierre/desglose?marketplace={mp}&periodo={periodo}")
         self.assertEqual(desg.status_code, 200)
         panel_sum = sum(r['total'] for r in desg.json()
                         if (r.get('clasificacion_operativa') == co or r.get('detalle') == co))
 
-        # SQL vs API vs UI (rows_sum) vs Panel
-        diff = abs(s - api_total) + abs(api_total - rows_sum) + abs(rows_sum - panel_sum)
-        self.assertAlmostEqual(diff, 0, delta=1,
-                               msg=f"DIFF={diff}: SQL={s} API={api_total} UI={rows_sum} Panel={panel_sum} | {mp} {periodo} {co}")
+        # DEC-001: ALL-rows comparison (SQL_ALL == Panel)
+        diff_all = abs(s_all - panel_sum)
+        self.assertAlmostEqual(diff_all, 0, delta=1,
+                               msg=f"ALL-rows DIFF={diff_all}: SQL_ALL={s_all} Panel={panel_sum} | {mp} {periodo} {co}")
 
-        # Also verify count consistency
-        self.assertEqual(cnt, api_count,
-                         f"COUNT mismatch: SQL={cnt} API={api_count} | {mp} {periodo} {co}")
+        # P&L consistency: SQL_PNL == API == UI
+        diff_pnl = abs(s_pnl - api_total) + abs(api_total - rows_sum)
+        self.assertAlmostEqual(diff_pnl, 0, delta=1,
+                               msg=f"P&L DIFF={diff_pnl}: SQL_PNL={s_pnl} API={api_total} UI={rows_sum} | {mp} {periodo} {co}")
+
+        # Count consistency (P&L)
+        self.assertEqual(cnt_pnl, api_count,
+                         f"COUNT mismatch: SQL={cnt_pnl} API={api_count} | {mp} {periodo} {co}")
         return True
 
     def test_ml_ajuste_arrepentimiento(self):

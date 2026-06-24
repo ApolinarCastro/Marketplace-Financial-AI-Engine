@@ -1,0 +1,34 @@
+{
+  "snapshot": "BASELINE_ESTABLE_V4",
+  "timestamp": "20260528_170822",
+  "description": "Post-ML XML reconciliation fix + cierres recalculados + persistencia clasificacion",
+  "fixes_applied": [
+    "PARIS dedup (2,193 duplicados eliminados)",
+    "Persistencia clasificacion (financial_group + include_in_operational_pnl)",
+    "Recalculo cierres (FINANCIAL_STRUCTURE actual)",
+    "ML XML path fix (Facturacion -> Documentos Recepcionados)",
+    "88,323 rows CERTIFICADO via XMLJustifier"
+  ],
+  "counts": {
+    "ai_suggestions_log": 0,
+    "bank_statement": 0,
+    "cargos_no_clasificados": 0,
+    "dte_truth_v1": 762,
+    "exceptions": 0,
+    "file_registry": 0,
+    "financial_reconciliation": 0,
+    "inconsistencias_financieras": 0,
+    "liberaciones": 0,
+    "marketplace_auditoria_v1": 1,
+    "marketplace_cierre_financiero_v1": 8,
+    "marketplace_correcciones_v1": 14,
+    "marketplace_ledger_clasificado_v1": 414183,
+    "marketplace_ledger_v1": 414183,
+    "order_reconciliation": 0,
+    "pipeline_log": 0,
+    "retiros": 0,
+    "TABLA_MAPEO": 0,
+    "transaction_ledger": 0,
+    "ventas_marketplace": 83615
+  }
+}

@@ -1,12 +1,13 @@
-import duckdb, sys, json
+import sys, json
 sys.path.insert(0, r'C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine')
 from engine.v4.surgical_loader import SurgicalLoader
+from engine.v4.database import DatabaseV4
 
-conn = duckdb.connect(r'C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\data\db\meli_financial_v4.db')
+db = DatabaseV4.get()
 
 # Step 1: Backup existing Falabella ventas
-ventas_backup = conn.execute("SELECT * FROM ventas_marketplace WHERE marketplace = 'FALABELLA'").fetchall()
-cols = [c[0] for c in conn.execute("PRAGMA table_info('ventas_marketplace')").fetchall()]
+ventas_backup = db.execute("SELECT * FROM ventas_marketplace WHERE marketplace = 'FALABELLA'").fetchall()
+cols = [c[0] for c in db.execute("PRAGMA table_info('ventas_marketplace')").fetchall()]
 print(f"=== VENTAS BACKUP ===")
 print(f"Backed up {len(ventas_backup)} ventas records")
 if ventas_backup:
@@ -29,22 +30,22 @@ except Exception as e:
 print(f"\n=== POST-LOAD VALIDATION ===")
 
 # ventas
-ventas = conn.execute("SELECT COUNT(*) FROM ventas_marketplace WHERE marketplace = 'FALABELLA'").fetchone()[0]
+ventas = db.execute("SELECT COUNT(*) FROM ventas_marketplace WHERE marketplace = 'FALABELLA'").fetchone()[0]
 print(f"ventas_marketplace: {ventas} rows")
 
 # ledger
-ledger = conn.execute("SELECT COUNT(*) FROM marketplace_ledger_v1 WHERE marketplace = 'FALABELLA'").fetchone()[0]
+ledger = db.execute("SELECT COUNT(*) FROM marketplace_ledger_v1 WHERE marketplace = 'FALABELLA'").fetchone()[0]
 print(f"marketplace_ledger_v1: {ledger} rows")
 
 if ledger > 0:
     # Unique concepts loaded
-    concepts = conn.execute("SELECT detalle, COUNT(*) as cnt, SUM(monto) as total FROM marketplace_ledger_v1 WHERE marketplace = 'FALABELLA' GROUP BY detalle ORDER BY SUM(ABS(monto)) DESC").fetchall()
+    concepts = db.execute("SELECT detalle, COUNT(*) as cnt, SUM(monto) as total FROM marketplace_ledger_v1 WHERE marketplace = 'FALABELLA' GROUP BY detalle ORDER BY SUM(ABS(monto)) DESC").fetchall()
     print(f"\nConcepts loaded to ledger ({len(concepts)}):")
     for r in concepts:
         print(f"  {str(r[0])[:65]:<65s} | cnt={r[1]:>4d} | ${r[2]:>10,.0f}")
     
     # Unique order_ids in ledger
-    ledger_oids = conn.execute("SELECT DISTINCT id_orden FROM marketplace_ledger_v1 WHERE marketplace = 'FALABELLA' AND id_orden IS NOT NULL AND id_orden != 'nan'").fetchall()
+    ledger_oids = db.execute("SELECT DISTINCT id_orden FROM marketplace_ledger_v1 WHERE marketplace = 'FALABELLA' AND id_orden IS NOT NULL AND id_orden != 'nan'").fetchall()
     ledger_oid_set = set(str(r[0]) for r in ledger_oids)
     print(f"\nUnique order_ids in ledger: {len(ledger_oid_set)}")
 
@@ -57,15 +58,15 @@ if ventas_backup:
     if 'load_ts' in cols:
         from datetime import datetime
         df_backup['load_ts'] = datetime.now()
-    conn.execute("INSERT INTO ventas_marketplace SELECT * FROM df_backup")
+    db.insert_df(df_backup, "ventas_marketplace")
     
-    ventas_after = conn.execute("SELECT COUNT(*) FROM ventas_marketplace WHERE marketplace = 'FALABELLA'").fetchone()[0]
+    ventas_after = db.execute("SELECT COUNT(*) FROM ventas_marketplace WHERE marketplace = 'FALABELLA'").fetchone()[0]
     print(f"ventas_marketplace after restore: {ventas_after} rows")
 
 # Step 5: Cross-domain match validation
 print(f"\n=== CROSS-DOMAIN MATCH VALIDATION ===")
 if ventas_after > 0 and ledger > 0:
-    matched = conn.execute("""
+    matched = db.execute("""
         SELECT COUNT(DISTINCT v.order_id) as venta_orders,
                COUNT(DISTINCT l.id_orden) as ledger_orders,
                COUNT(DISTINCT CASE WHEN v.order_id = l.id_orden THEN v.order_id END) as matched_orders
@@ -81,7 +82,7 @@ if ventas_after > 0 and ledger > 0:
 
     # Waterfall sample
     print(f"\n=== WATERFALL SAMPLE ===")
-    waterfall = conn.execute("""
+    waterfall = db.execute("""
         SELECT l.id_orden as order_id,
                SUM(CASE WHEN l.tipo_movimiento = 'PAGO' THEN l.monto ELSE 0 END) as total_payments,
                SUM(CASE WHEN l.tipo_movimiento = 'CARGO' THEN l.monto ELSE 0 END) as total_charges,

@@ -1,0 +1,2689 @@
+[
+  {
+    "name": "Effect",
+    "type": "framework",
+    "category": "Effect",
+    "packageJSONDependencies": [
+      "effect"
+    ]
+  },
+  {
+    "name": "Effect Schema",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/schema"
+    ]
+  },
+  {
+    "name": "Effect Platform",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/platform"
+    ]
+  },
+  {
+    "name": "Effect Platform Node",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/platform-node",
+      "@effect/platform-node-shared"
+    ]
+  },
+  {
+    "name": "Effect Platform Browser",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/platform-browser"
+    ]
+  },
+  {
+    "name": "Effect Platform Bun",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/platform-bun"
+    ]
+  },
+  {
+    "name": "Effect SQL",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql"
+    ]
+  },
+  {
+    "name": "Effect SQL PostgreSQL",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-pg"
+    ]
+  },
+  {
+    "name": "Effect SQL MySQL",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-mysql2"
+    ]
+  },
+  {
+    "name": "Effect SQL SQLite Node",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-sqlite-node"
+    ]
+  },
+  {
+    "name": "Effect SQL SQLite Bun",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-sqlite-bun"
+    ]
+  },
+  {
+    "name": "Effect SQL SQLite WASM",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-sqlite-wasm"
+    ]
+  },
+  {
+    "name": "Effect SQL SQLite React Native",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-sqlite-react-native"
+    ]
+  },
+  {
+    "name": "Effect SQL ClickHouse",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-clickhouse"
+    ]
+  },
+  {
+    "name": "Effect SQL MSSQL",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-mssql"
+    ]
+  },
+  {
+    "name": "Effect SQL LibSQL",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-libsql"
+    ]
+  },
+  {
+    "name": "Effect SQL Cloudflare D1",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-d1"
+    ]
+  },
+  {
+    "name": "Effect SQL Cloudflare DO",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-sqlite-do"
+    ]
+  },
+  {
+    "name": "Effect SQL Drizzle",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-drizzle"
+    ]
+  },
+  {
+    "name": "Effect SQL Kysely",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/sql-kysely"
+    ]
+  },
+  {
+    "name": "Effect RPC",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/rpc",
+      "@effect/rpc-http"
+    ]
+  },
+  {
+    "name": "Effect AI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/ai"
+    ]
+  },
+  {
+    "name": "Effect AI OpenAI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/ai-openai"
+    ]
+  },
+  {
+    "name": "Effect AI Anthropic",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/ai-anthropic"
+    ]
+  },
+  {
+    "name": "Effect AI Google",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/ai-google"
+    ]
+  },
+  {
+    "name": "Effect AI Amazon Bedrock",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/ai-amazon-bedrock"
+    ]
+  },
+  {
+    "name": "Effect Cluster",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/cluster"
+    ]
+  },
+  {
+    "name": "Effect Cluster Node",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/cluster-node"
+    ]
+  },
+  {
+    "name": "Effect Cluster Browser",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/cluster-browser"
+    ]
+  },
+  {
+    "name": "Effect Cluster Workflow",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/cluster-workflow"
+    ]
+  },
+  {
+    "name": "Effect CLI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/cli"
+    ]
+  },
+  {
+    "name": "Effect Vitest",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/vitest"
+    ]
+  },
+  {
+    "name": "Effect OpenTelemetry",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/opentelemetry"
+    ]
+  },
+  {
+    "name": "Effect Printer",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/printer"
+    ]
+  },
+  {
+    "name": "Effect Printer ANSI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/printer-ansi"
+    ]
+  },
+  {
+    "name": "Effect Experimental",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/experimental"
+    ]
+  },
+  {
+    "name": "Effect Typeclass",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/typeclass"
+    ]
+  },
+  {
+    "name": "Effect Build Utils",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/build-utils"
+    ]
+  },
+  {
+    "name": "Effect Docgen",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/docgen"
+    ]
+  },
+  {
+    "name": "Effect ESLint Plugin",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/eslint-plugin"
+    ]
+  },
+  {
+    "name": "Effect Language Service",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/language-service"
+    ]
+  },
+  {
+    "name": "Effect STM",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/stm"
+    ]
+  },
+  {
+    "name": "Effect Stream",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/stream"
+    ]
+  },
+  {
+    "name": "Effect Match",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@effect/match"
+    ]
+  },
+  {
+    "name": "pnpm",
+    "type": "tool",
+    "files": [
+      "pnpm-lock.yaml",
+      "pnpm-workspace.yaml",
+      ".pnpmfile.cjs"
+    ]
+  },
+  {
+    "name": "npm",
+    "type": "tool",
+    "files": [
+      "package-lock.json",
+      ".npmrc"
+    ]
+  },
+  {
+    "name": "Yarn",
+    "type": "tool",
+    "files": [
+      "yarn.lock",
+      ".yarnrc",
+      ".yarnrc.yml"
+    ]
+  },
+  {
+    "name": "Bun",
+    "type": "tool",
+    "files": [
+      "bun.lockb",
+      "bun.lock",
+      "bunfig.toml"
+    ]
+  },
+  {
+    "name": "Changesets",
+    "type": "tool",
+    "files": [
+      ".changeset"
+    ],
+    "packageJSONDependencies": [
+      "@changesets/cli"
+    ]
+  },
+  {
+    "name": "Lerna",
+    "type": "tool",
+    "files": [
+      "lerna.json"
+    ],
+    "packageJSONDependencies": [
+      "lerna"
+    ]
+  },
+  {
+    "name": "Rush",
+    "type": "tool",
+    "files": [
+      "rush.json"
+    ],
+    "packageJSONDependencies": [
+      "@microsoft/rush"
+    ]
+  },
+  {
+    "name": "TypeScript",
+    "type": "language",
+    "files": [
+      "tsconfig.json",
+      "tsconfig.build.json"
+    ],
+    "packageJSONDependencies": [
+      "typescript"
+    ],
+    "extensions": [
+      ".ts",
+      ".tsx",
+      ".mts",
+      ".cts"
+    ]
+  },
+  {
+    "name": "tsx",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "tsx"
+    ]
+  },
+  {
+    "name": "ts-node",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "ts-node"
+    ]
+  },
+  {
+    "name": "tsup",
+    "type": "tool",
+    "files": [
+      "tsup.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "tsup"
+    ]
+  },
+  {
+    "name": "tstyche",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "tstyche"
+    ]
+  },
+  {
+    "name": "Madge",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "madge"
+    ]
+  },
+  {
+    "name": "jscodeshift",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "jscodeshift"
+    ]
+  },
+  {
+    "name": "Vite",
+    "type": "tool",
+    "files": [
+      "vite.config.ts",
+      "vite.config.js",
+      "vite.config.mts"
+    ],
+    "packageJSONDependencies": [
+      "vite"
+    ]
+  },
+  {
+    "name": "Vitest",
+    "type": "tool",
+    "files": [
+      "vitest.config.ts",
+      "vitest.workspace.ts"
+    ],
+    "packageJSONDependencies": [
+      "vitest"
+    ]
+  },
+  {
+    "name": "Vitest Browser",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@vitest/browser"
+    ]
+  },
+  {
+    "name": "Vitest Coverage",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@vitest/coverage-v8",
+      "@vitest/coverage-istanbul"
+    ]
+  },
+  {
+    "name": "tRPC",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@trpc/server",
+      "@trpc/client",
+      "@trpc/react-query",
+      "@trpc/next"
+    ]
+  },
+  {
+    "name": "NextAuth.js / Auth.js",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "next-auth",
+      "@auth/core",
+      "@auth/prisma-adapter"
+    ]
+  },
+  {
+    "name": "Lucia Auth",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "lucia"
+    ]
+  },
+  {
+    "name": "UploadThing",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "uploadthing",
+      "@uploadthing/react"
+    ]
+  },
+  {
+    "name": "Clerk",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@clerk/nextjs",
+      "@clerk/clerk-sdk-node"
+    ]
+  },
+  {
+    "name": "Kinde",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@kinde-oss/kinde-auth-nextjs"
+    ]
+  },
+  {
+    "name": "Nuxt",
+    "type": "framework",
+    "files": [
+      "nuxt.config.ts",
+      "nuxt.config.js"
+    ],
+    "packageJSONDependencies": [
+      "nuxt"
+    ]
+  },
+  {
+    "name": "Nitro",
+    "type": "framework",
+    "files": [
+      "nitro.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "nitropack"
+    ]
+  },
+  {
+    "name": "h3",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "h3"
+    ]
+  },
+  {
+    "name": "Ofetch",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "ofetch"
+    ]
+  },
+  {
+    "name": "UnoCSS",
+    "type": "tool",
+    "files": [
+      "uno.config.ts",
+      "unocss.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "unocss"
+    ]
+  },
+  {
+    "name": "Unplugin",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "unplugin"
+    ]
+  },
+  {
+    "name": "Consola",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "consola"
+    ]
+  },
+  {
+    "name": "Defu",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "defu"
+    ]
+  },
+  {
+    "name": "Jiti",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "jiti"
+    ]
+  },
+  {
+    "name": "Citty",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "citty"
+    ]
+  },
+  {
+    "name": "Oxc",
+    "type": "tool",
+    "files": [
+      "oxc.json"
+    ],
+    "packageJSONDependencies": [
+      "oxc",
+      "@oxc-project/types"
+    ]
+  },
+  {
+    "name": "Ruff",
+    "type": "tool",
+    "files": [
+      "ruff.toml",
+      ".ruff.toml"
+    ]
+  },
+  {
+    "name": "Rolldown",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@rolldown/node"
+    ]
+  },
+  {
+    "name": "Uv",
+    "type": "tool",
+    "files": [
+      "uv.lock"
+    ]
+  },
+  {
+    "name": "Rspack",
+    "type": "tool",
+    "files": [
+      "rspack.config.ts",
+      "rspack.config.js"
+    ],
+    "packageJSONDependencies": [
+      "@rspack/core"
+    ]
+  },
+  {
+    "name": "Rsbuild",
+    "type": "tool",
+    "files": [
+      "rsbuild.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "@rsbuild/core"
+    ]
+  },
+  {
+    "name": "Swc",
+    "type": "tool",
+    "files": [
+      ".swcrc"
+    ],
+    "packageJSONDependencies": [
+      "@swc/core"
+    ]
+  },
+  {
+    "name": "Lightning CSS",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "lightningcss"
+    ]
+  },
+  {
+    "name": "Turborepo",
+    "type": "tool",
+    "files": [
+      "turbo.json"
+    ]
+  },
+  {
+    "name": "Biome",
+    "type": "tool",
+    "files": [
+      "biome.json"
+    ],
+    "packageJSONDependencies": [
+      "@biomejs/biome"
+    ]
+  },
+  {
+    "name": "Tailwind CSS v4",
+    "type": "tool",
+    "files": [
+      "tailwind.css"
+    ],
+    "packageJSONDependencies": [
+      "@tailwindcss/vite",
+      "@tailwindcss/postcss"
+    ]
+  },
+  {
+    "name": "Tailwind CSS v3",
+    "type": "tool",
+    "files": [
+      "tailwind.config.js",
+      "tailwind.config.ts",
+      "tailwind.config.cjs"
+    ]
+  },
+  {
+    "name": "shadcn/ui",
+    "type": "tool",
+    "files": [
+      "components.json"
+    ]
+  },
+  {
+    "name": "daisyUI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "daisyui"
+    ]
+  },
+  {
+    "name": "Radix UI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@radix-ui/react-primitive",
+      "@radix-ui/react-slot"
+    ]
+  },
+  {
+    "name": "Mantine",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "@mantine/core"
+    ]
+  },
+  {
+    "name": "Panda CSS",
+    "type": "tool",
+    "files": [
+      "panda.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "@pandacss/dev"
+    ]
+  },
+  {
+    "name": "Next.js",
+    "type": "framework",
+    "files": [
+      "next.config.js",
+      "next.config.ts",
+      "next.config.mjs"
+    ],
+    "packageJSONDependencies": [
+      "next"
+    ]
+  },
+  {
+    "name": "Remix",
+    "type": "framework",
+    "files": [
+      "remix.config.js",
+      "vite.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "@remix-run/react"
+    ]
+  },
+  {
+    "name": "Astro",
+    "type": "framework",
+    "files": [
+      "astro.config.mjs",
+      "astro.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "astro"
+    ]
+  },
+  {
+    "name": "SvelteKit",
+    "type": "framework",
+    "files": [
+      "svelte.config.js"
+    ],
+    "packageJSONDependencies": [
+      "@sveltejs/kit"
+    ]
+  },
+  {
+    "name": "Hono",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "hono"
+    ]
+  },
+  {
+    "name": "Elysia",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "elysia"
+    ]
+  },
+  {
+    "name": "TanStack Start",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "@tanstack/start"
+    ]
+  },
+  {
+    "name": "Deno",
+    "type": "tool",
+    "files": [
+      "deno.json",
+      "deno.jsonc"
+    ]
+  },
+  {
+    "name": "Prisma",
+    "type": "tool",
+    "files": [
+      "prisma/schema.prisma"
+    ],
+    "packageJSONDependencies": [
+      "prisma"
+    ]
+  },
+  {
+    "name": "Drizzle ORM",
+    "type": "tool",
+    "files": [
+      "drizzle.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "drizzle-orm"
+    ]
+  },
+  {
+    "name": "Kysely",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "kysely"
+    ]
+  },
+  {
+    "name": "Zod",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "zod"
+    ]
+  },
+  {
+    "name": "Valibot",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "valibot"
+    ]
+  },
+  {
+    "name": "ArkType",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "arktype"
+    ]
+  },
+  {
+    "name": "TanStack Query",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@tanstack/react-query"
+    ]
+  },
+  {
+    "name": "Rust",
+    "type": "language",
+    "files": [
+      "Cargo.toml",
+      "Cargo.lock"
+    ],
+    "extensions": [
+      ".rs"
+    ]
+  },
+  {
+    "name": "Tauri",
+    "type": "framework",
+    "files": [
+      "tauri.conf.json",
+      "src-tauri/tauri.conf.json"
+    ]
+  },
+  {
+    "name": "Axum",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "axum"
+    ]
+  },
+  {
+    "name": "Leptos",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "leptos"
+    ]
+  },
+  {
+    "name": "Tokio",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "tokio"
+    ]
+  },
+  {
+    "name": "Serde",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "serde"
+    ]
+  },
+  {
+    "name": "SQLx",
+    "type": "tool",
+    "files": [
+      ".sqlx-data.json"
+    ]
+  },
+  {
+    "name": "Python",
+    "type": "language",
+    "extensions": [
+      ".py"
+    ]
+  },
+  {
+    "name": "Mojo",
+    "type": "language",
+    "extensions": [
+      ".mojo",
+      ".🔥"
+    ]
+  },
+  {
+    "name": "FastAPI",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "fastapi"
+    ]
+  },
+  {
+    "name": "Django",
+    "type": "framework",
+    "files": [
+      "manage.py"
+    ]
+  },
+  {
+    "name": "Poetry",
+    "type": "tool",
+    "files": [
+      "poetry.lock"
+    ]
+  },
+  {
+    "name": "LangChain",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "langchain"
+    ]
+  },
+  {
+    "name": "LlamaIndex",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "llama-index"
+    ]
+  },
+  {
+    "name": "PyTorch",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "torch"
+    ]
+  },
+  {
+    "name": "Terraform",
+    "type": "infrastructure",
+    "extensions": [
+      ".tf"
+    ]
+  },
+  {
+    "name": "OpenTofu",
+    "type": "infrastructure",
+    "files": [
+      ".opentofu.lock.hcl"
+    ]
+  },
+  {
+    "name": "Pulumi",
+    "type": "infrastructure",
+    "files": [
+      "Pulumi.yaml"
+    ]
+  },
+  {
+    "name": "Docker",
+    "type": "infrastructure",
+    "files": [
+      "Dockerfile",
+      "docker-compose.yml"
+    ]
+  },
+  {
+    "name": "Nix",
+    "type": "infrastructure",
+    "files": [
+      "flake.nix",
+      "shell.nix"
+    ]
+  },
+  {
+    "name": "GitHub Actions",
+    "type": "infrastructure",
+    "files": [
+      ".github/workflows"
+    ]
+  },
+  {
+    "name": "Go",
+    "type": "language",
+    "files": [
+      "go.mod"
+    ],
+    "extensions": [
+      ".go"
+    ]
+  },
+  {
+    "name": "Zig",
+    "type": "language",
+    "extensions": [
+      ".zig"
+    ]
+  },
+  {
+    "name": "Lua",
+    "type": "language",
+    "extensions": [
+      ".lua"
+    ]
+  },
+  {
+    "name": "Neovim",
+    "type": "tool",
+    "files": [
+      "init.lua"
+    ]
+  },
+  {
+    "name": "Lazy.nvim",
+    "type": "tool",
+    "files": [
+      "lazy-lock.json"
+    ]
+  },
+  {
+    "name": "React",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "react"
+    ]
+  },
+  {
+    "name": "Vue",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "vue"
+    ]
+  },
+  {
+    "name": "Svelte",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "svelte"
+    ]
+  },
+  {
+    "name": "Preact",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "preact"
+    ]
+  },
+  {
+    "name": "SolidJS",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "solid-js"
+    ]
+  },
+  {
+    "name": "Qwik",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "@builder.io/qwik"
+    ]
+  },
+  {
+    "name": "Angular",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "@angular/core"
+    ]
+  },
+  {
+    "name": "Ember.js",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "ember-source"
+    ]
+  },
+  {
+    "name": "Bootstrap",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "bootstrap"
+    ]
+  },
+  {
+    "name": "Chakra UI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@chakra-ui/react"
+    ]
+  },
+  {
+    "name": "Material UI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@mui/material"
+    ]
+  },
+  {
+    "name": "Headless UI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@headlessui/react",
+      "@headlessui/vue"
+    ]
+  },
+  {
+    "name": "Flowbite",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "flowbite",
+      "flowbite-react"
+    ]
+  },
+  {
+    "name": "Ant Design",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "antd"
+    ]
+  },
+  {
+    "name": "HeroUI (NextUI)",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@heroui/react",
+      "@nextui-org/react"
+    ]
+  },
+  {
+    "name": "Ark UI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@ark-ui/react",
+      "@ark-ui/vue"
+    ]
+  },
+  {
+    "name": "Magic UI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "magic-ui"
+    ]
+  },
+  {
+    "name": "Framer Motion",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "framer-motion"
+    ]
+  },
+  {
+    "name": "Redux",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "redux",
+      "@reduxjs/toolkit"
+    ]
+  },
+  {
+    "name": "XState",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "xstate"
+    ]
+  },
+  {
+    "name": "Recoil",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "recoil"
+    ]
+  },
+  {
+    "name": "MobX",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "mobx"
+    ]
+  },
+  {
+    "name": "Zustand",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "zustand"
+    ]
+  },
+  {
+    "name": "Jotai",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "jotai"
+    ]
+  },
+  {
+    "name": "Express.js",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "express"
+    ]
+  },
+  {
+    "name": "Fastify",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "fastify"
+    ]
+  },
+  {
+    "name": "NestJS",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "@nestjs/core"
+    ]
+  },
+  {
+    "name": "GraphQL",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "graphql"
+    ],
+    "extensions": [
+      ".graphql",
+      ".gql"
+    ]
+  },
+  {
+    "name": "Apollo",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@apollo/client",
+      "apollo-server"
+    ]
+  },
+  {
+    "name": "Socket.IO",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "socket.io",
+      "socket.io-client"
+    ]
+  },
+  {
+    "name": "AdonisJS",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "@adonisjs/core"
+    ]
+  },
+  {
+    "name": "PostgreSQL",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "pg",
+      "postgres"
+    ]
+  },
+  {
+    "name": "MySQL",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "mysql2",
+      "mysql"
+    ]
+  },
+  {
+    "name": "MongoDB",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "mongodb",
+      "mongoose"
+    ]
+  },
+  {
+    "name": "Redis",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "redis",
+      "ioredis"
+    ]
+  },
+  {
+    "name": "SQLite",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "sqlite3",
+      "better-sqlite3"
+    ]
+  },
+  {
+    "name": "Firebase",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "firebase"
+    ]
+  },
+  {
+    "name": "Supabase",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@supabase/supabase-js"
+    ]
+  },
+  {
+    "name": "PlanetScale",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@planetscale/database"
+    ]
+  },
+  {
+    "name": "Neon",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@neondatabase/serverless"
+    ]
+  },
+  {
+    "name": "Convex",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "convex"
+    ]
+  },
+  {
+    "name": "PocketBase",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "pocketbase"
+    ]
+  },
+  {
+    "name": "SurrealDB",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "surrealdb.js"
+    ]
+  },
+  {
+    "name": "Appwrite",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "appwrite"
+    ]
+  },
+  {
+    "name": "Webpack",
+    "type": "tool",
+    "files": [
+      "webpack.config.js"
+    ],
+    "packageJSONDependencies": [
+      "webpack"
+    ]
+  },
+  {
+    "name": "Rollup",
+    "type": "tool",
+    "files": [
+      "rollup.config.js"
+    ],
+    "packageJSONDependencies": [
+      "rollup"
+    ]
+  },
+  {
+    "name": "Parcel",
+    "type": "tool",
+    "files": [
+      ".parcelrc"
+    ],
+    "packageJSONDependencies": [
+      "parcel"
+    ]
+  },
+  {
+    "name": "Esbuild",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "esbuild"
+    ]
+  },
+  {
+    "name": "Babel",
+    "type": "tool",
+    "files": [
+      "babel.config.js",
+      ".babelrc"
+    ],
+    "packageJSONDependencies": [
+      "@babel/core"
+    ]
+  },
+  {
+    "name": "Turbopack",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "turbopack"
+    ]
+  },
+  {
+    "name": "Jest",
+    "type": "tool",
+    "files": [
+      "jest.config.js"
+    ],
+    "packageJSONDependencies": [
+      "jest"
+    ]
+  },
+  {
+    "name": "Cypress",
+    "type": "tool",
+    "files": [
+      "cypress.json",
+      "cypress.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "cypress"
+    ]
+  },
+  {
+    "name": "Playwright",
+    "type": "tool",
+    "files": [
+      "playwright.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "@playwright/test"
+    ]
+  },
+  {
+    "name": "Storybook",
+    "type": "tool",
+    "files": [
+      ".storybook"
+    ],
+    "packageJSONDependencies": [
+      "storybook"
+    ]
+  },
+  {
+    "name": "Java",
+    "type": "language",
+    "extensions": [
+      ".java"
+    ]
+  },
+  {
+    "name": "Kotlin",
+    "type": "language",
+    "extensions": [
+      ".kt",
+      ".kts"
+    ]
+  },
+  {
+    "name": "Swift",
+    "type": "language",
+    "extensions": [
+      ".swift"
+    ]
+  },
+  {
+    "name": "Dart",
+    "type": "language",
+    "extensions": [
+      ".dart"
+    ]
+  },
+  {
+    "name": "C",
+    "type": "language",
+    "extensions": [
+      ".c",
+      ".h"
+    ]
+  },
+  {
+    "name": "C++",
+    "type": "language",
+    "extensions": [
+      ".cpp",
+      ".hpp",
+      ".cc"
+    ]
+  },
+  {
+    "name": "C#",
+    "type": "language",
+    "extensions": [
+      ".cs"
+    ]
+  },
+  {
+    "name": "Haskell",
+    "type": "language",
+    "extensions": [
+      ".hs"
+    ]
+  },
+  {
+    "name": "Scala",
+    "type": "language",
+    "extensions": [
+      ".scala"
+    ]
+  },
+  {
+    "name": "Julia",
+    "type": "language",
+    "extensions": [
+      ".jl"
+    ]
+  },
+  {
+    "name": "Elixir",
+    "type": "language",
+    "extensions": [
+      ".ex",
+      ".exs"
+    ]
+  },
+  {
+    "name": "PHP",
+    "type": "language",
+    "extensions": [
+      ".php"
+    ]
+  },
+  {
+    "name": "CUDA",
+    "type": "tool",
+    "extensions": [
+      ".cu",
+      ".cuh"
+    ]
+  },
+  {
+    "name": "TensorFlow",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@tensorflow/tfjs",
+      "tensorflow"
+    ]
+  },
+  {
+    "name": "PyTorch",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "torch"
+    ]
+  },
+  {
+    "name": "Keras",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "keras"
+    ]
+  },
+  {
+    "name": "Scikit-learn",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "scikit-learn",
+      "sklearn"
+    ]
+  },
+  {
+    "name": "Pandas",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "pandas"
+    ]
+  },
+  {
+    "name": "NumPy",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "numpy"
+    ]
+  },
+  {
+    "name": "Matplotlib",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "matplotlib"
+    ]
+  },
+  {
+    "name": "JAX",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "jax"
+    ]
+  },
+  {
+    "name": "ONNX",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "onnx",
+      "onnxruntime"
+    ]
+  },
+  {
+    "name": "OpenAI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "openai"
+    ]
+  },
+  {
+    "name": "Anthropic",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@anthropic-ai/sdk"
+    ]
+  },
+  {
+    "name": "LangChain",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "langchain"
+    ]
+  },
+  {
+    "name": "Hugging Face",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@huggingface/inference",
+      "transformers"
+    ]
+  },
+  {
+    "name": "Mistral AI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@mistralai/mistralai"
+    ]
+  },
+  {
+    "name": "Ollama",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "ollama"
+    ]
+  },
+  {
+    "name": "Pinecone",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@pinecone-database/pinecone"
+    ]
+  },
+  {
+    "name": "Jupyter",
+    "type": "tool",
+    "extensions": [
+      ".ipynb"
+    ]
+  },
+  {
+    "name": "Three.js",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "three"
+    ]
+  },
+  {
+    "name": "React Three Fiber",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@react-three/fiber"
+    ]
+  },
+  {
+    "name": "GSAP",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "gsap"
+    ]
+  },
+  {
+    "name": "Lottie",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "lottie-web",
+      "lottie-react"
+    ]
+  },
+  {
+    "name": "PixiJS",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "pixi.js"
+    ]
+  },
+  {
+    "name": "Anime.js",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "animejs"
+    ]
+  },
+  {
+    "name": "React Spring",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "react-spring",
+      "@react-spring/web"
+    ]
+  },
+  {
+    "name": "Motion",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "framer-motion",
+      "motion"
+    ]
+  },
+  {
+    "name": "Sentry",
+    "type": "tool",
+    "files": [
+      "sentry.properties",
+      "sentry.client.config.js",
+      "sentry.server.config.js"
+    ],
+    "packageJSONDependencies": [
+      "@sentry/browser",
+      "@sentry/node",
+      "@sentry/react",
+      "@sentry/nextjs"
+    ]
+  },
+  {
+    "name": "Cloudflare",
+    "type": "infrastructure",
+    "files": [
+      "wrangler.toml",
+      "_worker.js"
+    ],
+    "packageJSONDependencies": [
+      "@cloudflare/workers-types"
+    ]
+  },
+  {
+    "name": "Vercel",
+    "type": "infrastructure",
+    "files": [
+      "vercel.json"
+    ],
+    "packageJSONDependencies": [
+      "vercel",
+      "@vercel/analytics",
+      "@vercel/speed-insights"
+    ]
+  },
+  {
+    "name": "Netlify",
+    "type": "infrastructure",
+    "files": [
+      "netlify.toml"
+    ],
+    "packageJSONDependencies": [
+      "netlify-cli"
+    ]
+  },
+  {
+    "name": "AWS",
+    "type": "infrastructure",
+    "packageJSONDependencies": [
+      "aws-sdk",
+      "@aws-sdk/client-s3",
+      "@aws-sdk/client-dynamodb"
+    ]
+  },
+  {
+    "name": "Google Cloud",
+    "type": "infrastructure",
+    "packageJSONDependencies": [
+      "googleapis",
+      "@google-cloud/storage"
+    ]
+  },
+  {
+    "name": "Azure",
+    "type": "infrastructure",
+    "packageJSONDependencies": [
+      "@azure/storage-blob",
+      "@azure/cosmos"
+    ]
+  },
+  {
+    "name": "Datadog",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "dd-trace",
+      "@datadog/browser-logs"
+    ]
+  },
+  {
+    "name": "PostHog",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "posthog-js",
+      "posthog-node"
+    ]
+  },
+  {
+    "name": "Mixpanel",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "mixpanel-browser"
+    ]
+  },
+  {
+    "name": "Segment",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@segment/analytics-next"
+    ]
+  },
+  {
+    "name": "Resend",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "resend"
+    ]
+  },
+  {
+    "name": "LogRocket",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "logrocket"
+    ]
+  },
+  {
+    "name": "Strapi",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@strapi/strapi",
+      "strapi"
+    ]
+  },
+  {
+    "name": "Sanity",
+    "type": "tool",
+    "files": [
+      "sanity.config.ts",
+      "sanity.cli.ts"
+    ],
+    "packageJSONDependencies": [
+      "sanity",
+      "@sanity/client"
+    ]
+  },
+  {
+    "name": "Payload CMS",
+    "type": "tool",
+    "files": [
+      "payload.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "payload"
+    ]
+  },
+  {
+    "name": "Storyblok",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@storyblok/react",
+      "storyblok-js-client"
+    ]
+  },
+  {
+    "name": "WordPress",
+    "type": "framework",
+    "files": [
+      "wp-config.php",
+      "style.css"
+    ],
+    "packageJSONDependencies": [
+      "@wordpress/scripts"
+    ]
+  },
+  {
+    "name": "Directus",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@directus/sdk"
+    ]
+  },
+  {
+    "name": "Ghost",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "ghost",
+      "@tryghost/admin-api"
+    ]
+  },
+  {
+    "name": "Keystone",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "@keystone-6/core"
+    ]
+  },
+  {
+    "name": "Auth0",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "auth0",
+      "@auth0/auth0-react"
+    ]
+  },
+  {
+    "name": "Better Auth",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "better-auth"
+    ]
+  },
+  {
+    "name": "Passport",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "passport"
+    ]
+  },
+  {
+    "name": "Expo",
+    "type": "framework",
+    "files": [
+      "app.json"
+    ],
+    "packageJSONDependencies": [
+      "expo"
+    ]
+  },
+  {
+    "name": "React Native",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "react-native"
+    ]
+  },
+  {
+    "name": "Flutter",
+    "type": "framework",
+    "files": [
+      "pubspec.yaml"
+    ],
+    "extensions": [
+      ".dart"
+    ]
+  },
+  {
+    "name": "Electron",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "electron"
+    ]
+  },
+  {
+    "name": "Ionic",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "@ionic/core",
+      "@ionic/react",
+      "@ionic/vue",
+      "@ionic/angular"
+    ]
+  },
+  {
+    "name": "Capacitor",
+    "type": "tool",
+    "files": [
+      "capacitor.config.ts",
+      "capacitor.config.json"
+    ],
+    "packageJSONDependencies": [
+      "@capacitor/core"
+    ]
+  },
+  {
+    "name": "Algolia",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "algoliasearch"
+    ]
+  },
+  {
+    "name": "Meilisearch",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "meilisearch"
+    ]
+  },
+  {
+    "name": "Elasticsearch",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@elastic/elasticsearch"
+    ]
+  },
+  {
+    "name": "Stripe",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "stripe",
+      "@stripe/stripe-js"
+    ]
+  },
+  {
+    "name": "Lemon Squeezy",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@lemonsqueezy/lemonsqueezy.js"
+    ]
+  },
+  {
+    "name": "Paddle",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "@paddle/paddle-node-sdk"
+    ]
+  },
+  {
+    "name": "Laravel",
+    "type": "framework",
+    "files": [
+      "artisan",
+      "composer.json"
+    ]
+  },
+  {
+    "name": "Symfony",
+    "type": "framework",
+    "files": [
+      "composer.json",
+      "symfony.lock"
+    ]
+  },
+  {
+    "name": "Spring Boot",
+    "type": "framework",
+    "files": [
+      "pom.xml",
+      "build.gradle"
+    ]
+  },
+  {
+    "name": "Flask",
+    "type": "framework",
+    "packageJSONDependencies": [
+      "flask"
+    ]
+  },
+  {
+    "name": "Streamlit",
+    "type": "tool",
+    "files": [
+      "streamlit_app.py"
+    ]
+  },
+  {
+    "name": "Gradio",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "gradio"
+    ]
+  },
+  {
+    "name": "Solidity",
+    "type": "language",
+    "extensions": [
+      ".sol"
+    ]
+  },
+  {
+    "name": "Heroku",
+    "type": "infrastructure",
+    "files": [
+      "Procfile"
+    ]
+  },
+  {
+    "name": "Fly.io",
+    "type": "infrastructure",
+    "files": [
+      "fly.toml"
+    ]
+  },
+  {
+    "name": "Railway",
+    "type": "infrastructure",
+    "files": [
+      "railway.toml",
+      "railway.json"
+    ]
+  },
+  {
+    "name": "Nginx",
+    "type": "infrastructure",
+    "files": [
+      "nginx.conf"
+    ]
+  },
+  {
+    "name": "Zeabur",
+    "type": "infrastructure",
+    "files": [
+      "zeabur.json",
+      "zeabur.toml"
+    ]
+  },
+  {
+    "name": "Coolify",
+    "type": "infrastructure",
+    "files": [
+      "coolify.yaml"
+    ]
+  },
+  {
+    "name": "RxJS",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "rxjs"
+    ]
+  },
+  {
+    "name": "Chart.js",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "chart.js"
+    ]
+  },
+  {
+    "name": "D3.js",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "d3"
+    ]
+  },
+  {
+    "name": "Cloudinary",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "cloudinary"
+    ]
+  },
+  {
+    "name": "Discord.js",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "discord.js"
+    ]
+  },
+  {
+    "name": "ESLint",
+    "type": "tool",
+    "files": [
+      ".eslintrc",
+      ".eslintrc.js",
+      ".eslintrc.json",
+      "eslint.config.js",
+      "eslint.config.mjs"
+    ],
+    "packageJSONDependencies": [
+      "eslint"
+    ]
+  },
+  {
+    "name": "Prettier",
+    "type": "tool",
+    "files": [
+      ".prettierrc",
+      ".prettierrc.json",
+      "prettier.config.js"
+    ],
+    "packageJSONDependencies": [
+      "prettier"
+    ]
+  },
+  {
+    "name": "Nx",
+    "type": "tool",
+    "files": [
+      "nx.json"
+    ],
+    "packageJSONDependencies": [
+      "nx"
+    ]
+  },
+  {
+    "name": "Groq",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "groq-sdk"
+    ]
+  },
+  {
+    "name": "Cohere",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "cohere-ai"
+    ]
+  },
+  {
+    "name": "DeepSeek",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "deepseek"
+    ]
+  },
+  {
+    "name": "Replicate",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "replicate"
+    ]
+  },
+  {
+    "name": "Stability AI",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "stability-client"
+    ]
+  },
+  {
+    "name": "JavaScript",
+    "type": "language",
+    "extensions": [
+      ".js",
+      ".mjs",
+      ".cjs",
+      ".jsx"
+    ]
+  },
+  {
+    "name": "HTML",
+    "type": "language",
+    "extensions": [
+      ".html",
+      ".htm"
+    ]
+  },
+  {
+    "name": "CSS",
+    "type": "language",
+    "extensions": [
+      ".css"
+    ]
+  },
+  {
+    "name": "SCSS",
+    "type": "language",
+    "extensions": [
+      ".scss"
+    ]
+  },
+  {
+    "name": "SASS",
+    "type": "language",
+    "extensions": [
+      ".sass"
+    ]
+  },
+  {
+    "name": "Less",
+    "type": "language",
+    "extensions": [
+      ".less"
+    ]
+  },
+  {
+    "name": "Stylus",
+    "type": "language",
+    "extensions": [
+      ".styl"
+    ]
+  },
+  {
+    "name": "Markdown",
+    "type": "language",
+    "extensions": [
+      ".md",
+      ".mdx"
+    ]
+  },
+  {
+    "name": "YAML",
+    "type": "language",
+    "extensions": [
+      ".yml",
+      ".yaml"
+    ]
+  },
+  {
+    "name": "JSON",
+    "type": "language",
+    "extensions": [
+      ".json",
+      ".jsonc"
+    ]
+  },
+  {
+    "name": "TOML",
+    "type": "language",
+    "extensions": [
+      ".toml"
+    ]
+  },
+  {
+    "name": "XML",
+    "type": "language",
+    "extensions": [
+      ".xml"
+    ]
+  },
+  {
+    "name": "Shell",
+    "type": "language",
+    "extensions": [
+      ".sh",
+      ".bash",
+      ".zsh"
+    ]
+  },
+  {
+    "name": "PowerShell",
+    "type": "language",
+    "extensions": [
+      ".ps1",
+      ".psm1"
+    ]
+  },
+  {
+    "name": "Ruby",
+    "type": "language",
+    "extensions": [
+      ".rb"
+    ]
+  },
+  {
+    "name": "Perl",
+    "type": "language",
+    "extensions": [
+      ".pl",
+      ".pm"
+    ]
+  },
+  {
+    "name": "Ansible",
+    "type": "infrastructure",
+    "files": [
+      "ansible.cfg",
+      "playbook.yml",
+      "site.yml"
+    ],
+    "extensions": [
+      ".ansible.yml"
+    ]
+  },
+  {
+    "name": "Kubernetes",
+    "type": "infrastructure",
+    "files": [
+      "kubernetes.yml",
+      "k8s.yml",
+      "deployment.yaml",
+      "service.yaml"
+    ]
+  },
+  {
+    "name": "Helm",
+    "type": "infrastructure",
+    "files": [
+      "Chart.yaml",
+      "values.yaml"
+    ]
+  },
+  {
+    "name": "Jenkins",
+    "type": "infrastructure",
+    "files": [
+      "Jenkinsfile"
+    ]
+  },
+  {
+    "name": "CircleCI",
+    "type": "infrastructure",
+    "files": [
+      ".circleci/config.yml"
+    ]
+  },
+  {
+    "name": "Travis CI",
+    "type": "infrastructure",
+    "files": [
+      ".travis.yml"
+    ]
+  },
+  {
+    "name": "GitLab CI",
+    "type": "infrastructure",
+    "files": [
+      ".gitlab-ci.yml"
+    ]
+  },
+  {
+    "name": "Blacksmith",
+    "type": "infrastructure",
+    "files": [
+      ".blacksmith.yml",
+      "blacksmith.json"
+    ]
+  },
+  {
+    "name": "Vagrant",
+    "type": "infrastructure",
+    "files": [
+      "Vagrantfile"
+    ]
+  },
+  {
+    "name": "Packer",
+    "type": "infrastructure",
+    "files": [
+      "packer.json",
+      "packer.pkr.hcl"
+    ]
+  },
+  {
+    "name": "Cursor",
+    "type": "tool",
+    "files": [
+      ".cursor",
+      ".cursorrules",
+      ".cursorignore"
+    ]
+  },
+  {
+    "name": "CodeRabbit",
+    "type": "tool",
+    "files": [
+      ".coderabbit.yaml",
+      "coderabbit.yaml"
+    ]
+  },
+  {
+    "name": "GitHub Copilot",
+    "type": "tool",
+    "files": [
+      ".github/copilot"
+    ]
+  },
+  {
+    "name": "Codeium",
+    "type": "tool",
+    "files": [
+      ".codeium"
+    ]
+  },
+  {
+    "name": "Windsurf",
+    "type": "tool",
+    "files": [
+      ".windsurfrules"
+    ]
+  },
+  {
+    "name": "Aider",
+    "type": "tool",
+    "files": [
+      ".aider.conf.yml",
+      ".aider"
+    ]
+  },
+  {
+    "name": "VS Code",
+    "type": "tool",
+    "files": [
+      ".vscode",
+      ".vscode/settings.json",
+      ".vscode/extensions.json"
+    ]
+  },
+  {
+    "name": "EditorConfig",
+    "type": "tool",
+    "files": [
+      ".editorconfig"
+    ]
+  },
+  {
+    "name": "IntelliJ",
+    "type": "tool",
+    "files": [
+      ".idea"
+    ]
+  },
+  {
+    "name": "VitePress",
+    "type": "tool",
+    "files": [
+      ".vitepress"
+    ],
+    "packageJSONDependencies": [
+      "vitepress"
+    ]
+  },
+  {
+    "name": "Docusaurus",
+    "type": "tool",
+    "files": [
+      "docusaurus.config.js",
+      "docusaurus.config.ts"
+    ],
+    "packageJSONDependencies": [
+      "@docusaurus/core"
+    ]
+  },
+  {
+    "name": "Nextra",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "nextra"
+    ]
+  },
+  {
+    "name": "GitBook",
+    "type": "tool",
+    "files": [
+      ".gitbook.yaml"
+    ]
+  },
+  {
+    "name": "MkDocs",
+    "type": "tool",
+    "files": [
+      "mkdocs.yml"
+    ]
+  },
+  {
+    "name": "Sphinx",
+    "type": "tool",
+    "files": [
+      "conf.py",
+      "docs/conf.py"
+    ]
+  },
+  {
+    "name": "Husky",
+    "type": "tool",
+    "files": [
+      ".husky"
+    ],
+    "packageJSONDependencies": [
+      "husky"
+    ]
+  },
+  {
+    "name": "lint-staged",
+    "type": "tool",
+    "packageJSONDependencies": [
+      "lint-staged"
+    ]
+  },
+  {
+    "name": "commitlint",
+    "type": "tool",
+    "files": [
+      "commitlint.config.js",
+      ".commitlintrc"
+    ],
+    "packageJSONDependencies": [
+      "@commitlint/cli"
+    ]
+  },
+  {
+    "name": "Semantic Release",
+    "type": "tool",
+    "files": [
+      ".releaserc",
+      "release.config.js"
+    ],
+    "packageJSONDependencies": [
+      "semantic-release"
+    ]
+  },
+  {
+    "name": "Lefthook",
+    "type": "tool",
+    "files": [
+      "lefthook.yml",
+      ".lefthook.yml"
+    ]
+  },
+  {
+    "name": "Pre-commit",
+    "type": "tool",
+    "files": [
+      ".pre-commit-config.yaml"
+    ]
+  },
+  {
+    "name": "Renovate",
+    "type": "tool",
+    "files": [
+      "renovate.json",
+      "renovate.json5",
+      ".renovaterc"
+    ]
+  },
+  {
+    "name": "Dependabot",
+    "type": "tool",
+    "files": [
+      ".github/dependabot.yml"
+    ]
+  },
+  {
+    "name": "WXT",
+    "type": "tool",
+    "files": [
+      "wxt.config.ts",
+      "wxt.config.js"
+    ],
+    "packageJSONDependencies": [
+      "wxt"
+    ]
+  }
+]

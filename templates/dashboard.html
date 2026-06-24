@@ -24,6 +24,13 @@
             </div>
             
             <div class="h-6 w-px bg-slate-200" aria-hidden="true"></div>
+
+            <nav class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">
+                <a href="/app" class="px-3 py-1.5 text-xs font-semibold rounded-md bg-white text-slate-900 shadow-sm"><i class="fas fa-microscope mr-1.5"></i>Auditor</a>
+                <a href="/exec" class="px-3 py-1.5 text-xs font-semibold rounded-md text-slate-500 hover:text-slate-800 hover:bg-white/60 transition-all"><i class="fas fa-chart-pie mr-1.5"></i>Executive</a>
+            </nav>
+
+            <div class="h-6 w-px bg-slate-200" aria-hidden="true"></div>
             
             <div class="flex gap-4">
                 <label for="marketplace-selector" class="sr-only">Seleccionar Marketplace</label>
@@ -434,21 +441,16 @@
             }
         }
 
-        // Populate period selector dynamically from current month down to 2023
+        // Populate period selector from unified endpoint (Single Temporal Context)
         const periodSel = document.getElementById('period-selector');
-        const months = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
-        const now = new Date();
-        const currentYear = now.getFullYear();
-        const currentMonth = now.getMonth() + 1;
-        let periodOpts = "";
-        for (let y = currentYear; y >= 2023; y--) {
-            let startM = y === currentYear ? currentMonth : 12;
-            for (let m = startM; m >= 1; m--) {
-                const val = `${y}-${m.toString().padStart(2, '0')}`;
-                periodOpts += `<option value="${val}">${months[m-1]} ${y}</option>`;
-            }
-        }
-        periodSel.innerHTML = periodOpts;
+        fetch('/api/v4/periodos')
+            .then(r => r.json())
+            .then(periodos => {
+                periodSel.innerHTML = periodos.map(p => `<option value="${p.value}">${p.label}</option>`).join('');
+            })
+            .catch(() => {
+                periodSel.innerHTML = '<option value="">Periodos no disponibles</option>';
+            });
 
         let currentDesglose = [];
         let currentLedgerData = [];

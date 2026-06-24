@@ -158,4 +158,4 @@ git checkout SPRINT_A1 -- .
 
 ---
 
-*Document generated 2026-05-30. Baseline V6 remains the single source of truth. BASELINE_V6 tag: 67e5e0e. SPRINT_A1 tag: 7ff7814.*
+*Document generated 2026-05-30. BASELINE_V6 tag: 67e5e0e. SPRINT_A1 tag: 7ff7814. Per DEC-001 (2026-06-05), Marketplace Financial (data/db/meli_financial_v4.db) is now the official corporate source of truth. Reporte_Gerencial = LEGACY.*

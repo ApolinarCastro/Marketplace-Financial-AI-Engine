@@ -1,0 +1,86 @@
+{
+  "snapshot": "pre_falabella_rebuild",
+  "generated_at": "20260529_100326",
+  "falabella_before": {
+    "rows": 877,
+    "sum_monto": -2578242.0,
+    "unique_uuids": 214,
+    "unique_detalles": 10,
+    "min_fecha": "2026-03-14 00:00:00",
+    "max_fecha": "2026-05-20 00:00:00"
+  },
+  "financial_group": {
+    "costos_comerciales": {
+      "cnt": 244,
+      "total": -1620792.0
+    },
+    "costos_operacionales": {
+      "cnt": 619,
+      "total": -958440.0
+    },
+    "ajustes": {
+      "cnt": 14,
+      "total": 990.0
+    }
+  },
+  "clasificacion_operativa": {
+    "Corrección de pago envio directo": {
+      "cnt": 2,
+      "total": 3990.0
+    },
+    "Cobro Promo envío falabella.com": {
+      "cnt": 155,
+      "total": -564760.0
+    },
+    "Reembolso por comisión por venta": {
+      "cnt": 30,
+      "total": 242140.0
+    },
+    "Corrección de cobro por envío directo": {
+      "cnt": 12,
+      "total": -3000.0
+    },
+    "Reembolso por Promo envío falabella.com": {
+      "cnt": 155,
+      "total": 564760.0
+    },
+    "Reversa de pago de envío comprador": {
+      "cnt": 65,
+      "total": -285410.0
+    },
+    "Pago por envío directo": {
+      "cnt": 73,
+      "total": 36500.0
+    },
+    "Cobro por logística inversa": {
+      "cnt": 30,
+      "total": -87140.0
+    },
+    "Cobro por cofinanciamiento logístico": {
+      "cnt": 141,
+      "total": -622390.0
+    },
+    "Cobro por comisión por venta": {
+      "cnt": 214,
+      "total": -1862932.0
+    }
+  },
+  "monthly": {
+    "2026-03": {
+      "cnt": 181,
+      "total": -513874.0
+    },
+    "2026-04": {
+      "cnt": 329,
+      "total": -1062232.0
+    },
+    "2026-05": {
+      "cnt": 367,
+      "total": -1002136.0
+    }
+  },
+  "files": {
+    "meli_financial_v4.db": "e110817b750fe5ec246debe6ff89d9c4d628409657a89eff4057e961d3373675",
+    "meli_financial_v4.db.wal": "29074db3e95677adf5104775e6b39eeed1a0b25ee5bdd493ec9a94429d1e1839"
+  }
+}

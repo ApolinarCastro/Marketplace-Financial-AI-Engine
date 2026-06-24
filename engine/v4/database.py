@@ -6,6 +6,7 @@ import duckdb
 from pathlib import Path
 import logging
 import threading
+import signal
 
 logger = logging.getLogger("meli.db")
 ROOT = Path("C:/Users/ASUS Zenbook/Documents/Marketplace Financial AI Engine")
@@ -13,11 +14,13 @@ DB_PATH = ROOT / "data" / "db" / "meli_financial_v4.db"
 
 class DatabaseV4:
     _instance = None
+    _shutdown_registered = False
 
     def __init__(self, db_path=DB_PATH, read_only=False):
         self.db_path = Path(db_path)
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self.conn = duckdb.connect(str(self.db_path), read_only=read_only)
+        self._closed = False
         import tempfile
         tmp_dir = tempfile.gettempdir().replace("\\", "/")
         self.conn.execute(f"SET temp_directory='{tmp_dir}';")
@@ -25,19 +28,35 @@ class DatabaseV4:
         if not read_only:
             self._create_schema()
 
+    def close(self):
+        if self._closed:
+            return
+        self._closed = True
+        try:
+            self.conn.close()
+            logger.info("Database connection closed.")
+        except Exception as e:
+            logger.warning(f"Error closing database connection: {e}")
+
     @classmethod
     def get(cls):
         if cls._instance is None:
             cls._instance = cls()
+            cls._register_shutdown_hook()
         return cls._instance
+
+    @classmethod
+    def _register_shutdown_hook(cls):
+        if cls._shutdown_registered:
+            return
+        cls._shutdown_registered = True
+        import atexit
+        atexit.register(cls.reset)
 
     @classmethod
     def reset(cls):
         if cls._instance:
-            try:
-                cls._instance.conn.close()
-            except:
-                pass
+            cls._instance.close()
             cls._instance = None
 
     def execute(self, sql, params=None):

@@ -1,0 +1,142 @@
+{
+  "total_rows": 62502,
+  "total_amount": 413893686.0,
+  "classified_rows": 62502,
+  "unclassified_rows": 0,
+  "classified_amount": 413893686.0,
+  "unclassified_amount": 0.0,
+  "coverage_pct": 100.0,
+  "amount_coverage_pct": 100.0,
+  "coverage_pass": true,
+  "amount_coverage_pass": true,
+  "financial_group_distribution": [
+    {
+      "financial_group": "ingresos",
+      "rows": 10555,
+      "amount": 353160324.0
+    },
+    {
+      "financial_group": "ajustes",
+      "rows": 10,
+      "amount": -33440.0
+    },
+    {
+      "financial_group": "costos_operacionales",
+      "rows": 24799,
+      "amount": -14206460.0
+    },
+    {
+      "financial_group": "costos_comerciales",
+      "rows": 13005,
+      "amount": -49076708.0
+    },
+    {
+      "financial_group": "devoluciones",
+      "rows": 2450,
+      "amount": -82896873.0
+    }
+  ],
+  "clasificacion_operativa_distribution": [
+    {
+      "financial_group": "ingresos",
+      "clasificacion_operativa": "Importe del pedido",
+      "rows": 10555,
+      "amount": 353160324.0
+    },
+    {
+      "financial_group": "costos_operacionales",
+      "clasificacion_operativa": "Envío",
+      "rows": 7809,
+      "amount": 18359399.0
+    },
+    {
+      "financial_group": "costos_comerciales",
+      "clasificacion_operativa": "Comisiones sobre pedidos reembolsados",
+      "rows": 2450,
+      "amount": 15081784.0
+    },
+    {
+      "financial_group": "costos_operacionales",
+      "clasificacion_operativa": "Gastos de envío reembolsados pagados por el operador",
+      "rows": 879,
+      "amount": 1689874.0
+    },
+    {
+      "financial_group": "ajustes",
+      "clasificacion_operativa": "Otros descuentos",
+      "rows": 5,
+      "amount": -4950.0
+    },
+    {
+      "financial_group": "ajustes",
+      "clasificacion_operativa": "Descuento por cancelación",
+      "rows": 5,
+      "amount": -28490.0
+    },
+    {
+      "financial_group": "costos_operacionales",
+      "clasificacion_operativa": "Descuento por logística inversa",
+      "rows": 456,
+      "amount": -1359211.0
+    },
+    {
+      "financial_group": "costos_operacionales",
+      "clasificacion_operativa": "Envío reembolsado",
+      "rows": 879,
+      "amount": -1689874.0
+    },
+    {
+      "financial_group": "costos_operacionales",
+      "clasificacion_operativa": "Descuento por costo logístico",
+      "rows": 6967,
+      "amount": -12847249.0
+    },
+    {
+      "financial_group": "costos_operacionales",
+      "clasificacion_operativa": "Gastos de envío pagados por el operador",
+      "rows": 7809,
+      "amount": -18359399.0
+    },
+    {
+      "financial_group": "costos_comerciales",
+      "clasificacion_operativa": "Comisiones sobre pedidos",
+      "rows": 10555,
+      "amount": -64158492.0
+    },
+    {
+      "financial_group": "devoluciones",
+      "clasificacion_operativa": "Pedidos reembolsados",
+      "rows": 2450,
+      "amount": -82896873.0
+    }
+  ],
+  "unmapped_concepts": [],
+  "expected_dashboard_categories": [
+    {
+      "financial_group": "ingresos",
+      "rows": 10555,
+      "amount": 353160324.0
+    },
+    {
+      "financial_group": "ajustes",
+      "rows": 10,
+      "amount": -33440.0
+    },
+    {
+      "financial_group": "costos_operacionales",
+      "rows": 24799,
+      "amount": -14206460.0
+    },
+    {
+      "financial_group": "costos_comerciales",
+      "rows": 13005,
+      "amount": -49076708.0
+    },
+    {
+      "financial_group": "devoluciones",
+      "rows": 2450,
+      "amount": -82896873.0
+    }
+  ],
+  "dashboard_total_neto": 206946843.0
+}

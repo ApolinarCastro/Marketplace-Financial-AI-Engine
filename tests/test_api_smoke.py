@@ -18,13 +18,15 @@ def server_is_live() -> bool:
 def test_all_routes_exist():
     routes = {route.path for route in app.routes}
     expected = {
-        "/", "/app",
+        "/", "/app", "/exec",
         "/api/v4/ledger", "/api/v4/cierre", "/api/v4/cierre/desglose",
         "/api/v4/dte/count", "/api/v4/dte/samples",
         "/api/v4/test_regex", "/api/v4/debug_audit",
         "/api/v4/auditoria", "/api/v4/correcciones",
         "/api/v4/run-audit", "/api/v4/run-indexer",
         "/api/v4/query",
+        "/api/v4/exec/summary", "/api/v4/exec/waterfall",
+        "/api/v4/exec/audit-drilldown", "/api/v4/exec/audit-types",
     }
     missing = sorted(expected - routes)
     assert not missing, f"Faltan rutas: {missing}"

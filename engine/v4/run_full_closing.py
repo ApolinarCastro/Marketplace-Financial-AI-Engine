@@ -1,30 +1,24 @@
-import duckdb
-from pathlib import Path
 import logging
 import pandas as pd
 from engine.v4.marketplace_auditor import MarketplaceAuditorEngine
+from engine.v4.database import DatabaseV4
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("surgical.closing")
 
-ROOT = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine")
-DB_PATH = ROOT / "data" / "db" / "meli_financial_v4.db"
-
 def run():
     logger.info("Initializing Full Financial Closing for Mercado Libre...")
     engine = MarketplaceAuditorEngine()
-    conn = duckdb.connect(str(DB_PATH))
+    db = DatabaseV4.get()
     
     # Get all months present in ledger
-    months_df = conn.execute("""
+    months_df = db.query("""
         SELECT DISTINCT strftime('%Y-%m', fecha) as periodo 
         FROM marketplace_ledger_v1 
         WHERE fecha IS NOT NULL 
         ORDER BY 1
-    """).df()
-    
-    conn.close()
+    """)
     
     if months_df.empty:
         logger.warning("No data found in ledger to close.")

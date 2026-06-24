@@ -1,18 +1,17 @@
 import re
-import duckdb
 from pathlib import Path
 import logging
+from engine.v4.database import DatabaseV4
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("surgical.xml")
 
 ROOT = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine")
-DB_PATH = ROOT / "data" / "db" / "meli_financial_v4.db"
 
 class XMLJustifier:
     def __init__(self, marketplace='ML'):
-        self.conn = duckdb.connect(str(DB_PATH))
+        self.db = DatabaseV4.get()
         self.marketplace = marketplace.upper()
         if self.marketplace == 'ML':
             ml_raw = ROOT / "01_Raw" / "ML"
@@ -57,13 +56,13 @@ class XMLJustifier:
         
         # Now match with ledger
         logger.info(f"Matching ledger folios with XML index for {self.marketplace}...")
-        ledger_res = self.conn.execute("SELECT DISTINCT folio_xml FROM marketplace_ledger_v1 WHERE folio_xml IS NOT NULL AND marketplace = ?", [self.marketplace]).df()
+        ledger_res = self.db.execute("SELECT DISTINCT folio_xml FROM marketplace_ledger_v1 WHERE folio_xml IS NOT NULL AND marketplace = ?", [self.marketplace]).df()
         
         count_valid = 0
         for l_folio in ledger_res['folio_xml'].tolist():
             if l_folio in xml_index:
                 # Update ledger
-                self.conn.execute("""
+                self.db.execute("""
                     UPDATE marketplace_ledger_v1 
                     SET estado_xml = 'CERTIFICADO',
                         asociacion_xml = ?
@@ -71,7 +70,7 @@ class XMLJustifier:
                 """, [xml_index[l_folio], l_folio])
                 count_valid += 1
             else:
-                self.conn.execute("""
+                self.db.execute("""
                     UPDATE marketplace_ledger_v1 
                     SET estado_xml = 'SIN_RECURSO_XML' 
                     WHERE folio_xml = ?
@@ -80,12 +79,10 @@ class XMLJustifier:
         logger.info(f"Justification complete: {count_valid} transactions certified with XML evidence for {self.marketplace}.")
         
         # Move certified results to auditor view
-        self.conn.execute("""
+        self.db.execute("""
             INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken)
             VALUES (?, 'justificacion_xml', 'Certificados ' || ? || ' folios fiscales', 'vincular evidencia legal')
         """, [self.auditor_marketplace, count_valid])
-        
-        self.conn.close()
 
 if __name__ == "__main__":
     justifier = XMLJustifier()

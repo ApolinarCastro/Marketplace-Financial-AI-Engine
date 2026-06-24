@@ -1,0 +1,24 @@
+Valores únicos de la columna 'Detalle' en ML_Facturacion_RAW:
+
+Anulación del cargo por Mercado Envíos
+Anulación del cargo por devolución
+Anulación del cargo por envíos de Mercado Libre
+Anulación del cargo por venta
+Bonificación
+Campañas de publicidad - Brand Ads	
+Campañas de publicidad - Display
+Campañas de publicidad - Product Ads
+Cargo
+Cargo por Asesoría Comercial
+Cargo por Mercado Envíos
+Cargo por campaña de publicidad - Brand Ads
+Cargo por campaña de publicidad - Product Ads
+Cargo por devolución
+Cargo por envíos de Mercado Libre
+Cargo por mantenimiento de Mi página
+Cargo por retiro de stock Full
+Cargo por servicio de almacenamiento Full
+Cargo por stock antiguo en Full
+Cargo por venta
+Detalle
+nan

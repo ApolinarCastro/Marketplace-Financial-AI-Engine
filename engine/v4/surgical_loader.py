@@ -8,7 +8,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 logger = logging.getLogger("surgical.loader")
 
 ROOT = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine")
-DIR_FACTURACION = ROOT / "01_Raw" / "ML" / "ML_Facturacion"
+DIR_FACTURACION = ROOT / "Reporte_Marketplaces" / "Mercado Libre" / "ML_Facturacion"
 DIR_POSCOBRO = ROOT / "01_Raw" / "ML" / "Poscobro"
 
 LEDGER_COLS = ['marketplace', 'id_transaccion', 'id_orden', 'fecha', 'detalle', 'monto', 'tipo_movimiento', 'archivo_origen', 'folio_xml']
@@ -238,8 +238,7 @@ class SurgicalLoader:
                     monto_raw = float(pd.to_numeric(row[c_amt], errors='coerce') or 0) if c_amt else 0
                     monto_dev = float(pd.to_numeric(row[c_dev], errors='coerce') or 0) if c_dev else 0
                     val = monto_dev * -1 if monto_dev != 0 else monto_raw
-                    try: fecha = pd.to_datetime(row[c_dat]) if c_dat else None
-                    except: fecha = None
+                    fecha = pd.to_datetime(row[c_dat], dayfirst=True, errors="coerce") if c_dat else None
                     
                     # Prevent 'nan' and get a valid detail string
                     raw_det = str(row[c_det]).strip() if c_det and pd.notna(row[c_det]) else ""
@@ -379,7 +378,7 @@ class SurgicalLoader:
                         'quantity': 1,
                         'unit_price': pd.to_numeric(df[c_gross], errors='coerce').fillna(0),
                         'gross_amount': pd.to_numeric(df[c_gross], errors='coerce').fillna(0),
-                        'sale_date': pd.to_datetime(df[c_fecha], errors='coerce') if c_fecha else None,
+                        'sale_date': pd.to_datetime(df[c_fecha], dayfirst=True, errors='coerce') if c_fecha else None,
                         'marketplace': 'RIPLEY', 'source_file': f.name
                     }).drop_duplicates(subset=['order_id'])
                     self.db.insert_df(self._filter_old_years(df_ventas[VENTAS_COLS], 'sale_date'), "ventas_marketplace", dedup_cols=['order_id'])
@@ -397,7 +396,7 @@ class SurgicalLoader:
                     liq_doc = str(row[c_liq])
                     detail = str(row['Detalle'])
                     monto = float(row['Monto'])
-                    try: fecha = pd.to_datetime(row[c_fecha]) if c_fecha else None
+                    try: fecha = pd.to_datetime(row[c_fecha], dayfirst=True) if c_fecha else None
                     except: fecha = None
                     
                     trans_id = f"RIP_{liq_doc}_{order_id}_{normalize(detail)}"

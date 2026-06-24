@@ -1,0 +1,5048 @@
+[
+  {
+    "archivo": "dteproveedor_7134",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2329309",
+    "folio_int": 2329309,
+    "fecha_emision": "2026-03-20",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 576445,
+    "iva": 109525,
+    "mnt_total": 685970,
+    "items": [
+      "Comision Ventas MKP del: 13/03/2026 al 20/03/2026"
+    ],
+    "line_items": [
+      {
+        "item": "Comision Ventas MKP del: 13/03/2026 al 20/03/2026",
+        "precio": 576445,
+        "monto_item": 576445
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7148",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2320339",
+    "folio_int": 2320339,
+    "fecha_emision": "2026-03-26",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 203354,
+    "iva": 38637,
+    "mnt_total": 241991,
+    "items": [
+      "MKP Cobro logístico parcial del despacho primera milla",
+      "MKP Cobro despacho logistica inversa"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Cobro logístico parcial del despacho primera milla",
+        "precio": 122682,
+        "monto_item": 122682
+      },
+      {
+        "item": "MKP Cobro despacho logistica inversa",
+        "precio": 80672,
+        "monto_item": 80672
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7149",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2320816",
+    "folio_int": 2320816,
+    "fecha_emision": "2026-03-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 1911,
+    "iva": 363,
+    "mnt_total": 2274,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 1911,
+        "monto_item": 1911
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7150",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2320894",
+    "folio_int": 2320894,
+    "fecha_emision": "2026-03-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 72437,
+    "iva": 13763,
+    "mnt_total": 86200,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 72437,
+        "monto_item": 72437
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7151",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2320702",
+    "folio_int": 2320702,
+    "fecha_emision": "2026-03-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 22689,
+    "iva": 4311,
+    "mnt_total": 27000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 22689,
+        "monto_item": 22689
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7159",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "122727",
+    "folio_int": 122727,
+    "fecha_emision": "2026-03-28",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 296940,
+    "iva": 56420,
+    "mnt_total": 289757,
+    "items": [
+      "FBR 2000408088066 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+      "FBR 2000408088769 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+      "FBR 2000408088820 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+      "LIQUIDACION CONSIGNATARIO",
+      "FBR 2000408089285 BLAZER CUELLO CRUZADO GRIS NICOPOLY",
+      "FBR 2000408089322 FALDA MIDI DE TUL NEGRO",
+      "FBR 2000408089544 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+      "FBR 2000408089643 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+      "FBR 2000408143857 FALDA MUJER NICOPOLY CAFE MINI LEOPARD",
+      "FBR 2000408217657 BLUSA TRANSPARENCIA NUDO CEBRA CAFE NI",
+      "FBR 2000408218111 BLUSA TRANSPARENCIA NUDO CEBRA CAFE NI",
+      "FBR 2000408218128 CAMISA SATINADA TRANSPARENTE BLANCO NIC",
+      "FBR 2000408218159 TAPADO TEJIDO TIPO CROCHET CAFE NICOPO",
+      "FBR 2000408326816 VESTIDO LARGO ESCOTE DRAPEADO AZUL NICO",
+      "FBR 2000408327172 BLAZER CUELLO SIN SOLAPA CELESTE NICOPO",
+      "FBR 2000408327226 POLERA TEJIDA FANTASIA BLANCO NICOPOLY",
+      "FBR 2000408450849 GILET TIPO CREPE ANIMAL PRINT CAFE NI"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000408088066 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+        "precio": 25202,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408088769 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+        "precio": 21840,
+        "monto_item": 21840
+      },
+      {
+        "item": "FBR 2000408088820 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+        "precio": 28563,
+        "monto_item": 28563
+      },
+      {
+        "item": "LIQUIDACION CONSIGNATARIO",
+        "precio": 43689,
+        "monto_item": 43689
+      },
+      {
+        "item": "FBR 2000408089285 BLAZER CUELLO CRUZADO GRIS NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "FBR 2000408089322 FALDA MIDI DE TUL NEGRO",
+        "precio": 16798,
+        "monto_item": 16798
+      },
+      {
+        "item": "FBR 2000408089544 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+        "precio": 28563,
+        "monto_item": 28563
+      },
+      {
+        "item": "FBR 2000408089643 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+        "precio": 25202,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408143857 FALDA MUJER NICOPOLY CAFE MINI LEOPARD",
+        "precio": 10076,
+        "monto_item": 10076
+      },
+      {
+        "item": "FBR 2000408217657 BLUSA TRANSPARENCIA NUDO CEBRA CAFE NI",
+        "precio": 13437,
+        "monto_item": 13437
+      },
+      {
+        "item": "FBR 2000408218111 BLUSA TRANSPARENCIA NUDO CEBRA CAFE NI",
+        "precio": 13437,
+        "monto_item": 13437
+      },
+      {
+        "item": "FBR 2000408218128 CAMISA SATINADA TRANSPARENTE BLANCO NIC",
+        "precio": 14697,
+        "monto_item": 14697
+      },
+      {
+        "item": "FBR 2000408218159 TAPADO TEJIDO TIPO CROCHET CAFE NICOPO",
+        "precio": 17639,
+        "monto_item": 35278
+      },
+      {
+        "item": "FBR 2000408326816 VESTIDO LARGO ESCOTE DRAPEADO AZUL NICO",
+        "precio": 38647,
+        "monto_item": 38647
+      },
+      {
+        "item": "FBR 2000408327172 BLAZER CUELLO SIN SOLAPA CELESTE NICOPO",
+        "precio": 21000,
+        "monto_item": 21000
+      },
+      {
+        "item": "FBR 2000408327226 POLERA TEJIDA FANTASIA BLANCO NICOPOLY",
+        "precio": 15118,
+        "monto_item": 15118
+      },
+      {
+        "item": "FBR 2000408450849 GILET TIPO CREPE ANIMAL PRINT CAFE NI",
+        "precio": 16798,
+        "monto_item": 16798
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7160",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "122728",
+    "folio_int": 122728,
+    "fecha_emision": "2026-03-28",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 427177,
+    "iva": 81163,
+    "mnt_total": 416843,
+    "items": [
+      "FBR 2000408707677 ENTERITO CINTURON AJUSTABLE NEGRO NICOP",
+      "FBR 2000408707806 PANTALON MUJER NICOPOLY BEIGE MEZCLA LI",
+      "FBR 2000408707974 PANTALON DOS BOTONES VERDE OLIVA NICOPO",
+      "FBR 2000408708292 VESTIDO FLORES FUCSIA NICOPOLY",
+      "FBR 2000408708476 PANTALON PALAZZO MUJER NICOPOLY NEGRO T",
+      "FBR 2000409903726 PANTALON BASICO CAFE NICOPOLY",
+      "FBR 2000409904020 BLUSA VUELOS MANGA LARGA BURDEO NICOPOL",
+      "FBR 2000409904099 PANTALON BASICO CAFE NICOPOLY",
+      "FBR 2000409904211 PANTALON BASICO OXIDO NICOPOLY",
+      "FBR 2000409904273 PANTALON BASICO NEGRO NICOPOLY",
+      "FBR 2000409904600 PANTALON VESTIR RECTO MOCCA NICOPOLY",
+      "FBR 2000409904747 PANTALON BASICO NEGRO NICOPOLY",
+      "FBR 2000410182103 SWEATER ESCOTE ASIME TRICO VERDE NICOPO",
+      "FBR 2000410182721 JEANS CORTE BARREL CAFE NICOPOLY",
+      "FBR 2000410289987 CARDIGAN MANGA GLOBO CAFE NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000408707677 ENTERITO CINTURON AJUSTABLE NEGRO NICOP",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "FBR 2000408707806 PANTALON MUJER NICOPOLY BEIGE MEZCLA LI",
+        "precio": 19739,
+        "monto_item": 19739
+      },
+      {
+        "item": "FBR 2000408707974 PANTALON DOS BOTONES VERDE OLIVA NICOPO",
+        "precio": 23521,
+        "monto_item": 23521
+      },
+      {
+        "item": "FBR 2000408708292 VESTIDO FLORES FUCSIA NICOPOLY",
+        "precio": 15958,
+        "monto_item": 15958
+      },
+      {
+        "item": "FBR 2000408708476 PANTALON PALAZZO MUJER NICOPOLY NEGRO T",
+        "precio": 24361,
+        "monto_item": 24361
+      },
+      {
+        "item": "FBR 2000409903726 PANTALON BASICO CAFE NICOPOLY",
+        "precio": 27723,
+        "monto_item": 55446
+      },
+      {
+        "item": "FBR 2000409904020 BLUSA VUELOS MANGA LARGA BURDEO NICOPOL",
+        "precio": 21000,
+        "monto_item": 21000
+      },
+      {
+        "item": "FBR 2000409904099 PANTALON BASICO CAFE NICOPOLY",
+        "precio": 27723,
+        "monto_item": 27723
+      },
+      {
+        "item": "FBR 2000409904211 PANTALON BASICO OXIDO NICOPOLY",
+        "precio": 31084,
+        "monto_item": 31084
+      },
+      {
+        "item": "FBR 2000409904273 PANTALON BASICO NEGRO NICOPOLY",
+        "precio": 27723,
+        "monto_item": 27723
+      },
+      {
+        "item": "FBR 2000409904600 PANTALON VESTIR RECTO MOCCA NICOPOLY",
+        "precio": 28563,
+        "monto_item": 28563
+      },
+      {
+        "item": "FBR 2000409904747 PANTALON BASICO NEGRO NICOPOLY",
+        "precio": 27723,
+        "monto_item": 27723
+      },
+      {
+        "item": "FBR 2000410182103 SWEATER ESCOTE ASIME TRICO VERDE NICOPO",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000410182721 JEANS CORTE BARREL CAFE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      },
+      {
+        "item": "FBR 2000410289987 CARDIGAN MANGA GLOBO CAFE NICOPOLY",
+        "precio": 31924,
+        "monto_item": 31924
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7161",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2331129",
+    "folio_int": 2331129,
+    "fecha_emision": "2026-03-28",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 668165,
+    "iva": 126951,
+    "mnt_total": 795116,
+    "items": [
+      "Comision Ventas MKP del: 20/03/2026 al 28/03/2026"
+    ],
+    "line_items": [
+      {
+        "item": "Comision Ventas MKP del: 20/03/2026 al 28/03/2026",
+        "precio": 668165,
+        "monto_item": 668165
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7162",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2331130",
+    "folio_int": 2331130,
+    "fecha_emision": "2026-03-28",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 207987,
+    "iva": 39518,
+    "mnt_total": 247505,
+    "items": [
+      "Despacho de productos MKP Ventas del: 20/03/2026 al 28/03/202"
+    ],
+    "line_items": [
+      {
+        "item": "Despacho de productos MKP Ventas del: 20/03/2026 al 28/03/202",
+        "precio": 207987,
+        "monto_item": 207987
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7181",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2321608",
+    "folio_int": 2321608,
+    "fecha_emision": "2026-04-02",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 27731,
+    "iva": 5269,
+    "mnt_total": 33000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 27731,
+        "monto_item": 27731
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7182",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2321729",
+    "folio_int": 2321729,
+    "fecha_emision": "2026-04-02",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 1923,
+    "iva": 365,
+    "mnt_total": 2288,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 1923,
+        "monto_item": 1923
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7183",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2321764",
+    "folio_int": 2321764,
+    "fecha_emision": "2026-04-02",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 85042,
+    "iva": 16158,
+    "mnt_total": 101200,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 85042,
+        "monto_item": 85042
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7185",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2321893",
+    "folio_int": 2321893,
+    "fecha_emision": "2026-04-02",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 340886,
+    "iva": 64768,
+    "mnt_total": 405654,
+    "items": [
+      "MKP Cobro logístico parcial del despacho primera milla",
+      "MKP Cobro despacho logistica inversa"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Cobro logístico parcial del despacho primera milla",
+        "precio": 270298,
+        "monto_item": 270298
+      },
+      {
+        "item": "MKP Cobro despacho logistica inversa",
+        "precio": 70588,
+        "monto_item": 70588
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7190",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "122845",
+    "folio_int": 122845,
+    "fecha_emision": "2026-03-31",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 425485,
+    "iva": 80844,
+    "mnt_total": 415192,
+    "items": [
+      "FBR 2000408088172 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+      "FBR 2000408088271 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+      "FBR 2000408088530 GILET BASICO AJUSTABLE NEGRO NICOPOLY",
+      "FBR 2000408088813 BLAZER MANGA 3/4 AJUSTADA CON PLIEGUES",
+      "FBR 2000408088950 GILET BASICO GRIS NICOPOLY",
+      "FBR 2000408089230 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+      "FBR 2000408089285 BLAZER CUELLO CRUZADO GRIS NICOPOLY",
+      "FBR 2000408089438 BLAZER BASICO DE TOPE NEGRO NICOPOLY",
+      "FBR 2000408089544 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+      "FBR 2000408217657 BLUSA TRANSPARENCIA NUDO CEBRA CAFE NI",
+      "FBR 2000408217701 VESTIDO TIPO CAMISERO ZEBRA CAFE NICOP",
+      "FBR 2000408218111 BLUSA TRANSPARENCIA NUDO CEBRA CAFE NI",
+      "FBR 2000408449508 PANTALON TIPO CREPE ANIMAL PRINT CAFE",
+      "FBR 2000408775904 VESTIDO AJUSTADO CUT OUT NEGRO NICOPOLY",
+      "FBR 2000408781271 BLUSA BRODERIE BLANCO NICOPOLY",
+      "FBR 2000409904297 PANTALON MUJER NICOPOLY NEGRO CON PINZA",
+      "FBR 2000409904433 GILET 4 BOTONES MORADO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000408088172 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "FBR 2000408088271 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+        "precio": 21840,
+        "monto_item": 21840
+      },
+      {
+        "item": "FBR 2000408088530 GILET BASICO AJUSTABLE NEGRO NICOPOLY",
+        "precio": 24081,
+        "monto_item": 72243
+      },
+      {
+        "item": "FBR 2000408088813 BLAZER MANGA 3/4 AJUSTADA CON PLIEGUES",
+        "precio": 30244,
+        "monto_item": 30244
+      },
+      {
+        "item": "FBR 2000408088950 GILET BASICO GRIS NICOPOLY",
+        "precio": 17639,
+        "monto_item": 17639
+      },
+      {
+        "item": "FBR 2000408089230 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+        "precio": 28563,
+        "monto_item": 28563
+      },
+      {
+        "item": "FBR 2000408089285 BLAZER CUELLO CRUZADO GRIS NICOPOLY",
+        "precio": 26882,
+        "monto_item": 26882
+      },
+      {
+        "item": "FBR 2000408089438 BLAZER BASICO DE TOPE NEGRO NICOPOLY",
+        "precio": 33605,
+        "monto_item": 33605
+      },
+      {
+        "item": "FBR 2000408089544 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+        "precio": 31924,
+        "monto_item": 31924
+      },
+      {
+        "item": "FBR 2000408217657 BLUSA TRANSPARENCIA NUDO CEBRA CAFE NI",
+        "precio": 13437,
+        "monto_item": 13437
+      },
+      {
+        "item": "FBR 2000408217701 VESTIDO TIPO CAMISERO ZEBRA CAFE NICOP",
+        "precio": 21000,
+        "monto_item": 21000
+      },
+      {
+        "item": "FBR 2000408218111 BLUSA TRANSPARENCIA NUDO CEBRA CAFE NI",
+        "precio": 13437,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408449508 PANTALON TIPO CREPE ANIMAL PRINT CAFE",
+        "precio": 16798,
+        "monto_item": 16798
+      },
+      {
+        "item": "FBR 2000408775904 VESTIDO AJUSTADO CUT OUT NEGRO NICOPOLY",
+        "precio": 26882,
+        "monto_item": 26882
+      },
+      {
+        "item": "FBR 2000408781271 BLUSA BRODERIE BLANCO NICOPOLY",
+        "precio": 13857,
+        "monto_item": 13857
+      },
+      {
+        "item": "FBR 2000409904297 PANTALON MUJER NICOPOLY NEGRO CON PINZA",
+        "precio": 31924,
+        "monto_item": 31924
+      },
+      {
+        "item": "FBR 2000409904433 GILET 4 BOTONES MORADO NICOPOLY",
+        "precio": 22681,
+        "monto_item": 22681
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7191",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "122844",
+    "folio_int": 122844,
+    "fecha_emision": "2026-03-31",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 139453,
+    "iva": 26496,
+    "mnt_total": 136079,
+    "items": [
+      "FBR 2000409904532 GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+      "FBR 2000410182417 CARDIGAN CUELLO V CON 3 BOTONES VERDE A",
+      "FBR 2000410289673 BLUSA MANGA LARGA CON CORBATIN BURDEO N",
+      "FBR 2000410289918 CARDIGAN DISEÑO TRENZADO NEGRO NICOPOLY",
+      "FBR 2000410290518 BLAZER CINTURON NEGRO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000409904532 GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+        "precio": 21840,
+        "monto_item": 21840
+      },
+      {
+        "item": "FBR 2000410182417 CARDIGAN CUELLO V CON 3 BOTONES VERDE A",
+        "precio": 21000,
+        "monto_item": 21000
+      },
+      {
+        "item": "FBR 2000410289673 BLUSA MANGA LARGA CON CORBATIN BURDEO N",
+        "precio": 21840,
+        "monto_item": 21840
+      },
+      {
+        "item": "FBR 2000410289918 CARDIGAN DISEÑO TRENZADO NEGRO NICOPOLY",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000410290518 BLAZER CINTURON NEGRO NICOPOLY",
+        "precio": 49571,
+        "monto_item": 49571
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7194",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2359462",
+    "folio_int": 2359462,
+    "fecha_emision": "2026-04-05",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 235305,
+    "iva": 44708,
+    "mnt_total": 280013,
+    "items": [
+      "Despacho de productos MKP Ventas del: 28/03/2026 al 05/04/202"
+    ],
+    "line_items": [
+      {
+        "item": "Despacho de productos MKP Ventas del: 28/03/2026 al 05/04/202",
+        "precio": 235305,
+        "monto_item": 235305
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7195",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2359461",
+    "folio_int": 2359461,
+    "fecha_emision": "2026-04-05",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 951026,
+    "iva": 180695,
+    "mnt_total": 1131721,
+    "items": [
+      "Comision Ventas MKP del: 28/03/2026 al 05/04/2026"
+    ],
+    "line_items": [
+      {
+        "item": "Comision Ventas MKP del: 28/03/2026 al 05/04/2026",
+        "precio": 951026,
+        "monto_item": 951026
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7196",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "122952",
+    "folio_int": 122952,
+    "fecha_emision": "2026-04-05",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 29403,
+    "iva": 5586,
+    "mnt_total": 28692,
+    "items": [
+      "FBR 2000410290495 PANTALON SASTRERO RECTO NEGRO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000410290495 PANTALON SASTRERO RECTO NEGRO NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7197",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "122953",
+    "folio_int": 122953,
+    "fecha_emision": "2026-04-05",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 385588,
+    "iva": 73262,
+    "mnt_total": 376260,
+    "items": [
+      "FBR 2000408088172 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+      "FBR 2000408088769 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+      "LIQUIDACION CONSIGNATARIO",
+      "FBR 2000408144472 TRENCH TIPO GAMUZA CAFE NICOPOLY",
+      "FBR 2000408326793 VESTIDO LARGO ESCOTE DRAPEADO AZUL NICO",
+      "FBR 2000408326816 VESTIDO LARGO ESCOTE DRAPEADO AZUL NICO",
+      "FBR 2000408450436 GILET HALTER ESPALDA DESCUBIERTA BLANCO",
+      "FBR 2000408707783 ENTERITO MUJER NICOPOLY NEGRO ESCOTE CR",
+      "FBR 2000408708100 GILET MEZCLA LINO BLANCO NICOPOLY",
+      "FBR 2000408708148 PANTALON PALAZZO TAJOS MOSTAZA NICOPOLY",
+      "FBR 2000408708544 GILET MEZCLA LINO BLANCO NICOPOLY",
+      "FBR 2000408708766 PANTALON PALAZZO MUJER NICOPOLY NEGRO T",
+      "FBR 2000409903535 GILET 4 BOTONES NEGRO NICOPOLY",
+      "FBR 2000409903801 PANTALON BASICO NEGRO NICOPOLY",
+      "FBR 2000410154773 GILET LARGO CON BOTONES BURDEO NICOPOLY",
+      "FBR 2000410155411 POLERA HILO CUELLO V BOTONES MORADO NIC",
+      "FBR 2000410289956 CARDIGAN MANGA GLOBO NEGRO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000408088172 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+        "precio": 26882,
+        "monto_item": 26882
+      },
+      {
+        "item": "FBR 2000408088769 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "LIQUIDACION CONSIGNATARIO",
+        "precio": 43689,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408144472 TRENCH TIPO GAMUZA CAFE NICOPOLY",
+        "precio": 50412,
+        "monto_item": 50412
+      },
+      {
+        "item": "FBR 2000408326793 VESTIDO LARGO ESCOTE DRAPEADO AZUL NICO",
+        "precio": 38647,
+        "monto_item": 38647
+      },
+      {
+        "item": "FBR 2000408326816 VESTIDO LARGO ESCOTE DRAPEADO AZUL NICO",
+        "precio": 38647,
+        "monto_item": 38647
+      },
+      {
+        "item": "FBR 2000408450436 GILET HALTER ESPALDA DESCUBIERTA BLANCO",
+        "precio": 18479,
+        "monto_item": 18479
+      },
+      {
+        "item": "FBR 2000408707783 ENTERITO MUJER NICOPOLY NEGRO ESCOTE CR",
+        "precio": 23521,
+        "monto_item": 23521
+      },
+      {
+        "item": "FBR 2000408708100 GILET MEZCLA LINO BLANCO NICOPOLY",
+        "precio": 16798,
+        "monto_item": 16798
+      },
+      {
+        "item": "FBR 2000408708148 PANTALON PALAZZO TAJOS MOSTAZA NICOPOLY",
+        "precio": 21840,
+        "monto_item": 21840
+      },
+      {
+        "item": "FBR 2000408708544 GILET MEZCLA LINO BLANCO NICOPOLY",
+        "precio": 15118,
+        "monto_item": 15118
+      },
+      {
+        "item": "FBR 2000408708766 PANTALON PALAZZO MUJER NICOPOLY NEGRO T",
+        "precio": 21840,
+        "monto_item": 21840
+      },
+      {
+        "item": "FBR 2000409903535 GILET 4 BOTONES NEGRO NICOPOLY",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000409903801 PANTALON BASICO NEGRO NICOPOLY",
+        "precio": 31084,
+        "monto_item": 31084
+      },
+      {
+        "item": "FBR 2000410154773 GILET LARGO CON BOTONES BURDEO NICOPOLY",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000410155411 POLERA HILO CUELLO V BOTONES MORADO NIC",
+        "precio": 23521,
+        "monto_item": 23521
+      },
+      {
+        "item": "FBR 2000410289956 CARDIGAN MANGA GLOBO NEGRO NICOPOLY",
+        "precio": 31924,
+        "monto_item": 31924
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7215",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2408274",
+    "folio_int": 2408274,
+    "fecha_emision": "2026-04-10",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 27731,
+    "iva": 5269,
+    "mnt_total": 33000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 27731,
+        "monto_item": 27731
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7220",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2408394",
+    "folio_int": 2408394,
+    "fecha_emision": "2026-04-10",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 1923,
+    "iva": 365,
+    "mnt_total": 2288,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 1923,
+        "monto_item": 1923
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7221",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2408400",
+    "folio_int": 2408400,
+    "fecha_emision": "2026-04-10",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 85042,
+    "iva": 16158,
+    "mnt_total": 101200,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 85042,
+        "monto_item": 85042
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7222",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2408463",
+    "folio_int": 2408463,
+    "fecha_emision": "2026-04-10",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 588235,
+    "iva": 111765,
+    "mnt_total": 700000,
+    "items": [
+      "MKP Acuerdo comercial"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Acuerdo comercial",
+        "precio": 588235,
+        "monto_item": 588235
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7224",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2408744",
+    "folio_int": 2408744,
+    "fecha_emision": "2026-04-10",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 363703,
+    "iva": 69104,
+    "mnt_total": 432807,
+    "items": [
+      "MKP Cobro logístico parcial del despacho primera milla",
+      "MKP Cobro despacho logistica inversa"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Cobro logístico parcial del despacho primera milla",
+        "precio": 265384,
+        "monto_item": 265384
+      },
+      {
+        "item": "MKP Cobro despacho logistica inversa",
+        "precio": 98319,
+        "monto_item": 98319
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7227",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "61",
+    "folio": "7707230",
+    "folio_int": 7707230,
+    "fecha_emision": "2026-04-10",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 27731,
+    "iva": 5269,
+    "mnt_total": 33000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 27731,
+        "monto_item": 27731
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7228",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "61",
+    "folio": "7707263",
+    "folio_int": 7707263,
+    "fecha_emision": "2026-04-10",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 85042,
+    "iva": 16158,
+    "mnt_total": 101200,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 85042,
+        "monto_item": 85042
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7229",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "61",
+    "folio": "7707356",
+    "folio_int": 7707356,
+    "fecha_emision": "2026-04-10",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 1923,
+    "iva": 365,
+    "mnt_total": 2288,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 1923,
+        "monto_item": 1923
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7232",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2361281",
+    "folio_int": 2361281,
+    "fecha_emision": "2026-04-13",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 1042861,
+    "iva": 198144,
+    "mnt_total": 1241005,
+    "items": [
+      "Comision Ventas MKP del: 05/04/2026 al 13/04/2026"
+    ],
+    "line_items": [
+      {
+        "item": "Comision Ventas MKP del: 05/04/2026 al 13/04/2026",
+        "precio": 1042861,
+        "monto_item": 1042861
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7233",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2361282",
+    "folio_int": 2361282,
+    "fecha_emision": "2026-04-13",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 261047,
+    "iva": 49599,
+    "mnt_total": 310646,
+    "items": [
+      "Despacho de productos MKP Ventas del: 05/04/2026 al 13/04/202"
+    ],
+    "line_items": [
+      {
+        "item": "Despacho de productos MKP Ventas del: 05/04/2026 al 13/04/202",
+        "precio": 261047,
+        "monto_item": 261047
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7236",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2409430",
+    "folio_int": 2409430,
+    "fecha_emision": "2026-04-14",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 15126,
+    "iva": 2874,
+    "mnt_total": 18000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 15126,
+        "monto_item": 15126
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7237",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2409566",
+    "folio_int": 2409566,
+    "fecha_emision": "2026-04-14",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 3010,
+    "iva": 572,
+    "mnt_total": 3582,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 3010,
+        "monto_item": 3010
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7238",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "123124",
+    "folio_int": 123124,
+    "fecha_emision": "2026-04-13",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 149554,
+    "iva": 28416,
+    "mnt_total": 145936,
+    "items": [
+      "FBR 2000410508040 ABRIGO SOLAPA Y CINTURON ROJO NICOPOLY",
+      "FBR 2000410508163 ABRIGO SOLAPA REDONDA VERDE PETROLEO NI",
+      "FBR 2000410508491 SWEATER CUELLO ALTO ROMBOS BLANCO NICOP"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000410508040 ABRIGO SOLAPA Y CINTURON ROJO NICOPOLY",
+        "precio": 71420,
+        "monto_item": 71420
+      },
+      {
+        "item": "FBR 2000410508163 ABRIGO SOLAPA REDONDA VERDE PETROLEO NI",
+        "precio": 51252,
+        "monto_item": 51252
+      },
+      {
+        "item": "FBR 2000410508491 SWEATER CUELLO ALTO ROMBOS BLANCO NICOP",
+        "precio": 26882,
+        "monto_item": 26882
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7239",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "123125",
+    "folio_int": 123125,
+    "fecha_emision": "2026-04-13",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 376595,
+    "iva": 71555,
+    "mnt_total": 367484,
+    "items": [
+      "FBR 2000408088622 BLAZER MANGA 3/4 AJUSTADO CON SOLAPAS B",
+      "FBR 2000408088769 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+      "FBR 2000408088912 BLAZER CUELLO CRUZADO CELESTE NICOPOLY",
+      "FBR 2000408088981 BLAZER CUELLO CRUZADO CELESTE NICOPOLY",
+      "FBR 2000408089001 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+      "FBR 2000408089131 BLUSA VUELOS MANGA LARGA NEGRO NICOPOLY",
+      "FBR 2000408144434 PANTALON BASICO GRIS NICOPOLY",
+      "FBR 2000408217480 JEANS WIDE LEG BLANCOS NICOPOLY",
+      "FBR 2000408217589 TAPADO TEJIDO TIPO CROCHET CAFE NICOPO",
+      "FBR 2000408326748 FALDA SHORT TIPO GAMUZA CAFE NICOPOLY",
+      "FBR 2000408326779 FALDA SHORT TIPO GAMUZA CAFE NICOPOLY",
+      "FBR 2000408326786 VESTIDO LARGO ESCOTE DRAPEADO MORADO NI",
+      "FBR 2000408453376 BLUSA ENCAJE HOMBROS BLANCO NICOPOLY",
+      "FBR 2000408708131 ENTERITO EFECTO 2 PIEZAS NEGRO NICOPOLY",
+      "FBR 2000408708247 PANTALON PALAZZO MUJER NICOPOLY MAGENTA",
+      "FBR 2000408708445 CROP TOP ESPALDA ELASTICADA MAGENTA NIC",
+      "FBR 2000408775867 VESTIDO FLORAL VOLANTES CELESTE NICOPOL"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000408088622 BLAZER MANGA 3/4 AJUSTADO CON SOLAPAS B",
+        "precio": 43689,
+        "monto_item": 43689
+      },
+      {
+        "item": "FBR 2000408088769 GILET BASICO AJUSTABLE MOCCA NICOPOLY",
+        "precio": 21840,
+        "monto_item": 21840
+      },
+      {
+        "item": "FBR 2000408088912 BLAZER CUELLO CRUZADO CELESTE NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "FBR 2000408088981 BLAZER CUELLO CRUZADO CELESTE NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "FBR 2000408089001 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000408089131 BLUSA VUELOS MANGA LARGA NEGRO NICOPOLY",
+        "precio": 24361,
+        "monto_item": 24361
+      },
+      {
+        "item": "FBR 2000408144434 PANTALON BASICO GRIS NICOPOLY",
+        "precio": 18899,
+        "monto_item": 18899
+      },
+      {
+        "item": "FBR 2000408217480 JEANS WIDE LEG BLANCOS NICOPOLY",
+        "precio": 27723,
+        "monto_item": 27723
+      },
+      {
+        "item": "FBR 2000408217589 TAPADO TEJIDO TIPO CROCHET CAFE NICOPO",
+        "precio": 16798,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408326748 FALDA SHORT TIPO GAMUZA CAFE NICOPOLY",
+        "precio": 14277,
+        "monto_item": 14277
+      },
+      {
+        "item": "FBR 2000408326779 FALDA SHORT TIPO GAMUZA CAFE NICOPOLY",
+        "precio": 14277,
+        "monto_item": 14277
+      },
+      {
+        "item": "FBR 2000408326786 VESTIDO LARGO ESCOTE DRAPEADO MORADO NI",
+        "precio": 38647,
+        "monto_item": 38647
+      },
+      {
+        "item": "FBR 2000408453376 BLUSA ENCAJE HOMBROS BLANCO NICOPOLY",
+        "precio": 13857,
+        "monto_item": 13857
+      },
+      {
+        "item": "FBR 2000408708131 ENTERITO EFECTO 2 PIEZAS NEGRO NICOPOLY",
+        "precio": 30916,
+        "monto_item": 30916
+      },
+      {
+        "item": "FBR 2000408708247 PANTALON PALAZZO MUJER NICOPOLY MAGENTA",
+        "precio": 24361,
+        "monto_item": 24361
+      },
+      {
+        "item": "FBR 2000408708445 CROP TOP ESPALDA ELASTICADA MAGENTA NIC",
+        "precio": 12597,
+        "monto_item": 12597
+      },
+      {
+        "item": "FBR 2000408775867 VESTIDO FLORAL VOLANTES CELESTE NICOPOL",
+        "precio": 23941,
+        "monto_item": 23941
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7240",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "123126",
+    "folio_int": 123126,
+    "fecha_emision": "2026-04-13",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 631326,
+    "iva": 119954,
+    "mnt_total": 616052,
+    "items": [
+      "FBR 2000408775959 VESTIDO TIPO SATIN FLOREADO NEGRO NICOP",
+      "FBR 2000408775997 VESTIDO FLORAL VOLANTES CELESTE NICOPOL",
+      "FBR 2000408781295 VESTIDO TIPO SATIN FLOREADO NEGRO NICOP",
+      "FBR 2000409903627 PANTALON BASICO CAFE NICOPOLY",
+      "FBR 2000409903696 PANTALON BASICO VERDE NICOPOLY",
+      "FBR 2000409903849 PANTALON BASICO VERDE NICOPOLY",
+      "FBR 2000409904020 BLUSA VUELOS MANGA LARGA BURDEO NICOPOL",
+      "FBR 2000409904037 GILET BASICO AJUSTABLE OXIDO NICOPOLY",
+      "FBR 2000409904044 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+      "FBR 2000409904150 PANTALON BASICO MORADO NICOPOLY",
+      "FBR 2000409904174 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+      "FBR 2000409904334 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+      "FBR 2000409904624 PANTALON BASICO VERDE NICOPOLY",
+      "FBR 2000409904709 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+      "FBR 2000409904747 PANTALON BASICO NEGRO NICOPOLY",
+      "FBR 2000410155152 GILET BURDEO RAYAS DIPLOMATICAS NICOPOL",
+      "FBR 2000410289772 BLUSA MANGA LARGA CON CORBATIN CELESTE"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000408775959 VESTIDO TIPO SATIN FLOREADO NEGRO NICOP",
+        "precio": 18899,
+        "monto_item": 18899
+      },
+      {
+        "item": "FBR 2000408775997 VESTIDO FLORAL VOLANTES CELESTE NICOPOL",
+        "precio": 23941,
+        "monto_item": 23941
+      },
+      {
+        "item": "FBR 2000408781295 VESTIDO TIPO SATIN FLOREADO NEGRO NICOP",
+        "precio": 18899,
+        "monto_item": 18899
+      },
+      {
+        "item": "FBR 2000409903627 PANTALON BASICO CAFE NICOPOLY",
+        "precio": 26882,
+        "monto_item": 26882
+      },
+      {
+        "item": "FBR 2000409903696 PANTALON BASICO VERDE NICOPOLY",
+        "precio": 31084,
+        "monto_item": 62168
+      },
+      {
+        "item": "FBR 2000409903849 PANTALON BASICO VERDE NICOPOLY",
+        "precio": 29403,
+        "monto_item": 58806
+      },
+      {
+        "item": "FBR 2000409904020 BLUSA VUELOS MANGA LARGA BURDEO NICOPOL",
+        "precio": 24361,
+        "monto_item": 24361
+      },
+      {
+        "item": "FBR 2000409904037 GILET BASICO AJUSTABLE OXIDO NICOPOLY",
+        "precio": 21840,
+        "monto_item": 21840
+      },
+      {
+        "item": "FBR 2000409904044 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 75614
+      },
+      {
+        "item": "FBR 2000409904150 PANTALON BASICO MORADO NICOPOLY",
+        "precio": 26882,
+        "monto_item": 26882
+      },
+      {
+        "item": "FBR 2000409904174 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 32765,
+        "monto_item": 32765
+      },
+      {
+        "item": "FBR 2000409904334 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      },
+      {
+        "item": "FBR 2000409904624 PANTALON BASICO VERDE NICOPOLY",
+        "precio": 28983,
+        "monto_item": 57966
+      },
+      {
+        "item": "FBR 2000409904709 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      },
+      {
+        "item": "FBR 2000409904747 PANTALON BASICO NEGRO NICOPOLY",
+        "precio": 28983,
+        "monto_item": 57966
+      },
+      {
+        "item": "FBR 2000410155152 GILET BURDEO RAYAS DIPLOMATICAS NICOPOL",
+        "precio": 23521,
+        "monto_item": 23521
+      },
+      {
+        "item": "FBR 2000410289772 BLUSA MANGA LARGA CON CORBATIN CELESTE",
+        "precio": 25202,
+        "monto_item": 25202
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7243",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2409607",
+    "folio_int": 2409607,
+    "fecha_emision": "2026-04-14",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 75126,
+    "iva": 14274,
+    "mnt_total": 89400,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 75126,
+        "monto_item": 75126
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7250",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2410103",
+    "folio_int": 2410103,
+    "fecha_emision": "2026-04-17",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 588235,
+    "iva": 111765,
+    "mnt_total": 700000,
+    "items": [
+      "MKP Acuerdo comercial"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Acuerdo comercial",
+        "precio": 588235,
+        "monto_item": 588235
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7251",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2410158",
+    "folio_int": 2410158,
+    "fecha_emision": "2026-04-17",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 20168,
+    "iva": 3832,
+    "mnt_total": 24000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 20168,
+        "monto_item": 20168
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7252",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2410208",
+    "folio_int": 2410208,
+    "fecha_emision": "2026-04-17",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 2682,
+    "iva": 510,
+    "mnt_total": 3192,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 2682,
+        "monto_item": 2682
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7253",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2410225",
+    "folio_int": 2410225,
+    "fecha_emision": "2026-04-17",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 67227,
+    "iva": 12773,
+    "mnt_total": 80000,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 67227,
+        "monto_item": 67227
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7254",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2410621",
+    "folio_int": 2410621,
+    "fecha_emision": "2026-04-17",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 311504,
+    "iva": 59186,
+    "mnt_total": 370690,
+    "items": [
+      "MKP Cobro logístico parcial del despacho primera milla",
+      "MKP Cobro despacho logistica inversa"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Cobro logístico parcial del despacho primera milla",
+        "precio": 213185,
+        "monto_item": 213185
+      },
+      {
+        "item": "MKP Cobro despacho logistica inversa",
+        "precio": 98319,
+        "monto_item": 98319
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7255",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2410740",
+    "folio_int": 2410740,
+    "fecha_emision": "2026-04-17",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 11643,
+    "iva": 2212,
+    "mnt_total": 13855,
+    "items": [
+      "MKP Penalidad - Cancelacion"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Penalidad - Cancelacion",
+        "precio": 11643,
+        "monto_item": 11643
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7258",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "123248",
+    "folio_int": 123248,
+    "fecha_emision": "2026-04-20",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 140295,
+    "iva": 26656,
+    "mnt_total": 136901,
+    "items": [
+      "FBR 2000409904488 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+      "FBR 2000409904624 PANTALON BASICO VERDE NICOPOLY",
+      "FBR 2000409904716 GILET BASICO AJUSTABLE AZUL NICOPOLY",
+      "FBR 2000410155213 GILET LARGO CON BOTONES NEGRO NICOPOLY",
+      "FBR 2000410155244 GILET LARGO CON BOTONES NEGRO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000409904488 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+        "precio": 33605,
+        "monto_item": 33605
+      },
+      {
+        "item": "FBR 2000409904624 PANTALON BASICO VERDE NICOPOLY",
+        "precio": 31084,
+        "monto_item": 31084
+      },
+      {
+        "item": "FBR 2000409904716 GILET BASICO AJUSTABLE AZUL NICOPOLY",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000410155213 GILET LARGO CON BOTONES NEGRO NICOPOLY",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000410155244 GILET LARGO CON BOTONES NEGRO NICOPOLY",
+        "precio": 25202,
+        "monto_item": 25202
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7259",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "123249",
+    "folio_int": 123249,
+    "fecha_emision": "2026-04-20",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 435595,
+    "iva": 82764,
+    "mnt_total": 425056,
+    "items": [
+      "FBR 2000406169293 ABRIGO SOLAPA REDONDA ROJO NICOPOLY",
+      "FBR 2000406169439 ABRIGO SOLAPA REDONDA ROJO NICOPOLY",
+      "FBR 2000408088080 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+      "FBR 2000408088189 BLAZER CUELLO CRUZADO GRIS NICOPOLY",
+      "LIQUIDACION CONSIGNATARIO",
+      "FBR 2000408088820 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+      "FBR 2000408089131 BLUSA VUELOS MANGA LARGA NEGRO NICOPOLY",
+      "FBR 2000408089544 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+      "FBR 2000408144359 FALDA MUJER NICOPOLY CAFE MINI LEOPARD",
+      "FBR 2000408144472 TRENCH TIPO GAMUZA CAFE NICOPOLY",
+      "FBR 2000408217480 JEANS WIDE LEG BLANCOS NICOPOLY",
+      "FBR 2000408707745 BLUSA PUNTOS NEGROS NICOPOLY",
+      "FBR 2000409903849 PANTALON BASICO VERDE NICOPOLY",
+      "FBR 2000409904020 BLUSA VUELOS MANGA LARGA BURDEO NICOPOL",
+      "FBR 2000409904044 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+      "FBR 2000409904112 GILET 4 BOTONES NEGRO NICOPOLY",
+      "FBR 2000409904242 GILET SASTRE ENTALLADO VERDE OSCURO NIC"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000406169293 ABRIGO SOLAPA REDONDA ROJO NICOPOLY",
+        "precio": 60496,
+        "monto_item": 60496
+      },
+      {
+        "item": "FBR 2000406169439 ABRIGO SOLAPA REDONDA ROJO NICOPOLY",
+        "precio": 54613,
+        "monto_item": 54613
+      },
+      {
+        "item": "FBR 2000408088080 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "FBR 2000408088189 BLAZER CUELLO CRUZADO GRIS NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "LIQUIDACION CONSIGNATARIO",
+        "precio": 43689,
+        "monto_item": 43689
+      },
+      {
+        "item": "FBR 2000408088820 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+        "precio": 28563,
+        "monto_item": 28563
+      },
+      {
+        "item": "FBR 2000408089131 BLUSA VUELOS MANGA LARGA NEGRO NICOPOLY",
+        "precio": 24361,
+        "monto_item": 24361
+      },
+      {
+        "item": "FBR 2000408089544 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+        "precio": 30244,
+        "monto_item": 60488
+      },
+      {
+        "item": "FBR 2000408144359 FALDA MUJER NICOPOLY CAFE MINI LEOPARD",
+        "precio": 10076,
+        "monto_item": 10076
+      },
+      {
+        "item": "FBR 2000408144472 TRENCH TIPO GAMUZA CAFE NICOPOLY",
+        "precio": 45370,
+        "monto_item": 45370
+      },
+      {
+        "item": "FBR 2000408217480 JEANS WIDE LEG BLANCOS NICOPOLY",
+        "precio": 27723,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408707745 BLUSA PUNTOS NEGROS NICOPOLY",
+        "precio": 14277,
+        "monto_item": 14277
+      },
+      {
+        "item": "FBR 2000409903849 PANTALON BASICO VERDE NICOPOLY",
+        "precio": 31084,
+        "monto_item": 31084
+      },
+      {
+        "item": "FBR 2000409904020 BLUSA VUELOS MANGA LARGA BURDEO NICOPOL",
+        "precio": 24361,
+        "monto_item": 24361
+      },
+      {
+        "item": "FBR 2000409904044 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409904112 GILET 4 BOTONES NEGRO NICOPOLY",
+        "precio": 19739,
+        "monto_item": 19739
+      },
+      {
+        "item": "FBR 2000409904242 GILET SASTRE ENTALLADO VERDE OSCURO NIC",
+        "precio": 25202,
+        "monto_item": 25202
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7260",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2363285",
+    "folio_int": 2363285,
+    "fecha_emision": "2026-04-20",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 175116,
+    "iva": 33272,
+    "mnt_total": 208388,
+    "items": [
+      "Despacho de productos MKP Ventas del: 13/04/2026 al 20/04/202"
+    ],
+    "line_items": [
+      {
+        "item": "Despacho de productos MKP Ventas del: 13/04/2026 al 20/04/202",
+        "precio": 175116,
+        "monto_item": 175116
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7261",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2363284",
+    "folio_int": 2363284,
+    "fecha_emision": "2026-04-20",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 416881,
+    "iva": 79207,
+    "mnt_total": 496088,
+    "items": [
+      "Comision Ventas MKP del: 13/04/2026 al 20/04/2026"
+    ],
+    "line_items": [
+      {
+        "item": "Comision Ventas MKP del: 13/04/2026 al 20/04/2026",
+        "precio": 416881,
+        "monto_item": 416881
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7266",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53136430",
+    "folio_int": 53136430,
+    "fecha_emision": "2026-04-23",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 254943,
+    "iva": 59801,
+    "mnt_total": 314744,
+    "items": [
+      "Vestido delgado con diseño animal print.",
+      "Camisa Satinada Transparente Con botones",
+      "GILET CON DRAPEADO LATERAL BLANCO",
+      "FALDA ASIME TRICA ANIMAL PRINT",
+      "GILET CON DRAPEADO LATERAL BLANCO",
+      "FALDA ASIME TRICA ANIMAL PRINT",
+      "Vestido delgado con diseño animal print.",
+      "POLERA SIN MANGAS ANIMAL PRINT",
+      "POLERA SIN MANGAS ANIMAL PRINT",
+      "POLERA SIN MANGAS ANIMAL PRINT",
+      "Polera manga larga con transparencias y",
+      "Vestido delgado con diseño animal print.",
+      "FALDA ASIME TRICA ANIMAL PRINT",
+      "Camisa Satinada Transparente Con botones",
+      "GILET CON DRAPEADO LATERAL BLANCO"
+    ],
+    "line_items": [
+      {
+        "item": "Vestido delgado con diseño animal print.",
+        "precio": 16531,
+        "monto_item": 16531
+      },
+      {
+        "item": "Camisa Satinada Transparente Con botones",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "GILET CON DRAPEADO LATERAL BLANCO",
+        "precio": 18598,
+        "monto_item": 55794
+      },
+      {
+        "item": "FALDA ASIME TRICA ANIMAL PRINT",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "GILET CON DRAPEADO LATERAL BLANCO",
+        "precio": 4236,
+        "monto_item": 25416
+      },
+      {
+        "item": "FALDA ASIME TRICA ANIMAL PRINT",
+        "precio": 10674,
+        "monto_item": 21348
+      },
+      {
+        "item": "Vestido delgado con diseño animal print.",
+        "precio": 19012,
+        "monto_item": 38024
+      },
+      {
+        "item": "POLERA SIN MANGAS ANIMAL PRINT",
+        "precio": 11018,
+        "monto_item": 22036
+      },
+      {
+        "item": "POLERA SIN MANGAS ANIMAL PRINT",
+        "precio": 11018,
+        "monto_item": 33054
+      },
+      {
+        "item": "POLERA SIN MANGAS ANIMAL PRINT",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Polera manga larga con transparencias y",
+        "precio": 11707,
+        "monto_item": 23414
+      },
+      {
+        "item": "Vestido delgado con diseño animal print.",
+        "precio": 16531,
+        "monto_item": 16531
+      },
+      {
+        "item": "FALDA ASIME TRICA ANIMAL PRINT",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Camisa Satinada Transparente Con botones",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "GILET CON DRAPEADO LATERAL BLANCO",
+        "precio": 13774,
+        "monto_item": 55096
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7267",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53136431",
+    "folio_int": 53136431,
+    "fecha_emision": "2026-04-23",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 201761,
+    "iva": 47326,
+    "mnt_total": 249087,
+    "items": [
+      "Camisa Satinada Transparente Con botones",
+      "Vestido corto camisero con estampado ani",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Camisa Satinada Transparente Con botones",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Camisa Satinada Transparente Con botones",
+      "Camisa Satinada Transparente Con botones",
+      "Polera manga larga con transparencias y",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Vestido corto camisero con estampado ani",
+      "Polera manga larga con transparencias y"
+    ],
+    "line_items": [
+      {
+        "item": "Camisa Satinada Transparente Con botones",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Vestido corto camisero con estampado ani",
+        "precio": 14774,
+        "monto_item": 59096
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 11616,
+        "monto_item": 46464
+      },
+      {
+        "item": "Camisa Satinada Transparente Con botones",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 15842,
+        "monto_item": 31684
+      },
+      {
+        "item": "Camisa Satinada Transparente Con botones",
+        "precio": 18598,
+        "monto_item": 37196
+      },
+      {
+        "item": "Camisa Satinada Transparente Con botones",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Polera manga larga con transparencias y",
+        "precio": 11363,
+        "monto_item": 11363
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 8516,
+        "monto_item": 34064
+      },
+      {
+        "item": "Vestido corto camisero con estampado ani",
+        "precio": 17220,
+        "monto_item": 17220
+      },
+      {
+        "item": "Polera manga larga con transparencias y",
+        "precio": 500,
+        "monto_item": 1500
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7268",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53136432",
+    "folio_int": 53136432,
+    "fecha_emision": "2026-04-23",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 231298,
+    "iva": 54254,
+    "mnt_total": 285552,
+    "items": [
+      "Camisa Satinada Transparente Con botones",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Polera rayas verticales con cuello tipo",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Polera manga larga con transparencias y",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Vestido corto camisero con estampado ani",
+      "Camisa Satinada Transparente Con botones",
+      "Polera rayas verticales con cuello tipo",
+      "Camisa Satinada Transparente Con botones",
+      "Vestido corto camisero con estampado ani",
+      "Polera tejida estilo crochet.",
+      "Polera tejida estilo crochet.",
+      "Blusa escote en V. Cuello con lazos esti",
+      "Blusa escote en V. Cuello con lazos esti"
+    ],
+    "line_items": [
+      {
+        "item": "Camisa Satinada Transparente Con botones",
+        "precio": 12052,
+        "monto_item": 24104
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 17220,
+        "monto_item": 17220
+      },
+      {
+        "item": "Polera rayas verticales con cuello tipo",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 17220,
+        "monto_item": 51660
+      },
+      {
+        "item": "Polera manga larga con transparencias y",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Vestido corto camisero con estampado ani",
+        "precio": 17220,
+        "monto_item": 68880
+      },
+      {
+        "item": "Camisa Satinada Transparente Con botones",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Polera rayas verticales con cuello tipo",
+        "precio": 10330,
+        "monto_item": 20660
+      },
+      {
+        "item": "Camisa Satinada Transparente Con botones",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Vestido corto camisero con estampado ani",
+        "precio": 17220,
+        "monto_item": 51660
+      },
+      {
+        "item": "Polera tejida estilo crochet.",
+        "precio": 500,
+        "monto_item": 2500
+      },
+      {
+        "item": "Polera tejida estilo crochet.",
+        "precio": 500,
+        "monto_item": 2500
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 9342,
+        "monto_item": 37368
+      },
+      {
+        "item": "Blusa escote en V. Cuello con lazos esti",
+        "precio": 500,
+        "monto_item": 1500
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7269",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53136433",
+    "folio_int": 53136433,
+    "fecha_emision": "2026-04-23",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 156376,
+    "iva": 36680,
+    "mnt_total": 193056,
+    "items": [
+      "Polera tejida estilo crochet.",
+      "TOP TIPO LINO ESTAMPADO CEBRA CAFE  NICOPOLY",
+      "Polera tejida estilo crochet.",
+      "CAMISA BASICA TIPO LINO BEIGE NICOPOLY",
+      "CAMISA BASICA TIPO LINO CELESTE NICOPOLY",
+      "BLUSA SIN MANGAS NEGRA CON FLORES BLANCAS NICOPOLY",
+      "Polera rayas verticales con cuello tipo",
+      "Polera tejida estilo crochet.",
+      "GILET TIPO CREPE  ANIMAL PRINT CAFE  NICOPOLY",
+      "VESTIDO LARGO TIRANTES CRUZADOS NEGRO NICOPOLY",
+      "Polera tejida estilo crochet.",
+      "Polera tejida estilo crochet.",
+      "FALDA MIDI NEGRA CON FLORES BLANCAS NICOPOLY",
+      "Polera tejida estilo crochet.",
+      "Polera tejida estilo crochet."
+    ],
+    "line_items": [
+      {
+        "item": "Polera tejida estilo crochet.",
+        "precio": 12397,
+        "monto_item": 12397
+      },
+      {
+        "item": "TOP TIPO LINO ESTAMPADO CEBRA CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Polera tejida estilo crochet.",
+        "precio": 11638,
+        "monto_item": 34914
+      },
+      {
+        "item": "CAMISA BASICA TIPO LINO BEIGE NICOPOLY",
+        "precio": 13086,
+        "monto_item": 26172
+      },
+      {
+        "item": "CAMISA BASICA TIPO LINO CELESTE NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "BLUSA SIN MANGAS NEGRA CON FLORES BLANCAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Polera rayas verticales con cuello tipo",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Polera tejida estilo crochet.",
+        "precio": 500,
+        "monto_item": 2500
+      },
+      {
+        "item": "GILET TIPO CREPE  ANIMAL PRINT CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "VESTIDO LARGO TIRANTES CRUZADOS NEGRO NICOPOLY",
+        "precio": 31691,
+        "monto_item": 63382
+      },
+      {
+        "item": "Polera tejida estilo crochet.",
+        "precio": 500,
+        "monto_item": 2500
+      },
+      {
+        "item": "Polera tejida estilo crochet.",
+        "precio": 500,
+        "monto_item": 2500
+      },
+      {
+        "item": "FALDA MIDI NEGRA CON FLORES BLANCAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Polera tejida estilo crochet.",
+        "precio": 500,
+        "monto_item": 2500
+      },
+      {
+        "item": "Polera tejida estilo crochet.",
+        "precio": 12397,
+        "monto_item": 37191
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7270",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53136434",
+    "folio_int": 53136434,
+    "fecha_emision": "2026-04-23",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 145823,
+    "iva": 34205,
+    "mnt_total": 180028,
+    "items": [
+      "CAMISA BASICA TIPO LINO BLANCO NICOPOLY",
+      "PANTALON NEGRO FLORES BLANCAS NICOPOLY",
+      "TOP TIPO LINO ESTAMPADO CEBRA CAFE  NICOPOLY",
+      "PANTALON NEGRO FLORES BLANCAS NICOPOLY",
+      "CAMISA BASICA TIPO LINO BLANCO NICOPOLY",
+      "FALDA MIDI NEGRA CON FLORES BLANCAS NICOPOLY",
+      "FALDA MIDI NEGRA CON FLORES BLANCAS NICOPOLY",
+      "CAMISA BASICA TIPO LINO BEIGE NICOPOLY",
+      "TOP TIPO LINO ESTAMPADO CEBRA CAFE  NICOPOLY",
+      "CAMISA BASICA TIPO LINO BEIGE NICOPOLY",
+      "BLUSA SIN MANGAS NEGRA CON FLORES BLANCAS NICOPOLY",
+      "CAMISA BASICA TIPO LINO CELESTE NICOPOLY",
+      "CAMISA BASICA TIPO LINO CELESTE NICOPOLY",
+      "TOP TIPO LINO ESTAMPADO CEBRA CAFE  NICOPOLY",
+      "VESTIDO LARGO TIRANTES CRUZADOS NEGRO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "CAMISA BASICA TIPO LINO BLANCO NICOPOLY",
+        "precio": 12052,
+        "monto_item": 12052
+      },
+      {
+        "item": "PANTALON NEGRO FLORES BLANCAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "TOP TIPO LINO ESTAMPADO CEBRA CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "PANTALON NEGRO FLORES BLANCAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "CAMISA BASICA TIPO LINO BLANCO NICOPOLY",
+        "precio": 13017,
+        "monto_item": 26034
+      },
+      {
+        "item": "FALDA MIDI NEGRA CON FLORES BLANCAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "FALDA MIDI NEGRA CON FLORES BLANCAS NICOPOLY",
+        "precio": 10330,
+        "monto_item": 20660
+      },
+      {
+        "item": "CAMISA BASICA TIPO LINO BEIGE NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "TOP TIPO LINO ESTAMPADO CEBRA CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "CAMISA BASICA TIPO LINO BEIGE NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "BLUSA SIN MANGAS NEGRA CON FLORES BLANCAS NICOPOLY",
+        "precio": 9364,
+        "monto_item": 18728
+      },
+      {
+        "item": "CAMISA BASICA TIPO LINO CELESTE NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "CAMISA BASICA TIPO LINO CELESTE NICOPOLY",
+        "precio": 13086,
+        "monto_item": 26172
+      },
+      {
+        "item": "TOP TIPO LINO ESTAMPADO CEBRA CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "VESTIDO LARGO TIRANTES CRUZADOS NEGRO NICOPOLY",
+        "precio": 31691,
+        "monto_item": 63382
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7271",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53136435",
+    "folio_int": 53136435,
+    "fecha_emision": "2026-04-23",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 205731,
+    "iva": 48257,
+    "mnt_total": 253988,
+    "items": [
+      "CAMISA BASICA TIPO LINO OXIDO NICOPOLY",
+      "BLUSA SIN MANGAS NEGRA CON FLORES BLANCAS NICOPOLY",
+      "CAMISA BASICA TIPO LINO OXIDO NICOPOLY",
+      "CAMISA BASICA TIPO LINO BLANCO NICOPOLY",
+      "VESTIDO FLORES FUCSIA NICOPOLY",
+      "ENTERITO CINTURON AJUSTABLE NEGRO NICOPOLY",
+      "ENTERITO CINTURON AJUSTABLE MORADO NICOPOLY",
+      "GILET TIPO CREPE  ANIMAL PRINT CAFE  NICOPOLY",
+      "CAMISA BASICA TIPO LINO VERDE OLIVA NICOPOLY",
+      "VESTIDO ESTAMPADO MINIMALISTA NARANJA NICOPOLY",
+      "GILET TIPO CREPE  ANIMAL PRINT CAFE  NICOPOLY",
+      "PANTALON ESTAMPADO CEBRA CAFE  NICOPOLY",
+      "PANTALON ESTAMPADO CEBRA CAFE  NICOPOLY",
+      "VESTIDO CINTURA ELASTICADA FLORES NARANJA NICOPOLY",
+      "VESTIDO ESTAMPADO MINIMALISTA NARANJA NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "CAMISA BASICA TIPO LINO OXIDO NICOPOLY",
+        "precio": 12052,
+        "monto_item": 24104
+      },
+      {
+        "item": "BLUSA SIN MANGAS NEGRA CON FLORES BLANCAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "CAMISA BASICA TIPO LINO OXIDO NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "CAMISA BASICA TIPO LINO BLANCO NICOPOLY",
+        "precio": 13086,
+        "monto_item": 26172
+      },
+      {
+        "item": "VESTIDO FLORES FUCSIA NICOPOLY",
+        "precio": 13086,
+        "monto_item": 13086
+      },
+      {
+        "item": "ENTERITO CINTURON AJUSTABLE NEGRO NICOPOLY",
+        "precio": 24110,
+        "monto_item": 48220
+      },
+      {
+        "item": "ENTERITO CINTURON AJUSTABLE MORADO NICOPOLY",
+        "precio": 24110,
+        "monto_item": 48220
+      },
+      {
+        "item": "GILET TIPO CREPE  ANIMAL PRINT CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "CAMISA BASICA TIPO LINO VERDE OLIVA NICOPOLY",
+        "precio": 12052,
+        "monto_item": 12052
+      },
+      {
+        "item": "VESTIDO ESTAMPADO MINIMALISTA NARANJA NICOPOLY",
+        "precio": 22043,
+        "monto_item": 44086
+      },
+      {
+        "item": "GILET TIPO CREPE  ANIMAL PRINT CAFE  NICOPOLY",
+        "precio": 13774,
+        "monto_item": 27548
+      },
+      {
+        "item": "PANTALON ESTAMPADO CEBRA CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "PANTALON ESTAMPADO CEBRA CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "VESTIDO CINTURA ELASTICADA FLORES NARANJA NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "VESTIDO ESTAMPADO MINIMALISTA NARANJA NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7272",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53136437",
+    "folio_int": 53136437,
+    "fecha_emision": "2026-04-23",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 368345,
+    "iva": 86401,
+    "mnt_total": 454746,
+    "items": [
+      "VESTIDO TIPO SATIN FLOREADO ROSADO NICOPOLY",
+      "BLUSA BRODERIE BLANCO NICOPOLY",
+      "VESTIDO FLORAL VOLANTES CELESTE NICOPOLY",
+      "VESTIDO AJUSTADO CUT OUT NEGRO NICOPOLY",
+      "VESTIDO TIPO SATIN FLOREADO ROSADO NICOPOLY",
+      "VESTIDO ESTAMPADO MINIMALISTA NARANJA NICOPOLY",
+      "PANTALON ESTAMPADO CEBRA CAFE  NICOPOLY",
+      "VESTIDO AJUSTADO CUT OUT NEGRO NICOPOLY",
+      "POLERA BLANCA DETALLE DE ENCAJE NICOPOLY",
+      "VESTIDO TIPO SATIN FLOREADO NEGRO NICOPOLY",
+      "VESTIDO AJUSTADO CUT OUT NEGRO NICOPOLY",
+      "BLUSA BRODERIE BLANCO NICOPOLY",
+      "VESTIDO TIPO SATIN FLOREADO NEGRO NICOPOLY",
+      "VESTIDO FLORAL VOLANTES CELESTE NICOPOLY",
+      "POLERA BLANCA DETALLE DE ENCAJE NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "VESTIDO TIPO SATIN FLOREADO ROSADO NICOPOLY",
+        "precio": 14326,
+        "monto_item": 57304
+      },
+      {
+        "item": "BLUSA BRODERIE BLANCO NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "VESTIDO FLORAL VOLANTES CELESTE NICOPOLY",
+        "precio": 19632,
+        "monto_item": 19632
+      },
+      {
+        "item": "VESTIDO AJUSTADO CUT OUT NEGRO NICOPOLY",
+        "precio": 22043,
+        "monto_item": 88172
+      },
+      {
+        "item": "VESTIDO TIPO SATIN FLOREADO ROSADO NICOPOLY",
+        "precio": 500,
+        "monto_item": 4000
+      },
+      {
+        "item": "VESTIDO ESTAMPADO MINIMALISTA NARANJA NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "PANTALON ESTAMPADO CEBRA CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "VESTIDO AJUSTADO CUT OUT NEGRO NICOPOLY",
+        "precio": 22043,
+        "monto_item": 88172
+      },
+      {
+        "item": "POLERA BLANCA DETALLE DE ENCAJE NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "VESTIDO TIPO SATIN FLOREADO NEGRO NICOPOLY",
+        "precio": 15497,
+        "monto_item": 108479
+      },
+      {
+        "item": "VESTIDO AJUSTADO CUT OUT NEGRO NICOPOLY",
+        "precio": 500,
+        "monto_item": 4000
+      },
+      {
+        "item": "BLUSA BRODERIE BLANCO NICOPOLY",
+        "precio": 11363,
+        "monto_item": 22726
+      },
+      {
+        "item": "VESTIDO TIPO SATIN FLOREADO NEGRO NICOPOLY",
+        "precio": 15497,
+        "monto_item": 15497
+      },
+      {
+        "item": "VESTIDO FLORAL VOLANTES CELESTE NICOPOLY",
+        "precio": 19632,
+        "monto_item": 39264
+      },
+      {
+        "item": "POLERA BLANCA DETALLE DE ENCAJE NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7273",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53136438",
+    "folio_int": 53136438,
+    "fecha_emision": "2026-04-23",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 148808,
+    "iva": 34905,
+    "mnt_total": 183713,
+    "items": [
+      "VESTIDO LARGO TEJIDO NEGRO NICOPOLY",
+      "VESTIDO TIPO SATIN FLOREADO NEGRO NICOPOLY",
+      "VESTIDO LARGO TEJIDO CAFE  NICOPOLY",
+      "VESTIDO FLORAL VOLANTES CELESTE NICOPOLY",
+      "BLUSA BRODERIE BLANCO NICOPOLY",
+      "VESTIDO SATINADO ESCOTE FRUNCIDO LILA NICOPOLY",
+      "VESTIDO SATINADO ESCOTE FRUNCIDO LILA NICOPOLY",
+      "VESTIDO LARGO TEJIDO CAFE  NICOPOLY",
+      "VESTIDO TIPO SATIN FLOREADO ROSADO NICOPOLY",
+      "VESTIDO ESCOTE CUADRADO NEGRO NICOPOLY",
+      "VESTIDO SATINADO ESCOTE FRUNCIDO LILA NICOPOLY",
+      "VESTIDO LARGO TEJIDO BEIGE NICOPOLY",
+      "PANTALON ESTAMPADO CEBRA CAFE  NICOPOLY",
+      "VESTIDO LARGO TEJIDO BEIGE NICOPOLY",
+      "VESTIDO ESCOTE CUADRADO NEGRO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "VESTIDO LARGO TEJIDO NEGRO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "VESTIDO TIPO SATIN FLOREADO NEGRO NICOPOLY",
+        "precio": 15842,
+        "monto_item": 31684
+      },
+      {
+        "item": "VESTIDO LARGO TEJIDO CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "VESTIDO FLORAL VOLANTES CELESTE NICOPOLY",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "BLUSA BRODERIE BLANCO NICOPOLY",
+        "precio": 11363,
+        "monto_item": 22726
+      },
+      {
+        "item": "VESTIDO SATINADO ESCOTE FRUNCIDO LILA NICOPOLY",
+        "precio": 16186,
+        "monto_item": 32372
+      },
+      {
+        "item": "VESTIDO SATINADO ESCOTE FRUNCIDO LILA NICOPOLY",
+        "precio": 17909,
+        "monto_item": 35818
+      },
+      {
+        "item": "VESTIDO LARGO TEJIDO CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "VESTIDO TIPO SATIN FLOREADO ROSADO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2500
+      },
+      {
+        "item": "VESTIDO ESCOTE CUADRADO NEGRO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "VESTIDO SATINADO ESCOTE FRUNCIDO LILA NICOPOLY",
+        "precio": 16186,
+        "monto_item": 16186
+      },
+      {
+        "item": "VESTIDO LARGO TEJIDO BEIGE NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "PANTALON ESTAMPADO CEBRA CAFE  NICOPOLY",
+        "precio": 12741,
+        "monto_item": 12741
+      },
+      {
+        "item": "VESTIDO LARGO TEJIDO BEIGE NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "VESTIDO ESCOTE CUADRADO NEGRO NICOPOLY",
+        "precio": 16186,
+        "monto_item": 16186
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7274",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53136439",
+    "folio_int": 53136439,
+    "fecha_emision": "2026-04-23",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 4860,
+    "iva": 1140,
+    "mnt_total": 6000,
+    "items": [
+      "VESTIDO LARGO TEJIDO CAFE  NICOPOLY",
+      "VESTIDO LARGO TEJIDO NEGRO NICOPOLY",
+      "VESTIDO LARGO TEJIDO BEIGE NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "VESTIDO LARGO TEJIDO CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "VESTIDO LARGO TEJIDO NEGRO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "VESTIDO LARGO TEJIDO BEIGE NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7280",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "61",
+    "folio": "7707465",
+    "folio_int": 7707465,
+    "fecha_emision": "2026-04-21",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 588235,
+    "iva": 111765,
+    "mnt_total": 700000,
+    "items": [
+      "Anula MKP Acuerdo comercial"
+    ],
+    "line_items": [
+      {
+        "item": "Anula MKP Acuerdo comercial",
+        "precio": 588235,
+        "monto_item": 588235
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7289",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2411699",
+    "folio_int": 2411699,
+    "fecha_emision": "2026-04-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 251496,
+    "iva": 47784,
+    "mnt_total": 299280,
+    "items": [
+      "MKP Cobro logístico parcial del despacho primera milla",
+      "MKP Cobro despacho logistica inversa"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Cobro logístico parcial del despacho primera milla",
+        "precio": 145614,
+        "monto_item": 145614
+      },
+      {
+        "item": "MKP Cobro despacho logistica inversa",
+        "precio": 105882,
+        "monto_item": 105882
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7290",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2412199",
+    "folio_int": 2412199,
+    "fecha_emision": "2026-04-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 15126,
+    "iva": 2874,
+    "mnt_total": 18000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 15126,
+        "monto_item": 15126
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7291",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2412242",
+    "folio_int": 2412242,
+    "fecha_emision": "2026-04-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 3049,
+    "iva": 579,
+    "mnt_total": 3628,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 3049,
+        "monto_item": 3049
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7292",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2412262",
+    "folio_int": 2412262,
+    "fecha_emision": "2026-04-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 41008,
+    "iva": 7792,
+    "mnt_total": 48800,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 41008,
+        "monto_item": 41008
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7293",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2365047",
+    "folio_int": 2365047,
+    "fecha_emision": "2026-04-28",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 514484,
+    "iva": 97752,
+    "mnt_total": 612236,
+    "items": [
+      "Comision Ventas MKP del: 20/04/2026 al 28/04/2026"
+    ],
+    "line_items": [
+      {
+        "item": "Comision Ventas MKP del: 20/04/2026 al 28/04/2026",
+        "precio": 514484,
+        "monto_item": 514484
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7294",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2365048",
+    "folio_int": 2365048,
+    "fecha_emision": "2026-04-28",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 227391,
+    "iva": 43204,
+    "mnt_total": 270595,
+    "items": [
+      "Despacho de productos MKP Ventas del: 20/04/2026 al 28/04/202"
+    ],
+    "line_items": [
+      {
+        "item": "Despacho de productos MKP Ventas del: 20/04/2026 al 28/04/202",
+        "precio": 227391,
+        "monto_item": 227391
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7295",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "123358",
+    "folio_int": 123358,
+    "fecha_emision": "2026-04-28",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 225160,
+    "iva": 42780,
+    "mnt_total": 219712,
+    "items": [
+      "FBR 2000406083827 ABRIGO SOLAPA REDONDA NEGRONICOPOLY",
+      "FBR 2000406169439 ABRIGO SOLAPA REDONDA ROJO NICOPOLY",
+      "FBR 2000408088080 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+      "FBR 2000408088820 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+      "FBR 2000408089001 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+      "FBR 2000408326748 FALDA SHORT TIPO GAMUZA CAFE NICOPOLY",
+      "FBR 2000408450436 GILET HALTER ESPALDA DESCUBIERTA BLANCO",
+      "FBR 2000408453093 SHORT CON BOTONES DELANTEROS NEGRO NICO",
+      "FBR 2000408707714 ENTERITO MUJER NICOPOLY CELESTE EFECTO",
+      "FBR 2000408708100 GILET MEZCLA LINO BLANCO NICOPOLY",
+      "FBR 2000409903597 GILET 4 BOTONES CAFE NICOPOLY",
+      "FBR 2000409903665 BLAZER BASICO DE TOPE MORADO NICOPOLY",
+      "FBR 2000409904488 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+      "FBR 2000409904709 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+      "FBR 2000409904723 PANTALON VESTIR RECTO BURDEO NICOPOLY",
+      "FBR 2000410182035 CARDIGAN CRUZADO CON BOTON DORADO CAFE",
+      "FBR 2000410290761 BLUSA MANGA LARGA CON CORBATIN BLANCO N"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000406083827 ABRIGO SOLAPA REDONDA NEGRONICOPOLY",
+        "precio": 60496,
+        "monto_item": 60496
+      },
+      {
+        "item": "FBR 2000406169439 ABRIGO SOLAPA REDONDA ROJO NICOPOLY",
+        "precio": 60496,
+        "monto_item": 60496
+      },
+      {
+        "item": "FBR 2000408088080 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "FBR 2000408088820 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+        "precio": 28563,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408089001 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "FBR 2000408326748 FALDA SHORT TIPO GAMUZA CAFE NICOPOLY",
+        "precio": 14277,
+        "monto_item": 14277
+      },
+      {
+        "item": "FBR 2000408450436 GILET HALTER ESPALDA DESCUBIERTA BLANCO",
+        "precio": 18479,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408453093 SHORT CON BOTONES DELANTEROS NEGRO NICO",
+        "precio": 18479,
+        "monto_item": 18479
+      },
+      {
+        "item": "FBR 2000408707714 ENTERITO MUJER NICOPOLY CELESTE EFECTO",
+        "precio": 30244,
+        "monto_item": 30244
+      },
+      {
+        "item": "FBR 2000408708100 GILET MEZCLA LINO BLANCO NICOPOLY",
+        "precio": 16798,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409903597 GILET 4 BOTONES CAFE NICOPOLY",
+        "precio": 22681,
+        "monto_item": 22681
+      },
+      {
+        "item": "FBR 2000409903665 BLAZER BASICO DE TOPE MORADO NICOPOLY",
+        "precio": 37807,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409904488 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+        "precio": 4202,
+        "monto_item": 4202
+      },
+      {
+        "item": "FBR 2000409904709 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409904723 PANTALON VESTIR RECTO BURDEO NICOPOLY",
+        "precio": 32765,
+        "monto_item": 32765
+      },
+      {
+        "item": "FBR 2000410182035 CARDIGAN CRUZADO CON BOTON DORADO CAFE",
+        "precio": 36966,
+        "monto_item": 36966
+      },
+      {
+        "item": "FBR 2000410290761 BLUSA MANGA LARGA CON CORBATIN BLANCO N",
+        "precio": 25202,
+        "monto_item": 25202
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7296",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "123357",
+    "folio_int": 123357,
+    "fecha_emision": "2026-04-28",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 120151,
+    "iva": 22829,
+    "mnt_total": 117244,
+    "items": [
+      "FBR 2000410290907 CHAQUETA ECOCUERO ACOLCHADO CUELLO MAO",
+      "FBR 2000410507906 ABRIGO SOLAPA Y CINTURON NEGRO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000410290907 CHAQUETA ECOCUERO ACOLCHADO CUELLO MAO",
+        "precio": 48731,
+        "monto_item": 48731
+      },
+      {
+        "item": "FBR 2000410507906 ABRIGO SOLAPA Y CINTURON NEGRO NICOPOLY",
+        "precio": 71420,
+        "monto_item": 71420
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7320",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2412920",
+    "folio_int": 2412920,
+    "fecha_emision": "2026-05-04",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 22689,
+    "iva": 4311,
+    "mnt_total": 27000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 22689,
+        "monto_item": 22689
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7321",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2413038",
+    "folio_int": 2413038,
+    "fecha_emision": "2026-05-04",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 2287,
+    "iva": 435,
+    "mnt_total": 2722,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 2287,
+        "monto_item": 2287
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7322",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2413067",
+    "folio_int": 2413067,
+    "fecha_emision": "2026-05-04",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 24874,
+    "iva": 4726,
+    "mnt_total": 29600,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 24874,
+        "monto_item": 24874
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7323",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2413156",
+    "folio_int": 2413156,
+    "fecha_emision": "2026-05-04",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 176347,
+    "iva": 33506,
+    "mnt_total": 209853,
+    "items": [
+      "MKP Cobro logístico parcial del despacho primera milla",
+      "MKP Cobro despacho logistica inversa"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Cobro logístico parcial del despacho primera milla",
+        "precio": 98196,
+        "monto_item": 98196
+      },
+      {
+        "item": "MKP Cobro despacho logistica inversa",
+        "precio": 78151,
+        "monto_item": 78151
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7333",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "124278",
+    "folio_int": 124278,
+    "fecha_emision": "2026-04-30",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 130202,
+    "iva": 24739,
+    "mnt_total": 127053,
+    "items": [
+      "FBR 2000408089575 BLAZER CUELLO CRUZADO BLANCO NICOPOLY",
+      "FBR 2000408144403 FALDA MUJER NICOPOLY CAFE MINI LEOPARD",
+      "FBR 2000408326816 VESTIDO LARGO ESCOTE DRAPEADO AZUL NICO",
+      "FBR 2000408327066 BLAZER MANGA DETALLE DRAPEADO ROSADO NI",
+      "FBR 2000408449935 SHORT CON BOTONES DELANTEROS BLANCO NI",
+      "FBR 2000409903849 PANTALON BASICO VERDE NICOPOLY",
+      "FBR 2000409904174 BLAZER BASICO DE TOPE VERDE NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000408089575 BLAZER CUELLO CRUZADO BLANCO NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "FBR 2000408144403 FALDA MUJER NICOPOLY CAFE MINI LEOPARD",
+        "precio": 10076,
+        "monto_item": 10076
+      },
+      {
+        "item": "FBR 2000408326816 VESTIDO LARGO ESCOTE DRAPEADO AZUL NICO",
+        "precio": 38647,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408327066 BLAZER MANGA DETALLE DRAPEADO ROSADO NI",
+        "precio": 22681,
+        "monto_item": 22681
+      },
+      {
+        "item": "FBR 2000408449935 SHORT CON BOTONES DELANTEROS BLANCO NI",
+        "precio": 18479,
+        "monto_item": 36958
+      },
+      {
+        "item": "FBR 2000409903849 PANTALON BASICO VERDE NICOPOLY",
+        "precio": 31924,
+        "monto_item": 31924
+      },
+      {
+        "item": "FBR 2000409904174 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7335",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "124357",
+    "folio_int": 124357,
+    "fecha_emision": "2026-05-05",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 429286,
+    "iva": 81564,
+    "mnt_total": 418900,
+    "items": [
+      "LIQUIDACION CONSIGNATARIO",
+      "FBR 2000408089544 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+      "FBR 2000408143857 FALDA MUJER NICOPOLY CAFE MINI LEOPARD",
+      "FBR 2000408326779 FALDA SHORT TIPO GAMUZA CAFE NICOPOLY",
+      "FBR 2000409903597 GILET 4 BOTONES CAFE NICOPOLY",
+      "FBR 2000409903610 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+      "FBR 2000409904624 PANTALON BASICO VERDE NICOPOLY",
+      "FBR 2000409904709 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+      "FBR 2000410155459 POLERA MANGA CORTA DE HILO AZUL ELE CTR",
+      "FBR 2000410181960 JEANS CORTE BARREL AZUL NICOPOLY",
+      "FBR 2000410181991 JEANS CORTE BARREL CAFE NICOPOLY",
+      "FBR 2000410290006 BLUSA MANGA LARGA CON CORBATIN CAFE NI",
+      "FBR 2000410290235 BLUSA MANGA LARGA CON CORBATIN CAFE NI",
+      "FBR 2000410290327 CHAQUETA ECOCUERO ACOLCHADO CUELLO MAO",
+      "FBR 2000410377202 SWEATER CON PATRON TRENZADO MOCCA NICOP",
+      "FBR 2000410377370 SWEATER CON PATRON TRENZADO BLANCO NICO",
+      "FBR 2000410377387 BLAZER OVERSIZE TIPO GAMUZA CAFE NICOP"
+    ],
+    "line_items": [
+      {
+        "item": "LIQUIDACION CONSIGNATARIO",
+        "precio": 43689,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408089544 PANTALON RECTO CON PINZA MOCCA NICOPOLY",
+        "precio": 31924,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408143857 FALDA MUJER NICOPOLY CAFE MINI LEOPARD",
+        "precio": 10076,
+        "monto_item": 10076
+      },
+      {
+        "item": "FBR 2000408326779 FALDA SHORT TIPO GAMUZA CAFE NICOPOLY",
+        "precio": 14277,
+        "monto_item": 14277
+      },
+      {
+        "item": "FBR 2000409903597 GILET 4 BOTONES CAFE NICOPOLY",
+        "precio": 22681,
+        "monto_item": 22681
+      },
+      {
+        "item": "FBR 2000409903610 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      },
+      {
+        "item": "FBR 2000409904624 PANTALON BASICO VERDE NICOPOLY",
+        "precio": 31924,
+        "monto_item": 31924
+      },
+      {
+        "item": "FBR 2000409904709 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      },
+      {
+        "item": "FBR 2000410155459 POLERA MANGA CORTA DE HILO AZUL ELE CTR",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000410181960 JEANS CORTE BARREL AZUL NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      },
+      {
+        "item": "FBR 2000410181991 JEANS CORTE BARREL CAFE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      },
+      {
+        "item": "FBR 2000410290006 BLUSA MANGA LARGA CON CORBATIN CAFE NI",
+        "precio": 22681,
+        "monto_item": 22681
+      },
+      {
+        "item": "FBR 2000410290235 BLUSA MANGA LARGA CON CORBATIN CAFE NI",
+        "precio": 22681,
+        "monto_item": 22681
+      },
+      {
+        "item": "FBR 2000410290327 CHAQUETA ECOCUERO ACOLCHADO CUELLO MAO",
+        "precio": 42008,
+        "monto_item": 42008
+      },
+      {
+        "item": "FBR 2000410377202 SWEATER CON PATRON TRENZADO MOCCA NICOP",
+        "precio": 24361,
+        "monto_item": 24361
+      },
+      {
+        "item": "FBR 2000410377370 SWEATER CON PATRON TRENZADO BLANCO NICO",
+        "precio": 24361,
+        "monto_item": 48722
+      },
+      {
+        "item": "FBR 2000410377387 BLAZER OVERSIZE TIPO GAMUZA CAFE NICOP",
+        "precio": 47050,
+        "monto_item": 94100
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7340",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2366949",
+    "folio_int": 2366949,
+    "fecha_emision": "2026-05-05",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 105785,
+    "iva": 20099,
+    "mnt_total": 125884,
+    "items": [
+      "Despacho de productos MKP Ventas del: 28/04/2026 al 05/05/202"
+    ],
+    "line_items": [
+      {
+        "item": "Despacho de productos MKP Ventas del: 28/04/2026 al 05/05/202",
+        "precio": 105785,
+        "monto_item": 105785
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7341",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2366948",
+    "folio_int": 2366948,
+    "fecha_emision": "2026-05-05",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 242472,
+    "iva": 46070,
+    "mnt_total": 288542,
+    "items": [
+      "Comision Ventas MKP del: 28/04/2026 al 05/05/2026"
+    ],
+    "line_items": [
+      {
+        "item": "Comision Ventas MKP del: 28/04/2026 al 05/05/2026",
+        "precio": 242472,
+        "monto_item": 242472
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7362",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2413794",
+    "folio_int": 2413794,
+    "fecha_emision": "2026-05-12",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 588253,
+    "iva": 111768,
+    "mnt_total": 700021,
+    "items": [
+      "MKP Acuerdo comercial"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Acuerdo comercial",
+        "precio": 588253,
+        "monto_item": 588253
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7363",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2414291",
+    "folio_int": 2414291,
+    "fecha_emision": "2026-05-12",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 202752,
+    "iva": 38523,
+    "mnt_total": 241275,
+    "items": [
+      "MKP Cobro logístico parcial del despacho primera milla",
+      "MKP Cobro despacho logistica inversa"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Cobro logístico parcial del despacho primera milla",
+        "precio": 157374,
+        "monto_item": 157374
+      },
+      {
+        "item": "MKP Cobro despacho logistica inversa",
+        "precio": 45378,
+        "monto_item": 45378
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7364",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2414827",
+    "folio_int": 2414827,
+    "fecha_emision": "2026-05-12",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 20168,
+    "iva": 3832,
+    "mnt_total": 24000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 20168,
+        "monto_item": 20168
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7365",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2414874",
+    "folio_int": 2414874,
+    "fecha_emision": "2026-05-12",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 3979,
+    "iva": 756,
+    "mnt_total": 4735,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 3979,
+        "monto_item": 3979
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7366",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2414889",
+    "folio_int": 2414889,
+    "fecha_emision": "2026-05-12",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 93445,
+    "iva": 17755,
+    "mnt_total": 111200,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 93445,
+        "monto_item": 93445
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7369",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "124476",
+    "folio_int": 124476,
+    "fecha_emision": "2026-05-13",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 341067,
+    "iva": 64805,
+    "mnt_total": 332816,
+    "items": [
+      "FBR 2000408088172 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+      "LIQUIDACION CONSIGNATARIO",
+      "FBR 2000408088622 BLAZER MANGA 3/4 AJUSTADO CON SOLAPAS B",
+      "FBR 2000408088851 JEANS BASICO RECTO NEGRO NICOPOLY",
+      "FBR 2000408088936 BLAZER MANGA 3/4 AJUSTADA CON PLIEGUES",
+      "FBR 2000408089131 BLUSA VUELOS MANGA LARGA NEGRO NICOPOLY",
+      "FBR 2000408089575 BLAZER CUELLO CRUZADO BLANCO NICOPOLY",
+      "FBR 2000408144007 TRENCH TIPO GAMUZA CAFE NICOPOLY",
+      "FBR 2000408144168 BLAZER BASICO DE TOPE GRIS NICOPOLY",
+      "FBR 2000408453260 GILET TIPO CREPE NEGRO NICOPOLY",
+      "FBR 2000408708032 PANTALON PALAZZO MUJER NICOPOLY NEGRO T",
+      "FBR 2000409903597 GILET 4 BOTONES CAFE NICOPOLY",
+      "FBR 2000409903610 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+      "FBR 2000409903627 PANTALON BASICO CAFE NICOPOLY",
+      "FBR 2000409903696 PANTALON BASICO VERDE NICOPOLY",
+      "FBR 2000409903795 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+      "FBR 2000409903832 FALDA SATIN ENCAJE EN RUEDO CAFE NICOP"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000408088172 BLAZER LARGO 4 BOTONES ROSADO NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "LIQUIDACION CONSIGNATARIO",
+        "precio": 43689,
+        "monto_item": 43689
+      },
+      {
+        "item": "FBR 2000408088622 BLAZER MANGA 3/4 AJUSTADO CON SOLAPAS B",
+        "precio": 43689,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408088851 JEANS BASICO RECTO NEGRO NICOPOLY",
+        "precio": 23521,
+        "monto_item": 23521
+      },
+      {
+        "item": "FBR 2000408088936 BLAZER MANGA 3/4 AJUSTADA CON PLIEGUES",
+        "precio": 33605,
+        "monto_item": 33605
+      },
+      {
+        "item": "FBR 2000408089131 BLUSA VUELOS MANGA LARGA NEGRO NICOPOLY",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000408089575 BLAZER CUELLO CRUZADO BLANCO NICOPOLY",
+        "precio": 29403,
+        "monto_item": 29403
+      },
+      {
+        "item": "FBR 2000408144007 TRENCH TIPO GAMUZA CAFE NICOPOLY",
+        "precio": 50412,
+        "monto_item": 50412
+      },
+      {
+        "item": "FBR 2000408144168 BLAZER BASICO DE TOPE GRIS NICOPOLY",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000408453260 GILET TIPO CREPE NEGRO NICOPOLY",
+        "precio": 16798,
+        "monto_item": 16798
+      },
+      {
+        "item": "FBR 2000408708032 PANTALON PALAZZO MUJER NICOPOLY NEGRO T",
+        "precio": 24361,
+        "monto_item": 24361
+      },
+      {
+        "item": "FBR 2000409903597 GILET 4 BOTONES CAFE NICOPOLY",
+        "precio": 20160,
+        "monto_item": 40320
+      },
+      {
+        "item": "FBR 2000409903610 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409903627 PANTALON BASICO CAFE NICOPOLY",
+        "precio": 31084,
+        "monto_item": 31084
+      },
+      {
+        "item": "FBR 2000409903696 PANTALON BASICO VERDE NICOPOLY",
+        "precio": 27723,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409903795 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+        "precio": 30244,
+        "monto_item": 60488
+      },
+      {
+        "item": "FBR 2000409903832 FALDA SATIN ENCAJE EN RUEDO CAFE NICOP",
+        "precio": 21840,
+        "monto_item": 21840
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7370",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "124475",
+    "folio_int": 124475,
+    "fecha_emision": "2026-05-13",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 106698,
+    "iva": 20273,
+    "mnt_total": 104117,
+    "items": [
+      "FBR 2000410377219 BLUSA CORBATIN Y VUELOS NEGRO NICOPOLY",
+      "FBR 2000410377479 SWEATER CRUZADO CON BOTONES NEGRO NICOP",
+      "FBR 2000410508194 ABRIGO SOLAPA REDONDA VERDE PETROLEO NI"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000410377219 BLUSA CORBATIN Y VUELOS NEGRO NICOPOLY",
+        "precio": 21000,
+        "monto_item": 21000
+      },
+      {
+        "item": "FBR 2000410377479 SWEATER CRUZADO CON BOTONES NEGRO NICOP",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000410508194 ABRIGO SOLAPA REDONDA VERDE PETROLEO NI",
+        "precio": 60496,
+        "monto_item": 60496
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7371",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "124477",
+    "folio_int": 124477,
+    "fecha_emision": "2026-05-13",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 316715,
+    "iva": 60175,
+    "mnt_total": 309053,
+    "items": [
+      "FBR 2000409903863 PANTALON RECTO CON PINZA AZUL NICOPOLY",
+      "FBR 2000409903986 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+      "FBR 2000409904044 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+      "FBR 2000409904150 PANTALON BASICO MORADO NICOPOLY",
+      "FBR 2000409904198 GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+      "FBR 2000409904297 PANTALON MUJER NICOPOLY NEGRO CON PINZA",
+      "FBR 2000409904334 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+      "FBR 2000409904488 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+      "FBR 2000409904617 BLUSA VUELOS MANGA LARGA BURDEO NICOPOL",
+      "FBR 2000409904709 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+      "FBR 2000409904792 PANTALON BASICO CAFE NICOPOLY",
+      "FBR 2000409904822 PANTALON MUJER NICOPOLY NEGRO CON PINZA",
+      "LIQUIDACION CONSIGNATARIO",
+      "FBR 2000410181960 JEANS CORTE BARREL AZUL NICOPOLY",
+      "FBR 2000410289994 BLUSA MANGA LARGA CON CORBATIN CAFE NI",
+      "FBR 2000410290150 BLUSA MANGA LARGA CON CORBATIN BLANCO N",
+      "FBR 2000410290822 CARDIGAN MANGA GLOBO NEGRO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000409903863 PANTALON RECTO CON PINZA AZUL NICOPOLY",
+        "precio": 31924,
+        "monto_item": 31924
+      },
+      {
+        "item": "FBR 2000409903986 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      },
+      {
+        "item": "FBR 2000409904044 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 33605,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409904150 PANTALON BASICO MORADO NICOPOLY",
+        "precio": 31084,
+        "monto_item": 31084
+      },
+      {
+        "item": "FBR 2000409904198 GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000409904297 PANTALON MUJER NICOPOLY NEGRO CON PINZA",
+        "precio": 31924,
+        "monto_item": 31924
+      },
+      {
+        "item": "FBR 2000409904334 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409904488 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      },
+      {
+        "item": "FBR 2000409904617 BLUSA VUELOS MANGA LARGA BURDEO NICOPOL",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000409904709 BLAZER BASICO DE TOPE VERDE NICOPOLY",
+        "precio": 37807,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409904792 PANTALON BASICO CAFE NICOPOLY",
+        "precio": 31084,
+        "monto_item": 31084
+      },
+      {
+        "item": "FBR 2000409904822 PANTALON MUJER NICOPOLY NEGRO CON PINZA",
+        "precio": 31924,
+        "monto_item": 31924
+      },
+      {
+        "item": "LIQUIDACION CONSIGNATARIO",
+        "precio": 30244,
+        "monto_item": 30244
+      },
+      {
+        "item": "FBR 2000410181960 JEANS CORTE BARREL AZUL NICOPOLY",
+        "precio": 37807,
+        "monto_item": 37807
+      },
+      {
+        "item": "FBR 2000410289994 BLUSA MANGA LARGA CON CORBATIN CAFE NI",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000410290150 BLUSA MANGA LARGA CON CORBATIN BLANCO N",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000410290822 CARDIGAN MANGA GLOBO NEGRO NICOPOLY",
+        "precio": 28563,
+        "monto_item": 28563
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7372",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2418907",
+    "folio_int": 2418907,
+    "fecha_emision": "2026-05-13",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 667121,
+    "iva": 126753,
+    "mnt_total": 793874,
+    "items": [
+      "Comision Ventas MKP del: 05/05/2026 al 13/05/2026"
+    ],
+    "line_items": [
+      {
+        "item": "Comision Ventas MKP del: 05/05/2026 al 13/05/2026",
+        "precio": 667121,
+        "monto_item": 667121
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7373",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2418908",
+    "folio_int": 2418908,
+    "fecha_emision": "2026-05-13",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 241555,
+    "iva": 45895,
+    "mnt_total": 287450,
+    "items": [
+      "Despacho de productos MKP Ventas del: 05/05/2026 al 13/05/202"
+    ],
+    "line_items": [
+      {
+        "item": "Despacho de productos MKP Ventas del: 05/05/2026 al 13/05/202",
+        "precio": 241555,
+        "monto_item": 241555
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7382",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53395064",
+    "folio_int": 53395064,
+    "fecha_emision": "2026-05-18",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 62072,
+    "iva": 14559,
+    "mnt_total": 76631,
+    "items": [
+      "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA NEGRO NI",
+      "GILET BURDEO RAYAS DIPLOMATICAS NICOPOLY",
+      "GILET BURDEO RAYAS DIPLOMATICAS NICOPOLY",
+      "GILET NEGRO RAYAS DIPLOMATICAS NICOPOLY",
+      "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA BURDEO N",
+      "GILET BURDEO RAYAS DIPLOMATICAS NICOPOLY",
+      "GILET NEGRO RAYAS DIPLOMATICAS NICOPOLY",
+      "GILET NEGRO RAYAS DIPLOMATICAS NICOPOLY",
+      "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA BURDEO N",
+      "GILET NEGRO RAYAS DIPLOMATICAS NICOPOLY",
+      "GILET BURDEO RAYAS DIPLOMATICAS NICOPOLY",
+      "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA NEGRO NI",
+      "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA NEGRO NI"
+    ],
+    "line_items": [
+      {
+        "item": "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA NEGRO NI",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "GILET BURDEO RAYAS DIPLOMATICAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "GILET BURDEO RAYAS DIPLOMATICAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "GILET NEGRO RAYAS DIPLOMATICAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 500
+      },
+      {
+        "item": "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA BURDEO N",
+        "precio": 23422,
+        "monto_item": 46844
+      },
+      {
+        "item": "GILET BURDEO RAYAS DIPLOMATICAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "GILET NEGRO RAYAS DIPLOMATICAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "GILET NEGRO RAYAS DIPLOMATICAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA BURDEO N",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "GILET NEGRO RAYAS DIPLOMATICAS NICOPOLY",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "GILET BURDEO RAYAS DIPLOMATICAS NICOPOLY",
+        "precio": 19287,
+        "monto_item": 19287
+      },
+      {
+        "item": "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA NEGRO NI",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA NEGRO NI",
+        "precio": 500,
+        "monto_item": 1000
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7383",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53395058",
+    "folio_int": 53395058,
+    "fecha_emision": "2026-05-18",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 539597,
+    "iva": 126572,
+    "mnt_total": 666169,
+    "items": [
+      "Gilet Básico Ajustable Negro Nicopoly",
+      "Pantalón Básico Pierna Ancha Gris Nicopo",
+      "Pantalón Básico Pierna Ancha Gris Nicopo",
+      "Gilet Básico Ajustable Negro Nicopoly",
+      "Gilet Básico Café Nicopoly",
+      "PANTALON BASICO PIERNA ANCHA MARRON NICOPOLY",
+      "Blazer de tope con solapa larga y manga",
+      "Gilet Básico Café Nicopoly",
+      "PANTALON MUJER NICOPOLY CELESTE CON PINZAS RECTO",
+      "Blazer de tope con solapa larga y manga",
+      "Blazer Largo Manga Drapeada Marrón",
+      "PANTALON BASICO PIERNA ANCHA MARRON NICOPOLY",
+      "Blazer de tope con solapa larga y manga",
+      "Blazer de tope con solapa larga y manga",
+      "Blazer Largo Manga Drapeada Marrón"
+    ],
+    "line_items": [
+      {
+        "item": "Gilet Básico Ajustable Negro Nicopoly",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "Pantalón Básico Pierna Ancha Gris Nicopo",
+        "precio": 18598,
+        "monto_item": 18598
+      },
+      {
+        "item": "Pantalón Básico Pierna Ancha Gris Nicopo",
+        "precio": 16531,
+        "monto_item": 33062
+      },
+      {
+        "item": "Gilet Básico Ajustable Negro Nicopoly",
+        "precio": 17909,
+        "monto_item": 17909
+      },
+      {
+        "item": "Gilet Básico Café Nicopoly",
+        "precio": 17909,
+        "monto_item": 35818
+      },
+      {
+        "item": "PANTALON BASICO PIERNA ANCHA MARRON NICOPOLY",
+        "precio": 23422,
+        "monto_item": 140532
+      },
+      {
+        "item": "Blazer de tope con solapa larga y manga",
+        "precio": 9519,
+        "monto_item": 57114
+      },
+      {
+        "item": "Gilet Básico Café Nicopoly",
+        "precio": 20666,
+        "monto_item": 20666
+      },
+      {
+        "item": "PANTALON MUJER NICOPOLY CELESTE CON PINZAS RECTO",
+        "precio": 18598,
+        "monto_item": 18598
+      },
+      {
+        "item": "Blazer de tope con solapa larga y manga",
+        "precio": 35825,
+        "monto_item": 35825
+      },
+      {
+        "item": "Blazer Largo Manga Drapeada Marrón",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "PANTALON BASICO PIERNA ANCHA MARRON NICOPOLY",
+        "precio": 23422,
+        "monto_item": 117110
+      },
+      {
+        "item": "Blazer de tope con solapa larga y manga",
+        "precio": 25489,
+        "monto_item": 101956
+      },
+      {
+        "item": "Blazer de tope con solapa larga y manga",
+        "precio": 7289,
+        "monto_item": 29156
+      },
+      {
+        "item": "Blazer Largo Manga Drapeada Marrón",
+        "precio": 35825,
+        "monto_item": 35825
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7384",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53395059",
+    "folio_int": 53395059,
+    "fecha_emision": "2026-05-18",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 391311,
+    "iva": 91788,
+    "mnt_total": 483099,
+    "items": [
+      "Pantalón de pierna recta con pasadores,",
+      "Gilet con Drapeado Lateral Negro",
+      "Pantalón de pierna recta con pasadores,",
+      "Gilet con Drapeado Lateral Negro",
+      "Pantalón Básico Pierna Ancha Gris Nicopo",
+      "Gilet Básico Ajustable Negro Nicopoly",
+      "Blazer Largo Manga Drapeada Marrón",
+      "Blazer Largo Manga Drapeada Marrón",
+      "Blazer de tope con solapa larga y manga",
+      "Gilet Básico Ajustable Negro Nicopoly",
+      "Gilet Básico Celeste Nicopoly",
+      "BLAZER MANGA 3/4 AJUSTADA CON PLIEGUES ROSADO NICO",
+      "Pantalón de pierna recta con pasadores,",
+      "Gilet con Drapeado Lateral Negro",
+      "PANTALON BASICO PIERNA ANCHA MARRON NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "Pantalón de pierna recta con pasadores,",
+        "precio": 8929,
+        "monto_item": 35716
+      },
+      {
+        "item": "Gilet con Drapeado Lateral Negro",
+        "precio": 13774,
+        "monto_item": 82644
+      },
+      {
+        "item": "Pantalón de pierna recta con pasadores,",
+        "precio": 9549,
+        "monto_item": 38196
+      },
+      {
+        "item": "Gilet con Drapeado Lateral Negro",
+        "precio": 500,
+        "monto_item": 3500
+      },
+      {
+        "item": "Pantalón Básico Pierna Ancha Gris Nicopo",
+        "precio": 16531,
+        "monto_item": 16531
+      },
+      {
+        "item": "Gilet Básico Ajustable Negro Nicopoly",
+        "precio": 18598,
+        "monto_item": 55794
+      },
+      {
+        "item": "Blazer Largo Manga Drapeada Marrón",
+        "precio": 35825,
+        "monto_item": 107475
+      },
+      {
+        "item": "Blazer Largo Manga Drapeada Marrón",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "Blazer de tope con solapa larga y manga",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "Gilet Básico Ajustable Negro Nicopoly",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "Gilet Básico Celeste Nicopoly",
+        "precio": 15979,
+        "monto_item": 15979
+      },
+      {
+        "item": "BLAZER MANGA 3/4 AJUSTADA CON PLIEGUES ROSADO NICO",
+        "precio": 24800,
+        "monto_item": 24800
+      },
+      {
+        "item": "Pantalón de pierna recta con pasadores,",
+        "precio": 500,
+        "monto_item": 2500
+      },
+      {
+        "item": "Gilet con Drapeado Lateral Negro",
+        "precio": 12741,
+        "monto_item": 50964
+      },
+      {
+        "item": "PANTALON BASICO PIERNA ANCHA MARRON NICOPOLY",
+        "precio": 8600,
+        "monto_item": 43000
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7385",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53395060",
+    "folio_int": 53395060,
+    "fecha_emision": "2026-05-18",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 242594,
+    "iva": 56904,
+    "mnt_total": 299498,
+    "items": [
+      "Gilet con diseño de rayas diplomaticas y",
+      "Pantalón de pierna recta con pasadores,",
+      "Pantalón de pierna recta con pasadores,",
+      "Pantalón de pierna recta con pasadores,",
+      "Gilet con diseño de rayas diplomaticas y",
+      "Gilet con diseño de rayas diplomaticas y",
+      "Gilet con diseño de rayas diplomaticas y",
+      "Blazer solapa manga 3/4 con detalle drap",
+      "Blazer solapa manga 3/4 con detalle drap",
+      "Gilet con diseño de rayas diplomaticas y",
+      "Gilet con diseño de rayas diplomaticas y",
+      "Gilet con diseño de rayas diplomaticas y",
+      "Gilet con diseño de rayas diplomaticas y",
+      "Pantalón de pierna recta con pasadores,",
+      "Pantalón de pierna recta con pasadores,"
+    ],
+    "line_items": [
+      {
+        "item": "Gilet con diseño de rayas diplomaticas y",
+        "precio": 7309,
+        "monto_item": 29236
+      },
+      {
+        "item": "Pantalón de pierna recta con pasadores,",
+        "precio": 8258,
+        "monto_item": 41290
+      },
+      {
+        "item": "Pantalón de pierna recta con pasadores,",
+        "precio": 500,
+        "monto_item": 500
+      },
+      {
+        "item": "Pantalón de pierna recta con pasadores,",
+        "precio": 23422,
+        "monto_item": 23422
+      },
+      {
+        "item": "Gilet con diseño de rayas diplomaticas y",
+        "precio": 22043,
+        "monto_item": 22043
+      },
+      {
+        "item": "Gilet con diseño de rayas diplomaticas y",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "Gilet con diseño de rayas diplomaticas y",
+        "precio": 6276,
+        "monto_item": 12552
+      },
+      {
+        "item": "Blazer solapa manga 3/4 con detalle drap",
+        "precio": 500,
+        "monto_item": 1500
+      },
+      {
+        "item": "Blazer solapa manga 3/4 con detalle drap",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "Gilet con diseño de rayas diplomaticas y",
+        "precio": 10119,
+        "monto_item": 50595
+      },
+      {
+        "item": "Gilet con diseño de rayas diplomaticas y",
+        "precio": 6276,
+        "monto_item": 25104
+      },
+      {
+        "item": "Gilet con diseño de rayas diplomaticas y",
+        "precio": 500,
+        "monto_item": 2500
+      },
+      {
+        "item": "Gilet con diseño de rayas diplomaticas y",
+        "precio": 19632,
+        "monto_item": 58896
+      },
+      {
+        "item": "Pantalón de pierna recta con pasadores,",
+        "precio": 6965,
+        "monto_item": 27860
+      },
+      {
+        "item": "Pantalón de pierna recta con pasadores,",
+        "precio": 500,
+        "monto_item": 1000
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7386",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53395061",
+    "folio_int": 53395061,
+    "fecha_emision": "2026-05-18",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 175213,
+    "iva": 41099,
+    "mnt_total": 216312,
+    "items": [
+      "GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+      "GILET 4 BOTONES CAFE  NICOPOLY",
+      "GILET 4 BOTONES CAFE  NICOPOLY",
+      "GILET 4 BOTONES CAFE  NICOPOLY",
+      "PANTALON BASICO OXIDO NICOPOLY",
+      "GILET 4 BOTONES VERDE NICOPOLY",
+      "GILET 4 BOTONES NEGRO NICOPOLY",
+      "GILET BASICO AJUSTABLE AZUL NICOPOLY",
+      "PANTALON BASICO VERDE NICOPOLY",
+      "GILET 4 BOTONES VERDE NICOPOLY",
+      "GILET 4 BOTONES VERDE NICOPOLY",
+      "GILET BASICO AJUSTABLE AZUL NICOPOLY",
+      "GILET BASICO AJUSTABLE AZUL NICOPOLY",
+      "Blazer solapa manga 3/4 con detalle drap",
+      "GILET 4 BOTONES OXIDO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES CAFE  NICOPOLY",
+        "precio": 14464,
+        "monto_item": 14464
+      },
+      {
+        "item": "PANTALON BASICO OXIDO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES VERDE NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES NEGRO NICOPOLY",
+        "precio": 16531,
+        "monto_item": 49593
+      },
+      {
+        "item": "GILET BASICO AJUSTABLE AZUL NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "PANTALON BASICO VERDE NICOPOLY",
+        "precio": 22733,
+        "monto_item": 45466
+      },
+      {
+        "item": "GILET 4 BOTONES VERDE NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES VERDE NICOPOLY",
+        "precio": 16531,
+        "monto_item": 49593
+      },
+      {
+        "item": "GILET BASICO AJUSTABLE AZUL NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET BASICO AJUSTABLE AZUL NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "Blazer solapa manga 3/4 con detalle drap",
+        "precio": 18598,
+        "monto_item": 37196
+      },
+      {
+        "item": "GILET 4 BOTONES OXIDO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7387",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53395062",
+    "folio_int": 53395062,
+    "fecha_emision": "2026-05-18",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 285525,
+    "iva": 66974,
+    "mnt_total": 352499,
+    "items": [
+      "GILET 4 BOTONES OXIDO NICOPOLY",
+      "GILET 4 BOTONES NEGRO NICOPOLY",
+      "GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+      "GILET BASICO AJUSTABLE OXIDO NICOPOLY",
+      "GILET 4 BOTONES OXIDO NICOPOLY",
+      "GILET 4 BOTONES NEGRO NICOPOLY",
+      "PANTALON MUJER NICOPOLY NEGRO CON PINZAS RECTO",
+      "PANTALON BASICO OXIDO NICOPOLY",
+      "GILET BASICO AJUSTABLE OXIDO NICOPOLY",
+      "PANTALON BASICO OXIDO NICOPOLY",
+      "GILET BASICO AJUSTABLE OXIDO NICOPOLY",
+      "PANTALON MUJER NICOPOLY NEGRO CON PINZAS RECTO",
+      "PANTALON MUJER NICOPOLY NEGRO CON PINZAS RECTO",
+      "GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+      "GILET 4 BOTONES MORADO NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "GILET 4 BOTONES OXIDO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES NEGRO NICOPOLY",
+        "precio": 16186,
+        "monto_item": 48558
+      },
+      {
+        "item": "GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+        "precio": 20666,
+        "monto_item": 61998
+      },
+      {
+        "item": "GILET BASICO AJUSTABLE OXIDO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES OXIDO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES NEGRO NICOPOLY",
+        "precio": 16531,
+        "monto_item": 33062
+      },
+      {
+        "item": "PANTALON MUJER NICOPOLY NEGRO CON PINZAS RECTO",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "PANTALON BASICO OXIDO NICOPOLY",
+        "precio": 25489,
+        "monto_item": 50978
+      },
+      {
+        "item": "GILET BASICO AJUSTABLE OXIDO NICOPOLY",
+        "precio": 17909,
+        "monto_item": 53727
+      },
+      {
+        "item": "PANTALON BASICO OXIDO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET BASICO AJUSTABLE OXIDO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "PANTALON MUJER NICOPOLY NEGRO CON PINZAS RECTO",
+        "precio": 26178,
+        "monto_item": 26178
+      },
+      {
+        "item": "PANTALON MUJER NICOPOLY NEGRO CON PINZAS RECTO",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+        "precio": 20666,
+        "monto_item": 61998
+      },
+      {
+        "item": "GILET 4 BOTONES MORADO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7388",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "52",
+    "folio": "53395063",
+    "folio_int": 53395063,
+    "fecha_emision": "2026-05-18",
+    "rzn_soc": "COMERCIAL ECCSA S.A.",
+    "giro": "Grandes Tiendas",
+    "mnt_neto": 325986,
+    "iva": 76465,
+    "mnt_total": 402451,
+    "items": [
+      "GILET BASICO AJUSTABLE OXIDO NICOPOLY",
+      "PANTALON MUJER NICOPOLY NEGRO CON PINZAS RECTO",
+      "GILET 4 BOTONES NEGRO NICOPOLY",
+      "GILET 4 BOTONES MORADO NICOPOLY",
+      "GILET 4 BOTONES VERDE NICOPOLY",
+      "PANTALON BASICO VERDE NICOPOLY",
+      "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA BURDEO N",
+      "GILET 4 BOTONES CAFE  NICOPOLY",
+      "GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+      "GILET 4 BOTONES MORADO NICOPOLY",
+      "GILET BASICO AJUSTABLE AZUL NICOPOLY",
+      "GILET 4 BOTONES OXIDO NICOPOLY",
+      "PANTALON BASICO OXIDO NICOPOLY",
+      "GILET 4 BOTONES MORADO NICOPOLY",
+      "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA NEGRO NI"
+    ],
+    "line_items": [
+      {
+        "item": "GILET BASICO AJUSTABLE OXIDO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "PANTALON MUJER NICOPOLY NEGRO CON PINZAS RECTO",
+        "precio": 26178,
+        "monto_item": 78534
+      },
+      {
+        "item": "GILET 4 BOTONES NEGRO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES MORADO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET 4 BOTONES VERDE NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "PANTALON BASICO VERDE NICOPOLY",
+        "precio": 22733,
+        "monto_item": 68199
+      },
+      {
+        "item": "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA BURDEO N",
+        "precio": 500,
+        "monto_item": 1000
+      },
+      {
+        "item": "GILET 4 BOTONES CAFE  NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "GILET BASICO AJUSTABLE BLANCO NICOPOLY",
+        "precio": 17909,
+        "monto_item": 53727
+      },
+      {
+        "item": "GILET 4 BOTONES MORADO NICOPOLY",
+        "precio": 18598,
+        "monto_item": 55794
+      },
+      {
+        "item": "GILET BASICO AJUSTABLE AZUL NICOPOLY",
+        "precio": 20666,
+        "monto_item": 61998
+      },
+      {
+        "item": "GILET 4 BOTONES OXIDO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "PANTALON BASICO OXIDO NICOPOLY",
+        "precio": 22733,
+        "monto_item": 68199
+      },
+      {
+        "item": "GILET 4 BOTONES MORADO NICOPOLY",
+        "precio": 500,
+        "monto_item": 2000
+      },
+      {
+        "item": "PANTALON DE PIERNA RECTA RAYA DIPLOMATICA NEGRO NI",
+        "precio": 500,
+        "monto_item": 1000
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7391",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2415485",
+    "folio_int": 2415485,
+    "fecha_emision": "2026-05-19",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 201136,
+    "iva": 38216,
+    "mnt_total": 239352,
+    "items": [
+      "MKP Cobro logístico parcial del despacho primera milla",
+      "MKP Cobro despacho logistica inversa"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Cobro logístico parcial del despacho primera milla",
+        "precio": 153237,
+        "monto_item": 153237
+      },
+      {
+        "item": "MKP Cobro despacho logistica inversa",
+        "precio": 47899,
+        "monto_item": 47899
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7392",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2415980",
+    "folio_int": 2415980,
+    "fecha_emision": "2026-05-19",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 17647,
+    "iva": 3353,
+    "mnt_total": 21000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 17647,
+        "monto_item": 17647
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7393",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2416003",
+    "folio_int": 2416003,
+    "fecha_emision": "2026-05-19",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 2750,
+    "iva": 523,
+    "mnt_total": 3273,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 2750,
+        "monto_item": 2750
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7394",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2416135",
+    "folio_int": 2416135,
+    "fecha_emision": "2026-05-19",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 66387,
+    "iva": 12614,
+    "mnt_total": 79001,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 66387,
+        "monto_item": 66387
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7396",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "124585",
+    "folio_int": 124585,
+    "fecha_emision": "2026-05-20",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 204984,
+    "iva": 38947,
+    "mnt_total": 200025,
+    "items": [
+      "FBR 2000406169316 ABRIGO SOLAPA REDONDA ROJO NICOPOLY",
+      "FBR 2000408089131 BLUSA VUELOS MANGA LARGA NEGRO NICOPOLY",
+      "FBR 2000408707820 BLUSA PUNTOS BLANCOS NICOPOLY",
+      "FBR 2000409903597 GILET 4 BOTONES CAFE NICOPOLY",
+      "FBR 2000409903610 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+      "FBR 2000409903795 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+      "FBR 2000409903801 PANTALON BASICO NEGRO NICOPOLY",
+      "FBR 2000409903849 PANTALON BASICO VERDE NICOPOLY",
+      "FBR 2000409903863 PANTALON RECTO CON PINZA AZUL NICOPOLY",
+      "FBR 2000409903986 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+      "FBR 2000409904792 PANTALON BASICO CAFE NICOPOLY",
+      "FBR 2000409904822 PANTALON MUJER NICOPOLY NEGRO CON PINZA",
+      "FBR 2000410154773 GILET LARGO CON BOTONES BURDEO NICOPOLY",
+      "FBR 2000410155244 GILET LARGO CON BOTONES NEGRO NICOPOLY",
+      "FBR 2000410181960 JEANS CORTE BARREL AZUL NICOPOLY",
+      "FBR 2000410182417 CARDIGAN CUELLO V CON 3 BOTONES VERDE A",
+      "FBR 2000410182721 JEANS CORTE BARREL CAFE NICOPOLY"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000406169316 ABRIGO SOLAPA REDONDA ROJO NICOPOLY",
+        "precio": 56294,
+        "monto_item": 56294
+      },
+      {
+        "item": "FBR 2000408089131 BLUSA VUELOS MANGA LARGA NEGRO NICOPOLY",
+        "precio": 20160,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000408707820 BLUSA PUNTOS BLANCOS NICOPOLY",
+        "precio": 14277,
+        "monto_item": 14277
+      },
+      {
+        "item": "FBR 2000409903597 GILET 4 BOTONES CAFE NICOPOLY",
+        "precio": 17639,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409903610 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+        "precio": 30244,
+        "monto_item": 60488
+      },
+      {
+        "item": "FBR 2000409903795 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+        "precio": 27723,
+        "monto_item": 27723
+      },
+      {
+        "item": "FBR 2000409903801 PANTALON BASICO NEGRO NICOPOLY",
+        "precio": 31924,
+        "monto_item": 31924
+      },
+      {
+        "item": "FBR 2000409903849 PANTALON BASICO VERDE NICOPOLY",
+        "precio": 31924,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409903863 PANTALON RECTO CON PINZA AZUL NICOPOLY",
+        "precio": 31924,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000409903986 BLAZER BASICO DE TOPE CAFE NICOPOLY",
+        "precio": 30244,
+        "monto_item": 60488
+      },
+      {
+        "item": "FBR 2000409904792 PANTALON BASICO CAFE NICOPOLY",
+        "precio": 31084,
+        "monto_item": 31084
+      },
+      {
+        "item": "FBR 2000409904822 PANTALON MUJER NICOPOLY NEGRO CON PINZA",
+        "precio": 31924,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000410154773 GILET LARGO CON BOTONES BURDEO NICOPOLY",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000410155244 GILET LARGO CON BOTONES NEGRO NICOPOLY",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000410181960 JEANS CORTE BARREL AZUL NICOPOLY",
+        "precio": 37807,
+        "monto_item": 0
+      },
+      {
+        "item": "FBR 2000410182417 CARDIGAN CUELLO V CON 3 BOTONES VERDE A",
+        "precio": 19319,
+        "monto_item": 19319
+      },
+      {
+        "item": "FBR 2000410182721 JEANS CORTE BARREL CAFE NICOPOLY",
+        "precio": 34445,
+        "monto_item": 34445
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7397",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "43",
+    "folio": "124584",
+    "folio_int": 124584,
+    "fecha_emision": "2026-05-20",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 481388,
+    "iva": 91462,
+    "mnt_total": 469742,
+    "items": [
+      "FBR 2000410289734 BLUSA MANGA LARGA CON CORBATIN BURDEO N",
+      "FBR 2000410289918 CARDIGAN DISEÑO TRENZADO NEGRO NICOPOLY",
+      "FBR 2000410289994 BLUSA MANGA LARGA CON CORBATIN CAFE NI",
+      "FBR 2000410290266 CARDIGAN DISEÑO TRENZADO GRIS NICOPOLY",
+      "FBR 2000410290389 CHAQUETA ECOCUERO ACOLCHADO CUELLO MAO",
+      "FBR 2000410290662 CARDIGAN DISEÑO TRENZADO GRIS NICOPOLY",
+      "FBR 2000410290785 BLUSA MANGA LARGA CON CORBATIN CAFE NI",
+      "FBR 2000410377400 SWEATER TRENZADO CUELLO REDONDO BLANCO",
+      "FBR 2000410377783 BLAZER OVERSIZE TIPO GAMUZA CAFE NICOP",
+      "FBR 2000410377981 BLAZER OVERSIZE TIPO GAMUZA CAFE NICOP",
+      "FBR 2000410508279 SWEATER CUELLO ALTO ROMBOS CAFE NICOPO",
+      "FBR 2000410508811 SWEATER JASPEADO CUELLO REDONDO MORADO",
+      "FBR 2000410818392 TRENCH ECOCUERO CAFE NICOPOLY",
+      "FBR 2000410824287 TRENCH CLASICO DOBLE BOTONADURA NEGRO N"
+    ],
+    "line_items": [
+      {
+        "item": "FBR 2000410289734 BLUSA MANGA LARGA CON CORBATIN BURDEO N",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000410289918 CARDIGAN DISEÑO TRENZADO NEGRO NICOPOLY",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000410289994 BLUSA MANGA LARGA CON CORBATIN CAFE NI",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000410290266 CARDIGAN DISEÑO TRENZADO GRIS NICOPOLY",
+        "precio": 21420,
+        "monto_item": 42840
+      },
+      {
+        "item": "FBR 2000410290389 CHAQUETA ECOCUERO ACOLCHADO CUELLO MAO",
+        "precio": 38647,
+        "monto_item": 38647
+      },
+      {
+        "item": "FBR 2000410290662 CARDIGAN DISEÑO TRENZADO GRIS NICOPOLY",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000410290785 BLUSA MANGA LARGA CON CORBATIN CAFE NI",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000410377400 SWEATER TRENZADO CUELLO REDONDO BLANCO",
+        "precio": 25202,
+        "monto_item": 25202
+      },
+      {
+        "item": "FBR 2000410377783 BLAZER OVERSIZE TIPO GAMUZA CAFE NICOP",
+        "precio": 42849,
+        "monto_item": 42849
+      },
+      {
+        "item": "FBR 2000410377981 BLAZER OVERSIZE TIPO GAMUZA CAFE NICOP",
+        "precio": 47050,
+        "monto_item": 47050
+      },
+      {
+        "item": "FBR 2000410508279 SWEATER CUELLO ALTO ROMBOS CAFE NICOPO",
+        "precio": 21840,
+        "monto_item": 21840
+      },
+      {
+        "item": "FBR 2000410508811 SWEATER JASPEADO CUELLO REDONDO MORADO",
+        "precio": 20160,
+        "monto_item": 20160
+      },
+      {
+        "item": "FBR 2000410818392 TRENCH ECOCUERO CAFE NICOPOLY",
+        "precio": 79824,
+        "monto_item": 79824
+      },
+      {
+        "item": "FBR 2000410824287 TRENCH CLASICO DOBLE BOTONADURA NEGRO N",
+        "precio": 62176,
+        "monto_item": 62176
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7398",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2420714",
+    "folio_int": 2420714,
+    "fecha_emision": "2026-05-20",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 149538,
+    "iva": 28412,
+    "mnt_total": 177950,
+    "items": [
+      "Despacho de productos MKP Ventas del: 13/05/2026 al 20/05/202"
+    ],
+    "line_items": [
+      {
+        "item": "Despacho de productos MKP Ventas del: 13/05/2026 al 20/05/202",
+        "precio": 149538,
+        "monto_item": 149538
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7399",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2420713",
+    "folio_int": 2420713,
+    "fecha_emision": "2026-05-20",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 474271,
+    "iva": 90111,
+    "mnt_total": 564382,
+    "items": [
+      "Comision Ventas MKP del: 13/05/2026 al 20/05/2026"
+    ],
+    "line_items": [
+      {
+        "item": "Comision Ventas MKP del: 13/05/2026 al 20/05/2026",
+        "precio": 474271,
+        "monto_item": 474271
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7409",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2416511",
+    "folio_int": 2416511,
+    "fecha_emision": "2026-05-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 25210,
+    "iva": 4790,
+    "mnt_total": 30000,
+    "items": [
+      "FBR COBRO DESPACHO LOGISTICA INVERSA"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO DESPACHO LOGISTICA INVERSA",
+        "precio": 25210,
+        "monto_item": 25210
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7410",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2416625",
+    "folio_int": 2416625,
+    "fecha_emision": "2026-05-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 3229,
+    "iva": 614,
+    "mnt_total": 3843,
+    "items": [
+      "FBR COBRO ALMACENAMIENTO DIARIO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COBRO ALMACENAMIENTO DIARIO",
+        "precio": 3229,
+        "monto_item": 3229
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7411",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2416663",
+    "folio_int": 2416663,
+    "fecha_emision": "2026-05-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 54622,
+    "iva": 10378,
+    "mnt_total": 65000,
+    "items": [
+      "FBR COFINANCIAMIENTO LOGISTICO"
+    ],
+    "line_items": [
+      {
+        "item": "FBR COFINANCIAMIENTO LOGISTICO",
+        "precio": 54622,
+        "monto_item": 54622
+      }
+    ]
+  },
+  {
+    "archivo": "dteproveedor_7413",
+    "rut_emisor": "83382700-6",
+    "rut_receptor": "77898100-9",
+    "tipo_dte": "33",
+    "folio": "2417106",
+    "folio_int": 2417106,
+    "fecha_emision": "2026-05-27",
+    "rzn_soc": "Comercial Eccsa S.A.",
+    "giro": "GRANDES TIENDAS",
+    "mnt_neto": 190112,
+    "iva": 36121,
+    "mnt_total": 226233,
+    "items": [
+      "MKP Cobro logístico parcial del despacho primera milla",
+      "MKP Cobro despacho logistica inversa"
+    ],
+    "line_items": [
+      {
+        "item": "MKP Cobro logístico parcial del despacho primera milla",
+        "precio": 104398,
+        "monto_item": 104398
+      },
+      {
+        "item": "MKP Cobro despacho logistica inversa",
+        "precio": 85714,
+        "monto_item": 85714
+      }
+    ]
+  }
+]
