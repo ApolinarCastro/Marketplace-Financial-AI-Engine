@@ -3,13 +3,16 @@ from pathlib import Path
 import logging
 import warnings
 import re
+import hashlib
+import datetime as dt
 
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 logger = logging.getLogger("surgical.loader")
 
 ROOT = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine")
-DIR_FACTURACION = ROOT / "Reporte_Marketplaces" / "Mercado Libre" / "ML_Facturacion"
+DIR_FACTURACION = ROOT / "01_Raw" / "ML" / "Facturacion"
 DIR_POSCOBRO = ROOT / "01_Raw" / "ML" / "Poscobro"
+DIR_LIBERACIONES = ROOT / "01_Raw" / "ML" / "Liberaciones"
 
 LEDGER_COLS = ['marketplace', 'id_transaccion', 'id_orden', 'fecha', 'detalle', 'monto', 'tipo_movimiento', 'archivo_origen', 'folio_xml']
 VENTAS_COLS = ['order_id', 'sku', 'quantity', 'unit_price', 'gross_amount', 'sale_date', 'marketplace', 'source_file']
@@ -58,26 +61,37 @@ def read_excel_auto(fpath, possible_header_cols):
 class SurgicalLoader:
     """
     Modelo Contable Correcto:
-    ─────────────────────────
-    Convención de signos: positivo = a favor del vendedor, negativo = costo/pérdida.
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    ConvenciÃ³n de signos: positivo = a favor del vendedor, negativo = costo/pÃ©rdida.
 
     Para "Cargo por venta":
-      → INGRESO_VENTA  = +Total de la venta (lo que pagó el comprador)
-      → EGRESO_COMISION = -Valor del cargo  (comisión que ML cobra)
+      â†’ INGRESO_VENTA  = +Total de la venta (lo que pagÃ³ el comprador)
+      â†’ EGRESO_COMISION = -Valor del cargo  (comisiÃ³n que ML cobra)
 
-    Para "Anulación del cargo por venta":
-      → DEVOLUCION_VENTA  = -Total de la venta  (se pierde la venta)
-      → REVERSA_COMISION  = -Valor del cargo     (Valor ya es negativo → -(-x) = +x, ML devuelve)
+    Para "AnulaciÃ³n del cargo por venta":
+      â†’ DEVOLUCION_VENTA  = -Total de la venta  (se pierde la venta)
+      â†’ REVERSA_COMISION  = -Valor del cargo     (Valor ya es negativo â†’ -(-x) = +x, ML devuelve)
 
-    Para todos los demás cargos:
-      → CARGO = -Valor del cargo  (positivo en Excel = costo para vendedor)
-      → Las anulaciones de envío/devolución tienen Valor negativo → -(-x) = +x = ajuste a favor
+    Para todos los demÃ¡s cargos:
+      â†’ CARGO = -Valor del cargo  (positivo en Excel = costo para vendedor)
+      â†’ Las anulaciones de envÃ­o/devoluciÃ³n tienen Valor negativo â†’ -(-x) = +x = ajuste a favor
     """
 
     def __init__(self):
         from engine.v4.database import DatabaseV4
         self.db = DatabaseV4.get()
 
+
+    def _register_file(self, filename, marketplace, row_count):
+        """Registra archivo procesado en file_registry para tracking operacional."""
+        try:
+            file_hash = hashlib.sha256(filename.encode()).hexdigest()[:16]
+            self.db.conn.execute("""
+                INSERT OR REPLACE INTO file_registry (file_hash, file_name, source, rows_processed, processed_at)
+                VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)
+            """, [file_hash, filename, marketplace, row_count])
+        except Exception:
+            pass  # Non-critical, no interrumpir ETL por file_registry
     def _filter_old_years(self, df, date_col='fecha'):
         """Elimina filas con fecha en 2023 o 2024 (datos legacy excluidos del sistema)."""
         if date_col in df.columns:
@@ -121,7 +135,7 @@ class SurgicalLoader:
                 c_folio = get_col_name(df, ['facturafiscal', 'folio', 'factura'])
                 if not c_ord or not c_detalle: continue
 
-                # 1. Registro de Ventas únicas (tabla ventas_marketplace)
+                # 1. Registro de Ventas Ãºnicas (tabla ventas_marketplace)
                 ventas_mask = df[c_detalle].apply(normalize).str.contains('cargoporventa', na=False)
                 anulacion_mask = df[c_detalle].apply(normalize).str.contains('anulacion', na=False)
                 solo_ventas = ventas_mask & ~anulacion_mask
@@ -138,7 +152,7 @@ class SurgicalLoader:
                     }).drop_duplicates(subset=['order_id'])
                     self.db.insert_df(self._filter_old_years(df_ventas[VENTAS_COLS], 'sale_date'), "ventas_marketplace", dedup_cols=['order_id'])
 
-                # 2. Construir Ledger Atómico
+                # 2. Construir Ledger AtÃ³mico
                 ledger = []
                 for idx, row in df.iterrows():
                     det_orig = str(row[c_detalle]) if c_detalle else "Cargo"
@@ -152,14 +166,16 @@ class SurgicalLoader:
                         if raw_folio and raw_folio.lower() != 'nan' and raw_folio not in ('0', '0.0'):
                             folio = raw_folio
                     
-                    valor_cargo = float(pd.to_numeric(row[c_val_cargo], errors='coerce') or 0) if c_val_cargo else 0.0
-                    total_venta = float(pd.to_numeric(row[c_tot_venta], errors='coerce') or 0) if c_tot_venta else 0.0
+                    _vc = pd.to_numeric(row[c_val_cargo], errors='coerce') if c_val_cargo else 0.0
+                    valor_cargo = float(_vc) if pd.notna(_vc) else 0.0
+                    _tv = pd.to_numeric(row[c_tot_venta], errors='coerce') if c_tot_venta else 0.0
+                    total_venta = float(_tv) if pd.notna(_tv) else 0.0
 
                     is_cargo_venta = "cargoporventa" in det_norm and "anulacion" not in det_norm
                     is_anulacion_venta = "anulacion" in det_norm and "cargoporventa" in det_norm
 
                     if is_cargo_venta:
-                        # VENTA: ingreso bruto + comisión cobrada
+                        # VENTA: ingreso bruto + comisiÃ³n cobrada
                         ledger.append({
                             'marketplace': 'ML', 'id_transaccion': f"SALE_{order_id}_{f.name}_{idx}",
                             'id_orden': order_id, 'fecha': fecha,
@@ -172,13 +188,13 @@ class SurgicalLoader:
                             'marketplace': 'ML', 'id_transaccion': f"COMM_{order_id}_{f.name}_{idx}",
                             'id_orden': order_id, 'fecha': fecha,
                             'detalle': "Cargo por venta (Comisión)",
-                            'monto': -valor_cargo,  # valor_cargo=5199 → monto=-5199 (costo)
+                            'monto': -valor_cargo,  # valor_cargo=5199 â†’ monto=-5199 (costo)
                             'tipo_movimiento': 'EGRESO_COMISION',
                             'archivo_origen': f.name, 'folio_xml': folio
                         })
 
                     elif is_anulacion_venta:
-                        # DEVOLUCIÓN: se pierde la venta + ML devuelve comisión
+                        # DEVOLUCIÃ“N: se pierde la venta + ML devuelve comisiÃ³n
                         ledger.append({
                             'marketplace': 'ML', 'id_transaccion': f"REFUND_{order_id}_{f.name}_{idx}",
                             'id_orden': order_id, 'fecha': fecha,
@@ -190,16 +206,16 @@ class SurgicalLoader:
                         ledger.append({
                             'marketplace': 'ML', 'id_transaccion': f"REVCOMM_{order_id}_{f.name}_{idx}",
                             'id_orden': order_id, 'fecha': fecha,
-                            'detalle': "Anulación del cargo por venta",
-                            'monto': -valor_cargo,  # valor_cargo=-5199 → monto=+5199 (ML devuelve)
+                            'detalle': "AnulaciÃ³n del cargo por venta",
+                            'monto': -valor_cargo,  # valor_cargo=-5199 â†’ monto=+5199 (ML devuelve)
                             'tipo_movimiento': 'AJUSTE',
                             'archivo_origen': f.name, 'folio_xml': folio
                         })
 
                     else:
-                        # TODOS LOS DEMÁS CARGOS: envíos, publicidad, fullfilment, etc.
-                        # -valor_cargo: si cargo=3420 → monto=-3420 (costo)
-                        # si es anulación de envío: cargo=-3420 → monto=+3420 (ML devuelve)
+                        # TODOS LOS DEMÃS CARGOS: envÃ­os, publicidad, fullfilment, etc.
+                        # -valor_cargo: si cargo=3420 â†’ monto=-3420 (costo)
+                        # si es anulaciÃ³n de envÃ­o: cargo=-3420 â†’ monto=+3420 (ML devuelve)
                         ledger.append({
                             'marketplace': 'ML', 'id_transaccion': f"CHG_{f.name}_{idx}",
                             'id_orden': order_id, 'fecha': fecha,
@@ -213,6 +229,7 @@ class SurgicalLoader:
                     df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
                     df_ledger = self._filter_old_years(df_ledger)
                     self.db.insert_df(df_ledger, "marketplace_ledger_v1")
+                    self._register_file(f.name, "ML", len(df_ledger))
 
             except Exception as e:
                 logger.error(f"Error {f.name}: {e}")
@@ -251,7 +268,7 @@ class SurgicalLoader:
                     else:
                         final_det = "Ajuste Poscobro"
 
-                    # Generar id_transaccion único robusto
+                    # Generar id_transaccion Ãºnico robusto
                     c_op_val = str(row[c_op]).strip() if c_op and pd.notna(row[c_op]) else ""
                     if c_op_val and c_op_val.lower() not in ['', '0', '0.0', 'nan', 'none']:
                         trans_id = f"POS_{c_op_val}_{f.name}_{idx}"
@@ -269,17 +286,80 @@ class SurgicalLoader:
                 if ledger:
                     df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
                     df_ledger = self._filter_old_years(df_ledger)
-                    # Deduplicar por (operation_id, detalle) — el Excel fuente tiene filas repetidas
+                    # Deduplicar por (operation_id, detalle) â€” el Excel fuente tiene filas repetidas
                     df_ledger['_op_id'] = df_ledger['id_transaccion'].str.extract(r'POS_(\d+)_', expand=False)
                     antes = len(df_ledger)
                     df_ledger = df_ledger.drop_duplicates(subset=['_op_id', 'detalle', 'monto', 'fecha'])
                     despues = len(df_ledger)
                     if antes != despues:
-                        logger.info(f"Poscobro dedup: {antes} → {despues} filas ({antes - despues} duplicados eliminados)")
+                        logger.info(f"Poscobro dedup: {antes} â†’ {despues} filas ({antes - despues} duplicados eliminados)")
                     df_ledger = df_ledger.drop(columns=['_op_id'])
                     self.db.insert_df(df_ledger, "marketplace_ledger_v1")
+                    self._register_file(f.name, "ML", len(df_ledger))
             except Exception as e:
                 logger.error(f"Error Poscobro {f.name}: {e}")
+
+    def load_liberaciones(self):
+        logger.info("Loading ML_Liberaciones...")
+        for f in DIR_LIBERACIONES.glob("**/*.xlsx"):
+            logger.info(f"Processing: {f.name}")
+            try:
+                df = read_excel_auto(f, ['ID DE OPERACIÃ“N EN MERCADO PAGO', 'ID DE LA ORDEN', 'MONTO NETO ACREDITADO'])
+                if df is None: continue
+                
+                from engine.v4.utils import harmonize_series, clean_amount
+                
+                def _find_col(d, options):
+                    from engine.v4.run_initial_audit import _normalize_col_name
+                    norm_options = [_normalize_col_name(o) for o in options]
+                    for col in d.columns:
+                        col_norm = _normalize_col_name(col)
+                        if any(opt in col_norm or col_norm in opt for opt in norm_options): return col
+                    return None
+                    
+                col_op = _find_col(df, ["ID DE OPERACIÃ“N EN MERCADO PAGO"])
+                col_ord = _find_col(df, ["ID DE LA ORDEN"])
+                col_date = _find_col(df, ["FECHA DE LIBERACIÃ“N"])
+                col_net = _find_col(df, ["MONTO NETO ACREDITADO"])
+                col_deb = _find_col(df, ["MONTO NETO DEBITADO"])
+                col_type = _find_col(df, ["TIPO DE REGISTRO"])
+                
+                if not col_op or not col_date: continue
+                
+                mask = pd.to_datetime(df[col_date], errors='coerce').notnull()
+                if col_type:
+                    mask &= ~df[col_type].astype(str).str.strip().isin(["Dinero disponible inicial", "Total"])
+                
+                df_filtered = df[mask].copy()
+                if df_filtered.empty: continue
+                
+                s_cred = df_filtered[col_net].apply(clean_amount) if col_net else 0.0
+                s_deb = df_filtered[col_deb].apply(clean_amount) if col_deb else 0.0
+                monto = s_cred - s_deb
+                
+                ledger = []
+                for idx, row in df_filtered.iterrows():
+                    m = monto.loc[idx]
+                    if pd.isna(m) or m == 0: continue
+                    # Retiro de fondos / Liberaciones map a Tesoreria
+                    ledger.append({
+                        'marketplace': 'ML',
+                        'id_transaccion': f"PAYOUT_{row[col_op] if pd.notna(row[col_op]) else f'{f.name}_{idx}'}",
+                        'id_orden': str(row[col_ord]) if col_ord and pd.notna(row[col_ord]) else None,
+                        'fecha': pd.to_datetime(row[col_date]).date(),
+                        'detalle': "Retiro de dinero", # Mapea a Tesoreria
+                        'monto': m,
+                        'tipo_movimiento': 'ML_LIQUIDACION',
+                        'archivo_origen': f.name,
+                        'folio_xml': None
+                    })
+                if ledger:
+                    df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
+                    df_ledger = self._filter_old_years(df_ledger)
+                    self.db.insert_df(df_ledger, "marketplace_ledger_v1")
+                    self._register_file(f.name, "ML", len(df_ledger))
+            except Exception as e:
+                logger.error(f"Error Liberaciones {f.name}: {e}")
 
     def load_paris(self):
         logger.info("Loading Paris...")
@@ -287,9 +367,9 @@ class SurgicalLoader:
         if not dir_paris.exists():
             logger.warning("Paris raw folder does not exist")
             return
-        files = sorted(list(dir_paris.glob("**/*.xlsx")), key=lambda x: x.name, reverse=True)
+        files = sorted([f for f in dir_paris.glob("**/*.xlsx") if not f.name.startswith("~$")], key=lambda x: x.name, reverse=True)
         
-        mandatory_cols = ['id', 'tipo', 'número orden', 'monto a pagar']
+        mandatory_cols = ['id', 'tipo', 'nÃºmero orden', 'monto a pagar']
         for f in files:
             logger.info(f"Processing Paris: {f.name}")
             try:
@@ -297,13 +377,29 @@ class SurgicalLoader:
                 if df is None: continue
                 
                 c_id = get_col_name(df, ['id'])
-                c_tipo = get_col_name(df, ['tipo', 'descripción'])
-                c_ord = get_col_name(df, ['número orden', 'nro orden'])
-                c_monto = get_col_name(df, ['monto a pagar', 'monto'])
-                c_fecha = get_col_name(df, ['fecha'])
-                c_folio = get_col_name(df, ['número factura', 'factura'])
+                c_tipo = get_col_name(df, ['tipo', 'descripciÃ³n'])
+                c_ord = get_col_name(df, ['nÃºmero orden', 'nro orden'])
                 
-                if not c_id or not c_monto: continue
+                # Obtenemos la columna de monto neto (monto a pagar) y la de bruto (monto)
+                c_monto_neto = get_col_name(df, ['monto a pagar'])
+                # Buscamos 'monto' de forma exacta para evitar que capture 'monto a pagar'
+                c_monto_bruto = None
+                for c in df.columns:
+                    cn = normalize(str(c))
+                    if cn == 'monto':
+                        c_monto_bruto = c
+                        break
+                
+                c_fecha = get_col_name(df, ['fecha'])
+                c_folio = get_col_name(df, ['nÃºmero factura', 'factura'])
+                
+                if not c_id or not c_monto_neto: 
+                    logger.warning(f"Faltan columnas de montos en Paris: c_id={c_id}, c_monto_neto={c_monto_neto}")
+                    continue
+                
+                # Si no hay columna 'monto' separada, usamos monto neto como bruto (comisiÃ³n = 0)
+                if not c_monto_bruto:
+                    c_monto_bruto = c_monto_neto
                 
                 # Register unique sales into ventas_marketplace
                 if c_tipo:
@@ -314,8 +410,8 @@ class SurgicalLoader:
                             'order_id': df_v[c_ord].astype(str),
                             'sku': 'UNKNOWN',
                             'quantity': 1,
-                            'unit_price': pd.to_numeric(df_v[c_monto], errors='coerce').fillna(0),
-                            'gross_amount': pd.to_numeric(df_v[c_monto], errors='coerce').fillna(0),
+                            'unit_price': pd.to_numeric(df_v[c_monto_bruto], errors='coerce').fillna(0),
+                            'gross_amount': pd.to_numeric(df_v[c_monto_bruto], errors='coerce').fillna(0),
                             'sale_date': pd.to_datetime(df_v[c_fecha], errors='coerce') if c_fecha else None,
                             'marketplace': 'PARIS', 'source_file': f.name
                         }).drop_duplicates(subset=['order_id'])
@@ -328,22 +424,40 @@ class SurgicalLoader:
                     try: fecha = pd.to_datetime(row[c_fecha]) if c_fecha else None
                     except: fecha = None
                     detail = str(row[c_tipo]) if c_tipo else "Cobro/Pago Paris"
-                    monto = float(pd.to_numeric(row[c_monto], errors='coerce') or 0.0)
-                    folio = str(row[c_folio]) if c_folio and pd.notna(row[c_folio]) and str(row[c_folio]).lower() != 'nan' else None
+                    
+                    monto_neto = float(pd.to_numeric(row[c_monto_neto], errors='coerce') or 0.0)
+                    monto_bruto = float(pd.to_numeric(row[c_monto_bruto], errors='coerce') or 0.0)
+                    comision = monto_neto - monto_bruto
+                    
+                    folio_val = row[c_folio] if c_folio else None
+                    folio = str(int(float(folio_val))) if folio_val and pd.notna(folio_val) and str(folio_val).lower() != 'nan' and float(folio_val) > 0 else None
                     
                     tipo_mov = "PAGO" if "pago" in detail.lower() else "CARGO"
                     
+                    # 1. Registro del Monto Bruto (Venta/Cargo)
                     ledger.append({
-                        'marketplace': 'PARIS', 'id_transaccion': trans_id,
+                        'marketplace': 'PARIS', 'id_transaccion': f"{trans_id}_GROSS",
                         'id_orden': order_id, 'fecha': fecha,
-                        'detalle': detail, 'monto': monto,
+                        'detalle': detail, 'monto': monto_bruto,
                         'tipo_movimiento': tipo_mov, 'archivo_origen': f.name,
                         'folio_xml': folio
                     })
+                    
+                    # 2. Registro de la ComisiÃ³n (si existe diferencia)
+                    if abs(comision) > 0.01:
+                        ledger.append({
+                            'marketplace': 'PARIS', 'id_transaccion': f"{trans_id}_COMM",
+                            'id_orden': order_id, 'fecha': fecha,
+                            'detalle': "Cargo por venta (Comisión)", 'monto': comision,
+                            'tipo_movimiento': 'EGRESO_COMISION', 'archivo_origen': f.name,
+                            'folio_xml': folio
+                        })
+                        
                 if ledger:
                     df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
                     df_ledger = self._filter_old_years(df_ledger)
                     self.db.insert_df(df_ledger, "marketplace_ledger_v1")
+                    self._register_file(f.name, "ML", len(df_ledger))
             except Exception as e:
                 logger.error(f"Error Paris {f.name}: {e}")
 
@@ -355,14 +469,14 @@ class SurgicalLoader:
             return
         files = sorted(list(dir_ripley.glob("**/*.xlsx")), key=lambda x: x.name, reverse=True)
         
-        mandatory_cols = ['Fecha OC', 'Número documento liquidación', 'Orden de compra', 'A pagar']
+        mandatory_cols = ['Fecha OC', 'NÃºmero documento liquidaciÃ³n', 'Orden de compra', 'A pagar']
         for f in files:
             logger.info(f"Processing Ripley: {f.name}")
             try:
                 df = read_excel_auto(f, mandatory_cols)
                 if df is None: continue
                 
-                c_liq = get_col_name(df, ['Número documento liquidación', 'NUMERO DOCUMENTO LIQUIDACION'])
+                c_liq = get_col_name(df, ['NÃºmero documento liquidaciÃ³n', 'NUMERO DOCUMENTO LIQUIDACION'])
                 c_ord = get_col_name(df, ['Orden de compra', 'orden compra'])
                 c_fecha = get_col_name(df, ['Fecha OC', 'fecha'])
                 c_total = get_col_name(df, ['A pagar'])
@@ -413,8 +527,208 @@ class SurgicalLoader:
                     df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
                     df_ledger = self._filter_old_years(df_ledger)
                     self.db.insert_df(df_ledger, "marketplace_ledger_v1")
+                    self._register_file(f.name, "ML", len(df_ledger))
             except Exception as e:
                 logger.error(f"Error Ripley {f.name}: {e}")
+
+        # PROCESAMIENTO DE CSV (Ciclos de facturaciÃ³n)
+        dir_ciclos = dir_ripley / "CICLOS"
+        
+        if dir_ciclos and dir_ciclos.exists():
+            csv_files = sorted(list(dir_ciclos.glob("*.csv")), key=lambda x: x.name, reverse=True)
+            for f in csv_files:
+                logger.info(f"Processing Ripley CSV: {f.name}")
+                try:
+                    df = pd.read_csv(f, encoding='utf-8', sep=';', engine='python')
+                    
+                    c_liq = get_col_name(df, ['numero de factura'])
+                    c_ord = get_col_name(df, ['order number'])
+                    c_fecha = get_col_name(df, ['date created'])
+                    c_sku = get_col_name(df, ['product sku'])
+                    c_qty = get_col_name(df, ['quantity'])
+                    
+                    c_sub = get_col_name(df, ['subtotal de articulos'])
+                    c_total = get_col_name(df, ['precio total con impuestos'])
+                    c_com = get_col_name(df, ['commission excluding taxes'])
+                    c_imp = get_col_name(df, ['impuestos sobre la comision'])
+                    c_trans = get_col_name(df, ['amount transferred to tienda'])
+                    
+                    if not c_ord: continue
+                    
+                    # Ventas Marketplace update (more granular)
+                    if c_sku and c_qty and c_sub:
+                        def parse_amt_series(s):
+                            return pd.to_numeric(s.astype(str).str.replace(',', '.'), errors='coerce').fillna(0)
+
+                        df_ventas = pd.DataFrame({
+                            'order_id': df[c_ord].astype(str),
+                            'sku': df[c_sku].astype(str),
+                            'quantity': pd.to_numeric(df[c_qty], errors='coerce').fillna(1),
+                            'unit_price': parse_amt_series(df[c_sub]),
+                            'gross_amount': parse_amt_series(df[c_sub]),
+                            'sale_date': pd.to_datetime(df[c_fecha], errors='coerce') if c_fecha else None,
+                            'marketplace': 'RIPLEY', 'source_file': f.name
+                        }).drop_duplicates(subset=['order_id', 'sku'])
+                        
+                        self.db.insert_df(self._filter_old_years(df_ventas[VENTAS_COLS], 'sale_date'), "ventas_marketplace", dedup_cols=['order_id', 'sku'])
+                    
+                    ledger = []
+                    for idx, row in df.iterrows():
+                        order_id = str(row[c_ord])
+                        liq_doc = str(row[c_liq]) if c_liq and pd.notna(row[c_liq]) else None
+                        try: fecha = pd.to_datetime(row[c_fecha]) if c_fecha else None
+                        except: fecha = None
+                        
+                        def parse_amt(val):
+                            if pd.isna(val): return 0.0
+                            val_str = str(val).replace(',', '.')
+                            return float(pd.to_numeric(val_str, errors='coerce') or 0.0)
+                            
+                        amts = {
+                            'Subtotal': parse_amt(row[c_sub]) if c_sub else 0.0,
+                            'Precio total': parse_amt(row[c_total]) if c_total else 0.0,
+                            'ComisiÃ³n': parse_amt(row[c_com]) if c_com else 0.0,
+                            'Impuestos': parse_amt(row[c_imp]) if c_imp else 0.0,
+                            'Amount transferred to tienda': parse_amt(row[c_trans]) if c_trans else 0.0
+                        }
+                        
+                        for detail, monto in amts.items():
+                            if monto == 0.0: continue
+                            trans_id = f"RIP_CSV_{liq_doc}_{order_id}_{idx}_{normalize(detail)}"
+                            tipo_mov = "PAGO" if "Amount" in detail or "Subtotal" in detail or "Precio total" in detail else "CARGO"
+                            
+                            ledger.append({
+                                'marketplace': 'RIPLEY', 'id_transaccion': trans_id,
+                                'id_orden': order_id, 'fecha': fecha,
+                                'detalle': detail, 'monto': monto,
+                                'tipo_movimiento': tipo_mov, 'archivo_origen': f.name,
+                                'folio_xml': liq_doc
+                            })
+                            
+                    if ledger:
+                        df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
+                        df_ledger = self._filter_old_years(df_ledger)
+                        self.db.insert_df(df_ledger, "marketplace_ledger_v1")
+                    self._register_file(f.name, "ML", len(df_ledger))
+                except Exception as e:
+                    logger.error(f"Error Ripley CSV {f.name}: {e}")
+
+        # PROCESAMIENTO DE HISTORIAL DE TRANSACCIONES
+        dir_historial = dir_ripley / "TH"
+        if dir_historial.exists():
+            hist_files = sorted(list(dir_historial.glob("*.csv")), key=lambda x: x.name, reverse=True)
+            for f in hist_files:
+                logger.info(f"Processing Ripley Transaction History CSV: {f.name}")
+                try:
+                    df = pd.read_csv(f, encoding='utf-8', sep=';', engine='python', on_bad_lines='skip')
+                    
+                    c_ord = get_col_name(df, ['numero de pedido', 'nÃºmero de pedido'])
+                    c_liq = get_col_name(df, ['numero de factura', 'nÃºmero de factura'])
+                    c_fecha = get_col_name(df, ['fecha de creaciÃ³n', 'fecha de creacion'])
+                    c_tipo = get_col_name(df, ['tipo', 'type'])
+                    c_detalle = get_col_name(df, ['descripcion', 'descripciÃ³n'])
+                    c_importe = get_col_name(df, ['importe', 'amount'])
+                    
+                    if not c_tipo or not c_importe: continue
+                    
+                    ledger = []
+                    for idx, row in df.iterrows():
+                        order_id = str(row[c_ord]) if c_ord and pd.notna(row[c_ord]) else None
+                        liq_doc = str(row[c_liq]) if c_liq and pd.notna(row[c_liq]) else None
+                        
+                        try: fecha = pd.to_datetime(row[c_fecha], dayfirst=True) if c_fecha else None
+                        except: fecha = None
+                        
+                        detail = str(row[c_tipo]) if c_tipo else "Transaction"
+                        
+                        def parse_amt(val):
+                            if pd.isna(val): return 0.0
+                            val_str = str(val).replace(',', '.')
+                            return float(pd.to_numeric(val_str, errors='coerce') or 0.0)
+                            
+                        monto = parse_amt(row[c_importe])
+                        
+                        if monto == 0.0: continue
+                        
+                        trans_id = f"RIP_TH_{idx}_{normalize(detail)}"
+                        tipo_mov = "PAGO" if monto > 0 else "CARGO"
+                        
+                        ledger.append({
+                            'marketplace': 'RIPLEY', 'id_transaccion': trans_id,
+                            'id_orden': order_id, 'fecha': fecha,
+                            'detalle': detail, 'monto': monto,
+                            'tipo_movimiento': tipo_mov, 'archivo_origen': f.name,
+                            'folio_xml': liq_doc
+                        })
+                        
+                    if ledger:
+                        df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
+                        df_ledger = self._filter_old_years(df_ledger)
+                        self.db.insert_df(df_ledger, "marketplace_ledger_v1")
+                    self._register_file(f.name, "ML", len(df_ledger))
+                except Exception as e:
+                    logger.error(f"Error Ripley Transaction History CSV {f.name}: {e}")
+
+        # PROCESAMIENTO DE FULFILLMENT CSV
+        dir_ff = dir_ripley / "FF"
+        if dir_ff.exists():
+            ff_files = sorted(list(dir_ff.glob("*.csv")), key=lambda x: x.name, reverse=True)
+            for f in ff_files:
+                logger.info(f"Processing Ripley FF CSV: {f.name}")
+                try:
+                    df = pd.read_csv(f, encoding='utf-8', sep=None, engine='python')
+                    
+                    c_ord = get_col_name(df, ['order_id', 'order id'])
+                    c_fecha = get_col_name(df, ['date_created', 'date created', 'accounting_document_creation_date'])
+                    
+                    if not c_ord: continue
+                    
+                    ledger = []
+                    
+                    # Identificar columnas financieras (fees, amounts, descuentos, devoluciones, otros)
+                    fin_cols = []
+                    for c in df.columns:
+                        cn = str(c).lower()
+                        if 'amount' in cn or 'fee' in cn or 'descuento' in cn or 'devoluci' in cn or 'otros' in cn:
+                            fin_cols.append(c)
+                            
+                    for idx, row in df.iterrows():
+                        order_id = str(row[c_ord])
+                        try: fecha = pd.to_datetime(row[c_fecha]) if c_fecha else None
+                        except: fecha = None
+                        
+                        def parse_amt(val):
+                            if pd.isna(val): return 0.0
+                            val_str = str(val).replace(',', '.')
+                            return float(pd.to_numeric(val_str, errors='coerce') or 0.0)
+                            
+                        for c in fin_cols:
+                            monto = parse_amt(row[c])
+                            if monto == 0.0: continue
+                            
+                            detail = str(c)
+                            # Create a unique transaction ID for FF
+                            trans_id = f"RIP_FF_{order_id}_{idx}_{normalize(detail)}"
+                            
+                            # Keep original signs. tipo_movimiento helps categorization but is not strictly evaluated algebraically in v4 if amounts already have signs.
+                            # Standard: PAGO if positive or looks like transfer. CARGO if negative or fee. 
+                            tipo_mov = "PAGO" if ("transfer" in cn or "amount" in cn) else "CARGO"
+                            
+                            ledger.append({
+                                'marketplace': 'RIPLEY', 'id_transaccion': trans_id,
+                                'id_orden': order_id, 'fecha': fecha,
+                                'detalle': detail, 'monto': monto,
+                                'tipo_movimiento': tipo_mov, 'archivo_origen': f.name,
+                                'folio_xml': None # FF typically does not have folio_xml
+                            })
+                            
+                    if ledger:
+                        df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
+                        df_ledger = self._filter_old_years(df_ledger)
+                        self.db.insert_df(df_ledger, "marketplace_ledger_v1")
+                    self._register_file(f.name, "ML", len(df_ledger))
+                except Exception as e:
+                    logger.error(f"Error Ripley FF CSV {f.name}: {e}")
 
     def load_falabella(self):
         logger.info("Loading Falabella...")
@@ -432,12 +746,12 @@ class SurgicalLoader:
                 if df is None: continue
                 
                 c_id = get_col_name(df, ['Falabella-Id', 'Falabella Id'])
-                c_ord = get_col_name(df, ['N de orden', 'Nº de orden', 'Nro de orden', 'N° de orden'])
-                c_fecha = get_col_name(df, ['Fecha de transacción', 'Fecha de Transaccion', 'Fecha de transaccion', 'Fecha creación de la orden'])
-                c_tipo = get_col_name(df, ['Tipo de Transaccion', 'Tipo de transacción', 'Tipo de transaccion'])
+                c_ord = get_col_name(df, ['N de orden', 'NÂº de orden', 'Nro de orden', 'NÂ° de orden'])
+                c_fecha = get_col_name(df, ['Fecha de transacciÃ³n', 'Fecha de Transaccion', 'Fecha de transaccion', 'Fecha creaciÃ³n de la orden'])
+                c_tipo = get_col_name(df, ['Tipo de Transaccion', 'Tipo de transacciÃ³n', 'Tipo de transaccion'])
                 c_monto = get_col_name(df, ['Monto (Sin IVA)', 'Monto con IVA', 'Monto a transferir', 'Monto Total'])
                 c_sku = get_col_name(df, ['SKU vendedor', 'sku'])
-                c_folio = get_col_name(df, [' N° Documento Tributario ', 'Documento Tributario'])
+                c_folio = get_col_name(df, [' NÂ° Documento Tributario ', 'Documento Tributario'])
                 
                 if not c_ord or not c_monto: continue
                 
@@ -480,6 +794,7 @@ class SurgicalLoader:
                     df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
                     df_ledger = self._filter_old_years(df_ledger)
                     self.db.insert_df(df_ledger, "marketplace_ledger_v1")
+                    self._register_file(f.name, "ML", len(df_ledger))
             except Exception as e:
                 logger.error(f"Error Falabella {f.name}: {e}")
 
@@ -489,6 +804,7 @@ class SurgicalLoader:
         if marketplace == 'ML':
             self.load_facturacion()
             self.load_poscobro()
+            self.load_liberaciones()
         elif marketplace == 'PARIS':
             self.load_paris()
         elif marketplace == 'RIPLEY':
