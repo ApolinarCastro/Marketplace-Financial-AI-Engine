@@ -546,13 +546,21 @@ def post_marketplace_correccion(data: dict):
 
 @app.get("/", response_class=HTMLResponse)
 @app.get("/app", response_class=HTMLResponse)
-@app.get("/documentary-dashboard", response_class=HTMLResponse)
 def index():
-    dashboard_path = ROOT / "templates" / "documentary_dashboard.html"
+    dashboard_path = ROOT / "templates" / "dashboard.html"
     if dashboard_path.exists():
         with open(dashboard_path, "r", encoding="utf-8") as f:
             return HTMLResponse(f.read())
     return HTMLResponse("<h1>Dashboard no encontrado</h1>", status_code=404)
+
+
+@app.get("/documentary-dashboard", response_class=HTMLResponse)
+def get_documentary_dashboard():
+    exec_path = ROOT / "templates" / "documentary_dashboard.html"
+    if exec_path.exists():
+        with open(exec_path, "r", encoding="utf-8") as f:
+            return HTMLResponse(f.read())
+    return HTMLResponse("Dashboard Documental en Construccion", status_code=404)
 
 @app.get("/executive-dashboard", response_class=HTMLResponse)
 def get_executive_dashboard():
