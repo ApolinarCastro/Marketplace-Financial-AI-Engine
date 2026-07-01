@@ -168,9 +168,9 @@ class TestNewMappingsFinancialClosing(unittest.TestCase):
         self.assertEqual(close["ingresos"], 1000000.0)
         # ¿Qué me descontaron? (costos operacionales)
         self.assertEqual(close["costos_op"], -72241.0)
-        # ¿Ajustes netos? (excluye mediaciones por riesgo/postventa)
+        # ¿Ajustes netos? (Cancelación de la mediación is excluded from op_pnl)
         self.assertEqual(close["ajustes"], 0.0)
-        # ¿Cuánto gané? (1,000,000 - 72,241 = 927,759)
+        # ¿Cuánto gané? (1,000,000 - 72,241 + 0 = 927,759)
         self.assertEqual(close["neto"], 927759.0)
 
 

@@ -5,14 +5,25 @@ db = DatabaseV4.get()
 
 # Check include_in_operational_pnl for "A pagar" in both tables
 for tbl in ['marketplace_ledger_v1', 'marketplace_ledger_clasificado_v1']:
-    r = db.query(f"""
+    r1 = db.query(f"""
         SELECT include_in_operational_pnl, COUNT(*) as cnt, SUM(COALESCE(monto,0)) as total
         FROM {tbl}
-        WHERE marketplace = 'RIPLEY' AND (detalle = 'A pagar' OR financial_group = 'ajustes')
+        WHERE marketplace = 'RIPLEY' AND detalle = 'A pagar'
         GROUP BY include_in_operational_pnl
     """)
-    print(f"=== {tbl} (A pagar / ajustes) ===")
-    for _, row in r.iterrows():
+    print(f"=== {tbl} (A pagar) ===")
+    for _, row in r1.iterrows():
+        val = row['include_in_operational_pnl']
+        print(f"  include_in_operational_pnl={repr(val)}  cnt={row['cnt']}  total=${row['total']:>,.0f}")
+        
+    r2 = db.query(f"""
+        SELECT include_in_operational_pnl, COUNT(*) as cnt, SUM(COALESCE(monto,0)) as total
+        FROM {tbl}
+        WHERE marketplace = 'RIPLEY' AND financial_group = 'ajustes'
+        GROUP BY include_in_operational_pnl
+    """)
+    print(f"=== {tbl} (ajustes) ===")
+    for _, row in r2.iterrows():
         val = row['include_in_operational_pnl']
         print(f"  include_in_operational_pnl={repr(val)}  cnt={row['cnt']}  total=${row['total']:>,.0f}")
     print()

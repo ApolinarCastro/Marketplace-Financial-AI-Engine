@@ -16,7 +16,7 @@ class DatabaseV4:
     _instance = None
     _shutdown_registered = False
 
-    def __init__(self, db_path=DB_PATH, read_only=False):
+    def __init__(self, db_path=DB_PATH, read_only=True):
         self.db_path = Path(db_path)
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self.conn = duckdb.connect(str(self.db_path), read_only=read_only)
@@ -98,6 +98,20 @@ class DatabaseV4:
         except Exception:
             pass
 
+        # Hot-migration: ensure ledger support columns exist in marketplace_ledger_v1
+        for col, col_type in [("clasificacion_operativa", "TEXT"), ("include_in_operational_pnl", "BOOLEAN"), ("financial_group", "TEXT")]:
+            try:
+                self.conn.execute(f"ALTER TABLE marketplace_ledger_v1 ADD COLUMN {col} {col_type}")
+            except Exception:
+                pass
+
+        # Hot-migration: add extra DTE columns if they don't exist
+        for col in ["tipo_dte", "rut_receptor", "marketplace"]:
+            try:
+                self.conn.execute(f"ALTER TABLE dte_truth_v1 ADD COLUMN {col} TEXT")
+            except Exception:
+                pass
+
         ddl = [
             # ── V4 Core Tables (React Dashboard needs these) ──
             "CREATE TABLE IF NOT EXISTS ventas_marketplace (order_id TEXT, sku TEXT, quantity INTEGER, unit_price DOUBLE, gross_amount DOUBLE, sale_date DATE, marketplace TEXT, source_file TEXT, load_ts TIMESTAMP DEFAULT current_timestamp)",
@@ -112,7 +126,7 @@ class DatabaseV4:
             # ── Marketplace Financial Auditor v3.5 Layers ──
             
             # Layer 1: Source (marketplace_ledger_v1)
-            "CREATE TABLE IF NOT EXISTS marketplace_ledger_v1 (marketplace TEXT, id_transaccion TEXT, id_orden TEXT, fecha DATE, detalle TEXT, monto DOUBLE, tipo_movimiento TEXT, archivo_origen TEXT, folio_xml TEXT, estado_xml TEXT, load_ts TIMESTAMP DEFAULT current_timestamp)",
+            "CREATE TABLE IF NOT EXISTS marketplace_ledger_v1 (marketplace TEXT, id_transaccion TEXT, id_orden TEXT, fecha DATE, detalle TEXT, monto DOUBLE, tipo_movimiento TEXT, archivo_origen TEXT, folio_xml TEXT, estado_xml TEXT, clasificacion_operativa TEXT, include_in_operational_pnl BOOLEAN, financial_group TEXT, load_ts TIMESTAMP DEFAULT current_timestamp)",
             
             # Layer 2: Classification (marketplace_ledger_clasificado_v1)
             "CREATE TABLE IF NOT EXISTS marketplace_ledger_clasificado_v1 (marketplace TEXT, id_transaccion TEXT, id_orden TEXT, detalle TEXT, tipo_movimiento TEXT, monto DOUBLE, fecha DATE, clasificacion_operativa TEXT, confianza_clasificacion DOUBLE, origen_clasificacion TEXT, include_in_operational_pnl BOOLEAN, financial_group TEXT, financial_subgroup TEXT)",
@@ -127,7 +141,7 @@ class DatabaseV4:
             "CREATE TABLE IF NOT EXISTS marketplace_correcciones_v1 (marketplace TEXT, id_transaccion TEXT, detalle_original TEXT, detalle_corregido TEXT, motivo TEXT, usuario TEXT, fecha TIMESTAMP DEFAULT current_timestamp)",
             
             # Layer 7: Legal Truth (DTE Index)
-            "CREATE TABLE IF NOT EXISTS dte_truth_v1 (folio TEXT PRIMARY KEY, monto_neto DOUBLE, monto_iva DOUBLE, monto_total DOUBLE, fecha_emision DATE, emisor_rut TEXT, emisor_nombre TEXT, load_ts TIMESTAMP DEFAULT current_timestamp)",
+            "CREATE TABLE IF NOT EXISTS dte_truth_v1 (folio TEXT PRIMARY KEY, monto_neto DOUBLE, monto_iva DOUBLE, monto_total DOUBLE, fecha_emision DATE, emisor_rut TEXT, emisor_nombre TEXT, tipo_dte TEXT, rut_receptor TEXT, marketplace TEXT, load_ts TIMESTAMP DEFAULT current_timestamp)",
  
             # ── Legacy/Support Tables ──
             "CREATE TABLE IF NOT EXISTS cargos_no_clasificados (original_term TEXT, marketplace TEXT, frequency INTEGER, suggested_type TEXT, detected_at TIMESTAMP DEFAULT current_timestamp)",

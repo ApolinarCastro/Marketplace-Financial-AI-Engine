@@ -36,10 +36,11 @@ RAW_TO_CLASSIFICATION_MAP = {
     "Importe del pedido": "Importe del pedido",
     "Pago": "Pago",
     "Ajuste histórico (pre-2026)": "Ajuste histórico (pre-2026)",
-    "Ajuste Poscobro": "Ajuste Poscobro General",
+    "Ajuste Poscobro": "Cargo por devolución",
 
     # Mercado Libre — Conceptos crudos del ledger real (Adopción Diccionario Maestro)
     "fee_for_divergence_in_package_dimensions": "Cargo por diferencias en las medidas y el peso del paquete",
+    "fee_for_divergence_in_package_dimensions_cancel": "Cancelación del cargo por diferencias en las medidas y el peso del paquete",
 
     # Mercado Libre — Nuevos conceptos Master Spec
     "Cargo": "Abono manual",
@@ -72,14 +73,14 @@ RAW_TO_CLASSIFICATION_MAP = {
     "change_receiver_address": "Ajuste por Cambio de Dirección",
     "undelivered_other": "Ajuste por Falla en Entrega",
     "delivered_but_not_receive_package": "Ajuste por Falla en Entrega",
-    "reconciled": "Ajuste Poscobro Conciliado",
+    "reconciled": "Recuperación por Pérdida de Inventario",
     "bpp_refunded": "Ajuste por Compra Protegida (BPP)",
     "respondent_unanswered": "Ajuste por Disputa no Respondida",
-    "nan": "Ajuste Poscobro General",
+    "nan": "Bonificación Logística Flex",
     "bpp_covered": "Ajuste por Compra Protegida (BPP)",
     "partially_bpp_refunded": "Ajuste por Compra Protegida (BPP)",
-    "compensated": "Ajuste Poscobro Conciliado",
-    "by_admin": "Ajuste Poscobro General",
+    "compensated": "Cargo por devolución",
+    "by_admin": "Bonificación Logística Flex",
 
     # Mercado Libre — Mediaciones y Cashback
     "Cancelación de la mediación": "Cancelación de la mediación",
@@ -90,22 +91,22 @@ RAW_TO_CLASSIFICATION_MAP = {
 
     # Mercado Libre — Orphan codes que caían en fallback "histórico"
     "bought_by_mistake": "Ajuste por Arrepentimiento",
-    "CREDIT_NOT_PROCESSED": "Ajuste Poscobro General",
+    "CREDIT_NOT_PROCESSED": "Bonificación Logística Flex",
     "damaged_package_broken_item_fashion": "Ajuste por Producto Dañado/Vacío",
     "different_color_or_size": "Ajuste por Diferencia de Publicación",
     "different_color_or_size_fashion_change": "Ajuste por Diferencia de Publicación",
     "different_item_other_change": "Ajuste por Diferencia de Publicación",
-    "INVALID_AUTHORIZATION": "Ajuste Poscobro General",
+    "INVALID_AUTHORIZATION": "Bonificación Logística Flex",
     "item_not_useful_fashion_different": "Ajuste por Arrepentimiento",
     "item_not_useful_fashion_different_change": "Ajuste por Arrepentimiento",
     "missing_accessories": "Ajuste por Ítem Faltante",
-    "missing_invoice": "Ajuste Poscobro General",
+    "missing_invoice": "Cargo por devolución",
     "not_expected_quality_different": "Ajuste por Diferencia de Publicación",
-    "not_reconciled": "Ajuste Poscobro General",
+    "not_reconciled": "Bonificación Logística Flex",
     "ppv_covered_melienvio": "Ajuste por Compra Protegida (BPP)",
     "ppv_valid": "Ajuste por Compra Protegida (BPP)",
-    "refund_account_money": "Ajuste Poscobro General",
-    "refunded": "Ajuste Poscobro General",
+    "refund_account_money": "Bonificación Logística Flex",
+    "refunded": "Bonificación Logística Flex",
     "unauthorized_purchase": "Ajuste por Disputa no Respondida",
 
     # RIPLEY
@@ -115,6 +116,7 @@ RAW_TO_CLASSIFICATION_MAP = {
     "Gastos de envÃ­o pagados por el operador": "Gastos de envío pagados por el operador",
     "Comisiones sobre pedidos": "Comisiones sobre pedidos",
     "Pedidos reembolsados": "Pedidos reembolsados",
+    "Comisiones": "Comisiones sobre pedidos",
     "A pagar": "A pagar",
     "Comisiones sobre pedidos reembolsados": "Comisiones sobre pedidos reembolsados",
     "Envío reembolsado": "Envío reembolsado",
@@ -132,9 +134,37 @@ RAW_TO_CLASSIFICATION_MAP = {
     "Otros abonos": "Otros abonos",
     "Otros descuentos": "Otros descuentos",
     "Abono postventa": "Abono postventa",
+    "Importe del envío del pedido": "Importe del envío del pedido",
+    "Gastos de envío": "Gastos de envío",
+    "Importe de reembolso": "Importe de reembolso",
+    "Importe del pedido reembolsado": "Importe del pedido reembolsado",
+    "Importe del envío del pedido reembolsado": "Importe del envío del pedido reembolsado",
+    "Comisión de reembolso": "Comisión de reembolso",
+    "Impuesto sobre las comisiones": "Impuesto sobre las comisiones",
+    "Impuesto sobre la comisión de reembolso": "Impuesto sobre la comisión de reembolso",
+    "Impuesto de la factura manual": "Impuesto de la factura manual",
+    "Factura manual": "Factura manual",
+    "Recargo por precio mínimo": "Recargo por precio mínimo",
+
     # Ripley — Nuevos Conceptos Master Spec
     
     # Ripley — Additional operational/commercial fee mappings
+    "Subtotal": "Subtotal",
+    "Precio total": "Precio total",
+    "order_amount": "order_amount",
+    "Commission": "Commission",
+    "commission_fee": "commission_fee",
+    "refund_commission_fee": "refund_commission_fee",
+    "Impuestos sobre comisión": "Impuestos sobre comisión",
+    "Impuestos": "Impuestos",
+    "Amount transferred to tienda": "Amount transferred to tienda",
+    "transfer_amount": "transfer_amount",
+    "refund_order_amount": "refund_order_amount",
+    "Descuento por logística inversa (FF)": "Descuento por logística inversa (FF)",
+    "Descuento por cofinanciamiento logístico (FF)": "Descuento por cofinanciamiento logístico (FF)",
+    "Comisión": "Comisión",
+    "Comision": "Comisión",
+    "Comisin": "Comisión",
     "Abono por formalización a OPL": "Abono por formalización a OPL",
     "Abonos por cupón promocional": "Abonos por cupón promocional",
     "Cobro despacho primera milla": "Cobro despacho primera milla",
@@ -157,10 +187,14 @@ RAW_TO_CLASSIFICATION_MAP = {
     # PARIS
     "Cobro por despacho": "Cobro por despacho",
     "Venta": "Venta",
+    "Cargo por venta (Comisión)": "Cargo por venta (Comisión)",
+    "Cargo por venta (Comision)": "Cargo por venta (Comisión)",
     "Devolución": "Devolución",
     "Devolucion": "Devolución",
     "Devolucin": "Devolución",
     "DevoluciÃ³n": "Devolución",
+    "Devolucin": "Devolución",
+    "Devolucin": "Devolución",
     "Despacho": "Despacho",
     "Logística inversa": "Logística inversa",
     "Logistica inversa": "Logística inversa",
@@ -170,8 +204,12 @@ RAW_TO_CLASSIFICATION_MAP = {
     "Compensacion logistica": "Compensación logística",
     "Compensacin logstica": "Compensación logística",
     "CompensaciÃ³n logÃ­stica": "Compensación logística",
+    "Compensacin logstica": "Compensación logística",
+    "Compensacin logstica": "Compensación logística",
     # París — Nuevos Conceptos Master Spec
     "Cobro por campaña": "Cobro por campaña",
+    "Cobro por campaa": "Cobro por campaña",
+    "Cobro por campaa": "Cobro por campaña",
     "Rebate": "Rebate",
     "Cobro stock antiguo": "Cobro stock antiguo",
     "Ajuste Inventario Activo": "Ajuste Inventario Activo",
@@ -183,6 +221,9 @@ RAW_TO_CLASSIFICATION_MAP = {
     # FALABELLA
     "Cobro por cofinanciamiento logístico": "Cobro por cofinanciamiento logístico",
     "Cobro por comisión por venta": "Cobro por comisión por venta",
+    "Cobro por comisin por cancelacin": "Cobro por comisión por venta",
+    "Cobro por comisión por cancelación": "Cobro por comisión por venta",
+    "Cobro por comisin por cancelacin": "Cobro por comisión por venta",
     "Reversa de pago de envío comprador": "Reversa de pago de envío comprador",
     "Cobro Promo envío falabella.com": "Cobro Promo envío falabella.com",
     "Reembolso por Promo envío falabella.com": "Reembolso por Promo envío falabella.com",
@@ -236,13 +277,20 @@ RAW_TO_CLASSIFICATION_MAP = {
 FINANCIAL_STRUCTURE = {
     "ingresos": [
         "Cargo por venta", "Cargo por venta (Venta)", "Venta", "Bonificación", "Rebate",
-        "Compensación comercial", "Importe del pedido", "Pago",
+        "Compensación comercial", "Importe del pedido", "Importe del envío del pedido",
         "Despacho", "Sale amount", "Gross sales",
         "Pago por precio del producto",
+        "Subtotal", "Precio total", "order_amount"
     ],
     "devoluciones": [
         "Pedidos reembolsados", "Devolución", "Devolución de venta", "Devolución de dinero",
         "Descuento por devolución de producto",
+        "Cancelación del cargo por diferencias en las medidas y el peso del paquete",
+        "Importe del pedido reembolsado", "Importe del envío del pedido reembolsado",
+        "Importe de reembolso",
+        "refund_order_amount", "Devoluciones", "Abonos", "Reversos",
+        # Poscobro reason_details removed from financial structure per PHASE_16F_STABILIZATION.
+        # They are operational traceability only — see return_reason_traceability domain.
     ],
     "costos_operacionales": [
         "Cargo por envíos de Mercado Libre", "Cargo por Mercado Envíos",
@@ -269,6 +317,8 @@ FINANCIAL_STRUCTURE = {
         "Reembolso por Promo envío falabella.com", "Cobro Promo envío falabella.com",
         "Pago de envío comprador",
         "Envío", "Gastos de envío",
+        "Descuento por logística inversa (FF)", "Descuento por cofinanciamiento logístico (FF)",
+        "almacenamiento", "sobreestadía", "pick and pack", "VAS", "cargos fulfillment",
     ],
     "costos_comerciales": [
         "Cargo por venta (Comisión)", "Anulación del cargo por venta",
@@ -282,13 +332,22 @@ FINANCIAL_STRUCTURE = {
         "Cargo por Asesoría Comercial", "Cargo por mantenimiento de Mi página",
         "Anulación del cargo por mantenimiento de Mi página",
         "Anulación mantenimiento Mi página",
-        "Comisiones sobre pedidos", "Comisiones sobre pedidos reembolsados",
+        "Comisiones sobre pedidos",
+        "Comisión de reembolso", "Impuesto sobre las comisiones", "Impuesto sobre la comisión de reembolso",
+        "Impuesto de la factura manual", "Recargo por precio mínimo",
+        "Comisiones sobre pedidos reembolsados",
         "Cobro por comisión por venta", "Reembolso por comisión por venta",
         "Abono oferta TC - OPEX", "Descuento oferta TC - OPEX",
         "Abonos por cupón promocional", "Descuento por cupones de despacho",
         "Abonos soluciones comerciales", "Descuento por PDM",
         "Pago de aporte promocionales a cliente (Promo)", "Descuento por aportes promocionales a clientes (Promo)",
+        "Comisión", "Comisiones", "Cobro por comisión por cancelación", "Commission", "commission_fee", "refund_commission_fee"
     ],
+    "recuperaciones_y_bonificaciones": [
+        "Recuperación por Pérdida de Inventario",
+        "Bonificación Logística Flex",
+    ],
+
     "ajustes": [
         "Descuento por cancelación", "Otros descuentos",
         "Compensación logística", "Ajuste Inventario Activo",
@@ -301,18 +360,22 @@ FINANCIAL_STRUCTURE = {
         # Legacy concepts (non-dictionary but still in ledger)
         "Mediación", "Reserva para devolución en envío BBP", "Reserva para reembolso",
         "Reserva para pago de deuda", "reserve_for_dispute", "Reserva para pago",
-        "Abono manual", "Importe de reembolso", "Ajuste histórico (pre-2026)",
-        "Ajuste Poscobro General", "Ajuste por Talla/Garantía",
-        "Ajuste por Producto Dañado/Vacío", "Ajuste por Arrepentimiento",
-        "Ajuste por Diferencia de Publicación", "Ajuste por Ítem Faltante",
-        "Ajuste por Falta de Stock", "Ajuste por Retraso en Entrega",
-        "Ajuste por Cambio de Dirección", "Ajuste por Falla en Entrega",
-        "Ajuste Poscobro Conciliado", "Ajuste por Compra Protegida (BPP)",
-        "Ajuste por Disputa no Respondida", "Cargo",
+        "Abono de factura manual",
+        "Factura manual",
+        "Abono manual", "Ajuste histórico (pre-2026)",
+        "Cargo",
         "Cancelación de la mediación", "cashback", "cashback_cancel",
+        "Pago",
     ],
     "tesoreria": [
         "Retiro de dinero",
+        "A pagar",
+        "Amount transferred to tienda",
+        "transfer_amount"
+    ],
+    "impuestos": [
+        "Impuestos sobre comisión",
+        "Impuestos"
     ]
 }
 
@@ -412,20 +475,39 @@ class MarketplaceAuditorEngine:
         # Isolated Mercado Libre Exclusion Patch: all rows operational except specific exclusions
         ml_mask = source['marketplace'] == 'ML'
         
+        # MODERNIZED 2026-06-06: Excluir solo MECHANISMS (paired events con zero net cash).
+        # ROOT_EVENT/REAL_CASH son OPERACIONALES (True): repentant_buyer, broken_item_fashion,
+        #   bigger_than_expected_fashion, smaller_than_expected_fashion, etc.
+        # Ver: governance/INCLUDE_IN_OPERATIONAL_PNL_FINAL_DECISION.md
+        # Ver: governance/INCLUDE_IN_OPERATIONAL_PNL_TRUTH_REPORT.md
         ml_mandatory_exclusions = {
             "reserve_for_dispute",
             "Mediación",
             "bpp_refunded",
-            "repentant_buyer",
-            "broken_item_fashion",
-            "bigger_than_expected_fashion",
-            "smaller_than_expected_fashion",
+            "bpp_covered",
+            "partially_bpp_refunded",
+            "ppv_covered_melienvio",
+            "ppv_valid",
             "reconciled",
             "AJUSTE POSCOBRO",
             "cashback",
             "cashback_cancel",
             "Reserva para devolución en envío BBP",
-            "Retenciones & Provisiones"
+            "Retenciones & Provisiones",
+            # ALL poscobro reason_details EXCLUDED from operational P&L per PHASE_16F_STABILIZATION.
+            # These are operational traceability only, not financial concepts.
+            # Both MECHANISMS (paired, zero net cash) and ROOT_EVENT (prior certified as same-event):
+            "Ajuste por Compra Protegida (BPP)",
+            "Ajuste por Disputa no Respondida",
+            "Ajuste por Arrepentimiento",
+            "Ajuste por Talla/Garantía", 
+            "Ajuste por Producto Dañado/Vacío",
+            "Ajuste por Diferencia de Publicación",
+            "Ajuste por Ítem Faltante",
+            "Ajuste por Retraso en Entrega",
+            "Ajuste por Cambio de Dirección",
+            "Ajuste por Falla en Entrega",
+            "Ajuste por Falta de Stock",
         }
 
         is_excluded = (
@@ -437,14 +519,45 @@ class MarketplaceAuditorEngine:
         op_flag[ml_mask] = ~is_excluded[ml_mask]
 
         # General treasury/payable exclusion across all marketplaces
-        general_exclusions = {"A pagar"}
+        general_exclusions = {"A pagar", "Pago", "Liberación de dinero", "Retiro de dinero", "Transferencia", "Retenciones & Provisiones", "Amount transferred to tienda", "transfer_amount"}
         op_flag[clasif.isin(general_exclusions) | details.isin(general_exclusions)] = False
+
+        # Ripley duplicate-order validation gate (ADJ_03):
+        # order_id present simultaneously in Importe del pedido + Precio total + Subtotal
+        # must produce exactly one SIGNAL contributor.
+        ripley_mask = source['marketplace'] == 'RIPLEY'
+        is_importe = source['detalle'] == 'Importe del pedido'
+        is_precio = source['detalle'] == 'Precio total'
+        is_subtotal = source['detalle'] == 'Subtotal'
+        
+        overlapping_orders = set()
+        if ripley_mask.any():
+            orders_with_importe = set(source[ripley_mask & is_importe]['id_orden'].dropna())
+            orders_with_precio = set(source[ripley_mask & is_precio]['id_orden'].dropna())
+            orders_with_subtotal = set(source[ripley_mask & is_subtotal]['id_orden'].dropna())
+            overlapping_orders = orders_with_importe.intersection(orders_with_precio).intersection(orders_with_subtotal)
+            
+        # Exclude cycles and TH rows from operational P&L (ADJ_01)
+        ripley_exclude_mask = ripley_mask & (
+            source['id_transaccion'].astype(str).str.startswith('RIP_CSV_') | 
+            source['id_transaccion'].astype(str).str.startswith('RIP_TH_')
+        )
+        op_flag[ripley_exclude_mask] = False
+        
+        # Exclude duplicates from operational P&L if all three details are present (ADJ_03)
+        if overlapping_orders:
+            exclude_duplicates_mask = ripley_mask & source['id_orden'].isin(overlapping_orders) & (is_precio | is_subtotal)
+            op_flag[exclude_duplicates_mask] = False
+
+        # Map clasificacion to financial group directly
+        financial_group_col = clasif.map(CLASIFICACION_TO_FINANCIAL_GROUP)
 
         results = pd.DataFrame({
             'clasificacion_operativa': clasif,
             'confianza_clasificacion': conf,
             'origen_clasificacion': origen,
-            'include_in_operational_pnl': op_flag
+            'include_in_operational_pnl': op_flag,
+            'financial_group': financial_group_col
         })
 
         out = pd.concat([source[['marketplace', 'id_transaccion', 'id_orden', 'detalle', 'tipo_movimiento', 'monto', 'fecha']], results], axis=1)
@@ -526,9 +639,10 @@ class MarketplaceAuditorEngine:
                 SUM(CASE WHEN clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["devoluciones"])}) THEN monto ELSE 0 END) as total_devoluciones,
                 SUM(CASE WHEN clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["costos_operacionales"])}) THEN monto ELSE 0 END) as total_costos_op,
                 SUM(CASE WHEN clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["costos_comerciales"])}) THEN monto ELSE 0 END) as total_costos_com,
-                SUM(CASE WHEN clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["ajustes"])}) THEN monto ELSE 0 END) as total_ajustes
+                SUM(CASE WHEN clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["ajustes"])}) OR clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["recuperaciones_y_bonificaciones"])}) OR clasificacion_operativa IN ({fmt(FINANCIAL_STRUCTURE["impuestos"])}) THEN monto ELSE 0 END) as total_ajustes
             FROM marketplace_ledger_clasificado_v1
             WHERE marketplace = ? AND fecha BETWEEN ? AND ?
+              AND include_in_operational_pnl = TRUE
         """
         
         stats = self.db.query(sql, [marketplace, periodo_inicio, periodo_fin]).iloc[0]
@@ -599,35 +713,179 @@ class MarketplaceAuditorEngine:
         except Exception as e:
             logger.error(f"Error running audit_ml_misclassifications: {e}")
         
-        # 4. Certificación Legal (Crucial)
-        self.db.execute("""
-            INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken, order_id)
-            SELECT 
-                l.marketplace, 
-                'cargo_sin_respaldo_legal', 
-                'Folio ' || l.folio_xml || ' no existe en DTE Truth',
-                'Certificación Fallida',
-                l.id_orden
-            FROM marketplace_ledger_v1 l
-            LEFT JOIN dte_truth_v1 t ON l.folio_xml LIKE '%' || t.folio
-            WHERE l.folio_xml IS NOT NULL 
-              AND l.folio_xml <> 'None' 
-              AND l.folio_xml NOT LIKE '%disponible%'
-              AND l.folio_xml NOT LIKE 'A%n%'
-              AND t.folio IS NULL
-            AND (
-                l.fecha > '2025-12-31' 
-                OR 
-                (l.fecha IS NULL AND l.id_transaccion NOT LIKE '%2023%' AND l.id_transaccion NOT LIKE '%2024%' AND l.id_transaccion NOT LIKE '%2025%')
-            )
-        """)
+        # 4. ML-specific audit checks (ML has 0 rows in legacy auditor due to false negative bugs)
+        self._audit_ml_dte_coverage()
+        self._audit_ml_adjustment_ratio()
+        self._audit_ml_period_gap()
+        
+        # 5. Certificación Legal (Crucial) — FIXED: exact match instead of LIKE suffix to prevent
+        # false negatives for ML's structured folio_xml format (033-XXXXXXX)
+        try:
+            self.db.execute("SELECT 1 FROM document_match_v1 LIMIT 1")
+            has_document_match = True
+        except Exception:
+            has_document_match = False
+        
+        norm = "regexp_replace(regexp_replace(l.folio_xml, '\\.0$', ''), '^[0-9]+-0*', '')"
+        l_sub = "(SELECT DISTINCT folio_xml, id_orden, marketplace FROM marketplace_ledger_v1 WHERE COALESCE(include_in_operational_pnl, 1) = 1 AND folio_xml IS NOT NULL AND folio_xml <> 'None' AND folio_xml NOT LIKE '%disponible%' AND folio_xml NOT LIKE 'A%n%')"
+        # RIPLEY excluded from cargo_sin_respaldo_legal per PHASE_16F_STABILIZATION:
+        # P16F-04 confirmed 12,822/12,822 are false positives — XLSX order refs vs SII DTE folios
+        # are structurally different numbering systems. Settlement Bridge pending.
+        ripley_exclude = "AND LOWER(l.marketplace) <> 'ripley'"
+        if has_document_match:
+            self.db.execute(f"""
+                INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken, order_id)
+                SELECT
+                    l.marketplace,
+                    'cargo_sin_respaldo_legal',
+                    'Folio ' || l.folio_xml || ' no existe en DTE Truth ni en Conciliación',
+                    'Certificación Fallida',
+                    l.id_orden
+                FROM {l_sub} l
+                LEFT JOIN dte_truth_v1 t ON {norm} = t.folio
+                LEFT JOIN document_match_v1 m ON l.id_orden = m.order_id
+                WHERE t.folio IS NULL
+                  AND m.match_id IS NULL
+                  AND (
+                    l.id_orden NOT LIKE '%2023%'
+                    AND l.id_orden NOT LIKE '%2024%'
+                    AND l.id_orden NOT LIKE '%2025%'
+                  )
+                  {ripley_exclude}
+            """)
+        else:
+            self.db.execute(f"""
+                INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken, order_id)
+                SELECT
+                    l.marketplace,
+                    'cargo_sin_respaldo_legal',
+                    'Folio ' || l.folio_xml || ' no existe en DTE Truth',
+                    'Certificación Fallida',
+                    l.id_orden
+                FROM {l_sub} l
+                LEFT JOIN dte_truth_v1 t ON {norm} = t.folio
+                WHERE t.folio IS NULL
+                  AND (
+                    l.id_orden NOT LIKE '%2023%'
+                    AND l.id_orden NOT LIKE '%2024%'
+                    AND l.id_orden NOT LIKE '%2025%'
+                  )
+                  {ripley_exclude}
+            """)
+
+        # Ripley-specific audit: document the structural folio limitation
+        self._audit_ripley_folio_coverage()
 
         n = self.db.count("marketplace_auditoria_v1")
+        logger.info(f"Auditoría completada: {n} hallazgos en marketplace_auditoria_v1")
         try:
             self.db.execute("INSERT INTO pipeline_log (event, status, details) VALUES ('audit', 'COMPLETED', ?)", [f"Auditoría completada: {n} hallazgos en marketplace_auditoria_v1"])
         except Exception:
             pass
         return n
+
+    def _audit_ripley_folio_coverage(self):
+        """Document Ripley folio situation: XLSX refs vs SII DTE folios are structurally incompatible.
+        Inserts a single informational entry per audit run, not per-row false positives."""
+        try:
+            ripley_folio_count = self.db.query("""
+                SELECT COUNT(*) as cnt,
+                       COUNT(DISTINCT folio_xml) as distinct_folios,
+                       SUM(CASE WHEN folio_xml IS NOT NULL AND folio_xml <> 'None' THEN 1 ELSE 0 END) as with_folio
+                FROM marketplace_ledger_v1
+                WHERE LOWER(marketplace) = 'ripley'
+                  AND COALESCE(include_in_operational_pnl, 1) = 1
+            """).iloc[0]
+            total = int(ripley_folio_count['cnt'])
+            distinct = int(ripley_folio_count['distinct_folios'])
+            with_folio = int(ripley_folio_count['with_folio'])
+            pct = round(with_folio / total * 100, 1) if total > 0 else 0
+            self.db.execute("""
+                INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken, order_id)
+                VALUES ('RIPLEY', 'folio_estructural_sin_respaldo_sii',
+                        'Ripley folios son referencias XLSX (' || ? || ' distinct, ' || ? || '% cobertura). '
+                        'No son folios SII DTE. Requiere Settlement Bridge para certificación legal.',
+                        'Certificación Legal PENDIENTE — Settlement Bridge requerido',
+                        'GLOBAL_AUDIT')
+            """, [distinct, pct])
+            logger.info(f"Ripley folio coverage: {with_folio}/{total} ({pct}%), {distinct} distinct. Structural limitation documented.")
+        except Exception as e:
+            logger.error(f"Ripley folio coverage check failed: {e}")
+
+    def _audit_ml_dte_coverage(self):
+        """Check ML DTE coverage: folio_xml vs total rows."""
+        try:
+            res = self.db.query("""
+                SELECT COUNT(*) as total,
+                       SUM(CASE WHEN folio_xml IS NOT NULL THEN 1 ELSE 0 END) as with_xml
+                FROM marketplace_ledger_v1
+                WHERE LOWER(marketplace) = 'ml'
+            """).iloc[0]
+            total = int(res['total'])
+            with_xml = int(res['with_xml'])
+            cov = (with_xml / total * 100) if total > 0 else 0
+            if cov < 50.0:
+                self.db.execute("""
+                    INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken, order_id)
+                    VALUES ('ML', 'dte_coverage_baja', 'Cobertura DTE ML solo ' || ? || '% (' || ? || '/' || ? || ')', 'Monitoreo Requerido', 'GLOBAL_AUDIT')
+                """, [round(cov, 1), with_xml, total])
+                logger.info(f"Audit ML: DTE Coverage={cov:.1f}% ({with_xml}/{total}) — BAJA")
+            else:
+                logger.info(f"Audit ML: DTE Coverage={cov:.1f}% ({with_xml}/{total}) — OK")
+        except Exception as e:
+            logger.error(f"ML DTE coverage check failed: {e}")
+
+    def _audit_ml_adjustment_ratio(self):
+        """Check ML adjustment ratio: ajustes+riesgos+recuperaciones vs ingresos."""
+        try:
+            res = self.db.query("""
+                SELECT
+                    COALESCE(SUM(CASE WHEN LOWER(financial_group) = 'ingresos' THEN ABS(monto) ELSE 0 END), 0) as gross,
+                    COALESCE(SUM(CASE WHEN LOWER(financial_group) IN ('ajustes', 'recuperaciones_y_bonificaciones') THEN ABS(monto) ELSE 0 END), 0) as adjustments
+                FROM marketplace_ledger_v1
+                WHERE LOWER(marketplace) = 'ml'
+                  AND COALESCE(include_in_operational_pnl, 1) = 1
+            """).iloc[0]
+            gross = float(res['gross'])
+            adj = float(res['adjustments'])
+            ratio = (adj / gross * 100) if gross > 0 else 0
+            logger.info(f"Audit ML: Adjustment Ratio={ratio:.1f}% (${adj:,.0f} adj on ${gross:,.0f} gross)")
+            if ratio > 70.0:
+                self.db.execute("""
+                    INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken, order_id)
+                    VALUES ('ML', 'ajuste_ratio_elevada', 'Ajustes representan ' || ? || '% del ingreso bruto', 'Monitoreo Requerido', 'GLOBAL_AUDIT')
+                """, [round(ratio, 1)])
+        except Exception as e:
+            logger.error(f"ML adjustment ratio check failed: {e}")
+
+    def _audit_ml_period_gap(self):
+        """Check ML data freshness — latest period with revenue."""
+        try:
+            res = self.db.query("""
+                SELECT MAX(fecha) as ultima_fecha,
+                       COUNT(*) as total_rows
+                FROM marketplace_ledger_v1
+                WHERE LOWER(marketplace) = 'ml'
+                  AND LOWER(financial_group) = 'ingresos'
+                  AND monto > 0
+            """).iloc[0]
+            last_date = str(res['ultima_fecha'])[:10] if res['ultima_fecha'] else 'N/A'
+            total = int(res['total_rows'])
+            from datetime import datetime, timedelta
+            today = datetime.now().strftime('%Y-%m-%d')
+            if last_date != 'N/A':
+                last_dt = datetime.strptime(last_date[:10], '%Y-%m-%d')
+                days_gap = (datetime.now() - last_dt).days
+                logger.info(f"Audit ML: Last revenue date={last_date}, gap={days_gap}d, rows={total}")
+                if days_gap > 60:
+                    self.db.execute("""
+                        INSERT INTO marketplace_auditoria_v1 (marketplace, check_name, condition_detected, action_taken, order_id)
+                        VALUES ('ML', 'periodo_desactualizado', 'Último ingreso ML: ' || ? || ' (hace ' || ? || ' días)', 'Carga de Datos Requerida', 'GLOBAL_AUDIT')
+                    """, [last_date, days_gap])
+            else:
+                logger.warning("Audit ML: No revenue data found")
+        except Exception as e:
+            logger.error(f"ML period gap check failed: {e}")
 
     def add_correction(self, id_transaccion, detalle_original, detalle_corregido, motivo, usuario="system"):
         self.db.execute("""

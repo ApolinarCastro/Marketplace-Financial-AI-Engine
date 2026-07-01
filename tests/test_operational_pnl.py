@@ -89,10 +89,12 @@ class TestMarketplaceOperationalPNLFilter(unittest.TestCase):
         self.assertTrue(by_tx["TX_ML_SHIPPING"])
         self.assertTrue(by_tx["TX_ML_ADS"])
 
-        # ML Exclusiones (Riesgo/Postventa) -> FALSE
+        # ML Exclusiones (Riesgo/Postventa/Mecanismos) -> FALSE
         self.assertFalse(by_tx["TX_ML_DISPUTE"])
         self.assertFalse(by_tx["TX_ML_MEDIACION"])
         self.assertFalse(by_tx["TX_ML_BPP"])
+
+        # ML ROOT_EVENT real-cash -> FALSE (PHASE_16F: poscobro=operational traceability only)
         self.assertFalse(by_tx["TX_ML_REPENTANT"])
 
         # París -> Siempre TRUE (Sin importar la clasificación interna)
@@ -113,11 +115,13 @@ class TestMarketplaceOperationalPNLFilter(unittest.TestCase):
         self.assertIn("TX_ML_ADS", op_ids)
         self.assertIn("TX_PARIS_SALE", op_ids)
         self.assertIn("TX_PARIS_MERMA", op_ids)
+
+        # ML ROOT_EVENT real-cash now in risk view (PHASE_16F: poscobro=operational traceability only)
+        self.assertNotIn("TX_ML_REPENTANT", op_ids)
         
         self.assertNotIn("TX_ML_DISPUTE", op_ids)
         self.assertNotIn("TX_ML_MEDIACION", op_ids)
         self.assertNotIn("TX_ML_BPP", op_ids)
-        self.assertNotIn("TX_ML_REPENTANT", op_ids)
 
         # Verificar vista de riesgo
         risk_rows = self.db.query("SELECT id_transaccion FROM risk_postsale_view_v1").to_dict(orient="records")
@@ -141,11 +145,12 @@ class TestMarketplaceOperationalPNLFilter(unittest.TestCase):
         # Ingresos operacionales esperados: 120000.0 (Venta)
         # Costos operacionales esperados: -8500.0 (Envío)
         # Costos comerciales esperados: -3000.0 (Publicidad)
-        # Resultado neto esperado: 120000.0 - 8500.0 - 3000.0 = 108500.0
-        # (Todos los eventos de disputas, mediaciones y BPP deben ser totalmente omitidos)
+        # Resultado neto esperado (PHASE_16F: repentant_buyer excluded from operational P&L):
+        # 120000.0 - 0.0 (devoluciones) - 8500.0 - 3000.0 + 0.0 (ajustes) = 108500.0
         self.assertEqual(close["ingresos"], 120000.0)
         self.assertEqual(close["costos_op"], -8500.0)
         self.assertEqual(close["costos_com"], -3000.0)
+        self.assertEqual(close["ajustes"], 0.0)
         self.assertEqual(close["neto"], 108500.0)
 
 

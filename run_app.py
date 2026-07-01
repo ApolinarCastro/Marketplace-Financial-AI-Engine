@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import sys
 import signal
@@ -26,4 +26,4 @@ if __name__ == "__main__":
     validate_runtime()
     signal.signal(signal.SIGINT, shutdown_handler)
     signal.signal(signal.SIGTERM, shutdown_handler)
-    uvicorn.run("api.api:app", host="127.0.0.1", port=8003, reload=False)
+    uvicorn.run("api.api:app", host="127.0.0.1", port=3001, reload=False)

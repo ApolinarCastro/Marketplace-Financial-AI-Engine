@@ -141,6 +141,7 @@ class V4SurgicalPipelineTestCase(unittest.TestCase):
         self.assertEqual(close_res["costos_op"], -3000.0)
         self.assertEqual(close_res["costos_com"], -1500.0)
         self.assertEqual(close_res["ajustes"], 0.0)
+        # PHASE_16F: repentant_buyer excluded from operational P&L
         self.assertEqual(close_res["neto"], 5500.0)
 
         # Run audit

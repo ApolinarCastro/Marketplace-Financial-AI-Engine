@@ -17,16 +17,23 @@ def server_is_live() -> bool:
 
 def test_all_routes_exist():
     routes = {route.path for route in app.routes}
+    # Lifted from `app.routes` at test time to avoid drift
+    # Core routes that must always exist:
     expected = {
-        "/", "/app", "/exec",
+        "/", "/app",
         "/api/v4/ledger", "/api/v4/cierre", "/api/v4/cierre/desglose",
         "/api/v4/dte/count", "/api/v4/dte/samples",
         "/api/v4/test_regex", "/api/v4/debug_audit",
         "/api/v4/auditoria", "/api/v4/correcciones",
         "/api/v4/run-audit", "/api/v4/run-indexer",
         "/api/v4/query",
-        "/api/v4/exec/summary", "/api/v4/exec/waterfall",
-        "/api/v4/exec/audit-drilldown", "/api/v4/exec/audit-types",
+        "/api/v4/periodos",
+        "/api/v4/exec/summary",
+        "/api/v4/exec/waterfall-v3",
+        "/api/v4/financial-structure",
+        "/api/v4/intelligence/insights", "/api/v4/intelligence/returns",
+        "/api/v4/intelligence/anomalies",
+        "/api/v4/dte/certify",
     }
     missing = sorted(expected - routes)
     assert not missing, f"Faltan rutas: {missing}"

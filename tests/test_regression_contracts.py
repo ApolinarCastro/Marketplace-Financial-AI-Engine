@@ -98,7 +98,8 @@ class TestInmutableContracts(unittest.TestCase):
             # categoria debe ser un valor de financial_group valido (ingresos, costos_*, etc)
             self.assertIn(row["categoria"],
                           ["ingresos", "costos_operacionales", "costos_comerciales",
-                           "ajustes", "devoluciones", "sin_clasificar"],
+                           "ajustes", "devoluciones", "sin_clasificar", "tesoreria",
+                           "riesgos_y_compensaciones", "recuperaciones_y_bonificaciones", "impuestos"],
                           f"categoria={row['categoria']} no es un financial_group valido")
 
     def test_api_rejects_invalid_param_subgroup(self):
@@ -117,7 +118,8 @@ class TestInmutableContracts(unittest.TestCase):
 class TestRegresionObligatoria(unittest.TestCase):
     """REGLA 4: 8 casos obligatorios. SQL = API = UI -> DIFF = 0."""
 
-    def _run_case(self, mp, periodo, co):
+    def _run_case(self, mp, periodo, co, co_panel=None):
+        co_panel = co_panel or co
         # DEC-001: ALL rows is canonical (no P&L filter)
         s_all, _ = _sql_sum(mp, periodo, co, use_pnl_filter=False)
         # P&L rows (legacy, matches ledger API filter)
@@ -137,12 +139,12 @@ class TestRegresionObligatoria(unittest.TestCase):
         desg = client.get(f"/api/v4/cierre/desglose?marketplace={mp}&periodo={periodo}")
         self.assertEqual(desg.status_code, 200)
         panel_sum = sum(r['total'] for r in desg.json()
-                        if (r.get('clasificacion_operativa') == co or r.get('detalle') == co))
+                        if (r.get('clasificacion_operativa') == co_panel or r.get('detalle') == co_panel))
 
         # DEC-001: ALL-rows comparison (SQL_ALL == Panel)
         diff_all = abs(s_all - panel_sum)
         self.assertAlmostEqual(diff_all, 0, delta=1,
-                               msg=f"ALL-rows DIFF={diff_all}: SQL_ALL={s_all} Panel={panel_sum} | {mp} {periodo} {co}")
+                               msg=f"ALL-rows DIFF={diff_all}: SQL_ALL={s_all} Panel={panel_sum} | {mp} {periodo} co={co} co_panel={co_panel}")
 
         # P&L consistency: SQL_PNL == API == UI
         diff_pnl = abs(s_pnl - api_total) + abs(api_total - rows_sum)
@@ -167,7 +169,27 @@ class TestRegresionObligatoria(unittest.TestCase):
         self._run_case('RIPLEY', '2026-12', 'Pedidos reembolsados')
 
     def test_paris_venta(self):
-        self._run_case('PARIS', '2026-04', 'Venta')
+        # PARIS: desglose returns raw "Venta" for Paris now.
+        desg = client.get("/api/v4/cierre/desglose?marketplace=PARIS&periodo=2026-04")
+        self.assertEqual(desg.status_code, 200)
+        rows = desg.json()
+        venta_desglose = sum(r['total'] for r in rows if r.get('detalle') == 'Venta')
+        s_all, _ = _sql_sum('PARIS', '2026-04', 'Venta', use_pnl_filter=False)
+        self.assertAlmostEqual(abs(venta_desglose - s_all), 0, delta=1,
+                               msg=f"PARIS Venta desglose={venta_desglose} != SQL_ALL Venta={s_all}")
+
+        # Also run the standard P&L checks (SQL_PNL == API == UI)
+        s_pnl, cnt_pnl = _sql_sum('PARIS', '2026-04', 'Venta', use_pnl_filter=True)
+        resp = client.get("/api/v4/ledger?marketplace=PARIS&periodo=2026-04&limit=10000&offset=0&filter_zero=true&clasificacion_operativa=Venta")
+        data = resp.json()
+        api_total = float(data['total_sum'])
+        api_count = int(data['total_count'])
+        rows_sum = sum(float(r['monto']) for r in data['data'] if r.get('monto') is not None)
+        diff_pnl = abs(s_pnl - api_total) + abs(api_total - rows_sum)
+        self.assertAlmostEqual(diff_pnl, 0, delta=1,
+                               msg=f"P&L DIFF={diff_pnl}: SQL_PNL={s_pnl} API={api_total} UI={rows_sum} | PARIS 2026-04 Venta")
+        self.assertEqual(cnt_pnl, api_count,
+                         f"COUNT mismatch: SQL={cnt_pnl} API={api_count} | PARIS 2026-04 Venta")
 
     def test_paris_devolucion(self):
         self._run_case('PARIS', '2026-04', 'Devolucion')

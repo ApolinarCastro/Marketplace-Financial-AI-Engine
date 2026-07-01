@@ -25,6 +25,10 @@ class MeliXMLMatcher:
             self.raw_dir = doc_dir if doc_dir.exists() else fact_dir
         elif self.marketplace == 'PARIS':
             self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\PARIS\Facturacion")
+        elif self.marketplace == 'FALABELLA':
+            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\FALABELLA\Documentos Recepcionados")
+        elif self.marketplace == 'RIPLEY':
+            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\RIPLEY\XML")
         else:
             raise ValueError(f"Unsupported marketplace: {marketplace}")
 

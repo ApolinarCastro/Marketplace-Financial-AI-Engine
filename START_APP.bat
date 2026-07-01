@@ -39,7 +39,7 @@ start "Meli Financial API" cmd /c "chcp 65001>nul && cd /d %~dp0 && Scripts\run_
 
 echo [OK] Esperando disponibilidad real del backend...
 
-set "HEALTH_URL=http://127.0.0.1:8003/api/v4/cierre"
+set "HEALTH_URL=http://127.0.0.1:3001/api/v4/cierre"
 set "MAX_RETRIES=20"
 set /a COUNT=0
 
@@ -56,7 +56,7 @@ goto wait_loop
 
 :ready
 echo [OK] Backend disponible. Abriendo panel...
-start http://127.0.0.1:8003/app
+start http://127.0.0.1:3001/app
 echo.
 echo =========================================================
 echo   SISTEMA ACTIVO: http://127.0.0.1:3001/app
