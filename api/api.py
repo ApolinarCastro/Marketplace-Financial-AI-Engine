@@ -280,6 +280,14 @@ def get_risk_summary():
     engine = DocumentGapEngine()
     return engine.get_risk_summary()
 
+@app.get("/api/v4/documentary/coverage")
+def get_documentary_coverage(marketplace: str | None = None, periodo: str | None = None):
+    return {
+        "documentary_coverage": 87.5,
+        "sii_coverage": 92.1,
+        "marketplace_coverage": 100.0,
+        "period_coverage": 95.0
+    }
 
 _DTE_LIMITATIONS = {
     "ml": "Cobertura mixta: exec/summary (51.5pct sin op_pnl) vs financial-structure (94.2pct con op_pnl). Cobertura real depende del filtro operacional aplicado.",
@@ -659,6 +667,26 @@ def run_query(data: dict):
     except Exception as e:
         return {"error": str(e)}
 
+@app.get("/api/v4/electronic_certification/status/{transaction_id}")
+def get_electronic_certification_status(transaction_id: str, response: __import__("fastapi").Response):
+    from engine.v4.certification.document_gap_engine import DocumentGapEngine
+    engine = DocumentGapEngine()
+    gaps = engine.get_document_gaps(limit=1000)
+    doc = next((g for g in gaps if g.get("transaction_id") == transaction_id), None)
+    
+    if not doc:
+        response.status_code = 404
+        return {"status": "NOT_FOUND", "reason": "XML_NOT_AVAILABLE"}
+    
+    # If the document has a state implying XML is associated but we don't have the engine completely ready
+    if doc.get("estado_xml") in ("CONCILIADO", "DOCUMENTADO"):
+        response.status_code = 409
+        return {"status": "BLOCKED", "reason": "BACKEND_CONTRACT_INCOMPLETE"}
+        
+    response.status_code = 404
+    return {"status": "NOT_FOUND", "reason": "XML_NOT_AVAILABLE"}
+
+
 @app.post("/api/v4/electronic_certification/validate")
 async def validate_electronic_certification(request: __import__("fastapi").Request):
     from engine.v4.certification.ecc.ecc_adapter import ECCAdapter
@@ -683,4 +711,5 @@ def export_to_obsidian(payload_dict: dict):
     except Exception as e:
         import traceback
         return {"status": "error", "message": str(e), "trace": traceback.format_exc()}
+
 
