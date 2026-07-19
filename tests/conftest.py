@@ -5,6 +5,7 @@ import gc
 import shutil
 import datetime
 import hashlib
+import os
 import pytest
 import duckdb
 from pathlib import Path
@@ -12,7 +13,10 @@ from pathlib import Path
 ROOT = Path("C:/Users/ASUS Zenbook/Documents/Marketplace Financial AI Engine")
 DB_PATH = ROOT / "data" / "db" / "meli_financial_v4.db"
 V8_BASELINE = ROOT / "data" / "db" / "baseline_estable_v8_candidate_20260717" / "meli_financial_v4.db"
-TEMP_V8_BASE = ROOT / "data" / "db" / "tmp_f4_v8"
+
+# External temp root (mandatory via env, fallback to system temp)
+F4_TEMP_ROOT = Path(os.environ.get("F4_TEMP_ROOT", os.path.join(os.environ.get("TEMP", "/tmp"), "f4_v8"))).resolve()
+TEMP_V8_BASE = F4_TEMP_ROOT / "tmp_f4_v8"
 
 
 # ── V8 Temporary Copy (session-scoped) ────────────────────────────────
