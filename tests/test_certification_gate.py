@@ -8,7 +8,8 @@ import json
 import unicodedata
 from pathlib import Path
 
-TAXONOMY_DIR = Path("KnowledgeBase/Marketplace/Taxonomy")
+ROOT = Path(__file__).resolve().parent.parent
+TAXONOMY_DIR = ROOT / "KnowledgeBase" / "Marketplace" / "Taxonomy"
 
 
 def fix_mojibake(s):

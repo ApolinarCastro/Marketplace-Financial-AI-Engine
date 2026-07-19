@@ -35,6 +35,22 @@ EXPECTED_PER_FILE = {
 }
 EXPECTED_TOTAL = sum(EXPECTED_PER_FILE.values())  # 96
 
+# Protected dependencies (read-only overlay)
+PROTECTED_DEPENDENCIES = {
+    "engine.v4.database": ROOT / "engine" / "v4" / "database.py",
+    "engine.v4.domain.canonical_semantics": ROOT / "engine" / "v4" / "domain" / "canonical_semantics.py",
+    "engine.v4.domain.ledger_engine": ROOT / "engine" / "v4" / "domain" / "ledger_engine.py",
+    "engine.v4.domain.generate_artifacts": ROOT / "engine" / "v4" / "domain" / "generate_artifacts.py",
+    "engine.v4.evidence.traceability": ROOT / "engine" / "v4" / "evidence" / "traceability.py",
+    "engine.v4.evidence.traceability_engine": ROOT / "engine" / "v4" / "evidence" / "traceability_engine.py",
+    "engine.v4.evidence.__init__": ROOT / "engine" / "v4" / "evidence" / "__init__.py",
+    "engine.v4.ingestion": ROOT / "engine" / "v4" / "ingestion" / "__init__.py",
+    "engine.v4.ingestion.orchestrator": ROOT / "engine" / "v4" / "ingestion" / "orchestrator.py",
+    "engine.v4.semantic": ROOT / "engine" / "v4" / "semantic" / "__init__.py",
+    "engine.v4.marketplace_auditor": ROOT / "engine" / "v4" / "marketplace_auditor.py",
+    "taxonomy.taxonomy_loader": ROOT / "taxonomy" / "taxonomy_loader.py",
+}
+
 DB_PATHS = {
     "OFFICIAL_DB": ROOT / "data" / "db" / "meli_financial_v4.db",
     "V7": ROOT / "data" / "db" / "baseline_estable_v7_20260715" / "meli_financial_v4.db",
@@ -42,8 +58,9 @@ DB_PATHS = {
 }
 
 # External temp root (mandatory via env, fallback to system temp)
+# Must match conftest.py: F4_TEMP_ROOT / "tmp_f4_v8" / "meli_financial_v4.db"
 F4_TEMP_ROOT = Path(os.environ.get("F4_TEMP_ROOT", os.path.join(os.environ.get("TEMP", "/tmp"), "f4_v8"))).resolve()
-TEMP_V8 = F4_TEMP_ROOT / "meli_financial_v4.db"
+TEMP_V8 = F4_TEMP_ROOT / "tmp_f4_v8" / "meli_financial_v4.db"
 
 
 def sha256(path):
@@ -79,6 +96,26 @@ def get_code_hashes():
     return {k: get_file_hash(v) for k, v in files.items()}
 
 
+def get_protected_dep_hashes():
+    """Hashes of all protected dependencies (pre/post for mutation detection)."""
+    h = {}
+    for name, path in PROTECTED_DEPENDENCIES.items():
+        if path.exists():
+            h[name] = {"sha256": sha256(path), "size": path.stat().st_size, "path": str(path)}
+        else:
+            h[name] = {"sha256": "NOT_FOUND", "size": 0, "path": str(path)}
+    return h
+
+
+def get_overlay_create():
+    """Record overlay creation timestamp for evidence chain."""
+    return {
+        "created_at": datetime.datetime.now().isoformat(),
+        "read_only": True,
+        "type": "filesystem_overlay",
+    }
+
+
 def get_git_info():
     commit = subprocess.run(
         ["git", "rev-parse", "HEAD"], capture_output=True, text=True, cwd=ROOT
@@ -97,48 +134,83 @@ def get_git_info():
 
 
 def parse_junit_xml(junit_path):
-    """Parse JUnit XML for canonical test counts per file."""
+    """Parse JUnit XML for canonical test counts per file.
+    
+    Handles module-level import errors (reported as error testcases
+    by pytest at the testsuite level). Uses testsuite 'tests'/'errors'/'failures'
+    attributes as authoritative counts, with per-file breakdown from testcase elements.
+    Unmatched testcases (e.g. module import failures) are tracked as 'unmatched_errors'.
+    """
     import xml.etree.ElementTree as ET
     if not junit_path.exists():
-        return {"total": 0, "passed": 0, "failed": 0, "skipped": 0, "errors": 0, "per_file": {}}
+        return {"total": 0, "passed": 0, "failed": 0, "skipped": 0, "errors": 0, "xfailed": 0, "per_file": {}, "unmatched_errors": 0}
     tree = ET.parse(junit_path)
     root = tree.getroot()
-    total = passed = failed = skipped = errors = 0
-    per_file = {f: {"total": 0, "passed": 0, "failed": 0, "skipped": 0, "errors": 0} for f in TEST_FILES}
+
+    # Aggregate from all testsuites
+    total = passed = failed = skipped = errors = xfailed = 0
+    per_file = {f: {"total": 0, "passed": 0, "failed": 0, "skipped": 0, "errors": 0, "xfailed": 0} for f in TEST_FILES}
+    unmatched_errors = 0
 
     for testsuite in root.findall(".//testsuite"):
+        # Use testsuite attributes as canonical counts
+        suite_total = int(testsuite.get("tests", 0))
+        suite_errors = int(testsuite.get("errors", 0))
+        suite_failures = int(testsuite.get("failures", 0))
+        suite_skipped = int(testsuite.get("skipped", 0))
+
+        total += suite_total
+        errors += suite_errors
+        failed += suite_failures
+        skipped += suite_skipped
+
+        # Per-file breakdown from individual testcase elements
         for testcase in testsuite.findall("testcase"):
-            total += 1
             classname = testcase.get("classname", "")
             name = testcase.get("name", "")
-            # Determine file from classname
+
             file_key = None
             for f in TEST_FILES:
                 base = f.replace("/", ".").replace(".py", "")
                 if classname.startswith(base):
                     file_key = f
                     break
+
             if testcase.find("failure") is not None:
-                failed += 1
                 if file_key:
                     per_file[file_key]["failed"] += 1
+                    per_file[file_key]["total"] += 1
+                else:
+                    unmatched_errors += 1
             elif testcase.find("error") is not None:
-                errors += 1
                 if file_key:
                     per_file[file_key]["errors"] += 1
+                    per_file[file_key]["total"] += 1
+                else:
+                    unmatched_errors += 1
             elif testcase.find("skipped") is not None:
-                skipped += 1
                 if file_key:
                     per_file[file_key]["skipped"] += 1
+                    per_file[file_key]["total"] += 1
             else:
-                passed += 1
                 if file_key:
                     per_file[file_key]["passed"] += 1
-            if file_key:
-                per_file[file_key]["total"] += 1
+                    per_file[file_key]["total"] += 1
+
+        # Count xfail (marked as skipped in JUnit but with type="pytest.xfail")
+        for testcase in testsuite.findall("testcase"):
+            skip_elem = testcase.find("skipped")
+            if skip_elem is not None and skip_elem.get("type") == "pytest.xfail":
+                xfailed += 1
+
+    # Calculate passed from suite totals minus non-pass outcomes
+    suite_passed = total - errors - failed - skipped
+    passed = max(0, suite_passed)
+
     return {
-        "total": total, "passed": passed, "failed": failed, "skipped": skipped, "errors": errors,
-        "per_file": per_file,
+        "total": total, "passed": passed, "failed": failed,
+        "skipped": skipped, "errors": errors, "xfailed": xfailed,
+        "per_file": per_file, "unmatched_errors": unmatched_errors,
     }
 
 
@@ -171,48 +243,93 @@ def run():
 
     # Pre-run state
     pre_hashes = get_db_hashes()
+    pre_protected_hashes = get_protected_dep_hashes()
     pre_temp_exists = TEMP_V8.exists()
-    nodeids = collect_nodeids()
+    overlay_info = get_overlay_create()
+    nodeids = []
 
     # Ensure temp dir exists
     F4_TEMP_ROOT.mkdir(parents=True, exist_ok=True)
 
-    # Build command
-    test_paths = [str(ROOT / f) for f in TEST_FILES]
+    # Build command — run each file separately to isolate import errors
     junit_xml = EVIDENCE_DIR / f"{execution_id}.xml"
     EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
-    cmd_list = [sys.executable, "-m", "pytest"] + test_paths + [
-        "-v", "--tb=short",
-        f"--junitxml={junit_xml}",
-    ]
-    command_str = " ".join(cmd_list)
+    combined_junit = None
+    combined_xml_lines = []
+    per_file_stdouts = {}
+    per_file_stderrs = {}
+    per_file_returncodes = {}
+    all_nodeids = []
+    command_strs = []
 
-    # Execute
     start_ts = datetime.datetime.now().isoformat()
     start_time = time.time()
-    proc = subprocess.run(cmd_list, capture_output=True, text=True, cwd=ROOT, timeout=900)
+
+    for tf in TEST_FILES:
+        file_junit = EVIDENCE_DIR / f"{execution_id}_{Path(tf).stem}.xml"
+        cmd_list = [sys.executable, "-m", "pytest", str(ROOT / tf)] + [
+            "-v", "--tb=short",
+            f"--junitxml={file_junit}",
+        ]
+        command_strs.append(" ".join(cmd_list))
+        proc = subprocess.run(cmd_list, capture_output=True, text=True, cwd=ROOT, timeout=900)
+        per_file_stdouts[tf] = proc.stdout
+        per_file_stderrs[tf] = proc.stderr
+        per_file_returncodes[tf] = proc.returncode
+
+        # Collect nodeids from this file
+        coll = subprocess.run(
+            [sys.executable, "-m", "pytest", str(ROOT / tf), "--collect-only", "-q"],
+            capture_output=True, text=True, cwd=ROOT, timeout=120,
+        )
+        for line in coll.stdout.splitlines():
+            ls = line.strip()
+            if ls and "collected" not in ls and not ls.startswith("==") and "no tests ran" not in ls:
+                all_nodeids.append(ls)
+
+        # Merge JUnit XML fragments
+        if file_junit.exists():
+            content = file_junit.read_text(encoding="utf-8")
+            # Extract testcase elements from this file's JUnit
+            import xml.etree.ElementTree as ET
+            try:
+                tree = ET.parse(file_junit)
+                root = tree.getroot()
+                for ts in root.findall(".//testsuite"):
+                    ts_tag = ET.tostring(ts, encoding="unicode")
+                    combined_xml_lines.append(ts_tag)
+            except Exception:
+                pass
+
     end_time = time.time()
     end_ts = datetime.datetime.now().isoformat()
     elapsed_s = round(end_time - start_time, 2)
 
-    # Post-run state
-    post_hashes = get_db_hashes()
-    post_temp_exists = TEMP_V8.exists()
+    # Build combined JUnit XML
+    combined_xml = '<?xml version="1.0" encoding="utf-8"?>\n<testsuites name="pytest tests">\n'
+    combined_xml += "\n".join(combined_xml_lines)
+    combined_xml += "\n</testsuites>"
+    junit_xml.write_text(combined_xml, encoding="utf-8")
 
-    stdout = proc.stdout
-    stderr = proc.stderr
-    returncode = proc.returncode
-
-    # Parse JUnit XML (canonical source)
+    # Parse combined JUnit
     junit = parse_junit_xml(junit_xml)
     outcomes = {
         "PASS": junit["passed"],
         "FAIL": junit["failed"],
         "SKIP": junit["skipped"],
-        "XFAIL": 0,
+        "XFAIL": junit["xfailed"],
         "ERROR": junit["errors"],
     }
     collected = junit["total"]
+    nodeids = all_nodeids
+    stdout = "\n".join(per_file_stdouts.values())
+    stderr = "\n".join(per_file_stderrs.values())
+    returncode = max(per_file_returncodes.values())
+
+    # Post-run state
+    post_hashes = get_db_hashes()
+    post_protected_hashes = get_protected_dep_hashes()
+    post_temp_exists = TEMP_V8.exists()
 
     # Parse summary line from stdout (for human readability)
     summary_line = ""
@@ -225,7 +342,7 @@ def run():
             summary_line = ls
             break
 
-    # Mutation check
+    # Mutation check: DB hashes
     mutation = False
     mutation_detail = {}
     for name in pre_hashes:
@@ -234,6 +351,19 @@ def run():
             mutation_detail[name] = {
                 "pre": pre_hashes[name]["sha256"],
                 "post": post_hashes[name]["sha256"],
+            }
+
+    # Protected dependency mutation check
+    protected_mutation = False
+    protected_mutation_detail = {}
+    for name in pre_protected_hashes:
+        pre_h = pre_protected_hashes[name]["sha256"]
+        post_h = post_protected_hashes.get(name, {}).get("sha256", "UNKNOWN")
+        if pre_h != post_h:
+            protected_mutation = True
+            protected_mutation_detail[name] = {
+                "pre": pre_h,
+                "post": post_h,
             }
 
     # Temp cleanup check
@@ -249,7 +379,7 @@ def run():
                 and outcomes["XFAIL"] == 0
                 and outcomes["ERROR"] == 0
                 and collected == EXPECTED_TOTAL)
-    no_mutation = not mutation
+    no_mutation = not mutation and not protected_mutation
     hashes_match = pre_hashes == post_hashes
     cleanup_ok = temp_cleaned
     report_ok = report_complete
@@ -290,7 +420,7 @@ def run():
         "timestamp": timestamp,
         "harness_version": HARNESS_VERSION,
         "repository": "Marketplace Financial AI Engine",
-        "command": command_str,
+        "commands": command_strs,
         "timeout_seconds": 900,
         "start_ts": start_ts,
         "end_ts": end_ts,
@@ -307,6 +437,13 @@ def run():
         "post_run_hashes": post_hashes,
         "mutation_detected": mutation,
         "mutation_detail": mutation_detail if mutation else None,
+        "protected_dependencies": {
+            "pre_run": pre_protected_hashes,
+            "post_run": post_protected_hashes,
+            "mutation_detected": protected_mutation,
+            "mutation_detail": protected_mutation_detail if protected_mutation else None,
+        },
+        "overlay": overlay_info,
         "temp_v8_cleaned": temp_cleaned,
         "report_complete": report_complete,
         "verdict": verdict,

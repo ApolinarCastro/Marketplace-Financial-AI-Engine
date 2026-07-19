@@ -41,12 +41,15 @@ from engine.v4.domain.financial_engine import FinancialEngine
 from engine.v4.ingestion import IngestionRegistry
 from engine.v4.ingestion.orchestrator import IngestionOrchestrator
 
-# ── paths ──────────────────────────────────────────────────────────────
-BASELINE = Path("data/db/baseline_estable_v8_candidate_20260717/meli_financial_v4.db")
-OFFICIAL_DB = Path("data/db/meli_financial_v4.db")
-OFFICIAL_RAW = Path("01_Raw")
-TEMP_BASE = Path("data/db/tmp_f4_trace")
-FIXTURE = Path("tests/fixtures/f3_03/f3_03_fixture.xlsx")
+# ── paths (ROOT-relative + F4_TEMP_ROOT) ───────────────────────────────
+import os
+ROOT = Path(__file__).resolve().parent.parent
+F4_TEMP_ROOT = Path(os.environ.get("F4_TEMP_ROOT", ROOT / "data" / "db" / "tmp_f4_v8")).resolve()
+BASELINE = ROOT / "data" / "db" / "baseline_estable_v8_candidate_20260717" / "meli_financial_v4.db"
+OFFICIAL_DB = ROOT / "data" / "db" / "meli_financial_v4.db"
+OFFICIAL_RAW = ROOT / "01_Raw"
+TEMP_BASE = F4_TEMP_ROOT / "tmp_f4_trace"
+FIXTURE = ROOT / "tests" / "fixtures" / "f3_03" / "f3_03_fixture.xlsx"
 FIXTURE_FILENAME = "f3_03_fixture.xlsx"
 
 # ── expected values from F3-03 fixture ─────────────────────────────────
@@ -161,7 +164,7 @@ def restore_v8_interceptor():
     from engine.v4.database import DatabaseV4
     DatabaseV4.reset()
     gc.collect()
-    v8_path = Path("data/db/tmp_f4_v8/meli_financial_v4.db")
+    v8_path = F4_TEMP_ROOT / "meli_financial_v4.db"
     if v8_path.exists():
         interceptor = DatabaseV4(db_path=str(v8_path), read_only=True)
         DatabaseV4._instance = interceptor

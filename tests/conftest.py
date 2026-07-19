@@ -10,7 +10,7 @@ import pytest
 import duckdb
 from pathlib import Path
 
-ROOT = Path("C:/Users/ASUS Zenbook/Documents/Marketplace Financial AI Engine")
+ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "data" / "db" / "meli_financial_v4.db"
 V8_BASELINE = ROOT / "data" / "db" / "baseline_estable_v8_candidate_20260717" / "meli_financial_v4.db"
 
