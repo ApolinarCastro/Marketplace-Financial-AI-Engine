@@ -1,0 +1,217 @@
+ingresos:
+  display_label: Ingresos
+  order: 10
+  sign_behavior: positive
+  include_in_operational_pnl: true
+  include_in_settlement: true
+  include_in_treasury: false
+  concepts:
+  - Bonificación
+  - Cargo por venta
+  - Cargo por venta (Venta)
+  - Compensación comercial
+  - Despacho
+  - Gross sales
+  - Importe del envío del pedido
+  - Importe del pedido
+  - Pago normal
+  - Pago por precio del producto
+  - Precio total
+  - Rebate
+  - Sale amount
+  - Subtotal
+  - Venta
+  - order_amount
+devoluciones:
+  display_label: Devoluciones
+  order: 20
+  sign_behavior: mixed
+  include_in_operational_pnl: true
+  include_in_settlement: true
+  include_in_treasury: false
+  concepts:
+  - Pedidos reembolsados
+  - Devolución
+  - Devolución de venta
+  - Devolución de dinero
+  - Descuento por devolución de producto
+  - Cancelación del cargo por diferencias en las medidas y el peso del paquete
+  - Importe del pedido reembolsado
+  - Importe del envío del pedido reembolsado
+  - Importe de reembolso
+  - refund_order_amount
+  - Devoluciones
+  - Abonos
+  - Reversos
+  # Poscobro reason_details removed per PHASE_16F_STABILIZATION — operational traceability only
+costos_operacionales:
+  display_label: Costos Operacionales
+  order: 30
+  sign_behavior: negative
+  include_in_operational_pnl: true
+  include_in_settlement: true
+  include_in_treasury: false
+  concepts:
+  - Cargo por envíos de Mercado Libre
+  - Cargo por Mercado Envíos
+  - Anulación del cargo por envíos de ML
+  - Anulación del cargo por Mercado Envíos
+  - Anulación del cargo por envíos de Mercado Libre
+  - Cargo por devolución
+  - Anulación del cargo por devolución
+  - Cargo por servicio de almacenamiento Full
+  - Cargo por retiro de stock Full
+  - Cargo por stock antiguo en Full
+  - Cargo por sobrepasar espacio Full
+  - Cargo por servicio de colecta Full
+  - Cargo por diferencias medidas/peso
+  - Cargo por diferencias en las medidas y el peso del paquete
+  - Gastos de envío pagados por el operador
+  - Gastos de envío reembolsados pagados por el operador
+  - Descuento por costo logístico
+  - Descuento por logística inversa
+  - Descuento por logistica inversa
+  - Cobro por despacho
+  - Logística inversa
+  - Retiro stock bodega Paris
+  - Cobro stock antiguo
+  - Cobro por cofinanciamiento logístico
+  - Reversa de pago de envío comprador
+  - Cobro por logística inversa
+  - Pago por envío directo
+  - Cobro despacho primera milla
+  - Descuento FF - Otros
+  - Descuento FF - pick and pack
+  - Descuento FF - sobreestadía
+  - Descuento operacional
+  - Descuento por error de clase logistica
+  - Abono por uso de flota propia
+  - Envío reembolsado
+  - Reembolso por Promo envío falabella.com
+  - Cobro Promo envío falabella.com
+  - Pago de envío comprador
+  - Envío
+  - Gastos de envío
+  - Descuento por logística inversa (FF)
+  - Descuento por cofinanciamiento logístico (FF)
+  - almacenamiento
+  - sobreestadía
+  - pick and pack
+  - VAS
+  - cargos fulfillment
+costos_comerciales:
+  display_label: Costos Comerciales
+  order: 40
+  sign_behavior: negative
+  include_in_operational_pnl: true
+  include_in_settlement: true
+  include_in_treasury: false
+  concepts:
+  - Cargo por venta (Comisión)
+  - Anulación del cargo por venta
+  - Reembolso por comisión
+  - Cargo por campaña de publicidad - Product Ads
+  - Campañas de publicidad - Product Ads
+  - Cargo por campaña de publicidad - Brand Ads
+  - Campañas de publicidad - Brand Ads
+  - Campañas de publicidad - Display
+  - Cargo por campaña de publicidad - Display programático
+  - Anulación cargo publicidad Product Ads
+  - Cargo por Asesoría Comercial
+  - Cargo por mantenimiento de Mi página
+  - Anulación del cargo por mantenimiento de Mi página
+  - Anulación mantenimiento Mi página
+  - Comisiones sobre pedidos
+  - Comisión de reembolso
+  - Impuesto sobre las comisiones
+  - Impuesto sobre la comisión de reembolso
+  - Impuesto de la factura manual
+  - Recargo por precio mínimo
+  - Comisiones sobre pedidos reembolsados
+  - Cobro por comisión por venta
+  - Reembolso por comisión por venta
+  - Abono oferta TC - OPEX
+  - Descuento oferta TC - OPEX
+  - Abonos por cupón promocional
+  - Descuento por cupones de despacho
+  - Abonos soluciones comerciales
+  - Descuento por PDM
+  - Pago de aporte promocionales a cliente (Promo)
+  - Descuento por aportes promocionales a clientes (Promo)
+  - Comisión
+  - Comisiones
+  - Cobro por comisión por cancelación
+  - Commission
+  - commission_fee
+  - refund_commission_fee
+recuperaciones_y_bonificaciones:
+  display_label: Recuperaciones y Bonificaciones
+  order: 60
+  sign_behavior: positive
+  include_in_operational_pnl: true
+  include_in_settlement: true
+  include_in_treasury: false
+  concepts:
+  - Recuperación por Pérdida de Inventario
+  - Bonificación Logística Flex
+ajustes:
+  display_label: Ajustes
+  order: 50
+  sign_behavior: mixed
+  include_in_operational_pnl: true
+  include_in_settlement: true
+  include_in_treasury: false
+  concepts:
+  - Descuento por cancelación
+  - Otros descuentos
+  - Compensación logística
+  - Ajuste Inventario Activo
+  - Cobro por campaña
+  - Merma
+  - Multa
+  - Multa por stock
+  - Corrección de pago envio directo
+  - Corrección de cobro por envío directo
+  - Abono extraordinario - error de precio
+  - Abono por error de comisión
+  - Abono postventa
+  - Abono por formalización a OPL
+  - Otros abonos
+  - Descuento por compensación a cliente
+  - Mediación
+  - Reserva para devolución en envío BBP
+  - Reserva para reembolso
+  - Reserva para pago de deuda
+  - reserve_for_dispute
+  - Reserva para pago
+  - Abono de factura manual
+  - Factura manual
+  - Abono manual
+  - Ajuste histórico (pre-2026)
+  - Cargo
+  - Cancelación de la mediación
+  - cashback
+  - cashback_cancel
+  - Pago
+tesoreria:
+  display_label: Tesorería
+  order: 70
+  sign_behavior: mixed
+  include_in_operational_pnl: false
+  include_in_settlement: true
+  include_in_treasury: true
+  concepts:
+  - A pagar
+  - Amount transferred to tienda
+  - Retiro de dinero
+  - transfer_amount
+impuestos:
+  display_label: Impuestos
+  order: 80
+  sign_behavior: negative
+  include_in_operational_pnl: true
+  include_in_settlement: true
+  include_in_treasury: false
+  concepts:
+  - Impuestos
+  - Impuestos sobre comisión
