@@ -815,14 +815,7 @@ class SurgicalLoader:
             logger.error(f"Unsupported marketplace: {marketplace}")
 
     def run(self):
-        from engine.v4.marketplace_auditor import MarketplaceAuditorEngine
-        self.load_marketplace('ML')
-        logger.info("Running classification and audit...")
-        auditor = MarketplaceAuditorEngine()
-        auditor.run_classification()
-        auditor.run_audit()
-        res = auditor.run_financial_closing('ML', '2025-12-01', '2025-12-31')
-        logger.info(f"CLOSED DEC 2025: Net Result = {res['neto']}")
+        self.load_marketplace("ML")
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
