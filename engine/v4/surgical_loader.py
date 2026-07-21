@@ -77,19 +77,26 @@ class SurgicalLoader:
       â†’ Las anulaciones de envÃ­o/devoluciÃ³n tienen Valor negativo â†’ -(-x) = +x = ajuste a favor
     """
 
-    def __init__(self):
-        from engine.v4.database import DatabaseV4
-        self.db = DatabaseV4.get()
+    def __init__(self, db=None):
+        if db is None:
+            from engine.v4.database import DatabaseV4
+            db = DatabaseV4.get()
+        self.db = db
 
 
     def _register_file(self, filename, marketplace, row_count):
         """Registra archivo procesado en file_registry para tracking operacional."""
         try:
-            file_hash = hashlib.sha256(filename.encode()).hexdigest()[:16]
+            if isinstance(filename, Path):
+                file_hash = hashlib.sha256(filename.read_bytes()).hexdigest()
+                file_name = filename.name
+            else:
+                file_hash = hashlib.sha256(filename.encode()).hexdigest()[:16]
+                file_name = filename
             self.db.conn.execute("""
                 INSERT OR REPLACE INTO file_registry (file_hash, file_name, source, rows_processed, processed_at)
                 VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)
-            """, [file_hash, filename, marketplace, row_count])
+            """, [file_hash, file_name, marketplace, row_count])
         except Exception:
             pass  # Non-critical, no interrumpir ETL por file_registry
     def _filter_old_years(self, df, date_col='fecha'):
@@ -115,10 +122,11 @@ class SurgicalLoader:
         self.db.execute("DELETE FROM marketplace_ledger_v1 WHERE marketplace = ? OR (marketplace IS NULL AND ? = 'ML')", [marketplace, marketplace])
         self.db.execute("DELETE FROM marketplace_ledger_clasificado_v1 WHERE marketplace = ? OR (marketplace IS NULL AND ? = 'ML')", [marketplace, marketplace])
 
-    def load_facturacion(self):
+    def load_facturacion(self, files=None, execution_id=None):
         logger.info("Loading ML_Facturacion...")
-        files = sorted(list(DIR_FACTURACION.glob("*.xlsx")), key=lambda x: x.name, reverse=True)
+        files = files or sorted(list(DIR_FACTURACION.glob("*.xlsx")), key=lambda x: x.name, reverse=True)
         mandatory_cols = ['venta', 'factura', 'detalle', 'cargo', 'monto', 'fecha']
+        total_inserted = 0
 
         for f in files:
             logger.info(f"Processing: {f.name}")
@@ -227,12 +235,16 @@ class SurgicalLoader:
 
                 if ledger:
                     df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
+                    if execution_id:
+                        df_ledger['execution_id'] = execution_id
                     df_ledger = self._filter_old_years(df_ledger)
-                    self.db.insert_df(df_ledger, "marketplace_ledger_v1")
-                    self._register_file(f.name, "ML", len(df_ledger))
+                    total_inserted += self.db.insert_df(df_ledger, "marketplace_ledger_v1")
+                    if not execution_id:
+                        self._register_file(f.name, "ML", len(df_ledger))
 
             except Exception as e:
                 logger.error(f"Error {f.name}: {e}")
+        return total_inserted
 
     def load_poscobro(self):
         logger.info("Loading ML_Poscobro...")
@@ -797,6 +809,12 @@ class SurgicalLoader:
                     self._register_file(f.name, "ML", len(df_ledger))
             except Exception as e:
                 logger.error(f"Error Falabella {f.name}: {e}")
+
+    def load_file(self, file_path, marketplace, execution_id=None):
+        path = Path(file_path)
+        if marketplace == 'ML' and 'facturacion' in normalize(path.name):
+            return self.load_facturacion(files=[path], execution_id=execution_id)
+        raise ValueError(f"Unsupported file-scoped ingestion: {marketplace}/{path.name}")
 
     def load_marketplace(self, marketplace):
         logger.info(f"Ingesting marketplace: {marketplace}")
