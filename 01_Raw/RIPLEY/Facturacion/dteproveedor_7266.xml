@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioDTE xmlns="http://www.sii.cl/SiiDte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd">
+  <SetDTE ID="EDTE139885307D1230350426">
+    <Caratula version="1.0">
+      <RutEmisor>83382700-6</RutEmisor>
+      <RutEnvia>12156769-5</RutEnvia>
+      <RutReceptor>77898100-9</RutReceptor>
+      <FchResol>2013-03-28</FchResol>
+      <NroResol>38</NroResol>
+      <TmstFirmaEnv>2026-04-23T11:37:01</TmstFirmaEnv>
+      <SubTotDTE>
+        <TpoDTE>52</TpoDTE>
+        <NroDTE>1</NroDTE>
+      </SubTotDTE>
+    </Caratula>
+    <DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+      <Documento ID="S20260423T052F0053136430">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>52</TipoDTE>
+            <Folio>53136430</Folio>
+            <FchEmis>2026-04-23</FchEmis>
+            <IndTraslado>6</IndTraslado>
+            <MntBruto>1</MntBruto>
+            <FmaPago>1</FmaPago>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>83382700-6</RUTEmisor>
+            <RznSoc>COMERCIAL ECCSA S.A.</RznSoc>
+            <GiroEmis>Grandes Tiendas</GiroEmis>
+            <Acteco>471910</Acteco>
+            <Sucursal>Log.Inversa</Sucursal>
+            <DirOrigen>Av. Santa Margarita  448</DirOrigen>
+            <CmnaOrigen>San Bernardo</CmnaOrigen>
+            <CiudadOrigen>Metropolitana</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>77898100-9</RUTRecep>
+            <RznSocRecep>IMPORTADORA Y COMERCIALIZADORA NANDA SPA</RznSocRecep>
+            <GiroRecep>Particular</GiroRecep>
+            <DirRecep>EUSEBIO LILLO     333</DirRecep>
+            <CmnaRecep>RECOLETA</CmnaRecep>
+            <CiudadRecep>RECOLETA</CiudadRecep>
+          </Receptor>
+          <Transporte>
+            <CmnaDest>RECOLETA</CmnaDest>
+          </Transporte>
+          <Totales>
+            <MntNeto>254943</MntNeto>
+            <MntExe>0</MntExe>
+            <TasaIVA>19</TasaIVA>
+            <IVA>59801</IVA>
+            <MntTotal>314744</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40814454</VlrCodigo>
+          </CdgItem>
+          <NmbItem>Vestido delgado con diseño animal print.</NmbItem>
+          <QtyItem>1</QtyItem>
+          <PrcItem>16531</PrcItem>
+          <MontoItem>16531</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>2</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40821744</VlrCodigo>
+          </CdgItem>
+          <NmbItem>Camisa Satinada Transparente Con botones</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>3</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40808814</VlrCodigo>
+          </CdgItem>
+          <NmbItem>GILET CON DRAPEADO LATERAL BLANCO</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>18598</PrcItem>
+          <MontoItem>55794</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>4</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40808918</VlrCodigo>
+          </CdgItem>
+          <NmbItem>FALDA ASIME TRICA ANIMAL PRINT</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>5</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40808916</VlrCodigo>
+          </CdgItem>
+          <NmbItem>GILET CON DRAPEADO LATERAL BLANCO</NmbItem>
+          <QtyItem>6</QtyItem>
+          <PrcItem>4236</PrcItem>
+          <MontoItem>25416</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>6</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40808936</VlrCodigo>
+          </CdgItem>
+          <NmbItem>FALDA ASIME TRICA ANIMAL PRINT</NmbItem>
+          <QtyItem>2</QtyItem>
+          <PrcItem>10674</PrcItem>
+          <MontoItem>21348</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>7</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40814370</VlrCodigo>
+          </CdgItem>
+          <NmbItem>Vestido delgado con diseño animal print.</NmbItem>
+          <QtyItem>2</QtyItem>
+          <PrcItem>19012</PrcItem>
+          <MontoItem>38024</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>8</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40808861</VlrCodigo>
+          </CdgItem>
+          <NmbItem>POLERA SIN MANGAS ANIMAL PRINT</NmbItem>
+          <QtyItem>2</QtyItem>
+          <PrcItem>11018</PrcItem>
+          <MontoItem>22036</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>9</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40808865</VlrCodigo>
+          </CdgItem>
+          <NmbItem>POLERA SIN MANGAS ANIMAL PRINT</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>11018</PrcItem>
+          <MontoItem>33054</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>10</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40808956</VlrCodigo>
+          </CdgItem>
+          <NmbItem>POLERA SIN MANGAS ANIMAL PRINT</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>11</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40821742</VlrCodigo>
+          </CdgItem>
+          <NmbItem>Polera manga larga con transparencias y</NmbItem>
+          <QtyItem>2</QtyItem>
+          <PrcItem>11707</PrcItem>
+          <MontoItem>23414</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>12</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40814419</VlrCodigo>
+          </CdgItem>
+          <NmbItem>Vestido delgado con diseño animal print.</NmbItem>
+          <QtyItem>1</QtyItem>
+          <PrcItem>16531</PrcItem>
+          <MontoItem>16531</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>13</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40808846</VlrCodigo>
+          </CdgItem>
+          <NmbItem>FALDA ASIME TRICA ANIMAL PRINT</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>14</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40821743</VlrCodigo>
+          </CdgItem>
+          <NmbItem>Camisa Satinada Transparente Con botones</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>15</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40808948</VlrCodigo>
+          </CdgItem>
+          <NmbItem>GILET CON DRAPEADO LATERAL BLANCO</NmbItem>
+          <QtyItem>4</QtyItem>
+          <PrcItem>13774</PrcItem>
+          <MontoItem>55096</MontoItem>
+        </Detalle>
+        <Referencia>
+          <NroLinRef>1</NroLinRef>
+          <TpoDocRef>CTZ</TpoDocRef>
+          <FolioRef>13717043</FolioRef>
+          <FchRef>2026-04-23</FchRef>
+          <RazonRef>-</RazonRef>
+        </Referencia>
+        <TED version="1.0">
+          <DD>
+            <RE>83382700-6</RE>
+            <TD>52</TD>
+            <F>53136430</F>
+            <FE>2026-04-23</FE>
+            <RR>77898100-9</RR>
+            <RSR>IMPORTADORA Y COMERCIALIZADORA NANDA SPA</RSR>
+            <MNT>314744</MNT>
+            <IT1>VESTIDO DELGADO CON DISEÑO ANIMAL PRINT.</IT1>
+            <CAF version="1.0">
+              <DA>
+                <RE>83382700-6</RE>
+                <RS>COMERCIAL ECCSA S A</RS>
+                <TD>52</TD>
+                <RNG>
+                  <D>50886049</D>
+                  <H>53886048</H>
+                </RNG>
+                <FA>2025-10-17</FA>
+                <RSAPK>
+                  <M>0xeN56HyBdkXmBJxXtKlWNY75vWb8PFkjkha4vYfhLYRnanjxqaQfclRFoF2rNsGc8UER6RL+IVln+rwpx7gTw==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo="SHA1withRSA">dqTt1KQKsh/mmKVdrBw9uC0LihZANtoOxT6c7kD7rszN5qKT/vHUrLJrKPBDZwLWVLG9fjzPXF1QmBNQ4Z3yDQ==</FRMA>
+            </CAF>
+            <TSTED>2026-04-23T11:36:15</TSTED>
+          </DD>
+          <FRMT algoritmo="SHA1withRSA">L5soqyObC2QIZq8JdHYjPzje4VReQd+BuEnZSkVe22JVqnUJj7OwBo8PLzrt3VgNiLpdc7osvgfr
+8cxtBRBlkg==
+</FRMT>
+        </TED>
+        <TmstFirma>2026-04-23T11:36:15</TmstFirma>
+      </Documento>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#S20260423T052F0053136430">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>GzIZCcz1a3Z6/lR2vtmkrDB00O4=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>
+    D4HD6sZ8P3/lBa2v5gX/K5mf0aHeHO6cBYKnAijduPi5ooGxvsQYHo5NTz1I/1qF
+    H1/bsGE6ieOFM4cfSEkcilXsMv6zm1OWU1E10HK3WiuImAWYo6uw9rVo9cJB6v8E
+    han7yK/MaulIObNlB60673140PzQJJ4l0n5pbUATD6TEbBqHHkaL/cVDHQiA2/PE
+    A111lExnNKM7L6LzVuEma+gIeRBvED4wsYwYGLHesYIgnkCQxc1I9Da1wOxYIW+R
+    w60iYYv1VRX4zcCNoDsANZTGoii7HXX6FD+QYxssQb1il12DH7DxmZkVGlPQUCvB
+    bLR0r0lFDRbiL69r8Or3Zw==
+  </SignatureValue>
+        <KeyInfo>
+          <KeyValue>
+            <RSAKeyValue>
+              <Modulus>
+          xxe2x7Akqr//lxloD9+eolTEPkgJGmLObtSXZXq/CJttvn6HmFE2XzgnlL5oWkwa
+          nkNbrmtDPGF4GCSefmrD/pwef/Fd5KQW4vUG7U5GmYSpF5molFISG6we2xeTvrnb
+          1l1eWlyajWZHatCRM3dZM3JiF5MRMh67MASzOcNaq0pWCwuo0fMUiI9cZkHefr4E
+          ki74WlBORuA19TzdzUTRpjllEvCB19fQKz+bqA9keOdOagwrdgg/oYhkECvhtknj
+          MK7qE50e6CRKbJmKiS5/zBSi7mrFlV5bcExR6CjNofuNaHwFdYK4dbfumqXjxjnf
+          JMPGJDSelpkgb3ZaTLbhLw==
+        </Modulus>
+              <Exponent>AQAB</Exponent>
+            </RSAKeyValue>
+          </KeyValue>
+          <X509Data>
+            <X509Certificate>
+        MIIHvjCCBaagAwIBAgIKF6Wy1QABABArnzANBgkqhkiG9w0BAQsFADCBvzELMAkG
+        A1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQH
+        EwhTYW50aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9y
+        aWRhZCBDZXJ0aWZpY2Fkb3JhMR4wHAYDVQQDExVFLUNFUlRDSElMRSBDQSBGRVMg
+        MDIxJjAkBgkqhkiG9w0BCQEWF3NjbGllbnRlQGUtY2VydGNoaWxlLmNsMB4XDTI1
+        MTAyMjEzMTM1NFoXDTI4MTAyMTEzMTM1NFowgboxCzAJBgNVBAYTAkNMMSIwIAYD
+        VQQIExlNRVRST1BPTElUQU5BIERFIFNBTlRJQUdPMREwDwYDVQQHEwhTQU5USUFH
+        TzEcMBoGA1UEChMTQ09NRVJDSUFMIEVDQ1NBIFNBIDEKMAgGA1UECwwBKjEkMCIG
+        A1UEAxMbTFVJUyBNQU5VRUwgQ0FOQ0lOTyBGVUVOVEVTMSQwIgYJKoZIhvcNAQkB
+        FhVUUklCVVRBUklBQFJJUExFWS5DT00wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+        ggEKAoIBAQDHF7bHsCSqv/+XGWgP356iVMQ+SAkaYs5u1Jdler8Im22+foeYUTZf
+        OCeUvmhaTBqeQ1uua0M8YXgYJJ5+asP+nB5/8V3kpBbi9QbtTkaZhKkXmaiUUhIb
+        rB7bF5O+udvWXV5aXJqNZkdq0JEzd1kzcmIXkxEyHrswBLM5w1qrSlYLC6jR8xSI
+        j1xmQd5+vgSSLvhaUE5G4DX1PN3NRNGmOWUS8IHX19ArP5uoD2R4505qDCt2CD+h
+        iGQQK+G2SeMwruoTnR7oJEpsmYqJLn/MFKLuasWVXltwTFHoKM2h+41ofAV1grh1
+        t+6apePGOd8kw8YkNJ6WmSBvdlpMtuEvAgMBAAGjggK9MIICuTCCAV8GA1UdIASC
+        AVYwggFSMIIBTgYIKwYBBAHDUgUwggFAMD0GCCsGAQUFBwIBFjFodHRwczovL3d3
+        dy5lLWNlcnRjaGlsZS5jbC9wb2xpdGljYXMteS1wcmFjdGljYXMvMIH+BggrBgEF
+        BQcCAjCB8R6B7gBFAGwAIAByAGUAcwBwAG8AbgBkAGUAcgAgAGUAcwB0AGUAIABm
+        AG8AcgBtAHUAbABhAHIAaQBvACAAZQBzACAAdQBuACAAcgBlAHEAdQBpAHMAaQB0
+        AG8AIABpAG4AZABpAHMAcABlAG4AcwBhAGIAbABlACAAcABhAHIAYQAgAGQAYQBy
+        ACAAaQBuAGkAYwBpAG8AIABhAGwAIABwAHIAbwBjAGUAcwBvACAAZABlACAAYwBl
+        AHIAdABpAGYAaQBjAGEAYwBpAPMAbgAuACAAUABvAHMAdABlAHIAaQBvAHIAbQBl
+        AG4AdABlACwwHQYDVR0OBBYEFPG3tlAdylBVForahTHdsiyiCPVCMAsGA1UdDwQE
+        AwIE8DAjBgNVHREEHDAaoBgGCCsGAQQBwQEBoAwWCjEyMTU2NzY5LTUwHwYDVR0j
+        BBgwFoAUdNYhs/Ra6C18u1kGY0PvabQ6kwQwQAYDVR0fBDkwNzA1oDOgMYYvaHR0
+        cDovL2NybC5lY2VydGNoaWxlLmNsL0UtQ0VSVENISUxFQ0FGRVMwMi5jcmwwPQYI
+        KwYBBQUHAQEEMTAvMC0GCCsGAQUFBzABhiFodHRwOi8vb2NzcGZlcy5lY2VydGNo
+        aWxlLmNsL29jc3AwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUIgd3STZfUOoaJ
+        nQaHiM5vg6/MYEWG0uwIhsfKfQIBZAIBBzAjBgNVHRIEHDAaoBgGCCsGAQQBwQEC
+        oAwWCjk2OTI4MTgwLTUwDQYJKoZIhvcNAQELBQADggIBACkoXjxh0nEh1YCqXd1f
+        rC53GRtMjZa1uAPHITRFFn+pAMd/3usMLZR2QndL3gzFOGFOs7gtOq+aXJ7hi9oK
+        V0TiLHzZL8sY4St4d5PiVDPss90b5X8O0ZQHE5KTrTB05um2RUyCNP2SrEMqtob7
+        rTpyqqLZb52+i9w9FXJjbznI5YVR1VcprH+zms97CBKpc+XwyV7XN8W1b4x5M88q
+        ovj6ZL47Gq/O7Oi/omoJrPEqFYQI/WNtIEpMWZxYwH3UG1N14RDyWqqCoyWmOlgZ
+        HtDl1mAwZVOwFEHflQaUWagJOAzbytp2utk/4aZCtlThHC6qI/zJX6Kw0H2m143D
+        t50EGy6L42sPwS7r8HgRjYxcIExHX9K1wSm3s5DX0oTCyck9B+R8ie3WmvAGbPfV
+        cRTXqZkaCYkMd+nDqzo6/NaXX6i/9dTaBMUbSP28w1UHasxfaORF7WU/9jaxS2IW
+        mPFraOdJEmO3x55Y/EzWO4YOpG/kAYUhsPiVze82V9h2jDHk1epfGiNef/69ktu6
+        WVvPdfu7KWgUEXP4fuPl+V6qcR6wGx8zhtbjusCR1ap3zrIqI4KnVoRsxZvShzse
+        LQowlMHlSo/4/2vvYuMPwDV6CbOwyryFFx5/enyuNuOC5a8UsZDiYou/nCqnGrC1
+        7d6XXzhPBLCVBmoPdRXNlHwZ
+      </X509Certificate>
+          </X509Data>
+        </KeyInfo>
+      </Signature>
+    </DTE>
+  </SetDTE>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="#EDTE139885307D1230350426">
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>XRo4VKYqAXn8rtPDt9jQ4nyNPAA=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+    pPU5RBHR/TY6gVuEUlWKmmrV3hgVOHuRHtcgDN6wNun876+4FRImK5v3AQqG0ATH
+    4zN4OqIwY967kcm+H5tTFB/dFEFDSGhVF6wznqSK975ajWpyFl5l4Zf/o6Xfhg+i
+    8CYwDsncSHXx5pWRK2Y39D5nMh1Sbhmcez3Nf0+ImvxXJu7/rUfx6py1aLTSwpr/
+    XBT6esq5xdQU5l5sLUiD/H8e7weD1Ev49kPv/o/ndKBpNhRIJIBysXVEoiCr3plP
+    AO15t79/XDedt2Isu6kwUCD6wtnfzHcD8HTURl77W4eWO1rqogOec7XSWlBCwSTu
+    iVUjqmAbRvtId0n2gjqqGA==
+  </SignatureValue>
+    <KeyInfo>
+      <KeyValue>
+        <RSAKeyValue>
+          <Modulus>
+          xxe2x7Akqr//lxloD9+eolTEPkgJGmLObtSXZXq/CJttvn6HmFE2XzgnlL5oWkwa
+          nkNbrmtDPGF4GCSefmrD/pwef/Fd5KQW4vUG7U5GmYSpF5molFISG6we2xeTvrnb
+          1l1eWlyajWZHatCRM3dZM3JiF5MRMh67MASzOcNaq0pWCwuo0fMUiI9cZkHefr4E
+          ki74WlBORuA19TzdzUTRpjllEvCB19fQKz+bqA9keOdOagwrdgg/oYhkECvhtknj
+          MK7qE50e6CRKbJmKiS5/zBSi7mrFlV5bcExR6CjNofuNaHwFdYK4dbfumqXjxjnf
+          JMPGJDSelpkgb3ZaTLbhLw==
+        </Modulus>
+          <Exponent>AQAB</Exponent>
+        </RSAKeyValue>
+      </KeyValue>
+      <X509Data>
+        <X509Certificate>
+        MIIHvjCCBaagAwIBAgIKF6Wy1QABABArnzANBgkqhkiG9w0BAQsFADCBvzELMAkG
+        A1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQH
+        EwhTYW50aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9y
+        aWRhZCBDZXJ0aWZpY2Fkb3JhMR4wHAYDVQQDExVFLUNFUlRDSElMRSBDQSBGRVMg
+        MDIxJjAkBgkqhkiG9w0BCQEWF3NjbGllbnRlQGUtY2VydGNoaWxlLmNsMB4XDTI1
+        MTAyMjEzMTM1NFoXDTI4MTAyMTEzMTM1NFowgboxCzAJBgNVBAYTAkNMMSIwIAYD
+        VQQIExlNRVRST1BPTElUQU5BIERFIFNBTlRJQUdPMREwDwYDVQQHEwhTQU5USUFH
+        TzEcMBoGA1UEChMTQ09NRVJDSUFMIEVDQ1NBIFNBIDEKMAgGA1UECwwBKjEkMCIG
+        A1UEAxMbTFVJUyBNQU5VRUwgQ0FOQ0lOTyBGVUVOVEVTMSQwIgYJKoZIhvcNAQkB
+        FhVUUklCVVRBUklBQFJJUExFWS5DT00wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+        ggEKAoIBAQDHF7bHsCSqv/+XGWgP356iVMQ+SAkaYs5u1Jdler8Im22+foeYUTZf
+        OCeUvmhaTBqeQ1uua0M8YXgYJJ5+asP+nB5/8V3kpBbi9QbtTkaZhKkXmaiUUhIb
+        rB7bF5O+udvWXV5aXJqNZkdq0JEzd1kzcmIXkxEyHrswBLM5w1qrSlYLC6jR8xSI
+        j1xmQd5+vgSSLvhaUE5G4DX1PN3NRNGmOWUS8IHX19ArP5uoD2R4505qDCt2CD+h
+        iGQQK+G2SeMwruoTnR7oJEpsmYqJLn/MFKLuasWVXltwTFHoKM2h+41ofAV1grh1
+        t+6apePGOd8kw8YkNJ6WmSBvdlpMtuEvAgMBAAGjggK9MIICuTCCAV8GA1UdIASC
+        AVYwggFSMIIBTgYIKwYBBAHDUgUwggFAMD0GCCsGAQUFBwIBFjFodHRwczovL3d3
+        dy5lLWNlcnRjaGlsZS5jbC9wb2xpdGljYXMteS1wcmFjdGljYXMvMIH+BggrBgEF
+        BQcCAjCB8R6B7gBFAGwAIAByAGUAcwBwAG8AbgBkAGUAcgAgAGUAcwB0AGUAIABm
+        AG8AcgBtAHUAbABhAHIAaQBvACAAZQBzACAAdQBuACAAcgBlAHEAdQBpAHMAaQB0
+        AG8AIABpAG4AZABpAHMAcABlAG4AcwBhAGIAbABlACAAcABhAHIAYQAgAGQAYQBy
+        ACAAaQBuAGkAYwBpAG8AIABhAGwAIABwAHIAbwBjAGUAcwBvACAAZABlACAAYwBl
+        AHIAdABpAGYAaQBjAGEAYwBpAPMAbgAuACAAUABvAHMAdABlAHIAaQBvAHIAbQBl
+        AG4AdABlACwwHQYDVR0OBBYEFPG3tlAdylBVForahTHdsiyiCPVCMAsGA1UdDwQE
+        AwIE8DAjBgNVHREEHDAaoBgGCCsGAQQBwQEBoAwWCjEyMTU2NzY5LTUwHwYDVR0j
+        BBgwFoAUdNYhs/Ra6C18u1kGY0PvabQ6kwQwQAYDVR0fBDkwNzA1oDOgMYYvaHR0
+        cDovL2NybC5lY2VydGNoaWxlLmNsL0UtQ0VSVENISUxFQ0FGRVMwMi5jcmwwPQYI
+        KwYBBQUHAQEEMTAvMC0GCCsGAQUFBzABhiFodHRwOi8vb2NzcGZlcy5lY2VydGNo
+        aWxlLmNsL29jc3AwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUIgd3STZfUOoaJ
+        nQaHiM5vg6/MYEWG0uwIhsfKfQIBZAIBBzAjBgNVHRIEHDAaoBgGCCsGAQQBwQEC
+        oAwWCjk2OTI4MTgwLTUwDQYJKoZIhvcNAQELBQADggIBACkoXjxh0nEh1YCqXd1f
+        rC53GRtMjZa1uAPHITRFFn+pAMd/3usMLZR2QndL3gzFOGFOs7gtOq+aXJ7hi9oK
+        V0TiLHzZL8sY4St4d5PiVDPss90b5X8O0ZQHE5KTrTB05um2RUyCNP2SrEMqtob7
+        rTpyqqLZb52+i9w9FXJjbznI5YVR1VcprH+zms97CBKpc+XwyV7XN8W1b4x5M88q
+        ovj6ZL47Gq/O7Oi/omoJrPEqFYQI/WNtIEpMWZxYwH3UG1N14RDyWqqCoyWmOlgZ
+        HtDl1mAwZVOwFEHflQaUWagJOAzbytp2utk/4aZCtlThHC6qI/zJX6Kw0H2m143D
+        t50EGy6L42sPwS7r8HgRjYxcIExHX9K1wSm3s5DX0oTCyck9B+R8ie3WmvAGbPfV
+        cRTXqZkaCYkMd+nDqzo6/NaXX6i/9dTaBMUbSP28w1UHasxfaORF7WU/9jaxS2IW
+        mPFraOdJEmO3x55Y/EzWO4YOpG/kAYUhsPiVze82V9h2jDHk1epfGiNef/69ktu6
+        WVvPdfu7KWgUEXP4fuPl+V6qcR6wGx8zhtbjusCR1ap3zrIqI4KnVoRsxZvShzse
+        LQowlMHlSo/4/2vvYuMPwDV6CbOwyryFFx5/enyuNuOC5a8UsZDiYou/nCqnGrC1
+        7d6XXzhPBLCVBmoPdRXNlHwZ
+      </X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</EnvioDTE>

@@ -1,0 +1,140 @@
+{
+  "certification_package": "FCG_04",
+  "title": "RIPLEY Duplication Certification",
+  "timestamp": "2026-06-19T15:36:05",
+  "certification_status": "PASS",
+  "sql_used": [
+    "-- RIPLEY: all distinct financial groups (operational)",
+    "SELECT DISTINCT LOWER(financial_group) FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='ripley' AND COALESCE(include_in_operational_pnl,1)=1 ORDER BY 1",
+    "-- RIPLEY: total per financial_group",
+    "SELECT LOWER(financial_group) fg, COUNT(*), SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='ripley' AND COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none') GROUP BY 1 ORDER BY 1",
+    "-- RIPLEY: id_transaccion duplication check (same tx in multiple groups)",
+    "WITH tx_groups AS (SELECT id_transaccion, COUNT(DISTINCT LOWER(financial_group)) gcnt FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='ripley' AND COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none') GROUP BY id_transaccion) SELECT COUNT(*) multi_group_txs FROM tx_groups WHERE gcnt > 1",
+    "-- RIPLEY: total distinct transactions",
+    "SELECT COUNT(DISTINCT id_transaccion) FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='ripley' AND COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none')",
+    "-- RIPLEY: rows with NULL/tesoreria financial_group",
+    "SELECT LOWER(financial_group) fg, COUNT(*), SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='ripley' AND (LOWER(financial_group) IS NULL OR LOWER(financial_group) IN ('','tesoreria','none')) AND COALESCE(include_in_operational_pnl,1)=1 GROUP BY 1"
+  ],
+  "evidence": [
+    {
+      "query": "-- RIPLEY: all distinct financial groups (operational)",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT DISTINCT LOWER(financial_group) FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='ripley' AND COALESCE(include_in_operational_pnl,1)=1 ORDER BY 1",
+      "rows": 5,
+      "data": [
+        [
+          "ajustes"
+        ],
+        [
+          "costos_comerciales"
+        ],
+        [
+          "costos_operacionales"
+        ],
+        [
+          "devoluciones"
+        ],
+        [
+          "ingresos"
+        ]
+      ]
+    },
+    {
+      "query": "-- RIPLEY: total per financial_group",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT LOWER(financial_group) fg, COUNT(*), SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='ripley' AND COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none') GROUP BY 1 ORDER BY 1",
+      "rows": 5,
+      "data": [
+        [
+          "ajustes",
+          10,
+          -33440
+        ],
+        [
+          "costos_comerciales",
+          15391,
+          -43054637
+        ],
+        [
+          "costos_operacionales",
+          25774,
+          -14101127
+        ],
+        [
+          "devoluciones",
+          3001,
+          -72023472
+        ],
+        [
+          "ingresos",
+          12390,
+          412639789
+        ]
+      ]
+    },
+    {
+      "query": "-- RIPLEY: id_transaccion duplication check (same tx in multiple groups)",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "WITH tx_groups AS (SELECT id_transaccion, COUNT(DISTINCT LOWER(financial_group)) gcnt FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='ripley' AND COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none') GROUP BY id_transaccion) SELECT COUNT(*) multi_group_txs FROM tx_groups WHERE gcnt > 1",
+      "rows": 1,
+      "data": [
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "query": "-- RIPLEY: total distinct transactions",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT COUNT(DISTINCT id_transaccion) FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='ripley' AND COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none')",
+      "rows": 1,
+      "data": [
+        [
+          56562
+        ]
+      ]
+    },
+    {
+      "query": "-- RIPLEY: rows with NULL/tesoreria financial_group",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT LOWER(financial_group) fg, COUNT(*), SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='ripley' AND (LOWER(financial_group) IS NULL OR LOWER(financial_group) IN ('','tesoreria','none')) AND COALESCE(include_in_operational_pnl,1)=1 GROUP BY 1",
+      "rows": 0,
+      "data": []
+    }
+  ],
+  "files_modified": [
+    "engine/v4/financial_engine.py",
+    "knowledge/taxonomy/ripley_v1.json"
+  ],
+  "tests_executed": [
+    "test_certification_gate.py",
+    "test_financial_engine.py",
+    "test_api_smoke.py"
+  ],
+  "before_after_metrics": {
+    "Total distinct transactions": "56562",
+    "Transactions in multiple financial groups (duplication)": "0",
+    "Neto Ledger": "$283,427,113",
+    "Group: ajustes": "$-33,440",
+    "Group: costos_comerciales": "$-43,054,637",
+    "Group: costos_operacionales": "$-14,101,127",
+    "Group: devoluciones": "$-72,023,472",
+    "Group: ingresos": "$412,639,789"
+  },
+  "remaining_risks": []
+}

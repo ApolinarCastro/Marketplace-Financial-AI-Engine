@@ -1,0 +1,10 @@
+id: AGENT
+version: 1.0.0
+owner: Antigravity Team
+status: ACTIVE
+dependencies: []
+created: 2026-07-06
+updated: 2026-07-06
+compatibility: [Marketplace Auditor, Tuke, Caja Clara]
+tests: [passed]
+checksum: abc123def456

@@ -1,0 +1,156 @@
+{
+  "categories": [
+    {
+      "display_name": "Ingresos",
+      "financial_group": "ingresos",
+      "items": [
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Venta Bruta",
+          "detalle": "Venta",
+          "monto": 19118950.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Despacho",
+          "detalle": "Despacho",
+          "monto": 131630.0
+        }
+      ],
+      "orden": 1,
+      "subcategories": [
+        {
+          "detalle": "Venta",
+          "total": 19118950.0
+        },
+        {
+          "detalle": "Despacho",
+          "total": 131630.0
+        }
+      ],
+      "total": 19250580.0
+    },
+    {
+      "display_name": "Devoluciones",
+      "financial_group": "devoluciones",
+      "items": [
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Devolución",
+          "detalle": "Devolución",
+          "monto": -11406810.0
+        }
+      ],
+      "orden": 2,
+      "subcategories": [
+        {
+          "detalle": "Devolución",
+          "total": -11406810.0
+        }
+      ],
+      "total": -11406810.0
+    },
+    {
+      "display_name": "Costos Operacionales",
+      "financial_group": "costos_operacionales",
+      "items": [
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Cobro por despacho",
+          "detalle": "Cobro por despacho",
+          "monto": -830960.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Retiro stock bodega Paris",
+          "detalle": "Retiro stock bodega Paris",
+          "monto": -285000.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Cobro stock antiguo",
+          "detalle": "Cobro stock antiguo",
+          "monto": -27864.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Logística inversa",
+          "detalle": "Logística inversa",
+          "monto": -2690.0
+        }
+      ],
+      "orden": 4,
+      "subcategories": [
+        {
+          "detalle": "Cobro por despacho",
+          "total": -830960.0
+        },
+        {
+          "detalle": "Retiro stock bodega Paris",
+          "total": -285000.0
+        },
+        {
+          "detalle": "Cobro stock antiguo",
+          "total": -27864.0
+        },
+        {
+          "detalle": "Logística inversa",
+          "total": -2690.0
+        }
+      ],
+      "total": -1146514.0
+    },
+    {
+      "display_name": "Costos Comerciales",
+      "financial_group": "costos_comerciales",
+      "items": [
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Cargo por venta (Comisión)",
+          "detalle": "Cargo por venta (Comisión)",
+          "monto": -1282896.0
+        }
+      ],
+      "orden": 5,
+      "subcategories": [
+        {
+          "detalle": "Cargo por venta (Comisión)",
+          "total": -1282896.0
+        }
+      ],
+      "total": -1282896.0
+    },
+    {
+      "display_name": "Ajustes",
+      "financial_group": "ajustes",
+      "items": [
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Compensación logística",
+          "detalle": "Compensación logística",
+          "monto": 34833.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Abono manual",
+          "detalle": "Cargo",
+          "monto": -2690.0
+        }
+      ],
+      "orden": 6,
+      "subcategories": [
+        {
+          "detalle": "Compensación logística",
+          "total": 34833.0
+        },
+        {
+          "detalle": "Cargo",
+          "total": -2690.0
+        }
+      ],
+      "total": 32143.0
+    }
+  ],
+  "marketplace": "PARIS",
+  "period": "2026-01"
+}

@@ -1,0 +1,230 @@
+{
+  "version": "ripley_v2_canonical",
+  "marketplace": "RIPLEY",
+  "created": "2026-06-18",
+  "dec": "DEC-034",
+  "description": "Canonical financial route — one SIGNAL per economic event",
+  "canonical_rule": {
+    "rule_id": "RIPLEY-RULE-001",
+    "description": "Un order_id solo puede aportar una vez al ingreso financiero",
+    "applies_to": [
+      "ingresos",
+      "costos_comerciales"
+    ]
+  },
+  "canonical_groups": {
+    "ingresos": {
+      "display_name": "Ingresos Brutos",
+      "detalles": [
+        "importe del pedido"
+      ]
+    },
+    "devoluciones": {
+      "display_name": "Devoluciones",
+      "detalles": [
+        "importe del pedido reembolsado",
+        "pedidos reembolsados"
+      ]
+    },
+    "costos_operacionales": {
+      "display_name": "Costos Logísticos",
+      "detalles": [
+        "envío",
+        "envío reembolsado",
+        "gastos de envío pagados por el operador",
+        "gastos de envío reembolsados pagados por el operador",
+        "descuento por costo logístico",
+        "descuento por logistica inversa"
+      ]
+    },
+    "costos_comerciales": {
+      "display_name": "Comisiones",
+      "detalles": [
+        "comisiones",
+        "comisiones sobre pedidos reembolsados",
+        "comisión de reembolso"
+      ]
+    },
+    "ajustes": {
+      "display_name": "Ajustes",
+      "detalles": [
+        "factura manual",
+        "abono manual",
+        "otros descuentos",
+        "descuento por cancelación"
+      ]
+    },
+    "tesoreria": {
+      "display_name": "Liquidación / Tesorería",
+      "detalles": [],
+      "note": "NOISE only — treasury/settlement, not P&L"
+    }
+  },
+  "total_detalle_values": 32,
+  "signal_count": 16,
+  "noise_count": 16,
+  "detalle_classification": {
+    "importe del pedido": {
+      "signal": true,
+      "financial_group": "ingresos",
+      "canonical_order_id_rule": "RIPLEY-RULE-001",
+      "rationale": "Canonical revenue — 13,441 unique orders"
+    },
+    "importe del pedido reembolsado": {
+      "signal": true,
+      "financial_group": "devoluciones",
+      "rationale": "Canonical returns — importe reembolsado"
+    },
+    "pedidos reembolsados": {
+      "signal": true,
+      "financial_group": "devoluciones",
+      "rationale": "Returns — pedidos reembolsados"
+    },
+    "envío": {
+      "signal": true,
+      "financial_group": "costos_operacionales",
+      "rationale": "Shipping cost (ingreso)"
+    },
+    "envío reembolsado": {
+      "signal": true,
+      "financial_group": "costos_operacionales",
+      "rationale": "Refunded shipping cost"
+    },
+    "gastos de envío pagados por el operador": {
+      "signal": true,
+      "financial_group": "costos_operacionales",
+      "rationale": "Shipping cost paid by operator"
+    },
+    "gastos de envío reembolsados pagados por el operador": {
+      "signal": true,
+      "financial_group": "costos_operacionales",
+      "rationale": "Refunded shipping cost paid by operator"
+    },
+    "descuento por costo logístico": {
+      "signal": true,
+      "financial_group": "costos_operacionales",
+      "rationale": "Logistics discount"
+    },
+    "descuento por logistica inversa": {
+      "signal": true,
+      "financial_group": "costos_operacionales",
+      "rationale": "Reverse logistics discount"
+    },
+    "comisiones": {
+      "signal": true,
+      "financial_group": "costos_comerciales",
+      "canonical_order_id_rule": "RIPLEY-RULE-001",
+      "rationale": "Canonical commission — 13,429 unique orders (largest coverage)"
+    },
+    "comisiones sobre pedidos reembolsados": {
+      "signal": true,
+      "financial_group": "costos_comerciales",
+      "rationale": "Commission on refunded orders (different event type)"
+    },
+    "comisión de reembolso": {
+      "signal": true,
+      "financial_group": "costos_comerciales",
+      "rationale": "Refund commission (different event type)"
+    },
+    "factura manual": {
+      "signal": true,
+      "financial_group": "ajustes",
+      "rationale": "Manual invoice adjustment"
+    },
+    "abono manual": {
+      "signal": true,
+      "financial_group": "ajustes",
+      "rationale": "Manual credit"
+    },
+    "otros descuentos": {
+      "signal": true,
+      "financial_group": "ajustes",
+      "rationale": "Other discounts"
+    },
+    "descuento por cancelación": {
+      "signal": true,
+      "financial_group": "ajustes",
+      "rationale": "Cancellation discount"
+    },
+    "precio total": {
+      "signal": false,
+      "financial_group": "ingresos",
+      "rationale": "DUPLICATE — 12,910/13,441 orders overlap with Importe del pedido (96%)"
+    },
+    "subtotal": {
+      "signal": false,
+      "financial_group": "ingresos",
+      "rationale": "DUPLICATE — 12,910/13,441 orders overlap with Importe del pedido (96%)"
+    },
+    "importe del envío del pedido": {
+      "signal": false,
+      "financial_group": "ingresos",
+      "rationale": "Shipping revenue (already covered by Envío in costos_operacionales)"
+    },
+    "comisión": {
+      "signal": false,
+      "financial_group": "costos_comerciales",
+      "rationale": "DUPLICATE — 12,910/13,429 orders overlap with Comisiones (96%)"
+    },
+    "comisiones sobre pedidos": {
+      "signal": false,
+      "financial_group": "costos_comerciales",
+      "rationale": "DUPLICATE — 11,109/13,429 orders overlap with Comisiones (83%)"
+    },
+    "commission_fee": {
+      "signal": false,
+      "financial_group": "costos_comerciales",
+      "rationale": "Subset of Comisiones — 986/13,429 orders (7%)"
+    },
+    "refund_commission_fee": {
+      "signal": false,
+      "financial_group": "costos_comerciales",
+      "rationale": "Subset — 96 orders, already covered by Comisiones sobre pedidos reembolsados"
+    },
+    "order_amount": {
+      "signal": false,
+      "financial_group": "devoluciones",
+      "rationale": "DUPLICATE — subset of Importe del pedido reembolsado"
+    },
+    "refund_order_amount": {
+      "signal": false,
+      "financial_group": "devoluciones",
+      "rationale": "DUPLICATE — subset of Importe del pedido reembolsado"
+    },
+    "importe del envío del pedido reembolsado": {
+      "signal": false,
+      "financial_group": "devoluciones",
+      "rationale": "Already covered by Envío reembolsado"
+    },
+    "descuento por cofinanciamiento logístico (ff)": {
+      "signal": false,
+      "financial_group": "costos_operacionales",
+      "rationale": "Subset — $376K, inmaterial"
+    },
+    "descuento por logística inversa (ff)": {
+      "signal": false,
+      "financial_group": "costos_operacionales",
+      "rationale": "Subset — $21K, inmaterial"
+    },
+    "a pagar": {
+      "signal": false,
+      "financial_group": "tesoreria",
+      "rationale": "NOISE — treasury payable, not P&L"
+    },
+    "amount transferred to tienda": {
+      "signal": false,
+      "financial_group": "tesoreria",
+      "rationale": "NOISE — treasury settlement transfer"
+    },
+    "pago": {
+      "signal": false,
+      "financial_group": "tesoreria",
+      "rationale": "NOISE — treasury payment"
+    },
+    "transfer_amount": {
+      "signal": false,
+      "financial_group": "tesoreria",
+      "rationale": "NOISE — treasury transfer amount"
+    }
+  }
+}

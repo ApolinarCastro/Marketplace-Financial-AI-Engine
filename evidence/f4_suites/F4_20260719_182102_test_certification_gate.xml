@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="9" failures="1" skipped="8" tests="29" time="1.222" timestamp="2026-07-19T18:21:02.751455-04:00" hostname="LAPTOP-C1JD4GH0"><testcase classname="tests.test_certification_gate" name="test_gate_exec_summary_vs_waterfall[ML]" time="0.553"><error message="failed on setup with &quot;TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'&quot;">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\conftest.py:110: in v8_fe
+    fe = FinancialEngine(db=v8_db)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+engine\v4\domain\financial_engine.py:218: in __init__
+    self._auditor = MarketplaceAuditorEngine(db=self.db)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_exec_summary_vs_waterfall[PARIS]" time="0.000"><error message="failed on setup with &quot;TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'&quot;">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\conftest.py:110: in v8_fe
+    fe = FinancialEngine(db=v8_db)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+engine\v4\domain\financial_engine.py:218: in __init__
+    self._auditor = MarketplaceAuditorEngine(db=self.db)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_exec_summary_vs_waterfall[RIPLEY]" time="0.000"><error message="failed on setup with &quot;TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'&quot;">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\conftest.py:110: in v8_fe
+    fe = FinancialEngine(db=v8_db)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+engine\v4\domain\financial_engine.py:218: in __init__
+    self._auditor = MarketplaceAuditorEngine(db=self.db)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_exec_summary_vs_waterfall[FALABELLA]" time="0.000"><error message="failed on setup with &quot;TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'&quot;">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\conftest.py:110: in v8_fe
+    fe = FinancialEngine(db=v8_db)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+engine\v4\domain\financial_engine.py:218: in __init__
+    self._auditor = MarketplaceAuditorEngine(db=self.db)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_waterfall_conservation[ML]" time="0.000"><error message="failed on setup with &quot;TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'&quot;">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\conftest.py:110: in v8_fe
+    fe = FinancialEngine(db=v8_db)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+engine\v4\domain\financial_engine.py:218: in __init__
+    self._auditor = MarketplaceAuditorEngine(db=self.db)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_waterfall_conservation[PARIS]" time="0.000"><error message="failed on setup with &quot;TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'&quot;">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\conftest.py:110: in v8_fe
+    fe = FinancialEngine(db=v8_db)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+engine\v4\domain\financial_engine.py:218: in __init__
+    self._auditor = MarketplaceAuditorEngine(db=self.db)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_waterfall_conservation[RIPLEY]" time="0.000"><error message="failed on setup with &quot;TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'&quot;">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\conftest.py:110: in v8_fe
+    fe = FinancialEngine(db=v8_db)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+engine\v4\domain\financial_engine.py:218: in __init__
+    self._auditor = MarketplaceAuditorEngine(db=self.db)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_waterfall_conservation[FALABELLA]" time="0.000"><error message="failed on setup with &quot;TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'&quot;">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\conftest.py:110: in v8_fe
+    fe = FinancialEngine(db=v8_db)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+engine\v4\domain\financial_engine.py:218: in __init__
+    self._auditor = MarketplaceAuditorEngine(db=self.db)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_dte_coverage[ML-50.0]" time="0.008" /><testcase classname="tests.test_certification_gate" name="test_gate_dte_coverage[RIPLEY-95.0]" time="0.003" /><testcase classname="tests.test_certification_gate" name="test_gate_dte_coverage[PARIS-0.0]" time="0.002" /><testcase classname="tests.test_certification_gate" name="test_gate_dte_coverage[FALABELLA-0.0]" time="0.002" /><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_has_no_orphans[ML]" time="0.000"><skipped type="pytest.skip" message="Taxonomy for ML not found">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\test_certification_gate.py:117: Taxonomy for ML not found</skipped></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_has_no_orphans[PARIS]" time="0.000"><skipped type="pytest.skip" message="Taxonomy for PARIS not found">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\test_certification_gate.py:117: Taxonomy for PARIS not found</skipped></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_has_no_orphans[RIPLEY]" time="0.000"><skipped type="pytest.skip" message="Taxonomy for RIPLEY not found">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\test_certification_gate.py:117: Taxonomy for RIPLEY not found</skipped></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_has_no_orphans[FALABELLA]" time="0.000"><skipped type="pytest.skip" message="Taxonomy for FALABELLA not found">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\test_certification_gate.py:117: Taxonomy for FALABELLA not found</skipped></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_groups_cover_financial_groups[ML]" time="0.000"><skipped type="pytest.skip" message="Taxonomy for ML not found">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\test_certification_gate.py:137: Taxonomy for ML not found</skipped></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_groups_cover_financial_groups[PARIS]" time="0.000"><skipped type="pytest.skip" message="Taxonomy for PARIS not found">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\test_certification_gate.py:137: Taxonomy for PARIS not found</skipped></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_groups_cover_financial_groups[RIPLEY]" time="0.000"><skipped type="pytest.skip" message="Taxonomy for RIPLEY not found">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\test_certification_gate.py:137: Taxonomy for RIPLEY not found</skipped></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_groups_cover_financial_groups[FALABELLA]" time="0.000"><skipped type="pytest.skip" message="Taxonomy for FALABELLA not found">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\test_certification_gate.py:137: Taxonomy for FALABELLA not found</skipped></testcase><testcase classname="tests.test_certification_gate" name="test_gate_ledger_has_data[ML]" time="0.002" /><testcase classname="tests.test_certification_gate" name="test_gate_ledger_has_data[PARIS]" time="0.001" /><testcase classname="tests.test_certification_gate" name="test_gate_ledger_has_data[RIPLEY]" time="0.001" /><testcase classname="tests.test_certification_gate" name="test_gate_ledger_has_data[FALABELLA]" time="0.001" /><testcase classname="tests.test_certification_gate" name="test_gate_all_mps_have_waterfall" time="0.000"><error message="failed on setup with &quot;TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'&quot;">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\conftest.py:110: in v8_fe
+    fe = FinancialEngine(db=v8_db)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+engine\v4\domain\financial_engine.py:218: in __init__
+    self._auditor = MarketplaceAuditorEngine(db=self.db)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: MarketplaceAuditorEngine.__init__() got an unexpected keyword argument 'db'</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_no_frontend_financial_computations" time="0.001" /><testcase classname="tests.test_certification_gate" name="test_gate_insert_update_delete_blocked" time="0.001" /><testcase classname="tests.test_certification_gate" name="test_gate_api_v4_ledger_endpoint" time="0.210"><failure message="RuntimeError: The starlette.testclient module requires the httpx2 package to be installed.&#10;You can install this with:&#10;    $ pip install httpx2">C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\tests\test_certification_gate.py:209: in test_gate_api_v4_ledger_endpoint
+    from fastapi.testclient import TestClient
+C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\.venv\Lib\site-packages\fastapi\testclient.py:1: in &lt;module&gt;
+    from starlette.testclient import TestClient as TestClient  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\ASUSZE~1\AppData\Local\Temp\f4_sandbox_20260719\.venv\Lib\site-packages\starlette\testclient.py:41: in &lt;module&gt;
+    raise RuntimeError(
+E   RuntimeError: The starlette.testclient module requires the httpx2 package to be installed.
+E   You can install this with:
+E       $ pip install httpx2</failure></testcase><testcase classname="tests.test_certification_gate" name="test_official_db_integrity" time="0.136" /></testsuite></testsuites>

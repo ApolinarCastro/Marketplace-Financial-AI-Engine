@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioDTE xmlns="http://www.sii.cl/SiiDte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd">
+  <SetDTE ID="EDTE131549585D1200522363">
+    <Caratula version="1.0">
+      <RutEmisor>83382700-6</RutEmisor>
+      <RutEnvia>12156769-5</RutEnvia>
+      <RutReceptor>77898100-9</RutReceptor>
+      <FchResol>2013-03-28</FchResol>
+      <NroResol>38</NroResol>
+      <TmstFirmaEnv>2025-08-05T08:46:56</TmstFirmaEnv>
+      <SubTotDTE>
+        <TpoDTE>43</TpoDTE>
+        <NroDTE>1</NroDTE>
+      </SubTotDTE>
+    </Caratula>
+    <DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+      <Liquidacion ID="S20250805T043F0000113040">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>43</TipoDTE>
+            <Folio>113040</Folio>
+            <FchEmis>2025-07-31</FchEmis>
+            <FmaPago>1</FmaPago>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>83382700-6</RUTEmisor>
+            <RznSoc>Comercial Eccsa S.A.</RznSoc>
+            <GiroEmis>GRANDES TIENDAS</GiroEmis>
+            <Acteco>471910</Acteco>
+            <Sucursal>99</Sucursal>
+            <CdgSIISucur>000495049</CdgSIISucur>
+            <DirOrigen>HUERFANOS 1052 PISO 4</DirOrigen>
+            <CmnaOrigen>SANTIAGO CENTRO</CmnaOrigen>
+            <CiudadOrigen>SANTIAGO</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>77898100-9</RUTRecep>
+            <RznSocRecep>IMPORTADORA Y COMERCIALIZADOR NANDA SPA</RznSocRecep>
+            <GiroRecep>Venta al por mayor de productos textiles</GiroRecep>
+            <DirRecep>EUSEBIO LILLO 333</DirRecep>
+            <CmnaRecep>RECOLETA</CmnaRecep>
+            <CiudadRecep>SANTIAGO</CiudadRecep>
+          </Receptor>
+          <Totales>
+            <MntNeto>1156058</MntNeto>
+            <MntExe>0</MntExe>
+            <TasaIVA>19.00</TasaIVA>
+            <IVA>219651</IVA>
+            <Comisiones>
+              <ValComNeto>208090</ValComNeto>
+              <ValComIVA>39537</ValComIVA>
+            </Comisiones>
+            <MntTotal>1128082</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40522900 GILET BASICO 4 BOTONES NEGRO NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>21840</PrcItem>
+          <MontoItem>21840</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>2</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40608387 ABRIGO BOUCLE GRAFITO NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>35286</PrcItem>
+          <MontoItem>35286</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>3</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40608397 ABRIGO CORTO NEGRO NICOPOLY</NmbItem>
+          <QtyItem>2</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>33605</PrcItem>
+          <MontoItem>67210</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>4</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40608410 CHAQUETA LARGA IMPERMEABLE MOSTAZA OSCURO NICO</NmbItem>
+          <QtyItem>2</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>33605</PrcItem>
+          <MontoItem>67210</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>5</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40608412 ABRIGO 4 BOTONES ROJO NICOPOLY</NmbItem>
+          <QtyItem>4</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>53773</PrcItem>
+          <MontoItem>215092</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>6</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40608415 ABRIGO 4 BOTONES NEGRO NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>53773</PrcItem>
+          <MontoItem>53773</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>7</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40608421 CHAQUETA LARGA IMPERMEABLE OLIVA CLARO NICOPOL</NmbItem>
+          <QtyItem>1</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>33605</PrcItem>
+          <MontoItem>33605</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>8</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40616900 CHAQUETA LARGA IMPERMEABLE OLIVA CLARO NICOPOL</NmbItem>
+          <QtyItem>1</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>33605</PrcItem>
+          <MontoItem>33605</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>9</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40616901 ABRIGO CORTO NEGRO NICOPOLY</NmbItem>
+          <QtyItem>2</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>33605</PrcItem>
+          <MontoItem>67210</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>10</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40616902 CHAQUETA CORTA IMPERMEABLE NEGRO NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>33605</PrcItem>
+          <MontoItem>33605</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>11</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40616905 ABRIGO BOUCLE GRAFITO NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>35286</PrcItem>
+          <MontoItem>35286</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>12</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40616907 ABRIGO CORTO NEGRO NICOPOLY</NmbItem>
+          <QtyItem>2</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>33605</PrcItem>
+          <MontoItem>67210</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>13</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40616917 ABRIGO 4 BOTONES NEGRO NICOPOLY</NmbItem>
+          <QtyItem>4</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>53773</PrcItem>
+          <MontoItem>215092</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>14</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40616918 CHAQUETA BIKER CAFE NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>36966</PrcItem>
+          <MontoItem>36966</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>15</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40616928 ABRIGO BOUCLE KHAKI NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>35286</PrcItem>
+          <MontoItem>105858</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>16</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40616930 TRENCH HEBILLA KHAKI NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>31924</PrcItem>
+          <MontoItem>31924</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>17</NroLinDet>
+          <TpoDocLiq>39</TpoDocLiq>
+          <NmbItem>40616936 ABRIGO BOUCLE KHAKI NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <UnmdItem>UN</UnmdItem>
+          <PrcItem>35286</PrcItem>
+          <MontoItem>35286</MontoItem>
+        </Detalle>
+        <SubTotInfo>
+          <NroSTI>1</NroSTI>
+          <GlosaSTI>SUBTOTAL</GlosaSTI>
+          <ValSubtotSTI>1156058</ValSubtotSTI>
+        </SubTotInfo>
+        <Comisiones>
+          <NroLinCom>1</NroLinCom>
+          <TipoMovim>C</TipoMovim>
+          <Glosa>COMISION PACTADA CONSIGNACION LIQ</Glosa>
+          <ValComNeto>208090</ValComNeto>
+          <ValComExe>0</ValComExe>
+          <ValComIVA>39537</ValComIVA>
+        </Comisiones>
+        <TED version="1.0">
+          <DD>
+            <RE>83382700-6</RE>
+            <TD>43</TD>
+            <F>113040</F>
+            <FE>2025-07-31</FE>
+            <RR>77898100-9</RR>
+            <RSR>IMPORTADORA Y COMERCIALIZADOR NANDA SPA</RSR>
+            <MNT>1128082</MNT>
+            <IT1>40522900 GILET BASICO 4 BOTONES NEGRO NI</IT1>
+            <CAF version="1.0">
+              <DA>
+                <RE>83382700-6</RE>
+                <RS>COMERCIAL ECCSA S A</RS>
+                <TD>43</TD>
+                <RNG>
+                  <D>111020</D>
+                  <H>114019</H>
+                </RNG>
+                <FA>2025-04-22</FA>
+                <RSAPK>
+                  <M>wpJfD5eTvSBj0ugPKlu+CoBeq7vLSozMT/pvMweVO7Sgbd9wdtOcXB5ZhHXrIWlxeDOWlLqA4YaiuJlFYAEkHQ==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo="SHA1withRSA">XVotbOqei+/Xov5mQPGGSNvA2Z0bkit19F9JuB8NV9+OuoxjZgr/HJ16MWQPj0NT9LBt0hGDk+GutnAqb5QZ2w==</FRMA>
+            </CAF>
+            <TSTED>2025-08-05T08:38:24</TSTED>
+          </DD>
+          <FRMT algoritmo="SHA1withRSA">XnisBu+6GwhhkcjExYekePzGlJ/Q+wM8uIgukocrvx/wVAPemfXzTiQ5YSBWM/JnehrfzYrC3A58
+y3OD35YnlA==
+</FRMT>
+        </TED>
+        <TmstFirma>2025-08-05T08:38:24</TmstFirma>
+      </Liquidacion>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#S20250805T043F0000113040">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>F7qK/JzfDXAcGYrdNyVzU5VSRyM=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>
+    MCs1bQYBRYSfnq+PmQx2L0YZ3cFbxL54x3CgOjFMh8nvNyCohynUxdCuRGwyYWfW
+    Y5eWQPYJ+FwRkPr+YzsVQsgKAn/RuT7DBY7BdiGcYQUJH/DCPiybRsnbn16GIbdS
+    3UWHeRNWxEkFxsVgh+/Hx+58muWBiEhfuzJXNz5gU9rKB5b7ZJEyX6RaOFLBRk4c
+    UWBywIObLJGZHbViH5zRyCQb5tEN8tD7u9g5ArS7HOl22j4UrjYD7RlYpmsRepzo
+    DbQgTTi6kAg2BRfdsrDgL5bsz0L5vTjXe4NxN3KRQpw47psxvbIY0Y3uEm/p//7I
+    y/0KTmhNnST55C2swj9SRA==
+  </SignatureValue>
+        <KeyInfo>
+          <KeyValue>
+            <RSAKeyValue>
+              <Modulus>
+          k/3xuyRQ4z+rT5HB+5MalkkogZuEAY3Fkzvi5Coj2FE1uWj+Eqycd6P1an3WDKq+
+          iN2M5rX725RmIJLKX7U69xF0eJBeEUplkO4R1/0AkeduaZkY4xOv7DFZk2jrvesS
+          Cj56dK+h5jaY5NuZIWZtjROf6BY9K/TdgcTmSPJf6ZHMuS1gsBsKwZTyNY9ZDoVK
+          x9Zj5llIKS5zCv9yltstw0FiwLZyJuTwXqMeH5NFvQ9N3khyCdbKSQpPxZrpufG0
+          apq0e19m9mfFcKxawhGYvn5UYp8ulV4xOidfAkg2sxiPHXPLyYyd1mWxTDKDMevY
+          hfPpIEDWxnc5zCaaWNVK2w==
+        </Modulus>
+              <Exponent>AQAB</Exponent>
+            </RSAKeyValue>
+          </KeyValue>
+          <X509Data>
+            <X509Certificate>
+        MIIGdTCCBV2gAwIBAgIDAspqMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+        TDEYMBYGA1UEChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29t
+        IEF1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhIENsYXNlIDMgUGVyc29uYSBOYXR1cmFs
+        IC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9AYWNlcHRhLmNvbTETMBEGA1UEBRMK
+        OTY5MTkwNTAtODAeFw0yMjExMTAxNjMwMDJaFw0yNTExMTAxNjMwMDJaMIGHMQsw
+        CQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMSQwIgYDVQQDExtM
+        VUlTIE1BTlVFTCBDQU5DSU5PIEZVRU5URVMxIzAhBgkqhkiG9w0BCQEWFExDQU5D
+        SU5PRkBSSVBMRVkuQ09NMRMwEQYDVQQFEwoxMjE1Njc2OS01MIIBIjANBgkqhkiG
+        9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk/3xuyRQ4z+rT5HB+5MalkkogZuEAY3Fkzvi
+        5Coj2FE1uWj+Eqycd6P1an3WDKq+iN2M5rX725RmIJLKX7U69xF0eJBeEUplkO4R
+        1/0AkeduaZkY4xOv7DFZk2jrvesSCj56dK+h5jaY5NuZIWZtjROf6BY9K/TdgcTm
+        SPJf6ZHMuS1gsBsKwZTyNY9ZDoVKx9Zj5llIKS5zCv9yltstw0FiwLZyJuTwXqMe
+        H5NFvQ9N3khyCdbKSQpPxZrpufG0apq0e19m9mfFcKxawhGYvn5UYp8ulV4xOidf
+        Akg2sxiPHXPLyYyd1mWxTDKDMevYhfPpIEDWxnc5zCaaWNVK2wIDAQABo4ICxzCC
+        AsMwHwYDVR0jBBgwFoAUqv29xek3TfaZTVeOwXEa+evDBuMwHQYDVR0OBBYEFJPL
+        G9EBrYuji78FtsmatrlW7MqqMAsGA1UdDwQEAwIE8DAdBgNVHSUEFjAUBggrBgEF
+        BQcDAgYIKwYBBQUHAwQwEQYJYIZIAYb4QgEBBAQDAgWgMIH6BgNVHSAEgfIwge8w
+        gewGCCsGAQQBtWsCMIHfMDEGCCsGAQUFBwIBFiVodHRwczovL2FjZzQuYWNlcHRh
+        LmNvbS9DUFMtQWNlcHRhY29tMIGpBggrBgEFBQcCAjCBnDAWFg9BY2VwdGEuY29t
+        IFMuQS4wAwIBAhqBgUVsIHRpdHVsYXIgaGEgc2lkbyB2YWxpZGFkbyBlbiBmb3Jt
+        YSBwcmVzZW5jaWFsLCBxdWVkYW5kbyBoYWJpbGl0YWRvIGVsIENlcnRpZmljYWRv
+        IHBhcmEgdXNvIHRyaWJ1dGFyaW8sIHBhZ29zLCBjb21lcmNpbyB5IG90cm9zLjBa
+        BgNVHRIEUzBRoBgGCCsGAQQBwQECoAwWCjk2OTE5MDUwLTigJAYIKwYBBQUHCAOg
+        GDAWDAo5NjkxOTA1MC04BggrBgEEAcEBAoEPaW5mb0BhY2VwdGEuY29tMF8GA1Ud
+        EQRYMFagGAYIKwYBBAHBAQGgDBYKMTIxNTY3NjktNaAkBggrBgEFBQcIA6AYMBYM
+        CjEyMTU2NzY5LTUGCCsGAQQBwQECgRRMQ0FOQ0lOT0ZAUklQTEVZLkNPTTBHBggr
+        BgEFBQcBAQQ7MDkwNwYIKwYBBQUHMAGGK2h0dHBzOi8vYWNnNC5hY2VwdGEuY29t
+        L2FjZzQvb2NzcC9DbGFzZTMtRzQwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cHM6Ly9h
+        Y2c0LmFjZXB0YS5jb20vYWNnNC9jcmwvQ2xhc2UzLUc0LmNybDANBgkqhkiG9w0B
+        AQsFAAOCAQEABq/W9B3jbX5NCppswhtzn/MCm6+VHh5exFEmojtKgg1ggC54bbbC
+        XcyQ6LgsEsWnm1hH5BKdAMnCQNyICIfGOCSpIfrqJvwXtoMo6mZp1jPMp4S/E9+D
+        7NVWeTS9/lqzIyzJdmtCZkoR4L4F6zauLz3WfyW7Zz/kPzL3uBM14o70pgtYCm4D
+        TvO0f33WPFmehpsBNu9EutctFBLoi/YnhiObSSReloMlhOshlKvfh3A0OgEa6OsN
+        EBYwCdznAhS02Md39VBhjHQQi6KRly2OKnzL7owm7Yfk08IpSTg1RNHsVghz5Usf
+        WNEIWyQsaG88Z/TAs+BWGXJoO/PItUid4g==
+      </X509Certificate>
+          </X509Data>
+        </KeyInfo>
+      </Signature>
+    </DTE>
+  </SetDTE>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="#EDTE131549585D1200522363">
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>Dyk+ttDwy000Kaf8H56WXuYsT3o=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+    jTFbqv56He6rkDGPVEONofLdrT7YBoJXnqjFfyibBWmYRGGVok2haiKsLRvMZWeb
+    LHlAyPeovA5CJEg2SpUcbBSxtIciDxt7BgEslU11Kf3dtbeI8MXuBtwko5qWqIqW
+    yxhDxc3uz17p5LQRX791QCZtuC9wr4f96+nUHXVAz8R0+1532yIntsmPZLM/jsFi
+    iE0cwA2jz8hjzuWdP6RtadMKJy3QtLAWXGEYgaTn1bLPJ0ubPywN9rkpKE3f5C3A
+    NQ8Mmunwp0vr8vcyg7L05fCDCCatiY00164FWzDeP+7A2N8LLEs4Wr8aQ95ri+JK
+    gjRc2cRumU9w7ORm2H74hQ==
+  </SignatureValue>
+    <KeyInfo>
+      <KeyValue>
+        <RSAKeyValue>
+          <Modulus>
+          k/3xuyRQ4z+rT5HB+5MalkkogZuEAY3Fkzvi5Coj2FE1uWj+Eqycd6P1an3WDKq+
+          iN2M5rX725RmIJLKX7U69xF0eJBeEUplkO4R1/0AkeduaZkY4xOv7DFZk2jrvesS
+          Cj56dK+h5jaY5NuZIWZtjROf6BY9K/TdgcTmSPJf6ZHMuS1gsBsKwZTyNY9ZDoVK
+          x9Zj5llIKS5zCv9yltstw0FiwLZyJuTwXqMeH5NFvQ9N3khyCdbKSQpPxZrpufG0
+          apq0e19m9mfFcKxawhGYvn5UYp8ulV4xOidfAkg2sxiPHXPLyYyd1mWxTDKDMevY
+          hfPpIEDWxnc5zCaaWNVK2w==
+        </Modulus>
+          <Exponent>AQAB</Exponent>
+        </RSAKeyValue>
+      </KeyValue>
+      <X509Data>
+        <X509Certificate>
+        MIIGdTCCBV2gAwIBAgIDAspqMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+        TDEYMBYGA1UEChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29t
+        IEF1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhIENsYXNlIDMgUGVyc29uYSBOYXR1cmFs
+        IC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9AYWNlcHRhLmNvbTETMBEGA1UEBRMK
+        OTY5MTkwNTAtODAeFw0yMjExMTAxNjMwMDJaFw0yNTExMTAxNjMwMDJaMIGHMQsw
+        CQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMSQwIgYDVQQDExtM
+        VUlTIE1BTlVFTCBDQU5DSU5PIEZVRU5URVMxIzAhBgkqhkiG9w0BCQEWFExDQU5D
+        SU5PRkBSSVBMRVkuQ09NMRMwEQYDVQQFEwoxMjE1Njc2OS01MIIBIjANBgkqhkiG
+        9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk/3xuyRQ4z+rT5HB+5MalkkogZuEAY3Fkzvi
+        5Coj2FE1uWj+Eqycd6P1an3WDKq+iN2M5rX725RmIJLKX7U69xF0eJBeEUplkO4R
+        1/0AkeduaZkY4xOv7DFZk2jrvesSCj56dK+h5jaY5NuZIWZtjROf6BY9K/TdgcTm
+        SPJf6ZHMuS1gsBsKwZTyNY9ZDoVKx9Zj5llIKS5zCv9yltstw0FiwLZyJuTwXqMe
+        H5NFvQ9N3khyCdbKSQpPxZrpufG0apq0e19m9mfFcKxawhGYvn5UYp8ulV4xOidf
+        Akg2sxiPHXPLyYyd1mWxTDKDMevYhfPpIEDWxnc5zCaaWNVK2wIDAQABo4ICxzCC
+        AsMwHwYDVR0jBBgwFoAUqv29xek3TfaZTVeOwXEa+evDBuMwHQYDVR0OBBYEFJPL
+        G9EBrYuji78FtsmatrlW7MqqMAsGA1UdDwQEAwIE8DAdBgNVHSUEFjAUBggrBgEF
+        BQcDAgYIKwYBBQUHAwQwEQYJYIZIAYb4QgEBBAQDAgWgMIH6BgNVHSAEgfIwge8w
+        gewGCCsGAQQBtWsCMIHfMDEGCCsGAQUFBwIBFiVodHRwczovL2FjZzQuYWNlcHRh
+        LmNvbS9DUFMtQWNlcHRhY29tMIGpBggrBgEFBQcCAjCBnDAWFg9BY2VwdGEuY29t
+        IFMuQS4wAwIBAhqBgUVsIHRpdHVsYXIgaGEgc2lkbyB2YWxpZGFkbyBlbiBmb3Jt
+        YSBwcmVzZW5jaWFsLCBxdWVkYW5kbyBoYWJpbGl0YWRvIGVsIENlcnRpZmljYWRv
+        IHBhcmEgdXNvIHRyaWJ1dGFyaW8sIHBhZ29zLCBjb21lcmNpbyB5IG90cm9zLjBa
+        BgNVHRIEUzBRoBgGCCsGAQQBwQECoAwWCjk2OTE5MDUwLTigJAYIKwYBBQUHCAOg
+        GDAWDAo5NjkxOTA1MC04BggrBgEEAcEBAoEPaW5mb0BhY2VwdGEuY29tMF8GA1Ud
+        EQRYMFagGAYIKwYBBAHBAQGgDBYKMTIxNTY3NjktNaAkBggrBgEFBQcIA6AYMBYM
+        CjEyMTU2NzY5LTUGCCsGAQQBwQECgRRMQ0FOQ0lOT0ZAUklQTEVZLkNPTTBHBggr
+        BgEFBQcBAQQ7MDkwNwYIKwYBBQUHMAGGK2h0dHBzOi8vYWNnNC5hY2VwdGEuY29t
+        L2FjZzQvb2NzcC9DbGFzZTMtRzQwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cHM6Ly9h
+        Y2c0LmFjZXB0YS5jb20vYWNnNC9jcmwvQ2xhc2UzLUc0LmNybDANBgkqhkiG9w0B
+        AQsFAAOCAQEABq/W9B3jbX5NCppswhtzn/MCm6+VHh5exFEmojtKgg1ggC54bbbC
+        XcyQ6LgsEsWnm1hH5BKdAMnCQNyICIfGOCSpIfrqJvwXtoMo6mZp1jPMp4S/E9+D
+        7NVWeTS9/lqzIyzJdmtCZkoR4L4F6zauLz3WfyW7Zz/kPzL3uBM14o70pgtYCm4D
+        TvO0f33WPFmehpsBNu9EutctFBLoi/YnhiObSSReloMlhOshlKvfh3A0OgEa6OsN
+        EBYwCdznAhS02Md39VBhjHQQi6KRly2OKnzL7owm7Yfk08IpSTg1RNHsVghz5Usf
+        WNEIWyQsaG88Z/TAs+BWGXJoO/PItUid4g==
+      </X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</EnvioDTE>

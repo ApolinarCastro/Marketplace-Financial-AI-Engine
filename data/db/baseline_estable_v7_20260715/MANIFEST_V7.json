@@ -1,0 +1,18 @@
+{
+  "baseline": "BASELINE_ESTABLE_V7",
+  "description": "Post F0-03: test data removed (52 rows, \\). 374,251 rows ledger, \\.95B.",
+  "created": "2026-07-15T16:37:42.959501",
+  "sha256": "bcb19ab49a2da3d2a848a8e81b86e559c46285afdfa7d126454255712d5232a8",
+  "sha256_actual": "bcb19ab49a2da3d2a848a8e81b86e559c46285afdfa7d126454255712d5232a8",
+  "sha256_production": "bcb19ab49a2da3d2a848a8e81b86e559c46285afdfa7d126454255712d5232a8",
+  "note": "Production DB hash may differ from snapshot due to DuckDB WAL writes during test runs. Data integrity verified.",
+  "forensic_20260717": {
+    "event": "F4-R2 modified V7 (6 rows deleted from marketplace_ledger_v1). Restored from .bak on 2026-07-17.",
+    "original_hash": "bcb19ab49a2da3d2a848a8e81b86e559c46285afdfa7d126454255712d5232a8",
+    "modified_hash": "29c3cef740dcb2aa0a83d5c35013c6e66ee707ba3b9c91272a541d509846b71b",
+    "forensic_modificado": "meli_financial_v4.db.forensic_modificado",
+    "forensic_original": "meli_financial_v4.db.forensic_original",
+    "restored_from_bak": true,
+    "restored_hash": "bcb19ab49a2da3d2a848a8e81b86e559c46285afdfa7d126454255712d5232a8"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "waterfall_ripley",
+  "arm": "current",
+  "median_duration_ms": 3.5359500034246594,
+  "median_memory_mb": 0.14296627044677734,
+  "median_sql_count": 4.0,
+  "stddev_duration_ms": 0.36081410985890083,
+  "stddev_memory_mb": 0.0,
+  "runs": 10,
+  "success_rate": 1.0,
+  "timestamp": 1783626381.3248925
+}

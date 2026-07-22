@@ -1,0 +1,19 @@
+accounting_document_creation_date,currency_iso_code,date_created,order_id,order_category_type,shipping_type_code,shop_id,shop_name,refund_commission_fee,refund_order_amount,commission_fee,order_amount,transfer_amount,Descuento FF - Otros,Descuento FF - pick and pack,Descuento FF - sobreestadía,Descuento operacional (FF),Descuento operación VAS (FF),Descuento por almacenamiento diario (FF),Descuento por almacenamiento prologando (FF),Descuento por cancelación (FF),Descuento por cofinanciamiento logístico (FF),Descuento por compensación (FF),Descuento por cupones de despacho (FF),Descuento por logística inversa (FF),Descuento por planes de medio (FF),Descuento por Recogida (FF),Descuento por retiro anticipado (FF),Devoluciones OPEX (FF),Otros descuentos (FF)
+,CLP,,24632323701-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,0,0,0
+2026-07-05,CLP,2026-06-02 12:06:16,24736142201-A,FF,ST,2815,NICOPOLY,4138,22990,0,0,-18852,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,0,0,0
+,CLP,,24838296501-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,0,0,0
+,CLP,,24839868001-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,0,0,0
+,CLP,,24843989101-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,0,0,0
+,CLP,,24849638501-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24852593201-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24856071401-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24857764402-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24860769602-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24861271401-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24861923001-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24863530401-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24864854201-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24865312502-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24865870401-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24866466102-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,3400,0,0,0,0,0,0,0,0,0,0,0

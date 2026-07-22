@@ -1,0 +1,199 @@
+{
+  "question": "¿Qué costo operacional aumentó?",
+  "period": "2026-06-30 00:00:00",
+  "answer": {
+    "summary": "Mayor aumento: total_ajustes ($15,466,379)"
+  },
+  "explanation": {
+    "text": "Variacion de costos vs periodo anterior.",
+    "bullet_points": [
+      "RIPLEY: total_ajustes $+15,466,379",
+      "RIPLEY: total_costos_comerciales $+3,192,473",
+      "RIPLEY: total_costos_operacionales $+795,428"
+    ]
+  },
+  "breakdown": [
+    {
+      "marketplace": "ripley",
+      "component": "total_ajustes",
+      "current": -1702151.0,
+      "previous": -17168530.0,
+      "delta": 15466379.0
+    },
+    {
+      "marketplace": "ripley",
+      "component": "total_costos_comerciales",
+      "current": -1963151.0,
+      "previous": -5155624.0,
+      "delta": 3192473.0
+    },
+    {
+      "marketplace": "ripley",
+      "component": "total_costos_operacionales",
+      "current": -3776.0,
+      "previous": -799204.0,
+      "delta": 795428.0
+    }
+  ],
+  "evidence": [
+    {
+      "marketplace": "ripley",
+      "kpi": "cost_change",
+      "value": 15466379.0,
+      "source": "marketplace_cierre_financiero_v1",
+      "sql": "SELECT total_ajustes FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='ripley' AND periodo_fin='2026-06-30 00:00:00'",
+      "components": {
+        "total_ajustes": -1702151.0,
+        "delta": 15466379.0
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "cost_change",
+      "value": 3192473.0,
+      "source": "marketplace_cierre_financiero_v1",
+      "sql": "SELECT total_costos_comerciales FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='ripley' AND periodo_fin='2026-06-30 00:00:00'",
+      "components": {
+        "total_costos_comerciales": -1963151.0,
+        "delta": 3192473.0
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "cost_change",
+      "value": 795428.0,
+      "source": "marketplace_cierre_financiero_v1",
+      "sql": "SELECT total_costos_operacionales FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='ripley' AND periodo_fin='2026-06-30 00:00:00'",
+      "components": {
+        "total_costos_operacionales": -3776.0,
+        "delta": 795428.0
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    }
+  ]
+}

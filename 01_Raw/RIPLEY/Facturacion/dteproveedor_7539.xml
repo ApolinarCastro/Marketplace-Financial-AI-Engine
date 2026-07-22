@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioDTE xmlns="http://www.sii.cl/SiiDte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd">
+  <SetDTE ID="EDTE142246395D1235987839">
+    <Caratula version="1.0">
+      <RutEmisor>83382700-6</RutEmisor>
+      <RutEnvia>12156769-5</RutEnvia>
+      <RutReceptor>77898100-9</RutReceptor>
+      <FchResol>2013-03-28</FchResol>
+      <NroResol>38</NroResol>
+      <TmstFirmaEnv>2026-06-25T10:01:38</TmstFirmaEnv>
+      <SubTotDTE>
+        <TpoDTE>52</TpoDTE>
+        <NroDTE>1</NroDTE>
+      </SubTotDTE>
+    </Caratula>
+    <DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+      <Documento ID="S20260625T052F0054087134">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>52</TipoDTE>
+            <Folio>54087134</Folio>
+            <FchEmis>2026-06-25</FchEmis>
+            <IndTraslado>6</IndTraslado>
+            <MntBruto>1</MntBruto>
+            <FmaPago>1</FmaPago>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>83382700-6</RUTEmisor>
+            <RznSoc>COMERCIAL ECCSA S.A.</RznSoc>
+            <GiroEmis>Grandes Tiendas</GiroEmis>
+            <Acteco>471910</Acteco>
+            <Sucursal>Log.Inversa</Sucursal>
+            <DirOrigen>Av. Santa Margarita  448</DirOrigen>
+            <CmnaOrigen>San Bernardo</CmnaOrigen>
+            <CiudadOrigen>Metropolitana</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>77898100-9</RUTRecep>
+            <RznSocRecep>IMPORTADORA Y COMERCIALIZADORA NANDA SPA</RznSocRecep>
+            <GiroRecep>Particular</GiroRecep>
+            <DirRecep>EUSEBIO LILLO     333</DirRecep>
+            <CmnaRecep>RECOLETA</CmnaRecep>
+            <CiudadRecep>RECOLETA</CiudadRecep>
+          </Receptor>
+          <Transporte>
+            <CmnaDest>RECOLETA</CmnaDest>
+          </Transporte>
+          <Totales>
+            <MntNeto>141603</MntNeto>
+            <MntExe>0</MntExe>
+            <TasaIVA>19</TasaIVA>
+            <IVA>33215</IVA>
+            <MntTotal>174818</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40844999</VlrCodigo>
+          </CdgItem>
+          <NmbItem>POLERA HALTER CALADA BLANCO/PLATEADO  NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <PrcItem>10605</PrcItem>
+          <MontoItem>10605</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>2</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40845007</VlrCodigo>
+          </CdgItem>
+          <NmbItem>SHORT CON BOTONES DELANTEROS NEGRO NICOPOLY</NmbItem>
+          <QtyItem>2</QtyItem>
+          <PrcItem>12052</PrcItem>
+          <MontoItem>24104</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>3</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40845018</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PANTALON TIPO CREPE  AJUSTABLE NEGRO NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>4</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40844978</VlrCodigo>
+          </CdgItem>
+          <NmbItem>POLERA HALTER CALADA BLANCO/DORADO NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>5</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40845027</VlrCodigo>
+          </CdgItem>
+          <NmbItem>SHORT CON BOTONES DELANTEROS  BLANCO NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>6</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40844982</VlrCodigo>
+          </CdgItem>
+          <NmbItem>GILET HALTER ESPALDA DESCUBIERTA BLANCO NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>15153</PrcItem>
+          <MontoItem>45459</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>7</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40845010</VlrCodigo>
+          </CdgItem>
+          <NmbItem>POLERA HALTER CALADA BLANCO/DORADO NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>8</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40845025</VlrCodigo>
+          </CdgItem>
+          <NmbItem>TOP PABILO PRINT LEOPARDO CAFE  NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>9</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40845031</VlrCodigo>
+          </CdgItem>
+          <NmbItem>SHORT CON BOTONES DELANTEROS CELESTE NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>10</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40845001</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PANTALON TIPO CREPE  AJUSTABLE KHAKI NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>11</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40845029</VlrCodigo>
+          </CdgItem>
+          <NmbItem>GILET TIPO CREPE  NEGRO NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <PrcItem>12397</PrcItem>
+          <MontoItem>12397</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>12</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40845012</VlrCodigo>
+          </CdgItem>
+          <NmbItem>GILET HALTER ESPALDA DESCUBIERTA NEGRO NICOPOLY</NmbItem>
+          <QtyItem>2</QtyItem>
+          <PrcItem>15153</PrcItem>
+          <MontoItem>30306</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>13</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40845016</VlrCodigo>
+          </CdgItem>
+          <NmbItem>GILET HALTER ESPALDA DESCUBIERTA CELESTE NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>14</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40844993</VlrCodigo>
+          </CdgItem>
+          <NmbItem>SHORT CON BOTONES DELANTEROS  BLANCO NICOPOLY</NmbItem>
+          <QtyItem>1</QtyItem>
+          <PrcItem>15153</PrcItem>
+          <MontoItem>15153</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>15</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40844997</VlrCodigo>
+          </CdgItem>
+          <NmbItem>POLERA HALTER CALADA BLANCO/PLATEADO  NICOPOLY</NmbItem>
+          <QtyItem>2</QtyItem>
+          <PrcItem>12397</PrcItem>
+          <MontoItem>24794</MontoItem>
+        </Detalle>
+        <Referencia>
+          <NroLinRef>1</NroLinRef>
+          <TpoDocRef>CTZ</TpoDocRef>
+          <FolioRef>13835680</FolioRef>
+          <FchRef>2026-06-25</FchRef>
+          <RazonRef>-</RazonRef>
+        </Referencia>
+        <TED version="1.0">
+          <DD>
+            <RE>83382700-6</RE>
+            <TD>52</TD>
+            <F>54087134</F>
+            <FE>2026-06-25</FE>
+            <RR>77898100-9</RR>
+            <RSR>IMPORTADORA Y COMERCIALIZADORA NANDA SPA</RSR>
+            <MNT>174818</MNT>
+            <IT1>POLERA HALTER CALADA BLANCO/PLATEADO  NI</IT1>
+            <CAF version="1.0">
+              <DA>
+                <RE>83382700-6</RE>
+                <RS>COMERCIAL ECCSA S A</RS>
+                <TD>52</TD>
+                <RNG>
+                  <D>53886049</D>
+                  <H>54886048</H>
+                </RNG>
+                <FA>2026-06-10</FA>
+                <RSAPK>
+                  <M>wBNPAvU8++vtIgtWX/joW59GeWsaze8HRIWSFSgF+pPa5bkGuBzJ1+BWsJ6UVDNg0yVbQB6xNm9YvPwDJ0B05w==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo="SHA1withRSA">G5nleCdMdIhpfvO+E31loWkBDs71ssjyPqwm8yrmVGlVaogQcU3UpAwK5Jv7NalZDBpibCow3n3hwZ9LrPnefw==</FRMA>
+            </CAF>
+            <TSTED>2026-06-25T10:00:56</TSTED>
+          </DD>
+          <FRMT algoritmo="SHA1withRSA">s9eeH483Tu1qpjDNYQd4foCoijKaFVFz993dT7luBtt805geGD6L1d2LZeAezZlv0TAKedWJIMnP
+Sn2RyiJ/vg==
+</FRMT>
+        </TED>
+        <TmstFirma>2026-06-25T10:00:56</TmstFirma>
+      </Documento>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#S20260625T052F0054087134">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>lrSJHdvv8u7Zjuzqrb375EU35yA=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>
+    K7unRyzaatlhnta1cJrUxMQVnv0XtGmTXlc5lPSNMXEDq//bHjBqVSHDR2Fownuy
+    j/CbBsTpvJKKBVPINDWm5gbfE/g1tr6qPEj6DGdHJ7urlvKwL+CdCcjdU/yxJwA7
+    e4SD6kdl9iZgb5DkEVNAbDUdqh9AytzndgHVdK1IyKFL3+0wJChmIXwetDEvnTSA
+    2+AKLe1ZLU9xNNxCAsWLIvp7CUpwC3rFzZOM63oTBB30i1Xz65Dbq0h7RJSwJx8X
+    thPDIqPcDF5Z5jOdjSid2o0tfC1IohMk6wd1nwQabLQgF+y3yeY/gsROpVgBmRI9
+    35VUPxqdlbCa0OT7RSIRxA==
+  </SignatureValue>
+        <KeyInfo>
+          <KeyValue>
+            <RSAKeyValue>
+              <Modulus>
+          xxe2x7Akqr//lxloD9+eolTEPkgJGmLObtSXZXq/CJttvn6HmFE2XzgnlL5oWkwa
+          nkNbrmtDPGF4GCSefmrD/pwef/Fd5KQW4vUG7U5GmYSpF5molFISG6we2xeTvrnb
+          1l1eWlyajWZHatCRM3dZM3JiF5MRMh67MASzOcNaq0pWCwuo0fMUiI9cZkHefr4E
+          ki74WlBORuA19TzdzUTRpjllEvCB19fQKz+bqA9keOdOagwrdgg/oYhkECvhtknj
+          MK7qE50e6CRKbJmKiS5/zBSi7mrFlV5bcExR6CjNofuNaHwFdYK4dbfumqXjxjnf
+          JMPGJDSelpkgb3ZaTLbhLw==
+        </Modulus>
+              <Exponent>AQAB</Exponent>
+            </RSAKeyValue>
+          </KeyValue>
+          <X509Data>
+            <X509Certificate>
+        MIIHvjCCBaagAwIBAgIKF6Wy1QABABArnzANBgkqhkiG9w0BAQsFADCBvzELMAkG
+        A1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQH
+        EwhTYW50aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9y
+        aWRhZCBDZXJ0aWZpY2Fkb3JhMR4wHAYDVQQDExVFLUNFUlRDSElMRSBDQSBGRVMg
+        MDIxJjAkBgkqhkiG9w0BCQEWF3NjbGllbnRlQGUtY2VydGNoaWxlLmNsMB4XDTI1
+        MTAyMjEzMTM1NFoXDTI4MTAyMTEzMTM1NFowgboxCzAJBgNVBAYTAkNMMSIwIAYD
+        VQQIExlNRVRST1BPTElUQU5BIERFIFNBTlRJQUdPMREwDwYDVQQHEwhTQU5USUFH
+        TzEcMBoGA1UEChMTQ09NRVJDSUFMIEVDQ1NBIFNBIDEKMAgGA1UECwwBKjEkMCIG
+        A1UEAxMbTFVJUyBNQU5VRUwgQ0FOQ0lOTyBGVUVOVEVTMSQwIgYJKoZIhvcNAQkB
+        FhVUUklCVVRBUklBQFJJUExFWS5DT00wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+        ggEKAoIBAQDHF7bHsCSqv/+XGWgP356iVMQ+SAkaYs5u1Jdler8Im22+foeYUTZf
+        OCeUvmhaTBqeQ1uua0M8YXgYJJ5+asP+nB5/8V3kpBbi9QbtTkaZhKkXmaiUUhIb
+        rB7bF5O+udvWXV5aXJqNZkdq0JEzd1kzcmIXkxEyHrswBLM5w1qrSlYLC6jR8xSI
+        j1xmQd5+vgSSLvhaUE5G4DX1PN3NRNGmOWUS8IHX19ArP5uoD2R4505qDCt2CD+h
+        iGQQK+G2SeMwruoTnR7oJEpsmYqJLn/MFKLuasWVXltwTFHoKM2h+41ofAV1grh1
+        t+6apePGOd8kw8YkNJ6WmSBvdlpMtuEvAgMBAAGjggK9MIICuTCCAV8GA1UdIASC
+        AVYwggFSMIIBTgYIKwYBBAHDUgUwggFAMD0GCCsGAQUFBwIBFjFodHRwczovL3d3
+        dy5lLWNlcnRjaGlsZS5jbC9wb2xpdGljYXMteS1wcmFjdGljYXMvMIH+BggrBgEF
+        BQcCAjCB8R6B7gBFAGwAIAByAGUAcwBwAG8AbgBkAGUAcgAgAGUAcwB0AGUAIABm
+        AG8AcgBtAHUAbABhAHIAaQBvACAAZQBzACAAdQBuACAAcgBlAHEAdQBpAHMAaQB0
+        AG8AIABpAG4AZABpAHMAcABlAG4AcwBhAGIAbABlACAAcABhAHIAYQAgAGQAYQBy
+        ACAAaQBuAGkAYwBpAG8AIABhAGwAIABwAHIAbwBjAGUAcwBvACAAZABlACAAYwBl
+        AHIAdABpAGYAaQBjAGEAYwBpAPMAbgAuACAAUABvAHMAdABlAHIAaQBvAHIAbQBl
+        AG4AdABlACwwHQYDVR0OBBYEFPG3tlAdylBVForahTHdsiyiCPVCMAsGA1UdDwQE
+        AwIE8DAjBgNVHREEHDAaoBgGCCsGAQQBwQEBoAwWCjEyMTU2NzY5LTUwHwYDVR0j
+        BBgwFoAUdNYhs/Ra6C18u1kGY0PvabQ6kwQwQAYDVR0fBDkwNzA1oDOgMYYvaHR0
+        cDovL2NybC5lY2VydGNoaWxlLmNsL0UtQ0VSVENISUxFQ0FGRVMwMi5jcmwwPQYI
+        KwYBBQUHAQEEMTAvMC0GCCsGAQUFBzABhiFodHRwOi8vb2NzcGZlcy5lY2VydGNo
+        aWxlLmNsL29jc3AwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUIgd3STZfUOoaJ
+        nQaHiM5vg6/MYEWG0uwIhsfKfQIBZAIBBzAjBgNVHRIEHDAaoBgGCCsGAQQBwQEC
+        oAwWCjk2OTI4MTgwLTUwDQYJKoZIhvcNAQELBQADggIBACkoXjxh0nEh1YCqXd1f
+        rC53GRtMjZa1uAPHITRFFn+pAMd/3usMLZR2QndL3gzFOGFOs7gtOq+aXJ7hi9oK
+        V0TiLHzZL8sY4St4d5PiVDPss90b5X8O0ZQHE5KTrTB05um2RUyCNP2SrEMqtob7
+        rTpyqqLZb52+i9w9FXJjbznI5YVR1VcprH+zms97CBKpc+XwyV7XN8W1b4x5M88q
+        ovj6ZL47Gq/O7Oi/omoJrPEqFYQI/WNtIEpMWZxYwH3UG1N14RDyWqqCoyWmOlgZ
+        HtDl1mAwZVOwFEHflQaUWagJOAzbytp2utk/4aZCtlThHC6qI/zJX6Kw0H2m143D
+        t50EGy6L42sPwS7r8HgRjYxcIExHX9K1wSm3s5DX0oTCyck9B+R8ie3WmvAGbPfV
+        cRTXqZkaCYkMd+nDqzo6/NaXX6i/9dTaBMUbSP28w1UHasxfaORF7WU/9jaxS2IW
+        mPFraOdJEmO3x55Y/EzWO4YOpG/kAYUhsPiVze82V9h2jDHk1epfGiNef/69ktu6
+        WVvPdfu7KWgUEXP4fuPl+V6qcR6wGx8zhtbjusCR1ap3zrIqI4KnVoRsxZvShzse
+        LQowlMHlSo/4/2vvYuMPwDV6CbOwyryFFx5/enyuNuOC5a8UsZDiYou/nCqnGrC1
+        7d6XXzhPBLCVBmoPdRXNlHwZ
+      </X509Certificate>
+          </X509Data>
+        </KeyInfo>
+      </Signature>
+    </DTE>
+  </SetDTE>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="#EDTE142246395D1235987839">
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>489KoI7fujYhv+5wqybwbmzWq0k=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+    mR38iz+TBEVWuC212VYDNIHTZ/fXICxKA9wmu8Svf8b0HVQiKrys/96LxhaivEDT
+    Yzj5/VlPzM+okmUIyrMdt8mMj1f+bwGTDhXMN7ov2i+3Ukyw7ZmEwWlZeA0pofrp
+    yjznkgunSRVnKwR0dfv8qM7XFXvpOp1pLh3VVMAIMgFLvPhJ/45MxBOMRcpHNoOv
+    6aKcvAYpEwNjCitpxEx8f6QK/01R70NZJtIyvzdoRzGdFBDAYbqmmwU2Tb/LcloG
+    4tStNjaHdkMz69YkoWg/SdlqcxcJNQSVaSecvLR/I8dDI3evOldFpVt7v6ZYzfzW
+    8/HPOgIb+XXbeFcjsrAqMw==
+  </SignatureValue>
+    <KeyInfo>
+      <KeyValue>
+        <RSAKeyValue>
+          <Modulus>
+          xxe2x7Akqr//lxloD9+eolTEPkgJGmLObtSXZXq/CJttvn6HmFE2XzgnlL5oWkwa
+          nkNbrmtDPGF4GCSefmrD/pwef/Fd5KQW4vUG7U5GmYSpF5molFISG6we2xeTvrnb
+          1l1eWlyajWZHatCRM3dZM3JiF5MRMh67MASzOcNaq0pWCwuo0fMUiI9cZkHefr4E
+          ki74WlBORuA19TzdzUTRpjllEvCB19fQKz+bqA9keOdOagwrdgg/oYhkECvhtknj
+          MK7qE50e6CRKbJmKiS5/zBSi7mrFlV5bcExR6CjNofuNaHwFdYK4dbfumqXjxjnf
+          JMPGJDSelpkgb3ZaTLbhLw==
+        </Modulus>
+          <Exponent>AQAB</Exponent>
+        </RSAKeyValue>
+      </KeyValue>
+      <X509Data>
+        <X509Certificate>
+        MIIHvjCCBaagAwIBAgIKF6Wy1QABABArnzANBgkqhkiG9w0BAQsFADCBvzELMAkG
+        A1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQH
+        EwhTYW50aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9y
+        aWRhZCBDZXJ0aWZpY2Fkb3JhMR4wHAYDVQQDExVFLUNFUlRDSElMRSBDQSBGRVMg
+        MDIxJjAkBgkqhkiG9w0BCQEWF3NjbGllbnRlQGUtY2VydGNoaWxlLmNsMB4XDTI1
+        MTAyMjEzMTM1NFoXDTI4MTAyMTEzMTM1NFowgboxCzAJBgNVBAYTAkNMMSIwIAYD
+        VQQIExlNRVRST1BPTElUQU5BIERFIFNBTlRJQUdPMREwDwYDVQQHEwhTQU5USUFH
+        TzEcMBoGA1UEChMTQ09NRVJDSUFMIEVDQ1NBIFNBIDEKMAgGA1UECwwBKjEkMCIG
+        A1UEAxMbTFVJUyBNQU5VRUwgQ0FOQ0lOTyBGVUVOVEVTMSQwIgYJKoZIhvcNAQkB
+        FhVUUklCVVRBUklBQFJJUExFWS5DT00wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+        ggEKAoIBAQDHF7bHsCSqv/+XGWgP356iVMQ+SAkaYs5u1Jdler8Im22+foeYUTZf
+        OCeUvmhaTBqeQ1uua0M8YXgYJJ5+asP+nB5/8V3kpBbi9QbtTkaZhKkXmaiUUhIb
+        rB7bF5O+udvWXV5aXJqNZkdq0JEzd1kzcmIXkxEyHrswBLM5w1qrSlYLC6jR8xSI
+        j1xmQd5+vgSSLvhaUE5G4DX1PN3NRNGmOWUS8IHX19ArP5uoD2R4505qDCt2CD+h
+        iGQQK+G2SeMwruoTnR7oJEpsmYqJLn/MFKLuasWVXltwTFHoKM2h+41ofAV1grh1
+        t+6apePGOd8kw8YkNJ6WmSBvdlpMtuEvAgMBAAGjggK9MIICuTCCAV8GA1UdIASC
+        AVYwggFSMIIBTgYIKwYBBAHDUgUwggFAMD0GCCsGAQUFBwIBFjFodHRwczovL3d3
+        dy5lLWNlcnRjaGlsZS5jbC9wb2xpdGljYXMteS1wcmFjdGljYXMvMIH+BggrBgEF
+        BQcCAjCB8R6B7gBFAGwAIAByAGUAcwBwAG8AbgBkAGUAcgAgAGUAcwB0AGUAIABm
+        AG8AcgBtAHUAbABhAHIAaQBvACAAZQBzACAAdQBuACAAcgBlAHEAdQBpAHMAaQB0
+        AG8AIABpAG4AZABpAHMAcABlAG4AcwBhAGIAbABlACAAcABhAHIAYQAgAGQAYQBy
+        ACAAaQBuAGkAYwBpAG8AIABhAGwAIABwAHIAbwBjAGUAcwBvACAAZABlACAAYwBl
+        AHIAdABpAGYAaQBjAGEAYwBpAPMAbgAuACAAUABvAHMAdABlAHIAaQBvAHIAbQBl
+        AG4AdABlACwwHQYDVR0OBBYEFPG3tlAdylBVForahTHdsiyiCPVCMAsGA1UdDwQE
+        AwIE8DAjBgNVHREEHDAaoBgGCCsGAQQBwQEBoAwWCjEyMTU2NzY5LTUwHwYDVR0j
+        BBgwFoAUdNYhs/Ra6C18u1kGY0PvabQ6kwQwQAYDVR0fBDkwNzA1oDOgMYYvaHR0
+        cDovL2NybC5lY2VydGNoaWxlLmNsL0UtQ0VSVENISUxFQ0FGRVMwMi5jcmwwPQYI
+        KwYBBQUHAQEEMTAvMC0GCCsGAQUFBzABhiFodHRwOi8vb2NzcGZlcy5lY2VydGNo
+        aWxlLmNsL29jc3AwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUIgd3STZfUOoaJ
+        nQaHiM5vg6/MYEWG0uwIhsfKfQIBZAIBBzAjBgNVHRIEHDAaoBgGCCsGAQQBwQEC
+        oAwWCjk2OTI4MTgwLTUwDQYJKoZIhvcNAQELBQADggIBACkoXjxh0nEh1YCqXd1f
+        rC53GRtMjZa1uAPHITRFFn+pAMd/3usMLZR2QndL3gzFOGFOs7gtOq+aXJ7hi9oK
+        V0TiLHzZL8sY4St4d5PiVDPss90b5X8O0ZQHE5KTrTB05um2RUyCNP2SrEMqtob7
+        rTpyqqLZb52+i9w9FXJjbznI5YVR1VcprH+zms97CBKpc+XwyV7XN8W1b4x5M88q
+        ovj6ZL47Gq/O7Oi/omoJrPEqFYQI/WNtIEpMWZxYwH3UG1N14RDyWqqCoyWmOlgZ
+        HtDl1mAwZVOwFEHflQaUWagJOAzbytp2utk/4aZCtlThHC6qI/zJX6Kw0H2m143D
+        t50EGy6L42sPwS7r8HgRjYxcIExHX9K1wSm3s5DX0oTCyck9B+R8ie3WmvAGbPfV
+        cRTXqZkaCYkMd+nDqzo6/NaXX6i/9dTaBMUbSP28w1UHasxfaORF7WU/9jaxS2IW
+        mPFraOdJEmO3x55Y/EzWO4YOpG/kAYUhsPiVze82V9h2jDHk1epfGiNef/69ktu6
+        WVvPdfu7KWgUEXP4fuPl+V6qcR6wGx8zhtbjusCR1ap3zrIqI4KnVoRsxZvShzse
+        LQowlMHlSo/4/2vvYuMPwDV6CbOwyryFFx5/enyuNuOC5a8UsZDiYou/nCqnGrC1
+        7d6XXzhPBLCVBmoPdRXNlHwZ
+      </X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</EnvioDTE>

@@ -1,0 +1,99 @@
+{
+  "contract_version": "1.0.0",
+  "source": "engine/v4/domain/canonical_semantics.py",
+  "enums": {
+    "FinancialGroup": [
+      "ingresos",
+      "devoluciones",
+      "costos_operacionales",
+      "costos_comerciales",
+      "recuperaciones_y_bonificaciones",
+      "ajustes",
+      "tesoreria",
+      "impuestos"
+    ],
+    "CashRole": [
+      "REAL_CASH",
+      "ACCRUAL",
+      "PASS_THROUGH",
+      "MIRROR_ZERO",
+      "UNASSIGNED"
+    ],
+    "EventType": [
+      "ROOT_EVENT",
+      "MECHANISM",
+      "SETTLEMENT",
+      "UNASSIGNED"
+    ],
+    "Marketplace": [
+      "ML",
+      "PARIS",
+      "RIPLEY",
+      "FALABELLA",
+      "SHOPIFY"
+    ],
+    "AmountSign": [
+      "POSITIVE",
+      "NEGATIVE",
+      "VARIABLE"
+    ]
+  },
+  "registry_counts": {
+    "financial_group_meta": 8,
+    "pnl_order": 8,
+    "marketplace_meta": 5,
+    "metric_definitions": 8
+  },
+  "consumers": [
+    {
+      "name": "FinancialEngine",
+      "uses": [
+        "financial_group meta",
+        "marketplace uniqueness",
+        "metric definitions"
+      ]
+    },
+    {
+      "name": "TraceabilityEngine",
+      "uses": [
+        "marketplace uniqueness",
+        "validate helpers"
+      ]
+    },
+    {
+      "name": "MarketplaceAuditor",
+      "uses": [
+        "financial_group values"
+      ]
+    },
+    {
+      "name": "API",
+      "uses": [
+        "metric definitions",
+        "financial_group meta",
+        "pnl_order"
+      ]
+    },
+    {
+      "name": "Dashboard",
+      "uses": [
+        "pnl_order",
+        "financial_group meta"
+      ]
+    },
+    {
+      "name": "Copilot",
+      "uses": [
+        "metric definitions",
+        "financial_group meta"
+      ]
+    },
+    {
+      "name": "EvidenceOrchestrator",
+      "uses": [
+        "metric definitions",
+        "validate helpers"
+      ]
+    }
+  ]
+}

@@ -39,9 +39,17 @@ class DatabaseV4:
             logger.warning(f"Error closing database connection: {e}")
 
     @classmethod
-    def get(cls):
+    def get(cls, read_only=True):
+        if cls._instance is not None:
+            # Detect zombie singleton: connection was closed but _instance still alive
+            if getattr(cls._instance, '_closed', False):
+                cls.reset()
+            # If we need write access but current connection is read-only, recreate
+            elif not read_only and getattr(cls._instance, 'is_read_only', True):
+                cls.reset()
         if cls._instance is None:
-            cls._instance = cls()
+            cls._instance = cls(read_only=read_only)
+            cls._instance.is_read_only = read_only
             cls._register_shutdown_hook()
         return cls._instance
 
@@ -104,6 +112,10 @@ class DatabaseV4:
                 self.conn.execute(f"ALTER TABLE marketplace_ledger_v1 ADD COLUMN {col} {col_type}")
             except Exception:
                 pass
+        try:
+            self.conn.execute("ALTER TABLE marketplace_ledger_v1 ADD COLUMN execution_id TEXT")
+        except Exception:
+            pass
 
         # Hot-migration: add extra DTE columns if they don't exist
         for col in ["tipo_dte", "rut_receptor", "marketplace"]:
@@ -171,15 +183,37 @@ class DatabaseV4:
         ]
         for sql in ddl:
             self.conn.execute(sql)
+
+        for col, col_type in [
+            ("file_path", "TEXT"),
+            ("content_sha256", "TEXT"),
+            ("hash_algorithm", "TEXT"),
+            ("file_size_bytes", "BIGINT"),
+            ("marketplace", "TEXT"),
+            ("document_type", "TEXT"),
+            ("period", "TEXT"),
+            ("registered_at", "TIMESTAMP"),
+        ]:
+            try:
+                self.conn.execute(f"ALTER TABLE file_registry ADD COLUMN {col} {col_type}")
+            except Exception:
+                pass
             
     def file_registered(self, fhash: str) -> bool:
         res = self.query("SELECT 1 FROM file_registry WHERE file_hash = ?", [fhash])
         return not res.empty
 
-    def register_file(self, fpath: str | Path, fname: str, source: str, fhash: str, rows: int):
+    def register_file(
+        self, fpath: str | Path, fname: str, source: str, fhash: str, rows: int,
+        document_type: str | None = None, period: str | None = None,
+    ):
         self.execute(
-            "INSERT INTO file_registry (file_hash, file_name, source, rows_processed) VALUES (?, ?, ?, ?)",
-            [fhash, fname, source, rows]
+            "INSERT INTO file_registry "
+            "(file_hash, file_name, source, rows_processed, file_path, content_sha256, "
+            "hash_algorithm, file_size_bytes, marketplace, document_type, period, registered_at) "
+            "VALUES (?, ?, ?, ?, ?, ?, 'SHA-256', ?, ?, ?, ?, CURRENT_TIMESTAMP)",
+            [fhash, fname, source, rows, str(Path(fpath).resolve()), fhash,
+             Path(fpath).stat().st_size, source, document_type, period]
         )
 
     def truncate(self, table: str):

@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "policies": {
+    "FINANCIAL_STRUCTURE_LOCK": true,
+    "LEDGER_LOCK": true,
+    "LOADER_LOCK": true,
+    "KPI_ENGINE_LOCK": true,
+    "TAXONOMY_LOCK": true,
+    "EXECUTIVE_LOCK": true,
+    "AI_LAYER_LOCK": true,
+    "UI_SCOPE_LIMITATION": true
+  },
+  "protected_components": [
+    "surgical_loader.py",
+    "financial_closing.py",
+    "marketplace_auditor.py",
+    "marketplace_ledger",
+    "financial taxonomy",
+    "truth_type engine",
+    "executive_dashboard",
+    "dashboard financial structure",
+    "ai operational layer",
+    "ripley baseline",
+    "ripley regression guard",
+    "single financial truth"
+  ]
+}

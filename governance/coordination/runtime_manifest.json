@@ -1,0 +1,318 @@
+{
+  "manifest_version": "1.0.0",
+  "generated_at": "2026-07-21T19:00:00Z",
+  "generated_from_commit": "79ae47d5129133ee13ccb868cc70dd3c4535b288",
+  "contract": "CERTIFICATION_CONTRACT.md v1.0",
+
+  "runtime": {
+    "label": "Required for system operation",
+    "artifacts": [
+      {
+        "id": "R1",
+        "path": "data/db/meli_financial_v4.db",
+        "sha256": "c76c3fee51c31949571f829da6043f1682023dc39f5b093f7af794654dbf6fce",
+        "size_bytes": 55848960,
+        "type": "database/duckdb",
+        "purpose": "Single Financial Truth — ledger, classification, closing"
+      },
+      {
+        "id": "R2",
+        "path": "templates/dashboard.html",
+        "sha256": "52e30b990dcdb9fa1d88bccd026be66481b5d9fc2e2efd51fd51cad9d24af8f5",
+        "size_bytes": 83251,
+        "type": "template/html",
+        "purpose": "Auditor Dashboard UI"
+      },
+    {
+        "id": "R3",
+        "path": "templates/executive_dashboard.html",
+        "sha256": "818d66cd6a79edf621b0028587e6d2199badacbb2496728cc08093f8b33da388",
+        "size_bytes": 59520,
+        "type": "template/html",
+        "purpose": "Executive Dashboard UI / Reporte Gerencial"
+    },
+      {
+        "id": "R4",
+        "path": "templates/copilot.html",
+        "sha256": "cc6f956af7a4fa1295507992e1d9c4944b1c6a6cb2ce43c803548fea623a0f89",
+        "size_bytes": 14042,
+        "type": "template/html",
+        "purpose": "Financial Copilot UI"
+      },
+      {
+        "id": "R5",
+        "path": "templates/upload_center.html",
+        "sha256": "8abd13f04a5ca117c86e487971440868671693d177fe3cf2c01c0e7b664cbc2f",
+        "size_bytes": 13088,
+        "type": "template/html",
+        "purpose": "Upload Center UI"
+      },
+      {
+        "id": "R6",
+        "path": "templates/documentary_dashboard.html",
+        "sha256": "be713aa11edbf97b82a6633106d27c17354461a8a06f59ea7535565d0f2d5c92",
+        "size_bytes": 79983,
+        "type": "template/html",
+        "purpose": "Documentary Dashboard UI"
+      },
+      {
+        "id": "R7",
+        "path": "KnowledgeBase/Marketplace/Taxonomy/ml_v1.json",
+        "sha256": "ba9087b87a54ebc74898d319701741e3876600217080410ea9cf8dcc5a7898ac",
+        "size_bytes": 20564,
+        "type": "taxonomy/json",
+        "purpose": "ML canonical taxonomy (70 SIGNAL / 1 NOISE)"
+      },
+      {
+        "id": "R8",
+        "path": "KnowledgeBase/Marketplace/Taxonomy/paris_v1.json",
+        "sha256": "21b7117646badf3324321ff30acbbe405d18cdd748c3e82b643476cbe1c81458",
+        "size_bytes": 3830,
+        "type": "taxonomy/json",
+        "purpose": "PARIS canonical taxonomy (14 SIGNAL / 1 NOISE)"
+      },
+      {
+        "id": "R9",
+        "path": "KnowledgeBase/Marketplace/Taxonomy/ripley_v1.json",
+        "sha256": "220f8f314d1377a1e16dde6181de39a1f51c3b7c6a0c0690c2732f653be93cdc",
+        "size_bytes": 7205,
+        "type": "taxonomy/json",
+        "purpose": "RIPLEY canonical taxonomy (12 SIGNAL / 20 NOISE)"
+      },
+      {
+        "id": "R10",
+        "path": "KnowledgeBase/Marketplace/Taxonomy/falabella_v1.json",
+        "sha256": "30942ba71f8f30c00a31edf953376304bdf721142b30452cd854b21cdfe5c80f",
+        "size_bytes": 4456,
+        "type": "taxonomy/json",
+        "purpose": "FALABELLA canonical taxonomy (15 SIGNAL / 1 NOISE)"
+      },
+      {
+        "id": "R11",
+        "path": "taxonomy/taxonomy_rules.yaml",
+        "sha256": "ba856b6a05c61d5d2c976f0b3d2e239c61c2251ccdd61d2e3a54438d3ff452b6",
+        "size_bytes": 6477,
+        "type": "config/yaml",
+        "purpose": "Taxonomy rules with 200+ concepts across 9 financial groups"
+      },
+      {
+        "id": "R12",
+        "path": "taxonomy/taxonomy_mappings.yaml",
+        "sha256": "f3e0090370c2048e67d9cd85282c631eb3b63d51e8ffc978dc71f21d36cba233",
+        "size_bytes": 22869,
+        "type": "config/yaml",
+        "purpose": "600+ raw-detalle-to-concept mappings with financial_group"
+      },
+    {
+        "id": "R13",
+        "path": "taxonomy/taxonomy_loader.py",
+        "sha256": "f12d67a4f30078f56d431253e9f11c8d8a6f1cc158af8aaceaefa39ba2964b19",
+        "size_bytes": 3949,
+        "type": "code/python",
+        "purpose": "Python loader for YAML taxonomy files"
+    }
+    ]
+  },
+
+  "test": {
+    "label": "Required for certification execution",
+    "artifacts": [
+      {
+        "id": "T1",
+        "path": "data/db/baseline_estable_v8_candidate_20260717/meli_financial_v4.db",
+        "sha256": "733c759f8ea179d8bcadf4897d8a2998826acab693171636f04ae0653c236e00",
+        "size_bytes": 55848960,
+        "type": "database/duckdb",
+        "purpose": "V8 baseline — required by conftest v8_temp_db_path fixture for F4 suite"
+      },
+      {
+        "id": "T2",
+        "path": "data/db/BASELINE_ESTABLE_V9_TRUTH_RECOVERED/meli_financial_v4.db",
+        "sha256": "c76c3fee51c31949571f829da6043f1682023dc39f5b093f7af794654dbf6fce",
+        "size_bytes": 55848960,
+        "type": "database/duckdb",
+        "purpose": "V9 baseline — required by test_truth_005_registry.py v9_copy fixture"
+      },
+      {
+        "id": "T3",
+        "path": "tests/conftest.py",
+        "sha256": "508f57c442e8078e1979d3f60ffb5c768d4d49c5e32239109a2f7e44db4522f0",
+        "size_bytes": 4054,
+        "type": "config/pytest",
+        "purpose": "Pytest conftest with v8_db/v8_fe/v8_temp_db_path session fixtures"
+      },
+      {
+        "id": "T4",
+        "path": "tools/run_f4_suites.py",
+        "sha256": "172a4462f5498f101aed6110f2705c5b1c8fca0cadf8bcd3e819ff1d46f86c31",
+        "size_bytes": 36984,
+        "type": "script/python",
+        "purpose": "F4 harness v1.0.0-r6 — orchestrates certification suite with preflight, mutation detection, DB integrity"
+      },
+      {
+        "id": "T5",
+        "path": "tests/fixtures/f3_03/f3_03_fixture.xlsx",
+        "sha256": "9be8effcba44cce1810e775651f872b2b4891fb61850d0cf5a7aa6859fed7d9a",
+        "size_bytes": 5108,
+        "type": "fixture/xlsx",
+        "purpose": "F3 traceability fixture — required by test_f4_traceability.py RAW reproduction"
+      },
+      {
+        "id": "T6",
+        "path": "engine/v4/domain/canonical_semantics.py",
+        "sha256": "5025c3544cbb60ed47a74352b7a98550a4f0910d01513c3257656b573ef2f1b7",
+        "size_bytes": 19863,
+        "type": "code/python",
+        "purpose": "Canonical semantics domain — required by test_semantic_consistency.py"
+      },
+      {
+        "id": "T7",
+        "path": "engine/v4/semantic/__init__.py",
+        "sha256": "aea3f5d7481cda4492cab3951616b768890374f12e0482961a97830fbeb625cd",
+        "size_bytes": 5396,
+        "type": "code/python",
+        "purpose": "Semantic registry — required by test_semantic_consistency.py"
+      },
+      {
+        "id": "T8",
+        "path": "engine/v4/evidence/__init__.py",
+        "sha256": "88e79920a2d05c39f6fea76860db352efed73f16daed9e227e4e70e1f00f4eb1",
+        "size_bytes": 2941,
+        "type": "code/python",
+        "purpose": "Evidence package init — required by test_f4_traceability.py"
+      },
+      {
+        "id": "T9",
+        "path": "engine/v4/evidence/traceability.py",
+        "sha256": "7cd233355f675049af97a06345fbaabeca49a1924f0ef37519dfa4d60dea7a29",
+        "size_bytes": 2105,
+        "type": "code/python",
+        "purpose": "Traceability module — required by test_f4_traceability.py"
+      },
+      {
+        "id": "T10",
+        "path": "engine/v4/evidence/traceability_engine.py",
+        "sha256": "93bb82fd0cdcbe736a78596f28e944d48183dc688447b44a502868e990ac6f09",
+        "size_bytes": 13046,
+        "type": "code/python",
+        "purpose": "Traceability engine — required by test_f4_traceability.py"
+      },
+      {
+        "id": "T11",
+        "path": "engine/v4/evidence/contracts.py",
+        "sha256": "b7f4b8393ff22a064ca619b8c6b86b9f2833eb33177dfae3a871e41bfe6a6af5",
+        "size_bytes": 1900,
+        "type": "code/python",
+        "purpose": "Evidence contracts — imported by traceability.py"
+      },
+      {
+        "id": "T12",
+        "path": "engine/v4/evidence/evidence_link_registry.py",
+        "sha256": "986e5f256202470055d172b27aa72cd2d39fad887eed0e7810bbd21d5cfaaeb2",
+        "size_bytes": 1886,
+        "type": "code/python",
+        "purpose": "Evidence link registry — imported by traceability.py"
+      },
+      {
+        "id": "T13",
+        "path": "engine/v4/evidence/coverage_analyzer.py",
+        "sha256": "1cddaa6de40c7983f7f312a1720acf0624fd73a98f404bb95e586b1c69c044da",
+        "size_bytes": 4993,
+        "type": "code/python",
+        "purpose": "Coverage analyzer — imported by traceability.py"
+      },
+      {
+        "id": "T14",
+        "path": "engine/v4/evidence/gap_analyzer.py",
+        "sha256": "3fb169cbcec33103c981aa479d8950194182e74622b18497df864171f0946e3c",
+        "size_bytes": 3752,
+        "type": "code/python",
+        "purpose": "Gap analyzer — imported by traceability.py"
+      },
+      {
+        "id": "T15",
+        "path": "engine/v4/evidence/closing_contribution.py",
+        "sha256": "e08ff154fee58f4e2efd1cb140b7525752e1cd9d6c584d2a0ef5c7e445d8a2b1",
+        "size_bytes": 2017,
+        "type": "code/python",
+        "purpose": "Closing contribution — imported by traceability.py"
+      },
+      {
+        "id": "T16",
+        "path": "engine/v4/evidence/cash_trace.py",
+        "sha256": "a5e747b1fc16a239b1cedd501477fdb1fc36ede2e6fffc5b53adfd44d7f014c4",
+        "size_bytes": 519,
+        "type": "code/python",
+        "purpose": "Cash trace — imported by traceability.py"
+      },
+      {
+        "id": "T17",
+        "path": "engine/v4/domain/generate_artifacts.py",
+        "sha256": "fbb12a42b690b4f82f431af7480c1ae8155f61e504aae2d2dd4d92d7be7b760b",
+        "size_bytes": 13701,
+        "type": "code/python",
+        "purpose": "Artifact generator — required by test_artifacts_synced"
+      },
+      {
+        "id": "T18",
+        "path": "engine/v4/domain/artifacts/CANONICAL_FINANCIAL_SEMANTICS.md",
+        "sha256": "ea36bded6240cf90b756286cd67b4f219cf152ff11c5180b8d8f466f8eb9e737",
+        "size_bytes": 4141,
+        "type": "artifact/markdown",
+        "purpose": "Generated canonical semantics doc — required by test_artifacts_synced"
+      },
+      {
+        "id": "T19",
+        "path": "engine/v4/domain/artifacts/METRIC_REGISTRY.json",
+        "sha256": "5443ef863616fc52e0f7c7f403618c1a4b333040afbf6d2076c6f1f5f0a88d3d",
+        "size_bytes": 6464,
+        "type": "artifact/json",
+        "purpose": "Generated metric registry — required by test_artifacts_synced"
+      },
+      {
+        "id": "T20",
+        "path": "engine/v4/domain/artifacts/canonical_semantics.schema.json",
+        "sha256": "283eb760c887accec31efffa3313bad753c03c3eca9b0f305b759043048d004d",
+        "size_bytes": 6853,
+        "type": "artifact/json",
+        "purpose": "Generated schema — required by test_artifacts_synced"
+      },
+      {
+        "id": "T21",
+        "path": "engine/v4/domain/artifacts/consumer_contract.json",
+        "sha256": "5bfb16a336b499ec86b2db793fd08b08f557687853bd53dae42b17132b76ef0e",
+        "size_bytes": 1911,
+        "type": "artifact/json",
+        "purpose": "Generated consumer contract — required by test_artifacts_synced"
+      }
+    ]
+  },
+
+  "optional": {
+    "label": "No certification impact — historical, documentation, or debug",
+    "artifacts": [
+      {"pattern": "data/db/snapshot_*", "purpose": "Historical DB snapshots"},
+      {"pattern": "data/db/tmp_*", "purpose": "Debug copies of official DB"},
+      {"pattern": "evidence/**", "purpose": "Certification run output (not input)"},
+      {"pattern": "governance/**", "purpose": "Reports, certifications, coordination documents"},
+      {"pattern": "docs/**", "purpose": "Project documentation"}
+    ]
+  },
+
+  "certification_suite": {
+    "name": "F4",
+    "total_tests": 96,
+    "harness": "tools/run_f4_suites.py",
+    "harness_version": "1.0.0-r6",
+    "evidence_dir": "evidence/f4_suites/",
+    "last_certified_commit": "3a35826",
+    "last_certified_execution_id": "F4_20260719_183358",
+    "verdict": "PHASE_4_GATE_SATISFIED",
+    "files": [
+      "tests/test_certification_gate.py",
+      "tests/test_semantic_consistency.py",
+      "tests/test_f4_traceability.py",
+      "tests/test_taxonomy_equivalence.py"
+    ]
+  }
+}

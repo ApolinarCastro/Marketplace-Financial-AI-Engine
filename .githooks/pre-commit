@@ -1,0 +1,55 @@
+#!/bin/sh
+# Pre-commit hook: verify coordination interface on staged changes
+# Only blocks commits that modify protected paths without authorized RFC.
+# Reports all validation issues but only fails on protected path violations.
+# Installed via:  git config core.hooksPath .githooks
+
+PYTHON=$(command -v python3 || command -v python)
+if [ -z "$PYTHON" ]; then
+    exit 0
+fi
+
+REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null)
+if [ -z "$REPO_ROOT" ]; then
+    exit 0
+fi
+
+VERIFIER="$REPO_ROOT/tools/verify_coordination_interface.py"
+if [ ! -f "$VERIFIER" ]; then
+    exit 0
+fi
+
+STAGED=$(git diff --cached --name-only --diff-filter=ACMR 2>/dev/null)
+if [ -z "$STAGED" ]; then
+    exit 0
+fi
+
+# Build --changed-path args
+ARGS=""
+IFS='
+'
+for p in $STAGED; do
+    ARGS="$ARGS --changed-path $p"
+done
+
+# Run verifier; capture output
+OUTPUT=$("$PYTHON" "$VERIFIER" --root "$REPO_ROOT" $ARGS 2>&1)
+RESULT=$?
+
+if [ $RESULT -ne 0 ]; then
+    # Only block if there's a protected path violation
+    PROTECTED_VIOLATION=$(echo "$OUTPUT" | grep -i "protected path modified")
+    if [ -n "$PROTECTED_VIOLATION" ]; then
+        echo "$OUTPUT"
+        echo ""
+        echo "ERROR: Protected path modification detected without authorized RFC."
+        echo "To override (NOT RECOMMENDED): git commit --no-verify"
+        exit 1
+    fi
+    # Otherwise print WARNING but do not block
+    echo "$OUTPUT" | grep "FAIL:" | while read -r line; do
+        echo "WARN: $line"
+    done
+fi
+
+exit 0

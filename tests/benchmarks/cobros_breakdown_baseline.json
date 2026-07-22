@@ -1,0 +1,12 @@
+{
+  "name": "cobros_breakdown",
+  "arm": "current",
+  "median_duration_ms": 16.026199999032542,
+  "median_memory_mb": 0.1478109359741211,
+  "median_sql_count": 7.0,
+  "stddev_duration_ms": 1.00597999799195,
+  "stddev_memory_mb": 1.8697854512256575e-05,
+  "runs": 10,
+  "success_rate": 1.0,
+  "timestamp": 1783626381.365473
+}

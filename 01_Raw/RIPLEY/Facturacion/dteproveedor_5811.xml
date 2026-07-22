@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioDTE xmlns="http://www.sii.cl/SiiDte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd">
+  <SetDTE ID="EDTE128915987D1189708487">
+    <Caratula version="1.0">
+      <RutEmisor>83382700-6</RutEmisor>
+      <RutEnvia>12156769-5</RutEnvia>
+      <RutReceptor>77898100-9</RutReceptor>
+      <FchResol>2013-03-28</FchResol>
+      <NroResol>38</NroResol>
+      <TmstFirmaEnv>2025-04-30T11:29:16</TmstFirmaEnv>
+      <SubTotDTE>
+        <TpoDTE>52</TpoDTE>
+        <NroDTE>1</NroDTE>
+      </SubTotDTE>
+    </Caratula>
+    <DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+      <Documento ID="S20250430T052F0048452299">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>52</TipoDTE>
+            <Folio>48452299</Folio>
+            <FchEmis>2025-04-30</FchEmis>
+            <IndTraslado>6</IndTraslado>
+            <MntBruto>1</MntBruto>
+            <FmaPago>1</FmaPago>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>83382700-6</RUTEmisor>
+            <RznSoc>COMERCIAL ECCSA S.A.</RznSoc>
+            <GiroEmis>Grandes Tiendas</GiroEmis>
+            <Acteco>471910</Acteco>
+            <Sucursal>Log.Inversa</Sucursal>
+            <DirOrigen>Av. Santa Margarita  448</DirOrigen>
+            <CmnaOrigen>San Bernardo</CmnaOrigen>
+            <CiudadOrigen>Metropolitana</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>77898100-9</RUTRecep>
+            <RznSocRecep>IMPORTADORA Y COMERCIALIZADORA NANDA SPA</RznSocRecep>
+            <GiroRecep>Particular</GiroRecep>
+            <DirRecep>EUSEBIO LILLO     333</DirRecep>
+            <CmnaRecep>RECOLETA</CmnaRecep>
+            <CiudadRecep>RECOLETA</CiudadRecep>
+          </Receptor>
+          <Transporte>
+            <CmnaDest>RECOLETA</CmnaDest>
+          </Transporte>
+          <Totales>
+            <MntNeto>1215</MntNeto>
+            <MntExe>0</MntExe>
+            <TasaIVA>19</TasaIVA>
+            <IVA>285</IVA>
+            <MntTotal>1500</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>SKU</TpoCodigo>
+            <VlrCodigo>40522825</VlrCodigo>
+          </CdgItem>
+          <NmbItem>BLAZER DE TOPE MANGA 3/4 NEGRO NICOPOLY</NmbItem>
+          <QtyItem>3</QtyItem>
+          <PrcItem>500</PrcItem>
+          <MontoItem>1500</MontoItem>
+        </Detalle>
+        <Referencia>
+          <NroLinRef>1</NroLinRef>
+          <TpoDocRef>CTZ</TpoDocRef>
+          <FolioRef>12842411</FolioRef>
+          <FchRef>2025-04-30</FchRef>
+          <RazonRef>-</RazonRef>
+        </Referencia>
+        <TED version="1.0">
+          <DD>
+            <RE>83382700-6</RE>
+            <TD>52</TD>
+            <F>48452299</F>
+            <FE>2025-04-30</FE>
+            <RR>77898100-9</RR>
+            <RSR>IMPORTADORA Y COMERCIALIZADORA NANDA SPA</RSR>
+            <MNT>1500</MNT>
+            <IT1>BLAZER DE TOPE MANGA 3/4 NEGRO NICOPOLY</IT1>
+            <CAF version="1.0">
+              <DA>
+                <RE>83382700-6</RE>
+                <RS>COMERCIAL ECCSA S A</RS>
+                <TD>52</TD>
+                <RNG>
+                  <D>45586049</D>
+                  <H>50586048</H>
+                </RNG>
+                <FA>2024-04-25</FA>
+                <RSAPK>
+                  <M>y8HVsQepIUsd5EUTkRdGD4wr+6fo2rrhbGL/tcjPiV/tavrUSiMrGgy8C8eI6Xidxyk3uLuRh5v3sPI3HveaWQ==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo="SHA1withRSA">Vah+9mHitgj9gSSItD0mJj3KOZ52l/RY/VKw5ksDaJBhMOh5EBrte//auuJhWAN7NTmY4b3j36h5JcqYpmZhgQ==</FRMA>
+            </CAF>
+            <TSTED>2025-04-30T11:28:29</TSTED>
+          </DD>
+          <FRMT algoritmo="SHA1withRSA">ldNyJA2PCoPmQkRJ0fNQApjP2zy3SYiwDJLagMm1AGhN1rFBB8p8RPXga6tr3zRANGhE/j1RKCqb
+nS5j1Dv2Pw==
+</FRMT>
+        </TED>
+        <TmstFirma>2025-04-30T11:28:29</TmstFirma>
+      </Documento>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#S20250430T052F0048452299">
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>TPfsLWJchLdKyfzeTGKdXQbATCY=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>
+    HfItMmYiQYEWNHJZTkA/7q7I8G50TQKTuSbW2tLxTmXDWFhtZMzHGQ/j61+0hy3l
+    ht2pCB7dJmWIDgkTrbeMFIncqe8KsUEVzMzJYUXGqWi10dQXWWnpBvfN0KtCE5pn
+    XmUHWZs/C+RYOJPINMIvNwlnpn/LERVQGt/LXf8RwhUWnY3rFNARj8sX0b6gx7lr
+    FgKmqWe0gZd+t7ZmOShqdzzYf0nQWJbC0Vdd6TPzAqB6Rrp9RCeDpiJ81yj5L6Oi
+    2mFLV9hzyQHeOL8HFCo8MA2nAIT9VWP0kx0q6TIHB88dLH9g+ZocOIqOySu6grbP
+    18XgtytUtBs15zq9pBYkhw==
+  </SignatureValue>
+        <KeyInfo>
+          <KeyValue>
+            <RSAKeyValue>
+              <Modulus>
+          k/3xuyRQ4z+rT5HB+5MalkkogZuEAY3Fkzvi5Coj2FE1uWj+Eqycd6P1an3WDKq+
+          iN2M5rX725RmIJLKX7U69xF0eJBeEUplkO4R1/0AkeduaZkY4xOv7DFZk2jrvesS
+          Cj56dK+h5jaY5NuZIWZtjROf6BY9K/TdgcTmSPJf6ZHMuS1gsBsKwZTyNY9ZDoVK
+          x9Zj5llIKS5zCv9yltstw0FiwLZyJuTwXqMeH5NFvQ9N3khyCdbKSQpPxZrpufG0
+          apq0e19m9mfFcKxawhGYvn5UYp8ulV4xOidfAkg2sxiPHXPLyYyd1mWxTDKDMevY
+          hfPpIEDWxnc5zCaaWNVK2w==
+        </Modulus>
+              <Exponent>AQAB</Exponent>
+            </RSAKeyValue>
+          </KeyValue>
+          <X509Data>
+            <X509Certificate>
+        MIIGdTCCBV2gAwIBAgIDAspqMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+        TDEYMBYGA1UEChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29t
+        IEF1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhIENsYXNlIDMgUGVyc29uYSBOYXR1cmFs
+        IC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9AYWNlcHRhLmNvbTETMBEGA1UEBRMK
+        OTY5MTkwNTAtODAeFw0yMjExMTAxNjMwMDJaFw0yNTExMTAxNjMwMDJaMIGHMQsw
+        CQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMSQwIgYDVQQDExtM
+        VUlTIE1BTlVFTCBDQU5DSU5PIEZVRU5URVMxIzAhBgkqhkiG9w0BCQEWFExDQU5D
+        SU5PRkBSSVBMRVkuQ09NMRMwEQYDVQQFEwoxMjE1Njc2OS01MIIBIjANBgkqhkiG
+        9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk/3xuyRQ4z+rT5HB+5MalkkogZuEAY3Fkzvi
+        5Coj2FE1uWj+Eqycd6P1an3WDKq+iN2M5rX725RmIJLKX7U69xF0eJBeEUplkO4R
+        1/0AkeduaZkY4xOv7DFZk2jrvesSCj56dK+h5jaY5NuZIWZtjROf6BY9K/TdgcTm
+        SPJf6ZHMuS1gsBsKwZTyNY9ZDoVKx9Zj5llIKS5zCv9yltstw0FiwLZyJuTwXqMe
+        H5NFvQ9N3khyCdbKSQpPxZrpufG0apq0e19m9mfFcKxawhGYvn5UYp8ulV4xOidf
+        Akg2sxiPHXPLyYyd1mWxTDKDMevYhfPpIEDWxnc5zCaaWNVK2wIDAQABo4ICxzCC
+        AsMwHwYDVR0jBBgwFoAUqv29xek3TfaZTVeOwXEa+evDBuMwHQYDVR0OBBYEFJPL
+        G9EBrYuji78FtsmatrlW7MqqMAsGA1UdDwQEAwIE8DAdBgNVHSUEFjAUBggrBgEF
+        BQcDAgYIKwYBBQUHAwQwEQYJYIZIAYb4QgEBBAQDAgWgMIH6BgNVHSAEgfIwge8w
+        gewGCCsGAQQBtWsCMIHfMDEGCCsGAQUFBwIBFiVodHRwczovL2FjZzQuYWNlcHRh
+        LmNvbS9DUFMtQWNlcHRhY29tMIGpBggrBgEFBQcCAjCBnDAWFg9BY2VwdGEuY29t
+        IFMuQS4wAwIBAhqBgUVsIHRpdHVsYXIgaGEgc2lkbyB2YWxpZGFkbyBlbiBmb3Jt
+        YSBwcmVzZW5jaWFsLCBxdWVkYW5kbyBoYWJpbGl0YWRvIGVsIENlcnRpZmljYWRv
+        IHBhcmEgdXNvIHRyaWJ1dGFyaW8sIHBhZ29zLCBjb21lcmNpbyB5IG90cm9zLjBa
+        BgNVHRIEUzBRoBgGCCsGAQQBwQECoAwWCjk2OTE5MDUwLTigJAYIKwYBBQUHCAOg
+        GDAWDAo5NjkxOTA1MC04BggrBgEEAcEBAoEPaW5mb0BhY2VwdGEuY29tMF8GA1Ud
+        EQRYMFagGAYIKwYBBAHBAQGgDBYKMTIxNTY3NjktNaAkBggrBgEFBQcIA6AYMBYM
+        CjEyMTU2NzY5LTUGCCsGAQQBwQECgRRMQ0FOQ0lOT0ZAUklQTEVZLkNPTTBHBggr
+        BgEFBQcBAQQ7MDkwNwYIKwYBBQUHMAGGK2h0dHBzOi8vYWNnNC5hY2VwdGEuY29t
+        L2FjZzQvb2NzcC9DbGFzZTMtRzQwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cHM6Ly9h
+        Y2c0LmFjZXB0YS5jb20vYWNnNC9jcmwvQ2xhc2UzLUc0LmNybDANBgkqhkiG9w0B
+        AQsFAAOCAQEABq/W9B3jbX5NCppswhtzn/MCm6+VHh5exFEmojtKgg1ggC54bbbC
+        XcyQ6LgsEsWnm1hH5BKdAMnCQNyICIfGOCSpIfrqJvwXtoMo6mZp1jPMp4S/E9+D
+        7NVWeTS9/lqzIyzJdmtCZkoR4L4F6zauLz3WfyW7Zz/kPzL3uBM14o70pgtYCm4D
+        TvO0f33WPFmehpsBNu9EutctFBLoi/YnhiObSSReloMlhOshlKvfh3A0OgEa6OsN
+        EBYwCdznAhS02Md39VBhjHQQi6KRly2OKnzL7owm7Yfk08IpSTg1RNHsVghz5Usf
+        WNEIWyQsaG88Z/TAs+BWGXJoO/PItUid4g==
+      </X509Certificate>
+          </X509Data>
+        </KeyInfo>
+      </Signature>
+    </DTE>
+  </SetDTE>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="#EDTE128915987D1189708487">
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>kewm+6j13wQmIP6pvuE1FGCm8yw=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+    Y/378lxXDQGgwX4NtZSuCIOyIw1NHvrsJ/1rpru6QKTc1hVUaaTuYoFhdOVir02m
+    fA+WS5Qy5MYDUOGCsas5fUf50VJMeyH9qPp1j69EjPEKtFnOM/b4XyKZTSweGbiW
+    hk4+nO4y/WUQkSTPOVrAVQMhxGvqyc5CfTMLnNmcE8Nbwqcpb8ZTnOvTV9nxuc6Q
+    yEgrc/lkxVmj1c11clyZgAaxMbDlv20ONr0XqK62cwxe38w92+d6uqI8ANKTuJeF
+    B41dZNr4/tA7aqt9AwXRMFmW6PjvFMNtmsyhU2nD2OlouKjK83NastoU6boayVIO
+    VMyfKPLRB19Kwzf6b+Lm4Q==
+  </SignatureValue>
+    <KeyInfo>
+      <KeyValue>
+        <RSAKeyValue>
+          <Modulus>
+          k/3xuyRQ4z+rT5HB+5MalkkogZuEAY3Fkzvi5Coj2FE1uWj+Eqycd6P1an3WDKq+
+          iN2M5rX725RmIJLKX7U69xF0eJBeEUplkO4R1/0AkeduaZkY4xOv7DFZk2jrvesS
+          Cj56dK+h5jaY5NuZIWZtjROf6BY9K/TdgcTmSPJf6ZHMuS1gsBsKwZTyNY9ZDoVK
+          x9Zj5llIKS5zCv9yltstw0FiwLZyJuTwXqMeH5NFvQ9N3khyCdbKSQpPxZrpufG0
+          apq0e19m9mfFcKxawhGYvn5UYp8ulV4xOidfAkg2sxiPHXPLyYyd1mWxTDKDMevY
+          hfPpIEDWxnc5zCaaWNVK2w==
+        </Modulus>
+          <Exponent>AQAB</Exponent>
+        </RSAKeyValue>
+      </KeyValue>
+      <X509Data>
+        <X509Certificate>
+        MIIGdTCCBV2gAwIBAgIDAspqMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+        TDEYMBYGA1UEChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29t
+        IEF1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhIENsYXNlIDMgUGVyc29uYSBOYXR1cmFs
+        IC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9AYWNlcHRhLmNvbTETMBEGA1UEBRMK
+        OTY5MTkwNTAtODAeFw0yMjExMTAxNjMwMDJaFw0yNTExMTAxNjMwMDJaMIGHMQsw
+        CQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMSQwIgYDVQQDExtM
+        VUlTIE1BTlVFTCBDQU5DSU5PIEZVRU5URVMxIzAhBgkqhkiG9w0BCQEWFExDQU5D
+        SU5PRkBSSVBMRVkuQ09NMRMwEQYDVQQFEwoxMjE1Njc2OS01MIIBIjANBgkqhkiG
+        9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk/3xuyRQ4z+rT5HB+5MalkkogZuEAY3Fkzvi
+        5Coj2FE1uWj+Eqycd6P1an3WDKq+iN2M5rX725RmIJLKX7U69xF0eJBeEUplkO4R
+        1/0AkeduaZkY4xOv7DFZk2jrvesSCj56dK+h5jaY5NuZIWZtjROf6BY9K/TdgcTm
+        SPJf6ZHMuS1gsBsKwZTyNY9ZDoVKx9Zj5llIKS5zCv9yltstw0FiwLZyJuTwXqMe
+        H5NFvQ9N3khyCdbKSQpPxZrpufG0apq0e19m9mfFcKxawhGYvn5UYp8ulV4xOidf
+        Akg2sxiPHXPLyYyd1mWxTDKDMevYhfPpIEDWxnc5zCaaWNVK2wIDAQABo4ICxzCC
+        AsMwHwYDVR0jBBgwFoAUqv29xek3TfaZTVeOwXEa+evDBuMwHQYDVR0OBBYEFJPL
+        G9EBrYuji78FtsmatrlW7MqqMAsGA1UdDwQEAwIE8DAdBgNVHSUEFjAUBggrBgEF
+        BQcDAgYIKwYBBQUHAwQwEQYJYIZIAYb4QgEBBAQDAgWgMIH6BgNVHSAEgfIwge8w
+        gewGCCsGAQQBtWsCMIHfMDEGCCsGAQUFBwIBFiVodHRwczovL2FjZzQuYWNlcHRh
+        LmNvbS9DUFMtQWNlcHRhY29tMIGpBggrBgEFBQcCAjCBnDAWFg9BY2VwdGEuY29t
+        IFMuQS4wAwIBAhqBgUVsIHRpdHVsYXIgaGEgc2lkbyB2YWxpZGFkbyBlbiBmb3Jt
+        YSBwcmVzZW5jaWFsLCBxdWVkYW5kbyBoYWJpbGl0YWRvIGVsIENlcnRpZmljYWRv
+        IHBhcmEgdXNvIHRyaWJ1dGFyaW8sIHBhZ29zLCBjb21lcmNpbyB5IG90cm9zLjBa
+        BgNVHRIEUzBRoBgGCCsGAQQBwQECoAwWCjk2OTE5MDUwLTigJAYIKwYBBQUHCAOg
+        GDAWDAo5NjkxOTA1MC04BggrBgEEAcEBAoEPaW5mb0BhY2VwdGEuY29tMF8GA1Ud
+        EQRYMFagGAYIKwYBBAHBAQGgDBYKMTIxNTY3NjktNaAkBggrBgEFBQcIA6AYMBYM
+        CjEyMTU2NzY5LTUGCCsGAQQBwQECgRRMQ0FOQ0lOT0ZAUklQTEVZLkNPTTBHBggr
+        BgEFBQcBAQQ7MDkwNwYIKwYBBQUHMAGGK2h0dHBzOi8vYWNnNC5hY2VwdGEuY29t
+        L2FjZzQvb2NzcC9DbGFzZTMtRzQwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cHM6Ly9h
+        Y2c0LmFjZXB0YS5jb20vYWNnNC9jcmwvQ2xhc2UzLUc0LmNybDANBgkqhkiG9w0B
+        AQsFAAOCAQEABq/W9B3jbX5NCppswhtzn/MCm6+VHh5exFEmojtKgg1ggC54bbbC
+        XcyQ6LgsEsWnm1hH5BKdAMnCQNyICIfGOCSpIfrqJvwXtoMo6mZp1jPMp4S/E9+D
+        7NVWeTS9/lqzIyzJdmtCZkoR4L4F6zauLz3WfyW7Zz/kPzL3uBM14o70pgtYCm4D
+        TvO0f33WPFmehpsBNu9EutctFBLoi/YnhiObSSReloMlhOshlKvfh3A0OgEa6OsN
+        EBYwCdznAhS02Md39VBhjHQQi6KRly2OKnzL7owm7Yfk08IpSTg1RNHsVghz5Usf
+        WNEIWyQsaG88Z/TAs+BWGXJoO/PItUid4g==
+      </X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</EnvioDTE>

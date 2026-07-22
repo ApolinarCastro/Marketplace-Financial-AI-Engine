@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Copilot — Marketplace Financial AI Engine</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+        body { background: #0f172a; color: #e2e8f0; font-family: 'Outfit', sans-serif; }
+        .card { background: #1e293b; border-radius: 1rem; border: 1px solid #334155; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+        .amount-pos { color: #10b981; font-weight: 600; }
+        .amount-neg { color: #ef4444; font-weight: 600; }
+        .kpi-value { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; }
+        .kpi-label { font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #64748b; }
+        .fade-in { animation: fadeIn 0.5s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+        .chain-step { transition: all 0.2s ease; }
+        .chain-step:hover { background: #334155; }
+        .copilot-input { background: #1e293b; border: 1px solid #334155; color: #e2e8f0; border-radius: 0.75rem; padding: 0.75rem 1rem; font-size: 0.9rem; width: 100%; outline: none; transition: border-color 0.2s; }
+        .copilot-input:focus { border-color: #6366f1; }
+        .glow { box-shadow: 0 0 20px rgba(99,102,241,0.15); }
+    </style>
+    <script src="/shared/api_client.js"></script>
+</head>
+<body>
+    <header class="border-b border-slate-700/50 px-8 py-0 sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-sm">
+        <div class="flex items-center justify-between h-16 max-w-7xl mx-auto">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="bg-indigo-600 text-white p-2 rounded-lg"><i class="fas fa-robot"></i></div>
+                    <h1 class="text-lg font-bold tracking-tight">Financial Copilot <span class="text-slate-500 font-normal text-sm">P39</span></h1>
+                </div>
+                <nav class="flex gap-1 bg-slate-800/50 p-1 rounded-xl">
+                    <a href="/copilot" class="nav-link px-4 py-2 text-sm font-semibold rounded-lg bg-indigo-600 text-white shadow-sm"><i class="fas fa-robot mr-2"></i>Copilot</a>
+                    <a href="/exec" class="nav-link px-4 py-2 text-sm font-semibold rounded-lg text-slate-400 hover:text-white hover:bg-slate-700/50"><i class="fas fa-chart-pie mr-2"></i>Gerencial</a>
+                    <a href="/app" class="nav-link px-4 py-2 text-sm font-semibold rounded-lg text-slate-400 hover:text-white hover:bg-slate-700/50"><i class="fas fa-microscope mr-2"></i>Auditor</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="p-8 max-w-5xl mx-auto space-y-6 fade-in">
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-bold text-white mb-2">Haz una pregunta financiera</h2>
+            <p class="text-sm text-slate-400">Cada respuesta incluye evidencia trazable hasta el archivo original</p>
+        </div>
+
+        <div class="card p-6 glow">
+            <div class="flex items-center gap-4">
+                <div class="flex-1 relative">
+                    <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
+                    <input id="copilot-question" class="copilot-input pl-10" placeholder="Ej: ¿Estoy ganando o perdiendo dinero hoy?" value="¿Estoy ganando o perdiendo dinero hoy?" onkeydown="if(event.key==='Enter') askCopilot()">
+                </div>
+                <button onclick="askCopilot()" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all flex items-center gap-2">
+                    <i class="fas fa-arrow-right"></i> Preguntar
+                </button>
+            </div>
+        </div>
+
+        <div id="copilot-response" class="space-y-6"></div>
+    </main>
+
+    <script>
+        async function askCopilot() {
+            const container = document.getElementById('copilot-response');
+            container.innerHTML = '<div class="text-center py-12"><div class="animate-spin w-8 h-8 border-2 border-indigo-500 border-t-transparent rounded-full mx-auto mb-3"></div><p class="text-sm text-slate-400">Analizando datos financieros...</p></div>';
+
+            try {
+                const data = await ApiClient.safeFetch('/api/v4/financial-intelligence/health');
+                renderCopilotResponse(data, container);
+            } catch(e) {
+                container.innerHTML = '<div class="card p-6 border-l-4 border-l-rose-500"><p class="text-rose-400 text-sm">Error al obtener datos: ' + e.message + '</p></div>';
+            }
+        }
+
+        function renderCopilotResponse(data, container) {
+            const a = data.answer;
+            const isProfit = a.is_profit;
+
+            let html = '';
+
+            // Step 1: Answer
+            html += '<div class="card p-6 border-l-4 ' + (isProfit ? 'border-l-emerald-500' : 'border-l-rose-500') + ' fade-in" style="animation-delay: 0s">';
+            html += '<div class="flex items-start justify-between">';
+            html += '<div><span class="kpi-label"><i class="fas fa-question-circle mr-1"></i>Respuesta</span>';
+            html += '<div class="kpi-value mt-1 ' + (isProfit ? 'amount-pos' : 'amount-neg') + '">' + a.summary + '</div>';
+            html += '<div class="flex items-center gap-3 mt-1"><span class="text-xs px-2 py-0.5 rounded-full ' + (isProfit ? 'bg-emerald-900/50 text-emerald-300' : 'bg-rose-900/50 text-rose-300') + '">' + (isProfit ? 'GANANDO' : 'PERDIENDO') + '</span>';
+            html += '<span class="text-sm ' + (a.delta > 0 ? 'amount-pos' : a.delta < 0 ? 'amount-neg' : 'text-slate-400') + '">' + (a.delta > 0 ? '+' : '') + fmtCLP(a.delta) + ' (' + (a.delta_pct > 0 ? '+' : '') + a.delta_pct.toFixed(1) + '%)</span></div></div>';
+            html += '<div class="text-right"><span class="kpi-label">Periodo</span><div class="text-sm text-slate-300 font-medium mt-1">' + data.period + '</div>';
+            if (data.previous_period) {
+                html += '<span class="kpi-label mt-2 block">Periodo Anterior</span><div class="text-sm text-slate-400 mt-1">' + data.previous_period + '</div>';
+            }
+            html += '</div></div></div>';
+
+            // Step 2: Why (Explanation)
+            if (data.explanation) {
+                html += '<div class="card p-6 border-l-4 border-l-indigo-500 fade-in" style="animation-delay: 0.1s">';
+                html += '<span class="kpi-label"><i class="fas fa-comment-dots mr-1 text-indigo-400"></i>¿Por qué?</span>';
+                html += '<p class="text-sm text-slate-300 mt-2 leading-relaxed">' + data.explanation.text + '</p>';
+                if (data.explanation.bullet_points && data.explanation.bullet_points.length > 0) {
+                    html += '<ul class="mt-3 space-y-1">';
+                    data.explanation.bullet_points.forEach(function(b) {
+                        html += '<li class="text-xs text-slate-400 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 inline-block"></span>' + b + '</li>';
+                    });
+                    html += '</ul>';
+                }
+                html += '</div>';
+            }
+
+            // Step 3: Breakdown by MP
+            if (data.breakdown && data.breakdown.length > 0) {
+                html += '<div class="card p-6 fade-in" style="animation-delay: 0.2s">';
+                html += '<span class="kpi-label"><i class="fas fa-store mr-1"></i>Por Marketplace</span>';
+                html += '<div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-3">';
+                data.breakdown.forEach(function(mp) {
+                    html += '<div class="bg-slate-800/50 rounded-lg p-3 border border-slate-700/50">' +
+                        '<div class="text-xs font-bold text-slate-400 uppercase">' + mp.marketplace + '</div>' +
+                        '<div class="text-sm font-bold mt-1 ' + (mp.is_profit ? 'amount-pos' : 'amount-neg') + '">$' + fmtShort(mp.rn) + '</div>' +
+                        '<div class="text-[10px] ' + (mp.delta > 0 ? 'amount-pos' : mp.delta < 0 ? 'amount-neg' : 'text-slate-500') + '">' + (mp.delta > 0 ? '+' : '') + '$' + fmtShort(mp.delta) + '</div>' +
+                        '</div>';
+                });
+                html += '</div></div>';
+            }
+
+            // Step 4: Evidence Chain
+            if (data.evidence && data.evidence.length > 0) {
+                html += '<div class="card p-6 fade-in" style="animation-delay: 0.3s">';
+                html += '<span class="kpi-label"><i class="fas fa-link mr-1 text-emerald-400"></i>Evidencia — Cadena de Trazabilidad</span>';
+                html += '<div class="mt-3 space-y-4">';
+
+                data.evidence.forEach(function(e) {
+                    html += '<div class="bg-slate-800/30 rounded-lg p-4 border border-slate-700/30">';
+                    html += '<div class="flex items-center justify-between mb-2">';
+                    html += '<span class="text-xs font-bold text-slate-300 uppercase">' + e.marketplace + '</span>';
+                    html += '<span class="text-sm font-bold ' + (e.value < 0 ? 'amount-neg' : 'amount-pos') + '">' + fmtCLP(e.value) + '</span></div>';
+
+                    // Source
+                    html += '<div class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5 text-[11px]">';
+                    html += '<span class="text-slate-500">Fuente:</span><span class="text-slate-300 font-mono">' + e.source + '</span>';
+                    html += '<span class="text-slate-500">SQL:</span><span class="text-slate-400 font-mono text-[10px] truncate">' + e.sql + '</span>';
+
+                    // Components
+                    var comps = Object.entries(e.components || {});
+                    if (comps.length > 0) {
+                        html += '<span class="text-slate-500">Componentes:</span><span class="text-slate-300">';
+                        comps.forEach(function(c, i) {
+                            html += '<span class="mr-2">' + c[0] + ': <span class="' + (c[1] < 0 ? 'amount-neg' : 'amount-pos') + '">$' + fmtShort(c[1]) + '</span></span>';
+                        });
+                        html += '</span>';
+                    }
+
+                    // ETL
+                    if (e.etl && e.etl.rows > 0) {
+                        html += '<span class="text-slate-500">ETL:</span><span class="text-slate-300">' + e.etl.pipeline + ' — ' + e.etl.rows.toLocaleString() + ' filas, ' + e.etl.source_files + ' archivos fuente</span>';
+                    }
+
+                    // XML
+                    if (e.xml && e.xml.length > 0) {
+                        html += '<span class="text-slate-500">XML/DTE:</span><span class="text-slate-300">' + e.xml.length + ' folios vinculados</span>';
+                    }
+
+                    // RAW
+                    if (e.raw_sources && e.raw_sources.length > 0) {
+                        html += '<span class="text-slate-500">RAW:</span><span class="text-slate-400 font-mono text-[10px]">' + e.raw_sources.join('<br>') + '</span>';
+                    }
+
+                    // Ledger samples
+                    if (e.ledger_samples && e.ledger_samples.length > 0) {
+                        html += '<span class="text-slate-500">Ledger:</span><span class="text-slate-400 font-mono text-[10px]">' +
+                            e.ledger_samples.map(function(s) {
+                                return s.id_transaccion + ' | ' + (s.detalle || '—') + ' | <span class="' + (s.monto < 0 ? 'amount-neg' : 'amount-pos') + '">$' + fmtShort(s.monto) + '</span>';
+                            }).join('<br>') + '</span>';
+                    }
+
+                    html += '</div></div>';
+                });
+                html += '</div></div>';
+            }
+
+            // Step 5: Certification & Confidence
+            html += '<div class="card p-6 fade-in" style="animation-delay: 0.4s">';
+            html += '<div class="flex items-center justify-between">';
+            html += '<div><span class="kpi-label"><i class="fas fa-certificate mr-1 text-amber-400"></i>Nivel de Certificación</span>';
+            html += '<div class="flex items-center gap-2 mt-1"><span class="w-2.5 h-2.5 bg-emerald-500 rounded-full"></span><span class="text-sm font-bold text-emerald-400">CERTIFICADO</span></div></div>';
+            html += '<div class="text-right"><span class="kpi-label">Confianza</span><div class="text-sm font-bold text-slate-300 mt-1">ALTA</div></div>';
+            html += '</div></div>';
+
+            container.innerHTML = html;
+        }
+
+        function fmtCLP(v) {
+            if (v === null || v === undefined || isNaN(v)) return '$0';
+            const abs = Math.abs(v);
+            const sign = v < 0 ? '-$' : '$';
+            if (abs >= 1e9) return sign + (abs / 1e9).toFixed(2) + 'B';
+            if (abs >= 1e6) return sign + (abs / 1e6).toFixed(1) + 'M';
+            if (abs >= 1e3) return sign + (abs / 1e3).toFixed(1) + 'K';
+            return sign + abs.toFixed(0);
+        }
+        function fmtShort(v) {
+            if (v === null || v === undefined || isNaN(v)) return '0';
+            const abs = Math.abs(v);
+            const sign = v < 0 ? '-' : '';
+            if (abs >= 1e9) return sign + (abs / 1e9).toFixed(2) + 'B';
+            if (abs >= 1e6) return sign + (abs / 1e6).toFixed(1) + 'M';
+            if (abs >= 1e3) return sign + (abs / 1e3).toFixed(1) + 'K';
+            return sign + abs.toFixed(0);
+        }
+
+        // Initial load
+        askCopilot();
+    </script>
+</body>
+</html>

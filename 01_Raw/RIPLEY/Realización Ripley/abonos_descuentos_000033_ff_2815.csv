@@ -1,0 +1,14 @@
+accounting_document_creation_date,currency_iso_code,date_created,order_id,order_category_type,shipping_type_code,shop_id,shop_name,refund_commission_fee,refund_order_amount,commission_fee,order_amount,transfer_amount,Descuento FF - Otros,Descuento FF - pick and pack,Descuento FF - sobreestadía,Descuento operacional (FF),Descuento operación VAS (FF),Descuento por almacenamiento diario (FF),Descuento por almacenamiento prologando (FF),Descuento por cancelación (FF),Descuento por cofinanciamiento logístico (FF),Descuento por compensación (FF),Descuento por cupones de despacho (FF),Descuento por logística inversa (FF),Descuento por planes de medio (FF),Descuento por Recogida (FF),Descuento por retiro anticipado (FF),Devoluciones OPEX (FF),Otros descuentos (FF)
+,CLP,,24633970701-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,0,0,0
+,CLP,,24657151201-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,0,0,0
+,CLP,,24723083101-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,0,0,0
+,CLP,,24804294601-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,0,0,0
+,CLP,,24813847801-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24813989302-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,24816027901-A,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+2026-06-20,CLP,2026-06-13 18:36:36,24819113001-A,FF,S,2815,NICOPOLY,0,0,10798,59990,49192,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+2026-06-20,CLP,2026-06-13 20:36:13,24819412603-A,FF,ST,2815,NICOPOLY,0,0,6298,34990,28692,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+2026-06-20,CLP,2026-06-13 21:50:47,24819606501-A,FF,S,2815,NICOPOLY,0,0,8098,44990,36892,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+2026-06-20,CLP,2026-06-14 04:36:56,24820622701-A,FF,S,2815,NICOPOLY,0,0,10798,59990,49192,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+2026-06-20,CLP,2026-06-15 01:07:26,24822647001-A,FF,ND,2815,NICOPOLY,0,0,12958,71990,59032,0,0,0,0,0,0,0,0,2600,0,0,0,0,0,0,0,0
+,CLP,,,FF,,2815,NICOPOLY,0,0,0,0,0,0,0,0,0,0,3966,0,0,0,0,0,0,0,0,0,0,0

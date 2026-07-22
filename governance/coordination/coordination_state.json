@@ -1,0 +1,70 @@
+{
+    "interface_version":  "1.0.0",
+    "updated_at":  "2026-07-18T17:10:00+00:00",
+    "status":  "ACTIVE",
+    "active_channel":  "governance/coordination",
+    "current_owner":  "Codex",
+    "peer_owner":  "OpenCode",
+    "current_goal":  "AG-F4-R4-01: aislar reproduciblemente las cuatro suites F4 contra copias temporales explicitas de V8, sin promover V8 ni modificar la DB oficial.",
+    "authoritative_inputs":  {
+                                 "execution_board":  "execution_board.json",
+                                 "evidence_latest":  "evidence/fase_1b",
+                                 "contract":  "governance/coordination/COORDINATION_CONTRACT.md",
+                                 "foundation_reset":  "governance/coordination/FOUNDATION_RESET.md",
+                                 "master_plan":  "governance/coordination/MASTER_STABILIZATION_AND_PRODUCTION_PLAN.md",
+                                 "f2_runtime_truth":  "governance/coordination/executions/PHASE_2_RUNTIME_TRUTH.md",
+                                 "f4_traceability":  "engine/v4/evidence/traceability_engine.py"
+                             },
+    "handoff":  {
+                    "next_actor":  "Codex",
+                    "required_read_files":  [
+                                                "governance/coordination/COORDINATION_CONTRACT.md",
+                                                "governance/coordination/coordination_registry.json",
+                                                "governance/coordination/coordination_state.json",
+                                                "governance/coordination/MASTER_STABILIZATION_AND_PRODUCTION_PLAN.md",
+                                                "governance/coordination/reviews/CURRENT_PROJECT_STATE_CERTIFICATION.md",
+                                                "governance/coordination/executions/F4-R4_BASELINE_V8_CERTIFICATION.md",
+                                                "tests/test_f4_traceability.py",
+                                                "tests/test_taxonomy_equivalence.py",
+                                                "tests/test_semantic_consistency.py",
+                                                "tests/test_certification_gate.py"
+                                            ],
+                    "blocked_by":  [
+
+                                   ],
+                    "next_actions":  [
+                                         "Antigravity executes only AG-F4-R4-01 in an isolated worktree or temporary copy",
+                                         "All four F4 suites must receive an explicit temporary V8 copy and must fail if the effective path is the official DB",
+                                         "Run the 95 collected F4 tests in one process and report PASS, FAIL, SKIP, XFAIL and ERROR by nodeid",
+                                         "Capture SHA-256 of official DB, V7 and V8 before and after; all hashes must remain identical",
+                                         "Return one reviewable diff and reproducible evidence to Codex; do not apply to the main workspace without a gate",
+                                         "Phase 5 remains NOT_AUTHORIZED"
+                                     ],
+                    "execution_recipient":  "Antigravity",
+                    "next_actor_role":  "Codex reviews the gate after Antigravity returns execution evidence"
+                },
+    "constraints":  [
+                        "Do not modify protected core paths through coordination workflow",
+                        "Do not declare verified/certified state without evidence/fase_1b summary support",
+                        "Do not create parallel coordination files outside governance/coordination",
+                        "OpenCode is PAUSED and must not execute tasks",
+                        "Only AG-F4-R4-01 is active and assigned to Antigravity",
+                        "Do not promote V8 or modify official DB, V7, financial core, tests, baselines, or Execution Board outside the authorized isolated task",
+                        "Phase 5 is NOT_AUTHORIZED"
+                    ],
+    "active_executor":  "Antigravity",
+    "supervisor":  "Codex",
+    "gate_authority":  "Codex",
+    "executor_status":  {
+                            "Antigravity":  "ACTIVE",
+                            "OpenCode":  "PAUSED"
+                        },
+    "active_task":  {
+                        "task_id":  "AG-F4-R4-01",
+                        "title":  "Aislamiento reproducible de las suites F4",
+                        "assigned_to":  "Antigravity",
+                        "status":  "AUTHORIZED",
+                        "single_active_task":  true
+                    },
+    "phase_5_status":  "NOT_AUTHORIZED"
+}

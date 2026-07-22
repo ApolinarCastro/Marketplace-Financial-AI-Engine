@@ -1,0 +1,17 @@
+{
+  "financial_status": "PASS",
+  "documentary_status": "PASS",
+  "api_status": "PASS",
+  "frontend_status": "PASS",
+  "overall_grade": "A",
+  "regressions": 0,
+  "warnings": [],
+  "blocking_issues": [],
+  "certification": {
+    "financial_platform": "CERTIFIED",
+    "documentary_platform": "CERTIFIED",
+    "audit_ready": true,
+    "single_financial_truth": "CERTIFIED",
+    "documentary_truth": "CERTIFIED"
+  }
+}

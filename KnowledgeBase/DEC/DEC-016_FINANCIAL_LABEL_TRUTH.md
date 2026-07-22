@@ -1,0 +1,3 @@
+﻿# DEC-016_FINANCIAL_LABEL_TRUTH
+
+Legacy DEC artifact.

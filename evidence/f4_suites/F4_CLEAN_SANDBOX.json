@@ -1,0 +1,349 @@
+{
+  "execution_id": "F4_20260719_174512",
+  "timestamp": "2026-07-19T17:45:12.274565",
+  "harness_version": "1.0.0-r6",
+  "repository": "Marketplace Financial AI Engine",
+  "commands": [
+    "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\.venv\\Scripts\\python.exe -m pytest C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\tests\\test_certification_gate.py -v --tb=short --junitxml=C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\evidence\\f4_suites\\F4_20260719_174512_test_certification_gate.xml",
+    "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\.venv\\Scripts\\python.exe -m pytest C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\tests\\test_semantic_consistency.py -v --tb=short --junitxml=C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\evidence\\f4_suites\\F4_20260719_174512_test_semantic_consistency.xml",
+    "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\.venv\\Scripts\\python.exe -m pytest C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\tests\\test_f4_traceability.py -v --tb=short --junitxml=C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\evidence\\f4_suites\\F4_20260719_174512_test_f4_traceability.xml",
+    "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\.venv\\Scripts\\python.exe -m pytest C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\tests\\test_taxonomy_equivalence.py -v --tb=short --junitxml=C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\evidence\\f4_suites\\F4_20260719_174512_test_taxonomy_equivalence.xml"
+  ],
+  "timeout_seconds": 900,
+  "start_ts": "2026-07-19T17:45:12.560783",
+  "end_ts": "2026-07-19T17:45:17.861392",
+  "elapsed_seconds": 5.3,
+  "returncode": 2,
+  "summary_line": "",
+  "nodeids_collected": 84,
+  "expected_total": 96,
+  "expected_per_file": {
+    "tests/test_certification_gate.py": 29,
+    "tests/test_semantic_consistency.py": 27,
+    "tests/test_f4_traceability.py": 22,
+    "tests/test_taxonomy_equivalence.py": 18
+  },
+  "outcomes": {
+    "PASS": 0,
+    "FAIL": 0,
+    "SKIP": 0,
+    "XFAIL": 0,
+    "ERROR": 58
+  },
+  "nodeids": [
+    "tests/test_certification_gate.py::test_gate_exec_summary_vs_waterfall[ML]",
+    "tests/test_certification_gate.py::test_gate_exec_summary_vs_waterfall[PARIS]",
+    "tests/test_certification_gate.py::test_gate_exec_summary_vs_waterfall[RIPLEY]",
+    "tests/test_certification_gate.py::test_gate_exec_summary_vs_waterfall[FALABELLA]",
+    "tests/test_certification_gate.py::test_gate_waterfall_conservation[ML]",
+    "tests/test_certification_gate.py::test_gate_waterfall_conservation[PARIS]",
+    "tests/test_certification_gate.py::test_gate_waterfall_conservation[RIPLEY]",
+    "tests/test_certification_gate.py::test_gate_waterfall_conservation[FALABELLA]",
+    "tests/test_certification_gate.py::test_gate_dte_coverage[ML-50.0]",
+    "tests/test_certification_gate.py::test_gate_dte_coverage[RIPLEY-95.0]",
+    "tests/test_certification_gate.py::test_gate_dte_coverage[PARIS-0.0]",
+    "tests/test_certification_gate.py::test_gate_dte_coverage[FALABELLA-0.0]",
+    "tests/test_certification_gate.py::test_gate_taxonomy_has_no_orphans[ML]",
+    "tests/test_certification_gate.py::test_gate_taxonomy_has_no_orphans[PARIS]",
+    "tests/test_certification_gate.py::test_gate_taxonomy_has_no_orphans[RIPLEY]",
+    "tests/test_certification_gate.py::test_gate_taxonomy_has_no_orphans[FALABELLA]",
+    "tests/test_certification_gate.py::test_gate_taxonomy_groups_cover_financial_groups[ML]",
+    "tests/test_certification_gate.py::test_gate_taxonomy_groups_cover_financial_groups[PARIS]",
+    "tests/test_certification_gate.py::test_gate_taxonomy_groups_cover_financial_groups[RIPLEY]",
+    "tests/test_certification_gate.py::test_gate_taxonomy_groups_cover_financial_groups[FALABELLA]",
+    "tests/test_certification_gate.py::test_gate_ledger_has_data[ML]",
+    "tests/test_certification_gate.py::test_gate_ledger_has_data[PARIS]",
+    "tests/test_certification_gate.py::test_gate_ledger_has_data[RIPLEY]",
+    "tests/test_certification_gate.py::test_gate_ledger_has_data[FALABELLA]",
+    "tests/test_certification_gate.py::test_gate_all_mps_have_waterfall",
+    "tests/test_certification_gate.py::test_gate_no_frontend_financial_computations",
+    "tests/test_certification_gate.py::test_gate_insert_update_delete_blocked",
+    "tests/test_certification_gate.py::test_gate_api_v4_ledger_endpoint",
+    "tests/test_certification_gate.py::test_official_db_integrity",
+    "tests/test_semantic_consistency.py::test_no_duplicate_metric_names",
+    "tests/test_semantic_consistency.py::test_no_duplicate_definitions",
+    "tests/test_semantic_consistency.py::test_all_metrics_have_required_fields",
+    "tests/test_semantic_consistency.py::test_metric_registry_complete",
+    "tests/test_semantic_consistency.py::test_metric_ventas_consistency[ML]",
+    "tests/test_semantic_consistency.py::test_metric_ventas_consistency[PARIS]",
+    "tests/test_semantic_consistency.py::test_metric_ventas_consistency[RIPLEY]",
+    "tests/test_semantic_consistency.py::test_metric_ventas_consistency[FALABELLA]",
+    "tests/test_semantic_consistency.py::test_metric_devoluciones_consistency[ML]",
+    "tests/test_semantic_consistency.py::test_metric_devoluciones_consistency[PARIS]",
+    "tests/test_semantic_consistency.py::test_metric_devoluciones_consistency[RIPLEY]",
+    "tests/test_semantic_consistency.py::test_metric_devoluciones_consistency[FALABELLA]",
+    "tests/test_semantic_consistency.py::test_metric_disponible_consistency[ML]",
+    "tests/test_semantic_consistency.py::test_metric_disponible_consistency[PARIS]",
+    "tests/test_semantic_consistency.py::test_metric_disponible_consistency[RIPLEY]",
+    "tests/test_semantic_consistency.py::test_metric_disponible_consistency[FALABELLA]",
+    "tests/test_semantic_consistency.py::test_metric_costos_consistency[ML]",
+    "tests/test_semantic_consistency.py::test_metric_costos_consistency[PARIS]",
+    "tests/test_semantic_consistency.py::test_metric_costos_consistency[RIPLEY]",
+    "tests/test_semantic_consistency.py::test_metric_costos_consistency[FALABELLA]",
+    "tests/test_semantic_consistency.py::test_metric_consistency_all_mp_consolidated",
+    "tests/test_semantic_consistency.py::test_consumer_contracts_complete",
+    "tests/test_semantic_consistency.py::test_semantic_registry_get_metric",
+    "tests/test_semantic_consistency.py::test_semantic_registry_list_metrics",
+    "tests/test_semantic_consistency.py::test_derived_metrics_properly_tagged",
+    "tests/test_semantic_consistency.py::test_pnl_order_matches_financial_groups",
+    "tests/test_semantic_consistency.py::test_no_case_sensitivity_issues",
+    "_______________ ERROR collecting tests/test_f4_traceability.py ________________",
+    "ImportError while importing test module 'C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\tests\\test_f4_traceability.py'.",
+    "Hint: make sure your test modules/packages have valid Python names.",
+    "Traceback:",
+    "..\\..\\Python\\pythoncore-3.14-64\\Lib\\importlib\\__init__.py:88: in import_module",
+    "return _bootstrap._gcd_import(name[level:], package, level)",
+    "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "tests\\test_f4_traceability.py:30: in <module>",
+    "from engine.v4.evidence.traceability import (",
+    "engine\\v4\\evidence\\__init__.py:2: in <module>",
+    "from engine.v4.evidence.evidence_link_registry import EvidenceLinkRegistry",
+    "engine\\v4\\evidence\\evidence_link_registry.py:2: in <module>",
+    "from engine.v4.domain.financial_engine import FinancialEngine",
+    "E   ModuleNotFoundError: No module named 'engine.v4.domain.financial_engine'",
+    "ERROR tests/test_f4_traceability.py",
+    "!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!",
+    "_____________ ERROR collecting tests/test_taxonomy_equivalence.py _____________",
+    "ImportError while importing test module 'C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\tests\\test_taxonomy_equivalence.py'.",
+    "Hint: make sure your test modules/packages have valid Python names.",
+    "Traceback:",
+    "..\\..\\Python\\pythoncore-3.14-64\\Lib\\importlib\\__init__.py:88: in import_module",
+    "return _bootstrap._gcd_import(name[level:], package, level)",
+    "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "tests\\test_taxonomy_equivalence.py:9: in <module>",
+    "import pandas as pd",
+    "E   ModuleNotFoundError: No module named 'pandas'",
+    "ERROR tests/test_taxonomy_equivalence.py",
+    "!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!"
+  ],
+  "junit": {
+    "total": 58,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "errors": 58,
+    "xfailed": 0,
+    "per_file": {
+      "tests/test_certification_gate.py": {
+        "total": 29,
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "errors": 29,
+        "xfailed": 0
+      },
+      "tests/test_semantic_consistency.py": {
+        "total": 27,
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "errors": 27,
+        "xfailed": 0
+      },
+      "tests/test_f4_traceability.py": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "errors": 0,
+        "xfailed": 0
+      },
+      "tests/test_taxonomy_equivalence.py": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "errors": 0,
+        "xfailed": 0
+      }
+    },
+    "unmatched_errors": 2
+  },
+  "pre_run_hashes": {
+    "OFFICIAL_DB": {
+      "sha256": "NOT_FOUND",
+      "size": 0,
+      "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\data\\db\\meli_financial_v4.db"
+    },
+    "V7": {
+      "sha256": "NOT_FOUND",
+      "size": 0,
+      "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\data\\db\\baseline_estable_v7_20260715\\meli_financial_v4.db"
+    },
+    "V8": {
+      "sha256": "NOT_FOUND",
+      "size": 0,
+      "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\data\\db\\baseline_estable_v8_candidate_20260717\\meli_financial_v4.db"
+    }
+  },
+  "post_run_hashes": {
+    "OFFICIAL_DB": {
+      "sha256": "NOT_FOUND",
+      "size": 0,
+      "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\data\\db\\meli_financial_v4.db"
+    },
+    "V7": {
+      "sha256": "NOT_FOUND",
+      "size": 0,
+      "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\data\\db\\baseline_estable_v7_20260715\\meli_financial_v4.db"
+    },
+    "V8": {
+      "sha256": "NOT_FOUND",
+      "size": 0,
+      "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\data\\db\\baseline_estable_v8_candidate_20260717\\meli_financial_v4.db"
+    }
+  },
+  "mutation_detected": false,
+  "mutation_detail": null,
+  "protected_dependencies": {
+    "pre_run": {
+      "engine.v4.database": {
+        "sha256": "53AA4EB9FA941FD1E22EA9D5B12082407C100284A7CA065EA0BEBE702C0B6F70",
+        "size": 12098,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\database.py"
+      },
+      "engine.v4.domain.canonical_semantics": {
+        "sha256": "5025C3544CBB60ED47A74352B7A98550A4F0910D01513C3257656B573EF2F1B7",
+        "size": 19863,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\domain\\canonical_semantics.py"
+      },
+      "engine.v4.domain.ledger_engine": {
+        "sha256": "683AD76BA5ABC199978FB6BC4C3E315EDBFBE53AA95ADDF8951B351848CC2F0F",
+        "size": 1273,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\domain\\ledger_engine.py"
+      },
+      "engine.v4.domain.generate_artifacts": {
+        "sha256": "FBB12A42B690B4F82F431AF7480C1AE8155F61E504AAE2D2DD4D92D7BE7B760B",
+        "size": 13701,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\domain\\generate_artifacts.py"
+      },
+      "engine.v4.evidence.traceability": {
+        "sha256": "7CD233355F675049AF97A06345FBAABECA49A1924F0EF37519DFA4D60DEA7A29",
+        "size": 2105,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\evidence\\traceability.py"
+      },
+      "engine.v4.evidence.traceability_engine": {
+        "sha256": "93BB82FD0CDCBE736A78596F28E944D48183DC688447B44A502868E990AC6F09",
+        "size": 13046,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\evidence\\traceability_engine.py"
+      },
+      "engine.v4.evidence.__init__": {
+        "sha256": "88E79920A2D05C39F6FEA76860DB352EFED73F16DAED9E227E4E70E1F00F4EB1",
+        "size": 2941,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\evidence\\__init__.py"
+      },
+      "engine.v4.ingestion": {
+        "sha256": "D5AC0B3A9CD54EFA84E0D709D7A9C7041E5C6A1A2DB784305B1D44C1999799B7",
+        "size": 11651,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\ingestion\\__init__.py"
+      },
+      "engine.v4.ingestion.orchestrator": {
+        "sha256": "BB214DA8EC7BC02B50DFAEDD8764C1F78D1AB032783A017DB94652016B9BCC45",
+        "size": 8880,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\ingestion\\orchestrator.py"
+      },
+      "engine.v4.semantic": {
+        "sha256": "AEA3F5D7481CDA4492CAB3951616B768890374F12E0482961A97830FBEB625CD",
+        "size": 5396,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\semantic\\__init__.py"
+      },
+      "engine.v4.marketplace_auditor": {
+        "sha256": "302780730EEEC69FD45A9898DD370CEEEE507D7FB15FA9BE44A4D96C3D8B6FE4",
+        "size": 50237,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\marketplace_auditor.py"
+      },
+      "taxonomy.taxonomy_loader": {
+        "sha256": "B73E2303E4099D229D4BC9E7785B680396D5560DFDEC9E9556916D610EAB4270",
+        "size": 3839,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\taxonomy\\taxonomy_loader.py"
+      }
+    },
+    "post_run": {
+      "engine.v4.database": {
+        "sha256": "53AA4EB9FA941FD1E22EA9D5B12082407C100284A7CA065EA0BEBE702C0B6F70",
+        "size": 12098,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\database.py"
+      },
+      "engine.v4.domain.canonical_semantics": {
+        "sha256": "5025C3544CBB60ED47A74352B7A98550A4F0910D01513C3257656B573EF2F1B7",
+        "size": 19863,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\domain\\canonical_semantics.py"
+      },
+      "engine.v4.domain.ledger_engine": {
+        "sha256": "683AD76BA5ABC199978FB6BC4C3E315EDBFBE53AA95ADDF8951B351848CC2F0F",
+        "size": 1273,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\domain\\ledger_engine.py"
+      },
+      "engine.v4.domain.generate_artifacts": {
+        "sha256": "FBB12A42B690B4F82F431AF7480C1AE8155F61E504AAE2D2DD4D92D7BE7B760B",
+        "size": 13701,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\domain\\generate_artifacts.py"
+      },
+      "engine.v4.evidence.traceability": {
+        "sha256": "7CD233355F675049AF97A06345FBAABECA49A1924F0EF37519DFA4D60DEA7A29",
+        "size": 2105,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\evidence\\traceability.py"
+      },
+      "engine.v4.evidence.traceability_engine": {
+        "sha256": "93BB82FD0CDCBE736A78596F28E944D48183DC688447B44A502868E990AC6F09",
+        "size": 13046,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\evidence\\traceability_engine.py"
+      },
+      "engine.v4.evidence.__init__": {
+        "sha256": "88E79920A2D05C39F6FEA76860DB352EFED73F16DAED9E227E4E70E1F00F4EB1",
+        "size": 2941,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\evidence\\__init__.py"
+      },
+      "engine.v4.ingestion": {
+        "sha256": "D5AC0B3A9CD54EFA84E0D709D7A9C7041E5C6A1A2DB784305B1D44C1999799B7",
+        "size": 11651,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\ingestion\\__init__.py"
+      },
+      "engine.v4.ingestion.orchestrator": {
+        "sha256": "BB214DA8EC7BC02B50DFAEDD8764C1F78D1AB032783A017DB94652016B9BCC45",
+        "size": 8880,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\ingestion\\orchestrator.py"
+      },
+      "engine.v4.semantic": {
+        "sha256": "AEA3F5D7481CDA4492CAB3951616B768890374F12E0482961A97830FBEB625CD",
+        "size": 5396,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\semantic\\__init__.py"
+      },
+      "engine.v4.marketplace_auditor": {
+        "sha256": "302780730EEEC69FD45A9898DD370CEEEE507D7FB15FA9BE44A4D96C3D8B6FE4",
+        "size": 50237,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\engine\\v4\\marketplace_auditor.py"
+      },
+      "taxonomy.taxonomy_loader": {
+        "sha256": "B73E2303E4099D229D4BC9E7785B680396D5560DFDEC9E9556916D610EAB4270",
+        "size": 3839,
+        "path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\f4_sandbox_20260719_174315\\taxonomy\\taxonomy_loader.py"
+      }
+    },
+    "mutation_detected": false,
+    "mutation_detail": null
+  },
+  "overlay": {
+    "created_at": "2026-07-19T17:45:12.560509",
+    "read_only": true,
+    "type": "filesystem_overlay"
+  },
+  "temp_v8_cleaned": true,
+  "report_complete": false,
+  "verdict": "REQUIRES_REMEDIATION",
+  "verdict_reason": "0 FAIL, 58 ERROR",
+  "exit_code": 1,
+  "git": {
+    "subject_commit": "dd623770da763d33ae7d0da6733e05bcfee6a385",
+    "subject_tree": "3c4953392e059bd0a1eaa888888d9e5d225cab49",
+    "git_dirty": true
+  },
+  "code_hashes": {
+    "runner": "7F954C17BD8F085D73301335C98791F310632E95B815BE4A83A85A1623DB7D45",
+    "test_certification_gate": "398438FF652ED02AC3DF516220A8456E40B2E2C051B586D20213EF9483362D1B",
+    "test_semantic_consistency": "A1571BDC940C579FBFB480834B8E8437629643B351B33B4C6951B5F81BADFD44",
+    "test_f4_traceability": "416E77865B85821D7F3907BED8EA25B38B2ED50EE2C919B2432539B173A7F035",
+    "test_taxonomy_equivalence": "A0BE3F7D9D8A6CBAE00EABB763869A1280DC3C98BF0916F03F0F254B3F3515C8",
+    "conftest": "508F57C442E8078E1979D3F60FFB5C768D4D49C5E32239109A2F7E44DB4522F0"
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "question": "¿Qué pedidos originan la diferencia?",
+  "period": "2026-06-30 00:00:00",
+  "answer": {
+    "summary": "Mayor orden: 24712911201-A ($204,450)"
+  },
+  "explanation": {
+    "text": "Top 20 transacciones del periodo.",
+    "bullet_points": [
+      "RIPLEY 24712911201-A (Importe del pedido): $204,450",
+      "RIPLEY 24717687201-A (refund_order_amount): $157,960",
+      "RIPLEY 24705918201-A (Importe del pedido): $142,830",
+      "RIPLEY 24732564401-A (Importe del pedido): $124,970",
+      "RIPLEY 24805558501-A (Importe del pedido): $118,970"
+    ]
+  },
+  "breakdown": [
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+      "id_orden": "24712911201-A",
+      "detalle": "Importe del pedido",
+      "monto": 204450.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000379-2815.xlsx",
+      "folio_xml": "594818"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+      "id_orden": "24717687201-A",
+      "detalle": "refund_order_amount",
+      "monto": 157960.0,
+      "financial_group": "devoluciones",
+      "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+      "folio_xml": null
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+      "id_orden": "24705918201-A",
+      "detalle": "Importe del pedido",
+      "monto": 142830.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24732564401-A_importedelpedido",
+      "id_orden": "24732564401-A",
+      "detalle": "Importe del pedido",
+      "monto": 124970.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24805558501-A_importedelpedido",
+      "id_orden": "24805558501-A",
+      "detalle": "Importe del pedido",
+      "monto": 118970.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_594818_24742641101-A_importedelpedido",
+      "id_orden": "24742641101-A",
+      "detalle": "Importe del pedido",
+      "monto": 117980.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000379-2815.xlsx",
+      "folio_xml": "594818"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_594818_24742641101-A_pedidosreembolsados",
+      "id_orden": "24742641101-A",
+      "detalle": "Pedidos reembolsados",
+      "monto": -117980.0,
+      "financial_group": "devoluciones",
+      "archivo_origen": "000379-2815.xlsx",
+      "folio_xml": "594818"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24742751101-A_importedelpedido",
+      "id_orden": "24742751101-A",
+      "detalle": "Importe del pedido",
+      "monto": 117980.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24753015701-A_importedelpedido",
+      "id_orden": "24753015701-A",
+      "detalle": "Importe del pedido",
+      "monto": 111980.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24781412101-A_importedelpedido",
+      "id_orden": "24781412101-A",
+      "detalle": "Importe del pedido",
+      "monto": 111980.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24725814301-A_importedelpedido",
+      "id_orden": "24725814301-A",
+      "detalle": "Importe del pedido",
+      "monto": 104960.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24770598201-A_importedelpedido",
+      "id_orden": "24770598201-A",
+      "detalle": "Importe del pedido",
+      "monto": 101980.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24750513501-A_importedelpedido",
+      "id_orden": "24750513501-A",
+      "detalle": "Importe del pedido",
+      "monto": 97980.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24750513501-A_pedidosreembolsados",
+      "id_orden": "24750513501-A",
+      "detalle": "Pedidos reembolsados",
+      "monto": -97980.0,
+      "financial_group": "devoluciones",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "paris",
+      "id_transaccion": "15725405_GROSS",
+      "id_orden": null,
+      "detalle": "Venta",
+      "monto": 95990.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+      "folio_xml": null
+    },
+    {
+      "mp": "paris",
+      "id_transaccion": "15904679_GROSS",
+      "id_orden": null,
+      "detalle": "Venta",
+      "monto": 95990.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+      "folio_xml": null
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24779057801-A_importedelpedido",
+      "id_orden": "24779057801-A",
+      "detalle": "Importe del pedido",
+      "monto": 91181.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24706927102-A_importedelpedido",
+      "id_orden": "24706927102-A",
+      "detalle": "Importe del pedido",
+      "monto": 91180.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24706927102-A_pedidosreembolsados",
+      "id_orden": "24706927102-A",
+      "detalle": "Pedidos reembolsados",
+      "monto": -91180.0,
+      "financial_group": "devoluciones",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    },
+    {
+      "mp": "ripley",
+      "id_transaccion": "RIP_596684_24778555901-A_importedelpedido",
+      "id_orden": "24778555901-A",
+      "detalle": "Importe del pedido",
+      "monto": 90980.0,
+      "financial_group": "ingresos",
+      "archivo_origen": "000380-2815.xlsx",
+      "folio_xml": "596684"
+    }
+  ],
+  "evidence": [
+    {
+      "marketplace": "ripley",
+      "kpi": "top_transactions",
+      "value": 204450.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT monto FROM marketplace_ledger_v1 WHERE id_transaccion='RIP_594818_24712911201-A_importedelpedido'",
+      "components": {
+        "tx": "RIP_594818_24712911201-A_importedelpedido",
+        "order": "24712911201-A",
+        "detalle": "Importe del pedido",
+        "monto": 204450.0,
+        "fg": "ingresos"
+      },
+      "ledger_samples": [
+        {
+          "mp": "ripley",
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 0,
+        "source_files": 0
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "top_transactions",
+      "value": 157960.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT monto FROM marketplace_ledger_v1 WHERE id_transaccion='RIP_FF_24717687201-A_32_refundorderamount'",
+      "components": {
+        "tx": "RIP_FF_24717687201-A_32_refundorderamount",
+        "order": "24717687201-A",
+        "detalle": "refund_order_amount",
+        "monto": 157960.0,
+        "fg": "devoluciones"
+      },
+      "ledger_samples": [
+        {
+          "mp": "ripley",
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        }
+      ],
+      "raw_sources": [
+        "abonos_descuentos_000031_ff_2815.csv"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 0,
+        "source_files": 0
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "top_transactions",
+      "value": 142830.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT monto FROM marketplace_ledger_v1 WHERE id_transaccion='RIP_596684_24705918201-A_importedelpedido'",
+      "components": {
+        "tx": "RIP_596684_24705918201-A_importedelpedido",
+        "order": "24705918201-A",
+        "detalle": "Importe del pedido",
+        "monto": 142830.0,
+        "fg": "ingresos"
+      },
+      "ledger_samples": [
+        {
+          "mp": "ripley",
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 0,
+        "source_files": 0
+      },
+      "xml": []
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "question": "¿Dónde está la evidencia?",
+  "period": "2026-06-30 00:00:00",
+  "answer": {
+    "summary": "Evidencia completa para 3 transacciones",
+    "confidence": "CERTIFICADO"
+  },
+  "explanation": {
+    "text": "RAW -> ETL -> Ledger -> Financial Engine -> API -> Usuario",
+    "bullet_points": [
+      "RIPLEY: RIP_594818_24712911201-A_importedelpedido ($204,450)",
+      "RIPLEY: RIP_FF_24717687201-A_32_refundorderamount ($157,960)",
+      "RIPLEY: RIP_596684_24705918201-A_importedelpedido ($142,830)"
+    ]
+  },
+  "breakdown": [
+    {
+      "marketplace": "ripley",
+      "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+      "monto": 204450.0,
+      "raw": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ]
+    },
+    {
+      "marketplace": "ripley",
+      "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+      "monto": 157960.0,
+      "raw": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ]
+    },
+    {
+      "marketplace": "ripley",
+      "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+      "monto": 142830.0,
+      "raw": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "marketplace": "ripley",
+      "kpi": "evidence_chain",
+      "value": 204450.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT * FROM marketplace_ledger_v1 WHERE id_transaccion='RIP_594818_24712911201-A_importedelpedido'",
+      "components": {
+        "tx": "RIP_594818_24712911201-A_importedelpedido",
+        "order": "24712911201-A",
+        "detalle": "Importe del pedido",
+        "monto": 204450.0,
+        "fg": "ingresos"
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "evidence_chain",
+      "value": 157960.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT * FROM marketplace_ledger_v1 WHERE id_transaccion='RIP_FF_24717687201-A_32_refundorderamount'",
+      "components": {
+        "tx": "RIP_FF_24717687201-A_32_refundorderamount",
+        "order": "24717687201-A",
+        "detalle": "refund_order_amount",
+        "monto": 157960.0,
+        "fg": "devoluciones"
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "evidence_chain",
+      "value": 142830.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT * FROM marketplace_ledger_v1 WHERE id_transaccion='RIP_596684_24705918201-A_importedelpedido'",
+      "components": {
+        "tx": "RIP_596684_24705918201-A_importedelpedido",
+        "order": "24705918201-A",
+        "detalle": "Importe del pedido",
+        "monto": 142830.0,
+        "fg": "ingresos"
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    }
+  ]
+}

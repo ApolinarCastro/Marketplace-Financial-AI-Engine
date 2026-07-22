@@ -1,0 +1,316 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CanonicalFinancialSemantics",
+  "description": "Single typed contract for all financial domains. Auto-generated from canonical_semantics.py.",
+  "version": "1.0.0",
+  "definitions": {
+    "FinancialGroup": {
+      "type": "string",
+      "enum": [
+        "ingresos",
+        "devoluciones",
+        "costos_operacionales",
+        "costos_comerciales",
+        "recuperaciones_y_bonificaciones",
+        "ajustes",
+        "tesoreria",
+        "impuestos"
+      ],
+      "description": "Certified financial groups",
+      "oneOf": [
+        {
+          "const": "ingresos",
+          "title": "INGRESOS"
+        },
+        {
+          "const": "devoluciones",
+          "title": "DEVOLUCIONES"
+        },
+        {
+          "const": "costos_operacionales",
+          "title": "COSTOS_OPERACIONALES"
+        },
+        {
+          "const": "costos_comerciales",
+          "title": "COSTOS_COMERCIALES"
+        },
+        {
+          "const": "recuperaciones_y_bonificaciones",
+          "title": "RECUPERACIONES_Y_BONIFICACIONES"
+        },
+        {
+          "const": "ajustes",
+          "title": "AJUSTES"
+        },
+        {
+          "const": "tesoreria",
+          "title": "TESORERIA"
+        },
+        {
+          "const": "impuestos",
+          "title": "IMPUESTOS"
+        }
+      ]
+    },
+    "CashRole": {
+      "type": "string",
+      "enum": [
+        "REAL_CASH",
+        "ACCRUAL",
+        "PASS_THROUGH",
+        "MIRROR_ZERO",
+        "UNASSIGNED"
+      ],
+      "oneOf": [
+        {
+          "const": "REAL_CASH",
+          "title": "REAL_CASH"
+        },
+        {
+          "const": "ACCRUAL",
+          "title": "ACCRUAL"
+        },
+        {
+          "const": "PASS_THROUGH",
+          "title": "PASS_THROUGH"
+        },
+        {
+          "const": "MIRROR_ZERO",
+          "title": "MIRROR_ZERO"
+        },
+        {
+          "const": "UNASSIGNED",
+          "title": "UNASSIGNED"
+        }
+      ]
+    },
+    "EventType": {
+      "type": "string",
+      "enum": [
+        "ROOT_EVENT",
+        "MECHANISM",
+        "SETTLEMENT",
+        "UNASSIGNED"
+      ],
+      "oneOf": [
+        {
+          "const": "ROOT_EVENT",
+          "title": "ROOT_EVENT"
+        },
+        {
+          "const": "MECHANISM",
+          "title": "MECHANISM"
+        },
+        {
+          "const": "SETTLEMENT",
+          "title": "SETTLEMENT"
+        },
+        {
+          "const": "UNASSIGNED",
+          "title": "UNASSIGNED"
+        }
+      ]
+    },
+    "Marketplace": {
+      "type": "string",
+      "enum": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ],
+      "oneOf": [
+        {
+          "const": "ML",
+          "title": "ML"
+        },
+        {
+          "const": "PARIS",
+          "title": "PARIS"
+        },
+        {
+          "const": "RIPLEY",
+          "title": "RIPLEY"
+        },
+        {
+          "const": "FALABELLA",
+          "title": "FALABELLA"
+        },
+        {
+          "const": "SHOPIFY",
+          "title": "SHOPIFY"
+        }
+      ]
+    },
+    "AmountSign": {
+      "type": "string",
+      "enum": [
+        "POSITIVE",
+        "NEGATIVE",
+        "VARIABLE"
+      ],
+      "oneOf": [
+        {
+          "const": "POSITIVE",
+          "title": "POSITIVE"
+        },
+        {
+          "const": "NEGATIVE",
+          "title": "NEGATIVE"
+        },
+        {
+          "const": "VARIABLE",
+          "title": "VARIABLE"
+        }
+      ]
+    },
+    "UniquenessKey": {
+      "type": "object",
+      "properties": {
+        "table": {
+          "type": "string"
+        },
+        "key_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rationale": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "table",
+        "key_fields"
+      ]
+    },
+    "FinancialGroupMeta": {
+      "type": "object",
+      "properties": {
+        "display_name": {
+          "type": "string"
+        },
+        "pnl_order": {
+          "type": "integer"
+        },
+        "amount_sign": {
+          "$ref": "#/definitions/AmountSign"
+        },
+        "canonical_cash_role": {
+          "$ref": "#/definitions/CashRole"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "display_name",
+        "pnl_order",
+        "amount_sign",
+        "canonical_cash_role"
+      ]
+    },
+    "MarketplaceMeta": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "ledger_uniqueness": {
+          "$ref": "#/definitions/UniquenessKey"
+        },
+        "has_signal_taxonomy": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "display_name",
+        "ledger_uniqueness"
+      ]
+    },
+    "MetricDefinition": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "source_table": {
+          "type": "string"
+        },
+        "granularity": {
+          "type": "string"
+        },
+        "formula_method": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "display_name",
+        "description",
+        "source_table",
+        "granularity",
+        "formula_method"
+      ]
+    }
+  },
+  "properties": {
+    "financial_groups": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/FinancialGroupMeta"
+          }
+        ]
+      },
+      "propertyNames": {
+        "$ref": "#/definitions/FinancialGroup"
+      }
+    },
+    "marketplaces": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/MarketplaceMeta"
+          }
+        ]
+      },
+      "propertyNames": {
+        "$ref": "#/definitions/Marketplace"
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/MetricDefinition"
+          }
+        ]
+      }
+    },
+    "pnl_order": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/FinancialGroup"
+      }
+    }
+  }
+}

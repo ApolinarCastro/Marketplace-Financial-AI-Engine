@@ -1,0 +1,29 @@
+{
+  "execution_id": "f3_03_1784299177",
+  "test": "F3-03: Controlled Ingestion with Financial Fixture",
+  "fixture": "5 rows ML Facturacion XLSX -> 8 ledger rows, $20800 total",
+  "fixture_sha256": "54bd9ad1b05df0e1e07353e4d11b209ad4ae5ed2ef0f86f40ed265a732697aac",
+  "baseline": "data\\db\\baseline_estable_v7_20260715\\meli_financial_v4.db",
+  "runs": [
+    {
+      "run": 1,
+      "error": "Connection Error: Can't open a connection to same database file with a different configuration than existing connections",
+      "verdict": "FAIL"
+    },
+    {
+      "run": 2,
+      "error": "Connection Error: Can't open a connection to same database file with a different configuration than existing connections",
+      "verdict": "FAIL"
+    },
+    {
+      "run": 3,
+      "error": "Connection Error: Can't open a connection to same database file with a different configuration than existing connections",
+      "verdict": "FAIL"
+    }
+  ],
+  "reingestion": {
+    "error": "Connection Error: Can't open a connection to same database file with a different configuration than existing connections",
+    "verdict": "FAIL"
+  },
+  "final_verdict": "FIXTURE_VALIDATION_FAILED"
+}

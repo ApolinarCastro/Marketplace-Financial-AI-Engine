@@ -19,3 +19,15 @@ scratch/
 secrets.*
 credentials.*
 config_local.*
+
+# Temporales
+tmp/
+temp_obscura/
+tmp_*.py
+
+# Codex & Antigravity
+opencode.json
+.agents/
+
+# Artefactos
+graphify-out/

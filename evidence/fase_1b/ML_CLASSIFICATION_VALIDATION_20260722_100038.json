@@ -1,0 +1,142 @@
+{
+    "f4_suite":  {
+                     "errors":  0,
+                     "passed":  91,
+                     "traceability":  {
+                                          "verdict":  "PASS",
+                                          "failed":  0,
+                                          "passed":  22
+                                      },
+                     "semantic_consistency":  {
+                                                  "verdict":  "PASS",
+                                                  "failed":  0,
+                                                  "passed":  27
+                                              },
+                     "failure_reason":  "5 taxonomy equivalence failures due to normalize_detail() mojibake fix. Expected behavior - recorded taxonomy snapshots need update.",
+                     "failed_tests":  [
+                                          "test_normalized_map_matches",
+                                          "test_classification_identical[ML]",
+                                          "test_classification_identical[RIPLEY]",
+                                          "test_financial_group_monetary_equivalence[ML]",
+                                          "test_financial_group_monetary_equivalence[RIPLEY]"
+                                      ],
+                     "executed":  true,
+                     "verdict":  "REQUIRES_REMEDIATION",
+                     "skipped":  0,
+                     "total":  96,
+                     "taxonomy_equivalence":  {
+                                                  "verdict":  "FAIL",
+                                                  "failed":  5,
+                                                  "passed":  13
+                                              },
+                     "certification_gate":  {
+                                                "verdict":  "PASS",
+                                                "failed":  0,
+                                                "passed":  29
+                                            },
+                     "failed":  5
+                 },
+    "repository":  "Marketplace Financial AI Engine",
+    "branch":  "f4-clean-code",
+    "timestamp":  "2026-07-22T10:00:38.2113355-04:00",
+    "validation_6_conditions":  {
+                                    "total":  "6/6 PASS",
+                                    "ML_OPERATIONAL_NULL_FG":  {
+                                                                   "veredicto":  "PASS",
+                                                                   "despues":  0,
+                                                                   "antes":  79648
+                                                               },
+                                    "OTHER_MARKETPLACES_CHANGED":  {
+                                                                       "MPs_con_cambios":  [
+
+                                                                                           ],
+                                                                       "veredicto":  "PASS"
+                                                                   },
+                                    "ML_LEDGER_ROWS":  {
+                                                           "veredicto":  "PASS",
+                                                           "despues":  79648,
+                                                           "antes":  79648
+                                                       },
+                                    "DUPLICATES_CREATED":  {
+                                                               "veredicto":  "PASS",
+                                                               "despues":  0,
+                                                               "antes":  0
+                                                           },
+                                    "HISTORICAL_DIFFERENCE":  {
+                                                                  "rows_despues":  79648,
+                                                                  "monto_antes":  470891023.64,
+                                                                  "monto_despues":  470891023.64,
+                                                                  "veredicto":  "PASS",
+                                                                  "rows_antes":  79648
+                                                              },
+                                    "ML_CLASSIFIED_ROWS":  {
+                                                               "veredicto":  "PASS",
+                                                               "despues":  79648,
+                                                               "antes":  0
+                                                           }
+                                },
+    "execution_id":  "ML_CLASSIFICATION_VALIDATION_20260722_100038",
+    "pre_validation":  {
+                           "copy_size_bytes":  55848960,
+                           "official_db_hash":  "C76C3FEE51C31949571F829DA6043F1682023DC39F5B093F7AF794654DBF6FCE",
+                           "copy_path":  "C:\\tmp\\meli_financial_v4_ml_classification_validation.db",
+                           "copy_hash":  "C76C3FEE51C31949571F829DA6043F1682023DC39F5B093F7AF794654DBF6FCE"
+                       },
+    "harness_version":  "1.0.0-ML-CLASSIFICATION",
+    "corrections_applied":  [
+                                {
+                                    "lines":  [
+                                                  "462: def run_classification(self, marketplace=None)"
+                                              ],
+                                    "description":  "Added optional marketplace parameter to run_classification()",
+                                    "id":  "CORRECTION_1",
+                                    "file":  "engine/v4/marketplace_auditor.py"
+                                },
+                                {
+                                    "lines":  [
+                                                  "387: text.encode(\u0027latin-1\u0027).decode(\u0027utf-8\u0027) fallback"
+                                              ],
+                                    "description":  "Added mojibake fix in normalize_detail() - double-encoded UTF-8 detection via latin-1 roundtrip",
+                                    "id":  "CORRECTION_2",
+                                    "file":  "engine/v4/marketplace_auditor.py"
+                                },
+                                {
+                                    "lines":  [
+                                                  "1042: def run_classification(self, marketplace=None)"
+                                              ],
+                                    "description":  "Added marketplace parameter passthrough in FinancialEngine wrapper",
+                                    "id":  "CORRECTION_2B",
+                                    "file":  "engine/v4/domain/financial_engine.py"
+                                }
+                            ],
+    "classification":  {
+                           "VERIFIED":  true,
+                           "VALIDATED":  true,
+                           "CERTIFIED":  false,
+                           "IMPLEMENTED":  true
+                       },
+    "metadata":  {
+                     "constraint_compliance":  [
+                                                   "NO modificada DB oficial",
+                                                   "NO modificado loader",
+                                                   "NO modificado taxonomies",
+                                                   "NO modificados tests existentes",
+                                                   "NO modificado DEC-019"
+                                               ],
+                     "temp_files_created":  [
+                                                "C:\\tmp\\meli_financial_v4_ml_classification_validation.db"
+                                            ],
+                     "modified_files":  [
+                                            "engine/v4/marketplace_auditor.py (normalize_detail + run_classification marketplace param)",
+                                            "engine/v4/domain/financial_engine.py (marketplace parameter passthrough)"
+                                        ]
+                 },
+    "commit":  "d15e94e769b702fe1ca6e97d59bfb1b6333ffce4",
+    "description":  "ML Classification Validation - Controlled copy with marketplace param + mojibake fix",
+    "post_execution":  {
+                           "official_db_intact":  true,
+                           "official_db_hash":  "C76C3FEE51C31949571F829DA6043F1682023DC39F5B093F7AF794654DBF6FCE",
+                           "copy_hash_after":  "7ED169DDC0720AD5118D0EE521AFAE24527457A63C193A44E3CBE52E7F2039E4",
+                           "classification_rows":  79648
+                       }
+}
