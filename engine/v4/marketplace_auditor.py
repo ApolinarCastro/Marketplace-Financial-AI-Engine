@@ -269,6 +269,10 @@ RAW_TO_CLASSIFICATION_MAP = {
     # Falabella — Aportes Promocionales
     "Pago de aporte promocionales a cliente (Promo)": "Pago de aporte promocionales a cliente (Promo)",
     "Descuento por aportes promocionales a clientes (Promo)": "Descuento por aportes promocionales a clientes (Promo)",
+
+    # YAML taxonomy additions (2026-07): sync with taxonomy_mappings.yaml
+    "Pago normal": "Pago normal",
+    "Publicidad": "Cargo por campaña de publicidad - Product Ads",
 }
 
 # ---------------------------------------------------------------------------
@@ -280,7 +284,7 @@ FINANCIAL_STRUCTURE = {
         "Compensación comercial", "Importe del pedido", "Importe del envío del pedido",
         "Despacho", "Sale amount", "Gross sales",
         "Pago por precio del producto",
-        "Subtotal", "Precio total", "order_amount"
+        "Subtotal", "Precio total", "order_amount", "Pago normal"
     ],
     "devoluciones": [
         "Pedidos reembolsados", "Devolución", "Devolución de venta", "Devolución de dinero",

@@ -50,7 +50,7 @@ OFFICIAL_DB = ROOT / "data" / "db" / "meli_financial_v4.db"
 OFFICIAL_RAW = ROOT / "01_Raw"
 TEMP_BASE = F4_TEMP_ROOT / "tmp_f4_trace"
 FIXTURE = ROOT / "tests" / "fixtures" / "f3_03" / "f3_03_fixture.xlsx"
-FIXTURE_FILENAME = "f3_03_fixture.xlsx"
+FIXTURE_FILENAME = "f3_03_facturacion_fixture.xlsx"
 
 # ── expected values from F3-03 fixture ─────────────────────────────────
 EXPECTED_ROWS = 8
