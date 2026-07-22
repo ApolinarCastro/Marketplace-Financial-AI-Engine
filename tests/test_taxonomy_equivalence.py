@@ -285,3 +285,53 @@ class TestTaxonomyRuntimeEquivalence:
         assert abs(leg_op - yam_op) < 0.01, (
             f"{mp} operational PnL: legacy={leg_op:.2f} vs yaml={yam_op:.2f}, delta={leg_op-yam_op:.2f}"
         )
+
+
+# ── Mojibake regression (FASE RED) ──
+
+class TestMojibakeNormalization:
+    """Verify mojibake fix executes BEFORE lowercasing."""
+
+    MOJIBAKE_INPUT = "Anulaci\u00c3\u00b3n del cargo por venta"
+    CLEAN_INPUT = "Anulación del cargo por venta"
+    EXPECTED = "anulacion del cargo por venta"
+
+    def test_mojibake_normalize_detail_legacy(self):
+        result = legacy_normalize(self.MOJIBAKE_INPUT)
+        assert result == self.EXPECTED, (
+            f"legacy normalize_detail({self.MOJIBAKE_INPUT!r}) = {result!r}, expected {self.EXPECTED!r}"
+        )
+
+    def test_mojibake_clean_equals_mojibake(self):
+        moji = legacy_normalize(self.MOJIBAKE_INPUT)
+        clean = legacy_normalize(self.CLEAN_INPUT)
+        assert moji == clean, (
+            f"mojibake ({moji!r}) != clean ({clean!r})"
+        )
+
+    def test_mojibake_idempotent_legacy(self):
+        result = legacy_normalize(self.MOJIBAKE_INPUT)
+        double = legacy_normalize(result)
+        assert result == double, (
+            f"normalize_detail idempotent: {result!r} != {double!r}"
+        )
+
+    def test_mojibake_normalize_detail_taxonomy_loader(self):
+        result = tl.normalize_detail(self.MOJIBAKE_INPUT)
+        assert result == self.EXPECTED, (
+            f"tl.normalize_detail({self.MOJIBAKE_INPUT!r}) = {result!r}, expected {self.EXPECTED!r}"
+        )
+
+    def test_mojibake_taxonomy_clean_equals_mojibake(self):
+        moji = tl.normalize_detail(self.MOJIBAKE_INPUT)
+        clean = tl.normalize_detail(self.CLEAN_INPUT)
+        assert moji == clean, (
+            f"tl mojibake ({moji!r}) != clean ({clean!r})"
+        )
+
+    def test_mojibake_idempotent_taxonomy(self):
+        result = tl.normalize_detail(self.MOJIBAKE_INPUT)
+        double = tl.normalize_detail(result)
+        assert result == double, (
+            f"tl normalize_detail idempotent: {result!r} != {double!r}"
+        )

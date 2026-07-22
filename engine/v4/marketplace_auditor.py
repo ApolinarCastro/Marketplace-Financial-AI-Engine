@@ -395,7 +395,7 @@ def normalize_detail(text):
     if not isinstance(text, str): return ""
     import unicodedata
     import re
-    t = _fix_mojibake(text.lower().strip())
+    t = _fix_mojibake(text.strip()).lower()
     # Normalize unicode to NFD and strip Mn category (accents)
     t = ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')
     # Replace any weird characters/symbols (like replacement character) or multiple spaces
