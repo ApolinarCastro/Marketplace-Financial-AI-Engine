@@ -1,0 +1,76 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-06-16T12:00:00Z",
+  "marketplaces": [
+    {
+      "marketplace": "RIPLEY",
+      "version": "v1",
+      "status": "FROZEN",
+      "owner": "Finance AI Engine",
+      "baseline_document": "RIPLEY_BASELINE_V1.md",
+      "regression_guard": "RIPLEY_REGRESSION_GUARD_V1.md",
+      "protected_components": [
+        "marketplace_ledger_v1",
+        "financial taxonomy",
+        "truth_type engine",
+        "single financial truth"
+      ]
+    },
+    {
+      "marketplace": "MERCADO_LIBRE",
+      "version": "v1",
+      "status": "CERTIFIED",
+      "owner": "Finance AI Engine",
+      "baseline_document": "ML_BASELINE.md",
+      "regression_guard": "ML_REGRESSION_GUARD.md",
+      "protected_components": [
+        "marketplace_ledger_v1",
+        "financial taxonomy",
+        "truth_type engine",
+        "single financial truth"
+      ]
+    },
+    {
+      "marketplace": "PARIS",
+      "version": "v1",
+      "status": "CERTIFIED",
+      "owner": "Finance AI Engine",
+      "baseline_document": "PARIS_BASELINE.md",
+      "regression_guard": "PARIS_REGRESSION_GUARD.md",
+      "protected_components": [
+        "marketplace_ledger_v1",
+        "financial taxonomy",
+        "truth_type engine",
+        "single financial truth"
+      ]
+    },
+    {
+      "marketplace": "FALABELLA",
+      "version": "v1",
+      "status": "DEVELOPMENT",
+      "owner": "Finance AI Engine",
+      "baseline_document": "FALABELLA_BASELINE.md",
+      "regression_guard": "FALABELLA_REGRESSION_GUARD.md",
+      "protected_components": [
+        "marketplace_ledger_v1",
+        "financial taxonomy",
+        "truth_type engine",
+        "single financial truth"
+      ]
+    },
+    {
+      "marketplace": "FUTURE_MARKETPLACES",
+      "version": "v1",
+      "status": "DEVELOPMENT",
+      "owner": "Finance AI Engine",
+      "baseline_document": "TBD",
+      "regression_guard": "TBD",
+      "protected_components": [
+        "marketplace_ledger_v1",
+        "financial taxonomy",
+        "truth_type engine",
+        "single financial truth"
+      ]
+    }
+  ]
+}

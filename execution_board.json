@@ -1,0 +1,248 @@
+{
+  "generated_at": "2026-07-17T19:30:00+00:00",
+  "project": "Marketplace Financial Operating System",
+  "git": {
+    "branch": "master",
+    "commit": "795124b77b03",
+    "dirty": false
+  },
+  "harness": {
+    "path": "tools/validate_fase_1b.py",
+    "version": "1.0.0-r5",
+    "exists": true
+  },
+  "database": {
+    "path": "data/db/meli_financial_v4.db",
+    "exists": true,
+    "tables": {
+      "file_registry": {
+        "exists": true,
+        "count": 55
+      },
+      "ingestion_registry": {
+        "exists": true,
+        "count": 43
+      }
+    }
+  },
+  "evidence": {
+    "latest_summary": "20260713_214654_summary_fc2c7caa.json",
+    "summaries_found": [
+      "20260713_195434_summary_9e125a74.json",
+      "20260713_214654_summary_fc2c7caa.json"
+    ],
+    "latest_execution_id": "fc2c7caa-8e4a-4c56-87ba-58876f6fc4d4",
+    "latest_result": "VERIFIED",
+    "all_execution_ids": [
+      "9e125a74-96e7-49ef-83a6-8cc84ad77778",
+      "fc2c7caa-8e4a-4c56-87ba-58876f6fc4d4"
+    ]
+  },
+  "summary": {
+    "total_capabilities": 8,
+    "by_operational_status": {
+      "IMPLEMENTED": 8
+    },
+    "by_evidence_status": {
+      "PARTIAL": 6,
+      "VALIDATED": 2
+    },
+    "latest_evidence_result": "VERIFIED",
+    "latest_execution_id": "fc2c7caa-8e4a-4c56-87ba-58876f6fc4d4"
+  },
+  "capabilities": [
+    {
+      "cap_id": "CAP-001",
+      "name": "Upload Center E2E",
+      "operational_status": "IMPLEMENTED",
+      "evidence_status": "PARTIAL",
+      "last_execution_id": null,
+      "last_commit": "795124b77b03",
+      "last_result": "PASS",
+      "blocking_issue": "Tests contaminate official DB and data/uploads/; not isolated",
+      "next_gate": "Isolated tests with temp DB, temp uploads, cleanup",
+      "evidence_refs": [
+        "templates/upload_center.html",
+        "api/api.py: GET /upload",
+        "api/api.py: POST /api/v4/ingestion/upload",
+        "tests/test_upload_center_e2e.py"
+      ],
+      "missing_evidence": [
+        "isolated_tests_temp_db",
+        "isolated_tests_temp_uploads",
+        "cleanup_after_tests",
+        "browser_upload_e2e",
+        "execution_id_from_upload_response",
+        "file_created_in_data_uploads",
+        "ingestion_registry_row_created"
+      ]
+    },
+    {
+      "cap_id": "CAP-002",
+      "name": "Ingestion Registry",
+      "operational_status": "IMPLEMENTED",
+      "evidence_status": "VALIDATED",
+      "last_execution_id": null,
+      "last_commit": "795124b77b03",
+      "last_result": "VALIDATED",
+      "blocking_issue": null,
+      "next_gate": "ingestion_registry_schema_and_3_runs",
+      "evidence_refs": [
+        "IngestionRegistry class",
+        "api/api.py: GET /api/v4/ingestion/registry",
+        "ingestion_registry (db): 43 rows"
+      ],
+      "missing_evidence": [
+        "3 controlled uploads",
+        "execution_id",
+        "start_time",
+        "end_time",
+        "sha256",
+        "status",
+        "marketplace",
+        "document_type",
+        "errors",
+        "warnings"
+      ]
+    },
+    {
+      "cap_id": "CAP-003",
+      "name": "File Registry",
+      "operational_status": "IMPLEMENTED",
+      "evidence_status": "PARTIAL",
+      "last_execution_id": null,
+      "last_commit": "795124b77b03",
+      "last_result": null,
+      "blocking_issue": null,
+      "next_gate": "file_registry_upload_coverage",
+      "evidence_refs": [
+        "PersistenceEngine class",
+        "engine/v4/database.py: register_file",
+        "engine/v4/surgical_loader.py: _register_file",
+        "file_registry (db): 55 rows"
+      ],
+      "missing_evidence": [
+        "sha256_match",
+        "file_name",
+        "source",
+        "rows_processed",
+        "processed_at",
+        "duplicate_upload_traceability"
+      ]
+    },
+    {
+      "cap_id": "CAP-004",
+      "name": "Certification Trigger",
+      "operational_status": "IMPLEMENTED",
+      "evidence_status": "PARTIAL",
+      "last_execution_id": null,
+      "last_commit": "795124b77b03",
+      "last_result": null,
+      "blocking_issue": null,
+      "next_gate": "post_ingestion_certification_payload",
+      "evidence_refs": [
+        "CertificationTrigger class",
+        "orchestrator.py: certification wiring"
+      ],
+      "missing_evidence": [
+        "certification_triggered",
+        "certification_result",
+        "reconciliation",
+        "certification",
+        "coverage",
+        "gaps",
+        "errors",
+        "overall_status",
+        "summary_persisted"
+      ]
+    },
+    {
+      "cap_id": "CAP-005",
+      "name": "Knowledge Trigger",
+      "operational_status": "IMPLEMENTED",
+      "evidence_status": "PARTIAL",
+      "last_execution_id": null,
+      "last_commit": "795124b77b03",
+      "last_result": "VERIFIED",
+      "blocking_issue": "KnowledgeTrigger puede quedar SKIPPED si no recibe indexer",
+      "next_gate": "knowledge_index_not_skipped",
+      "evidence_refs": [
+        "KnowledgeTrigger class",
+        "build_knowledge_index (knowledge_indexer.py)",
+        "orchestrator.py: default KnowledgeIndexer + PatternRegistry wiring",
+        "evidence/20260713_195434_summary_9e125a74.json",
+        "evidence/20260713_214654_summary_fc2c7caa.json"
+      ],
+      "missing_evidence": [
+        "indexer_injected",
+        "knowledge_index_executed_true",
+        "knowledge_index_not_skipped"
+      ]
+    },
+    {
+      "cap_id": "CAP-006",
+      "name": "Obsidian Sync",
+      "operational_status": "IMPLEMENTED",
+      "evidence_status": "PARTIAL",
+      "last_execution_id": null,
+      "last_commit": "795124b77b03",
+      "last_result": null,
+      "blocking_issue": "knowledge_api.py no montada en api.py; dashboard.html contiene stub de Obsidian",
+      "next_gate": "obsidian_export_real_file",
+      "evidence_refs": [
+        "ObsidianAdapter class",
+        "api/knowledge_api.py",
+        "dashboard.html: Obsidian stub"
+      ],
+      "missing_evidence": [
+        "knowledge_api_mounted",
+        "frontend_connected_to_backend",
+        "obsidian_export_real_file"
+      ]
+    },
+    {
+      "cap_id": "CAP-007",
+      "name": "Copilot Evidence",
+      "operational_status": "IMPLEMENTED",
+      "evidence_status": "PARTIAL",
+      "last_execution_id": null,
+      "last_commit": "795124b77b03",
+      "last_result": null,
+      "blocking_issue": null,
+      "next_gate": "copilot_answer_after_upload_with_evidence",
+      "evidence_refs": [
+        "CopilotEngine class",
+        "handlers: 2 files in engine/v4/copilot/"
+      ],
+      "missing_evidence": [
+        "post_upload_copilot_question",
+        "sql_or_api_source",
+        "marketplace",
+        "period",
+        "amount",
+        "traceability",
+        "execution_id_relation"
+      ]
+    },
+    {
+      "cap_id": "CAP-008",
+      "name": "Financial Traceability (Phase 4)",
+      "operational_status": "IMPLEMENTED",
+      "evidence_status": "VALIDATED",
+      "last_execution_id": null,
+      "last_commit": "795124b77b03",
+      "last_result": "PASS",
+      "blocking_issue": null,
+      "next_gate": "Phase 4 CONTINUED: transformation version tracking, full P&L/treasury separation",
+      "evidence_refs": [
+        "engine/v4/evidence/traceability.py",
+        "engine/v4/evidence/traceability_engine.py",
+        "tests/test_f4_traceability.py"
+      ],
+      "missing_evidence": [
+        "transformation_version_tracking",
+        "full_pnl_treasury_separation"
+      ]
+    }
+  ]
+}

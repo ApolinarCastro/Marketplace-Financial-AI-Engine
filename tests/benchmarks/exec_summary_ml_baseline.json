@@ -1,0 +1,12 @@
+{
+  "name": "exec_summary_ml",
+  "arm": "current",
+  "median_duration_ms": 3.470049996394664,
+  "median_memory_mb": 0.10730648040771484,
+  "median_sql_count": 2.0,
+  "stddev_duration_ms": 0.41529592181821895,
+  "stddev_memory_mb": 0.0,
+  "runs": 10,
+  "success_rate": 1.0,
+  "timestamp": 1783626381.3036265
+}

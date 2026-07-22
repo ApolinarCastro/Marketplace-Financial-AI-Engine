@@ -1,0 +1,18 @@
+{
+  "question": "health",
+  "period": "2026-01",
+  "previous_period": "2025-12",
+  "answer": {
+    "summary": "Sistema operando correctamente"
+  },
+  "explanation": {
+    "text": "Health check completado",
+    "bullet_points": []
+  },
+  "breakdown": {
+    "components": {}
+  },
+  "evidence": {
+    "status": "CERTIFICADO"
+  }
+}

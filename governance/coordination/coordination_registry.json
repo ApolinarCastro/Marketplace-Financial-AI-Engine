@@ -1,0 +1,57 @@
+{
+    "interface_name":  "codex-opencode-coordination",
+    "version":  "1.0.0",
+    "generated_at":  "2026-07-18T17:10:00Z",
+    "owners":  [
+                   "Codex",
+                   "OpenCode"
+               ],
+    "single_interface_root":  "governance/coordination",
+    "canonical_files":  [
+                            "governance/coordination/COORDINATION_CONTRACT.md",
+                            "governance/coordination/coordination_registry.json",
+                            "governance/coordination/coordination_state.json",
+                            "execution_board.json",
+                            "tools/verify_coordination_interface.py",
+                            "governance/coordination/FOUNDATION_RESET.md",
+                            "governance/coordination/MASTER_STABILIZATION_AND_PRODUCTION_PLAN.md"
+                        ],
+    "evidence_sources":  [
+                             "evidence/fase_1b/*summary*.json"
+                         ],
+    "protected_core_paths":  [
+                                 "engine/v4",
+                                 "data/db/meli_financial_v4.db",
+                                 "marketplace_ledger_v1",
+                                 "marketplace_ledger_clasificado_v1",
+                                 "marketplace_cierre_financiero_v1"
+                             ],
+    "coordination_permissions":  {
+                                     "may_update":  [
+                                                        "governance/coordination/coordination_state.json",
+                                                        "execution_board.json",
+                                                        "execution_board.md"
+                                                    ],
+                                     "may_read":  [
+                                                      "governance/**",
+                                                      "evidence/fase_1b/**",
+                                                      "execution_board.json",
+                                                      "execution_board.md"
+                                                  ],
+                                     "must_not_use_as_coordination":  [
+                                                                          "chat-only state",
+                                                                          "temporary scratch markdown outside governance/coordination",
+                                                                          "direct protected-core edits as handoff mechanism"
+                                                                      ]
+                                 },
+    "verification_command":  ".venv\\Scripts\\python.exe tools\\verify_coordination_interface.py",
+    "execution_roles":  {
+                            "active_executor":  "Antigravity",
+                            "supervisor":  "Codex",
+                            "gate_authority":  "Codex",
+                            "OpenCode":  "PAUSED"
+                        },
+    "active_task":  "AG-F4-R4-01",
+    "single_active_task":  true,
+    "phase_5_status":  "NOT_AUTHORIZED"
+}

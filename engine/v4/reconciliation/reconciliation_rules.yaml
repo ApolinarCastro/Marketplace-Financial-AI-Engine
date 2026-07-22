@@ -1,0 +1,31 @@
+# Reconciliation Rules V1
+# Configurable thresholds for the universal reconciliation engine.
+# Delta = 0 => CERTIFICADO. Delta > 0 => ALERTA. Delta crítica => FINANCIAL_INTEGRITY_BROKEN.
+
+allowed_delta: 0
+critical_delta: 1
+minimum_taxonomy_coverage: 100
+minimum_document_coverage: 95
+
+status_thresholds:
+  - name: CERTIFICADO
+    max_delta: 0
+    min_taxonomy_coverage: 100
+    min_document_coverage: 95
+  - name: PARCIAL
+    max_delta: 10
+    min_taxonomy_coverage: 50
+    min_document_coverage: 50
+  - name: PENDIENTE
+    max_delta: 100
+    min_taxonomy_coverage: 10
+    min_document_coverage: 10
+
+observability:
+  enabled: true
+  metrics:
+    - reconciliation_delta
+    - taxonomy_coverage
+    - document_coverage
+    - orphan_records
+    - certification_status

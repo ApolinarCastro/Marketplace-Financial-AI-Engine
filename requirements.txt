@@ -12,6 +12,7 @@ fastparquet
 fsspec
 fastapi
 uvicorn
+httpx==0.28.1
 
 # Dev / CI
 pytest

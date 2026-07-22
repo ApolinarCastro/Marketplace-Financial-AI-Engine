@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FDE Marketplace Evidence Template",
+  "description": "R5-compliant evidence structure for FASE 1B validation",
+  "type": "object",
+  "required": [
+    "execution_id",
+    "commit",
+    "timestamp",
+    "harness_version",
+    "repository",
+    "branch",
+    "task_id",
+    "phase",
+    "unique_tests",
+    "aggregate_executions",
+    "execution_groups",
+    "duplicated_files",
+    "implementation_status",
+    "validation_status",
+    "certification_status",
+    "classification"
+  ],
+  "properties": {
+    "execution_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique execution identifier"
+    },
+    "commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$",
+      "description": "Git commit SHA"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp"
+    },
+    "harness_version": {
+      "type": "string",
+      "const": "1.0.0-r5",
+      "description": "Validation harness version"
+    },
+    "repository": {
+      "type": "string",
+      "const": "Marketplace Financial AI Engine"
+    },
+    "branch": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string",
+      "pattern": "^TASK-\\d{4}$"
+    },
+    "phase": {
+      "type": "string",
+      "enum": ["FASE_0", "FASE_1", "FASE_1B", "FASE_2", "FASE_3", "FASE_4", "FASE_5", "FASE_6", "FASE_7", "FASE_8", "FASE_9"]
+    },
+    "unique_tests": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Distinct test cases (no double-counting)"
+    },
+    "aggregate_executions": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total test executions across groups"
+    },
+    "execution_groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["correction", "file_path", "test_count"],
+        "properties": {
+          "correction": { "type": "string" },
+          "file_path": { "type": "string" },
+          "test_count": { "type": "integer", "minimum": 1 }
+        }
+      },
+      "description": "Breakdown by correction with file path and test count"
+    },
+    "duplicated_files": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Files appearing in multiple execution groups"
+    },
+    "implementation_status": {
+      "type": "string",
+      "enum": ["IMPLEMENTED", "NOT_IMPLEMENTED", "PARTIAL"]
+    },
+    "validation_status": {
+      "type": "string",
+      "enum": ["VALIDATED", "NOT_VALIDATED", "PARTIAL"]
+    },
+    "certification_status": {
+      "type": "string",
+      "enum": ["CERTIFIED", "NOT_CERTIFIED", "PENDING"]
+    },
+    "classification": {
+      "type": "string",
+      "enum": ["IMPLEMENTED", "VALIDATED", "VERIFIED", "CERTIFIED", "NOT_CERTIFIED"],
+      "description": "Auto-computed by harness"
+    },
+    "fde_assurance_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Optional: FDE Assurance Score for this deliverable"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional notes from validator"
+    }
+  }
+}

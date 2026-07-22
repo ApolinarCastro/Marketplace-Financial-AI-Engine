@@ -1,0 +1,146 @@
+{
+  "certification_package": "FCG_02",
+  "title": "FALABELLA Financial Certification",
+  "timestamp": "2026-06-19T15:36:04",
+  "certification_status": "FAIL",
+  "sql_used": [
+    "-- FALABELLA Ingresos",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND LOWER(financial_group)='ingresos' AND COALESCE(include_in_operational_pnl,1)=1",
+    "-- FALABELLA Devoluciones",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND LOWER(financial_group)='devoluciones' AND COALESCE(include_in_operational_pnl,1)=1",
+    "-- FALABELLA Costos",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND LOWER(financial_group)='costos' AND COALESCE(include_in_operational_pnl,1)=1",
+    "-- FALABELLA Comisiones",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND LOWER(financial_group)='comisiones' AND COALESCE(include_in_operational_pnl,1)=1",
+    "-- FALABELLA Ajustes",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND LOWER(financial_group)='ajustes' AND COALESCE(include_in_operational_pnl,1)=1",
+    "-- FALABELLA Neto sum groups",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none')",
+    "-- FALABELLA Disponible (cierre)",
+    "SELECT periodo_inicio::VARCHAR, resultado_neto::BIGINT FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='falabella' ORDER BY periodo_inicio DESC LIMIT 1"
+  ],
+  "evidence": [
+    {
+      "query": "-- FALABELLA Ingresos",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND LOWER(financial_group)='ingresos' AND COALESCE(include_in_operational_pnl,1)=1",
+      "rows": 1,
+      "data": [
+        [
+          12470241
+        ]
+      ]
+    },
+    {
+      "query": "-- FALABELLA Devoluciones",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND LOWER(financial_group)='devoluciones' AND COALESCE(include_in_operational_pnl,1)=1",
+      "rows": 1,
+      "data": [
+        [
+          -1878556
+        ]
+      ]
+    },
+    {
+      "query": "-- FALABELLA Costos",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND LOWER(financial_group)='costos' AND COALESCE(include_in_operational_pnl,1)=1",
+      "rows": 1,
+      "data": [
+        [
+          null
+        ]
+      ]
+    },
+    {
+      "query": "-- FALABELLA Comisiones",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND LOWER(financial_group)='comisiones' AND COALESCE(include_in_operational_pnl,1)=1",
+      "rows": 1,
+      "data": [
+        [
+          null
+        ]
+      ]
+    },
+    {
+      "query": "-- FALABELLA Ajustes",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND LOWER(financial_group)='ajustes' AND COALESCE(include_in_operational_pnl,1)=1",
+      "rows": 1,
+      "data": [
+        [
+          -427
+        ]
+      ]
+    },
+    {
+      "query": "-- FALABELLA Neto sum groups",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='falabella' AND COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none')",
+      "rows": 1,
+      "data": [
+        [
+          7664386
+        ]
+      ]
+    },
+    {
+      "query": "-- FALABELLA Disponible (cierre)",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT periodo_inicio::VARCHAR, resultado_neto::BIGINT FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='falabella' ORDER BY periodo_inicio DESC LIMIT 1",
+      "rows": 1,
+      "data": [
+        [
+          "2026-12-01",
+          0
+        ]
+      ]
+    }
+  ],
+  "files_modified": [
+    "engine/v4/financial_engine.py",
+    "knowledge/taxonomy/falabella_v1.json"
+  ],
+  "tests_executed": [
+    "test_certification_gate.py",
+    "test_financial_engine.py",
+    "test_api_smoke.py"
+  ],
+  "before_after_metrics": {
+    "Ingresos": "$12,470,241",
+    "Devoluciones": "$-1,878,556",
+    "Costos": "$0",
+    "Comisiones": "$0",
+    "Ajustes": "$-427",
+    "Neto (Ledger sum)": "$7,664,386",
+    "Disponible (Cierre)": "$0.00",
+    "Waterfall Delta": "$2,926,872",
+    "Unclassified rows (financial_group=NULL)": "0"
+  },
+  "remaining_risks": [
+    "0 unclassified rows (known, inmaterial: $12,099)"
+  ]
+}

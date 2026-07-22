@@ -1,0 +1,130 @@
+{
+  "ml_ledger_rows": 79648,
+  "ml_classified_rows": 79648,
+  "ml_operational_null_fg": 0,
+  "ml_total_monto": 470891023.6400001,
+  "ml_duplicate_pairs": 0,
+  "paris_ledger": 74030,
+  "paris_classified": 74028,
+  "ripley_ledger": 219901,
+  "ripley_classified": 219901,
+  "falabella_ledger": 678,
+  "falabella_classified": 678,
+  "ml_fg_dist": [
+    {
+      "fg": "costos_comerciales",
+      "rows": 30217
+    },
+    {
+      "fg": "ingresos",
+      "rows": 27288
+    },
+    {
+      "fg": "costos_operacionales",
+      "rows": 19447
+    },
+    {
+      "fg": "devoluciones",
+      "rows": 2610
+    },
+    {
+      "fg": "ajustes",
+      "rows": 85
+    },
+    {
+      "fg": "NULL",
+      "rows": 1
+    }
+  ],
+  "ml_co_dist": [
+    {
+      "co": "Cargo por venta (Venta)",
+      "rows": 27276
+    },
+    {
+      "co": "Cargo por venta (Comisi\u00f3n)",
+      "rows": 27276
+    },
+    {
+      "co": "Cargo por env\u00edos de Mercado Libre",
+      "rows": 15443
+    },
+    {
+      "co": "Devoluci\u00f3n de venta",
+      "rows": 2610
+    },
+    {
+      "co": "Anulaci\u00f3n del cargo por venta",
+      "rows": 2610
+    },
+    {
+      "co": "Anulaci\u00f3n del cargo por env\u00edos de Mercado Libre",
+      "rows": 1463
+    },
+    {
+      "co": "Cargo por retiro de stock Full",
+      "rows": 1302
+    },
+    {
+      "co": "Cargo por servicio de almacenamiento Full",
+      "rows": 890
+    },
+    {
+      "co": "Cargo por devoluci\u00f3n",
+      "rows": 155
+    },
+    {
+      "co": "Cargo por stock antiguo en Full",
+      "rows": 150
+    },
+    {
+      "co": "Cargo por campa\u00f1a de publicidad - Product Ads",
+      "rows": 145
+    },
+    {
+      "co": "Abono manual",
+      "rows": 85
+    },
+    {
+      "co": "Cargo por campa\u00f1a de publicidad - Display program\u00e1tico",
+      "rows": 77
+    },
+    {
+      "co": "Cargo por campa\u00f1a de publicidad - Brand Ads",
+      "rows": 68
+    },
+    {
+      "co": "Anulaci\u00f3n del cargo por devoluci\u00f3n",
+      "rows": 25
+    },
+    {
+      "co": "Cargo por mantenimiento de Mi p\u00e1gina",
+      "rows": 15
+    },
+    {
+      "co": "Cargo por Asesor\u00eda Comercial",
+      "rows": 14
+    },
+    {
+      "co": "Campa\u00f1as de publicidad - Display",
+      "rows": 12
+    },
+    {
+      "co": "Bonificaci\u00f3n",
+      "rows": 12
+    },
+    {
+      "co": "Cargo por sobrepasar espacio Full",
+      "rows": 11
+    },
+    {
+      "co": "Cargo por diferencias en las medidas y el peso del paquete",
+      "rows": 8
+    },
+    {
+      "co": "Ajuste por Arrepentimiento",
+      "rows": 1
+    }
+  ],
+  "copy_db_hash": "7ED169DDC0720AD5118D0EE521AFAE24527457A63C193A44E3CBE52E7F2039E4"
+}

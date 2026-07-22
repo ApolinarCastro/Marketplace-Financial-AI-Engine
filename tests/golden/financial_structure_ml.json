@@ -1,0 +1,176 @@
+{
+  "categories": [
+    {
+      "display_name": "Sin Clasificar",
+      "financial_group": "sin_clasificar",
+      "items": [
+        {
+          "cantidad": 196,
+          "clasificacion_operativa": "Devolución de venta",
+          "detalle": "Devolución de venta",
+          "monto": -4971696.0
+        },
+        {
+          "cantidad": 1213,
+          "clasificacion_operativa": "Cargo por venta (Comisión)",
+          "detalle": "Cargo por venta (Comisión)",
+          "monto": -4107351.0
+        },
+        {
+          "cantidad": 630,
+          "clasificacion_operativa": "Cargo por envíos de Mercado Libre",
+          "detalle": "Cargo por envíos de Mercado Libre",
+          "monto": -2243955.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Campañas de publicidad - Display",
+          "detalle": "Campañas de publicidad - Display",
+          "monto": -2117392.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Cargo por campaña de publicidad - Product Ads",
+          "detalle": "Cargo por campaña de publicidad - Product Ads",
+          "monto": -1104007.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Cargo por Asesoría Comercial",
+          "detalle": "Cargo por Asesoría Comercial",
+          "monto": -1037869.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Cargo por campaña de publicidad - Brand Ads",
+          "detalle": "Cargo por campaña de publicidad - Brand Ads",
+          "monto": -272605.0
+        },
+        {
+          "cantidad": 125,
+          "clasificacion_operativa": "Cargo por retiro de stock Full",
+          "detalle": "Cargo por retiro de stock Full",
+          "monto": -105270.0
+        },
+        {
+          "cantidad": 62,
+          "clasificacion_operativa": "Cargo por servicio de almacenamiento Full",
+          "detalle": "Cargo por servicio de almacenamiento Full",
+          "monto": -78711.0
+        },
+        {
+          "cantidad": 58,
+          "clasificacion_operativa": "Cargo por stock antiguo en Full",
+          "detalle": "Cargo por stock antiguo en Full",
+          "monto": -34665.0
+        },
+        {
+          "cantidad": 5,
+          "clasificacion_operativa": "Cargo por devolución",
+          "detalle": "Cargo por devolución",
+          "monto": -24570.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Cargo por mantenimiento de Mi página",
+          "detalle": "Cargo por mantenimiento de Mi página",
+          "monto": -16990.0
+        },
+        {
+          "cantidad": 1,
+          "clasificacion_operativa": "Anulación del cargo por devolución",
+          "detalle": "Anulación del cargo por devolución",
+          "monto": 6600.0
+        },
+        {
+          "cantidad": 113,
+          "clasificacion_operativa": "Anulación del cargo por envíos de Mercado Libre",
+          "detalle": "Anulación del cargo por envíos de Mercado Libre",
+          "monto": 405516.0
+        },
+        {
+          "cantidad": 196,
+          "clasificacion_operativa": "AnulaciÃ³n del cargo por venta",
+          "detalle": "AnulaciÃ³n del cargo por venta",
+          "monto": 701378.0
+        },
+        {
+          "cantidad": 1213,
+          "clasificacion_operativa": "Cargo por venta (Venta)",
+          "detalle": "Cargo por venta (Venta)",
+          "monto": 27646200.0
+        }
+      ],
+      "orden": 99,
+      "subcategories": [
+        {
+          "detalle": "Devolución de venta",
+          "total": -4971696.0
+        },
+        {
+          "detalle": "Cargo por venta (Comisión)",
+          "total": -4107351.0
+        },
+        {
+          "detalle": "Cargo por envíos de Mercado Libre",
+          "total": -2243955.0
+        },
+        {
+          "detalle": "Campañas de publicidad - Display",
+          "total": -2117392.0
+        },
+        {
+          "detalle": "Cargo por campaña de publicidad - Product Ads",
+          "total": -1104007.0
+        },
+        {
+          "detalle": "Cargo por Asesoría Comercial",
+          "total": -1037869.0
+        },
+        {
+          "detalle": "Cargo por campaña de publicidad - Brand Ads",
+          "total": -272605.0
+        },
+        {
+          "detalle": "Cargo por retiro de stock Full",
+          "total": -105270.0
+        },
+        {
+          "detalle": "Cargo por servicio de almacenamiento Full",
+          "total": -78711.0
+        },
+        {
+          "detalle": "Cargo por stock antiguo en Full",
+          "total": -34665.0
+        },
+        {
+          "detalle": "Cargo por devolución",
+          "total": -24570.0
+        },
+        {
+          "detalle": "Cargo por mantenimiento de Mi página",
+          "total": -16990.0
+        },
+        {
+          "detalle": "Anulación del cargo por devolución",
+          "total": 6600.0
+        },
+        {
+          "detalle": "Anulación del cargo por envíos de Mercado Libre",
+          "total": 405516.0
+        },
+        {
+          "detalle": "AnulaciÃ³n del cargo por venta",
+          "total": 701378.0
+        },
+        {
+          "detalle": "Cargo por venta (Venta)",
+          "total": 27646200.0
+        }
+      ],
+      "total": 12644613.0
+    }
+  ],
+  "marketplace": "ML",
+  "period": "2026-01"
+}

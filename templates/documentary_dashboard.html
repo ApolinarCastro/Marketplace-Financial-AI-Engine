@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Gerencial — Marketplace Financial AI Engine</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+        body { background: #f1f5f9; color: #1e293b; font-family: 'Outfit', sans-serif; }
+        .card { background: white; border-radius: 1rem; border: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+        .card-soft { background: white; border-radius: 0.75rem; border: 1px solid #f1f5f9; }
+        .amount-pos { color: #059669; font-weight: 600; }
+        .amount-neg { color: #dc2626; font-weight: 600; }
+        .kpi-value { font-size: 1.875rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+        .kpi-value-primary { font-size: 2.5rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+        .kpi-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #94a3b8; }
+        .scorecard { transition: all 0.2s ease; }
+        .scorecard:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.06); }
+        .scorecard-active { ring: 2px solid #6366f1; box-shadow: 0 0 0 2px #6366f1, 0 4px 12px rgba(99,102,241,0.15); }
+        .fade-in { animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .nav-link { transition: all 0.15s ease; }
+        .tooltip-trigger { cursor: help; border-bottom: 1px dashed #94a3b8; }
+        .waterfall-step { transition: all 0.2s ease; }
+        .waterfall-step:hover { transform: scaleX(1.005); }
+        .explain-box { background: #1e293b; color: #f1f5f9; border-radius: 0.75rem; padding: 1.25rem; max-width: 22rem; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+        .explain-box h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .explain-box p { font-size: 0.75rem; line-height: 1.5; color: #cbd5e1; margin-bottom: 0.5rem; }
+        .explain-box ul { font-size: 0.7rem; line-height: 1.6; color: #94a3b8; padding-left: 1rem; list-style: disc; }
+        .select-clean { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 600; padding: 0.375rem 0.75rem; cursor: pointer; outline: none; }
+        .select-clean:focus { ring: 2px solid #6366f1; border-color: #6366f1; }
+        .waterfall-bar-base { height: 1.75rem; border-radius: 0.375rem; transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
+        .arrow-flow { color: #94a3b8; font-size: 0.65rem; display: flex; align-items: center; justify-content: center; gap: 0.25rem; padding: 0.125rem 0; }
+    </style>
+    <script src="/shared/api_client.js"></script>
+</head>
+<body>
+    <header class="bg-white border-b border-slate-200 px-8 py-0 sticky top-0 z-50">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="bg-slate-900 text-white p-2 rounded-lg"><i class="fas fa-chart-line"></i></div>
+                    <h1 class="text-lg font-bold tracking-tight">Reporte Gerencial <span class="text-slate-400 font-normal text-sm">UX1.2</span></h1>
+                </div>
+                <nav class="flex gap-1 bg-slate-100 p-1 rounded-xl">
+                    <a href="/exec" class="nav-link px-4 py-2 text-sm font-semibold rounded-lg bg-white text-slate-900 shadow-sm"><i class="fas fa-chart-pie mr-2"></i>Gerencial</a>
+                    <a href="/app" class="nav-link px-4 py-2 text-sm font-semibold rounded-lg text-slate-500 hover:text-slate-800 hover:bg-white/60"><i class="fas fa-microscope mr-2"></i>Auditor</a>
+                    <a href="/upload" class="nav-link px-4 py-2 text-sm font-semibold rounded-lg text-slate-500 hover:text-slate-800 hover:bg-white/60"><i class="fas fa-cloud-upload-alt mr-2"></i>Upload</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-3">
+                <button onclick="showExplicabilidad()" class="text-[10px] font-semibold text-slate-500 hover:text-slate-700 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-lg transition-all"><i class="fas fa-question-circle mr-1.5"></i>Explicabilidad</button>
+                <label for="exec-mp" class="sr-only">Marketplace</label>
+                <select id="exec-mp" onchange="onFilterChange()" class="select-clean">
+                    <option value="">Todos los Marketplaces</option>
+                    <option value="ML">Mercado Libre</option>
+                    <option value="RIPLEY">Ripley</option>
+                    <option value="PARIS">Paris</option>
+                    <option value="FALABELLA">Falabella</option>
+                </select>
+                <label for="exec-period" class="sr-only">Periodo</label>
+                <select id="exec-period" onchange="onFilterChange()" class="select-clean">
+                    <option value="YTD">Year to Date</option>
+                </select>
+                <span id="audit-status-badge" class="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg px-2.5 py-1.5">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>Certificado
+                </span>
+                <span class="text-[10px] text-slate-400 hidden lg:inline">Sin alertas visibles</span>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- Navegación Unificada -->
+    <div class="bg-white border-b border-slate-200 px-8 py-0 sticky top-16 z-40 shadow-sm">
+        <nav class="flex gap-6 text-sm font-semibold" id="main-tabs">
+            <button onclick="switchView('resumen')" id="tab-resumen" class="py-3 text-indigo-600 border-b-2 border-indigo-600 transition-colors">Resumen</button>
+            <button onclick="switchView('gap')" id="tab-gap" class="py-3 text-slate-500 hover:text-slate-800 border-b-2 border-transparent transition-colors">Document Gap</button>
+            <button onclick="switchView('cert')" id="tab-cert" class="py-3 text-slate-500 hover:text-slate-800 border-b-2 border-transparent transition-colors">Certificación Electrónica</button>
+            <button onclick="switchView('evidence')" id="tab-evidence" class="py-3 text-slate-500 hover:text-slate-800 border-b-2 border-transparent transition-colors">Evidence Explorer</button>
+            <button onclick="switchView('obsidian')" id="tab-obsidian" class="py-3 text-slate-500 hover:text-slate-800 border-b-2 border-transparent transition-colors">Obsidian</button>
+        </nav>
+    </div>
+
+    <main class="p-8 max-w-7xl mx-auto space-y-6 fade-in relative" id="main-container">
+        <!-- FASE 3+6: Hierarchy KPIs: Ventas → Devoluciones → Cobros → Disponible -->
+        <section id="hierarchy-kpis">
+            <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">
+                Estado de Cuenta Operacional
+                <span id="estado-periodo" class="text-[10px] text-slate-400 font-normal normal-case ml-2"></span>
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 items-stretch" id="kpi-cards-grid">
+            </div>
+        </section>
+
+        <!-- FASE 4: Distribution by Marketplace (P3: Ventas/Devoluciones/Cobros/Disponible) -->
+        <section id="scorecard">
+            <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Distribución por Marketplace</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5" id="scorecard-grid">
+            </div>
+        </section>
+
+        <!-- P1: Estado Auditoría — sin contador visible, solo Certificado + botón -->
+        <section id="audit-status" class="card p-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full"></span>
+                <span class="text-xs font-bold text-slate-700">Estado Auditoría</span>
+                <span class="pill bg-emerald-100 text-emerald-700 text-[9px] font-bold px-2 py-0.5 rounded-full">Certificado</span>
+            </div>
+            <a href="/app" class="text-[11px] font-semibold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 px-3 py-1.5 rounded-lg transition-all">
+                <i class="fas fa-external-link-alt mr-1.5"></i>Ver Auditoría
+            </a>
+        </section>
+
+
+        <!-- UX1.2: Executive Intelligence -->
+        <section id="executive-intelligence" class="mt-8">
+            <h2 class="text-lg font-bold text-slate-800 mb-4">Inteligencia Ejecutiva <span class="text-slate-400 font-normal text-sm">UX1.2</span></h2>
+            <div id="intelligence-grid" class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
+                <div class="card p-5 border-l-4 border-l-amber-500">
+                    <span class="kpi-label"><i class="fas fa-exclamation-triangle mr-1 text-amber-400"></i>Principal Riesgo</span>
+                    <div class="text-sm font-bold text-slate-800 mt-1" id="intel-risk-title">—</div>
+                    <p class="text-xs text-slate-500 mt-1" id="intel-risk-desc"></p>
+                </div>
+                <div class="card p-5 border-l-4 border-l-emerald-500">
+                    <span class="kpi-label"><i class="fas fa-star mr-1 text-emerald-400"></i>Principal Oportunidad</span>
+                    <div class="text-sm font-bold text-slate-800 mt-1" id="intel-opp-title">—</div>
+                    <p class="text-xs text-slate-500 mt-1" id="intel-opp-desc"></p>
+                </div>
+                <div class="card p-5 border-l-4 border-l-indigo-500">
+                    <span class="kpi-label"><i class="fas fa-chart-bar mr-1 text-indigo-400"></i>Principal Driver</span>
+                    <div class="text-sm font-bold text-slate-800 mt-1" id="intel-driver-title">—</div>
+                    <p class="text-xs text-slate-500 mt-1" id="intel-driver-desc"></p>
+                </div>
+            </div>
+            <div class="card p-5" id="intel-narrative">
+                <p class="text-sm text-slate-600 leading-relaxed" id="intel-summary">Cargando analisis ejecutivo financieros...</p>
+            </div>
+        </section>
+        <!-- P4: Waterfall as visual center + Cobros Breakdown -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- Waterfall — expanded (P4) -->
+            <section id="waterfall-section" class="lg:col-span-7 card p-6 lg:p-8">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Waterfall</h2>
+                        <p class="text-[12px] text-slate-500 mt-0.5 font-medium" id="waterfall-subtitle">Cargando...</p>
+                    </div>
+                    <span class="text-[10px] text-slate-400 bg-slate-50 px-2 py-1 rounded">Ventas → Devoluciones → Cobros → Disponible</span>
+                </div>
+
+                <div id="waterfall-bars" class="space-y-2">
+                    <!-- CSS bars, built dynamically -->
+                </div>
+
+                <div class="flex gap-5 mt-6 pt-4 border-t border-slate-100 text-[10px] text-slate-400">
+                    <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-emerald-500"></span> Ingreso</span>
+                    <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-rose-400"></span> Deducción</span>
+                    <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-blue-600"></span> Resultado</span>
+                    <span class="flex items-center gap-1.5 ml-auto"><i class="fas fa-arrow-down text-slate-300 text-[8px]"></i> Narrativa descendente</span>
+                </div>
+            </section>
+
+            <!-- Cobros Breakdown -->
+            <section id="cobros-section" class="lg:col-span-5 card p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Composición de Cobros</h2>
+                    <span class="text-[10px] text-slate-400 tooltip-trigger" onclick="showExplain('cobros')"><i class="fas fa-question-circle mr-1"></i>¿Qué incluye?</span>
+                </div>
+                <div id="cobros-grid" class="space-y-2">
+                    <div class="text-center text-slate-400 text-sm py-8"><i class="fas fa-spinner fa-spin mr-2"></i>Cargando...</div>
+                </div>
+                <div id="cobros-total" class="mt-4 pt-3 border-t border-slate-100 hidden">
+                    <div class="flex justify-between text-sm font-bold">
+                        <span>Total Cobros</span>
+                        <span id="cobros-sum" class="amount-neg"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- P16G_03A: Cobertura Documental (DTE) -->
+        <section id="dte-section" class="mt-8">
+            <h2 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">Cobertura Documental (DTE) <span id="dte-cert-badge" class="text-[10px] px-1.5 py-0.5 rounded-full font-bold"></span></h2>
+            <p id="dte-explanation" class="text-xs text-slate-500 mb-4 hidden"></p>
+            <div id="content-doc" class="grid grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+                <div class="card p-5"><span class="kpi-label">Monto Elegible</span><div class="kpi-value text-slate-800 mt-1" id="ux12-doc-elegible">—</div></div>
+                <div class="card p-5"><span class="kpi-label">Monto Certificado</span><div class="kpi-value text-slate-800 mt-1" id="ux12-doc-match">—</div></div>
+                <div class="card p-5"><span class="kpi-label">Monto Sin Respaldo</span><div class="kpi-value text-slate-800 mt-1" id="ux12-doc-pend">—</div></div>
+                <div class="card p-5"><span class="kpi-label">Nivel de Evidencia</span><div class="kpi-value text-slate-800 mt-1 text-sm" id="ux12-doc-evidencia">—</div></div>
+                <div class="card p-5"><span class="kpi-label">Estrategia</span><div class="kpi-value text-slate-800 mt-1 text-sm" id="ux12-doc-estrategia">—</div></div>
+                <div class="card p-5 bg-slate-800 text-white shadow-lg"><span class="kpi-label text-slate-300">Cobertura Legal</span><div class="kpi-value-primary mt-1" id="ux12-doc-cov">—</div></div>
+            </div>
+        </section>
+
+        <!-- P16G_03: Centro de Anomalías -->
+        <section id="anomaly-center" class="card p-4 mt-6 hidden">
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="text-sm font-bold text-slate-700 flex items-center gap-2">
+                    <i class="fas fa-exclamation-triangle text-amber-500"></i> Centro de Anomalías
+                </h3>
+                <span id="anomaly-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold"></span>
+            </div>
+            <div id="anomaly-list" class="space-y-2 text-xs"></div>
+        </section>
+
+        <!-- Document Gap Analysis -->
+        <section class="col-span-12 mt-6" id="sect-document-gap">
+            <h2 class="text-lg font-bold text-slate-800 mb-4">Tax Risk & Document Gap Analysis (Evidence Explorer)</h2>
+            
+            <div id="tax-risk-container" class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-6">
+                <div class="surgical-card p-5">
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Top Riesgos Tributarios</span>
+                    <ul id="top-risks-list" class="mt-2 text-sm text-slate-600"></ul>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-sm text-left surgical-card">
+                    <thead class="text-xs text-slate-500 uppercase bg-slate-50">
+                        <tr>
+                            <th class="px-4 py-3">Marketplace</th>
+                            <th class="px-4 py-3">ID Transacci&oacute;n</th>
+                            <th class="px-4 py-3">Grupo Financiero</th>
+                            <th class="px-4 py-3">Estado Documental</th>
+                            <th class="px-4 py-3">Nivel de Evidencia</th>
+                            <th class="px-4 py-3">Acci&oacute;n Recomendada</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gap-table-body">
+                        <!-- Rows injected via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    
+        <!-- VIEW: Certificacion Electronica -->
+        <section id="view-cert" class="hidden">
+            <div class="card p-8">
+                <h2 class="text-xl font-bold text-slate-800 mb-6">Certificación Electrónica</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <!-- Drag & Drop Area -->
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl p-10 flex flex-col items-center justify-center text-center bg-slate-50 hover:bg-slate-100 transition-colors" id="drop-zone" ondragover="event.preventDefault(); this.classList.add('border-indigo-500', 'bg-indigo-50')" ondragleave="event.preventDefault(); this.classList.remove('border-indigo-500', 'bg-indigo-50')" ondrop="handleDrop(event)">
+                        <i class="fas fa-file-code text-4xl text-slate-400 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-slate-700">Arrastra tu XML DTE aquí</h3>
+                        <p class="text-sm text-slate-500 mt-2">o</p>
+                        <label class="mt-3 cursor-pointer bg-white border border-slate-300 px-4 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">
+                            Examinar archivo
+                            <input type="file" id="xml-input" accept=".xml" class="hidden" onchange="handleFileSelect(event)">
+                        </label>
+                    </div>
+
+                    <!-- Pipeline Validation -->
+                    <div class="bg-white border border-slate-200 rounded-xl p-6" id="cert-pipeline">
+                        <h3 class="text-sm font-bold text-slate-600 uppercase tracking-widest mb-4">Pipeline de Validación</h3>
+                        <ul class="space-y-4 text-sm text-slate-600" id="pipeline-steps">
+                            <li class="flex items-center gap-3"><i class="fas fa-circle-notch text-slate-300" id="step-xml"></i> Parseo XML</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-circle-notch text-slate-300" id="step-xsd"></i> Validación Estructural (XSD)</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-circle-notch text-slate-300" id="step-sig"></i> Verificación Criptográfica (Firma)</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-circle-notch text-slate-300" id="step-caf"></i> Autorización SII (CAF)</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-circle-notch text-slate-300" id="step-vat"></i> Consistencia IVA</li>
+                        </ul>
+                        <div class="mt-6 pt-4 border-t border-slate-100 hidden" id="cert-result-container">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-slate-700">Estado Legal:</span>
+                                <span class="px-3 py-1 rounded-full text-xs font-bold" id="cert-status-badge">-</span>
+                            </div>
+                            <button id="btn-next-evidence" class="mt-4 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded-lg transition-colors hidden" onclick="switchView('evidence')">
+                                Ver Evidencia Generada <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: Evidence Explorer -->
+        <section id="view-evidence" class="hidden">
+            <div class="card p-8">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-800">Evidence Explorer</h2>
+                        <p class="text-sm text-slate-500 mt-1">Inspección de trazabilidad y cadena de custodia</p>
+                    </div>
+                    <span id="evidence-level-badge" class="bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-xs font-bold border border-slate-200">Nivel de Evidencia: -</span>
+                </div>
+                
+                <div class="bg-slate-900 text-slate-300 p-6 rounded-xl font-mono text-sm overflow-x-auto shadow-inner">
+                    <pre id="evidence-json-view">No hay evidencia cargada. Procesa un XML en Certificación Electrónica.</pre>
+                </div>
+
+                <div class="mt-6 flex justify-end gap-4" id="evidence-actions" style="display: none;">
+                    <button class="bg-white border border-slate-300 text-slate-700 font-semibold px-4 py-2 rounded-lg hover:bg-slate-50" onclick="switchView('cert')"><i class="fas fa-arrow-left mr-2"></i> Volver a Certificar</button>
+                    <button class="bg-emerald-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-emerald-700" onclick="exportToObsidian()" id="btn-export-obsidian"><i class="fas fa-file-export mr-2"></i> Exportar Markdown</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: Obsidian -->
+        <section id="view-obsidian" class="hidden">
+            <div class="card p-12 text-center">
+                <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-gem text-4xl text-purple-600"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800 mb-2">Knowledge Base</h2>
+                <p class="text-slate-500 max-w-md mx-auto mb-8">La evidencia ha sido exportada exitosamente y está lista para ser analizada en tu bóveda local de Obsidian.</p>
+                <div id="obsidian-status" class="hidden flex flex-col items-center">
+                    <div class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-4 py-2 rounded-lg text-sm font-semibold mb-6 flex items-center gap-2">
+                        <i class="fas fa-check-circle"></i> Exportación MD Exitosa
+                    </div>
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-purple-200 transition-all transform hover:-translate-y-1" onclick="window.open('obsidian://open?vault=vault')">
+                        Abrir en Obsidian <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Explicabilidad Modal (P5: business language, no technical terms) -->
+    <div id="explain-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4" onclick="closeExplain()">
+        <div class="explain-box max-w-lg w-full" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-start mb-3">
+                <h3 id="explain-title" class="text-lg font-bold text-white">—</h3>
+                <button onclick="closeExplain()" class="text-slate-400 hover:text-white transition-colors"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="explain-body"></div>
+        </div>
+    </div>
+
+    <footer class="px-8 py-4 text-center text-[10px] text-slate-400">
+        Marketplace Financial AI Engine — <span class="font-semibold text-slate-500">Ventas + Devoluciones + Cobros = Disponible</span>
+    </footer>
+
+    <script>
+        const fmtCLP = v => new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 }).format(v);
+        const fmtNumber = v => new Intl.NumberFormat('es-CL', { maximumFractionDigits: 0 }).format(v);
+        const fmtShort = v => {
+            const abs = Math.abs(v);
+            if (abs >= 1e9) return '$' + (v / 1e9).toFixed(2) + 'B';
+            if (abs >= 1e6) return '$' + (v / 1e6).toFixed(1) + 'M';
+            if (abs >= 1e3) return '$' + (v / 1e3).toFixed(0) + 'K';
+            return '$' + v.toFixed(0);
+        };
+        // ── Explicabilidad (P5: business language, no technical terms) ──
+        const EXPLAIN = {
+            ventas: {
+                title: 'Ventas',
+                body: `
+                    <p><strong>Qué es:</strong> El valor total de todos los productos vendidos en el período, antes de cualquier descuento, devolución o cargo de los marketplaces.</p>
+                    <p><strong>Cómo se calcula:</strong> Suma de todas las ventas registradas en los marketplaces (Mercado Libre, Ripley, Paris, Falabella). Corresponde al Ingreso Bruto o facturación total.</p>
+                    <p><strong>Qué incluye:</strong> Ventas de todos los marketplaces. Tanto ventas de productos propios (Paris) como ventas de terceros (Mercado Libre, Ripley, Falabella).</p>
+                    <p><strong>Qué no incluye:</strong> No incluye devoluciones, reembolsos, comisiones, costos de envío, publicidad, ni ningún cargo. Es el valor bruto antes de cualquier deducción.</p>
+                `
+            },
+            devoluciones: {
+                title: 'Devoluciones',
+                body: `
+                    <p><strong>Qué es:</strong> El monto total de productos que los clientes devolvieron y que fueron reembolsados durante el período.</p>
+                    <p><strong>Cómo se calcula:</strong> Suma de todas las devoluciones de venta y reembolsos de pedidos procesados por los marketplaces.</p>
+                    <p><strong>Qué incluye:</strong> Devoluciones de productos, reembolsos de pedidos completos, y contracargos por disputas de clientes (chargebacks).</p>
+                    <p><strong>Qué no incluye:</strong> No incluye comisiones que se devuelven al mismo tiempo, ni ajustes por incentivos. Solo el valor del producto devuelto.</p>
+                `
+            },
+            cobros: {
+                title: 'Cobros (Comisiones, Tarifas y Cargos)',
+                body: `
+                    <p><strong>Qué es:</strong> El total de comisiones, tarifas, cargos y costos que los marketplaces descuentan sobre las ventas. Representa lo que los marketplaces cobran por usar sus plataformas y servicios.</p>
+                    <p><strong>Cómo se calcula:</strong> Suma de todas las comisiones, tarifas de envío, costos de publicidad, servicios de asesoría, costos de almacenamiento, y cualquier otro cargo que los marketplaces aplican. Luego se restan las bonificaciones o descuentos que los marketplaces otorgan.</p>
+                    <p><strong>Qué incluye:</strong></p>
+                    <ul>
+                        <li><strong>Comisiones:</strong> Porcentaje sobre cada venta</li>
+                        <li><strong>Logística:</strong> Costos de envío, despacho y logística inversa</li>
+                        <li><strong>Publicidad:</strong> Product Ads, campañas y promociones</li>
+                        <li><strong>Servicios:</strong> Asesoría Comercial, suscripciones</li>
+                        <li><strong>Fulfillment:</strong> Almacenamiento, picking, packing</li>
+                        <li><strong>Bonificaciones:</strong> Descuentos que reducen los cobros totales</li>
+                    </ul>
+                    <p><strong>Qué no incluye:</strong> No incluye devoluciones (están en su propia categoría). No incluye IVA ni impuestos.</p>
+                `
+            },
+            disponible: {
+                title: 'Disponible (Resultado Neto)',
+                body: `
+                    <p><strong>Qué es:</strong> El monto final que queda disponible después de restar todas las devoluciones y todos los cobros a las ventas. Es el resultado neto del período.</p>
+                    <p><strong>Cómo se calcula:</strong> Disponible = Ventas − Devoluciones − Cobros</p>
+                    <p><strong>Qué incluye:</strong> Todas las ventas del período, menos todos los productos devueltos y menos todas las comisiones, tarifas y cargos de los marketplaces.</p>
+                    <p><strong>Qué no incluye:</strong> No incluye impuestos corporativos, gastos de la empresa fuera de los marketplaces (sueldos, arriendo, oficinas), ni costos financieros.</p>
+                `
+            }
+        };
+
+        function showExplain(key) {
+            const e = EXPLAIN[key];
+            if (!e) return;
+            document.getElementById('explain-title').textContent = e.title;
+            document.getElementById('explain-body').innerHTML = e.body;
+            document.getElementById('explain-modal').classList.remove('hidden');
+        }
+        function closeExplain() { document.getElementById('explain-modal').classList.add('hidden'); }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeExplain(); });
+        function showExplicabilidad() { showExplain('disponible'); }
+
+        
+        // --- P21Z Routing & View Management ---
+        let currentPayload = null;
+
+        function switchView(viewId) {
+            // Update tabs
+            document.querySelectorAll('#main-tabs button').forEach(btn => {
+                btn.classList.remove('text-indigo-600', 'border-indigo-600');
+                btn.classList.add('text-slate-500', 'border-transparent');
+            });
+            const activeTab = document.getElementById('tab-' + viewId);
+            if(activeTab) {
+                activeTab.classList.remove('text-slate-500', 'border-transparent');
+                activeTab.classList.add('text-indigo-600', 'border-indigo-600');
+            }
+
+            // Hide all sections except the chosen one
+            // We consider Resumen to be everything before document gap (so we'll just toggle visibility of root elements)
+            
+            const ids = {
+                'resumen': ['hierarchy-kpis', 'scorecard', 'audit-status', 'executive-intelligence', 'waterfall-section', 'cobros-section', 'dte-section', 'anomaly-center'],
+                'gap': ['sect-document-gap'],
+                'cert': ['view-cert'],
+                'evidence': ['view-evidence'],
+                'obsidian': ['view-obsidian']
+            };
+
+            // Hide all
+            Object.values(ids).flat().forEach(id => {
+                const el = document.getElementById(id);
+                if(el) el.style.display = 'none';
+            });
+
+            // Show selected
+            (ids[viewId] || []).forEach(id => {
+                const el = document.getElementById(id);
+                if(el) el.style.display = 'block';
+            });
+        }
+
+        // Initialize Resumen as default view properly after load
+        document.addEventListener('DOMContentLoaded', () => {
+            switchView('resumen');
+        });
+
+        // Drill-down from gap table
+        function goToCertification(folio) {
+            switchView('cert');
+            // could pre-fill or show alert
+        }
+
+        // Add Upload XML button logic to gap table renderer
+        const originalGapRender = window.renderGapTable; // We will override if it exists, else just provide a global function
+        
+        // --- Drag & Drop XML ---
+        function handleDrop(e) {
+            e.preventDefault();
+            e.currentTarget.classList.remove('border-indigo-500', 'bg-indigo-50');
+            if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+                processXML(e.dataTransfer.files[0]);
+            }
+        }
+        function handleFileSelect(e) {
+            if (e.target.files && e.target.files.length > 0) {
+                processXML(e.target.files[0]);
+            }
+        }
+
+        async function processXML(file) {
+            // Reset UI
+            ['xml', 'xsd', 'sig', 'caf', 'vat'].forEach(step => {
+                document.getElementById('step-' + step).className = 'fas fa-spinner fa-spin text-indigo-500';
+            });
+            document.getElementById('cert-result-container').classList.add('hidden');
+            document.getElementById('btn-next-evidence').classList.add('hidden');
+            
+            const marketplaceVal = document.getElementById('exec-mp') ? document.getElementById('exec-mp').value : 'ML';
+            try {
+                const res = await fetch('/api/v4/electronic_certification/validate', {
+                    method: 'POST',
+                    headers: {
+                        'X-Marketplace': marketplaceVal,
+                        'Content-Type': 'application/xml'
+                    },
+                    body: file
+                });
+                const response = await res.json();
+                
+                if (response.status === 'success') {
+                    currentPayload = response.data;
+                    updatePipelineUI(currentPayload.electronic_certificate);
+                } else {
+                    alert("Error en validación: " + response.message);
+                }
+            } catch (err) {
+                alert("Error de red.");
+                console.error(err);
+            }
+        }
+
+        function updatePipelineUI(cert) {
+            if (!cert) return;
+            const setStatus = (id, st) => {
+                const el = document.getElementById('step-' + id);
+                if (st && st.status === 'PASS') el.className = 'fas fa-check-circle text-emerald-500';
+                else if (st && st.status === 'FAIL') el.className = 'fas fa-times-circle text-rose-500';
+                else if (st && st.status === 'NOT_IMPLEMENTED') el.className = 'fas fa-minus-circle text-amber-500';
+                else el.className = 'fas fa-question-circle text-slate-400';
+            };
+
+            setStatus('xml', cert.xml);
+            setStatus('xsd', cert.xsd);
+            setStatus('sig', cert.signature);
+            setStatus('caf', cert.caf);
+            setStatus('vat', cert.vat);
+
+            const badge = document.getElementById('cert-status-badge');
+            if (cert.overall_status === 'PASS') {
+                badge.className = 'px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700';
+                badge.innerText = 'CERTIFIED';
+                document.getElementById('btn-next-evidence').classList.remove('hidden');
+                
+                // Populate evidence
+                if(currentPayload && currentPayload.evidence_object) {
+                    document.getElementById('evidence-json-view').textContent = JSON.stringify(currentPayload.evidence_object, null, 2);
+                    document.getElementById('evidence-actions').style.display = 'flex';
+                    const lvl = currentPayload.evidence_object.evidence_level;
+                    document.getElementById('evidence-level-badge').innerText = `Nivel de Evidencia: ${lvl}`;
+                }
+            } else {
+                badge.className = 'px-3 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-700';
+                badge.innerText = 'INVALID';
+            }
+            document.getElementById('cert-result-container').classList.remove('hidden');
+        }
+
+        async function exportToObsidian() {
+            if (!currentPayload) return;
+            
+            const btn = document.getElementById('btn-export-obsidian');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Exportando...';
+            btn.disabled = true;
+
+            try {
+                const res = await fetch('/api/v4/knowledge/export', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(currentPayload)
+                });
+                const response = await res.json();
+                if (response.status === 'success') {
+                    switchView('obsidian');
+                    document.getElementById('obsidian-status').classList.remove('hidden');
+                    document.getElementById('obsidian-status').classList.add('flex');
+                } else {
+                    alert("Error al exportar a Obsidian: " + response.message);
+                }
+            } catch (err) {
+                alert("Error de red.");
+                console.error(err);
+            } finally {
+                btn.innerHTML = '<i class="fas fa-file-export mr-2"></i> Exportar Markdown';
+                btn.disabled = false;
+            }
+        }
+
+        // ── Detalle → Gerencial Sub-concept Mapping ──
+        // ── P2: Single filter change handler ──
+        function onFilterChange() {
+            loadExecutiveDashboard();
+        }
+
+        ApiClient.safeFetch('/api/v4/periodos').then(periodos => {
+                const sel = document.getElementById('exec-period');
+                const currentVal = sel.value;
+                sel.innerHTML = periodos.map(p => `<option value="${p.periodo}"${p.periodo === currentVal ? ' selected' : ''}>${p.label}</option>`).join('');
+                onFilterChange();
+            })
+            .catch(() => {});
+
+        // ── Main Load (P2: period + mp control everything) ──
+        async function loadExecutiveDashboard() {
+            const period = document.getElementById('exec-period').value;
+            const mp = document.getElementById('exec-mp').value;
+            
+            const params = new URLSearchParams();
+            if (mp) params.set('marketplace', mp);
+            if (period && period !== 'YTD') params.set('periodo', period);
+            
+            const summaryUrl = '/api/v4/exec/summary?' + params.toString();
+            const summary = await ApiClient.safeFetch(summaryUrl);
+            window._execSummary = summary;
+
+            // ── KPI Cards: dynamic financial-structure rendering (P19G_001 UX12 recovery) ──
+            const fsParams = new URLSearchParams({ signal_mode: 'SIGNAL' });
+            if (mp) fsParams.set('marketplace', mp);
+            if (period && period !== 'YTD') fsParams.set('periodo', period);
+            
+            const fsUrl = '/api/v4/financial-structure?' + fsParams.toString();
+            const fs = await ApiClient.safeFetch(fsUrl);
+            const fsCats = Array.isArray(fs.categories) ? fs.categories : Object.values(fs.categories || {});
+            document.getElementById('estado-periodo').textContent = summary.period ? ' · ' + summary.period : '';
+
+            const kpiGrid = document.getElementById('kpi-cards-grid');
+            if (kpiGrid) {
+                var iconFor = function(fg) {
+                    var m = {ingresos:'fa-chart-line text-emerald-400',devoluciones:'fa-undo-alt text-rose-400',
+                    costos_operacionales:'fa-truck text-amber-400',costos_comerciales:'fa-percent text-orange-400',
+                    comisiones:'fa-percent text-orange-400',ajustes:'fa-balance-scale text-purple-400',
+                    recuperaciones_y_bonificaciones:'fa-gift text-green-400',tesoreria:'fa-coins text-yellow-400',
+                    flujo_de_caja:'fa-cash-register text-blue-400',cash_management:'fa-piggy-bank text-indigo-400',
+                    impuestos:'fa-file-invoice text-red-400',costos_financieros:'fa-chart-pie text-pink-400'};
+                    return m[fg] || 'fa-circle text-slate-400';
+                };
+                kpiGrid.innerHTML = fsCats.map(function(cat) {
+                    var neg = cat.total < 0;
+                    return '<div class="card p-3 flex flex-col justify-between min-h-[5.5rem]">'
+                        + '<div class="kpi-label"><i class="fas ' + iconFor(cat.financial_group) + ' mr-1"></i>' + cat.display_name + '</div>'
+                        + '<div class="kpi-value ' + (neg ? 'amount-neg' : 'amount-pos') + ' mt-2">' + fmtCLP(cat.total) + '</div>'
+                    + '</div>';
+                }).join('');
+                var neto = summary.neto;
+                kpiGrid.innerHTML += '<div class="card p-3 flex flex-col justify-between min-h-[5.5rem] bg-gradient-to-br from-slate-800 to-slate-900 text-white">'
+                    + '<div class="kpi-label text-blue-200"><i class="fas fa-calculator mr-1"></i>Resultado Neto</div>'
+                    + '<div class="kpi-value mt-2 ' + (neto >= 0 ? 'text-emerald-300' : 'text-rose-300') + '">' + fmtCLP(neto) + '</div>'
+                + '</div>';
+            }
+
+
+
+// ── P18G_009: Per-MP operational P&L (financial-structure = Auditor) ──
+            const grid = document.getElementById('scorecard-grid');
+            const mpNames = { ML: 'Mercado Libre', RIPLEY: 'Ripley', PARIS: 'Paris', FALABELLA: 'Falabella' };
+            const selectedMp = mp || '';
+            const mpList = ['ML', 'RIPLEY', 'PARIS', 'FALABELLA'];
+
+            // Fetch per-MP operational P&L from Auditor endpoint
+            const mpFS = {};
+            for (var mi = 0; mi < mpList.length; mi++) {
+                var mpid = mpList[mi];
+                var mpUrl = '/api/v4/financial-structure?marketplace=' + mpid + (period !== 'YTD' ? '&periodo=' + period : '');
+                var mpData = await ApiClient.safeFetch(mpUrl);
+                mpFS[mpid] = Array.isArray(mpData.categories) ? mpData.categories : Object.values(mpData.categories || {});
+            }
+
+            // Leader detection: highest Resultado Neto (operational)
+            var leaderId = '';
+            var maxNet = -Infinity;
+            for (var li = 0; li < mpList.length; li++) {
+                var lm = mpList[li];
+                var lnet = (summary.per_marketplace && summary.per_marketplace[lm]) ? summary.per_marketplace[lm].neto : 0;
+                if (lnet > maxNet) { maxNet = lnet; leaderId = lm; }
+            }
+
+            grid.innerHTML = mpList.map(function(mpid) {
+                var cats = mpFS[mpid] || [];
+                var name = mpNames[mpid] || mpid;
+
+                // Dynamic category rendering (P19G_001 UX12 recovery)
+                var net = (summary.per_marketplace && summary.per_marketplace[mpid]) ? summary.per_marketplace[mpid].neto : 0;
+
+                var isSelected = selectedMp && selectedMp === mpid;
+                var isLeader = mpid === leaderId && leaderId !== '';
+                var isInactive = cats.length === 0 || (net === 0 && cats.every(function(c){return c.total===0;}));
+                var activeClass = isSelected ? 'ring-2 ring-indigo-500 shadow-md' : '';
+                if (isInactive) activeClass += ' opacity-60';
+
+                if (isInactive) {
+                    return '<div class="card p-5 scorecard ' + activeClass + '">'
+                        + '<div class="flex justify-between items-start mb-2">'
+                        + '<span class="text-xs font-bold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-lg">' + name + '</span></div>'
+                        + '<div class="py-4 text-center">'
+                        + '<span class="text-[10px] font-semibold text-slate-400 bg-slate-100 px-3 py-1.5 rounded-full inline-block">'
+                        + '<i class="fas fa-pause-circle mr-1.5"></i>Sin actividad en el período</span></div></div>';
+                }
+
+                var leaderBadge = isLeader ? ' <span class="text-amber-500 ml-1">&starf;</span>' : '';
+                var leaderTag = isLeader ? '<span class="text-[9px] font-bold text-amber-600 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">Mayor aporte</span>' : '';
+
+                return '<div class="card p-5 scorecard cursor-pointer ' + activeClass + '" onclick="selectMarketplace(\x27' + mpid + '\x27)">'
+                    + '<div class="flex justify-between items-start mb-3">'
+                    + '<span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg">' + name + leaderBadge + '</span>'
+                    + '<span class="flex items-center gap-1.5">' + leaderTag
+                    + '<span class="text-[10px] text-slate-400 font-medium">' + fmtCLP(net) + ' neto</span></span></div>'
+                    + '<div class="space-y-1">' + cats.map(function(cat) {
+                        var isNeg = cat.total < 0;
+                        return '<div class="flex justify-between items-center">'
+                            + '<span class="kpi-label">' + cat.display_name + '</span>'
+                            + '<span class="text-xs font-bold ' + (isNeg ? 'amount-neg' : 'amount-pos') + '">' + fmtCLP(cat.total) + '</span>'
+                        + '</div>';
+                    }).join('')
+                    + '<div class="flex justify-between items-center pt-2 border-t border-slate-100">'
+                    + '<span class="kpi-label">Resultado Neto</span>'
+                    + '<span class="text-sm font-bold ' + (net >= 0 ? 'amount-pos' : 'amount-neg') + '">' + fmtCLP(net) + '</span></div>'
+                    + '</div></div></div>';
+            }).join('');
+// ── Waterfall + Cobros (P2: use global mp filter) ──
+            try { await loadWaterfall(); } catch(e) { console.error('[ExecDash] Waterfall render error:', e); }
+            try { await loadCobrosBreakdown(); } catch(e) { console.error('[ExecDash] Cobros breakdown error:', e); }
+            loadAnomalyCenter(mp, period);
+            loadExecutiveIntelligence(mp, period, fs, summary);
+            loadDTECoverage(mp, period);
+        }
+
+        // P2: select marketplace from scorecard click
+        function selectMarketplace(mpId) {
+            const globalMp = document.getElementById('exec-mp');
+            if (globalMp.value === mpId) {
+                globalMp.value = ''; // deselect = show all
+            } else {
+                globalMp.value = mpId;
+            }
+            onFilterChange();
+        }
+
+        // ── Waterfall ──
+        
+        // P16G_03A: DTE Coverage loader (endpoint deshabilitado — mostrar no disponible)
+        async function loadDTECoverage(mp, period) {
+            try {
+                const target = { monto_elegible: 0, monto_certificado: 0, monto_sin_respaldo: 0, cobertura: 0, nivel_evidencia: '—', estado_legal: 'SIN_DATOS' };
+                document.getElementById('ux12-doc-elegible').textContent = fmtCLP(target.monto_elegible || 0);
+                document.getElementById('ux12-doc-match').textContent = fmtCLP(target.monto_certificado || 0);
+                document.getElementById('ux12-doc-pend').textContent = fmtCLP(target.monto_sin_respaldo || 0);
+                document.getElementById('ux12-doc-evidencia').textContent = target.nivel_evidencia || '—';
+                document.getElementById('ux12-doc-estrategia').textContent = target.estado_legal || '—';
+                document.getElementById('ux12-doc-cov').textContent = (target.cobertura || 0).toFixed(1) + '%';
+                const badge = document.getElementById('dte-cert-badge');
+                const status = target.estado_legal || 'SIN_DATOS';
+                const sc = {
+                    'LEGAL_DOCUMENT': 'bg-emerald-100 text-emerald-700',
+                    'SETTLEMENT_CERTIFIED': 'bg-blue-100 text-blue-700',
+                    'PENDIENTE': 'bg-slate-100 text-slate-600',
+                    'SIN_DATOS': 'bg-slate-100 text-slate-500'
+                }[status] || 'bg-slate-100 text-slate-500';
+                const labels = {'LEGAL_DOCUMENT':'Documento Legal','SETTLEMENT_CERTIFIED':'Certificado por Liquidación','PENDIENTE':'Pendiente','SIN_DATOS':'Sin datos'};
+                badge.className = 'text-[10px] px-1.5 py-0.5 rounded-full font-bold ' + sc;
+                badge.textContent = labels[status] || 'Sin datos';
+                const expl = document.getElementById('dte-explanation');
+                if (target.limitation) {
+                    try { expl.textContent = decodeURIComponent(escape(target.limitation));
+                    try {
+                        var t = expl.textContent;
+                        t = t.replace(/op_pnl/g, 'resultado operacional');
+                        t = t.replace(/financial-structure/gi, 'estructura financiera');
+                        t = t.replace(/exec\/summary/gi, 'resumen ejecutivo');
+                        t = t.replace(/Cobertura mixta/gi, 'Cobertura mixta');
+                        expl.textContent = t;
+                    } catch(_) {} }
+                    catch(_) { expl.textContent = target.limitation; }
+                    expl.classList.remove('hidden');
+                }
+                else { expl.classList.add('hidden'); }
+            } catch (e) { console.error('DTE error:', e); }
+        }
+
+        // P16G_03: Anomaly Center loader
+        async function loadAnomalyCenter(mp, period) {
+            const section = document.getElementById('anomaly-center');
+            const list = document.getElementById('anomaly-list');
+            const badge = document.getElementById('anomaly-badge');
+            if (!section || !list) return;
+            try {
+                const params = new URLSearchParams();
+                if (mp) params.set('marketplace', mp);
+                if (period && period !== 'YTD') params.set('periodo', period);
+                const data = await ApiClient.safeFetch('/api/v4/intelligence/anomalies?' + params.toString());
+                if (!data.anomalies || data.anomalies.length === 0) { section.classList.add('hidden'); return; }
+                section.classList.remove('hidden');
+                const critical = data.anomalies.filter(a => a.severity === 'CRITICA' || a.severity === 'ALTA');
+                const sevColor = critical.length > 0 ? 'bg-red-100 text-red-700' : 'bg-amber-100 text-amber-700';
+                badge.className = 'px-2 py-0.5 rounded-full text-[10px] font-bold ' + sevColor;
+                badge.textContent = data.anomalies.length + ' anomalía' + (data.anomalies.length !== 1 ? 's' : '');
+                let html = '';
+                data.anomalies.forEach(a => {
+                    const sevCls = a.severity === 'ALTA' || a.severity === 'CRITICA' ? 'border-red-200 bg-red-50' : 'border-amber-200 bg-amber-50';
+                    const sevBadge = a.severity === 'ALTA' || a.severity === 'CRITICA' ? 'bg-red-500' : 'bg-amber-500';
+                    html += '<div class="' + sevCls + ' border rounded-lg p-3">' +
+                        '<div class="flex items-center justify-between mb-1">' +
+                        '<span class="font-semibold text-slate-800">' + (a.anomaly_type || a.check_name || 'Anomalía').replace(/_/g, ' ').replace('CRITICAL DELTA', 'Delta Crítica').replace('UNCLASSIFIED RECORDS', 'Registros Sin Clasificar').replace('DELTA', 'Delta').replace('RECORDS', 'Registros') + '</span>' +
+                        '<span class="' + sevBadge + ' text-white text-[9px] px-1.5 py-0.5 rounded">' + (a.severity || 'ALTA') + '</span>' +
+                        '</div><p class="text-slate-600 mb-1">' + (a.description || a.condition || '').replace('Reconciliation delta', 'Delta de conciliación').replace('exceeds critical threshold', 'excede el umbral crítico').replace('records without financial_group classification', 'registros sin clasificación financial_group').replace('records without classification', 'registros sin clasificacion').replace('without financial_group', 'sin categoria contable').replace('financial_group', 'categoria contable').replace(/Reconciliation delta/gi, 'Delta de conciliacion').replace(/exceeds critical threshold/gi, 'excede el umbral critico').replace(/records without financial_group classification/gi, 'registros sin clasificacion financial_group') + '</p>' +
+                        '<div class="flex gap-4 text-[10px] text-slate-400">' +
+                        '<span>' + (a.record_count || 0) + ' registros</span>' +
+                        '<span>' + fmtCLP(a.impact_amount || 0) + '</span>' +
+                        '</div></div>';
+                });
+                list.innerHTML = html;
+            } catch (e) { section.classList.add('hidden'); }
+        }
+
+        async function loadExecutiveIntelligence(mp, period, fs, summary) {
+            try {
+                const params = new URLSearchParams();
+                if (mp) params.set('marketplace', mp);
+                if (period && period !== 'YTD') params.set('periodo', period);
+                let data = await ApiClient.safeFetch('/api/v4/intelligence/insights?' + params.toString());
+
+                const toSpanish = function(text) {
+                    if (!text) return '';
+                    var t = text;
+                    t = t.replace(/^Top Risk: /i, '').replace(/^Top Opportunity: /i, '').replace(/^Principal Driver: /i, '').replace(/^Top MP: /i, '');
+                    t = t.replace(/represents/gi, 'representa');
+                    t = t.replace(/generates/gi, 'genera');
+                    t = t.replace(/contributes/gi, 'aporta');
+                    t = t.replace(/highest cost center/gi, 'principal centro de costo');
+                    t = t.replace(/Positive recoveries of/gi, 'Recuperaciones por');
+                    t = t.replace(/of gross revenue/gi, 'del ingreso bruto');
+                    t = t.replace(/of total P&L/gi, 'del resultado neto');
+                    t = t.replace(/of net(?![a-z])/gi, 'del neto');
+                    t = t.replace(/of revenue/gi, 'de los ingresos');
+                    t = t.replace(/importe total/gi, 'total facturado');
+                    t = t.replace(/en concepto de/gi, 'por');
+                    t = t.replace(/Comision fija/gi, 'Comision fija');
+                    t = t.replace(/Comision variable/gi, 'Comision variable');
+                    t = t.replace(/Costo de envio/gi, 'Costo de envio');
+                    t = t.replace(/Costo operacional/gi, 'Costo operacional');
+                    t = t.replace(/Devolucion/gi, 'Devolucion');
+                    t = t.replace(/rows with folio_xml/gi, 'registros con folio tributario');
+                    t = t.replace(/transactions/gi, 'transacciones');
+                    t = t.replace(/ from /gi, ' en ');
+                    t = t.replace(/across/gi, 'en');
+                    t = t.replace(/orders/gi, 'ordenes');
+                    t = t.replace(/\s+/g, ' ').trim();
+                    return t.charAt(0).toUpperCase() + t.slice(1);
+                };
+
+                // Default values
+                let riskTitle = "Sin riesgos críticos";
+                let riskDesc = "Todos los grupos financieros presentan balances operativos saludables.";
+                let oppTitle = "Optimización de costos";
+                let oppDesc = "Monitoreo continuo de comisiones y logística para identificar eficiencias.";
+                let driverTitle = "Ventas de productos";
+                let driverDesc = "Ingresos principales estables según la facturación del período.";
+
+                // Calculate values dynamically
+                if (fs && fs.categories && fs.categories.length > 0) {
+                    const cats = Array.isArray(fs.categories) ? fs.categories : Object.values(fs.categories);
+                    
+                    // 1. Risk: Find most negative category
+                    const negCats = cats.filter(c => c.total < 0).sort((a, b) => a.total - b.total);
+                    if (negCats.length > 0) {
+                        const topRisk = negCats[0];
+                        riskTitle = `Riesgo: ${topRisk.display_name}`;
+                        riskDesc = `${topRisk.display_name} representa ${fmtCLP(Math.abs(topRisk.total))} — principal centro de costo.`;
+                    }
+
+                    // 2. Opportunity: Find adjustments or recoveries
+                    const oppCats = cats.filter(c => (c.financial_group === 'recuperaciones_y_bonificaciones' || c.financial_group === 'ajustes') && c.total > 0);
+                    if (oppCats.length > 0) {
+                        const topOpp = oppCats[0];
+                        oppTitle = `Oportunidad: ${topOpp.display_name}`;
+                        oppDesc = `Recuperaciones positivas de ${fmtCLP(topOpp.total)} registradas en el período.`;
+                    }
+
+                    // 3. Driver: Find subcategory under ingresos with max value
+                    const ingCat = cats.find(c => c.financial_group === 'ingresos');
+                    if (ingCat && ingCat.items && ingCat.items.length > 0) {
+                        const topItem = [...ingCat.items].sort((a, b) => b.monto - a.monto)[0];
+                        driverTitle = `Driver: ${topItem.detalle}`;
+                        const pct = (topItem.monto / Math.max(1, ingCat.total)) * 100;
+                        driverDesc = `${topItem.detalle} genera ${fmtCLP(topItem.monto)} (${pct.toFixed(0)}% del ingreso bruto).`;
+                    }
+                }
+
+                // If backend returned actual alerts from marketplace_auditoria_v1, map them
+                if (data.insights && data.insights.length > 0) {
+                    const ripleyAlert = data.insights.find(i => i.check_name === 'folio_estructural_sin_respaldo_sii');
+                    if (ripleyAlert) {
+                        riskTitle = "Riesgo: Folios Sin Respaldo SII";
+                        riskDesc = toSpanish(ripleyAlert.condition);
+                    }
+                }
+
+                document.getElementById('intel-risk-title').textContent = toSpanish(riskTitle);
+                document.getElementById('intel-risk-desc').textContent = toSpanish(riskDesc);
+                document.getElementById('intel-opp-title').textContent = toSpanish(oppTitle);
+                document.getElementById('intel-opp-desc').textContent = toSpanish(oppDesc);
+                document.getElementById('intel-driver-title').textContent = toSpanish(driverTitle);
+                document.getElementById('intel-driver-desc').textContent = toSpanish(driverDesc);
+
+                // ── Narrative/Summary (intel-summary) ──
+                const mpLabel = mp ? (mp === 'ALL' ? 'todos los marketplaces' : mp) : 'todos los marketplaces';
+                let summaryText = `Análisis ejecutivo consolidado - ${mpLabel} | Período: ${period || 'YTD'}`;
+                if (summary && summary.neto !== undefined) {
+                    summaryText += ` | Resultado Neto: ${fmtCLP(summary.neto)}`;
+                }
+                if (summary && summary.gross_sales !== undefined) {
+                    summaryText += ` | Ventas Brutas: ${fmtCLP(summary.gross_sales)}`;
+                }
+                summaryText += ` | Alertas de auditoría activas: ${data.insights ? data.insights.length : 0}.`;
+                
+                document.getElementById('intel-summary').textContent = toSpanish(summaryText);
+            } catch (e) {
+                console.error('EI error:', e);
+            }
+        }
+
+        async function loadWaterfall() {
+          try {
+            const period = document.getElementById('exec-period').value;
+            const mp = document.getElementById('exec-mp').value;
+            const params = new URLSearchParams();
+            if (mp) params.set('marketplace', mp);
+            if (period !== 'YTD') params.set('periodo', period);
+            const data = await ApiClient.safeFetch('/api/v4/exec/waterfall-v3?' + params.toString());
+            const mpLabel = mp || 'Consolidado';
+            document.getElementById('waterfall-subtitle').textContent = mpLabel + ' · ' + (period !== 'YTD' ? period : 'YTD');
+            const container = document.getElementById('waterfall-bars');
+            const op = data.operacional || data || {};
+            const opValues = op.values || [];
+            const opLabels = op.labels || [];
+            const safeVal = (v) => (typeof v === 'number' && !isNaN(v)) ? v : 0;
+            const steps = [];
+            // Operacional steps
+            for (let i = 0; i < opLabels.length; i++) {
+                steps.push({ label: opLabels[i], value: safeVal(opValues[i]) });
+            }
+            // Liquidacion separator
+            if (data.liquidacion && data.liquidacion.values && data.liquidacion.values.length > 0) {
+                const liq = data.liquidacion;
+                for (let i = 0; i < liq.labels.length; i++) {
+                    steps.push({ label: liq.labels[i], value: safeVal(liq.values[i]), isLiq: true });
+                }
+            }
+            const maxAbs = Math.max(1, ...steps.map(s => Math.abs(s.value)));
+            let html = '';
+            steps.forEach((s, i) => {
+                const isNeg = s.value < 0;
+                const pct = Math.min(100, (Math.abs(s.value) / maxAbs) * 100);
+                const cls = isNeg ? 'amount-neg' : 'amount-pos';
+                if (i > 0) {
+                    html += '<div class="arrow-flow"><i class="fas fa-arrow-down text-slate-300 text-[10px]"></i></div>';
+                }
+                html += '<div class="waterfall-step">' +
+                    '<div class="flex justify-between text-sm mb-1">' +
+                    '<span class="font-semibold text-slate-700">' + s.label + '</span>' +
+                    '<span class="' + cls + ' font-mono text-sm">' + fmtCLP(s.value) + '</span>' +
+                    '</div>' +
+                    '<div class="flex w-full bg-slate-100 rounded-lg h-7 overflow-hidden shadow-inner">' +
+                    (isNeg
+                        ? '<div class="h-full rounded-r-lg ' + (s.isLiq ? 'bg-indigo-400' : 'bg-rose-400') + ' opacity-80" style="width: ' + pct + '%"></div><div class="flex-1"></div>'
+                        : '<div class="flex-1"></div><div class="h-full rounded-l-lg ' + (s.isLiq ? 'bg-indigo-500' : 'bg-emerald-500') + '" style="width: ' + pct + '%"></div>') +
+                    '</div>' +
+                    '<div class="flex justify-between text-[10px] text-slate-400 mt-0.5 px-0.5">' +
+                    '<span>' + (isNeg ? '-$' + fmtShort(Math.abs(s.value)) : fmtShort(s.value)) + '</span>' +
+                    '<span>' + pct.toFixed(0) + '%</span>' +
+                    '</div></div>';
+            });
+            if (!steps.length) {
+                html = '<div class="text-xs text-slate-400 py-4 text-center">Sin datos para waterfall</div>';
+            }
+            container.innerHTML = html;
+          } catch(e) { console.error('[loadWaterfall] Error interno:', e); }
+        }
+        async function loadCobrosBreakdown() {
+          try {
+            const period = document.getElementById('exec-period').value;
+            const activeMp = document.getElementById('exec-mp').value;
+            const periodVal = period !== 'YTD' ? period : '';
+            const mpNames = { ML: 'Mercado Libre', RIPLEY: 'Ripley', PARIS: 'Paris', FALABELLA: 'Falabella' };
+
+            const params = new URLSearchParams();
+            if (periodVal) params.set('periodo', periodVal);
+            if (activeMp) params.set('marketplace', activeMp);
+            const data = await ApiClient.safeFetch('/api/v4/exec/cobros-breakdown?' + params.toString());
+
+            const matrix = data.matrix || [];
+            const mps = data.mps || (activeMp ? [activeMp] : ['ML', 'RIPLEY', 'PARIS', 'FALABELLA']);
+            const totalCobros = data.total_cobros || 0;
+
+            const grid = document.getElementById('cobros-grid');
+            const footer = document.getElementById('cobros-total');
+
+            if (matrix.length === 0) {
+                grid.innerHTML = '<div class="text-center text-slate-400 text-sm py-8"><i class="fas fa-search"></i> No hay datos de cobros</div>';
+                footer.classList.add('hidden');
+                return;
+            }
+
+            const colCount = mps.length;
+            const colSpan = colCount > 1 ? 'grid-cols-' + (colCount + 1) : 'grid-cols-2';
+
+            let html = `
+                <div class="grid ${colSpan} gap-1 text-[9px] font-bold text-slate-400 uppercase tracking-wider pb-1.5 border-b border-slate-100">
+                    <span>Concepto</span>
+                    ${mps.map(mp => `<span class="text-right">${mpNames[mp] || mp}</span>`).join('')}
+                </div>
+            `;
+
+            let displayTotal = 0;
+            matrix.forEach(row => {
+                const concept = row.concept;
+                displayTotal += row.total || 0;
+t = t.replace(/orders/gi, 'ordenes');
+                    t = t.replace(/\s+/g, ' ').trim();
+                    return t.charAt(0).toUpperCase() + t.slice(1);
+                };
+
+                // Default values
+                let riskTitle = "Sin riesgos críticos";
+                let riskDesc = "Todos los grupos financieros presentan balances operativos saludables.";
+                let oppTitle = "Optimización de costos";
+                let oppDesc = "Monitoreo continuo de comisiones y logística para identificar eficiencias.";
+                let driverTitle = "Ventas de productos";
+                let driverDesc = "Ingresos principales estables según la facturación del período.";
+
+                // Calculate values dynamically
+                if (fs && fs.categories && fs.categories.length > 0) {
+                    const cats = Array.isArray(fs.categories) ? fs.categories : Object.values(fs.categories);
+                    
+                    // 1. Risk: Find most negative category
+                    const negCats = cats.filter(c => c.total < 0).sort((a, b) => a.total - b.total);
+                    if (negCats.length > 0) {
+                        const topRisk = negCats[0];
+                        riskTitle = `Riesgo: ${topRisk.display_name}`;
+                        riskDesc = `${topRisk.display_name} representa ${fmtCLP(Math.abs(topRisk.total))} — principal centro de costo.`;
+                    }
+
+                    // 2. Opportunity: Find adjustments or recoveries
+                    const oppCats = cats.filter(c => (c.financial_group === 'recuperaciones_y_bonificaciones' || c.financial_group === 'ajustes') && c.total > 0);
+                    if (oppCats.length > 0) {
+                        const topOpp = oppCats[0];
+                        oppTitle = `Oportunidad: ${topOpp.display_name}`;
+                        oppDesc = `Recuperaciones positivas de ${fmtCLP(topOpp.total)} registradas en el período.`;
+                    }
+
+                    // 3. Driver: Find subcategory under ingresos with max value
+                    const ingCat = cats.find(c => c.financial_group === 'ingresos');
+                    if (ingCat && ingCat.items && ingCat.items.length > 0) {
+                        const topItem = [...ingCat.items].sort((a, b) => b.monto - a.monto)[0];
+                        driverTitle = `Driver: ${topItem.detalle}`;
+                        const pct = (topItem.monto / Math.max(1, ingCat.total)) * 100;
+                        driverDesc = `${topItem.detalle} genera ${fmtCLP(topItem.monto)} (${pct.toFixed(0)}% del ingreso bruto).`;
+                    }
+                }
+
+                // If backend returned actual alerts from marketplace_auditoria_v1, map them
+                if (data.insights && data.insights.length > 0) {
+                    const ripleyAlert = data.insights.find(i => i.check_name === 'folio_estructural_sin_respaldo_sii');
+                    if (ripleyAlert) {
+                        riskTitle = "Riesgo: Folios Sin Respaldo SII";
+                        riskDesc = toSpanish(ripleyAlert.condition);
+                    }
+                }
+
+                document.getElementById('intel-risk-title').textContent = toSpanish(riskTitle);
+                document.getElementById('intel-risk-desc').textContent = toSpanish(riskDesc);
+                document.getElementById('intel-opp-title').textContent = toSpanish(oppTitle);
+                document.getElementById('intel-opp-desc').textContent = toSpanish(oppDesc);
+                document.getElementById('intel-driver-title').textContent = toSpanish(driverTitle);
+                document.getElementById('intel-driver-desc').textContent = toSpanish(driverDesc);
+
+                // ── Narrative/Summary (intel-summary) ──
+                const mpLabel = mp ? (mp === 'ALL' ? 'todos los marketplaces' : mp) : 'todos los marketplaces';
+                let summaryText = `Análisis ejecutivo consolidado - ${mpLabel} | Período: ${period || 'YTD'}`;
+                if (summary && summary.neto !== undefined) {
+                    summaryText += ` | Resultado Neto: ${fmtCLP(summary.neto)}`;
+                }
+                if (summary && summary.gross_sales !== undefined) {
+                    summaryText += ` | Ventas Brutas: ${fmtCLP(summary.gross_sales)}`;
+                }
+                summaryText += ` | Alertas de auditoría activas: ${data.insights ? data.insights.length : 0}.`;
+                
+                document.getElementById('intel-summary').textContent = toSpanish(summaryText);
+            } catch (e) {
+                console.error('EI error:', e);
+            }
+        }
+
+        async function loadWaterfall() {
+          try {
+            const period = document.getElementById('exec-period').value;
+            const mp = document.getElementById('exec-mp').value;
+            const params = new URLSearchParams();
+            if (mp) params.set('marketplace', mp);
+            if (period !== 'YTD') params.set('periodo', period);
+            const data = await ApiClient.safeFetch('/api/v4/exec/waterfall-v3?' + params.toString());
+            const mpLabel = mp || 'Consolidado';
+            document.getElementById('waterfall-subtitle').textContent = mpLabel + ' · ' + (period !== 'YTD' ? period : 'YTD');
+            const container = document.getElementById('waterfall-bars');
+            const op = data.operacional || data || {};
+            const opValues = op.values || [];
+            const opLabels = op.labels || [];
+            const safeVal = (v) => (typeof v === 'number' && !isNaN(v)) ? v : 0;
+            const steps = [];
+            // Operacional steps
+            for (let i = 0; i < opLabels.length; i++) {
+                steps.push({ label: opLabels[i], value: safeVal(opValues[i]) });
+            }
+            // Liquidacion separator
+            if (data.liquidacion && data.liquidacion.values && data.liquidacion.values.length > 0) {
+                const liq = data.liquidacion;
+                for (let i = 0; i < liq.labels.length; i++) {
+                    steps.push({ label: liq.labels[i], value: safeVal(liq.values[i]), isLiq: true });
+                }
+            }
+            const maxAbs = Math.max(1, ...steps.map(s => Math.abs(s.value)));
+            let html = '';
+            steps.forEach((s, i) => {
+                const isNeg = s.value < 0;
+                const pct = Math.min(100, (Math.abs(s.value) / maxAbs) * 100);
+                const cls = isNeg ? 'amount-neg' : 'amount-pos';
+                if (i > 0) {
+                    html += '<div class="arrow-flow"><i class="fas fa-arrow-down text-slate-300 text-[10px]"></i></div>';
+                }
+                html += '<div class="waterfall-step">' +
+                    '<div class="flex justify-between text-sm mb-1">' +
+                    '<span class="font-semibold text-slate-700">' + s.label + '</span>' +
+                    '<span class="' + cls + ' font-mono text-sm">' + fmtCLP(s.value) + '</span>' +
+                    '</div>' +
+                    '<div class="flex w-full bg-slate-100 rounded-lg h-7 overflow-hidden shadow-inner">' +
+                    (isNeg
+                        ? '<div class="h-full rounded-r-lg ' + (s.isLiq ? 'bg-indigo-400' : 'bg-rose-400') + ' opacity-80" style="width: ' + pct + '%"></div><div class="flex-1"></div>'
+                        : '<div class="flex-1"></div><div class="h-full rounded-l-lg ' + (s.isLiq ? 'bg-indigo-500' : 'bg-emerald-500') + '" style="width: ' + pct + '%"></div>') +
+                    '</div>' +
+                    '<div class="flex justify-between text-[10px] text-slate-400 mt-0.5 px-0.5">' +
+                    '<span>' + (isNeg ? '-$' + fmtShort(Math.abs(s.value)) : fmtShort(s.value)) + '</span>' +
+                    '<span>' + pct.toFixed(0) + '%</span>' +
+                    '</div></div>';
+            });
+            if (!steps.length) {
+                html = '<div class="text-xs text-slate-400 py-4 text-center">Sin datos para waterfall</div>';
+            }
+            container.innerHTML = html;
+          } catch(e) { console.error('[loadWaterfall] Error interno:', e); }
+        }
+        async function loadCobrosBreakdown() {
+          try {
+            const period = document.getElementById('exec-period').value;
+            const activeMp = document.getElementById('exec-mp').value;
+            const periodVal = period !== 'YTD' ? period : '';
+            const mpNames = { ML: 'Mercado Libre', RIPLEY: 'Ripley', PARIS: 'Paris', FALABELLA: 'Falabella' };
+
+            const params = new URLSearchParams();
+            if (periodVal) params.set('periodo', periodVal);
+            if (activeMp) params.set('marketplace', activeMp);
+            const data = await ApiClient.safeFetch('/api/v4/exec/cobros-breakdown?' + params.toString());
+
+            const matrix = data.matrix || [];
+            const mps = data.mps || (activeMp ? [activeMp] : ['ML', 'RIPLEY', 'PARIS', 'FALABELLA']);
+            const totalCobros = data.total_cobros || 0;
+
+            const grid = document.getElementById('cobros-grid');
+            const footer = document.getElementById('cobros-total');
+
+            if (matrix.length === 0) {
+                grid.innerHTML = '<div class="text-center text-slate-400 text-sm py-8"><i class="fas fa-search"></i> No hay datos de cobros</div>';
+                footer.classList.add('hidden');
+                return;
+            }
+
+            const colCount = mps.length;
+            const colSpan = colCount > 1 ? 'grid-cols-' + (colCount + 1) : 'grid-cols-2';
+
+            let html = `
+                <div class="grid ${colSpan} gap-1 text-[9px] font-bold text-slate-400 uppercase tracking-wider pb-1.5 border-b border-slate-100">
+                    <span>Concepto</span>
+                    ${mps.map(mp => `<span class="text-right">${mpNames[mp] || mp}</span>`).join('')}
+                </div>
+            `;
+
+            let displayTotal = 0;
+            matrix.forEach(row => {
+                const concept = row.concept;
+                displayTotal += row.total || 0;
+                const vals = mps.map(mp => row[mp] || 0);
+                html += `
+                    <div class="grid ${colSpan} gap-1 text-xs py-1.5 border-b border-slate-50 last:border-0 hover:bg-slate-50/50 rounded transition-colors">
+                        <span class="font-medium text-slate-700">${concept}</span>
+                        ${vals.map(v => `<span class="text-right font-mono ${v < 0 ? 'amount-neg' : 'amount-pos'}">${v !== 0 ? fmtCLP(v) : '—'}</span>`).join('')}
+                    </div>
+                `;
+            });
+
+            grid.innerHTML = html;
+
+            footer.classList.remove('hidden');
+            document.getElementById('cobros-sum').textContent = fmtCLP(totalCobros);
+            document.getElementById('cobros-sum').className = totalCobros < 0 ? 'amount-neg font-bold' : 'amount-pos font-bold';
+          } catch(e) { console.error('[loadCobrosBreakdown] Error interno:', e); }
+        }
+
+        // ── Init ──
+        loadExecutiveDashboard();
+
+        async function loadDocumentGaps() {
+            try {
+                const ds = window._execSummary && window._execSummary.dashboard_state;
+                if (!ds) return;
+                
+                const tbody = document.getElementById('gap-table-body');
+                if(tbody) tbody.innerHTML = '<tr><td colspan="6" class="px-4 py-2 text-center text-xs text-slate-500">Los gaps detallados han sido movidos al backend (Dashboard State).</td></tr>';
+                
+                const riskData = ds.risk_summary || {};
+                const riskUl = document.getElementById('top-risks-list');
+                if(riskUl && riskData.top_risks) {
+                    riskUl.innerHTML = '';
+                    riskData.top_risks.forEach(risk => {
+                        riskUl.innerHTML += `<li><span class="font-bold">${risk.riesgo}</span>: Impacto ${risk.impacto}</li>`;
+                    });
+                }
+            } catch(err) {
+                console.error('Error loading document gaps', err);
+            }
+        }
+        window.addEventListener('load', () => {
+            setTimeout(loadDocumentGaps, 1000);
+        });
+
+    </script>
+</body>
+</html>
+<script>
+async function processXMLUpload(event) {
+    const fileInput = event.target;
+    if (!fileInput.files || fileInput.files.length === 0) return;
+    const file = fileInput.files[0];
+    const formData = new FormData();
+    formData.append('file', file);
+    
+    // Add visual feedback
+    const uploadZone = document.getElementById('cert-upload-zone');
+    if (uploadZone) {
+        uploadZone.innerHTML = '<i class="fas fa-spinner fa-spin text-3xl text-indigo-500 mb-2"></i><p class="text-sm text-slate-300">Subiendo...</p>';
+    }
+    
+    try {
+        const response = await fetch('/api/v4/upload/dte', {
+            method: 'POST',
+            body: formData
+        });
+        
+        if (response.ok) {
+            const data = await response.json();
+            alert('Documento subido y procesado con xito por el pipeline del Backend: ' + (data.status || 'OK'));
+            // Refrescar estado o dashboard si es necesario
+            if (typeof window.location.reload === 'function') {
+                window.location.reload();
+            }
+        } else {
+            alert('Error al procesar el documento. Revise los logs del Backend.');
+        }
+    } catch (err) {
+        console.error('Upload Error:', err);
+        alert('Error de red al intentar subir el documento.');
+    }
+}
+</script>

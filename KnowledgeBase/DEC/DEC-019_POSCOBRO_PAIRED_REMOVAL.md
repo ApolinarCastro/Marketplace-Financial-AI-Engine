@@ -1,0 +1,3 @@
+﻿# DEC-019_POSCOBRO_PAIRED_REMOVAL
+
+Legacy DEC artifact.

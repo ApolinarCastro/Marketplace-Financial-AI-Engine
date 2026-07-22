@@ -1,0 +1,241 @@
+{
+  "question": "¿Qué detalle financiero impacta más?",
+  "period": "2026-06-30 00:00:00",
+  "answer": {
+    "summary": "Top: 'Venta' ($25,654,880)"
+  },
+  "explanation": {
+    "text": "Top 10 detalles financieros del periodo.",
+    "bullet_points": [
+      "Venta: $25,654,880 (772 filas)",
+      "Importe del pedido: $18,265,689 (461 filas)",
+      "order_amount: $5,261,880 (145 filas)",
+      "Cargo por venta (Comisión): $-3,722,367 (864 filas)",
+      "Pago por precio del producto: $3,512,762 (106 filas)"
+    ]
+  },
+  "breakdown": [
+    {
+      "mp": "paris",
+      "detalle": "Venta",
+      "total": 25654880.0,
+      "cnt": 772
+    },
+    {
+      "mp": "ripley",
+      "detalle": "Importe del pedido",
+      "total": 18265689.0,
+      "cnt": 461
+    },
+    {
+      "mp": "ripley",
+      "detalle": "order_amount",
+      "total": 5261880.0,
+      "cnt": 145
+    },
+    {
+      "mp": "paris",
+      "detalle": "Cargo por venta (Comisión)",
+      "total": -3722367.0,
+      "cnt": 864
+    },
+    {
+      "mp": "falabella",
+      "detalle": "Pago por precio del producto",
+      "total": 3512762.0,
+      "cnt": 106
+    },
+    {
+      "mp": "ripley",
+      "detalle": "Comisiones sobre pedidos",
+      "total": -3287717.0,
+      "cnt": 461
+    },
+    {
+      "mp": "paris",
+      "detalle": "Devolución",
+      "total": -2629220.0,
+      "cnt": 78
+    },
+    {
+      "mp": "ripley",
+      "detalle": "Pedidos reembolsados",
+      "total": -1939091.0,
+      "cnt": 47
+    },
+    {
+      "mp": "paris",
+      "detalle": "Cobro por despacho",
+      "total": -1264990.0,
+      "cnt": 574
+    },
+    {
+      "mp": "ripley",
+      "detalle": "commission_fee",
+      "total": 947108.0,
+      "cnt": 145
+    }
+  ],
+  "evidence": [
+    {
+      "marketplace": "paris",
+      "kpi": "top_detalle",
+      "value": 25654880.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT monto FROM marketplace_ledger_v1 WHERE detalle='Venta' AND fecha BETWEEN '2026-06-01' AND '2026-06-30'",
+      "components": {
+        "detalle": "Venta",
+        "total": 25654880.0,
+        "count": 772
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "15725405_GROSS",
+          "id_orden": null,
+          "detalle": "Venta",
+          "monto": 95990.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "15904679_GROSS",
+          "id_orden": null,
+          "detalle": "Venta",
+          "monto": 95990.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "15784938_GROSS",
+          "id_orden": null,
+          "detalle": "Venta",
+          "monto": 82190.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+          "folio_xml": null
+        }
+      ],
+      "raw_sources": [
+        "1 jun 2026 - 8 jun 2026.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2302,
+        "source_files": 1,
+        "first_load": "2026-07-06 11:26:30.369530",
+        "last_load": "2026-07-06 11:26:30.424345"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "top_detalle",
+      "value": 18265689.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT monto FROM marketplace_ledger_v1 WHERE detalle='Importe del pedido' AND fecha BETWEEN '2026-06-01' AND '2026-06-30'",
+      "components": {
+        "detalle": "Importe del pedido",
+        "total": 18265689.0,
+        "count": 461
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "top_detalle",
+      "value": 5261880.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT monto FROM marketplace_ledger_v1 WHERE detalle='order_amount' AND fecha BETWEEN '2026-06-01' AND '2026-06-30'",
+      "components": {
+        "detalle": "order_amount",
+        "total": 5261880.0,
+        "count": 145
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    }
+  ]
+}

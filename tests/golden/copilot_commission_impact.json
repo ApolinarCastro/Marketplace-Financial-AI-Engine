@@ -1,0 +1,235 @@
+{
+  "question": "¿Qué comisión impacta más?",
+  "period": "2026-06-30 00:00:00",
+  "answer": {
+    "summary": "Mayor comision: 'Cargo por venta (Comisión)' ($-3,722,367)"
+  },
+  "explanation": {
+    "text": "Comisiones y costos comerciales del periodo.",
+    "bullet_points": [
+      "PARIS - Cargo por venta (Comisión): $-3,722,367",
+      "RIPLEY - Comisiones sobre pedidos: $-3,287,717",
+      "RIPLEY - commission_fee: $947,108",
+      "FALABELLA - Cobro por comisión por venta: $-703,487",
+      "RIPLEY - Comisiones sobre pedidos reembolsados: $349,026"
+    ]
+  },
+  "breakdown": [
+    {
+      "mp": "paris",
+      "financial_group": "costos_comerciales",
+      "detalle": "Cargo por venta (Comisión)",
+      "total": -3722367.0
+    },
+    {
+      "mp": "ripley",
+      "financial_group": "costos_comerciales",
+      "detalle": "Comisiones sobre pedidos",
+      "total": -3287717.0
+    },
+    {
+      "mp": "ripley",
+      "financial_group": "costos_comerciales",
+      "detalle": "commission_fee",
+      "total": 947108.0
+    },
+    {
+      "mp": "falabella",
+      "financial_group": "costos_comerciales",
+      "detalle": "Cobro por comisión por venta",
+      "total": -703487.0
+    },
+    {
+      "mp": "ripley",
+      "financial_group": "costos_comerciales",
+      "detalle": "Comisiones sobre pedidos reembolsados",
+      "total": 349026.0
+    },
+    {
+      "mp": "ripley",
+      "financial_group": "costos_comerciales",
+      "detalle": "refund_commission_fee",
+      "total": 28432.0
+    },
+    {
+      "mp": "falabella",
+      "financial_group": "costos_comerciales",
+      "detalle": "Reembolso por comisión por venta",
+      "total": 21171.0
+    },
+    {
+      "mp": "falabella",
+      "financial_group": "costos_comerciales",
+      "detalle": "Pago de aporte promocionales a cliente (Promo)",
+      "total": 4671.0
+    },
+    {
+      "mp": "falabella",
+      "financial_group": "costos_comerciales",
+      "detalle": "Descuento por aportes promocionales a clientes (Promo)",
+      "total": 0.0
+    }
+  ],
+  "evidence": [
+    {
+      "marketplace": "paris",
+      "kpi": "commission_impact",
+      "value": -3722367.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT SUM(monto) FROM marketplace_ledger_v1 WHERE LOWER(financial_group) IN ('comisiones','costos_comerciales') AND detalle='Cargo por venta (Comisión)'",
+      "components": {
+        "fg": "costos_comerciales",
+        "detalle": "Cargo por venta (Comisión)",
+        "total": -3722367.0
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "15725405_GROSS",
+          "id_orden": null,
+          "detalle": "Venta",
+          "monto": 95990.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "15904679_GROSS",
+          "id_orden": null,
+          "detalle": "Venta",
+          "monto": 95990.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "15784938_GROSS",
+          "id_orden": null,
+          "detalle": "Venta",
+          "monto": 82190.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+          "folio_xml": null
+        }
+      ],
+      "raw_sources": [
+        "1 jun 2026 - 8 jun 2026.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2302,
+        "source_files": 1,
+        "first_load": "2026-07-06 11:26:30.369530",
+        "last_load": "2026-07-06 11:26:30.424345"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "commission_impact",
+      "value": -3287717.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT SUM(monto) FROM marketplace_ledger_v1 WHERE LOWER(financial_group) IN ('comisiones','costos_comerciales') AND detalle='Comisiones sobre pedidos'",
+      "components": {
+        "fg": "costos_comerciales",
+        "detalle": "Comisiones sobre pedidos",
+        "total": -3287717.0
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "commission_impact",
+      "value": 947108.0,
+      "source": "marketplace_ledger_v1",
+      "sql": "SELECT SUM(monto) FROM marketplace_ledger_v1 WHERE LOWER(financial_group) IN ('comisiones','costos_comerciales') AND detalle='commission_fee'",
+      "components": {
+        "fg": "costos_comerciales",
+        "detalle": "commission_fee",
+        "total": 947108.0
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "version": "1.0",
+  "marketplace": "FALABELLA",
+  "created": "2026-06-18",
+  "description": "Taxonomía financiera oficial Falabella — commission-based marketplace (24.1% take rate).",
+  "canonical_groups": {
+    "ingresos": {
+      "display_name": "Ingresos Brutos",
+      "detalles": [
+        "Pago por precio del producto"
+      ]
+    },
+    "devoluciones": {
+      "display_name": "Devoluciones de Venta",
+      "detalles": [
+        "Descuento por devolución de producto"
+      ]
+    },
+    "costos_operacionales": {
+      "display_name": "Costos Operacionales",
+      "detalles": [
+        "Cobro por cofinanciamiento logístico",
+        "Reembolso por Promo envío falabella.com",
+        "Cobro Promo envío falabella.com",
+        "Reversa de pago de envío comprador",
+        "Pago de envío comprador",
+        "Cobro por logística inversa",
+        "Pago por envío directo"
+      ]
+    },
+    "costos_comerciales": {
+      "display_name": "Costos Comerciales",
+      "detalles": [
+        "Cobro por comisión por venta",
+        "Reembolso por comisión por venta",
+        "Pago de aporte promocionales a cliente (Promo)",
+        "Descuento por aportes promocionales a clientes (Promo)"
+      ]
+    },
+    "ajustes": {
+      "display_name": "Ajustes & Retenciones",
+      "detalles": [
+        "Corrección de cobro por envío directo",
+        "Corrección de pago envio directo"
+      ]
+    }
+  },
+  "detalle_classification": {
+    "Pago por precio del producto": {
+      "signal": true,
+      "canonical_group": "ingresos",
+      "reason": "Única fuente canónica de ingreso FALABELLA"
+    },
+    "Descuento por devolución de producto": {
+      "signal": true,
+      "canonical_group": "devoluciones",
+      "reason": "Única fuente canónica de devoluciones FALABELLA"
+    },
+    "Cobro por comisión por venta": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Comisión FALABELLA sobre venta"
+    },
+    "Reembolso por comisión por venta": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Reversa de comisión"
+    },
+    "Cobro por cofinanciamiento logístico": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Cofinanciamiento logístico"
+    },
+    "Reembolso por Promo envío falabella.com": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Reembolso de envío promocional"
+    },
+    "Cobro Promo envío falabella.com": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Cobro de envío promocional"
+    },
+    "Reversa de pago de envío comprador": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Reversa de pago de envío"
+    },
+    "Pago de envío comprador": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Pago de envío del comprador"
+    },
+    "Cobro por logística inversa": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo de logística inversa"
+    },
+    "Pago por envío directo": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Pago por envío directo"
+    },
+    "Corrección de cobro por envío directo": {
+      "signal": true,
+      "canonical_group": "ajustes",
+      "reason": "Corrección de cobro de envío"
+    },
+    "Corrección de pago envio directo": {
+      "signal": true,
+      "canonical_group": "ajustes",
+      "reason": "Corrección de pago de envío"
+    },
+    "Pago de aporte promocionales a cliente (Promo)": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Aporte promocional"
+    },
+    "Descuento por aportes promocionales a clientes (Promo)": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Descuento por aporte promocional"
+    },
+    "Cobro por comisión por cancelación": {
+      "signal": false,
+      "canonical_group": null,
+      "reason": "Sin clasificar — financial_group=nan. Requiere clasificación manual."
+    }
+  },
+  "exclusion_rules": [
+    {
+      "detalle": "Cobro por comisión por cancelación",
+      "reason": "No clasificado — requiere revisión"
+    }
+  ]
+}

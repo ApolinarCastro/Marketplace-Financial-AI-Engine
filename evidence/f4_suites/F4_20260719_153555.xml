@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="2.274" timestamp="2026-07-19T15:36:45.612979-04:00" hostname="LAPTOP-C1JD4GH0"><testcase classname="" name="tests.test_f4_traceability" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\tests\test_f4_traceability.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_f4_traceability.py:30: in &lt;module&gt;
+    from engine.v4.evidence.traceability import (
+engine\v4\evidence\__init__.py:2: in &lt;module&gt;
+    from engine.v4.evidence.evidence_link_registry import EvidenceLinkRegistry
+engine\v4\evidence\evidence_link_registry.py:2: in &lt;module&gt;
+    from engine.v4.domain.financial_engine import FinancialEngine
+E   ModuleNotFoundError: No module named 'engine.v4.domain.financial_engine'</error></testcase></testsuite></testsuites>

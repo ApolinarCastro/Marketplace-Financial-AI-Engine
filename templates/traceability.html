@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traceability Dashboard — Marketplace Financial</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f0f2f5; color: #1a1a2e; }
+nav { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 0 24px; display: flex; align-items: center; height: 48px; gap: 24px; }
+nav a { color: #a8b2d1; text-decoration: none; font-size: 13px; font-weight: 500; transition: color .2s; }
+nav a:hover { color: #fff; }
+nav .brand { color: #fff; font-weight: 700; font-size: 15px; margin-right: 16px; }
+.container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+
+/* Summary Cards */
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.card h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .5px; color: #64748b; margin-bottom: 8px; }
+.card .value { font-size: 28px; font-weight: 700; color: #1a1a2e; }
+.card .sub { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+
+/* Filters */
+.filter-bar { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.08); margin-bottom: 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.filter-group { display: flex; flex-direction: column; gap: 4px; }
+.filter-group label { font-size: 11px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: .5px; }
+.filter-group input, .filter-group select { padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 13px; min-width: 150px; }
+button { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background .2s; }
+button:hover { background: #1d4ed8; }
+button.secondary { background: #e2e8f0; color: #475569; }
+button.secondary:hover { background: #cbd5e1; }
+
+/* Table */
+.table-container { background: #fff; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,.08); overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+thead th { background: #f8fafc; padding: 12px 16px; text-align: left; font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0; white-space: nowrap; }
+tbody td { padding: 10px 16px; border-bottom: 1px solid #f1f5f9; }
+tbody tr:hover { background: #f8fafc; }
+.status-badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+.status-TRACED { background: #dcfce7; color: #166534; }
+.status-UNTRACED { background: #fef2f2; color: #991b1b; }
+.status-DTE_CERTIFIED { background: #dbeafe; color: #1e40af; }
+.status-HAS_FOLIO { background: #fef9c3; color: #854d0e; }
+.status-NO_DOCUMENT { background: #f1f5f9; color: #64748b; }
+.amount { text-align: right; font-variant-numeric: tabular-nums; }
+.amount.neg { color: #dc2626; }
+.amount.pos { color: #16a34a; }
+
+/* Evidence Chain */
+.evidence-chain { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.evidence-step { flex: 1; min-width: 100px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; text-align: center; }
+.evidence-step .step-num { font-size: 10px; font-weight: 700; color: #64748b; text-transform: uppercase; }
+.evidence-step .step-label { font-size: 12px; font-weight: 600; margin: 4px 0; }
+.evidence-step .step-status { font-size: 10px; }
+.evidence-step.status-ok { border-color: #86efac; background: #f0fdf4; }
+.evidence-step.status-warn { border-color: #fde68a; background: #fffbeb; }
+.evidence-step.status-miss { border-color: #fca5a5; background: #fef2f2; }
+
+/* Modal */
+.modal-overlay { display: none; position: fixed; z-index: 100; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); }
+.modal-overlay.active { display: flex; align-items: center; justify-content: center; }
+.modal { background: #fff; border-radius: 16px; width: 90%; max-width: 900px; max-height: 90vh; overflow-y: auto; padding: 32px; }
+.modal h2 { margin-bottom: 16px; }
+.modal .close { float: right; background: none; border: none; font-size: 24px; cursor: pointer; color: #94a3b8; padding: 0; }
+.modal .close:hover { color: #334155; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.detail-grid dt { font-size: 11px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: .5px; }
+.detail-grid dd { font-size: 14px; margin-bottom: 12px; }
+
+/* Pagination */
+.pagination { display: flex; justify-content: space-between; align-items: center; padding: 16px; background: #f8fafc; }
+.pagination span { font-size: 13px; color: #475569; }
+.pagination button { font-size: 12px; padding: 6px 12px; }
+
+@media (max-width: 768px) {
+  .filter-bar { flex-direction: column; }
+  .filter-group input, .filter-group select { min-width: 100%; }
+  .evidence-step { min-width: 80px; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <span class="brand">🏦 MF</span>
+  <a href="/app">Auditor</a>
+  <a href="/exec">Gerencial</a>
+  <a href="/documentary-dashboard">Documental</a>
+  <a href="/copilot">Copilot</a>
+  <a href="/upload">Upload</a>
+  <a href="/traceability" style="color:#fff;">Trazabilidad</a>
+</nav>
+
+<div class="container">
+  <h2 style="margin-bottom:16px;">🔍 Traceability — Transaction Evidence Chain</h2>
+
+  <!-- Summary Cards -->
+  <div class="summary-grid" id="summaryCards"></div>
+
+  <!-- Filters -->
+  <div class="filter-bar">
+    <div class="filter-group">
+      <label>Marketplace</label>
+      <select id="fMarketplace">
+        <option value="">All</option>
+        <option value="ML">ML</option>
+        <option value="PARIS">PARIS</option>
+        <option value="RIPLEY">RIPLEY</option>
+        <option value="FALABELLA">FALABELLA</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Buscar</label>
+      <input type="text" id="fQuery" placeholder="ID, detalle, archivo...">
+    </div>
+    <div class="filter-group">
+      <label>Desde</label>
+      <input type="date" id="fDesde">
+    </div>
+    <div class="filter-group">
+      <label>Hasta</label>
+      <input type="date" id="fHasta">
+    </div>
+    <div class="filter-group">
+      <label>Financial Group</label>
+      <select id="fFinancialGroup">
+        <option value="">All</option>
+        <option value="ingresos">Ingresos</option>
+        <option value="devoluciones">Devoluciones</option>
+        <option value="costos_operacionales">Costos Operacionales</option>
+        <option value="costos_comerciales">Costos Comerciales</option>
+        <option value="ajustes">Ajustes</option>
+        <option value="recuperaciones_y_bonificaciones">Recuperaciones</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Doc Status</label>
+      <select id="fDocStatus">
+        <option value="">All</option>
+        <option value="DTE_CERTIFIED">DTE Certified</option>
+        <option value="HAS_FOLIO">Has Folio</option>
+        <option value="NO_DOCUMENT">No Document</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Trace Status</label>
+      <select id="fTraceStatus">
+        <option value="">All</option>
+        <option value="TRACED">Traced</option>
+        <option value="UNTRACED">Untraced</option>
+      </select>
+    </div>
+    <button onclick="search()">🔍 Search</button>
+    <button class="secondary" onclick="clearFilters()">Clear</button>
+  </div>
+
+  <!-- Results -->
+  <div class="table-container" id="resultsContainer">
+    <table>
+      <thead><tr>
+        <th>Marketplace</th>
+        <th>ID Transacción</th>
+        <th>ID Orden</th>
+        <th>Fecha</th>
+        <th>Detalle</th>
+        <th>Monto</th>
+        <th>Financial Group</th>
+        <th>Trace</th>
+        <th>Documento</th>
+        <th>Evidence</th>
+      </tr></thead>
+      <tbody id="resultsBody"><tr><td colspan="10" style="text-align:center;padding:32px;color:#94a3b8;">Click Search to load transactions</td></tr></tbody>
+    </table>
+    <div class="pagination" id="pagination"></div>
+  </div>
+</div>
+
+<!-- Detail Modal -->
+<div class="modal-overlay" id="detailModal">
+  <div class="modal">
+    <button class="close" onclick="closeModal()">&times;</button>
+    <h2 id="modalTitle">Transaction Detail</h2>
+    <div id="evidenceChainContainer"></div>
+    <hr style="margin:16px 0;">
+    <dl class="detail-grid" id="detailFields"></dl>
+  </div>
+</div>
+
+<script>
+let currentOffset = 0;
+const PAGE_SIZE = 50;
+
+async function loadSummary() {
+  const res = await fetch('/api/v4/traceability/summary');
+  const json = await res.json();
+  const data = json.data || [];
+  const cards = document.getElementById('summaryCards');
+  cards.innerHTML = '';
+
+  // Aggregate
+  const totals = {};
+  for (const d of data) {
+    const mp = d.marketplace;
+    if (!totals[mp]) totals[mp] = { count: 0, traced: 0, dte: 0, files: new Set() };
+    totals[mp].count += d.count;
+    if (d.trace_status === 'TRACED') totals[mp].traced += d.count;
+    if (d.document_status === 'DTE_CERTIFIED') totals[mp].dte += d.with_dte || 0;
+    if (d.source_files) totals[mp].files.add(d.source_files);
+  }
+
+  for (const [mp, t] of Object.entries(totals)) {
+    cards.innerHTML += `
+      <div class="card">
+        <h3>${mp}</h3>
+        <div class="value">${t.count.toLocaleString()}</div>
+        <div class="sub">${t.traced.toLocaleString()} traced · ${t.dte.toLocaleString()} DTE</div>
+      </div>`;
+  }
+}
+
+async function search() {
+  const mp = document.getElementById('fMarketplace').value;
+  const q = document.getElementById('fQuery').value;
+  const ds = document.getElementById('fDesde').value;
+  const de = document.getElementById('fHasta').value;
+  const fg = document.getElementById('fFinancialGroup').value;
+  const ts = document.getElementById('fTraceStatus').value;
+  const ds2 = document.getElementById('fDocStatus').value;
+
+  let url = `/api/v4/traceability/search?limit=${PAGE_SIZE}&offset=${currentOffset}`;
+  if (mp) url += `&marketplace=${mp}`;
+  if (q) url += `&query=${encodeURIComponent(q)}`;
+  if (ds) url += `&fecha_desde=${ds}`;
+  if (de) url += `&fecha_hasta=${de}`;
+  if (fg) url += `&financial_group=${fg}`;
+  if (ts) url += `&trace_status=${ts}`;
+  if (ds2) url += `&document_status=${ds2}`;
+
+  const res = await fetch(url);
+  const json = await res.json();
+  renderResults(json);
+}
+
+function renderResults(json) {
+  const data = json.data || [];
+  const meta = json.meta || {};
+  const total = meta.total || 0;
+  const body = document.getElementById('resultsBody');
+  body.innerHTML = '';
+
+  if (data.length === 0) {
+    body.innerHTML = '<tr><td colspan="10" style="text-align:center;padding:32px;color:#94a3b8;">No results found</td></tr>';
+    document.getElementById('pagination').innerHTML = '';
+    return;
+  }
+
+  for (const r of data) {
+    const amt = r.monto || 0;
+    const amtClass = amt < 0 ? 'amount neg' : 'amount pos';
+    const traceCls = `status-badge status-${r.trace_status || 'UNTRACED'}`;
+    const docCls = `status-badge status-${r.document_status || 'NO_DOCUMENT'}`;
+    const evidenceBtn = r.id_transaccion
+      ? `<button onclick="showEvidence('${r.marketplace}','${r.id_transaccion}')" style="font-size:11px;padding:4px 10px;">🔗</button>`
+      : '';
+
+    body.innerHTML += `<tr>
+      <td><strong>${r.marketplace}</strong></td>
+      <td style="font-family:monospace;font-size:12px;">${r.id_transaccion || ''}</td>
+      <td style="font-family:monospace;font-size:12px;">${r.id_orden || ''}</td>
+      <td>${r.fecha || ''}</td>
+      <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${r.detalle || ''}</td>
+      <td class="${amtClass}">${amt.toLocaleString('es-CL')}</td>
+      <td>${r.financial_group || ''}</td>
+      <td><span class="${traceCls}">${r.trace_status || 'UNTRACED'}</span></td>
+      <td><span class="${docCls}">${r.document_status || 'NO_DOCUMENT'}</span></td>
+      <td>${evidenceBtn}</td>
+    </tr>`;
+  }
+
+  // Pagination
+  const totalPages = Math.ceil(total / PAGE_SIZE);
+  const currentPage = Math.floor(currentOffset / PAGE_SIZE) + 1;
+  document.getElementById('pagination').innerHTML = `
+    <span>${total} transactions · Page ${currentPage} of ${Math.max(1,totalPages)}</span>
+    <div>
+      <button class="secondary" onclick="goToPage(0)" ${currentOffset <= 0 ? 'disabled' : ''}>First</button>
+      <button class="secondary" onclick="goToPage(${currentOffset - PAGE_SIZE})" ${currentOffset <= 0 ? 'disabled' : ''}>Prev</button>
+      <button class="secondary" onclick="goToPage(${currentOffset + PAGE_SIZE})" ${currentOffset + PAGE_SIZE >= total ? 'disabled' : ''}>Next</button>
+    </div>`;
+}
+
+function goToPage(offset) {
+  currentOffset = offset;
+  search();
+}
+
+function clearFilters() {
+  document.querySelectorAll('.filter-bar input, .filter-bar select').forEach(el => el.value = '');
+  currentOffset = 0;
+  search();
+}
+
+async function showEvidence(mp, txId) {
+  const res = await fetch(`/api/v4/traceability/evidence/${mp}/${txId}`);
+  const json = await res.json();
+  const data = json.data || {};
+
+  const modal = document.getElementById('detailModal');
+  modal.classList.add('active');
+
+  document.getElementById('modalTitle').textContent = `Evidence Chain: ${mp} · ${txId}`;
+
+  // Evidence chain visualization
+  const chain = data.evidence_chain || [];
+  const chainHtml = chain.map(s => {
+    let statusCls = 'status-ok';
+    if (['UNTRACED','NOT_AVAILABLE','NO_DOCUMENT','NOT_AUDITED'].includes(s.status)) statusCls = 'status-miss';
+    else if (s.status === 'HAS_FOLIO') statusCls = 'status-warn';
+    return `<div class="evidence-step ${statusCls}">
+      <div class="step-num">Step ${s.step}</div>
+      <div class="step-label">${s.label}</div>
+      <div class="step-status">${s.status}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('evidenceChainContainer').innerHTML =
+    `<div class="evidence-chain">${chainHtml}</div>`;
+
+  // Find the transaction detail
+  const tx = data.transaction || data.evidence_chain?.[0] || {};
+  const detailHtml = Object.entries(tx)
+    .filter(([k,v]) => v !== null && k !== 'evidence_chain')
+    .map(([k,v]) => `<dt>${k}</dt><dd>${typeof v === 'object' ? JSON.stringify(v) : v}</dd>`)
+    .join('');
+  document.getElementById('detailFields').innerHTML = detailHtml;
+}
+
+function closeModal() {
+  document.getElementById('detailModal').classList.remove('active');
+}
+
+// Click outside modal to close
+document.getElementById('detailModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadSummary();
+  // Load default search
+  currentOffset = 0;
+  const fMp = document.getElementById('fMarketplace');
+  if (fMp.value) { search(); }
+});
+
+// Enter key on search field
+document.getElementById('fQuery').addEventListener('keydown', e => { if (e.key === 'Enter') search(); });
+</script>
+</body>
+</html>

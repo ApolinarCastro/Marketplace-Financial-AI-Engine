@@ -1,0 +1,63 @@
+{
+  "execution_id": "f3_03_1784299594",
+  "test": "F3-03: Controlled Ingestion with Financial Fixture",
+  "fixture": "5 rows ML Facturacion XLSX -> 8 ledger rows, $20800 total",
+  "fixture_sha256": "fd438940a238ba399d1934693b10bcf94677b07f6d6a5f2328f2dc7d3a810653",
+  "baseline": "data\\db\\baseline_estable_v7_20260715\\meli_financial_v4.db",
+  "runs": [
+    {
+      "run": 1,
+      "record_status": "CERTIFIED",
+      "records_inserted": 12189,
+      "ledger_rows": 8,
+      "ledger_total": 20800.0,
+      "ventas": [
+        "F3-03-001",
+        "F3-03-002"
+      ],
+      "errors": null,
+      "verdict": "PASS"
+    },
+    {
+      "run": 2,
+      "record_status": "CERTIFIED",
+      "records_inserted": 12189,
+      "ledger_rows": 8,
+      "ledger_total": 20800.0,
+      "ventas": [
+        "F3-03-001",
+        "F3-03-002"
+      ],
+      "errors": null,
+      "verdict": "PASS"
+    },
+    {
+      "run": 3,
+      "record_status": "CERTIFIED",
+      "records_inserted": 12189,
+      "ledger_rows": 8,
+      "ledger_total": 20800.0,
+      "ventas": [
+        "F3-03-001",
+        "F3-03-002"
+      ],
+      "errors": null,
+      "verdict": "PASS"
+    }
+  ],
+  "reingestion": {
+    "1st_status": "CERTIFIED",
+    "1st_inserted": 12189,
+    "1st_rows": 8,
+    "1st_total": 20800.0,
+    "2nd_status": "CERTIFIED",
+    "2nd_inserted": 12189,
+    "2nd_rows": 8,
+    "2nd_total": 20800.0,
+    "errors1": null,
+    "errors2": null,
+    "idempotency_errors": null,
+    "verdict": "PASS"
+  },
+  "final_verdict": "CAP001_CERTIFIED"
+}

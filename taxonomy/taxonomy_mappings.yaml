@@ -1,0 +1,676 @@
+Cargo por venta (Venta):
+  concept: Cargo por venta (Venta)
+  financial_group: ingresos
+Cargo por venta (Comisión):
+  concept: Cargo por venta (Comisión)
+  financial_group: costos_comerciales
+Devolución de venta:
+  concept: Devolución de venta
+  financial_group: devoluciones
+Cargo por Mercado Envíos:
+  concept: Cargo por Mercado Envíos
+  financial_group: costos_operacionales
+Cargo por envíos de Mercado Libre:
+  concept: Cargo por envíos de Mercado Libre
+  financial_group: costos_operacionales
+Cargo por servicio de almacenamiento Full:
+  concept: Cargo por servicio de almacenamiento Full
+  financial_group: costos_operacionales
+Cargo por retiro de stock Full:
+  concept: Cargo por retiro de stock Full
+  financial_group: costos_operacionales
+Cargo por stock antiguo en Full:
+  concept: Cargo por stock antiguo en Full
+  financial_group: costos_operacionales
+Cargo por sobrepasar espacio Full:
+  concept: Cargo por sobrepasar espacio Full
+  financial_group: costos_operacionales
+Cargo por devolución:
+  concept: Cargo por devolución
+  financial_group: costos_operacionales
+Cargo por diferencias en las medidas y el peso del paquete:
+  concept: Cargo por diferencias en las medidas y el peso del paquete
+  financial_group: costos_operacionales
+Cargo por campaña de publicidad - Product Ads:
+  concept: Cargo por campaña de publicidad - Product Ads
+  financial_group: costos_comerciales
+Cargo por campaña de publicidad - Brand Ads:
+  concept: Cargo por campaña de publicidad - Brand Ads
+  financial_group: costos_comerciales
+Campañas de publicidad - Display:
+  concept: Campañas de publicidad - Display
+  financial_group: costos_comerciales
+Cargo por Asesoría Comercial:
+  concept: Cargo por Asesoría Comercial
+  financial_group: costos_comerciales
+Cargo por mantenimiento de Mi página:
+  concept: Cargo por mantenimiento de Mi página
+  financial_group: costos_comerciales
+Bonificación:
+  concept: Bonificación
+  financial_group: ingresos
+Anulación del cargo por venta:
+  concept: Anulación del cargo por venta
+  financial_group: costos_comerciales
+Anulación del cargo por Mercado Envíos:
+  concept: Anulación del cargo por Mercado Envíos
+  financial_group: costos_operacionales
+Anulación del cargo por envíos de Mercado Libre:
+  concept: Anulación del cargo por envíos de Mercado Libre
+  financial_group: costos_operacionales
+Anulación del cargo por devolución:
+  concept: Anulación del cargo por devolución
+  financial_group: costos_operacionales
+Envío:
+  concept: Envío
+  financial_group: costos_operacionales
+Envio:
+  concept: Envío
+  financial_group: costos_operacionales
+? 'Devolución de dinero
+
+  Envío'
+: concept: 'Devolución de dinero
+
+    Envío'
+  financial_group: sin_clasificar
+Abono manual:
+  concept: Abono manual
+  financial_group: ajustes
+Importe del pedido:
+  concept: Importe del pedido
+  financial_group: ingresos
+Pago:
+  concept: Pago
+  financial_group: sin_clasificar
+Pago normal:
+  concept: Pago normal
+  financial_group: ingresos
+Publicidad:
+  concept: Cargo por campaña de publicidad - Product Ads
+  financial_group: costos_comerciales
+Ajuste histórico (pre-2026):
+  concept: Ajuste histórico (pre-2026)
+  financial_group: ajustes
+Ajuste Poscobro:
+  concept: Cargo por devolución
+  financial_group: costos_operacionales
+fee_for_divergence_in_package_dimensions:
+  concept: Cargo por diferencias en las medidas y el peso del paquete
+  financial_group: costos_operacionales
+fee_for_divergence_in_package_dimensions_cancel:
+  concept: Cancelación del cargo por diferencias en las medidas y el peso del paquete
+  financial_group: devoluciones
+Cargo:
+  concept: Abono manual
+  financial_group: ajustes
+? 'Devolucin de dinero
+
+  Envo'
+: concept: 'Devolución de dinero
+
+    Envío'
+  financial_group: sin_clasificar
+? 'Devolucin de dinero
+
+  Envio'
+: concept: 'Devolución de dinero
+
+    Envío'
+  financial_group: sin_clasificar
+smaller_than_expected_fashion:
+  concept: Ajuste por Talla/Garantía
+  financial_group: devoluciones
+bigger_than_expected_fashion:
+  concept: Ajuste por Talla/Garantía
+  financial_group: devoluciones
+size_not_useful_repentant:
+  concept: Ajuste por Talla/Garantía
+  financial_group: devoluciones
+not_match_size_guide_fashion:
+  concept: Ajuste por Talla/Garantía
+  financial_group: devoluciones
+broken_item_fashion:
+  concept: Ajuste por Producto Dañado/Vacío
+  financial_group: devoluciones
+empty_box:
+  concept: Ajuste por Producto Dañado/Vacío
+  financial_group: devoluciones
+damaged_package_empty_box:
+  concept: Ajuste por Producto Dañado/Vacío
+  financial_group: devoluciones
+repentant_buyer:
+  concept: Ajuste por Arrepentimiento
+  financial_group: devoluciones
+undelivered_repentant_buyer:
+  concept: Ajuste por Arrepentimiento
+  financial_group: devoluciones
+dont_want_it_another_cause_fashion:
+  concept: Ajuste por Arrepentimiento
+  financial_group: devoluciones
+buy_out_of_ml:
+  concept: Ajuste por Arrepentimiento
+  financial_group: devoluciones
+different_than_published:
+  concept: Ajuste por Diferencia de Publicación
+  financial_group: devoluciones
+different_color_or_size_fashion:
+  concept: Ajuste por Diferencia de Publicación
+  financial_group: devoluciones
+different_item_other:
+  concept: Ajuste por Diferencia de Publicación
+  financial_group: devoluciones
+missing_item:
+  concept: Ajuste por Ítem Faltante
+  financial_group: devoluciones
+out_of_stock:
+  concept: Ajuste por Falta de Stock
+  financial_group: devoluciones
+delivery_date_was_not_met:
+  concept: Ajuste por Retraso en Entrega
+  financial_group: devoluciones
+estimated_delivery_out_of_time:
+  concept: Ajuste por Retraso en Entrega
+  financial_group: devoluciones
+change_receiver_address:
+  concept: Ajuste por Cambio de Dirección
+  financial_group: devoluciones
+undelivered_other:
+  concept: Ajuste por Falla en Entrega
+  financial_group: devoluciones
+delivered_but_not_receive_package:
+  concept: Ajuste por Falla en Entrega
+  financial_group: devoluciones
+reconciled:
+  concept: Recuperación por Pérdida de Inventario
+  financial_group: recuperaciones_y_bonificaciones
+bpp_refunded:
+  concept: Ajuste por Compra Protegida (BPP)
+  financial_group: devoluciones
+respondent_unanswered:
+  concept: Ajuste por Disputa no Respondida
+  financial_group: devoluciones
+nan:
+  concept: Bonificación Logística Flex
+  financial_group: recuperaciones_y_bonificaciones
+bpp_covered:
+  concept: Ajuste por Compra Protegida (BPP)
+  financial_group: devoluciones
+partially_bpp_refunded:
+  concept: Ajuste por Compra Protegida (BPP)
+  financial_group: devoluciones
+compensated:
+  concept: Cargo por devolución
+  financial_group: costos_operacionales
+by_admin:
+  concept: Bonificación Logística Flex
+  financial_group: recuperaciones_y_bonificaciones
+Cancelación de la mediación:
+  concept: Cancelación de la mediación
+  financial_group: ajustes
+Cancelacion de la mediacion:
+  concept: Cancelación de la mediación
+  financial_group: ajustes
+Cancelacin de la mediacin:
+  concept: Cancelación de la mediación
+  financial_group: ajustes
+cashback:
+  concept: cashback
+  financial_group: ajustes
+cashback_cancel:
+  concept: cashback_cancel
+  financial_group: ajustes
+bought_by_mistake:
+  concept: Ajuste por Arrepentimiento
+  financial_group: devoluciones
+CREDIT_NOT_PROCESSED:
+  concept: Bonificación Logística Flex
+  financial_group: recuperaciones_y_bonificaciones
+damaged_package_broken_item_fashion:
+  concept: Ajuste por Producto Dañado/Vacío
+  financial_group: devoluciones
+different_color_or_size:
+  concept: Ajuste por Diferencia de Publicación
+  financial_group: devoluciones
+different_color_or_size_fashion_change:
+  concept: Ajuste por Diferencia de Publicación
+  financial_group: devoluciones
+different_item_other_change:
+  concept: Ajuste por Diferencia de Publicación
+  financial_group: devoluciones
+INVALID_AUTHORIZATION:
+  concept: Bonificación Logística Flex
+  financial_group: recuperaciones_y_bonificaciones
+item_not_useful_fashion_different:
+  concept: Ajuste por Arrepentimiento
+  financial_group: devoluciones
+item_not_useful_fashion_different_change:
+  concept: Ajuste por Arrepentimiento
+  financial_group: devoluciones
+missing_accessories:
+  concept: Ajuste por Ítem Faltante
+  financial_group: devoluciones
+missing_invoice:
+  concept: Cargo por devolución
+  financial_group: costos_operacionales
+not_expected_quality_different:
+  concept: Ajuste por Diferencia de Publicación
+  financial_group: devoluciones
+not_reconciled:
+  concept: Bonificación Logística Flex
+  financial_group: recuperaciones_y_bonificaciones
+ppv_covered_melienvio:
+  concept: Ajuste por Compra Protegida (BPP)
+  financial_group: devoluciones
+ppv_valid:
+  concept: Ajuste por Compra Protegida (BPP)
+  financial_group: devoluciones
+refund_account_money:
+  concept: Bonificación Logística Flex
+  financial_group: recuperaciones_y_bonificaciones
+refunded:
+  concept: Bonificación Logística Flex
+  financial_group: recuperaciones_y_bonificaciones
+unauthorized_purchase:
+  concept: Ajuste por Disputa no Respondida
+  financial_group: devoluciones
+Gastos de envío pagados por el operador:
+  concept: Gastos de envío pagados por el operador
+  financial_group: costos_operacionales
+Gastos de envio pagados por el operador:
+  concept: Gastos de envío pagados por el operador
+  financial_group: costos_operacionales
+Gastos de envo pagados por el operador:
+  concept: Gastos de envío pagados por el operador
+  financial_group: costos_operacionales
+Gastos de envÃ­o pagados por el operador:
+  concept: Gastos de envío pagados por el operador
+  financial_group: costos_operacionales
+Comisiones sobre pedidos:
+  concept: Comisiones sobre pedidos
+  financial_group: costos_comerciales
+Pedidos reembolsados:
+  concept: Pedidos reembolsados
+  financial_group: ajustes
+A pagar:
+  concept: A pagar
+  financial_group: tesoreria
+Comisiones sobre pedidos reembolsados:
+  concept: Comisiones sobre pedidos reembolsados
+  financial_group: costos_comerciales
+Envío reembolsado:
+  concept: Envío reembolsado
+  financial_group: costos_operacionales
+Envio reembolsado:
+  concept: Envío reembolsado
+  financial_group: costos_operacionales
+Envo reembolsado:
+  concept: Envío reembolsado
+  financial_group: costos_operacionales
+EnvÃ­o reembolsado:
+  concept: Envío reembolsado
+  financial_group: costos_operacionales
+Gastos de envío reembolsados pagados por el operador:
+  concept: Gastos de envío reembolsados pagados por el operador
+  financial_group: costos_operacionales
+Gastos de envio reembolsados pagados por el operador:
+  concept: Gastos de envío reembolsados pagados por el operador
+  financial_group: costos_operacionales
+Gastos de envo reembolsados pagados por el operador:
+  concept: Gastos de envío reembolsados pagados por el operador
+  financial_group: costos_operacionales
+Gastos de envÃ­o reembolsados pagados por el operador:
+  concept: Gastos de envío reembolsados pagados por el operador
+  financial_group: costos_operacionales
+Abono oferta TC - OPEX:
+  concept: Abono oferta TC - OPEX
+  financial_group: costos_comerciales
+Descuento por cancelacion:
+  concept: Descuento por cancelación
+  financial_group: ajustes
+Descuento por cancelacin:
+  concept: Descuento por cancelación
+  financial_group: ajustes
+Descuento por cancelaciÃ³n:
+  concept: Descuento por cancelación
+  financial_group: ajustes
+Otros abonos:
+  concept: Otros abonos
+  financial_group: ajustes
+Otros descuentos:
+  concept: Otros descuentos
+  financial_group: ajustes
+Abono postventa:
+  concept: Abono postventa
+  financial_group: ajustes
+Importe del envío del pedido:
+  concept: Importe del envío del pedido
+  financial_group: ingresos
+Gastos de envío:
+  concept: Gastos de envío
+  financial_group: costos_operacionales
+Importe de reembolso:
+  concept: Importe de reembolso
+  financial_group: ajustes
+Importe del pedido reembolsado:
+  concept: Importe del pedido reembolsado
+  financial_group: devoluciones
+Importe del envío del pedido reembolsado:
+  concept: Importe del envío del pedido reembolsado
+  financial_group: devoluciones
+Comisión de reembolso:
+  concept: Comisión de reembolso
+  financial_group: costos_comerciales
+Impuesto sobre las comisiones:
+  concept: Impuesto sobre las comisiones
+  financial_group: costos_comerciales
+Impuesto sobre la comisión de reembolso:
+  concept: Impuesto sobre la comisión de reembolso
+  financial_group: costos_comerciales
+Impuesto de la factura manual:
+  concept: Impuesto de la factura manual
+  financial_group: costos_comerciales
+Factura manual:
+  concept: Factura manual
+  financial_group: ajustes
+Recargo por precio mínimo:
+  concept: Recargo por precio mínimo
+  financial_group: costos_comerciales
+Subtotal:
+  concept: Subtotal
+  financial_group: ingresos
+Precio total:
+  concept: Precio total
+  financial_group: ingresos
+order_amount:
+  concept: order_amount
+  financial_group: ingresos
+Commission:
+  concept: Commission
+  financial_group: costos_comerciales
+commission_fee:
+  concept: commission_fee
+  financial_group: costos_comerciales
+refund_commission_fee:
+  concept: refund_commission_fee
+  financial_group: costos_comerciales
+Impuestos sobre comisión:
+  concept: Impuestos sobre comisión
+  financial_group: impuestos
+Impuestos:
+  concept: Impuestos
+  financial_group: impuestos
+Amount transferred to tienda:
+  concept: Amount transferred to tienda
+  financial_group: tesoreria
+transfer_amount:
+  concept: transfer_amount
+  financial_group: tesoreria
+refund_order_amount:
+  concept: refund_order_amount
+  financial_group: ajustes
+Descuento por logística inversa (FF):
+  concept: Descuento por logística inversa (FF)
+  financial_group: costos_operacionales
+Descuento por cofinanciamiento logístico (FF):
+  concept: Descuento por cofinanciamiento logístico (FF)
+  financial_group: costos_operacionales
+Comisión:
+  concept: Comisión
+  financial_group: costos_comerciales
+Comision:
+  concept: Comisión
+  financial_group: costos_comerciales
+Comisin:
+  concept: Comisión
+  financial_group: costos_comerciales
+Abono por formalización a OPL:
+  concept: Abono por formalización a OPL
+  financial_group: ajustes
+Abonos por cupón promocional:
+  concept: Abonos por cupón promocional
+  financial_group: costos_comerciales
+Cobro despacho primera milla:
+  concept: Cobro despacho primera milla
+  financial_group: costos_operacionales
+Descuento FF - Otros:
+  concept: Descuento FF - Otros
+  financial_group: costos_operacionales
+Descuento FF - pick and pack:
+  concept: Descuento FF - pick and pack
+  financial_group: costos_operacionales
+Descuento FF - sobreestadía:
+  concept: Descuento FF - sobreestadía
+  financial_group: costos_operacionales
+Descuento oferta TC - OPEX:
+  concept: Descuento oferta TC - OPEX
+  financial_group: costos_comerciales
+Descuento operacional:
+  concept: Descuento operacional
+  financial_group: costos_operacionales
+Descuento por PDM:
+  concept: Descuento por PDM
+  financial_group: costos_comerciales
+Descuento por cancelación:
+  concept: Descuento por cancelación
+  financial_group: ajustes
+Descuento por compensación a cliente:
+  concept: Descuento por compensación a cliente
+  financial_group: ajustes
+Descuento por costo logístico:
+  concept: Descuento por costo logístico
+  financial_group: costos_operacionales
+Descuento por cupones de despacho:
+  concept: Descuento por cupones de despacho
+  financial_group: costos_comerciales
+Descuento por error de clase logistica:
+  concept: Descuento por error de clase logistica
+  financial_group: costos_operacionales
+Abono por uso de flota propia:
+  concept: Abono por uso de flota propia
+  financial_group: costos_operacionales
+Abono por error de comisión:
+  concept: Abono por error de comisión
+  financial_group: ajustes
+Abonos soluciones comerciales:
+  concept: Abonos soluciones comerciales
+  financial_group: costos_comerciales
+Abono extraordinario - error de precio:
+  concept: Abono extraordinario - error de precio
+  financial_group: ajustes
+Cobro por despacho:
+  concept: Cobro por despacho
+  financial_group: costos_operacionales
+Venta:
+  concept: Venta
+  financial_group: ingresos
+Cargo por venta (Comision):
+  concept: Cargo por venta (Comisión)
+  financial_group: costos_comerciales
+Devolución:
+  concept: Devolución
+  financial_group: ajustes
+Devolucion:
+  concept: Devolución
+  financial_group: ajustes
+Devolucin:
+  concept: Devolución
+  financial_group: ajustes
+DevoluciÃ³n:
+  concept: Devolución
+  financial_group: ajustes
+Despacho:
+  concept: Despacho
+  financial_group: ingresos
+Logística inversa:
+  concept: Logística inversa
+  financial_group: costos_operacionales
+Logistica inversa:
+  concept: Logística inversa
+  financial_group: costos_operacionales
+Logstica inversa:
+  concept: Logística inversa
+  financial_group: costos_operacionales
+LogÃ­stica inversa:
+  concept: Logística inversa
+  financial_group: costos_operacionales
+Compensación logística:
+  concept: Compensación logística
+  financial_group: ajustes
+Compensacion logistica:
+  concept: Compensación logística
+  financial_group: ajustes
+Compensacin logstica:
+  concept: Compensación logística
+  financial_group: ajustes
+CompensaciÃ³n logÃ­stica:
+  concept: Compensación logística
+  financial_group: ajustes
+Cobro por campaña:
+  concept: Cobro por campaña
+  financial_group: ajustes
+Rebate:
+  concept: Rebate
+  financial_group: ingresos
+Cobro stock antiguo:
+  concept: Cobro stock antiguo
+  financial_group: costos_operacionales
+Ajuste Inventario Activo:
+  concept: Ajuste Inventario Activo
+  financial_group: ajustes
+Retiro stock bodega Paris:
+  concept: Retiro stock bodega Paris
+  financial_group: costos_operacionales
+Merma:
+  concept: Merma
+  financial_group: ajustes
+Multa:
+  concept: Multa
+  financial_group: ajustes
+Multa por stock:
+  concept: Multa por stock
+  financial_group: ajustes
+Cobro por cofinanciamiento logístico:
+  concept: Cobro por cofinanciamiento logístico
+  financial_group: costos_operacionales
+Cobro por comisión por venta:
+  concept: Cobro por comisión por venta
+  financial_group: costos_comerciales
+Reversa de pago de envío comprador:
+  concept: Reversa de pago de envío comprador
+  financial_group: costos_operacionales
+Cobro Promo envío falabella.com:
+  concept: Cobro Promo envío falabella.com
+  financial_group: costos_operacionales
+Reembolso por Promo envío falabella.com:
+  concept: Reembolso por Promo envío falabella.com
+  financial_group: costos_operacionales
+Reembolso por comisión por venta:
+  concept: Reembolso por comisión por venta
+  financial_group: costos_comerciales
+Reembolso por comision por venta:
+  concept: Reembolso por comisión por venta
+  financial_group: costos_comerciales
+Reembolso por comisin por venta:
+  concept: Reembolso por comisión por venta
+  financial_group: costos_comerciales
+Reembolso por comisiÃ³n por venta:
+  concept: Reembolso por comisión por venta
+  financial_group: costos_comerciales
+Cobro por logística inversa:
+  concept: Cobro por logística inversa
+  financial_group: costos_operacionales
+Cobro por logistica inversa:
+  concept: Cobro por logística inversa
+  financial_group: costos_operacionales
+Cobro por logstica inversa:
+  concept: Cobro por logística inversa
+  financial_group: costos_operacionales
+Cobro por logÃ­stica inversa:
+  concept: Cobro por logística inversa
+  financial_group: costos_operacionales
+Pago por precio del producto:
+  concept: Pago por precio del producto
+  financial_group: ingresos
+Descuento por devolución de producto:
+  concept: Descuento por devolución de producto
+  financial_group: devoluciones
+Pago de envío comprador:
+  concept: Pago de envío comprador
+  financial_group: costos_operacionales
+Corrección de cobro por envío directo:
+  concept: Corrección de cobro por envío directo
+  financial_group: ajustes
+Campañas de publicidad - Product Ads:
+  concept: Campañas de publicidad - Product Ads
+  financial_group: costos_comerciales
+Campañas de publicidad - Brand Ads:
+  concept: Campañas de publicidad - Brand Ads
+  financial_group: costos_comerciales
+Cargo por campaña de publicidad - Display programático:
+  concept: Cargo por campaña de publicidad - Display programático
+  financial_group: costos_comerciales
+Descuento por logística inversa:
+  concept: Descuento por logística inversa
+  financial_group: costos_operacionales
+Pago por envío directo:
+  concept: Pago por envío directo
+  financial_group: costos_operacionales
+Corrección de pago envio directo:
+  concept: Corrección de pago envio directo
+  financial_group: ajustes
+Mediación:
+  concept: Mediación
+  financial_group: ajustes
+Mediacin:
+  concept: Mediación
+  financial_group: ajustes
+Mediacion:
+  concept: Mediación
+  financial_group: ajustes
+Reserva para pago de deuda:
+  concept: Reserva para pago de deuda
+  financial_group: ajustes
+Reserva para devolución en envío BBP:
+  concept: Reserva para devolución en envío BBP
+  financial_group: ajustes
+Reserva para devolucin en envo BBP:
+  concept: Reserva para devolución en envío BBP
+  financial_group: ajustes
+Reserva para devolucion en envio BBP:
+  concept: Reserva para devolución en envío BBP
+  financial_group: ajustes
+Devolución de dinero:
+  concept: Devolución de dinero
+  financial_group: devoluciones
+Devolucion de dinero:
+  concept: Devolución de dinero
+  financial_group: devoluciones
+Devolucin de dinero:
+  concept: Devolución de dinero
+  financial_group: devoluciones
+Reserva para pago:
+  concept: Reserva para pago
+  financial_group: ajustes
+Reserva para reembolso:
+  concept: Reserva para reembolso
+  financial_group: ajustes
+Pago de aporte promocionales a cliente (Promo):
+  concept: Pago de aporte promocionales a cliente (Promo)
+  financial_group: costos_comerciales
+Descuento por aportes promocionales a clientes (Promo):
+  concept: Descuento por aportes promocionales a clientes (Promo)
+  financial_group: costos_comerciales
+
+Comisiones:
+  concept: Comisiones sobre pedidos
+  financial_group: costos_comerciales
+Cobro por campaa:
+  concept: Cobro por campaña
+  financial_group: ajustes
+Cobro por comisin por cancelacin:
+  concept: Cobro por comisión por venta
+  financial_group: costos_comerciales
+Cobro por comisión por cancelación:
+  concept: Cobro por comisión por venta
+  financial_group: costos_comerciales

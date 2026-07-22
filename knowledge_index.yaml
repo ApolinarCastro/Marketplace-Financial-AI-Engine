@@ -1,0 +1,2141 @@
+knowledge:
+- id: DEC-001
+  type: governance
+  title: Decisiones Registradas
+  summary: '## DEC-001 — Financial Truth Consolidation'
+  status: ACTIVE
+- id: DEC-002
+  type: governance
+  title: Single Financial Truth
+  summary: 69/69 period-MP combos $0 delta
+  status: ACTIVE
+- id: DEC-003
+  type: governance
+  title: Seller Economic Reality
+  summary: ROOT_EVENT = INGRESO para ML, COSTO para seller
+  status: ACTIVE
+- id: DEC-009
+  type: governance
+  title: PosCobro Deletion
+  summary: PosCobro debe ser eliminado (99.77% redundante)
+  status: PENDING
+- id: DEC-019
+  type: governance
+  title: P34.2A — Single Financial Truth Compliance Certification
+  summary: '| Evidence |'
+  status: CERTIFIED
+- id: DEC-020
+  type: governance
+  title: PARIS Duplicate Cert ERRONEOUS
+  summary: $21.2M/1,573 groups overestimated 93%
+  status: SUPERSEDED
+- id: DEC-023
+  type: governance
+  title: PARIS = 3P Marketplace
+  summary: 17 sellers, DTE 43 = commission 15%
+  status: ACTIVE
+- id: DEC-022
+  type: governance
+  title: PARIS Business Model V2 — Final Certification
+  summary: '# PARIS Business Model V2 — Final Certification'
+  status: CERTIFIED
+- id: DEC-027
+  type: governance
+  title: 'DEC-027: Reconciliation Engine Authority'
+  summary: def reconcile_level1_internal(marketplace, periodo) -> LevelResult
+  status: CERTIFIED
+- id: DEC-024
+  type: governance
+  title: 'DEC-024: Certification Engine Authority'
+  summary: '# DEC-024: Certification Engine Authority'
+  status: CERTIFIED
+- id: DEC-025
+  type: governance
+  title: 'DEC-025: Taxonomy YAML Authority'
+  summary: '# DEC-025: Taxonomy YAML Authority'
+  status: CERTIFIED
+- id: DEC-026
+  type: governance
+  title: 'DEC-026: Frontend Zero Logic'
+  summary: '**Zero financial logic in frontend code.** All taxonomy mappings, calculations,
+    and data transformations must occur server-side.'
+  status: CERTIFIED
+- id: CERT-PLATFORM-V1
+  type: certification
+  title: Platform Certification V1
+  summary: 6 engines frozen, 195/195 tests PASS, Platform freeze enabled
+  status: CERTIFIED
+- id: CERT-SINGLE-TRUTH
+  type: certification
+  title: Single Financial Truth
+  summary: 69 periods, 4 MPs, $0 delta
+  status: CERTIFIED
+- id: AUDIT-ML-2026-06
+  type: audit
+  title: ML Audit Trail Gap
+  summary: ML has 0 audit rows ($842M, 48% total) — cargo_sin_respaldo_legal incompatible
+    with ML folio_xml patterns
+  status: OPEN
+- id: AUDIT-DATA-FRESHNESS
+  type: audit
+  title: Data Freshness Gap
+  summary: Junio 2026 = 0 rows; PARIS/FALABELLA 2 months behind
+  status: OPEN
+- id: TAXONOMY-INGRESOS
+  type: taxonomy
+  title: Ingresos Classification
+  summary: 100% classification coverage, 163 concepts, 215 raw detail mappings
+  status: CERTIFIED
+- id: TAXONOMY-DEVOLUCIONES
+  type: taxonomy
+  title: Devoluciones Classification
+  summary: financial_group='devoluciones' → always negative monto
+  status: CERTIFIED
+- id: TAXONOMY-AJUSTES
+  type: taxonomy
+  title: Ajustes Classification
+  summary: '3 FLOW values: claim (54.1%), refund (45.8%), chargeback (0.1%)'
+  status: CERTIFIED
+- id: AUDIT-ML-MISCLASSIFIED
+  type: audit
+  title: 'ML: MISCLASSIFIED (3113 rows)'
+  summary: '3113 auditoria rows for ML/MISCLASSIFIED. Top conditions: AnulaciÃ³n del
+    cargo por venta'
+  status: OPEN
+- id: AUDIT-ML-MOVIMIENTOS_NO_CLASI
+  type: audit
+  title: 'ML: movimientos_no_clasificados (630 rows)'
+  summary: '630 auditoria rows for ML/movimientos_no_clasificados. Top conditions:
+    Detalle "AnulaciÃ³n del cargo por venta" desconocido'
+  status: OPEN
+- id: AUDIT-RIPLEY-FOLIO_ESTRUCTURAL_SI
+  type: audit
+  title: 'RIPLEY: folio_estructural_sin_respaldo_sii (1 rows)'
+  summary: '1 auditoria rows for RIPLEY/folio_estructural_sin_respaldo_sii. Top conditions:
+    Ripley folios son referencias XLSX (48 distinct, 93.6% cobertura). No son folios
+    SII DTE. Requiere Settlement Bridge para certificación legal.'
+  status: OPEN
+- id: AUDIT-RIPLEY-MOVIMIENTOS_NO_CLASI
+  type: audit
+  title: 'RIPLEY: movimientos_no_clasificados (4618 rows)'
+  summary: '4618 auditoria rows for RIPLEY/movimientos_no_clasificados. Top conditions:
+    Detalle "ComisiÃ³n" desconocido'
+  status: OPEN
+- id: AI_GOVERNANCE_LAYER
+  type: governance
+  title: AI_GOVERNANCE_LAYER
+  summary: Detectar y prevenir inconsistencias en la plataforma de manera proactiva,
+    garantizando la integridad de los datos, la documentación y los procesos de negocio.
+  status: ACTIVE
+- id: AJUSTES_RETENCIONES_DOCUMENTAR
+  type: governance
+  title: AJUSTES_RETENCIONES_DOCUMENTARY_TRUTH
+  summary: ado neto total no se modifica.
+  status: ACTIVE
+- id: AJUSTES_RETENCIONES_FINANCIAL_
+  type: governance
+  title: AJUSTES_RETENCIONES_FINANCIAL_DESTINY
+  summary: issued per concept | ✅ |
+  status: ACTIVE
+- id: AJUSTES_RETENCIONES_IMPACT
+  type: governance
+  title: AJUSTES_RETENCIONES_IMPACT
+  summary: ado Neto
+  status: ACTIVE
+- id: AJUSTES_RETENCIONES_ROOT_CAUSE
+  type: governance
+  title: AJUSTES_RETENCIONES_ROOT_CAUSE
+  summary: '| Certification | Result |'
+  status: ACTIVE
+- id: DOC-AJUSTES_SIGN_CERTIFICATION
+  type: governance
+  title: AJUSTES_SIGN_CERTIFICATION
+  summary: ado Neto. El signo "+" en la UI de Estructura Financiera es correcto.
+  status: CERTIFIED
+- id: DOC-API_SECURITY_REPORT
+  type: governance
+  title: API_SECURITY_REPORT
+  summary: Hardened CORS configuration and implemented rate limiting middleware.
+  status: ACTIVE
+- id: APPROVAL_LOG
+  type: governance
+  title: APPROVAL_LOG
+  summary: '| Reference | Directive ID | Status | Date |'
+  status: ACTIVE
+- id: README_V4_ARCHIVED
+  type: governance
+  title: README_V4_ARCHIVED
+  summary: '# Marketplace Conciliacion V4 (ARCHIVED — original pre-V6)'
+  status: ACTIVE
+- id: DOC-AUDIT_BUTTON_SAFE_MODE_CERTIFI
+  type: governance
+  title: AUDIT_BUTTON_SAFE_MODE_CERTIFICATION
+  summary: '# Certificación: Audit Button Safe Mode'
+  status: CERTIFIED
+- id: DOC-AUDIT_READY_CERTIFICATION
+  type: governance
+  title: AUDIT_READY_CERTIFICATION
+  summary: 'ado_neto: includes $15,990'
+  status: ACTIVE
+- id: DOC-AUTH_HARDENING_REPORT
+  type: governance
+  title: AUTH_HARDENING_REPORT
+  summary: Implemented JWT + API Key authentication middleware with default-deny pattern.
+  status: ACTIVE
+- id: BEFORE_AFTER_DASHBOARD_EVIDENC
+  type: governance
+  title: BEFORE_AFTER_DASHBOARD_EVIDENCE
+  summary: 13/13 traces PASS, complete step chains.
+  status: ACTIVE
+- id: DOC-BPP_RESIDUAL_CERTIFICATION
+  type: governance
+  title: BPP_RESIDUAL_CERTIFICATION
+  summary: '**Scope:** 47 BPP rows with `include_in_operational_pnl=True` after MODERNIZE
+    fix'
+  status: ACTIVE
+- id: DOC-BPP_RESIDUAL_FIX_REPORT
+  type: governance
+  title: BPP_RESIDUAL_FIX_REPORT
+  summary: '**Classification:** PASS — residual eliminated'
+  status: CERTIFIED
+- id: BUSINESS_CASE_LIBRARY
+  type: governance
+  title: BUSINESS_CASE_LIBRARY
+  summary: '**Mode:** READ ONLY — each case is independently actionable'
+  status: CERTIFIED
+- id: CATEGORY_PROFITABILITY_ANALYSI
+  type: governance
+  title: CATEGORY_PROFITABILITY_ANALYSIS
+  summary: '** Commissions are the **primary profit engine** for all 3rd-party marketplaces.
+    They generate the most predictable, high-margin revenue.'
+  status: CERTIFIED
+- id: DOC-ML_PRELOCK_CERTIFICATION
+  type: governance
+  title: ML_PRELOCK_CERTIFICATION
+  summary: '**Marketplace:** Mercado Libre (ML)'
+  status: ACTIVE
+- id: DOC-PARIS_PRELOCK_CERTIFICATION
+  type: governance
+  title: PARIS_PRELOCK_CERTIFICATION
+  summary: '**Fecha de Certificación:** 2026-06-15'
+  status: ACTIVE
+- id: DOC-RIPLEY_FINANCIAL_CERTIFICATION
+  type: governance
+  title: RIPLEY_FINANCIAL_CERTIFICATION_V1
+  summary: '# RIPLEY FINANCIAL CERTIFICATION V1'
+  status: ACTIVE
+- id: CHANGE_LOG
+  type: governance
+  title: CHANGE_LOG
+  summary: '| Timestamp | Actor | Reason | Files Modified | Approval Reference | Rollback
+    Reference |'
+  status: ACTIVE
+- id: CIERRE_FINANCIERO_DEPENDENCY_M
+  type: governance
+  title: CIERRE_FINANCIERO_DEPENDENCY_MAP
+  summary: s, period max, group totals) |
+  status: ACTIVE
+- id: CIERRE_FINANCIERO_MIGRATION_PL
+  type: governance
+  title: CIERRE_FINANCIERO_MIGRATION_PLAN
+  summary: ado_neto (Δ=0 per period per MP)
+  status: ACTIVE
+- id: CIERRE_FINANCIERO_V2_SCHEMA
+  type: governance
+  title: CIERRE_FINANCIERO_V2_SCHEMA
+  summary: ado_neto       DOUBLE DEFAULT 0,
+  status: ACTIVE
+- id: DOC-DASHBOARD_DATABASE_CERTIFICATI
+  type: governance
+  title: DASHBOARD_DATABASE_CERTIFICATION
+  summary: ado Neto** | Compuesto | `neto = ing + cop + ccm + (dev + aju)` |
+  status: ACTIVE
+- id: DOC-DATA_FRESHNESS_CERTIFICATION
+  type: governance
+  title: DATA_FRESHNESS_CERTIFICATION
+  summary: '| Certification | Result |'
+  status: ACTIVE
+- id: DATA_FRESHNESS_REMEDIATION_PLA
+  type: governance
+  title: DATA_FRESHNESS_REMEDIATION_PLAN
+  summary: '# DATA FRESHNESS REMEDIATION PLAN'
+  status: CERTIFIED
+- id: DATA_FRESHNESS_ROOT_CAUSE
+  type: governance
+  title: DATA_FRESHNESS_ROOT_CAUSE
+  summary: '| Certification | Result |'
+  status: ACTIVE
+- id: DOC-DATA_MAESTRA_360_CERTIFICATION
+  type: governance
+  title: DATA_MAESTRA_360_CERTIFICATION
+  summary: '** Certified — both pipelines source from the same RAW XLSX files. Residual
+    = $0.'
+  status: ACTIVE
+- id: DOC-DB_BYPASS_ELIMINATION_REPORT
+  type: governance
+  title: DB_BYPASS_ELIMINATION_REPORT
+  summary: Eliminated all 4 instances of direct `duckdb.connect()` that bypassed the
+    `DatabaseV4` singleton. All database access now flows through `DatabaseV4.get()`.
+  status: CERTIFIED
+- id: DOC-DB_CONNECTION_HARDENING_REPORT
+  type: governance
+  title: DB_CONNECTION_HARDENING_REPORT
+  summary: '# DB CONNECTION HARDENING REPORT'
+  status: ACTIVE
+- id: DOC-DEC019_EXECUTION_REPORT
+  type: governance
+  title: DEC019_EXECUTION_REPORT
+  summary: PASS ✅
+  status: CERTIFIED
+- id: DOC-DOCUMENT_CONSISTENCY_AUDIT
+  type: governance
+  title: DOCUMENT_CONSISTENCY_AUDIT
+  summary: '# PROGRAMA T2 — PRE-FLIGHT DOCUMENT CONSISTENCY AUDIT'
+  status: ACTIVE
+- id: DOCUMENTARY_RECONCILIATION_V2
+  type: governance
+  title: DOCUMENTARY_RECONCILIATION_V2
+  summary: '# DOCUMENTARY_RECONCILIATION_V2'
+  status: ACTIVE
+- id: E2E_FRONTEND_BACKEND_RECONCILI
+  type: governance
+  title: E2E_FRONTEND_BACKEND_RECONCILIATION
+  summary: FULL PASS ✅** — $0 delta en 57 period-MP combos, 5 conceptos financieros
+    + RN
+  status: ACTIVE
+- id: DOC-ECONOMIC_EVENT_TRUTH_CERTIFICA
+  type: governance
+  title: ECONOMIC_EVENT_TRUTH_CERTIFICATION
+  summary: '**: ✅ CONFIRMED'
+  status: ACTIVE
+- id: DOC-END_TO_END_FINANCIAL_TRUTH_AUD
+  type: governance
+  title: END_TO_END_FINANCIAL_TRUTH_AUDIT
+  summary: ado_neto = total_ingresos - |total_costos_operacionales| - |total_costos_comerciales|
+    + total_ajustes`. Ledger sum includes `devoluciones` (returns) which are NOT in
+    cierre formula. ML also has `inclu
+  status: CERTIFIED
+- id: EVENT_REGISTRY_V1
+  type: governance
+  title: EVENT_REGISTRY_V1
+  summary: ado Neto |
+  status: ACTIVE
+- id: EVIDENCE_EXPLORER_UX_SPEC
+  type: governance
+  title: EVIDENCE_EXPLORER_UX_SPEC
+  summary: ado neto  ·  ML  ·  2026-04           │
+  status: ACTIVE
+- id: EXECUTABLE_PROJECT_PORTFOLIO
+  type: governance
+  title: EXECUTABLE_PROJECT_PORTFOLIO
+  summary: '# E1.0 — Executable Project Portfolio'
+  status: CERTIFIED
+- id: EXECUTABLE_VALUE_MATRIX
+  type: governance
+  title: EXECUTABLE_VALUE_MATRIX
+  summary: '# G5.7A — Executive Value Matrix'
+  status: CERTIFIED
+- id: EXECUTIVE_ASSUMPTION_REGISTER
+  type: governance
+  title: EXECUTIVE_ASSUMPTION_REGISTER
+  summary: '# E1.1 — Executive Assumption Register'
+  status: CERTIFIED
+- id: DOC-EXECUTIVE_AUDITOR_RECONCILIATI
+  type: governance
+  title: EXECUTIVE_AUDITOR_RECONCILIATION_REPORT
+  summary: '# Executive vs Auditor Reconciliation Report'
+  status: CERTIFIED
+- id: EXECUTIVE_MARKETPLACE_SCORECAR
+  type: governance
+  title: EXECUTIVE_MARKETPLACE_SCORECARD
+  summary: '# G5.5 — Executive Marketplace Scorecard'
+  status: CERTIFIED
+- id: EXECUTIVE_VALUE_TRACKING
+  type: governance
+  title: EXECUTIVE_VALUE_TRACKING
+  summary: The platform has identified **$8.06M in Eccsa-controlled value** — money
+    Eccsa can recover with zero external dependencies, zero contract renegotiation,
+    and zero third-party approval.
+  status: CERTIFIED
+- id: DOC-EXPECTED_VALUE_TRACEABILITY_CE
+  type: governance
+  title: EXPECTED_VALUE_TRACEABILITY_CERTIFICATION
+  summary: '# E1.1 — Expected Value Traceability Certification'
+  status: CERTIFIED
+- id: DEC-035
+  type: governance
+  title: 'DEC-035: Final Financial Certification'
+  summary: '# DEC-035: Final Financial Certification'
+  status: CERTIFIED
+- id: FCG_01
+  type: governance
+  title: FCG_01
+  summary: ado_neto, último periodo)
+  status: ACTIVE
+- id: FCG_02
+  type: governance
+  title: FCG_02
+  summary: ado_neto::BIGINT FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='falabella'
+    ORDER BY periodo_inicio DESC LIMIT 1
+  status: ACTIVE
+- id: FCG_03
+  type: governance
+  title: FCG_03
+  summary: '# FCG_03: ML Recuperaciones Certification'
+  status: ACTIVE
+- id: FCG_04
+  type: governance
+  title: FCG_04
+  summary: '# FCG_04: RIPLEY Duplication Certification'
+  status: CERTIFIED
+- id: FCG_05
+  type: governance
+  title: FCG_05
+  summary: ado Neto holds with delta=0 for all.
+  status: CERTIFIED
+- id: FCG_06
+  type: governance
+  title: FCG_06
+  summary: '# FCG_06: Frontend Backend Reconciliation'
+  status: ACTIVE
+- id: FCG_07
+  type: governance
+  title: FCG_07
+  summary: '# FCG_07: Ledger Drilldown Certification'
+  status: CERTIFIED
+- id: FCG_08
+  type: governance
+  title: FCG_08
+  summary: '# FCG_08: DTE Documental Certification'
+  status: CERTIFIED
+- id: FCG_09
+  type: governance
+  title: FCG_09
+  summary: '# FCG_09: UX12 Executive Intelligence Certification'
+  status: ACTIVE
+- id: DOC-FINAL_CLICK_TO_LEDGER_CERTIFIC
+  type: governance
+  title: FINAL_CLICK_TO_LEDGER_CERTIFICATION
+  summary: '**Click-to-Ledger: PASS** — no BPP residual remains. Every desglose click
+    shows the exact rows that exist in the ledger with iopnl=1. The architectural
+    alignment (DEC-003: `COALESCE(include_in_operati'
+  status: CERTIFIED
+- id: DOC-FINAL_FINANCIAL_TRUTH_CERTIFIC
+  type: governance
+  title: FINAL_FINANCIAL_TRUTH_CERTIFICATION
+  summary: Single Financial Truth = **CONFIRMED**. All APIs, dashboards, and reports
+    consuming cierre_financiero_v1 or ledger with iopnl=1 produce certified values.
+    The `include_in_operational_pnl` field is sema
+  status: CERTIFIED
+- id: FINANCIAL_EVIDENCE_CHAIN_DESIG
+  type: governance
+  title: FINANCIAL_EVIDENCE_CHAIN_DESIGN
+  summary: ado   │
+  status: CERTIFIED
+- id: DOC-FINANCIAL_EXPLAINABILITY_CERTI
+  type: governance
+  title: FINANCIAL_EXPLAINABILITY_CERTIFICATION
+  summary: ado_neto = ingresos + costos_operacionales + costos_comerciales + devoluciones
+    + ajustes
+  status: ACTIVE
+- id: FINANCIAL_LABEL_TRUTH_REMEDIAT
+  type: governance
+  title: FINANCIAL_LABEL_TRUTH_REMEDIATION
+  summary: ado_neto` (la fórmula `ing + dev + cop + ccm + aju` requiere esta composición),
+    pero falla cuando se usa el mismo campo como etiqueta visual.
+  status: ACTIVE
+- id: DOC-FINANCIAL_SEMANTIC_TRUTH_AUDIT
+  type: governance
+  title: FINANCIAL_SEMANTIC_TRUTH_AUDIT
+  summary: ado neto o caja, NO puede vivir en el P&L. Debe migrar a Inteligencia Operacional.*
+  status: ACTIVE
+- id: FINANCIAL_STRUCTURE_V2_REMEDIA
+  type: governance
+  title: FINANCIAL_STRUCTURE_V2_REMEDIATION
+  summary: ados (P&L).
+  status: ACTIVE
+- id: DOC-FRONTEND_BACKEND_RECONCILIATIO
+  type: governance
+  title: FRONTEND_BACKEND_RECONCILIATION_REPORT
+  summary: '**: 404 Not Found → `summaryRes.ok = false` → scorecard shows all zeros'
+  status: CERTIFIED
+- id: DOC-FRONTEND_FINANCIAL_TRUTH_CERTI
+  type: governance
+  title: FRONTEND_FINANCIAL_TRUTH_CERTIFICATION
+  summary: ado certificado del backend.
+  status: ACTIVE
+- id: G6_1_RESULTADO_NETO_EVENTS_VS_
+  type: governance
+  title: G6_1_RESULTADO_NETO_EVENTS_VS_RECORDS
+  summary: 'ado Neto: EVENTOS vs REGISTROS'
+  status: ACTIVE
+- id: DOC-G6_CASH_REALITY_CERTIFICATION
+  type: governance
+  title: G6_CASH_REALITY_CERTIFICATION
+  summary: ado_neto as cash proxy? | YES — within 3.9% after scope adjustments | ALTA
+    |
+  status: ACTIVE
+- id: GERENCIAL_GAP_ANALYSIS
+  type: governance
+  title: GERENCIAL_GAP_ANALYSIS
+  summary: ado Neto" / "Net Revenue" | **Ya existe** (rename) |
+  status: ACTIVE
+- id: GIT_STRATEGY
+  type: governance
+  title: GIT_STRATEGY
+  summary: main                  BASELINE_V6 (stable, frozen)
+  status: ACTIVE
+- id: DOC-GO_LIVE_AUDIT
+  type: governance
+  title: GO_LIVE_AUDIT
+  summary: s (5 + Final)
+  status: ACTIVE
+- id: GOVERNANCE_LAYER_V1
+  type: governance
+  title: GOVERNANCE_LAYER_V1
+  summary: The Governance Layer establishes an immutable framework that regulates
+    modifications to the Marketplace Financial AI Engine. It acts as an overarching
+    control mechanism separating operational code fro
+  status: CERTIFIED
+- id: GOVERNANCE_MASTER_INDEX
+  type: governance
+  title: GOVERNANCE_MASTER_INDEX
+  summary: '| $ Impact | Date |'
+  status: ACTIVE
+- id: DOC-INCIDENT_DB_SURVIVAL_AUDIT
+  type: governance
+  title: INCIDENT_DB_SURVIVAL_AUDIT
+  summary: es sobre DB perdida en FASE 6 son incorrectas (basadas en ruta equivocada).
+    La cobertura potencial SÍ es calculable desde `data/db/meli_financial_v4.db`.
+  status: ACTIVE
+- id: INCLUDE_IN_OPERATIONAL_PNL_FIN
+  type: governance
+  title: INCLUDE_IN_OPERATIONAL_PNL_FINAL_DECISION
+  summary: '# INCLUDE_IN_OPERATIONAL_PNL — FINAL DECISION'
+  status: ACTIVE
+- id: DOC-INCLUDE_IN_OPERATIONAL_PNL_TRU
+  type: governance
+  title: INCLUDE_IN_OPERATIONAL_PNL_TRUTH_REPORT
+  summary: ado es IDÉNTICO al cierre RN certificado. **$0 delta cada período.**
+  status: ACTIVE
+- id: DOC-INDEX_VALIDATION_REPORT
+  type: governance
+  title: INDEX_VALIDATION_REPORT
+  summary: '| Time (s) | Operation |'
+  status: ACTIVE
+- id: KNOWLEDGE_BASE_BLUEPRINT
+  type: governance
+  title: KNOWLEDGE_BASE_BLUEPRINT
+  summary: '` | TEXT | PASS / FAIL / PASS CONDITIONAL | `PASS` |'
+  status: ACTIVE
+- id: KPI_DEFINITIONS_V1
+  type: governance
+  title: KPI_DEFINITIONS_V1
+  summary: ado integral del período |
+  status: ACTIVE
+- id: DOC-LEDGER_CATEGORY_RECONCILIATION
+  type: governance
+  title: LEDGER_CATEGORY_RECONCILIATION_REPORT
+  summary: '# Ledger Category Reconciliation Report'
+  status: CERTIFIED
+- id: DOC-LEDGER_SUBCATEGORY_RECONCILIAT
+  type: governance
+  title: LEDGER_SUBCATEGORY_RECONCILIATION_REPORT
+  summary: '# Ledger Subcategory Reconciliation Report'
+  status: CERTIFIED
+- id: DOC-LIQUIDACION_FF_REDUNDANCY_CERT
+  type: governance
+  title: LIQUIDACION_FF_REDUNDANCY_CERTIFICATION
+  summary: '# LIQUIDACION_FF REDUNDANCY CERTIFICATION'
+  status: ACTIVE
+- id: MARGIN_CONSUMPTION_ANALYSIS
+  type: governance
+  title: MARGIN_CONSUMPTION_ANALYSIS
+  summary: '# G5.2 — Margin Consumption Analysis'
+  status: CERTIFIED
+- id: MARGIN_IMPROVEMENT_SIMULATOR
+  type: governance
+  title: MARGIN_IMPROVEMENT_SIMULATOR
+  summary: '# G5.7 — Margin Improvement Simulator'
+  status: CERTIFIED
+- id: MARGIN_LEAKAGE_ANALYSIS
+  type: governance
+  title: MARGIN_LEAKAGE_ANALYSIS
+  summary: '**No margin leakage detected.** Every peso is accounted for. The concepts
+    that "consume" margin are either:'
+  status: CERTIFIED
+- id: MARKETPLACE_BUSINESS_MODEL_NOR
+  type: governance
+  title: MARKETPLACE_BUSINESS_MODEL_NORMALIZATION
+  summary: '# G5.5A — Marketplace Business Model Normalization'
+  status: CERTIFIED
+- id: DOC-MARKETPLACE_CHARGE_RECONCILIAT
+  type: governance
+  title: MARKETPLACE_CHARGE_RECONCILIATION_CERTIFICATION
+  summary: '# Sprint A5.1 — Marketplace Charge Reconciliation Certification'
+  status: CERTIFIED
+- id: MARKETPLACE_CHARGE_RECONCILIAT
+  type: governance
+  title: MARKETPLACE_CHARGE_RECONCILIATION_V2
+  summary: '** **$0 exposición económica.** Los $33.4M de delta se explican 100% por
+    absorción ($31.0M) y diferencias temporales ($2.4M). Ningún cargo se pierde —
+    todos los cobros XML llegan al P&L del marketplac'
+  status: CERTIFIED
+- id: DOC-MARKETPLACE_COMPARABILITY_CERT
+  type: governance
+  title: MARKETPLACE_COMPARABILITY_CERTIFICATION
+  summary: '# G5.5A — Marketplace Comparability Certification'
+  status: CERTIFIED
+- id: DOC-MARKETPLACE_CONCEPT_MASTER_CER
+  type: governance
+  title: MARKETPLACE_CONCEPT_MASTER_CERTIFICATION
+  summary: of all charges and income. It has financial_group = NULL by design (treasury,
+    NOT operational P&L).
+  status: ACTIVE
+- id: DOC-MARKETPLACE_DTE_TRUTH_CERTIFIC
+  type: governance
+  title: MARKETPLACE_DTE_TRUTH_CERTIFICATION
+  summary: '# SPRINT A5.0 — DTE Truth Certification'
+  status: ACTIVE
+- id: MARKETPLACE_ECONOMIC_DICTIONAR
+  type: governance
+  title: MARKETPLACE_ECONOMIC_DICTIONARY
+  summary: ado final de la liquidación.
+  status: ACTIVE
+- id: DOC-MARKETPLACE_ECONOMIC_TRUTH_CER
+  type: governance
+  title: MARKETPLACE_ECONOMIC_TRUTH_CERTIFICATION
+  summary: ado?** | financial_group → P&L line → 360 category → Dashboard KPI |
+  status: CERTIFIED
+- id: MARKETPLACE_LOCK_POLICY
+  type: governance
+  title: MARKETPLACE_LOCK_POLICY
+  summary: 'Un marketplace en la plataforma transita por los siguientes estados:'
+  status: CERTIFIED
+- id: MARKETPLACE_MONEY_FLOW_TRUTH
+  type: governance
+  title: MARKETPLACE_MONEY_FLOW_TRUTH
+  summary: '# G4.1 — Marketplace Money Flow Truth'
+  status: CERTIFIED
+- id: MARKETPLACE_OPERATIONAL_INTELL
+  type: governance
+  title: MARKETPLACE_OPERATIONAL_INTELLIGENCE_COVERAGE
+  summary: ado_neto |
+  status: ACTIVE
+- id: MARKETPLACE_PROFITABILITY_RANK
+  type: governance
+  title: MARKETPLACE_PROFITABILITY_RANKING
+  summary: '# G5.1 — Marketplace Profitability Ranking'
+  status: CERTIFIED
+- id: MARKETPLACE_TAX_SUPPORT_MATRIX
+  type: governance
+  title: MARKETPLACE_TAX_SUPPORT_MATRIX
+  summary: '# Marketplace Tax Support Matrix'
+  status: ACTIVE
+- id: DOC-MARKETPLACE_UNIT_ECONOMICS_CER
+  type: governance
+  title: MARKETPLACE_UNIT_ECONOMICS_CERTIFICATION
+  summary: '# G5.5A — Marketplace Unit Economics Certification'
+  status: CERTIFIED
+- id: MARKETPLACE_VALUE_CREATION_OPP
+  type: governance
+  title: MARKETPLACE_VALUE_CREATION_OPPORTUNITIES
+  summary: '# G5.7 — Marketplace Value Creation Opportunities'
+  status: CERTIFIED
+- id: DOC-MARKETPLACE_WATERFALL_CERTIFIC
+  type: governance
+  title: MARKETPLACE_WATERFALL_CERTIFICATION
+  summary: is 96.17% of ventas because ML captures a share of adjustments internally.
+  status: CERTIFIED
+- id: DOC-MARKETPLACE_XML_LEDGER_COMPLET
+  type: governance
+  title: MARKETPLACE_XML_LEDGER_COMPLETENESS_CERTIFICATION
+  summary: '# Marketplace XML ↔ Ledger Completeness Certification'
+  status: ACTIVE
+- id: MATRIZ_REMEDIACION_V6
+  type: governance
+  title: MATRIZ_REMEDIACION_V6
+  summary: ados históricos inmutables (cierres, desgloses de meses anteriores) | PERF
+    | P2 | M | B | — | 0 | 0 | +3 |
+  status: ACTIVE
+- id: MISSING_DIMENSIONS_MATRIX
+  type: governance
+  title: MISSING_DIMENSIONS_MATRIX
+  summary: '**Without 3 core dimensions (product, category, inventory), 73% of root
+    cause questions cannot be answered.**'
+  status: CERTIFIED
+- id: DOC-ML_END_TO_END_ECONOMIC_MODEL_C
+  type: governance
+  title: ML_END_TO_END_ECONOMIC_MODEL_CERTIFICATION
+  summary: ados).
+  status: ACTIVE
+- id: ML_POSCOBRO_FORENSICS
+  type: governance
+  title: ML_POSCOBRO_FORENSICS
+  summary: '** Zero dates have both positive and negative Poscobro entries. No evidence
+    of same-day reversal or correction activity within the Poscobro dataset.'
+  status: ACTIVE
+- id: DOC-ML_POSCOBRO_REVERSION_CERTIFIC
+  type: governance
+  title: ML_POSCOBRO_REVERSION_CERTIFICATION
+  summary: '# ML PosCobro Reversion Certification'
+  status: CERTIFIED
+- id: DOC-ML_RAW_COVERAGE_AUDIT
+  type: governance
+  title: ML_RAW_COVERAGE_AUDIT
+  summary: '**Auditor:** Sistema de Agentes'
+  status: ACTIVE
+- id: NEGOTIATION_OPPORTUNITY_MATRIX
+  type: governance
+  title: NEGOTIATION_OPPORTUNITY_MATRIX
+  summary: '** Transparency improvement, no immediate $ recovery.'
+  status: CERTIFIED
+- id: NEGOTIATION_PLAYBOOK
+  type: governance
+  title: NEGOTIATION_PLAYBOOK
+  summary: '**Mode:** READ ONLY — opportunity analysis, no commitments'
+  status: CERTIFIED
+- id: OBSIDIAN_GOVERNANCE_MODEL
+  type: governance
+  title: OBSIDIAN_GOVERNANCE_MODEL
+  summary: Estructurar Obsidian como la memoria corporativa oficial del proyecto,
+    garantizando un registro histórico, estructurado y auditable de decisiones, problemas
+    y certificaciones.
+  status: ACTIVE
+- id: DOC-OPERATIONAL_ACCEPTANCE_REPORT
+  type: governance
+  title: OPERATIONAL_ACCEPTANCE_REPORT
+  summary: CERTIFIED WITH CONDITIONS** ✅
+  status: CERTIFIED
+- id: DOC-OPERATIONAL_DATA_GAP_CERTIFICA
+  type: governance
+  title: OPERATIONAL_DATA_GAP_CERTIFICATION
+  summary: '# E3.0 — Operational Data Gap Certification'
+  status: CERTIFIED
+- id: DOC-OPPORTUNITY_FEASIBILITY_CERTIF
+  type: governance
+  title: OPPORTUNITY_FEASIBILITY_CERTIFICATION
+  summary: '# G5.7A — Opportunity Feasibility Certification'
+  status: CERTIFIED
+- id: DOC-P16F_01_ML_RETURN_REASON_TRACE
+  type: governance
+  title: P16F_01_ML_RETURN_REASON_TRACEABILITY_CERTIFICATION
+  summary: '**Return reasons are operational metadata, NOT financial structure.**
+    They describe *why* a return happened (talla, arrepentimiento, producto dañado)
+    but are all classified under `financial_group=''dev'
+  status: ACTIVE
+- id: DOC-P16F_02_ML_ADJUSTMENTS_CERTIFI
+  type: governance
+  title: P16F_02_ML_ADJUSTMENTS_CERTIFICATION
+  summary: 'All 10 audited concepts are **correctly classified** in the DB:'
+  status: ACTIVE
+- id: P16F_03_DTE_COVERAGE_RECONSTRU
+  type: governance
+  title: P16F_03_DTE_COVERAGE_RECONSTRUCTION
+  summary: '# P16F_03 — DTE Coverage Reconstruction (ROOT CAUSE)'
+  status: ACTIVE
+- id: P16F_04_RIPLEY_LEGAL_ALERT_FOR
+  type: governance
+  title: P16F_04_RIPLEY_LEGAL_ALERT_FORENSICS
+  summary: 0 rows.** Neither folio exists in `dte_truth_v1` (407 XML folios from SII).
+  status: ACTIVE
+- id: DOC-P16F_05_UX12_INTELLIGENCE_CERT
+  type: governance
+  title: P16F_05_UX12_INTELLIGENCE_CERTIFICATION
+  summary: '# P16F_05 — UX12 Intelligence Layer Certification (ROOT CAUSE)'
+  status: ACTIVE
+- id: DOC-P16F_06_END_TO_END_CERTIFICATI
+  type: governance
+  title: P16F_06_END_TO_END_CERTIFICATION
+  summary: '# P16F_06 — End-to-End Certification (ROOT CAUSE)'
+  status: CERTIFIED
+- id: DEC-051
+  type: governance
+  title: DIRECTIVA P22Z_006_PROJECT_CLOSURE
+  summary: ado:**
+  status: ACTIVE
+- id: P32R10_EXEC_SUMMARY_PROFILE
+  type: governance
+  title: P32R10_EXEC_SUMMARY_PROFILE
+  summary: '# P32R10 — EXEC SUMMARY PROFILE'
+  status: ACTIVE
+- id: DOC-P32R10_FINAL_STABILITY_CERTIFI
+  type: governance
+  title: P32R10_FINAL_STABILITY_CERTIFICATION
+  summary: '# P32R10 — FINAL STABILITY CERTIFICATION'
+  status: ACTIVE
+- id: P32R10_PERFORMANCE_TRACE
+  type: governance
+  title: P32R10_PERFORMANCE_TRACE
+  summary: '## End-to-End Timing (DuckDB V1.5.1, Windows)'
+  status: ACTIVE
+- id: P32R10_SFT_RECONCILIATION
+  type: governance
+  title: P32R10_SFT_RECONCILIATION
+  summary: '# P32R10 — SINGLE FINANCIAL TRUTH RECONCILIATION'
+  status: ACTIVE
+- id: P32R10_SQL_TRACE
+  type: governance
+  title: P32R10_SQL_TRACE
+  summary: '### Pre-Fix: `get_executive_breakdown()` — 10 consultas'
+  status: ACTIVE
+- id: DOC-P32R7_BACKEND_HEALTH_CERTIFICA
+  type: governance
+  title: P32R7_BACKEND_HEALTH_CERTIFICATION
+  summary: '**DEGRADED** ⚠️ — 1 endpoint crashes, 10 not fully tested due to crash
+    halting sequential execution. The crash is a real bug, not environment-specific.'
+  status: ACTIVE
+- id: DOC-P32R7_CONTRACT_MATRIX_CERTIFIC
+  type: governance
+  title: P32R7_CONTRACT_MATRIX_CERTIFICATION
+  summary: ado_neto | — | Returns 67KB, status 200 |
+  status: ACTIVE
+- id: P32R7_EXECUTIVE_VERDICT
+  type: governance
+  title: P32R7_EXECUTIVE_VERDICT
+  summary: '**Date:** 2026-07-07'
+  status: ACTIVE
+- id: DOC-P32R7_FRONTEND_HEALTH_CERTIFIC
+  type: governance
+  title: P32R7_FRONTEND_HEALTH_CERTIFICATION
+  summary: '**PASS** ✅ — Frontend structure is sound. UI references existing API endpoints.
+    Zero client-side financial logic. The only issue is the backend crash in `exec/summary`
+    which is not a frontend defect.'
+  status: ACTIVE
+- id: P32R7_PLATFORM_SCORECARD
+  type: governance
+  title: P32R7_PLATFORM_SCORECARD
+  summary: '**Scope:** Unified scorecard across all 7 audit dimensions'
+  status: ACTIVE
+- id: DOC-P32R7_REGRESSION_CERTIFICATION
+  type: governance
+  title: P32R7_REGRESSION_CERTIFICATION
+  summary: '**FAIL** ❌ — 1 new real regression (`map_detalle_to_concept` method signature)
+    downgrades from P30 status. The server-side concept mapping contract is broken.'
+  status: ACTIVE
+- id: DOC-P32R7_SINGLE_FINANCIAL_TRUTH_C
+  type: governance
+  title: P32R7_SINGLE_FINANCIAL_TRUTH_CERTIFICATION
+  summary: PERFECT** — 0 row delta, $0 amount delta. ETL fidelity maintained.
+  status: ACTIVE
+- id: DOC-P32R7_TRACEABILITY_CERTIFICATI
+  type: governance
+  title: P32R7_TRACEABILITY_CERTIFICATION
+  summary: '**DEGRADED** ⚠️ — Individual transaction traceability exists (Ledger→Clasificado→Cierre
+    chain intact) but XML to disk linkage broken, and auditoria cross-reference by
+    transaction ID impossible due to '
+  status: ACTIVE
+- id: P33_FINAL_VERDICT
+  type: governance
+  title: P33_FINAL_VERDICT
+  summary: Basado en evidencia ejecutable recolectada el 2026-06-19.
+  status: ACTIVE
+- id: P33_SYSTEM_HEALTH
+  type: governance
+  title: P33_SYSTEM_HEALTH
+  summary: '**File:** `data/db/meli_financial_v4.db`'
+  status: ACTIVE
+- id: P33_TECHNICAL_FINDINGS
+  type: governance
+  title: P33_TECHNICAL_FINDINGS
+  summary: ado de `get_all_certifications` se descarta.
+  status: ACTIVE
+- id: P34_1_FINAL_VERDICT
+  type: governance
+  title: P34_1_FINAL_VERDICT
+  summary: '**Date:** 2026-07-09'
+  status: ACTIVE
+- id: P34_1_KNOWLEDGE_ABSORPTION_MAT
+  type: governance
+  title: P34_1_KNOWLEDGE_ABSORPTION_MATRIX
+  summary: '# P34.1 — Knowledge Absorption Matrix'
+  status: ACTIVE
+- id: P34_1_KNOWLEDGE_CONSOLIDATION
+  type: governance
+  title: P34_1_KNOWLEDGE_CONSOLIDATION
+  summary: ados en tabla |
+  status: ACTIVE
+- id: P34_FINAL_VERDICT
+  type: governance
+  title: P34_FINAL_VERDICT
+  summary: '**Date:** 2026-07-09'
+  status: ACTIVE
+- id: P34_KNOWLEDGE_HEALTH
+  type: governance
+  title: P34_KNOWLEDGE_HEALTH
+  summary: 'es invalidadas o explícitamente rechazadas:'
+  status: CERTIFIED
+- id: P34_REPOSITORY_HYGIENE
+  type: governance
+  title: P34_REPOSITORY_HYGIENE
+  summary: .md` (4.5 KB) — mover a governance/
+  status: ACTIVE
+- id: DOC-PARIS_AUDITOR_CORRECTION_CERTI
+  type: governance
+  title: PARIS_AUDITOR_CORRECTION_CERTIFICATION
+  summary: ados por Periodo
+  status: CERTIFIED
+- id: DOC-PARIS_AUDITOR_DATA_SOURCE_TRAC
+  type: governance
+  title: PARIS_AUDITOR_DATA_SOURCE_TRACE
+  summary: '# PARIS — Auditor Data Source Trace'
+  status: ACTIVE
+- id: DEC-021
+  type: governance
+  title: PARIS Business Model V2 — Final Certification
+  summary: '# PARIS Business Model V2 — Final Certification'
+  status: CERTIFIED
+- id: DOC-PARIS_COMMISSION_EXISTENCE_CER
+  type: governance
+  title: PARIS_COMMISSION_EXISTENCE_CERTIFICATION
+  summary: '# PARIS COMMISSION EXISTENCE CERTIFICATION'
+  status: ACTIVE
+- id: PARIS_DEDUP_GUARD_RFC
+  type: governance
+  title: PARIS_DEDUP_GUARD_RFC
+  summary: '**Status:** Design only — NO IMPLEMENTAR'
+  status: ACTIVE
+- id: PARIS_DELTA_DECOMPOSITION
+  type: governance
+  title: PARIS_DELTA_DECOMPOSITION
+  summary: '# PARIS June 2026 — Delta Decomposition (Exact $418,696)'
+  status: ACTIVE
+- id: PARIS_DOCUMENTARY_TRUTH
+  type: governance
+  title: PARIS_DOCUMENTARY_TRUTH
+  summary: '**Certification ID:** PARIS-ECON-FASE4'
+  status: ACTIVE
+- id: DOC-PARIS_DUPLICATE_FINAL_CERTIFIC
+  type: governance
+  title: PARIS_DUPLICATE_FINAL_CERTIFICATION
+  summary: ado Neto** | **$337,418,552** | **$316,179,594** | **-$21,238,958 (-6.3%)**
+    |
+  status: ACTIVE
+- id: PARIS_DUPLICATE_FINANCIAL_SIMU
+  type: governance
+  title: PARIS_DUPLICATE_FINANCIAL_SIMULATION
+  summary: ado Neto** | **$337,418,552** | **$316,179,594** | **-$21,238,958** |
+  status: ACTIVE
+- id: PARIS_DUPLICATE_INVARIANTS
+  type: governance
+  title: PARIS_DUPLICATE_INVARIANTS
+  summary: ado financiero?
+  status: ACTIVE
+- id: PARIS_DUPLICATE_REMOVAL_CANDID
+  type: governance
+  title: PARIS_DUPLICATE_REMOVAL_CANDIDATES
+  summary: '# PARIS DUPLICATE REMOVAL CANDIDATES'
+  status: ACTIVE
+- id: DOC-PARIS_DUPLICATE_ROOT_CAUSE_CER
+  type: governance
+  title: PARIS_DUPLICATE_ROOT_CAUSE_CERTIFICATION
+  summary: '# PARIS DUPLICATE ROOT CAUSE CERTIFICATION'
+  status: ACTIVE
+- id: DOC-PARIS_DUPLICATES_FORENSIC_REPO
+  type: governance
+  title: PARIS_DUPLICATES_FORENSIC_REPORT
+  summary: '# PARIS DUPLICATES FORENSIC REPORT'
+  status: ACTIVE
+- id: DOC-PARIS_ECONOMIC_FLOW_CERTIFICAT
+  type: governance
+  title: PARIS_ECONOMIC_FLOW_CERTIFICATION
+  summary: '# PARIS — Economic Flow Certification'
+  status: ACTIVE
+- id: PARIS_ECONOMIC_MODEL_COMPARISO
+  type: governance
+  title: PARIS_ECONOMIC_MODEL_COMPARISON
+  summary: ADO NETO         $337,418,552
+  status: ACTIVE
+- id: DOC-PARIS_ECONOMIC_MODEL_FINAL_CER
+  type: governance
+  title: PARIS_ECONOMIC_MODEL_FINAL_CERTIFICATION
+  summary: '# PARIS ECONOMIC MODEL FINAL CERTIFICATION'
+  status: CERTIFIED
+- id: PARIS_END_TO_END_TRUTH_TRACEAB
+  type: governance
+  title: PARIS_END_TO_END_TRUTH_TRACEABILITY
+  summary: '# PARIS END-TO-END TRACEABILITY'
+  status: ACTIVE
+- id: PARIS_FIELD_MAPPING_V2
+  type: governance
+  title: PARIS_FIELD_MAPPING_V2
+  summary: ado_neto = ing + dev + cop + ccm + aju` |
+  status: ACTIVE
+- id: DOC-PARIS_FINAL_IMPLEMENTATION_CER
+  type: governance
+  title: PARIS_FINAL_IMPLEMENTATION_CERTIFICATION
+  summary: '**PARIS ECONOMIC MODEL FINAL FIX: PASS ✅**'
+  status: CERTIFIED
+- id: DOC-PARIS_FORENSIC_RECONCILIATION_
+  type: governance
+  title: PARIS_FORENSIC_RECONCILIATION_V2_CERTIFICATION
+  summary: es del reporte anterior (V1) son inválidas?
+  status: CERTIFIED
+- id: PARIS_FORENSIC_TRUTH
+  type: governance
+  title: PARIS_FORENSIC_TRUTH
+  summary: '**Certification ID:** PARIS-FORENSIC-FASE7'
+  status: ACTIVE
+- id: DOC-PARIS_FORENSIC_TRUTH_CERTIFICA
+  type: governance
+  title: PARIS_FORENSIC_TRUTH_CERTIFICATION
+  summary: '# PARIS FORENSIC TRUTH FINAL CERTIFICATION'
+  status: CERTIFIED
+- id: DOC-PARIS_IMPLEMENTATION_CERTIFICA
+  type: governance
+  title: PARIS_IMPLEMENTATION_CERTIFICATION
+  summary: ado_neto` de cierre = **$337,418,552** |
+  status: ACTIVE
+- id: PARIS_INVENTORY_OWNERSHIP
+  type: governance
+  title: PARIS_INVENTORY_OWNERSHIP
+  summary: '# PARIS — Inventory Ownership Certification'
+  status: ACTIVE
+- id: DOC-PARIS_JUNE2026_COMPLETENESS_CE
+  type: governance
+  title: PARIS_JUNE2026_COMPLETENESS_CERTIFICATION
+  summary: '# PARIS June 2026 — Completeness Certification'
+  status: ACTIVE
+- id: PARIS_JUNE2026_FILE_INVENTORY
+  type: governance
+  title: PARIS_JUNE2026_FILE_INVENTORY
+  summary: '# PARIS June 2026 — File Inventory'
+  status: ACTIVE
+- id: PARIS_JUNE2026_IMPACT_SIMULATI
+  type: governance
+  title: PARIS_JUNE2026_IMPACT_SIMULATION
+  summary: ado Neto** | **$17,658,146** |
+  status: ACTIVE
+- id: DOC-PARIS_JUNE2026_LEDGER_DATE_CER
+  type: governance
+  title: PARIS_JUNE2026_LEDGER_DATE_CERTIFICATION
+  summary: '# PARIS June 2026 — Ledger Date Certification'
+  status: ACTIVE
+- id: PARIS_JUNE2026_LEDGER_UNIVERSE
+  type: governance
+  title: PARIS_JUNE2026_LEDGER_UNIVERSE
+  summary: '# PARIS June 2026 — Ledger Economic Universe'
+  status: ACTIVE
+- id: PARIS_JUNE2026_MISSING_TRANSAC
+  type: governance
+  title: PARIS_JUNE2026_MISSING_TRANSACTIONS
+  summary: '# PARIS June 2026 — Missing Transactions Trace'
+  status: ACTIVE
+- id: PARIS_JUNE2026_RAW_ECONOMIC_UN
+  type: governance
+  title: PARIS_JUNE2026_RAW_ECONOMIC_UNIVERSE
+  summary: '# PARIS June 2026 — RAW Economic Universe'
+  status: ACTIVE
+- id: PARIS_JUNE2026_RECONCILIATION
+  type: governance
+  title: PARIS_JUNE2026_RECONCILIATION
+  summary: '# PARIS June 2026 — RAW vs Ledger Reconciliation'
+  status: ACTIVE
+- id: DOC-PARIS_LEDGER_CONTAMINATION_REP
+  type: governance
+  title: PARIS_LEDGER_CONTAMINATION_REPORT
+  summary: NOT contamination** — likely a file rename issue. The data exists somewhere.
+  status: ACTIVE
+- id: PARIS_LEDGER_FIELD_TRUTH
+  type: governance
+  title: PARIS_LEDGER_FIELD_TRUTH
+  summary: '### Ledger `monto` = `MONTO_A_PAGAR` (net liquidado)'
+  status: ACTIVE
+- id: DOC-PARIS_LOADER_TRACEABILITY_CERT
+  type: governance
+  title: PARIS_LOADER_TRACEABILITY_CERTIFICATION
+  summary: '# PARIS — Loader Traceability Certification'
+  status: ACTIVE
+- id: PARIS_NET_RECONCILIATION
+  type: governance
+  title: PARIS_NET_RECONCILIATION
+  summary: '# PARIS June 2026 — Net Reconciliation (monto_a_pagar vs ledger.monto)'
+  status: ACTIVE
+- id: DOC-PARIS_PHYSICAL_DUPLICATES_CERT
+  type: governance
+  title: PARIS_PHYSICAL_DUPLICATES_CERTIFICATION
+  summary: '### ¿Existen duplicados fÃ­sicos dentro del mismo archivo?'
+  status: ACTIVE
+- id: PARIS_PHYSICAL_SOURCE_INVENTOR
+  type: governance
+  title: PARIS_PHYSICAL_SOURCE_INVENTORY
+  summary: '# PARIS PHYSICAL SOURCE INVENTORY'
+  status: ACTIVE
+- id: PARIS_RAW_ECONOMIC_UNIVERSE
+  type: governance
+  title: PARIS_RAW_ECONOMIC_UNIVERSE
+  summary: ado Neto** | **$338,658,414** |
+  status: ACTIVE
+- id: PARIS_RAW_LEDGER_RECONCILIATIO
+  type: governance
+  title: PARIS_RAW_LEDGER_RECONCILIATION
+  summary: '# PARIS RAW vs LEDGER RECONCILIATION'
+  status: ACTIVE
+- id: PARIS_RETIRO_ROOT_CAUSE
+  type: governance
+  title: PARIS_RETIRO_ROOT_CAUSE
+  summary: '# E2.0 — PARIS Retiro Stock: Root Cause Analysis'
+  status: ACTIVE
+- id: PARIS_RFC_DECISION
+  type: governance
+  title: PARIS_RFC_DECISION
+  summary: ado neto (RN sería el mismo)
+  status: ACTIVE
+- id: PARIS_SELLER_OF_RECORD
+  type: governance
+  title: PARIS_SELLER_OF_RECORD
+  summary: '# PARIS — Seller of Record Certification'
+  status: ACTIVE
+- id: PARIS_SOURCE_OVERLAP_MATRIX
+  type: governance
+  title: PARIS_SOURCE_OVERLAP_MATRIX
+  summary: YES** — The same order appears in both DS monthly files AND the FF annual
+    file. The FF annual file is a comprehensive superset that includes all Dropshipping
+    data.
+  status: ACTIVE
+- id: PARIS_STOCK_AGING_ROOT_CAUSE
+  type: governance
+  title: PARIS_STOCK_AGING_ROOT_CAUSE
+  summary: '# E2.0 — PARIS Stock Aging: Root Cause Analysis'
+  status: ACTIVE
+- id: DOC-PARIS_TAX_CERTIFICATION
+  type: governance
+  title: PARIS_TAX_CERTIFICATION
+  summary: '# PARIS — Tax Certification (DTE Analysis)'
+  status: ACTIVE
+- id: PARIS_TRUE_MISSING_ORDERS
+  type: governance
+  title: PARIS_TRUE_MISSING_ORDERS
+  summary: '# PARIS June 2026 — True Missing Orders'
+  status: ACTIVE
+- id: DOC-PARIS_XML_ACTIVATION_REPORT
+  type: governance
+  title: PARIS_XML_ACTIVATION_REPORT
+  summary: '**Sprint:** A2 | **Status:** ACTIVATED | **Date:** 2026-05-30'
+  status: ACTIVE
+- id: DOC-PARIS_XML_RECERTIFICATION_REPO
+  type: governance
+  title: PARIS_XML_RECERTIFICATION_REPORT
+  summary: '"100 RIPLEY XMLs are copies of PARIS" is COMPLETELY INVALIDATED.**'
+  status: ACTIVE
+- id: DOC-PAYABLE_EXPLAINABILITY_CERTIFI
+  type: governance
+  title: PAYABLE_EXPLAINABILITY_CERTIFICATION
+  summary: ado = $9,261,744** |
+  status: CERTIFIED
+- id: DOC-PHASE_12B_ACCEPTANCE_CERTIFICA
+  type: governance
+  title: PHASE_12B_ACCEPTANCE_CERTIFICATION
+  summary: ado Neto (certified via cierre)
+  status: CERTIFIED
+- id: DOC-PHASE_12B_FRONTEND_ALIGNMENT_R
+  type: governance
+  title: PHASE_12B_FRONTEND_ALIGNMENT_REPORT
+  summary: s:** 234/234 PASS (0 regressions)
+  status: CERTIFIED
+- id: DOC-PHASE_12C_ACCEPTANCE_CERTIFICA
+  type: governance
+  title: PHASE_12C_ACCEPTANCE_CERTIFICATION
+  summary: from ledger (P12C-02)
+  status: CERTIFIED
+- id: PHASE_12C_FINANCIAL_STRUCTURE_
+  type: governance
+  title: PHASE_12C_FINANCIAL_STRUCTURE_RESTORATION
+  summary: s:** 234/234 PASS (0 regressions)
+  status: CERTIFIED
+- id: PHASE_12C_RECONCILIATION_EVIDE
+  type: governance
+  title: PHASE_12C_RECONCILIATION_EVIDENCE
+  summary: '# Phase 12C — Reconciliation Evidence'
+  status: ACTIVE
+- id: DOC-PHASE_12D_ACCEPTANCE_CERTIFICA
+  type: governance
+  title: PHASE_12D_ACCEPTANCE_CERTIFICATION
+  summary: ado Neto reconciliado | PASS ($0 delta) |
+  status: CERTIFIED
+- id: PHASE_12D_CATEGORY_CLASSIFICAT
+  type: governance
+  title: PHASE_12D_CATEGORY_CLASSIFICATION
+  summary: '# Phase 12D — Universal Category Classification Certificate (FIX-12/16/17)'
+  status: CERTIFIED
+- id: DOC-PHASE_12D_NAVIGATION_CERTIFICA
+  type: governance
+  title: PHASE_12D_NAVIGATION_CERTIFICATION
+  summary: '# Phase 12D — Single Financial Navigation Certificate (FIX-14/15)'
+  status: CERTIFIED
+- id: DOC-PHASE_12D_PARIS_CLASSIFICATION
+  type: governance
+  title: PHASE_12D_PARIS_CLASSIFICATION_AUDIT
+  summary: '# Phase 12D — PARIS Classification Audit (FIX-11)'
+  status: ACTIVE
+- id: DOC-PHASE_12E_FINANCIAL_STRUCTURE_
+  type: governance
+  title: PHASE_12E_FINANCIAL_STRUCTURE_CERTIFICATION
+  summary: ado neto reconciliado | PASS ($0) |
+  status: CERTIFIED
+- id: DOC-PHASE_12E_PARIS_RESTORE_REPORT
+  type: governance
+  title: PHASE_12E_PARIS_RESTORE_REPORT
+  summary: subtotal ≠ sum(details)
+  status: ACTIVE
+- id: DOC-PHASE_12E_RIPLEY_COMPLETION_RE
+  type: governance
+  title: PHASE_12E_RIPLEY_COMPLETION_REPORT
+  summary: ado Neto". Las categorías financieras no se renderizaban.
+  status: ACTIVE
+- id: PHASE_12E_UI_LEDGER_RECONCILIA
+  type: governance
+  title: PHASE_12E_UI_LEDGER_RECONCILIATION
+  summary: ado Neto
+  status: CERTIFIED
+- id: DOC-PHASE_12F_ACCEPTANCE_CERTIFICA
+  type: governance
+  title: PHASE_12F_ACCEPTANCE_CERTIFICATION
+  summary: '| Evidence |'
+  status: CERTIFIED
+- id: DOC-PHASE_12F_CATEGORY_ORDER_CERTI
+  type: governance
+  title: PHASE_12F_CATEGORY_ORDER_CERTIFICATION
+  summary: (all 5 views)
+  status: CERTIFIED
+- id: DOC-PHASE_12F_RIPLEY_LEDGER_FILTER
+  type: governance
+  title: PHASE_12F_RIPLEY_LEDGER_FILTER_AUDIT
+  summary: '# Phase 12F — RIPLEY Ledger Filter Audit'
+  status: CERTIFIED
+- id: DOC-PHASE_12F_UI_FILTER_BINDING_RE
+  type: governance
+  title: PHASE_12F_UI_FILTER_BINDING_REPORT
+  summary: '# Phase 12F — UI Filter Binding Report'
+  status: ACTIVE
+- id: DOC-PHASE_13_SINGLE_FINANCIAL_TRUT
+  type: governance
+  title: PHASE_13_SINGLE_FINANCIAL_TRUTH_CERTIFICATION
+  summary: '**DEC-029:** Both Executive and Auditor dashboards now consume the same
+    endpoint (`/api/v4/financial-structure?signal_mode=SIGNAL`) from the same data
+    source (`marketplace_ledger_v1`). RIPLEY canonica'
+  status: CERTIFIED
+- id: DOC-PHASE_14_FINANCIAL_TRUTH_CERTI
+  type: governance
+  title: PHASE_14_FINANCIAL_TRUTH_CERTIFICATION
+  summary: '# Phase 14 — Financial Truth Certification'
+  status: CERTIFIED
+- id: DOC-PHASE_14A_DTE_REACTIVATION_REP
+  type: governance
+  title: PHASE_14A_DTE_REACTIVATION_REPORT
+  summary: '# DTE Reactivation Report — Phase 14A'
+  status: ACTIVE
+- id: PHASE_14A_EXECUTIVE_DASHBOARD_
+  type: governance
+  title: PHASE_14A_EXECUTIVE_DASHBOARD_REPAIR
+  summary: '# Executive Dashboard Repair Report — Phase 14A'
+  status: ACTIVE
+- id: DOC-PHASE_14A_FINAL_CERTIFICATION
+  type: governance
+  title: PHASE_14A_FINAL_CERTIFICATION
+  summary: ado SQL | Direct DB query vs API response | Match ✅ |
+  status: CERTIFIED
+- id: DOC-PHASE_14A_ROOT_CAUSE_REPORT
+  type: governance
+  title: PHASE_14A_ROOT_CAUSE_REPORT
+  summary: '# Root Cause Report — Phase 14A'
+  status: ACTIVE
+- id: DOC-PHASE_14A_UI_LEDGER_RECONCILIA
+  type: governance
+  title: PHASE_14A_UI_LEDGER_RECONCILIATION_REPORT
+  summary: '# UI ↔ Ledger Reconciliation Report — Phase 14A'
+  status: CERTIFIED
+- id: DOC-PHASE_14B_FINAL_CERTIFICATION
+  type: governance
+  title: PHASE_14B_FINAL_CERTIFICATION
+  summary: s (AC_01-06)
+  status: CERTIFIED
+- id: PHASE_14B_RIPLEY_CATEGORY_RECO
+  type: governance
+  title: PHASE_14B_RIPLEY_CATEGORY_RECONCILIATION
+  summary: s — RIPLEY Ene 2026
+  status: ACTIVE
+- id: PHASE_14B_RIPLEY_FINANCIAL_STR
+  type: governance
+  title: PHASE_14B_RIPLEY_FINANCIAL_STRUCTURE_EVIDENCE
+  summary: '**FINANCIAL STRUCTURE EVIDENCE PASS** ✅ — All categories, subcategories,
+    and totals are internally consistent and traceable to `marketplace_ledger_v1`
+    with `signal_mode=SIGNAL`.'
+  status: ACTIVE
+- id: PHASE_14B_RIPLEY_LEDGER_EVIDEN
+  type: governance
+  title: PHASE_14B_RIPLEY_LEDGER_EVIDENCE
+  summary: '**LEDGER EVIDENCE PASS** ✅ — All click-through paths now maintain $0 delta
+    against Financial Structure in SIGNAL mode.'
+  status: ACTIVE
+- id: DOC-PHASE_14B_RIPLEY_TAXONOMY_MAPP
+  type: governance
+  title: PHASE_14B_RIPLEY_TAXONOMY_MAPPING_AUDIT
+  summary: '**: 32/32 mappings verified. **PASS** ✅'
+  status: ACTIVE
+- id: DOC-PHASE_15A_CASH_RECONCILIATION_
+  type: governance
+  title: PHASE_15A_CASH_RECONCILIATION_CERTIFICATION
+  summary: ado_neto` where the cierre has been re-run post-DEC-019.
+  status: ACTIVE
+- id: DOC-PHASE_15A_DTE_CERTIFICATION
+  type: governance
+  title: PHASE_15A_DTE_CERTIFICATION
+  summary: '**DTE CERTIFICATION: PARTIAL** ⚠️'
+  status: CERTIFIED
+- id: DOC-PHASE_15A_END_TO_END_FINANCIAL
+  type: governance
+  title: PHASE_15A_END_TO_END_FINANCIAL_TRUTH_CERTIFICATION
+  summary: '**: RIPLEY gross revenue went from $0 → $467.6M'
+  status: CERTIFIED
+- id: DOC-PHASE_15A_EXECUTIVE_REPORT_CER
+  type: governance
+  title: PHASE_15A_EXECUTIVE_REPORT_CERTIFICATION
+  summary: '**EXECUTIVE REPORT CERTIFICATION: PASS** ✅ — The Executive Dashboard is
+    fully operational. All 5 marketplaces render correct data from certified backend
+    endpoints. $0 delta between Executive and Audit'
+  status: CERTIFIED
+- id: DOC-PHASE_15A_GLOBAL_MARKETPLACE_C
+  type: governance
+  title: PHASE_15A_GLOBAL_MARKETPLACE_CERTIFICATION
+  summary: '**GLOBAL MARKETPLACE CERTIFICATION: PASS** ✅ — All 4 marketplaces are
+    fully operational through the same certified backend endpoints. Financial group
+    case sensitivity has been resolved for all MPs. SI'
+  status: CERTIFIED
+- id: PHASE_15A_LEDGER_SOURCE_RECONC
+  type: governance
+  title: PHASE_15A_LEDGER_SOURCE_RECONCILIATION
+  summary: '**LEDGER SOURCE RECONCILIATION: PASS** ✅ — RIPLEY ledger data is fully
+    reconciled against the SIGNAL taxonomy. All financial data is traceable to canonical
+    sources.'
+  status: ACTIVE
+- id: DOC-PHASE_15B_AUTOMATED_CERTIFICAT
+  type: governance
+  title: PHASE_15B_AUTOMATED_CERTIFICATION_GATE
+  summary: '# Phase 15B — Automated Certification Gate'
+  status: CERTIFIED
+- id: DOC-PHASE_15B_DTE_RECOVERY_CERTIFI
+  type: governance
+  title: PHASE_15B_DTE_RECOVERY_CERTIFICATION
+  summary: '**: 0 matches for PARIS, 0 matches for FALABELLA'
+  status: CERTIFIED
+- id: DOC-PHASE_15B_FINAL_AUDIT_READINES
+  type: governance
+  title: PHASE_15B_FINAL_AUDIT_READINESS_CERTIFICATION
+  summary: '# Phase 15B — Final Audit Readiness Certification'
+  status: CERTIFIED
+- id: DOC-PHASE_15B_SIGNAL_TAXONOMY_CERT
+  type: governance
+  title: PHASE_15B_SIGNAL_TAXONOMY_CERTIFICATION
+  summary: s, $0 monetary delta, operational P&L equivalence for all 4 MPs.
+  status: CERTIFIED
+- id: PHASE_15B_SINGLE_FINANCIAL_TRU
+  type: governance
+  title: PHASE_15B_SINGLE_FINANCIAL_TRUTH_BASELINE
+  summary: '# Phase 15B — Single Financial Truth Baseline'
+  status: CERTIFIED
+- id: DOC-PHASE_16F_FINAL_CERTIFICATION
+  type: governance
+  title: PHASE_16F_FINAL_CERTIFICATION
+  summary: '| Evidence |'
+  status: CERTIFIED
+- id: DOC-PLATFORM_CERTIFICATION_V1
+  type: governance
+  title: PLATFORM_CERTIFICATION_V1
+  summary: '**Marketplace Financial AI Engine is certified as a Financial Intelligence
+    Platform.**'
+  status: CERTIFIED
+- id: DOC-PLATFORM_READINESS_CERTIFICATI
+  type: governance
+  title: PLATFORM_READINESS_CERTIFICATION
+  summary: '# Phase 12B — Platform Readiness Certification'
+  status: CERTIFIED
+- id: DOC-POSCOBRO_CASH_IMPACT_CERTIFICA
+  type: governance
+  title: POSCOBRO_CASH_IMPACT_CERTIFICATION
+  summary: '# POSCOBRO — Cash Impact Certification'
+  status: ACTIVE
+- id: POSCOBRO_DELETION_DECISION
+  type: governance
+  title: POSCOBRO_DELETION_DECISION
+  summary: '**Estado: COMPLETED** — 2026-06-06'
+  status: ACTIVE
+- id: POSCOBRO_FLOW_FINANCIAL_TRUTH
+  type: governance
+  title: POSCOBRO_FLOW_FINANCIAL_TRUTH
+  summary: '# POSCOBRO_FLOW_FINANCIAL_TRUTH'
+  status: ACTIVE
+- id: POSCOBRO_FLOW_RN_ATTRIBUTION
+  type: governance
+  title: POSCOBRO_FLOW_RN_ATTRIBUTION
+  summary: aron en ajuste real.
+  status: ACTIVE
+- id: DOC-POSCOBRO_LIQUIDACIONES_PRECEDE
+  type: governance
+  title: POSCOBRO_LIQUIDACIONES_PRECEDENCE_CERTIFICATION
+  summary: '# POSCOBRO_LIQUIDACIONES_PRECEDENCE_CERTIFICATION'
+  status: ACTIVE
+- id: POSCOBRO_PAIRED_REMOVAL_EXECUT
+  type: governance
+  title: POSCOBRO_PAIRED_REMOVAL_EXECUTION_PLAN
+  summary: ado:**
+  status: ACTIVE
+- id: DOC-POSCOBRO_TEMPORAL_RECONCILIATI
+  type: governance
+  title: POSCOBRO_TEMPORAL_RECONCILIATION_CERTIFICATION
+  summary: ado Neto en **$ 76,554,159.00**.
+  status: ACTIVE
+- id: DOC-POSCOBRO_TO_CASH_LAG_CERTIFICA
+  type: governance
+  title: POSCOBRO_TO_CASH_LAG_CERTIFICATION
+  summary: '# POSCOBRO → Cash Lag — Certification'
+  status: ACTIVE
+- id: POST_DEC019_STABILIZATION
+  type: governance
+  title: POST_DEC019_STABILIZATION
+  summary: ado_neto` (ALL-rows, incluye paired PosCobro)
+  status: ACTIVE
+- id: DOC-POST_FIX_AJUSTES_RETENCIONES_V
+  type: governance
+  title: POST_FIX_AJUSTES_RETENCIONES_VISUAL_CERTIFICATION
+  summary: ado_neto` de ninguna fila de `marketplace_cierre_financiero_v1`.
+  status: ACTIVE
+- id: DOC-POST_FIX_AUDIT_CERTIFICATION
+  type: governance
+  title: POST_FIX_AUDIT_CERTIFICATION
+  summary: ados reflejan el nuevo cierre?
+  status: ACTIVE
+- id: DOC-POST_FIX_DASHBOARD_CERTIFICATI
+  type: governance
+  title: POST_FIX_DASHBOARD_CERTIFICATION
+  summary: '# POST-FIX DASHBOARD CERTIFICATION'
+  status: ACTIVE
+- id: POST_FIX_DATA_FRESHNESS
+  type: governance
+  title: POST_FIX_DATA_FRESHNESS
+  summary: '# POST-FIX DATA FRESHNESS CERTIFICATION'
+  status: ACTIVE
+- id: POST_FIX_SINGLE_FINANCIAL_TRUT
+  type: governance
+  title: POST_FIX_SINGLE_FINANCIAL_TRUTH
+  summary: 'ado: Clasificado (sin mecanismos) $712,045,128 = Cierre Neto $712,045,128'
+  status: ACTIVE
+- id: DOC-POST_INCIDENT_STABILIZATION_RE
+  type: governance
+  title: POST_INCIDENT_STABILIZATION_REPORT
+  summary: ados clave
+  status: ACTIVE
+- id: DOC-POST_RIPLEY_RECERTIFICATION
+  type: governance
+  title: POST_RIPLEY_RECERTIFICATION
+  summary: ES ANTERIORES INVALIDADAS
+  status: ACTIVE
+- id: PRODUCTION_DECISION
+  type: governance
+  title: PRODUCTION_DECISION
+  summary: 1. **¿Qué debe corregirse?** — Agregar `AND include_in_operational_pnl
+    = TRUE` a la query SQL de `run_financial_closing()` en `marketplace_auditor.py:519-528`.
+    Esto excluye los mecanismos apareados (B
+  status: ACTIVE
+- id: PRODUCTION_GO_NOGO
+  type: governance
+  title: PRODUCTION_GO_NOGO
+  summary: ado Final
+  status: CERTIFIED
+- id: PRODUCTION_IMPACT_SIMULATION
+  type: governance
+  title: PRODUCTION_IMPACT_SIMULATION
+  summary: '| Escenario | Impacto |'
+  status: ACTIVE
+- id: PROJECT_CONFIDENCE_MATRIX
+  type: governance
+  title: PROJECT_CONFIDENCE_MATRIX
+  summary: '** Execute immediately. Highest confidence in portfolio.'
+  status: CERTIFIED
+- id: PYTHON_EXPERT_CODE_REVIEW
+  type: governance
+  title: PYTHON_EXPERT_CODE_REVIEW
+  summary: '** For a fixed input state, `run_classification()` always produces exactly
+    the same output.'
+  status: ACTIVE
+- id: RCA_ENCODING_BUG
+  type: governance
+  title: RCA_ENCODING_BUG
+  summary: '| Aspect | Finding |'
+  status: ACTIVE
+- id: REALISTIC_VALUE_CREATION_ROADM
+  type: governance
+  title: REALISTIC_VALUE_CREATION_ROADMAP
+  summary: '# G5.7A — Realistic Value Creation Roadmap'
+  status: CERTIFIED
+- id: REGRESSION_GUARD
+  type: governance
+  title: REGRESSION_GUARD
+  summary: ados de las consultas en la base de datos subyacente.
+  status: ACTIVE
+- id: DOC-REVENUE_ENGINE_CERTIFICATION
+  type: governance
+  title: REVENUE_ENGINE_CERTIFICATION
+  summary: s certified.
+  status: CERTIFIED
+- id: REVENUE_ENGINE_DECOMPOSITION
+  type: governance
+  title: REVENUE_ENGINE_DECOMPOSITION
+  summary: '# G5.6 — Revenue Engine Decomposition'
+  status: CERTIFIED
+- id: REVENUE_ENGINE_STRESS_TEST
+  type: governance
+  title: REVENUE_ENGINE_STRESS_TEST
+  summary: '# G5.6 — Revenue Engine Stress Test'
+  status: CERTIFIED
+- id: RFC_001_RIPLEY_ONBOARDING
+  type: governance
+  title: RFC-001-RIPLEY-ONBOARDING
+  summary: '**Estado:** DRAFT / PENDIENTE DE EVIDENCIA'
+  status: ACTIVE
+- id: RFC_001_RIPLEY_TEMPORAL_RECONS
+  type: governance
+  title: RFC-001_RIPLEY_TEMPORAL_RECONSTRUCTION_PLAN
+  summary: ado debe ser idéntico
+  status: ACTIVE
+- id: RFC_PARIS_XML_TRACEABILITY
+  type: governance
+  title: RFC-PARIS-XML-TRACEABILITY
+  summary: 'Estado: PROPUESTA (NO IMPLEMENTADA)'
+  status: ACTIVE
+- id: RFC_CASH_CERTIFICATION_BPP_POSCOBRO
+  type: governance
+  title: RFC_CASH_CERTIFICATION_BPP_POSCOBRO
+  summary: ado Neto, does real cash disappear?**
+  status: FAIL
+- id: RFC_EVENT_MODEL_CERTIFICATION
+  type: governance
+  title: RFC_EVENT_MODEL_CERTIFICATION.md — Deterministic Event Model
+  summary: PASS — RULE IS DETERMINISTIC AND CERTIFIABLE
+  status: CERTIFIED
+- id: RFC_EVENT_RULE_LOCATION
+  type: governance
+  title: RFC_EVENT_RULE_LOCATION.md — Dónde debe vivir la regla ROOT_EVENT vs MECHANISM
+  summary: ado Neto
+  status: CERTIFIED
+- id: RFC_FINANCIAL_STRUCTURE_REDESIGN
+  type: governance
+  title: RFC_FINANCIAL_STRUCTURE_REDESIGN
+  summary: ado Neto | $67,247,555 | $64,315,098 | **$2,932,457 (4.36%)** |
+  status: FAIL
+- id: RFC_FINANCIAL_TRUTH_CONSOLIDAT
+  type: governance
+  title: RFC_FINANCIAL_TRUTH_CONSOLIDATION
+  summary: ado_neto` |
+  status: ACTIVE
+- id: RFC_PARIS_IMPLEMENTATION_V2
+  type: governance
+  title: RFC_PARIS_IMPLEMENTATION_V2
+  summary: ado Neto | RN = MONTO_A_PAGAR - costos. MONTO_A_PAGAR no cambia → RN invariante
+    |
+  status: ACTIVE
+- id: RFC_POSCOBRO_CAUSALITY_FINAL
+  type: governance
+  title: RFC_POSCOBRO_CAUSALITY_FINAL
+  summary: ADO FINAL
+  status: FAIL
+- id: DOC-RIPLEY_CLASSIFICATION_DRY_RUN_
+  type: governance
+  title: RIPLEY_CLASSIFICATION_DRY_RUN_CERTIFICATION
+  summary: '**DRY RUN PASSES all 4 acceptance criteria.** The classification logic
+    produces 100% coverage with 0 unmapped rows and $0 unmapped amount. All financial_group
+    values are correctly assigned. Expected D'
+  status: CERTIFIED
+- id: DOC-RIPLEY_CLASSIFICATION_EXECUTIO
+  type: governance
+  title: RIPLEY_CLASSIFICATION_EXECUTION_REPORT
+  summary: '| Neto = $0 (all rows `sin_clasificar`) |'
+  status: ACTIVE
+- id: DOC-RIPLEY_COMMISSION_DUPLICATION_
+  type: governance
+  title: RIPLEY_COMMISSION_DUPLICATION_AUDIT
+  summary: 0 shared transaction_ids.**
+  status: ACTIVE
+- id: DOC-RIPLEY_COVERAGE_CERTIFICATION
+  type: governance
+  title: RIPLEY_COVERAGE_CERTIFICATION
+  summary: '# SPRINT A6 — RIPLEY COVERAGE CERTIFICATION'
+  status: ACTIVE
+- id: RIPLEY_DASHBOARD_RECONCILIATIO
+  type: governance
+  title: RIPLEY_DASHBOARD_RECONCILIATION
+  summary: = $1,033,723** |
+  status: ACTIVE
+- id: DOC-RIPLEY_DASHBOARD_RECOVERY_CERT
+  type: governance
+  title: RIPLEY_DASHBOARD_RECOVERY_CERTIFICATION
+  summary: '# RIPLEY Dashboard Recovery Certification — Sprint B2.5C'
+  status: ACTIVE
+- id: DOC-RIPLEY_DATE_PARSING_CERTIFICAT
+  type: governance
+  title: RIPLEY_DATE_PARSING_CERTIFICATION
+  summary: ado por coincidencia — **20% del volumen**
+  status: ACTIVE
+- id: RIPLEY_DATE_PARSING_IMPACT_ASS
+  type: governance
+  title: RIPLEY_DATE_PARSING_IMPACT_ASSESSMENT
+  summary: '# P0 INCIDENT — RIPLEY DATE PARSING IMPACT ASSESSMENT (FASE 1-7)'
+  status: ACTIVE
+- id: RIPLEY_DTE_BRIDGE_FORENSICS
+  type: governance
+  title: RIPLEY_DTE_BRIDGE_FORENSICS
+  summary: '# RIPLEY DTE Bridge Forensics — Certification Report'
+  status: CERTIFIED
+- id: RIPLEY_FINANCIAL_TAXONOMY_V1
+  type: governance
+  title: RIPLEY_FINANCIAL_TAXONOMY_V1
+  summary: Official financial taxonomy for RIPLEY marketplace. Classifies all 32 `detalle`
+    values in `marketplace_ledger_v1` as SIGNAL (canonical P&L) or NOISE (duplicate/derived/treasury).
+  status: CERTIFIED
+- id: DOC-RIPLEY_FINANCIAL_TRUTH_CERTIFI
+  type: governance
+  title: RIPLEY_FINANCIAL_TRUTH_CERTIFICATION
+  summary: ado Neto, contrastando las tres fuentes disponibles (CSV Finanzas, XLSX
+    Resumen Financiero, Ledger), y determinar la fuente canónica para cada KPI.
+  status: ACTIVE
+- id: DOC-RIPLEY_FINANCIAL_XLSX_CERTIFIC
+  type: governance
+  title: RIPLEY_FINANCIAL_XLSX_CERTIFICATION
+  summary: ado | Clasificación |
+  status: ACTIVE
+- id: DOC-RIPLEY_GROSS_REVENUE_CERTIFICA
+  type: governance
+  title: RIPLEY_GROSS_REVENUE_CERTIFICATION
+  summary: 'ando en:'
+  status: ACTIVE
+- id: DOC-RIPLEY_KPI_PIPELINE_CERTIFICAT
+  type: governance
+  title: RIPLEY_KPI_PIPELINE_CERTIFICATION
+  summary: ado Neto RIPLEY = $0 cuando existen transacciones en `marketplace_ledger_v1`.
+  status: ACTIVE
+- id: RIPLEY_LEGAL_ALERT_FINAL_RCA
+  type: governance
+  title: RIPLEY_LEGAL_ALERT_FINAL_RCA
+  summary: 51,436 `cargo_sin_respaldo_legal` alerts for RIPLEY — majority false positives
+    flooding the auditor.
+  status: CERTIFIED
+- id: DOC-RIPLEY_MONTHLY_COMPLETENESS_CE
+  type: governance
+  title: RIPLEY_MONTHLY_COMPLETENESS_CERTIFICATION
+  summary: 'ado**: 17/17 meses con delta $0 exacto. 100% match financiero.'
+  status: ACTIVE
+- id: DOC-RIPLEY_PAYABLE_RECONCILIATION_
+  type: governance
+  title: RIPLEY_PAYABLE_RECONCILIATION_CERTIFICATION
+  summary: . The current configuration (`financial_group = NULL`, `include_in_operational_pnl
+    = False`) is **CORRECT**.
+  status: CERTIFIED
+- id: DOC-RIPLEY_PAYABLE_SEMANTICS_CERTI
+  type: governance
+  title: RIPLEY_PAYABLE_SEMANTICS_CERTIFICATION
+  summary: '**: "A pagar" diverges from net P&L in refund cases. It represents gross
+    settlement, not net P&L.'
+  status: ACTIVE
+- id: RIPLEY_PENALTY_FEASIBILITY
+  type: governance
+  title: RIPLEY_PENALTY_FEASIBILITY
+  summary: This is a processing fee for shipping refunds, not a seller penalty
+  status: ACTIVE
+- id: DOC-RIPLEY_POST_CLASSIFICATION_CER
+  type: governance
+  title: RIPLEY_POST_CLASSIFICATION_CERTIFICATION
+  summary: '# RIPLEY Post-Classification Certification — Sprint B2.5C'
+  status: CERTIFIED
+- id: RIPLEY_RECONSTRUCTION_PROOF
+  type: governance
+  title: RIPLEY_RECONSTRUCTION_PROOF
+  summary: ados del loader buggy
+  status: CERTIFIED
+- id: DOC-RIPLEY_REPRODUCIBILITY_CERTIFI
+  type: governance
+  title: RIPLEY_REPRODUCIBILITY_CERTIFICATION
+  summary: '** NO — RIPLEY cannot be rebuilt from RAW.'
+  status: ACTIVE
+- id: RIPLEY_ROOT_CAUSE_ANALYSIS
+  type: governance
+  title: RIPLEY_ROOT_CAUSE_ANALYSIS
+  summary: '**Status:** ✅ COMPLETE — NO FIXES PROPOSED'
+  status: ACTIVE
+- id: RIPLEY_SIGNAL_NOISE_CLASSIFICA
+  type: governance
+  title: RIPLEY_SIGNAL_NOISE_CLASSIFICATION
+  summary: '# RIPLEY Signal/Noise Classification'
+  status: CERTIFIED
+- id: DOC-RIPLEY_SOURCE_RECOVERY_REPORT
+  type: governance
+  title: RIPLEY_SOURCE_RECOVERY_REPORT
+  summary: 'ado: NO ENCONTRADO'
+  status: ACTIVE
+- id: DOC-RIPLEY_VALUE_CONSERVATION_CERT
+  type: governance
+  title: RIPLEY_VALUE_CONSERVATION_CERTIFICATION
+  summary: '# P0 INCIDENT — RIPLEY VALUE CONSERVATION CERTIFICATION'
+  status: ACTIVE
+- id: RIPLEY_XML_COVERAGE_DISCOVERY
+  type: governance
+  title: RIPLEY_XML_COVERAGE_DISCOVERY
+  summary: '# RIPLEY XML Coverage Discovery Report — Sprint B2.5C'
+  status: CERTIFIED
+- id: DOC-RIPLEY_XML_SEMANTIC_AUDIT
+  type: governance
+  title: RIPLEY_XML_SEMANTIC_AUDIT
+  summary: ados parciales de matching
+  status: ACTIVE
+- id: RN_MONTHLY_IMPACT
+  type: governance
+  title: RN_MONTHLY_IMPACT
+  summary: '| Certification | Result |'
+  status: CERTIFIED
+- id: DOC-RN_OPERATIONAL_CERTIFICATION
+  type: governance
+  title: RN_OPERATIONAL_CERTIFICATION
+  summary: ado_neto` desde `marketplace_cierre_financiero_v1` sin filtro `include_in_operational_pnl`,
+    resultando en RN visible ≠ RN operacional. El cierre incluye rows paired PosCobro
+    (DEC-019, op_pnl=0), infla
+  status: CERTIFIED
+- id: RN_REMEDIATION_PLAN
+  type: governance
+  title: RN_REMEDIATION_PLAN
+  summary: '**Scope:** ML only (0% mechanism impact in PARIS, RIPLEY, FALABELLA)'
+  status: CERTIFIED
+- id: DOC-RN_SOURCE_AUDIT_BUTTON_CERTIFI
+  type: governance
+  title: RN_SOURCE_AUDIT_BUTTON_CERTIFICATION
+  summary: ado Neto en el dashboard + certificar consistencia P&L + verificar signo
+    de ajustes + ejecutar "Ejecutar Auditoría" controladamente.
+  status: ACTIVE
+- id: RN_TRACEABILITY
+  type: governance
+  title: RN_TRACEABILITY
+  summary: ado_neto, total_ingresos, total_costos_*, total_ajustes
+  status: CERTIFIED
+- id: ROOT_CAUSE_DATA_REQUIREMENTS
+  type: governance
+  title: ROOT_CAUSE_DATA_REQUIREMENTS
+  summary: '# E3.0 — Root Cause Data Requirements'
+  status: CERTIFIED
+- id: DOC-ROOT_CAUSE_INTELLIGENCE_CERTIF
+  type: governance
+  title: ROOT_CAUSE_INTELLIGENCE_CERTIFICATION
+  summary: '# E2.0 — Root Cause Intelligence Certification'
+  status: CERTIFIED
+- id: DOC-ROOT_EVENT_REFUND_ORIGIN_CERTI
+  type: governance
+  title: ROOT_EVENT_REFUND_ORIGIN_CERTIFICATION
+  summary: ado económico seller" | **FALSO para ML.** ROOT_EVENT AUMENTA el RN de
+    ML. Disminuye el resultado del seller (vía liquidación), pero en el P&L de ML
+    es ingreso. |
+  status: ACTIVE
+- id: S2_RISK_ASSESSMENT
+  type: governance
+  title: S2_RISK_ASSESSMENT
+  summary: 'ado_neto`. Switching to v2 will:'
+  status: CERTIFIED
+- id: DOC-SALE_TO_BANK_TRUTH_CERTIFICATI
+  type: governance
+  title: SALE_TO_BANK_TRUTH_CERTIFICATION
+  summary: '1: ¿Cada Ledger row representa dinero real que cambia de manos?'
+  status: ACTIVE
+- id: DOC-SELLER_ECONOMIC_REALITY_CERTIF
+  type: governance
+  title: SELLER_ECONOMIC_REALITY_CERTIFICATION
+  summary: ado ML
+  status: CERTIFIED
+- id: SEMANTIC_TRACEABILITY_MATRIX
+  type: governance
+  title: SEMANTIC_TRACEABILITY_MATRIX
+  summary: )* | +$206.9M | RAW→Ledger→CIERRE |
+  status: ACTIVE
+- id: SHOPIFY_READINESS_V2
+  type: governance
+  title: SHOPIFY_READINESS_V2
+  summary: '# SHOPIFY_READINESS_V2.md — Shopify Onboarding Analysis'
+  status: ACTIVE
+- id: DOC-SINGLE_FINANCIAL_TRUTH_CERTIFI
+  type: governance
+  title: SINGLE_FINANCIAL_TRUTH_CERTIFICATION
+  summary: 'ado_neto` (structured formula: ingresos + costos + ajustes). Plus `marketplace_ledger_v1`
+    vs `marketplace_cierre_financiero_v1.total_ingresos` (gross match).'
+  status: CERTIFIED
+- id: SKILLS_REGISTRY
+  type: governance
+  title: SKILLS_REGISTRY
+  summary: Este documento registra las skills oficiales mínimas requeridas y validadas
+    para el funcionamiento y auditoría del Marketplace Financial AI Engine.
+  status: ACTIVE
+- id: SKILLS_REGISTRY_V1
+  type: governance
+  title: SKILLS_REGISTRY_V1
+  summary: ado Neto.
+  status: CERTIFIED
+- id: DOC-SPRINT_A1_COMPLETION_REPORT
+  type: governance
+  title: SPRINT_A1_COMPLETION_REPORT
+  summary: ADO DE REGRESIÓN
+  status: ACTIVE
+- id: SPRINT_B1_SECURITY_PERFORMANCE
+  type: governance
+  title: SPRINT_B1_SECURITY_PERFORMANCE_READINESS
+  summary: '# SPRINT B1 — SECURITY & PERFORMANCE READINESS'
+  status: ACTIVE
+- id: DEC-050
+  type: governance
+  title: TECHSPEC MASTER V1
+  summary: Esta es la especificación técnica y de arquitectura oficial del Marketplace
+    Financial AI Engine.
+  status: CERTIFIED
+- id: DOC-TRANSACTION_EXCLUSIVITY_AUDIT
+  type: governance
+  title: TRANSACTION_EXCLUSIVITY_AUDIT
+  summary: Every transaction in the RIPLEY canonical SIGNAL set belongs to exactly
+    one subcategory. The financial-structure's `LOWER(financial_group)` grouping correctly
+    aggregates these without any transaction-
+  status: CERTIFIED
+- id: DOC-TRUST_CERTIFICATION_V2
+  type: governance
+  title: TRUST_CERTIFICATION_V2
+  summary: '**Régimen**: READ ONLY — CERTIFICACIÓN GLOBAL'
+  status: ACTIVE
+- id: TRUST_METHODOLOGY_REVISION_V1
+  type: governance
+  title: TRUST_METHODOLOGY_REVISION_V1
+  summary: '# TRUST METHODOLOGY REVISION V1'
+  status: ACTIVE
+- id: TRUST_V3_INPUT_MATRIX
+  type: governance
+  title: TRUST_V3_INPUT_MATRIX
+  summary: '**Régimen**: GOVERNANCE — READ ONLY'
+  status: ACTIVE
+- id: TRUTH_CONSOLIDATION_APPROVAL
+  type: governance
+  title: TRUTH_CONSOLIDATION_APPROVAL
+  summary: ado_neto` | `total_ingresos + total_costos_operacionales + total_costos_comerciales
+    + total_ajustes` |
+  status: ACTIVE
+- id: UNIVERSAL_CHANNEL_ARCHITECTURE
+  type: governance
+  title: UNIVERSAL_CHANNEL_ARCHITECTURE
+  summary: '# Sprint U1.0 — Universal Channel Architecture'
+  status: ACTIVE
+- id: UX12_FINAL_VALIDATION
+  type: governance
+  title: UX12_FINAL_VALIDATION
+  summary: '| Detail |'
+  status: CERTIFIED
+- id: UX12_FINANCIAL_REDESIGN
+  type: governance
+  title: UX12_FINANCIAL_REDESIGN
+  summary: ado Neto preciso y comprensible.
+  status: ACTIVE
+- id: DOC-UX1_2_VALIDATION_CERTIFICATION
+  type: governance
+  title: UX1_2_VALIDATION_CERTIFICATION
+  summary: ado** | ✅ Respondido sin apoyo |
+  status: ACTIVE
+- id: VALUE_CAPTURE_BACKLOG
+  type: governance
+  title: VALUE_CAPTURE_BACKLOG
+  summary: '**Mode:** READ ONLY — implementation schedule'
+  status: CERTIFIED
+- id: VALUE_CREATION_ROADMAP
+  type: governance
+  title: VALUE_CREATION_ROADMAP
+  summary: '# G5.7 — Value Creation Roadmap'
+  status: CERTIFIED
+- id: DOC-XML_BUSINESS_SEMANTICS_CERTIFI
+  type: governance
+  title: XML_BUSINESS_SEMANTICS_CERTIFICATION
+  summary: '# PROGRAMA T1.1 — XML BUSINESS SEMANTICS CERTIFICATION'
+  status: ACTIVE
+- id: DOC-XML_TRACEABILITY_CERTIFICATION
+  type: governance
+  title: XML_TRACEABILITY_CERTIFICATION
+  summary: '# PROGRAMA T1 — XML TRACEABILITY CERTIFICATION'
+  status: ACTIVE
+- id: XML_TRACEABILITY_EXECUTION_PLA
+  type: governance
+  title: XML_TRACEABILITY_EXECUTION_PLAN
+  summary: '# PROGRAMA T2 — XML TRACEABILITY EXECUTION PLAN'
+  status: ACTIVE
+- id: TAXONOMY-FALABELLA
+  type: taxonomy
+  title: FALABELLA Signal/Noise Taxonomy
+  summary: 15 SIGNAL / 1 NOISE from falabella_v1.json
+  status: CERTIFIED
+- id: TAXONOMY-ML
+  type: taxonomy
+  title: ML Signal/Noise Taxonomy
+  summary: 35 SIGNAL / 47 NOISE from ml_v1.json
+  status: CERTIFIED
+- id: TAXONOMY-PARIS
+  type: taxonomy
+  title: PARIS Signal/Noise Taxonomy
+  summary: 16 SIGNAL / 1 NOISE from paris_v1.json
+  status: CERTIFIED
+- id: TAXONOMY-RIPLEY
+  type: taxonomy
+  title: RIPLEY Signal/Noise Taxonomy
+  summary: 16 SIGNAL / 16 NOISE from ripley_v1.json
+  status: CERTIFIED
+- id: P34_2_FINAL_VERDICT
+  type: governance
+  title: P34_2_FINAL_VERDICT
+  summary: '**Date:** 2026-07-09'
+  status: CERTIFIED
+- id: P34_2_KCE_ARCHITECTURE
+  type: governance
+  title: P34_2_KCE_ARCHITECTURE
+  summary: /VERDICTO sections
+  status: CERTIFIED
+- id: P34_2_KCE_VALIDATION
+  type: governance
+  title: P34_2_KCE_VALIDATION
+  summary: '# P34.2 — KCE Validation Report'
+  status: CERTIFIED
+- id: P36_EXTERNAL_INTELLIGENCE
+  type: governance
+  title: P36_EXTERNAL_INTELLIGENCE
+  summary: 's markdown format**: `results/YYYY-MM-DD-description.md`'
+  status: ACTIVE
+- id: P36_FINAL_VERDICT
+  type: governance
+  title: P36_FINAL_VERDICT
+  summary: '**Fecha:** 2026-07-09'
+  status: ACTIVE
+- id: P36_INTEGRATION_MATRIX
+  type: governance
+  title: P36_INTEGRATION_MATRIX
+  summary: .md` para 10 questions finales.
+  status: ACTIVE
+- id: DOC-P36_1_FINAL_CERTIFICATION
+  type: governance
+  title: P36_1_FINAL_CERTIFICATION
+  summary: = kce.consolidate()
+  status: CERTIFIED
+- id: P36_1_PATTERN_REGISTRY
+  type: governance
+  title: P36_1_PATTERN_REGISTRY
+  summary: '= kce.consolidate()  # Escanea auditorías, governance, taxonomías'
+  status: ACTIVE
+- id: P36_1_VALIDATION
+  type: governance
+  title: P36_1_VALIDATION
+  summary: '` solo acumula issues, `is_read_only` informativo |'
+  status: CERTIFIED
+- id: P40_ARCHITECTURE
+  type: governance
+  title: P40_ARCHITECTURE
+  summary: 'ado: lista de EvidenceLink con id_transaccion ↔ id_orden ↔ folio_xml ↔
+    archivo_origen ↔ marketplace ↔ periodo'
+  status: CERTIFIED
+- id: P40_EVIDENCE_GRAPH
+  type: governance
+  title: P40_EVIDENCE_GRAPH
+  summary: 'ado ML: 97.6% coverage ($522.6M de $535.6M P&L)'
+  status: ACTIVE
+- id: P40_GAP_ANALYSIS
+  type: governance
+  title: P40_GAP_ANALYSIS
+  summary: '# P40R2 GAP ANALYSIS — ¿Qué eslabones existen? ¿Cuáles faltan? (CORREGIDO)'
+  status: ACTIVE
+- id: DOC-P40_PUBLIC_CONTRACT_AUDIT
+  type: governance
+  title: P40_PUBLIC_CONTRACT_AUDIT
+  summary: ados (offset/limit) | FinancialEngine | `query_ledger(offset=N, limit=N)`
+    | ✅ **AVAILABLE** |
+  status: ACTIVE
+- id: DOC-SPRINT0_CONCILIACION_AUDIT_MAT
+  type: governance
+  title: SPRINT0_CONCILIACION_AUDIT_MATRIX
+  summary: '** | Para cada marketplace, delta entre SUM(`total_product + shipping_sap`)
+    vs SUM(ledger `monto` para `financial_group=''ingresos''`). Delta esperado = 0
+    cuando SAP está actualizado. |'
+  status: CERTIFIED
+- id: COORDINATION_CONTRACT
+  type: governance
+  title: COORDINATION_CONTRACT
+  summary: '# Coordination Contract: Codex <-> OpenCode'
+  status: CERTIFIED
+- id: DOC-GOV_R002_EXECUTION_REPORT
+  type: governance
+  title: GOV-R002_EXECUTION_REPORT
+  summary: 'ado esperado:** FAIL con el siguiente conjunto exacto de falsos positivos
+    residuales (5 artefactos):'
+  status: ACTIVE
+- id: FOUNDATION_RESET
+  type: governance
+  title: FOUNDATION_RESET
+  summary: '# MARKETPLACE FINANCIAL OPERATING SYSTEM'
+  status: ACTIVE
+- id: MASTER_STABILIZATION_AND_PRODU
+  type: governance
+  title: MASTER_STABILIZATION_AND_PRODUCTION_PLAN
+  summary: ADO ESPERADO
+  status: CERTIFIED
+- id: COORDINATION_VERIFIER_DISCOVER
+  type: governance
+  title: COORDINATION_VERIFIER_DISCOVERY
+  summary: ados mediante `pre_task_swarm_context()` y `post_task_swarm_update()`;
+  status: ACTIVE
+- id: GOV_R002_CODEX_REVIEW
+  type: governance
+  title: GOV-R002_CODEX_REVIEW
+  summary: ado propuesto.
+  status: ACTIVE
+- id: GOV_R002_FINAL_REJECTION
+  type: governance
+  title: GOV-R002_FINAL_REJECTION
+  summary: ado completo en un directorio temporal aislado.
+  status: ACTIVE
+- id: GOV_R002R2_FINAL_TEMPORAL_REVI
+  type: governance
+  title: GOV-R002R2_FINAL_TEMPORAL_REVIEW
+  summary: 'ado antes y despues de ejecutar las pruebas:'
+  status: ACTIVE
+- id: GOV_R002R2_REAL_APPLICATION_RE
+  type: governance
+  title: GOV-R002R2_REAL_APPLICATION_REVIEW
+  summary: _v4.json`.
+  status: ACTIVE
+- id: GOV_R002R3_OPENCODE_CLASSIFICA
+  type: governance
+  title: GOV-R002R3_OPENCODE_CLASSIFICATION
+  summary: '# GOV-R002R3 OpenCode Classification'
+  status: ACTIVE
+- id: GOV_R002R4_OPENCODE_SUBORDINAT
+  type: governance
+  title: GOV-R002R4_OPENCODE_SUBORDINATION_REVIEW
+  summary: 'ado: PASS. No fue necesario emitir `ROOT_CONFIG_REQUIRES_REVIEW`.'
+  status: ACTIVE
+- id: GOV_R002R_TEMPORAL_SIMULATION_
+  type: governance
+  title: GOV-R002R_TEMPORAL_SIMULATION_REVIEW
+  summary: ado de pruebas
+  status: ACTIVE
+- id: MASTER_GOVERNANCE_INCORPORATIO
+  type: governance
+  title: MASTER_GOVERNANCE_INCORPORATION_REVIEW
+  summary: ado de verify_coordination_interface.py
+  status: CERTIFIED
+- id: CAP001_CORRECTIVE_REVIEW
+  type: governance
+  title: CAP001_CORRECTIVE_REVIEW
+  summary: ado:** `test_upload_center_e2e.py` **10/10 PASS** con aislamiento completo.
+  status: CERTIFIED
+- id: DOC-PROTECTED_PATH_DIFF_REPORT
+  type: governance
+  title: PROTECTED_PATH_DIFF_REPORT
+  summary: ado:** `test_upload_center_e2e.py` **10/10 PASS** con aislamiento completo.
+  status: CERTIFIED
+- id: F0_02_DATABASE_RECOVERY_AND_BA
+  type: governance
+  title: F0-02_DATABASE_RECOVERY_AND_BASELINE
+  summary: '**: **PRE-B2.5C** — Does not satisfy "post-B2.5C certificado" requirement'
+  status: CERTIFIED
+- id: REGRESSION_BASELINE
+  type: governance
+  title: REGRESSION_BASELINE
+  summary: ado:** **56 failed, 648 passed, 20 skipped** (121.74s)
+  status: ACTIVE
+- id: F0_03_TEST_DATA_DELETION
+  type: governance
+  title: F0-03_TEST_DATA_DELETION
+  summary: '# F0-03 — TEST DATA DELETION AND BASELINE ESTABLE V7'
+  status: ACTIVE
+- id: F0_04_REGRESSION_STABILIZATION
+  type: governance
+  title: F0-04_REGRESSION_STABILIZATION
+  summary: 690 pass, 4 fail, 10 error, 20 skip (14 problematic)
+  status: CERTIFIED
+- id: PHASE_2_RUNTIME_TRUTH
+  type: governance
+  title: PHASE_2_RUNTIME_TRUTH
+  summary: 'ado observado el 2026-07-17:'
+  status: CERTIFIED
+- id: F3_02_CONTROLLED_INGESTION
+  type: governance
+  title: F3-02_CONTROLLED_INGESTION
+  summary: ADOS POR CARGA
+  status: CERTIFIED
+- id: DOC-F4_R4_BASELINE_V8_CERTIFICATIO
+  type: governance
+  title: F4-R4_BASELINE_V8_CERTIFICATION
+  summary: $0 financial impact on all certified KPIs, cierre, API, dashboard.**
+  status: CERTIFIED
+- id: DOC-CURRENT_PROJECT_STATE_CERTIFIC
+  type: governance
+  title: CURRENT_PROJECT_STATE_CERTIFICATION
+  summary: 'ado: seis IDs únicos, 12 filas, neto removido de $80.000 y suma absoluta
+    de $100.000. Todas tienen `financial_group=NULL`. El cierre y la tabla clasificada
+    no cambian, pero el ledger, su conteo y su s'
+  status: CERTIFIED
+- id: DOC-EMERGENCY_STOP_REPORT
+  type: governance
+  title: EMERGENCY_STOP_REPORT
+  summary: '# REPORTE DE EMERGENCIA - EJECUCIÓN DETENIDA'
+  status: ACTIVE
+- id: TRUTH_001_EXECUTION
+  type: governance
+  title: TRUTH_001_EXECUTION
+  summary: ado:**
+  status: CERTIFIED
+- id: DOC-TRUTH_002_FORENSIC_REPORT
+  type: governance
+  title: TRUTH_002_FORENSIC_REPORT
+  summary: ante no debe suponerse igual a `5F8D...`.
+  status: ACTIVE
+- id: DOC-TRUTH_003_RECOVERY_REPORT
+  type: governance
+  title: TRUTH_003_RECOVERY_REPORT
+  summary: '# TRUTH-003 — Recuperación integral'
+  status: ACTIVE
+- id: TRUTH_004_ML_TRANSACTION_TRACE
+  type: governance
+  title: TRUTH_004_ML_TRANSACTION_TRACE
+  summary: '# TRUTH-004 — TRAZABILIDAD Y DESBLOQUEO DE TRANSACCIÓN ML'
+  status: ACTIVE
+- id: DOC-CERTIFICATION_CONTRACT
+  type: governance
+  title: CERTIFICATION_CONTRACT
+  summary: PHASE_4_GATE_SATISFIED
+  status: CERTIFIED
+- id: DOC-MAIN_REPO_CERTIFICATION_PLAN
+  type: governance
+  title: MAIN_REPO_CERTIFICATION_PLAN
+  summary: PHASE_4_GATE_SATISFIED` before re-opening certification status.
+  status: ACTIVE
+- id: TRUTH_005_REGISTRY_REHABILITAT
+  type: governance
+  title: TRUTH_005_REGISTRY_REHABILITATION
+  summary: 'ado: `3 failed`; causa inicial: `SurgicalLoader.__init__()` no aceptaba
+    DB explícita.'
+  status: ACTIVE
+- id: TRUTH_006_CLASSIFICATION_API_C
+  type: governance
+  title: TRUTH_006_CLASSIFICATION_API_CHAIN
+  summary: ado | `marketplace_ledger_clasificado_v1`, con propagación posterior a
+    `marketplace_ledger_v1` |
+  status: ACTIVE
+- id: EXCEL_AS_IS_MODEL
+  type: governance
+  title: EXCEL_AS_IS_MODEL
+  summary: is loaded into the corresponding FACT sheet(s). All 24 standard FACT sheets
+    are then appended via Power Query into DATA_MAESTRA_360. Reconciliation, aggregation,
+    and DAX measures are computed in the P
+  status: ACTIVE
+- id: RAW_TO_TRANSACTION_MAP
+  type: governance
+  title: RAW_TO_TRANSACTION_MAP
+  summary: ado_neto = ingresos + devoluciones + costos_operacionales + costos_comerciales
+    + recuperaciones_y_bonificaciones + ajustes`.
+  status: ACTIVE
+- id: TRANSACTION_TRACEABILITY_CONTR
+  type: governance
+  title: TRANSACTION_TRACEABILITY_CONTRACT
+  summary: of `normalize_detail()` processing — the canonical detail label. |
+  status: ACTIVE

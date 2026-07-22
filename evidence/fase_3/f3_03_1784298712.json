@@ -1,0 +1,29 @@
+{
+  "execution_id": "f3_03_1784298712",
+  "test": "F3-03 Controlled Ingestion with Financial Fixture",
+  "fixture": "synthetic ML Facturacion XLSX (5 rows, 8 expected ledger rows)",
+  "fixture_sha256": "cf935205916f51964757bb37e2563ea0a3f81a018eb8098a4197fc3a7c37c605",
+  "baseline": "data\\db\\baseline_estable_v7_20260715\\meli_financial_v4.db",
+  "runs": [
+    {
+      "run": 1,
+      "error": "IngestionOrchestrator.run() got an unexpected keyword argument 'pipeline'",
+      "verdict": "FAIL"
+    },
+    {
+      "run": 2,
+      "error": "IngestionOrchestrator.run() got an unexpected keyword argument 'pipeline'",
+      "verdict": "FAIL"
+    },
+    {
+      "run": 3,
+      "error": "IngestionOrchestrator.run() got an unexpected keyword argument 'pipeline'",
+      "verdict": "FAIL"
+    }
+  ],
+  "reingestion": {
+    "error": "IngestionOrchestrator.run() got an unexpected keyword argument 'pipeline'",
+    "verdict": "FAIL"
+  },
+  "final_verdict": "FIXTURE_VALIDATION_FAILED"
+}

@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "correction": "C2",
+    "description": "KnowledgeTrigger wiring (indexer + registry)",
+    "execution_id": "5cc55c32-a989-4af0-aa85-6eedd26807af",
+    "timestamp": "2026-07-13T19:54:38.841432+00:00",
+    "git_commit": "795124b77b036f970149bf298f59f14391af9041",
+    "git_branch": "master",
+    "git_diff": ".../1  abril   2026 - 30  abril   2026.xlsx\"       |    Bin 117127 -> 0 bytes\n .../1  marzo   2026 - 31  marzo   2026.xlsx\"       |    Bin 73063 -> 0 bytes\n .../1 junio 2026 al 5 junio 2026.xlsx\"             |    Bin 119922 -> 0 bytes\n .../1 mayo 2026 al 31 mayo 2026.xlsx\"              |    Bin 156849 -> 0 bytes\n .../Documentos Recepcionados/dteproveedor_7136.xml |    283 -\n .../Documentos Recepcionados/dteproveedor_7143.xml |    263 -\n .../Documentos Recepcionados/dteproveedor_7265.xml |    290 -\n .../Documentos Recepcionados/dteproveedor_7276.xml |    277 -\n .../Documentos Recepcionados/dteproveedor_7402.xml |    297 -\n .../Documentos Recepcionados/dteproveedor_7404.xml |    277 -\n .../2026-06 Junio/1jun2026 a 5jun 2026.xlsx        |    Bin 240244 -> 0 bytes\n .../Documentos Recepcionados/dteproveedor_5477.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_5478.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5479.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5480.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5595.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_5598.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5599.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5600.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5601.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5602.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5603.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5701.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_5706.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5707.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5818.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_5819.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5820.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5821.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5924.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_5925.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_5926.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6037.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6039.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6040.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6152.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6154.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6271.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6273.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6274.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6275.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6392.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6506.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6507.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6508.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6614.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6619.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6620.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6763.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6764.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6765.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6771.xml |    238 -\n .../Documentos Recepcionados/dteproveedor_6837.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6838.xml |    235 -\n .../Documentos Recepcionados/dteproveedor_6839.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6840.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6841.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_6842.xml |    235 -\n .../Documentos Recepcionados/dteproveedor_6871.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_6887.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_6917.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_6921.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6922.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6923.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6966.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_6974.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_6980.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6981.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_6982.xml |    235 -\n .../Documentos Recepcionados/dteproveedor_6983.xml |    235 -\n .../Documentos Recepcionados/dteproveedor_6992.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7015.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7042.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7046.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_7047.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_7048.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7078.xml |    238 -\n .../Documentos Recepcionados/dteproveedor_7086.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_7089.xml |    235 -\n .../Documentos Recepcionados/dteproveedor_7090.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7091.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7093.xml |    235 -\n .../Documentos Recepcionados/dteproveedor_7109.xml |    238 -\n .../Documentos Recepcionados/dteproveedor_7128.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7136.xml |    283 -\n .../Documentos Recepcionados/dteproveedor_7143.xml |    263 -\n .../Documentos Recepcionados/dteproveedor_7155.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7157.xml |    238 -\n .../Documentos Recepcionados/dteproveedor_7168.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7169.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_7177.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7186.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7206.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_7207.xml |    235 -\n .../Documentos Recepcionados/dteproveedor_7208.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7209.xml |    235 -\n .../Documentos Recepcionados/dteproveedor_7210.xml |    238 -\n .../Documentos Recepcionados/dteproveedor_7256.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7265.xml |    290 -\n .../Documentos Recepcionados/dteproveedor_7276.xml |    277 -\n .../Documentos Recepcionados/dteproveedor_7281.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7309.xml |    238 -\n .../Documentos Recepcionados/dteproveedor_7312.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_7314.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7315.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7317.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_7330.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7348.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7349.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_7353.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7355.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7356.xml |    235 -\n .../Documentos Recepcionados/dteproveedor_7361.xml |    235 -\n .../Documentos Recepcionados/dteproveedor_7381.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7402.xml |    297 -\n .../Documentos Recepcionados/dteproveedor_7403.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7404.xml |    277 -\n .../Documentos Recepcionados/dteproveedor_7434.xml |    247 -\n .../Documentos Recepcionados/dteproveedor_7435.xml |    229 -\n .../Documentos Recepcionados/dteproveedor_7442.xml |    236 -\n .../Documentos Recepcionados/dteproveedor_7443.xml |    236 -\n GEMINI.md                                          |      8 +\n ...ETPLACE FINANCIAL CLASSIFICATION DICTIONARY.txt |    640 -\n Scripts/f2py.exe                                   |    Bin 108348 -> 0 bytes\n Scripts/flask.exe                                  |    Bin 108340 -> 0 bytes\n Scripts/normalizer.exe                             |    Bin 108365 -> 0 bytes\n Scripts/numpy-config.exe                           |    Bin 108348 -> 0 bytes\n Scripts/pip.exe                                    |    Bin 108353 -> 0 bytes\n Scripts/pip3.14.exe                                |    Bin 108353 -> 0 bytes\n Scripts/pip3.exe                                   |    Bin 108353 -> 0 bytes\n ]                                                  |    323 -\n _audit_full_output.txt                             |    Bin 11626 -> 0 bytes\n _build_dict.py                                     |     72 -\n _check_join.py                                     |     67 -\n _cleanup_cierre.py                                 |     32 -\n _confirm_pagar.py                                  |     42 -\n _debug_apagar.py                                   |     28 -\n _debug_apagar2.py                                  |     28 -\n _debug_classified.py                               |     31 -\n _debug_desglose.py                                 |     47 -\n _debug_detalle.py                                  |     27 -\n _debug_join.py                                     |     42 -\n _debug_row.py                                      |     44 -\n _debug_row2.py                                     |     82 -\n _debug_simple.py                                   |     23 -\n _debug_xlsx.py                                     |     46 -\n _diag_ripley.py                                    |     53 -\n _diagnose_gap.py                                   |     62 -\n _dry_run_classify.py                               |    168 -\n _dry_run_results.json                              |    142 -\n _explore_snapshot.py                               |     17 -\n _fase2_results.json                                |    138 -\n _fase3_results.json                                |     43 -\n _final_validate.py                                 |     27 -\n _forensic_phase1.py                                |     98 -\n _forensic_trace.py                                 |     41 -\n _forensic_trace2.py                                |    245 -\n _generate_v6.py                                    |    158 -\n _integrate_dictionary.mjs                          |    376 -\n _inventory_subcategories.py                        |    124 -\n _killcritic_validate.py                            |     98 -\n _payable_analysis.py                               |    214 -\n _rebuild_falabella.py                              |    106 -\n _reclassify_all.py                                 |     50 -\n _reconcile_e2e.py                                  |    121 -\n _reconcile_final.py                                |     73 -\n _reload_falabella.py                               |    104 -\n _reload_falabella2.py                              |    170 -\n _reload_falabella3.py                              |    143 -\n _surgical_fixes.py                                 |    101 -\n _surgical_review.py                                |    122 -\n _surgical_review2.py                               |    135 -\n _surgical_review3.py                               |     61 -\n _test_classif.py                                   |     39 -\n _validate_e2e.py                                   |    129 -\n api/api.py                                         |    651 +-\n data/_ripley_ledger_export.csv                     | 269217 ------------------\n data/_ripley_xml_export.json                       |   5048 -\n data_state_duckdb.json                             |     71 -\n database/__init__.py                               |      1 -\n database/duckdb_manager.py                         |    297 -\n engine/classifier.py                               |    118 -\n engine/coverage_gate.py                            |    122 -\n engine/data_loader_enhanced.py                     |    134 -\n engine/data_loader_v3.py                           |     98 -\n engine/data_loader_v4.py                           |    119 -\n engine/discovery.py                                |     10 -\n engine/exceptions.py                               |    163 -\n engine/generate_meli_mp_mirror.py                  |    130 -\n engine/generate_shipping_report.py                 |     64 -\n engine/ledger_builder.py                           |    216 -\n engine/loader.py                                   |    182 -\n engine/meli_liberaciones_processor.py              |    177 -\n engine/meli_master_builder.py                      |    363 -\n engine/normalizer.py                               |    260 -\n engine/reconciliation.py                           |    234 -\n engine/v4/certification/document_certification.py  |    107 +-\n engine/v4/certification/document_gap_engine.py     |    106 +-\n engine/v4/database.py                              |     14 +-\n engine/v4/dte_indexer.py                           |     27 +-\n engine/v4/dte_indexer.py.backup                    |     91 -\n engine/v4/marketplace_auditor.py.backup            |    507 -\n engine/v4/marketplace_auditor.py.pre_paris_patch   |    507 -\n engine/v4/reprocess_audit.py                       |      4 +-\n engine/v4/surgical_loader.py                       |     35 +-\n engine/v4/surgical_xml_justifier.py.backup         |     79 -\n engine/v4/xml_matcher.py.backup                    |     93 -\n knowledge/core/CASH_REALITY_CORE_V1.md             |    115 -\n knowledge/core/CASH_ROLE_REGISTRY_V1.md            |    189 -\n knowledge/core/CONCEPT_REGISTRY_V2.md              |    225 -\n knowledge/core/EVENT_MODEL_CORE_V1.md              |     99 -\n knowledge/core/EVENT_REGISTRY_V2.md                |    178 -\n knowledge/core/FINANCIAL_GOVERNANCE_CORE_V1.md     |    148 -\n knowledge/core/TRACEABILITY_CORE_V1.md             |     87 -\n .../mercadolibre/ML_CASH_REALITY_MODEL_V1.md       |    102 -\n .../ML_CONCILIATION_DOMAIN_MODEL_V1.md             |     85 -\n .../mercadolibre/ML_FACTURATION_MODEL_V1.md        |     71 -\n .../mercadolibre/ML_FINANCIAL_EVENT_MODEL_V1.md    |     89 -\n .../marketplaces/mercadolibre/ML_FULL_RULES_V1.md  |     73 -\n .../mercadolibre/ML_GOLDEN_REPORTS_V1.md           |     67 -\n .../mercadolibre/ML_KNOWLEDGE_INDEX.md             |     94 -\n .../mercadolibre/ML_POSTCOBRO_RULES_V1.md          |     97 -\n .../mercadolibre/ML_TRACEABILITY_MODEL_V1.md       |     71 -\n .../mercadolibre/ML_TRANSACTION_LIFECYCLE_V1.md    |     83 -\n knowledge/registry/KNOWLEDGE_REGISTRY_V1.md        |    112 -\n package.json                                       |     12 -\n poscobro_dictionary.json                           |    746 -\n pyproject.toml                                     |      3 +\n templates/dashboard.html                           |     15 +-\n templates/executive_dashboard.html                 |    404 +-\n tests/test_api_smoke.py                            |     33 +-\n tmp_g6_f2_out.txt                                  |    170 -\n tmp_g6_f3_out.txt                                  |    192 -\n tmp_g6_full.txt                                    |    190 -\n tmp_g6_out.txt                                     |    162 -\n tmp_out1.txt                                       |     35 -\n tmp_out2.txt                                       |    156 -\n tmp_rfc_causality_out.txt                          |   4203 -\n tmp_rfc_structure_out.txt                          |    354 -\n traceability_audit_report.txt                      |     64 -\n 240 files changed, 759 insertions(+), 320093 deletions(-)",
+    "python_version": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "user": "ASUS Zenbook",
+    "harness_version": "1.0.0-r5",
+    "repository": "Marketplace Financial AI Engine",
+    "status": "ACTIVE",
+    "validation": "VALIDATED",
+    "certification": "NOT_CERTIFIED"
+  },
+  "test_execution": {
+    "test_files": [
+      "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tests\\test_ingestion_handlers.py"
+    ],
+    "summary": "============================= 46 passed in 1.15s ==============================",
+    "returncode": 0,
+    "elapsed_seconds": 2.12,
+    "results": [
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_basic_file",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_marketplace_ml",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_marketplace_paris",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_marketplace_ripley",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_marketplace_falabella",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_document_type",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_period_yyyymm",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_period_spanish_month",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_period_year_first",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_no_period",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_detect_unknown_marketplace",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestFileDetector::test_sha256_consistency",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIntegrityValidator::test_valid_csv_passes",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIntegrityValidator::test_invalid_extension",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIntegrityValidator::test_empty_file",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIntegrityValidator::test_file_not_found",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIntegrityValidator::test_duplicate_detected",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIntegrityValidator::test_valid_xlsx_passes",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIntegrityValidator::test_valid_xml_passes",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIntegrityValidator::test_malformed_xml_detected",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIntegrityValidator::test_csv_no_delimiter",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestMarketplaceClassifier::test_classify_ml_with_filename",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestMarketplaceClassifier::test_classify_paris_with_filename",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestMarketplaceClassifier::test_classify_ripley_with_filename",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestMarketplaceClassifier::test_classify_via_path_fallback",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestMarketplaceClassifier::test_classify_unknown",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestMarketplaceClassifier::test_classify_document_type_detected",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestMarketplaceClassifier::test_classify_period_detected",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestPersistenceEngine::test_persist_registers_file",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestPersistenceEngine::test_persist_with_loader_error",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestPersistenceEngine::test_mock_loader_injection",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestPersistenceEngine::test_persist_unknown_marketplace",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestCertificationTrigger::test_trigger_calls_engines",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestCertificationTrigger::test_trigger_reconciliation_error",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestKnowledgeTrigger::test_trigger_calls_indexer_and_patterns",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestKnowledgeTrigger::test_trigger_indexer_error",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestKnowledgeTrigger::test_trigger_with_registry_calls_obsidian",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestKnowledgeTrigger::test_trigger_no_indexer_skipped",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestKnowledgeTrigger::test_trigger_with_registry_no_obsidian_path",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestKnowledgeTrigger::test_trigger_with_registry_vault_not_found",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestKnowledgeTrigger::test_trigger_with_registry_obsidian_error",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestKnowledgeTrigger::test_find_new_detalles_queries_ledger",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIngestionRegistry::test_create_record",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIngestionRegistry::test_add_error_sets_failed",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIngestionRegistry::test_finalize_sets_certified",
+        "status": "PASSED"
+      },
+      {
+        "test": "tests/test_ingestion_handlers.py::TestIngestionRegistry::test_finalize_sets_persisted",
+        "status": "PASSED"
+      }
+    ]
+  },
+  "r3_metrics": {
+    "unique_tests": 46,
+    "aggregate_executions": 46,
+    "execution_groups": [
+      {
+        "correction": "C2",
+        "files": [
+          "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tests\\test_ingestion_handlers.py"
+        ],
+        "test_count": 46,
+        "returncode": 0,
+        "elapsed_seconds": 2.12,
+        "status": "VALIDATED"
+      }
+    ],
+    "duplicated_files": [],
+    "duplicated_test_count": 0,
+    "implementation_status": "IMPLEMENTED",
+    "validation_status": "VALIDATED",
+    "verification_status": "NOT_VERIFIED",
+    "certification_status": "NOT_CERTIFIED"
+  },
+  "classification": {
+    "implemented": true,
+    "validated": true,
+    "verified": false,
+    "certified": false,
+    "status": "VALIDATED"
+  }
+}

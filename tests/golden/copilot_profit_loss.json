@@ -1,0 +1,259 @@
+{
+  "question": "¿Estoy ganando o perdiendo dinero?",
+  "period": "2026-06-30 00:00:00",
+  "answer": {
+    "status": "profit",
+    "rn_operacional": 57708200.7,
+    "delta": 4129906.7,
+    "delta_pct": 7.71,
+    "is_profit": true,
+    "summary": "Ganas $57,708,201"
+  },
+  "explanation": {
+    "text": "Resultado neto operacional: $57,708,201 (+7.7% vs anterior).",
+    "bullet_points": [
+      "FALABELLA: $2,568,906",
+      "ML: $17,203,962",
+      "PARIS: $18,076,842",
+      "RIPLEY: $19,858,491"
+    ]
+  },
+  "breakdown": [
+    {
+      "marketplace": "falabella",
+      "rn": 2568906.0,
+      "is_profit": true
+    },
+    {
+      "marketplace": "ml",
+      "rn": 17203961.7,
+      "is_profit": true
+    },
+    {
+      "marketplace": "paris",
+      "rn": 18076842.0,
+      "is_profit": true
+    },
+    {
+      "marketplace": "ripley",
+      "rn": 19858491.0,
+      "is_profit": true
+    }
+  ],
+  "evidence": [
+    {
+      "marketplace": "falabella",
+      "kpi": "resultado_neto",
+      "value": 2568906.0,
+      "source": "marketplace_cierre_financiero_v1",
+      "sql": "SELECT resultado_neto FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='falabella' AND periodo_fin='2026-06-30 00:00:00'",
+      "components": {
+        "ingresos": 3512762.0,
+        "costos_operacionales": -160353.0,
+        "costos_comerciales": -677645.0,
+        "ajustes": -105858.0
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "441c7d40-6b9d-4412-9ac7-a7a6bade5c4d",
+          "id_orden": "3237520571",
+          "detalle": "Pago por precio del producto",
+          "monto": 64697.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 junio 2026 al 5 junio 2026.xlsx",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "30e97d0e-3688-489d-ab29-b0864ff626eb",
+          "id_orden": "3237165703",
+          "detalle": "Descuento por devolución de producto",
+          "monto": -60496.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "1 junio 2026 al 5 junio 2026.xlsx",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "78c21222-5cbd-4d51-ad52-f773e6296b0b",
+          "id_orden": "3239262905",
+          "detalle": "Pago por precio del producto",
+          "monto": 55454.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 junio 2026 al 5 junio 2026.xlsx",
+          "folio_xml": null
+        }
+      ],
+      "raw_sources": [
+        "1 junio 2026 al 5 junio 2026.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 678,
+        "source_files": 1,
+        "first_load": "2026-07-06 11:26:35.394303",
+        "last_load": "2026-07-06 11:26:35.394303"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ml",
+      "kpi": "resultado_neto",
+      "value": 17203961.7,
+      "source": "marketplace_cierre_financiero_v1",
+      "sql": "SELECT resultado_neto FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='ml' AND periodo_fin='2026-06-30 00:00:00'",
+      "components": {
+        "ingresos": 24537650.0,
+        "costos_operacionales": -1906948.300000001,
+        "costos_comerciales": -3997710.0,
+        "ajustes": -1429030.0
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "CHG_Reporte_Facturacion_MercadoLibre_Jun2026.xlsx_992",
+          "id_orden": "nan",
+          "detalle": "Cargo por campaña de publicidad - Product Ads",
+          "monto": -149940.0,
+          "financial_group": null,
+          "archivo_origen": "Reporte_Facturacion_MercadoLibre_Jun2026.xlsx",
+          "folio_xml": "033-0013471239"
+        },
+        {
+          "id_transaccion": "REFUND_2000016748359086_Reporte_Facturacion_MercadoLibre_Jun2026.xlsx_89",
+          "id_orden": "2000016748359086",
+          "detalle": "Devolución de venta",
+          "monto": -95990.0,
+          "financial_group": null,
+          "archivo_origen": "Reporte_Facturacion_MercadoLibre_Jun2026.xlsx",
+          "folio_xml": "033-0013471239"
+        },
+        {
+          "id_transaccion": "SALE_2000016748359086_Reporte_Facturacion_MercadoLibre_Jun2026.xlsx_1191",
+          "id_orden": "2000016748359086",
+          "detalle": "Cargo por venta (Venta)",
+          "monto": 95990.0,
+          "financial_group": null,
+          "archivo_origen": "Reporte_Facturacion_MercadoLibre_Jun2026.xlsx",
+          "folio_xml": "033-0013471239"
+        }
+      ],
+      "raw_sources": [
+        "Reporte_Facturacion_MercadoLibre_Jun2026.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 3554,
+        "source_files": 1,
+        "first_load": "2026-07-13 11:39:41.785400",
+        "last_load": "2026-07-13 11:39:41.785400"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "paris",
+      "kpi": "resultado_neto",
+      "value": 18076842.0,
+      "source": "marketplace_cierre_financiero_v1",
+      "sql": "SELECT resultado_neto FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='paris' AND periodo_fin='2026-06-30 00:00:00'",
+      "components": {
+        "ingresos": 25693419.0,
+        "costos_operacionales": -1264990.0,
+        "costos_comerciales": -3722367.0,
+        "ajustes": -2629220.0
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "15725405_GROSS",
+          "id_orden": null,
+          "detalle": "Venta",
+          "monto": 95990.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "15904679_GROSS",
+          "id_orden": null,
+          "detalle": "Venta",
+          "monto": 95990.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "15784938_GROSS",
+          "id_orden": null,
+          "detalle": "Venta",
+          "monto": 82190.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "1 jun 2026 - 8 jun 2026.xlsx",
+          "folio_xml": null
+        }
+      ],
+      "raw_sources": [
+        "1 jun 2026 - 8 jun 2026.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2302,
+        "source_files": 1,
+        "first_load": "2026-07-06 11:26:30.369530",
+        "last_load": "2026-07-06 11:26:30.424345"
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "ripley",
+      "kpi": "resultado_neto",
+      "value": 19858491.0,
+      "source": "marketplace_cierre_financiero_v1",
+      "sql": "SELECT resultado_neto FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='ripley' AND periodo_fin='2026-06-30 00:00:00'",
+      "components": {
+        "ingresos": 23527569.0,
+        "costos_operacionales": -3776.0,
+        "costos_comerciales": -1963151.0,
+        "ajustes": -1702151.0
+      },
+      "ledger_samples": [
+        {
+          "id_transaccion": "RIP_594818_24712911201-A_importedelpedido",
+          "id_orden": "24712911201-A",
+          "detalle": "Importe del pedido",
+          "monto": 204450.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000379-2815.xlsx",
+          "folio_xml": "594818"
+        },
+        {
+          "id_transaccion": "RIP_FF_24717687201-A_32_refundorderamount",
+          "id_orden": "24717687201-A",
+          "detalle": "refund_order_amount",
+          "monto": 157960.0,
+          "financial_group": "devoluciones",
+          "archivo_origen": "abonos_descuentos_000031_ff_2815.csv",
+          "folio_xml": null
+        },
+        {
+          "id_transaccion": "RIP_596684_24705918201-A_importedelpedido",
+          "id_orden": "24705918201-A",
+          "detalle": "Importe del pedido",
+          "monto": 142830.0,
+          "financial_group": "ingresos",
+          "archivo_origen": "000380-2815.xlsx",
+          "folio_xml": "596684"
+        }
+      ],
+      "raw_sources": [
+        "000379-2815.xlsx",
+        "abonos_descuentos_000031_ff_2815.csv",
+        "000380-2815.xlsx"
+      ],
+      "etl": {
+        "pipeline": "surgical_loader_v4",
+        "rows": 2039,
+        "source_files": 4,
+        "first_load": "2026-07-06 11:25:14.158359",
+        "last_load": "2026-07-06 11:26:27.785722"
+      },
+      "xml": []
+    }
+  ]
+}

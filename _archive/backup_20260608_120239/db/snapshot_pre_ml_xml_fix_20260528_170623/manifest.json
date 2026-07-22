@@ -1,0 +1,14 @@
+{
+  "snapshot": "PRE_ML_XML_FIX",
+  "timestamp": "2026-05-28T17:06:23.286625",
+  "description": "Pre-patch xml_matcher.py + surgical_xml_justifier.py directory path",
+  "ml_counts": {
+    "total": 101603,
+    "with_folio_xml": 88323,
+    "no_folio_xml": 13280,
+    "certificado": 0,
+    "sin_recurso_xml": 90814,
+    "con_asociacion_xml": 0
+  },
+  "dte_truth_v1": 762
+}

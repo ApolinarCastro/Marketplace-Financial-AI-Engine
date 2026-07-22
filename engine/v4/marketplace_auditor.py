@@ -269,6 +269,10 @@ RAW_TO_CLASSIFICATION_MAP = {
     # Falabella — Aportes Promocionales
     "Pago de aporte promocionales a cliente (Promo)": "Pago de aporte promocionales a cliente (Promo)",
     "Descuento por aportes promocionales a clientes (Promo)": "Descuento por aportes promocionales a clientes (Promo)",
+
+    # YAML taxonomy additions (2026-07): sync with taxonomy_mappings.yaml
+    "Pago normal": "Pago normal",
+    "Publicidad": "Cargo por campaña de publicidad - Product Ads",
 }
 
 # ---------------------------------------------------------------------------
@@ -280,7 +284,7 @@ FINANCIAL_STRUCTURE = {
         "Compensación comercial", "Importe del pedido", "Importe del envío del pedido",
         "Despacho", "Sale amount", "Gross sales",
         "Pago por precio del producto",
-        "Subtotal", "Precio total", "order_amount"
+        "Subtotal", "Precio total", "order_amount", "Pago normal"
     ],
     "devoluciones": [
         "Pedidos reembolsados", "Devolución", "Devolución de venta", "Devolución de dinero",
@@ -379,12 +383,19 @@ FINANCIAL_STRUCTURE = {
     ]
 }
 
+def _fix_mojibake(text):
+    """Fix double-encoded UTF-8 mojibake (exact replica of taxonomy_loader._fix_mojibake)."""
+    try:
+        return text.encode('latin-1').decode('utf-8')
+    except Exception:
+        return text
+
+
 def normalize_detail(text):
     if not isinstance(text, str): return ""
     import unicodedata
     import re
-    # Lowercase
-    t = text.lower().strip()
+    t = _fix_mojibake(text.strip()).lower()
     # Normalize unicode to NFD and strip Mn category (accents)
     t = ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')
     # Replace any weird characters/symbols (like replacement character) or multiple spaces
@@ -404,14 +415,18 @@ for group_name, labels in FINANCIAL_STRUCTURE.items():
         CLASIFICACION_TO_FINANCIAL_GROUP[label] = group_name
 
 class MarketplaceAuditorEngine:
-    def __init__(self):
-        self.db = DatabaseV4.get()
+    def __init__(self, db=None):
+        self.db = db if db is not None else DatabaseV4.get()
 
-    def run_classification(self):
-        logger.info("Iniciando clasificación v4.0 (Full Reset Vectorizado)")
-        self.db.execute("DELETE FROM marketplace_ledger_clasificado_v1")
-        
-        source = self.db.query("SELECT marketplace, id_transaccion, id_orden, detalle, tipo_movimiento, monto, fecha FROM marketplace_ledger_v1")
+    def run_classification(self, marketplace=None):
+        if marketplace:
+            logger.info(f"Iniciando clasificación v4.0 para marketplace={marketplace}")
+            self.db.execute("DELETE FROM marketplace_ledger_clasificado_v1 WHERE marketplace = ?", [marketplace])
+            source = self.db.query("SELECT marketplace, id_transaccion, id_orden, detalle, tipo_movimiento, monto, fecha FROM marketplace_ledger_v1 WHERE marketplace = ?", [marketplace])
+        else:
+            logger.info("Iniciando clasificación v4.0 (Full Reset Vectorizado)")
+            self.db.execute("DELETE FROM marketplace_ledger_clasificado_v1")
+            source = self.db.query("SELECT marketplace, id_transaccion, id_orden, detalle, tipo_movimiento, monto, fecha FROM marketplace_ledger_v1")
         
         if source.empty: return 0
 

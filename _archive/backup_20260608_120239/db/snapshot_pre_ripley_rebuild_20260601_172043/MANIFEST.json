@@ -1,0 +1,9 @@
+{
+  "snapshot": "snapshot_pre_ripley_rebuild_20260601_172043",
+  "date": "20260601_172043",
+  "current_db_hash": "88082bbc073af49aab625b859d986f8d2f3eb7f8482ce3b2ce198b8e29a7a3bb",
+  "snapshot_hash": "88082bbc073af49aab625b859d986f8d2f3eb7f8482ce3b2ce198b8e29a7a3bb",
+  "purpose": "PRE-RIPLEY-DATEFIX",
+  "git_tag": "PRE_RIPLEY_DATEFIX",
+  "file_size": 131346432
+}

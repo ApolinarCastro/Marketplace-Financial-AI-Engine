@@ -1,0 +1,3 @@
+﻿# INDEX_ARCHITECTURE
+
+

@@ -1,0 +1,10 @@
+{
+  "financial_pnl": {
+    "gross_sales": 10847112.0,
+    "marketplace_costs": -56379.0,
+    "net_profit": 8055923.0,
+    "returns": -2734810.0
+  },
+  "marketplace": "RIPLEY",
+  "period": "Ene 2026"
+}

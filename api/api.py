@@ -18,6 +18,7 @@ def validate_periodo(periodo: str | None) -> None:
 from engine.v4.database import DatabaseV4
 from engine.v4.marketplace_auditor import MarketplaceAuditorEngine
 from engine.v4.dte_indexer import DTEIndexer
+from engine.v4.traceability import traceability_engine as tx
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -598,7 +599,7 @@ def run_full_audit(marketplace: str = "ML"):
         # 1. Ingest all raw files for all marketplaces using standalone loader
         # 2. Run Vectorized Classification
         engine = MarketplaceAuditorEngine()
-        engine.run_classification()
+        engine.run_classification(marketplace=marketplace)
         
         # 3. Generate monthly financial closures from 2023 to 2026
         for year in [2023, 2024, 2025, 2026]:
@@ -711,5 +712,64 @@ def export_to_obsidian(payload_dict: dict):
     except Exception as e:
         import traceback
         return {"status": "error", "message": str(e), "trace": traceback.format_exc()}
+
+
+# ── Traceability API (v1) ──
+
+@app.get("/api/v4/traceability/search")
+def traceability_search(
+    marketplace: str | None = None,
+    query: str | None = None,
+    fecha_desde: str | None = None,
+    fecha_hasta: str | None = None,
+    financial_group: str | None = None,
+    trace_status: str | None = None,
+    document_status: str | None = None,
+    has_dte: bool | None = None,
+    offset: int = 0,
+    limit: int = 100
+):
+    """Search transactions with traceability info."""
+    return tx.search_transactions(
+        marketplace=marketplace, query=query,
+        fecha_desde=fecha_desde, fecha_hasta=fecha_hasta,
+        financial_group=financial_group,
+        trace_status=trace_status, document_status=document_status,
+        has_dte=has_dte, offset=offset, limit=limit
+    )
+
+
+@app.get("/api/v4/traceability/transaction/{marketplace}/{transaction_id}")
+def traceability_transaction(marketplace: str, transaction_id: str):
+    """Full transaction detail with all traceability fields."""
+    return tx.trace_transaction(marketplace, transaction_id)
+
+
+@app.get("/api/v4/traceability/evidence/{marketplace}/{transaction_id}")
+def traceability_evidence(marketplace: str, transaction_id: str):
+    """8-step evidence chain for a transaction."""
+    return tx.evidence_chain(marketplace, transaction_id)
+
+
+@app.get("/api/v4/traceability/summary")
+def traceability_summary():
+    """Aggregate traceability statistics per marketplace."""
+    return tx.traceability_summary()
+
+
+@app.get("/api/v4/traceability/sap-reconciliation")
+def traceability_sap(periodo: str | None = None):
+    """SAP reconciliation baseline (marketplace-side metrics)."""
+    return tx.sap_reconciliation(period=periodo)
+
+
+@app.get("/traceability", response_class=HTMLResponse)
+def traceability_dashboard():
+    """Traceability dashboard page."""
+    tx_path = ROOT / "templates" / "traceability.html"
+    if tx_path.exists():
+        with open(tx_path, "r", encoding="utf-8") as f:
+            return HTMLResponse(f.read())
+    return HTMLResponse("<h1>Traceability Dashboard no encontrado</h1>", status_code=404)
 
 
