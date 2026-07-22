@@ -1,0 +1,43 @@
+{
+  "baseline": "CERTIFIED_BASELINE_V1",
+  "created": "20260624_150042",
+  "db_sha256": "UNAVAILABLE",
+  "files": {
+    "api/api.py": {
+      "sha256": "bde08884ec46de9658d93e19390dd86fb102ae4a9142fb6be0ffb09f5c6726c7",
+      "size": 27226
+    },
+    "templates/executive_dashboard.html": {
+      "sha256": "581571b6f8368681654005682f68c525514d00b188e22073004d204f66171538",
+      "size": 52390
+    },
+    "templates/dashboard.html": {
+      "sha256": "c19731784607fdbb51c2a19e32581629f445a272d556652a315d993b9117d3b4",
+      "size": 74438
+    },
+    "engine/v4/marketplace_auditor.py": {
+      "sha256": "4884c666ec4d16a07f002ef5c79f59bb54b7ef30c215dafbc43f046853cf475b",
+      "size": 50033
+    },
+    "engine/v4/database.py": {
+      "sha256": "bebee362bde19e444ab5a69aa77f8faaba37ed2ab3f72100ff3197dbcdab048e",
+      "size": 11354
+    },
+    "engine/v4/dte_indexer.py": {
+      "sha256": "f5fade23c20c0cc813405d3f71d15210021572b5797742504fe13abb9646ed82",
+      "size": 3851
+    },
+    "engine/v4/surgical_loader.py": {
+      "sha256": "36aa87170f303b007b6a39e27b9c86fb1ef1386db31a4fb4ba79f0a1ab3d9348",
+      "size": 46425
+    },
+    "engine/v4/xml_matcher.py": {
+      "sha256": "eb19d01af1f33964f6a18aa484123fe1396feba0eba6020b76b3286cfb250823",
+      "size": 5178
+    },
+    "engine/v4/financial_closing.py": {
+      "sha256": "3c5865149e5be05bc972d1d9c7e1cbcc9b1c7c35aa225f4561435d3f1f350f3f",
+      "size": 4022
+    }
+  }
+}

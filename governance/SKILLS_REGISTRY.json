@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "skills": [
+    {
+      "skill_name": "UI_ENHANCEMENT",
+      "scope": "Visual and presentation layer",
+      "modifiable": ["estilos", "layout", "badges", "filtros"],
+      "requires_approval": true,
+      "protected_targets": ["ledger", "taxonomías", "loaders", "financial engine"]
+    },
+    {
+      "skill_name": "REPORTING",
+      "scope": "Data visualization and summarization",
+      "modifiable": ["none (read-only)"],
+      "requires_approval": false,
+      "protected_targets": ["all core components"]
+    },
+    {
+      "skill_name": "VISUALIZATION",
+      "scope": "Dashboard rendering",
+      "modifiable": ["none (read-only)"],
+      "requires_approval": false,
+      "protected_targets": ["all core components"]
+    },
+    {
+      "skill_name": "DATA_IMPORT",
+      "scope": "File ingestion",
+      "modifiable": ["loaders (with approval)"],
+      "requires_approval": true,
+      "protected_targets": ["financial engine", "ledger", "taxonomy"]
+    },
+    {
+      "skill_name": "FINANCIAL_ENGINE",
+      "scope": "Financial logic",
+      "modifiable": ["none (blocked)"],
+      "requires_approval": true,
+      "protected_targets": ["all"]
+    },
+    {
+      "skill_name": "TAXONOMY_ENGINE",
+      "scope": "Classification rules",
+      "modifiable": ["none (blocked)"],
+      "requires_approval": true,
+      "protected_targets": ["all"]
+    },
+    {
+      "skill_name": "LEDGER_ENGINE",
+      "scope": "Ledger structure and calculations",
+      "modifiable": ["none (blocked)"],
+      "requires_approval": true,
+      "protected_targets": ["all"]
+    },
+    {
+      "skill_name": "GOVERNANCE_ENGINE",
+      "scope": "Governance records",
+      "modifiable": ["governance registries", "policy engine"],
+      "requires_approval": false,
+      "protected_targets": ["core application logic"]
+    }
+  ]
+}

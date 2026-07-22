@@ -1,0 +1,59 @@
+{
+  "test": "F3-02",
+  "timestamp": "2026-07-17T11:44:29",
+  "baseline_v7_hash": "bcb19ab49a2da3d2a848a8e81b86e559c46285afdfa7d126454255712d5232a8",
+  "official_db_hash_before": "5f8d107012998311d7bac88dbe6761c9d9576d775e17a48f34d11a6456301d69",
+  "official_db_hash_after": "5f8d107012998311d7bac88dbe6761c9d9576d775e17a48f34d11a6456301d69",
+  "db_untouched": true,
+  "upload_results": [
+    {
+      "upload_number": 1,
+      "file": "FALABELLA_Conciliacion_2026-06_test1.csv",
+      "error": "No module named 'engine'",
+      "_elapsed_seconds": 0.0,
+      "status": "EXCEPTION"
+    },
+    {
+      "upload_number": 2,
+      "file": "FALABELLA_Conciliacion_2026-06_test2.csv",
+      "error": "No module named 'engine'",
+      "_elapsed_seconds": 0.0,
+      "status": "EXCEPTION"
+    },
+    {
+      "upload_number": 3,
+      "file": "FALABELLA_Conciliacion_2026-06_test3.csv",
+      "error": "No module named 'engine'",
+      "_elapsed_seconds": 0.0,
+      "status": "EXCEPTION"
+    }
+  ],
+  "fixture_check": {
+    "has_controlled_financial_fixture": false,
+    "reason": "No fixture exists that maps a specific upload file to expected financial results (rows, classifications, totals) in the ledger.",
+    "benchmark_fixtures": 21,
+    "golden_fixtures": 52,
+    "total_api_fixtures": 73,
+    "pipeline_csv_fixtures": 1,
+    "pipeline_csv_files": [
+      "tests\\fixtures\\f3_03\\f3_03_fixture.xlsx"
+    ],
+    "pipeline_json_fixtures_found": 0,
+    "pipeline_json_files": []
+  },
+  "verdict": {
+    "uploads_executed": 3,
+    "uploads_succeeded": 0,
+    "all_stages_completed": false,
+    "all_execution_ids_unique": false,
+    "has_persistence_bug": false,
+    "db_untouched": true,
+    "engine_unchanged": true,
+    "has_controlled_financial_fixture": false,
+    "fixture_reason": "No fixture exists that maps a specific upload file to expected financial results (rows, classifications, totals) in the ledger.",
+    "final": "REAL_PIPELINE_VALIDATION_FAILED",
+    "reason": "Not all pipeline stages completed successfully."
+  },
+  "git_status_before": " M engine/v4/__init__.py\n M engine/v4/certification/document_certification.py\n M engine/v4/certification/document_gap_engine.py\n M engine/v4/database.py\n M engine/v4/dte_indexer.py\n D engine/v4/dte_indexer.py.backup\n M engine/v4/logging_config.py\n M engine/v4/marketplace_auditor.py\n D engine/v4/marketplace_auditor.py.backup\n D engine/v4/marketplace_auditor.py.pre_paris_patch\n M engine/v4/reprocess_audit.py\n M engine/v4/surgical_loader.py\n D engine/v4/surgical_xml_justifier.py.backup\n M engine/v4/utils.py\n D engine/v4/xml_matcher.py.backup\n?? engine/v4/certification/__init__.py\n?? engine/v4/certification/certification_engine.py\n?? engine/v4/certification/document_status.py\n?? engine/v4/certification/ecc/\n?? engine/v4/certification/electronic_certification/\n?? engine/v4/certification/knowledge/\n?? engine/v4/closing/\n?? engine/v4/contracts/\n?? engine/v4/copilot/\n?? engine/v4/domain/\n?? engine/v4/dte_matcher.py\n?? engine/v4/etl/\n?? engine/v4/evidence/\n?? engine/v4/explainability/\n?? engine/v4/ingestion/\n?? engine/v4/intelligence/\n?? engine/v4/knowledge/\n?? engine/v4/lineage/\n?? engine/v4/observability/\n?? engine/v4/period_utils.py\n?? engine/v4/reconciliation/\n?? engine/v4/security/\n?? engine/v4/sql/\n",
+  "git_status_after": " M engine/v4/__init__.py\n M engine/v4/certification/document_certification.py\n M engine/v4/certification/document_gap_engine.py\n M engine/v4/database.py\n M engine/v4/dte_indexer.py\n D engine/v4/dte_indexer.py.backup\n M engine/v4/logging_config.py\n M engine/v4/marketplace_auditor.py\n D engine/v4/marketplace_auditor.py.backup\n D engine/v4/marketplace_auditor.py.pre_paris_patch\n M engine/v4/reprocess_audit.py\n M engine/v4/surgical_loader.py\n D engine/v4/surgical_xml_justifier.py.backup\n M engine/v4/utils.py\n D engine/v4/xml_matcher.py.backup\n?? engine/v4/certification/__init__.py\n?? engine/v4/certification/certification_engine.py\n?? engine/v4/certification/document_status.py\n?? engine/v4/certification/ecc/\n?? engine/v4/certification/electronic_certification/\n?? engine/v4/certification/knowledge/\n?? engine/v4/closing/\n?? engine/v4/contracts/\n?? engine/v4/copilot/\n?? engine/v4/domain/\n?? engine/v4/dte_matcher.py\n?? engine/v4/etl/\n?? engine/v4/evidence/\n?? engine/v4/explainability/\n?? engine/v4/ingestion/\n?? engine/v4/intelligence/\n?? engine/v4/knowledge/\n?? engine/v4/lineage/\n?? engine/v4/observability/\n?? engine/v4/period_utils.py\n?? engine/v4/reconciliation/\n?? engine/v4/security/\n?? engine/v4/sql/\n"
+}

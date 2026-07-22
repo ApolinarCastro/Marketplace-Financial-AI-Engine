@@ -597,9 +597,11 @@ class TestCanonicalSemanticsSync:
 
     def test_artifacts_synced(self):
         repo = Path(__file__).resolve().parent.parent
+        env = os.environ.copy()
+        env["PYTHONPATH"] = str(repo)
         result = subprocess.run(
             [sys.executable, "-m", "engine.v4.domain.generate_artifacts", "--check-only"],
-            capture_output=True, text=True, cwd=str(repo),
+            capture_output=True, text=True, cwd=str(repo), env=env
         )
         assert result.returncode == 0, (
             f"Generated artifacts out of sync with canonical_semantics.py\n"

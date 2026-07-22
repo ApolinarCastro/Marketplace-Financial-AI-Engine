@@ -1,0 +1,50 @@
+C:\Python314\python.exe (PID 15652)
+WARNING:  StatReload detected changes in 'api\api.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17024]
+INFO:     Started server process [7120]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:56234 - "GET /app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56234 - "GET /api/v4/cierre/desglose?marketplace=ML&periodo=2026-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56234 - "GET /api/v4/auditoria?marketplace=ML HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56234 - "GET /api/v4/ledger?marketplace=ML&periodo=2026-04&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51301 - "GET /api/v4/cierre/desglose?marketplace=PARIS&periodo=2026-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51301 - "GET /api/v4/auditoria?marketplace=PARIS HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51301 - "GET /api/v4/ledger?marketplace=PARIS&periodo=2026-04&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60622 - "GET /api/v4/cierre/desglose?marketplace=ML&periodo=2026-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60622 - "GET /api/v4/auditoria?marketplace=ML HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60622 - "GET /api/v4/ledger?marketplace=ML&periodo=2026-04&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63283 - "GET /app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63283 - "GET /api/v4/cierre/desglose?marketplace=ML&periodo=2026-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63283 - "GET /api/v4/auditoria?marketplace=ML HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63283 - "GET /api/v4/ledger?marketplace=ML&periodo=2026-04&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54648 - "GET /app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54648 - "GET /api/v4/cierre/desglose?marketplace=ML&periodo=2026-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54648 - "GET /api/v4/auditoria?marketplace=ML HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54648 - "GET /api/v4/ledger?marketplace=ML&periodo=2026-04&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57970 - "GET /app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57970 - "GET /api/v4/cierre/desglose?marketplace=ML&periodo=2026-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57970 - "GET /api/v4/auditoria?marketplace=ML HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57970 - "GET /api/v4/ledger?marketplace=ML&periodo=2026-04&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54816 - "GET /api/v4/cierre/desglose?marketplace=PARIS&periodo=2026-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54816 - "GET /api/v4/auditoria?marketplace=PARIS HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54816 - "GET /api/v4/ledger?marketplace=PARIS&periodo=2026-04&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60918 - "GET /api/v4/cierre/desglose?marketplace=PARIS&periodo=2026-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60918 - "GET /api/v4/auditoria?marketplace=PARIS HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60918 - "GET /api/v4/ledger?marketplace=PARIS&periodo=2026-03&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60862 - "GET /api/v4/cierre/desglose?marketplace=PARIS&periodo=2026-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60862 - "GET /api/v4/auditoria?marketplace=PARIS HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60862 - "GET /api/v4/ledger?marketplace=PARIS&periodo=2026-04&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51828 - "GET /api/v4/cierre/desglose?marketplace=RIPLEY&periodo=2026-04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51828 - "GET /api/v4/auditoria?marketplace=RIPLEY HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51828 - "GET /api/v4/ledger?marketplace=RIPLEY&periodo=2026-04&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51828 - "GET /api/v4/cierre/desglose?marketplace=RIPLEY&periodo=2026-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51828 - "GET /api/v4/auditoria?marketplace=RIPLEY HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51828 - "GET /api/v4/ledger?marketplace=RIPLEY&periodo=2026-03&limit=10000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56439 - "GET /api/v4/cierre/desglose?marketplace=ML&periodo=2026-03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56439 - "GET /api/v4/auditoria?marketplace=ML HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56439 - "GET /api/v4/ledger?marketplace=ML&periodo=2026-03&limit=10000 HTTP/1.1" 200 OK
+¿Desea terminar el trabajo por lotes (S/N)? 

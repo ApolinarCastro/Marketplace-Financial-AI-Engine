@@ -1,0 +1,640 @@
+===============================================================================
+MARKETPLACE FINANCIAL CLASSIFICATION DICTIONARY
+VERSIÓN CONSOLIDADA
+OBJETIVO
+
+Catálogo maestro para clasificación automática de conceptos marketplace.
+
+Lógica:
+
+Concepto RAW
+→ Tipo_Transaccion
+→ Clasificación
+
+NO incluye:
+
+tesorería
+retiros
+payouts
+transferencias bancarias
+movimientos financieros no asociados a venta
+===============================================================================
+CLASIFICACIONES MACRO
+
+INGRESOS
+COSTOS COMERCIALES
+COSTOS OPERACIONALES
+MARKETING
+IMPUESTOS
+DEVOLUCIONES
+RIESGO FINANCIERO
+AJUSTES
+SIN CLASIFICAR
+
+===============================================================================
+TIPO_TRANSACCION OFICIAL
+INGRESOS
+
+Venta Producto
+Ingreso Logístico
+Ingreso Compensatorio
+
+COSTOS COMERCIALES
+
+Comisión Marketplace
+Comisión Pasarela de Pago
+Costo Financiamiento / Cuotas
+Cargo por Publicación
+Servicio Comercial Marketplace
+Tarifa de Procesamiento de Pago
+Comisión por Venta
+
+COSTOS OPERACIONALES
+
+Costo de Transporte (Envío)
+Costo de Gestión de Pedidos (Fulfillment)
+Almacenamiento
+Retiro de Inventario
+Logística Inversa
+Diferencias Operativas Logísticas
+Penalidad Operacional
+
+MARKETING
+
+Publicidad Marketplace
+Descuento Comercial Marketplace
+
+IMPUESTOS
+
+Impuesto Comisión
+Impuesto a la Transacción
+
+DEVOLUCIONES
+
+Costo por Devolución
+Reembolso Cliente
+Ajuste por Devolución
+
+RIESGO FINANCIERO
+
+Chargeback / Contracargo
+Disputa
+Costo por Disputa
+Reserva Preventiva
+Ajuste por Reclamo Cliente
+Riesgo Financiero Reversado
+
+AJUSTES
+
+Bonificación
+Compensación Comercial
+Ajuste Operacional
+Reverso de Cargo
+
+SIN CLASIFICAR
+
+Revisión Manual
+
+===============================================================================
+REGLAS DE EXCLUSIÓN
+
+EXCLUIR DEL DICCIONARIO:
+
+Pago
+Payout
+Withdrawal
+Transfer
+Settlement payout
+Cash out
+retiros
+abonos bancarios
+transferencias
+movimientos de tesorería
+
+Motivo:
+No forman parte de auditoría de venta.
+
+===============================================================================
+MERCADO LIBRE
+
+Cargo por venta
+→ Venta Producto
+→ INGRESOS
+
+Costo por categoría + ofrecer cuotas
+→ Costo Financiamiento / Cuotas
+→ COSTOS COMERCIALES
+
+Cargo por publicación
+→ Cargo por Publicación
+→ COSTOS COMERCIALES
+
+Cargo por Asesoría Comercial
+→ Servicio Comercial Marketplace
+→ COSTOS COMERCIALES
+
+Cargo por mantenimiento de Mi página
+→ Servicio Comercial Marketplace
+→ COSTOS COMERCIALES
+
+Cargo por Mercado Envíos
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Cargo por envíos de Mercado Libre
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Cargo por Flex
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Cargo por diferencias en las medidas y el peso del paquete
+→ Diferencias Operativas Logísticas
+→ COSTOS OPERACIONALES
+
+Cargo por stock antiguo en Full
+→ Penalidad Operacional
+→ COSTOS OPERACIONALES
+
+Cargo por servicio de almacenamiento Full
+→ Almacenamiento
+→ COSTOS OPERACIONALES
+
+Cargo por retiro de stock Full
+→ Retiro de Inventario
+→ COSTOS OPERACIONALES
+
+Cargo por servicio de colecta Full
+→ Costo de Gestión de Pedidos (Fulfillment)
+→ COSTOS OPERACIONALES
+
+Cargo por sobrepasar espacio Full
+→ Penalidad Operacional
+→ COSTOS OPERACIONALES
+
+Cargo por campaña de publicidad - Product Ads
+→ Publicidad Marketplace
+→ MARKETING
+
+Cargo por campaña de publicidad - Brand Ads
+→ Publicidad Marketplace
+→ MARKETING
+
+Cargo por campaña de publicidad - Display
+→ Publicidad Marketplace
+→ MARKETING
+
+Cargo por campaña de publicidad - Display programático
+→ Publicidad Marketplace
+→ MARKETING
+
+Cargo por Mercado Ads
+→ Publicidad Marketplace
+→ MARKETING
+
+Cargo por devolución
+→ Costo por Devolución
+→ DEVOLUCIONES
+
+Devolución de venta
+→ Reembolso Cliente
+→ DEVOLUCIONES
+
+refund
+→ Reembolso Cliente
+→ DEVOLUCIONES
+
+Devolución de dinero
+→ Reembolso Cliente
+→ DEVOLUCIONES
+
+reserve_for_dispute
+→ Reserva Preventiva
+→ RIESGO FINANCIERO
+
+Reserva para devolución en envío BBP
+→ Reserva Preventiva
+→ RIESGO FINANCIERO
+
+Mediación
+→ Disputa
+→ RIESGO FINANCIERO
+
+Cancelación de la mediación
+→ Riesgo Financiero Reversado
+→ RIESGO FINANCIERO
+
+Chargeback
+→ Chargeback / Contracargo
+→ RIESGO FINANCIERO
+
+Bonificación
+→ Bonificación
+→ AJUSTES
+
+cashback
+→ Compensación Comercial
+→ AJUSTES
+
+cashback_cancel
+→ Reverso de Cargo
+→ AJUSTES
+
+Anulación del cargo por venta
+→ Reverso de Cargo
+→ AJUSTES
+
+Anulación del cargo por Mercado Envíos
+→ Reverso de Cargo
+→ AJUSTES
+
+Anulación del cargo por envíos de Mercado Libre
+→ Reverso de Cargo
+→ AJUSTES
+
+Anulación del cargo por devolución
+→ Reverso de Cargo
+→ AJUSTES
+
+Anulación cargo publicidad Product Ads
+→ Reverso de Cargo
+→ AJUSTES
+
+Cargo
+→ Revisión Manual
+→ SIN CLASIFICAR
+
+AJUSTE POSCOBRO
+→ EXCLUIDO (TESORERÍA / LEGACY)
+
+POSCOBRO / BUYER PROTECTION MOVEMENTS
+→ EXCLUIDO (FUERA DEL MODELO OPERATIVO)
+
+===============================================================================
+RIPLEY
+
+Importe del pedido
+→ Venta Producto
+→ INGRESOS
+
+Importe del envío del pedido
+→ Ingreso Logístico
+→ INGRESOS
+
+Gastos de envío
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Gastos de envío pagados por el operador
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Gastos de envío reembolsados pagados por el operador
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Comisiones
+→ Comisión Marketplace
+→ COSTOS COMERCIALES
+
+Abono manual
+→ Ingreso Compensatorio
+→ INGRESOS
+
+Importe de reembolso
+→ Reembolso Cliente
+→ DEVOLUCIONES
+
+Importe del pedido reembolsado
+→ Reembolso Cliente
+→ DEVOLUCIONES
+
+Importe del envío del pedido reembolsado
+→ Ajuste por Devolución
+→ DEVOLUCIONES
+
+Comisión de reembolso
+→ Costo por Devolución
+→ DEVOLUCIONES
+
+Impuesto sobre las comisiones
+→ Impuesto Comisión
+→ IMPUESTOS
+
+Impuesto sobre la comisión de reembolso
+→ Impuesto Comisión
+→ IMPUESTOS
+
+Impuesto de la factura manual
+→ Impuesto a la Transacción
+→ IMPUESTOS
+
+Factura manual
+→ Revisión Manual
+→ SIN CLASIFICAR
+
+Recargo por precio mínimo
+→ Comisión por Venta
+→ COSTOS COMERCIALES
+
+Descuento por costo logístico
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Descuento por cancelación
+→ Ajuste por Devolución
+→ DEVOLUCIONES
+
+A pagar
+→ EXCLUIDO (NETO LIQUIDADO / EVITA DOBLE CONTEO)
+
+===============================================================================
+PARÍS
+
+Venta
+→ Venta Producto
+→ INGRESOS
+
+Comisión
+→ Comisión Marketplace
+→ COSTOS COMERCIALES
+
+Descuento comercial
+→ Descuento Comercial Marketplace
+→ MARKETING
+
+Despacho
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Cobro por despacho
+→ Ingreso Logístico
+→ INGRESOS
+
+Logística inversa
+→ Logística Inversa
+→ DEVOLUCIONES
+
+Compensación logística
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Devolución
+→ Reembolso Cliente
+→ DEVOLUCIONES
+
+Cobro por campaña
+→ Publicidad Marketplace
+→ MARKETING
+
+Rebate
+→ Ingreso Compensatorio
+→ INGRESOS
+
+Cargo
+→ Revisión Manual
+→ SIN CLASIFICAR
+
+Cobro stock antiguo
+→ Penalidad Operacional
+→ COSTOS OPERACIONALES
+
+Retiro stock bodega
+→ Retiro de Inventario
+→ COSTOS OPERACIONALES
+
+Multa logística
+→ Penalidad Operacional
+→ COSTOS OPERACIONALES
+
+Penalización SLA
+→ Penalidad Operacional
+→ COSTOS OPERACIONALES
+
+Ajuste inventario fulfillment
+→ Costo de Gestión de Pedidos (Fulfillment)
+→ COSTOS OPERACIONALES
+
+Costo almacenamiento
+→ Almacenamiento
+→ COSTOS OPERACIONALES
+
+Fee fulfillment
+→ Costo de Gestión de Pedidos (Fulfillment)
+→ COSTOS OPERACIONALES
+
+Devolución fulfillment
+→ Ajuste por Devolución
+→ DEVOLUCIONES
+
+===============================================================================
+FALABELLA
+
+Sale amount
+→ Venta Producto
+→ INGRESOS
+
+Shipping income
+→ Ingreso Logístico
+→ INGRESOS
+
+Commission fee
+→ Comisión Marketplace
+→ COSTOS COMERCIALES
+
+Fulfillment fee
+→ Costo de Gestión de Pedidos (Fulfillment)
+→ COSTOS OPERACIONALES
+
+Storage fee
+→ Almacenamiento
+→ COSTOS OPERACIONALES
+
+Shipping fee
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Reverse shipping
+→ Logística Inversa
+→ DEVOLUCIONES
+
+Return fee
+→ Costo por Devolución
+→ DEVOLUCIONES
+
+Refund
+→ Reembolso Cliente
+→ DEVOLUCIONES
+
+Advertising fee
+→ Publicidad Marketplace
+→ MARKETING
+
+Tax
+→ Impuesto a la Transacción
+→ IMPUESTOS
+
+Chargeback
+→ Chargeback / Contracargo
+→ RIESGO FINANCIERO
+
+Adjustment
+→ Revisión Manual
+→ SIN CLASIFICAR
+
+Reimbursement
+→ Ingreso Compensatorio
+→ INGRESOS
+
+Cancellation fee
+→ Ajuste por Devolución
+→ DEVOLUCIONES
+
+Late shipment fee
+→ Penalidad Operacional
+→ COSTOS OPERACIONALES
+
+Penalty fee
+→ Penalidad Operacional
+→ COSTOS OPERACIONALES
+
+Customer claim adjustment
+→ Ajuste por Reclamo Cliente
+→ RIESGO FINANCIERO
+
+Inventory adjustment
+→ Ajuste Operacional
+→ AJUSTES
+
+Seller compensation
+→ Compensación Comercial
+→ AJUSTES
+
+Promotion fee
+→ Descuento Comercial Marketplace
+→ MARKETING
+
+Voucher discount
+→ Descuento Comercial Marketplace
+→ MARKETING
+
+Campaign discount
+→ Descuento Comercial Marketplace
+→ MARKETING
+
+Cobro por comisión por venta
+→ Comisión Marketplace
+→ COSTOS COMERCIALES
+
+Cobro por cofinanciamiento logístico
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Reembolso por comisión por venta
+→ Reverso de Cargo
+→ AJUSTES
+
+Reversa de pago de envío comprador
+→ Reverso de Cargo
+→ AJUSTES
+
+Cobro por logística inversa
+→ Logística Inversa
+→ DEVOLUCIONES
+
+Pago por envío directo
+→ Ingreso Logístico
+→ INGRESOS
+
+Corrección de pago envio directo
+→ Ajuste Operacional
+→ AJUSTES
+
+Corrección de cobro por envío directo
+→ Ajuste Operacional
+→ AJUSTES
+
+Cobro Promo envío falabella.com
+→ EXCLUIDO (NETEO PERFECTO)
+
+Reembolso por Promo envío
+→ EXCLUIDO (NETEO PERFECTO)
+
+===============================================================================
+SHOPIFY / MERCADO PAGO
+
+Gross sales
+→ Venta Producto
+→ INGRESOS
+
+Discounts
+→ Descuento Comercial Marketplace
+→ MARKETING
+
+Returns
+→ Ajuste por Devolución
+→ DEVOLUCIONES
+
+Refund
+→ Reembolso Cliente
+→ DEVOLUCIONES
+
+Shipping income
+→ Ingreso Logístico
+→ INGRESOS
+
+Shipping charges
+→ Costo de Transporte (Envío)
+→ COSTOS OPERACIONALES
+
+Transaction fee
+→ Comisión Pasarela de Pago
+→ COSTOS COMERCIALES
+
+Payment processing fee
+→ Tarifa de Procesamiento de Pago
+→ COSTOS COMERCIALES
+
+Tax
+→ Impuesto a la Transacción
+→ IMPUESTOS
+
+Chargeback
+→ Chargeback / Contracargo
+→ RIESGO FINANCIERO
+
+Chargeback fee
+→ Costo por Disputa
+→ RIESGO FINANCIERO
+
+Dispute
+→ Disputa
+→ RIESGO FINANCIERO
+
+Dispute fee
+→ Costo por Disputa
+→ RIESGO FINANCIERO
+
+Reserve hold
+→ Reserva Preventiva
+→ RIESGO FINANCIERO
+
+Failed payment fee
+→ Tarifa de Procesamiento de Pago
+→ COSTOS COMERCIALES
+
+Adjustment
+→ Revisión Manual
+→ SIN CLASIFICAR
+
+Manual adjustment
+→ Revisión Manual
+→ SIN CLASIFICAR
+
+Other fee
+→ Revisión Manual
+→ SIN CLASIFICAR
+
+===============================================================================
+FIN

@@ -1,0 +1,219 @@
+{
+  "test": "F3-02",
+  "timestamp": "2026-07-17T10:10:47",
+  "baseline_v7_hash": "bcb19ab49a2da3d2a848a8e81b86e559c46285afdfa7d126454255712d5232a8",
+  "official_db_hash_before": "67086a1316b80cd3596848462a9a65b1859aca2242412d7b5d710842fb2bbc54",
+  "official_db_hash_after": "67086a1316b80cd3596848462a9a65b1859aca2242412d7b5d710842fb2bbc54",
+  "db_untouched": true,
+  "upload_results": [
+    {
+      "execution_id": "e1d54f1b-7c0a-49f2-90bf-b36905dc5dfa",
+      "file_name": "FALABELLA_Conciliacion_2026-06_test1.csv",
+      "file_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\uploads\\FALABELLA_Conciliacion_2026-06_test1.csv",
+      "sha256": "bee293e2f69e010ecef7ca0bbec64c9d8d7ec35e47a9afc57312edd4e77ad915",
+      "file_size_bytes": 19,
+      "marketplace": "FALABELLA",
+      "document_type": "unknown",
+      "period": "2026-06",
+      "status": "CERTIFIED",
+      "start_time": "2026-07-17T10:10:40.425943",
+      "end_time": "2026-07-17T10:10:41.661716",
+      "execution_time_seconds": 1.235773,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_rejected": 0,
+      "errors": [],
+      "warnings": [],
+      "loader_executed": "SurgicalLoader",
+      "pipeline": "falabella_v4",
+      "certification_triggered": true,
+      "certification_result": "DEGRADED",
+      "knowledge_updated": true,
+      "details": {
+        "stages_completed": [
+          "DETECT",
+          "VALIDATE",
+          "CLASSIFY",
+          "PERSIST",
+          "CERTIFY",
+          "KNOWLEDGE"
+        ],
+        "detection": {
+          "file_name": "FALABELLA_Conciliacion_2026-06_test1.csv",
+          "file_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\uploads\\FALABELLA_Conciliacion_2026-06_test1.csv",
+          "sha256": "bee293e2f69e010ecef7ca0bbec64c9d8d7ec35e47a9afc57312edd4e77ad915",
+          "file_size_bytes": 19,
+          "extension": ".csv",
+          "marketplace": "FALABELLA",
+          "document_type": null,
+          "period": "2026-06"
+        },
+        "classification": {
+          "marketplace": "FALABELLA",
+          "document_type": null,
+          "period": "2026-06",
+          "loader": "SurgicalLoader",
+          "pipeline": "falabella_v4",
+          "confidence": "HIGH"
+        }
+      },
+      "_verification": {
+        "file_saved_in_uploads": true,
+        "saved_file_exists": true,
+        "db_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\meli_financial_v4.db",
+        "database_class_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\meli_financial_v4.db"
+      },
+      "_ledger_rows_after": 2501,
+      "_registry_rows": 44,
+      "_elapsed_seconds": 1.89
+    },
+    {
+      "execution_id": "d6cd9a6b-1b44-4dd7-8fe2-71a65b771d18",
+      "file_name": "FALABELLA_Conciliacion_2026-06_test2.csv",
+      "file_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\uploads\\FALABELLA_Conciliacion_2026-06_test2.csv",
+      "sha256": "1997418ed12e4adadd57f71a5cc910b3ee09770c75f3dfe30268fb67e2c47f5c",
+      "file_size_bytes": 19,
+      "marketplace": "FALABELLA",
+      "document_type": "unknown",
+      "period": "2026-06",
+      "status": "CERTIFIED",
+      "start_time": "2026-07-17T10:10:41.837534",
+      "end_time": "2026-07-17T10:10:43.669107",
+      "execution_time_seconds": 1.831573,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_rejected": 0,
+      "errors": [],
+      "warnings": [],
+      "loader_executed": "SurgicalLoader",
+      "pipeline": "falabella_v4",
+      "certification_triggered": true,
+      "certification_result": "DEGRADED",
+      "knowledge_updated": true,
+      "details": {
+        "stages_completed": [
+          "DETECT",
+          "VALIDATE",
+          "CLASSIFY",
+          "PERSIST",
+          "CERTIFY",
+          "KNOWLEDGE"
+        ],
+        "detection": {
+          "file_name": "FALABELLA_Conciliacion_2026-06_test2.csv",
+          "file_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\uploads\\FALABELLA_Conciliacion_2026-06_test2.csv",
+          "sha256": "1997418ed12e4adadd57f71a5cc910b3ee09770c75f3dfe30268fb67e2c47f5c",
+          "file_size_bytes": 19,
+          "extension": ".csv",
+          "marketplace": "FALABELLA",
+          "document_type": null,
+          "period": "2026-06"
+        },
+        "classification": {
+          "marketplace": "FALABELLA",
+          "document_type": null,
+          "period": "2026-06",
+          "loader": "SurgicalLoader",
+          "pipeline": "falabella_v4",
+          "confidence": "HIGH"
+        }
+      },
+      "_verification": {
+        "file_saved_in_uploads": true,
+        "saved_file_exists": true,
+        "db_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\meli_financial_v4.db",
+        "database_class_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\meli_financial_v4.db"
+      },
+      "_ledger_rows_after": 2501,
+      "_registry_rows": 44,
+      "_elapsed_seconds": 2.05
+    },
+    {
+      "execution_id": "b709cb30-45f0-4b82-aa06-8f558ecd1c87",
+      "file_name": "FALABELLA_Conciliacion_2026-06_test3.csv",
+      "file_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\uploads\\FALABELLA_Conciliacion_2026-06_test3.csv",
+      "sha256": "4e8ec0de769eded7b8d67f27b3909c9cd8f761b301a93dde84ce368328ec105d",
+      "file_size_bytes": 19,
+      "marketplace": "FALABELLA",
+      "document_type": "unknown",
+      "period": "2026-06",
+      "status": "CERTIFIED",
+      "start_time": "2026-07-17T10:10:43.912309",
+      "end_time": "2026-07-17T10:10:46.878171",
+      "execution_time_seconds": 2.965862,
+      "records_inserted": 0,
+      "records_updated": 0,
+      "records_rejected": 0,
+      "errors": [],
+      "warnings": [],
+      "loader_executed": "SurgicalLoader",
+      "pipeline": "falabella_v4",
+      "certification_triggered": true,
+      "certification_result": "DEGRADED",
+      "knowledge_updated": true,
+      "details": {
+        "stages_completed": [
+          "DETECT",
+          "VALIDATE",
+          "CLASSIFY",
+          "PERSIST",
+          "CERTIFY",
+          "KNOWLEDGE"
+        ],
+        "detection": {
+          "file_name": "FALABELLA_Conciliacion_2026-06_test3.csv",
+          "file_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\uploads\\FALABELLA_Conciliacion_2026-06_test3.csv",
+          "sha256": "4e8ec0de769eded7b8d67f27b3909c9cd8f761b301a93dde84ce368328ec105d",
+          "file_size_bytes": 19,
+          "extension": ".csv",
+          "marketplace": "FALABELLA",
+          "document_type": null,
+          "period": "2026-06"
+        },
+        "classification": {
+          "marketplace": "FALABELLA",
+          "document_type": null,
+          "period": "2026-06",
+          "loader": "SurgicalLoader",
+          "pipeline": "falabella_v4",
+          "confidence": "HIGH"
+        }
+      },
+      "_verification": {
+        "file_saved_in_uploads": true,
+        "saved_file_exists": true,
+        "db_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\meli_financial_v4.db",
+        "database_class_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tmp\\f3_02_1784297439\\meli_financial_v4.db"
+      },
+      "_ledger_rows_after": 2501,
+      "_registry_rows": 44,
+      "_elapsed_seconds": 3.21
+    }
+  ],
+  "fixture_check": {
+    "has_controlled_financial_fixture": false,
+    "reason": "No fixture exists that maps a specific upload file to expected financial results (rows, classifications, totals) in the ledger.",
+    "benchmark_fixtures": 21,
+    "golden_fixtures": 52,
+    "total_api_fixtures": 73,
+    "pipeline_csv_fixtures": 0,
+    "pipeline_csv_files": [],
+    "pipeline_json_fixtures_found": 0,
+    "pipeline_json_files": []
+  },
+  "verdict": {
+    "uploads_executed": 3,
+    "uploads_succeeded": 3,
+    "all_stages_completed": true,
+    "all_execution_ids_unique": true,
+    "has_persistence_bug": false,
+    "db_untouched": true,
+    "engine_unchanged": true,
+    "has_controlled_financial_fixture": false,
+    "fixture_reason": "No fixture exists that maps a specific upload file to expected financial results (rows, classifications, totals) in the ledger.",
+    "final": "CONTROLLED_FINANCIAL_FIXTURE_REQUIRED",
+    "reason": "No fixture exists that maps a specific upload file to expected financial results (rows, classifications, totals) in the ledger."
+  },
+  "git_status_before": " M engine/v4/__init__.py\n M engine/v4/certification/document_certification.py\n M engine/v4/certification/document_gap_engine.py\n M engine/v4/database.py\n M engine/v4/dte_indexer.py\n D engine/v4/dte_indexer.py.backup\n M engine/v4/logging_config.py\n M engine/v4/marketplace_auditor.py\n D engine/v4/marketplace_auditor.py.backup\n D engine/v4/marketplace_auditor.py.pre_paris_patch\n M engine/v4/reprocess_audit.py\n M engine/v4/surgical_loader.py\n D engine/v4/surgical_xml_justifier.py.backup\n M engine/v4/utils.py\n D engine/v4/xml_matcher.py.backup\n?? engine/v4/certification/__init__.py\n?? engine/v4/certification/certification_engine.py\n?? engine/v4/certification/document_status.py\n?? engine/v4/certification/ecc/\n?? engine/v4/certification/electronic_certification/\n?? engine/v4/certification/knowledge/\n?? engine/v4/closing/\n?? engine/v4/contracts/\n?? engine/v4/copilot/\n?? engine/v4/domain/\n?? engine/v4/dte_matcher.py\n?? engine/v4/etl/\n?? engine/v4/evidence/\n?? engine/v4/explainability/\n?? engine/v4/ingestion/\n?? engine/v4/intelligence/\n?? engine/v4/knowledge/\n?? engine/v4/lineage/\n?? engine/v4/observability/\n?? engine/v4/period_utils.py\n?? engine/v4/reconciliation/\n?? engine/v4/security/\n?? engine/v4/sql/\n",
+  "git_status_after": " M engine/v4/__init__.py\n M engine/v4/certification/document_certification.py\n M engine/v4/certification/document_gap_engine.py\n M engine/v4/database.py\n M engine/v4/dte_indexer.py\n D engine/v4/dte_indexer.py.backup\n M engine/v4/logging_config.py\n M engine/v4/marketplace_auditor.py\n D engine/v4/marketplace_auditor.py.backup\n D engine/v4/marketplace_auditor.py.pre_paris_patch\n M engine/v4/reprocess_audit.py\n M engine/v4/surgical_loader.py\n D engine/v4/surgical_xml_justifier.py.backup\n M engine/v4/utils.py\n D engine/v4/xml_matcher.py.backup\n?? engine/v4/certification/__init__.py\n?? engine/v4/certification/certification_engine.py\n?? engine/v4/certification/document_status.py\n?? engine/v4/certification/ecc/\n?? engine/v4/certification/electronic_certification/\n?? engine/v4/certification/knowledge/\n?? engine/v4/closing/\n?? engine/v4/contracts/\n?? engine/v4/copilot/\n?? engine/v4/domain/\n?? engine/v4/dte_matcher.py\n?? engine/v4/etl/\n?? engine/v4/evidence/\n?? engine/v4/explainability/\n?? engine/v4/ingestion/\n?? engine/v4/intelligence/\n?? engine/v4/knowledge/\n?? engine/v4/lineage/\n?? engine/v4/observability/\n?? engine/v4/period_utils.py\n?? engine/v4/reconciliation/\n?? engine/v4/security/\n?? engine/v4/sql/\n"
+}

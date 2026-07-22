@@ -1,0 +1,23 @@
+{
+  "cobros": -2397267.0,
+  "devoluciones": -11406810.0,
+  "disponible": 5446503.0,
+  "layers": {
+    "labels": [
+      "Ventas",
+      "Devoluciones",
+      "Cobros",
+      "Recuperaciones"
+    ],
+    "values": [
+      19250580.0,
+      -11406810.0,
+      -2397267.0,
+      0.0
+    ]
+  },
+  "marketplace": "PARIS",
+  "period": "Ene 2026",
+  "recuperaciones": 0.0,
+  "ventas": 19250580.0
+}

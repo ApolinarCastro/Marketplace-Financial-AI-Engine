@@ -1,0 +1,10 @@
+{
+  "financial_pnl": {
+    "gross_sales": 19250580.0,
+    "marketplace_costs": -2397267.0,
+    "net_profit": 5446503.0,
+    "returns": -11406810.0
+  },
+  "marketplace": "PARIS",
+  "period": "Ene 2026"
+}

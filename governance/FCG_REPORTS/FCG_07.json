@@ -1,0 +1,754 @@
+{
+  "certification_package": "FCG_07",
+  "title": "Ledger Drilldown Certification",
+  "timestamp": "2026-06-19T15:36:05",
+  "certification_status": "PASS",
+  "sql_used": [
+    "-- MP -> Category -> Subcategory: verify all financial groups have at least 1 row",
+    "SELECT LOWER(marketplace) mp, LOWER(financial_group) fg, COUNT(*) cnt FROM marketplace_ledger_v1 WHERE COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none') GROUP BY 1,2 ORDER BY 1,2",
+    "-- Subcategory -> Ledger: verify detalle distribution",
+    "SELECT LOWER(marketplace) mp, LOWER(financial_group) fg, LOWER(detalle) det, COUNT(*) cnt, SUM(monto)::BIGINT total FROM marketplace_ledger_v1 WHERE COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none') GROUP BY 1,2,3 ORDER BY 1,2,4 DESC"
+  ],
+  "evidence": [
+    {
+      "query": "-- MP -> Category -> Subcategory: verify all financial groups have at least 1 row",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT LOWER(marketplace) mp, LOWER(financial_group) fg, COUNT(*) cnt FROM marketplace_ledger_v1 WHERE COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none') GROUP BY 1,2 ORDER BY 1,2",
+      "rows": 21,
+      "data": [
+        [
+          "falabella",
+          "ajustes",
+          20
+        ],
+        [
+          "falabella",
+          "costos_comerciales",
+          659
+        ],
+        [
+          "falabella",
+          "costos_operacionales",
+          1531
+        ],
+        [
+          "falabella",
+          "devoluciones",
+          52
+        ],
+        [
+          "falabella",
+          "ingresos",
+          347
+        ],
+        [
+          "ml",
+          "ajustes",
+          85
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          36332
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          23637
+        ],
+        [
+          "ml",
+          "devoluciones",
+          3119
+        ],
+        [
+          "ml",
+          "ingresos",
+          32931
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          787
+        ],
+        [
+          "paris",
+          "ajustes",
+          21
+        ],
+        [
+          "paris",
+          "costos_comerciales",
+          28218
+        ],
+        [
+          "paris",
+          "costos_operacionales",
+          17569
+        ],
+        [
+          "paris",
+          "devoluciones",
+          4868
+        ],
+        [
+          "paris",
+          "ingresos",
+          23352
+        ],
+        [
+          "ripley",
+          "ajustes",
+          10
+        ],
+        [
+          "ripley",
+          "costos_comerciales",
+          15391
+        ],
+        [
+          "ripley",
+          "costos_operacionales",
+          25774
+        ],
+        [
+          "ripley",
+          "devoluciones",
+          3001
+        ],
+        [
+          "ripley",
+          "ingresos",
+          12390
+        ]
+      ]
+    },
+    {
+      "query": "-- Subcategory -> Ledger: verify detalle distribution",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT LOWER(marketplace) mp, LOWER(financial_group) fg, LOWER(detalle) det, COUNT(*) cnt, SUM(monto)::BIGINT total FROM marketplace_ledger_v1 WHERE COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none') GROUP BY 1,2,3 ORDER BY 1,2,4 DESC",
+      "rows": 85,
+      "data": [
+        [
+          "falabella",
+          "ajustes",
+          "correcci\u00f3n de cobro por env\u00edo directo",
+          18,
+          -3780
+        ],
+        [
+          "falabella",
+          "ajustes",
+          "correcci\u00f3n de pago envio directo",
+          2,
+          3353
+        ],
+        [
+          "falabella",
+          "costos_comerciales",
+          "cobro por comisi\u00f3n por venta",
+          347,
+          -2494982
+        ],
+        [
+          "falabella",
+          "costos_comerciales",
+          "pago de aporte promocionales a cliente (promo)",
+          221,
+          4671
+        ],
+        [
+          "falabella",
+          "costos_comerciales",
+          "reembolso por comisi\u00f3n por venta",
+          52,
+          375709
+        ],
+        [
+          "falabella",
+          "costos_comerciales",
+          "descuento por aportes promocionales a clientes (promo)",
+          38,
+          0
+        ],
+        [
+          "falabella",
+          "costos_comerciales",
+          "cobro por comisi\u00f3n por cancelaci\u00f3n",
+          1,
+          -12099
+        ],
+        [
+          "falabella",
+          "costos_operacionales",
+          "pago de env\u00edo comprador",
+          347,
+          517422
+        ],
+        [
+          "falabella",
+          "costos_operacionales",
+          "reversa de pago de env\u00edo comprador",
+          347,
+          -517422
+        ],
+        [
+          "falabella",
+          "costos_operacionales",
+          "reembolso por promo env\u00edo falabella.com",
+          219,
+          689244
+        ],
+        [
+          "falabella",
+          "costos_operacionales",
+          "cobro promo env\u00edo falabella.com",
+          219,
+          -689244
+        ],
+        [
+          "falabella",
+          "costos_operacionales",
+          "cobro por cofinanciamiento log\u00edstico",
+          186,
+          -744017
+        ],
+        [
+          "falabella",
+          "costos_operacionales",
+          "pago por env\u00edo directo",
+          161,
+          70982
+        ],
+        [
+          "falabella",
+          "costos_operacionales",
+          "cobro por log\u00edstica inversa",
+          52,
+          -127136
+        ],
+        [
+          "falabella",
+          "devoluciones",
+          "descuento por devoluci\u00f3n de producto",
+          52,
+          -1878556
+        ],
+        [
+          "falabella",
+          "ingresos",
+          "pago por precio del producto",
+          347,
+          12470241
+        ],
+        [
+          "ml",
+          "ajustes",
+          "cargo",
+          85,
+          -405701
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          "cargo por venta (comisi\u00f3n)",
+          32919,
+          -129840415
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          "anulaci\u00f3n del cargo por venta",
+          3113,
+          13160041
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          "cargo por campa\u00f1a de publicidad - product ads",
+          125,
+          -22966863
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          "cargo por campa\u00f1a de publicidad - display program\u00e1tico",
+          66,
+          -365566
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          "cargo por campa\u00f1a de publicidad - brand ads",
+          57,
+          -7292692
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          "cargo por mantenimiento de mi p\u00e1gina",
+          18,
+          -305820
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          "cargo por asesor\u00eda comercial",
+          17,
+          -17499915
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          "campa\u00f1as de publicidad - display",
+          15,
+          -19023802
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          "campa\u00f1as de publicidad - brand ads\t",
+          1,
+          -536145
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          "campa\u00f1as de publicidad - product ads",
+          1,
+          -945405
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "cargo por env\u00edos de mercado libre",
+          17127,
+          -71520917
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "cargo por retiro de stock full",
+          1787,
+          -2221469
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "anulaci\u00f3n del cargo por env\u00edos de mercado libre",
+          1573,
+          6563653
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "cargo por mercado env\u00edos",
+          1432,
+          -6301584
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "cargo por servicio de almacenamiento full",
+          1075,
+          -2909311
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "cargo por stock antiguo en full",
+          216,
+          -144440
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "cargo por devoluci\u00f3n",
+          191,
+          -1235370
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "anulaci\u00f3n del cargo por mercado env\u00edos",
+          188,
+          799471
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "anulaci\u00f3n del cargo por devoluci\u00f3n",
+          26,
+          170740
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "cargo por diferencias en las medidas y el peso del paquete",
+          11,
+          -11100
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          "cargo por sobrepasar espacio full",
+          11,
+          -73000
+        ],
+        [
+          "ml",
+          "devoluciones",
+          "devoluci\u00f3n de venta",
+          3113,
+          -97322021
+        ],
+        [
+          "ml",
+          "devoluciones",
+          "compensated",
+          4,
+          81460
+        ],
+        [
+          "ml",
+          "devoluciones",
+          "ajuste poscobro",
+          1,
+          441
+        ],
+        [
+          "ml",
+          "devoluciones",
+          "missing_invoice",
+          1,
+          20990
+        ],
+        [
+          "ml",
+          "ingresos",
+          "cargo por venta (venta)",
+          32919,
+          934713273
+        ],
+        [
+          "ml",
+          "ingresos",
+          "bonificaci\u00f3n",
+          12,
+          60231
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          "ajuste poscobro",
+          649,
+          3125833
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          "compensated",
+          111,
+          3871406
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          "not_reconciled",
+          13,
+          497870
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          "refund_account_money",
+          5,
+          169467
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          "missing_invoice",
+          3,
+          57394
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          "by_admin",
+          3,
+          7084
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          "invalid_authorization",
+          1,
+          38990
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          "credit_not_processed",
+          1,
+          21990
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          "refunded",
+          1,
+          1208
+        ],
+        [
+          "paris",
+          "ajustes",
+          "ajuste inventario activo",
+          8,
+          647108
+        ],
+        [
+          "paris",
+          "ajustes",
+          "compensaci\u00f3n log\u00edstica",
+          6,
+          1618057
+        ],
+        [
+          "paris",
+          "ajustes",
+          "cargo",
+          5,
+          -646295
+        ],
+        [
+          "paris",
+          "ajustes",
+          "merma",
+          1,
+          16991
+        ],
+        [
+          "paris",
+          "ajustes",
+          "cobro por campa\u00f1a",
+          1,
+          -260504
+        ],
+        [
+          "paris",
+          "costos_comerciales",
+          "cargo por venta (comisi\u00f3n)",
+          28218,
+          -76583572
+        ],
+        [
+          "paris",
+          "costos_operacionales",
+          "cobro por despacho",
+          16404,
+          -22004830
+        ],
+        [
+          "paris",
+          "costos_operacionales",
+          "log\u00edstica inversa",
+          1148,
+          -3088120
+        ],
+        [
+          "paris",
+          "costos_operacionales",
+          "cobro stock antiguo",
+          12,
+          -316638
+        ],
+        [
+          "paris",
+          "costos_operacionales",
+          "retiro stock bodega paris",
+          5,
+          -1630800
+        ],
+        [
+          "paris",
+          "devoluciones",
+          "devoluci\u00f3n",
+          4868,
+          -144269887
+        ],
+        [
+          "paris",
+          "ingresos",
+          "venta",
+          21325,
+          575854331
+        ],
+        [
+          "paris",
+          "ingresos",
+          "despacho",
+          2025,
+          7985403
+        ],
+        [
+          "paris",
+          "ingresos",
+          "rebate",
+          2,
+          273230
+        ],
+        [
+          "ripley",
+          "ajustes",
+          "descuento por cancelaci\u00f3n",
+          5,
+          -28490
+        ],
+        [
+          "ripley",
+          "ajustes",
+          "otros descuentos",
+          5,
+          -4950
+        ],
+        [
+          "ripley",
+          "costos_comerciales",
+          "comisiones sobre pedidos",
+          11121,
+          -68113598
+        ],
+        [
+          "ripley",
+          "costos_comerciales",
+          "comisiones sobre pedidos reembolsados",
+          2536,
+          15730070
+        ],
+        [
+          "ripley",
+          "costos_comerciales",
+          "commission_fee",
+          1269,
+          6750820
+        ],
+        [
+          "ripley",
+          "costos_comerciales",
+          "refund_commission_fee",
+          465,
+          2578071
+        ],
+        [
+          "ripley",
+          "costos_operacionales",
+          "gastos de env\u00edo pagados por el operador",
+          8152,
+          -19137413
+        ],
+        [
+          "ripley",
+          "costos_operacionales",
+          "env\u00edo",
+          8152,
+          19137413
+        ],
+        [
+          "ripley",
+          "costos_operacionales",
+          "descuento por costo log\u00edstico",
+          7049,
+          -13025554
+        ],
+        [
+          "ripley",
+          "costos_operacionales",
+          "gastos de env\u00edo reembolsados pagados por el operador",
+          894,
+          1712724
+        ],
+        [
+          "ripley",
+          "costos_operacionales",
+          "env\u00edo reembolsado",
+          894,
+          -1712724
+        ],
+        [
+          "ripley",
+          "costos_operacionales",
+          "descuento por logistica inversa",
+          494,
+          -1473173
+        ],
+        [
+          "ripley",
+          "costos_operacionales",
+          "descuento por cofinanciamiento log\u00edstico (ff)",
+          132,
+          376600
+        ],
+        [
+          "ripley",
+          "costos_operacionales",
+          "descuento por log\u00edstica inversa (ff)",
+          7,
+          21000
+        ],
+        [
+          "ripley",
+          "devoluciones",
+          "pedidos reembolsados",
+          2536,
+          -86498564
+        ],
+        [
+          "ripley",
+          "devoluciones",
+          "refund_order_amount",
+          465,
+          14475092
+        ],
+        [
+          "ripley",
+          "ingresos",
+          "importe del pedido",
+          11121,
+          375133853
+        ],
+        [
+          "ripley",
+          "ingresos",
+          "order_amount",
+          1269,
+          37505936
+        ]
+      ]
+    }
+  ],
+  "files_modified": [
+    "engine/v4/financial_engine.py",
+    "api/api.py"
+  ],
+  "tests_executed": [
+    "test_certification_gate.py",
+    "test_financial_engine.py",
+    "test_api_smoke.py"
+  ],
+  "before_after_metrics": {
+    "Total MP x Financial Group combos with data": "21",
+    "Total subcategory (detalle) entries": "85",
+    "ML groups": "6",
+    "PARIS groups": "5",
+    "RIPLEY groups": "5",
+    "FALABELLA groups": "5"
+  },
+  "remaining_risks": []
+}

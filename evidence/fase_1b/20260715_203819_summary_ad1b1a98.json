@@ -1,0 +1,84 @@
+{
+  "execution": {
+    "execution_id": "ad1b1a98-f2d3-4b1c-9fd6-4315a2fe7af8",
+    "commit": "795124b77b036f970149bf298f59f14391af9041",
+    "timestamp": "2026-07-15T20:38:29.059132+00:00",
+    "harness_version": "1.0.0-r5",
+    "repository": "Marketplace Financial AI Engine",
+    "branch": "master",
+    "evidence_base_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\evidence\\fase_1b"
+  },
+  "summary": {
+    "unique_tests": 59,
+    "aggregate_executions": 105,
+    "execution_groups": [
+      {
+        "correction": "C1",
+        "files": [
+          "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tests\\test_knowledge_indexer_build.py"
+        ],
+        "test_count": 5,
+        "returncode": 0,
+        "elapsed_seconds": 2.88,
+        "status": "VALIDATED"
+      },
+      {
+        "correction": "C2",
+        "files": [
+          "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tests\\test_ingestion_handlers.py"
+        ],
+        "test_count": 46,
+        "returncode": 0,
+        "elapsed_seconds": 1.5,
+        "status": "VALIDATED"
+      },
+      {
+        "correction": "C3",
+        "files": [
+          "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tests\\test_orchestrator_wiring.py"
+        ],
+        "test_count": 8,
+        "returncode": 0,
+        "elapsed_seconds": 2.08,
+        "status": "VALIDATED"
+      },
+      {
+        "correction": "C4",
+        "files": [
+          "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\tests\\test_ingestion_handlers.py"
+        ],
+        "test_count": 46,
+        "returncode": 0,
+        "elapsed_seconds": 1.29,
+        "status": "VALIDATED"
+      }
+    ],
+    "duplicated_files": [
+      "test_ingestion_handlers.py"
+    ],
+    "duplicated_test_count": 92,
+    "implementation_status": "IMPLEMENTED",
+    "validation_status": "VALIDATED",
+    "verification_status": "VERIFIED",
+    "certification_status": "NOT_CERTIFIED",
+    "classification_status": "VERIFIED"
+  },
+  "meta": {
+    "test_pattern": "ALL",
+    "total_groups": 4,
+    "total_elapsed_seconds": 7.75,
+    "classification": {
+      "implemented": true,
+      "validated": true,
+      "verified": true,
+      "certified": false,
+      "status": "VERIFIED"
+    },
+    "classification_chain": [
+      "IMPLEMENTED: code exists",
+      "VALIDATED: evidence reproducible",
+      "VERIFIED: evidence matches report",
+      "CERTIFIED: 3 clean consecutive runs"
+    ]
+  }
+}

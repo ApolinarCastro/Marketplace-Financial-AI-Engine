@@ -1,0 +1,140 @@
+{
+  "certification_package": "FCG_06",
+  "title": "Frontend Backend Reconciliation",
+  "timestamp": "2026-06-19T15:36:05",
+  "certification_status": "FAIL",
+  "sql_used": [
+    "\nSELECT LOWER(marketplace) mp, LOWER(financial_group) fg, SUM(monto)::BIGINT\nFROM marketplace_ledger_v1\nWHERE COALESCE(include_in_operational_pnl,1)=1\n  AND LOWER(financial_group) IS NOT NULL\n  AND LOWER(financial_group) NOT IN ('','tesoreria','none')\nGROUP BY 1,2 ORDER BY 1,2\n"
+  ],
+  "evidence": [
+    {
+      "query": "\nSELECT LOWER(marketplace) mp, LOWER(financial_group) fg, SUM(monto)::BIGINT\nFROM marketplace_ledger_v1\nWHERE COALESCE(include_in_operational_pnl,1)=1\n  AND LOWER(financial_group) IS NOT NULL\n  AND LOWER(financial_group) NOT IN ('','tesoreria','none')\nGROUP BY 1,2 ORDER BY 1,2\n",
+      "rows": 21,
+      "data": [
+        [
+          "falabella",
+          "ajustes",
+          -427
+        ],
+        [
+          "falabella",
+          "costos_comerciales",
+          -2126701
+        ],
+        [
+          "falabella",
+          "costos_operacionales",
+          -800171
+        ],
+        [
+          "falabella",
+          "devoluciones",
+          -1878556
+        ],
+        [
+          "falabella",
+          "ingresos",
+          12470241
+        ],
+        [
+          "ml",
+          "ajustes",
+          -405701
+        ],
+        [
+          "ml",
+          "costos_comerciales",
+          -185616582
+        ],
+        [
+          "ml",
+          "costos_operacionales",
+          -76883327
+        ],
+        [
+          "ml",
+          "devoluciones",
+          -97219130
+        ],
+        [
+          "ml",
+          "ingresos",
+          934773504
+        ],
+        [
+          "ml",
+          "recuperaciones_y_bonificaciones",
+          7791242
+        ],
+        [
+          "paris",
+          "ajustes",
+          1375357
+        ],
+        [
+          "paris",
+          "costos_comerciales",
+          -76583572
+        ],
+        [
+          "paris",
+          "costos_operacionales",
+          -27040388
+        ],
+        [
+          "paris",
+          "devoluciones",
+          -144269887
+        ],
+        [
+          "paris",
+          "ingresos",
+          584112964
+        ],
+        [
+          "ripley",
+          "ajustes",
+          -33440
+        ],
+        [
+          "ripley",
+          "costos_comerciales",
+          -43054637
+        ],
+        [
+          "ripley",
+          "costos_operacionales",
+          -14101127
+        ],
+        [
+          "ripley",
+          "devoluciones",
+          -72023472
+        ],
+        [
+          "ripley",
+          "ingresos",
+          412639789
+        ]
+      ]
+    }
+  ],
+  "files_modified": [
+    "templates/executive_dashboard.html",
+    "templates/dashboard.html",
+    "api/api.py"
+  ],
+  "tests_executed": [
+    "test_certification_gate.py",
+    "test_financial_engine.py",
+    "test_api_smoke.py"
+  ],
+  "before_after_metrics": {
+    "Frontend financial computation issues": "1",
+    "Ledger operational total (SIGNAL)": "$1,211,125,979",
+    "Ledger total (ALL)": "$4,077,991,989"
+  },
+  "remaining_risks": [
+    "Frontend issues: ['Client-side reduce found in executive_dashboard.html']"
+  ]
+}

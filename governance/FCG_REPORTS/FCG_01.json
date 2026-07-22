@@ -1,0 +1,145 @@
+{
+  "certification_package": "FCG_01",
+  "title": "PARIS Financial Certification",
+  "timestamp": "2026-06-19T15:36:04",
+  "certification_status": "FAIL",
+  "sql_used": [
+    "-- PARIS Venta Bruta (Ledger ingresos, operational)",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND LOWER(financial_group)='ingresos' AND COALESCE(include_in_operational_pnl,1)=1",
+    "-- PARIS Devoluciones (Ledger)",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND LOWER(financial_group)='devoluciones' AND COALESCE(include_in_operational_pnl,1)=1",
+    "-- PARIS Costos (Ledger)",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND LOWER(financial_group)='costos' AND COALESCE(include_in_operational_pnl,1)=1",
+    "-- PARIS Comisiones (Ledger)",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND LOWER(financial_group)='comisiones' AND COALESCE(include_in_operational_pnl,1)=1",
+    "-- PARIS Ajustes (Ledger)",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND LOWER(financial_group)='ajustes' AND COALESCE(include_in_operational_pnl,1)=1",
+    "-- PARIS Neto Ledger = sum of all groups",
+    "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none')",
+    "-- PARIS Disponible (cierre resultado_neto, \u00faltimo periodo)",
+    "SELECT periodo_inicio::VARCHAR, resultado_neto::BIGINT FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='paris' ORDER BY periodo_inicio DESC LIMIT 1"
+  ],
+  "evidence": [
+    {
+      "query": "-- PARIS Venta Bruta (Ledger ingresos, operational)",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND LOWER(financial_group)='ingresos' AND COALESCE(include_in_operational_pnl,1)=1",
+      "rows": 1,
+      "data": [
+        [
+          584112964
+        ]
+      ]
+    },
+    {
+      "query": "-- PARIS Devoluciones (Ledger)",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND LOWER(financial_group)='devoluciones' AND COALESCE(include_in_operational_pnl,1)=1",
+      "rows": 1,
+      "data": [
+        [
+          -144269887
+        ]
+      ]
+    },
+    {
+      "query": "-- PARIS Costos (Ledger)",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND LOWER(financial_group)='costos' AND COALESCE(include_in_operational_pnl,1)=1",
+      "rows": 1,
+      "data": [
+        [
+          null
+        ]
+      ]
+    },
+    {
+      "query": "-- PARIS Comisiones (Ledger)",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND LOWER(financial_group)='comisiones' AND COALESCE(include_in_operational_pnl,1)=1",
+      "rows": 1,
+      "data": [
+        [
+          null
+        ]
+      ]
+    },
+    {
+      "query": "-- PARIS Ajustes (Ledger)",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND LOWER(financial_group)='ajustes' AND COALESCE(include_in_operational_pnl,1)=1",
+      "rows": 1,
+      "data": [
+        [
+          1375357
+        ]
+      ]
+    },
+    {
+      "query": "-- PARIS Neto Ledger = sum of all groups",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT SUM(monto)::BIGINT FROM marketplace_ledger_v1 WHERE LOWER(marketplace)='paris' AND COALESCE(include_in_operational_pnl,1)=1 AND LOWER(financial_group) IS NOT NULL AND LOWER(financial_group) NOT IN ('','tesoreria','none')",
+      "rows": 1,
+      "data": [
+        [
+          337594474
+        ]
+      ]
+    },
+    {
+      "query": "-- PARIS Disponible (cierre resultado_neto, \u00faltimo periodo)",
+      "rows": 0,
+      "data": []
+    },
+    {
+      "query": "SELECT periodo_inicio::VARCHAR, resultado_neto::BIGINT FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)='paris' ORDER BY periodo_inicio DESC LIMIT 1",
+      "rows": 1,
+      "data": [
+        [
+          "2026-12-01",
+          0
+        ]
+      ]
+    }
+  ],
+  "files_modified": [
+    "engine/v4/financial_engine.py",
+    "api/api.py"
+  ],
+  "tests_executed": [
+    "test_certification_gate.py",
+    "test_financial_engine.py",
+    "test_api_smoke.py"
+  ],
+  "before_after_metrics": {
+    "Venta Bruta (Ledger ingresos)": "$584,112,964",
+    "Devoluciones (Ledger)": "$-144,269,887",
+    "Costos (Ledger)": "$0",
+    "Comisiones (Ledger)": "$0",
+    "Ajustes (Ledger)": "$1,375,357",
+    "Neto (Ledger sum)": "$337,594,474",
+    "Disponible (Cierre)": "$0.00",
+    "Waterfall Delta (ing+dev+cost+com+aju - neto)": "$103,623,960"
+  },
+  "remaining_risks": [
+    "PARIS comisiones are embedded in P&L spread (3P commission model) - no separate comisiones ledger group"
+  ]
+}

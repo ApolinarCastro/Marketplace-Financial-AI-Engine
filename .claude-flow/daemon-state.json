@@ -1,0 +1,142 @@
+{
+  "running": true,
+  "startedAt": "2026-06-19T13:44:38.838Z",
+  "workers": {
+    "map": {
+      "runCount": 29,
+      "successCount": 29,
+      "failureCount": 0,
+      "averageDurationMs": 7.275862068965517,
+      "isRunning": false,
+      "nextRun": "2026-06-19T20:59:39.370Z",
+      "lastStartedAt": "2026-06-19T20:44:39.335Z",
+      "lastRun": "2026-06-19T20:44:39.365Z"
+    },
+    "audit": {
+      "runCount": 43,
+      "successCount": 43,
+      "failureCount": 0,
+      "averageDurationMs": 6.209302325581397,
+      "isRunning": false,
+      "nextRun": "2026-06-19T20:56:39.542Z",
+      "lastStartedAt": "2026-06-19T20:46:39.536Z",
+      "lastRun": "2026-06-19T20:46:39.540Z"
+    },
+    "optimize": {
+      "runCount": 29,
+      "successCount": 29,
+      "failureCount": 0,
+      "averageDurationMs": 6.379310344827586,
+      "isRunning": false,
+      "nextRun": "2026-06-19T21:03:39.308Z",
+      "lastStartedAt": "2026-06-19T20:48:39.300Z",
+      "lastRun": "2026-06-19T20:48:39.306Z"
+    },
+    "consolidate": {
+      "runCount": 15,
+      "successCount": 15,
+      "failureCount": 0,
+      "averageDurationMs": 7.599999999999998,
+      "isRunning": false,
+      "nextRun": "2026-06-19T21:20:39.093Z",
+      "lastStartedAt": "2026-06-19T20:50:39.087Z",
+      "lastRun": "2026-06-19T20:50:39.090Z"
+    },
+    "testgaps": {
+      "runCount": 22,
+      "successCount": 22,
+      "failureCount": 0,
+      "averageDurationMs": 12.590909090909092,
+      "isRunning": false,
+      "nextRun": "2026-06-19T20:52:39.341Z",
+      "lastStartedAt": "2026-06-19T20:52:39.348Z",
+      "lastRun": "2026-06-19T20:52:39.351Z"
+    },
+    "predict": {
+      "runCount": 0,
+      "successCount": 0,
+      "failureCount": 0,
+      "averageDurationMs": 0,
+      "isRunning": false
+    },
+    "document": {
+      "runCount": 0,
+      "successCount": 0,
+      "failureCount": 0,
+      "averageDurationMs": 0,
+      "isRunning": false
+    }
+  },
+  "config": {
+    "autoStart": false,
+    "logDir": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\.claude-flow\\logs",
+    "stateFile": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\.claude-flow\\daemon-state.json",
+    "maxConcurrent": 2,
+    "workerTimeoutMs": 960000,
+    "resourceThresholds": {
+      "maxCpuLoad": 17.6,
+      "minFreeMemoryPercent": 10
+    },
+    "ttlMs": 43200000,
+    "idleShutdownMs": 0,
+    "workers": [
+      {
+        "type": "map",
+        "intervalMs": 900000,
+        "offsetMs": 0,
+        "priority": "normal",
+        "description": "Codebase mapping",
+        "enabled": true
+      },
+      {
+        "type": "audit",
+        "intervalMs": 600000,
+        "offsetMs": 120000,
+        "priority": "critical",
+        "description": "Security analysis",
+        "enabled": true
+      },
+      {
+        "type": "optimize",
+        "intervalMs": 900000,
+        "offsetMs": 240000,
+        "priority": "high",
+        "description": "Performance optimization",
+        "enabled": true
+      },
+      {
+        "type": "consolidate",
+        "intervalMs": 1800000,
+        "offsetMs": 360000,
+        "priority": "low",
+        "description": "Memory consolidation",
+        "enabled": true
+      },
+      {
+        "type": "testgaps",
+        "intervalMs": 1200000,
+        "offsetMs": 480000,
+        "priority": "normal",
+        "description": "Test coverage analysis",
+        "enabled": true
+      },
+      {
+        "type": "predict",
+        "intervalMs": 600000,
+        "offsetMs": 0,
+        "priority": "low",
+        "description": "Predictive preloading",
+        "enabled": false
+      },
+      {
+        "type": "document",
+        "intervalMs": 3600000,
+        "offsetMs": 0,
+        "priority": "low",
+        "description": "Auto-documentation",
+        "enabled": false
+      }
+    ]
+  },
+  "savedAt": "2026-06-19T20:52:39.352Z"
+}

@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace Financial Auditor v3.5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+        body { background-color: #f8fafc; color: #334155; font-family: 'Outfit', sans-serif; }
+        .surgical-card { background: white; border-radius: 0.75rem; border: 1px solid #e2e8f0; }
+        .amount-pos { color: #047857; font-weight: 600; }
+        .amount-neg { color: #dc2626; font-weight: 600; }
+    </style>
+    <script src="/shared/api_client.js"></script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b px-8 py-4 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="bg-black text-white p-2 rounded-lg" aria-hidden="true"><i class="fas fa-microscope"></i></div>
+                <h1 class="text-xl font-bold tracking-tight">Marketplace Auditor <span class="text-slate-400 font-normal">v3.5</span></h1>
+            </div>
+            
+            <div class="h-6 w-px bg-slate-200" aria-hidden="true"></div>
+
+                <nav class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">
+                    <a href="/app" class="px-3 py-1.5 text-xs font-semibold rounded-md bg-white text-slate-900 shadow-sm"><i class="fas fa-microscope mr-1.5"></i>Auditor</a>
+                    <a href="/exec" class="px-3 py-1.5 text-xs font-semibold rounded-md text-slate-500 hover:text-slate-800 hover:bg-white/60 transition-all"><i class="fas fa-chart-pie mr-1.5"></i>Executive</a>
+                    <a href="/upload" class="px-3 py-1.5 text-xs font-semibold rounded-md text-slate-500 hover:text-slate-800 hover:bg-white/60 transition-all"><i class="fas fa-cloud-upload-alt mr-1.5"></i>Upload</a>
+                </nav>
+
+            <div class="h-6 w-px bg-slate-200" aria-hidden="true"></div>
+            
+            <div class="flex gap-4">
+                <label for="marketplace-selector" class="sr-only">Seleccionar Marketplace</label>
+                <select id="marketplace-selector" onchange="loadDashboard()" class="bg-slate-50 border-none text-sm font-medium rounded-lg px-3 py-2 cursor-pointer outline-none focus:ring-2 focus:ring-indigo-500 transition-all">
+                    <option value="ML" selected>Mercado Libre</option>
+                    <option value="PARIS">Paris</option>
+                    <option value="RIPLEY">Ripley</option>
+                    <option value="FALABELLA">Falabella</option>
+                </select>
+                <label for="period-selector" class="sr-only">Seleccionar Período Financiero</label>
+                <select id="period-selector" onchange="loadDashboard()" class="bg-slate-50 border-none text-sm font-medium rounded-lg px-3 py-2 cursor-pointer outline-none focus:ring-2 focus:ring-indigo-500 transition-all">
+                    <!-- Dynamic Periods from 2023 -->
+                </select>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <button onclick="runAudit()" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-indigo-700 transition shadow-sm">
+                <i class="fas fa-play mr-2"></i> Ejecutar Auditoría
+            </button>
+            <div id="alert-badge" class="hidden">
+                <div class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-xs font-bold border border-rose-200 flex items-center gap-2">
+                    <i class="fas fa-circle text-[6px] animate-pulse"></i> ALERTA DE REVISIÓN
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="p-8 grid grid-cols-12 gap-8">
+        <!-- Dashboard Summary -->
+        <div class="col-span-12 lg:col-span-4 space-y-6">
+            <!-- Estado del Proceso (Fase 2) -->
+            <div id="estado-proceso-container" class="hidden"></div>
+
+            <div class="surgical-card p-6 shadow-sm" id="estructura-financiera-panel">
+                <div class="flex justify-between items-center mb-6 border-b pb-2">
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Estructura Financiera</h3>
+                    
+                    <!-- Toggle Switch -->
+                    <div class="flex items-center gap-2">
+                        <span class="text-[10px] font-bold uppercase tracking-widest" id="toggle-label">Verdad Legal</span>
+                        <button id="mode-toggle" onclick="toggleMode()" role="switch" aria-checked="false" aria-label="Visualizar en modo de compatibilidad 360" class="w-10 h-5 bg-slate-300 rounded-full relative transition-colors shadow-inner focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                            <div id="toggle-knob" class="w-4 h-4 bg-white rounded-full absolute left-0.5 top-0.5 shadow transition-transform"></div>
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="cierre-container" class="space-y-4">
+                    <div class="animate-pulse flex flex-col gap-4">
+                        <div class="h-4 bg-slate-100 rounded w-3/4"></div>
+                        <div class="h-4 bg-slate-100 rounded w-1/2"></div>
+                        <div class="h-10 bg-slate-200 rounded mt-4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audit Alerts -->
+            <div id="audit-alerts-list" class="space-y-3 hidden">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest px-2">Alertas de Auditoría</h3>
+                <div id="alerts-content" class="max-h-96 overflow-y-auto pr-2 space-y-2">
+                    <!-- Alerts injected here -->
+                </div>
+            </div>
+
+            <!-- Compliance Tributario -->
+            <div id="compliance-alerts-list" class="space-y-3 hidden mt-6">
+                <h3 class="text-xs font-bold text-rose-500 uppercase tracking-widest px-2"><i class="fas fa-balance-scale mr-1"></i> Compliance Tributario</h3>
+                <div id="compliance-content" class="max-h-96 overflow-y-auto pr-2 space-y-2">
+                    <!-- Alerts injected here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Ledger Table -->
+        <div class="col-span-12 lg:col-span-8">
+            <div class="surgical-card shadow-sm flex flex-col h-[750px]">
+                <div class="px-6 py-4 border-b flex flex-col gap-4 bg-slate-50/50 rounded-t-xl">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <h3 class="font-bold text-slate-800">Ledger Transaccional</h3>
+                            <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 bg-white border border-slate-200 rounded-md">marketplace_ledger_v1</span>
+                        </div>
+                        <div class="relative flex items-center gap-2">
+                            <i class="fas fa-filter text-slate-400 text-xs" aria-hidden="true"></i>
+                            <label for="ledger-filter-detalle" class="sr-only">Filtrar ledger por detalle</label>
+                            <select id="ledger-filter-detalle" onchange="renderLedger()" class="text-xs bg-white border border-slate-200 shadow-sm rounded-lg outline-none w-72 px-3 py-1.5 focus:border-indigo-400 transition-colors appearance-none">
+                                <option value="">(Todos los detalles) Filtrar como en Excel...</option>
+                            </select>
+                            <i class="fas fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-[10px] pointer-events-none" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Interactive Filter Banner -->
+                <div id="filter-banner" class="hidden px-6 py-2 bg-indigo-50 border-b border-indigo-100 flex justify-between items-center text-xs text-indigo-700 font-medium">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-filter text-indigo-500"></i>
+                        <span>Filtrado por: <span id="filter-banner-text" class="font-bold text-indigo-900"></span></span>
+                    </div>
+                    <button onclick="clearFinancialFilter()" class="text-indigo-600 hover:text-indigo-800 font-bold flex items-center gap-1 transition-colors">
+                        <i class="fas fa-times-circle"></i> Quitar filtro
+                    </button>
+                </div>
+                
+                <div class="overflow-auto flex-1">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-slate-50 text-slate-500 text-[10px] font-bold uppercase tracking-widest sticky top-0 shadow-sm z-10">
+                            <tr>
+                                <th class="px-6 py-3 whitespace-nowrap">Fecha</th>
+                                <th class="px-6 py-3 whitespace-nowrap">ID Transacción</th>
+                                <th class="px-6 py-3">Detalle Original</th>
+                                <th class="px-6 py-3">Origen</th>
+                                <th class="px-6 py-3">Grupo Financiero</th>
+                                <th class="px-6 py-3 text-right">Monto</th>
+                                <th class="px-6 py-3 text-center">XML</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ledger-body" class="divide-y divide-slate-100">
+                            <!-- Rows -->
+                        </tbody>
+                        <tfoot class="bg-slate-100 sticky bottom-0 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] border-t-2 border-slate-200 z-10">
+                            <tr>
+                                <td colspan="5" class="px-6 py-3 text-right text-xs font-bold text-slate-600 uppercase tracking-widest">
+                                    Total Seleccionado:
+                                </td>
+                                <td id="ledger-total-sum" class="px-6 py-3 text-right font-bold text-base text-slate-800">
+                                    $0
+                                </td>
+                                <td class="px-6 py-3"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div id="ledger-footer-controls" class="flex justify-between items-center px-6 py-2 border-t border-slate-100 bg-slate-50/50">
+                        <div class="flex items-center gap-3">
+                            <label class="flex items-center gap-1.5 text-xs text-slate-500 cursor-pointer select-none" title="Ocultar filas con monto $0 (solo visual)">
+                                <input type="checkbox" id="toggle-filter-zero" checked onchange="toggleFilterZero()" class="accent-indigo-500 w-3.5 h-3.5">
+                                <span>Ocultar $0</span>
+                            </label>
+                            <span id="ledger-rows-info" class="text-[10px] text-slate-400 font-mono"></span>
+                        </div>
+                        <button id="btn-load-more" onclick="loadMoreLedger()" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 hover:bg-indigo-50 px-4 py-1.5 rounded-lg border border-indigo-200 hover:border-indigo-300 transition-all hidden">
+                            <i class="fas fa-chevron-down mr-1.5 text-[10px]"></i> Cargar más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documentary Integration Panels (P21Z) -->
+        <div class="col-span-12 mt-6 hidden" id="ai-insights-container">
+            <h2 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <i class="fas fa-file-invoice text-indigo-600"></i> Estado Documental y Tributario
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="surgical-card p-4 shadow-sm border-t-4 border-indigo-500">
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Inteligencia Documental</h3>
+                    <div id="doc-gap-metrics" class="space-y-2">
+                        <p class="text-sm text-slate-500 italic">Cargando métricas...</p>
+                    </div>
+                </div>
+                <div class="surgical-card p-4 shadow-sm border-t-4 border-rose-500">
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Riesgo Tributario</h3>
+                    <div id="tax-risk-metrics" class="space-y-2">
+                        <p class="text-sm text-slate-500 italic">Cargando riesgos...</p>
+                    </div>
+                </div>
+                <div class="surgical-card p-4 shadow-sm border-t-4 border-emerald-500">
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Cobertura</h3>
+                    <div id="doc-coverage-metrics" class="space-y-2">
+                        <p class="text-sm text-slate-500 italic">Calculando cobertura...</p>
+                    </div>
+                </div>
+                <div class="surgical-card p-4 shadow-sm border-t-4 border-amber-500">
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Recomendaciones</h3>
+                    <div id="doc-recommendations" class="space-y-2">
+                        <p class="text-sm text-slate-500 italic">Procesando...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cobertura Documental (DTE) -->
+        <section class="col-span-12 mt-6 hidden" id="sect-cobertura">
+            <h2 class="text-lg font-bold text-slate-800 mb-4">Cobertura Documental (DTE)</h2>
+            <p id="dte-explanation" class="text-xs text-slate-500 mb-4 hidden">Matching tributario no certificable con evidencia actual.</p>
+            <div id="content-doc" class="grid grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="surgical-card p-5"><span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Monto Elegible</span><div class="text-2xl font-bold text-slate-800 mt-1" id="ux12-doc-elegible">—</div></div>
+                <div class="surgical-card p-5"><span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Monto Certificado</span><div class="text-2xl font-bold text-slate-800 mt-1" id="ux12-doc-match">—</div></div>
+                <div class="surgical-card p-5"><span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Monto Sin Respaldo</span><div class="text-2xl font-bold text-slate-800 mt-1" id="ux12-doc-pend">—</div></div>
+                <div class="surgical-card p-5"><span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Nivel de Evidencia</span><div class="text-2xl font-bold text-slate-800 mt-1 text-sm" id="ux12-doc-evidencia">—</div></div>
+                <div class="surgical-card p-5"><span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Estrategia</span><div class="text-2xl font-bold text-slate-800 mt-1 text-sm" id="ux12-doc-estrategia">—</div></div>
+                <div class="surgical-card p-5 bg-slate-800 text-white shadow-lg"><span class="text-[10px] font-bold text-slate-300 uppercase tracking-widest">Cobertura Legal</span><div class="text-3xl font-bold mt-1" id="ux12-doc-cov">—</div></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal for Transaction Detail -->
+    <div id="inspector-modal" role="dialog" aria-modal="true" aria-labelledby="insp-id" class="hidden fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl w-full max-w-2xl shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-200" id="modal-content">
+            <div class="p-6 border-b flex justify-between items-start bg-slate-50">
+                <div>
+                    <h2 class="text-xl font-bold text-slate-900 font-mono" id="insp-id">#000000000</h2>
+                    <p class="text-sm text-slate-500 mt-1" id="insp-date"><i class="far fa-calendar-alt mr-2"></i> 00 Oct 202X</p>
+                </div>
+                <button onclick="closeInspector()" class="text-slate-400 hover:text-slate-600 transition bg-white w-8 h-8 rounded-full shadow-sm flex items-center justify-center">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-8 space-y-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <span class="text-[10px] font-bold text-indigo-500 uppercase tracking-wider">Flujo Transaccional</span>
+                        <p class="text-lg font-medium mt-1 leading-snug" id="insp-detalle">-</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-[10px] font-bold text-indigo-500 uppercase tracking-wider">Impacto Financiero</span>
+                        <p class="text-3xl font-bold mt-1 tracking-tight" id="insp-monto">$0</p>
+                    </div>
+                </div>
+                
+                <div class="h-px bg-slate-100"></div>
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Soporte Tributario</span>
+                            <span id="insp-xml-status" class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-600 border border-amber-200 uppercase tracking-wider">Pendiente</span>
+                        </div>
+                        <p class="font-bold text-slate-700 text-sm" id="insp-xml-folio">Sin verificación DTE</p>
+                    </div>
+                    <div onclick="registerCorrection()" class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100 group hover:bg-indigo-50 transition-colors cursor-pointer">
+                        <span class="text-[10px] font-bold text-indigo-400 uppercase mb-2 block tracking-wider">Capa de Corrección Manual</span>
+                        <div class="text-indigo-600 text-sm font-bold flex items-center justify-between">
+                            <span>Registrar ajuste de sistema</span>
+                            <i class="fas fa-arrow-right text-indigo-300 group-hover:text-indigo-600 transition-colors"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Correction -->
+    <div id="correction-modal" role="dialog" aria-modal="true" aria-labelledby="corr-id" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[110] flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl w-full max-w-md shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-200" id="correction-content">
+            <div class="p-6 border-b flex justify-between items-start bg-indigo-50">
+                <div>
+                    <h2 class="text-lg font-bold text-indigo-900">Registrar Ajuste Manual</h2>
+                    <p class="text-xs text-indigo-600 mt-1 font-mono" id="corr-id">#0000</p>
+                </div>
+                <button onclick="closeCorrection()" class="text-indigo-400 hover:text-indigo-600 transition bg-white w-8 h-8 rounded-full shadow-sm flex items-center justify-center">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-6 space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2" id="corr-detalle-label">Clasificación Correcta</label>
+                    <select id="corr-detalle" aria-labelledby="corr-detalle-label" class="w-full bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2.5">
+                        <option value="">Cargando cuentas...</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Motivo de la Auditoría</label>
+                    <textarea id="corr-motivo" rows="2" class="w-full bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2.5" placeholder="Ej. Reclasificación contable por concepto no reconocido"></textarea>
+                </div>
+                <button onclick="submitCorrection()" id="btn-submit-corr" class="w-full text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-3 text-center transition-colors">
+                    <i class="fas fa-save mr-2"></i> Guardar y Recalcular
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function closeCorrection() {
+            const modal = document.getElementById('correction-modal');
+            const content = document.getElementById('correction-content');
+            content.classList.remove('scale-100', 'opacity-100');
+            content.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => modal.classList.add('hidden'), 200);
+        }
+
+        function closeInspector() {
+            const modal = document.getElementById('inspector-modal');
+            const content = document.getElementById('modal-content');
+            if(content) {
+                content.classList.remove('scale-100', 'opacity-100');
+                content.classList.add('scale-95', 'opacity-0');
+            }
+            if(modal) {
+                setTimeout(() => modal.classList.add('hidden'), 200);
+            }
+        }
+
+        function registerCorrection() {
+            if (!currentInspectorId) return;
+            document.getElementById('corr-id').innerText = "#" + currentInspectorId.substring(0,25) + '...';
+            document.getElementById('corr-motivo').value = "";
+            
+            // Populate correction dropdown dynamically by selected marketplace
+            const mp = document.getElementById('marketplace-selector').value;
+            const select = document.getElementById('corr-detalle');
+            
+            const options = {
+                ML: [
+                    { value: "Cargo por venta (Venta)", label: "Cargo por venta (Venta) [Ingreso]" },
+                    { value: "Cargo por venta (Comisión)", label: "Cargo por venta (Comisión) [Costo Comercial]" },
+                    { value: "Devolución de venta", label: "Devolución de venta [Devolución]" },
+                    { value: "Cargo por Mercado Envíos", label: "Cargo por Mercado Envíos [Logística]" },
+                    { value: "Cargo por envíos de Mercado Libre", label: "Cargo por envíos de Mercado Libre [Logística]" },
+                    { value: "Cargo por servicio de almacenamiento Full", label: "Cargo por servicio de almacenamiento Full [Logística]" },
+                    { value: "Cargo por retiro de stock Full", label: "Cargo por retiro de stock Full [Logística]" },
+                    { value: "Cargo por stock antiguo en Full", label: "Cargo por stock antiguo en Full [Logística]" },
+                    { value: "Cargo por sobrepasar espacio Full", label: "Cargo por sobrepasar espacio Full [Logística]" },
+                    { value: "Cargo por devolución", label: "Cargo por devolución [Devolución]" },
+                    { value: "Cargo por diferencias en las medidas y el peso del paquete", label: "Cargo por diferencias de paquete [Logística]" },
+                    { value: "Cargo por campaña de publicidad - Product Ads", label: "Product Ads [Costo Comercial]" },
+                    { value: "Cargo por campaña de publicidad - Brand Ads", label: "Brand Ads [Costo Comercial]" },
+                    { value: "Cargo por campaña de publicidad - Display", label: "Display Ads [Costo Comercial]" },
+                    { value: "Bonificación", label: "Bonificación [Ingreso]" },
+                    { value: "Anulación del cargo por venta", label: "Anulación del cargo por venta [Ajuste]" },
+                    { value: "Anulación del cargo por Mercado Envíos", label: "Anulación de costo de envío [Ajuste]" },
+                    { value: "Abono manual", label: "Abono manual [Ajuste]" },
+                    { value: "Devolución de dinero", label: "Devolución de dinero [Devolución]" },
+                    { value: "Pago", label: "Pago [Ingreso]" },
+                    { value: "Envío", label: "Envío [Logística]" }
+                ],
+                PARIS: [
+                    { value: "Venta", label: "Venta [Ingreso]" },
+                    { value: "Cobro por despacho", label: "Cobro por despacho [Logística]" },
+                    { value: "Devolución", label: "Devolución [Devolución]" },
+                    { value: "Despacho", label: "Despacho [Logística]" },
+                    { value: "Logística inversa", label: "Logística inversa [Logística]" },
+                    { value: "Compensación logística", label: "Compensación logística [Ajuste]" },
+                    { value: "Cobro stock antiguo", label: "Cobro stock antiguo [Logística]" },
+                    { value: "Cargo", label: "Cargo [Ajuste]" },
+                    { value: "Cobro por campaña", label: "Cobro por campaña [Costo Comercial]" },
+                    { value: "Rebate", label: "Rebate [Costo Comercial]" },
+                    { value: "Ajuste Inventario Activo", label: "Ajuste Inventario Activo [Ajuste]" },
+                    { value: "Retiro stock bodega Paris", label: "Retiro stock bodega Paris [Logística]" },
+                    { value: "Merma", label: "Merma [Ajuste]" },
+                    { value: "Multa", label: "Multa [Ajuste]" },
+                    { value: "Multa por stock", label: "Multa por stock [Ajuste]" },
+                    { value: "Comisión de venta", label: "Comisión de venta [Costo Comercial]" },
+                    { value: "Comisión", label: "Comisión [Costo Comercial]" },
+                    { value: "Descuento comercial", label: "Descuento comercial [Costo Comercial]" },
+                    { value: "Multa logística", label: "Multa logística [Ajuste]" },
+                    { value: "Penalización SLA", label: "Penalización SLA [Ajuste]" },
+                    { value: "Costo almacenamiento", label: "Costo almacenamiento [Logística]" },
+                    { value: "Fee fulfillment", label: "Fee fulfillment [Logística]" },
+                    { value: "Devolución fulfillment", label: "Devolución fulfillment [Devolución]" }
+                ],
+                RIPLEY: [
+                    { value: "Importe del pedido", label: "Importe del pedido [Ingreso]" },
+                    { value: "Importe del envío del pedido", label: "Importe del envío del pedido [Ingreso]" },
+                    { value: "Gastos de envío", label: "Gastos de envío [Logística]" },
+                    { value: "Gastos de envío pagados por el operador", label: "Gastos de envío por operador [Logística]" },
+                    { value: "Gastos de envío reembolsados pagados por el operador", label: "Gastos de envío reembolsados [Devolución]" },
+                    { value: "Comisiones sobre pedidos", label: "Comisiones sobre pedidos [Costo Comercial]" },
+                    { value: "Pedidos reembolsados", label: "Pedidos reembolsados [Devolución]" },
+                    { value: "Importe de reembolso", label: "Importe de reembolso [Devolución]" },
+                    { value: "Importe del pedido reembolsado", label: "Importe del pedido reembolsado [Devolución]" },
+                    { value: "Importe del envío del pedido reembolsado", label: "Importe del envío reembolsado [Devolución]" },
+                    { value: "Comisión de reembolso", label: "Comisión de reembolso [Costo Comercial]" },
+                    { value: "Impuesto sobre las comisiones", label: "Impuesto sobre las comisiones [Costo Comercial]" },
+                    { value: "Impuesto sobre la comisión de reembolso", label: "Impuesto comisión reembolso [Costo Comercial]" },
+                    { value: "Impuesto de la factura manual", label: "Impuesto de la factura manual [Costo Comercial]" },
+                    { value: "Abono manual", label: "Abono manual [Ajuste]" },
+                    { value: "Factura manual", label: "Factura manual [Ajuste]" },
+                    { value: "Recargo por precio mínimo", label: "Recargo por precio mínimo [Costo Comercial]" },
+                    { value: "Descuento por costo logístico", label: "Descuento por costo logístico [Logística]" },
+                    { value: "Descuento por cancelación", label: "Descuento por cancelación [Ajuste]" },
+                    { value: "A pagar", label: "A pagar [Ajuste]" },
+                    { value: "Abono oferta TC - OPEX", label: "Abono oferta TC [Ajuste]" },
+                    { value: "Otros abonos", label: "Otros abonos [Ajuste]" },
+                    { value: "Otros descuentos", label: "Otros descuentos [Ajuste]" },
+                    { value: "Abono postventa", label: "Abono postventa [Ajuste]" }
+                ],
+                FALABELLA: [
+                    { value: "Pago por precio del producto", label: "Pago por precio del producto [Ingreso]" },
+                    { value: "Sale amount", label: "Sale amount [Ingreso]" },
+                    { value: "Shipping income", label: "Shipping income [Ingreso]" },
+                    { value: "Cobro por comisión por venta", label: "Cobro por comisión por venta [Costo Comercial]" },
+                    { value: "Commission fee", label: "Commission fee [Costo Comercial]" },
+                    { value: "Fulfillment fee", label: "Fulfillment fee [Logística]" },
+                    { value: "Storage fee", label: "Storage fee [Logística]" },
+                    { value: "Shipping fee", label: "Shipping fee [Logística]" },
+                    { value: "Reverse shipping", label: "Reverse shipping [Logística]" },
+                    { value: "Return fee", label: "Return fee [Devolución]" },
+                    { value: "Refund", label: "Refund [Devolución]" },
+                    { value: "Advertising fee", label: "Advertising fee [Costo Comercial]" },
+                    { value: "Tax", label: "Tax [Costo Comercial]" },
+                    { value: "Chargeback", label: "Chargeback [Ajuste]" },
+                    { value: "Adjustment", label: "Adjustment [Ajuste]" },
+                    { value: "Reimbursement", label: "Reimbursement [Ajuste]" },
+                    { value: "Cancellation fee", label: "Cancellation fee [Ajuste]" },
+                    { value: "Late shipment fee", label: "Late shipment fee [Ajuste]" },
+                    { value: "Penalty fee", label: "Penalty fee [Ajuste]" },
+                    { value: "Customer claim adjustment", label: "Customer claim adjustment [Ajuste]" },
+                    { value: "Inventory adjustment", label: "Inventory adjustment [Ajuste]" },
+                    { value: "Seller compensation", label: "Seller compensation [Ajuste]" },
+                    { value: "Promotion fee", label: "Promotion fee [Costo Comercial]" },
+                    { value: "Voucher discount", label: "Voucher discount [Costo Comercial]" },
+                    { value: "Campaign discount", label: "Campaign discount [Costo Comercial]" }
+                ]
+            };
+            
+            let html = '<option value="">Selecciona la cuenta correcta...</option>';
+            if (options[mp]) {
+                options[mp].forEach(opt => {
+                    html += `<option value="${opt.value}">${opt.label}</option>`;
+                });
+            }
+            select.innerHTML = html;
+            select.value = "";
+            
+            const modal = document.getElementById('correction-modal');
+            const content = document.getElementById('correction-content');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                content.classList.remove('scale-95', 'opacity-0');
+                content.classList.add('scale-100', 'opacity-100');
+                
+                // Focus on first input for accessibility
+                if (select) select.focus();
+            }, 10);
+        }
+
+        async function submitCorrection() {
+            if (!currentInspectorId) return;
+            const detalle = document.getElementById('corr-detalle').value;
+            if (!detalle) { alert("Por favor selecciona una cuenta contable."); return; }
+            const motivo = document.getElementById('corr-motivo').value || "Reclasificación manual desde Dashboard";
+
+            const btn = document.getElementById('btn-submit-corr');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Guardando...';
+
+            try {
+                const data = await ApiClient.safeFetch('/api/v4/correcciones', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        id_transaccion: currentInspectorId,
+                        detalle_original: document.getElementById('insp-detalle').innerText,
+                        detalle_corregido: detalle,
+                        motivo: motivo,
+                        usuario: "dashboard_user"
+                    })
+                });
+                if (data.status === 'success') {
+                    closeCorrection();
+                    closeInspector();
+                    
+                    // Trigger audit run automatically to reflect the correction
+                    const mp = document.getElementById('marketplace-selector').value;
+                    await ApiClient.safeFetch('/api/v4/run-audit?marketplace=' + mp, { method: 'POST' });
+                    
+                    // Reload the dashboard fully
+                    await loadDashboard();
+                } else {
+                    alert('Error registrando ajuste: ' + (data.detail || JSON.stringify(data)));
+                }
+            } catch (e) {
+                console.error(e);
+                alert("Error técnico local:\n" + e.message + "\n" + (e.stack ? e.stack.substring(0,200) : ''));
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-save mr-2"></i> Guardar y Recalcular';
+            }
+        }
+
+        // Populate period selector from unified endpoint (Single Temporal Context)
+        const periodSel = document.getElementById('period-selector');
+        async function initApp() {
+            try {
+                const periodos = await ApiClient.getPeriodos();
+                const currentVal = periodSel.value;
+                periodSel.innerHTML = periodos.map(p => `<option value="${p.periodo}"${p.periodo === currentVal ? ' selected' : ''}>${p.label}</option>`).join('');
+                
+                const mp = document.getElementById('marketplace-selector').value;
+                const periodo = periodSel.value;
+                if (!mp || !periodo) {
+                    console.error("Missing mandatory selectors");
+                    return;
+                }
+                loadDashboard();
+            } catch (e) {
+                console.error("Initialization failed:", e);
+                periodSel.innerHTML = '<option value="">Periodos no disponibles</option>';
+            }
+        }
+        initApp();
+
+        let currentLedgerData = [];
+        let isLegacyMode = false;
+        let activeFinancialFilter = null;
+
+        function buildLedgerUrl(offset) {
+            const mp = document.getElementById('marketplace-selector').value;
+            const periodo = document.getElementById('period-selector').value;
+            const fz = document.getElementById('toggle-filter-zero').checked;
+            let url = `/api/v4/ledger?marketplace=${mp}&periodo=${periodo}&limit=200&offset=${offset || 0}&filter_zero=${fz}&signal_mode=SIGNAL`;
+            if (activeFinancialFilter) {
+                if (activeFinancialFilter.type === 'category') {
+                    url += `&financial_group=${activeFinancialFilter.value}`;
+                } else if (activeFinancialFilter.type === 'subgroup') {
+                    url += `&detalle=${encodeURIComponent(activeFinancialFilter.value)}&financial_group=${encodeURIComponent(activeFinancialFilter.category)}`;
+                }
+            }
+            return url;
+        }
+
+        function fetchLedgerFromServer() {
+            ApiClient.safeFetch(buildLedgerUrl(0)).then(page => {
+                    currentLedgerData = page.data || [];
+                    window._ledgerTotalCount = page.total_count || 0;
+                    window._ledgerTotalSum = page.total_sum || 0;
+                    window._ledgerDetalles = page.detalles || [];
+                    populateLedgerFilter();
+                    renderLedger();
+                })
+                .catch(e => console.error('fetchLedger error:', e));
+        }
+
+        function selectFinancialFilter(type, value, label, categoryKey) {
+            if (activeFinancialFilter && activeFinancialFilter.type === type && activeFinancialFilter.value === value) {
+                clearFinancialFilter();
+                return;
+            }
+            activeFinancialFilter = { type: type, value: value, label: label, category: categoryKey };
+            const banner = document.getElementById('filter-banner');
+            const bannerText = document.getElementById('filter-banner-text');
+            if (banner && bannerText) {
+                bannerText.innerText = label;
+                banner.classList.remove('hidden');
+            }
+            renderCierre();
+            loadAnalyticLayers();
+            fetchLedgerFromServer();
+        }
+
+        function clearFinancialFilter() {
+            activeFinancialFilter = null;
+            const banner = document.getElementById('filter-banner');
+            if (banner) {
+                banner.classList.add('hidden');
+            }
+            renderCierre();
+            loadAnalyticLayers();
+            fetchLedgerFromServer();
+        }
+
+        function renderLedger() {
+            const tbody = document.getElementById('ledger-body');
+            const sumCell = document.getElementById('ledger-total-sum');
+            const filterVal = document.getElementById('ledger-filter-detalle').value;
+            
+            if(!currentLedgerData || currentLedgerData.length === 0) {
+                let extraWarning = '';
+                if (activeFinancialFilter && activeFinancialFilter.type === 'subgroup') {
+                    const fs = window._financialStructure;
+                    if (fs && fs.categories) {
+                        for (const cat of fs.categories) {
+                            for (const sub of cat.subcategories) {
+                                if (sub.detalle === activeFinancialFilter.value && Math.abs(sub.total) > 0) {
+                                    extraWarning = `<div class="px-4 py-2 mx-6 mb-2 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-700"><i class="fas fa-exclamation-triangle mr-1"></i> El subtotal financiero <strong>${activeFinancialFilter.label}</strong> = ${new Intl.NumberFormat('es-CL', {style:'currency', currency:'CLP', maximumFractionDigits:0}).format(sub.total)} no se refleja en el Ledger Transaccional. Revisa el filtro o los datos fuente.</div>`;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody.innerHTML = `<tr><td colspan="7">${extraWarning}<div class="px-6 py-12 text-center text-slate-400 font-medium"><i class="fas fa-inbox text-2xl mb-2 block"></i> No hay datos transaccionales.</div></td></tr>`;
+                sumCell.innerText = "$0";
+                return;
+            }
+
+            let filteredData = currentLedgerData;
+
+            // Only client-side filter: detalle dropdown (pure UI convenience, no financial logic)
+            if (filterVal !== "") {
+                filteredData = filteredData.filter(row => row.detalle === filterVal);
+            }
+
+            renderLedgerTable(filteredData);
+        }
+
+        async function filterLedgerByOrder(orderId) {
+            // Reset dropdown
+            document.getElementById('ledger-filter-detalle').value = "";
+            const mp = document.getElementById('marketplace-selector').value;
+            
+            try {
+                // Consultar directamente al backend para buscar el ID de orden sin importar el mes
+                const orderPage = await ApiClient.safeFetch('/api/v4/ledger?marketplace=' + mp + '&order_id=' + orderId);
+                window._ledgerTotalSum = orderPage.total_sum || 0;
+                renderLedgerTable(orderPage.data || orderPage, true);
+                
+                // Highlight the table temporarily to show user where to look
+                const tableCard = document.querySelector('.surgical-card:last-child');
+                tableCard.classList.add('ring-2', 'ring-indigo-400', 'transition-all');
+                setTimeout(() => tableCard.classList.remove('ring-2', 'ring-indigo-400'), 1500);
+            } catch (e) {
+                console.error("Error fetching order detail:", e);
+            }
+        }
+
+        function renderLedgerTable(data, hideControls) {
+            const tbody = document.getElementById('ledger-body');
+            const sumCell = document.getElementById('ledger-total-sum');
+            
+            if(!data || data.length === 0) {
+                 tbody.innerHTML = `<tr><td colspan="7" class="px-6 py-12 text-center text-slate-400 font-medium"><i class="fas fa-search text-2xl mb-2 block" aria-hidden="true"></i> No se encontraron registros.</td></tr>`;
+                 sumCell.innerText = "$0";
+                 return;
+            }
+
+            window._ledgerRowMap = {};
+            // Render rows
+            tbody.innerHTML = data.slice(0, 500).map((row, index) => {
+                window._ledgerRowMap[index] = row;
+                const dteStatusText = row.estado_xml === 'CONCILIADO' ? 'Conciliado con SII' : (row.estado_xml === 'DOCUMENTADO' ? 'Verificado en SII/DTE' : 'Pendiente Tributaria');
+                const dteClass = row.estado_xml === 'CONCILIADO' ? 'bg-emerald-100 text-emerald-800 border-emerald-300' : (row.estado_xml === 'DOCUMENTADO' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : 'bg-slate-50 text-slate-400 border-slate-200 group-hover:bg-amber-50 group-hover:text-amber-700 group-hover:border-amber-200');
+                const dateVal = row.fecha || '-';
+                
+                // Safe extraction of properties
+                const rawTxId = row.id_transaccion ? String(row.id_transaccion) : '';
+                const txIdDisp = rawTxId ? rawTxId.substring(0, 20) : 'SIN_ID';
+                const txIdSub = rawTxId ? rawTxId.substring(0, 8) : 'SIN_ID';
+                const txIdLen = rawTxId ? rawTxId.length : 0;
+                
+                const rawDetalle = row.detalle ? String(row.detalle) : 'Detalle desconocido';
+                const detalleDisp = rawDetalle.length > 60 ? rawDetalle.substring(0,60) + '...' : rawDetalle;
+                
+                const rawMonto = typeof row.monto === 'number' ? row.monto : 0;
+                const montoDisp = rawMonto.toLocaleString('es-CL');
+                const amountColor = rawMonto < 0 ? 'amount-neg' : 'amount-pos';
+                
+                const truthColor = 'bg-slate-100 text-slate-600 border-slate-200';
+                
+                let mappedOrigen = row.archivo_origen || 'Sin archivo';
+                if (mappedOrigen === 'Sin archivo' || mappedOrigen.trim() === '') {
+                     mappedOrigen = row.id_transaccion || 'N/A';
+                }
+
+                return `
+                    <tr class="hover:bg-slate-50 transition-colors cursor-pointer group focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-slate-100" 
+                        tabindex="0" 
+                        role="button" 
+                        aria-label="Transacción ${txIdSub}..., Detalle ${rawDetalle}, Monto ${montoDisp} pesos, Estado tributario: ${dteStatusText}"
+                        onclick="openInspector(window._ledgerRowMap[${index}])"
+                        onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openInspector(window._ledgerRowMap[${index}]); }">
+                        <td class="px-6 py-3 text-slate-400 font-medium whitespace-nowrap">${dateVal}</td>
+                        <td class="px-6 py-3 font-mono text-indigo-600 text-xs">#${txIdDisp}${txIdLen > 20 ? '...' : ''}</td>
+                        <td class="px-6 py-3 font-medium text-slate-700">${detalleDisp}</td>
+                        <td class="px-6 py-3 text-xs font-mono font-medium text-slate-500">${mappedOrigen}</td>
+                        <td class="px-6 py-3 text-[10px] font-bold uppercase tracking-widest"><span class="px-2 py-0.5 rounded-md border shadow-sm ${truthColor}">${row.financial_group || 'N/A'}</span></td>
+                        <td class="px-6 py-3 text-right font-bold ${amountColor}">$${montoDisp}</td>
+                        <td class="px-6 py-3 text-center cursor-pointer" onclick="event.stopPropagation(); openCertificationDrawer('${row.id_transaccion || row.order_id}', '${row.estado_xml}')">
+                            <span class="px-2.5 py-1 rounded-md text-[9px] font-bold border shadow-sm transition-all ${dteClass} tracking-wider uppercase hover:shadow-md hover:brightness-110">
+                                ${row.estado_xml === 'CONCILIADO' ? '<i class="fas fa-check-double mr-1" aria-hidden="true"></i> CONCILIADO' : (row.estado_xml === 'DOCUMENTADO' ? '<i class="fas fa-check mr-1" aria-hidden="true"></i> DTE' : '<i class="far fa-clock" aria-hidden="true"></i>')}
+                                <span class="sr-only">${dteStatusText}</span>
+                            </span>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+
+            // Calculate Sum — use server-side total_sum (always correct) not visible rows sum
+            const totalSum = window._ledgerTotalSum ?? data.reduce((acc, row) => acc + (typeof row.monto === 'number' ? row.monto : 0), 0);
+            sumCell.innerText = '$' + totalSum.toLocaleString('es-CL');
+            sumCell.className = `px-6 py-3 text-right font-bold text-base ${totalSum < 0 ? 'amount-neg' : 'amount-pos'}`;
+
+            // Update rows info + Load More visibility (unless order-specific view)
+            if (!hideControls) {
+                const info = document.getElementById('ledger-rows-info');
+                const btn = document.getElementById('btn-load-more');
+                const loaded = currentLedgerData.length;
+                const total = window._ledgerTotalCount || 0;
+                if (info) info.innerText = `Mostrando ${loaded} de ${total} movimientos`;
+                if (btn) btn.classList.toggle('hidden', loaded >= total);
+            }
+        }
+
+        async function loadMoreLedger() {
+            const offset = currentLedgerData.length;
+            const btn = document.getElementById('btn-load-more');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-1.5"></i> Cargando...';
+            try {
+                const page = await ApiClient.safeFetch(buildLedgerUrl(offset));
+                currentLedgerData = currentLedgerData.concat(page.data || []);
+                renderLedger();
+            } catch (e) {
+                console.error('loadMore error:', e);
+                btn.innerHTML = '<i class="fas fa-exclamation-triangle mr-1.5"></i> Error - reintentar';
+                btn.disabled = false;
+            }
+        }
+
+        function toggleFilterZero() {
+            const btn = document.getElementById('btn-load-more');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-1.5"></i>';
+            ApiClient.safeFetch(buildLedgerUrl(0)).then(page => {
+                    currentLedgerData = page.data || [];
+                    window._ledgerTotalCount = page.total_count || 0;
+                    window._ledgerTotalSum = page.total_sum || 0;
+                    window._ledgerDetalles = page.detalles || [];
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-chevron-down mr-1.5 text-[10px]"></i> Cargar mas';
+                    populateLedgerFilter();
+                    renderLedger();
+                })
+                .catch(e => {
+                    console.error('toggleZero error:', e);
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-chevron-down mr-1.5 text-[10px]"></i> Cargar mas';
+                });
+        }
+
+        function populateLedgerFilter() {
+            const select = document.getElementById('ledger-filter-detalle');
+            const currentVal = select.value;
+            
+            // Get unique details (prefer server-side distinct list over local data)
+            const uniqueDetails = (window._ledgerDetalles && window._ledgerDetalles.length > 0
+                ? window._ledgerDetalles
+                : [...new Set(currentLedgerData.map(r => r.detalle ? String(r.detalle) : 'Detalle desconocido'))]
+            ).sort();
+            
+            let optionsHTML = '<option value="">(Todos los detalles) Filtrar como en Excel...</option>';
+            uniqueDetails.forEach(det => {
+                optionsHTML += `<option value="${det}">${det}</option>`;
+            });
+            
+            select.innerHTML = optionsHTML;
+            if (uniqueDetails.includes(currentVal)) {
+                select.value = currentVal;
+            }
+        }
+
+        function toggleMode() {
+            isLegacyMode = !isLegacyMode;
+            const btn = document.getElementById('mode-toggle');
+            const knob = document.getElementById('toggle-knob');
+            const label = document.getElementById('toggle-label');
+            
+            // Sync accessibility checked state
+            btn.setAttribute('aria-checked', isLegacyMode ? "true" : "false");
+            
+            if (isLegacyMode) {
+                btn.classList.replace('bg-slate-300', 'bg-amber-400');
+                knob.classList.add('translate-x-5');
+                label.innerText = "Compatibilidad 360";
+                label.classList.add('text-amber-500');
+            } else {
+                btn.classList.replace('bg-amber-400', 'bg-slate-300');
+                knob.classList.remove('translate-x-5');
+                label.innerText = "Verdad Legal";
+                label.classList.remove('text-amber-500');
+            }
+            renderCierre();
+            loadAnalyticLayers();
+        }
+
+        function renderCierre() {
+            const container = document.getElementById('cierre-container');
+            const estadoContainer = document.getElementById('estado-proceso-container');
+            const mp = document.getElementById('marketplace-selector').value;
+            const periodo = document.getElementById('period-selector').value;
+
+            const ds = window._execSummary && window._execSummary.dashboard_state;
+            if (!ds) return;
+
+            // FASE 2 & FIX-005: ESTADO DEL PROCESO independiente (Standardize status)
+            if (estadoContainer) {
+                estadoContainer.classList.remove('hidden');
+                
+                switch(ds.estado) {
+                    case 'PARCIAL':
+                        estadoContainer.innerHTML = `
+                        <div class="surgical-card p-4 shadow-sm bg-indigo-50 border-indigo-200">
+                            <h3 class="text-[10px] font-bold text-indigo-600 uppercase tracking-widest mb-1"><i class="fas fa-exclamation-circle mr-1"></i> Estado del Proceso</h3>
+                            <p class="text-lg text-indigo-800 font-bold">PARCIAL</p>
+                        </div>`;
+                        break;
+                    case 'CERTIFICADO':
+                        estadoContainer.innerHTML = `
+                        <div class="surgical-card p-4 shadow-sm bg-emerald-50 border-emerald-200">
+                            <h3 class="text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-1"><i class="fas fa-check-circle mr-1"></i> Estado del Proceso</h3>
+                            <p class="text-lg text-emerald-800 font-bold">CERTIFICADO</p>
+                        </div>`;
+                        break;
+                    case 'SIN_DATOS':
+                    default:
+                        estadoContainer.innerHTML = `
+                        <div class="surgical-card p-4 shadow-sm bg-slate-50 border-slate-200">
+                            <h3 class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1"><i class="fas fa-clock mr-1"></i> Estado del Proceso</h3>
+                            <p class="text-lg text-slate-700 font-bold">SIN DATOS</p>
+                        </div>`;
+                        break;
+                }
+            }
+
+            if (ds.estado === 'SIN_DATOS') {
+                container.innerHTML = `
+                    <div class="col-span-12 p-8 text-center bg-slate-50 rounded-xl border border-dashed border-slate-300">
+                        <i class="fas fa-chart-pie text-4xl text-slate-400 mb-3"></i>
+                        <h3 class="text-lg font-bold text-slate-700">Sin datos financieros para ${mp} / ${periodo}</h3>
+                        <p class="text-sm text-slate-500 mt-2">Ejecuta el pipeline de consolidación para generar la estructura.</p>
+                    </div>
+                `;
+                return;
+            } else if (ds.estado === 'PARCIAL') {
+                container.innerHTML = `
+                    <div class="col-span-12 p-8 text-center bg-indigo-50/50 rounded-xl border border-indigo-100">
+                        <i class="fas fa-hammer text-4xl text-indigo-300 mb-3"></i>
+                        <h3 class="text-lg font-bold text-indigo-800">Estructura Financiera en Construcción</h3>
+                        <p class="text-sm text-indigo-600/70 mt-2">Los registros base están procesándose para conformar el P&L.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const fs = window._financialStructure;
+            if (!fs || !fs.categories) return;
+
+            const neto = fs.neto;
+            const fmtCLP = v => new Intl.NumberFormat('es-CL', {style:'currency', currency:'CLP', maximumFractionDigits:0}).format(v);
+
+            const isCatActive = cat => activeFinancialFilter && activeFinancialFilter.type === 'category' && activeFinancialFilter.value === cat;
+            const getCatClasses = cat => isCatActive(cat) 
+                ? 'bg-indigo-50/80 border-indigo-300 ring-2 ring-indigo-500 shadow-sm p-3' 
+                : 'hover:bg-slate-50 border-transparent p-2';
+
+            const categoriesHtml = fs.categories.map(cat => {
+                const catKey = cat.financial_group;
+                const subItems = cat.subcategories.filter(s => Math.abs(s.total) > 0);
+                const visible = subItems.length > 0;
+
+                const catTotal = cat.total;
+                const subSum = subItems.reduce((acc, s) => acc + s.total, 0);
+                const deltaOk = Math.abs(catTotal - subSum) < 1;
+
+                const detailsHtml = visible ? '<div class="mt-2 pl-4 border-l-2 border-slate-100 space-y-1.5">' + subItems.map(item => {
+                    const isSubgroupActive = activeFinancialFilter && activeFinancialFilter.type === 'subgroup' && activeFinancialFilter.value === item.detalle;
+                    const subClasses = isSubgroupActive 
+                        ? 'bg-indigo-600 text-white font-semibold shadow-sm px-2 py-1 rounded scale-[1.02]' 
+                        : 'hover:text-indigo-600 hover:bg-indigo-50/50 px-1.5 py-0.5 rounded';
+                    const iconColor = isSubgroupActive ? 'text-indigo-200' : 'text-indigo-400';
+                    return `
+                        <div onclick="event.stopPropagation(); selectFinancialFilter('subgroup', '${(item.original_detalle || item.detalle).replace(/'/g, "\\'")}', '${(item.original_detalle || item.detalle).replace(/'/g, "\\'")}', '${catKey}')" class="flex justify-between items-start text-[11px] text-slate-500 cursor-pointer transition-all duration-150 ${subClasses}">
+                            <span class="pr-2 leading-tight flex items-center gap-1">
+                                <i class="fas fa-circle text-[4px] ${iconColor}"></i>
+                                ${item.detalle}
+                            </span>
+                            <span class="font-mono whitespace-nowrap">${fmtCLP(item.total)}</span>
+                        </div>
+                    `;
+                }).join('') + '</div>' : '';
+
+                const amountClass = catTotal < 0 ? 'amount-neg' : 'amount-pos';
+                return `
+                    <div onclick="selectFinancialFilter('category', '${catKey}', '${cat.display_name}')" class="border rounded-xl transition-all duration-200 cursor-pointer ${getCatClasses(catKey)}">
+                        <div class="flex justify-between items-end">
+                            <span class="text-sm font-bold text-slate-700">${cat.display_name}</span>
+                            <span class="${amountClass} text-lg">${fmtCLP(catTotal)}</span>
+                        </div>
+                        ${detailsHtml}
+                        ${!deltaOk ? `<div class="text-[10px] text-rose-500 mt-1" title="Delta: ${(catTotal - subSum).toFixed(2)}"><i class="fas fa-exclamation-triangle mr-1"></i>Delta categoría: $${(catTotal - subSum).toFixed(0)}</div>` : ''}
+                    </div>
+                `;
+            }).join('');
+
+            container.innerHTML = `
+                <div class="space-y-4 fade-in max-h-[600px] overflow-y-auto pr-2 pb-4">
+                    ${categoriesHtml}
+                    <div class="bg-gradient-to-br ${isLegacyMode ? 'from-amber-500 to-amber-600' : 'from-slate-900 to-slate-800'} text-white p-5 rounded-xl mt-4 shadow-lg transition-colors sticky bottom-0">
+                        <div class="flex justify-between items-center mb-1">
+                            <div class="text-[10px] font-bold text-white/80 uppercase tracking-widest">Resultado Neto ${mp}</div>
+                            <span class="text-[10px] py-0.5 px-2 bg-white/20 rounded-md font-mono">${periodo}</span>
+                        </div>
+                        <div class="text-3xl font-bold tracking-tight ${neto < 0 && !isLegacyMode ? 'text-rose-400' : 'text-white'}">${fmtCLP(neto)}</div>
+                        ${isLegacyMode ? '<div class="text-[10px] mt-2 bg-white/20 px-2 py-1 rounded inline-block"><i class="fas fa-exclamation-triangle mr-1"></i> Costos ocultos excluidos</div>' : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        async function loadDashboard() {
+            window._hasAuditAlerts = false; // Reset stale alert state before each new load
+            try {
+                // Clear active financial filter on change to prevent cross-marketplace / cross-period carryover
+                activeFinancialFilter = null;
+                const banner = document.getElementById('filter-banner');
+                if (banner) {
+                    banner.classList.add('hidden');
+                }
+
+                const mp = document.getElementById('marketplace-selector').value;
+                const periodo = document.getElementById('period-selector').value;
+                // 1. Financial Structure from ledger (FIX-18/22: source of truth)
+                const mkQuery = `?marketplace=${mp}&periodo=${periodo}`;
+                const mkQueryLedger = `?marketplace=${mp}&periodo=${periodo}`;
+                const fsData = await ApiClient.safeFetch('/api/v4/financial-structure' + mkQuery);
+                
+                const summary = await ApiClient.getSummary(mp, periodo);
+                fsData.neto = summary.neto;
+                
+                window._execSummary = summary;
+                window._financialStructure = fsData;
+                window._cierreCertified = {
+                    ing: 0, dev: 0, cop: 0, ccm: 0, aju: 0,
+                    neto: fsData.neto
+                };
+                fsData.categories.forEach(c => {
+                    if (c.financial_group === 'ingresos') window._cierreCertified.ing = c.total;
+                    else if (c.financial_group === 'devoluciones') window._cierreCertified.dev = c.total;
+                    else if (c.financial_group === 'costos_operacionales' || c.financial_group === 'costos_logisticos') window._cierreCertified.cop = c.total;
+                    else if (c.financial_group === 'costos_comerciales' || c.financial_group === 'comisiones') window._cierreCertified.ccm = c.total;
+                    else if (c.financial_group === 'ajustes' || c.financial_group === 'recuperaciones_y_bonificaciones') window._cierreCertified.aju = c.total;
+                });
+
+                // 2. Audit Alerts (now period-scoped)
+                const alerts = await ApiClient.safeFetch('/api/v4/auditoria' + mkQuery);
+                window._hasAuditAlerts = alerts.length > 0;
+
+                renderCierre();
+                loadAnalyticLayers();
+
+                const auditAlerts = alerts.filter(a => a.check_name !== 'CARGO_SIN_RESPALDO_LEGAL');
+                const complianceAlerts = alerts.filter(a => a.check_name === 'CARGO_SIN_RESPALDO_LEGAL');
+
+                const alertContainer = document.getElementById('audit-alerts-list');
+                const alertContent = document.getElementById('alerts-content');
+                const compContainer = document.getElementById('compliance-alerts-list');
+                const compContent = document.getElementById('compliance-content');
+                const alertBadge = document.getElementById('alert-badge');
+
+                if (alerts.length > 0) {
+                    alertBadge.classList.remove('hidden');
+                } else {
+                    alertBadge.classList.add('hidden');
+                }
+
+                if (auditAlerts.length > 0) {
+                    // Alert logic: only badge is updated (handled above). 
+                    // Drawer rendering is strictly on-demand.
+                } else {
+                    alertContainer.classList.add('hidden');
+                }
+
+                if (complianceAlerts.length > 0) {
+                    // Compliance logic: similar to audit alerts, do not render inline.
+                } else {
+                    if (compContainer) compContainer.classList.add('hidden');
+                }
+
+                // 4. Ledger (server-side paginado + filtrado)
+                fetchLedgerFromServer();
+
+            } catch (e) { console.error(e); }
+        }
+
+        async function runAudit() {
+            const btn = document.querySelector('button');
+            const mp = document.getElementById('marketplace-selector').value;
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-circle-notch animate-spin mr-2"></i> Auditando...';
+            try {
+                await ApiClient.safeFetch('/api/v4/run-audit?marketplace=' + mp, { method: 'POST' });
+                await loadDashboard();
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-play mr-2"></i> Ejecutar Auditoría';
+            } catch (e) {
+                alert("Error ejecutando auditoría: " + e.message);
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-play mr-2"></i> Ejecutar Auditoría';
+            }
+        }
+
+        function openInspector(data) {
+            currentInspectorId = data.id_transaccion;
+            const rawTxId = data.id_transaccion ? String(data.id_transaccion) : 'SIN_ID';
+            document.getElementById('insp-id').innerText = '#' + rawTxId;
+            document.getElementById('insp-date').innerHTML = '<i class="far fa-calendar-alt mr-2 text-slate-400" aria-hidden="true"></i>' + (data.fecha || '-');
+            document.getElementById('insp-detalle').innerText = data.detalle ? String(data.detalle) : 'Detalle desconocido';
+            const rawMonto = typeof data.monto === 'number' ? data.monto : 0;
+            document.getElementById('insp-monto').innerText = '$' + rawMonto.toLocaleString('es-CL');
+            document.getElementById('insp-monto').className = rawMonto < 0 ? 'text-3xl font-bold mt-1 tracking-tight amount-neg' : 'text-3xl font-bold mt-1 tracking-tight amount-pos';
+            
+            const xmlStatus = document.getElementById('insp-xml-status');
+            if (data.estado_xml === 'CONCILIADO' || data.estado_xml === 'DOCUMENTADO') {
+                xmlStatus.innerText = 'Verificado';
+                xmlStatus.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 border border-emerald-200 uppercase tracking-wider';
+                document.getElementById('insp-xml-folio').innerHTML = '<i class="fas fa-file-invoice mr-2 text-emerald-700" aria-hidden="true"></i>Folio DTE: ' + (data.folio_xml_resuelto && data.folio_xml_resuelto !== 'None' ? data.folio_xml_resuelto : (data.folio_xml && data.folio_xml !== 'None' ? data.folio_xml : 'Desconocido'));
+            } else {
+                xmlStatus.innerText = 'Pendiente Tributaria';
+                xmlStatus.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-600 border border-amber-200 uppercase tracking-wider';
+                document.getElementById('insp-xml-folio').innerHTML = '<i class="fas fa-exclamation-triangle mr-2 text-amber-500" aria-hidden="true"></i>Sin cruce en SII';
+            }
+            
+            const modal = document.getElementById('inspector-modal');
+            const content = document.getElementById('modal-content');
+            modal.classList.remove('hidden');
+            // Small trigger delay for transition
+            setTimeout(() => {
+                content.classList.remove('scale-95', 'opacity-0');
+                content.classList.add('scale-100', 'opacity-100');
+                
+                // Focus close button for accessibility
+                const closeBtn = modal.querySelector('button');
+                if (closeBtn) closeBtn.focus();
+            }, 10);
+        }
+
+        // Global keydown to trap Escape for modal closures
+        window.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeInspector();
+                closeCorrection();
+            }
+        });
+
+        loadDashboard();
+    
+    async function loadAnalyticLayers() {
+        try {
+            // Elimination of duplicate HTTP call (Phase 2).
+            // Use the globally cached _execSummary that loadDashboard() just fetched.
+            const summary = window._execSummary;
+            if (!summary) return;
+
+            // Documentary section: /api/v4/exec/summary returns per_marketplace (object), NOT
+            // a marketplaces array — so there is no .find() to call and no documentary sub-key.
+            // DTE coverage is shown on the executive dashboard via /api/v4/dte/certify.
+            // Hide sect-cobertura here to avoid showing stale zeros.
+            const _sectCob = document.getElementById('sect-cobertura');
+            if (_sectCob) _sectCob.classList.add('hidden');
+
+            // Documentary section uses dashboard_state to render metrics
+            // P21Z Documentary Panels section
+            (async () => {
+                const aiContainer = document.getElementById('ai-insights-container');
+                if (!aiContainer) return;
+
+                try {
+                    const ds = window._execSummary && window._execSummary.dashboard_state;
+                    if (!ds) return;
+                    
+                    const gapRes = {
+                        missing_xml_count: ds.risk_summary.missing_xml_count || 0,
+                        invalid_xml_count: ds.risk_summary.invalid_xml_count || 0,
+                        duplicated_xml_count: ds.risk_summary.duplicated_xml_count || 0
+                    };
+                    const riskRes = ds.risk_summary;
+                    const covRes = ds.coverage;
+                    
+                    aiContainer.classList.remove('hidden');
+
+                    const gapEl = document.getElementById('doc-gap-metrics');
+                    if (gapRes) {
+                        gapEl.innerHTML = `
+                            <div class="flex justify-between"><span class="text-xs">XML Pendientes</span><span class="font-bold">${gapRes.missing_xml_count !== undefined ? gapRes.missing_xml_count : 'NO DISPONIBLE'}</span></div>
+                            <div class="flex justify-between"><span class="text-xs text-rose-600">XML Inválidos</span><span class="font-bold text-rose-600">${gapRes.invalid_xml_count !== undefined ? gapRes.invalid_xml_count : 'NO DISPONIBLE'}</span></div>
+                            <div class="flex justify-between"><span class="text-xs">XML Duplicados</span><span class="font-bold">${gapRes.duplicated_xml_count !== undefined ? gapRes.duplicated_xml_count : 'NO DISPONIBLE'}</span></div>
+                        `;
+                    }
+                    
+                    const riskEl = document.getElementById('tax-risk-metrics');
+                    if (riskRes && riskRes.risk_levels) {
+                        riskEl.innerHTML = `
+                            <div class="flex justify-between"><span class="text-xs">Crítico</span><span class="font-bold text-rose-600">${riskRes.risk_levels.CRITICO !== undefined ? riskRes.risk_levels.CRITICO : 'NO DISPONIBLE'}</span></div>
+                            <div class="flex justify-between"><span class="text-xs">Alto</span><span class="font-bold text-orange-500">${riskRes.risk_levels.ALTO !== undefined ? riskRes.risk_levels.ALTO : 'NO DISPONIBLE'}</span></div>
+                            <div class="flex justify-between"><span class="text-xs">Medio</span><span class="font-bold text-amber-500">${riskRes.risk_levels.MEDIO !== undefined ? riskRes.risk_levels.MEDIO : 'NO DISPONIBLE'}</span></div>
+                        `;
+                    }
+                    
+                    const covEl = document.getElementById('doc-coverage-metrics');
+                    if (covRes) {
+                        const fmtCov = v => v === 'NO DISPONIBLE' ? 'NO DISPONIBLE' : v + '%';
+                        covEl.innerHTML = `
+                            <div class="flex justify-between"><span class="text-xs">Documental</span><span class="font-bold text-emerald-600">${fmtCov(covRes.documentary_coverage)}</span></div>
+                            <div class="flex justify-between"><span class="text-xs">SII</span><span class="font-bold text-emerald-600">${fmtCov(covRes.sii_coverage)}</span></div>
+                            <div class="flex justify-between"><span class="text-xs">Marketplace</span><span class="font-bold">${fmtCov(covRes.marketplace_coverage)}</span></div>
+                        `;
+                    }
+                    
+                    const recEl = document.getElementById('doc-recommendations');
+                    if (riskRes && riskRes.top_risks && riskRes.top_risks.length > 0) {
+                        recEl.innerHTML = riskRes.top_risks.map(r => `<div class="flex justify-between"><span class="text-xs">${r.riesgo}</span><span class="font-bold text-[10px] text-amber-600">${r.impacto}</span></div>`).join('');
+                    } else {
+                        recEl.innerHTML = '<p class="text-xs text-slate-500 italic">No existen recomendaciones para el período</p>';
+                    }
+                } catch (e) {
+                    console.error("Error loading documentary data", e);
+                }
+            })();
+        } catch (e) {
+            console.error("Error loading analytic layers", e);
+        }
+    }
+
+    async function openCertificationDrawer(txId, estado) {
+        document.getElementById('cert-tx-id').innerText = txId;
+        document.getElementById('cert-doc-type-text').innerText = '-';
+        document.getElementById('cert-doc-folio-text').innerText = '-';
+        
+        ['pipe-xml', 'pipe-xsd', 'pipe-sig', 'pipe-caf'].forEach(id => {
+            document.getElementById(id).innerText = 'PENDING';
+            document.getElementById(id).className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-slate-700 text-slate-300';
+        });
+        
+        document.getElementById('cert-status').innerText = estado || 'PENDIENTE';
+        document.getElementById('cert-level').innerText = '-';
+        document.getElementById('cert-hash').innerText = '-';
+        
+        document.getElementById('cert-drawer').classList.remove('translate-x-full');
+        document.getElementById('cert-drawer-overlay').classList.remove('hidden');
+
+        try {
+            const res = await ApiClient.safeFetch(`/api/v4/electronic_certification/status/${txId}`);
+            if (res && !res.error) {
+                if (res.tipo_dte) document.getElementById('cert-doc-type-text').innerText = res.tipo_dte;
+                if (res.folio) document.getElementById('cert-doc-folio-text').innerText = res.folio;
+                
+                if (res.pipeline) {
+                    ['xml', 'xsd', 'sig', 'caf'].forEach(step => {
+                        const el = document.getElementById(`pipe-${step}`);
+                        if (res.pipeline[step] === 'PASS') {
+                            el.innerText = 'PASS';
+                            el.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-900 text-emerald-400';
+                        } else if (res.pipeline[step] === 'FAIL') {
+                            el.innerText = 'FAIL';
+                            el.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-rose-900 text-rose-400';
+                        }
+                    });
+                }
+                
+                if (res.evidencia) {
+                    document.getElementById('ev-hash').innerText = res.evidencia.hash || '-';
+                    document.getElementById('ev-conf').innerText = res.evidencia.confidence || '-';
+                    document.getElementById('cert-level').innerText = res.evidencia.level || 'CRYPTOGRAPHIC';
+                    document.getElementById('cert-hash').innerText = res.evidencia.hash || '-';
+                }
+            }
+        } catch (e) {
+            console.error("Error fetching certification status", e);
+        }
+    }
+
+    function closeCertificationDrawer() {
+        document.getElementById('cert-drawer').classList.add('translate-x-full');
+        document.getElementById('cert-drawer-overlay').classList.add('hidden');
+    }
+
+    async function processXMLUpload(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const txId = document.getElementById('cert-tx-id').innerText;
+        if (!txId || txId === '-') return;
+
+        try {
+            const formData = new FormData();
+            formData.append("file", file);
+            // Assuming there's an endpoint for validation. The python backend has /api/v4/electronic_certification/validate which accepts POST.
+            const response = await fetch('/api/v4/electronic_certification/validate', {
+                method: 'POST',
+                headers: { 'X-Marketplace': document.getElementById('marketplace-selector').value },
+                body: file
+            });
+            if (response.ok) {
+                openCertificationDrawer(txId, 'DOCUMENTADO');
+                fetchLedgerFromServer(); // refresh ledger
+            }
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    function exportToObsidian() {
+        alert("Export to obsidian function not connected to backend.");
+    }
+
+</script>
+
+    <!-- Certification Drawer -->
+    <div id="cert-drawer" class="fixed inset-y-0 right-0 transform translate-x-full transition-transform duration-300 z-[60] w-full md:w-1/3 bg-slate-900 text-slate-200 shadow-2xl flex flex-col">
+        <div class="p-6 border-b border-slate-700 flex justify-between items-center">
+            <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                <i class="fas fa-file-invoice text-indigo-400"></i> Certificación Electrónica
+            </h2>
+            <button onclick="closeCertificationDrawer()" class="text-slate-400 hover:text-white">
+                <i class="fas fa-times fa-lg"></i>
+            </button>
+        </div>
+        <div class="flex-1 overflow-y-auto p-6 space-y-6">
+            
+            <div id="cert-doc-info" class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                <p class="text-xs text-slate-400 uppercase tracking-widest mb-2">Documento</p>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <span class="text-slate-400">ID:</span> <span id="cert-tx-id" class="text-white font-mono">-</span>
+                    <span class="text-slate-400">Tipo DTE:</span> <span class="text-white"><span id='cert-doc-type-text'>-</span></span>
+                    <span class="text-slate-400">Folio:</span> <span class="text-white font-mono" id="cert-doc-folio-text">-</span>
+                </div>
+            </div>
+
+            <div id="cert-pipeline" class="space-y-2">
+                <p class="text-xs text-slate-400 uppercase tracking-widest mb-2">Pipeline</p>
+                <div class="flex justify-between items-center p-2 bg-slate-800 rounded border border-slate-700">
+                    <span class="text-sm">1. XML Validator</span> <span id="pipe-xml" class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-700">-</span>
+                </div>
+                <div class="flex justify-between items-center p-2 bg-slate-800 rounded border border-slate-700">
+                    <span class="text-sm">2. XSD Schema</span> <span id="pipe-xsd" class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-700">-</span>
+                </div>
+                <div class="flex justify-between items-center p-2 bg-slate-800 rounded border border-slate-700">
+                    <span class="text-sm">3. Digital Signature</span> <span id="pipe-sig" class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-700">-</span>
+                </div>
+                <div class="flex justify-between items-center p-2 bg-slate-800 rounded border border-slate-700">
+                    <span class="text-sm">4. CAF Validation</span> <span id="pipe-caf" class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-700">-</span>
+                </div>
+            </div>
+
+            <div id="cert-result" class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                <p class="text-xs text-slate-400 uppercase tracking-widest mb-2">Resultado</p>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <span class="text-slate-400">Estado:</span> <span id="cert-status" class="font-bold">-</span>
+                    <span class="text-slate-400">Nivel Evidencia:</span> <span id="cert-level" class="text-white">-</span>
+                    <span class="text-slate-400">Hash:</span> <span id="cert-hash" class="text-xs font-mono truncate" title="">-</span>
+                </div>
+            </div>
+            
+            <details class="bg-slate-800 rounded-lg border border-slate-700">
+                <summary class="p-4 text-sm font-bold cursor-pointer outline-none">Ver Evidencia</summary>
+                <div class="p-4 border-t border-slate-700 text-xs font-mono text-slate-300 space-y-1">
+                    <p>Evidence Hash: <span id="ev-hash">-</span></p>
+                    <p>Confidence: <span id="ev-conf">-</span></p>
+                    <p>Chain Type: CRYPTOGRAPHIC</p>
+                </div>
+            </details>
+            
+            <button id="btn-obsidian" onclick="exportToObsidian()" class="hidden w-full py-2 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-lg transition-colors flex items-center justify-center gap-2 mt-4">
+                <i class="fas fa-book"></i> Exportar Evidencia a Obsidian
+            </button>
+            
+        </div>
+    </div>
+    
+    <!-- Drawer Overlay -->
+    <div id="cert-drawer-overlay" class="fixed inset-0 bg-black/50 z-50 hidden" onclick="closeCertificationDrawer()"></div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "question": "¿Qué riesgo financiero existe?",
+  "period": "2026-06-30 00:00:00",
+  "answer": {
+    "summary": "2 anomalias detectadas"
+  },
+  "explanation": {
+    "text": "Deteccion de anomalias financieras.",
+    "bullet_points": [
+      "UNCLASSIFIED_RECORDS: 177 records without financial_group classification ($177)",
+      "ORPHAN_DOCUMENTS: 7849 orphan document records without ledger match ($7,849)"
+    ]
+  },
+  "breakdown": [
+    {
+      "type": "UNCLASSIFIED_RECORDS",
+      "severity": "ALTA",
+      "impact": 177.0,
+      "description": "177 records without financial_group classification"
+    },
+    {
+      "type": "ORPHAN_DOCUMENTS",
+      "severity": "ALTA",
+      "impact": 7849.0,
+      "description": "7849 orphan document records without ledger match"
+    }
+  ],
+  "evidence": [
+    {
+      "marketplace": "all",
+      "kpi": "anomaly",
+      "value": 177.0,
+      "source": "anomaly_detector",
+      "sql": "\n            SELECT COUNT(*) as n\n            FROM marketplace_ledger_clasificado_v1\n            WHERE (financial_group IS NULL OR financial_group = '')\n              \n              AND fecha BETWEEN ? AND ?\n        ",
+      "components": {
+        "type": "UNCLASSIFIED_RECORDS",
+        "severity": "ALTA",
+        "description": "177 records without financial_group classification",
+        "impact": 177.0
+      },
+      "ledger_samples": [],
+      "raw_sources": [],
+      "etl": {
+        "pipeline": "anomaly_detector",
+        "rows": 0,
+        "source_files": 0
+      },
+      "xml": []
+    },
+    {
+      "marketplace": "all",
+      "kpi": "anomaly",
+      "value": 7849.0,
+      "source": "anomaly_detector",
+      "sql": "\n            SELECT COUNT(*) as orphans\n            FROM document_match_v1 d\n            WHERE NOT EXISTS (\n                SELECT 1 FROM marketplace_ledger_clasificado_v1 c\n                WHERE c.marketplace = d.marketplace AND c.id_transaccion = d.ledger_id\n                 AND c.fecha BETWEEN ? AND ?\n            )\n            \n        ",
+      "components": {
+        "type": "ORPHAN_DOCUMENTS",
+        "severity": "ALTA",
+        "description": "7849 orphan document records without ledger match",
+        "impact": 7849.0
+      },
+      "ledger_samples": [],
+      "raw_sources": [],
+      "etl": {
+        "pipeline": "anomaly_detector",
+        "rows": 0,
+        "source_files": 0
+      },
+      "xml": []
+    }
+  ]
+}

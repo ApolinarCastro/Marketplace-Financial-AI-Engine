@@ -1,0 +1,215 @@
+{
+  "timestamp": 1784736184.074813,
+  "benchmarks": [
+    {
+      "name": "exec_summary_all",
+      "description": "Executive Summary \u2014 ALL marketplaces YTD",
+      "current": {
+        "duration_ms": 0,
+        "memory_mb": 0,
+        "sql_count": 0,
+        "success_rate": 0.0
+      },
+      "baseline": {
+        "duration_ms": 3.161300002830103,
+        "memory_mb": 0.10719013214111328,
+        "sql_count": 1.0
+      },
+      "regression": {
+        "regressed": true,
+        "duration_delta_pct": 0,
+        "memory_delta_pct": 0,
+        "success_rate": 0.0
+      }
+    },
+    {
+      "name": "exec_summary_ml",
+      "description": "Executive Summary \u2014 ML YTD",
+      "current": {
+        "duration_ms": 0,
+        "memory_mb": 0,
+        "sql_count": 0,
+        "success_rate": 0.0
+      },
+      "baseline": {
+        "duration_ms": 3.470049996394664,
+        "memory_mb": 0.10730648040771484,
+        "sql_count": 2.0
+      },
+      "regression": {
+        "regressed": true,
+        "duration_delta_pct": 0,
+        "memory_delta_pct": 0,
+        "success_rate": 0.0
+      }
+    },
+    {
+      "name": "waterfall_all",
+      "description": "Waterfall \u2014 ALL marketplaces YTD",
+      "current": {
+        "duration_ms": 0,
+        "memory_mb": 0,
+        "sql_count": 0,
+        "success_rate": 0.0
+      },
+      "baseline": {
+        "duration_ms": 3.1917500018607825,
+        "memory_mb": 0.1426534652709961,
+        "sql_count": 3.0
+      },
+      "regression": {
+        "regressed": true,
+        "duration_delta_pct": 0,
+        "memory_delta_pct": 0,
+        "success_rate": 0.0
+      }
+    },
+    {
+      "name": "waterfall_ripley",
+      "description": "Waterfall \u2014 RIPLEY YTD (signal_mode=SIGNAL)",
+      "current": {
+        "duration_ms": 0,
+        "memory_mb": 0,
+        "sql_count": 0,
+        "success_rate": 0.0
+      },
+      "baseline": {
+        "duration_ms": 3.5359500034246594,
+        "memory_mb": 0.14296627044677734,
+        "sql_count": 4.0
+      },
+      "regression": {
+        "regressed": true,
+        "duration_delta_pct": 0,
+        "memory_delta_pct": 0,
+        "success_rate": 0.0
+      }
+    },
+    {
+      "name": "ledger_ml",
+      "description": "Ledger Query \u2014 ML YTD, signal_mode=SIGNAL, limit=200",
+      "current": {
+        "duration_ms": 0,
+        "memory_mb": 0,
+        "sql_count": 0,
+        "success_rate": 0.0
+      },
+      "baseline": {
+        "duration_ms": 58.99700000009034,
+        "memory_mb": 0.7474651336669922,
+        "sql_count": 15.0
+      },
+      "regression": {
+        "regressed": true,
+        "duration_delta_pct": 0,
+        "memory_delta_pct": 0,
+        "success_rate": 0.0
+      }
+    },
+    {
+      "name": "financial_structure_all",
+      "description": "Financial Structure \u2014 ALL marketplaces YTD",
+      "current": {
+        "duration_ms": 0,
+        "memory_mb": 0,
+        "sql_count": 0,
+        "success_rate": 0.0
+      },
+      "baseline": {
+        "duration_ms": 3.7863000034121796,
+        "memory_mb": 0.28498268127441406,
+        "sql_count": 6.0
+      },
+      "regression": {
+        "regressed": true,
+        "duration_delta_pct": 0,
+        "memory_delta_pct": 0,
+        "success_rate": 0.0
+      }
+    },
+    {
+      "name": "cobros_breakdown",
+      "description": "Cobros Breakdown Matrix \u2014 YTD",
+      "current": {
+        "duration_ms": 0,
+        "memory_mb": 0,
+        "sql_count": 0,
+        "success_rate": 0.0
+      },
+      "baseline": {
+        "duration_ms": 16.026199999032542,
+        "memory_mb": 0.1478109359741211,
+        "sql_count": 7.0
+      },
+      "regression": {
+        "regressed": true,
+        "duration_delta_pct": 0,
+        "memory_delta_pct": 0,
+        "success_rate": 0.0
+      }
+    },
+    {
+      "name": "cierre_all",
+      "description": "Cierre Financiero \u2014 ALL marketplaces",
+      "current": {
+        "duration_ms": 0,
+        "memory_mb": 0,
+        "sql_count": 0,
+        "success_rate": 0.0
+      },
+      "baseline": {
+        "duration_ms": 23.788650003552902,
+        "memory_mb": 0.29411792755126953,
+        "sql_count": 8.0
+      },
+      "regression": {
+        "regressed": true,
+        "duration_delta_pct": 0,
+        "memory_delta_pct": 0,
+        "success_rate": 0.0
+      }
+    },
+    {
+      "name": "audit_ml",
+      "description": "Audit Query \u2014 ML (first page)",
+      "current": {
+        "duration_ms": 0,
+        "memory_mb": 0,
+        "sql_count": 0,
+        "success_rate": 0.0
+      },
+      "baseline": {
+        "duration_ms": 10.51875000121072,
+        "memory_mb": 0.22689056396484375,
+        "sql_count": 18.0
+      },
+      "regression": {
+        "regressed": true,
+        "duration_delta_pct": 0,
+        "memory_delta_pct": 0,
+        "success_rate": 0.0
+      }
+    },
+    {
+      "name": "operational_intelligence_ml",
+      "description": "Operational Intelligence \u2014 ML YTD",
+      "current": {
+        "duration_ms": 0,
+        "memory_mb": 0,
+        "sql_count": 0,
+        "success_rate": 0.0
+      },
+      "baseline": {
+        "duration_ms": 18.449799994414207,
+        "memory_mb": 0.10744380950927734,
+        "sql_count": 30.0
+      },
+      "regression": {
+        "regressed": true,
+        "duration_delta_pct": 0,
+        "memory_delta_pct": 0,
+        "success_rate": 0.0
+      }
+    }
+  ]
+}

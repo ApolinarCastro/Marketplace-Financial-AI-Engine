@@ -1,0 +1,536 @@
+{
+  "version": "1.0",
+  "marketplace": "ML",
+  "created": "2026-06-18",
+  "description": "Taxonomía financiera oficial Mercado Libre — clasifica cada detalle como SIGNAL (canonical P&L) o NOISE (treasury/derived)",
+  "canonical_groups": {
+    "ingresos": {
+      "display_name": "Ingresos Brutos",
+      "detalles": [
+        "Cargo por venta (Venta)",
+        "Bonificación"
+      ]
+    },
+    "devoluciones": {
+      "display_name": "Devoluciones de Venta",
+      "detalles": [
+        "Devolución de venta"
+      ]
+    },
+    "costos_operacionales": {
+      "display_name": "Costos Operacionales",
+      "detalles": [
+        "Cargo por envíos de Mercado Libre",
+        "Anulación del cargo por envíos de Mercado Libre",
+        "Cargo por Mercado Envíos",
+        "Anulación del cargo por Mercado Envíos",
+        "Cargo por devolución",
+        "Anulación del cargo por devolución",
+        "Cargo por servicio de almacenamiento Full",
+        "Cargo por retiro de stock Full",
+        "Cargo por stock antiguo en Full",
+        "Cargo por sobrepasar espacio Full",
+        "Cargo por diferencias en las medidas y el peso del paquete"
+      ]
+    },
+    "costos_comerciales": {
+      "display_name": "Costos Comerciales",
+      "detalles": [
+        "Cargo por venta (Comisión)",
+        "Anulación del cargo por venta",
+        "Cargo por campaña de publicidad - Product ads",
+        "Cargo por campaña de publicidad - Brand ads",
+        "Cargo por campaña de publicidad - Display programático",
+        "Campañas de Publicidad - Display",
+        "Campañas de Publicidad - Product ads",
+        "Campañas de Publicidad - Brand ads",
+        "Cargo por asesoría comercial",
+        "Cargo por mantenimiento de mi página"
+      ]
+    },
+    "ajustes": {
+      "display_name": "Ajustes & Retenciones",
+      "detalles": [
+        "BPP_refunded",
+        "Cargo"
+      ]
+    },
+    "tesoreria": {
+      "display_name": "Tesorería",
+      "detalles": [
+        "Retiro de dinero"
+      ]
+    },
+    "recuperaciones_y_bonificaciones": {
+      "display_name": "Recuperaciones y Bonificaciones",
+      "detalles": [
+        "Reconciled",
+        "Compensated",
+        "Ajuste Poscobro",
+        "Not_reconciled",
+        "Refund_account_money",
+        "Missing_invoice",
+        "Invalid_authorization",
+        "Credit_not_processed",
+        "By_admin",
+        "Refunded"
+      ]
+    },
+    "return_reason_traceability": {
+      "display_name": "Trazabilidad de Razones de Devolución",
+      "detalles": [
+        "Bigger_than_expected_fashion",
+        "Smaller_than_expected_fashion",
+        "Not_match_size_guide_fashion",
+        "Repentant_buyer",
+        "Undelivered_repentant_buyer",
+        "Dont_want_it_another_cause_fashion",
+        "Different_than_published",
+        "Different_color_or_size_fashion",
+        "Different_item_other",
+        "Undelivered_other",
+        "Broken_item_fashion",
+        "Empty_box",
+        "Damaged_package_broken_item_fashion",
+        "Missing_item",
+        "Out_of_stock",
+        "Estimated_delivery_out_of_time",
+        "Different_color_or_size",
+        "Item_not_useful_fashion_different",
+        "Item_not_useful_fashion_different_change",
+        "Not_expected_quality_different",
+        "Missing_accessories",
+        "Buy_out_of_ML",
+        "Wrong_size",
+        "Wrong_color",
+        "Damaged_or_defective",
+        "Expired_or_past_use_by_date",
+        "Other_quality_issue",
+        "Missing_parts_accessories",
+        "Wrong_quantity",
+        "Wrong_model_version",
+        "Wrong_payment_method",
+        "Other_payment_issue",
+        "Other_fashion_related_issue"
+      ]
+    }
+  },
+  "detalle_classification": {
+    "Cargo por venta (Venta)": {
+      "signal": true,
+      "canonical_group": "ingresos",
+      "reason": "Única fuente canónica de ingreso por venta ML"
+    },
+    "Bonificación": {
+      "signal": true,
+      "canonical_group": "ingresos",
+      "reason": "Bonificación登记ada como ingreso"
+    },
+    "Devolución de venta": {
+      "signal": true,
+      "canonical_group": "devoluciones",
+      "reason": "Única fuente canónica de devoluciones ML"
+    },
+    "Cargo por envíos de Mercado Libre": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo logístico principal ML"
+    },
+    "Anulación del cargo por envíos de Mercado Libre": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Reversa de costo logístico"
+    },
+    "Cargo por Mercado Envíos": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo de envío ML"
+    },
+    "Anulación del cargo por Mercado Envíos": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Reversa de costo de envío"
+    },
+    "Cargo por devolución": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo por logística inversa"
+    },
+    "Anulación del cargo por devolución": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Reversa de costo por devolución"
+    },
+    "Cargo por servicio de almacenamiento Full": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo de almacenamiento Full"
+    },
+    "Cargo por retiro de stock Full": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo de retiro Full"
+    },
+    "Cargo por stock antiguo en Full": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo por stock antiguo"
+    },
+    "Cargo por sobrepasar espacio Full": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo por exceso de espacio"
+    },
+    "Cargo por diferencias en las medidas y el peso del paquete": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo por diferencia de peso/medidas"
+    },
+    "Cargo por venta (Comisión)": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Comisión ML sobre venta"
+    },
+    "Anulación del cargo por venta": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Reversa de comisión"
+    },
+    "Cargo por campaña de publicidad - Product ads": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Costo de publicidad Product ads"
+    },
+    "Cargo por campaña de publicidad - Brand ads": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Costo de publicidad Brand ads"
+    },
+    "Cargo por campaña de publicidad - Display programático": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Costo de publicidad Display"
+    },
+    "Campañas de Publicidad - Display": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Campaña Display"
+    },
+    "Campañas de Publicidad - Product ads": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Campaña Product ads"
+    },
+    "Campañas de Publicidad - Brand ads": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Campaña Brand ads"
+    },
+    "Cargo por asesoría comercial": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Costo por asesoría"
+    },
+    "Cargo por mantenimiento de mi página": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Costo de mantenimiento tienda"
+    },
+    "BPP_refunded": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "Protección al comprador — reembolso (paired mechanism, not operational) [PHASE_16F: operational traceability only]"
+    },
+    "Bigger_than_expected_fashion": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Bigger than expected fashion [PHASE_16F: operational traceability only]"
+    },
+    "Smaller_than_expected_fashion": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Smaller than expected fashion [PHASE_16F: operational traceability only]"
+    },
+    "Reconciled": {
+      "signal": true,
+      "canonical_group": "recuperaciones_y_bonificaciones",
+      "reason": "Ajuste reconciliado"
+    },
+    "Repentant_buyer": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Repentant buyer [PHASE_16F: operational traceability only]"
+    },
+    "Dont_want_it_another_cause_fashion": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Dont want it another cause fashion [PHASE_16F: operational traceability only]"
+    },
+    "Undelivered_repentant_buyer": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Undelivered repentant buyer [PHASE_16F: operational traceability only]"
+    },
+    "Different_color_or_size_fashion": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Different color or size fashion [PHASE_16F: operational traceability only]"
+    },
+    "Compensated": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Cargo por devolución (Compensated) — consolidado bajo Cargo por devolución"
+    },
+    "Undelivered_other": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Undelivered other [PHASE_16F: operational traceability only]"
+    },
+    "Item_not_useful_fashion_different_change": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Item not useful fashion different change [PHASE_16F: operational traceability only]"
+    },
+    "Broken_item_fashion": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Broken item fashion [PHASE_16F: operational traceability only]"
+    },
+    "Ajuste Poscobro": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Cargo por devolución (Ajuste Poscobro) — consolidado bajo Cargo por devolución"
+    },
+    "Not_match_size_guide_fashion": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Not match size guide fashion [PHASE_16F: operational traceability only]"
+    },
+    "Estimated_delivery_out_of_time": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Estimated delivery out of time [PHASE_16F: operational traceability only]"
+    },
+    "Different_than_published": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for product different than published [PHASE_16F: operational traceability only]"
+    },
+    "Different_color_or_size_fashion_change": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Different color or size fashion change [PHASE_16F: operational traceability only]"
+    },
+    "BPP_covered": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for BPP covered [PHASE_16F: operational traceability only]"
+    },
+    "Unauthorized_purchase": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Unauthorized purchase [PHASE_16F: operational traceability only]"
+    },
+    "Change_receiver_address": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Change receiver address [PHASE_16F: operational traceability only]"
+    },
+    "Delivered_but_not_receive_package": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Delivered but not receive package [PHASE_16F: operational traceability only]"
+    },
+    "Different_item_other": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Different item other [PHASE_16F: operational traceability only]"
+    },
+    "Not_reconciled": {
+      "signal": true,
+      "canonical_group": "recuperaciones_y_bonificaciones",
+      "reason": "No reconciliado"
+    },
+    "Partially_BPP_refunded": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Partially BPP refunded [PHASE_16F: operational traceability only]"
+    },
+    "Delivery_date_was_not_met": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Delivery date was not met [PHASE_16F: operational traceability only]"
+    },
+    "Different_color_or_size": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Different color or size [PHASE_16F: operational traceability only]"
+    },
+    "Out_of_stock": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Out of stock [PHASE_16F: operational traceability only]"
+    },
+    "Missing_item": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Missing item [PHASE_16F: operational traceability only]"
+    },
+    "Respondent_unanswered": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "Encuestado no respondió (poscobro compensation) [PHASE_16F: operational traceability only]"
+    },
+    "PPV_covered_melienvio": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "PPV cubierto ML Envío (poscobro compensation) [PHASE_16F: operational traceability only]"
+    },
+    "Missing_accessories": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Missing accessories [PHASE_16F: operational traceability only]"
+    },
+    "Refund_account_money": {
+      "signal": true,
+      "canonical_group": "recuperaciones_y_bonificaciones",
+      "reason": "Reembolso a cuenta ML"
+    },
+    "Missing_invoice": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Cargo por devolución (Missing_invoice) — consolidado bajo Cargo por devolución"
+    },
+    "Invalid_authorization": {
+      "signal": true,
+      "canonical_group": "recuperaciones_y_bonificaciones",
+      "reason": "Autorización inválida"
+    },
+    "Damaged_package_broken_item_fashion": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Damaged package broken item fashion [PHASE_16F: operational traceability only]"
+    },
+    "Bought_by_mistake": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "Compra por error (repentant buyer variant) [PHASE_16F: operational traceability only]"
+    },
+    "Empty_box": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Empty box [PHASE_16F: operational traceability only]"
+    },
+    "PPV_valid": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "PPV válido (poscobro compensation) [PHASE_16F: operational traceability only]"
+    },
+    "Buy_out_of_ML": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Buy out of ML [PHASE_16F: operational traceability only]"
+    },
+    "Credit_not_processed": {
+      "signal": true,
+      "canonical_group": "recuperaciones_y_bonificaciones",
+      "reason": "Crédito no procesado"
+    },
+    "Different_item_other_change": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "Cambio por item diferente (poscobro compensation) [PHASE_16F: operational traceability only]"
+    },
+    "Item_not_useful_fashion_different": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Item not useful fashion different [PHASE_16F: operational traceability only]"
+    },
+    "Not_expected_quality_different": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for Not expected quality different [PHASE_16F: operational traceability only]"
+    },
+    "By_admin": {
+      "signal": true,
+      "canonical_group": "recuperaciones_y_bonificaciones",
+      "reason": "Ajuste por administrador"
+    },
+    "Cargo": {
+      "signal": true,
+      "canonical_group": "ajustes",
+      "reason": "Cargo administrativo"
+    },
+    "Refunded": {
+      "signal": true,
+      "canonical_group": "recuperaciones_y_bonificaciones",
+      "reason": "Reembolsado"
+    },
+    "Retiro de dinero": {
+      "signal": false,
+      "canonical_group": null,
+      "reason": "Tesorería — retiro de efectivo, no es P&L"
+    },
+    "Wrong_size": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for wrong size [PHASE_16F: operational traceability only]"
+    },
+    "Wrong_color": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for wrong color [PHASE_16F: operational traceability only]"
+    },
+    "Damaged_or_defective": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for damaged or defective items [PHASE_16F: operational traceability only]"
+    },
+    "Expired_or_past_use_by_date": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for expired products [PHASE_16F: operational traceability only]"
+    },
+    "Other_quality_issue": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for other quality issues [PHASE_16F: operational traceability only]"
+    },
+    "Missing_parts_accessories": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for missing parts/accessories [PHASE_16F: operational traceability only]"
+    },
+    "Wrong_quantity": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for wrong quantity [PHASE_16F: operational traceability only]"
+    },
+    "Wrong_model_version": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for wrong model/version [PHASE_16F: operational traceability only]"
+    },
+    "Wrong_payment_method": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for wrong payment method [PHASE_16F: operational traceability only]"
+    },
+    "Other_payment_issue": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for other payment issues [PHASE_16F: operational traceability only]"
+    },
+    "Other_fashion_related_issue": {
+      "signal": false,
+      "canonical_group": "return_reason_traceability",
+      "reason": "ML compensation for other fashion-related issues [PHASE_16F: operational traceability only]"
+    }
+  },
+  "exclusion_rules": [
+    {
+      "detalle": "Retiro de dinero",
+      "reason": "Tesorería — no es P&L"
+    }
+  ]
+}

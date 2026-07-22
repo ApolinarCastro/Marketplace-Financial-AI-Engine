@@ -1,0 +1,30 @@
+{
+  "execution_id": "F0-03_DELETION",
+  "timestamp": "2026-07-15T16:32:14.029584",
+  "operation": "DELETE_PROVABLY_TEST_DATA",
+  "rows_deleted": 52,
+  "value_deleted": 715000.0,
+  "source_files_removed": [
+    "report_full.xlsx",
+    "report_drop.xlsx",
+    "fact_test.xlsx",
+    "pos_test.xlsx"
+  ],
+  "tables_modified": [
+    "marketplace_ledger_v1"
+  ],
+  "tables_unaffected": [
+    "marketplace_ledger_clasificado_v1",
+    "marketplace_cierre_financiero_v1",
+    "marketplace_auditoria_v1",
+    "ripley_settlement_chain",
+    "ripley_traceability_graph",
+    "file_registry",
+    "ingestion_registry"
+  ],
+  "ledger_rows_remaining": 374251,
+  "ledger_value_remaining": 2950968247.64,
+  "sha256_pre": "bf6ed7aec5410abe033b2a3c271011ddfce044f0e4c9008aba590ae48ba52aa6",
+  "sha256_post": "990cb0f1476a1b4c882186fdffae84b78be8236c254a12ccf8a5f4e4f67c034b",
+  "status": "TEST_DATA_REMOVED"
+}

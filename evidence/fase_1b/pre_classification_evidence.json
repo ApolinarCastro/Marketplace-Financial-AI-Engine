@@ -1,0 +1,224 @@
+{
+  "ml_ledger_rows": 79648,
+  "ml_classified_rows": 0,
+  "ml_operational_null_fg": 79648,
+  "ml_total_monto": 470891023.6400001,
+  "ml_periods": [
+    {
+      "p": "2025-01",
+      "rows": 3916,
+      "monto": 10979116.51
+    },
+    {
+      "p": "2025-02",
+      "rows": 2842,
+      "monto": 11885748.0
+    },
+    {
+      "p": "2025-03",
+      "rows": 1275,
+      "monto": 8255117.0
+    },
+    {
+      "p": "2025-04",
+      "rows": 3665,
+      "monto": 25565902.31
+    },
+    {
+      "p": "2025-05",
+      "rows": 7631,
+      "monto": 53674932.06
+    },
+    {
+      "p": "2025-06",
+      "rows": 7170,
+      "monto": 46001652.31000001
+    },
+    {
+      "p": "2025-07",
+      "rows": 2625,
+      "monto": 6814516.529999999
+    },
+    {
+      "p": "2025-08",
+      "rows": 2481,
+      "monto": 17919247.0
+    },
+    {
+      "p": "2025-09",
+      "rows": 4343,
+      "monto": 27777183.0
+    },
+    {
+      "p": "2025-10",
+      "rows": 6861,
+      "monto": 46534524.0
+    },
+    {
+      "p": "2025-11",
+      "rows": 8771,
+      "monto": 54594823.16
+    },
+    {
+      "p": "2025-12",
+      "rows": 9558,
+      "monto": 50351438.66
+    },
+    {
+      "p": "2026-01",
+      "rows": 3817,
+      "monto": 12644613.0
+    },
+    {
+      "p": "2026-02",
+      "rows": 1804,
+      "monto": 10869130.5
+    },
+    {
+      "p": "2026-03",
+      "rows": 1161,
+      "monto": 5305090.0
+    },
+    {
+      "p": "2026-04",
+      "rows": 2580,
+      "monto": 18424060.0
+    },
+    {
+      "p": "2026-05",
+      "rows": 5594,
+      "monto": 38489183.79999998
+    },
+    {
+      "p": "2026-06",
+      "rows": 3554,
+      "monto": 24804745.79999999
+    }
+  ],
+  "ml_detalles": [
+    {
+      "detalle": "Cargo por venta (Comisi\u00f3n)",
+      "rows": 27276,
+      "monto": -107211926.0
+    },
+    {
+      "detalle": "Cargo por venta (Venta)",
+      "rows": 27276,
+      "monto": 771358768.0
+    },
+    {
+      "detalle": "Cargo por env\u00edos de Mercado Libre",
+      "rows": 15443,
+      "monto": -64381149.14999999
+    },
+    {
+      "detalle": "Devoluci\u00f3n de venta",
+      "rows": 2610,
+      "monto": -81697151.0
+    },
+    {
+      "detalle": "Anulaci\u00c3\u00b3n del cargo por venta",
+      "rows": 2610,
+      "monto": 11071025.0
+    },
+    {
+      "detalle": "Anulaci\u00f3n del cargo por env\u00edos de Mercado Libre",
+      "rows": 1463,
+      "monto": 6122610.790000001
+    },
+    {
+      "detalle": "Cargo por retiro de stock Full",
+      "rows": 1302,
+      "monto": -1615568.0
+    },
+    {
+      "detalle": "Cargo por servicio de almacenamiento Full",
+      "rows": 890,
+      "monto": -2518921.0
+    },
+    {
+      "detalle": "Cargo por devoluci\u00f3n",
+      "rows": 155,
+      "monto": -958950.0
+    },
+    {
+      "detalle": "Cargo por stock antiguo en Full",
+      "rows": 150,
+      "monto": -97930.0
+    },
+    {
+      "detalle": "Cargo por campa\u00f1a de publicidad - Product Ads",
+      "rows": 145,
+      "monto": -21277398.0
+    },
+    {
+      "detalle": "Cargo",
+      "rows": 85,
+      "monto": -405701.0
+    },
+    {
+      "detalle": "Cargo por campa\u00f1a de publicidad - Display program\u00e1tico",
+      "rows": 77,
+      "monto": -502040.0
+    },
+    {
+      "detalle": "Cargo por campa\u00f1a de publicidad - Brand Ads",
+      "rows": 68,
+      "monto": -6601809.0
+    },
+    {
+      "detalle": "Anulaci\u00f3n del cargo por devoluci\u00f3n",
+      "rows": 25,
+      "monto": 161240.0
+    },
+    {
+      "detalle": "Cargo por mantenimiento de Mi p\u00e1gina",
+      "rows": 15,
+      "monto": -254850.0
+    },
+    {
+      "detalle": "Cargo por Asesor\u00eda Comercial",
+      "rows": 14,
+      "monto": -14418091.0
+    },
+    {
+      "detalle": "Campa\u00f1as de publicidad - Display",
+      "rows": 12,
+      "monto": -15860217.0
+    },
+    {
+      "detalle": "Bonificaci\u00f3n",
+      "rows": 12,
+      "monto": 60231.0
+    },
+    {
+      "detalle": "Cargo por sobrepasar espacio Full",
+      "rows": 11,
+      "monto": -73000.0
+    },
+    {
+      "detalle": "Cargo por diferencias en las medidas y el peso del paquete",
+      "rows": 8,
+      "monto": -7650.0
+    },
+    {
+      "detalle": "repentant_buyer",
+      "rows": 1,
+      "monto": -500.0
+    }
+  ],
+  "ml_fg_dist": [
+    {
+      "fg": "NULL",
+      "rows": 79648
+    }
+  ],
+  "ml_duplicate_pairs": 0,
+  "paris_ledger": 74030,
+  "paris_classified": 74028,
+  "ripley_ledger": 219901,
+  "ripley_classified": 219901,
+  "falabella_ledger": 678,
+  "falabella_classified": 678,
+  "total_ledger": 374257
+}

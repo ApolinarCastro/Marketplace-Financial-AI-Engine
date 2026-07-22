@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioDTE xmlns="http://www.sii.cl/SiiDte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd" version="1.0">
+  <SetDTE ID="dte_c61_f147261_ts2026-05-11T120315">
+    <Caratula version="1.0">
+      <RutEmisor>77898100-9</RutEmisor>
+      <RutEnvia>14493264-1</RutEnvia>
+      <RutReceptor>83382700-6</RutReceptor>
+      <FchResol>2013-03-28</FchResol>
+      <NroResol>38</NroResol>
+      <TmstFirmaEnv>2026-05-11T12:03:15</TmstFirmaEnv>
+      <SubTotDTE><TpoDTE>61</TpoDTE><NroDTE>1</NroDTE></SubTotDTE>
+    </Caratula>
+<DTE version="1.0">
+  <Documento ID="R83382700-6T61F147261">
+    <Encabezado>
+      <IdDoc>
+        <TipoDTE>61</TipoDTE>
+        <Folio>147261</Folio>
+        <FchEmis>2026-05-11</FchEmis>
+        <FmaPago>1</FmaPago>
+        <MntPagos>
+          <FchPago>2026-05-11</FchPago>
+          <MntPago>482744</MntPago>
+          <GlosaPagos>Contado</GlosaPagos>
+        </MntPagos>
+        <FchVenc>2026-05-11</FchVenc>
+      </IdDoc>
+      <Emisor>
+        <RUTEmisor>77898100-9</RUTEmisor>
+        <RznSoc>IMPORTADORA Y COMERCIALIZADORA NANDA SPA</RznSoc>
+        <GiroEmis>COMPRA, VENTA, IMPORTACION, EXPORTACION DE PRENDAS DE VESTIR Y OTROS</GiroEmis>
+        <Acteco>464100</Acteco>
+        <DirOrigen>EUSEBIO LILLO 333</DirOrigen>
+        <CmnaOrigen>Recoleta</CmnaOrigen>
+        <CiudadOrigen>Santiago</CiudadOrigen>
+        <CdgVendedor>-Ningún empleado del departamento de ventas-</CdgVendedor>
+      </Emisor>
+      <Receptor>
+        <RUTRecep>83382700-6</RUTRecep>
+        <RznSocRecep>COMERCIAL ECCSA S.A.</RznSocRecep>
+        <GiroRecep>Venta al por menor en comercios de vestu</GiroRecep>
+        <Contacto>JAVIERA</Contacto>
+        <CorreoRecep>eccsa_dte@paperless.cl</CorreoRecep>
+        <DirRecep>Alonso de Cordova 5320, Oficina 901A ex 904, Piso 9</DirRecep>
+        <CmnaRecep>LAS CONDES</CmnaRecep>
+        <CiudadRecep>SANTIAGO</CiudadRecep>
+        <CiudadPostal>SANTIAGO</CiudadPostal>
+      </Receptor>
+      <Transporte>
+        <DirDest>Alonso de Cordova 5320, Oficina 901A ex 904, Piso 9</DirDest>
+        <CmnaDest>LAS CONDES</CmnaDest>
+        <CiudadDest>SANTIAGO</CiudadDest>
+      </Transporte>
+      <Totales>
+        <MntNeto>405667</MntNeto>
+        <MntExe>0</MntExe>
+        <TasaIVA>19</TasaIVA>
+        <IVA>77077</IVA>
+        <MntTotal>482744</MntTotal>
+        <MontoNF>0</MontoNF>
+      </Totales>
+    </Encabezado>
+    <Detalle>
+      <NroLinDet>1</NroLinDet>
+      <CdgItem>
+        <TpoCodigo>0</TpoCodigo>
+        <VlrCodigo>Servicio</VlrCodigo>
+      </CdgItem>
+      <NmbItem>Despacho Flota Propia  FP15042026</NmbItem>
+      <DscItem>Despacho Flota Propia  FP15042026</DscItem>
+      <QtyItem>1</QtyItem>
+      <PrcItem>405667.23</PrcItem>
+      <MontoItem>405667</MontoItem>
+    </Detalle>
+    <Referencia>
+      <NroLinRef>1</NroLinRef>
+      <TpoDocRef>33</TpoDocRef>
+      <FolioRef>26793</FolioRef>
+      <FchRef>2026-05-11</FchRef>
+      <CodRef>1</CodRef>
+    </Referencia>
+    <TED version="1.0">
+      <DD>
+        <RE>77898100-9</RE>
+        <TD>61</TD>
+        <F>147261</F>
+        <FE>2026-05-11</FE>
+        <RR>83382700-6</RR>
+        <RSR>COMERCIAL ECCSA S.A.</RSR>
+        <MNT>482744</MNT>
+        <IT1>Despacho Flota Propia  FP15042026</IT1>
+        <CAF version="1.0">
+          <DA>
+            <RE>77898100-9</RE>
+            <RS>IMPORTADORA Y COMERCIALIZADORA NANDA SPA</RS>
+            <TD>61</TD>
+            <RNG>
+              <D>146341</D>
+              <H>148340</H>
+            </RNG>
+            <FA>2026-02-17</FA>
+            <RSAPK>
+              <M>tiG4xbRBtqkODhTpDONlU43su3vUYcUznFyEaZ8Mw4M0G2BA4RrepLCuAX3u14CIuA7tGh2m0Aa9H2pQcsydpQ==</M>
+              <E>Aw==</E>
+            </RSAPK>
+            <IDK>300</IDK>
+          </DA>
+          <FRMA algoritmo="SHA1withRSA">E8WD9/Y4HFySnFDL4+/tKJRnGATD1ENoY+KwiYbEfrcJt3HZPLhcaGYfpfz+fyP4Ej0bg7eOnKk0Mr/EZDD7zg==</FRMA>
+        </CAF>
+        <TSTED>2026-05-11T12:03:15</TSTED>
+      </DD>
+      <FRMT algoritmo="SHA1withRSA">VPk39c4UEDplUf+WND6SXsh/KHQ+skw1eaQ
+ZZy2u8ETDixsCKfc+xnR/b48GQSmMNJxEYWoonvNpIxuM/vvR0Q==</FRMT>
+    </TED>
+    <TmstFirma>2026-05-11T12:03:15</TmstFirma>
+  </Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+<SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#R83382700-6T61F147261"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>7ZX+ODMy1adZ4FN3LS6663s6UjA=</DigestValue></Reference></SignedInfo>
+<SignatureValue>IUbtQwyd3VLYVw79rxceDQBBguRmgKESPOmnrbFq4BrodsGR0nv6UhFhRm/
+HaKQx6N6+YYtqHDl77ZECNyOlZcVblw3YMpA4ZTwieammFqqfFvT32P9H0cMelsLsUqyToq2lyrQ
+c8lujXqqt9xmUHXWSgyyaaFtAQuy4cTbldKv+WhFtwl/FHHYs5tPHJ3U2yCsxFIIr0qbGqz1VId
+1kSlgpOtHW9KDPIp9bSLhiSaAj3FS61kGYjFJ+QTHT28YA40K2bf6VlojyXU+gsNIuYiM53evK7
+FtG3ef0iZHqmO2d2/F6sRWFhGbNTTbW1jAdzLHsoXFEh2r4gSYqNih
+xvw==</SignatureValue>
+<KeyInfo><KeyValue><RSAKeyValue>
+<Modulus>vwnEOgxY1maTpwNMd82W+HUAfTWedlWXkOT856jIBz5lSvfSY/SpYzCcDrTny1BY8d
+n4qMn2XjZT0KSZTnB7/AYekMkThscSuG+4D9sBke+gqlGhoLWtINwSKuUVdgcpBfJpgQymRF9X8J
+a1irJzrWPf/6fYpuDv09fk1D8ZMZ0ZivpMh6y9b557uIehstC5I7itBvvZH9VBym8vLBjVmbppL
+baot1lMDv6tbEtGzniljgpxmjv7mO9z79Gfc+rArSH1uZuOzCM8uPb6gs6aR2OgWJwsoESyV0gS
+xQPuLuIWut2427DgsQhyZONgd1g4I6zcpgIwjWVPW6Chg71g
+7Q==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data>
+<X509Certificate>MIIHxzCCBa+gAwIBAgIKTJbJigABAAzhIjANBgkqhkiG9w0BAQsFADCBvzE
+LMAkGA1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQHEwhTYW5
+0aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9yaWRhZCBDZXJ0aWZpY2
+Fkb3JhMR4wHAYDVQQDExVFLUNFUlRDSElMRSBDQSBGRVMgMDIxJjAkBgkqhkiG9w0BCQEWF3Njb
+GllbnRlQGUtY2VydGNoaWxlLmNsMB4XDTI1MDEwNzE4NDc0N1oXDTI4MDEwNzE4NDc0N1owgcMx
+CzAJBgNVBAYTAkNMMSIwIAYDVQQIExlNRVRST1BPTElUQU5BIERFIFNBTlRJQUdPMREwDwYDVQQ
+HEwhTQU5USUFHTzEzMDEGA1UEChMqSU1QT1JUQURPUkEgWSBDT01FUkNJQUxJWkFET1JBIE1BR0
+5FVE8gU1BBMQowCAYDVQQLDAEqMRgwFgYDVQQDEw9ZVSBKSU4gQ0hPSSBMRUUxIjAgBgkqhkiG9
+w0BCQEWE1lVSklOQ0xATklDT1BPTFkuQ0wwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQC/CcQ6DFjWZpOnA0x3zZb4dQB9NZ52VZeQ5PznqMgHPmVK99Jj9KljMJwOtOfLUFjx2fioyfZ
+eNlPQpJlOcHv8Bh6QyROGxxK4b7gP2wGR76CqUaGgta0g3BIq5RV2BykF8mmBDKZEX1fwlrWKsn
+OtY9//p9im4O/T1+TUPxkxnRmK+kyHrL1vnnu4h6Gy0LkjuK0G+9kf1UHKby8sGNWZumkttqi3W
+UwO/q1sS0bOeKWOCnGaO/uY73Pv0Z9z6sCtIfW5m47MIzy49vqCzppHY6BYnCygRLJXSBLFA+4u
+4ha63bjbsOCxCHJk42B3WDgjrNymAjCNZU9boKGDvWDtAgMBAAGjggK9MIICuTCCAV8GA1UdIAS
+CAVYwggFSMIIBTgYIKwYBBAHDUgUwggFAMD0GCCsGAQUFBwIBFjFodHRwczovL3d3dy5lLWNlcn
+RjaGlsZS5jbC9wb2xpdGljYXMteS1wcmFjdGljYXMvMIH+BggrBgEFBQcCAjCB8R6B7gBFAGwAI
+AByAGUAcwBwAG8AbgBkAGUAcgAgAGUAcwB0AGUAIABmAG8AcgBtAHUAbABhAHIAaQBvACAAZQBz
+ACAAdQBuACAAcgBlAHEAdQBpAHMAaQB0AG8AIABpAG4AZABpAHMAcABlAG4AcwBhAGIAbABlACA
+AcABhAHIAYQAgAGQAYQByACAAaQBuAGkAYwBpAG8AIABhAGwAIABwAHIAbwBjAGUAcwBvACAAZA
+BlACAAYwBlAHIAdABpAGYAaQBjAGEAYwBpAPMAbgAuACAAUABvAHMAdABlAHIAaQBvAHIAbQBlA
+G4AdABlACwwHQYDVR0OBBYEFB+JhbGokMGy6xrY4dGoel4Z0QqyMAsGA1UdDwQEAwIE8DAjBgNV
+HREEHDAaoBgGCCsGAQQBwQEBoAwWCjE0NDkzMjY0LTEwHwYDVR0jBBgwFoAUdNYhs/Ra6C18u1k
+GY0PvabQ6kwQwQAYDVR0fBDkwNzA1oDOgMYYvaHR0cDovL2NybC5lY2VydGNoaWxlLmNsL0UtQ0
+VSVENISUxFQ0FGRVMwMi5jcmwwPQYIKwYBBQUHAQEEMTAvMC0GCCsGAQUFBzABhiFodHRwOi8vb
+2NzcGZlcy5lY2VydGNoaWxlLmNsL29jc3AwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUIgd3S
+TZfUOoaJnQaHiM5vg6/MYEWG0uwIhsfKfQIBZAIBBzAjBgNVHRIEHDAaoBgGCCsGAQQBwQECoAw
+WCjk2OTI4MTgwLTUwDQYJKoZIhvcNAQELBQADggIBAGsxJz/4hn0LKlYU42HcRH6ilRZTenfZpy
+mc3GlWaYwQ1z5itsGHa7+nEw9SLLntxZqZ9I02ZwRMiuOtp0FQEbSCubrfY1WTNiSPL3YBoFGB1
+2iO8TxbLHWmVuRbaCijrGTESd3wSkx+F+gGLXu6YtKUb/T1qJMaeSZAHFqeO6LyDFmyJVFKXuZX
++HEieIYgw3Q6k2zs7zqSoTBUcwCOviGMOgrQPYqUclVFfpr6Mm/eoq6K6CJ8wN0pk0oRJRuaURf
+VpcxCAXOBDSkBCA2qRHUL3L0eRZMokQ+DrZUNdOELhdkvN2kN6/yqqvYGIC6rhVCjiKcqOWTXhc
+h09YQMoEQugnE4z9yfGKFuE63HhPfO4nmtcP28diE0LRunNVkZyGltBwPNIhRfH4G8cFkiw4l1z
+DfLFw51orp16aZNZ0KEh1NholyKD9GC/yswNUkwI4S1643kodky2P88xRKM5eFIQ/QA/n3VfBsH
+kcBpeBFcbnUwa9KP+tIiNGMIZ7NAEU5+Ds/6iHpdf1jQPtWRRwFYvYQHbYNK+QMXSKZRvCjdO6C
+4I4oXBirvw1dDGb8rlyvoA243XOP9vXhh13zmL2/KA+vyY7PDBJtputHBwv8cM0G9VvTt9BjMhe
+tljSF86lrkNNBi
+uZm/WZ6Go+77OQT0GOzdIzzClUp/qxRUIaNJ</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></DTE>
+</SetDTE>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+<SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#dte_c61_f147261_ts2026-05-11T120315"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>mYqRq4f4X3r+gmNW1ClEVgAlCeM=</DigestValue></Reference></SignedInfo>
+<SignatureValue>I6X9w/F9UIHeqvIXTEXIaO8/z4oPbc/Zz5jznORsBp0ypxhCmvPqBsbWSES
+/MBVTfDGxpSlaZLLZfTunRt+xpsLo/nmJgsnGoyiU0LzFiZgwAnnB1ZMqJp7GIDv3kzpKs9YK6D3
+nGcT3vNHh/LJV+Bs/o7yoZxZbysqqIkj7mu1TTHODt+IrNkCyxSJx959YWRMKWCNOUPXjsC2iat
+dw8Bgj0FJ4wjGbs5TXykcAhYWgIsRjQCvGME1kBJnHabPrqYYMKpm3yTl8mW2AeCeXaGAcPV8jM
+Cv6ktZ/qxGI0U+JyLrSHIHCgjfOcTJ4sa7aiqnrXFJmkk5lypusTPA
+1Zw==</SignatureValue>
+<KeyInfo><KeyValue><RSAKeyValue>
+<Modulus>vwnEOgxY1maTpwNMd82W+HUAfTWedlWXkOT856jIBz5lSvfSY/SpYzCcDrTny1BY8d
+n4qMn2XjZT0KSZTnB7/AYekMkThscSuG+4D9sBke+gqlGhoLWtINwSKuUVdgcpBfJpgQymRF9X8J
+a1irJzrWPf/6fYpuDv09fk1D8ZMZ0ZivpMh6y9b557uIehstC5I7itBvvZH9VBym8vLBjVmbppL
+baot1lMDv6tbEtGzniljgpxmjv7mO9z79Gfc+rArSH1uZuOzCM8uPb6gs6aR2OgWJwsoESyV0gS
+xQPuLuIWut2427DgsQhyZONgd1g4I6zcpgIwjWVPW6Chg71g
+7Q==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data>
+<X509Certificate>MIIHxzCCBa+gAwIBAgIKTJbJigABAAzhIjANBgkqhkiG9w0BAQsFADCBvzE
+LMAkGA1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQHEwhTYW5
+0aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9yaWRhZCBDZXJ0aWZpY2
+Fkb3JhMR4wHAYDVQQDExVFLUNFUlRDSElMRSBDQSBGRVMgMDIxJjAkBgkqhkiG9w0BCQEWF3Njb
+GllbnRlQGUtY2VydGNoaWxlLmNsMB4XDTI1MDEwNzE4NDc0N1oXDTI4MDEwNzE4NDc0N1owgcMx
+CzAJBgNVBAYTAkNMMSIwIAYDVQQIExlNRVRST1BPTElUQU5BIERFIFNBTlRJQUdPMREwDwYDVQQ
+HEwhTQU5USUFHTzEzMDEGA1UEChMqSU1QT1JUQURPUkEgWSBDT01FUkNJQUxJWkFET1JBIE1BR0
+5FVE8gU1BBMQowCAYDVQQLDAEqMRgwFgYDVQQDEw9ZVSBKSU4gQ0hPSSBMRUUxIjAgBgkqhkiG9
+w0BCQEWE1lVSklOQ0xATklDT1BPTFkuQ0wwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQC/CcQ6DFjWZpOnA0x3zZb4dQB9NZ52VZeQ5PznqMgHPmVK99Jj9KljMJwOtOfLUFjx2fioyfZ
+eNlPQpJlOcHv8Bh6QyROGxxK4b7gP2wGR76CqUaGgta0g3BIq5RV2BykF8mmBDKZEX1fwlrWKsn
+OtY9//p9im4O/T1+TUPxkxnRmK+kyHrL1vnnu4h6Gy0LkjuK0G+9kf1UHKby8sGNWZumkttqi3W
+UwO/q1sS0bOeKWOCnGaO/uY73Pv0Z9z6sCtIfW5m47MIzy49vqCzppHY6BYnCygRLJXSBLFA+4u
+4ha63bjbsOCxCHJk42B3WDgjrNymAjCNZU9boKGDvWDtAgMBAAGjggK9MIICuTCCAV8GA1UdIAS
+CAVYwggFSMIIBTgYIKwYBBAHDUgUwggFAMD0GCCsGAQUFBwIBFjFodHRwczovL3d3dy5lLWNlcn
+RjaGlsZS5jbC9wb2xpdGljYXMteS1wcmFjdGljYXMvMIH+BggrBgEFBQcCAjCB8R6B7gBFAGwAI
+AByAGUAcwBwAG8AbgBkAGUAcgAgAGUAcwB0AGUAIABmAG8AcgBtAHUAbABhAHIAaQBvACAAZQBz
+ACAAdQBuACAAcgBlAHEAdQBpAHMAaQB0AG8AIABpAG4AZABpAHMAcABlAG4AcwBhAGIAbABlACA
+AcABhAHIAYQAgAGQAYQByACAAaQBuAGkAYwBpAG8AIABhAGwAIABwAHIAbwBjAGUAcwBvACAAZA
+BlACAAYwBlAHIAdABpAGYAaQBjAGEAYwBpAPMAbgAuACAAUABvAHMAdABlAHIAaQBvAHIAbQBlA
+G4AdABlACwwHQYDVR0OBBYEFB+JhbGokMGy6xrY4dGoel4Z0QqyMAsGA1UdDwQEAwIE8DAjBgNV
+HREEHDAaoBgGCCsGAQQBwQEBoAwWCjE0NDkzMjY0LTEwHwYDVR0jBBgwFoAUdNYhs/Ra6C18u1k
+GY0PvabQ6kwQwQAYDVR0fBDkwNzA1oDOgMYYvaHR0cDovL2NybC5lY2VydGNoaWxlLmNsL0UtQ0
+VSVENISUxFQ0FGRVMwMi5jcmwwPQYIKwYBBQUHAQEEMTAvMC0GCCsGAQUFBzABhiFodHRwOi8vb
+2NzcGZlcy5lY2VydGNoaWxlLmNsL29jc3AwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUIgd3S
+TZfUOoaJnQaHiM5vg6/MYEWG0uwIhsfKfQIBZAIBBzAjBgNVHRIEHDAaoBgGCCsGAQQBwQECoAw
+WCjk2OTI4MTgwLTUwDQYJKoZIhvcNAQELBQADggIBAGsxJz/4hn0LKlYU42HcRH6ilRZTenfZpy
+mc3GlWaYwQ1z5itsGHa7+nEw9SLLntxZqZ9I02ZwRMiuOtp0FQEbSCubrfY1WTNiSPL3YBoFGB1
+2iO8TxbLHWmVuRbaCijrGTESd3wSkx+F+gGLXu6YtKUb/T1qJMaeSZAHFqeO6LyDFmyJVFKXuZX
++HEieIYgw3Q6k2zs7zqSoTBUcwCOviGMOgrQPYqUclVFfpr6Mm/eoq6K6CJ8wN0pk0oRJRuaURf
+VpcxCAXOBDSkBCA2qRHUL3L0eRZMokQ+DrZUNdOELhdkvN2kN6/yqqvYGIC6rhVCjiKcqOWTXhc
+h09YQMoEQugnE4z9yfGKFuE63HhPfO4nmtcP28diE0LRunNVkZyGltBwPNIhRfH4G8cFkiw4l1z
+DfLFw51orp16aZNZ0KEh1NholyKD9GC/yswNUkwI4S1643kodky2P88xRKM5eFIQ/QA/n3VfBsH
+kcBpeBFcbnUwa9KP+tIiNGMIZ7NAEU5+Ds/6iHpdf1jQPtWRRwFYvYQHbYNK+QMXSKZRvCjdO6C
+4I4oXBirvw1dDGb8rlyvoA243XOP9vXhh13zmL2/KA+vyY7PDBJtputHBwv8cM0G9VvTt9BjMhe
+tljSF86lrkNNBi
+uZm/WZ6Go+77OQT0GOzdIzzClUp/qxRUIaNJ</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></EnvioDTE>

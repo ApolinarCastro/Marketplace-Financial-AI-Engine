@@ -1,0 +1,35 @@
+{
+  "patch": "persistencia_oficial_clasificacion",
+  "applied_at": "2026-05-28T16:24:31.326118",
+  "changes": {
+    "include_in_operational_pnl": "NULL -> TRUE/FALSE based on FINANCIAL_STRUCTURE membership",
+    "financial_group": "NULL -> mapped from clasificacion_operativa via FINANCIAL_STRUCTURE reverse map"
+  },
+  "reverse_map_entries": 124,
+  "rollback_sql": "-- ROLLBACK: Reset include_in_operational_pnl and financial_group to NULL\nUPDATE marketplace_ledger_clasificado_v1 \nSET include_in_operational_pnl = NULL,\n    financial_group = NULL;",
+  "snapshot": "snapshot_pre_persistencia_20260528_162431",
+  "post_PARIS": {
+    "pnl_null": 0,
+    "fg_null": 0,
+    "pnl_true": 42487,
+    "pnl_false": 0
+  },
+  "post_FALABELLA": {
+    "pnl_null": 0,
+    "fg_null": 0,
+    "pnl_true": 877,
+    "pnl_false": 0
+  },
+  "post_RIPLEY": {
+    "pnl_null": 0,
+    "fg_null": 8413,
+    "pnl_true": 260803,
+    "pnl_false": 8413
+  },
+  "post_ML": {
+    "pnl_null": 0,
+    "fg_null": 0,
+    "pnl_true": 101603,
+    "pnl_false": 0
+  }
+}

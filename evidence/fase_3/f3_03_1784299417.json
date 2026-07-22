@@ -1,0 +1,73 @@
+{
+  "execution_id": "f3_03_1784299417",
+  "test": "F3-03: Controlled Ingestion with Financial Fixture",
+  "fixture": "5 rows ML Facturacion XLSX -> 8 ledger rows, $20800 total",
+  "fixture_sha256": "590277e5b3bc6c4903f3f8d0a17988a18a22b6ffc9949fcedc21c63dd806a846",
+  "baseline": "data\\db\\baseline_estable_v7_20260715\\meli_financial_v4.db",
+  "runs": [
+    {
+      "run": 1,
+      "record_status": "CERTIFIED",
+      "records_inserted": 12189,
+      "ledger_rows": 8,
+      "ledger_total": 20800.0,
+      "ventas": [
+        "F3-03-001",
+        "F3-03-002"
+      ],
+      "errors": [
+        "row[5] detalle: expected 'Anulaci\u00f3n del cargo por venta', got 'Anulaci\u00c3\u00b3n del cargo por venta'"
+      ],
+      "verdict": "FAIL"
+    },
+    {
+      "run": 2,
+      "record_status": "CERTIFIED",
+      "records_inserted": 12189,
+      "ledger_rows": 8,
+      "ledger_total": 20800.0,
+      "ventas": [
+        "F3-03-001",
+        "F3-03-002"
+      ],
+      "errors": [
+        "row[5] detalle: expected 'Anulaci\u00f3n del cargo por venta', got 'Anulaci\u00c3\u00b3n del cargo por venta'"
+      ],
+      "verdict": "FAIL"
+    },
+    {
+      "run": 3,
+      "record_status": "CERTIFIED",
+      "records_inserted": 12189,
+      "ledger_rows": 8,
+      "ledger_total": 20800.0,
+      "ventas": [
+        "F3-03-001",
+        "F3-03-002"
+      ],
+      "errors": [
+        "row[5] detalle: expected 'Anulaci\u00f3n del cargo por venta', got 'Anulaci\u00c3\u00b3n del cargo por venta'"
+      ],
+      "verdict": "FAIL"
+    }
+  ],
+  "reingestion": {
+    "1st_status": "CERTIFIED",
+    "1st_inserted": 12189,
+    "1st_rows": 8,
+    "1st_total": 20800.0,
+    "2nd_status": "CERTIFIED",
+    "2nd_inserted": 12189,
+    "2nd_rows": 8,
+    "2nd_total": 20800.0,
+    "errors1": [
+      "row[5] detalle: expected 'Anulaci\u00f3n del cargo por venta', got 'Anulaci\u00c3\u00b3n del cargo por venta'"
+    ],
+    "errors2": [
+      "row[5] detalle: expected 'Anulaci\u00f3n del cargo por venta', got 'Anulaci\u00c3\u00b3n del cargo por venta'"
+    ],
+    "idempotency_errors": null,
+    "verdict": "FAIL"
+  },
+  "final_verdict": "FIXTURE_VALIDATION_FAILED"
+}

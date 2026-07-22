@@ -1,0 +1,33 @@
+{
+  "ML_LEDGER_ROWS": {
+    "antes": "79648",
+    "despues": "79648",
+    "resultado": "PASS"
+  },
+  "ML_CLASSIFIED_ROWS": {
+    "antes": "0",
+    "despues": "79648",
+    "resultado": "PASS"
+  },
+  "ML_OPERATIONAL_NULL_FG": {
+    "antes": "79648",
+    "despues": "0",
+    "resultado": "PASS"
+  },
+  "DUPLICATES_CREATED": {
+    "antes": "0",
+    "despues": "0",
+    "resultado": "PASS"
+  },
+  "OTHER_MARKETPLACES_CHANGED": {
+    "antes": "0",
+    "despues": "0",
+    "resultado": "PASS"
+  },
+  "HISTORICAL_DIFFERENCE": {
+    "antes": "0/0",
+    "despues": "rows=OK,monto=OK",
+    "resultado": "PASS"
+  },
+  "global_pass": true
+}

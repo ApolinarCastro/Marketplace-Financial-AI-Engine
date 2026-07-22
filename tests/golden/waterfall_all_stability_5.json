@@ -1,0 +1,23 @@
+{
+  "cobros": -3487196.0,
+  "devoluciones": -13732070.0,
+  "disponible": 17573732.0,
+  "layers": {
+    "labels": [
+      "Ventas",
+      "Devoluciones",
+      "Cobros",
+      "Recuperaciones"
+    ],
+    "values": [
+      34792998.0,
+      -13732070.0,
+      -3487196.0,
+      0.0
+    ]
+  },
+  "marketplace": "ALL",
+  "period": "Ene 2026",
+  "recuperaciones": 0.0,
+  "ventas": 34792998.0
+}

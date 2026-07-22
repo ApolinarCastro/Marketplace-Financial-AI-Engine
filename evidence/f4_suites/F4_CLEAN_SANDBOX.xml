@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites name="pytest tests">
+<testsuite name="pytest" errors="29" failures="0" skipped="0" tests="29" time="0.520" timestamp="2026-07-19T17:45:12.937649-04:00" hostname="LAPTOP-C1JD4GH0"><testcase classname="tests.test_certification_gate" name="test_gate_exec_summary_vs_waterfall[ML]" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_exec_summary_vs_waterfall[PARIS]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_exec_summary_vs_waterfall[RIPLEY]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_exec_summary_vs_waterfall[FALABELLA]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_waterfall_conservation[ML]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_waterfall_conservation[PARIS]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_waterfall_conservation[RIPLEY]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_waterfall_conservation[FALABELLA]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_dte_coverage[ML-50.0]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_dte_coverage[RIPLEY-95.0]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_dte_coverage[PARIS-0.0]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_dte_coverage[FALABELLA-0.0]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_has_no_orphans[ML]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_has_no_orphans[PARIS]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_has_no_orphans[RIPLEY]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_has_no_orphans[FALABELLA]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_groups_cover_financial_groups[ML]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_groups_cover_financial_groups[PARIS]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_groups_cover_financial_groups[RIPLEY]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_taxonomy_groups_cover_financial_groups[FALABELLA]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_ledger_has_data[ML]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_ledger_has_data[PARIS]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_ledger_has_data[RIPLEY]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_ledger_has_data[FALABELLA]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_all_mps_have_waterfall" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_no_frontend_financial_computations" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_insert_update_delete_blocked" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_gate_api_v4_ledger_endpoint" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_certification_gate" name="test_official_db_integrity" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase></testsuite>
+<testsuite name="pytest" errors="27" failures="0" skipped="0" tests="27" time="0.489" timestamp="2026-07-19T17:45:14.401090-04:00" hostname="LAPTOP-C1JD4GH0"><testcase classname="tests.test_semantic_consistency" name="test_no_duplicate_metric_names" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_no_duplicate_definitions" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_all_metrics_have_required_fields" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_registry_complete" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_ventas_consistency[ML]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_ventas_consistency[PARIS]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_ventas_consistency[RIPLEY]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_ventas_consistency[FALABELLA]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_devoluciones_consistency[ML]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_devoluciones_consistency[PARIS]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_devoluciones_consistency[RIPLEY]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_devoluciones_consistency[FALABELLA]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_disponible_consistency[ML]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_disponible_consistency[PARIS]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_disponible_consistency[RIPLEY]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_disponible_consistency[FALABELLA]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_costos_consistency[ML]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_costos_consistency[PARIS]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_costos_consistency[RIPLEY]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_costos_consistency[FALABELLA]" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_metric_consistency_all_mp_consolidated" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_consumer_contracts_complete" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_semantic_registry_get_metric" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_semantic_registry_list_metrics" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_derived_metrics_properly_tagged" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_pnl_order_matches_financial_groups" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase><testcase classname="tests.test_semantic_consistency" name="test_no_case_sensitivity_issues" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada&quot;">tests\conftest.py:31: in v8_temp_db_path
+    shutil.copy2(V8_BASELINE, temp_db)
+..\..\Python\pythoncore-3.14-64\Lib\shutil.py:514: in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+E   FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada</error></testcase></testsuite>
+<testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.129" timestamp="2026-07-19T17:45:15.861923-04:00" hostname="LAPTOP-C1JD4GH0"><testcase classname="" name="tests.test_f4_traceability" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\ASUS Zenbook\AppData\Local\Temp\f4_sandbox_20260719_174315\tests\test_f4_traceability.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\Python\pythoncore-3.14-64\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_f4_traceability.py:30: in &lt;module&gt;
+    from engine.v4.evidence.traceability import (
+engine\v4\evidence\__init__.py:2: in &lt;module&gt;
+    from engine.v4.evidence.evidence_link_registry import EvidenceLinkRegistry
+engine\v4\evidence\evidence_link_registry.py:2: in &lt;module&gt;
+    from engine.v4.domain.financial_engine import FinancialEngine
+E   ModuleNotFoundError: No module named 'engine.v4.domain.financial_engine'</error></testcase></testsuite>
+<testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.121" timestamp="2026-07-19T17:45:17.040821-04:00" hostname="LAPTOP-C1JD4GH0"><testcase classname="" name="tests.test_taxonomy_equivalence" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\ASUS Zenbook\AppData\Local\Temp\f4_sandbox_20260719_174315\tests\test_taxonomy_equivalence.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\Python\pythoncore-3.14-64\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_taxonomy_equivalence.py:9: in &lt;module&gt;
+    import pandas as pd
+E   ModuleNotFoundError: No module named 'pandas'</error></testcase></testsuite>
+</testsuites>

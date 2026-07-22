@@ -1,0 +1,17 @@
+{
+  "falabella": {
+    "coverage_pct": 0.0,
+    "total_rows": 678,
+    "with_xml": 0
+  },
+  "paris": {
+    "coverage_pct": 81.2,
+    "total_rows": 74028,
+    "with_xml": 60107
+  },
+  "ripley": {
+    "coverage_pct": 97.2,
+    "total_rows": 215283,
+    "with_xml": 209342
+  }
+}
