@@ -598,7 +598,7 @@ def run_full_audit(marketplace: str = "ML"):
         # 1. Ingest all raw files for all marketplaces using standalone loader
         # 2. Run Vectorized Classification
         engine = MarketplaceAuditorEngine()
-        engine.run_classification()
+        engine.run_classification(marketplace=marketplace)
         
         # 3. Generate monthly financial closures from 2023 to 2026
         for year in [2023, 2024, 2025, 2026]:

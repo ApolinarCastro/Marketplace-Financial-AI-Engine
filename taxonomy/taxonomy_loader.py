@@ -16,11 +16,19 @@ RULES_PATH = ROOT / "taxonomy_rules.yaml"
 MAPPINGS_PATH = ROOT / "taxonomy_mappings.yaml"
 
 
+def _fix_mojibake(text: str) -> str:
+    """Fix double-encoded UTF-8 mojibake (e.g. 'Ã³' -> 'ó', 'Ã±' -> 'ñ')."""
+    try:
+        return text.encode('latin-1').decode('utf-8')
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        return text
+
+
 def normalize_detail(text: str) -> str:
     """Normalize a detail string for lookup (exact replica of marketplace_auditor.normalize_detail)."""
     if not isinstance(text, str):
         return ""
-    t = text.lower().strip()
+    t = _fix_mojibake(text.lower().strip())
     t = ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')
     t = re.sub(r'[^a-z0-9\s_]', '', t)
     t = re.sub(r'\s+', ' ', t).strip()
