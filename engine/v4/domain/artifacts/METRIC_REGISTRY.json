@@ -1,0 +1,177 @@
+{
+  "version": "1.0.0",
+  "generated_from": "engine/v4/domain/canonical_semantics.py",
+  "metrics": {
+    "ventas": {
+      "name": "ventas",
+      "display_name": "Ventas (Gross Sales)",
+      "description": "Suma de montos de ingresos operacionales del marketplace, neta de devoluciones de ingresos",
+      "source_table": "marketplace_ledger_v1",
+      "granularity": "period",
+      "dimensions": [
+        "marketplace",
+        "periodo",
+        "financial_group"
+      ],
+      "exclusions": [
+        "Non-operational records (include_in_operational_pnl=0)",
+        "NOISE detalle values"
+      ],
+      "sign_convention": "POSITIVE",
+      "formula_method": "FinancialEngine.query_exec_summary().gross_sales",
+      "version": "1.0.0",
+      "owner": "FinancialEngine",
+      "evidence": "PHASE_14_LEDGER_CATEGORY_RECONCILIATION",
+      "is_derived": false
+    },
+    "devoluciones": {
+      "name": "devoluciones",
+      "display_name": "Devoluciones (Returns)",
+      "description": "Suma de montos de devoluciones, reembolsos y reversos operacionales",
+      "source_table": "marketplace_ledger_v1",
+      "granularity": "period",
+      "dimensions": [
+        "marketplace",
+        "periodo",
+        "financial_group"
+      ],
+      "exclusions": [
+        "Non-operational records",
+        "NOISE detalle values"
+      ],
+      "sign_convention": "NEGATIVE",
+      "formula_method": "FinancialEngine.query_exec_summary().returns",
+      "version": "1.0.0",
+      "owner": "FinancialEngine",
+      "evidence": "PHASE_14_LEDGER_CATEGORY_RECONCILIATION",
+      "is_derived": false
+    },
+    "costos_marketplace": {
+      "name": "costos_marketplace",
+      "display_name": "Costos Marketplace",
+      "description": "Suma de todos los costos operacionales del marketplace: costos operacionales, comerciales, logisticos, comisiones, ajustes y recuperaciones",
+      "source_table": "marketplace_ledger_v1",
+      "granularity": "period",
+      "dimensions": [
+        "marketplace",
+        "periodo",
+        "financial_group",
+        "detalle"
+      ],
+      "exclusions": [
+        "Non-operational records",
+        "NOISE detalle values",
+        "Tesorería",
+        "Impuestos"
+      ],
+      "sign_convention": "NEGATIVE",
+      "formula_method": "FinancialEngine.query_exec_summary().marketplace_costs",
+      "version": "1.0.0",
+      "owner": "FinancialEngine",
+      "evidence": "PHASE_14_LEDGER_CATEGORY_RECONCILIATION",
+      "is_derived": false
+    },
+    "disponible": {
+      "name": "disponible",
+      "display_name": "Disponible (Resultado Neto)",
+      "description": "Resultado neto operacional = ventas + devoluciones + costos + recuperaciones. También llamado Ganancia Final.",
+      "source_table": "marketplace_ledger_v1",
+      "granularity": "period",
+      "dimensions": [
+        "marketplace",
+        "periodo"
+      ],
+      "exclusions": [
+        "Non-operational records",
+        "Tesorería",
+        "Impuestos"
+      ],
+      "sign_convention": "VARIABLE",
+      "formula_method": "FinancialEngine.query_waterfall().disponible",
+      "version": "1.0.0",
+      "owner": "FinancialEngine",
+      "evidence": "PHASE_12C_WATERFALL_CERTIFICATION",
+      "is_derived": false
+    },
+    "margen": {
+      "name": "margen",
+      "display_name": "Margen Neto",
+      "description": "Porcentaje de Ganancia Final sobre Ventas Brutas. Margen = (disponible / ventas) * 100",
+      "source_table": "marketplace_ledger_v1",
+      "granularity": "period",
+      "dimensions": [
+        "marketplace",
+        "periodo"
+      ],
+      "exclusions": [
+        "No aplica — derived metric"
+      ],
+      "sign_convention": "POSITIVE (percentage)",
+      "formula_method": "DERIVED: (disponible / ventas) * 100",
+      "version": "1.0.0",
+      "owner": "FinancialEngine",
+      "evidence": "G5.6_REVENUE_ENGINE_CERTIFICATION",
+      "is_derived": true
+    },
+    "tesoreria": {
+      "name": "tesoreria",
+      "display_name": "Tesorería",
+      "description": "Movimientos de tesorería y settlement. No forma parte del P&L operacional. Representa flujos de caja reales.",
+      "source_table": "marketplace_ledger_v1",
+      "granularity": "period",
+      "dimensions": [
+        "marketplace",
+        "periodo",
+        "detalle"
+      ],
+      "exclusions": [
+        "Operational P&L records"
+      ],
+      "sign_convention": "VARIABLE",
+      "formula_method": "FinancialEngine.query_ledger(financial_group='tesoreria')",
+      "version": "1.0.0",
+      "owner": "FinancialEngine",
+      "evidence": "RIPLEY_PAYABLE_SEMANTICS_CERTIFICATION",
+      "is_derived": false
+    },
+    "pendiente_cobro": {
+      "name": "pendiente_cobro",
+      "display_name": "Pendiente de Cobro",
+      "description": "Montos registrados en tesorería pendientes de liquidación.",
+      "source_table": "marketplace_ledger_v1",
+      "granularity": "period",
+      "dimensions": [
+        "marketplace",
+        "periodo",
+        "detalle"
+      ],
+      "exclusions": [
+        "P&L records",
+        "Settled amounts"
+      ],
+      "sign_convention": "POSITIVE",
+      "formula_method": "FinancialEngine.query_ledger(financial_group='tesoreria', detalle='A pagar')",
+      "version": "1.0.0",
+      "owner": "FinancialEngine",
+      "evidence": "GAP_NOT_CERTIFIED — No dedicated endpoint. No settlement/bank linkage available. Uses treasury fallback only.",
+      "is_derived": false
+    },
+    "ganancia_final": {
+      "name": "ganancia_final",
+      "display_name": "Ganancia Final",
+      "description": "GAP. Sin definición financiera certificada en este modelo. No hay evidencia normativa (DEC, reporte gerencial, KPI oficial) que lo vincule a Disponible/Resultado Neto. No confundir con Disponible (resultado neto operacional certificado).",
+      "source_table": "N/A",
+      "granularity": "N/A",
+      "dimensions": [
+        "N/A"
+      ],
+      "exclusions": [],
+      "sign_convention": "N/A",
+      "formula_method": "GAP — No existe método certificado. No se asume equivalencia con disponible ni ningún otro KPI certificado.",
+      "version": "1.0.0",
+      "owner": "FinancialEngine",
+      "evidence": "GAP — Sin evidencia de negocio que vincule Ganancia Final a KPIs certificados.",
+      "is_derived": false
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "version": "1.0",
+  "marketplace": "PARIS",
+  "created": "2026-06-18",
+  "description": "Taxonomía financiera oficial PARIS — 3P marketplace (DEC-023). 17 sellers, 15% commission model.",
+  "canonical_groups": {
+    "ingresos": {
+      "display_name": "Ingresos Brutos",
+      "detalles": [
+        "Venta",
+        "Rebate",
+        "Despacho",
+        "Pago normal"
+      ]
+    },
+    "devoluciones": {
+      "display_name": "Devoluciones de Venta",
+      "detalles": []
+    },
+    "costos_operacionales": {
+      "display_name": "Costos Operacionales",
+      "detalles": [
+        "Cobro por despacho",
+        "Logística inversa",
+        "Retiro stock bodega Paris",
+        "Cobro stock antiguo",
+        "Pago de envío comprador",
+        "Reversa de pago de envío comprador"
+      ]
+    },
+    "ajustes": {
+      "display_name": "Ajustes & Retenciones",
+      "detalles": [
+        "Devolución",
+        "Compensación logística",
+        "Ajuste inventario activo",
+        "Cargo",
+        "Cobro por campaña",
+        "Merma"
+      ]
+    },
+    "costos_comerciales": {
+      "display_name": "Comisiones",
+      "detalles": [
+        "Cargo por venta (Comisión)"
+      ]
+    }
+  },
+  "detalle_classification": {
+    "Cargo por venta (Comisión)": {
+      "signal": true,
+      "canonical_group": "costos_comerciales",
+      "reason": "Comisión de venta PARIS (anatomic split)"
+    },
+    "Venta": {
+      "signal": true,
+      "canonical_group": "ingresos",
+      "reason": "Única fuente canónica de ingreso PARIS"
+    },
+    "Rebate": {
+      "signal": true,
+      "canonical_group": "ingresos",
+      "reason": "Rebate登记ado como ingreso"
+    },
+    "Despacho": {
+      "signal": false,
+      "canonical_group": null,
+      "reason": "Despacho con monto $0 — entrada operacional sin impacto financiero"
+    },
+    "Devolución": {
+      "signal": true,
+      "canonical_group": "ajustes",
+      "reason": "Devolución PARIS clasificada como ajuste (modelo 3P)"
+    },
+    "Cobro por despacho": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo logístico principal PARIS"
+    },
+    "Logística inversa": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo de logística inversa"
+    },
+    "Retiro stock bodega Paris": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo de retiro de stock"
+    },
+    "Cobro stock antiguo": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Costo por stock antiguo"
+    },
+    "Pago de envío comprador": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Pago de envío"
+    },
+    "Reversa de pago de envío comprador": {
+      "signal": true,
+      "canonical_group": "costos_operacionales",
+      "reason": "Reversa de pago de envío"
+    },
+    "Compensación logística": {
+      "signal": true,
+      "canonical_group": "ajustes",
+      "reason": "Compensación por logística"
+    },
+    "Ajuste inventario activo": {
+      "signal": true,
+      "canonical_group": "ajustes",
+      "reason": "Ajuste de inventario"
+    },
+    "Cargo": {
+      "signal": true,
+      "canonical_group": "ajustes",
+      "reason": "Cargo administrativo"
+    },
+    "Cobro por campaña": {
+      "signal": true,
+      "canonical_group": "ajustes",
+      "reason": "Cobro por campaña promocional"
+    },
+    "Merma": {
+      "signal": true,
+      "canonical_group": "ajustes",
+      "reason": "Merma de inventario"
+    },
+    "Pago normal": {
+      "signal": true,
+      "canonical_group": "ingresos",
+      "reason": "Pago normal PARIS clasificado como ingreso (mapping YAML)"
+    }
+  },
+  "exclusion_rules": [
+    {
+      "detalle": "Despacho",
+      "reason": "Monto $0 — sin impacto financiero"
+    }
+  ]
+}
