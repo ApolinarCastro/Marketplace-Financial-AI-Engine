@@ -2149,3 +2149,14 @@ knowledge:
   title: PHASE_5_ROADMAP
   summary: ados financieros
   status: CERTIFIED
+- id: F5_03_OPERATIONAL_RELIABILITY_
+  type: governance
+  title: F5_03_OPERATIONAL_RELIABILITY_CERT
+  summary: ADOS DE LOS CASOS DE PRUEBA
+  status: CERTIFIED
+- id: F5_04_PERFORMANCE_SCALABILITY_
+  type: governance
+  title: F5_04_PERFORMANCE_SCALABILITY_CERT
+  summary: de Escalabilidad:** SUBLINEAR (El sistema escala adecuadamente sin cuellos
+    de botella exponenciales).
+  status: CERTIFIED
