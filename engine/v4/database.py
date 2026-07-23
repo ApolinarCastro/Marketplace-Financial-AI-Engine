@@ -208,7 +208,7 @@ class DatabaseV4:
         document_type: str | None = None, period: str | None = None,
     ):
         self.execute(
-            "INSERT INTO file_registry "
+            "INSERT OR REPLACE INTO file_registry "
             "(file_hash, file_name, source, rows_processed, file_path, content_sha256, "
             "hash_algorithm, file_size_bytes, marketplace, document_type, period, registered_at) "
             "VALUES (?, ?, ?, ?, ?, ?, 'SHA-256', ?, ?, ?, ?, CURRENT_TIMESTAMP)",

@@ -29,7 +29,8 @@ class IntegrityValidator:
 
         issues.extend(self._check_extension(extension))
         issues.extend(self._check_not_empty(path))
-        issues.extend(self._check_duplicate(sha256))
+        # self._check_duplicate(sha256) is disabled because IngestionOrchestrator handles duplicates
+        # safely by checking status = 'COMPLETED', whereas file_registry has no status column.
         issues.extend(self._check_structure(path, extension))
 
         return issues

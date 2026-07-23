@@ -238,6 +238,7 @@ class SurgicalLoader:
                     if execution_id:
                         df_ledger['execution_id'] = execution_id
                     df_ledger = self._filter_old_years(df_ledger)
+                    self.db.execute("DELETE FROM marketplace_ledger_v1 WHERE archivo_origen = ?", [f.name])
                     total_inserted += self.db.insert_df(df_ledger, "marketplace_ledger_v1")
                     if not execution_id:
                         self._register_file(f.name, "ML", len(df_ledger))
