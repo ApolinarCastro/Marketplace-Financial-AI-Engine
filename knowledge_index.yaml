@@ -2139,3 +2139,13 @@ knowledge:
   title: TRANSACTION_TRACEABILITY_CONTRACT
   summary: of `normalize_detail()` processing — the canonical detail label. |
   status: ACTIVE
+- id: DOC-F5_02_E2E_GOLDEN_CERTIFICATION
+  type: governance
+  title: F5_02_E2E_GOLDEN_CERTIFICATION
+  summary: '# F5-02 � END-TO-END GOLDEN REPORT CERTIFICATION'
+  status: CERTIFIED
+- id: PHASE_5_ROADMAP
+  type: governance
+  title: PHASE_5_ROADMAP
+  summary: ados financieros
+  status: CERTIFIED
