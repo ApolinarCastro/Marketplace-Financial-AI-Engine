@@ -1,0 +1,13 @@
+marketplace,folder,files,classification,reason,score
+ML,Documentos Recepcionados,202,SUPPORTING,DTE_XML present but not all matched,MEDIUM
+ML,Facturacion,19,GOLDEN_MANDATORY,Financial events via facturacion,HIGH
+PARIS,Facturacion,69,SUPPORTING,XML commission invoices,MEDIUM
+PARIS,Documentos Recepcionados,0,SUPPORTING,DTE docs,MEDIUM
+FALABELLA,Facturación,4,GOLDEN_MANDATORY,Core settlement + DTE reference,HIGH
+FALABELLA,Documentos Recepcionados,8,SUPPORTING,DTE XML,MEDIUM
+RIPLEY,Facturacion,472,GOLDEN_MANDATORY,Cargos y comisiones,HIGH
+RIPLEY,Fulfillment by Ripley,36,GOLDEN_MANDATORY,Logistics truth,HIGH
+RIPLEY,Fulfillment by Seller,51,GOLDEN_CONDITIONAL,Seller fulfillment,MEDIUM
+RIPLEY,Mis extractos,52,GOLDEN_MANDATORY,Settlement truth,HIGH
+SHOPIFY,Facturacion,110,REJECTED,"243 files but 0 ledger rows, not part of financial chain",LOW
+SHOPIFY,Documentos Recepcionados,110,REJECTED,Same,LOW

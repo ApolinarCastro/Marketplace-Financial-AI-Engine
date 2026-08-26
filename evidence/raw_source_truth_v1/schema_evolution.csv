@@ -1,0 +1,61 @@
+folder,extension,files,distinct_fingerprints,classification,fingerprints
+RIPLEY,.md,2,0,UNKNOWN_REPORT,[]
+RIPLEY,.py,1,0,UNKNOWN_REPORT,[]
+RIPLEY,.json,1,0,UNKNOWN_REPORT,[]
+SHOPIFY/Documentos Recepcionados,.xml,110,0,UNKNOWN_REPORT,[]
+SHOPIFY/Facturacion,.xml,110,0,UNKNOWN_REPORT,[]
+SHOPIFY/Mercado Pago,.xlsx,18,18,SCHEMA_EVOLVED,"['3bc12ccf24b0', '9d3751ff0dc9', '9e0959049129']"
+SHOPIFY/Pedidos (SF),.csv,1,1,SCHEMA_STABLE,['417bf526048d']
+SHOPIFY/Ventas totales (SF),.csv,1,1,SCHEMA_STABLE,['02effb9e6f35']
+SHOPIFY/Transbank/Junio 2026,.dat,3,0,UNKNOWN_REPORT,[]
+RIPLEY/Facturacion,.xml,472,0,UNKNOWN_REPORT,[]
+RIPLEY/Fulfillment by Ripley,.csv,36,3,SCHEMA_EVOLVED,"['d805c796f82d', 'cd7822cb6539', '1e5147990cfb']"
+RIPLEY/Fulfillment by Seller,.xlsx,51,2,SCHEMA_EVOLVED,"['bc759bfdf8f2', '4a939d4c8a83']"
+RIPLEY/Historial de transacciones,.csv,8,1,SCHEMA_STABLE,['489097e0d55e']
+RIPLEY/Mis extractos,.csv,52,2,SCHEMA_EVOLVED,"['2954124867a5', '40c988d4255c']"
+PARIS/Facturacion,.xml,69,0,UNKNOWN_REPORT,[]
+PARIS/Transacciones/Dropshipping,.xlsx,18,2,SCHEMA_EVOLVED,"['b590e3c35f0a', '55d7e0e566bb']"
+PARIS/Transacciones/Fulfillment,.xlsx,4,2,SCHEMA_EVOLVED,"['b590e3c35f0a', 'ad3a93489cbb']"
+ML/Documentos Recepcionados,.xml,202,0,UNKNOWN_REPORT,[]
+ML/Facturacion,.xlsx,19,4,SCHEMA_EVOLVED,"['2ef9770a700f', 'aa830f0e4612', '9d3f21cf7382']"
+ML/Poscobro,.xlsx,6,0,UNKNOWN_REPORT,[]
+ML/Liquidacion_FF/2025-01 Enero,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-02 Febrero,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-03 Marzo,.xlsx,6,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-04 Abril,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-05 Mayo,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-06 Junio,.xlsx,6,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-07 Julio,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-08 Agosto,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-09 Septiembre,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-10 Octubre,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-11 Noviembre,.xlsx,7,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2025-12 Diciembre,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2026-01 Enero,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2026-02- Febrero,.xlsx,5,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2026-03-Marzo,.xlsx,6,1,SCHEMA_STABLE,['f183f2d57755']
+ML/Liquidacion_FF/2026-04 Abril,.xlsx,5,5,SCHEMA_EVOLVED,"['5f01de168302', '35eaa2b9a160', '11cc93bde209']"
+ML/Liquidacion_FF/2026-05 Mayo,.xlsx,5,5,SCHEMA_EVOLVED,"['5b84a21fcd9c', 'f9749a4ce360', '845ffe9ea6ec']"
+ML/Liquidacion_FF/2026-06 Junio,.xlsx,5,3,SCHEMA_EVOLVED,"['07d748096d66', '6f69e2338b60', '473306973265']"
+ML/Liberaciones/2025-01 Enero,.xlsx,1,1,SCHEMA_STABLE,['eb80409ec6c0']
+ML/Liberaciones/2025-02 Febrero,.xlsx,1,1,SCHEMA_STABLE,['eb80409ec6c0']
+ML/Liberaciones/2025-03 Marzo,.xlsx,1,1,SCHEMA_STABLE,['eb80409ec6c0']
+ML/Liberaciones/2025-04 Abril,.xlsx,1,1,SCHEMA_STABLE,['eb80409ec6c0']
+ML/Liberaciones/2025-05 Mayo,.xlsx,1,1,SCHEMA_STABLE,['eb80409ec6c0']
+ML/Liberaciones/2025-06 Junio,.xlsx,1,1,SCHEMA_STABLE,['eb80409ec6c0']
+ML/Liberaciones/2025-07 Julio,.xlsx,1,1,SCHEMA_STABLE,['32bd2f57b517']
+ML/Liberaciones/2025-08 Agosto,.xlsx,1,1,SCHEMA_STABLE,['32bd2f57b517']
+ML/Liberaciones/2025-09 Septiembre,.xlsx,1,1,SCHEMA_STABLE,['32bd2f57b517']
+ML/Liberaciones/2025-10 Octubre,.xlsx,1,1,SCHEMA_STABLE,['32bd2f57b517']
+ML/Liberaciones/2025-11 Noviembre,.xlsx,1,1,SCHEMA_STABLE,['32bd2f57b517']
+ML/Liberaciones/2025-12 Diciembre,.xlsx,1,1,SCHEMA_STABLE,['32bd2f57b517']
+ML/Liberaciones/2026-01 Enero,.xlsx,1,1,SCHEMA_STABLE,['32bd2f57b517']
+ML/Liberaciones/2026-02 Febrero,.xlsx,1,1,SCHEMA_STABLE,['32bd2f57b517']
+ML/Liberaciones/2026-03 Marzo,.xlsx,1,1,SCHEMA_STABLE,['32bd2f57b517']
+ML/Liberaciones/2026-04 Abril,.xlsx,1,1,SCHEMA_STABLE,['778037413515']
+ML/Liberaciones/2026-05 Mayo,.xlsx,1,1,SCHEMA_STABLE,['778037413515']
+ML/Liberaciones/2026-06 Junio,.xlsx,2,1,SCHEMA_STABLE,['778037413515']
+FALABELLA/Documentos Recepcionados,.xml,8,0,UNKNOWN_REPORT,[]
+FALABELLA/Facturación,.csv,1,1,SCHEMA_STABLE,['06d5ea8fcc40']
+FALABELLA/Facturación,.xlsx,3,1,SCHEMA_STABLE,['826df4ace962']
+FALABELLA/Órdenes y Transacciones,.xlsx,3,3,SCHEMA_EVOLVED,"['6642091809eb', '5696783c0b1e', '4896d76d3926']"

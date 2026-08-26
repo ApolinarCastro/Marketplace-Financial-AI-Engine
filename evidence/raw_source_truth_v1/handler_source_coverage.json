@@ -1,0 +1,17 @@
+{
+  "handlers": [
+    "engine\\v4\\ingestion\\orchestrator.py",
+    "engine\\v4\\ingestion\\raw_file_indexer.py",
+    "engine\\v4\\ingestion\\__init__.py",
+    "engine\\v4\\ingestion\\handlers\\certification_trigger.py",
+    "engine\\v4\\ingestion\\handlers\\file_detector.py",
+    "engine\\v4\\ingestion\\handlers\\integrity_validator.py",
+    "engine\\v4\\ingestion\\handlers\\knowledge_trigger.py",
+    "engine\\v4\\ingestion\\handlers\\marketplace_classifier.py",
+    "engine\\v4\\ingestion\\handlers\\persistence_engine.py",
+    "engine\\v4\\ingestion\\handlers\\__init__.py"
+  ],
+  "globs_sample": [],
+  "issues": [],
+  "verdict": "PASS"
+}

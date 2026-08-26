@@ -1,0 +1,44 @@
+[
+  {
+    "marketplace": "ML",
+    "id_transaccion": "SALE_2000000000000001_fact_test.xlsx_1",
+    "folio_xml": "F-100",
+    "monto": 10000.0,
+    "has_dte": false
+  },
+  {
+    "marketplace": "ML",
+    "id_transaccion": "COMM_2000000000000001_fact_test.xlsx_1",
+    "folio_xml": "F-100",
+    "monto": -1500.0,
+    "has_dte": false
+  },
+  {
+    "marketplace": "PARIS",
+    "id_transaccion": "1620579_GROSS",
+    "folio_xml": "6284235",
+    "monto": -38990.0,
+    "has_dte": false
+  },
+  {
+    "marketplace": "PARIS",
+    "id_transaccion": "1620579_COMM",
+    "folio_xml": "6284235",
+    "monto": 5848.0,
+    "has_dte": false
+  },
+  {
+    "marketplace": "FALABELLA",
+    "id_transaccion": "30e97d0e-3688-489d-ab29-b0864ff626eb",
+    "folio_xml": null,
+    "monto": 12099.0,
+    "has_dte": false
+  },
+  {
+    "marketplace": "FALABELLA",
+    "id_transaccion": "30e97d0e-3688-489d-ab29-b0864ff626eb",
+    "folio_xml": null,
+    "monto": -60496.0,
+    "has_dte": false
+  }
+]

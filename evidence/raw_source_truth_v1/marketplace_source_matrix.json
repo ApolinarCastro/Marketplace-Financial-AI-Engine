@@ -1,0 +1,105 @@
+{
+  "ML": {
+    "1_venta": true,
+    "2_movimientos": true,
+    "3_liquidacion": false,
+    "4_pago": false,
+    "5_devoluciones": true,
+    "6_logistica": false,
+    "7_comisiones": true,
+    "8_DTE": true,
+    "9_respaldo": true,
+    "10_bancaria": false,
+    "11_SAP": false,
+    "llave": "id_transaccion / folio_xml / order_id (varía por MP)",
+    "total_archivos": 341,
+    "roles": [
+      "UNKNOWN",
+      "COMMISSION_INVOICE",
+      "DTE_XML",
+      "TRANSACTION_LEDGER_SOURCE"
+    ]
+  },
+  "PARIS": {
+    "1_venta": false,
+    "2_movimientos": true,
+    "3_liquidacion": false,
+    "4_pago": false,
+    "5_devoluciones": true,
+    "6_logistica": true,
+    "7_comisiones": true,
+    "8_DTE": true,
+    "9_respaldo": true,
+    "10_bancaria": false,
+    "11_SAP": false,
+    "llave": "id_transaccion / folio_xml / order_id (varía por MP)",
+    "total_archivos": 91,
+    "roles": [
+      "COMMISSION_INVOICE",
+      "FULFILLMENT",
+      "DTE_XML"
+    ]
+  },
+  "RIPLEY": {
+    "1_venta": true,
+    "2_movimientos": false,
+    "3_liquidacion": true,
+    "4_pago": true,
+    "5_devoluciones": true,
+    "6_logistica": true,
+    "7_comisiones": false,
+    "8_DTE": true,
+    "9_respaldo": true,
+    "10_bancaria": false,
+    "11_SAP": false,
+    "llave": "id_transaccion / folio_xml / order_id (varía por MP)",
+    "total_archivos": 623,
+    "roles": [
+      "FULFILLMENT",
+      "DTE_XML",
+      "REFERENCE_ONLY",
+      "SALES_ORDER",
+      "SETTLEMENT"
+    ]
+  },
+  "FALABELLA": {
+    "1_venta": true,
+    "2_movimientos": true,
+    "3_liquidacion": false,
+    "4_pago": false,
+    "5_devoluciones": true,
+    "6_logistica": false,
+    "7_comisiones": true,
+    "8_DTE": true,
+    "9_respaldo": true,
+    "10_bancaria": false,
+    "11_SAP": false,
+    "llave": "id_transaccion / folio_xml / order_id (varía por MP)",
+    "total_archivos": 15,
+    "roles": [
+      "UNKNOWN",
+      "COMMISSION_INVOICE",
+      "DTE_XML",
+      "TRANSACTION_LEDGER_SOURCE"
+    ]
+  },
+  "SHOPIFY": {
+    "1_venta": false,
+    "2_movimientos": false,
+    "3_liquidacion": false,
+    "4_pago": false,
+    "5_devoluciones": true,
+    "6_logistica": false,
+    "7_comisiones": false,
+    "8_DTE": true,
+    "9_respaldo": true,
+    "10_bancaria": false,
+    "11_SAP": false,
+    "llave": "id_transaccion / folio_xml / order_id (varía por MP)",
+    "total_archivos": 243,
+    "roles": [
+      "UNKNOWN",
+      "DTE_XML"
+    ]
+  }
+}

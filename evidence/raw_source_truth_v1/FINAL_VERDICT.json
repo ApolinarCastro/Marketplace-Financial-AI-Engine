@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-08-26T17:09:48.477605",
+  "mission": "RAW_SOURCE_OF_TRUTH_E2E_TRACEABILITY_V1",
+  "precheck": {
+    "raw": 1313,
+    "db_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "db_match": true
+  },
+  "gate": {
+    "UNSCANNED_FILES": 0,
+    "unknown_omissions": 0
+  },
+  "verdict": "RAW_SOURCE_TRUTH_PARTIAL_WITH_PROVEN_BLOCKER",
+  "blockers": [
+    "SHOPIFY 243 archivos REJECTED - 0 ledger rows, sin handler, sin trazabilidad (requiere decisión negocio si debe incorporarse)",
+    "FALABELLA cobertura solo 2 meses detectados (2026-05 y 2014-08) vs 19 meses esperados - faltan enero-febrero completos en ledger a pesar de 15 archivos",
+    "RIPLEY fiscal BLOCKED (settlement 167 vs SII 407, overlap 0) - afecta DTE pero no liquidación",
+    "1212/1313 archivos RAW_NOT_REGISTERED (92%) - file_registry desactualizado, no indica corrupción sino ingesta selectiva GOLDEN"
+  ],
+  "golden_reports": "ML/PARIS/RIPLEY/FALABELLA definidos, SHOPIFY rechazado permanente",
+  "canonical_contract": "governance/CANONICAL_MARKETPLACE_SOURCE_CONTRACT_V1.md",
+  "evidence": "evidence/raw_source_truth_v1/ (22 archivos)"
+}

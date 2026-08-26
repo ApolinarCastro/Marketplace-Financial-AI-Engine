@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-08-26T17:04:50.613625",
+  "branch": "phase5/production-readiness",
+  "commit": "f88968faa291c2a60304cfa29dbf712fdf8b5f83",
+  "git_status_lines": 844,
+  "db_path": "data/db/meli_financial_v4.db",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_expected": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_match": true,
+  "db_size": 58732544,
+  "raw_root": "01_Raw",
+  "raw_file_count": 1313,
+  "raw_folder_count": 65,
+  "raw_total_size_bytes": 116070667,
+  "raw_max_mtime": "2026-08-26T16:43:37.902755",
+  "marketplaces_detected": [
+    "FALABELLA",
+    "ML",
+    "PARIS",
+    "RIPLEY",
+    "SHOPIFY"
+  ]
+}

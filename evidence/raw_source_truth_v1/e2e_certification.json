@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-26T17:09:48.475290",
+  "checks": [
+    {
+      "marketplace": "ML",
+      "api_ledger_ok": true
+    },
+    {
+      "marketplace": "PARIS",
+      "api_ledger_ok": true
+    },
+    {
+      "marketplace": "FALABELLA",
+      "api_ledger_ok": true
+    },
+    {
+      "marketplace": "RIPLEY",
+      "api_ledger_ok": true
+    }
+  ],
+  "dte_traceability": true,
+  "gate": "E2E_PARTIAL (SHOPIFY no ledger, RIPLEY fiscal BLOCKED) -> evidence chain demuestra pérdida explicada",
+  "verdict": "PARTIAL_WITH_BLOCKER"
+}

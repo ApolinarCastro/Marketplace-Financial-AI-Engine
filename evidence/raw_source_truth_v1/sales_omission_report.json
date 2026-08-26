@@ -1,0 +1,22 @@
+{
+  "FALABELLA": {
+    "raw_not_registered_files": 12,
+    "ledger_distinct_orders": 369,
+    "note": "full universe requires raw sales order source extraction (sales omission approx)"
+  },
+  "ML": {
+    "raw_not_registered_files": 316,
+    "ledger_distinct_orders": 109799,
+    "note": "full universe requires raw sales order source extraction (sales omission approx)"
+  },
+  "PARIS": {
+    "raw_not_registered_files": 69,
+    "ledger_distinct_orders": 76861,
+    "note": "full universe requires raw sales order source extraction (sales omission approx)"
+  },
+  "RIPLEY": {
+    "raw_not_registered_files": 572,
+    "ledger_distinct_orders": 212160,
+    "note": "full universe requires raw sales order source extraction (sales omission approx)"
+  }
+}

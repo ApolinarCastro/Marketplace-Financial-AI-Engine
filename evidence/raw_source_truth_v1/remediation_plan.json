@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-26T17:09:31.876212",
+  "para_archivos_validos_no_ingeridos": [
+    "SHOPIFY: evaluar si debe ingerirse o permanecer REJECTED (decisión explícita requerida)",
+    "FALABELLA: actualizar handler para nuevos periodos 21 febrero-20 marzo etc ya presentes pero parcialmente ingeridos",
+    "RIPLEY: reparar path resolver SELLER/Ciclos -> Fulfillment by Seller/Ripley (ya corregido parcialmente)",
+    "ML: registrar 316 archivos no registrados (316 RAW_NOT_REGISTERED) via file_registry"
+  ],
+  "prohibido": [
+    "rebuild global",
+    "tocar marketplaces no afectados",
+    "modificar RAW",
+    "ajustar montos"
+  ],
+  "verdict": "REMEDIATION_PLAN_DEFINED"
+}

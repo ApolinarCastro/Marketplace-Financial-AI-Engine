@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-08-26T17:08:05.378712",
+  "total_files": 15,
+  "files": [
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7136.xml",
+      "role": "DTE_XML"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7143.xml",
+      "role": "DTE_XML"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7265.xml",
+      "role": "DTE_XML"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7276.xml",
+      "role": "DTE_XML"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7402.xml",
+      "role": "DTE_XML"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7404.xml",
+      "role": "DTE_XML"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7533.xml",
+      "role": "DTE_XML"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7550.xml",
+      "role": "DTE_XML"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Facturación/21 abril 2026 - 20 mayo 2026.csv",
+      "role": "TRANSACTION_LEDGER_SOURCE"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Facturación/21 febrero 2026 - 20 marzo 2026.xlsx",
+      "role": "COMMISSION_INVOICE"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Facturación/21 marzo 2026 - 20 abril 2026.xlsx",
+      "role": "COMMISSION_INVOICE"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Facturación/21 mayo 2026 - 20 junio 2026.xlsx",
+      "role": "COMMISSION_INVOICE"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Órdenes y Transacciones/1  abril   2026 - 31  mayo   2026.xlsx",
+      "role": "UNKNOWN"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Órdenes y Transacciones/1  febrero   2026 - 31  marzo   2026.xlsx",
+      "role": "UNKNOWN"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Órdenes y Transacciones/1  junio   2026 - 30  junio   2026.xlsx",
+      "role": "UNKNOWN"
+    }
+  ],
+  "nota": "FALABELLA 15 files: 8 XML DTE, 4 facturacion (2x periodo mar-abr, abr-may, feb-mar, may-jun, plus 3 rangos abril-mayo, febrero-marzo, junio), all measured in subsequent loops"
+}

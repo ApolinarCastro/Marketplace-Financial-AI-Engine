@@ -1,0 +1,37 @@
+{
+  "ML": {
+    "venta": "01_Raw/ML/Facturacion/* (transaction ledger source)",
+    "transacciones": "ML/Facturacion",
+    "settlement": "ML settlement via same facturacion + payout",
+    "DTE": "ML/Documentos Recepcionados 15 folios",
+    "llave": "id_transaccion / folio_xml"
+  },
+  "PARIS": {
+    "venta": "PARIS/Facturacion (commission invoice)",
+    "transacciones": "PARIS/Facturacion",
+    "settlement": "PARIS settlement chain",
+    "DTE": "PARIS/Documentos + Facturacion XML (18 folios)",
+    "llave": "ledger_id + document_match"
+  },
+  "RIPLEY": {
+    "venta": "RIPLEY/Facturacion",
+    "transacciones": "RIPLEY/Facturacion + Fulfillment",
+    "settlement": "RIPLEY/Mis extractos (settlement_chain)",
+    "DTE": "BLOCKED (no SII bridge)",
+    "llave": "settlement_ref != SII folio"
+  },
+  "FALABELLA": {
+    "venta": "FALABELLA/Facturación (Pago por precio producto)",
+    "transacciones": "FALABELLA/Facturación",
+    "settlement": "FALABELLA/Facturación",
+    "DTE": "FALABELLA/Documentos Recepcionados (5 folios)",
+    "llave": "Falabella-Id / SKU / Fpay ref"
+  },
+  "SHOPIFY": {
+    "venta": "NONE - not ingested",
+    "transacciones": "NONE",
+    "settlement": "NONE",
+    "DTE": "NONE",
+    "llave": "N/A - REJECTED"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-26T17:09:31.875349",
+  "states": {
+    "ML": "SOURCE_COMPLETE (facturacion continuous, 19 months)",
+    "PARIS": "SOURCE_COMPLETE (19 months)",
+    "RIPLEY": "SOURCE_PARTIAL (falta SII bridge, pero settlement complete)",
+    "FALABELLA": "SOURCE_PARTIAL (solo 15 archivos, cobertura 2 meses detectada, faltan enero-febrero completos)",
+    "SHOPIFY": "SOURCE_MISSING (REJECTED)"
+  },
+  "gate": "SOURCE_PARTIAL_WITH_BLOCKER",
+  "verdict": "PARTIAL"
+}
