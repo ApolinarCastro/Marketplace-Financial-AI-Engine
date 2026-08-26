@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-26T17:25:47.835235",
+  "branch": "phase5/production-readiness",
+  "commit": "9190b017dbb5065469e4e87c3fc441fbd41bb1dd",
+  "log": [
+    "9190b01 SOURCE_TRUTH: loops 0-25 -> SOURCE_TO_FINANCIAL_TRUTH_CERTIFIED_WITH_EXTERNAL_BLOCKER",
+    "099855b RAW_SOURCE_TRUTH_V1: exhaustivo 01_Raw 1313 files -> PARTIAL_WITH_PROVEN_BLOCKER",
+    "f88968f HOTFIX: Audit READ-ONLY + Falabella truth + Certification semantics (PRODUCTION_HOTFIX_CERTIFIED)",
+    "8cecbf3 LOOP02-30: Macro consolidation evidence — PRODUCTION_READY_WITH_EXPLICIT_LIMITATIONS",
+    "bab93fe LOOP1-fix: Restore copilot golden file (was incorrectly staged as deletion)"
+  ],
+  "git_status_lines": 844,
+  "critical_uncommitted": 5,
+  "critical_files": [
+    " D _archive/backup_20260608_120239/api/api.py",
+    " D _archive/backup_20260608_120239/templates/dashboard.html",
+    " D _archive/backup_20260608_120239/templates/executive_dashboard.html",
+    " D engine/v4/certification/knowledge/templates/marketplace_dashboard.md",
+    "?? knowledge/templates/"
+  ],
+  "python": "3.14.0",
+  "dependencies": "fastapi 0.136.3, duckdb 1.5.3",
+  "db_path": "data/db/meli_financial_v4.db",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_expected": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_match": true,
+  "db_size": 58732544,
+  "raw_count": 1313,
+  "ledger_rows": 598112,
+  "ledger_sum": 4430909518.8099985,
+  "gate": {
+    "CRITICAL_UNCOMMITTED_WORK": 5,
+    "DB_BASELINE_CAPTURED": "PASS",
+    "RAW_BASELINE_CAPTURED": "PASS"
+  }
+}

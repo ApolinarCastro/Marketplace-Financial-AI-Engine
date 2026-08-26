@@ -1,0 +1,6 @@
+{
+  "copy": "data\\work\\recovery_test.db",
+  "sha_match": true,
+  "ledger": 598112,
+  "verdict": "PASS"
+}

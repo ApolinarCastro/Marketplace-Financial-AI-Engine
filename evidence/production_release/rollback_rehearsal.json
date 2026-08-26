@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-08-26T17:27:05.662780",
+  "release_commit": "9190b017dbb5065469e4e87c3fc441fbd41bb1dd",
+  "previous_stable": "099855bcdf1e2510f01e6dfd57bb23ee962ac509",
+  "backup_sha": "311c78e2b7471b3e",
+  "steps": [
+    "checkout prev",
+    "restore backup",
+    "start",
+    "smoke"
+  ],
+  "verdict": "PASS",
+  "rollback_reproducible": true
+}

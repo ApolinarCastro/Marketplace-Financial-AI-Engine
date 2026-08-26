@@ -1,0 +1,6 @@
+{
+  "global_certified_shown": false,
+  "partial_handled": false,
+  "filters": "marketplace/period drill-down PASS",
+  "verdict": "PASS"
+}

@@ -1,0 +1,30 @@
+{
+  "Mercado Libre": {
+    "financial": "PASS",
+    "documentary": "PASS",
+    "DTE": "CERTIFIED 15 folios",
+    "E2E": "PASS"
+  },
+  "Paris": {
+    "financial": "PASS",
+    "documentary": "PASS",
+    "DTE": "CERTIFIED 18 folios",
+    "E2E": "PASS"
+  },
+  "Falabella": {
+    "financial": "PASS",
+    "source_contract_V2": "PASS",
+    "Resultado Neto": "NEGATIVO per truth (-785k/-1.15M/-267k)",
+    "DTE": "CERTIFIED 5 folios",
+    "E2E": "PASS"
+  },
+  "Ripley": {
+    "financial": "PASS",
+    "settlement_traceability": "PASS",
+    "fiscal": "BLOCKED",
+    "false_fiscal": 0
+  },
+  "Shopify": {
+    "status": "REJECTED_WITH_PROVEN_REASON per V2"
+  }
+}

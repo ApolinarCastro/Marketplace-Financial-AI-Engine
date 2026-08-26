@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-08-26T17:27:05.311337",
+  "runs": [
+    {
+      "run": 1,
+      "status": 200,
+      "mode": "READ_ONLY"
+    },
+    {
+      "run": 2,
+      "status": 200,
+      "mode": "READ_ONLY"
+    },
+    {
+      "run": 3,
+      "status": 200,
+      "mode": "READ_ONLY"
+    }
+  ],
+  "sha_before": "311c78e2b747",
+  "sha_after": "311c78e2b747",
+  "sha_match": true,
+  "delete": 0,
+  "insert": 0,
+  "update": 0,
+  "verdict": "PASS"
+}

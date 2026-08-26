@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-26T17:27:05.739302",
+  "commit": "9190b017dbb5065469e4e87c3fc441fbd41bb1dd",
+  "tag": "marketplace-financial-v1.0.0-rc1",
+  "db_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "source_contract": "governance/CANONICAL_MARKETPLACE_SOURCE_CONTRACT_V2.md",
+  "schema_version": "v4",
+  "limitations": "RIPLEY_FISCAL BLOCKED",
+  "verdict": "PASS"
+}

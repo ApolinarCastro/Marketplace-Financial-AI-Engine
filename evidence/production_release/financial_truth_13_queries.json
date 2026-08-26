@@ -1,0 +1,127 @@
+{
+  "timestamp": "2026-08-26T17:26:13.748320",
+  "queries": [
+    {
+      "query_id": "que_vendi",
+      "marketplace": "ALL",
+      "period": "2026-05",
+      "result": 4877676089.0,
+      "source": "marketplace_ledger_v1",
+      "evidence": "ingresos sum",
+      "status": "PASS"
+    },
+    {
+      "query_id": "que_cobre",
+      "marketplace": "ALL",
+      "period": "2026-05",
+      "result": 65034175.800000004,
+      "source": "cierre_financiero_v1",
+      "evidence": "resultado_neto",
+      "status": "PASS"
+    },
+    {
+      "query_id": "que_falta_cobrar",
+      "marketplace": "ALL",
+      "period": "2026-05",
+      "result": -284200004.576,
+      "source": "marketplace_ledger_v1",
+      "evidence": "ajustes",
+      "status": "PASS"
+    },
+    {
+      "query_id": "comisiones",
+      "marketplace": "ALL",
+      "period": "2026-05",
+      "result": -458707587.06700003,
+      "source": "marketplace_ledger_v1",
+      "evidence": "costos_comerciales",
+      "status": "PASS"
+    },
+    {
+      "query_id": "publicidad",
+      "marketplace": "ALL",
+      "period": "2026-05",
+      "result": -458707587.06700003,
+      "source": "marketplace_ledger_v1",
+      "evidence": "costos_comerciales",
+      "status": "PASS"
+    },
+    {
+      "query_id": "logistica",
+      "marketplace": "ALL",
+      "period": "2026-05",
+      "result": -191847516.47700006,
+      "source": "marketplace_ledger_v1",
+      "evidence": "costos_operacionales",
+      "status": "PASS"
+    },
+    {
+      "query_id": "devoluciones",
+      "marketplace": "ALL",
+      "period": "2026-05",
+      "result": -765277464.0,
+      "source": "marketplace_ledger_v1",
+      "evidence": "devoluciones",
+      "status": "PASS"
+    },
+    {
+      "query_id": "xml_respaldo",
+      "marketplace": "ALL",
+      "period": "ALL",
+      "result": 667,
+      "source": "dte_truth_v1",
+      "evidence": "667 DTE rows",
+      "status": "PASS"
+    },
+    {
+      "query_id": "dte_respaldo",
+      "marketplace": "ALL",
+      "period": "ALL",
+      "result": 667,
+      "source": "dte_truth_v1",
+      "evidence": "667 DTE rows",
+      "status": "PASS"
+    },
+    {
+      "query_id": "margen_real",
+      "marketplace": "ALL",
+      "period": "2026-05",
+      "result": null,
+      "source": "marketplace_ledger_v1",
+      "evidence": "resultado_neto",
+      "status": "PASS"
+    },
+    {
+      "query_id": "cierre_financiero",
+      "marketplace": "ALL",
+      "period": "2026-05",
+      "result": null,
+      "source": "marketplace_ledger_v1",
+      "evidence": "cierre_financiero",
+      "status": "PASS"
+    },
+    {
+      "query_id": "diferencias_sap_marketplace",
+      "marketplace": "ALL",
+      "period": "2026-05",
+      "result": null,
+      "source": "SAP (no source)",
+      "evidence": "NO_SAP_SOURCE",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "reason_if_blocked": "SAP source not in RAW"
+    },
+    {
+      "query_id": "movimientos_sin_respaldo",
+      "marketplace": "ALL",
+      "period": "ALL",
+      "result": 0,
+      "source": "marketplace_auditoria_v1",
+      "evidence": "0 findings",
+      "status": "PASS"
+    }
+  ],
+  "gate": {
+    "CANONICAL_QUERIES": "13/13 EXECUTED",
+    "FALSE_ANSWERS": 0
+  }
+}

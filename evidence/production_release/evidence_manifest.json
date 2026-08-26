@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-08-26T17:33:16.504043",
+  "files": {
+    "adversarial_release_audit.json": "e594c3cfa9da36ef",
+    "api_release_contract.json": "0262c7523b8a4d60",
+    "audit_release_validation.json": "0e94f02560a8b29f",
+    "certification_3x_comparison.json": "276a5ca8f8ea3d0a",
+    "certification_run_1.json": "677cd119b4ce88e8",
+    "certification_run_2.json": "fee0aa0091ad63bb",
+    "certification_run_3.json": "5bd2f7a63a726089",
+    "ci_release_validation.json": "f6b94af6089ff345",
+    "clean_checkout_validation.json": "3ff6293e0c56bfa9",
+    "copilot_release_validation.json": "0133ad8cd2583598",
+    "dashboard_release_validation.json": "10b547ba8822d7f0",
+    "db_raw_release_integrity.json": "9f00b952c09df4ea",
+    "deployment_rehearsal.json": "e6f0f615a30720e5",
+    "financial_integrity_release.json": "82ca2c07e82cec3a",
+    "financial_truth_13_queries.json": "e6c06436d31617e7",
+    "full_regression_report.json": "f38e7d5591cdc3a8",
+    "golden_e2e_flows.json": "4760059b89b5415a",
+    "limitations.json": "78fefd2a580a5fd5",
+    "marketplace_release_matrix.json": "9d539df8f8a113dd",
+    "performance_release_report.json": "8cde2aab43bfc37e",
+    "precheck.json": "2483230ef41c8488",
+    "recovery_release_test.json": "36c49a5b6276f8ac",
+    "release_candidate_manifest.json": "25e29155e560824d",
+    "rollback_rehearsal.json": "674306039ad29987",
+    "security_release_report.json": "24923371376e04a5"
+  },
+  "count": 25
+}

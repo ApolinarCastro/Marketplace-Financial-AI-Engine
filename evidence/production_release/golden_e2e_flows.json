@@ -1,0 +1,25 @@
+{
+  "flows": [
+    {
+      "marketplace": "ML",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "marketplace": "PARIS",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "marketplace": "FALABELLA",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "marketplace": "RIPLEY",
+      "status": 200,
+      "pass": true
+    }
+  ],
+  "verdict": "PASS"
+}

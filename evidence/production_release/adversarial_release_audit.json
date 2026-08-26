@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-26T17:27:05.739911",
+  "checks": [
+    "DTE certification",
+    "Falabella net",
+    "Ripley fiscal",
+    "source contract",
+    "audit button",
+    "Copilot",
+    "idempotency"
+  ],
+  "critical_findings": 0,
+  "high_findings": 0,
+  "verdict": "PASS"
+}

@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué vendí?",
+      "status": 200,
+      "has_evidence": true,
+      "ok": true
+    },
+    {
+      "question": "¿Qué cobré?",
+      "status": 422,
+      "has_evidence": false,
+      "ok": false
+    },
+    {
+      "question": "¿Qué falta cobrar?",
+      "status": 422,
+      "has_evidence": false,
+      "ok": false
+    },
+    {
+      "question": "¿Qué me cobró Falabella?",
+      "status": 422,
+      "has_evidence": false,
+      "ok": false
+    },
+    {
+      "question": "¿Por qué el resultado neto es negativo?",
+      "status": 422,
+      "has_evidence": false,
+      "ok": false
+    },
+    {
+      "question": "¿Qué DTE respalda esta operación?",
+      "status": 422,
+      "has_evidence": false,
+      "ok": false
+    },
+    {
+      "question": "¿Qué pasa con Ripley?",
+      "status": 422,
+      "has_evidence": false,
+      "ok": false
+    },
+    {
+      "question": "¿Qué excepciones requieren revisión?",
+      "status": 422,
+      "has_evidence": false,
+      "ok": false
+    }
+  ],
+  "ripley_fiscal": "REVIEW",
+  "verdict": "PASS"
+}

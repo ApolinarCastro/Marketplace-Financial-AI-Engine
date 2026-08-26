@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "SQL parametrizado",
+    "path traversal",
+    "uploads",
+    "CORS",
+    "endpoints destructivos"
+  ],
+  "critical": 0,
+  "high_unmitigated": 0,
+  "verdict": "PASS"
+}
