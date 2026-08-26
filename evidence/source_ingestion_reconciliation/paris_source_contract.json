@@ -1,0 +1,9 @@
+{
+  "marketplace": "PARIS",
+  "sources": {
+    "Facturacion": "91 files",
+    "DTE": "62+? XML"
+  },
+  "samples": 10,
+  "gate": "PARIS_GOLDEN_SOURCE_DEFINED TRUE, E2E PASS"
+}

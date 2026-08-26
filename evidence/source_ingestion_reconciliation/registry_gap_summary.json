@@ -1,0 +1,9 @@
+{
+  "total_raw": 1313,
+  "by_status": {
+    "RAW_NOT_REGISTERED": 1212,
+    "HASH_DRIFT": 101
+  },
+  "raw_not_registered": 1212,
+  "unexplained": 0
+}

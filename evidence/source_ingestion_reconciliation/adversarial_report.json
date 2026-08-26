@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-26T17:20:15.310168",
+  "checks": [
+    "ventas omitidas",
+    "doble contabilización",
+    "folio interno vs fiscal",
+    "dashboard vs backend"
+  ],
+  "critical_found": 0,
+  "verdict": "PASS"
+}

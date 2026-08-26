@@ -1,0 +1,30 @@
+[
+  {
+    "marketplace": "ML",
+    "id_transaccion": "SALE_2000000000000001_fact_test.xlsx_1",
+    "folio_xml": "F-100",
+    "traceability_ok": true,
+    "api_ledger_ok": true
+  },
+  {
+    "marketplace": "PARIS",
+    "id_transaccion": "1620579_GROSS",
+    "folio_xml": "6284235",
+    "traceability_ok": true,
+    "api_ledger_ok": true
+  },
+  {
+    "marketplace": "FALABELLA",
+    "id_transaccion": "30e97d0e-3688-489d-ab29-b0864ff626eb",
+    "folio_xml": null,
+    "traceability_ok": true,
+    "api_ledger_ok": true
+  },
+  {
+    "marketplace": "RIPLEY",
+    "id_transaccion": "RIP_596684_24751081101-A_importedelpedido",
+    "folio_xml": "596684",
+    "traceability_ok": true,
+    "api_ledger_ok": true
+  }
+]

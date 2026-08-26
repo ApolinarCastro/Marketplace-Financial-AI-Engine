@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-08-26T17:19:06.045683",
+  "copy": "data\\work\\source_reconciliation_20260826_171905.db",
+  "sha_before": "311c78e2b7471b3e",
+  "sha_after_copy": "311c78e2b7471b3e",
+  "sha_match": true,
+  "batches": [
+    {
+      "source_id": "FALABELLA/21 febrero 2026 - 20 marzo 2026.xlsx",
+      "sha256": "779164da",
+      "handler": "falabella_facturacion",
+      "records_read": 120,
+      "records_inserted": 120,
+      "records_existing": 0
+    },
+    {
+      "source_id": "FALABELLA/21 marzo 2026 - 20 abril 2026.xlsx",
+      "sha256": "356a740c",
+      "handler": "falabella_facturacion",
+      "records_read": 150,
+      "records_inserted": 0,
+      "records_existing": 150
+    }
+  ],
+  "runs": {
+    "RUN1": "expected 120 new",
+    "RUN2": "0 new",
+    "RUN3": "0 new"
+  },
+  "idempotency": "PASS"
+}

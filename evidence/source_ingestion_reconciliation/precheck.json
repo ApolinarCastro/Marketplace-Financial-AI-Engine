@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-26T17:17:58.728052",
+  "branch": "phase5/production-readiness",
+  "commit": "099855bcdf1e2510f01e6dfd57bb23ee962ac509",
+  "git_status_lines": 844,
+  "db_path": "data/db/meli_financial_v4.db",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_expected": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_match": true,
+  "db_size": 58732544,
+  "raw_expected": 1313,
+  "raw_actual": 1313,
+  "raw_drift": 0,
+  "ledger_rows": 598112,
+  "ledger_sum": 4430909518.810003,
+  "classification_rows": 598112,
+  "truth_health": "PASS",
+  "reconciliation_health": 251,
+  "exception_health": 8362,
+  "file_registry_rows": 157,
+  "baseline_drift": "NONE"
+}

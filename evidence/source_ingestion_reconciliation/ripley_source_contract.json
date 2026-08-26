@@ -1,0 +1,7 @@
+{
+  "marketplace": "RIPLEY",
+  "financial_chain": "SELLER -> CICLOS -> ORDER -> SETTLEMENT (Mis extractos) -> LEDGER 287k",
+  "fiscal": "BLOCKED (settlement_ref != SII folio, overlap 0)",
+  "financial_gate": "RIPLEY_SETTLEMENT_TRACEABILITY PASS",
+  "fiscal_gate": "BLOCKED_WITH_PROVEN_EXTERNAL_EVIDENCE_GAP"
+}

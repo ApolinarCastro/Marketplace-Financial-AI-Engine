@@ -1,0 +1,1317 @@
+relative_path,marketplace,filename,semantic_role,column_sample
+01_Raw/RIPLEY/automation_blueprint.md,RIPLEY,automation_blueprint.md,REFERENCE_ONLY,
+01_Raw/RIPLEY/traceability_analysis.py,RIPLEY,traceability_analysis.py,REFERENCE_ONLY,
+01_Raw/RIPLEY/traceability_report.json,RIPLEY,traceability_report.json,REFERENCE_ONLY,
+01_Raw/RIPLEY/traceability_report.md,RIPLEY,traceability_report.md,REFERENCE_ONLY,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5477.xml,SHOPIFY,dteproveedor_5477.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5478.xml,SHOPIFY,dteproveedor_5478.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5479.xml,SHOPIFY,dteproveedor_5479.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5480.xml,SHOPIFY,dteproveedor_5480.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5595.xml,SHOPIFY,dteproveedor_5595.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5598.xml,SHOPIFY,dteproveedor_5598.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5599.xml,SHOPIFY,dteproveedor_5599.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5600.xml,SHOPIFY,dteproveedor_5600.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5601.xml,SHOPIFY,dteproveedor_5601.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5602.xml,SHOPIFY,dteproveedor_5602.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5603.xml,SHOPIFY,dteproveedor_5603.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5701.xml,SHOPIFY,dteproveedor_5701.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5706.xml,SHOPIFY,dteproveedor_5706.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5707.xml,SHOPIFY,dteproveedor_5707.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5818.xml,SHOPIFY,dteproveedor_5818.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5819.xml,SHOPIFY,dteproveedor_5819.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5820.xml,SHOPIFY,dteproveedor_5820.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5821.xml,SHOPIFY,dteproveedor_5821.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5924.xml,SHOPIFY,dteproveedor_5924.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5925.xml,SHOPIFY,dteproveedor_5925.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_5926.xml,SHOPIFY,dteproveedor_5926.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6037.xml,SHOPIFY,dteproveedor_6037.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6039.xml,SHOPIFY,dteproveedor_6039.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6040.xml,SHOPIFY,dteproveedor_6040.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6152.xml,SHOPIFY,dteproveedor_6152.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6154.xml,SHOPIFY,dteproveedor_6154.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6271.xml,SHOPIFY,dteproveedor_6271.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6273.xml,SHOPIFY,dteproveedor_6273.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6274.xml,SHOPIFY,dteproveedor_6274.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6275.xml,SHOPIFY,dteproveedor_6275.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6392.xml,SHOPIFY,dteproveedor_6392.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6506.xml,SHOPIFY,dteproveedor_6506.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6507.xml,SHOPIFY,dteproveedor_6507.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6508.xml,SHOPIFY,dteproveedor_6508.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6614.xml,SHOPIFY,dteproveedor_6614.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6619.xml,SHOPIFY,dteproveedor_6619.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6620.xml,SHOPIFY,dteproveedor_6620.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6763.xml,SHOPIFY,dteproveedor_6763.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6764.xml,SHOPIFY,dteproveedor_6764.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6765.xml,SHOPIFY,dteproveedor_6765.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6771.xml,SHOPIFY,dteproveedor_6771.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6837.xml,SHOPIFY,dteproveedor_6837.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6838.xml,SHOPIFY,dteproveedor_6838.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6839.xml,SHOPIFY,dteproveedor_6839.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6840.xml,SHOPIFY,dteproveedor_6840.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6841.xml,SHOPIFY,dteproveedor_6841.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6842.xml,SHOPIFY,dteproveedor_6842.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6871.xml,SHOPIFY,dteproveedor_6871.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6887.xml,SHOPIFY,dteproveedor_6887.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6917.xml,SHOPIFY,dteproveedor_6917.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6921.xml,SHOPIFY,dteproveedor_6921.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6922.xml,SHOPIFY,dteproveedor_6922.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6923.xml,SHOPIFY,dteproveedor_6923.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6966.xml,SHOPIFY,dteproveedor_6966.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6974.xml,SHOPIFY,dteproveedor_6974.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6980.xml,SHOPIFY,dteproveedor_6980.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6981.xml,SHOPIFY,dteproveedor_6981.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6982.xml,SHOPIFY,dteproveedor_6982.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6983.xml,SHOPIFY,dteproveedor_6983.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_6992.xml,SHOPIFY,dteproveedor_6992.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7015.xml,SHOPIFY,dteproveedor_7015.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7042.xml,SHOPIFY,dteproveedor_7042.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7046.xml,SHOPIFY,dteproveedor_7046.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7047.xml,SHOPIFY,dteproveedor_7047.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7048.xml,SHOPIFY,dteproveedor_7048.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7078.xml,SHOPIFY,dteproveedor_7078.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7086.xml,SHOPIFY,dteproveedor_7086.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7089.xml,SHOPIFY,dteproveedor_7089.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7090.xml,SHOPIFY,dteproveedor_7090.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7091.xml,SHOPIFY,dteproveedor_7091.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7093.xml,SHOPIFY,dteproveedor_7093.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7109.xml,SHOPIFY,dteproveedor_7109.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7128.xml,SHOPIFY,dteproveedor_7128.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7136.xml,SHOPIFY,dteproveedor_7136.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7143.xml,SHOPIFY,dteproveedor_7143.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7155.xml,SHOPIFY,dteproveedor_7155.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7157.xml,SHOPIFY,dteproveedor_7157.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7168.xml,SHOPIFY,dteproveedor_7168.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7169.xml,SHOPIFY,dteproveedor_7169.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7177.xml,SHOPIFY,dteproveedor_7177.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7186.xml,SHOPIFY,dteproveedor_7186.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7206.xml,SHOPIFY,dteproveedor_7206.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7207.xml,SHOPIFY,dteproveedor_7207.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7208.xml,SHOPIFY,dteproveedor_7208.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7209.xml,SHOPIFY,dteproveedor_7209.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7210.xml,SHOPIFY,dteproveedor_7210.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7256.xml,SHOPIFY,dteproveedor_7256.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7265.xml,SHOPIFY,dteproveedor_7265.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7276.xml,SHOPIFY,dteproveedor_7276.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7281.xml,SHOPIFY,dteproveedor_7281.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7309.xml,SHOPIFY,dteproveedor_7309.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7312.xml,SHOPIFY,dteproveedor_7312.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7314.xml,SHOPIFY,dteproveedor_7314.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7315.xml,SHOPIFY,dteproveedor_7315.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7317.xml,SHOPIFY,dteproveedor_7317.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7330.xml,SHOPIFY,dteproveedor_7330.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7348.xml,SHOPIFY,dteproveedor_7348.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7349.xml,SHOPIFY,dteproveedor_7349.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7353.xml,SHOPIFY,dteproveedor_7353.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7355.xml,SHOPIFY,dteproveedor_7355.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7356.xml,SHOPIFY,dteproveedor_7356.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7361.xml,SHOPIFY,dteproveedor_7361.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7381.xml,SHOPIFY,dteproveedor_7381.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7402.xml,SHOPIFY,dteproveedor_7402.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7403.xml,SHOPIFY,dteproveedor_7403.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7404.xml,SHOPIFY,dteproveedor_7404.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7434.xml,SHOPIFY,dteproveedor_7434.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7435.xml,SHOPIFY,dteproveedor_7435.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7442.xml,SHOPIFY,dteproveedor_7442.xml,DTE_XML,
+01_Raw/SHOPIFY/Documentos Recepcionados/dteproveedor_7443.xml,SHOPIFY,dteproveedor_7443.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5477.xml,SHOPIFY,dteproveedor_5477.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5478.xml,SHOPIFY,dteproveedor_5478.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5479.xml,SHOPIFY,dteproveedor_5479.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5480.xml,SHOPIFY,dteproveedor_5480.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5595.xml,SHOPIFY,dteproveedor_5595.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5598.xml,SHOPIFY,dteproveedor_5598.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5599.xml,SHOPIFY,dteproveedor_5599.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5600.xml,SHOPIFY,dteproveedor_5600.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5601.xml,SHOPIFY,dteproveedor_5601.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5602.xml,SHOPIFY,dteproveedor_5602.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5603.xml,SHOPIFY,dteproveedor_5603.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5701.xml,SHOPIFY,dteproveedor_5701.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5706.xml,SHOPIFY,dteproveedor_5706.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5707.xml,SHOPIFY,dteproveedor_5707.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5818.xml,SHOPIFY,dteproveedor_5818.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5819.xml,SHOPIFY,dteproveedor_5819.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5820.xml,SHOPIFY,dteproveedor_5820.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5821.xml,SHOPIFY,dteproveedor_5821.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5924.xml,SHOPIFY,dteproveedor_5924.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5925.xml,SHOPIFY,dteproveedor_5925.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_5926.xml,SHOPIFY,dteproveedor_5926.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6037.xml,SHOPIFY,dteproveedor_6037.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6039.xml,SHOPIFY,dteproveedor_6039.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6040.xml,SHOPIFY,dteproveedor_6040.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6152.xml,SHOPIFY,dteproveedor_6152.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6154.xml,SHOPIFY,dteproveedor_6154.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6271.xml,SHOPIFY,dteproveedor_6271.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6273.xml,SHOPIFY,dteproveedor_6273.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6274.xml,SHOPIFY,dteproveedor_6274.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6275.xml,SHOPIFY,dteproveedor_6275.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6392.xml,SHOPIFY,dteproveedor_6392.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6506.xml,SHOPIFY,dteproveedor_6506.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6507.xml,SHOPIFY,dteproveedor_6507.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6508.xml,SHOPIFY,dteproveedor_6508.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6614.xml,SHOPIFY,dteproveedor_6614.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6619.xml,SHOPIFY,dteproveedor_6619.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6620.xml,SHOPIFY,dteproveedor_6620.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6763.xml,SHOPIFY,dteproveedor_6763.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6764.xml,SHOPIFY,dteproveedor_6764.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6765.xml,SHOPIFY,dteproveedor_6765.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6771.xml,SHOPIFY,dteproveedor_6771.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6837.xml,SHOPIFY,dteproveedor_6837.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6838.xml,SHOPIFY,dteproveedor_6838.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6839.xml,SHOPIFY,dteproveedor_6839.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6840.xml,SHOPIFY,dteproveedor_6840.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6841.xml,SHOPIFY,dteproveedor_6841.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6842.xml,SHOPIFY,dteproveedor_6842.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6871.xml,SHOPIFY,dteproveedor_6871.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6887.xml,SHOPIFY,dteproveedor_6887.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6917.xml,SHOPIFY,dteproveedor_6917.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6921.xml,SHOPIFY,dteproveedor_6921.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6922.xml,SHOPIFY,dteproveedor_6922.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6923.xml,SHOPIFY,dteproveedor_6923.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6966.xml,SHOPIFY,dteproveedor_6966.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6974.xml,SHOPIFY,dteproveedor_6974.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6980.xml,SHOPIFY,dteproveedor_6980.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6981.xml,SHOPIFY,dteproveedor_6981.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6982.xml,SHOPIFY,dteproveedor_6982.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6983.xml,SHOPIFY,dteproveedor_6983.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_6992.xml,SHOPIFY,dteproveedor_6992.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7015.xml,SHOPIFY,dteproveedor_7015.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7042.xml,SHOPIFY,dteproveedor_7042.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7046.xml,SHOPIFY,dteproveedor_7046.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7047.xml,SHOPIFY,dteproveedor_7047.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7048.xml,SHOPIFY,dteproveedor_7048.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7078.xml,SHOPIFY,dteproveedor_7078.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7086.xml,SHOPIFY,dteproveedor_7086.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7089.xml,SHOPIFY,dteproveedor_7089.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7090.xml,SHOPIFY,dteproveedor_7090.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7091.xml,SHOPIFY,dteproveedor_7091.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7093.xml,SHOPIFY,dteproveedor_7093.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7109.xml,SHOPIFY,dteproveedor_7109.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7128.xml,SHOPIFY,dteproveedor_7128.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7136.xml,SHOPIFY,dteproveedor_7136.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7143.xml,SHOPIFY,dteproveedor_7143.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7155.xml,SHOPIFY,dteproveedor_7155.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7157.xml,SHOPIFY,dteproveedor_7157.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7168.xml,SHOPIFY,dteproveedor_7168.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7169.xml,SHOPIFY,dteproveedor_7169.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7177.xml,SHOPIFY,dteproveedor_7177.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7186.xml,SHOPIFY,dteproveedor_7186.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7206.xml,SHOPIFY,dteproveedor_7206.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7207.xml,SHOPIFY,dteproveedor_7207.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7208.xml,SHOPIFY,dteproveedor_7208.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7209.xml,SHOPIFY,dteproveedor_7209.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7210.xml,SHOPIFY,dteproveedor_7210.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7256.xml,SHOPIFY,dteproveedor_7256.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7265.xml,SHOPIFY,dteproveedor_7265.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7276.xml,SHOPIFY,dteproveedor_7276.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7281.xml,SHOPIFY,dteproveedor_7281.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7309.xml,SHOPIFY,dteproveedor_7309.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7312.xml,SHOPIFY,dteproveedor_7312.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7314.xml,SHOPIFY,dteproveedor_7314.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7315.xml,SHOPIFY,dteproveedor_7315.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7317.xml,SHOPIFY,dteproveedor_7317.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7330.xml,SHOPIFY,dteproveedor_7330.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7348.xml,SHOPIFY,dteproveedor_7348.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7349.xml,SHOPIFY,dteproveedor_7349.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7353.xml,SHOPIFY,dteproveedor_7353.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7355.xml,SHOPIFY,dteproveedor_7355.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7356.xml,SHOPIFY,dteproveedor_7356.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7361.xml,SHOPIFY,dteproveedor_7361.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7381.xml,SHOPIFY,dteproveedor_7381.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7402.xml,SHOPIFY,dteproveedor_7402.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7403.xml,SHOPIFY,dteproveedor_7403.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7404.xml,SHOPIFY,dteproveedor_7404.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7434.xml,SHOPIFY,dteproveedor_7434.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7435.xml,SHOPIFY,dteproveedor_7435.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7442.xml,SHOPIFY,dteproveedor_7442.xml,DTE_XML,
+01_Raw/SHOPIFY/Facturacion/dteproveedor_7443.xml,SHOPIFY,dteproveedor_7443.xml,DTE_XML,
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Abr2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Abr2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 13:02:23.844000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Abr2026.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Abr2026.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 14:57:13.465000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Ago2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Ago2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 13:10:46.172000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Dic2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Dic2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 14:43:35.617000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Ene2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Ene2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-24 09:57:25.176000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Ene2026.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Ene2026.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 14:50:04.985000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Feb2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Feb2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 12:54:18.268000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Feb2026.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Feb2026.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 14:54:29.786000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Jul2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Jul2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 13:08:34.867000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Jun2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Jun2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 13:07:25.252000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Jun2026.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Jun2026.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 15:01:05.791000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Mar2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Mar2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 12:57:19.579000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Mar2026.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Mar2026.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 14:56:30.543000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_May2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_May2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 13:05:14.544000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_May2026.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_May2026.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 14:58:45.048000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Nov2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Nov2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 14:45:29.658000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Oct2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Oct2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 14:41:05.966000|||||||||||||
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Sept2025.xlsx,SHOPIFY,Reporte_Facturacion_MercadoPago_Sept2025.xlsx,UNKNOWN,Fecha de actualización||2026-06-25 13:20:18.010000|||||||||||||
+01_Raw/SHOPIFY/Pedidos (SF)/orders -  2025-01-01 - 2026-06-24.csv,SHOPIFY,orders -  2025-01-01 - 2026-06-24.csv,UNKNOWN,Name|Email|Financial Status|Paid at|Fulfillment Status|Fulfilled at|Accepts Marketing|Currency|Subtotal|Shipping|Taxes|Total|Discount Code|Discount Amount|Shipping Method|Created at|Lineitem quantity|
+01_Raw/SHOPIFY/Ventas totales (SF)/Ventas totales - 2025-01-01 - 2026-06-24.csv,SHOPIFY,Ventas totales - 2025-01-01 - 2026-06-24.csv,UNKNOWN,Día|ID de venta|Nombre del pedido|Nombre del producto en el momento de la venta|Ventas totales
+01_Raw/SHOPIFY/Transbank/Junio 2026/extraccion-masiva-credito-pesos-1-al-25-6-2026(25-06-2026_14.58.20).dat,SHOPIFY,extraccion-masiva-credito-pesos-1-al-25-6-2026(25-06-2026_14.58.20).dat,UNKNOWN,
+01_Raw/SHOPIFY/Transbank/Junio 2026/extraccion-masiva-debito-pesos-1-al-25-6-2026(25-06-2026_14.58.33).dat,SHOPIFY,extraccion-masiva-debito-pesos-1-al-25-6-2026(25-06-2026_14.58.33).dat,UNKNOWN,
+01_Raw/SHOPIFY/Transbank/Junio 2026/extraccion-masiva-prepago-pesos-1-al-25-6-2026(25-06-2026_14.58.23).dat,SHOPIFY,extraccion-masiva-prepago-pesos-1-al-25-6-2026(25-06-2026_14.58.23).dat,UNKNOWN,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f25272_ts2025-05-13T153652.xml,RIPLEY,dtef_c33_f25272_ts2025-05-13T153652.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26000_ts2025-10-27T144835.xml,RIPLEY,dtef_c33_f26000_ts2025-10-27T144835.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26276_ts2025-12-15T155053.xml,RIPLEY,dtef_c33_f26276_ts2025-12-15T155053.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26306_ts2025-12-23T112808.xml,RIPLEY,dtef_c33_f26306_ts2025-12-23T112808.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26441_ts2026-02-16T124619.xml,RIPLEY,dtef_c33_f26441_ts2026-02-16T124619.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26532_ts2026-03-13T120641.xml,RIPLEY,dtef_c33_f26532_ts2026-03-13T120641.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26608_ts2026-03-30T155632.xml,RIPLEY,dtef_c33_f26608_ts2026-03-30T155632.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26613_ts2026-03-31T130634.xml,RIPLEY,dtef_c33_f26613_ts2026-03-31T130634.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26636_ts2026-04-06T172718.xml,RIPLEY,dtef_c33_f26636_ts2026-04-06T172718.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26703_ts2026-04-17T150756.xml,RIPLEY,dtef_c33_f26703_ts2026-04-17T150756.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26793_ts2026-05-11T120014.xml,RIPLEY,dtef_c33_f26793_ts2026-05-11T120014.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26794_ts2026-05-11T120602.xml,RIPLEY,dtef_c33_f26794_ts2026-05-11T120602.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26795_ts2026-05-11T121312.xml,RIPLEY,dtef_c33_f26795_ts2026-05-11T121312.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26874_ts2026-06-05T123502.xml,RIPLEY,dtef_c33_f26874_ts2026-06-05T123502.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c33_f26875_ts2026-06-05T124420.xml,RIPLEY,dtef_c33_f26875_ts2026-06-05T124420.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c61_f146730_ts2026-03-31T130421.xml,RIPLEY,dtef_c61_f146730_ts2026-03-31T130421.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dtef_c61_f147261_ts2026-05-11T120315.xml,RIPLEY,dtef_c61_f147261_ts2026-05-11T120315.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5393.xml,RIPLEY,dteproveedor_5393.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5405.xml,RIPLEY,dteproveedor_5405.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5423.xml,RIPLEY,dteproveedor_5423.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5435.xml,RIPLEY,dteproveedor_5435.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5453.xml,RIPLEY,dteproveedor_5453.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5467.xml,RIPLEY,dteproveedor_5467.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5468.xml,RIPLEY,dteproveedor_5468.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5524.xml,RIPLEY,dteproveedor_5524.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5529.xml,RIPLEY,dteproveedor_5529.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5565.xml,RIPLEY,dteproveedor_5565.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5566.xml,RIPLEY,dteproveedor_5566.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5574.xml,RIPLEY,dteproveedor_5574.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5576.xml,RIPLEY,dteproveedor_5576.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5577.xml,RIPLEY,dteproveedor_5577.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5613.xml,RIPLEY,dteproveedor_5613.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5614.xml,RIPLEY,dteproveedor_5614.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5624.xml,RIPLEY,dteproveedor_5624.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5625.xml,RIPLEY,dteproveedor_5625.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5626.xml,RIPLEY,dteproveedor_5626.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5630.xml,RIPLEY,dteproveedor_5630.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5637.xml,RIPLEY,dteproveedor_5637.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5638.xml,RIPLEY,dteproveedor_5638.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5639.xml,RIPLEY,dteproveedor_5639.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5659.xml,RIPLEY,dteproveedor_5659.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5660.xml,RIPLEY,dteproveedor_5660.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5688.xml,RIPLEY,dteproveedor_5688.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5689.xml,RIPLEY,dteproveedor_5689.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5712.xml,RIPLEY,dteproveedor_5712.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5713.xml,RIPLEY,dteproveedor_5713.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5719.xml,RIPLEY,dteproveedor_5719.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5722.xml,RIPLEY,dteproveedor_5722.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5723.xml,RIPLEY,dteproveedor_5723.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5724.xml,RIPLEY,dteproveedor_5724.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5725.xml,RIPLEY,dteproveedor_5725.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5727.xml,RIPLEY,dteproveedor_5727.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5744.xml,RIPLEY,dteproveedor_5744.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5745.xml,RIPLEY,dteproveedor_5745.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5747.xml,RIPLEY,dteproveedor_5747.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5768.xml,RIPLEY,dteproveedor_5768.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5769.xml,RIPLEY,dteproveedor_5769.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5788.xml,RIPLEY,dteproveedor_5788.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5789.xml,RIPLEY,dteproveedor_5789.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5790.xml,RIPLEY,dteproveedor_5790.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5791.xml,RIPLEY,dteproveedor_5791.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5800.xml,RIPLEY,dteproveedor_5800.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5802.xml,RIPLEY,dteproveedor_5802.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5803.xml,RIPLEY,dteproveedor_5803.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5804.xml,RIPLEY,dteproveedor_5804.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5805.xml,RIPLEY,dteproveedor_5805.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5806.xml,RIPLEY,dteproveedor_5806.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5807.xml,RIPLEY,dteproveedor_5807.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5808.xml,RIPLEY,dteproveedor_5808.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5809.xml,RIPLEY,dteproveedor_5809.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5810.xml,RIPLEY,dteproveedor_5810.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5811.xml,RIPLEY,dteproveedor_5811.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5812.xml,RIPLEY,dteproveedor_5812.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5813.xml,RIPLEY,dteproveedor_5813.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5841.xml,RIPLEY,dteproveedor_5841.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5842.xml,RIPLEY,dteproveedor_5842.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5843.xml,RIPLEY,dteproveedor_5843.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5844.xml,RIPLEY,dteproveedor_5844.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5857.xml,RIPLEY,dteproveedor_5857.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5884.xml,RIPLEY,dteproveedor_5884.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5885.xml,RIPLEY,dteproveedor_5885.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5901.xml,RIPLEY,dteproveedor_5901.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5902.xml,RIPLEY,dteproveedor_5902.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5906.xml,RIPLEY,dteproveedor_5906.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5909.xml,RIPLEY,dteproveedor_5909.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5916.xml,RIPLEY,dteproveedor_5916.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5917.xml,RIPLEY,dteproveedor_5917.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5944.xml,RIPLEY,dteproveedor_5944.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5945.xml,RIPLEY,dteproveedor_5945.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5946.xml,RIPLEY,dteproveedor_5946.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5947.xml,RIPLEY,dteproveedor_5947.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5949.xml,RIPLEY,dteproveedor_5949.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5952.xml,RIPLEY,dteproveedor_5952.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5969.xml,RIPLEY,dteproveedor_5969.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_5971.xml,RIPLEY,dteproveedor_5971.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6002.xml,RIPLEY,dteproveedor_6002.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6003.xml,RIPLEY,dteproveedor_6003.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6014.xml,RIPLEY,dteproveedor_6014.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6015.xml,RIPLEY,dteproveedor_6015.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6017.xml,RIPLEY,dteproveedor_6017.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6050.xml,RIPLEY,dteproveedor_6050.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6051.xml,RIPLEY,dteproveedor_6051.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6055.xml,RIPLEY,dteproveedor_6055.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6056.xml,RIPLEY,dteproveedor_6056.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6057.xml,RIPLEY,dteproveedor_6057.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6058.xml,RIPLEY,dteproveedor_6058.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6059.xml,RIPLEY,dteproveedor_6059.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6060.xml,RIPLEY,dteproveedor_6060.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6063.xml,RIPLEY,dteproveedor_6063.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6065.xml,RIPLEY,dteproveedor_6065.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6087.xml,RIPLEY,dteproveedor_6087.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6108.xml,RIPLEY,dteproveedor_6108.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6109.xml,RIPLEY,dteproveedor_6109.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6125.xml,RIPLEY,dteproveedor_6125.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6126.xml,RIPLEY,dteproveedor_6126.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6127.xml,RIPLEY,dteproveedor_6127.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6128.xml,RIPLEY,dteproveedor_6128.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6129.xml,RIPLEY,dteproveedor_6129.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6137.xml,RIPLEY,dteproveedor_6137.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6139.xml,RIPLEY,dteproveedor_6139.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6140.xml,RIPLEY,dteproveedor_6140.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6141.xml,RIPLEY,dteproveedor_6141.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6142.xml,RIPLEY,dteproveedor_6142.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6171.xml,RIPLEY,dteproveedor_6171.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6172.xml,RIPLEY,dteproveedor_6172.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6174.xml,RIPLEY,dteproveedor_6174.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6175.xml,RIPLEY,dteproveedor_6175.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6195.xml,RIPLEY,dteproveedor_6195.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6198.xml,RIPLEY,dteproveedor_6198.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6226.xml,RIPLEY,dteproveedor_6226.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6227.xml,RIPLEY,dteproveedor_6227.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6242.xml,RIPLEY,dteproveedor_6242.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6243.xml,RIPLEY,dteproveedor_6243.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6244.xml,RIPLEY,dteproveedor_6244.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6245.xml,RIPLEY,dteproveedor_6245.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6246.xml,RIPLEY,dteproveedor_6246.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6257.xml,RIPLEY,dteproveedor_6257.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6277.xml,RIPLEY,dteproveedor_6277.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6278.xml,RIPLEY,dteproveedor_6278.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6297.xml,RIPLEY,dteproveedor_6297.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6298.xml,RIPLEY,dteproveedor_6298.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6324.xml,RIPLEY,dteproveedor_6324.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6326.xml,RIPLEY,dteproveedor_6326.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6356.xml,RIPLEY,dteproveedor_6356.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6357.xml,RIPLEY,dteproveedor_6357.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6364.xml,RIPLEY,dteproveedor_6364.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6370.xml,RIPLEY,dteproveedor_6370.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6372.xml,RIPLEY,dteproveedor_6372.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6396.xml,RIPLEY,dteproveedor_6396.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6397.xml,RIPLEY,dteproveedor_6397.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6401.xml,RIPLEY,dteproveedor_6401.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6406.xml,RIPLEY,dteproveedor_6406.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6407.xml,RIPLEY,dteproveedor_6407.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6438.xml,RIPLEY,dteproveedor_6438.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6439.xml,RIPLEY,dteproveedor_6439.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6440.xml,RIPLEY,dteproveedor_6440.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6455.xml,RIPLEY,dteproveedor_6455.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6456.xml,RIPLEY,dteproveedor_6456.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6463.xml,RIPLEY,dteproveedor_6463.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6466.xml,RIPLEY,dteproveedor_6466.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6469.xml,RIPLEY,dteproveedor_6469.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6471.xml,RIPLEY,dteproveedor_6471.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6472.xml,RIPLEY,dteproveedor_6472.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6492.xml,RIPLEY,dteproveedor_6492.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6493.xml,RIPLEY,dteproveedor_6493.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6514.xml,RIPLEY,dteproveedor_6514.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6520.xml,RIPLEY,dteproveedor_6520.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6522.xml,RIPLEY,dteproveedor_6522.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6523.xml,RIPLEY,dteproveedor_6523.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6524.xml,RIPLEY,dteproveedor_6524.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6525.xml,RIPLEY,dteproveedor_6525.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6526.xml,RIPLEY,dteproveedor_6526.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6527.xml,RIPLEY,dteproveedor_6527.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6528.xml,RIPLEY,dteproveedor_6528.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6529.xml,RIPLEY,dteproveedor_6529.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6547.xml,RIPLEY,dteproveedor_6547.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6578.xml,RIPLEY,dteproveedor_6578.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6579.xml,RIPLEY,dteproveedor_6579.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6585.xml,RIPLEY,dteproveedor_6585.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6586.xml,RIPLEY,dteproveedor_6586.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6589.xml,RIPLEY,dteproveedor_6589.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6591.xml,RIPLEY,dteproveedor_6591.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6592.xml,RIPLEY,dteproveedor_6592.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6594.xml,RIPLEY,dteproveedor_6594.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6621.xml,RIPLEY,dteproveedor_6621.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6622.xml,RIPLEY,dteproveedor_6622.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6626.xml,RIPLEY,dteproveedor_6626.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6627.xml,RIPLEY,dteproveedor_6627.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6628.xml,RIPLEY,dteproveedor_6628.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6629.xml,RIPLEY,dteproveedor_6629.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6630.xml,RIPLEY,dteproveedor_6630.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6631.xml,RIPLEY,dteproveedor_6631.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6632.xml,RIPLEY,dteproveedor_6632.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6633.xml,RIPLEY,dteproveedor_6633.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6634.xml,RIPLEY,dteproveedor_6634.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6635.xml,RIPLEY,dteproveedor_6635.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6636.xml,RIPLEY,dteproveedor_6636.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6637.xml,RIPLEY,dteproveedor_6637.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6638.xml,RIPLEY,dteproveedor_6638.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6639.xml,RIPLEY,dteproveedor_6639.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6668.xml,RIPLEY,dteproveedor_6668.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6669.xml,RIPLEY,dteproveedor_6669.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6670.xml,RIPLEY,dteproveedor_6670.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6671.xml,RIPLEY,dteproveedor_6671.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6681.xml,RIPLEY,dteproveedor_6681.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6682.xml,RIPLEY,dteproveedor_6682.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6702.xml,RIPLEY,dteproveedor_6702.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6713.xml,RIPLEY,dteproveedor_6713.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6717.xml,RIPLEY,dteproveedor_6717.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6718.xml,RIPLEY,dteproveedor_6718.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6733.xml,RIPLEY,dteproveedor_6733.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6734.xml,RIPLEY,dteproveedor_6734.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6735.xml,RIPLEY,dteproveedor_6735.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6741.xml,RIPLEY,dteproveedor_6741.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6742.xml,RIPLEY,dteproveedor_6742.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6750.xml,RIPLEY,dteproveedor_6750.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6751.xml,RIPLEY,dteproveedor_6751.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6768.xml,RIPLEY,dteproveedor_6768.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6769.xml,RIPLEY,dteproveedor_6769.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6786.xml,RIPLEY,dteproveedor_6786.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6787.xml,RIPLEY,dteproveedor_6787.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6788.xml,RIPLEY,dteproveedor_6788.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6789.xml,RIPLEY,dteproveedor_6789.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6790.xml,RIPLEY,dteproveedor_6790.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6791.xml,RIPLEY,dteproveedor_6791.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6792.xml,RIPLEY,dteproveedor_6792.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6793.xml,RIPLEY,dteproveedor_6793.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6794.xml,RIPLEY,dteproveedor_6794.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6795.xml,RIPLEY,dteproveedor_6795.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6796.xml,RIPLEY,dteproveedor_6796.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6797.xml,RIPLEY,dteproveedor_6797.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6798.xml,RIPLEY,dteproveedor_6798.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6799.xml,RIPLEY,dteproveedor_6799.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6800.xml,RIPLEY,dteproveedor_6800.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6801.xml,RIPLEY,dteproveedor_6801.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6802.xml,RIPLEY,dteproveedor_6802.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6803.xml,RIPLEY,dteproveedor_6803.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6804.xml,RIPLEY,dteproveedor_6804.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6816.xml,RIPLEY,dteproveedor_6816.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6817.xml,RIPLEY,dteproveedor_6817.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6833.xml,RIPLEY,dteproveedor_6833.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6860.xml,RIPLEY,dteproveedor_6860.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6861.xml,RIPLEY,dteproveedor_6861.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6870.xml,RIPLEY,dteproveedor_6870.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6878.xml,RIPLEY,dteproveedor_6878.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6880.xml,RIPLEY,dteproveedor_6880.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6881.xml,RIPLEY,dteproveedor_6881.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6898.xml,RIPLEY,dteproveedor_6898.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6908.xml,RIPLEY,dteproveedor_6908.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6909.xml,RIPLEY,dteproveedor_6909.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6924.xml,RIPLEY,dteproveedor_6924.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6932.xml,RIPLEY,dteproveedor_6932.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6934.xml,RIPLEY,dteproveedor_6934.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6935.xml,RIPLEY,dteproveedor_6935.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6936.xml,RIPLEY,dteproveedor_6936.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6937.xml,RIPLEY,dteproveedor_6937.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6938.xml,RIPLEY,dteproveedor_6938.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6939.xml,RIPLEY,dteproveedor_6939.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6940.xml,RIPLEY,dteproveedor_6940.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6942.xml,RIPLEY,dteproveedor_6942.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6943.xml,RIPLEY,dteproveedor_6943.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6944.xml,RIPLEY,dteproveedor_6944.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6945.xml,RIPLEY,dteproveedor_6945.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6946.xml,RIPLEY,dteproveedor_6946.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6947.xml,RIPLEY,dteproveedor_6947.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6948.xml,RIPLEY,dteproveedor_6948.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6949.xml,RIPLEY,dteproveedor_6949.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6956.xml,RIPLEY,dteproveedor_6956.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6957.xml,RIPLEY,dteproveedor_6957.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6959.xml,RIPLEY,dteproveedor_6959.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6960.xml,RIPLEY,dteproveedor_6960.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6970.xml,RIPLEY,dteproveedor_6970.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6976.xml,RIPLEY,dteproveedor_6976.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6990.xml,RIPLEY,dteproveedor_6990.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6994.xml,RIPLEY,dteproveedor_6994.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6995.xml,RIPLEY,dteproveedor_6995.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6998.xml,RIPLEY,dteproveedor_6998.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_6999.xml,RIPLEY,dteproveedor_6999.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7009.xml,RIPLEY,dteproveedor_7009.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7010.xml,RIPLEY,dteproveedor_7010.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7011.xml,RIPLEY,dteproveedor_7011.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7018.xml,RIPLEY,dteproveedor_7018.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7019.xml,RIPLEY,dteproveedor_7019.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7020.xml,RIPLEY,dteproveedor_7020.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7021.xml,RIPLEY,dteproveedor_7021.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7032.xml,RIPLEY,dteproveedor_7032.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7035.xml,RIPLEY,dteproveedor_7035.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7036.xml,RIPLEY,dteproveedor_7036.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7055.xml,RIPLEY,dteproveedor_7055.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7056.xml,RIPLEY,dteproveedor_7056.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7057.xml,RIPLEY,dteproveedor_7057.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7058.xml,RIPLEY,dteproveedor_7058.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7059.xml,RIPLEY,dteproveedor_7059.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7061.xml,RIPLEY,dteproveedor_7061.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7062.xml,RIPLEY,dteproveedor_7062.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7063.xml,RIPLEY,dteproveedor_7063.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7064.xml,RIPLEY,dteproveedor_7064.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7069.xml,RIPLEY,dteproveedor_7069.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7073.xml,RIPLEY,dteproveedor_7073.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7074.xml,RIPLEY,dteproveedor_7074.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7079.xml,RIPLEY,dteproveedor_7079.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7080.xml,RIPLEY,dteproveedor_7080.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7096.xml,RIPLEY,dteproveedor_7096.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7101.xml,RIPLEY,dteproveedor_7101.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7102.xml,RIPLEY,dteproveedor_7102.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7103.xml,RIPLEY,dteproveedor_7103.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7111.xml,RIPLEY,dteproveedor_7111.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7112.xml,RIPLEY,dteproveedor_7112.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7115.xml,RIPLEY,dteproveedor_7115.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7116.xml,RIPLEY,dteproveedor_7116.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7117.xml,RIPLEY,dteproveedor_7117.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7120.xml,RIPLEY,dteproveedor_7120.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7121.xml,RIPLEY,dteproveedor_7121.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7123.xml,RIPLEY,dteproveedor_7123.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7124.xml,RIPLEY,dteproveedor_7124.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7129.xml,RIPLEY,dteproveedor_7129.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7130.xml,RIPLEY,dteproveedor_7130.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7131.xml,RIPLEY,dteproveedor_7131.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7132.xml,RIPLEY,dteproveedor_7132.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7133.xml,RIPLEY,dteproveedor_7133.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7134.xml,RIPLEY,dteproveedor_7134.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7148.xml,RIPLEY,dteproveedor_7148.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7149.xml,RIPLEY,dteproveedor_7149.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7150.xml,RIPLEY,dteproveedor_7150.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7151.xml,RIPLEY,dteproveedor_7151.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7159.xml,RIPLEY,dteproveedor_7159.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7160.xml,RIPLEY,dteproveedor_7160.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7161.xml,RIPLEY,dteproveedor_7161.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7162.xml,RIPLEY,dteproveedor_7162.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7181.xml,RIPLEY,dteproveedor_7181.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7182.xml,RIPLEY,dteproveedor_7182.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7183.xml,RIPLEY,dteproveedor_7183.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7185.xml,RIPLEY,dteproveedor_7185.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7190.xml,RIPLEY,dteproveedor_7190.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7191.xml,RIPLEY,dteproveedor_7191.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7194.xml,RIPLEY,dteproveedor_7194.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7195.xml,RIPLEY,dteproveedor_7195.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7196.xml,RIPLEY,dteproveedor_7196.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7197.xml,RIPLEY,dteproveedor_7197.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7215.xml,RIPLEY,dteproveedor_7215.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7220.xml,RIPLEY,dteproveedor_7220.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7221.xml,RIPLEY,dteproveedor_7221.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7222.xml,RIPLEY,dteproveedor_7222.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7224.xml,RIPLEY,dteproveedor_7224.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7227.xml,RIPLEY,dteproveedor_7227.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7228.xml,RIPLEY,dteproveedor_7228.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7229.xml,RIPLEY,dteproveedor_7229.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7232.xml,RIPLEY,dteproveedor_7232.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7233.xml,RIPLEY,dteproveedor_7233.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7236.xml,RIPLEY,dteproveedor_7236.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7237.xml,RIPLEY,dteproveedor_7237.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7238.xml,RIPLEY,dteproveedor_7238.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7239.xml,RIPLEY,dteproveedor_7239.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7240.xml,RIPLEY,dteproveedor_7240.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7243.xml,RIPLEY,dteproveedor_7243.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7250.xml,RIPLEY,dteproveedor_7250.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7251.xml,RIPLEY,dteproveedor_7251.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7252.xml,RIPLEY,dteproveedor_7252.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7253.xml,RIPLEY,dteproveedor_7253.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7254.xml,RIPLEY,dteproveedor_7254.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7255.xml,RIPLEY,dteproveedor_7255.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7258.xml,RIPLEY,dteproveedor_7258.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7259.xml,RIPLEY,dteproveedor_7259.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7260.xml,RIPLEY,dteproveedor_7260.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7261.xml,RIPLEY,dteproveedor_7261.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7266.xml,RIPLEY,dteproveedor_7266.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7267.xml,RIPLEY,dteproveedor_7267.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7268.xml,RIPLEY,dteproveedor_7268.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7269.xml,RIPLEY,dteproveedor_7269.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7270.xml,RIPLEY,dteproveedor_7270.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7271.xml,RIPLEY,dteproveedor_7271.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7272.xml,RIPLEY,dteproveedor_7272.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7273.xml,RIPLEY,dteproveedor_7273.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7274.xml,RIPLEY,dteproveedor_7274.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7280.xml,RIPLEY,dteproveedor_7280.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7289.xml,RIPLEY,dteproveedor_7289.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7290.xml,RIPLEY,dteproveedor_7290.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7291.xml,RIPLEY,dteproveedor_7291.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7292.xml,RIPLEY,dteproveedor_7292.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7293.xml,RIPLEY,dteproveedor_7293.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7294.xml,RIPLEY,dteproveedor_7294.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7295.xml,RIPLEY,dteproveedor_7295.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7296.xml,RIPLEY,dteproveedor_7296.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7320.xml,RIPLEY,dteproveedor_7320.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7321.xml,RIPLEY,dteproveedor_7321.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7322.xml,RIPLEY,dteproveedor_7322.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7323.xml,RIPLEY,dteproveedor_7323.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7333.xml,RIPLEY,dteproveedor_7333.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7335.xml,RIPLEY,dteproveedor_7335.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7340.xml,RIPLEY,dteproveedor_7340.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7341.xml,RIPLEY,dteproveedor_7341.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7362.xml,RIPLEY,dteproveedor_7362.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7363.xml,RIPLEY,dteproveedor_7363.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7364.xml,RIPLEY,dteproveedor_7364.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7365.xml,RIPLEY,dteproveedor_7365.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7366.xml,RIPLEY,dteproveedor_7366.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7369.xml,RIPLEY,dteproveedor_7369.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7370.xml,RIPLEY,dteproveedor_7370.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7371.xml,RIPLEY,dteproveedor_7371.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7372.xml,RIPLEY,dteproveedor_7372.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7373.xml,RIPLEY,dteproveedor_7373.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7382.xml,RIPLEY,dteproveedor_7382.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7383.xml,RIPLEY,dteproveedor_7383.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7384.xml,RIPLEY,dteproveedor_7384.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7385.xml,RIPLEY,dteproveedor_7385.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7386.xml,RIPLEY,dteproveedor_7386.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7387.xml,RIPLEY,dteproveedor_7387.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7388.xml,RIPLEY,dteproveedor_7388.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7391.xml,RIPLEY,dteproveedor_7391.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7392.xml,RIPLEY,dteproveedor_7392.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7393.xml,RIPLEY,dteproveedor_7393.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7394.xml,RIPLEY,dteproveedor_7394.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7396.xml,RIPLEY,dteproveedor_7396.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7397.xml,RIPLEY,dteproveedor_7397.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7398.xml,RIPLEY,dteproveedor_7398.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7399.xml,RIPLEY,dteproveedor_7399.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7409.xml,RIPLEY,dteproveedor_7409.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7410.xml,RIPLEY,dteproveedor_7410.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7411.xml,RIPLEY,dteproveedor_7411.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7413.xml,RIPLEY,dteproveedor_7413.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7426.xml,RIPLEY,dteproveedor_7426.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7427.xml,RIPLEY,dteproveedor_7427.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7428.xml,RIPLEY,dteproveedor_7428.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7429.xml,RIPLEY,dteproveedor_7429.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7455.xml,RIPLEY,dteproveedor_7455.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7456.xml,RIPLEY,dteproveedor_7456.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7459.xml,RIPLEY,dteproveedor_7459.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7464.xml,RIPLEY,dteproveedor_7464.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7467.xml,RIPLEY,dteproveedor_7467.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7469.xml,RIPLEY,dteproveedor_7469.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7470.xml,RIPLEY,dteproveedor_7470.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7472.xml,RIPLEY,dteproveedor_7472.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7473.xml,RIPLEY,dteproveedor_7473.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7474.xml,RIPLEY,dteproveedor_7474.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7475.xml,RIPLEY,dteproveedor_7475.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7496.xml,RIPLEY,dteproveedor_7496.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7497.xml,RIPLEY,dteproveedor_7497.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7498.xml,RIPLEY,dteproveedor_7498.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7501.xml,RIPLEY,dteproveedor_7501.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7511.xml,RIPLEY,dteproveedor_7511.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7512.xml,RIPLEY,dteproveedor_7512.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7515.xml,RIPLEY,dteproveedor_7515.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7516.xml,RIPLEY,dteproveedor_7516.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7520.xml,RIPLEY,dteproveedor_7520.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7521.xml,RIPLEY,dteproveedor_7521.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7522.xml,RIPLEY,dteproveedor_7522.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7523.xml,RIPLEY,dteproveedor_7523.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7530.xml,RIPLEY,dteproveedor_7530.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7531.xml,RIPLEY,dteproveedor_7531.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7532.xml,RIPLEY,dteproveedor_7532.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7537.xml,RIPLEY,dteproveedor_7537.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7538.xml,RIPLEY,dteproveedor_7538.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7539.xml,RIPLEY,dteproveedor_7539.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7540.xml,RIPLEY,dteproveedor_7540.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7541.xml,RIPLEY,dteproveedor_7541.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7542.xml,RIPLEY,dteproveedor_7542.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7543.xml,RIPLEY,dteproveedor_7543.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7544.xml,RIPLEY,dteproveedor_7544.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7545.xml,RIPLEY,dteproveedor_7545.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7546.xml,RIPLEY,dteproveedor_7546.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7547.xml,RIPLEY,dteproveedor_7547.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7548.xml,RIPLEY,dteproveedor_7548.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7549.xml,RIPLEY,dteproveedor_7549.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7554.xml,RIPLEY,dteproveedor_7554.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7555.xml,RIPLEY,dteproveedor_7555.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7556.xml,RIPLEY,dteproveedor_7556.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7557.xml,RIPLEY,dteproveedor_7557.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7558.xml,RIPLEY,dteproveedor_7558.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7587.xml,RIPLEY,dteproveedor_7587.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7588.xml,RIPLEY,dteproveedor_7588.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7589.xml,RIPLEY,dteproveedor_7589.xml,DTE_XML,
+01_Raw/RIPLEY/Facturacion/dteproveedor_7607.xml,RIPLEY,dteproveedor_7607.xml,DTE_XML,
+01_Raw/RIPLEY/Fulfillment by Ripley/000001_ff_2815.csv,RIPLEY,000001_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000002_ff_2815.csv,RIPLEY,000002_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000003_ff_2815.csv,RIPLEY,000003_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000004_ff_2815.csv,RIPLEY,000004_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000005_ff_2815.csv,RIPLEY,000005_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000006_ff_2815.csv,RIPLEY,000006_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000007_ff_2815.csv,RIPLEY,000007_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000008_ff_2815.csv,RIPLEY,000008_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000009_ff_2815.csv,RIPLEY,000009_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000010_ff_2815.csv,RIPLEY,000010_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000011_ff_2815.csv,RIPLEY,000011_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000012_ff_2815.csv,RIPLEY,000012_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000013_ff_2815.csv,RIPLEY,000013_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000014_ff_2815.csv,RIPLEY,000014_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000015_ff_2815.csv,RIPLEY,000015_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000016_ff_2815.csv,RIPLEY,000016_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000017_ff_2815.csv,RIPLEY,000017_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000018_ff_2815.csv,RIPLEY,000018_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000019_ff_2815.csv,RIPLEY,000019_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000020_ff_2815.csv,RIPLEY,000020_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000021_ff_2815.csv,RIPLEY,000021_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000022_ff_2815.csv,RIPLEY,000022_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000023_ff_2815.csv,RIPLEY,000023_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000024_ff_2815.csv,RIPLEY,000024_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000025_ff_2815.csv,RIPLEY,000025_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000026_ff_2815.csv,RIPLEY,000026_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000027_ff_2815.csv,RIPLEY,000027_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000028_ff_2815.csv,RIPLEY,000028_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000029_ff_2815.csv,RIPLEY,000029_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000030_ff_2815.csv,RIPLEY,000030_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000031_ff_2815.csv,RIPLEY,000031_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000032_ff_2815.csv,RIPLEY,000032_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000033_ff_2815.csv,RIPLEY,000033_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000034_ff_2815.csv,RIPLEY,000034_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000035_ff_2815.csv,RIPLEY,000035_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Ripley/000036_ff_2815.csv,RIPLEY,000036_ff_2815.csv,FULFILLMENT,accounting_document_creation_date|currency_iso_code|date_created|id|order_commercial_id|order_id|order_category_type|order_line_id|shipping_type_code|shop_id|shop_name|refund_commission_fee|refund_ord
+01_Raw/RIPLEY/Fulfillment by Seller/000312-2815.xlsx,RIPLEY,000312-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000314-2815.xlsx,RIPLEY,000314-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000316-2815.xlsx,RIPLEY,000316-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000318-2815.xlsx,RIPLEY,000318-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000320-2815.xlsx,RIPLEY,000320-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000322-2815.xlsx,RIPLEY,000322-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000324-2815.xlsx,RIPLEY,000324-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000326-2815.xlsx,RIPLEY,000326-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000328-2815.xlsx,RIPLEY,000328-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000330-2815.xlsx,RIPLEY,000330-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000332-2815.xlsx,RIPLEY,000332-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000334-2815.xlsx,RIPLEY,000334-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000336-2815.xlsx,RIPLEY,000336-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000338-2815.xlsx,RIPLEY,000338-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000340-2815.xlsx,RIPLEY,000340-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000342-2815.xlsx,RIPLEY,000342-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000344-2815.xlsx,RIPLEY,000344-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000346-2815.xlsx,RIPLEY,000346-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000348-2815.xlsx,RIPLEY,000348-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000350-2815.xlsx,RIPLEY,000350-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000352-2815.xlsx,RIPLEY,000352-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000353-2815.xlsx,RIPLEY,000353-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000354-2815.xlsx,RIPLEY,000354-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000355-2815.xlsx,RIPLEY,000355-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000356-2815.xlsx,RIPLEY,000356-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000357-2815.xlsx,RIPLEY,000357-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000358-2815.xlsx,RIPLEY,000358-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000359-2815.xlsx,RIPLEY,000359-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000360-2815.xlsx,RIPLEY,000360-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000361-2815.xlsx,RIPLEY,000361-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000362-2815.xlsx,RIPLEY,000362-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000363-2815.xlsx,RIPLEY,000363-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000364-2815.xlsx,RIPLEY,000364-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000365-2815.xlsx,RIPLEY,000365-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000366-2815.xlsx,RIPLEY,000366-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000367-2815.xlsx,RIPLEY,000367-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000368-2815.xlsx,RIPLEY,000368-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000369-2815.xlsx,RIPLEY,000369-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000370-2815.xlsx,RIPLEY,000370-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000371-2815.xlsx,RIPLEY,000371-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000372-2815.xlsx,RIPLEY,000372-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000374-2815.xlsx,RIPLEY,000374-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000375-2815.xlsx,RIPLEY,000375-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000376-2815.xlsx,RIPLEY,000376-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000377-2815.xlsx,RIPLEY,000377-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000378-2815.xlsx,RIPLEY,000378-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000379-2815.xlsx,RIPLEY,000379-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000380-2815.xlsx,RIPLEY,000380-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000381-2815.xlsx,RIPLEY,000381-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000382-2815.xlsx,RIPLEY,000382-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Fulfillment by Seller/000383-2815.xlsx,RIPLEY,000383-2815.xlsx,FULFILLMENT,Fecha OC|Número documento liquidación|Orden de compra|Shop ID|Tienda|Importe del pedido|Envío|Gastos de envío pagados por el operador|Comisiones sobre pedidos|Pedidos reembolsados|Envío reembolsado|Ga
+01_Raw/RIPLEY/Historial de transacciones/Abr-2026.csv,RIPLEY,Abr-2026.csv,SALES_ORDER,Fecha de creación|Fecha de recepción|Fecha de transactión|Tienda|Número de pedido|Número de factura|Número de transacción|Cantidad|Etiqueta de categoría|SKU de oferta|Descripción|Tipo|Estado de pago|I
+01_Raw/RIPLEY/Historial de transacciones/Ene-2026.csv,RIPLEY,Ene-2026.csv,SALES_ORDER,Fecha de creación|Fecha de recepción|Fecha de transactión|Tienda|Número de pedido|Número de factura|Número de transacción|Cantidad|Etiqueta de categoría|SKU de oferta|Descripción|Tipo|Estado de pago|I
+01_Raw/RIPLEY/Historial de transacciones/Ene-Jun-2025.csv,RIPLEY,Ene-Jun-2025.csv,SALES_ORDER,Fecha de creación|Fecha de recepción|Fecha de transactión|Tienda|Número de pedido|Número de factura|Número de transacción|Cantidad|Etiqueta de categoría|SKU de oferta|Descripción|Tipo|Estado de pago|I
+01_Raw/RIPLEY/Historial de transacciones/Feb-2026.csv,RIPLEY,Feb-2026.csv,SALES_ORDER,Fecha de creación|Fecha de recepción|Fecha de transactión|Tienda|Número de pedido|Número de factura|Número de transacción|Cantidad|Etiqueta de categoría|SKU de oferta|Descripción|Tipo|Estado de pago|I
+01_Raw/RIPLEY/Historial de transacciones/Jul-Dic-2025.csv,RIPLEY,Jul-Dic-2025.csv,SALES_ORDER,Fecha de creación|Fecha de recepción|Fecha de transactión|Tienda|Número de pedido|Número de factura|Número de transacción|Cantidad|Etiqueta de categoría|SKU de oferta|Descripción|Tipo|Estado de pago|I
+01_Raw/RIPLEY/Historial de transacciones/Jun-2026.csv,RIPLEY,Jun-2026.csv,SALES_ORDER,Fecha de creación|Fecha de recepción|Fecha de transactión|Tienda|Número de pedido|Número de factura|Número de transacción|Cantidad|Etiqueta de categoría|SKU de oferta|Descripción|Tipo|Estado de pago|I
+01_Raw/RIPLEY/Historial de transacciones/Mar-2026.csv,RIPLEY,Mar-2026.csv,SALES_ORDER,Fecha de creación|Fecha de recepción|Fecha de transactión|Tienda|Número de pedido|Número de factura|Número de transacción|Cantidad|Etiqueta de categoría|SKU de oferta|Descripción|Tipo|Estado de pago|I
+01_Raw/RIPLEY/Historial de transacciones/May-2026.csv,RIPLEY,May-2026.csv,SALES_ORDER,Fecha de creación|Fecha de recepción|Fecha de transactión|Tienda|Número de pedido|Número de factura|Número de transacción|Cantidad|Etiqueta de categoría|SKU de oferta|Descripción|Tipo|Estado de pago|I
+01_Raw/RIPLEY/Mis extractos/05-01-2026 - 13-01-2026.csv,RIPLEY,05-01-2026 - 13-01-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/05-02-2026 - 13-02-2026.csv,RIPLEY,05-02-2026 - 13-02-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/05-03-2026 - 13-03-2026.csv,RIPLEY,05-03-2026 - 13-03-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/05-04-2026 - 13-04-2026.csv,RIPLEY,05-04-2026 - 13-04-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/05-05-2026 - 13-05-2026.csv,RIPLEY,05-05-2026 - 13-05-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/05-06-2026 - 13-06-2026.csv,RIPLEY,05-06-2026 - 13-06-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/05-12-2025 - 13-12-2025.csv,RIPLEY,05-12-2025 - 13-12-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-01-2025 - 28-01-2025.csv,RIPLEY,13-01-2025 - 28-01-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-01-2026 - 20-01-2026.csv,RIPLEY,13-01-2026 - 20-01-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-02-2025 - 28-02-2025.csv,RIPLEY,13-02-2025 - 28-02-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-02-2026 - 20-02-2026.csv,RIPLEY,13-02-2026 - 20-02-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-03-2025 - 28-03-2025.csv,RIPLEY,13-03-2025 - 28-03-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-03-2026 - 20-03-2026.csv,RIPLEY,13-03-2026 - 20-03-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-04-2025 - 28-04-2025.csv,RIPLEY,13-04-2025 - 28-04-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-04-2026 - 20-04-2026.csv,RIPLEY,13-04-2026 - 20-04-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-05-2025 - 28-05-2025.csv,RIPLEY,13-05-2025 - 28-05-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-05-2026 - 20-05-2026.csv,RIPLEY,13-05-2026 - 20-05-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-06-2025 - 28-06-2025.csv,RIPLEY,13-06-2025 - 28-06-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-06-2026 - 20-06-2026.csv,RIPLEY,13-06-2026 - 20-06-2026.csv,SETTLEMENT,Número de factura|Número de pedido|Fecha de creación|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Comisión (sin impuestos)|Impue
+01_Raw/RIPLEY/Mis extractos/13-07-2025 - 28-07-2025.csv,RIPLEY,13-07-2025 - 28-07-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-08-2025 - 28-08-2025.csv,RIPLEY,13-08-2025 - 28-08-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-09-2025 - 28-09-2025.csv,RIPLEY,13-09-2025 - 28-09-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-10-2025 - 28-10-2025.csv,RIPLEY,13-10-2025 - 28-10-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-11-2025 - 20-11-2025.csv,RIPLEY,13-11-2025 - 20-11-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/13-12-2025 - 20-12-2025.csv,RIPLEY,13-12-2025 - 20-12-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/20-01-2026 - 28-01-2026.csv,RIPLEY,20-01-2026 - 28-01-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/20-02-2026 - 28-02-2026.csv,RIPLEY,20-02-2026 - 28-02-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/20-03-2026 - 28-03-2026.csv,RIPLEY,20-03-2026 - 28-03-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/20-04-2026 - 28-04-2026.csv,RIPLEY,20-04-2026 - 28-04-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/20-05-2026 - 28-05-2026.csv,RIPLEY,20-05-2026 - 28-05-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/20-06-2026 - 28-06-2026.csv,RIPLEY,20-06-2026 - 28-06-2026.csv,SETTLEMENT,Número de factura|Número de pedido|Fecha de creación|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Comisión (sin impuestos)|Impue
+01_Raw/RIPLEY/Mis extractos/20-11-2025 - 28-11-2025.csv,RIPLEY,20-11-2025 - 28-11-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/20-12-2025 - 28-12-2025.csv,RIPLEY,20-12-2025 - 28-12-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-01-2025 - 13-02-2025.csv,RIPLEY,28-01-2025 - 13-02-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-01-2026 - 05-02-2026.csv,RIPLEY,28-01-2026 - 05-02-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-02-2025 - 13-03-2025.csv,RIPLEY,28-02-2025 - 13-03-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-02-2026 - 05-03-2026.csv,RIPLEY,28-02-2026 - 05-03-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-03-2025 - 13-04-2025.csv,RIPLEY,28-03-2025 - 13-04-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-03-2026 - 05-04-2026.csv,RIPLEY,28-03-2026 - 05-04-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-04-2025 - 13-05-2025.csv,RIPLEY,28-04-2025 - 13-05-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-04-2026 - 05-05-2026.csv,RIPLEY,28-04-2026 - 05-05-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-05-2025 - 13-06-2025.csv,RIPLEY,28-05-2025 - 13-06-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-05-2026 - 05-06-2026.csv,RIPLEY,28-05-2026 - 05-06-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-06-2025 - 13-07-2025.csv,RIPLEY,28-06-2025 - 13-07-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-06-2026 - 05-07-2026.csv,RIPLEY,28-06-2026 - 05-07-2026.csv,SETTLEMENT,Número de factura|Número de pedido|Fecha de creación|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Comisión (sin impuestos)|Impue
+01_Raw/RIPLEY/Mis extractos/28-07-2025 - 13-08-2025.csv,RIPLEY,28-07-2025 - 13-08-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-08-2025 - 13-09-2025.csv,RIPLEY,28-08-2025 - 13-09-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-09-2025 - 13-10-2025.csv,RIPLEY,28-09-2025 - 13-10-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-10-2025 - 13-11-2025.csv,RIPLEY,28-10-2025 - 13-11-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-11-2025 - 05-12-2025.csv,RIPLEY,28-11-2025 - 05-12-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-12-2024 - 13-01-2025.csv,RIPLEY,28-12-2024 - 13-01-2025.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/RIPLEY/Mis extractos/28-12-2025 - 05-01-2026.csv,RIPLEY,28-12-2025 - 05-01-2026.csv,SETTLEMENT,Número de factura|Order number|Date created|Estado del pedido|Subtotal de artículos (con impuestos)|Gastos de envío (con impuestos)|Precio total (con impuestos)|Commission (excluding taxes)|Impuestos 
+01_Raw/PARIS/Facturacion/dteproveedor_5372.xml,PARIS,dteproveedor_5372.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5383.xml,PARIS,dteproveedor_5383.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5403.xml,PARIS,dteproveedor_5403.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5428.xml,PARIS,dteproveedor_5428.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5432.xml,PARIS,dteproveedor_5432.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5472.xml,PARIS,dteproveedor_5472.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5515.xml,PARIS,dteproveedor_5515.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5570.xml,PARIS,dteproveedor_5570.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5590.xml,PARIS,dteproveedor_5590.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5608.xml,PARIS,dteproveedor_5608.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5609.xml,PARIS,dteproveedor_5609.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5610.xml,PARIS,dteproveedor_5610.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5694.xml,PARIS,dteproveedor_5694.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5698.xml,PARIS,dteproveedor_5698.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5702.xml,PARIS,dteproveedor_5702.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5829.xml,PARIS,dteproveedor_5829.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5836.xml,PARIS,dteproveedor_5836.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5921.xml,PARIS,dteproveedor_5921.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_5931.xml,PARIS,dteproveedor_5931.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6025.xml,PARIS,dteproveedor_6025.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6030.xml,PARIS,dteproveedor_6030.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6038.xml,PARIS,dteproveedor_6038.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6143.xml,PARIS,dteproveedor_6143.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6155.xml,PARIS,dteproveedor_6155.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6170.xml,PARIS,dteproveedor_6170.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6263.xml,PARIS,dteproveedor_6263.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6269.xml,PARIS,dteproveedor_6269.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6280.xml,PARIS,dteproveedor_6280.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6376.xml,PARIS,dteproveedor_6376.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6390.xml,PARIS,dteproveedor_6390.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6408.xml,PARIS,dteproveedor_6408.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6483.xml,PARIS,dteproveedor_6483.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6501.xml,PARIS,dteproveedor_6501.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6512.xml,PARIS,dteproveedor_6512.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6519.xml,PARIS,dteproveedor_6519.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6533.xml,PARIS,dteproveedor_6533.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6597.xml,PARIS,dteproveedor_6597.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6609.xml,PARIS,dteproveedor_6609.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6616.xml,PARIS,dteproveedor_6616.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6647.xml,PARIS,dteproveedor_6647.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6697.xml,PARIS,dteproveedor_6697.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6737.xml,PARIS,dteproveedor_6737.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6748.xml,PARIS,dteproveedor_6748.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6755.xml,PARIS,dteproveedor_6755.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6767.xml,PARIS,dteproveedor_6767.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6902.xml,PARIS,dteproveedor_6902.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6916.xml,PARIS,dteproveedor_6916.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_6927.xml,PARIS,dteproveedor_6927.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7023.xml,PARIS,dteproveedor_7023.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7041.xml,PARIS,dteproveedor_7041.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7050.xml,PARIS,dteproveedor_7050.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7082.xml,PARIS,dteproveedor_7082.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7154.xml,PARIS,dteproveedor_7154.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7167.xml,PARIS,dteproveedor_7167.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7174.xml,PARIS,dteproveedor_7174.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7300.xml,PARIS,dteproveedor_7300.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7308.xml,PARIS,dteproveedor_7308.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7324.xml,PARIS,dteproveedor_7324.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7416.xml,PARIS,dteproveedor_7416.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7422.xml,PARIS,dteproveedor_7422.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7433.xml,PARIS,dteproveedor_7433.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7440.xml,PARIS,dteproveedor_7440.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7560.xml,PARIS,dteproveedor_7560.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7561.xml,PARIS,dteproveedor_7561.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7562.xml,PARIS,dteproveedor_7562.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7563.xml,PARIS,dteproveedor_7563.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7564.xml,PARIS,dteproveedor_7564.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7569.xml,PARIS,dteproveedor_7569.xml,DTE_XML,
+01_Raw/PARIS/Facturacion/dteproveedor_7571.xml,PARIS,dteproveedor_7571.xml,DTE_XML,
+01_Raw/PARIS/Transacciones/Dropshipping/01-2025.xlsx,PARIS,01-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/01-2026.xlsx,PARIS,01-2026.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/02-2025.xlsx,PARIS,02-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/02-2026.xlsx,PARIS,02-2026.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/03-2025.xlsx,PARIS,03-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/03-2026.xlsx,PARIS,03-2026.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/04-2025.xlsx,PARIS,04-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/04-2026.xlsx,PARIS,04-2026.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|moneda|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link
+01_Raw/PARIS/Transacciones/Dropshipping/05-2025.xlsx,PARIS,05-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/05-2026.xlsx,PARIS,05-2026.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|moneda|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link
+01_Raw/PARIS/Transacciones/Dropshipping/06-2025.xlsx,PARIS,06-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/06-2026.xlsx,PARIS,06-2026.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|moneda|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link
+01_Raw/PARIS/Transacciones/Dropshipping/07-2025.xlsx,PARIS,07-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/08-2025.xlsx,PARIS,08-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/09-2025.xlsx,PARIS,09-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/10-2025.xlsx,PARIS,10-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/11-2025.xlsx,PARIS,11-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Dropshipping/12-2025.xlsx,PARIS,12-2025.xlsx,COMMISSION_INVOICE,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Fulfillment/1 ene 2025 - 31 dic 2025.xlsx,PARIS,1 ene 2025 - 31 dic 2025.xlsx,FULFILLMENT,id|descripcion|tipo|número orden|sku|seller sku|monto|moneda|descuento comercial|acuerdo comercial|comisión|monto a pagar|monto liq.factura|fecha|estado|estado de liq.factura|nro solicitud liq.factura
+01_Raw/PARIS/Transacciones/Fulfillment/1 ene 2026 - 30 abr 2026.xlsx,PARIS,1 ene 2026 - 30 abr 2026.xlsx,FULFILLMENT,id|descripcion|tipo|número orden|sku|seller sku|monto|moneda|descuento comercial|acuerdo comercial|comisión|monto a pagar|monto liq.factura|fecha|estado|estado de liq.factura|nro solicitud liq.factura
+01_Raw/PARIS/Transacciones/Fulfillment/1 jun 2026 - 30 jun 2026.xlsx,PARIS,1 jun 2026 - 30 jun 2026.xlsx,FULFILLMENT,id|descripción|tipo|número orden|sku|monto|acuerdo comercial|comisión|monto a pagar|monto total factura|fecha|estado|estado del pago|nro solicitud pago|nro solicitud factura|número factura|link factur
+01_Raw/PARIS/Transacciones/Fulfillment/1 may 2026 - 31 may 2026.xlsx,PARIS,1 may 2026 - 31 may 2026.xlsx,FULFILLMENT,id|descripcion|tipo|número orden|sku|seller sku|monto|moneda|descuento comercial|acuerdo comercial|comisión|monto a pagar|monto liq.factura|fecha|estado|estado de liq.factura|nro solicitud liq.factura
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5371.xml,ML,dteproveedor_5371.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5396.xml,ML,dteproveedor_5396.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5397.xml,ML,dteproveedor_5397.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5398.xml,ML,dteproveedor_5398.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5399.xml,ML,dteproveedor_5399.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5400.xml,ML,dteproveedor_5400.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5404.xml,ML,dteproveedor_5404.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5430.xml,ML,dteproveedor_5430.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5454.xml,ML,dteproveedor_5454.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5473.xml,ML,dteproveedor_5473.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5483.xml,ML,dteproveedor_5483.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5519.xml,ML,dteproveedor_5519.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5531.xml,ML,dteproveedor_5531.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5532.xml,ML,dteproveedor_5532.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5533.xml,ML,dteproveedor_5533.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5534.xml,ML,dteproveedor_5534.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5535.xml,ML,dteproveedor_5535.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5536.xml,ML,dteproveedor_5536.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5540.xml,ML,dteproveedor_5540.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5555.xml,ML,dteproveedor_5555.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5572.xml,ML,dteproveedor_5572.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5592.xml,ML,dteproveedor_5592.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5606.xml,ML,dteproveedor_5606.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5629.xml,ML,dteproveedor_5629.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5640.xml,ML,dteproveedor_5640.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5641.xml,ML,dteproveedor_5641.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5642.xml,ML,dteproveedor_5642.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5653.xml,ML,dteproveedor_5653.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5663.xml,ML,dteproveedor_5663.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5680.xml,ML,dteproveedor_5680.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5692.xml,ML,dteproveedor_5692.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5699.xml,ML,dteproveedor_5699.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5736.xml,ML,dteproveedor_5736.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5754.xml,ML,dteproveedor_5754.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5755.xml,ML,dteproveedor_5755.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5756.xml,ML,dteproveedor_5756.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5757.xml,ML,dteproveedor_5757.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5758.xml,ML,dteproveedor_5758.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5760.xml,ML,dteproveedor_5760.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5776.xml,ML,dteproveedor_5776.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5794.xml,ML,dteproveedor_5794.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5817.xml,ML,dteproveedor_5817.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5833.xml,ML,dteproveedor_5833.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5860.xml,ML,dteproveedor_5860.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5861.xml,ML,dteproveedor_5861.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5862.xml,ML,dteproveedor_5862.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5863.xml,ML,dteproveedor_5863.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5864.xml,ML,dteproveedor_5864.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5876.xml,ML,dteproveedor_5876.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5890.xml,ML,dteproveedor_5890.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5900.xml,ML,dteproveedor_5900.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5922.xml,ML,dteproveedor_5922.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5929.xml,ML,dteproveedor_5929.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5961.xml,ML,dteproveedor_5961.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5974.xml,ML,dteproveedor_5974.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5975.xml,ML,dteproveedor_5975.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5976.xml,ML,dteproveedor_5976.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5977.xml,ML,dteproveedor_5977.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5980.xml,ML,dteproveedor_5980.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_5990.xml,ML,dteproveedor_5990.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6009.xml,ML,dteproveedor_6009.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6026.xml,ML,dteproveedor_6026.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6031.xml,ML,dteproveedor_6031.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6068.xml,ML,dteproveedor_6068.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6090.xml,ML,dteproveedor_6090.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6091.xml,ML,dteproveedor_6091.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6092.xml,ML,dteproveedor_6092.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6093.xml,ML,dteproveedor_6093.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6094.xml,ML,dteproveedor_6094.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6101.xml,ML,dteproveedor_6101.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6117.xml,ML,dteproveedor_6117.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6131.xml,ML,dteproveedor_6131.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6151.xml,ML,dteproveedor_6151.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6161.xml,ML,dteproveedor_6161.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6168.xml,ML,dteproveedor_6168.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6194.xml,ML,dteproveedor_6194.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6196.xml,ML,dteproveedor_6196.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6199.xml,ML,dteproveedor_6199.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6200.xml,ML,dteproveedor_6200.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6201.xml,ML,dteproveedor_6201.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6203.xml,ML,dteproveedor_6203.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6222.xml,ML,dteproveedor_6222.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6241.xml,ML,dteproveedor_6241.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6270.xml,ML,dteproveedor_6270.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6307.xml,ML,dteproveedor_6307.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6314.xml,ML,dteproveedor_6314.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6315.xml,ML,dteproveedor_6315.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6325.xml,ML,dteproveedor_6325.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6327.xml,ML,dteproveedor_6327.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6328.xml,ML,dteproveedor_6328.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6330.xml,ML,dteproveedor_6330.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6333.xml,ML,dteproveedor_6333.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6344.xml,ML,dteproveedor_6344.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6359.xml,ML,dteproveedor_6359.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6375.xml,ML,dteproveedor_6375.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6388.xml,ML,dteproveedor_6388.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6412.xml,ML,dteproveedor_6412.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6441.xml,ML,dteproveedor_6441.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6442.xml,ML,dteproveedor_6442.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6443.xml,ML,dteproveedor_6443.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6444.xml,ML,dteproveedor_6444.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6445.xml,ML,dteproveedor_6445.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6461.xml,ML,dteproveedor_6461.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6473.xml,ML,dteproveedor_6473.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6502.xml,ML,dteproveedor_6502.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6510.xml,ML,dteproveedor_6510.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6544.xml,ML,dteproveedor_6544.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6545.xml,ML,dteproveedor_6545.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6550.xml,ML,dteproveedor_6550.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6557.xml,ML,dteproveedor_6557.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6558.xml,ML,dteproveedor_6558.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6559.xml,ML,dteproveedor_6559.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6560.xml,ML,dteproveedor_6560.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6573.xml,ML,dteproveedor_6573.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6584.xml,ML,dteproveedor_6584.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6610.xml,ML,dteproveedor_6610.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6617.xml,ML,dteproveedor_6617.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6658.xml,ML,dteproveedor_6658.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6672.xml,ML,dteproveedor_6672.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6677.xml,ML,dteproveedor_6677.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6678.xml,ML,dteproveedor_6678.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6679.xml,ML,dteproveedor_6679.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6680.xml,ML,dteproveedor_6680.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6688.xml,ML,dteproveedor_6688.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6690.xml,ML,dteproveedor_6690.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6706.xml,ML,dteproveedor_6706.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6707.xml,ML,dteproveedor_6707.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6708.xml,ML,dteproveedor_6708.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6709.xml,ML,dteproveedor_6709.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6710.xml,ML,dteproveedor_6710.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6711.xml,ML,dteproveedor_6711.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6725.xml,ML,dteproveedor_6725.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6744.xml,ML,dteproveedor_6744.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6756.xml,ML,dteproveedor_6756.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6771.xml,ML,dteproveedor_6771.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6837.xml,ML,dteproveedor_6837.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6838.xml,ML,dteproveedor_6838.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6839.xml,ML,dteproveedor_6839.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6840.xml,ML,dteproveedor_6840.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6841.xml,ML,dteproveedor_6841.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6842.xml,ML,dteproveedor_6842.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6871.xml,ML,dteproveedor_6871.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6887.xml,ML,dteproveedor_6887.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6917.xml,ML,dteproveedor_6917.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6923.xml,ML,dteproveedor_6923.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6966.xml,ML,dteproveedor_6966.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6974.xml,ML,dteproveedor_6974.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6980.xml,ML,dteproveedor_6980.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6981.xml,ML,dteproveedor_6981.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6982.xml,ML,dteproveedor_6982.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6983.xml,ML,dteproveedor_6983.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_6992.xml,ML,dteproveedor_6992.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7015.xml,ML,dteproveedor_7015.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7042.xml,ML,dteproveedor_7042.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7047.xml,ML,dteproveedor_7047.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7078.xml,ML,dteproveedor_7078.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7086.xml,ML,dteproveedor_7086.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7089.xml,ML,dteproveedor_7089.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7090.xml,ML,dteproveedor_7090.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7091.xml,ML,dteproveedor_7091.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7093.xml,ML,dteproveedor_7093.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7109.xml,ML,dteproveedor_7109.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7128.xml,ML,dteproveedor_7128.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7136.xml,ML,dteproveedor_7136.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7143.xml,ML,dteproveedor_7143.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7155.xml,ML,dteproveedor_7155.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7157.xml,ML,dteproveedor_7157.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7168.xml,ML,dteproveedor_7168.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7186.xml,ML,dteproveedor_7186.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7206.xml,ML,dteproveedor_7206.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7207.xml,ML,dteproveedor_7207.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7208.xml,ML,dteproveedor_7208.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7209.xml,ML,dteproveedor_7209.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7210.xml,ML,dteproveedor_7210.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7256.xml,ML,dteproveedor_7256.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7265.xml,ML,dteproveedor_7265.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7276.xml,ML,dteproveedor_7276.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7281.xml,ML,dteproveedor_7281.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7309.xml,ML,dteproveedor_7309.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7317.xml,ML,dteproveedor_7317.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7330.xml,ML,dteproveedor_7330.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7348.xml,ML,dteproveedor_7348.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7349.xml,ML,dteproveedor_7349.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7353.xml,ML,dteproveedor_7353.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7355.xml,ML,dteproveedor_7355.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7356.xml,ML,dteproveedor_7356.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7361.xml,ML,dteproveedor_7361.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7381.xml,ML,dteproveedor_7381.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7402.xml,ML,dteproveedor_7402.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7403.xml,ML,dteproveedor_7403.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7404.xml,ML,dteproveedor_7404.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7434.xml,ML,dteproveedor_7434.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7465.xml,ML,dteproveedor_7465.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7490.xml,ML,dteproveedor_7490.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7491.xml,ML,dteproveedor_7491.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7492.xml,ML,dteproveedor_7492.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7493.xml,ML,dteproveedor_7493.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7504.xml,ML,dteproveedor_7504.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7525.xml,ML,dteproveedor_7525.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7529.xml,ML,dteproveedor_7529.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7559.xml,ML,dteproveedor_7559.xml,DTE_XML,
+01_Raw/ML/Documentos Recepcionados/dteproveedor_7570.xml,ML,dteproveedor_7570.xml,DTE_XML,
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Abr2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Abr2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Abr2026.xlsx,ML,Reporte_Facturacion_MercadoLibre_Abr2026.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Ago2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Ago2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Dic2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Dic2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Ene2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Ene2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Ene2026.xlsx,ML,Reporte_Facturacion_MercadoLibre_Ene2026.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Feb2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Feb2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Feb2026.xlsx,ML,Reporte_Facturacion_MercadoLibre_Feb2026.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Jul2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Jul2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Jun2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Jun2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Jun2026.xlsx,ML,Reporte_Facturacion_MercadoLibre_Jun2026.xlsx,COMMISSION_INVOICE,Fecha de actualización||2026-06-12 10:46:44.253000|||||||||||||||||||||||||||
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Mar2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Mar2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Mar2026.xlsx,ML,Reporte_Facturacion_MercadoLibre_Mar2026.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_May2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_May2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_May2026.xlsx,ML,Reporte_Facturacion_MercadoLibre_May2026.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Nov2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Nov2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Oct2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Oct2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Sept2025.xlsx,ML,Reporte_Facturacion_MercadoLibre_Sept2025.xlsx,TRANSACTION_LEDGER_SOURCE,N° de factura fiscal|Fecha del cargo|Número del cargo|Detalle|Descontado de la operación|Estado del cargo|Cargo que bonifica|Valor del cargo|Porcentaje por categoría|Costo por categoría|Costo fijo|Sub
+01_Raw/ML/Facturacion/_f3_03_fixture.xlsx,ML,_f3_03_fixture.xlsx,COMMISSION_INVOICE,Venta|Detalle|Valor del cargo|Total de la venta|Fecha
+01_Raw/ML/Poscobro/1 enero 2025 - 1 julio 2025.xlsx,ML,1 enero 2025 - 1 julio 2025.xlsx,UNKNOWN,
+01_Raw/ML/Poscobro/1 enero 2026 - 1 mayo 2026.xlsx,ML,1 enero 2026 - 1 mayo 2026.xlsx,UNKNOWN,
+01_Raw/ML/Poscobro/1 julio 2025 - 1 enero 2026.xlsx,ML,1 julio 2025 - 1 enero 2026.xlsx,UNKNOWN,
+01_Raw/ML/Poscobro/1 junio 2026 - 1 julio 2026.xlsx,ML,1 junio 2026 - 1 julio 2026.xlsx,UNKNOWN,
+01_Raw/ML/Poscobro/1 junio 2026 - 6 junio 2026.xlsx,ML,1 junio 2026 - 6 junio 2026.xlsx,UNKNOWN,
+01_Raw/ML/Poscobro/1 mayo 2026 - 1 junio 2026.xlsx,ML,1 mayo 2026 - 1 junio 2026.xlsx,UNKNOWN,
+01_Raw/ML/Liquidacion_FF/2025-01 Enero/liquidacion-2025-01-01--2025-01-05.xlsx,ML,liquidacion-2025-01-01--2025-01-05.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-01 Enero/liquidacion-2025-01-06--2025-01-12.xlsx,ML,liquidacion-2025-01-06--2025-01-12.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-01 Enero/liquidacion-2025-01-13--2025-01-19.xlsx,ML,liquidacion-2025-01-13--2025-01-19.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-01 Enero/liquidacion-2025-01-20--2025-01-26.xlsx,ML,liquidacion-2025-01-20--2025-01-26.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-01 Enero/liquidacion-2025-01-27--2025-01-31.xlsx,ML,liquidacion-2025-01-27--2025-01-31.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-02 Febrero/liquidacion-2025-02-01--2025-02-02.xlsx,ML,liquidacion-2025-02-01--2025-02-02.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-02 Febrero/liquidacion-2025-02-03--2025-02-09.xlsx,ML,liquidacion-2025-02-03--2025-02-09.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-02 Febrero/liquidacion-2025-02-10--2025-02-16.xlsx,ML,liquidacion-2025-02-10--2025-02-16.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-02 Febrero/liquidacion-2025-02-17--2025-02-23.xlsx,ML,liquidacion-2025-02-17--2025-02-23.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-02 Febrero/liquidacion-2025-02-24--2025-02-28.xlsx,ML,liquidacion-2025-02-24--2025-02-28.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-03 Marzo/liquidacion-2025-03-01--2025-03-02.xlsx,ML,liquidacion-2025-03-01--2025-03-02.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-03 Marzo/liquidacion-2025-03-03--2025-03-09.xlsx,ML,liquidacion-2025-03-03--2025-03-09.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-03 Marzo/liquidacion-2025-03-10--2025-03-16.xlsx,ML,liquidacion-2025-03-10--2025-03-16.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-03 Marzo/liquidacion-2025-03-17--2025-03-23.xlsx,ML,liquidacion-2025-03-17--2025-03-23.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-03 Marzo/liquidacion-2025-03-24--2025-03-30.xlsx,ML,liquidacion-2025-03-24--2025-03-30.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-03 Marzo/liquidacion-2025-03-31--2025-03-31.xlsx,ML,liquidacion-2025-03-31--2025-03-31.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-04 Abril/liquidacion-2025-04-01--2025-04-06.xlsx,ML,liquidacion-2025-04-01--2025-04-06.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-04 Abril/liquidacion-2025-04-07--2025-04-13.xlsx,ML,liquidacion-2025-04-07--2025-04-13.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-04 Abril/liquidacion-2025-04-14--2025-04-20.xlsx,ML,liquidacion-2025-04-14--2025-04-20.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-04 Abril/liquidacion-2025-04-21--2025-04-27.xlsx,ML,liquidacion-2025-04-21--2025-04-27.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-04 Abril/liquidacion-2025-04-28--2025-04-30.xlsx,ML,liquidacion-2025-04-28--2025-04-30.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-05 Mayo/liquidacion-2025-05-01--2025-05-04.xlsx,ML,liquidacion-2025-05-01--2025-05-04.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-05 Mayo/liquidacion-2025-05-05--2025-05-11.xlsx,ML,liquidacion-2025-05-05--2025-05-11.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-05 Mayo/liquidacion-2025-05-12--2025-05-18.xlsx,ML,liquidacion-2025-05-12--2025-05-18.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-05 Mayo/liquidacion-2025-05-19--2025-05-25.xlsx,ML,liquidacion-2025-05-19--2025-05-25.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-05 Mayo/liquidacion-2025-05-26--2025-05-31.xlsx,ML,liquidacion-2025-05-26--2025-05-31.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-06 Junio/liquidacion-2025-06-01--2025-06-01.xlsx,ML,liquidacion-2025-06-01--2025-06-01.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-06 Junio/liquidacion-2025-06-02--2025-06-08.xlsx,ML,liquidacion-2025-06-02--2025-06-08.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-06 Junio/liquidacion-2025-06-09--2025-06-15.xlsx,ML,liquidacion-2025-06-09--2025-06-15.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-06 Junio/liquidacion-2025-06-16--2025-06-22.xlsx,ML,liquidacion-2025-06-16--2025-06-22.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-06 Junio/liquidacion-2025-06-23--2025-06-29.xlsx,ML,liquidacion-2025-06-23--2025-06-29.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-06 Junio/liquidacion-2025-06-30--2025-06-30.xlsx,ML,liquidacion-2025-06-30--2025-06-30.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-07 Julio/liquidacion-2025-07-01--2025-07-06.xlsx,ML,liquidacion-2025-07-01--2025-07-06.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-07 Julio/liquidacion-2025-07-07--2025-07-13.xlsx,ML,liquidacion-2025-07-07--2025-07-13.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-07 Julio/liquidacion-2025-07-14--2025-07-20.xlsx,ML,liquidacion-2025-07-14--2025-07-20.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-07 Julio/liquidacion-2025-07-21--2025-07-27.xlsx,ML,liquidacion-2025-07-21--2025-07-27.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-07 Julio/liquidacion-2025-07-28--2025-07-31.xlsx,ML,liquidacion-2025-07-28--2025-07-31.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-08 Agosto/liquidacion-2025-08-01--2025-08-03.xlsx,ML,liquidacion-2025-08-01--2025-08-03.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-08 Agosto/liquidacion-2025-08-04--2025-08-10.xlsx,ML,liquidacion-2025-08-04--2025-08-10.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-08 Agosto/liquidacion-2025-08-11--2025-08-17.xlsx,ML,liquidacion-2025-08-11--2025-08-17.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-08 Agosto/liquidacion-2025-08-18--2025-08-24.xlsx,ML,liquidacion-2025-08-18--2025-08-24.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-08 Agosto/liquidacion-2025-08-25--2025-08-31.xlsx,ML,liquidacion-2025-08-25--2025-08-31.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-09 Septiembre/liquidacion-2025-09-01--2025-09-07.xlsx,ML,liquidacion-2025-09-01--2025-09-07.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-09 Septiembre/liquidacion-2025-09-08--2025-09-14.xlsx,ML,liquidacion-2025-09-08--2025-09-14.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-09 Septiembre/liquidacion-2025-09-15--2025-09-21.xlsx,ML,liquidacion-2025-09-15--2025-09-21.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-09 Septiembre/liquidacion-2025-09-22--2025-09-28.xlsx,ML,liquidacion-2025-09-22--2025-09-28.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-09 Septiembre/liquidacion-2025-09-29--2025-09-30.xlsx,ML,liquidacion-2025-09-29--2025-09-30.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-10 Octubre/liquidacion-2025-10-01--2025-10-05.xlsx,ML,liquidacion-2025-10-01--2025-10-05.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-10 Octubre/liquidacion-2025-10-06--2025-10-12.xlsx,ML,liquidacion-2025-10-06--2025-10-12.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-10 Octubre/liquidacion-2025-10-13--2025-10-19.xlsx,ML,liquidacion-2025-10-13--2025-10-19.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-10 Octubre/liquidacion-2025-10-20--2025-10-26.xlsx,ML,liquidacion-2025-10-20--2025-10-26.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-10 Octubre/liquidacion-2025-10-27--2025-10-31.xlsx,ML,liquidacion-2025-10-27--2025-10-31.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-11 Noviembre/liquidacion-2025-11-01--2025-11-02.xlsx,ML,liquidacion-2025-11-01--2025-11-02.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-11 Noviembre/liquidacion-2025-11-03--2025-11-09.xlsx,ML,liquidacion-2025-11-03--2025-11-09.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-11 Noviembre/liquidacion-2025-11-10--2025-11-16.xlsx,ML,liquidacion-2025-11-10--2025-11-16.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-11 Noviembre/liquidacion-2025-11-17--2025-11-23.xlsx,ML,liquidacion-2025-11-17--2025-11-23.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-11 Noviembre/liquidacion-2025-11-24--2025-11-30-1.xlsx,ML,liquidacion-2025-11-24--2025-11-30-1.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-11 Noviembre/liquidacion-2025-11-24--2025-11-30-2.xlsx,ML,liquidacion-2025-11-24--2025-11-30-2.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-11 Noviembre/liquidacion-2025-11-29--2025-11-30.xlsx,ML,liquidacion-2025-11-29--2025-11-30.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-12 Diciembre/liquidacion-2025-12-01--2025-12-07.xlsx,ML,liquidacion-2025-12-01--2025-12-07.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-12 Diciembre/liquidacion-2025-12-08--2025-12-14.xlsx,ML,liquidacion-2025-12-08--2025-12-14.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-12 Diciembre/liquidacion-2025-12-15--2025-12-21.xlsx,ML,liquidacion-2025-12-15--2025-12-21.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-12 Diciembre/liquidacion-2025-12-22--2025-12-28.xlsx,ML,liquidacion-2025-12-22--2025-12-28.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2025-12 Diciembre/liquidacion-2025-12-29--2025-12-31.xlsx,ML,liquidacion-2025-12-29--2025-12-31.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-01 Enero/liquidacion-2026-01-01--2026-01-04.xlsx,ML,liquidacion-2026-01-01--2026-01-04.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-01 Enero/liquidacion-2026-01-05--2026-01-11.xlsx,ML,liquidacion-2026-01-05--2026-01-11.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-01 Enero/liquidacion-2026-01-12--2026-01-18.xlsx,ML,liquidacion-2026-01-12--2026-01-18.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-01 Enero/liquidacion-2026-01-19--2026-01-25.xlsx,ML,liquidacion-2026-01-19--2026-01-25.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-01 Enero/liquidacion-2026-01-26--2026-01-31.xlsx,ML,liquidacion-2026-01-26--2026-01-31.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-02- Febrero/liquidacion-2026-02-01--2026-02-01.xlsx,ML,liquidacion-2026-02-01--2026-02-01.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-02- Febrero/liquidacion-2026-02-02--2026-02-08.xlsx,ML,liquidacion-2026-02-02--2026-02-08.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-02- Febrero/liquidacion-2026-02-09--2026-02-15.xlsx,ML,liquidacion-2026-02-09--2026-02-15.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-02- Febrero/liquidacion-2026-02-16--2026-02-22.xlsx,ML,liquidacion-2026-02-16--2026-02-22.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-02- Febrero/liquidacion-2026-02-23--2026-02-28.xlsx,ML,liquidacion-2026-02-23--2026-02-28.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-03-Marzo/liquidacion-2026-03-01--2026-03-01.xlsx,ML,liquidacion-2026-03-01--2026-03-01.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-03-Marzo/liquidacion-2026-03-02--2026-03-08.xlsx,ML,liquidacion-2026-03-02--2026-03-08.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-03-Marzo/liquidacion-2026-03-09--2026-03-15.xlsx,ML,liquidacion-2026-03-09--2026-03-15.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-03-Marzo/liquidacion-2026-03-16--2026-03-22.xlsx,ML,liquidacion-2026-03-16--2026-03-22.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-03-Marzo/liquidacion-2026-03-23--2026-03-29.xlsx,ML,liquidacion-2026-03-23--2026-03-29.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-03-Marzo/liquidacion-2026-03-30--2026-03-31.xlsx,ML,liquidacion-2026-03-30--2026-03-31.xlsx,UNKNOWN,fecha|tipo documento|dte|folio|venta|descripcion|cantidad|monto|iva|iva anticipo|ila|código del impuesto|sku|código del producto|variación|folio asociado|devolución
+01_Raw/ML/Liquidacion_FF/2026-04 Abril/liquidacion-2026-04-01-2026-04-05.xlsx,ML,liquidacion-2026-04-01-2026-04-05.xlsx,UNKNOWN,"Liquidación de Factura: Folio 962513, Abril (01-04-2026 hasta 05-04-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-04 Abril/liquidacion-2026-04-06-2026-04-12.xlsx,ML,liquidacion-2026-04-06-2026-04-12.xlsx,UNKNOWN,"Liquidación de Factura: Folio 968285, Abril (06-04-2026 hasta 12-04-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-04 Abril/liquidacion-2026-04-13-2026-04-19.xlsx,ML,liquidacion-2026-04-13-2026-04-19.xlsx,UNKNOWN,"Liquidación de Factura: Folio 974611, Abril (13-04-2026 hasta 19-04-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-04 Abril/liquidacion-2026-04-20-2026-04-26.xlsx,ML,liquidacion-2026-04-20-2026-04-26.xlsx,UNKNOWN,"Liquidación de Factura: Folio 976792, Abril (20-04-2026 hasta 26-04-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-04 Abril/liquidacion-2026-04-27-2026-04-30.xlsx,ML,liquidacion-2026-04-27-2026-04-30.xlsx,UNKNOWN,"Liquidación de Factura: Folio 983066, Mayo (27-04-2026 hasta 30-04-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-05 Mayo/liquidacion-2026-05-01-2026-05-03.xlsx,ML,liquidacion-2026-05-01-2026-05-03.xlsx,UNKNOWN,"Liquidación de Factura: Folio 990070, Mayo (01-05-2026 hasta 03-05-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-05 Mayo/liquidacion-2026-05-04-2026-05-10.xlsx,ML,liquidacion-2026-05-04-2026-05-10.xlsx,UNKNOWN,"Liquidación de Factura: Folio 994017, Mayo (04-05-2026 hasta 10-05-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-05 Mayo/liquidacion-2026-05-11-2026-05-17.xlsx,ML,liquidacion-2026-05-11-2026-05-17.xlsx,UNKNOWN,"Liquidación de Factura: Folio 998736, Mayo (11-05-2026 hasta 17-05-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-05 Mayo/liquidacion-2026-05-18-2026-05-24.xlsx,ML,liquidacion-2026-05-18-2026-05-24.xlsx,UNKNOWN,"Liquidación de Factura: Folio 1001730, Mayo (18-05-2026 hasta 24-05-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-05 Mayo/liquidacion-2026-05-25-2026-05-31.xlsx,ML,liquidacion-2026-05-25-2026-05-31.xlsx,UNKNOWN,"Liquidación de Factura: Folio 1008474, Junio (25-05-2026 hasta 31-05-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-06 Junio/liquidacion-2026-06-01-2026-06-07.xlsx,ML,liquidacion-2026-06-01-2026-06-07.xlsx,UNKNOWN,"Liquidación de Factura: Folio 1014008, Junio (01-06-2026 hasta 07-06-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-06 Junio/liquidacion-2026-06-08-2026-06-14.xlsx,ML,liquidacion-2026-06-08-2026-06-14.xlsx,UNKNOWN,"Liquidación de Factura: Folio 1019167, Junio (08-06-2026 hasta 14-06-2026)||||||||||||||||"
+01_Raw/ML/Liquidacion_FF/2026-06 Junio/liquidacion-2026-06-15-2026-06-21.xlsx,ML,liquidacion-2026-06-15-2026-06-21.xlsx,UNKNOWN,"|Reporte de Liquidación de Factura
+|||||||||| |||||||"
+01_Raw/ML/Liquidacion_FF/2026-06 Junio/liquidacion-2026-06-22-2026-06-28.xlsx,ML,liquidacion-2026-06-22-2026-06-28.xlsx,UNKNOWN,"|Reporte de Liquidación de Factura
+|||||||||| |||||||"
+01_Raw/ML/Liquidacion_FF/2026-06 Junio/liquidacion-2026-06-29-2026-06-30.xlsx,ML,liquidacion-2026-06-29-2026-06-30.xlsx,UNKNOWN,"|Reporte de Liquidación de Factura
+|||||||||| |||||||"
+01_Raw/ML/Liberaciones/2025-01 Enero/Enero 2025.xlsx,ML,Enero 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-02 Febrero/Febrero 2025.xlsx,ML,Febrero 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-03 Marzo/Marzo 2025.xlsx,ML,Marzo 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-04 Abril/Abril 2025.xlsx,ML,Abril 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-05 Mayo/Mayo 2025.xlsx,ML,Mayo 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-06 Junio/Junio 2025.xlsx,ML,Junio 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-07 Julio/Julio 2025.xlsx,ML,Julio 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-08 Agosto/Agosto 2025.xlsx,ML,Agosto 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-09 Septiembre/Septiembre 2025.xlsx,ML,Septiembre 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-10 Octubre/Octubre 2025.xlsx,ML,Octubre 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-11 Noviembre/Noviembre 2025.xlsx,ML,Noviembre 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2025-12 Diciembre/Diciembre 2025.xlsx,ML,Diciembre 2025.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2026-01 Enero/Enero 2026.xlsx,ML,Enero 2026.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2026-02 Febrero/Febrero 2026.xlsx,ML,Febrero 2026.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2026-03 Marzo/Marzo 2026.xlsx,ML,Marzo 2026.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2026-04 Abril/Abril 2026.xlsx,ML,Abril 2026.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2026-05 Mayo/1may2026 a 31may2026.xlsx,ML,1may2026 a 31may2026.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2026-06 Junio/1jun2026 a 30jun2026.xlsx,ML,1jun2026 a 30jun2026.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/ML/Liberaciones/2026-06 Junio/1jun2026 a 5jun 2026.xlsx,ML,1jun2026 a 5jun 2026.xlsx,COMMISSION_INVOICE,FECHA DE LIBERACIÓN|ID DE OPERACIÓN EN MERCADO PAGO|NÚMERO DE IDENTIFICACIÓN|TIPO DE REGISTRO|DESCRIPCIÓN|MONTO NETO ACREDITADO|MONTO NETO DEBITADO|MONTO BRUTO DE LA OPERACIÓN|MONTO RECIBIDO POR COMPR
+01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7136.xml,FALABELLA,dteproveedor_7136.xml,DTE_XML,
+01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7143.xml,FALABELLA,dteproveedor_7143.xml,DTE_XML,
+01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7265.xml,FALABELLA,dteproveedor_7265.xml,DTE_XML,
+01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7276.xml,FALABELLA,dteproveedor_7276.xml,DTE_XML,
+01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7402.xml,FALABELLA,dteproveedor_7402.xml,DTE_XML,
+01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7404.xml,FALABELLA,dteproveedor_7404.xml,DTE_XML,
+01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7533.xml,FALABELLA,dteproveedor_7533.xml,DTE_XML,
+01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7550.xml,FALABELLA,dteproveedor_7550.xml,DTE_XML,
+01_Raw/FALABELLA/Facturación/21 abril 2026 - 20 mayo 2026.csv,FALABELLA,21 abril 2026 - 20 mayo 2026.csv,TRANSACTION_LEDGER_SOURCE,Numero de documento|Tipo de documento|Fecha de Transaccion|Descripcion Factura|Tipo de Transaccion|Nombre del producto|SKU vendedor|SKU Falabella|Monto (Sin IVA)|IVA|Monto con IVA|Divisa|N estado de c
+01_Raw/FALABELLA/Facturación/21 febrero 2026 - 20 marzo 2026.xlsx,FALABELLA,21 febrero 2026 - 20 marzo 2026.xlsx,COMMISSION_INVOICE,Numero de documento
+01_Raw/FALABELLA/Facturación/21 marzo 2026 - 20 abril 2026.xlsx,FALABELLA,21 marzo 2026 - 20 abril 2026.xlsx,COMMISSION_INVOICE,Numero de documento
+01_Raw/FALABELLA/Facturación/21 mayo 2026 - 20 junio 2026.xlsx,FALABELLA,21 mayo 2026 - 20 junio 2026.xlsx,COMMISSION_INVOICE,Numero de documento
+01_Raw/FALABELLA/Órdenes y Transacciones/1  abril   2026 - 31  mayo   2026.xlsx,FALABELLA,1  abril   2026 - 31  mayo   2026.xlsx,UNKNOWN,Fecha de actualización|2026-07-20 11:50:11.347000||||||||||||||||||||||||||||
+01_Raw/FALABELLA/Órdenes y Transacciones/1  febrero   2026 - 31  marzo   2026.xlsx,FALABELLA,1  febrero   2026 - 31  marzo   2026.xlsx,UNKNOWN,Fecha de actualización|2026-07-20 11:49:33.995000||||||||||||||||||||||||||||
+01_Raw/FALABELLA/Órdenes y Transacciones/1  junio   2026 - 30  junio   2026.xlsx,FALABELLA,1  junio   2026 - 30  junio   2026.xlsx,UNKNOWN,Fecha de actualización|2026-07-20 11:50:51.125000||||||||||||||||||||||||||||

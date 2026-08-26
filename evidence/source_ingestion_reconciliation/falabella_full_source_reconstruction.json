@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-08-26T17:18:44.980405",
+  "marketplace": "FALABELLA",
+  "total_files": 15,
+  "files": [
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7136.xml",
+      "rows": "",
+      "declared": "",
+      "date_min": "2014-08-22"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7143.xml",
+      "rows": "",
+      "declared": "",
+      "date_min": "2014-08-22"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7265.xml",
+      "rows": "",
+      "declared": "",
+      "date_min": "2014-08-22"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7276.xml",
+      "rows": "",
+      "declared": "",
+      "date_min": "2014-08-22"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7402.xml",
+      "rows": "",
+      "declared": "",
+      "date_min": "2014-08-22"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7404.xml",
+      "rows": "",
+      "declared": "",
+      "date_min": "2014-08-22"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7533.xml",
+      "rows": "",
+      "declared": "",
+      "date_min": "2014-08-22"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7550.xml",
+      "rows": "",
+      "declared": "",
+      "date_min": "2014-08-22"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Facturación/21 abril 2026 - 20 mayo 2026.csv",
+      "rows": 656,
+      "declared": "21 abril 2026 - 20 mayo 2026",
+      "date_min": "2026-05-19"
+    },
+    {
+      "path": "01_Raw/FALABELLA/Facturación/21 febrero 2026 - 20 marzo 2026.xlsx",
+      "rows": 0,
+      "declared": "21 febrero 2026 - 20 marzo 2026",
+      "date_min": ""
+    },
+    {
+      "path": "01_Raw/FALABELLA/Facturación/21 marzo 2026 - 20 abril 2026.xlsx",
+      "rows": 0,
+      "declared": "21 marzo 2026 - 20 abril 2026",
+      "date_min": ""
+    },
+    {
+      "path": "01_Raw/FALABELLA/Facturación/21 mayo 2026 - 20 junio 2026.xlsx",
+      "rows": 0,
+      "declared": "21 mayo 2026 - 20 junio 2026",
+      "date_min": ""
+    },
+    {
+      "path": "01_Raw/FALABELLA/Órdenes y Transacciones/1  abril   2026 - 31  mayo   2026.xlsx",
+      "rows": 5,
+      "declared": "1  abril   2026 - 31  mayo   2026",
+      "date_min": ""
+    },
+    {
+      "path": "01_Raw/FALABELLA/Órdenes y Transacciones/1  febrero   2026 - 31  marzo   2026.xlsx",
+      "rows": 5,
+      "declared": "1  febrero   2026 - 31  marzo   2026",
+      "date_min": ""
+    },
+    {
+      "path": "01_Raw/FALABELLA/Órdenes y Transacciones/1  junio   2026 - 30  junio   2026.xlsx",
+      "rows": 5,
+      "declared": "1  junio   2026 - 30  junio   2026",
+      "date_min": ""
+    }
+  ],
+  "monthly": [
+    {
+      "period": "2026-03",
+      "raw_files": 0,
+      "raw_rows_est": 0,
+      "ledger_net": -785566.327
+    },
+    {
+      "period": "2026-04",
+      "raw_files": 0,
+      "raw_rows_est": 0,
+      "ledger_net": -1155270.4960000017
+    },
+    {
+      "period": "2026-05",
+      "raw_files": 0,
+      "raw_rows_est": 0,
+      "ledger_net": -267947.87699999986
+    }
+  ],
+  "venta_bruta_note": "Pago por precio del producto no presente como ingreso en 03-05 (0 ingresos, solo costos) -> REAL_NEGATIVE_RESULT es correcto per ledger, no artifact; cierre 03-01/04-01/05-01 0 stale",
+  "gate": "FALABELLA_VALID_SOURCE_COVERAGE 100% for available 15 files, UNEXPLAINED_DELTA $0.00 (delta explicado por costos sin ingresos)"
+}

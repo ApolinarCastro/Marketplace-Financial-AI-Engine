@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-08-26T17:20:15.309658",
+  "runs": [
+    {
+      "run": 1,
+      "rows": 598112
+    },
+    {
+      "run": 2,
+      "rows": 598112
+    },
+    {
+      "run": 3,
+      "rows": 598112
+    }
+  ],
+  "verdict": "PASS",
+  "note": "RUN1==RUN2==RUN3 except execution_id"
+}

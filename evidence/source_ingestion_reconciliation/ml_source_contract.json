@@ -1,0 +1,10 @@
+{
+  "marketplace": "ML",
+  "sources": {
+    "Facturacion": "01_Raw/ML/Facturacion 341 files (excl XML)",
+    "DTE": "ML/Documentos Recepcionados 15 folios"
+  },
+  "golden": "Facturacion MANDATORY",
+  "e2e_sample": "ORDER 308761249 -> ledger 15055037_COMM -> doc_match 26198375 -> DTE 33 Cencosud",
+  "gate": "ML_E2E_TRACEABILITY PASS"
+}

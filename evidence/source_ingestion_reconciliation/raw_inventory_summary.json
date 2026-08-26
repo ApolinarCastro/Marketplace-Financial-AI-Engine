@@ -1,0 +1,20 @@
+{
+  "total": 1313,
+  "by_marketplace": {
+    "RIPLEY": 623,
+    "SHOPIFY": 243,
+    "PARIS": 91,
+    "ML": 341,
+    "FALABELLA": 15
+  },
+  "by_ext": {
+    ".md": 2,
+    ".py": 1,
+    ".json": 1,
+    ".xml": 971,
+    ".xlsx": 236,
+    ".csv": 99,
+    ".dat": 3
+  },
+  "total_size": 116070667
+}

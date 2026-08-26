@@ -1,0 +1,6 @@
+marketplace,raw_files,raw_rows_est,ledger_rows,ledger_amount,note
+ML,341,166040,109799,937358577.5499995,"comparison respects semantic role, not 1:1 file->row"
+PARIS,91,77082,197820,893566496.0,"comparison respects semantic role, not 1:1 file->row"
+RIPLEY,623,171232,287417,2602024596.0,"comparison respects semantic role, not 1:1 file->row"
+FALABELLA,15,671,3076,-2040150.7400000012,"comparison respects semantic role, not 1:1 file->row"
+SHOPIFY,243,47643,0,,"comparison respects semantic role, not 1:1 file->row"

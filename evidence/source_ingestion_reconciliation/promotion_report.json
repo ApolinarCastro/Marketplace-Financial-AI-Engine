@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-08-26T17:20:15.311454",
+  "tables_affected": [
+    "file_registry (if new files registered)"
+  ],
+  "rows_before": 598112,
+  "rows_after": 598112,
+  "financial_before": 4430909518.81,
+  "financial_after": 4430909518.81,
+  "source_files_added": 0,
+  "rollback": "restore data/work/source_reconciliation_*.db",
+  "expected_sha_change": "NONE (no promotion, read-only mission)",
+  "verdict": "NO_PROMOTION_REQUIRED"
+}

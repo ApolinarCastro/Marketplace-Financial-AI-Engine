@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-08-26T17:20:11.103547",
+  "checks": [
+    {
+      "query": "que_vendi",
+      "status": "PASS",
+      "source": "FinancialTruthEngine"
+    },
+    {
+      "query": "que_cobre",
+      "status": "PASS",
+      "source": "FinancialTruthEngine"
+    },
+    {
+      "query": "comisiones",
+      "status": "PASS",
+      "source": "FinancialTruthEngine"
+    },
+    {
+      "query": "logistica",
+      "status": "PASS",
+      "source": "FinancialTruthEngine"
+    },
+    {
+      "query": "devoluciones",
+      "status": "PASS",
+      "source": "FinancialTruthEngine"
+    },
+    {
+      "query": "xml_respaldo",
+      "status": "PASS",
+      "source": "FinancialTruthEngine"
+    },
+    {
+      "query": "margen_real",
+      "status": "PASS",
+      "source": "FinancialTruthEngine"
+    },
+    {
+      "query": "cierre_financiero",
+      "status": "PASS",
+      "source": "FinancialTruthEngine"
+    }
+  ],
+  "verdict": "PASS"
+}

@@ -1,0 +1,8 @@
+{
+  "marketplace": "SHOPIFY",
+  "files": 243,
+  "classification": "NON_FINANCIAL",
+  "reason": "243 archivos XML facturacion pero 0 ledger rows, no handler, periodos 2006/2014 dispersos, sin trazabilidad a Transbank/SAP",
+  "final": "REJECTED_WITH_PROVEN_REASON (non-financial / historical)",
+  "gate": "SHOPIFY_SOURCE_STATUS = REJECTED_WITH_PROVEN_REASON"
+}
