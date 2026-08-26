@@ -1,0 +1,59 @@
+{
+  "queries": [
+    {
+      "query_id": "que_vendi",
+      "status": "PASS"
+    },
+    {
+      "query_id": "que_cobre",
+      "status": "PASS"
+    },
+    {
+      "query_id": "que_falta_cobrar",
+      "status": "PASS"
+    },
+    {
+      "query_id": "comisiones",
+      "status": "PASS"
+    },
+    {
+      "query_id": "publicidad",
+      "status": "PASS"
+    },
+    {
+      "query_id": "logistica",
+      "status": "PASS"
+    },
+    {
+      "query_id": "devoluciones",
+      "status": "PASS"
+    },
+    {
+      "query_id": "xml_respaldo",
+      "status": "PASS"
+    },
+    {
+      "query_id": "dte_respaldo",
+      "status": "PASS"
+    },
+    {
+      "query_id": "margen_real",
+      "status": "PASS"
+    },
+    {
+      "query_id": "cierre_financiero",
+      "status": "PASS"
+    },
+    {
+      "query_id": "diferencias_sap_marketplace",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "reason": "SAP no source"
+    },
+    {
+      "query_id": "movimientos_sin_respaldo",
+      "status": "PASS"
+    }
+  ],
+  "gate": "13/13 EXECUTED",
+  "false_answers": 0
+}

@@ -1,0 +1,12 @@
+{
+  "release_commit": "9190b017dbb5065469e4e87c3fc441fbd41bb1dd",
+  "previous_stable": "099855bcdf1e2510f01e6dfd57bb23ee962ac509",
+  "backup_file": "data\\backup\\release_rc1\\meli_financial_v4_pre_rc1_20260826_174301.db",
+  "steps": [
+    "git checkout 099855b",
+    "restore backup exact",
+    "start",
+    "smoke"
+  ],
+  "verdict": "PLAN_READY"
+}

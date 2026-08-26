@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-26T17:43:01.720503",
+  "source_db": "data/db/meli_financial_v4.db",
+  "source_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "backup_path": "data\\backup\\release_rc1\\meli_financial_v4_pre_rc1_20260826_174301.db",
+  "backup_absolute": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\data\\backup\\release_rc1\\meli_financial_v4_pre_rc1_20260826_174301.db",
+  "size_bytes": 58732544,
+  "sha_backup": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "sha_match": true,
+  "created_at": "2026-08-26T17:43:01.720612"
+}

@@ -1,0 +1,10 @@
+{
+  "tx_id": "15055037_COMM",
+  "estado": "DOCUMENT_REFERENCE_ONLY",
+  "chain": "DOCUMENTAL",
+  "expected_estado": "DOCUMENT_REFERENCE_ONLY",
+  "expected_chain": "DOCUMENTAL",
+  "status_ok": true,
+  "false_fiscal": 0,
+  "verdict": "PASS"
+}

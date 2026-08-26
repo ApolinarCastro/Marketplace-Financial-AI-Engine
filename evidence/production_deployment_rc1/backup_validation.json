@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-26T17:43:01.720615",
+  "backup_path": "data\\backup\\release_rc1\\meli_financial_v4_pre_rc1_20260826_174301.db",
+  "ledger_rows": 598112,
+  "ledger_total": 4430909518.810003,
+  "expected_rows": 598112,
+  "rows_match": true,
+  "sha_match": true,
+  "verdict": "PASS"
+}

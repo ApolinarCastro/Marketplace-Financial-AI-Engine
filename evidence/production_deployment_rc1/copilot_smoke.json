@@ -1,0 +1,46 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué vendí?",
+      "status": 200,
+      "has_answer": true
+    },
+    {
+      "question": "¿Qué cobré?",
+      "status": 422,
+      "has_answer": false
+    },
+    {
+      "question": "¿Qué falta cobrar?",
+      "status": 422,
+      "has_answer": false
+    },
+    {
+      "question": "¿Qué pagué en comisiones?",
+      "status": 422,
+      "has_answer": false
+    },
+    {
+      "question": "¿Por qué Falabella tiene resultado negativo?",
+      "status": 422,
+      "has_answer": false
+    },
+    {
+      "question": "¿Qué DTE respalda esta operación?",
+      "status": 422,
+      "has_answer": false
+    },
+    {
+      "question": "¿Qué ocurre con Ripley?",
+      "status": 422,
+      "has_answer": false
+    },
+    {
+      "question": "¿Qué excepciones requieren revisión?",
+      "status": 422,
+      "has_answer": false
+    }
+  ],
+  "ripley_insufficient": false,
+  "verdict": "REVIEW"
+}

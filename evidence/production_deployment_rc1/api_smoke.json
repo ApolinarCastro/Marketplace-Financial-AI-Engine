@@ -1,0 +1,45 @@
+{
+  "routes": [
+    {
+      "route": "/api/v4/ledger?marketplace=ML&limit=1",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/financial-structure?marketplace=ML&period=2026-05",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/dte/traceability",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/electronic_certification/status/15055037_COMM",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/exec/summary?period=2026-05",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/copilot/ask?question=¿Qué vendí?&periodo=2026-05",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/ledger?marketplace=RIPLEY&limit=1",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "POST /api/v4/run-audit",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "verdict": "PASS"
+}

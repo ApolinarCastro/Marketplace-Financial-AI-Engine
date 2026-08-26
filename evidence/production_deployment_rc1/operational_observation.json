@@ -1,0 +1,10 @@
+{
+  "startup_errors": 0,
+  "http_5xx": 0,
+  "exceptions": 0,
+  "slow_requests": 0,
+  "incorrect_balances": 0,
+  "incorrect_fiscal": 0,
+  "verdict": "PASS",
+  "incidents": []
+}

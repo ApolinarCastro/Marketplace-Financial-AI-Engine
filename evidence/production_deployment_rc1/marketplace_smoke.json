@@ -1,0 +1,26 @@
+[
+  {
+    "marketplace": "ML",
+    "ledger_net": 53135441.79999999,
+    "financial": "PASS"
+  },
+  {
+    "marketplace": "PARIS",
+    "ledger_net": 24850008.0,
+    "financial": "PASS"
+  },
+  {
+    "marketplace": "FALABELLA",
+    "ledger_net": -267947.87699999986,
+    "financial": "PASS",
+    "check": " -785k/-1.15M/-267k per truth",
+    "match": "PASS"
+  },
+  {
+    "marketplace": "RIPLEY",
+    "ledger_net": 111204128.0,
+    "financial": "PASS",
+    "fiscal": "BLOCKED",
+    "settlement": "PASS"
+  }
+]

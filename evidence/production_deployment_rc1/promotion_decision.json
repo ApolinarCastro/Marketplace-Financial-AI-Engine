@@ -1,0 +1,14 @@
+{
+  "critical": 0,
+  "high": 0,
+  "financial_delta": "$0.00",
+  "db_integrity": "PASS",
+  "raw_integrity": "PASS",
+  "false_fiscal": 0,
+  "audit_mutations": 0,
+  "api": "PASS",
+  "dashboard": "PASS",
+  "copilot": "PASS",
+  "verdict": "RC1_OPERATIONAL_SMOKE_PASS",
+  "recommendation": "PROMOTE marketplace-financial-v1.0.0-rc1 to stable"
+}

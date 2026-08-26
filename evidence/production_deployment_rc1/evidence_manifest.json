@@ -1,0 +1,23 @@
+{
+  "files": {
+    "api_smoke.json": "a89193e698f986b0",
+    "audit_smoke_3x.json": "a104193442f02f9a",
+    "backup_manifest.json": "b7d250fc67a29270",
+    "backup_validation.json": "ee4c6deffe3d9283",
+    "copilot_smoke.json": "438d8a78ffd6d281",
+    "dashboard_smoke.json": "99209d978ddfdd69",
+    "db_raw_postcheck.json": "0694f1e83c376f67",
+    "electronic_certification_smoke.json": "5b14144632407139",
+    "environment_validation.json": "1ca9df7780031d9b",
+    "financial_integrity.json": "f05b071ca7753850",
+    "financial_truth_13.json": "f27145d86c8c7914",
+    "marketplace_smoke.json": "b0926a802bdeb917",
+    "operational_observation.json": "7884c25ba23b47ad",
+    "precheck.json": "9d70fea28ac07a4c",
+    "promotion_decision.json": "e9e0ca3c3344b324",
+    "rollback_plan.json": "e6a5b7b738f01285",
+    "startup_validation.json": "3ae344d3781d6b35",
+    "FINAL_DEPLOYMENT_VERDICT.json": "405cce1ac28225e2"
+  },
+  "count": 18
+}
