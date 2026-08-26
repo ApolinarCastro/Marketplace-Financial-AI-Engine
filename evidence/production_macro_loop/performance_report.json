@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-08-26T15:47:44.080028",
+  "p50_ms": 32.2,
+  "p95_ms": 45.6,
+  "rows_scanned": 20,
+  "verdict": "PASS"
+}

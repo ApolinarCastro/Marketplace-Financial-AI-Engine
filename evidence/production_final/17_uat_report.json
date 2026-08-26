@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-26T15:47:44.080028",
+  "scenarios": [
+    "Auditor buscar transaccion",
+    "Gerencia comparar marketplaces",
+    "Operacion cargar reporte",
+    "Fiscal ver DTE"
+  ],
+  "verdict": "PASS"
+}

@@ -1,0 +1,228 @@
+{
+  "timestamp": "2026-08-26T15:46:48.749577",
+  "official": {
+    "path": "data/db/meli_financial_v4.db",
+    "sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "tables": [
+      "TABLA_MAPEO",
+      "ai_suggestions_log",
+      "bank_statement",
+      "cargos_no_clasificados",
+      "cierre_financiero_v2",
+      "document_match_v1",
+      "dte_ledger_link",
+      "dte_link_v1",
+      "dte_ripley_traceability",
+      "dte_truth_v1",
+      "exceptions",
+      "file_registry",
+      "financial_operational_view_v1",
+      "financial_reconciliation",
+      "inconsistencias_financieras",
+      "ingestion_registry",
+      "liberaciones",
+      "marketplace_auditoria_v1",
+      "marketplace_cierre_financiero_v1",
+      "marketplace_correcciones_v1",
+      "marketplace_ledger_clasificado_v1",
+      "marketplace_ledger_v1",
+      "order_reconciliation",
+      "pipeline_log",
+      "retiros",
+      "ripley_corrected_certification",
+      "ripley_financial_mapping",
+      "ripley_settlement_chain",
+      "ripley_traceability_graph",
+      "risk_postsale_view_v1"
+    ],
+    "views": [
+      "character_sets",
+      "check_constraints",
+      "columns",
+      "constraint_column_usage",
+      "constraint_table_usage",
+      "dte_ledger_link",
+      "dte_ripley_traceability",
+      "duckdb_columns",
+      "duckdb_constraints",
+      "duckdb_databases",
+      "duckdb_indexes",
+      "duckdb_logs",
+      "duckdb_schemas",
+      "duckdb_tables",
+      "duckdb_types",
+      "duckdb_views",
+      "financial_operational_view_v1",
+      "key_column_usage",
+      "pg_am",
+      "pg_attrdef",
+      "pg_attribute",
+      "pg_class",
+      "pg_collation",
+      "pg_constraint",
+      "pg_database",
+      "pg_depend",
+      "pg_description",
+      "pg_enum",
+      "pg_index",
+      "pg_indexes",
+      "pg_namespace",
+      "pg_prepared_statements",
+      "pg_proc",
+      "pg_sequence",
+      "pg_sequences",
+      "pg_settings",
+      "pg_tables",
+      "pg_tablespace",
+      "pg_type",
+      "pg_views",
+      "pragma_database_list",
+      "referential_constraints",
+      "ripley_corrected_certification",
+      "ripley_settlement_chain",
+      "ripley_traceability_graph",
+      "risk_postsale_view_v1",
+      "schemata",
+      "sqlite_master",
+      "sqlite_schema",
+      "sqlite_temp_master",
+      "sqlite_temp_schema",
+      "table_constraints",
+      "tables",
+      "v_ledger_certified",
+      "v_transaction_traceability",
+      "views",
+      "vw_dashboard_kpis",
+      "vw_ml_misclassifications"
+    ],
+    "total_tables": 37,
+    "total_views": 58
+  },
+  "all_db_files": [
+    {
+      "path": "data\\db\\controlled_cap_f2_001.db",
+      "size": 60043264,
+      "sha16": "fe3213baa83768d6"
+    },
+    {
+      "path": "data\\db\\marketplace_ledger_v1.db",
+      "size": 12288,
+      "sha16": "3bac59f05e29b831"
+    },
+    {
+      "path": "data\\db\\meli_financial_v4.db",
+      "size": 58732544,
+      "sha16": "311c78e2b7471b3e"
+    },
+    {
+      "path": "data\\db\\meli_financial_v4_backup.db",
+      "size": 36450304,
+      "sha16": "d78338a30c87ef97"
+    },
+    {
+      "path": "data\\db\\meli_financial_v4_baseline_v4.db",
+      "size": 57946112,
+      "sha16": "29f9efeadde547d5"
+    },
+    {
+      "path": "data\\db\\meli_financial_v4_pre_class.db",
+      "size": 131084288,
+      "sha16": "1971e0dc6a7a4110"
+    },
+    {
+      "path": "data\\db\\meli_financial_v4_pre_truth003_20260720_173842_A9777849.db",
+      "size": 55848960,
+      "sha16": "a977784903aab619"
+    },
+    {
+      "path": "data\\db\\backups\\meli_financial_v4_CERTIFIED_BASELINE_V1_20260624.db",
+      "size": 59781120,
+      "sha16": "d3ca3c41f805f4db"
+    },
+    {
+      "path": "data\\db\\baseline_estable_v7_20260715\\meli_financial_v4.db",
+      "size": 55848960,
+      "sha16": "bcb19ab49a2da3d2"
+    },
+    {
+      "path": "data\\db\\baseline_estable_v8_candidate_20260717\\meli_financial_v4.db",
+      "size": 55848960,
+      "sha16": "733c759f8ea179d8"
+    },
+    {
+      "path": "data\\db\\BASELINE_ESTABLE_V9_TRUTH_RECOVERED\\meli_financial_v4.db",
+      "size": 55848960,
+      "sha16": "c76c3fee51c31949"
+    },
+    {
+      "path": "data\\db\\snapshot_baseline_v6_20260529_105928\\meli_financial_v4.db",
+      "size": 131346432,
+      "sha16": "e1e341ef44e0a61c"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_bpp_residual_fix_20260606_145106\\meli_financial_v4.db",
+      "size": 36450304,
+      "sha16": "e8202cb47b8e783c"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_cierre_rebuild_20260528_163008\\meli_financial_v4.db",
+      "size": 37498880,
+      "sha16": "7d4283c6f4afed34"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_classification_20260603_102347\\meli_financial_v4.db",
+      "size": 131084288,
+      "sha16": "19cd9b1589c502b4"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_dec019_20260607_161324\\meli_financial_v4.db",
+      "size": 36450304,
+      "sha16": "012cd0fe079646d1"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_f003_cleaned_20260715\\meli_financial_v4.db",
+      "size": 55848960,
+      "sha16": "bf6ed7aec5410abe"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_falabella_rebuild_20260529_100326\\meli_financial_v4.db",
+      "size": 60043264,
+      "sha16": "e110817b750fe5ec"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_fase2_20260603_112908\\meli_financial_v4.db",
+      "size": 131084288,
+      "sha16": "3939ad54b2442b1d"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_iopnl_modernize_20260606_1215\\meli_financial_v4.db",
+      "size": 36450304,
+      "sha16": "a3ff7bbc6d5cf581"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_ml_xml_fix_20260528_170623\\meli_financial_v4.db",
+      "size": 37498880,
+      "sha16": "41237ad44cad1f17"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_persistencia_20260528_162431\\meli_financial_v4.db",
+      "size": 37498880,
+      "sha16": "e043d1bf72226381"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_poscobro_fix_20260605_155052\\meli_financial_v4.db",
+      "size": 94384128,
+      "sha16": "c142705a54166c77"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_ripley_rebuild_20260601_172024\\meli_financial_v4.db",
+      "size": 131346432,
+      "sha16": "c341b272da889474"
+    },
+    {
+      "path": "data\\db\\snapshot_pre_ripley_rebuild_20260601_172043\\meli_financial_v4.db",
+      "size": 131346432,
+      "sha16": "88082bbc073af49a"
+    }
+  ]
+}

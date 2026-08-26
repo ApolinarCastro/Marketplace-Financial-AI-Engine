@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-08-26T15:46:48.749577",
+  "ripley_root": "01_Raw/RIPLEY",
+  "physical_files_sample": [
+    "01_Raw\\RIPLEY\\automation_blueprint.md",
+    "01_Raw\\RIPLEY\\traceability_analysis.py",
+    "01_Raw\\RIPLEY\\traceability_report.json",
+    "01_Raw\\RIPLEY\\traceability_report.md",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f25272_ts2025-05-13T153652.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26000_ts2025-10-27T144835.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26276_ts2025-12-15T155053.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26306_ts2025-12-23T112808.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26441_ts2026-02-16T124619.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26532_ts2026-03-13T120641.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26608_ts2026-03-30T155632.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26613_ts2026-03-31T130634.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26636_ts2026-04-06T172718.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26703_ts2026-04-17T150756.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26793_ts2026-05-11T120014.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26794_ts2026-05-11T120602.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26795_ts2026-05-11T121312.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26874_ts2026-06-05T123502.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c33_f26875_ts2026-06-05T124420.xml",
+    "01_Raw\\RIPLEY\\Facturacion\\dtef_c61_f146730_ts2026-03-31T130421.xml"
+  ],
+  "total_physical": 623,
+  "settlement_chain": "ripley_settlement_chain",
+  "fiscal_bridge": "BLOCKED",
+  "reason": "folio namespaces incompatible (settlement=167 vs dte_truth=407, overlap=0); settlement_ref != SII DTE",
+  "verdict": "BLOCKED_WITH_EVIDENCE"
+}

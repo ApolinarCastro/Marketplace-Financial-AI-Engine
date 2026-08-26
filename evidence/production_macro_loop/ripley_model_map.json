@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-08-26T15:46:48.749577",
+  "ripley_tables": [
+    "ripley_financial_mapping",
+    "dte_ripley_traceability",
+    "ripley_corrected_certification",
+    "ripley_settlement_chain",
+    "ripley_traceability_graph"
+  ],
+  "canonical": "ripley_settlement_chain",
+  "auxiliary": [
+    "ripley_financial_mapping",
+    "dte_ripley_traceability",
+    "ripley_corrected_certification",
+    "ripley_traceability_graph"
+  ],
+  "verdict": "CONSOLIDATED"
+}

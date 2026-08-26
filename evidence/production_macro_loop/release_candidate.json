@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-08-26T15:48:18.977525",
+  "branch": "phase5/production-readiness",
+  "commit": "bab93feddb5224d5cf8457931d133118d1f97854",
+  "db_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_size": 58732544,
+  "schema_version": "v4",
+  "supported_marketplaces": [
+    "ML",
+    "PARIS",
+    "FALABELLA",
+    "RIPLEY"
+  ],
+  "fiscal_matrix": {
+    "ML": "CERTIFIED (15 folios)",
+    "PARIS": "CERTIFIED (18 folios)",
+    "FALABELLA": "CERTIFIED (5 folios)",
+    "RIPLEY": "BLOCKED (INSUFFICIENT_FISCAL_EVIDENCE)"
+  },
+  "known_blockers": [
+    "RIPLEY_FISCAL_BRIDGE BLOCKED - settlement_ref != SII DTE"
+  ],
+  "deployment": "uvicorn api.api:app --host 0.0.0.0 --port 8000",
+  "rollback": "git checkout HEAD~1 && restore data/db/meli_financial_v4.db from backup",
+  "evidence_manifest": "evidence/production_macro_loop/"
+}

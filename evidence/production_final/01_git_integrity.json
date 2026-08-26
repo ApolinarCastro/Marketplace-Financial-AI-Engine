@@ -1,0 +1,82 @@
+{
+  "timestamp": "2026-08-26T15:43:06.418582",
+  "branch": "phase5/production-readiness",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "log": [
+    "2d51f52 F5-05: Add idempotency regression tests for recovery mechanism",
+    "0e3b30f CAP-F5-05: Surgical Corrective Action - Recovery Idempotency Fix",
+    "0e70421 F5-05: Recovery & Rollback Certification (FAIL)",
+    "b7828f7 F5-04: Performance & Scalability Certification",
+    "3b39765 Update official DB hash after F5-03 cleanup",
+    "d378a7f F5-03: Operational Reliability Certification (Idempotency, Duplicate Prevention, Ledger/Registry Recovery)",
+    "2a31a68 Merge branch 'integration/baseline-v8' into master",
+    "38cf422 Merge certified baseline V8 7a943600 (125/125 PASS)",
+    "7a94360 fix(certification): reproducible phase4 environment",
+    "bfbe4d4 fix(f4): correct mojibake normalization order",
+    "5f2dbb9 fix(f4): align auditor taxonomy and repair facturacion fixture",
+    "f0b72bf PHASE4_BLOCKERS_FIXED: taxonomy/__init__.py, paris_v1.json (Pago normal), DB hash, evidence modules",
+    "a21143b feat(traceability): implement certified transaction traceability v1",
+    "12825d4 feat(phase4): marketplace-scoped classification + mojibake normalization",
+    "d15e94e fix(ingestion): restore content-addressed registry chain",
+    "c52755a fix(loader): separate ingestion from classification audit and closing",
+    "0375ead F4: preflight-only mode harness correction",
+    "a3e0804 F4: final verdict PHASE_4_GATE_SATISFIED",
+    "3a35826 F4: evidence 96/96 PASS (execution_id F4_20260719_183358)",
+    "992e10b F4: import closure for financial_engine.py"
+  ],
+  "status_sample": [
+    "M .gitignore",
+    " D 0",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7136.xml\"",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7143.xml\"",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7265.xml\"",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7276.xml\"",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7402.xml\"",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7404.xml\"",
+    " D \"01_Raw/FALABELLA/\\303\\223rdenes y Transacciones/1  abril   2026 - 30  abril   2026.xlsx\"",
+    " D \"01_Raw/FALABELLA/\\303\\223rdenes y Transacciones/1  marzo   2026 - 31  marzo   2026.xlsx\"",
+    " D \"01_Raw/FALABELLA/\\303\\223rdenes y Transacciones/1 junio 2026 al 5 junio 2026.xlsx\"",
+    " D \"01_Raw/FALABELLA/\\303\\223rdenes y Transacciones/1 mayo 2026 al 31 mayo 2026.xlsx\"",
+    " M \"01_Raw/ML/Documentos Recepcionados/dteproveedor_7317.xml\"",
+    " M \"01_Raw/ML/Documentos Recepcionados/dteproveedor_7348.xml\"",
+    " M \"01_Raw/ML/Documentos Recepcionados/dteproveedor_7349.xml\"",
+    " M \"01_Raw/ML/Documentos Recepcionados/dteproveedor_7353.xml\"",
+    " M \"01_Raw/ML/Documentos Recepcionados/dteproveedor_7355.xml\"",
+    " M \"01_Raw/ML/Documentos Recepcionados/dteproveedor_7356.xml\"",
+    " M \"01_Raw/ML/Documentos Recepcionados/dteproveedor_7361.xml\"",
+    " M \"01_Raw/ML/Documentos Recepcionados/dteproveedor_7381.xml\""
+  ],
+  "status_total": 887,
+  "critical_files": {
+    "api/api.py": {
+      "exists": true,
+      "size": 71215,
+      "sha16": "7fc8973a701cbb6f"
+    },
+    "engine/v4/domain/financial_engine.py": {
+      "exists": true,
+      "size": 57386,
+      "sha16": "aa9e5c8744888750"
+    },
+    "engine/v4/domain/ledger_engine.py": {
+      "exists": true,
+      "size": 9341,
+      "sha16": "2727307827629c24"
+    },
+    "templates/dashboard.html": {
+      "exists": true,
+      "size": 83322,
+      "sha16": "f95b598dde7a0d07"
+    },
+    "templates/executive_dashboard.html": {
+      "exists": true,
+      "size": 55291,
+      "sha16": "072a25c151cb42c2"
+    },
+    "data/db/meli_financial_v4.db": {
+      "exists": true,
+      "size": 58732544,
+      "sha16": "311c78e2b7471b3e"
+    }
+  }
+}

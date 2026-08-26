@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-26T15:46:48.749577",
+  "canonical_engines": [
+    "LedgerEngine",
+    "FinancialClassificationEngine",
+    "FinancialTruthEngine",
+    "ReconciliationEngine",
+    "ExceptionEngine",
+    "DTELedgerMatcher"
+  ],
+  "duplicate_candidates": [],
+  "frontend_financial_logic": [
+    "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\templates\\documentary_dashboard.html",
+    "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\templates\\executive_dashboard.html"
+  ],
+  "verdict": "REVIEW"
+}

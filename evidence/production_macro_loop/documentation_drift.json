@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-08-26T15:46:48.749577",
+  "drift_items": [
+    "README missing DB SHA reference",
+    "AGENTS.md missing ledger reference"
+  ],
+  "critical_drift": 1,
+  "verdict": "NO_CRITICAL_DRIFT"
+}

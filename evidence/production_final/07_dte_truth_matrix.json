@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-08-26T15:46:48.749577",
+  "matrix": {
+    "ML": {
+      "strategy": "DIRECT_MATCH",
+      "status": "CERTIFIED",
+      "folios_certified": 15,
+      "rows_linked": 86898,
+      "rows_eligible": 97609,
+      "blocked_reasons": []
+    },
+    "PARIS": {
+      "strategy": "DOCUMENT_CHAIN",
+      "status": "CERTIFIED",
+      "folios_certified": 18,
+      "rows_linked": 1915,
+      "rows_eligible": 168727,
+      "blocked_reasons": []
+    },
+    "FALABELLA": {
+      "strategy": "TRANSACTION_CHAIN",
+      "status": "CERTIFIED",
+      "folios_certified": 5,
+      "rows_linked": 113,
+      "rows_eligible": 3076,
+      "blocked_reasons": []
+    },
+    "RIPLEY": {
+      "strategy": "SETTLEMENT_CHAIN_V2",
+      "status": "BLOCKED",
+      "folios_certified": 0,
+      "rows_linked": 0,
+      "rows_eligible": 0,
+      "blocked_reasons": [
+        "chain source files (SELLER/*.xlsx, Ciclos/*.csv) absent",
+        "folio namespaces incompatible (settlement=167 vs dte_truth=407, overlap=0)"
+      ]
+    },
+    "_meta": {
+      "official_db_touched": false,
+      "read_only": true
+    }
+  },
+  "false_fiscal_certifications": 0,
+  "verdict": "PASS"
+}

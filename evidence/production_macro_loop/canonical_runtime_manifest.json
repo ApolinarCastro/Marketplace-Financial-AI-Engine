@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-08-26T15:46:48.749577",
+  "branch": "phase5/production-readiness",
+  "commit": "bab93feddb5224d5cf8457931d133118d1f97854",
+  "official_db": {
+    "path": "data/db/meli_financial_v4.db",
+    "sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "size": 58732544
+  },
+  "canonical_chain": [
+    "RAW",
+    "INGESTION/REGISTRY",
+    "CANONICAL LEDGER",
+    "FINANCIAL CLASSIFICATION ENGINE",
+    "FINANCIAL TRUTH ENGINE",
+    "RECONCILIATION ENGINE",
+    "EXCEPTION ENGINE",
+    "CERTIFICATION/TRACEABILITY",
+    "API",
+    "UI/COPILOT"
+  ],
+  "authorities": {
+    "LedgerEngine": "engine/v4/domain/ledger_engine.py",
+    "FinancialClassificationEngine": "engine/v4/domain/financial_classification_engine.py",
+    "FinancialTruthEngine": "engine/v4/domain/financial_truth_engine.py",
+    "ReconciliationEngine": "engine/v4/domain/reconciliation_engine.py",
+    "ExceptionEngine": "engine/v4/domain/exception_engine.py",
+    "DTELedgerMatcher": "engine/v4/matching/dte_ledger_matcher.py"
+  },
+  "api_entry": "api/api.py",
+  "templates": [
+    "templates/dashboard.html",
+    "templates/executive_dashboard.html",
+    "templates/copilot.html"
+  ],
+  "evidence_root": "evidence/production_macro_loop"
+}

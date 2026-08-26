@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-26T15:46:48.749577",
+  "official_db": "data/db/meli_financial_v4.db",
+  "raw_root": "01_Raw",
+  "api": "api/api.py",
+  "engine_root": "engine/v4",
+  "templates": "templates/",
+  "evidence": "evidence/",
+  "tests": "tests/"
+}
