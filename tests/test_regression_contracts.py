@@ -160,7 +160,7 @@ class TestRegresionObligatoria(unittest.TestCase):
         self._run_case('ML', '2026-12', 'Ajuste por Arrepentimiento')
 
     def test_ml_cargo_venta(self):
-        self._run_case('ML', '2026-04', 'Cargo por venta (Venta)')
+        self._run_case('ML', '2026-04', 'Cargo por venta', co_panel='Cargo por venta')
 
     def test_ripley_importe_pedido(self):
         self._run_case('RIPLEY', '2026-12', 'Importe del pedido')

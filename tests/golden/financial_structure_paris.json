@@ -8,27 +8,27 @@
           "cantidad": 1,
           "clasificacion_operativa": "Venta Bruta",
           "detalle": "Venta",
-          "monto": 19118950.0
+          "monto": 150980500.0
         },
         {
           "cantidad": 1,
           "clasificacion_operativa": "Despacho",
           "detalle": "Despacho",
-          "monto": 131630.0
+          "monto": 1184670.0
         }
       ],
       "orden": 1,
       "subcategories": [
         {
           "detalle": "Venta",
-          "total": 19118950.0
+          "total": 150980500.0
         },
         {
           "detalle": "Despacho",
-          "total": 131630.0
+          "total": 1184670.0
         }
       ],
-      "total": 19250580.0
+      "total": 152165170.0
     },
     {
       "display_name": "Devoluciones",
@@ -38,17 +38,17 @@
           "cantidad": 1,
           "clasificacion_operativa": "Devolución",
           "detalle": "Devolución",
-          "monto": -11406810.0
+          "monto": -77466710.0
         }
       ],
       "orden": 2,
       "subcategories": [
         {
           "detalle": "Devolución",
-          "total": -11406810.0
+          "total": -77466710.0
         }
       ],
-      "total": -11406810.0
+      "total": -77466710.0
     },
     {
       "display_name": "Costos Operacionales",
@@ -58,47 +58,47 @@
           "cantidad": 1,
           "clasificacion_operativa": "Cobro por despacho",
           "detalle": "Cobro por despacho",
-          "monto": -830960.0
+          "monto": -6468640.0
         },
         {
           "cantidad": 1,
           "clasificacion_operativa": "Retiro stock bodega Paris",
           "detalle": "Retiro stock bodega Paris",
-          "monto": -285000.0
+          "monto": -1140000.0
         },
         {
           "cantidad": 1,
           "clasificacion_operativa": "Cobro stock antiguo",
           "detalle": "Cobro stock antiguo",
-          "monto": -27864.0
+          "monto": -111456.0
         },
         {
           "cantidad": 1,
           "clasificacion_operativa": "Logística inversa",
           "detalle": "Logística inversa",
-          "monto": -2690.0
+          "monto": -10760.0
         }
       ],
       "orden": 4,
       "subcategories": [
         {
           "detalle": "Cobro por despacho",
-          "total": -830960.0
+          "total": -6468640.0
         },
         {
           "detalle": "Retiro stock bodega Paris",
-          "total": -285000.0
+          "total": -1140000.0
         },
         {
           "detalle": "Cobro stock antiguo",
-          "total": -27864.0
+          "total": -111456.0
         },
         {
           "detalle": "Logística inversa",
-          "total": -2690.0
+          "total": -10760.0
         }
       ],
-      "total": -1146514.0
+      "total": -7730856.0
     },
     {
       "display_name": "Costos Comerciales",
@@ -108,17 +108,17 @@
           "cantidad": 1,
           "clasificacion_operativa": "Cargo por venta (Comisión)",
           "detalle": "Cargo por venta (Comisión)",
-          "monto": -1282896.0
+          "monto": -12160879.0
         }
       ],
       "orden": 5,
       "subcategories": [
         {
           "detalle": "Cargo por venta (Comisión)",
-          "total": -1282896.0
+          "total": -12160879.0
         }
       ],
-      "total": -1282896.0
+      "total": -12160879.0
     },
     {
       "display_name": "Ajustes",
@@ -128,27 +128,27 @@
           "cantidad": 1,
           "clasificacion_operativa": "Compensación logística",
           "detalle": "Compensación logística",
-          "monto": 34833.0
+          "monto": 313497.0
         },
         {
           "cantidad": 1,
           "clasificacion_operativa": "Abono manual",
           "detalle": "Cargo",
-          "monto": -2690.0
+          "monto": -24210.0
         }
       ],
       "orden": 6,
       "subcategories": [
         {
           "detalle": "Compensación logística",
-          "total": 34833.0
+          "total": 313497.0
         },
         {
           "detalle": "Cargo",
-          "total": -2690.0
+          "total": -24210.0
         }
       ],
-      "total": 32143.0
+      "total": 289287.0
     }
   ],
   "marketplace": "PARIS",

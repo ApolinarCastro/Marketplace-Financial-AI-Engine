@@ -31,3 +31,7 @@ opencode.json
 
 # Artefactos
 graphify-out/
+
+# Loop Engineering Protocol V1 - mutable runtime control plane.
+# Spec (governance/) and schemas (engine/loop_control/) stay versioned.
+.loopx/

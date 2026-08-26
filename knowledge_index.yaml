@@ -2160,3 +2160,631 @@ knowledge:
   summary: de Escalabilidad:** SUBLINEAR (El sistema escala adecuadamente sin cuellos
     de botella exponenciales).
   status: CERTIFIED
+- id: F5_05_RECOVERY_ROLLBACK_CERT
+  type: governance
+  title: F5_05_RECOVERY_ROLLBACK_CERT
+  summary: El sistema presenta una arquitectura transaccional e idempotente que protege
+    la informacion de fallas en ejecucion. No existen registros huerfanos ni corrupciones
+    de persistencia.
+  status: CERTIFIED
+- id: CAP_F5_05_FIX
+  type: governance
+  title: CAP_F5_05_FIX
+  summary: '- Cero modificaciones a l�gica financiera o c�lculos.'
+  status: ACTIVE
+- id: CAP_F5_05_ROOT_CAUSE
+  type: governance
+  title: CAP_F5_05_ROOT_CAUSE
+  summary: aron en FALLA durante el proceso de Recovery.
+  status: ACTIVE
+- id: CAP_F5_05_VALIDATION
+  type: governance
+  title: CAP_F5_05_VALIDATION
+  summary: ADOS OBTENIDOS
+  status: ACTIVE
+- id: ADR_002_COMMERCIAL_DATASET_DEF
+  type: governance
+  title: ADR_002_COMMERCIAL_DATASET_DEFINITION
+  summary: ado financiero certificado.
+  status: CERTIFIED
+- id: DOC-AUDIT_SCOPE_RECTIFICATION_2026
+  type: governance
+  title: AUDIT_SCOPE_RECTIFICATION_20260724
+  summary: ado PASS de F5-06 en su alcance probado sin invalidarlo, aclarando que
+    no equivale a certificación integral de ciberseguridad.
+  status: CERTIFIED
+- id: DOC-AUDITORIA_QUIRURGICA_MFE_V1_20
+  type: governance
+  title: auditoria_quirurgica_mfe_v1_20260724
+  summary: ado **136/136 PASS** significa que el 100% de los tests ejecutados pasó.
+    **No significa que el 100% del sistema esté cubierto.**
+  status: CERTIFIED
+- id: DATA_COVERAGE_FINAL
+  type: governance
+  title: DATA_COVERAGE_FINAL
+  summary: '**Fecha de Evaluación:** 2026-07-24'
+  status: ACTIVE
+- id: EXECUTIVE_CLOSURE_STATEMENT
+  type: governance
+  title: EXECUTIVE_CLOSURE_STATEMENT
+  summary: '# Marketplace Financial AI Engine v1.0'
+  status: ACTIVE
+- id: F5_07_EXECUTIVE_ACCEPTANCE
+  type: governance
+  title: F5_07_EXECUTIVE_ACCEPTANCE
+  summary: '# F5-07 — EXECUTIVE ACCEPTANCE CERTIFICATION'
+  status: ACTIVE
+- id: DOC-F5_07A_DATA_COVERAGE_REPORT
+  type: governance
+  title: F5_07A_DATA_COVERAGE_REPORT
+  summary: '# F5-07A — EXECUTIVE DATA COVERAGE CERTIFICATION'
+  status: ACTIVE
+- id: FINAL_ARCHITECTURE_SIGN_OFF
+  type: governance
+  title: FINAL_ARCHITECTURE_SIGN_OFF
+  summary: ado financiero;
+  status: CERTIFIED
+- id: GO_LIVE_READINESS
+  type: governance
+  title: GO_LIVE_READINESS
+  summary: '**Estado del Bloqueo:** DESBLOQUEADO (GO-LIVE AUTHORIZED)'
+  status: ACTIVE
+- id: DOC-INITIAL_DATA_MIGRATION_REPORT
+  type: governance
+  title: INITIAL_DATA_MIGRATION_REPORT
+  summary: '# INITIAL DATA MIGRATION REPORT'
+  status: ACTIVE
+- id: PENDING_MIGRATION_MATRIX
+  type: governance
+  title: PENDING_MIGRATION_MATRIX
+  summary: '**Proyecto:** Marketplace Financial AI Engine'
+  status: ACTIVE
+- id: DOC-PRODUCTION_DATA_CERTIFICATION
+  type: governance
+  title: PRODUCTION_DATA_CERTIFICATION
+  summary: '# PRODUCTION DATA CERTIFICATION'
+  status: ACTIVE
+- id: ROOT_CAUSE_MATRIX
+  type: governance
+  title: ROOT_CAUSE_MATRIX
+  summary: '**Proyecto:** Marketplace Financial AI Engine'
+  status: ACTIVE
+- id: SURGICAL_FRONTEND_DTE_STATUS_F
+  type: governance
+  title: SURGICAL_FRONTEND_DTE_STATUS_FIX
+  summary: ado Esperado
+  status: ACTIVE
+- id: ARCHITECTURE_REGISTRY_V1
+  type: governance
+  title: REGISTRO MAESTRO DE ARQUITECTURA DEL SISTEMA V1
+  summary: ado Neto, verificar paridad $0 delta.
+  status: ACTIVE
+- id: BASELINE_POST_SURGICAL_FIX
+  type: governance
+  title: LÍNEA BASE Y CONGELAMIENTO POST FIX QUIRÚRGICO
+  summary: 'ado Neto oficial: Paris $0 delta, Ripley $0 delta, Falabella $12K delta
+    controlado).'
+  status: ACTIVE
+- id: CAPABILITY_REGISTRY_V1
+  type: governance
+  title: REGISTRO MAESTRO DE CAPACIDADES DEL SISTEMA V1
+  summary: ado Neto)
+  status: ACTIVE
+- id: DATA_CONTRACT_REGISTRY_V1
+  type: governance
+  title: REGISTRO MAESTRO DE CONTRATOS DE DATOS V1
+  summary: ado_neto`.
+  status: ACTIVE
+- id: DATA_LINEAGE_REGISTRY_V1
+  type: governance
+  title: REGISTRO MAESTRO DE LINEAJE DE DATOS (DATA LINEAGE) V1
+  summary: ado Neto mensual.
+  status: ACTIVE
+- id: DECISION_REGISTRY_V1
+  type: governance
+  title: REGISTRO MAESTRO DE DECISIONES DE ARQUITECTURA (ADR) V1
+  summary: 'owner: Chief Architect & Lead Data Engineer'
+  status: ACTIVE
+- id: DUAL_GRAPH_ARCHITECTURE_MODEL_
+  type: governance
+  title: MODELO DE ARQUITECTURA DE GRAFOS DUALES V1
+  summary: ado` (`PASS`), `fecha_certificacion`.
+  status: ACTIVE
+- id: END_TO_END_RECONCILIATION_ROAD
+  type: governance
+  title: HOJA DE RUTA OFICIAL DE CONCILIACIÓN INTEGRAL Y COPILOT V1
+  summary: ado Neto con paridad $0 delta.
+  status: ACTIVE
+- id: EVIDENCE_REGISTRY_V1
+  type: governance
+  title: REGISTRO MAESTRO DE EVIDENCIA Y TRAZABILIDAD PROBATORIA V1
+  summary: ADO_EJECUCIÓN | RESUMEN_JSON | CSV | MARKDOWN | CAPTURA_VISUAL | BASE_DATOS
+    | HASH | CONTRATO_DATOS | CERTIFICACIÓN | RAW | XML_DTE | REGISTRO_SAP | LIQUIDACIÓN
+    | PAGO | CARTOLA_BANCARIA | LEDGER]
+  status: ACTIVE
+- id: EXTERNAL_REFERENCE_ADOPTION_MA
+  type: governance
+  title: MATRIZ DE ADOPCIÓN DE REFERENCIAS Y EXPERIENCIAS EXTERNAS V2
+  summary: 'id: EXTERNAL_REFERENCE_ADOPTION_MATRIX_V2'
+  status: ACTIVE
+- id: FINANCIAL_COPILOT_QUESTION_REG
+  type: governance
+  title: REGISTRO MAESTRO DE PREGUNTAS ESTRATÉGICAS DEL FINANCIAL COPILOT V1
+  summary: ADO_NETO_LIQUIDADO`
+  status: ACTIVE
+- id: KNOWLEDGE_CANONICAL_REGISTRY_V
+  type: governance
+  title: REGISTRO CANÓNICO DE CONOCIMIENTO FINANCIERO Y TÉCNICO V1
+  summary: ado Neto (Disponible Liquidado)
+  status: ACTIVE
+- id: KNOWLEDGE_OS_SPECIFICATION
+  type: governance
+  title: ESPECIFICACIÓN MAESTRA DE KNOWLEDGEOS Y PIPELINE DE CONOCIMIENTO V1
+  summary: 'owner: Knowledge Engineer & Chief Architect'
+  status: ACTIVE
+- id: MATURITY_REGISTRY_V1
+  type: governance
+  title: REGISTRO MAESTRO DE NIVELES DE MADUREZ V1
+  summary: ado Neto | **Nivel 4 (Certificado)** | Paris/Ripley $0 delta, Falabella
+    $12K delta | Nivel 5 en Fase 6 |
+  status: ACTIVE
+- id: PMO_REGISTRY_V1
+  type: governance
+  title: REGISTRO MAESTRO DE PMO Y CONTROL AUDITABLE V1
+  summary: 'owner: TUKE Master Governance PMO'
+  status: ACTIVE
+- id: SURGICAL_FIX_REGISTRY
+  type: governance
+  title: REGISTRO MAESTRO DE FIXES QUIRÚRGICOS POST-F5-08
+  summary: 'owner: Lead QA & Frontend Engineer'
+  status: ACTIVE
+- id: SYSTEM_INTELLIGENCE_SPECIFICAT
+  type: governance
+  title: ESPECIFICACIÓN MAESTRA DE LA CAPA SYSTEM INTELLIGENCE V1
+  summary: ado verificado por tests sin certificación final | Pruebas PASS, evidencia
+    parcial |
+  status: ACTIVE
+- id: TECHNICAL_DEBT_REGISTRY_V1
+  type: governance
+  title: REGISTRO MAESTRO DE DEUDA TÉCNICA V1
+  summary: 'owner: Chief Architect & QA Lead'
+  status: ACTIVE
+- id: PROJECT_CURRENT_STATE_REGISTRY
+  type: governance
+  title: REGISTRO DEL ESTADO ACTUAL DEL PROYECTO V1
+  summary: 'id: PROJECT_CURRENT_STATE_REGISTRY_V1'
+  status: ACTIVE
+- id: RAW_DATA_CONTRACT_V1
+  type: governance
+  title: CONTRATO CANÓNICO DE DATOS RAW V1
+  summary: 'owner: Data Architect & Raw Storage Guardian'
+  status: ACTIVE
+- id: RAW_OFFICIAL_SPECIFICATION_V1
+  type: governance
+  title: ESPECIFICACIÓN OFICIAL DE LA CAPA RAW V1
+  summary: 'id: RAW_OFFICIAL_SPECIFICATION_V1'
+  status: ACTIVE
+- id: UI_ARCHITECTURE_MASTERPLAN
+  type: governance
+  title: UI / UX ARCHITECTURE MASTERPLAN V1
+  summary: 'id: UI_ARCHITECTURE_MASTERPLAN_V1'
+  status: ACTIVE
+- id: UI_COMPONENT_REGISTRY
+  type: governance
+  title: REGISTRO CANÓNICO DE COMPONENTES UI V1
+  summary: 'owner: UX/UI Lead & Frontend Architect'
+  status: ACTIVE
+- id: DOC-XML_CERTIFICATION_STATUS
+  type: governance
+  title: ESTADO DE CERTIFICACIÓN DE DOCUMENTOS TRIBUTARIOS XML / DTE V1
+  summary: 'id: XML_CERTIFICATION_STATUS_V1'
+  status: ACTIVE
+- id: ADR_KNOWLEDGEOS_AS_SYSTEM_BRAI
+  type: governance
+  title: 'DECISIÓN DE ARQUITECTURA: KNOWLEDGEOS COMO CEREBRO Y MEMORIA OPERATIVA V1'
+  summary: FUNCTIONAL_E2E_CERTIFIED
+  status: CERTIFIED
+- id: ACTA_CIERRE_KNOWLEDGEOS_SYSTEM
+  type: governance
+  title: ACTA OFICIAL DE CIERRE Y CERTIFICACIÓN — KNOWLEDGEOS SYSTEM BRAIN V1
+  summary: FUNCTIONAL_E2E_CERTIFIED
+  status: CERTIFIED
+- id: ACTA_MAESTRA_KNOWLEDGEOS_SYSTE
+  type: governance
+  title: ACTA MAESTRA DE CIERRE, CERTIFICACIÓN Y BLOQUEO OPERATIVO — KNOWLEDGEOS SYSTEM
+    BRAIN V1
+  summary: FUNCTIONAL_E2E_CERTIFIED
+  status: CERTIFIED
+- id: API_CONTRACT_VALIDATION
+  type: governance
+  title: API_CONTRACT_VALIDATION
+  summary: ados vacíos. Ahora evalúa correctamente `ALL` y omite el filtro de marketplace,
+    retornando la información consolidada.
+  status: ACTIVE
+- id: DOC-API_REGRESSION_REPORT
+  type: governance
+  title: API_REGRESSION_REPORT
+  summary: '# API REGRESSION REPORT (P32.2)'
+  status: ACTIVE
+- id: ARCHITECTURE_REVIEW
+  type: governance
+  title: ARCHITECTURE_REVIEW
+  summary: '> The architecture has good conceptual bones (Single Financial Truth,
+    certification gate, reconciliation engine, signal/noise taxonomy) but the implementation
+    is **2-3 layers deep** in documentation d'
+  status: ACTIVE
+- id: BACKLOG
+  type: governance
+  title: BACKLOG
+  summary: '## Persistencia de capa_origen en BD'
+  status: ACTIVE
+- id: COMMERCIAL_READINESS
+  type: governance
+  title: COMMERCIAL_READINESS
+  summary: .md would be first external doc |
+  status: ACTIVE
+- id: COMPETITIVE_ANALYSIS
+  type: governance
+  title: COMPETITIVE_ANALYSIS
+  summary: '> MF AI Engine has a defensible niche (DTE + multi-MP reconciliation)
+    but is **not yet competitive** due to deployment and completeness gaps. The window
+    of opportunity is real — Chilean multi-MP selle'
+  status: ACTIVE
+- id: DATABASE_REGISTRY
+  type: governance
+  title: DATABASE_REGISTRY
+  summary: '| Nombre | Uso | Estado | Último uso | Responsable | Destino |'
+  status: ACTIVE
+- id: DOC-ELECTRONIC_CERTIFICATION_RECOV
+  type: governance
+  title: ELECTRONIC_CERTIFICATION_RECOVERY
+  summary: '# ELECTRONIC CERTIFICATION RECOVERY'
+  status: ACTIVE
+- id: EVIDENCE_MATRIX
+  type: governance
+  title: EVIDENCE_MATRIX
+  summary: ado** | 402,089 rows, $3,381,794,665.45 |
+  status: ACTIVE
+- id: EXECUTION_BOARD
+  type: governance
+  title: execution_board
+  summary: '| Blocking Issue | Next Gate |'
+  status: ACTIVE
+- id: EXECUTIVE_ASSESSMENT
+  type: governance
+  title: EXECUTIVE_ASSESSMENT
+  summary: '**: Not investment-ready. Foundation exists. Execution gap between documentation
+    and reality is significant.'
+  status: ACTIVE
+- id: EXECUTIVE_VERDICT
+  type: governance
+  title: EXECUTIVE_VERDICT
+  summary: '**Marketplace Financial AI Engine**'
+  status: ACTIVE
+- id: DOC-FETCH_DUPLICATION_REPORT
+  type: governance
+  title: FETCH_DUPLICATION_REPORT
+  summary: ado Final
+  status: ACTIVE
+- id: DOC-FINAL_API_STABILITY_CERTIFICAT
+  type: governance
+  title: FINAL_API_STABILITY_CERTIFICATION
+  summary: '# FINAL API STABILITY CERTIFICATION (P32.2)'
+  status: ACTIVE
+- id: DOC-FINAL_FINANCIAL_CONSISTENCY_CE
+  type: governance
+  title: FINAL_FINANCIAL_CONSISTENCY_CERTIFICATION
+  summary: '# FINAL FINANCIAL CONSISTENCY CERTIFICATION (P32.2R2)'
+  status: ACTIVE
+- id: DOC-FINAL_FRONTEND_PERFORMANCE_CER
+  type: governance
+  title: FINAL_FRONTEND_PERFORMANCE_CERTIFICATION
+  summary: '# FINAL FRONTEND PERFORMANCE CERTIFICATION (P32.2R1)'
+  status: ACTIVE
+- id: DOC-FINAL_STABILITY_CERTIFICATION
+  type: governance
+  title: FINAL_STABILITY_CERTIFICATION
+  summary: '# FINAL STABILITY CERTIFICATION'
+  status: CERTIFIED
+- id: FINAL_VERDICT
+  type: governance
+  title: 1. ¿Qué debe conservarse?
+  summary: '## 1. ¿Qué debe conservarse?'
+  status: ACTIVE
+- id: FRONTEND_BASELINE
+  type: governance
+  title: FRONTEND_BASELINE
+  summary: '| Componente | Archivo | Commit Base | Fecha / Hash | Estado |'
+  status: CERTIFIED
+- id: FRONTEND_CALL_GRAPH_AFTER
+  type: governance
+  title: FRONTEND_CALL_GRAPH_AFTER
+  summary: '## INVENTARIO ACTUALIZADO DE FUNCIONES DE CARGA Y ORQUESTACI�N'
+  status: ACTIVE
+- id: FRONTEND_CALL_GRAPH_BEFORE
+  type: governance
+  title: FRONTEND_CALL_GRAPH_BEFORE
+  summary: '## INVENTARIO ACTUAL DE FUNCIONES DE CARGA Y ORQUESTACI�N'
+  status: ACTIVE
+- id: DOC-FRONTEND_CONCURRENCY_AUDIT
+  type: governance
+  title: FRONTEND_CONCURRENCY_AUDIT
+  summary: ado:** El Network panel demuestra exactamente 1 request a /api/v4/financial-structure.
+    Anteriormente eran 2 o m�s.
+  status: ACTIVE
+- id: DOC-FRONTEND_DIFF_REPORT
+  type: governance
+  title: FRONTEND_DIFF_REPORT
+  summary: '### Comparación (BASELINE `0f71cc4` vs ACTUAL)'
+  status: ACTIVE
+- id: DOC-FRONTEND_FINAL_CERTIFICATION
+  type: governance
+  title: FRONTEND_FINAL_CERTIFICATION
+  summary: La correcci�n quir�rgica implementada abord� exitosamente todos los vectores
+    de falla expuestos en la fase 4E-R6, consolidando la orquestaci�n as�ncrona a
+    trav�s de Promises, Mutexes, y Timeout Contro
+  status: CERTIFIED
+- id: FRONTEND_PERFORMANCE_TRACE
+  type: governance
+  title: FRONTEND_PERFORMANCE_TRACE
+  summary: '## M�TRICAS DE INSTRUMENTACI�N (Instrumentado en Console.time)'
+  status: ACTIVE
+- id: DOC-FRONTEND_RECOVERY_REPORT
+  type: governance
+  title: FRONTEND_RECOVERY_REPORT
+  summary: '- **Identificación**: A través del análisis del árbol git, se ubicó la
+    etiqueta `0f71cc4` (CERTIFIED_BASELINE_V1) como la última versión funcional estable.'
+  status: CERTIFIED
+- id: DOC-FRONTEND_REGRESSION_REPORT
+  type: governance
+  title: FRONTEND_REGRESSION_REPORT
+  summary: ado | Observaciones |
+  status: ACTIVE
+- id: FRONTEND_REGRESSION_ROOT_CAUSE
+  type: governance
+  title: FRONTEND_REGRESSION_ROOT_CAUSE
+  summary: ado, **todo el c�digo Javascript del dashboard fue ignorado**, impidiendo
+    la inicializaci�n.
+  status: ACTIVE
+- id: FRONTEND_STATE_TRACE
+  type: governance
+  title: FRONTEND_STATE_TRACE
+  summary: '# FRONTEND STATE TRACE (P32.1 - Paso 1)'
+  status: ACTIVE
+- id: INFORME_P27_RESUMEN_EJECUTIVO
+  type: governance
+  title: INFORME_P27_RESUMEN_EJECUTIVO
+  summary: .md** | Veredicto final | **3.7/10 — NO listo para inversión** |
+  status: ACTIVE
+- id: DOC-LEDGER_CONSISTENCY_AUDIT
+  type: governance
+  title: LEDGER_CONSISTENCY_AUDIT
+  summary: 'ados de la Sumatoria Neta:'
+  status: ACTIVE
+- id: MASTER_KNOWLEDGE_INDEX
+  type: governance
+  title: MASTER_KNOWLEDGE_INDEX
+  summary: MASTER_KNOWLEDGE_INDEX
+  status: ACTIVE
+- id: P0_P3_FINDINGS
+  type: governance
+  title: P0_P3_FINDINGS
+  summary: ado_neto como source of truth. |
+  status: ACTIVE
+- id: P32R4_API_TRACE
+  type: governance
+  title: P32R4_API_TRACE
+  summary: '| Component | Before (Regresion) | After (Fix) | Source Engine |'
+  status: ACTIVE
+- id: P32R4_DOCUMENT_TRACE
+  type: governance
+  title: P32R4_DOCUMENT_TRACE
+  summary: '| Component | Before (Regresion) | After (Fix) | Source Engine |'
+  status: ACTIVE
+- id: DOC-P32R4_FINAL_CERTIFICATION
+  type: governance
+  title: P32R4_FINAL_CERTIFICATION
+  summary: '# P32R4 FINAL CERTIFICATION: QUIRURGICAL STABILIZATION'
+  status: ACTIVE
+- id: P32R4_FRONTEND_TRACE
+  type: governance
+  title: P32R4_FRONTEND_TRACE
+  summary: '| UI Component | Before (Regresion) | After (Fix) |'
+  status: ACTIVE
+- id: P32R4_XML_TRACE
+  type: governance
+  title: P32R4_XML_TRACE
+  summary: '| Component | Before (Regresion) | After (Fix) | Evidence / Pipeline |'
+  status: ACTIVE
+- id: P32R5_ENDPOINT_TRACE
+  type: governance
+  title: P32R5_ENDPOINT_TRACE
+  summary: '### 1. `/api/v4/documentary/coverage`'
+  status: ACTIVE
+- id: DOC-P32R5_FINAL_CERTIFICATION
+  type: governance
+  title: P32R5_FINAL_CERTIFICATION
+  summary: '1. **Single Financial Truth**: Mantenida sin alteraciones (no se creó
+    persistencia paralela ni columnas extrañas en `marketplace_ledger_v1`).'
+  status: ACTIVE
+- id: P32R5_PERIOD_PROPAGATION
+  type: governance
+  title: P32R5_PERIOD_PROPAGATION
+  summary: Se ha centralizado la resolución de periodos en `engine/v4/period_utils.py`
+    mediante la función `_resolve_period_range`.
+  status: ACTIVE
+- id: P32R5_PERIOD_VALIDATION
+  type: governance
+  title: P32R5_PERIOD_VALIDATION
+  summary: ados de la Verificación
+  status: ACTIVE
+- id: P32R5_SQL_LOG
+  type: governance
+  title: P32R5_SQL_LOG
+  summary: Se ha implementado la Directiva 4 utilizando el módulo `logging` de Python
+    en `engine/v4/period_utils.py` (`log_sql_audit`).
+  status: ACTIVE
+- id: P32R7_BACKEND_HEALTH
+  type: governance
+  title: P32R7_BACKEND_HEALTH
+  summary: '## Métricas de Salud del Backend (FastAPI)'
+  status: ACTIVE
+- id: P32R7_CONTRACT_MATRIX
+  type: governance
+  title: P32R7_CONTRACT_MATRIX
+  summary: '## Matriz de Contratos End-to-End'
+  status: ACTIVE
+- id: DOC-P32R7_FINAL_HEALTH_CERTIFICATI
+  type: governance
+  title: P32R7_FINAL_HEALTH_CERTIFICATION
+  summary: '# P32R7 FINAL HEALTH CERTIFICATION'
+  status: ACTIVE
+- id: P32R7_FRONTEND_HEALTH
+  type: governance
+  title: P32R7_FRONTEND_HEALTH
+  summary: '## Métricas de Salud del Frontend'
+  status: ACTIVE
+- id: P32R7_REGRESSION_MATRIX
+  type: governance
+  title: P32R7_REGRESSION_MATRIX
+  summary: '| Componente | Funcionalidad | Estado Actual | Evidencia |'
+  status: ACTIVE
+- id: DOC-P32R7_SINGLE_SOURCE_AUDIT
+  type: governance
+  title: P32R7_SINGLE_SOURCE_AUDIT
+  summary: '# P32R7 SINGLE FINANCIAL TRUTH AUDIT'
+  status: ACTIVE
+- id: DOC-P32R7_TRACEABILITY_AUDIT
+  type: governance
+  title: P32R7_TRACEABILITY_AUDIT
+  summary: ado:** Se mantiene la trazabilidad inquebrantable en cada salto de la cadena.
+  status: ACTIVE
+- id: P32R7_TRACEABILITY_CONSUMPTION
+  type: governance
+  title: P32R7_TRACEABILITY_CONSUMPTION
+  summary: '# P32R7 TRACEABILITY CONSUMPTION'
+  status: ACTIVE
+- id: P32R8_BACKEND_HEALTH
+  type: governance
+  title: P32R8_BACKEND_HEALTH
+  summary: '- consumo CPU: 2-5% (picos de 18% en /ledger)'
+  status: ACTIVE
+- id: P32R8_CONTRACTS
+  type: governance
+  title: P32R8_CONTRACTS
+  summary: '## Validación de Endpoints vs Pydantic & JSON Real'
+  status: ACTIVE
+- id: P32R8_FINAL_VERDICT
+  type: governance
+  title: P32R8_FINAL_VERDICT
+  summary: ¿El sistema presenta degradación?
+  status: ACTIVE
+- id: P32R8_QUERY_TRACE
+  type: governance
+  title: P32R8_QUERY_TRACE
+  summary: '## Endpoint: /api/v4/exec/summary'
+  status: ACTIVE
+- id: P32R8_SINGLE_SOURCE
+  type: governance
+  title: P32R8_SINGLE_SOURCE
+  summary: ¿Existe algún cálculo financiero fuera de los Engines?
+  status: ACTIVE
+- id: P32R8_STRESS_TEST
+  type: governance
+  title: P32R8_STRESS_TEST
+  summary: ados de Iteraciones (n=100)
+  status: ACTIVE
+- id: P32R8_TRACEABILITY
+  type: governance
+  title: P32R8_TRACEABILITY
+  summary: P32R8_TRACEABILITY
+  status: ACTIVE
+- id: PLATFORM_MATURITY_SCORECARD
+  type: governance
+  title: PLATFORM_MATURITY_SCORECARD
+  summary: by Layer
+  status: ACTIVE
+- id: PLATFORM_SCORECARD
+  type: governance
+  title: PLATFORM_SCORECARD
+  summary: ado | 40% | 100 | DuckDB es determinista. Sin estado mutable. |
+  status: ACTIVE
+- id: PRODUCT_READINESS
+  type: governance
+  title: PRODUCT_READINESS
+  summary: '> **NOT PRODUCTION-READY.** The product has genuine strengths (financial
+    reconciliation accuracy, governance documentation, taxonomy design) but the infrastructure,
+    automation, deployment, and securit'
+  status: ACTIVE
+- id: REGISTRO_FINAL_GOBERNANZA_FISC
+  type: governance
+  title: REGISTRO FINAL DE GOBERNANZA FISCALIZADA — KNOWLEDGEOS SYSTEM BRAIN V1
+  summary: FUNCTIONAL_E2E_CERTIFIED
+  status: CERTIFIED
+- id: REGRESSION_ROOT_CAUSE
+  type: governance
+  title: REGRESSION_ROOT_CAUSE
+  summary: ando en `undefined` errors que detenían la ejecución de JavaScript de renderización
+    (Skeletons/Loading Infinito).
+  status: CERTIFIED
+- id: DOC-REPOSITORY_CERTIFICATION
+  type: governance
+  title: ESTADO
+  summary: ADOS DE FASES
+  status: CERTIFIED
+- id: DOC-REPOSITORY_SIZE_AUDIT
+  type: governance
+  title: REPOSITORY_SIZE_AUDIT
+  summary: '# AUDITORÍA DE TAMAÑO Y SANEAMIENTO DEL REPOSITORIO V1'
+  status: CERTIFIED
+- id: ROADMAP_POST_GOVERNANCE_V1
+  type: governance
+  title: ROADMAP OFICIAL DE EJECUCIÓN — FASE POST CONSOLIDACIÓN
+  summary: 'objetivo: Reanudar el desarrollo del Marketplace Financial AI Engine sobre
+    código, evidencia y funcionalidades reales.'
+  status: ACTIVE
+- id: DOC-SNAPSHOTS_GOVERNANCE_AUDIT
+  type: governance
+  title: SNAPSHOTS_GOVERNANCE_AUDIT
+  summary: '# AUDITORÍA DE GOBERNANZA DE SNAPSHOTS Y BASES DE DATOS V1'
+  status: CERTIFIED
+- id: SYSTEM_HEALTH
+  type: governance
+  title: 1. Core Productivo
+  summary: 'Fecha de auditoría: `2026-07-09`'
+  status: ACTIVE
+- id: DOC-TECHNICAL_CERTIFICATION
+  type: governance
+  title: TECHNICAL_CERTIFICATION
+  summary: ado ✅ (DuckDB no tiene estado volátil)
+  status: ACTIVE
+- id: TECHNICAL_DEBT_MATRIX
+  type: governance
+  title: TECHNICAL_DEBT_MATRIX
+  summary: s files committed to repo root. |
+  status: ACTIVE
+- id: TECHNICAL_FINDINGS
+  type: governance
+  title: P0
+  summary: '### P0-1. Template activo con endpoint inexistente'
+  status: ACTIVE
+- id: TOP_50_RECOMMENDATIONS
+  type: governance
+  title: TOP_50_RECOMMENDATIONS
+  summary: '# P27 Top 50 Recommendations — Marketplace Financial AI Engine'
+  status: ACTIVE
+- id: DOC-XML_CERTIFICATION_TRACE
+  type: governance
+  title: XML_CERTIFICATION_TRACE
+  summary: 'ado**:'
+  status: ACTIVE
+- id: LOOP_ENGINEERING_PROTOCOL_V1
+  type: governance
+  title: LOOP_ENGINEERING_PROTOCOL_V1
+  summary: '`VALIDATED_PROGRESS`, `VALIDATED_COMPLETION`, `REPAIR_REQUIRED`, `REPLAN_REQUIRED`,'
+  status: CERTIFIED
+- id: UNIVERSAL_LOOP_ENGINEERING_PRO
+  type: governance
+  title: UNIVERSAL_LOOP_ENGINEERING_PROTOCOL_V1
+  summary: '`VALIDATED_PROGRESS`, `VALIDATED_COMPLETION`, `REPAIR_REQUIRED`, `REPLAN_REQUIRED`,'
+  status: CERTIFIED

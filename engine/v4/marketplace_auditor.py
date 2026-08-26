@@ -418,6 +418,12 @@ class MarketplaceAuditorEngine:
     def __init__(self, db=None):
         self.db = db if db is not None else DatabaseV4.get()
 
+    def run_classification_for_transaction(self, transaction_id):
+        self.db.execute("DELETE FROM marketplace_ledger_clasificado_v1 WHERE id_transaccion = ?", [transaction_id])
+        source = self.db.query("SELECT marketplace, id_transaccion, id_orden, detalle, tipo_movimiento, monto, fecha FROM marketplace_ledger_v1 WHERE id_transaccion = ?", [transaction_id])
+        if source.empty: return 0
+        return self._classify_dataframe(source)
+
     def run_classification(self, marketplace=None):
         if marketplace:
             logger.info(f"Iniciando clasificación v4.0 para marketplace={marketplace}")
@@ -429,6 +435,9 @@ class MarketplaceAuditorEngine:
             source = self.db.query("SELECT marketplace, id_transaccion, id_orden, detalle, tipo_movimiento, monto, fecha FROM marketplace_ledger_v1")
         
         if source.empty: return 0
+        return self._classify_dataframe(source)
+
+    def _classify_dataframe(self, source):
 
         # Vectorized classification for high performance
 

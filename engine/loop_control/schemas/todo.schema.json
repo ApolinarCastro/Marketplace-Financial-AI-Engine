@@ -1,0 +1,43 @@
+{
+  "$schema": "loop-control/v1",
+  "title": "Todo",
+  "type": "object",
+  "required": [
+    "todo_id",
+    "goal_id",
+    "description",
+    "priority",
+    "status",
+    "claimed_by",
+    "write_scope",
+    "dependencies",
+    "validation",
+    "evidence_required"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "todo_id": { "type": "string", "pattern": "^[A-Z0-9_\\-]{3,64}$" },
+    "goal_id": { "type": "string", "pattern": "^[A-Z0-9_\\-]{3,64}$" },
+    "description": { "type": "string", "minLength": 1 },
+    "priority": { "type": "integer", "minimum": 0 },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "CLAIMED",
+        "RUNNING",
+        "VALIDATING",
+        "COMPLETED",
+        "BLOCKED",
+        "FAILED"
+      ]
+    },
+    "claimed_by": { "type": ["string", "null"] },
+    "write_scope": { "type": "array", "items": { "type": "string" } },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "validation": { "type": "array", "items": { "type": "string" } },
+    "evidence_required": { "type": "boolean" },
+    "revision": { "type": "integer", "minimum": 0 },
+    "updated_at": { "type": ["string", "null"] }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "loop-control/v1",
+  "title": "Gate",
+  "type": "object",
+  "required": [
+    "gate_id",
+    "goal_id",
+    "type",
+    "reason",
+    "required_authority",
+    "status",
+    "created_at",
+    "resolved_at"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "gate_id": { "type": "string", "minLength": 3 },
+    "goal_id": { "type": "string", "pattern": "^[A-Z0-9_\\-]{3,64}$" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "PROTECTED_RESOURCE",
+        "SCOPE_EXPANSION",
+        "DESTRUCTIVE_GIT",
+        "PRODUCTION_PUBLISH",
+        "QUOTA_RESET"
+      ]
+    },
+    "reason": { "type": "string", "minLength": 10 },
+    "question": { "type": ["string", "null"] },
+    "required_authority": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["OPEN", "APPROVED", "REJECTED"] },
+    "created_at": { "type": "string", "minLength": 20 },
+    "resolved_at": { "type": ["string", "null"] },
+    "resolved_by": { "type": ["string", "null"] },
+    "requested_by": { "type": ["string", "null"] },
+    "target": { "type": ["string", "null"] }
+  }
+}

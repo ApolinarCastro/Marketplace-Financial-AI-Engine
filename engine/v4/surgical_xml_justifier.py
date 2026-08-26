@@ -1,3 +1,4 @@
+import os
 import re
 from pathlib import Path
 import logging
@@ -7,7 +8,7 @@ from engine.v4.database import DatabaseV4
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("surgical.xml")
 
-ROOT = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine")
+ROOT = Path(os.environ.get("MF_PROJECT_ROOT", Path(__file__).parent.parent.parent))
 
 class XMLJustifier:
     def __init__(self, marketplace='ML'):

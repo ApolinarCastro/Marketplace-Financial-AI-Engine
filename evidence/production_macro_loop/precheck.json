@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-26T15:43:06.418582",
+  "branch": "phase5/production-readiness",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_expected": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_match": true,
+  "db_size": 58732544,
+  "raw_count": 1313,
+  "raw_dirs": [
+    "01_Raw\\FALABELLA",
+    "01_Raw\\ML",
+    "01_Raw\\PARIS",
+    "01_Raw\\RIPLEY",
+    "01_Raw\\SHOPIFY"
+  ],
+  "git_status_lines": 887,
+  "git_status_breakdown": {
+    "M": 93,
+    "D": 500,
+    "untracked": 294
+  },
+  "evidence_json_count": 396,
+  "recent_log": [
+    "2d51f52 F5-05: Add idempotency regression tests for recovery mechanism",
+    "0e3b30f CAP-F5-05: Surgical Corrective Action - Recovery Idempotency Fix",
+    "0e70421 F5-05: Recovery & Rollback Certification (FAIL)",
+    "b7828f7 F5-04: Performance & Scalability Certification",
+    "3b39765 Update official DB hash after F5-03 cleanup",
+    "d378a7f F5-03: Operational Reliability Certification (Idempotency, Duplicate Prevention, Ledger/Registry Recovery)",
+    "2a31a68 Merge branch 'integration/baseline-v8' into master",
+    "38cf422 Merge certified baseline V8 7a943600 (125/125 PASS)",
+    "7a94360 fix(certification): reproducible phase4 environment",
+    "bfbe4d4 fix(f4): correct mojibake normalization order"
+  ]
+}

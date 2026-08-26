@@ -1,0 +1,27 @@
+{
+  "$schema": "loop-control/v1",
+  "title": "EvidenceRecord",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "goal_id",
+    "todo_id",
+    "type",
+    "path",
+    "sha256",
+    "created_at",
+    "validation_status"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "evidence_id": { "type": "string", "minLength": 3 },
+    "goal_id": { "type": "string", "pattern": "^[A-Z0-9_\\-]{3,64}$" },
+    "todo_id": { "type": ["string", "null"] },
+    "turn_id": { "type": ["string", "null"] },
+    "type": { "type": "string", "minLength": 2 },
+    "path": { "type": "string", "minLength": 1 },
+    "sha256": { "type": ["string", "null"] },
+    "created_at": { "type": "string", "minLength": 20 },
+    "validation_status": { "type": "string", "enum": ["PASS", "FAIL", "UNVERIFIED"] }
+  }
+}

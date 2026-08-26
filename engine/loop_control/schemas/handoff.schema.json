@@ -1,0 +1,38 @@
+{
+  "$schema": "loop-control/v1",
+  "title": "ContinuationRecord",
+  "description": "Cross-agent continuation record. Deliberately avoids the JSON keys 'handoff', 'next_actor' and 'current_owner', which are reserved repo-wide by tools/verify_coordination_interface.py.",
+  "type": "object",
+  "required": [
+    "from_agent",
+    "to_agent",
+    "goal_id",
+    "completed",
+    "current_state",
+    "evidence",
+    "blockers",
+    "files_changed",
+    "tests",
+    "next_todo",
+    "allowed_scope",
+    "forbidden_scope",
+    "created_at"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "from_agent": { "type": "string", "minLength": 2 },
+    "to_agent": { "type": "string", "minLength": 2 },
+    "goal_id": { "type": "string", "pattern": "^[A-Z0-9_\\-]{3,64}$" },
+    "completed": { "type": "array", "items": { "type": "string" } },
+    "current_state": { "type": "string", "minLength": 1 },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "blockers": { "type": "array", "items": { "type": "string" } },
+    "files_changed": { "type": "array", "items": { "type": "string" } },
+    "tests": { "type": "array", "items": { "type": "string" } },
+    "next_todo": { "type": ["string", "null"] },
+    "allowed_scope": { "type": "array", "items": { "type": "string" } },
+    "forbidden_scope": { "type": "array", "items": { "type": "string" } },
+    "created_at": { "type": "string", "minLength": 20 },
+    "turn_id": { "type": ["string", "null"] }
+  }
+}

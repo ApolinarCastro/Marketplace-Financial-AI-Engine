@@ -1,7 +1,7 @@
 {
-  "cobros": 0.0,
-  "devoluciones": 0.0,
-  "disponible": 0.0,
+  "cobros": -9947916.0,
+  "devoluciones": -4971696.0,
+  "disponible": 12730978.0,
   "layers": {
     "labels": [
       "Ventas",
@@ -10,14 +10,14 @@
       "Recuperaciones"
     ],
     "values": [
-      0.0,
-      0.0,
-      0.0,
-      0.0
+      27646200.0,
+      -4971696.0,
+      -9947916.0,
+      4390.0
     ]
   },
   "marketplace": "ML",
   "period": "Ene 2026",
-  "recuperaciones": 0.0,
-  "ventas": 0.0
+  "recuperaciones": 4390.0,
+  "ventas": 27646200.0
 }

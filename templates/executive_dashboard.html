@@ -315,16 +315,8 @@ window.ApiClient = {
         Marketplace Financial AI Engine — <span class="font-semibold text-slate-500">Ventas + Devoluciones + Cobros = Disponible</span>
     </footer>
 
+    <script src="/shared/financial-formatter.js"></script>
     <script>
-        const fmtCLP = v => new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 }).format(v);
-        const fmtNumber = v => new Intl.NumberFormat('es-CL', { maximumFractionDigits: 0 }).format(v);
-        const fmtShort = v => {
-            const abs = Math.abs(v);
-            if (abs >= 1e9) return '$' + (v / 1e9).toFixed(2) + 'B';
-            if (abs >= 1e6) return '$' + (v / 1e6).toFixed(1) + 'M';
-            if (abs >= 1e3) return '$' + (v / 1e3).toFixed(0) + 'K';
-            return '$' + v.toFixed(0);
-        };
         // ── Explicabilidad (P5: business language, no technical terms) ──
         const EXPLAIN = {
             ventas: {
@@ -383,65 +375,6 @@ window.ApiClient = {
         function closeExplain() { document.getElementById('explain-modal').classList.add('hidden'); }
         document.addEventListener('keydown', e => { if (e.key === 'Escape') closeExplain(); });
         function showExplicabilidad() { showExplain('disponible'); }
-
-        // ── Detalle → Gerencial Sub-concept Mapping ──
-        const DETALLE_TO_CONCEPT = {
-            'Cargo por venta (Comisión)': 'Comisiones',
-            'Comisiones sobre pedidos': 'Comisiones',
-            'Comisión por venta': 'Comisiones',
-            'Comisiones': 'Comisiones',
-            'Comisión de reembolso': 'Comisiones',
-            'Cargo por envíos de Mercado Libre': 'Logística',
-            'Cargo por Mercado Envíos': 'Logística',
-            'Envío': 'Logística',
-            'Gastos de envío (RIPLEY) pagados por el operador': 'Logística',
-            'Gastos de envío (RIPLEY)': 'Logística',
-            'Importe del envío del pedido': 'Logística',
-            'Despacho': 'Logística',
-            'Cobro por despacho': 'Logística',
-            'Logística inversa': 'Logística',
-            'Compensación logística': 'Logística',
-            'Cofinanciamiento logístico': 'Logística',
-            'Recargo por precio mínimo': 'Logística',
-            'Descuento por costo logístico': 'Logística',
-            'Descuento por logística inversa': 'Logística',
-            'Mercado Envíos': 'Logística',
-            'Descuento logistico': 'Logística',
-            'Cobro por cofinanciamiento logistico': 'Logística',
-            'Product Ads': 'Publicidad',
-            'Cargo por publicidad': 'Publicidad',
-            'Cargo por publicación': 'Publicidad',
-            'Publicidad': 'Publicidad',
-            'Costo de Marketing': 'Publicidad',
-            'Cargo por Asesoría Comercial': 'Servicios',
-            'Asesoría Comercial': 'Servicios',
-            'Cargo por Mi Página': 'Servicios',
-            'Mi Página': 'Servicios',
-            'Full': 'Fulfillment',
-            'Costo Full': 'Fulfillment',
-            'Almacenamiento': 'Fulfillment',
-            'Retiro stock': 'Fulfillment',
-            'Stock antiguo': 'Fulfillment',
-            'Cobro por almacenamiento': 'Fulfillment',
-        };
-
-        function mapDetalleToConcept(detalle) {
-            if (!detalle) return 'Otros';
-            const direct = DETALLE_TO_CONCEPT[detalle];
-            if (direct) return direct;
-            const lower = detalle.toLowerCase();
-            for (const [key, val] of Object.entries(DETALLE_TO_CONCEPT)) {
-                if (lower.includes(key.toLowerCase())) return val;
-            }
-            if (lower.includes('bonificación') || lower.includes('incentivo')) return 'Bonificaciones';
-            if (lower.includes('comisión') || lower.includes('comision')) return 'Comisiones';
-            if (lower.includes('envío') || lower.includes('envio') || lower.includes('logísti') || lower.includes('despacho')) return 'Logística';
-            if (lower.includes('publicidad') || lower.includes('ads')) return 'Publicidad';
-            if (lower.includes('full') || lower.includes('almacen')) return 'Fulfillment';
-            if (lower.includes('asesoría')) return 'Servicios';
-            if (lower.includes('devolución') || lower.includes('devolucion') || lower.includes('reembolso') || lower.includes('refund')) return 'Devoluciones';
-            return 'Otros';
-        }
 
         // ── P2: Single filter change handler ──
         function onFilterChange() {
@@ -620,18 +553,34 @@ window.ApiClient = {
                 document.getElementById('ux12-doc-pend').textContent = fmtCLP(target.monto_sin_respaldo || 0);
                 document.getElementById('ux12-doc-evidencia').textContent = target.nivel_evidencia || '—';
                 document.getElementById('ux12-doc-estrategia').textContent = target.estado_legal || '—';
-                document.getElementById('ux12-doc-cov').textContent = (target.cobertura || 0).toFixed(1) + '%';
+                document.getElementById('ux12-doc-cov').textContent = (target.cobertura || 0).toFixed(1).replace('.', ',') + ' %';
+                
+                const elegible = target.monto_elegible || 0;
+                const certificado = target.monto_certificado || 0;
+                const sinRespaldo = target.monto_sin_respaldo || 0;
+
+                let dteStatusLabel = 'Sin datos';
+                let dteStatusClass = 'bg-slate-100 text-slate-500 border border-slate-200';
+
+                if (elegible === 0 && certificado === 0 && sinRespaldo === 0) {
+                    dteStatusLabel = 'Sin datos';
+                    dteStatusClass = 'bg-slate-100 text-slate-500 border border-slate-200';
+                } else if (certificado >= elegible && elegible > 0) {
+                    dteStatusLabel = 'Cobertura completa';
+                    dteStatusClass = 'bg-emerald-100 text-emerald-800 border border-emerald-300';
+                } else if (certificado > 0) {
+                    dteStatusLabel = 'Cobertura parcial';
+                    dteStatusClass = 'bg-amber-100 text-amber-800 border border-amber-300';
+                } else if (elegible > 0) {
+                    dteStatusLabel = 'Con datos';
+                    dteStatusClass = 'bg-blue-100 text-blue-800 border border-blue-300';
+                }
+
                 const badge = document.getElementById('dte-cert-badge');
-                const status = target.estado_legal || 'SIN_DATOS';
-                const sc = {
-                    'LEGAL_DOCUMENT': 'bg-emerald-100 text-emerald-700',
-                    'SETTLEMENT_CERTIFIED': 'bg-blue-100 text-blue-700',
-                    'PENDIENTE': 'bg-slate-100 text-slate-600',
-                    'SIN_DATOS': 'bg-slate-100 text-slate-500'
-                }[status] || 'bg-slate-100 text-slate-500';
-                const labels = {'LEGAL_DOCUMENT':'Documento Legal','SETTLEMENT_CERTIFIED':'Certificado por Liquidación','PENDIENTE':'Pendiente','SIN_DATOS':'Sin datos'};
-                badge.className = 'text-[10px] px-1.5 py-0.5 rounded-full font-bold ' + sc;
-                badge.textContent = labels[status] || 'Sin datos';
+                if (badge) {
+                    badge.className = 'text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ' + dteStatusClass;
+                    badge.textContent = dteStatusLabel;
+                }
                 const expl = document.getElementById('dte-explanation');
                 if (target.limitation) {
                     try { expl.textContent = decodeURIComponent(escape(target.limitation));
@@ -856,42 +805,19 @@ window.ApiClient = {
             const periodVal = period !== 'YTD' ? period : '';
             const mpNames = { ML: 'Mercado Libre', RIPLEY: 'Ripley', PARIS: 'Paris', FALABELLA: 'Falabella' };
 
-            // Determine which MPs to fetch
-            const mps = activeMp ? [activeMp] : ['ML', 'RIPLEY', 'PARIS', 'FALABELLA'];
-            const promises = mps.map(async mp => {
-                const params = new URLSearchParams({ marketplace: mp, exclude_non_operational: 'true' });
-                if (periodVal) params.set('periodo', periodVal);
-                try {
-                    const res = await ApiClient.safeFetch('/api/v4/cierre/desglose?' + params.toString());
-                    return { mp, data: res };
-                } catch { return { mp, data: [] }; }
-            });
-            const results = await Promise.all(promises);
+            const params = new URLSearchParams();
+            if (periodVal) params.set('periodo', periodVal);
+            if (activeMp) params.set('marketplace', activeMp);
+            const data = await ApiClient.safeFetch('/api/v4/exec/cobros-breakdown?' + params.toString());
 
-            const conceptTotals = {};
-            const mpConceptTotals = {};
-
-            results.forEach(({ mp, data }) => {
-                mpConceptTotals[mp] = mpConceptTotals[mp] || {};
-                data.forEach(row => {
-                    const cat = row.categoria;
-                    const detalle = row.detalle || '';
-                    const total = row.total;
-                    if (cat === 'ingresos' || cat === 'devoluciones' || cat === 'sin_clasificar') return;
-                    const concept = mapDetalleToConcept(detalle);
-                    mpConceptTotals[mp][concept] = (mpConceptTotals[mp][concept] || 0) + total;
-                    conceptTotals[concept] = (conceptTotals[concept] || 0) + total;
-                });
-            });
-
-            const sortedConcepts = Object.entries(conceptTotals)
-                .sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]))
-                .map(([k]) => k);
+            const matrix = data.matrix || [];
+            const mps = data.mps || (activeMp ? [activeMp] : ['ML', 'RIPLEY', 'PARIS', 'FALABELLA']);
+            const totalCobros = data.total_cobros || 0;
 
             const grid = document.getElementById('cobros-grid');
             const footer = document.getElementById('cobros-total');
 
-            if (sortedConcepts.length === 0) {
+            if (matrix.length === 0) {
                 grid.innerHTML = '<div class="text-center text-slate-400 text-sm py-8"><i class="fas fa-search"></i> No hay datos de cobros</div>';
                 footer.classList.add('hidden');
                 return;
@@ -907,11 +833,11 @@ window.ApiClient = {
                 </div>
             `;
 
-            let totalCobros = 0;
-            sortedConcepts.forEach(concept => {
-                const total = conceptTotals[concept] || 0;
-                totalCobros += total;
-                const vals = mps.map(mp => (mpConceptTotals[mp] && mpConceptTotals[mp][concept]) || 0);
+            let displayTotal = 0;
+            matrix.forEach(row => {
+                const concept = row.concept;
+                displayTotal += row.total || 0;
+                const vals = mps.map(mp => row[mp] || 0);
                 html += `
                     <div class="grid ${colSpan} gap-1 text-xs py-1.5 border-b border-slate-50 last:border-0 hover:bg-slate-50/50 rounded transition-colors">
                         <span class="font-medium text-slate-700">${concept}</span>

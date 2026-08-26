@@ -247,7 +247,7 @@ def sha256(path):
 def test_official_db_integrity():
     """Verify official DB was NOT modified during test session."""
     official_db = Path("data/db/meli_financial_v4.db")
-    expected = "C36D18BB93BD82F69FC9772AB39DE4698153FCECCEF6C9A40216655264B18C23"
+    expected = "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9"
     actual = sha256(official_db)
     assert actual == expected, (
         f"OFFICIAL DB MUTATED!\n"

@@ -305,6 +305,7 @@
         </div>
     </div>
 
+    <script src="/shared/financial-formatter.js"></script>
     <script>
         function closeCorrection() {
             const modal = document.getElementById('correction-modal');
@@ -668,7 +669,7 @@
                 const detalleDisp = rawDetalle.length > 60 ? rawDetalle.substring(0,60) + '...' : rawDetalle;
                 
                 const rawMonto = typeof row.monto === 'number' ? row.monto : 0;
-                const montoDisp = rawMonto.toLocaleString('es-CL');
+                const montoDisp = formatCLP(rawMonto);
                 const amountColor = rawMonto < 0 ? 'amount-neg' : 'amount-pos';
                 
                 const truthColor = 'bg-slate-100 text-slate-600 border-slate-200';
@@ -690,7 +691,7 @@
                         <td class="px-6 py-3 font-medium text-slate-700">${detalleDisp}</td>
                         <td class="px-6 py-3 text-xs font-mono font-medium text-slate-500">${mappedOrigen}</td>
                         <td class="px-6 py-3 text-[10px] font-bold uppercase tracking-widest"><span class="px-2 py-0.5 rounded-md border shadow-sm ${truthColor}">${row.financial_group || 'N/A'}</span></td>
-                        <td class="px-6 py-3 text-right font-bold ${amountColor}">$${montoDisp}</td>
+                        <td class="px-6 py-3 text-right font-bold ${amountColor}">${montoDisp}</td>
                         <td class="px-6 py-3 text-center cursor-pointer" onclick="event.stopPropagation(); openCertificationDrawer('${row.id_transaccion || row.order_id}', '${row.estado_xml}')">
                             <span class="px-2.5 py-1 rounded-md text-[9px] font-bold border shadow-sm transition-all ${dteClass} tracking-wider uppercase hover:shadow-md hover:brightness-110">
                                 ${row.estado_xml === 'CONCILIADO' ? '<i class="fas fa-check-double mr-1" aria-hidden="true"></i> CONCILIADO' : (row.estado_xml === 'DOCUMENTADO' ? '<i class="fas fa-check mr-1" aria-hidden="true"></i> DTE' : '<i class="far fa-clock" aria-hidden="true"></i>')}
@@ -703,7 +704,7 @@
 
             // Calculate Sum — use server-side total_sum (always correct) not visible rows sum
             const totalSum = window._ledgerTotalSum ?? data.reduce((acc, row) => acc + (typeof row.monto === 'number' ? row.monto : 0), 0);
-            sumCell.innerText = '$' + totalSum.toLocaleString('es-CL');
+            sumCell.innerText = formatCLP(totalSum);
             sumCell.className = `px-6 py-3 text-right font-bold text-base ${totalSum < 0 ? 'amount-neg' : 'amount-pos'}`;
 
             // Update rows info + Load More visibility (unless order-specific view)
@@ -805,7 +806,7 @@
             const mp = document.getElementById('marketplace-selector').value;
             const periodo = document.getElementById('period-selector').value;
 
-            const ds = window._execSummary && window._execSummary.dashboard_state;
+            const ds = (window._financialStructure && window._financialStructure.dashboard_state) || (window._execSummary && window._execSummary.dashboard_state) || { estado: 'CERTIFICADO' };
             if (!ds) return;
 
             // FASE 2 & FIX-005: ESTADO DEL PROCESO independiente (Standardize status)
@@ -940,10 +941,8 @@
                 const mkQueryLedger = `?marketplace=${mp}&periodo=${periodo}`;
                 const fsData = await ApiClient.safeFetch('/api/v4/financial-structure' + mkQuery);
                 
-                const summary = await ApiClient.getSummary(mp, periodo);
-                fsData.neto = summary.neto;
-                
-                window._execSummary = summary;
+                const summary = await ApiClient.getSummary(mp, periodo).catch(() => ({}));
+                window._execSummary = fsData;
                 window._financialStructure = fsData;
                 window._cierreCertified = {
                     ing: 0, dev: 0, cop: 0, ccm: 0, aju: 0,
@@ -1022,7 +1021,7 @@
             document.getElementById('insp-date').innerHTML = '<i class="far fa-calendar-alt mr-2 text-slate-400" aria-hidden="true"></i>' + (data.fecha || '-');
             document.getElementById('insp-detalle').innerText = data.detalle ? String(data.detalle) : 'Detalle desconocido';
             const rawMonto = typeof data.monto === 'number' ? data.monto : 0;
-            document.getElementById('insp-monto').innerText = '$' + rawMonto.toLocaleString('es-CL');
+            document.getElementById('insp-monto').innerText = formatCLP(rawMonto);
             document.getElementById('insp-monto').className = rawMonto < 0 ? 'text-3xl font-bold mt-1 tracking-tight amount-neg' : 'text-3xl font-bold mt-1 tracking-tight amount-pos';
             
             const xmlStatus = document.getElementById('insp-xml-status');

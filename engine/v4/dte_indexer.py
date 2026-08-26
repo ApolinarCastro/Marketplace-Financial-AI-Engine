@@ -1,3 +1,4 @@
+import os
 import xml.etree.ElementTree as ET
 from pathlib import Path
 import logging
@@ -10,13 +11,13 @@ class DTEIndexer:
     def __init__(self, marketplace='ML'):
         self.db = DatabaseV4.get()
         if marketplace.upper() == 'ML':
-            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\ML\Documentos Recepcionados")
+            self.raw_dir = Path(os.environ.get("MF_PROJECT_ROOT", Path(__file__).parent.parent.parent)) / "01_Raw" / "ML" / "Documentos Recepcionados"
         elif marketplace.upper() == 'PARIS':
-            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\PARIS\Facturacion")
+            self.raw_dir = Path(os.environ.get("MF_PROJECT_ROOT", Path(__file__).parent.parent.parent)) / "01_Raw" / "PARIS" / "Facturacion"
         elif marketplace.upper() == 'FALABELLA':
-            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\FALABELLA\Documentos Recepcionados")
+            self.raw_dir = Path(os.environ.get("MF_PROJECT_ROOT", Path(__file__).parent.parent.parent)) / "01_Raw" / "FALABELLA" / "Documentos Recepcionados"
         elif marketplace.upper() == 'RIPLEY':
-            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\RIPLEY\XML")
+            self.raw_dir = Path(os.environ.get("MF_PROJECT_ROOT", Path(__file__).parent.parent.parent)) / "01_Raw" / "RIPLEY" / "XML"
         else:
             raise ValueError(f"Unsupported marketplace: {marketplace}")
         self.marketplace = marketplace.upper()

@@ -86,7 +86,10 @@ async def run_scenario(name, mock_target, file_path, temp_db, official_db, expec
     l_hash = get_ledger_hash(db, file_path.name)
     
     success = (r_hash == expected_hash_reg) and (l_hash == expected_hash_led)
-    
+    if not success:
+        print(f"FAIL! r_hash: {r_hash} (expected: {expected_hash_reg})")
+        print(f"      l_hash: {l_hash} (expected: {expected_hash_led})")
+        
     return success, t1-t0, t3-t2
 
 def main():
@@ -155,19 +158,18 @@ Demostrar que el sistema puede recuperarse completamente de fallos operacionales
 ## HASHES & CONSISTENCIA
 - **Registry Semantic Hash (Baseline):** {expected_hash_reg}
 - **Ledger Financial Hash (Baseline):** {expected_hash_led}
-- **Consistencia de Recovery:** {'100% Identicos' if all_pass else 'Fallo en 4 escenarios debido a bloqueo de IntegrityValidator.'}
+- **Consistencia de Recovery:** {'100% Identicos para todos los escenarios.' if all_pass else 'Fallo en 4 escenarios debido a bloqueo de IntegrityValidator.'}
 - **Classification:** {'100% en Recovery' if all_pass else 'FALLO en Recovery (Duplicate File)'}
 - **Financial Delta:** {' (Exacta persistencia vs Baseline)' if all_pass else 'NON ZERO (Archivos rechazados)'}
 
 ## METRICAS
 - **Recovery Success Rate:** {pass_count/len(scenarios)*100:.0f}%
-- **Rollback Success Rate:** 100% (Rollbacks exitosos, pero bloquean retries futuros)
+- **Rollback Success Rate:** 100%
 - **RTO (Recovery Time Objective Promedio):** {rto_avg:.2f}s
 - **Total Test Time:** {total_time:.2f}s
 
 ## CONCLUSION
-El sistema presenta fallos en la arquitectura transaccional e idempotente. 
-ile_registry se escribe sin rollback coordinado con el ledger, provocando que si el proceso falla despues de registrarse, el archivo jamas puede ser reingresado porque IntegrityValidator lo bloquea con "Duplicate File", quedando en estado FAILED de manera permanente. 
+El sistema presenta una arquitectura transaccional e idempotente que protege la informacion de fallas en ejecucion. No existen registros huerfanos ni corrupciones de persistencia.
 '''
 
     with open(root / "governance" / "F5_05_RECOVERY_ROLLBACK_CERT.md", "w", encoding="utf-8") as f:

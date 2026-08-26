@@ -30,10 +30,12 @@ def test_all_routes_exist():
         "/api/v4/periodos",
         "/api/v4/exec/summary",
         "/api/v4/exec/waterfall-v3",
+        "/api/v4/exec/cobros-breakdown",
         "/api/v4/financial-structure",
         "/api/v4/intelligence/insights", "/api/v4/intelligence/returns",
         "/api/v4/intelligence/anomalies",
         "/api/v4/dte/certify",
+        "/api/v4/dte/traceability",
     }
     missing = sorted(expected - routes)
     assert not missing, f"Faltan rutas: {missing}"

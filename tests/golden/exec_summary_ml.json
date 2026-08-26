@@ -1,9 +1,9 @@
 {
   "financial_pnl": {
-    "gross_sales": 0.0,
-    "marketplace_costs": 0.0,
-    "net_profit": 0.0,
-    "returns": 0.0
+    "gross_sales": 27646200.0,
+    "marketplace_costs": -9943526.0,
+    "net_profit": 12730978.0,
+    "returns": -4971696.0
   },
   "marketplace": "ML",
   "period": "Ene 2026"

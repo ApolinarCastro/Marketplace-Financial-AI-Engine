@@ -1,12 +1,12 @@
 {
   "name": "exec_summary_all",
   "arm": "current",
-  "median_duration_ms": 0,
-  "median_memory_mb": 0,
-  "median_sql_count": 0,
-  "stddev_duration_ms": 0,
-  "stddev_memory_mb": 0,
+  "median_duration_ms": 4.972049995558336,
+  "median_memory_mb": 0.10769271850585938,
+  "median_sql_count": 0.0,
+  "stddev_duration_ms": 1.2889573875204543,
+  "stddev_memory_mb": 5.226738516709444e-05,
   "runs": 10,
-  "success_rate": 0.0,
-  "timestamp": 1784736183.9378965
+  "success_rate": 1.0,
+  "timestamp": 1787070383.9320683
 }

@@ -86,7 +86,7 @@ def create_env(use_classification=False):
         reset_singleton()
         shutil.rmtree(TEMP_BASE, ignore_errors=True)
         gc.collect()
-    TEMP_BASE.mkdir(parents=True)
+    TEMP_BASE.mkdir(parents=True, exist_ok=True)
     temp_db = TEMP_BASE / "meli_financial_v4.db"
     shutil.copy2(BASELINE, temp_db)
     temp_raw = TEMP_BASE / "01_Raw" / "ML" / "Facturacion"

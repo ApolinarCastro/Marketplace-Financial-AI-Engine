@@ -1,17 +1,22 @@
 {
   "falabella": {
     "coverage_pct": 0.0,
-    "total_rows": 678,
+    "total_rows": 3076,
     "with_xml": 0
   },
+  "ml": {
+    "coverage_pct": 97.8,
+    "total_rows": 99826,
+    "with_xml": 97609
+  },
   "paris": {
-    "coverage_pct": 81.2,
-    "total_rows": 74028,
-    "with_xml": 60107
+    "coverage_pct": 85.3,
+    "total_rows": 197820,
+    "with_xml": 168727
   },
   "ripley": {
-    "coverage_pct": 97.2,
-    "total_rows": 215283,
-    "with_xml": 209342
+    "coverage_pct": 97.9,
+    "total_rows": 287417,
+    "with_xml": 281476
   }
 }

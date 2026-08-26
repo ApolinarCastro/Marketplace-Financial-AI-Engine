@@ -1,0 +1,19 @@
+{
+  "$schema": "loop-control/v1",
+  "title": "RunEvent",
+  "type": "object",
+  "required": ["event_id", "goal_id", "turn_id", "agent_id", "event_type", "created_at"],
+  "additionalProperties": true,
+  "properties": {
+    "event_id": { "type": "string", "minLength": 3 },
+    "goal_id": { "type": "string", "pattern": "^[A-Z0-9_\\-]{3,64}$" },
+    "turn_id": { "type": ["string", "null"] },
+    "todo_id": { "type": ["string", "null"] },
+    "agent_id": { "type": "string", "minLength": 2 },
+    "event_type": { "type": "string", "minLength": 2 },
+    "result": { "type": ["string", "null"] },
+    "detail": { "type": ["string", "null"] },
+    "created_at": { "type": "string", "minLength": 20 },
+    "idempotency_key": { "type": ["string", "null"] }
+  }
+}

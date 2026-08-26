@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from pathlib import Path
 import logging
@@ -9,7 +10,7 @@ import datetime as dt
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 logger = logging.getLogger("surgical.loader")
 
-ROOT = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine")
+ROOT = Path(os.environ.get("MF_PROJECT_ROOT", Path(__file__).parent.parent.parent))
 DIR_FACTURACION = ROOT / "01_Raw" / "ML" / "Facturacion"
 DIR_POSCOBRO = ROOT / "01_Raw" / "ML" / "Poscobro"
 DIR_LIBERACIONES = ROOT / "01_Raw" / "ML" / "Liberaciones"
@@ -82,7 +83,6 @@ class SurgicalLoader:
             from engine.v4.database import DatabaseV4
             db = DatabaseV4.get()
         self.db = db
-
 
     def _register_file(self, filename, marketplace, row_count):
         """Registra archivo procesado en file_registry para tracking operacional."""
@@ -811,11 +811,25 @@ class SurgicalLoader:
             except Exception as e:
                 logger.error(f"Error Falabella {f.name}: {e}")
 
-    def load_file(self, file_path, marketplace, execution_id=None):
-        path = Path(file_path)
-        if marketplace == 'ML' and 'facturacion' in normalize(path.name):
-            return self.load_facturacion(files=[path], execution_id=execution_id)
-        raise ValueError(f"Unsupported file-scoped ingestion: {marketplace}/{path.name}")
+    def load_file(self, file_path, marketplace="ML", execution_id=None):
+        path = Path(file_path) if isinstance(file_path, str) else file_path
+        files = [path]
+        mp = (marketplace or "ML").upper()
+        norm_name = normalize(path.name)
+        if mp == "ML":
+            if "poscobro" in norm_name:
+                return self.load_poscobro(files=files, execution_id=execution_id)
+            elif "liberac" in norm_name:
+                return self.load_liberaciones(files=files, execution_id=execution_id)
+            else:
+                return self.load_facturacion(files=files, execution_id=execution_id)
+        elif mp == "PARIS":
+            return self.load_paris(files=files, execution_id=execution_id)
+        elif mp == "RIPLEY":
+            return self.load_ripley(files=files, execution_id=execution_id)
+        elif mp == "FALABELLA":
+            return self.load_falabella(files=files, execution_id=execution_id)
+        return self.load_facturacion(files=files, execution_id=execution_id)
 
     def load_marketplace(self, marketplace):
         logger.info(f"Ingesting marketplace: {marketplace}")

@@ -11,10 +11,10 @@
           "monto": 4695306.0
         },
         {
-          "cantidad": 389,
+          "cantidad": 1556,
           "clasificacion_operativa": "Importe del pedido",
           "detalle": "Importe del pedido [SELLER][OPERATIONAL]",
-          "monto": 10847112.0
+          "monto": 43388448.0
         }
       ],
       "orden": 1,
@@ -25,20 +25,20 @@
         },
         {
           "detalle": "Importe del pedido [SELLER][OPERATIONAL]",
-          "total": 10847112.0
+          "total": 43388448.0
         }
       ],
-      "total": 15542418.0
+      "total": 48083754.0
     },
     {
       "display_name": "Devoluciones",
       "financial_group": "devoluciones",
       "items": [
         {
-          "cantidad": 98,
+          "cantidad": 392,
           "clasificacion_operativa": "Pedidos reembolsados",
           "detalle": "Pedidos reembolsados [SELLER][OPERATIONAL]",
-          "monto": -2734810.0
+          "monto": -10939240.0
         },
         {
           "cantidad": 15,
@@ -51,94 +51,94 @@
       "subcategories": [
         {
           "detalle": "Pedidos reembolsados [SELLER][OPERATIONAL]",
-          "total": -2734810.0
+          "total": -10939240.0
         },
         {
           "detalle": "refund_order_amount [FF][LOGISTICS]",
           "total": 409550.0
         }
       ],
-      "total": -2325260.0
+      "total": -10529690.0
     },
     {
       "display_name": "Costos Operacionales",
       "financial_group": "costos_operacionales",
       "items": [
         {
-          "cantidad": 305,
+          "cantidad": 1220,
           "clasificacion_operativa": "Gastos de envío pagados por el operador",
           "detalle": "Gastos de envío pagados por el operador [SELLER][OPERATIONAL]",
-          "monto": -575138.0
+          "monto": -2300552.0
         },
         {
-          "cantidad": 271,
+          "cantidad": 1084,
           "clasificacion_operativa": "Descuento por costo logístico",
           "detalle": "Descuento por costo logístico [SELLER][OPERATIONAL]",
-          "monto": -458644.0
+          "monto": -1834576.0
         },
         {
-          "cantidad": 30,
+          "cantidad": 120,
           "clasificacion_operativa": "Descuento por logística inversa",
           "detalle": "Descuento por logistica inversa [SELLER][OPERATIONAL]",
-          "monto": -89977.0
+          "monto": -359908.0
         },
         {
-          "cantidad": 13,
+          "cantidad": 52,
           "clasificacion_operativa": "Envío reembolsado",
           "detalle": "Envío reembolsado [SELLER][OPERATIONAL]",
-          "monto": -22540.0
+          "monto": -90160.0
         },
         {
-          "cantidad": 13,
+          "cantidad": 52,
           "clasificacion_operativa": "Gastos de envío reembolsados pagados por el operador",
           "detalle": "Gastos de envío reembolsados pagados por el operador [SELLER][OPERATIONAL]",
-          "monto": 22540.0
+          "monto": 90160.0
         },
         {
-          "cantidad": 305,
+          "cantidad": 1220,
           "clasificacion_operativa": "Envío",
           "detalle": "Envío [SELLER][OPERATIONAL]",
-          "monto": 575138.0
+          "monto": 2300552.0
         }
       ],
       "orden": 4,
       "subcategories": [
         {
           "detalle": "Gastos de envío pagados por el operador [SELLER][OPERATIONAL]",
-          "total": -575138.0
+          "total": -2300552.0
         },
         {
           "detalle": "Descuento por costo logístico [SELLER][OPERATIONAL]",
-          "total": -458644.0
+          "total": -1834576.0
         },
         {
           "detalle": "Descuento por logistica inversa [SELLER][OPERATIONAL]",
-          "total": -89977.0
+          "total": -359908.0
         },
         {
           "detalle": "Envío reembolsado [SELLER][OPERATIONAL]",
-          "total": -22540.0
+          "total": -90160.0
         },
         {
           "detalle": "Gastos de envío reembolsados pagados por el operador [SELLER][OPERATIONAL]",
-          "total": 22540.0
+          "total": 90160.0
         },
         {
           "detalle": "Envío [SELLER][OPERATIONAL]",
-          "total": 575138.0
+          "total": 2300552.0
         }
       ],
-      "total": -548621.0
+      "total": -2194484.0
     },
     {
       "display_name": "Costos Comerciales",
       "financial_group": "costos_comerciales",
       "items": [
         {
-          "cantidad": 389,
+          "cantidad": 1556,
           "clasificacion_operativa": "Comisiones sobre pedidos",
           "detalle": "Comisiones sobre pedidos [SELLER][OPERATIONAL]",
-          "monto": -1952385.0
+          "monto": -7809540.0
         },
         {
           "cantidad": 15,
@@ -147,38 +147,38 @@
           "monto": 73716.0
         },
         {
-          "cantidad": 98,
-          "clasificacion_operativa": "Comisiones sobre pedidos reembolsados",
-          "detalle": "Comisiones sobre pedidos reembolsados [SELLER][OPERATIONAL]",
-          "monto": 492242.0
-        },
-        {
           "cantidad": 190,
           "clasificacion_operativa": "commission_fee",
           "detalle": "commission_fee [FF][LOGISTICS]",
           "monto": 845119.0
+        },
+        {
+          "cantidad": 392,
+          "clasificacion_operativa": "Comisiones sobre pedidos reembolsados",
+          "detalle": "Comisiones sobre pedidos reembolsados [SELLER][OPERATIONAL]",
+          "monto": 1968968.0
         }
       ],
       "orden": 5,
       "subcategories": [
         {
           "detalle": "Comisiones sobre pedidos [SELLER][OPERATIONAL]",
-          "total": -1952385.0
+          "total": -7809540.0
         },
         {
           "detalle": "refund_commission_fee [FF][LOGISTICS]",
           "total": 73716.0
         },
         {
-          "detalle": "Comisiones sobre pedidos reembolsados [SELLER][OPERATIONAL]",
-          "total": 492242.0
-        },
-        {
           "detalle": "commission_fee [FF][LOGISTICS]",
           "total": 845119.0
+        },
+        {
+          "detalle": "Comisiones sobre pedidos reembolsados [SELLER][OPERATIONAL]",
+          "total": 1968968.0
         }
       ],
-      "total": -541308.0
+      "total": -4921737.0
     }
   ],
   "marketplace": "RIPLEY",

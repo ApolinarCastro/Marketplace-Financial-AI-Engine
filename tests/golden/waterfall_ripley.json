@@ -1,7 +1,7 @@
 {
-  "cobros": -56379.0,
-  "devoluciones": -2734810.0,
-  "disponible": 8055923.0,
+  "cobros": -112758.0,
+  "devoluciones": -5469620.0,
+  "disponible": 16111846.0,
   "layers": {
     "labels": [
       "Ventas",
@@ -10,14 +10,14 @@
       "Recuperaciones"
     ],
     "values": [
-      10847112.0,
-      -2734810.0,
-      -56379.0,
+      21694224.0,
+      -5469620.0,
+      -112758.0,
       0.0
     ]
   },
   "marketplace": "RIPLEY",
   "period": "Ene 2026",
   "recuperaciones": 0.0,
-  "ventas": 10847112.0
+  "ventas": 21694224.0
 }

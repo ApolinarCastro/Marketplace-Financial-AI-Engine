@@ -180,52 +180,52 @@ BENCHMARKS = [
     {
         "name": "exec_summary_all",
         "description": "Executive Summary — ALL marketplaces YTD",
-        "fn": lambda: fe.query_exec_summary(periodo=PERIODO, marketplace="ALL"),
+        "fn": lambda: FinancialEngine(DatabaseV4.get()).query_exec_summary(periodo=PERIODO, marketplace="ALL"),
     },
     {
         "name": "exec_summary_ml",
         "description": "Executive Summary — ML YTD",
-        "fn": lambda: fe.query_exec_summary(periodo=PERIODO, marketplace="ML"),
+        "fn": lambda: FinancialEngine(DatabaseV4.get()).query_exec_summary(periodo=PERIODO, marketplace="ML"),
     },
     {
         "name": "waterfall_all",
         "description": "Waterfall — ALL marketplaces YTD",
-        "fn": lambda: fe.query_waterfall(periodo=PERIODO, marketplace="ALL"),
+        "fn": lambda: FinancialEngine(DatabaseV4.get()).query_waterfall(periodo=PERIODO, marketplace="ALL"),
     },
     {
         "name": "waterfall_ripley",
         "description": "Waterfall — RIPLEY YTD (signal_mode=SIGNAL)",
-        "fn": lambda: fe.query_waterfall(periodo=PERIODO, marketplace="RIPLEY"),
+        "fn": lambda: FinancialEngine(DatabaseV4.get()).query_waterfall(periodo=PERIODO, marketplace="RIPLEY"),
     },
     {
         "name": "ledger_ml",
         "description": "Ledger Query — ML YTD, signal_mode=SIGNAL, limit=200",
-        "fn": lambda: fe.query_ledger(marketplace="ML", periodo=PERIODO, signal_mode="SIGNAL", operational_only=True, limit=200),
+        "fn": lambda: FinancialEngine(DatabaseV4.get()).query_ledger(marketplace="ML", periodo=PERIODO, signal_mode="SIGNAL", operational_only=True, limit=200),
     },
     {
         "name": "financial_structure_all",
         "description": "Financial Structure — ALL marketplaces YTD",
-        "fn": lambda: fe.query_desglose(marketplace="ALL", periodo=PERIODO, exclude_non_operational=True),
+        "fn": lambda: FinancialEngine(DatabaseV4.get()).query_desglose(marketplace="ALL", periodo=PERIODO, exclude_non_operational=True),
     },
     {
         "name": "cobros_breakdown",
         "description": "Cobros Breakdown Matrix — YTD",
-        "fn": lambda: fe.query_cobros_breakdown(periodo=PERIODO),
+        "fn": lambda: FinancialEngine(DatabaseV4.get()).query_cobros_breakdown(periodo=PERIODO),
     },
     {
         "name": "cierre_all",
         "description": "Cierre Financiero — ALL marketplaces",
-        "fn": lambda: fe.query_cierre_all(),
+        "fn": lambda: FinancialEngine(DatabaseV4.get()).query_cierre_all(),
     },
     {
         "name": "audit_ml",
         "description": "Audit Query — ML (first page)",
-        "fn": lambda: fe.query_audit(marketplace="ML", limit=50),
+        "fn": lambda: FinancialEngine(DatabaseV4.get()).query_audit(marketplace="ML", limit=50),
     },
     {
         "name": "operational_intelligence_ml",
         "description": "Operational Intelligence — ML YTD",
-        "fn": lambda: fe.query_operational_intelligence(periodo=PERIODO, marketplace="ML"),
+        "fn": lambda: FinancialEngine(DatabaseV4.get()).query_operational_intelligence(periodo=PERIODO, marketplace="ML"),
     },
 ]
 

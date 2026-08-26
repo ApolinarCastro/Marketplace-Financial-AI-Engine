@@ -1,0 +1,43 @@
+{
+  "$schema": "loop-control/v1",
+  "title": "GoalQuota",
+  "type": "object",
+  "required": [
+    "goal_id",
+    "limits",
+    "turns_consumed",
+    "failed_turns",
+    "no_progress_turns",
+    "validation_failures",
+    "scope_expansions",
+    "hypothesis_attempts",
+    "spent_keys"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "goal_id": { "type": "string", "pattern": "^[A-Z0-9_\\-]{3,64}$" },
+    "limits": {
+      "type": "object",
+      "required": [
+        "max_same_hypothesis_attempts",
+        "max_no_progress_turns",
+        "max_validation_failures",
+        "max_scope_expansions"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "max_same_hypothesis_attempts": { "type": "integer", "minimum": 1 },
+        "max_no_progress_turns": { "type": "integer", "minimum": 1 },
+        "max_validation_failures": { "type": "integer", "minimum": 1 },
+        "max_scope_expansions": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "turns_consumed": { "type": "integer", "minimum": 0 },
+    "failed_turns": { "type": "integer", "minimum": 0 },
+    "no_progress_turns": { "type": "integer", "minimum": 0 },
+    "validation_failures": { "type": "integer", "minimum": 0 },
+    "scope_expansions": { "type": "integer", "minimum": 0 },
+    "hypothesis_attempts": { "type": "object" },
+    "spent_keys": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,12 +1,12 @@
 {
   "name": "ledger_ml",
   "arm": "current",
-  "median_duration_ms": 0,
-  "median_memory_mb": 0,
-  "median_sql_count": 0,
-  "stddev_duration_ms": 0,
-  "stddev_memory_mb": 0,
+  "median_duration_ms": 70.87110000429675,
+  "median_memory_mb": 0.7116146087646484,
+  "median_sql_count": 0.0,
+  "stddev_duration_ms": 8.664734872932328,
+  "stddev_memory_mb": 3.0349060866504867e-05,
   "runs": 10,
-  "success_rate": 0.0,
-  "timestamp": 1784736184.010175
+  "success_rate": 1.0,
+  "timestamp": 1787070385.016808
 }

@@ -1,6 +1,6 @@
 """
 
-FinancialEngine ÔÇö certified single entry point for all financial operations.
+FinancialEngine — certified single entry point for all financial operations.
 
 
 Taxonomy source: YAML (via taxonomy_loader.py) with legacy fallback via USE_YAML_TAXONOMY flag.
@@ -35,128 +35,128 @@ logger = logging.getLogger("meli.financial_engine")
 _MONTHS = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
 
 
-# ÔöÇÔöÇ Dual-mode taxonomy control ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+# ── Dual-mode taxonomy control ─────────────────────────────────────────
 
-# True  ÔåÆ consume taxonomy_rules.yaml + taxonomy_mappings.yaml
+# True  → consume taxonomy_rules.yaml + taxonomy_mappings.yaml
 
-# False ÔåÆ fallback to legacy _LEGACY_CONCEPT_MAP + FINANCIAL_STRUCTURE
+# False → fallback to legacy _LEGACY_CONCEPT_MAP + FINANCIAL_STRUCTURE
 
 USE_YAML_TAXONOMY = True
 
 
-# ÔöÇÔöÇ Legacy concept map (READ ONLY ÔÇö preserved for rollback) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+# ── Legacy concept map (READ ONLY — preserved for rollback) ────────────
 
 _LEGACY_CONCEPT_MAP: dict[str, str] = {
 
-    "Cargo por env├¡os de Mercado Libre": "Log├¡stica",
+    "Cargo por envíos de Mercado Libre": "Logística",
 
-    "Cargo por Mercado Env├¡os": "Log├¡stica",
+    "Cargo por Mercado Envíos": "Logística",
 
-    "Anulaci├│n del cargo por env├¡os de Mercado Libre": "Log├¡stica",
+    "Anulación del cargo por envíos de Mercado Libre": "Logística",
 
-    "Anulaci├│n del cargo por Mercado Env├¡os": "Log├¡stica",
+    "Anulación del cargo por Mercado Envíos": "Logística",
 
-    "Cargo por devoluci├│n": "Log├¡stica",
+    "Cargo por devolución": "Logística",
 
-    "Anulaci├│n del cargo por devoluci├│n": "Log├¡stica",
+    "Anulación del cargo por devolución": "Logística",
 
-    "Cargo por servicio de almacenamiento Full": "Log├¡stica",
+    "Cargo por servicio de almacenamiento Full": "Logística",
 
-    "Cargo por retiro de stock Full": "Log├¡stica",
+    "Cargo por retiro de stock Full": "Logística",
 
-    "Cargo por stock antiguo en Full": "Log├¡stica",
+    "Cargo por stock antiguo en Full": "Logística",
 
-    "Cargo por sobrepasar espacio Full": "Log├¡stica",
+    "Cargo por sobrepasar espacio Full": "Logística",
 
-    "Cargo por servicio de colecta Full": "Log├¡stica",
+    "Cargo por servicio de colecta Full": "Logística",
 
-    "Cargo por diferencias en las medidas y el peso del paquete": "Log├¡stica",
+    "Cargo por diferencias en las medidas y el peso del paquete": "Logística",
 
-    "Cobro por despacho": "Log├¡stica",
+    "Cobro por despacho": "Logística",
 
-    "Log├¡stica inversa": "Log├¡stica",
+    "Logística inversa": "Logística",
 
-    "Despacho": "Log├¡stica",
+    "Despacho": "Logística",
 
-    "Gastos de env├¡o pagados por el operador": "Log├¡stica",
+    "Gastos de envío pagados por el operador": "Logística",
 
-    "Gastos de env├¡o reembolsados pagados por el operador": "Log├¡stica",
+    "Gastos de envío reembolsados pagados por el operador": "Logística",
 
-    "Cobro por cofinanciamiento log├¡stico": "Log├¡stica",
+    "Cobro por cofinanciamiento logístico": "Logística",
 
-    "Cobro por log├¡stica inversa": "Log├¡stica",
+    "Cobro por logística inversa": "Logística",
 
-    "Reversa de pago de env├¡o comprador": "Log├¡stica",
+    "Reversa de pago de envío comprador": "Logística",
 
-    "Cobro Promo env├¡o falabella.com": "Log├¡stica",
+    "Cobro Promo envío falabella.com": "Logística",
 
-    "Reembolso por Promo env├¡o falabella.com": "Log├¡stica",
+    "Reembolso por Promo envío falabella.com": "Logística",
 
-    "Env├¡o": "Log├¡stica",
+    "Envío": "Logística",
 
-    "Gastos de env├¡o": "Log├¡stica",
+    "Gastos de envío": "Logística",
 
-    "Importe del env├¡o del pedido": "Log├¡stica",
+    "Importe del envío del pedido": "Logística",
 
-    "Env├¡o reembolsado": "Log├¡stica",
+    "Envío reembolsado": "Logística",
 
-    "Pago por env├¡o directo": "Log├¡stica",
+    "Pago por envío directo": "Logística",
 
-    "Cobro despacho primera milla": "Log├¡stica",
+    "Cobro despacho primera milla": "Logística",
 
-    "Descuento por log├¡stica inversa": "Log├¡stica",
+    "Descuento por logística inversa": "Logística",
 
-    "Descuento por costo log├¡stico": "Log├¡stica",
+    "Descuento por costo logístico": "Logística",
 
-    "Descuento por log├¡stica inversa (FF)": "Log├¡stica",
+    "Descuento por logística inversa (FF)": "Logística",
 
-    "Descuento por cofinanciamiento log├¡stico (FF)": "Log├¡stica",
+    "Descuento por cofinanciamiento logístico (FF)": "Logística",
 
-    "Descuento FF - Otros": "Log├¡stica",
+    "Descuento FF - Otros": "Logística",
 
-    "Descuento FF - pick and pack": "Log├¡stica",
+    "Descuento FF - pick and pack": "Logística",
 
-    "Descuento FF - sobreestad├¡a": "Log├¡stica",
+    "Descuento FF - sobreestadía": "Logística",
 
-    "Descuento operacional": "Log├¡stica",
+    "Descuento operacional": "Logística",
 
-    "Descuento por error de clase logistica": "Log├¡stica",
+    "Descuento por error de clase logistica": "Logística",
 
-    "Abono por uso de flota propia": "Log├¡stica",
+    "Abono por uso de flota propia": "Logística",
 
-    "Almacenamiento": "Log├¡stica",
+    "Almacenamiento": "Logística",
 
-    "Sobreestad├¡a": "Log├¡stica",
+    "Sobreestadía": "Logística",
 
-    "Pick and pack": "Log├¡stica",
+    "Pick and pack": "Logística",
 
-    "VAS": "Log├¡stica",
+    "VAS": "Logística",
 
-    "Cargos fulfillment": "Log├¡stica",
+    "Cargos fulfillment": "Logística",
 
-    "Cargo por servicio de almacenamiento": "Log├¡stica",
+    "Cargo por servicio de almacenamiento": "Logística",
 
-    "Cobro stock antiguo": "Log├¡stica",
+    "Cobro stock antiguo": "Logística",
 
-    "Retiro stock bodega Paris": "Log├¡stica",
+    "Retiro stock bodega Paris": "Logística",
 
-    "Cargo por venta (Comisi├│n)": "Comisiones",
+    "Cargo por venta (Comisión)": "Comisiones",
 
-    "Anulaci├│n del cargo por venta": "Comisiones",
+    "Anulación del cargo por venta": "Comisiones",
 
-    "Reembolso por comisi├│n": "Comisiones",
+    "Reembolso por comisión": "Comisiones",
 
     "Comisiones sobre pedidos": "Comisiones",
 
-    "Comisi├│n de reembolso": "Comisiones",
+    "Comisión de reembolso": "Comisiones",
 
     "Comisiones sobre pedidos reembolsados": "Comisiones",
 
-    "Cobro por comisi├│n por venta": "Comisiones",
+    "Cobro por comisión por venta": "Comisiones",
 
-    "Reembolso por comisi├│n por venta": "Comisiones",
+    "Reembolso por comisión por venta": "Comisiones",
 
-    "Comisi├│n": "Comisiones",
+    "Comisión": "Comisiones",
 
     "Commission": "Comisiones",
 
@@ -166,31 +166,31 @@ _LEGACY_CONCEPT_MAP: dict[str, str] = {
 
     "Cargo por venta": "Comisiones",
 
-    "Cargo por campa├▒a de publicidad - Product Ads": "Publicidad",
+    "Cargo por campaña de publicidad - Product Ads": "Publicidad",
 
-    "Cargo por campa├▒a de publicidad - Brand Ads": "Publicidad",
+    "Cargo por campaña de publicidad - Brand Ads": "Publicidad",
 
-    "Campa├▒as de publicidad - Product Ads": "Publicidad",
+    "Campañas de publicidad - Product Ads": "Publicidad",
 
-    "Campa├▒as de publicidad - Brand Ads": "Publicidad",
+    "Campañas de publicidad - Brand Ads": "Publicidad",
 
-    "Campa├▒as de publicidad - Display": "Publicidad",
+    "Campañas de publicidad - Display": "Publicidad",
 
-    "Cargo por campa├▒a de publicidad - Display program├ítico": "Publicidad",
+    "Cargo por campaña de publicidad - Display programático": "Publicidad",
 
-    "Cargo por Asesor├¡a Comercial": "Servicios",
+    "Cargo por Asesoría Comercial": "Servicios",
 
-    "Cargo por mantenimiento de Mi p├ígina": "Servicios",
+    "Cargo por mantenimiento de Mi página": "Servicios",
 
-    "Anulaci├│n del cargo por mantenimiento de Mi p├ígina": "Servicios",
+    "Anulación del cargo por mantenimiento de Mi página": "Servicios",
 
-    "Anulaci├│n mantenimiento Mi p├ígina": "Servicios",
+    "Anulación mantenimiento Mi página": "Servicios",
 
     "Abono oferta TC - OPEX": "Servicios",
 
     "Descuento oferta TC - OPEX": "Servicios",
 
-    "Abonos por cup├│n promocional": "Servicios",
+    "Abonos por cupón promocional": "Servicios",
 
     "Descuento por cupones de despacho": "Servicios",
 
@@ -202,31 +202,31 @@ _LEGACY_CONCEPT_MAP: dict[str, str] = {
 
     "Descuento por aportes promocionales a clientes (Promo)": "Servicios",
 
-    "Bonificaci├│n": "Bonificaciones",
+    "Bonificación": "Bonificaciones",
 
-    "Bonificaci├│n Log├¡stica Flex": "Bonificaciones",
+    "Bonificación Logística Flex": "Bonificaciones",
 
-    "Recuperaci├│n por P├®rdida de Inventario": "Bonificaciones",
+    "Recuperación por Pérdida de Inventario": "Bonificaciones",
 
     "Impuesto sobre las comisiones": "Impuestos",
 
-    "Impuesto sobre la comisi├│n de reembolso": "Impuestos",
+    "Impuesto sobre la comisión de reembolso": "Impuestos",
 
     "Impuesto de la factura manual": "Impuestos",
 
-    "Impuestos sobre comisi├│n": "Impuestos",
+    "Impuestos sobre comisión": "Impuestos",
 
     "Impuestos": "Impuestos",
 
-    "Descuento por cancelaci├│n": "Ajustes",
+    "Descuento por cancelación": "Ajustes",
 
     "Otros descuentos": "Ajustes",
 
-    "Compensaci├│n log├¡stica": "Ajustes",
+    "Compensación logística": "Ajustes",
 
     "Ajuste Inventario Activo": "Ajustes",
 
-    "Cobro por campa├▒a": "Ajustes",
+    "Cobro por campaña": "Ajustes",
 
     "Merma": "Ajustes",
 
@@ -234,21 +234,21 @@ _LEGACY_CONCEPT_MAP: dict[str, str] = {
 
     "Multa por stock": "Ajustes",
 
-    "Correcci├│n de pago envio directo": "Ajustes",
+    "Corrección de pago envio directo": "Ajustes",
 
-    "Correcci├│n de cobro por env├¡o directo": "Ajustes",
+    "Corrección de cobro por envío directo": "Ajustes",
 
     "Abono extraordinario - error de precio": "Ajustes",
 
-    "Abono por error de comisi├│n": "Ajustes",
+    "Abono por error de comisión": "Ajustes",
 
     "Abono postventa": "Ajustes",
 
-    "Abono por formalizaci├│n a OPL": "Ajustes",
+    "Abono por formalización a OPL": "Ajustes",
 
     "Otros abonos": "Ajustes",
 
-    "Descuento por compensaci├│n a cliente": "Ajustes",
+    "Descuento por compensación a cliente": "Ajustes",
 
     "Abono de factura manual": "Ajustes",
 
@@ -256,25 +256,25 @@ _LEGACY_CONCEPT_MAP: dict[str, str] = {
 
     "Abono manual": "Ajustes",
 
-    "Ajuste hist├│rico (pre-2026)": "Ajustes",
+    "Ajuste histórico (pre-2026)": "Ajustes",
 
     "Ajuste Poscobro": "Ajustes",
 
-    "Ajuste por Talla/Garant├¡a": "Ajustes",
+    "Ajuste por Talla/Garantía": "Ajustes",
 
-    "Ajuste por Producto Da├▒ado/Vac├¡o": "Ajustes",
+    "Ajuste por Producto Dañado/Vacío": "Ajustes",
 
     "Ajuste por Arrepentimiento": "Ajustes",
 
-    "Ajuste por Diferencia de Publicaci├│n": "Ajustes",
+    "Ajuste por Diferencia de Publicación": "Ajustes",
 
-    "Ajuste por ├ìtem Faltante": "Ajustes",
+    "Ajuste por Ítem Faltante": "Ajustes",
 
     "Ajuste por Falta de Stock": "Ajustes",
 
     "Ajuste por Retraso en Entrega": "Ajustes",
 
-    "Ajuste por Cambio de Direcci├│n": "Ajustes",
+    "Ajuste por Cambio de Dirección": "Ajustes",
 
     "Ajuste por Falla en Entrega": "Ajustes",
 
@@ -284,15 +284,15 @@ _LEGACY_CONCEPT_MAP: dict[str, str] = {
 
     "Cargo": "Ajustes",
 
-    "Cancelaci├│n de la mediaci├│n": "Ajustes",
+    "Cancelación de la mediación": "Ajustes",
 
     "cashback": "Ajustes",
 
     "cashback_cancel": "Ajustes",
 
-    "Mediaci├│n": "Ajustes",
+    "Mediación": "Ajustes",
 
-    "Reserva para devoluci├│n en env├¡o BBP": "Ajustes",
+    "Reserva para devolución en envío BBP": "Ajustes",
 
     "Reserva para reembolso": "Ajustes",
 
@@ -309,7 +309,7 @@ _LEGACY_CONCEPT_MAP: dict[str, str] = {
 }
 
 
-# ÔöÇÔöÇ Cached YAML taxonomy (lazy-loaded) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+# ── Cached YAML taxonomy (lazy-loaded) ────────────────────────────────
 
 _TAXONOMY_RULES: dict | None = None
 
@@ -371,9 +371,9 @@ def _get_concept_map() -> dict[str, str]:
     """Return {detalle: concept} for cobros-breakdown display.
 
 
-    This is a display-layer convention (Log├¡stica, Comisiones, Publicidad, etc.)
+    This is a display-layer convention (Logística, Comisiones, Publicidad, etc.)
 
-    created for the UX1.1 dashboard ÔÇö NOT financial taxonomy.
+    created for the UX1.1 dashboard — NOT financial taxonomy.
 
     The legacy map is the canonical certified source.
 
@@ -674,7 +674,7 @@ class FinancialEngine:
 
         if clasificacion_operativa:
 
-            if marketplace == 'PARIS' and clasificacion_operativa in ('Comisi├│n Marketplace', 'Venta Bruta'):
+            if marketplace == 'PARIS' and clasificacion_operativa in ('Comisión Marketplace', 'Venta Bruta'):
 
                 conditions.append("financial_group = 'ingresos'")
 
@@ -689,7 +689,7 @@ class FinancialEngine:
 
         if detalle:
 
-            if marketplace == 'PARIS' and detalle in ('Comisi├│n Marketplace', 'Venta Bruta'):
+            if marketplace == 'PARIS' and detalle in ('Comisión Marketplace', 'Venta Bruta'):
 
                 conditions.append("financial_group = 'ingresos'")
 
@@ -1202,7 +1202,7 @@ class FinancialEngine:
 
     def _apply_paris_desglose(self, existing: list, marketplace: str, p_ini: str, p_fin: str, exclude_clause: str) -> list:
 
-        """PARIS-specific desglose: splits Venta into Venta Bruta and Comisi├│n Marketplace."""
+        """PARIS-specific desglose: splits Venta into Venta Bruta and Comisión Marketplace."""
 
         sql = f"""
 
@@ -1260,7 +1260,7 @@ class FinancialEngine:
 
                 if pd.notna(com) and float(com) > 0:
 
-                    key_c = ('costos_comerciales', 'Comisi├│n Marketplace', 'egreso', 'Comisi├│n Marketplace', oc, tt)
+                    key_c = ('costos_comerciales', 'Comisión Marketplace', 'egreso', 'Comisión Marketplace', oc, tt)
 
                     agg[key_c] = agg.get(key_c, 0.0) - float(com)
 
@@ -1318,7 +1318,7 @@ class FinancialEngine:
         recup = float(r["recuperaciones"])
 
 
-        # Single GROUP BY query replacing per-MP loop (8 queries ÔåÆ 2)
+        # Single GROUP BY query replacing per-MP loop (8 queries → 2)
 
         # Non-RIPLEY MPs: no signal filter, GROUP BY in 1 query
 
@@ -1513,7 +1513,7 @@ class FinancialEngine:
 
     ) -> dict[str, Any]:
 
-        """Return certified executive summary ÔÇö Ventas, Devoluciones, Cobros, Disponible."""
+        """Return certified executive summary — Ventas, Devoluciones, Cobros, Disponible."""
 
         start, end, label = self.resolve_period_range(periodo)
 
@@ -1619,7 +1619,7 @@ class FinancialEngine:
 
     # ------------------------------------------------------------------
 
-    # Waterfall (certified Ventas ÔåÆ Devoluciones ÔåÆ Cobros ÔåÆ Disponible)
+    # Waterfall (certified Ventas → Devoluciones → Cobros → Disponible)
 
     # ------------------------------------------------------------------
 
@@ -1757,7 +1757,7 @@ class FinancialEngine:
 
     ) -> dict:
 
-        """Return operational intelligence ÔÇö top return reasons, AI narrative."""
+        """Return operational intelligence — top return reasons, AI narrative."""
 
         data = self.query_exec_summary(periodo, marketplace)
 
@@ -1844,19 +1844,19 @@ class FinancialEngine:
 
             ai_narrative.append(f"El principal motivo operativo de {mp_text} corresponde a {pr['reason']}.")
 
-            ai_narrative.append(f"Representa el {pr['participation']:.1f}% del impacto econ├│mico del per├¡odo.")
+            ai_narrative.append(f"Representa el {pr['participation']:.1f}% del impacto económico del período.")
 
-            ai_narrative.append(f"Gener├│ un impacto de ${abs(pr['impact']):,.0f}.")
+            ai_narrative.append(f"Generó un impacto de ${abs(pr['impact']):,.0f}.")
 
-            ai_narrative.append(f"Afect├│ a {pr['cases']} operaciones.")
+            ai_narrative.append(f"Afectó a {pr['cases']} operaciones.")
 
             if pr["top_products"]:
 
-                ai_narrative.append(f"Mostrando concentraci├│n en productos/SKU como: {', '.join(pr['top_products'][:3])}.")
+                ai_narrative.append(f"Mostrando concentración en productos/SKU como: {', '.join(pr['top_products'][:3])}.")
 
         else:
 
-            ai_narrative.append(f"No se registraron incidencias operativas para {mp_text} en este per├¡odo.")
+            ai_narrative.append(f"No se registraron incidencias operativas para {mp_text} en este período.")
 
 
         return {

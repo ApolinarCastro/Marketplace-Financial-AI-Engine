@@ -36,6 +36,50 @@ class CopilotEngine:
         "cash_flow":         {"label": "¿Qué cobraré realmente?", "handler": "_handle_cash_flow"},
         "risk":              {"label": "¿Qué riesgo financiero existe?", "handler": "_handle_risk"},
         "evidence":          {"label": "¿Dónde está la evidencia?", "handler": "_handle_evidence"},
+        # Canonical QF-001 to QF-010 mapping
+        "Q-001":             {"label": "¿Qué vendí?", "handler": "_handle_top_detalle", "intent_id": "INT-QF-001"},
+        "Q-002":             {"label": "¿Qué me cobraron?", "handler": "_handle_commission_impact", "intent_id": "INT-QF-002"},
+        "Q-003":             {"label": "¿Qué me pagaron?", "handler": "_handle_profit_loss", "intent_id": "INT-QF-003"},
+        "Q-004":             {"label": "¿Qué falta por cobrar?", "handler": "_handle_cash_flow", "intent_id": "INT-QF-004"},
+        "Q-005":             {"label": "¿Qué devoluciones existen?", "handler": "_handle_cost_change", "intent_id": "INT-QF-005"},
+        "Q-006":             {"label": "¿Qué XML o DTE respalda la operación?", "handler": "_handle_evidence", "intent_id": "INT-QF-006"},
+        "Q-007":             {"label": "¿Qué registro SAP respalda la operación?", "handler": "_handle_insufficient_evidence", "intent_id": "INT-QF-007"},
+        "Q-008":             {"label": "¿Qué movimiento bancario respalda el pago?", "handler": "_handle_insufficient_evidence", "intent_id": "INT-QF-008"},
+        "Q-009":             {"label": "¿Qué cargo, comisión o descuento está oculto o no explicado?", "handler": "_handle_risk", "intent_id": "INT-QF-009"},
+        "Q-010":             {"label": "¿Cuál es el margen financiero real?", "handler": "_handle_why", "intent_id": "INT-QF-010"},
+    }
+
+    SYNONYMS = {
+        # Q-001
+        "q-001": "Q-001", "qf-001": "Q-001", "int-qf-001": "Q-001", "intent_ventas_brutas": "Q-001",
+        "¿qué vendí?": "Q-001", "qué vendí": "Q-001", "que vendi": "Q-001", "cuánto vendí": "Q-001", "cuanto vendi": "Q-001", "ventas": "Q-001", "ventas brutas": "Q-001", "total vendido": "Q-001",
+        # Q-002
+        "q-002": "Q-002", "qf-002": "Q-002", "int-qf-002": "Q-002", "intent_desglose_cobros": "Q-002",
+        "¿qué me cobraron?": "Q-002", "qué me cobraron": "Q-002", "que me cobraron": "Q-002", "cuánto me cobraron": "Q-002", "cuanto me cobraron": "Q-002", "comisiones": "Q-002", "costos operacionales": "Q-002", "desglose cobros": "Q-002",
+        # Q-003
+        "q-003": "Q-003", "qf-003": "Q-003", "int-qf-003": "Q-003", "intent_resultado_neto_liquidado": "Q-003",
+        "¿qué me pagaron?": "Q-003", "qué me pagaron": "Q-003", "que me pagaron": "Q-003", "cuánto me pagaron": "Q-003", "cuanto me pagaron": "Q-003", "resultado neto": "Q-003", "monto liquidado": "Q-003", "dinero recibido": "Q-003",
+        # Q-004
+        "q-004": "Q-004", "qf-004": "Q-004", "int-qf-004": "Q-004", "intent_saldo_pendiente": "Q-004",
+        "¿qué falta por cobrar?": "Q-004", "qué falta por cobrar": "Q-004", "que falta por cobrar": "Q-004", "saldo pendiente": "Q-004", "por cobrar": "Q-004", "pendiente de cobro": "Q-004",
+        # Q-005
+        "q-005": "Q-005", "qf-005": "Q-005", "int-qf-005": "Q-005", "intent_devoluciones": "Q-005",
+        "¿qué devoluciones existen?": "Q-005", "qué devoluciones existen": "Q-005", "que devoluciones existen": "Q-005", "devoluciones": "Q-005", "anulaciones": "Q-005", "notas de crédito": "Q-005",
+        # Q-006
+        "q-006": "Q-006", "qf-006": "Q-006", "int-qf-006": "Q-006", "intent_respaldo_dte": "Q-006",
+        "¿qué xml o dte respalda la operación?": "Q-006", "qué xml respalda": "Q-006", "que xml respalda": "Q-006", "respaldo dte": "Q-006", "facturas xml": "Q-006", "folios xml": "Q-006",
+        # Q-007
+        "q-007": "Q-007", "qf-007": "Q-007", "int-qf-007": "Q-007", "intent_respaldo_sap": "Q-007",
+        "¿qué registro sap respalda la operación?": "Q-007", "qué registro sap respalda": "Q-007", "que documento sap respalda": "Q-007", "respaldo sap": "Q-007", "asiento sap": "Q-007",
+        # Q-008
+        "q-008": "Q-008", "qf-008": "Q-008", "int-qf-008": "Q-008", "intent_respaldo_banco": "Q-008",
+        "¿qué movimiento bancario respalda el pago?": "Q-008", "qué movimiento bancario respalda": "Q-008", "que movimiento bancario respalda": "Q-008", "respaldo banco": "Q-008", "cartola bancaria": "Q-008", "transferencia tef": "Q-008",
+        # Q-009
+        "q-009": "Q-009", "qf-009": "Q-009", "int-qf-009": "Q-009", "intent_cargos_no_explicados": "Q-009",
+        "¿qué cargo, comisión o descuento está oculto o no explicado?": "Q-009", "cargos no explicados": "Q-009", "cobros no explicados": "Q-009", "penalidades": "Q-009", "cobros no previstos": "Q-009",
+        # Q-010
+        "q-010": "Q-010", "qf-010": "Q-010", "int-qf-010": "Q-010", "intent_margen_financiero_real": "Q-010",
+        "¿cuál es el margen financiero real?": "Q-010", "cuál es el margen financiero real": "Q-010", "cual es el margen financiero real": "Q-010", "margen financiero": "Q-010", "margen real": "Q-010", "margen financiero real": "Q-010",
     }
 
     def __init__(self, db: DatabaseV4 | None = None):
@@ -43,11 +87,53 @@ class CopilotEngine:
         self.anomalies = FinancialAnomalyDetector()
         self.query_guard = QueryGuard()
 
+    def resolve_question(self, query: str) -> str:
+        if not query or not query.strip():
+            raise ValueError("Empty question query")
+        cleaned = query.strip().lower()
+        if cleaned in self.QUESTIONS:
+            return cleaned
+        if cleaned in self.SYNONYMS:
+            return self.SYNONYMS[cleaned]
+        # Check alias format QF-001 -> Q-001
+        upper_clean = query.strip().upper()
+        if upper_clean.startswith("QF-"):
+            q_id = "Q-" + upper_clean[3:]
+            if q_id in self.QUESTIONS:
+                return q_id
+        if upper_clean.startswith("INT-QF-"):
+            q_id = "Q-" + upper_clean[7:]
+            if q_id in self.QUESTIONS:
+                return q_id
+        raise ValueError(f"Unknown question: {query}")
+
     def ask(self, question_id: str, marketplace: str | None = None, periodo: str | None = None) -> dict[str, Any]:
-        if question_id not in self.QUESTIONS:
-            raise ValueError(f"Unknown question: {question_id}")
-        handler = getattr(self, self.QUESTIONS[question_id]["handler"])
-        return handler(marketplace, periodo)
+        resolved_qid = self.resolve_question(question_id)
+        handler = getattr(self, self.QUESTIONS[resolved_qid]["handler"])
+        res = handler(marketplace, periodo)
+        res["question_id"] = resolved_qid
+        if "intent_id" in self.QUESTIONS[resolved_qid]:
+            res["intent_id"] = self.QUESTIONS[resolved_qid]["intent_id"]
+        return res
+
+    def _handle_insufficient_evidence(self, marketplace: str | None, periodo: str | None) -> dict[str, Any]:
+        return self._response({
+            "question": "Consulta requerida",
+            "period": periodo,
+            "status": "INSUFFICIENT_EVIDENCE",
+            "answer": {
+                "summary": "No se puede responder con evidencia suficiente.",
+                "status": "insufficient_evidence"
+            },
+            "explanation": {
+                "text": "No se puede responder con evidencia suficiente.",
+                "bullet_points": ["No existe evidencia probatoria $0 delta certificada para este tramo."]
+            },
+            "breakdown": [],
+            "evidence": [],
+            "confidence": 0.0,
+            "fallback": "No se puede responder con evidencia suficiente."
+        })
 
     # ── SHARED HELPERS (single implementation each) ──────────────
 

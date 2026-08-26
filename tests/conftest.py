@@ -57,7 +57,7 @@ def v8_interceptor(v8_temp_db_path):
     DatabaseV4._instance = interceptor
     DatabaseV4._shutdown_registered = True
     ts = datetime.datetime.now().isoformat()
-    print(f"[V8 INTERCEPTOR] DatabaseV4 singleton → {v8_temp_db_path} at {ts}")
+    print(f"[V8 INTERCEPTOR] DatabaseV4 singleton -> {v8_temp_db_path} at {ts}")
     yield
     DatabaseV4.reset()
     gc.collect()

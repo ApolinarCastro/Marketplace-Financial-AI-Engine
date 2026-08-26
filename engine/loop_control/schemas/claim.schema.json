@@ -1,0 +1,26 @@
+{
+  "$schema": "loop-control/v1",
+  "title": "Claim",
+  "type": "object",
+  "required": [
+    "goal_id",
+    "todo_id",
+    "agent_id",
+    "claimed_at",
+    "expires_at",
+    "write_scope"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "goal_id": { "type": "string", "pattern": "^[A-Z0-9_\\-]{3,64}$" },
+    "todo_id": { "type": "string", "pattern": "^[A-Z0-9_\\-]{3,64}$" },
+    "agent_id": { "type": "string", "minLength": 2 },
+    "claimed_at": { "type": "string", "minLength": 20 },
+    "expires_at": { "type": "string", "minLength": 20 },
+    "heartbeat_at": { "type": ["string", "null"] },
+    "released_at": { "type": ["string", "null"] },
+    "write_scope": { "type": "array", "items": { "type": "string" } },
+    "revision": { "type": "integer", "minimum": 0 },
+    "idempotency_key": { "type": ["string", "null"] }
+  }
+}

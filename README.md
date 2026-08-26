@@ -1,49 +1,48 @@
-# Marketplace Conciliacion V4
+# Marketplace Financial AI Engine
 
 ## Ruta canonica
 
 - Backend FastAPI: `Scripts\run_python.bat run_app.py`
-- Frontend React/Vite: `cd src/frontend && npm run dev`
 - API base V4: `http://127.0.0.1:3001/api/v4`
 - Arranque rapido Windows: `START_APP.bat`
-- Frontend oficial: `http://127.0.0.1:3001/app`
-- Legacy HTML: `http://127.0.0.1:3001/legacy`
+- Frontend oficial: `http://127.0.0.1:3001/app` (servido server-side desde `templates/`)
 - `START_APP.bat` inicia el backend con el wrapper oficial y abre la UI principal
 
 ## Estructura principal
 
-- `01_Raw`: archivos fuente por marketplace y SAP
-- `02_Curated/Antigravity_V4_Reports`: reportes exportados por el motor V4
-- `04_Conciliaciones`: datasets parquet de salida
-- `api/api.py`: contrato API canonico para la app
-- `engine/v4`: motor de ingestion, conciliacion, excepciones y reporting
-- `src/frontend`: panel operativo React
-- `analysis/`: analisis puntuales y generacion de artefactos auxiliares
-- `legacy/`: entrypoints y prototipos archivados para referencia
-- `tests/test_api_smoke.py`: verificacion minima del contrato API
+- `01_Raw`: archivos fuente por marketplace y SAP (inmutable)
+- `data/db/meli_financial_v4.db`: base de datos DuckDB oficial (unica fuente de verdad operacional)
+- `api/api.py`: contrato API canonico (FastAPI, ~86 rutas bajo `/api/v4`)
+- `engine/v4`: motores de la cadena financiera
+- `templates/`: paneles servidos por el backend (`dashboard.html`, `executive_dashboard.html`, `documentary_dashboard.html`, `traceability.html`, `copilot.html`, `upload_center.html`)
+- `frontend/shared/`: assets JS compartidos servidos en `/shared` (api_client.js, financial-formatter.js)
+- `tests/`: suite de tests activa
+- `tools/`: harness y scripts de validacion
+- `knowledge/`: taxonomias certificadas y registros de conocimiento
+- `evidence/`: evidencia de certificacion y baselines reproducibles
 
-## Raiz minima
+## Arquitectura financiera
 
-- La raiz operativa debe contener solo entrypoints vigentes, configuracion y documentacion principal.
-- El runtime oficial en raiz es `run_app.py`, `START_APP.bat`, `package.json`, `requirements.txt` y documentacion.
-- Los prototipos retirados de servicio fueron movidos a `legacy/root_legacy/`.
+```
+Ledger
+→ Classification
+→ Truth
+→ Reconciliation
+→ Exception Engine
+```
 
-## CLI de pipeline
+Cadena completa: `01_Raw → ETL → Ledger → Classification → Truth → Reconciliation → Exceptions → API → Dashboard`.
 
-- El entrypoint del pipeline operativo es `Scripts/pipeline_cli.py`.
-- `npm run pipeline` ejecuta ese CLI con el wrapper oficial.
+## Base de datos
 
-## Base de datos V4
-
-- La base oficial del motor V4 vive en `data/db/antigravity_v4.db`.
-- Si existe una base anterior en `database/antigravity_v4.db`, el motor la migra automaticamente a `data/db/` cuando puede.
+- DB oficial: `data/db/meli_financial_v4.db` (DuckDB, read-only en runtime).
+- No existe `antigravity_v4.db`: ya no forma parte del modelo.
+- Contrato SQL = API = UI inmutables (regresion 14/14).
 
 ## Instalacion
 
 ```bash
 py -m pip install -r requirements.txt
-cd src/frontend
-npm install
 ```
 
 ## Ejecucion
@@ -54,53 +53,55 @@ npm install
 Scripts\run_python.bat run_app.py
 ```
 
-2. Frontend:
+2. Abrir: `http://127.0.0.1:3001/app`
 
-```bash
-cd src/frontend
-npm run dev
+Las rutas de UI disponibles:
+
+```text
+/app            Marketplace Auditor (dashboard principal)
+/exec           Reporte Gerencial Ejecutivo
+/documentary  Documentary Dashboard
+/traceability   Trazabilidad
+/copilot        Copilot
+/upload         Upload Center
 ```
-
-El frontend usa proxy a `127.0.0.1:3001`, por lo que no necesita URLs hardcodeadas. El contrato oficial del panel React es `api/v4`.
-
-Si existe build en `src/frontend/dist`, el backend sirve esa UI en `/app`. El dashboard HTML heredado queda disponible en `/legacy`.
 
 ## Runtime oficial
 
-- Toda ejecucion Python soportada pasa por `Scripts\run_python.bat`.
-- `run_app.py` es el entrypoint oficial del backend.
-- V3 legacy queda fuera del arranque principal y solo debe habilitarse con `ENABLE_LEGACY_V3=1`.
-- Los endpoints legacy en `/api/*` se mantienen temporalmente como aliases de compatibilidad.
+- Toda ejecucion Python soportada pasa por `Scripts\run_python.bat` (usa `.venv`).
+- `run_app.py` es el entrypoint oficial del backend (uvicorn, puerto 3001).
+- La DB oficial se abre en modo read-only el runtime.
 
 ## Scripts utiles
 
 ```bash
-npm run server
-npm run frontend
-npm run build:frontend
-npm run check:python
-npm run pipeline
-npm run smoke
-npm run test:engine
-npm run test:etl
-npm run test:integration
-npm run test:all
+npm run test:all    # pytest tests/ -v --tb=short
+npm run lint        # ruff check .
+npm run typecheck   # mypy api/ engine/ --ignore-missing-imports
 ```
 
-## Validacion recomendada
+## Validacion
 
-- `npm run check:python`: confirma que el proyecto esta usando `.venv` y que las dependencias Python criticas estan disponibles.
-- `npm run test:all`: ejecuta chequeo de entorno, smoke API, tests del motor, tests ETL, integracion y build del frontend.
-- CI: el workflow de `.github/workflows/ci.yml` ejecuta esa misma validacion en Windows.
+- CI: `.github/workflows/ci.yml` ejecuta lint, typecheck y pytest con `.venv` en Windows.
+- `pytest tests/` cubre la suite completa (ver `evidence/production_baseline/tests_before.json`).
 
 ## Flujo operativo
 
 1. Cargar archivos en `01_Raw`
-2. Abrir el panel y ejecutar `Pipeline V4`
-3. Revisar KPIs globales, conciliacion por orden, excepciones y reportes exportados
+2. Abrir el panel `/upload` para registrar ingestiones
+3. Revisar KPIs en `/app` y `/exec`, excepciones y conciliaciones
+
+## Certificacion electronica (regla fundamental)
+
+```text
+LEDGER_EXISTING  !=  CRYPTOGRAPHIC_CERTIFIED
+```
+
+Solo evidencia fiscal real (DTE SII indexado en `dte_truth_v1` con vinculo `dte_linked=1`) puede producir certificacion fiscal.
+Las referencias de liquidacion Ripley (settlement) NUNCA se presentan como folio SII.
 
 ## Regla de orden
 
 - La raiz debe contener solo entrypoints, configuracion y documentacion principal.
-- Los scripts manuales nuevos deben entrar en areas auxiliares y no en el flujo productivo por defecto.
-- Si un script pasa a ser parte del flujo productivo, debe migrarse a `engine/`, `api/` o `tests/`.
+- Los scripts manuales (patch, fix, inject) que no forman parte del runtime se archivan bajo `_archive/` tras consolidacion.
+- Todo script que pasa a ser parte del flujo productivo se migra a `engine/`, `api/` o `tests/`.

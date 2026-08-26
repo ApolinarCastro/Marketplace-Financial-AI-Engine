@@ -6,6 +6,8 @@ Each stage implements StageHandler protocol (async handle()).
 Failure in any stage stops the pipeline (fail-fast).
 """
 from __future__ import annotations
+import logging
+logger = logging.getLogger(__name__)
 from pathlib import Path
 from typing import Any, Protocol
 
@@ -119,6 +121,7 @@ class IngestionOrchestrator:
                 for warning in stage_result.get("warnings", []):
                     self.registry.add_warning(record, warning)
             except Exception as e:
+                logger.error(f"Exception in stage {stage_name} for file {record.file_name} (exec: {record.execution_id})", exc_info=True)
                 self.registry.add_error(record, f"{stage_name} exception: {e}")
                 break
 

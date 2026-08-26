@@ -1,12 +1,12 @@
 {
   "name": "operational_intelligence_ml",
   "arm": "current",
-  "median_duration_ms": 0,
-  "median_memory_mb": 0,
-  "median_sql_count": 0,
-  "stddev_duration_ms": 0,
-  "stddev_memory_mb": 0,
+  "median_duration_ms": 5.606949998764321,
+  "median_memory_mb": 0.10766124725341797,
+  "median_sql_count": 0.0,
+  "stddev_duration_ms": 1.5234092144570526,
+  "stddev_memory_mb": 4.5880446616796966e-05,
   "runs": 10,
-  "success_rate": 0.0,
-  "timestamp": 1784736184.0324397
+  "success_rate": 1.0,
+  "timestamp": 1787070385.7518532
 }

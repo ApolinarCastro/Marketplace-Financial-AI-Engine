@@ -1,3 +1,4 @@
+import os
 """
 Meli DTE Matcher — Automated XML Certification
 Links marketplace_ledger_v1 with Facturacion/*.xml per marketplace
@@ -19,16 +20,16 @@ class MeliXMLMatcher:
         self.ns = NAMESPACE
         self.marketplace = marketplace.upper()
         if self.marketplace == 'ML':
-            ml_raw = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\ML")
+            ml_raw = Path(os.environ.get("MF_PROJECT_ROOT", Path(__file__).parent.parent.parent)) / "01_Raw" / "ML"
             doc_dir = ml_raw / "Documentos Recepcionados"
             fact_dir = ml_raw / "Facturacion"
             self.raw_dir = doc_dir if doc_dir.exists() else fact_dir
         elif self.marketplace == 'PARIS':
-            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\PARIS\Facturacion")
+            self.raw_dir = Path(os.environ.get("MF_PROJECT_ROOT", Path(__file__).parent.parent.parent)) / "01_Raw" / "PARIS" / "Facturacion"
         elif self.marketplace == 'FALABELLA':
-            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\FALABELLA\Documentos Recepcionados")
+            self.raw_dir = Path(os.environ.get("MF_PROJECT_ROOT", Path(__file__).parent.parent.parent)) / "01_Raw" / "FALABELLA" / "Documentos Recepcionados"
         elif self.marketplace == 'RIPLEY':
-            self.raw_dir = Path(r"C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\01_Raw\RIPLEY\XML")
+            self.raw_dir = Path(os.environ.get("MF_PROJECT_ROOT", Path(__file__).parent.parent.parent)) / "01_Raw" / "RIPLEY" / "XML"
         else:
             raise ValueError(f"Unsupported marketplace: {marketplace}")
 
