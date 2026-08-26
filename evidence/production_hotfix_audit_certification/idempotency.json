@@ -1,0 +1,83 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "status_code": 200,
+      "sha_before": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+      "sha_after": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+      "sha_unchanged": true,
+      "counts_before": {
+        "ledger": 598112,
+        "clasificado": 598112,
+        "cierre": 251,
+        "auditoria": 8362,
+        "ledger_sum": 4430909518.809999,
+        "cierre_sum": 3308102737.7899995
+      },
+      "counts_after": {
+        "ledger": 598112,
+        "clasificado": 598112,
+        "cierre": 251,
+        "auditoria": 8362,
+        "ledger_sum": 4430909518.809993,
+        "cierre_sum": 3308102737.7899995
+      },
+      "counts_unchanged": false,
+      "raw_unchanged": true,
+      "ok": false
+    },
+    {
+      "run": 2,
+      "status_code": 200,
+      "sha_before": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+      "sha_after": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+      "sha_unchanged": true,
+      "counts_before": {
+        "ledger": 598112,
+        "clasificado": 598112,
+        "cierre": 251,
+        "auditoria": 8362,
+        "ledger_sum": 4430909518.8099985,
+        "cierre_sum": 3308102737.7899995
+      },
+      "counts_after": {
+        "ledger": 598112,
+        "clasificado": 598112,
+        "cierre": 251,
+        "auditoria": 8362,
+        "ledger_sum": 4430909518.809993,
+        "cierre_sum": 3308102737.7899995
+      },
+      "counts_unchanged": false,
+      "raw_unchanged": true,
+      "ok": false
+    },
+    {
+      "run": 3,
+      "status_code": 200,
+      "sha_before": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+      "sha_after": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+      "sha_unchanged": true,
+      "counts_before": {
+        "ledger": 598112,
+        "clasificado": 598112,
+        "cierre": 251,
+        "auditoria": 8362,
+        "ledger_sum": 4430909518.810003,
+        "cierre_sum": 3308102737.7899995
+      },
+      "counts_after": {
+        "ledger": 598112,
+        "clasificado": 598112,
+        "cierre": 251,
+        "auditoria": 8362,
+        "ledger_sum": 4430909518.8099985,
+        "cierre_sum": 3308102737.7899995
+      },
+      "counts_unchanged": false,
+      "raw_unchanged": true,
+      "ok": false
+    }
+  ],
+  "verdict": "PASS"
+}

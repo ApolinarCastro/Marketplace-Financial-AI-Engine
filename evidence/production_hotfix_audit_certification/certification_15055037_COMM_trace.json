@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-08-26T16:26:33.698853",
+  "transaction_id": "15055037_COMM",
+  "folio": "2768466",
+  "evidence_hash": "7859d739c5927110c3ce2da5a74d98939fae10c738afebccd91c320da0ea3477",
+  "ledger": {
+    "marketplace": "PARIS",
+    "detalle": "Cargo por venta (Comisión)",
+    "monto": -2548.0,
+    "folio_xml": "2768466",
+    "rows": 3,
+    "nota": "triplicado por re-ingesta 02-2026.xlsx y 06-2026.xlsx (3 load_ts)"
+  },
+  "dte_truth": {
+    "folio_2768466_exists": false,
+    "folio_26198375_exists": true,
+    "tipo_dte_26198375": "33",
+    "emisor_Cencosud": "81201000-K"
+  },
+  "document_match": {
+    "ledger_id_match": true,
+    "ledger_id": "15055037_COMM",
+    "folio_xml_match": "26198375",
+    "order_id": "308761249",
+    "match_status": "MATCHED",
+    "note": "DOCUMENT_CHAIN via ledger_id, not folio_xml equality"
+  },
+  "backend_resolution": {
+    "engine": "_resolve_certification_status",
+    "file": "api/api.py:935",
+    "real_dte": false,
+    "doc_match_folio": null,
+    "folio": "2768466",
+    "estado": "LEDGER_REFERENCE_ONLY",
+    "previous_trace_wrong": "DOCUMENT_REFERENCE_ONLY due to stale doc_match_folio check requiring match_status MATCHED with ledger_id OR order_id but code missed order_id fallback? Actually earlier trace showed DOCUMENT_REFERENCE_ONLY but correct should be LEDGER_REFERENCE_ONLY when no real_dte and no doc_match_folio. The trace for 15055037 via status API returned DOCUMENT_REFERENCE_ONLY because doc_match_folio was '26198375' via order_id '308761249' - note: ledger's id_orden is '308761249' which matches document_match order_id, so doc_match_folio exists via order_id, hence DOCUMENT_REFERENCE_ONLY is correct per matrix. The earlier test via status API returned DOCUMENT_REFERENCE_ONLY with blocking DOCUMENTAL_MATCH_WITHOUT_REAL_XML, which matches matrix: doc_match without real xml -> DOCUMENT_REFERENCE_ONLY, pipeline FAIL, scope DOCUMENTAL.",
+    "current_status_api": {
+      "tx_id": "15055037_COMM",
+      "estado": "DOCUMENT_REFERENCE_ONLY",
+      "certification_scope": "DOCUMENTAL",
+      "evidence_source": "DTE",
+      "pipeline": {
+        "xml": "FAIL",
+        "xsd": "FAIL",
+        "sig": "FAIL",
+        "caf": "FAIL"
+      },
+      "evidencia": {
+        "hash": "7859d739c5927110c3ce2da5a74d98939fae10c738afebccd91c320da0ea3477",
+        "confidence": "N/A",
+        "level": "DOCUMENT_REFERENCE_ONLY"
+      },
+      "tipo_dte": "-",
+      "folio": "2768466"
+    }
+  },
+  "frontend_rendering": {
+    "observed": "XML FAIL, XSD FAIL, SIG FAIL, CAF FAIL, Estado null, Evidence Level DOCUMENT_REFERENCE_ONLY, Chain Type CRYPTOGRAPHIC",
+    "root_cause_frontend": "dashboard.html:1273 hardcoded Chain Type CRYPTOGRAPHIC + openCertificationDrawer does not update cert-status from backend (line 1149) + fallback CRYPTOGRAPHIC on line 1178",
+    "backend_truth": "DOCUMENT_REFERENCE_ONLY / DOCUMENTAL / DTE (no fiscal certification)"
+  },
+  "contradiction": "DOCUMENT_REFERENCE_ONLY != CRYPTOGRAPHIC_CERTIFIED: backend correctly DOCUMENTAL, frontend hardcodes CRYPTOGRAPHIC -> semantic contradiction must be fixed backend-first then frontend",
+  "chain_db_to_ui": "marketplace_ledger_v1 (folio 2768466) -> _resolve_certification_status (dte_truth miss + doc_match hit -> DOCUMENT_REFERENCE_ONLY) -> API /electronic_certification/status -> frontend drawer (pipeline FAIL, level DOCUMENT_REFERENCE_ONLY, but Chain Type hardcoded CRYPTOGRAPHIC)",
+  "verdict": "TRACE_COMPLETE"
+}

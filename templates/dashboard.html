@@ -1175,8 +1175,14 @@
                 if (res.evidencia) {
                     document.getElementById('ev-hash').innerText = res.evidencia.hash || '-';
                     document.getElementById('ev-conf').innerText = res.evidencia.confidence || '-';
-                    document.getElementById('cert-level').innerText = res.evidencia.level || 'CRYPTOGRAPHIC';
+                    document.getElementById('cert-level').innerText = res.evidencia.level || res.estado || 'INSUFFICIENT_FISCAL_EVIDENCE';
                     document.getElementById('cert-hash').innerText = res.evidencia.hash || '-';
+                }
+                if (res.estado) document.getElementById('cert-status').innerText = res.estado;
+                if (res.certification_scope) document.getElementById('chain-type').innerText = res.certification_scope;
+                else if (res.estado) {
+                    const scopeMap = {'CRYPTOGRAPHIC_CERTIFIED':'FISCAL','XML_PRESENT_NOT_CERTIFIED':'FISCAL','DOCUMENT_REFERENCE_ONLY':'DOCUMENTAL','LEDGER_REFERENCE_ONLY':'LIQUIDACION','INSUFFICIENT_FISCAL_EVIDENCE':'UNKNOWN','TRUTH_CONFLICT_DETECTED':'UNKNOWN'};
+                    document.getElementById('chain-type').innerText = scopeMap[res.estado] || res.estado;
                 }
             }
         } catch (e) {
@@ -1270,7 +1276,7 @@
                 <div class="p-4 border-t border-slate-700 text-xs font-mono text-slate-300 space-y-1">
                     <p>Evidence Hash: <span id="ev-hash">-</span></p>
                     <p>Confidence: <span id="ev-conf">-</span></p>
-                    <p>Chain Type: CRYPTOGRAPHIC</p>
+                    <p>Chain Type: <span id="chain-type">-</span></p>
                 </div>
             </details>
             

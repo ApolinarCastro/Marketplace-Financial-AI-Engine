@@ -1,0 +1,120 @@
+{
+  "timestamp": "2026-08-26T16:26:50.735443",
+  "rule": "DOCUMENT_REFERENCE_ONLY != CRYPTOGRAPHIC_CERTIFIED",
+  "states": {
+    "CRYPTOGRAPHIC_CERTIFIED": {
+      "requires": [
+        "XML PASS",
+        "XSD PASS",
+        "SIG PASS",
+        "CAF PASS",
+        "folio in dte_truth_v1",
+        "document_match MATCHED mismo folio"
+      ],
+      "pipeline": {
+        "xml": "PASS",
+        "xsd": "PASS",
+        "sig": "PASS",
+        "caf": "PASS"
+      },
+      "estado": "CRYPTOGRAPHIC_CERTIFIED",
+      "scope": "FISCAL",
+      "source": "XML+DTE",
+      "confidence": "100.0%",
+      "chain_type": "FISCAL",
+      "example": "folio en dte_truth + doc_match"
+    },
+    "XML_PRESENT_NOT_CERTIFIED": {
+      "requires": [
+        "XML PASS"
+      ],
+      "pipeline": {
+        "xml": "PASS",
+        "xsd": "PASS",
+        "sig": "FAIL",
+        "caf": "FAIL"
+      },
+      "estado": "XML_PRESENT_NOT_CERTIFIED",
+      "scope": "FISCAL",
+      "chain_type": "FISCAL"
+    },
+    "DOCUMENT_REFERENCE_ONLY": {
+      "requires": [
+        "doc_match MATCHED sin dte_truth"
+      ],
+      "pipeline": {
+        "xml": "FAIL",
+        "xsd": "FAIL",
+        "sig": "FAIL",
+        "caf": "FAIL"
+      },
+      "estado": "DOCUMENT_REFERENCE_ONLY",
+      "scope": "DOCUMENTAL",
+      "source": "DTE",
+      "confidence": "N/A",
+      "chain_type": "DOCUMENTAL"
+    },
+    "LEDGER_REFERENCE_ONLY": {
+      "requires": [
+        "folio en ledger sin dte_truth ni doc_match"
+      ],
+      "pipeline": {
+        "xml": "FAIL",
+        "xsd": "FAIL",
+        "sig": "FAIL",
+        "caf": "FAIL"
+      },
+      "estado": "LEDGER_REFERENCE_ONLY",
+      "scope": "LIQUIDACION",
+      "chain_type": "LIQUIDACION"
+    },
+    "INSUFFICIENT_FISCAL_EVIDENCE": {
+      "requires": [
+        "sin folio/sin dte/sin match o RIPLEY sin bridge"
+      ],
+      "pipeline": {
+        "xml": "FAIL",
+        "xsd": "FAIL",
+        "sig": "FAIL",
+        "caf": "FAIL"
+      },
+      "estado": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "scope": "UNKNOWN",
+      "chain_type": "UNKNOWN"
+    },
+    "TRUTH_CONFLICT_DETECTED": {
+      "requires": [
+        "dte_truth folio != doc_match folio"
+      ],
+      "pipeline": {
+        "xml": "FAIL",
+        "xsd": "FAIL",
+        "sig": "FAIL",
+        "caf": "FAIL"
+      },
+      "estado": "TRUTH_CONFLICT_DETECTED",
+      "scope": "UNKNOWN",
+      "chain_type": "UNKNOWN"
+    }
+  },
+  "prohibitions": [
+    "DOCUMENT_REFERENCE_ONLY -> Chain Type != CRYPTOGRAPHIC",
+    "DOCUMENT_REFERENCE_ONLY -> Status != null",
+    "FAIL/FAIL/FAIL/FAIL -> CRYPTOGRAPHIC_CERTIFIED prohibited",
+    "CRYPTOGRAPHIC_CERTIFIED -> requires real fiscal evidence",
+    "LEDGER_REFERENCE_ONLY -> never fiscal certification"
+  ],
+  "normalization": "null -> INSUFFICIENT_FISCAL_EVIDENCE or explicit estado per matrix",
+  "case_15055037": {
+    "folio": 2768466,
+    "xml": "FAIL",
+    "xsd": "FAIL",
+    "sig": "FAIL",
+    "caf": "FAIL",
+    "level": "DOCUMENT_REFERENCE_ONLY",
+    "chain_type_must_be": "DOCUMENTAL",
+    "chain_type_observed": "CRYPTOGRAPHIC (bug)",
+    "verdict": "CONTRADICTION - frontend hardcoded"
+  },
+  "verdict": "MATRIX_DEFINED"
+}

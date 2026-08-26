@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-26T16:28:25.926624",
+  "branch": "phase5/production-readiness",
+  "commit": "8cecbf3080bb35426969bc8bd2c5231a76e33f40",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "checks": {
+    "boton_auditoria_funciona": "PASS",
+    "auditoria_read_only": "PASS (3/3, SHA unchanged, 0 DELETE)",
+    "idempotencia": "3/3 PASS",
+    "falabella_mar_may_verificados": "PASS (3/3 NEGATIVO, mayo -267948 confirmado)",
+    "c_15055037_estado_explicito": "PASS (DOCUMENT_REFERENCE_ONLY)",
+    "c_15055037_no_cryptographic": "PASS (DOCUMENTAL, no FISCAL)",
+    "no_falsas_certificaciones": "PASS (FALSE_FISCAL_CERTIFICATIONS=0)",
+    "db_intacta": "PASS",
+    "raw_intacto": "PASS",
+    "financial_delta": "$0.00",
+    "new_regressions": 0
+  },
+  "verdict": "PRODUCTION_HOTFIX_CERTIFIED"
+}

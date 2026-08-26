@@ -808,6 +808,47 @@ class MarketplaceAuditorEngine:
             pass
         return n
 
+    def run_audit_read_only(self):
+        """READ-ONLY audit: validates without DELETE/INSERT on official DB. Returns report dict."""
+        report = {"checks": [], "total_findings": 0}
+        # 1. No Clasificados count
+        try:
+            cnt = self.db.query("SELECT COUNT(*) as c FROM marketplace_ledger_clasificado_v1 WHERE clasificacion_operativa = 'NO_CLASIFICADO'").iloc[0]['c']
+            report["checks"].append({"name": "movimientos_no_clasificados", "count": int(cnt), "status": "PASS" if cnt==0 else "FAIL"})
+            report["total_findings"] += int(cnt)
+        except Exception as e:
+            report["checks"].append({"name": "movimientos_no_clasificados", "error": str(e), "status": "ERROR"})
+        # 2. OTROS <=5%
+        try:
+            total_monto = self.db.query("SELECT COALESCE(SUM(ABS(monto)), 0) as total FROM marketplace_ledger_v1").iloc[0]['total']
+            unclassified_monto = self.db.query("SELECT COALESCE(SUM(ABS(monto)), 0) as total FROM marketplace_ledger_clasificado_v1 WHERE clasificacion_operativa = 'NO_CLASIFICADO'").iloc[0]['total']
+            pct = (unclassified_monto/total_monto*100) if total_monto>0 else 0
+            report["checks"].append({"name": "limite_otros_excedido", "porcentaje": round(pct,2), "status": "PASS" if pct<=5 else "FAIL"})
+            if pct>5:
+                report["total_findings"] += 1
+        except Exception as e:
+            report["checks"].append({"name": "limite_otros_excedido", "error": str(e), "status": "ERROR"})
+        # 3. Cargo sin respaldo legal (count only, no INSERT)
+        try:
+            has_document_match = True
+            try:
+                self.db.execute("SELECT 1 FROM document_match_v1 LIMIT 1")
+            except Exception:
+                has_document_match = False
+            norm = "regexp_replace(regexp_replace(l.folio_xml, '\\.0$', ''), '^[0-9]+-0*', '')"
+            l_sub = "(SELECT DISTINCT folio_xml, id_orden, marketplace FROM marketplace_ledger_v1 WHERE COALESCE(include_in_operational_pnl, 1) = 1 AND folio_xml IS NOT NULL AND folio_xml <> 'None' AND folio_xml NOT LIKE '%disponible%' AND folio_xml NOT LIKE 'A%n%')"
+            ripley_exclude = "AND LOWER(l.marketplace) <> 'ripley'"
+            if has_document_match:
+                q = f"SELECT COUNT(*) as c FROM {l_sub} l LEFT JOIN dte_truth_v1 t ON {norm} = t.folio LEFT JOIN document_match_v1 m ON l.id_orden = m.order_id WHERE t.folio IS NULL AND m.match_id IS NULL AND (l.id_orden NOT LIKE '%2023%' AND l.id_orden NOT LIKE '%2024%' AND l.id_orden NOT LIKE '%2025%') {ripley_exclude}"
+            else:
+                q = f"SELECT COUNT(*) as c FROM {l_sub} l LEFT JOIN dte_truth_v1 t ON {norm} = t.folio WHERE t.folio IS NULL AND (l.id_orden NOT LIKE '%2023%' AND l.id_orden NOT LIKE '%2024%' AND l.id_orden NOT LIKE '%2025%') {ripley_exclude}"
+            cnt2 = self.db.query(q).iloc[0]['c']
+            report["checks"].append({"name": "cargo_sin_respaldo_legal", "count": int(cnt2), "status": "PASS" if cnt2==0 else "REVIEW"})
+            report["total_findings"] += int(cnt2)
+        except Exception as e:
+            report["checks"].append({"name": "cargo_sin_respaldo_legal", "error": str(e), "status": "ERROR"})
+        return report
+
     def _audit_ripley_folio_coverage(self):
         """Document Ripley folio situation: XLSX refs vs SII DTE folios are structurally incompatible.
         Inserts a single informational entry per audit run, not per-row false positives."""

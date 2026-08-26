@@ -1104,31 +1104,10 @@ def get_executive_dashboard():
 
 @app.post("/api/v4/run-audit")
 def run_full_audit(marketplace: str = "ML"):
-    from engine.v4.run_initial_audit import load_marketplace_ledger_standalone
-    from engine.v4.surgical_loader import SurgicalLoader
-    from engine.v4.dte_indexer import DTEIndexer
-    from engine.v4.surgical_xml_justifier import XMLJustifier
-    
     try:
-        db = DatabaseV4.get()
-        # 1. Ingest all raw files for all marketplaces using standalone loader
-        # 2. Run Vectorized Classification
         engine = MarketplaceAuditorEngine()
-        engine.run_classification(marketplace=marketplace)
-        
-        # 3. Generate monthly financial closures from 2023 to 2026
-        for year in [2023, 2024, 2025, 2026]:
-            for month in range(1, 13):
-                import calendar
-                last_day = calendar.monthrange(year, month)[1]
-                p_ini = f"{year}-{month:02d}-01"
-                p_fin = f"{year}-{month:02d}-{last_day}"
-                engine.run_financial_closing(marketplace, p_ini, p_fin)
-                
-        # 4. Run Audit alerts
-        engine.run_audit()
-        
-        return {"status": "success", "message": f"Ingesta, Cruce DTE y Auditoría completadas para {marketplace}"}
+        report = engine.run_audit_read_only()
+        return {"status": "success", "message": f"Auditoría READ-ONLY completada para {marketplace}", "report": report, "mode": "READ_ONLY"}
     except Exception as e:
         import logging
         logging.getLogger("api").error(f"Error running audit for {marketplace}: {e}", exc_info=True)

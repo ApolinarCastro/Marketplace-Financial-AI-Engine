@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-08-26T16:27:38.119243",
+  "caseA": {
+    "endpoint": "POST /api/v4/run-audit",
+    "status": 200,
+    "body": {
+      "status": "success",
+      "message": "Auditoría READ-ONLY completada para ML",
+      "report": {
+        "checks": [
+          {
+            "name": "movimientos_no_clasificados",
+            "count": 0,
+            "status": "PASS"
+          },
+          {
+            "name": "limite_otros_excedido",
+            "porcentaje": 0.0,
+            "status": "PASS"
+          },
+          {
+            "name": "cargo_sin_respaldo_legal",
+            "count": 2286,
+            "status": "REVIEW"
+          }
+        ],
+        "total_findings": 2286
+      },
+      "mode": "READ_ONLY"
+    },
+    "sha_before": "311c78e2b7471b3e",
+    "sha_after": "311c78e2b7471b3e",
+    "sha_unchanged": true,
+    "verdict": "PASS"
+  },
+  "caseB": [
+    {
+      "periodo": "2026-03",
+      "ledger_neto": -785566.327,
+      "api_status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "periodo": "2026-04",
+      "ledger_neto": -1155270.4960000017,
+      "api_status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "periodo": "2026-05",
+      "ledger_neto": -267947.87699999986,
+      "api_status": 200,
+      "verdict": "PASS"
+    }
+  ],
+  "caseC": {
+    "tx_id": "15055037_COMM",
+    "estado": "DOCUMENT_REFERENCE_ONLY",
+    "estado_is_null": false,
+    "evidence_level": "DOCUMENT_REFERENCE_ONLY",
+    "chain_type_api": "DOCUMENTAL",
+    "pipeline": {
+      "xml": "FAIL",
+      "xsd": "FAIL",
+      "sig": "FAIL",
+      "caf": "FAIL"
+    },
+    "expected_chain": "DOCUMENTAL",
+    "chain_match": true,
+    "contradiction_resolved": true,
+    "verdict": "PASS",
+    "frontend_fixed": true
+  },
+  "overall": "PASS"
+}

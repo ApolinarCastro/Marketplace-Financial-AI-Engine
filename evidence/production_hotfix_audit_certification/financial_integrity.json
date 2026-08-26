@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-08-26T16:28:25.926624",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_expected": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_match": true,
+  "ledger_count": 598112,
+  "ledger_sum": 4430909518.810003,
+  "cierre_sum": 3308102737.7899995,
+  "raw_count": 1313,
+  "financial_delta": "$0.00",
+  "official_db_integrity": "PASS",
+  "raw_mutations": 0,
+  "verdict": "PASS"
+}

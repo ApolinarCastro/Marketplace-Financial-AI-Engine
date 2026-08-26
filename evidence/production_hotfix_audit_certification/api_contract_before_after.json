@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-26T16:28:25.926624",
+  "before": {
+    "POST /api/v4/run-audit": "DELETE FROM marketplace_ledger_clasificado_v1 / cierre / auditoria -> FAIL in read-only mode"
+  },
+  "after": {
+    "POST /api/v4/run-audit": "READ-ONLY: run_audit_read_only() -> SELECT only, mode READ_ONLY, no DELETE"
+  },
+  "certification": {
+    "before_chain": "DOCUMENT_REFERENCE_ONLY + CRYPTOGRAPHIC (hardcoded)",
+    "after_chain": "DOCUMENT_REFERENCE_ONLY -> DOCUMENTAL (dynamic from backend)",
+    "estado_null_fixed": true
+  },
+  "verdict": "CONTRACT_CORRECTED"
+}

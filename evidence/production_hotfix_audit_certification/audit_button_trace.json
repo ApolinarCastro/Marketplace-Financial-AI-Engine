@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-08-26T16:20:15.555825",
+  "branch": "phase5/production-readiness",
+  "chain": {
+    "ui_button": {
+      "file": "templates/dashboard.html:54",
+      "label": "Ejecutar Auditoría",
+      "handler": "runAudit() @ dashboard.html:1000",
+      "fetch": "ApiClient.safeFetch('/api/v4/run-audit?marketplace='+mp, {method:'POST'})"
+    },
+    "api_endpoint": {
+      "file": "api/api.py:1105",
+      "route": "POST /api/v4/run-audit",
+      "handler": "run_full_audit(marketplace)",
+      "imports": [
+        "MarketplaceAuditorEngine",
+        "SurgicalLoader",
+        "DTEIndexer",
+        "XMLJustifier"
+      ]
+    },
+    "engine_calls": [
+      {
+        "step": 1,
+        "engine": "MarketplaceAuditorEngine.run_classification",
+        "file": "engine/v4/marketplace_auditor.py:427",
+        "sql": "DELETE FROM marketplace_ledger_clasificado_v1 WHERE marketplace = ?  OR DELETE FROM marketplace_ledger_clasificado_v1 (all)",
+        "mode": "WRITE",
+        "error": "DELETE in read-only DB -> Cannot execute statement of type DELETE ... attached in read-only mode"
+      },
+      {
+        "step": 2,
+        "engine": "MarketplaceAuditorEngine.run_financial_closing (loop 2023-2026)",
+        "file": "engine/v4/marketplace_auditor.py:656",
+        "sql": "DELETE FROM marketplace_cierre_financiero_v1 WHERE marketplace = ? AND CAST(periodo AS DATE)...",
+        "mode": "WRITE"
+      },
+      {
+        "step": 3,
+        "engine": "MarketplaceAuditorEngine.run_audit",
+        "file": "engine/v4/marketplace_auditor.py:706",
+        "sql": "DELETE FROM marketplace_auditoria_v1",
+        "mode": "WRITE"
+      }
+    ]
+  },
+  "root_cause": "Endpoint reuses full pipeline (CLASSIFY + CLOSE + AUDIT) with unconditional DELETEs; when DatabaseV4 is attached read-only (production mode) every DELETE raises read-only error. Audit must be separated as READ-ONLY path.",
+  "contract_violation": "AUDIT → DELETE/REBUILD prohibited; expected AUDIT → READ → VALIDATE → REPORT",
+  "evidence": "api/api.py:1105-1135 + engine/v4/marketplace_auditor.py:427,434,656,707",
+  "verdict": "TRACE_COMPLETE"
+}

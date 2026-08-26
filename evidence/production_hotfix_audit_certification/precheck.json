@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-08-26T16:19:43.362988",
+  "branch": "phase5/production-readiness",
+  "commit": "8cecbf3080bb35426969bc8bd2c5231a76e33f40",
+  "git_status_lines": 804,
+  "git_status_sample": [
+    "D 0",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7136.xml\"",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7143.xml\"",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7265.xml\"",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7276.xml\"",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7402.xml\"",
+    " M \"01_Raw/FALABELLA/Documentos Recepcionados/dteproveedor_7404.xml\"",
+    " D \"01_Raw/FALABELLA/\\303\\223rdenes y Transacciones/1  abril   2026 - 30  abril   2026.xlsx\"",
+    " D \"01_Raw/FALABELLA/\\303\\223rdenes y Transacciones/1  marzo   2026 - 31  marzo   2026.xlsx\"",
+    " D \"01_Raw/FALABELLA/\\303\\223rdenes y Transacciones/1 junio 2026 al 5 junio 2026.xlsx\""
+  ],
+  "db_path": "data/db/meli_financial_v4.db",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_expected": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_sha_match": true,
+  "db_size": 58732544,
+  "raw_count": 1313,
+  "financial_control": {
+    "ledger_count": 598112,
+    "ledger_sum": 4430909518.810003,
+    "cierre_sum": 3308102737.7899995
+  }
+}

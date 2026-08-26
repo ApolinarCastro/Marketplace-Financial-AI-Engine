@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-08-26T16:23:15.228930",
+  "branch": "phase5/production-readiness",
+  "marketplace": "FALABELLA",
+  "matrix": [
+    {
+      "periodo": "2026-03",
+      "ingresos": 0,
+      "costos_operacionales": -285764.68699999957,
+      "costos_comerciales": -499801.6399999998,
+      "ajustes": 0,
+      "resultado_neto": -785566.3269999993,
+      "signo": "NEGATIVO",
+      "fuente": "marketplace_ledger_v1 (Single Financial Truth)"
+    },
+    {
+      "periodo": "2026-04",
+      "ingresos": 0,
+      "costos_operacionales": -538252.0459999995,
+      "costos_comerciales": -617018.4499999994,
+      "ajustes": 0,
+      "resultado_neto": -1155270.4959999989,
+      "signo": "NEGATIVO",
+      "fuente": "marketplace_ledger_v1 (Single Financial Truth)"
+    },
+    {
+      "periodo": "2026-05",
+      "ingresos": 0,
+      "costos_operacionales": -77563.01500000001,
+      "costos_comerciales": -189544.52599999993,
+      "ajustes": -840.336,
+      "resultado_neto": -267947.8769999999,
+      "signo": "NEGATIVO",
+      "fuente": "marketplace_ledger_v1 (Single Financial Truth)"
+    }
+  ],
+  "cierre_contrast": [
+    {
+      "periodo": "2026-03",
+      "cierre_neto": 0.0,
+      "ledger_neto": -785566.3269999993,
+      "delta": 785566.3269999993
+    },
+    {
+      "periodo": "2026-04",
+      "cierre_neto": 0.0,
+      "ledger_neto": -1155270.4959999989,
+      "delta": 1155270.4959999989
+    },
+    {
+      "periodo": "2026-05",
+      "cierre_neto": 0.0,
+      "ledger_neto": -267947.8769999999,
+      "delta": 267947.8769999999
+    }
+  ],
+  "mayo_267948_verificacion": {
+    "ledger_neto": -267947.8769999999,
+    "ui_observado": -267948,
+    "delta": 0.12300000007962808,
+    "veredicto": "CONFIRMADO",
+    "clasificacion": "UI_CALCULATION_CORRECT",
+    "nota": "Ledger confirma -267,947.88 (redondeo -267,948). Cierre canonical 2026-05-01 muestra 0.0 -> CIERRE_STALE. Verdad financiera = ledger."
+  },
+  "verdict": "MATRIX_COMPLETE"
+}
