@@ -1,0 +1,6 @@
+{
+  "decision": "C_EXTERNAL_FISCAL_BRIDGE_REQUIRED",
+  "reason": "100% XML reconciliados (472), 100% refs examined, 0 deterministic matches, 0 unresolved source, 0 gap after duplicate handling",
+  "external_field_needed": "settlement_invoice -> folio SII (external SII query)",
+  "verdict": "C_EXTERNAL_FISCAL_BRIDGE_REQUIRED"
+}

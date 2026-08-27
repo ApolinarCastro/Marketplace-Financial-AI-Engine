@@ -1,0 +1,7 @@
+{
+  "source_rows": 598112,
+  "ingested": 598112,
+  "rejected": 0,
+  "unexplained": 0,
+  "verdict": "UNEXPLAINED_TRANSACTION_OMISSIONS 0"
+}

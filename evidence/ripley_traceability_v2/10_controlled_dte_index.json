@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-08-27T09:25:08.407749",
+  "copy": "data\\work\\ripley_traceability_v2_20260827_092508.db",
+  "physical_xml": 472,
+  "unique_dte": 472,
+  "indexed_before": 407,
+  "indexed_after": 472,
+  "runs": [
+    {
+      "run": 1,
+      "new_dte": 65
+    },
+    {
+      "run": 2,
+      "new_dte": 0
+    },
+    {
+      "run": 3,
+      "new_dte": 0
+    }
+  ],
+  "verdict": "RUN2_NEW_DTE 0 RUN3_NEW_DTE 0"
+}

@@ -1,0 +1,5 @@
+{
+  "lineage_coverage": "100% financial transactions have source row->file hash",
+  "broken": 0,
+  "verdict": "BROKEN_LINEAGE 0"
+}

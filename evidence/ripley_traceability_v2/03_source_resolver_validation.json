@@ -1,0 +1,11 @@
+{
+  "contract": [
+    "SELLER_SETTLEMENT -> Fulfillment by Seller",
+    "BILLING_CYCLE -> Mis extractos",
+    "TRANSACTION_HISTORY -> Historial de transacciones",
+    "FULFILLMENT -> Fulfillment by Ripley",
+    "FISCAL_XML -> Facturacion"
+  ],
+  "validation": "100% discovered",
+  "silent_omission": 0
+}

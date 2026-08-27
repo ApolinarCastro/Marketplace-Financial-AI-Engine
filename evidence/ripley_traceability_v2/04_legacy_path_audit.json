@@ -1,0 +1,4 @@
+{
+  "active_ripley_hardcoded_source_paths": 0,
+  "verdict": "PASS after RipleySourceResolver replacement (engine/v4/ripley_source_resolver.py + ripley_normalization.py)"
+}

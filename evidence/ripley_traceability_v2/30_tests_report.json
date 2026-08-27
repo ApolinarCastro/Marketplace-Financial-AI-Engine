@@ -1,0 +1,10 @@
+{
+  "tests": [
+    "source resolver",
+    "legacy paths",
+    "folio normalization",
+    "XML reconciliation",
+    "bridge matching"
+  ],
+  "verdict": "PASS"
+}

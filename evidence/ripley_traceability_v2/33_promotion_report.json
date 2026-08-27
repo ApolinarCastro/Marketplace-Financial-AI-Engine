@@ -1,0 +1,9 @@
+{
+  "tables_changed": [],
+  "rows_before": 598112,
+  "rows_after": 598112,
+  "financial_impact": "$0.00",
+  "dte_impact": 0,
+  "rollback_db": "data/backup/release_rc1/meli_financial_v4_pre_rc1_20260826_174301.db",
+  "verdict": "NO_PROMOTION (read-only correction, no ledger change)"
+}

@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-08-27T09:24:30.036922",
+  "branch": "phase5/production-readiness",
+  "commit": "da0824854eacba4307b5b75d12bfecdb7699f7f2",
+  "git_status_lines": 856,
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_size": 58732544,
+  "raw_total": 1313,
+  "ripley_raw_total": 623,
+  "ledger_total": 598112,
+  "ledger_ripley": 287417,
+  "settlement_rows": 287417,
+  "dte_truth_rows": 667
+}

@@ -1,0 +1,9 @@
+{
+  "physical_xml": 472,
+  "valid_indexed": 407,
+  "valid_not_indexed": 65,
+  "duplicate_hash_groups": 0,
+  "dte_truth_ripley": 407,
+  "unexplained_gap": 65,
+  "verdict": "REVIEW"
+}

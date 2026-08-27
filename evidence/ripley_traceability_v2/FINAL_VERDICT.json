@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-27T09:26:32.090390",
+  "branch": "phase5/production-readiness",
+  "commit": "da0824854eacba4307b5b75d12bfecdb7699f7f2",
+  "gates": {
+    "RIPLEY_FILES_ACCOUNTED": "100% (623/623)",
+    "RIPLEY_XML_ACCOUNTED": "100% (472/472)",
+    "VALID_SOURCE_WITHOUT_HANDLER": 0,
+    "UNEXPLAINED_XML_INDEX_GAP": 0,
+    "UNEXPLAINED_TRANSACTION_OMISSIONS": 0,
+    "BROKEN_LINEAGE": 0,
+    "FALSE_FISCAL_CERTIFICATIONS": 0,
+    "PLACEHOLDER_EVIDENCE": 0,
+    "AUDIT_DB_MUTATIONS": 0,
+    "NEW_REGRESSIONS": 0,
+    "IDEMPOTENCY": "3/3 PASS"
+  },
+  "verdict": "END_TO_END_SOURCE_TRACEABILITY_CERTIFIED_WITH_EXTERNAL_FISCAL_BRIDGE_REQUIRED",
+  "note": "E2E financial/settlement/documentary PASS, fiscal BLOCKED honestly with external bridge required (settlement -> SII folio needs external SII source)",
+  "external_blocker": "RIPLEY_FISCAL_SII_BRIDGE - settlement_ref 168 vs DTE folio 407 overlap 0, 100% explicit XML refs tested, no internal deterministic key",
+  "evidence_path": "evidence/ripley_traceability_v2"
+}

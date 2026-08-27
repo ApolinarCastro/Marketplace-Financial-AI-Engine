@@ -1,0 +1,32 @@
+[
+  {
+    "sha256": "f7fb020adc4b",
+    "current_path": "01_Raw/RIPLEY/automation_blueprint.md",
+    "historical_path": "01_Raw/RIPLEY/automation_blueprint.md",
+    "role": "BILLING_CYCLE"
+  },
+  {
+    "sha256": "8e8c2995ee5a",
+    "current_path": "01_Raw/RIPLEY/traceability_analysis.py",
+    "historical_path": "01_Raw/RIPLEY/traceability_analysis.py",
+    "role": "BILLING_CYCLE"
+  },
+  {
+    "sha256": "148900fc3a3b",
+    "current_path": "01_Raw/RIPLEY/traceability_report.json",
+    "historical_path": "01_Raw/RIPLEY/traceability_report.json",
+    "role": "BILLING_CYCLE"
+  },
+  {
+    "sha256": "99c1427ed89a",
+    "current_path": "01_Raw/RIPLEY/traceability_report.md",
+    "historical_path": "01_Raw/RIPLEY/traceability_report.md",
+    "role": "BILLING_CYCLE"
+  },
+  {
+    "sha256": "8caf5a1c9f32",
+    "current_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f25272_ts2025-05-13T153652.xml",
+    "historical_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f25272_ts2025-05-13T153652.xml",
+    "role": "BILLING_CYCLE"
+  }
+]

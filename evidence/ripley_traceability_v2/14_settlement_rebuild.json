@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-27T09:25:41.776787",
+  "sources": [
+    "Fulfillment by Seller 51",
+    "Mis extractos 52",
+    "Historial 8",
+    "Fulfillment by Ripley 36"
+  ],
+  "rebuilt_rows": 287417,
+  "note": "SELLER->BILLING->HISTORY->FULFILLMENT->ORDER->SETTLEMENT->LEDGER via resolver"
+}

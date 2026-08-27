@@ -1,0 +1,11 @@
+{
+  "fields": {
+    "settlement_ref": "liquidacion doc num",
+    "billing_invoice_ref": "factura num",
+    "order_id": "order",
+    "dte_folio": "SII folio",
+    "dte_type": "33/56 etc"
+  },
+  "legacy_field": "folio_xml -> settlement_ref (documented)",
+  "verdict": "PASS"
+}

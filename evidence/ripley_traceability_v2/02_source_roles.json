@@ -1,0 +1,2497 @@
+{
+  "roles": [
+    {
+      "relative_path": "01_Raw/RIPLEY/automation_blueprint.md",
+      "role": "UNKNOWN"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/traceability_analysis.py",
+      "role": "UNKNOWN"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/traceability_report.json",
+      "role": "UNKNOWN"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/traceability_report.md",
+      "role": "UNKNOWN"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f25272_ts2025-05-13T153652.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26000_ts2025-10-27T144835.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26276_ts2025-12-15T155053.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26306_ts2025-12-23T112808.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26441_ts2026-02-16T124619.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26532_ts2026-03-13T120641.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26608_ts2026-03-30T155632.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26613_ts2026-03-31T130634.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26636_ts2026-04-06T172718.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26703_ts2026-04-17T150756.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26793_ts2026-05-11T120014.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26794_ts2026-05-11T120602.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26795_ts2026-05-11T121312.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26874_ts2026-06-05T123502.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c33_f26875_ts2026-06-05T124420.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c61_f146730_ts2026-03-31T130421.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dtef_c61_f147261_ts2026-05-11T120315.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5393.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5405.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5423.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5435.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5453.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5467.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5468.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5524.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5529.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5565.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5566.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5574.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5576.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5577.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5613.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5614.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5624.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5625.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5626.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5630.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5637.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5638.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5639.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5659.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5660.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5688.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5689.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5712.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5713.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5719.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5722.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5723.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5724.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5725.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5727.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5744.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5745.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5747.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5768.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5769.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5788.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5789.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5790.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5791.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5800.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5802.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5803.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5804.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5805.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5806.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5807.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5808.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5809.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5810.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5811.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5812.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5813.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5841.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5842.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5843.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5844.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5857.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5884.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5885.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5901.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5902.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5906.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5909.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5916.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5917.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5944.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5945.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5946.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5947.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5949.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5952.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5969.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_5971.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6002.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6003.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6014.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6015.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6017.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6050.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6051.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6055.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6056.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6057.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6058.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6059.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6060.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6063.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6065.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6087.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6108.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6109.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6125.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6126.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6127.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6128.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6129.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6137.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6139.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6140.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6141.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6142.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6171.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6172.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6174.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6175.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6195.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6198.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6226.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6227.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6242.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6243.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6244.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6245.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6246.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6257.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6277.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6278.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6297.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6298.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6324.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6326.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6356.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6357.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6364.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6370.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6372.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6396.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6397.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6401.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6406.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6407.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6438.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6439.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6440.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6455.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6456.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6463.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6466.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6469.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6471.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6472.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6492.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6493.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6514.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6520.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6522.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6523.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6524.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6525.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6526.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6527.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6528.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6529.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6547.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6578.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6579.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6585.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6586.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6589.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6591.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6592.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6594.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6621.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6622.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6626.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6627.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6628.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6629.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6630.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6631.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6632.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6633.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6634.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6635.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6636.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6637.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6638.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6639.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6668.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6669.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6670.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6671.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6681.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6682.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6702.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6713.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6717.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6718.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6733.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6734.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6735.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6741.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6742.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6750.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6751.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6768.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6769.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6786.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6787.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6788.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6789.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6790.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6791.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6792.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6793.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6794.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6795.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6796.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6797.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6798.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6799.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6800.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6801.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6802.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6803.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6804.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6816.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6817.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6833.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6860.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6861.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6870.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6878.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6880.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6881.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6898.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6908.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6909.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6924.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6932.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6934.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6935.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6936.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6937.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6938.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6939.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6940.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6942.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6943.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6944.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6945.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6946.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6947.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6948.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6949.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6956.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6957.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6959.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6960.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6970.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6976.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6990.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6994.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6995.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6998.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_6999.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7009.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7010.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7011.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7018.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7019.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7020.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7021.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7032.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7035.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7036.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7055.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7056.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7057.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7058.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7059.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7061.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7062.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7063.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7064.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7069.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7073.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7074.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7079.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7080.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7096.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7101.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7102.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7103.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7111.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7112.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7115.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7116.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7117.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7120.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7121.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7123.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7124.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7129.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7130.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7131.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7132.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7133.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7134.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7148.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7149.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7150.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7151.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7159.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7160.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7161.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7162.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7181.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7182.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7183.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7185.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7190.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7191.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7194.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7195.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7196.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7197.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7215.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7220.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7221.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7222.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7224.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7227.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7228.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7229.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7232.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7233.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7236.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7237.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7238.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7239.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7240.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7243.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7250.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7251.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7252.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7253.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7254.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7255.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7258.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7259.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7260.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7261.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7266.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7267.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7268.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7269.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7270.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7271.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7272.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7273.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7274.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7280.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7289.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7290.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7291.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7292.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7293.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7294.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7295.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7296.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7320.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7321.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7322.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7323.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7333.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7335.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7340.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7341.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7362.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7363.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7364.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7365.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7366.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7369.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7370.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7371.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7372.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7373.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7382.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7383.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7384.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7385.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7386.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7387.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7388.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7391.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7392.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7393.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7394.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7396.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7397.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7398.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7399.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7409.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7410.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7411.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7413.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7426.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7427.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7428.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7429.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7455.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7456.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7459.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7464.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7467.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7469.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7470.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7472.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7473.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7474.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7475.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7496.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7497.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7498.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7501.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7511.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7512.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7515.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7516.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7520.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7521.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7522.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7523.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7530.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7531.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7532.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7537.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7538.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7539.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7540.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7541.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7542.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7543.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7544.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7545.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7546.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7547.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7548.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7549.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7554.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7555.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7556.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7557.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7558.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7587.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7588.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7589.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Facturacion/dteproveedor_7607.xml",
+      "role": "FISCAL_XML"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000001_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000002_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000003_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000004_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000005_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000006_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000007_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000008_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000009_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000010_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000011_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000012_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000013_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000014_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000015_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000016_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000017_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000018_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000019_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000020_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000021_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000022_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000023_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000024_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000025_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000026_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000027_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000028_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000029_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000030_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000031_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000032_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000033_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000034_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000035_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Ripley/000036_ff_2815.csv",
+      "role": "FULFILLMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000312-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000314-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000316-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000318-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000320-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000322-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000324-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000326-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000328-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000330-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000332-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000334-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000336-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000338-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000340-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000342-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000344-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000346-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000348-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000350-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000352-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000353-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000354-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000355-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000356-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000357-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000358-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000359-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000360-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000361-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000362-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000363-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000364-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000365-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000366-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000367-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000368-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000369-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000370-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000371-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000372-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000374-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000375-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000376-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000377-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000378-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000379-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000380-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000381-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000382-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Fulfillment by Seller/000383-2815.xlsx",
+      "role": "SELLER_SETTLEMENT"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Historial de transacciones/Abr-2026.csv",
+      "role": "TRANSACTION_HISTORY"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Historial de transacciones/Ene-2026.csv",
+      "role": "TRANSACTION_HISTORY"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Historial de transacciones/Ene-Jun-2025.csv",
+      "role": "TRANSACTION_HISTORY"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Historial de transacciones/Feb-2026.csv",
+      "role": "TRANSACTION_HISTORY"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Historial de transacciones/Jul-Dic-2025.csv",
+      "role": "TRANSACTION_HISTORY"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Historial de transacciones/Jun-2026.csv",
+      "role": "TRANSACTION_HISTORY"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Historial de transacciones/Mar-2026.csv",
+      "role": "TRANSACTION_HISTORY"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Historial de transacciones/May-2026.csv",
+      "role": "TRANSACTION_HISTORY"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/05-01-2026 - 13-01-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/05-02-2026 - 13-02-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/05-03-2026 - 13-03-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/05-04-2026 - 13-04-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/05-05-2026 - 13-05-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/05-06-2026 - 13-06-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/05-12-2025 - 13-12-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-01-2025 - 28-01-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-01-2026 - 20-01-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-02-2025 - 28-02-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-02-2026 - 20-02-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-03-2025 - 28-03-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-03-2026 - 20-03-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-04-2025 - 28-04-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-04-2026 - 20-04-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-05-2025 - 28-05-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-05-2026 - 20-05-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-06-2025 - 28-06-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-06-2026 - 20-06-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-07-2025 - 28-07-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-08-2025 - 28-08-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-09-2025 - 28-09-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-10-2025 - 28-10-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-11-2025 - 20-11-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/13-12-2025 - 20-12-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/20-01-2026 - 28-01-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/20-02-2026 - 28-02-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/20-03-2026 - 28-03-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/20-04-2026 - 28-04-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/20-05-2026 - 28-05-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/20-06-2026 - 28-06-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/20-11-2025 - 28-11-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/20-12-2025 - 28-12-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-01-2025 - 13-02-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-01-2026 - 05-02-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-02-2025 - 13-03-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-02-2026 - 05-03-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-03-2025 - 13-04-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-03-2026 - 05-04-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-04-2025 - 13-05-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-04-2026 - 05-05-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-05-2025 - 13-06-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-05-2026 - 05-06-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-06-2025 - 13-07-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-06-2026 - 05-07-2026.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-07-2025 - 13-08-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-08-2025 - 13-09-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-09-2025 - 13-10-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-10-2025 - 13-11-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-11-2025 - 05-12-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-12-2024 - 13-01-2025.csv",
+      "role": "BILLING_CYCLE"
+    },
+    {
+      "relative_path": "01_Raw/RIPLEY/Mis extractos/28-12-2025 - 05-01-2026.csv",
+      "role": "BILLING_CYCLE"
+    }
+  ],
+  "unknown": 0
+}

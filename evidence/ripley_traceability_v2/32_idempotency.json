@@ -1,0 +1,17 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "counts": 598112
+    },
+    {
+      "run": 2,
+      "counts": 598112
+    },
+    {
+      "run": 3,
+      "counts": 598112
+    }
+  ],
+  "verdict": "PASS"
+}

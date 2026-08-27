@@ -1,0 +1,10 @@
+{
+  "contract": {
+    "financial_status": "SETTLEMENT_CERTIFIED",
+    "settlement_status": "SETTLEMENT_CHAIN_CERTIFIED",
+    "fiscal_status": "FISCAL_BLOCKED",
+    "settlement_ref": "...",
+    "dte_folio": "..."
+  },
+  "verdict": "NEVER_RENDER_SETTLEMENT_AS_DTE"
+}

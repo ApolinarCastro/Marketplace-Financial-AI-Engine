@@ -1,0 +1,15 @@
+{
+  "files_physical": 1313,
+  "files_dispositioned": 1313,
+  "financial_files_expected": 200,
+  "financial_files_ingested": 157,
+  "raw_rows": 300000,
+  "ingested_rows": 598112,
+  "ledger_rows": 598112,
+  "unexplained_omissions": 0,
+  "settlement_coverage": "287417/287417",
+  "documentary_coverage": "472/472",
+  "fiscal_coverage": "0/287417 (BLOCKED)",
+  "false_certifications": 0,
+  "lineage_coverage": "100%"
+}

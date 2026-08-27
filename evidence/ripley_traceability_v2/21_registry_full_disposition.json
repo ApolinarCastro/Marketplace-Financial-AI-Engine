@@ -1,0 +1,14 @@
+{
+  "physical": 1313,
+  "dispositioned": 1313,
+  "categories": {
+    "INGESTED_FINANCIAL": 157,
+    "INGESTED_DOCUMENTAL": 472,
+    "SUPPORTING": 200,
+    "DUPLICATE": 268,
+    "HISTORICAL": 50,
+    "NON_FINANCIAL": 100,
+    "REJECTED_WITH_REASON": 66
+  },
+  "verdict": "PHYSICAL_RAW_FILES_WITHOUT_DISPOSITION 0"
+}

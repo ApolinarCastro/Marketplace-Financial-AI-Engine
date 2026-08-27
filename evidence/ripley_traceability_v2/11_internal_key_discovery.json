@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-27T09:25:41.774278",
+  "settlement_refs": 168,
+  "xml_folios": 472,
+  "tier0_settlement_eq_folio": 0,
+  "tier1_settlement_eq_ref": 0,
+  "tier2_billing_eq_ref": 0,
+  "tier3_order_eq_ref": 0,
+  "tier4_internal": 0,
+  "verdict": "NO deterministic internal bridge found (0 matches)"
+}

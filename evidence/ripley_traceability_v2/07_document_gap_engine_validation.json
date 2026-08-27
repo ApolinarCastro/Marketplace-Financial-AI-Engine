@@ -1,0 +1,10 @@
+{
+  "placeholder_found": false,
+  "states": [
+    "SETTLEMENT_CHAIN_CERTIFIED",
+    "DOCUMENT_REFERENCE_ONLY",
+    "FISCAL_CERTIFIED",
+    "FISCAL_EVIDENCE_MISSING"
+  ],
+  "verdict": "PASS"
+}

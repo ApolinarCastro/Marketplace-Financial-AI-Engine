@@ -1,0 +1,9 @@
+{
+  "cases": [
+    "531423.0->531423",
+    "000000562946 preserved",
+    "whitespace removed",
+    "nan->null"
+  ],
+  "verdict": "PASS"
+}
