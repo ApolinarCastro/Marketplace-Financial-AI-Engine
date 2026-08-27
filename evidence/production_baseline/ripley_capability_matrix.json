@@ -1,0 +1,75 @@
+{
+  "execution_id": "20260814_163555",
+  "loop": 8,
+  "title": "RIPLEY CAPABILITY MATRIX + FISCAL FALSE POSITIVE CHECK",
+  "git_commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "ripley": {
+    "financial_groups_distinct": [
+      "ajustes",
+      "costos_comerciales",
+      "costos_operacionales",
+      "devoluciones",
+      "ingresos",
+      "tesoreria"
+    ],
+    "financial_groups_uppercase": [],
+    "taxonomy_file": "KnowledgeBase/Marketplace/Taxonomy/ripley_v1.json",
+    "taxonomy_version": "ripley_v2_canonical",
+    "taxonomy_dec": "DEC-034",
+    "taxonomy_canonical_groups": 6,
+    "taxonomy_canonical_detalles": 16,
+    "detalles_in_ledger": 32,
+    "detalles_covered": 16,
+    "detalles_orphans": [
+      "a pagar",
+      "amount transferred to tienda",
+      "comisiones sobre pedidos",
+      "comisiã³n",
+      "commission_fee",
+      "descuento por cofinanciamiento logístico (ff)",
+      "descuento por logística inversa (ff)",
+      "importe del envío del pedido",
+      "importe del envío del pedido reembolsado",
+      "order_amount",
+      "pago",
+      "precio total",
+      "refund_commission_fee",
+      "refund_order_amount",
+      "subtotal",
+      "transfer_amount"
+    ],
+    "settlement_rows": 0,
+    "settlement_total": 0.0,
+    "folio_xml_non_null": 281476,
+    "folio_xml_pct": 97.93,
+    "op_pnl_rows": 111328,
+    "op_pnl_total": 514479989.0,
+    "estado_xml_values": [
+      [
+        "NULL",
+        287417
+      ]
+    ],
+    "ml_null_group_rows": 9973,
+    "ml_null_group_op_pnl_0": 9973
+  },
+  "fiscal_false_positive_check": {
+    "rule": "LEDGER_EXISTING != CRYPTOGRAPHIC_CERTIFIED. RIPLEY folio_xml comes from XLSX operational data, NOT SII DTE folios.",
+    "settlement_refs_are_not_sii_folios": true,
+    "evidence": [
+      "RIPLEY folio_xml populated from XLSX files (Sprint A2), not from SII XML DTE parsing.",
+      "No SII folio matching implemented for RIPLEY (DTEIndexer heuristic, DEC-036).",
+      "estado_xml = NULL for all 287,417 RIPLEY rows - no cryptographic DTE certification present.",
+      "P16F-04: 12,822 cargo_sin_respaldo_legal alerts were false positives (order refs != SII folios)."
+    ],
+    "verdict": "FISCAL_CLAIM_BLOCKED"
+  },
+  "findings": [
+    "DOC_DRIFT: AGENTS.md references knowledge/taxonomy/ but all 4 taxonomy files live at KnowledgeBase/Marketplace/Taxonomy/.",
+    "RIPLEY financial_groups are all LOWERCASE in this DB snapshot (no uppercase). DEC-035 LOWER() remains valid but not required for current data.",
+    "RIPLEY has NO financial_group=NULL settlement rows in this DB state (settlement=0). NULL-group rows (9,973) are all ML stripped return reasons with op_pnl=0.",
+    "ripley_v1.json uses canonical_groups schema (not signal/noise arrays as AGENTS.md describes). taxonomy_version=ripley_v2_canonical."
+  ],
+  "financial_delta_usd": "0.00",
+  "official_db_sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9"
+}

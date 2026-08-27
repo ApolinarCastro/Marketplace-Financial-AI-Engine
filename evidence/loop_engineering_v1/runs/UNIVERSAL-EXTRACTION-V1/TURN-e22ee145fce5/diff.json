@@ -1,0 +1,11 @@
+{
+  "turn_id": "TURN-e22ee145fce5",
+  "files_changed": [
+    "engine/loop_control/constants.py",
+    "engine/loop_control/state_store.py",
+    "engine/loop_control/kernel.py",
+    "engine/loop_control/gate_manager.py",
+    "engine/loop_control/policy.py"
+  ],
+  "created_at": "2026-08-07T20:15:35.827Z"
+}

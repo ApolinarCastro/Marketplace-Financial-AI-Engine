@@ -1,0 +1,302 @@
+[
+  {
+    "id_transaccion": "3896862_GROSS",
+    "single_financial_truth": "VERIFIED",
+    "monto": -1000.0,
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+    "documento": "SIN_DOCUMENTO",
+    "estado_documento": "NO_DOCUMENT",
+    "clasificacion_oficial": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    }
+  },
+  {
+    "id_transaccion": "3896826_GROSS",
+    "single_financial_truth": "VERIFIED",
+    "monto": -1000.0,
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+    "documento": "SIN_DOCUMENTO",
+    "estado_documento": "NO_DOCUMENT",
+    "clasificacion_oficial": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    }
+  },
+  {
+    "id_transaccion": "3896825_GROSS",
+    "single_financial_truth": "VERIFIED",
+    "monto": -2790.0,
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+    "documento": "SIN_DOCUMENTO",
+    "estado_documento": "NO_DOCUMENT",
+    "clasificacion_oficial": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    }
+  },
+  {
+    "id_transaccion": "3896802_GROSS",
+    "single_financial_truth": "VERIFIED",
+    "monto": -1000.0,
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+    "documento": "SIN_DOCUMENTO",
+    "estado_documento": "NO_DOCUMENT",
+    "clasificacion_oficial": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    }
+  },
+  {
+    "id_transaccion": "3896762_GROSS",
+    "single_financial_truth": "VERIFIED",
+    "monto": -1000.0,
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+    "documento": "SIN_DOCUMENTO",
+    "estado_documento": "NO_DOCUMENT",
+    "clasificacion_oficial": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    }
+  },
+  {
+    "id_transaccion": "3896727_GROSS",
+    "single_financial_truth": "VERIFIED",
+    "monto": -2000.0,
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+    "documento": "SIN_DOCUMENTO",
+    "estado_documento": "NO_DOCUMENT",
+    "clasificacion_oficial": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    }
+  },
+  {
+    "id_transaccion": "3896688_GROSS",
+    "single_financial_truth": "VERIFIED",
+    "monto": -1000.0,
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+    "documento": "SIN_DOCUMENTO",
+    "estado_documento": "NO_DOCUMENT",
+    "clasificacion_oficial": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    }
+  },
+  {
+    "id_transaccion": "3896617_GROSS",
+    "single_financial_truth": "VERIFIED",
+    "monto": -1000.0,
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+    "documento": "SIN_DOCUMENTO",
+    "estado_documento": "NO_DOCUMENT",
+    "clasificacion_oficial": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    }
+  },
+  {
+    "id_transaccion": "3896615_GROSS",
+    "single_financial_truth": "VERIFIED",
+    "monto": -1000.0,
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+    "documento": "SIN_DOCUMENTO",
+    "estado_documento": "NO_DOCUMENT",
+    "clasificacion_oficial": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    }
+  },
+  {
+    "id_transaccion": "3896428_GROSS",
+    "single_financial_truth": "VERIFIED",
+    "monto": -1000.0,
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+    "documento": "SIN_DOCUMENTO",
+    "estado_documento": "NO_DOCUMENT",
+    "clasificacion_oficial": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    }
+  }
+]

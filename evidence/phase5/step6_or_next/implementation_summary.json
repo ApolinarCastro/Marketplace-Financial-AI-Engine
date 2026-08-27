@@ -1,0 +1,53 @@
+{
+  "execution_id": "phase5-step6-implementation-20260818",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-18",
+  "harness_version": "1.0.0-r5-phase5-step6",
+  "repository": "Marketplace Financial AI Engine",
+  "branch": "phase5/production-readiness",
+  "module": "F5-09 ELECTRONIC TAX TRACEABILITY (read-only DTE->Ledger traceability)",
+  "files_modified": [
+    "engine/v4/matching/dte_ledger_matcher.py",
+    "api/api.py",
+    "tests/test_dte_traceability.py (new)",
+    "tests/test_api_smoke.py"
+  ],
+  "design": "REUSE > EXTEND > CREATE: reused certified DTELedgerMatcher as-is; extracted _build_certified_rows (pure row expansion, no persistence) so _persist_certified and new read-only methods share ONE implementation (no duplication); added traceability() + _trace_transaction() public read-only methods; added GET /api/v4/dte/traceability thin route (5 lines, delegates, no financial logic).",
+  "read_only_guarantees": [
+    "traceability() NEVER calls _persist_certified / _rebuild_view / _ensure_schema",
+    "only uses db.query() (read-only) and 01_Raw/Falabella bridge read",
+    "official DB SHA 311c78e2... unchanged after 2 API calls (verified)",
+    "no new table/view created (verified by test_traceability_no_db_mutation and test_route_read_only)",
+    "ledger row-hash stable; count identical 598,112; sum float-noise ~6.7e-6 CLP (not a financial change)"
+  ],
+  "live_results_official_db": {
+    "ML": {"strategy": "DIRECT_MATCH", "status": "CERTIFIED", "folios_certified": 15, "rows_linked": 86898, "rows_eligible": 97609, "match_statuses": {"MATCHED_CERTIFIED": 15, "AMOUNT_MISMATCH": 1}},
+    "PARIS": {"strategy": "DOCUMENT_CHAIN", "status": "CERTIFIED", "folios_certified": 18, "rows_linked": 1915, "rows_eligible": 168727},
+    "FALABELLA": {"strategy": "TRANSACTION_CHAIN", "status": "CERTIFIED", "folios_certified": 5, "rows_linked": 113, "rows_eligible": 3076},
+    "RIPLEY": {"strategy": "SETTLEMENT_CHAIN_V2", "status": "BLOCKED", "blocked_reasons": ["chain source files absent", "folio namespace overlap=0"]},
+    "totals_total_certified_rows": 88926,
+    "p0_view_based_total_was": 93079,
+    "note": "totals sums certified-match rows (stricter than the p0 legacy-view count). ML matches p0 exactly (15/86898/97609)."
+  },
+  "transaction_trace_sample": {
+    "transaction_id": "CHG_Reporte_Facturacion_MercadoLibre_Sept2025.xlsx_1",
+    "marketplace": "ML",
+    "folio_xml": "033-0009613966",
+    "dte_folio": "9613966",
+    "dte_monto": 13518689.0,
+    "emisor_rut": "77398220-1",
+    "emisor_nombre": "MercadoLibre Chile Ltda.",
+    "tipo_dte": "33",
+    "match_status": "MATCHED_CERTIFIED",
+    "match_rule": "DIRECT_MATCH"
+  },
+  "financial_integrity": {
+    "ledger_rows": 598112,
+    "ledger_row_hash_stable": true,
+    "ledger_sum_reread_abs_noise_clp": 6.67572021484375e-06,
+    "financia_delta_classification": "$0.00 (float accumulation noise below 1 CLP cent; SHA identical)",
+    "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "db_sha_unchanged": true
+  },
+  "verdict": "IMPLEMENTATION_COMPLETE"
+}

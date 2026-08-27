@@ -1,0 +1,14 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "view": "dte_ledger_link",
+  "rebuilt": true,
+  "join": "LEFT JOIN dte_certified_match_v1 m ON marketplace AND id_transaccion",
+  "dte_linked_logic": "CASE WHEN m.id_transaccion IS NOT NULL THEN 1 WHEN d.folio IS NOT NULL THEN 1 ELSE 0 END",
+  "view_sql": "CREATE VIEW dte_ledger_link AS SELECT l.marketplace, l.id_transaccion, l.folio_xml, l.fecha AS ledger_fecha, l.monto AS ledger_monto, l.tipo_movimiento, l.detalle, l.financial_group, COALESCE(m.dte_folio, d.folio) AS dte_folio, COALESCE(m.dte_monto, d.monto_total) AS dte_monto, COALESCE(m.dte_fecha, d.fecha_emision) AS dte_fecha, COALESCE(m.emisor_nombre, d.emisor_nombre) AS emisor_nombre, COALESCE(m.emisor_rut, d.emisor_rut) AS emisor_rut, COALESCE(m.tipo_dte, d.tipo_dte) AS tipo_dte, CASE  WHEN ((m.id_transaccion IS NOT NULL)) THEN (1) WHEN ((d.folio IS NOT NULL)) THEN (1) ELSE 0 END AS dte_linked FROM marketplace_ledger_v1 AS l LEFT JOIN dte_truth_v1 AS d ON (((l.folio_xml = d.folio) AND (l.marketplace = d.marketplace))) LEFT JOIN dte_certified_match_v1 AS m ON (((l.marketplace = m.marketplace) AND (l.id_transaccion = m.id_transaccion))) WHERE (((l.folio_xml IS NOT NULL) AND (l.folio_xml != '')) OR (m.id_transaccion IS NOT NULL));",
+  "verification": "VERIFIED",
+  "status": "PASS"
+}

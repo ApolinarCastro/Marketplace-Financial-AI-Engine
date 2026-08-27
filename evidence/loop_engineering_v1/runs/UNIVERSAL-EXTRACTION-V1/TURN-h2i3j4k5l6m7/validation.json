@@ -1,0 +1,10 @@
+{
+  "turn_id": "TURN-h2i3j4k5l6m7",
+  "todo_id": "LOOP-08",
+  "passed": true,
+  "detail": {
+    "tests": 6,
+    "passed": 6
+  },
+  "created_at": "2026-08-07T20:35:01.234Z"
+}

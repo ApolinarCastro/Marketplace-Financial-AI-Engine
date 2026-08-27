@@ -67,6 +67,12 @@
             <!-- Estado del Proceso (Fase 2) -->
             <div id="estado-proceso-container" class="hidden"></div>
 
+            <!-- Audit Execution Status (separated from certification) -->
+            <div id="audit-execution-status" class="hidden"></div>
+
+            <!-- DTE Chain Status -->
+            <div id="dte-chain-status" class="hidden"></div>
+
             <div class="surgical-card p-6 shadow-sm" id="estructura-financiera-panel">
                 <div class="flex justify-between items-center mb-6 border-b pb-2">
                     <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Estructura Financiera</h3>
@@ -800,67 +806,128 @@
             loadAnalyticLayers();
         }
 
-        function renderCierre() {
+        async function fetchCertificationStatus() {
+            const mp = document.getElementById('marketplace-selector').value;
+            const periodo = document.getElementById('period-selector').value;
+            try {
+                const params = new URLSearchParams();
+                if (mp) params.set('marketplace', mp);
+                if (periodo && periodo !== 'YTD') params.set('periodo', periodo);
+                const cert = await ApiClient.safeFetch('/api/v4/certification/status?' + params.toString());
+                window._certificationStatus = cert;
+                return cert;
+            } catch (e) {
+                console.error('Error fetching certification status:', e);
+                window._certificationStatus = null;
+                return null;
+            }
+        }
+
+        function getCertificationLabel(status) {
+            const labels = {
+                'CERTIFIED': { text: 'CERTIFICADO', bg: 'bg-emerald-50', border: 'border-emerald-200', textColor: 'text-emerald-800', icon: 'fa-check-circle' },
+                'DEGRADED': { text: 'CERTIFICACIÓN PARCIAL', bg: 'bg-amber-50', border: 'border-amber-200', textColor: 'text-amber-800', icon: 'fa-exclamation-triangle' },
+                'FAILED': { text: 'NO CERTIFICADO', bg: 'bg-rose-50', border: 'border-rose-200', textColor: 'text-rose-800', icon: 'fa-times-circle' },
+                'PENDING': { text: 'PENDIENTE', bg: 'bg-slate-50', border: 'border-slate-200', textColor: 'text-slate-700', icon: 'fa-clock' }
+            };
+            return labels[status] || labels['PENDING'];
+        }
+
+        function getAuditStatusLabel(status) {
+            const labels = {
+                'COMPLETED': { text: 'AUDITORÍA COMPLETADA', bg: 'bg-emerald-50', border: 'border-emerald-200', textColor: 'text-emerald-800', icon: 'fa-check' },
+                'PENDING': { text: 'AUDITORÍA PENDIENTE', bg: 'bg-amber-50', border: 'border-amber-200', textColor: 'text-amber-800', icon: 'fa-clock' },
+                'FAILED': { text: 'AUDITORÍA FALLIDA', bg: 'bg-rose-50', border: 'border-rose-200', textColor: 'text-rose-800', icon: 'fa-times' }
+            };
+            return labels[status] || labels['PENDING'];
+        }
+
+        function getDTEChainLabel(chainType) {
+            const labels = {
+                'DIRECT_LINK': 'Enlace Directo (1:1)',
+                'DOCUMENT_CHAIN': 'Cadena Documental',
+                'TRANSACTION_CHAIN': 'Cadena Transaccional',
+                'SETTLEMENT': 'Cadena de Liquidación (Settlement)',
+                'NOT_RUN': 'No Ejecutado (Sin XML)',
+                'MULTIPLE': 'Múltiples Estrategias'
+            };
+            return labels[chainType] || chainType || '—';
+        }
+
+        async function renderCierre() {
             const container = document.getElementById('cierre-container');
             const estadoContainer = document.getElementById('estado-proceso-container');
             const mp = document.getElementById('marketplace-selector').value;
             const periodo = document.getElementById('period-selector').value;
 
-            const ds = (window._financialStructure && window._financialStructure.dashboard_state) || (window._execSummary && window._execSummary.dashboard_state) || { estado: 'CERTIFICADO' };
-            if (!ds) return;
-
-            // FASE 2 & FIX-005: ESTADO DEL PROCESO independiente (Standardize status)
-            if (estadoContainer) {
-                estadoContainer.classList.remove('hidden');
-                
-                switch(ds.estado) {
-                    case 'PARCIAL':
-                        estadoContainer.innerHTML = `
-                        <div class="surgical-card p-4 shadow-sm bg-indigo-50 border-indigo-200">
-                            <h3 class="text-[10px] font-bold text-indigo-600 uppercase tracking-widest mb-1"><i class="fas fa-exclamation-circle mr-1"></i> Estado del Proceso</h3>
-                            <p class="text-lg text-indigo-800 font-bold">PARCIAL</p>
-                        </div>`;
-                        break;
-                    case 'CERTIFICADO':
-                        estadoContainer.innerHTML = `
-                        <div class="surgical-card p-4 shadow-sm bg-emerald-50 border-emerald-200">
-                            <h3 class="text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-1"><i class="fas fa-check-circle mr-1"></i> Estado del Proceso</h3>
-                            <p class="text-lg text-emerald-800 font-bold">CERTIFICADO</p>
-                        </div>`;
-                        break;
-                    case 'SIN_DATOS':
-                    default:
-                        estadoContainer.innerHTML = `
-                        <div class="surgical-card p-4 shadow-sm bg-slate-50 border-slate-200">
-                            <h3 class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1"><i class="fas fa-clock mr-1"></i> Estado del Proceso</h3>
-                            <p class="text-lg text-slate-700 font-bold">SIN DATOS</p>
-                        </div>`;
-                        break;
+            // Fetch certification status from the single authority endpoint
+            const cert = await fetchCertificationStatus();
+            
+            if (!cert) {
+                // Fallback if certification endpoint unavailable
+                if (estadoContainer) {
+                    estadoContainer.innerHTML = `
+                    <div class="surgical-card p-4 shadow-sm bg-slate-50 border-slate-200">
+                        <h3 class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1"><i class="fas fa-clock mr-1"></i> Estado del Proceso</h3>
+                        <p class="text-lg text-slate-700 font-bold">SIN CERTIFICACIÓN</p>
+                    </div>`;
+                }
+            } else {
+                // FASE 2: ESTADO DEL PROCESO = overall_status from CertificationEngine (single authority)
+                if (estadoContainer) {
+                    estadoContainer.classList.remove('hidden');
+                    const certLabel = getCertificationLabel(cert.overall_status);
+                    estadoContainer.innerHTML = `
+                    <div class="surgical-card p-4 shadow-sm ${certLabel.bg} ${certLabel.border}">
+                        <h3 class="text-[10px] font-bold ${certLabel.textColor} uppercase tracking-widest mb-1"><i class="fas ${certLabel.icon} mr-1"></i> Estado de Certificación</h3>
+                        <p class="text-lg ${certLabel.textColor} font-bold">${certLabel.text}</p>
+                    </div>`;
                 }
             }
 
-            if (ds.estado === 'SIN_DATOS') {
-                container.innerHTML = `
-                    <div class="col-span-12 p-8 text-center bg-slate-50 rounded-xl border border-dashed border-slate-300">
-                        <i class="fas fa-chart-pie text-4xl text-slate-400 mb-3"></i>
-                        <h3 class="text-lg font-bold text-slate-700">Sin datos financieros para ${mp} / ${periodo}</h3>
-                        <p class="text-sm text-slate-500 mt-2">Ejecuta el pipeline de consolidación para generar la estructura.</p>
-                    </div>
-                `;
-                return;
-            } else if (ds.estado === 'PARCIAL') {
-                container.innerHTML = `
-                    <div class="col-span-12 p-8 text-center bg-indigo-50/50 rounded-xl border border-indigo-100">
-                        <i class="fas fa-hammer text-4xl text-indigo-300 mb-3"></i>
-                        <h3 class="text-lg font-bold text-indigo-800">Estructura Financiera en Construcción</h3>
-                        <p class="text-sm text-indigo-600/70 mt-2">Los registros base están procesándose para conformar el P&L.</p>
-                    </div>
-                `;
-                return;
+            // Separate audit execution status display
+            const auditStatusEl = document.getElementById('audit-execution-status');
+            if (auditStatusEl && cert) {
+                const auditLabel = getAuditStatusLabel(cert.audit_execution_status);
+                auditStatusEl.innerHTML = `
+                <div class="surgical-card p-3 shadow-sm ${auditLabel.bg} ${auditLabel.border} mt-2">
+                    <h3 class="text-[10px] font-bold ${auditLabel.textColor} uppercase tracking-widest mb-1"><i class="fas ${auditLabel.icon} mr-1"></i> Estado de Auditoría</h3>
+                    <p class="text-sm ${auditLabel.textColor} font-bold">${auditLabel.text}</p>
+                </div>`;
+            }
+
+            // DTE Chain type display
+            const dteChainEl = document.getElementById('dte-chain-status');
+            if (dteChainEl && cert) {
+                const chainLabel = getDTEChainLabel(cert.dte_chain_type);
+                dteChainEl.innerHTML = `
+                <div class="surgical-card p-3 shadow-sm bg-blue-50 border-blue-200 mt-2">
+                    <h3 class="text-[10px] font-bold text-blue-800 uppercase tracking-widest mb-1"><i class="fas fa-link mr-1"></i> Cadena DTE</h3>
+                    <p class="text-sm text-blue-800 font-bold">${chainLabel}</p>
+                </div>`;
             }
 
             const fs = window._financialStructure;
-            if (!fs || !fs.categories) return;
+            if (!fs || !fs.categories) {
+                if (cert && cert.overall_status !== 'CERTIFIED') {
+                    container.innerHTML = `
+                        <div class="col-span-12 p-8 text-center bg-indigo-50/50 rounded-xl border border-indigo-100">
+                            <i class="fas fa-hammer text-4xl text-indigo-300 mb-3"></i>
+                            <h3 class="text-lg font-bold text-indigo-800">Estructura Financiera en Construcción</h3>
+                            <p class="text-sm text-indigo-600/70 mt-2">Certificación: ${getCertificationLabel(cert.overall_status).text}. Los registros base están procesándose.</p>
+                        </div>
+                    `;
+                } else {
+                    container.innerHTML = `
+                        <div class="col-span-12 p-8 text-center bg-slate-50 rounded-xl border border-dashed border-slate-300">
+                            <i class="fas fa-chart-pie text-4xl text-slate-400 mb-3"></i>
+                            <h3 class="text-lg font-bold text-slate-700">Sin datos financieros para ${mp} / ${periodo}</h3>
+                            <p class="text-sm text-slate-500 mt-2">Ejecuta el pipeline de consolidación para generar la estructura.</p>
+                        </div>
+                    `;
+                }
+                return;
+            }
 
             const neto = fs.neto;
             const fmtCLP = v => new Intl.NumberFormat('es-CL', {style:'currency', currency:'CLP', maximumFractionDigits:0}).format(v);

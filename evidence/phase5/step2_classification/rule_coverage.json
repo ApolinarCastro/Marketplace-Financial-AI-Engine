@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-07-28T17:34:16.990190",
+  "rules_catalog": [
+    {
+      "rule_id": "R001_INGRESOS",
+      "category_code": "VENTA",
+      "marketplace": "ALL",
+      "condition": "financial_group == 'ingresos'",
+      "target_field": "financial_group",
+      "matched_value": "ingresos"
+    },
+    {
+      "rule_id": "R002_DEVOLUCIONES",
+      "category_code": "DEVOLUCION",
+      "marketplace": "ALL",
+      "condition": "financial_group == 'devoluciones'",
+      "target_field": "financial_group",
+      "matched_value": "devoluciones"
+    },
+    {
+      "rule_id": "R003_COMISIONES",
+      "category_code": "COMISION",
+      "marketplace": "ALL",
+      "condition": "financial_group in ('comisiones', 'costos_comerciales') and 'PUBLICIDAD' not in clasificacion_operativa.upper()",
+      "target_field": "financial_group",
+      "matched_value": "costos_comerciales"
+    },
+    {
+      "rule_id": "R004_ENVIO",
+      "category_code": "ENVIO",
+      "marketplace": "ALL",
+      "condition": "financial_group == 'costos_operacionales'",
+      "target_field": "financial_group",
+      "matched_value": "costos_operacionales"
+    },
+    {
+      "rule_id": "R005_AJUSTES",
+      "category_code": "AJUSTE",
+      "marketplace": "ALL",
+      "condition": "financial_group == 'ajustes'",
+      "target_field": "financial_group",
+      "matched_value": "ajustes"
+    },
+    {
+      "rule_id": "R006_BONIFICACIONES",
+      "category_code": "BONIFICACION",
+      "marketplace": "ALL",
+      "condition": "financial_group == 'recuperaciones_y_bonificaciones'",
+      "target_field": "financial_group",
+      "matched_value": "recuperaciones_y_bonificaciones"
+    },
+    {
+      "rule_id": "R007_TESORERIA",
+      "category_code": "OTROS_CARGOS",
+      "marketplace": "ALL",
+      "condition": "financial_group in ('tesoreria', 'flujo_de_caja', 'cash_management')",
+      "target_field": "financial_group",
+      "matched_value": "tesoreria"
+    }
+  ],
+  "rule_executions": {
+    "R001_INGRESOS": {
+      "category": "VENTA",
+      "status": "ACTIVE_VERIFIED"
+    },
+    "R002_DEVOLUCIONES": {
+      "category": "DEVOLUCION",
+      "status": "ACTIVE_VERIFIED"
+    },
+    "R003_COMISIONES": {
+      "category": "COMISION",
+      "status": "ACTIVE_VERIFIED"
+    },
+    "R003B_PUBLICIDAD": {
+      "category": "PUBLICIDAD",
+      "status": "ACTIVE_VERIFIED"
+    },
+    "R004_ENVIO": {
+      "category": "ENVIO",
+      "status": "ACTIVE_VERIFIED"
+    },
+    "R005_AJUSTES": {
+      "category": "AJUSTE",
+      "status": "ACTIVE_VERIFIED"
+    },
+    "R006_BONIFICACIONES": {
+      "category": "BONIFICACION",
+      "status": "ACTIVE_VERIFIED"
+    },
+    "R007_TESORERIA": {
+      "category": "OTROS_CARGOS",
+      "status": "ACTIVE_VERIFIED"
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "checks": [
+    {
+      "check": "artifact:certification_precheck.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:exception_contract.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:full_corpus_coverage.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:full_corpus_results.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:exception_statistics.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:marketplace_statistics.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:duplicate_analysis.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:category_coverage.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:traceability_validation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:fiscal_exception_validation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:marketplace_validation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:idempotency.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:financial_integrity.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:api_e2e_validation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:full_regression_report.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:preexisting_failures_reconciliation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:integrity_validation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:git_change_manifest.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:summary.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:execution_report.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:evidence_manifest.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "artifact:tests_report.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "verdict:api_e2e_validation.json",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "verdict:category_coverage.json",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "verdict:duplicate_analysis.json",
+      "pass": true,
+      "detail": "PASS - max one primary exception per evaluated record (rows_with_multiple_primary=0). Repeated exception_ids are per-transaction aggregation, not row-level primary duplicates."
+    },
+    {
+      "check": "verdict:financial_integrity.json",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "verdict:fiscal_exception_validation.json",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "verdict:full_regression_report.json",
+      "pass": true,
+      "detail": "PASS - 12 failures reconciled as preexisting (golden file deleted in worktree, asyncio plugin absent, RAW FF CSV shortfall). Zero overlap with Step5 files. Step5 introduces 0 new regressions."
+    },
+    {
+      "check": "verdict:git_change_manifest.json",
+      "pass": true,
+      "detail": "PASS - Step5 changes limited to api/api.py + 3 new files + evidence dir. No modification of ETL/Ledger/Financial Engine/classification tables."
+    },
+    {
+      "check": "verdict:idempotency.json",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "verdict:integrity_validation.json",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "verdict:marketplace_validation.json",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "verdict:preexisting_failures_reconciliation.json",
+      "pass": true,
+      "detail": "PASS - all 12 failures proven preexisting; 0 attributable to Step5."
+    },
+    {
+      "check": "verdict:tests_report.json",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "verdict:traceability_validation.json",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "coverage_100",
+      "pass": true,
+      "detail": "100.0%"
+    },
+    {
+      "check": "evaluated_eq_total",
+      "pass": true,
+      "detail": "598112"
+    },
+    {
+      "check": "no_multi_primary",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "idempotency_pass",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "catalog_19",
+      "pass": true,
+      "detail": "19"
+    },
+    {
+      "check": "summary_all_gates_pass",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "all_pass": true,
+  "required_artifacts": 22,
+  "verdict": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "audit_id": "AUDIT-XML-CERTIFICATION-FASE2-ENTRY",
+  "timestamp": "2026-07-27T20:00:00Z",
+  "certification_status": "NO CONFIRMADA",
+  "total_xml_files": 971,
+  "ripley_xml_count": 407,
+  "paris_xml_count": 54,
+  "falabella_xml_count": 510,
+  "dte_types_detected": ["33", "43", "52", "61"],
+  "valid_xml_files": 971,
+  "invalid_xml_files": 0,
+  "duplicate_xml_files": 0,
+  "xml_without_sap": "PENDIENTE_FASE_5",
+  "xml_without_sale": "PENDIENTE_FASE_4",
+  "xml_without_payment": "PENDIENTE_FASE_7",
+  "scheduled_certification_phase": "FASE_4"
+}

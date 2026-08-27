@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-08-06",
+  "raw_base": "01_Raw/RIPLEY",
+  "sources": {
+    "Fulfillment by Seller": {
+      "count": 51,
+      "ext": "xlsx",
+      "invoice_col": "Número documento liquidación"
+    },
+    "Ciclos de facturación": {
+      "count": 52,
+      "ext": "csv",
+      "status": "RECOVERED_FROM_GIT_7a94360",
+      "invoice_col": "Número de factura"
+    },
+    "Fulfillment by Ripley": {
+      "count": 36,
+      "ext": "csv"
+    },
+    "Historial de transacciones": {
+      "count": 8,
+      "ext": "csv"
+    },
+    "Mis extractos": {
+      "count": 52,
+      "ext": "csv"
+    },
+    "Facturacion": {
+      "count": 472,
+      "ext": "xml",
+      "note": "DTE XMLs, SII folios 108927-53395064"
+    }
+  },
+  "transaction_logs": {
+    "status": "NOT_FOUND",
+    "detail": "transaction-logs.csv does not exist on disk nor in git history"
+  },
+  "xml_reference_dir": {
+    "stored": "01_Raw/RIPLEY/XML/",
+    "actual": "01_Raw/RIPLEY/Facturacion/",
+    "status": "PATH_STALE_IN_DTE_TRUTH"
+  }
+}

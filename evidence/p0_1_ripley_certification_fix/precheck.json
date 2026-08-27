@@ -1,0 +1,32 @@
+{
+  "execution_id": "f8d2e3c1-4a5b-4c6d-8e9f-0a1b2c3d4e5f",
+  "timestamp": "2026-08-06T17:04:31.988754",
+  "official_db": "data/db/meli_financial_v4.db",
+  "official_db_sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+  "git_head": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "git_dirty_files": 818,
+  "raw_manifest_files": 1313,
+  "raw_manifest_hash": "30400d0bef41bde78b3f306ed3f2228797721e28ff4ba8a6439ed47d5cbb2687",
+  "baseline": {
+    "dte_truth_v1_total": 667,
+    "dte_truth_v1_by_mp": {
+      "ripley": 407,
+      "falabella": 6,
+      "paris": 62,
+      "ml": 192
+    },
+    "dte_link_v1_by_mp_cert": {},
+    "dte_link_v1_ledger_existing": 306330,
+    "ledger_folios_matching_dte_truth": 0,
+    "document_match_v1_by_mp_status": {},
+    "ripley_ledger_existing": 210232
+  },
+  "tests_existing": [
+    "tests/test_electronic_certification_api.py",
+    "tests/test_xml_dte_certification.py",
+    "tests/test_reconciliation_engine.py",
+    "tests/test_api_smoke.py"
+  ],
+  "endpoint": "GET /api/v4/electronic_certification/status/{tx_id} @ api/api.py:865",
+  "mission_verdict": "PENDING"
+}

@@ -1,0 +1,8 @@
+{
+  "turn_id": "TURN-c39181bc37cb",
+  "tests": {
+    "suite": "engine.loop_control validate",
+    "exit_code": 0
+  },
+  "created_at": "2026-08-07T15:29:35.027Z"
+}

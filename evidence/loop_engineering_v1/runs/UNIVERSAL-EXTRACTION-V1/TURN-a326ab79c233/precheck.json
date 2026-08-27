@@ -1,0 +1,39 @@
+{
+  "turn_id": "TURN-a326ab79c233",
+  "goal_id": "UNIVERSAL-EXTRACTION-V1",
+  "todo_id": "LOOP-04",
+  "agent_id": "OPENCODE_ENGINEER",
+  "protocol_version": "1.0.0",
+  "goal_status": "ACTIVE",
+  "todo_write_scope": [
+    "engine/loop_control/policy.py"
+  ],
+  "validation_contract": [
+    "python -m engine.loop_control validate"
+  ],
+  "lease_expires_at": "2026-08-07T17:08:19.517Z",
+  "hypothesis": null,
+  "open_gates": [],
+  "quota": {
+    "goal_id": "UNIVERSAL-EXTRACTION-V1",
+    "limits": {
+      "max_same_hypothesis_attempts": 3,
+      "max_no_progress_turns": 2,
+      "max_validation_failures": 3,
+      "max_scope_expansions": 0
+    },
+    "turns_consumed": 4,
+    "failed_turns": 0,
+    "no_progress_turns": 0,
+    "validation_failures": 0,
+    "scope_expansions": 0,
+    "hypothesis_attempts": {},
+    "spent_keys": [
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-5fc4a24d028f",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-77f4d02d76b6",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-8b3f2c1d9e7a",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-9c4e3f2a1b8d"
+    ]
+  },
+  "created_at": "2026-08-07T16:08:19.542Z"
+}

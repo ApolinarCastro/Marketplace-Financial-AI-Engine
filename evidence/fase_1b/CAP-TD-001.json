@@ -1,0 +1,30 @@
+{
+  "cap_id": "CAP-TD-001",
+  "technical_debt_id": "TD-001",
+  "timestamp": "2026-07-27T11:36:00Z",
+  "execution_id": "EXEC-CAP-TD-001-20260727",
+  "git_commit": "2d51f52",
+  "harness_version": "1.0.0",
+  "status": "PASS",
+  "certification_status": "CERTIFIED",
+  "problem_description": "Estado de suites generales con assertions obsoletas por snapshots pre-B2.5C y falta de handlers en loader para ingesta por archivo.",
+  "root_cause": "1. Snapshots JSON en tests/golden no reflejaban el cierre final B2.5C Ripley ($206.9M neto).\n2. SurgicalLoader carecía de un método routing load_file(file_path, marketplace) unificado.\n3. conftest.py contenía carácter unicode '→' que causaba UnicodeEncodeError en consola Windows cp1252.",
+  "strategy": "1. Implementar método load_file unificado en SurgicalLoader para ingesta idempotente.\n2. Incorporar método run_classification_for_transaction en MarketplaceAuditorEngine.\n3. Habilitar _check_duplicate en IntegrityValidator.\n4. Corregir formato de log en conftest.py.\n5. Regenerar baselines golden JSON con las cifras certificadas del DuckDB v4.0.",
+  "modified_files": [
+    "engine/v4/surgical_loader.py",
+    "engine/v4/marketplace_auditor.py",
+    "engine/v4/ingestion/handlers/integrity_validator.py",
+    "api/api.py",
+    "tests/conftest.py",
+    "tests/golden/*.json"
+  ],
+  "test_results": {
+    "total_tests": 335,
+    "passed": 335,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 24.12
+  },
+  "sha256_official_db": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "rollback_strategy": "git checkout -- engine/v4/surgical_loader.py engine/v4/marketplace_auditor.py engine/v4/ingestion/handlers/integrity_validator.py api/api.py tests/"
+}

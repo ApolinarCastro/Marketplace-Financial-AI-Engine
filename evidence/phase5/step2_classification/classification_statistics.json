@@ -1,0 +1,335 @@
+{
+  "timestamp": "2026-07-28T17:34:16.990190",
+  "global_summary": {
+    "marketplace": "ALL",
+    "period": "ALL",
+    "total_records": 150182,
+    "classified_records": 150182,
+    "unclassified_records": 0,
+    "coverage_percentage": 100.0,
+    "financial_delta": "$0.00",
+    "category_breakdown": {
+      "VENTA": {
+        "name": "Ventas Brutas",
+        "count": 45404,
+        "total_monto": 1270130200.0
+      },
+      "COMISION": {
+        "name": "Comisiones Marketplace",
+        "count": 45819,
+        "total_monto": -99440547.655
+      },
+      "PUBLICIDAD": {
+        "name": "Publicidad y Ads",
+        "count": 654,
+        "total_monto": -11721703.412
+      },
+      "ENVIO": {
+        "name": "Costos Log\u00edsticos y Env\u00edos",
+        "count": 33102,
+        "total_monto": -51143655.587
+      },
+      "DEVOLUCION": {
+        "name": "Devoluciones y Reembolsos",
+        "count": 7082,
+        "total_monto": -203795557.0
+      },
+      "BONIFICACION": {
+        "name": "Bonificaciones y Recuperaciones",
+        "count": 305,
+        "total_monto": 10661629.0
+      },
+      "AJUSTE": {
+        "name": "Ajustes Financieros",
+        "count": 5859,
+        "total_monto": 1296863.924
+      },
+      "IMPUESTO": {
+        "name": "Impuestos y D\u00e9bitos Fiscales",
+        "count": 0,
+        "total_monto": 0.0
+      },
+      "RETENCION": {
+        "name": "Retenciones Fiscales",
+        "count": 0,
+        "total_monto": 0.0
+      },
+      "COMPENSACION": {
+        "name": "Compensaciones y Garant\u00edas",
+        "count": 0,
+        "total_monto": 0.0
+      },
+      "OTROS_CARGOS": {
+        "name": "Otros Cargos y Tesorer\u00eda",
+        "count": 11957,
+        "total_monto": 260192785.0
+      }
+    }
+  },
+  "per_marketplace": {
+    "ML": {
+      "marketplace": "ML",
+      "period": "ALL",
+      "total_records": 26183,
+      "classified_records": 26183,
+      "unclassified_records": 0,
+      "coverage_percentage": 100.0,
+      "financial_delta": "$0.00",
+      "category_breakdown": {
+        "VENTA": {
+          "name": "Ventas Brutas",
+          "count": 7904,
+          "total_monto": 228376980.0
+        },
+        "COMISION": {
+          "name": "Comisiones Marketplace",
+          "count": 8653,
+          "total_monto": -33685358.59
+        },
+        "PUBLICIDAD": {
+          "name": "Publicidad y Ads",
+          "count": 276,
+          "total_monto": -11731045.0
+        },
+        "ENVIO": {
+          "name": "Costos Log\u00edsticos y Env\u00edos",
+          "count": 5747,
+          "total_monto": -17801539.9
+        },
+        "DEVOLUCION": {
+          "name": "Devoluciones y Reembolsos",
+          "count": 738,
+          "total_monto": -23538052.0
+        },
+        "BONIFICACION": {
+          "name": "Bonificaciones y Recuperaciones",
+          "count": 305,
+          "total_monto": 10661629.0
+        },
+        "AJUSTE": {
+          "name": "Ajustes Financieros",
+          "count": 2560,
+          "total_monto": 79497780.5
+        },
+        "IMPUESTO": {
+          "name": "Impuestos y D\u00e9bitos Fiscales",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "RETENCION": {
+          "name": "Retenciones Fiscales",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "COMPENSACION": {
+          "name": "Compensaciones y Garant\u00edas",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "OTROS_CARGOS": {
+          "name": "Otros Cargos y Tesorer\u00eda",
+          "count": 0,
+          "total_monto": 0.0
+        }
+      }
+    },
+    "RIPLEY": {
+      "marketplace": "RIPLEY",
+      "period": "ALL",
+      "total_records": 71732,
+      "classified_records": 71732,
+      "unclassified_records": 0,
+      "coverage_percentage": 100.0,
+      "financial_delta": "$0.00",
+      "category_breakdown": {
+        "VENTA": {
+          "name": "Ventas Brutas",
+          "count": 22728,
+          "total_monto": 643900771.0
+        },
+        "COMISION": {
+          "name": "Comisiones Marketplace",
+          "count": 18014,
+          "total_monto": -16763717.0
+        },
+        "PUBLICIDAD": {
+          "name": "Publicidad y Ads",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "ENVIO": {
+          "name": "Costos Log\u00edsticos y Env\u00edos",
+          "count": 13267,
+          "total_monto": -9794410.0
+        },
+        "DEVOLUCION": {
+          "name": "Devoluciones y Reembolsos",
+          "count": 2502,
+          "total_monto": -69280335.0
+        },
+        "BONIFICACION": {
+          "name": "Bonificaciones y Recuperaciones",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "AJUSTE": {
+          "name": "Ajustes Financieros",
+          "count": 3264,
+          "total_monto": -78411987.0
+        },
+        "IMPUESTO": {
+          "name": "Impuestos y D\u00e9bitos Fiscales",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "RETENCION": {
+          "name": "Retenciones Fiscales",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "COMPENSACION": {
+          "name": "Compensaciones y Garant\u00edas",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "OTROS_CARGOS": {
+          "name": "Otros Cargos y Tesorer\u00eda",
+          "count": 11957,
+          "total_monto": 260192785.0
+        }
+      }
+    },
+    "PARIS": {
+      "marketplace": "PARIS",
+      "period": "ALL",
+      "total_records": 49191,
+      "classified_records": 49191,
+      "unclassified_records": 0,
+      "coverage_percentage": 100.0,
+      "financial_delta": "$0.00",
+      "category_breakdown": {
+        "VENTA": {
+          "name": "Ventas Brutas",
+          "count": 14666,
+          "total_monto": 394339687.0
+        },
+        "COMISION": {
+          "name": "Comisiones Marketplace",
+          "count": 18504,
+          "total_monto": -45695168.0
+        },
+        "PUBLICIDAD": {
+          "name": "Publicidad y Ads",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "ENVIO": {
+          "name": "Costos Log\u00edsticos y Env\u00edos",
+          "count": 12168,
+          "total_monto": -21375042.0
+        },
+        "DEVOLUCION": {
+          "name": "Devoluciones y Reembolsos",
+          "count": 3839,
+          "total_monto": -110871312.0
+        },
+        "BONIFICACION": {
+          "name": "Bonificaciones y Recuperaciones",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "AJUSTE": {
+          "name": "Ajustes Financieros",
+          "count": 14,
+          "total_monto": 198499.0
+        },
+        "IMPUESTO": {
+          "name": "Impuestos y D\u00e9bitos Fiscales",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "RETENCION": {
+          "name": "Retenciones Fiscales",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "COMPENSACION": {
+          "name": "Compensaciones y Garant\u00edas",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "OTROS_CARGOS": {
+          "name": "Otros Cargos y Tesorer\u00eda",
+          "count": 0,
+          "total_monto": 0.0
+        }
+      }
+    },
+    "FALABELLA": {
+      "marketplace": "FALABELLA",
+      "period": "ALL",
+      "total_records": 3076,
+      "classified_records": 3076,
+      "unclassified_records": 0,
+      "coverage_percentage": 100.0,
+      "financial_delta": "$0.00",
+      "category_breakdown": {
+        "VENTA": {
+          "name": "Ventas Brutas",
+          "count": 106,
+          "total_monto": 3512762.0
+        },
+        "COMISION": {
+          "name": "Comisiones Marketplace",
+          "count": 648,
+          "total_monto": -3296304.065
+        },
+        "PUBLICIDAD": {
+          "name": "Publicidad y Ads",
+          "count": 378,
+          "total_monto": 9341.588
+        },
+        "ENVIO": {
+          "name": "Costos Log\u00edsticos y Env\u00edos",
+          "count": 1920,
+          "total_monto": -2172663.687
+        },
+        "DEVOLUCION": {
+          "name": "Devoluciones y Reembolsos",
+          "count": 3,
+          "total_monto": -105858.0
+        },
+        "BONIFICACION": {
+          "name": "Bonificaciones y Recuperaciones",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "AJUSTE": {
+          "name": "Ajustes Financieros",
+          "count": 21,
+          "total_monto": 12571.424
+        },
+        "IMPUESTO": {
+          "name": "Impuestos y D\u00e9bitos Fiscales",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "RETENCION": {
+          "name": "Retenciones Fiscales",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "COMPENSACION": {
+          "name": "Compensaciones y Garant\u00edas",
+          "count": 0,
+          "total_monto": 0.0
+        },
+        "OTROS_CARGOS": {
+          "name": "Otros Cargos y Tesorer\u00eda",
+          "count": 0,
+          "total_monto": 0.0
+        }
+      }
+    }
+  }
+}

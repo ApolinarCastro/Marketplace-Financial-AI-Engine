@@ -1,0 +1,92 @@
+{
+  "validator_version": "PHASE_3_V4_INDEPENDENT_VALIDATOR",
+  "timestamp": "2026-07-28T16:17:43.532392",
+  "final_verdict": "PHASE_3_AUDIT_PARTIAL",
+  "git_audit": {
+    "git_status_before_summary": "lines_count=694",
+    "git_status_after_summary": "lines_count=694",
+    "git_unmodified": true
+  },
+  "official_database_audit": {
+    "path": "data/db/meli_financial_v4.db",
+    "expected_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "actual_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "bytes": 58732544,
+    "status": "PASS"
+  },
+  "raw_file_by_file_comparison": {
+    "baseline_manifest_source": "evidence/migration/MASTER_RAW_INVENTORY.csv",
+    "baseline_file_count": 1342,
+    "current_raw_file_count": 1349,
+    "current_raw_dir_count": 65,
+    "added_files_count": 7,
+    "deleted_files_count": 0,
+    "modified_files_count": 0,
+    "unchanged_files_count": 1342,
+    "raw_mutations": 7,
+    "verification_method": "PATH_SIZE_SHA256_FILE_BY_FILE",
+    "raw_status": "MUTATIONS_DETECTED_7"
+  },
+  "disk_recalculation_metrics": {
+    "total_files": 24167,
+    "total_dirs": 2223,
+    "total_bytes": 4182033177,
+    "total_gb_decimal": 4.182,
+    "total_gib_binary": 3.8948
+  },
+  "v2_artifact_integrity": {
+    "v2_mutations_count": 0,
+    "artifact_statuses": {
+      "phase3_structural_audit_summary_v2.json": "UNTOUCHED_MATCH",
+      "phase3_root_inventory_v2.csv": "UNTOUCHED_MATCH",
+      "phase3_file_inventory_v2.csv": "UNTOUCHED_MATCH",
+      "phase3_duplicate_inventory_v2.csv": "UNTOUCHED_MATCH",
+      "phase3_git_large_objects_v2.csv": "UNTOUCHED_MATCH",
+      "phase3_reference_analysis_v2.csv": "UNTOUCHED_MATCH",
+      "phase3_risk_matrix_v2.csv": "UNTOUCHED_MATCH",
+      "phase3_proposed_actions_v2.md": "UNTOUCHED_MATCH",
+      "phase3_raw_comparison_v2.json": "UNTOUCHED_MATCH"
+    }
+  },
+  "cross_artifact_coherence": {
+    "summary_total_files": 24165,
+    "disk_recalculated_files": 24167,
+    "files_delta": 2,
+    "summary_total_bytes": 4185964575,
+    "disk_recalculated_bytes": 4182033177,
+    "bytes_delta": 3931398,
+    "files_coherence_pct": 99.99,
+    "bytes_coherence_pct": 99.91,
+    "verdict_matching": true,
+    "reconciliation_section_present": true
+  },
+  "csv_and_json_validity": {
+    "csv_details": {
+      "file_inventory_headers": [
+        "rel_path",
+        "filename",
+        "ext",
+        "size_bytes",
+        "size_mb",
+        "dir",
+        "main_folder",
+        "mtime"
+      ],
+      "file_inventory_total_rows": 1000,
+      "file_inventory_sum_bytes": 4004038212,
+      "root_inventory_headers": [
+        "name",
+        "is_dir",
+        "recursive_bytes",
+        "recursive_mb",
+        "file_count",
+        "classification"
+      ],
+      "root_inventory_total_rows": 52,
+      "root_inventory_recursive_sum_bytes": 4185964575
+    },
+    "json_details": {
+      "summary_v2": "VALID_JSON"
+    }
+  }
+}

@@ -1,0 +1,312 @@
+[
+  {
+    "id_transaccion": "3896862_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "status_reconciliacion": "SIN_RESPALDO_XML",
+    "codigo_excepcion": "SIN_RESPALDO_XML",
+    "descripcion_excepcion": "Movimiento financiero sin archivo XML adjunto.",
+    "severidad": "BAJA",
+    "matching_keys_used": [
+      "id_transaccion",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    },
+    "financial_delta": "$0.00"
+  },
+  {
+    "id_transaccion": "3896826_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "status_reconciliacion": "SIN_RESPALDO_XML",
+    "codigo_excepcion": "SIN_RESPALDO_XML",
+    "descripcion_excepcion": "Movimiento financiero sin archivo XML adjunto.",
+    "severidad": "BAJA",
+    "matching_keys_used": [
+      "id_transaccion",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    },
+    "financial_delta": "$0.00"
+  },
+  {
+    "id_transaccion": "3896825_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -2790.0,
+    "status_reconciliacion": "SIN_RESPALDO_XML",
+    "codigo_excepcion": "SIN_RESPALDO_XML",
+    "descripcion_excepcion": "Movimiento financiero sin archivo XML adjunto.",
+    "severidad": "BAJA",
+    "matching_keys_used": [
+      "id_transaccion",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    },
+    "financial_delta": "$0.00"
+  },
+  {
+    "id_transaccion": "3896802_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "status_reconciliacion": "SIN_RESPALDO_XML",
+    "codigo_excepcion": "SIN_RESPALDO_XML",
+    "descripcion_excepcion": "Movimiento financiero sin archivo XML adjunto.",
+    "severidad": "BAJA",
+    "matching_keys_used": [
+      "id_transaccion",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    },
+    "financial_delta": "$0.00"
+  },
+  {
+    "id_transaccion": "3896762_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "status_reconciliacion": "SIN_RESPALDO_XML",
+    "codigo_excepcion": "SIN_RESPALDO_XML",
+    "descripcion_excepcion": "Movimiento financiero sin archivo XML adjunto.",
+    "severidad": "BAJA",
+    "matching_keys_used": [
+      "id_transaccion",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    },
+    "financial_delta": "$0.00"
+  },
+  {
+    "id_transaccion": "3896727_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -2000.0,
+    "status_reconciliacion": "SIN_RESPALDO_XML",
+    "codigo_excepcion": "SIN_RESPALDO_XML",
+    "descripcion_excepcion": "Movimiento financiero sin archivo XML adjunto.",
+    "severidad": "BAJA",
+    "matching_keys_used": [
+      "id_transaccion",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    },
+    "financial_delta": "$0.00"
+  },
+  {
+    "id_transaccion": "3896688_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "status_reconciliacion": "SIN_RESPALDO_XML",
+    "codigo_excepcion": "SIN_RESPALDO_XML",
+    "descripcion_excepcion": "Movimiento financiero sin archivo XML adjunto.",
+    "severidad": "BAJA",
+    "matching_keys_used": [
+      "id_transaccion",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    },
+    "financial_delta": "$0.00"
+  },
+  {
+    "id_transaccion": "3896617_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "status_reconciliacion": "SIN_RESPALDO_XML",
+    "codigo_excepcion": "SIN_RESPALDO_XML",
+    "descripcion_excepcion": "Movimiento financiero sin archivo XML adjunto.",
+    "severidad": "BAJA",
+    "matching_keys_used": [
+      "id_transaccion",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    },
+    "financial_delta": "$0.00"
+  },
+  {
+    "id_transaccion": "3896615_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "status_reconciliacion": "SIN_RESPALDO_XML",
+    "codigo_excepcion": "SIN_RESPALDO_XML",
+    "descripcion_excepcion": "Movimiento financiero sin archivo XML adjunto.",
+    "severidad": "BAJA",
+    "matching_keys_used": [
+      "id_transaccion",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    },
+    "financial_delta": "$0.00"
+  },
+  {
+    "id_transaccion": "3896428_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "status_reconciliacion": "SIN_RESPALDO_XML",
+    "codigo_excepcion": "SIN_RESPALDO_XML",
+    "descripcion_excepcion": "Movimiento financiero sin archivo XML adjunto.",
+    "severidad": "BAJA",
+    "matching_keys_used": [
+      "id_transaccion",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "cadena_evidencia": {
+      "regla_clasificacion": "R004_ENVIO",
+      "evidencia_documental": {
+        "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+        "folio_xml": null,
+        "has_dte_link": false,
+        "dte_folio": null,
+        "dte_tipo": null,
+        "dte_source": null,
+        "dte_cert_type": null,
+        "certified": false
+      },
+      "financial_delta": "$0.00"
+    },
+    "financial_delta": "$0.00"
+  }
+]

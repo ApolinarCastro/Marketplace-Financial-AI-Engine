@@ -1,0 +1,59 @@
+{
+  "evidence_id": "UNIVERSAL_LOOP_V1_SCHEMA_PORTABILITY",
+  "schemas_audited": 8,
+  "total_findings": 0,
+  "by_schema": {
+    "goal.schema.json": 0,
+    "todo.schema.json": 0,
+    "gate.schema.json": 0,
+    "claim.schema.json": 0,
+    "handoff.schema.json": 0,
+    "run_event.schema.json": 0,
+    "quota.schema.json": 0,
+    "evidence.schema.json": 0
+  },
+  "detail": [
+    {
+      "schema": "goal.schema.json",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "schema": "todo.schema.json",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "schema": "gate.schema.json",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "schema": "claim.schema.json",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "schema": "handoff.schema.json",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "schema": "run_event.schema.json",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "schema": "quota.schema.json",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "schema": "evidence.schema.json",
+      "status": "SCANNED",
+      "findings": []
+    }
+  ],
+  "gate_passed": true,
+  "generated_at": "2026-08-07T00:00:00Z"
+}

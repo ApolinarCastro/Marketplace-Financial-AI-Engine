@@ -1,0 +1,28 @@
+{
+  "execution_id": "5a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+  "timestamp": "2026-08-06T17:54:03.756387",
+  "official_db": "data/db/meli_financial_v4.db",
+  "official_db_sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+  "git_head": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "totals": {
+    "ledger_total_rows": 598112,
+    "ledger_total_monto": 4430909518.8099985,
+    "ledger_clasificado_rows": 598112,
+    "cierre_periods": 251,
+    "dte_truth_folios": 667,
+    "dte_link_rows": 339112,
+    "document_match_rows": 9431,
+    "reconciliation_transactions": 0,
+    "auditoria_rows": 8362,
+    "correcciones_rows": 20
+  },
+  "ledger_by_mp": {
+    "ml": 109799,
+    "falabella": 3076,
+    "ripley": 287417,
+    "paris": 197820
+  },
+  "raw_manifest_files": 1313,
+  "raw_manifest_hash": "30400d0bef41bde78b3f306ed3f2228797721e28ff4ba8a6439ed47d5cbb2687",
+  "git_dirty_count": 819
+}

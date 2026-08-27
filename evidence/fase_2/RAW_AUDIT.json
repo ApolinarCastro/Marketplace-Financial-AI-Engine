@@ -1,0 +1,22 @@
+{
+  "audit_id": "AUDIT-RAW-FASE2-ENTRY",
+  "timestamp": "2026-07-27T20:00:00Z",
+  "root_dir": "01_Raw",
+  "total_files": 1349,
+  "valid_files": 1343,
+  "empty_files": 0,
+  "unsupported_files": 6,
+  "duplicates": {
+    "DUPLICATE_CONTENT": 202,
+    "NOT_DUPLICATE": 1147
+  },
+  "classification": {
+    "RAW_FINANCIERO_AUTORIZADO": 1341,
+    "RAW_TÉCNICO_NO_AUTORIZADO": 2,
+    "REFERENCIA": 6,
+    "CUARENTENA": 0,
+    "DESCONOCIDO": 0
+  },
+  "raw_mutations": 0,
+  "idempotency_status": "PASS"
+}

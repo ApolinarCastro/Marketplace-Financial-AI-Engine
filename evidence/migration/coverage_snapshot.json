@@ -1,0 +1,57 @@
+[
+  {
+    "Marketplace": "ML",
+    "RAW Files": 341,
+    "Ingeridos": 25,
+    "No Ingestados": 316,
+    "Corruptos": 0,
+    "Cobertura Archivos %": "7.3%",
+    "Cobertura Bytes %": "36.6%",
+    "Monto Ingerido ($)": "$937,353,577.55",
+    "Gate Status": "FAIL"
+  },
+  {
+    "Marketplace": "FALABELLA",
+    "RAW Files": 15,
+    "Ingeridos": 4,
+    "No Ingestados": 11,
+    "Corruptos": 0,
+    "Cobertura Archivos %": "26.7%",
+    "Cobertura Bytes %": "30.0%",
+    "Monto Ingerido ($)": "$-4,609,056.74",
+    "Gate Status": "FAIL"
+  },
+  {
+    "Marketplace": "PARIS",
+    "RAW Files": 91,
+    "Ingeridos": 22,
+    "No Ingestados": 69,
+    "Corruptos": 0,
+    "Cobertura Archivos %": "24.2%",
+    "Cobertura Bytes %": "92.1%",
+    "Monto Ingerido ($)": "$875,454,654.00",
+    "Gate Status": "FAIL"
+  },
+  {
+    "Marketplace": "RIPLEY",
+    "RAW Files": 655,
+    "Ingeridos": 93,
+    "No Ingestados": 562,
+    "Corruptos": 0,
+    "Cobertura Archivos %": "14.2%",
+    "Cobertura Bytes %": "65.2%",
+    "Monto Ingerido ($)": "$987,265,829.00",
+    "Gate Status": "FAIL"
+  },
+  {
+    "Marketplace": "SHOPIFY",
+    "RAW Files": 240,
+    "Ingeridos": 0,
+    "No Ingestados": 240,
+    "Corruptos": 0,
+    "Cobertura Archivos %": "0.0%",
+    "Cobertura Bytes %": "0.0%",
+    "Monto Ingerido ($)": "$0.00",
+    "Gate Status": "FAIL"
+  }
+]

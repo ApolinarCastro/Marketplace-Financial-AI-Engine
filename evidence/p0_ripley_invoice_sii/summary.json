@@ -1,0 +1,42 @@
+{
+  "execution_id": "d806eda1-a62b-4e8f-8aa8-d3aa8543fecf",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T00:00:00",
+  "harness_version": "1.0.0-r5",
+  "repository": "Marketplace Financial AI Engine",
+  "official_db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "controlled_db_sha256_before": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "controlled_db_sha256_after": "47caf63436374e9bb2b1ba5d0012ce5f8b52cf4a1072c344935420c647374d0f",
+  "mission": "LOOP_P0_RIPLEY_INVOICE_TO_SII_CLOSURE",
+  "scope": "RIPLEY_ONLY",
+  "verdict": "RIPLEY_FISCAL_BRIDGE_PARTIAL_WITH_PROVEN_BLOCKER",
+  "implementation_status": "IMPLEMENTED",
+  "validation_status": "VALIDATED",
+  "certification_status": "NOT_CERTIFIED",
+  "financial_delta": 0.0,
+  "key_findings": {
+    "transaction_logs_csv": "DOES_NOT_EXIST (mission source reference unverifiable)",
+    "ciclos_recovered": "52 files from git commit 7a94360",
+    "settlement_invoice_set": 52,
+    "settlement_invoice_range": [
+      "500346",
+      "602050"
+    ],
+    "dte_truth_ripley_folios": 407,
+    "dte_truth_folio_range": [
+      "108927",
+      "53395064"
+    ],
+    "xml_files_parsed": 472,
+    "settlement_cap_dte_truth": 0,
+    "settlement_cap_xml": 0,
+    "ledger_cap_dte_truth": 0,
+    "settlement_equals_ledger_folio_xml": true,
+    "xml_is_dte_truth_source": true,
+    "literal_invoice_refs_in_xml": 0,
+    "referential_mapping_docs": 0,
+    "mission_claimed_seller_to_sii_folios_2": "NOT_REPRODUCIBLE (actual=0)",
+    "false_fiscal_certification_risk": "api.py:865 electronic_certification claims CERTIFICADO/100% for any ledger folio_xml without XML evidence"
+  },
+  "verdict_rationale": "Internal chain SELLER->CICLOS->LEDGER certified (99.86%). The Número de factura (settlement folio, 500346-602050) IS the ledger folio_xml. But the SII DTE folio namespace (108927-53395064) is completely disjoint: 0 literal references in 472 XMLs, 0 referential mapping documents, 0 intersection with dte_truth. The invoice->SII bridge cannot be closed with available evidence -> PROVEN BLOCKER."
+}

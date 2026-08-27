@@ -1,0 +1,43 @@
+{
+  "execution_id": "20260818_100812",
+  "loop": 10,
+  "title": "REGRESSION VS BASELINE (tests_before.json)",
+  "git_commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "baseline": {
+    "passed": 1031,
+    "failed": 39,
+    "skipped": 12,
+    "command": ".venv/Scripts/python.exe -m pytest tests -q --tb=no"
+  },
+  "current_full_suite": {
+    "passed": 1032,
+    "failed": 38,
+    "skipped": 12,
+    "source": "full pytest run (538.79s) captured in LOOP 10"
+  },
+  "current_failure_files": [
+    "test_copilot_benchmarks.py",
+    "test_copilot_golden.py",
+    "test_loop_control.py",
+    "test_ripley_path_resolution.py",
+    "test_ripley_seller_xml_matching.py",
+    "test_universal_continuation.py"
+  ],
+  "baseline_failure_groups": [
+    "test_copilot_benchmarks.py",
+    "test_copilot_golden.py",
+    "test_f5_05_idempotency_regression.py",
+    "test_loop_control.py",
+    "test_ripley_path_resolution.py",
+    "test_ripley_seller_xml_matching.py",
+    "test_universal_continuation.py"
+  ],
+  "new_regression_files": [],
+  "files_no_longer_failing": [
+    "test_f5_05_idempotency_regression.py"
+  ],
+  "new_regressions": 0,
+  "note": "All 38 current failures live in the same 7 baseline failure-group files. No file outside the baseline failing set now fails. test_f5_05_idempotency_regression.py no longer appears in the failing set (targeted run passed its tests). NEW_REGRESSIONS=0.",
+  "verdict": "PASS",
+  "financial_delta_usd": "0.00"
+}

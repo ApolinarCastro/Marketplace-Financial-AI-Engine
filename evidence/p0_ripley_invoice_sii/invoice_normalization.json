@@ -1,0 +1,22 @@
+{
+  "algorithm": "strip > remove .0 > remove non-digits > lstrip zeros",
+  "examples": [
+    {
+      "input": "000000598638",
+      "output": "598638"
+    },
+    {
+      "input": "598638",
+      "output": "598638"
+    },
+    {
+      "input": "598638.0",
+      "output": "598638"
+    },
+    {
+      "input": " 000000598638 ",
+      "output": "598638"
+    }
+  ],
+  "collision_check": "invoice set 52 unique after normalization; 0 collisions between CICLOS and SELLER sets"
+}

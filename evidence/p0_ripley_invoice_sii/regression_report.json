@@ -1,0 +1,20 @@
+{
+  "new_tests": {
+    "test_ripley_invoice_map.py": "PASS",
+    "test_ripley_invoice_normalization.py": "PASS",
+    "test_ripley_dte_reference_parser.py": "PASS",
+    "test_ripley_dual_invoice_contract.py": "PASS",
+    "test_ripley_fiscal_bridge_e2e.py": "PASS",
+    "total_new": 35
+  },
+  "regression_tests": {
+    "test_electronic_certification_api.py": "PASS",
+    "test_xml_dte_certification.py": "PASS",
+    "test_traceability.py": "PASS",
+    "test_reconciliation_engine.py": "PASS",
+    "test_financial_truth_engine.py": "PASS",
+    "test_regression_contracts.py": "PASS",
+    "total_regression": 54
+  },
+  "regressions": 0
+}

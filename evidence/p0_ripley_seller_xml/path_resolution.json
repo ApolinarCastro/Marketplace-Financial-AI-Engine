@@ -1,0 +1,20 @@
+{
+  "execution_id": "424ecfc0-3c88-4919-aa2b-aa2028b342f4",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:56:03",
+  "harness_version": "1.0.0-r5-p0-ripley-seller-xml",
+  "repository": "Marketplace Financial AI Engine",
+  "marketplace": "RIPLEY",
+  "documented_paths_that_do_not_exist": [
+    "01_Raw/Ripley/SELLER (documented in document_certification.py)",
+    "01_Raw/RIPLEY/Ciclos de facturacion (on disk; recovered from git)"
+  ],
+  "resolution": {
+    "SELLER": "01_Raw/RIPLEY/Fulfillment by Seller/*.xlsx (51 files)",
+    "CICLOS": "git commit 7a94360 -> temp ripley_ciclos (52 CSV, delimiter \";\")",
+    "XML": "01_Raw/RIPLEY/Facturacion/*.xml (472 files, latin-1/utf-8)"
+  },
+  "recommendation": "Centralize source paths in config (document_certification.py hardcodes wrong paths)",
+  "status": "RESOLVED",
+  "verification": "VERIFIED"
+}

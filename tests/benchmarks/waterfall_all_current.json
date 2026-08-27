@@ -1,12 +1,12 @@
 {
   "name": "waterfall_all",
   "arm": "current",
-  "median_duration_ms": 6.24565000180155,
+  "median_duration_ms": 3.675400002975948,
   "median_memory_mb": 0.1464099884033203,
   "median_sql_count": 0.0,
-  "stddev_duration_ms": 1.3019234435471765,
+  "stddev_duration_ms": 0.643497131435331,
   "stddev_memory_mb": 0.015241138619654065,
   "runs": 10,
   "success_rate": 1.0,
-  "timestamp": 1787070384.067645
+  "timestamp": 1787860385.3578887
 }

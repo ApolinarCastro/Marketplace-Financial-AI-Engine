@@ -1,0 +1,74 @@
+{
+  "execution_id": "20260818_101156",
+  "loop": 14,
+  "title": "CANONICAL DOCUMENTATION ALIGNMENT",
+  "git_commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "checks": [
+    {
+      "id": "DOC-01",
+      "claim": "AGENTS.md references knowledge/taxonomy/*.json",
+      "evidence": [
+        "- **Phase 13 (RIPLEY Signal Normalization + Executive Rebuild â€” COMPLETED 2026-06-17)**: Created `knowledge/taxonomy/ripley_v1.json` classifying all 32 RIPLEY `detalle` values as SIGNAL (11) or NOISE (21). Added `signal_mode` parameter (SIGNAL/ALL/NOISE) to `/api/v4/financial-structure`. Rebuilt Executive Dashboard to consume `marketplace_ledger_v1` directly via `financial-structure?signal_mode=SIGNAL`. Updated Auditor Dashboard default to `signal_mode=SIGNAL`. **Single Financial Truth enforced â€” both dashboards consume same endpoint, same taxonomy. Delta = $0.**",
+        "- **Phase 15B (Taxonomies + DTE + Gate â€” COMPLETED 2026-06-18)**: 4 entregas: (1) DTEIndexer ejecutado PARIS(62)+FALABELLA(6), 0 matches XMLMatcher (heuristic limitation). (2) 3 taxonomÃ­as creadas: `ml_v1.json` (71 detalles, 70 SIGNAL/1 NOISE), `paris_v1.json` (15 detalles, 14 SIGNAL/1 NOISE), `falabella_v1.json` (16 detalles, 15 SIGNAL/1 NOISE). (3) Certification gate `test_certification_gate.py` â€” 27 tests (exec vs waterfall, conservation, DTE coverage, taxonomy orphans, no frontend logic, immutable contracts). (4) Single Financial Truth Baseline documentado. **261/261 tests PASS**.",
+        "  - Deliverables: `governance/PHASE_15B_*` (5 reports), `knowledge/taxonomy/ml_v1.json`, `knowledge/taxonomy/paris_v1.json`, `knowledge/taxonomy/falabella_v1.json`"
+      ],
+      "actual_paths": [
+        "KnowledgeBase\\Marketplace\\Taxonomy\\falabella_v1.json",
+        "KnowledgeBase\\Marketplace\\Taxonomy\\ml_v1.json",
+        "KnowledgeBase\\Marketplace\\Taxonomy\\paris_v1.json",
+        "KnowledgeBase\\Marketplace\\Taxonomy\\ripley_v1.json"
+      ],
+      "matches": true,
+      "status": "DRIFT"
+    },
+    {
+      "id": "DOC-02",
+      "claim": "AGENTS.md lists engine/v4/production/production_checklist.py",
+      "referenced": true,
+      "file_exists": false,
+      "status": "DRIFT"
+    },
+    {
+      "id": "DOC-03",
+      "claim": "FRONTEND_ZERO_LOGIC_REMEDIATION removed mapDetalleToConcept",
+      "mapDetalleToConcept_in_executive": false,
+      "status": "RESOLVED",
+      "note": "FIX-2 (2026-08-18): mapDetalleToConcept + DETALLE_TO_CONCEPT deleted from executive_dashboard.html; loadCobrosBreakdown now consumes /api/v4/exec/cobros-breakdown server-side. grep across templates/ = 0 matches."
+    },
+    {
+      "id": "DOC-04",
+      "claim": "/api/v4/exec/cobros-breakdown endpoint exists (DEC-014)",
+      "endpoint_in_api": true,
+      "referenced_by_documentary": 2,
+      "referenced_by_executive": 1,
+      "status": "RESOLVED",
+      "note": "FIX-1 (2026-08-18): api.py route added, delegates to FinancialEngine.query_cobros_breakdown. Returns {matrix, mps, total_cobros, concept_totals}. 6 route tests PASS."
+    },
+    {
+      "id": "DOC-05",
+      "claim": "DEC-035: RIPLEY uses UPPERCASE financial_groups (INGRESOS/DEVOLUCIONES)",
+      "actual_groups": [
+        "ajustes",
+        "tesoreria",
+        "devoluciones",
+        "ingresos",
+        "costos_comerciales",
+        "costos_operacionales"
+      ],
+      "uppercase_groups": [],
+      "status": "OK-NOT-TRIGGERED"
+    },
+    {
+      "id": "DOC-06",
+      "claim": "Regression NEW_REGRESSIONS=0",
+      "before": "1031/39/12",
+      "after": "1032/38/12",
+      "new_regressions": 0,
+      "status": "OK"
+    }
+  ],
+  "drift_count": 2,
+  "verdict": "RESOLVED",
+  "financial_delta_usd": "0.00",
+  "note": "FIX-1 + FIX-2 applied (2026-08-18): DOC-03 and DOC-04 RESOLVED. Remaining drifts (DOC-01, DOC-02) are MEDIUM documentation-only and outside FIX-1/2 scope."
+}

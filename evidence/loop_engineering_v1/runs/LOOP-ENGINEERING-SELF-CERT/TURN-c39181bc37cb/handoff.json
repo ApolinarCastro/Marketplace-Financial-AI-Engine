@@ -1,0 +1,39 @@
+{
+  "continuation_record": {
+    "from_agent": "CODEX_ENGINEER",
+    "to_agent": "AUDITOR",
+    "goal_id": "LOOP-ENGINEERING-SELF-CERT",
+    "completed": [
+      "TODO-001",
+      "TODO-002"
+    ],
+    "current_state": "turn TURN-c39181bc37cb ended with VALIDATED_COMPLETION: validated the control plane against all schemas",
+    "evidence": [
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-c39181bc37cb/precheck.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-c39181bc37cb/action.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-c39181bc37cb/validation.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-c39181bc37cb/tests.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-c39181bc37cb/diff.json"
+    ],
+    "blockers": [],
+    "files_changed": [],
+    "tests": [
+      "suite",
+      "exit_code"
+    ],
+    "next_todo": "TODO-003",
+    "allowed_scope": [
+      "engine/loop_control/**"
+    ],
+    "forbidden_scope": [
+      "01_Raw/**",
+      "data/db/meli_financial_v4.db",
+      ".git/**",
+      ".agents/**",
+      "governance/coordination/**"
+    ],
+    "created_at": "2026-08-07T15:29:35.142Z",
+    "turn_id": "TURN-c39181bc37cb",
+    "idempotency_key": "handoff:LOOP-ENGINEERING-SELF-CERT:TURN-c39181bc37cb"
+  }
+}

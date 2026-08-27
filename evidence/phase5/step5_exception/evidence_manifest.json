@@ -1,0 +1,32 @@
+{
+  "execution_id": "phase5-step5-exception-20260807_104232",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-07T10:42:32",
+  "artifact_count": 24,
+  "bundle": {
+    "api_e2e_validation.json": "cffb531c551af5bd",
+    "category_coverage.json": "556ddb4e1cf8d49c",
+    "certification_gate.json": "0a9131abca90406b",
+    "certification_precheck.json": "3ae7bae4885e4f2a",
+    "duplicate_analysis.json": "a232355218af1e4e",
+    "exception_contract.json": "b9d2ca625d4d7e95",
+    "exception_statistics.json": "78e478c8a126876e",
+    "financial_integrity.json": "cb80b96b7f287e38",
+    "fiscal_exception_validation.json": "de04b128db09b186",
+    "full_corpus_coverage.json": "97f2c0e5dc769cef",
+    "full_corpus_results.json": "2693e679c38c6f16",
+    "full_regression_report.json": "b2089e2b7b6a8338",
+    "git_change_manifest.json": "f7104f113612901f",
+    "idempotency.json": "4d26f762d47b957f",
+    "implementation.json": "d50b088ac47aa3ab",
+    "integrity_validation.json": "992868720599262d",
+    "marketplace_statistics.json": "1734cfa9455a3746",
+    "marketplace_validation.json": "45daa19e47f73e6a",
+    "precheck.json": "1ff708956bc17867",
+    "preexisting_failures_reconciliation.json": "a487576e319c79ad",
+    "summary.json": "fface807da37ef6c",
+    "tests_report.json": "f98f9e08350328d7",
+    "traceability_validation.json": "3c0d2b4d031c3e5f",
+    "execution_report.md": "f8fd92d38fd18739"
+  }
+}

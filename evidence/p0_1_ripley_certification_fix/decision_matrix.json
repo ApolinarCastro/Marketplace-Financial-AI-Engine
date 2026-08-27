@@ -1,0 +1,106 @@
+{
+  "execution_id": "f8d2e3c1-4a5b-4c6d-8e9f-0a1b2c3d4e5f",
+  "matrix_name": "MATRIZ DE CERTIFICACIÓN ELECTRÓNICA (LOOP 2)",
+  "scope": "RIPLEY_ELECTRONIC_CERTIFICATION_ONLY — aplica a GET /api/v4/electronic_certification/status/{tx_id}",
+  "principle": "El folio del ledger NO es evidencia fiscal. Solo dte_truth_v1 (índice SII real) + document_match_v1 (match certificado) constituyen evidencia fiscal.",
+  "cases": [
+    {
+      "caso": "CASO A",
+      "xml_present": true,
+      "dte_present": true,
+      "certified_match": true,
+      "result": "CRYPTOGRAPHIC_CERTIFIED",
+      "certification_scope": "FISCAL",
+      "evidence_source": "XML+DTE",
+      "confidence": "100.0%",
+      "pipeline": {"xml": "PASS", "xsd": "PASS", "sig": "PASS", "caf": "PASS"},
+      "blocking_reason": null
+    },
+    {
+      "caso": "CASO B",
+      "xml_present": true,
+      "dte_present": true,
+      "certified_match": false,
+      "result": "XML_PRESENT_NOT_CERTIFIED",
+      "certification_scope": "FISCAL",
+      "evidence_source": "XML",
+      "confidence": "0%",
+      "pipeline": {"xml": "PASS", "xsd": "PASS", "sig": "FAIL", "caf": "FAIL"},
+      "blocking_reason": "XML_INDEXED_WITHOUT_CERTIFIED_MATCH"
+    },
+    {
+      "caso": "CASO C",
+      "xml_present": false,
+      "dte_present": false,
+      "ledger_existing": true,
+      "document_match": true,
+      "result": "DOCUMENT_REFERENCE_ONLY",
+      "certification_scope": "DOCUMENTAL",
+      "evidence_source": "DTE",
+      "confidence": "N/A",
+      "pipeline": {"xml": "FAIL", "xsd": "FAIL", "sig": "FAIL", "caf": "FAIL"},
+      "blocking_reason": "DOCUMENTAL_MATCH_WITHOUT_REAL_XML"
+    },
+    {
+      "caso": "CASO D",
+      "xml_present": false,
+      "dte_present": false,
+      "ledger_existing": true,
+      "document_match": false,
+      "result": "LEDGER_REFERENCE_ONLY",
+      "certification_scope": "LIQUIDACION",
+      "evidence_source": "LEDGER",
+      "confidence": "N/A",
+      "pipeline": {"xml": "FAIL", "xsd": "FAIL", "sig": "FAIL", "caf": "FAIL"},
+      "blocking_reason": "LEDGER_FOLIO_WITHOUT_REAL_DTE"
+    },
+    {
+      "caso": "CASO D-RIPLEY",
+      "marketplace": "RIPLEY",
+      "xml_present": false,
+      "dte_present": false,
+      "ledger_existing": true,
+      "document_match": false,
+      "result": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "certification_scope": "UNKNOWN",
+      "evidence_source": "NONE",
+      "confidence": "0%",
+      "pipeline": {"xml": "FAIL", "xsd": "FAIL", "sig": "FAIL", "caf": "FAIL"},
+      "blocking_reason": "RIPLEY_LIQUIDATION_IS_NOT_SII_DTE",
+      "note": "LOOP 7 — Sin excepciones. Todo RIPLEY sin evidencia real responde INSUFFICIENT_FISCAL_EVIDENCE."
+    },
+    {
+      "caso": "CASO E",
+      "xml_present": false,
+      "dte_present": false,
+      "ledger_existing": false,
+      "document_match": false,
+      "result": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "certification_scope": "UNKNOWN",
+      "evidence_source": "NONE",
+      "confidence": "0%",
+      "pipeline": {"xml": "FAIL", "xsd": "FAIL", "sig": "FAIL", "caf": "FAIL"},
+      "blocking_reason": "NO_XML_NO_DTE_NO_MATCH"
+    },
+    {
+      "caso": "CASO F",
+      "conflict": true,
+      "result": "TRUTH_CONFLICT_DETECTED",
+      "certification_scope": "UNKNOWN",
+      "evidence_source": "MIXED",
+      "confidence": "0%",
+      "pipeline": {"xml": "FAIL", "xsd": "FAIL", "sig": "FAIL", "caf": "FAIL"},
+      "blocking_reason": "EVIDENCE_CONFLICT_BETWEEN_SOURCES"
+    }
+  ],
+  "rules": [
+    "RULE-001: LEDGER_EXISTING → CRYPTOGRAPHIC_CERTIFIED es TRANSICIÓN PROHIBIDA (eliminada en LOOP 3).",
+    "RULE-002: CRYPTOGRAPHIC_CERTIFIED requiere dte_truth_v1 (folio real SII) Y document_match_v1 MATCHED del mismo folio.",
+    "RULE-003: confidence 100.0% SOLO para CRYPTOGRAPHIC_CERTIFIED.",
+    "RULE-004: RIPLEY sin evidencia fiscal real → INSUFFICIENT_FISCAL_EVIDENCE, sin excepciones (LOOP 7).",
+    "RULE-005: Estados permitidos: CRYPTOGRAPHIC_CERTIFIED | DOCUMENT_REFERENCE_ONLY | LEDGER_REFERENCE_ONLY | XML_PRESENT_NOT_CERTIFIED | INSUFFICIENT_FISCAL_EVIDENCE | TRUTH_CONFLICT_DETECTED.",
+    "RULE-006: certification_scope ∈ {FISCAL, DOCUMENTAL, LIQUIDACION, UNKNOWN}.",
+    "RULE-007: evidence_source ∈ {XML, DTE, LEDGER, NONE}.",
+    "RULE-008: Toda respuesta incluye blocking_reason (null si CERTIFIED)."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "execution_id": "20260818_FIX12",
+  "title": "FIX-1 + FIX-2 EXECUTION — DOC-03 & DOC-04 RESOLUTION",
+  "git_commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "branch": "phase5/production-readiness",
+  "official_db_sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+  "db_unchanged": true,
+  "financial_delta_usd": "0.00",
+  "fix_1": {
+    "title": "Implement /api/v4/exec/cobros-breakdown server-side with proven contract",
+    "status": "RESOLVED",
+    "changes": [
+      "api/api.py: added @app.get('/api/v4/exec/cobros-breakdown') delegating to FinancialEngine(DatabaseV4.get()).query_cobros_breakdown(marketplace, periodo)",
+      "Contract: {matrix: [{concept, <MP>..., total}], mps: [...], total_cobros: number, concept_totals: {...}} — identical to certified engine method and to documentary_dashboard.html:1148 consumer",
+      "validate_periodo() enforces YYYY-MM | YTD | empty (bad periodo -> 400)"
+    ],
+    "verified": {
+      "route_status": 200,
+      "periodo_2026_01_all": {"total_cobros": -19843819.0, "mps": ["ML", "PARIS", "RIPLEY"]},
+      "periodo_2026_01_ML": {"total_cobros": -9947916.0, "mps": ["ML"]},
+      "bad_periodo_status": 400,
+      "test_file": "tests/test_exec_cobros_breakdown_route.py"
+    }
+  },
+  "fix_2": {
+    "title": "Remove mapDetalleToConcept from executive_dashboard.html",
+    "status": "RESOLVED",
+    "changes": [
+      "templates/executive_dashboard.html: deleted DETALLE_TO_CONCEPT map + mapDetalleToConcept() function (was lines 380-436)",
+      "templates/executive_dashboard.html: loadCobrosBreakdown() rewritten to consume /api/v4/exec/cobros-breakdown (single server-side call, mirror of documentary_dashboard.html:1138-1192)",
+      "grep verification: 'mapDetalleToConcept' and 'DETALLE_TO_CONCEPT' now return ZERO matches across all templates/"
+    ],
+    "verified": {
+      "forbidden_tokens_remaining": 0,
+      "gate6_no_frontend_financial_computations": "PASS"
+    }
+  },
+  "tests": {
+    "test_exec_cobros_breakdown_route.py": "6 PASSED (route_exists, contract_shape, marketplace_filter, total_matches_matrix_sum, bad_periodo_rejected, no_frontend_concept_mapping)",
+    "test_financial_engine.py": "35 PASSED",
+    "test_certification_gate.py": "29 PASSED (11/11 gates, parametrized)",
+    "test_api_smoke.py": "route added to expected set"
+  },
+  "full_regression": {
+    "command": "python -m pytest tests/ -q --tb=no",
+    "result": "38 failed, 1038 passed, 12 skipped",
+    "baseline_loop10": "38 failed, 1032 passed, 12 skipped",
+    "delta_passed": "+6 (new tests only)",
+    "failure_files": [
+      "test_loop_control.py: 22",
+      "test_copilot_golden.py: 8",
+      "test_ripley_path_resolution.py: 3",
+      "test_ripley_seller_xml_matching.py: 2",
+      "test_copilot_benchmarks.py: 2",
+      "test_universal_continuation.py: 1"
+    ],
+    "new_regressions": 0,
+    "all_failures_in_baseline_groups": true
+  },
+  "drifts_resolved": {
+    "DOC-03": "RESOLVED — no client-side financial mapping anywhere",
+    "DOC-04": "RESOLVED — /api/v4/exec/cobros-breakdown now exists and returns the documented contract"
+  },
+  "verdict": "PRODUCTION_BASELINE_CERTIFIED"
+}

@@ -1,0 +1,159 @@
+{
+  "tests_executed": 30,
+  "passed": 30,
+  "failed": 0,
+  "financial_delta_all": "$0.00",
+  "results": [
+    {
+      "test": "health_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "health_engine_active",
+      "pass": true,
+      "detail": "{'status': 'READY', 'exception_engine': 'ACTIVE', 'catalog_size': 19, 'catalog_complete': True, 'persistence_enabled': F"
+    },
+    {
+      "test": "health_catalog_19",
+      "pass": true,
+      "detail": "{'status': 'READY', 'exception_engine': 'ACTIVE', 'catalog_size': 19, 'catalog_complete': True, 'persistence_enabled': F"
+    },
+    {
+      "test": "summary_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "summary_keys",
+      "pass": true,
+      "detail": "{'marketplace': 'ML', 'period': 'ALL', 'total_exceptions': 1000, 'open_exceptions': 1000, 'resolved_exceptions': 0, 'critical_exceptions': 0, 'high_ex"
+    },
+    {
+      "test": "summary_financial_delta",
+      "pass": true,
+      "detail": "$0.00"
+    },
+    {
+      "test": "sla_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "sla_keys",
+      "pass": true,
+      "detail": "{'marketplace': 'PARIS', 'period': 'ALL', 'total_exceptions': 500, 'within_sla': 0, 'sla_breached': 500, 'sla_compliance_pct': 0.0, 'financial_delta':"
+    },
+    {
+      "test": "statistics_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "statistics_keys",
+      "pass": true,
+      "detail": "{'marketplace': 'ALL', 'period': 'ALL', 'total_ledger_rows': 598112, 'sample_analyzed': 1000, 'sample_limit': 1000, 'total_exceptions_detected': 1000,"
+    },
+    {
+      "test": "statistics_catalog_19",
+      "pass": true,
+      "detail": "19"
+    },
+    {
+      "test": "marketplace_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "marketplace_paris",
+      "pass": true,
+      "detail": "{'marketplace': 'PARIS', 'total_exceptions_detected': 1000, 'active_types': {'MISSING_DTE': 409, 'LEDGER_REFERENCE_ONLY': 591}, 'total_ledger_rows': 5"
+    },
+    {
+      "test": "list_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "list_pagination",
+      "pass": true,
+      "detail": "n=5"
+    },
+    {
+      "test": "evaluate_valid_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "evaluate_valid_status",
+      "pass": true,
+      "detail": "{'status': 'EVALUATED', 'certification_state': 'INSUFFICIENT_FISCAL_EVIDENCE', 'blocking_reason': 'NO_XML_NO_DTE_NO_MATCH', 'exceptions': [{'exception"
+    },
+    {
+      "test": "evaluate_valid_delta",
+      "pass": true,
+      "detail": "$0.00"
+    },
+    {
+      "test": "evaluate_invalid_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "evaluate_invalid_status",
+      "pass": true,
+      "detail": "{'status': 'INVALID_RECORD', 'missing_fields': ['marketplace'], 'exceptions': [], 'financial_delta': '$0.00'}"
+    },
+    {
+      "test": "evaluate_malformed_4xx",
+      "pass": true,
+      "detail": "status=422"
+    },
+    {
+      "test": "transaction_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "transaction_match",
+      "pass": true,
+      "detail": "{'transaction_id': 'RIP_CSV_596684_24816174301-A_501_amounttransferredtotienda', 'exceptions': [{'exception_id': '643cec"
+    },
+    {
+      "test": "order_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "exception_by_id_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "exception_by_id_match",
+      "pass": true,
+      "detail": "{'exception_id': 'daa89ffeb0da5dd58830e23eb6d4ac5b359928cf6661a34b219be3e65d8cbb7e', 'exception_type': 'INSUFFICIENT_FIS"
+    },
+    {
+      "test": "exception_by_id_404",
+      "pass": true,
+      "detail": "status=404"
+    },
+    {
+      "test": "determinism_statistics",
+      "pass": true,
+      "detail": "len_a=810 len_b=810"
+    },
+    {
+      "test": "rebuild_200",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "test": "rebuild_status",
+      "pass": true,
+      "detail": "{'status': 'COMPLETED', 'marketplace': 'ML', 'period': 'ALL', 'total_exceptions_built': 500, 'duplicates_prevented': 0, 'financial_delta': '$0.00'}"
+    }
+  ],
+  "verdict": "PASS"
+}

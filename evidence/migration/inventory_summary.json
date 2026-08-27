@@ -1,0 +1,21 @@
+{
+  "total_files": 1342,
+  "by_marketplace": {
+    "RIPLEY": 72,
+    "UNKNOWN": 1270
+  },
+  "by_status": {
+    "INGERIDO": 125,
+    "NO INGESTADO": 1217
+  },
+  "by_mp_and_status": {
+    "INGERIDO": {
+      "RIPLEY": 35,
+      "UNKNOWN": 90
+    },
+    "NO INGESTADO": {
+      "RIPLEY": 37,
+      "UNKNOWN": 1180
+    }
+  }
+}

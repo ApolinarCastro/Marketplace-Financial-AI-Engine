@@ -1,0 +1,9 @@
+{
+  "turn_id": "TURN-g1h2i3j4k5l6",
+  "files_changed": [
+    "engine/loop_control/adapter.py",
+    "engine/loop_control/adapters/UNIVERSAL_ADAPTER_INTERFACE.md",
+    "tests/test_universal_adapters.py"
+  ],
+  "created_at": "2026-08-07T20:30:30.010Z"
+}

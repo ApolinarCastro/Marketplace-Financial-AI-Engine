@@ -381,6 +381,67 @@ window.ApiClient = {
             loadExecutiveDashboard();
         }
 
+        function getCertificationLabel(status) {
+            const labels = {
+                'CERTIFIED': { text: 'CERTIFICADO', bg: 'bg-emerald-50', border: 'border-emerald-200', textColor: 'text-emerald-700', dotColor: 'bg-emerald-500' },
+                'DEGRADED': { text: 'CERTIFICACIÓN PARCIAL', bg: 'bg-amber-50', border: 'border-amber-200', textColor: 'text-amber-700', dotColor: 'bg-amber-500' },
+                'FAILED': { text: 'NO CERTIFICADO', bg: 'bg-rose-50', border: 'border-rose-200', textColor: 'text-rose-700', dotColor: 'bg-rose-500' },
+                'PENDING': { text: 'PENDIENTE', bg: 'bg-slate-50', border: 'border-slate-200', textColor: 'text-slate-500', dotColor: 'bg-slate-400' }
+            };
+            return labels[status] || labels['PENDING'];
+        }
+
+        function getAuditStatusLabel(status) {
+            const labels = {
+                'COMPLETED': { text: 'AUDITORÍA COMPLETADA', bg: 'bg-emerald-50', border: 'border-emerald-200', textColor: 'text-emerald-700', dotColor: 'bg-emerald-500' },
+                'PENDING': { text: 'AUDITORÍA PENDIENTE', bg: 'bg-amber-50', border: 'border-amber-200', textColor: 'text-amber-700', dotColor: 'bg-amber-500' },
+                'FAILED': { text: 'AUDITORÍA FALLIDA', bg: 'bg-rose-50', border: 'border-rose-200', textColor: 'text-rose-700', dotColor: 'bg-rose-500' }
+            };
+            return labels[status] || labels['PENDING'];
+        }
+
+        function getDTEChainLabel(chainType) {
+            const labels = {
+                'DIRECT_LINK': 'Enlace Directo (1:1)',
+                'DOCUMENT_CHAIN': 'Cadena Documental',
+                'TRANSACTION_CHAIN': 'Cadena Transaccional',
+                'SETTLEMENT': 'Cadena de Liquidación (Settlement)',
+                'NOT_RUN': 'No Ejecutado (Sin XML)',
+                'MULTIPLE': 'Múltiples Estrategias'
+            };
+            return labels[chainType] || chainType || '—';
+        }
+
+        function updateAuditStatusBadge(cert) {
+            // Header badge
+            const headerBadge = document.getElementById('audit-status-badge');
+            if (headerBadge && cert.overall_status) {
+                const label = getCertificationLabel(cert.overall_status);
+                headerBadge.className = 'flex items-center gap-1.5 text-[11px] font-semibold ' + label.textColor + ' ' + label.bg + ' border ' + label.border + ' rounded-lg px-2.5 py-1.5';
+                headerBadge.innerHTML = '<span class="w-2 h-2 ' + label.dotColor + ' rounded-full"></span>' + label.text;
+            }
+
+            // Audit status section
+            const auditSection = document.getElementById('audit-status');
+            if (auditSection && cert) {
+                const certLabel = getCertificationLabel(cert.overall_status);
+                const auditLabel = getAuditStatusLabel(cert.audit_execution_status);
+                const chainLabel = getDTEChainLabel(cert.dte_chain_type);
+                
+                auditSection.innerHTML = `
+                    <div class="flex items-center gap-3">
+                        <span class="w-2.5 h-2.5 ` + certLabel.dotColor + ` rounded-full"></span>
+                        <span class="text-xs font-bold text-slate-700">Estado Certificación</span>
+                        <span class="pill ` + certLabel.bg + ` ` + certLabel.textColor + ` text-[9px] font-bold px-2 py-0.5 rounded-full">` + certLabel.text + `</span>
+                    </div>
+                    <div class="flex flex-col gap-1 ml-4 text-[10px]">
+                        <span class="` + auditLabel.textColor + ` font-bold">` + auditLabel.text + `</span>
+                        <span class="text-blue-700 font-bold">Cadena DTE: ` + chainLabel + `</span>
+                    </div>
+                `;
+            }
+        }
+
         ApiClient.safeFetch('/api/v4/periodos').then(periodos => {
                 const sel = document.getElementById('exec-period');
                 const currentVal = sel.value;
@@ -400,6 +461,15 @@ window.ApiClient = {
             
             const summaryUrl = '/api/v4/exec/summary?' + params.toString();
             const summary = await ApiClient.safeFetch(summaryUrl);
+
+            // Fetch certification status from single authority
+            const certUrl = '/api/v4/certification/status?' + params.toString();
+            const cert = await ApiClient.safeFetch(certUrl).catch(() => null);
+            
+            // Update audit status badge in header
+            if (cert) {
+                updateAuditStatusBadge(cert);
+            }
 
             // ── KPI Cards: dynamic financial-structure rendering (P19G_001 UX12 recovery) ──
             const fsParams = new URLSearchParams({ signal_mode: 'SIGNAL' });

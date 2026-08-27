@@ -1,0 +1,36 @@
+{
+  "turn_id": "TURN-77f4d02d76b6",
+  "goal_id": "UNIVERSAL-EXTRACTION-V1",
+  "todo_id": "LOOP-01",
+  "agent_id": "CODEX_ENGINEER",
+  "protocol_version": "1.0.0",
+  "goal_status": "ACTIVE",
+  "todo_write_scope": [
+    "evidence/universal_loop_v1/**"
+  ],
+  "validation_contract": [
+    "python tools/loop_dep_inventory.py"
+  ],
+  "lease_expires_at": "2026-08-07T16:55:49.267Z",
+  "hypothesis": null,
+  "open_gates": [],
+  "quota": {
+    "goal_id": "UNIVERSAL-EXTRACTION-V1",
+    "limits": {
+      "max_same_hypothesis_attempts": 3,
+      "max_no_progress_turns": 2,
+      "max_validation_failures": 3,
+      "max_scope_expansions": 0
+    },
+    "turns_consumed": 1,
+    "failed_turns": 0,
+    "no_progress_turns": 0,
+    "validation_failures": 0,
+    "scope_expansions": 0,
+    "hypothesis_attempts": {},
+    "spent_keys": [
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-5fc4a24d028f"
+    ]
+  },
+  "created_at": "2026-08-07T15:55:49.285Z"
+}

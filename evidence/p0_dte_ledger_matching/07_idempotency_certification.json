@@ -1,0 +1,19 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "claim": "re-running the engine produces identical certified state",
+  "run_1_rows": 86898,
+  "run_2_rows": 86898,
+  "run_3_rows": 86898,
+  "run_1_folios": 15,
+  "run_2_folios": 15,
+  "run_3_folios": 15,
+  "ml_rows_stable": true,
+  "paris_rows_stable": true,
+  "falabella_rows_stable": true,
+  "verification": "VERIFIED",
+  "status": "PASS"
+}

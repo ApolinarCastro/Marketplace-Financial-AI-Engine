@@ -1,0 +1,39 @@
+{
+  "contract_id": "RIPLEY_INVOICE_TO_SII_FISCAL_BRIDGE_V1",
+  "invoice_key": {
+    "field": "Número de factura / Número documento liquidación",
+    "source_note": "Mission context claimed source=transaction-logs.csv but that file does NOT exist on disk nor git history. Real sources: CICLOS (git-recovered) + SELLER xlsx + Historial de transacciones."
+  },
+  "target_key": {
+    "field": "folio_sii",
+    "source": "dte_truth_v1 / XML <Folio> in 01_Raw/RIPLEY/Facturacion"
+  },
+  "matching_strategies": [
+    {
+      "id": "A",
+      "desc": "XML.FolioRef == invoice_number",
+      "result": "FAIL",
+      "evidence": "FolioRefs reference SII folios/CTZ, never settlement invoices"
+    },
+    {
+      "id": "B",
+      "desc": "XML text contains invoice_number",
+      "result": "FAIL",
+      "evidence": "0 literal matches in 971 XMLs; 10 matches were digit-concatenation artifacts"
+    },
+    {
+      "id": "C",
+      "desc": "referential document maps invoice->folio",
+      "result": "FAIL",
+      "evidence": "no invoice-*/mapeo*/mapping* docs exist"
+    },
+    {
+      "id": "D",
+      "desc": "dual DTE emission (commission + shipping same folio)",
+      "result": "NOT_REACHABLE",
+      "evidence": "no invoice->SII anchor to build dual contract"
+    }
+  ],
+  "verdict": "PARTIAL_WITH_PROVEN_BLOCKER",
+  "blocker": "RIPLEY settlement invoice namespace (500346-602050) is disjoint from SII DTE folio namespace (108927-53395064). Zero documentary linkage in raw sources. The Número de factura IS the ledger folio_xml (settlement folio), not an SII folio."
+}

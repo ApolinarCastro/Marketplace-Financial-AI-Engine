@@ -1,0 +1,37 @@
+{
+  "tested_trace_paths": 3,
+  "broken_trace_paths": 0,
+  "paths": [
+    {
+      "entity_id": "execution:CAP-F2-001:EXEC-CAP-F2-001-20260727",
+      "cap_id": "CAP-F2-001",
+      "execution_id": "EXEC-CAP-F2-001-20260727",
+      "evidence_id": "EVID-F2-001",
+      "source_path": "evidence/fase_2/CAP-F2-001.json",
+      "source_hash": "f1fb6c0ff6da41a32792b07a3d553b95b876bd3258a30196f5b9fd3b931c4449",
+      "database_reference": "data/db/controlled_cap_f2_001.db",
+      "traceability_status": "VERIFIED"
+    },
+    {
+      "entity_id": "execution:CAP-TD-008:EXEC-CAP-TD-008-20260727",
+      "cap_id": "CAP-TD-008",
+      "execution_id": "EXEC-CAP-TD-008-20260727",
+      "evidence_id": "EVID-TD-008",
+      "source_path": "evidence/fase_1b/CAP-TD-008.json",
+      "source_hash": "539fca3757ef715938dc049d8809998cb110246297593a6b6a7eaca187015b5b",
+      "database_reference": "data/db/meli_financial_v4.db",
+      "traceability_status": "VERIFIED"
+    },
+    {
+      "entity_id": "decision:ADR-001:EXEC-ADR-001-20260727",
+      "cap_id": "ADR-001",
+      "execution_id": "EXEC-ADR-001-20260727",
+      "evidence_id": "ADR_KNOWLEDGEOS_AS_SYSTEM_BRAIN_V1",
+      "source_path": "knowledge/decisions/ADR_001_KNOWLEDGEOS_SYSTEM_BRAIN.md",
+      "source_hash": "0bb4382eacfa8ef7337500e67cdcf35bc47666c92165e20ef464f024e2e01ad9",
+      "database_reference": "data/db/meli_financial_v4.db",
+      "traceability_status": "VERIFIED"
+    }
+  ],
+  "traceability_verdict": "PASS"
+}

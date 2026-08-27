@@ -1,0 +1,87 @@
+{
+  "ml_transaction_trace": {
+    "transaction_id": "CHG_Reporte_Facturacion_MercadoLibre_Sept2025.xlsx_1",
+    "marketplace": "ML",
+    "folio_xml": "033-0009613966",
+    "dte_folio": "9613966",
+    "dte_monto": 13518689.0,
+    "dte_fecha": "2025-09-10 00:00:00",
+    "emisor_rut": "77398220-1",
+    "emisor_nombre": "MercadoLibre Chile Ltda.",
+    "tipo_dte": "33",
+    "match_status": "MATCHED_CERTIFIED",
+    "match_rule": "DIRECT_MATCH"
+  },
+  "summary_ML": {
+    "strategy": "DIRECT_MATCH",
+    "status": "CERTIFIED",
+    "folios_certified": 15,
+    "rows_linked": 86898,
+    "rows_eligible": 97609,
+    "match_statuses": {
+      "MATCHED_CERTIFIED": 15,
+      "AMOUNT_MISMATCH": 1
+    }
+  },
+  "summary_PARIS": {
+    "strategy": "DOCUMENT_CHAIN",
+    "status": "CERTIFIED",
+    "folios_certified": 18,
+    "rows_linked": 1915,
+    "rows_eligible": 168727
+  },
+  "summary_FALABELLA": {
+    "strategy": "TRANSACTION_CHAIN",
+    "status": "CERTIFIED",
+    "folios_certified": 5,
+    "rows_linked": 113,
+    "rows_eligible": 3076
+  },
+  "summary_RIPLEY": {
+    "marketplace": "RIPLEY",
+    "strategy": "SETTLEMENT_CHAIN_V2",
+    "status": "BLOCKED",
+    "seller_files": 0,
+    "ciclos_files": 0,
+    "source_files_present": false,
+    "settlement_folios": 167,
+    "truth_folios": 407,
+    "folio_overlap": 0,
+    "namespace_compatible": false,
+    "blocked_reasons": [
+      "chain source files (SELLER/*.xlsx, Ciclos/*.csv) absent",
+      "folio namespaces incompatible (settlement=167 vs dte_truth=407, overlap=0)"
+    ]
+  },
+  "PARIS_transaction_trace": {
+    "transaction_id": "4409341_GROSS",
+    "marketplace": "PARIS",
+    "folio_xml": "6284235",
+    "dte_folio": "25560385",
+    "dte_monto": 6284235.0,
+    "dte_fecha": "2025-12-28 00:00:00",
+    "emisor_rut": "81201000-K",
+    "emisor_nombre": "Cencosud Retail S.A.",
+    "tipo_dte": "33",
+    "match_status": "MATCHED_CERTIFIED",
+    "match_rule": "DOCUMENT_CHAIN"
+  },
+  "FALABELLA_transaction_trace": {
+    "transaction_id": "0d29545b-2c55-4d36-90af-8a8ddc15267e",
+    "marketplace": "FALABELLA",
+    "folio_xml": null,
+    "dte_folio": "404621",
+    "dte_monto": 434131.0,
+    "dte_fecha": "2026-04-21 00:00:00",
+    "emisor_rut": "76212492-0",
+    "emisor_nombre": "Falabella.com SpA",
+    "tipo_dte": "61",
+    "match_status": "MATCHED_CERTIFIED",
+    "match_rule": "TRANSACTION_CHAIN"
+  },
+  "_meta": {
+    "endpoint": "GET /api/v4/dte/traceability",
+    "read_only": true,
+    "official_db_touched": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "cap_id": "CAP-TD-002",
+  "technical_debt_id": "TD-002",
+  "timestamp": "2026-07-27T16:15:30Z",
+  "execution_id": "EXEC-CAP-TD-002-20260727",
+  "git_commit": "2d51f52",
+  "harness_version": "1.0.0",
+  "status": "PASS",
+  "certification_status": "CERTIFIED",
+  "problem_description": "API Public Contracts & Pydantic v2 validation absence in endpoints /api/v4/cierre/desglose, /api/v4/exec/summary, and associated endpoints.",
+  "root_cause": "Organic growth of endpoints during UX1.0 sprints without formal Pydantic v2 entry/exit schemas causing potential risk of frontend-backend decoupling.",
+  "strategy": "Define explicit Pydantic v2 schemas for all executive summary and financial structure endpoints (PerMarketplaceMetrics, ExecSummaryResponse, FinancialStructureResponse, ExecWaterfallResponse, DocumentaryCoverageResponse, PeriodoItem, DteCountResponse) and decorate endpoints with response_model.",
+  "modified_files": [
+    "api/api.py",
+    "tests/test_benchmarks.py",
+    "tests/test_certification_gate.py",
+    "tests/test_regression_contracts.py"
+  ],
+  "test_results": {
+    "total_tests": 842,
+    "passed": 830,
+    "failed": 0,
+    "skipped": 12,
+    "duration_seconds": 170.82
+  },
+  "sha256_official_db": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "rollback_strategy": "git checkout -- api/api.py tests/test_benchmarks.py tests/test_certification_gate.py tests/test_regression_contracts.py"
+}

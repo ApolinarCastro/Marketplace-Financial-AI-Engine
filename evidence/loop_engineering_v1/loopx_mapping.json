@@ -1,0 +1,164 @@
+{
+  "evidence_id": "LOOP_ENG_V1_LOOPX_MAPPING",
+  "reference": "https://github.com/huangruiteng/loopx",
+  "reference_usage": "CONCEPTUAL_ONLY",
+  "reference_dependency": "NONE",
+  "statement": "LoopX is used as an architectural reference for a durable agent control plane. No LoopX code is vendored, imported, forked, or required at runtime. The Marketplace Financial AI Engine retains its own financial architecture unchanged.",
+  "network_access": "NOT_PERFORMED",
+  "network_access_note": "Concept list was taken from the mission brief's own enumeration (registry, lifetime goal, active goal state, todos, claims, leases, gates, run history, evidence, quota, bounded turns, typed continuation, peer agents, handoff, recovery, heartbeat, public/private boundary). Any claim about LoopX internal implementation detail is therefore marked UNVERIFIED.",
+  "mappings": [
+    {
+      "loopx_concept": "registry",
+      "project_equivalent": ".loopx/registry.json + engine/loop_control/state_store.py",
+      "status": "IMPLEMENT",
+      "reason": "No machine-readable agent/goal registry exists. governance/coordination_registry.json is human-oriented and its filename is reserved by the existing verifier.",
+      "risk": "Filename collision with the existing coordination verifier. Mitigated: .loopx/registry.json does not contain 'coordination' in its name."
+    },
+    {
+      "loopx_concept": "lifetime goal",
+      "project_equivalent": "Goal record with objective, scope, non_goals, completion_criteria",
+      "status": "IMPLEMENT",
+      "reason": "Enables multi-session missions that survive context loss.",
+      "risk": "Goal sprawl. Mitigated by max_scope_expansions = 0."
+    },
+    {
+      "loopx_concept": "active goal state",
+      "project_equivalent": ".loopx/active_goal.json",
+      "status": "IMPLEMENT",
+      "reason": "Exactly one goal may be ACTIVE, mirroring the existing single_active_task governance rule.",
+      "risk": "Divergence from governance/coordination active_task. Mitigated: Loop Control is advisory and does not override governance."
+    },
+    {
+      "loopx_concept": "todos",
+      "project_equivalent": ".loopx/todos.json",
+      "status": "IMPLEMENT",
+      "reason": "Durable unit of bounded work with write_scope and validation contract.",
+      "risk": "Low."
+    },
+    {
+      "loopx_concept": "claims",
+      "project_equivalent": ".loopx/claims.json + claim_manager.py",
+      "status": "IMPLEMENT",
+      "reason": "Prevents two peer agents from executing the same todo.",
+      "risk": "File-level races on a single machine. Accepted for LOCAL FIRST v1; mitigated with revision-based optimistic concurrency."
+    },
+    {
+      "loopx_concept": "leases",
+      "project_equivalent": "expires_at on claim + STALE_LEASE detection",
+      "status": "IMPLEMENT",
+      "reason": "A crashed agent must not hold a todo forever.",
+      "risk": "Clock skew across agents. Mitigated: UTC only, generous default TTL (3600s)."
+    },
+    {
+      "loopx_concept": "gates",
+      "project_equivalent": ".loopx/gates.json + gate_manager.py",
+      "status": "IMPLEMENT",
+      "reason": "Human authority over RAW, official DB, destructive Git, scope expansion, production.",
+      "risk": "Agent self-approval. Mitigated: resolve_gate rejects any resolver whose id is a registered agent."
+    },
+    {
+      "loopx_concept": "run history",
+      "project_equivalent": ".loopx/run_history.jsonl",
+      "status": "IMPLEMENT",
+      "reason": "Append-only audit of every turn transition.",
+      "risk": "Unbounded growth. Accepted for v1; JSONL is trivially rotatable."
+    },
+    {
+      "loopx_concept": "evidence",
+      "project_equivalent": "evidence/loop_engineering_v1/runs/<goal>/<turn>/ + .loopx/evidence_index.json",
+      "status": "ADAPT",
+      "reason": "The project already has a mature evidence convention (R11-R19: execution_id, commit, timestamp, sha256). Loop Control adopts that shape instead of inventing a new one.",
+      "risk": "None."
+    },
+    {
+      "loopx_concept": "quota",
+      "project_equivalent": ".loopx/quota.json + quota_manager.py",
+      "status": "IMPLEMENT",
+      "reason": "Hard stop against infinite agent loops.",
+      "risk": "Premature exhaustion blocking legitimate work. Mitigated: quota is per-goal and human-resettable via gate."
+    },
+    {
+      "loopx_concept": "bounded turns",
+      "project_equivalent": "kernel.begin_turn / kernel.end_turn pipeline",
+      "status": "IMPLEMENT",
+      "reason": "Core of the mission: one execution = one bounded, evidenced, validated turn.",
+      "risk": "Low."
+    },
+    {
+      "loopx_concept": "typed continuation",
+      "project_equivalent": "TurnResult enum (11 terminal values)",
+      "status": "IMPLEMENT",
+      "reason": "Removes ambiguity about what the next session must do.",
+      "risk": "State invention by agents. Mitigated: enum is closed, kernel rejects unknown values FAIL CLOSED."
+    },
+    {
+      "loopx_concept": "peer agents",
+      "project_equivalent": ".loopx/registry.json agents[] with allowed/protected write_scope",
+      "status": "IMPLEMENT",
+      "reason": "No permanent leader; authority derives from goal + claim + write_scope + gate.",
+      "risk": "Conflicts with governance/coordination which names Codex as gate_authority. Mitigated: Loop Control gate resolution requires a NON-agent human resolver, which is compatible."
+    },
+    {
+      "loopx_concept": "handoff (continuation)",
+      "project_equivalent": ".loopx/handoff.json using key 'continuation_record'",
+      "status": "ADAPT",
+      "reason": "Concept is needed, but the literal JSON keys 'handoff'/'next_actor'/'current_owner' are FORBIDDEN repo-wide by tools/verify_coordination_interface.py outside an allowlist.",
+      "risk": "Would break an existing repo verifier. Mitigated by renaming keys to continuation_record / receiving_agent / holding_agent, enforced by a dedicated test."
+    },
+    {
+      "loopx_concept": "recovery",
+      "project_equivalent": "recovery.py returning RESUME|REPAIR|REPLAN|WAIT|BLOCK",
+      "status": "IMPLEMENT",
+      "reason": "Interrupted turns must never restart the project from zero.",
+      "risk": "Low."
+    },
+    {
+      "loopx_concept": "heartbeat",
+      "project_equivalent": "claim.expires_at + claim.heartbeat_at (passive)",
+      "status": "ADAPT",
+      "reason": "A live heartbeat requires a daemon, which the mission forbids. Passive lease expiry gives equivalent safety.",
+      "risk": "Slower stale detection. Accepted."
+    },
+    {
+      "loopx_concept": "public/private boundary",
+      "project_equivalent": ".loopx/ git-ignored (private runtime) vs governance/ + engine/loop_control/ + evidence/ (public, versioned)",
+      "status": "IMPLEMENT",
+      "reason": "Mutable operational state must not pollute Git history; the contract must be reviewable.",
+      "risk": "Handoff across machines requires exporting .loopx. Out of scope for LOCAL FIRST v1."
+    },
+    {
+      "loopx_concept": "cloud sync / hosted orchestration",
+      "project_equivalent": "none",
+      "status": "REJECT",
+      "reason": "Mission forbids mandatory cloud services.",
+      "risk": "n/a"
+    },
+    {
+      "loopx_concept": "long-running daemon / scheduler",
+      "project_equivalent": "none",
+      "status": "REJECT",
+      "reason": "Mission explicitly forbids daemon and permanent scheduler in this phase.",
+      "risk": "n/a"
+    },
+    {
+      "loopx_concept": "web dashboard / UI",
+      "project_equivalent": "none",
+      "status": "REJECT",
+      "reason": "Mission explicitly forbids frontend in this phase. CLI only.",
+      "risk": "n/a"
+    },
+    {
+      "loopx_concept": "LoopX runtime package dependency",
+      "project_equivalent": "none",
+      "status": "REJECT",
+      "reason": "Mission forbids mandatory LoopX dependency. Kernel is zero-dependency stdlib Python.",
+      "risk": "n/a"
+    }
+  ],
+  "summary": {
+    "REUSE": 0,
+    "ADAPT": 3,
+    "IMPLEMENT": 14,
+    "REJECT": 4
+  }
+}

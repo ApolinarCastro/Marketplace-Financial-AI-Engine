@@ -1,0 +1,16 @@
+{"loop_id": 0, "hypothesis": "precheck official DB + raw inventory + controlled copy", "result": "PASS", "outputs": ["controlled db created", "execution_id d806eda1"], "financial_delta": 0}
+{"loop_id": 1, "hypothesis": "transaction-logs.csv exists as invoice source", "result": "FALSIFIED", "outputs": ["0 transaction-log/bitacora files on disk or git history", "Ciclos recovered from git 7a94360 (52 files)"], "financial_delta": 0}
+{"loop_id": 2, "hypothesis": "invoice normalization reveals direct matches", "result": "FALSIFIED", "outputs": ["52 unique settlement invoices 500346-602050", "0 match to XML folios"], "financial_delta": 0}
+{"loop_id": 3, "hypothesis": "referential documents map invoice->SII folio", "result": "FALSIFIED", "outputs": ["0 invoice-*/mapeo*/mapping* docs", "only ML/SHOPIFY facturacion reports matched keyword"], "financial_delta": 0}
+{"loop_id": 4, "hypothesis": "XML fields reference settlement invoices", "result": "FALSIFIED", "outputs": ["472 XMLs parsed (33:293, 61:21, 43:115, 52:43)", "0 literal settlement invoice references", "10 digit-concat artifacts excluded"], "financial_delta": 0}
+{"loop_id": 5, "hypothesis": "FolioRef links invoice to DTE", "result": "FALSIFIED", "outputs": ["76 FolioRefs reference SII folios/CTZ, never settlement invoices"], "financial_delta": 0}
+{"loop_id": 6, "hypothesis": "build ripley_invoice_map_v1 in controlled DB", "result": "PASS", "outputs": ["52 rows, all NO_DTE_FOUND"], "financial_delta": 0}
+{"loop_id": 7, "hypothesis": "dual emission contract", "result": "NOT_REACHABLE", "outputs": ["no invoice->SII anchor"], "financial_delta": 0}
+{"loop_id": 8, "hypothesis": "ledger linkage", "result": "PARTIAL", "outputs": ["settlement invoice = ledger folio_xml (52/52)", "but ledger folio != SII folio"], "financial_delta": 0}
+{"loop_id": 9, "hypothesis": "document_match_v1_ripley_controlled", "result": "EMPTY", "outputs": ["no fiscal links to record"], "financial_delta": 0}
+{"loop_id": 10, "hypothesis": "LEDGER_EXISTING substitution", "result": "NOT_APPLICABLE", "outputs": ["no replacement folio_sii available"], "financial_delta": 0}
+{"loop_id": 11, "hypothesis": "sampling 20 invoices", "result": "PASS", "outputs": ["sample_validation.json 20 rows"], "financial_delta": 0}
+{"loop_id": 12, "hypothesis": "idempotency", "result": "PASS", "outputs": ["controlled DB rebuild is deterministic (all reads)"], "financial_delta": 0}
+{"loop_id": 13, "hypothesis": "tests", "result": "PENDING", "outputs": ["5 new tests to run"], "financial_delta": 0}
+{"loop_id": 14, "hypothesis": "financial integrity", "result": "PASS", "outputs": ["official sha unchanged"], "financial_delta": 0}
+{"loop_id": 15, "hypothesis": "coverage / blockers", "result": "BLOCKER_PROVEN", "outputs": ["settlement vs SII namespace disjoint; no documentary bridge exists"], "financial_delta": 0}

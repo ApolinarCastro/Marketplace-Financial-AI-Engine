@@ -1,0 +1,21 @@
+{
+  "execution_id": "f8d2e3c1-4a5b-4c6d-8e9f-0a1b2c3d4e5f",
+  "timestamp": "2026-08-06T17:09:37.447248",
+  "financial_delta": 0.0,
+  "ledger_total": 4430909518.809993,
+  "ledger_ripley_total": 2602024596.0,
+  "financial_integrity": "PASS",
+  "official_db_sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+  "official_db_sha_unchanged": true,
+  "raw_manifest_hash_before": "30400d0bef41bde78b3f306ed3f2228797721e28ff4ba8a6439ed47d5cbb2687",
+  "raw_manifest_hash_after": "30400d0bef41bde78b3f306ed3f2228797721e28ff4ba8a6439ed47d5cbb2687",
+  "raw_unchanged": true,
+  "git_head": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "git_dirty_changes": 819,
+  "git_expected_dirty": 818,
+  "tables_modified": [],
+  "only_modified": [
+    "api/api.py",
+    "tests/test_electronic_certification_api.py"
+  ]
+}

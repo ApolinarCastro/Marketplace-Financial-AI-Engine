@@ -1,0 +1,76 @@
+{
+  "runs": 3,
+  "metrics_identical": true,
+  "exception_ids_identical": true,
+  "run1": {
+    "catalog_size": 19,
+    "certification_states": {
+      "DOCUMENT_REFERENCE_ONLY": 12311,
+      "INSUFFICIENT_FISCAL_EVIDENCE": 290493,
+      "LEDGER_REFERENCE_ONLY": 295308
+    },
+    "coverage_pct": 100.0,
+    "duplicate_exception_ids": 188895,
+    "exceptions_by_domain": {
+      "DOCUMENTAL": 195796,
+      "TRIBUTARIO": 402316
+    },
+    "exceptions_by_marketplace": {
+      "FALABELLA": 3076,
+      "ML": 109799,
+      "PARIS": 197820,
+      "RIPLEY": 287417
+    },
+    "exceptions_by_priority": {
+      "P1": 402316,
+      "P4": 195796
+    },
+    "exceptions_by_severity": {
+      "CRITICAL": 290493,
+      "HIGH": 111823,
+      "LOW": 195796
+    },
+    "exceptions_by_type": {
+      "AMOUNT_MISMATCH": 0,
+      "CLASSIFICATION_CONFLICT": 0,
+      "DATE_MISMATCH": 0,
+      "DOCUMENT_REFERENCE_ONLY": 10949,
+      "INSUFFICIENT_FISCAL_EVIDENCE": 290493,
+      "LEDGER_REFERENCE_ONLY": 184847,
+      "MANUAL_REVIEW_REQUIRED": 0,
+      "MARKETPLACE_MISMATCH": 0,
+      "MISSING_DTE": 111823,
+      "MISSING_SUPPORT": 0,
+      "MISSING_XML": 0,
+      "PENDING_COLLECTION": 0,
+      "PENDING_PAYMENT": 0,
+      "RECONCILIATION_FAILED": 0,
+      "SAP_MISMATCH": 0,
+      "SETTLEMENT_MISSING": 0,
+      "TRUTH_CONFLICT": 0,
+      "UNMATCHED_ORDER": 0,
+      "UNMATCHED_TRANSACTION": 0
+    },
+    "financial_delta": "$0.00",
+    "first_exception_id_by_marketplace": {
+      "FALABELLA": "0065e60f39e4250750c39111eae85ca76f1973bfdd12d8cd9efb4806016a49ee",
+      "ML": "0000a1afddeb4c88d0426b941675b5f0adef9ac38cd8b38cd4cacfb1e5ff109d",
+      "PARIS": "0000862da472f9396f2ca79a6e81c9437eab238cf8784200467b5ee9097527b3",
+      "RIPLEY": "0000061c702ac6ebd2b4553cf6315c182de658908ded5cdd3cbeaf165134fd2f"
+    },
+    "marketplace": "ALL",
+    "mode": "FULL_CORPUS",
+    "period": "ALL",
+    "records_with_exception": 598112,
+    "records_without_exception": 0,
+    "rows_with_multiple_primary": 0,
+    "total_evaluated": 598112,
+    "total_exceptions_detected": 598112,
+    "total_ledger_rows": 598112,
+    "unexplained_exceptions": 0,
+    "untraceable_exceptions": 0
+  },
+  "run2_hash": "b382096582eb6226",
+  "run3_hash": "b382096582eb6226",
+  "verdict": "PASS"
+}

@@ -1,0 +1,13 @@
+{
+  "mode": "FULL_CORPUS",
+  "universe": "v_ledger_certified",
+  "eligible_rows": 598112,
+  "evaluated_rows": 598112,
+  "coverage_pct": 100.0,
+  "sample_used": false,
+  "sample_limit": null,
+  "date_filter_applied": false,
+  "rows_with_multiple_primary": 0,
+  "records_with_exception": 598112,
+  "records_without_exception": 0
+}

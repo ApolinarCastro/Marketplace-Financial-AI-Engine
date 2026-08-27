@@ -1,0 +1,85 @@
+{
+  "execution_id": "424ecfc0-3c88-4919-aa2b-aa2028b342f4",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:56:47",
+  "harness_version": "1.0.0-r5-p0-ripley-seller-xml",
+  "repository": "Marketplace Financial AI Engine",
+  "marketplace": "RIPLEY",
+  "samples": [
+    {
+      "id_transaccion": "RIP_596684_24751081101-A_importedelpedido",
+      "id_orden": "24751081101-A",
+      "monto": 39990.0,
+      "settlement_ref": 596684,
+      "chain_status": "SETTLEMENT_CHAIN",
+      "folio_xml": "596684",
+      "fecha": "2026-06-03 00:00:00"
+    },
+    {
+      "id_transaccion": "RIP_596684_24817270201-A_importedelpedido",
+      "id_orden": "24817270201-A",
+      "monto": 55990.0,
+      "settlement_ref": 596684,
+      "chain_status": "SETTLEMENT_CHAIN",
+      "folio_xml": "596684",
+      "fecha": "2026-06-12 00:00:00"
+    },
+    {
+      "id_transaccion": "RIP_596684_24808925401-A_importedelpedido",
+      "id_orden": "24808925401-A",
+      "monto": 34990.0,
+      "settlement_ref": 596684,
+      "chain_status": "SETTLEMENT_CHAIN",
+      "folio_xml": "596684",
+      "fecha": "2026-06-09 00:00:00"
+    },
+    {
+      "id_transaccion": "RIP_596684_24808881401-A_importedelpedido",
+      "id_orden": "24808881401-A",
+      "monto": 26990.0,
+      "settlement_ref": 598638,
+      "chain_status": "SETTLEMENT_CHAIN",
+      "folio_xml": "596684",
+      "fecha": "2026-06-09 00:00:00"
+    },
+    {
+      "id_transaccion": "RIP_596684_24808751302-A_importedelpedido",
+      "id_orden": "24808751302-A",
+      "monto": 19990.0,
+      "settlement_ref": 596684,
+      "chain_status": "SETTLEMENT_CHAIN",
+      "folio_xml": "596684",
+      "fecha": "2026-06-09 00:00:00"
+    },
+    {
+      "id_transaccion": "RIP_596684_24720972401-A_importedelpedido",
+      "id_orden": "24720972401-A",
+      "monto": 37490.0,
+      "settlement_ref": 596684,
+      "chain_status": "SETTLEMENT_CHAIN",
+      "folio_xml": "596684",
+      "fecha": "2026-06-01 00:00:00"
+    },
+    {
+      "id_transaccion": "RIP_596684_24693874101-A_importedelpedido",
+      "id_orden": "24693874101-A",
+      "monto": 47980.0,
+      "settlement_ref": 596684,
+      "chain_status": "SETTLEMENT_CHAIN",
+      "folio_xml": "596684",
+      "fecha": "2026-05-29 00:00:00"
+    },
+    {
+      "id_transaccion": "RIP_596684_24810226201-A_importedelpedido",
+      "id_orden": "24810226201-A",
+      "monto": 61990.0,
+      "settlement_ref": 598638,
+      "chain_status": "SETTLEMENT_CHAIN",
+      "folio_xml": "596684",
+      "fecha": "2026-06-09 00:00:00"
+    }
+  ],
+  "validation_rule": "order_id matched to SELLER.Orden de compra and CICLOS.Order number; settlement_ref = same invoice namespace",
+  "status": "PASS",
+  "verification": "VERIFIED"
+}

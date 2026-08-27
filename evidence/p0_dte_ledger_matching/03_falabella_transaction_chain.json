@@ -1,0 +1,40 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "marketplace": "FALABELLA",
+  "strategy": "TRANSACTION_CHAIN",
+  "source": "ledger UUID -> Ordenes-y-Transacciones bridge (Falabella-Id) -> dte_link_v1 -> dte_truth_v1",
+  "certified_folios": 5,
+  "certified_folios_detail": [
+    {
+      "folio": "404621",
+      "monto_total": 434131.0,
+      "tipo_dte": "61"
+    },
+    {
+      "folio": "428840",
+      "monto_total": 523274.0,
+      "tipo_dte": "61"
+    },
+    {
+      "folio": "434564",
+      "monto_total": 94669.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "460690",
+      "monto_total": 1547578.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "464236",
+      "monto_total": 1818792.0,
+      "tipo_dte": "33"
+    }
+  ],
+  "verification": "VERIFIED",
+  "status": "PASS"
+}

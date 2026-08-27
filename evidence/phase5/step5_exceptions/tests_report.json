@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-07-28T17:59:10.558839",
+  "test_files": [
+    "tests/test_exception_engine.py",
+    "tests/test_exception_api_endpoints.py",
+    "tests/test_reconciliation_engine.py",
+    "tests/test_reconciliation_api_endpoints.py",
+    "tests/test_financial_truth_engine.py",
+    "tests/test_truth_api_endpoints.py",
+    "tests/test_financial_classification_engine.py",
+    "tests/test_classification_api_endpoints.py",
+    "tests/test_unified_transaction_ledger.py",
+    "tests/test_ledger_api_endpoints.py",
+    "tests/test_regression_contracts.py"
+  ],
+  "total_tests": 74,
+  "passed": 74,
+  "failed": 0,
+  "execution_time_seconds": 38.38,
+  "status": "ALL_TESTS_PASSED"
+}

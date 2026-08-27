@@ -1,0 +1,28 @@
+{
+  "execution_id": "LOOP_ENG_V1_20260807T152945.116Z",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "branch": "phase5/production-readiness",
+  "timestamp": "2026-08-07T15:29:45.116Z",
+  "protocol_version": "1.0.0",
+  "repository": "Marketplace Financial AI Engine",
+  "applied_times": 3,
+  "operations": [
+    "state read",
+    "claim",
+    "writeback",
+    "continuation record",
+    "quota spend",
+    "completion",
+    "evidence registration",
+    "run event"
+  ],
+  "duplicates_produced": 0,
+  "mechanism": "idempotency_key on every mutating operation",
+  "tests": [
+    "test_idempotent_writeback",
+    "test_idempotent_quota",
+    "test_idempotent_completion",
+    "test_idempotent_state_read"
+  ],
+  "result": "PASS"
+}

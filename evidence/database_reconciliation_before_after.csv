@@ -1,0 +1,85 @@
+rel_path,filename,size_bytes,size_mb,sha256,classification,status,justification
+.claude/memory.db,memory.db,180224,0.18,50a988fc7bacc6c3051d7b5d744e8cc3943023a3c4db9b092a4329daf36d7501,LEGACY,CONSERVED,Archivo histórico de base de datos
+.swarm/memory.db,memory.db,270336,0.27,d75d048b12b821b9aea63d504c9847c46733f034a10500b8d8cb2f9dc5849e78,LEGACY,CONSERVED,Archivo histórico de base de datos
+_archive/database/conciliador.db,conciliador.db,33308672,33.31,7cb9827c8991b66ad265f70294e5db69e9aa90edefaffa6c2f39142bf4000dcd,LEGACY,CONSERVED,Archivo histórico de base de datos
+_archive/database/reconciliation.db,reconciliation.db,32256000,32.26,67ca7e8bfaef9e9756c440cd250664c6ceb0ed0431b1f15318db6451ecd63533,LEGACY,CONSERVED,Archivo histórico de base de datos
+_archive/releases/MARKETPLACE_AUDITOR_V3_5_RC1/meli_financial_v4_backup.db,meli_financial_v4_backup.db,57946112,57.95,6fe6a04aac550298e4a51985efa081304fb9d99d4dcb9418aae007e01eedf01e,BACKUP,CONSERVED,Resguardo de respaldo
+data/backup/meli_financial_v4_pre_migration_20260724_110819.db,meli_financial_v4_pre_migration_20260724_110819.db,55848960,55.85,c36d18bb93bd82f69fc9772ab39de4698153fceccef6c9a40216655264b18c23,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/backup/meli_financial_v4_pre_migration_20260724_110844.db,meli_financial_v4_pre_migration_20260724_110844.db,55848960,55.85,c36d18bb93bd82f69fc9772ab39de4698153fceccef6c9a40216655264b18c23,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/backup/meli_financial_v4_pre_migration_20260724_110859.db,meli_financial_v4_pre_migration_20260724_110859.db,55848960,55.85,c36d18bb93bd82f69fc9772ab39de4698153fceccef6c9a40216655264b18c23,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/backup/meli_financial_v4_pre_migration_20260724_111106.db,meli_financial_v4_pre_migration_20260724_111106.db,55848960,55.85,c36d18bb93bd82f69fc9772ab39de4698153fceccef6c9a40216655264b18c23,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/backup/meli_financial_v4_pre_migration_20260724_111215.db,meli_financial_v4_pre_migration_20260724_111215.db,55848960,55.85,c36d18bb93bd82f69fc9772ab39de4698153fceccef6c9a40216655264b18c23,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/backup/meli_financial_v4_pre_migration_20260724_111308.db,meli_financial_v4_pre_migration_20260724_111308.db,55848960,55.85,c36d18bb93bd82f69fc9772ab39de4698153fceccef6c9a40216655264b18c23,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/BASELINE_ESTABLE_V9_TRUTH_RECOVERED/meli_financial_v4.db,meli_financial_v4.db,55848960,55.85,c76c3fee51c31949571f829da6043f1682023dc39f5b093f7af794654dbf6fce,LEGACY,CONSERVED,Archivo histórico de base de datos
+data/db/backups/meli_financial_v4_CERTIFIED_BASELINE_V1_20260624.db,meli_financial_v4_CERTIFIED_BASELINE_V1_20260624.db,59781120,59.78,d3ca3c41f805f4db30f0104e3b3a6490f76d9fb4cfcfdbd5ebd54a72292cd51c,BACKUP,CONSERVED,Resguardo de respaldo
+data/db/baseline_estable_v7_20260715/meli_financial_v4.db,meli_financial_v4.db,55848960,55.85,bcb19ab49a2da3d2a848a8e81b86e559c46285afdfa7d126454255712d5232a8,BASELINE,CONSERVED,Baseline histórico certificado de conciliación v6/v7
+data/db/baseline_estable_v7_20260715/meli_financial_v4.db.forensic_modificado,meli_financial_v4.db.forensic_modificado,55848960,55.85,29c3cef740dcb2aa0a83d5c35013c6e66ee707ba3b9c91272a541d509846b71b,BASELINE,CONSERVED,Baseline histórico certificado de conciliación v6/v7
+data/db/baseline_estable_v8_candidate_20260717/meli_financial_v4.db,meli_financial_v4.db,55848960,55.85,733c759f8ea179d8bcadf4897d8a2998826acab693171636f04ae0653c236e00,BASELINE,CONSERVED,Baseline histórico certificado de conciliación v6/v7
+data/db/controlled_cap_f2_001.db,controlled_cap_f2_001.db,60043264,60.04,fe3213baa83768d6875738145693acd3207a8b5a90f763b1ad657c1d63af9ca4,LEGACY,CONSERVED,Archivo histórico de base de datos
+data/db/marketplace_ledger_v1.db,marketplace_ledger_v1.db,12288,0.01,3bac59f05e29b8317bef3a831e176c760e44dedd00f8a166b8020384b31751d9,LEGACY,CONSERVED,Archivo histórico de base de datos
+data/db/meli_financial_v4.db,meli_financial_v4.db,58732544,58.73,311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9,OFFICIAL,CONSERVED,Base de Datos Oficial Activa de Producción (Única Fuente de Verdad)
+data/db/meli_financial_v4.db.backup.20260527_154224.bak,meli_financial_v4.db.backup.20260527_154224.bak,37498880,37.5,31db31e86ed5432bec546a8bf4522145ef0be8dc3a7cb3b82ee2c62737025d60,BACKUP,CONSERVED,Resguardo de respaldo
+data/db/meli_financial_v4.db.corrupt_snapshot,meli_financial_v4.db.corrupt_snapshot,37761024,37.76,a55373d10dd5c008746792979c0a8b996deaf3ffb793956db3e6e8be32d103a0,LEGACY,CONSERVED,Archivo histórico de base de datos
+data/db/meli_financial_v4.db.paris_reload.20260527_163143.bak,meli_financial_v4.db.paris_reload.20260527_163143.bak,37498880,37.5,70f2d3d1d3a50d5c71e733fa60d3478f969a0c6e179d7900c6e9dc417814dbce,BACKUP,CONSERVED,Resguardo de respaldo
+data/db/meli_financial_v4.db.pre_future_fix_20260623,meli_financial_v4.db.pre_future_fix_20260623,59781120,59.78,a59ff545dc220c8e5063b772ca274ece3be8ebfa7f1e983b228b9b20f8c1a885,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/meli_financial_v4.db.pre_nan_fix,meli_financial_v4.db.pre_nan_fix,37498880,37.5,31db31e86ed5432bec546a8bf4522145ef0be8dc3a7cb3b82ee2c62737025d60,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/meli_financial_v4_backup.db,meli_financial_v4_backup.db,36450304,36.45,d78338a30c87ef97a5af9a2a0987ee80a3262a6dd10c009ccd1aa390ef4093ae,BACKUP,CONSERVED,Resguardo de respaldo
+data/db/meli_financial_v4_baseline_v4.db,meli_financial_v4_baseline_v4.db,57946112,57.95,29f9efeadde547d5e9d34829693539bdea09fae0107656d6e214b3be54286589,BASELINE,CONSERVED,Baseline histórico certificado de conciliación v6/v7
+data/db/meli_financial_v4_pre_class.db,meli_financial_v4_pre_class.db,131084288,131.08,1971e0dc6a7a411095258ad1d816ed803849895ee714a4ee76e0a282b64b5b0e,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/meli_financial_v4_pre_truth003_20260720_173842_A9777849.db,meli_financial_v4_pre_truth003_20260720_173842_A9777849.db,55848960,55.85,a977784903aab6191d8275ba9850ab9839a15a2e49386e3f485c2cb67ff054fc,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_baseline_v6_20260529_105928/meli_financial_v4.db,meli_financial_v4.db,131346432,131.35,e1e341ef44e0a61c4e846d34e05d14a4c291dcd904869f20fdf6e9a37fef1c29,BASELINE,CONSERVED,Baseline histórico certificado de conciliación v6/v7
+data/db/snapshot_pre_bpp_residual_fix_20260606_145106/meli_financial_v4.db,meli_financial_v4.db,36450304,36.45,e8202cb47b8e783cb1d0ce26b9587ecbe94823c91e4c097b3fa2a0f9b2e03d2f,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_cierre_rebuild_20260528_163008/meli_financial_v4.db,meli_financial_v4.db,37498880,37.5,7d4283c6f4afed341a695f1768d2f2ae6b968c182445e95de04c52c065eea3b1,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_classification_20260603_102347/meli_financial_v4.db,meli_financial_v4.db,131084288,131.08,19cd9b1589c502b407f7ac4f96835c95c7c6bc53def7269bc87303c64b5f1365,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_dec019_20260607_161324/meli_financial_v4.db,meli_financial_v4.db,36450304,36.45,012cd0fe079646d1423e7da90a2db9341bd84da54ef04325a8394c2bc14e25e4,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_f003_cleaned_20260715/meli_financial_v4.db,meli_financial_v4.db,55848960,55.85,bf6ed7aec5410abe033b2a3c271011ddfce044f0e4c9008aba590ae48ba52aa6,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db,meli_financial_v4.db,60043264,60.04,e110817b750fe5ec246debe6ff89d9c4d628409657a89eff4057e961d3373675,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db.wal,meli_financial_v4.db.wal,4343,0.0,29074db3e95677adf5104775e6b39eeed1a0b25ee5bdd493ec9a94429d1e1839,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_fase2_20260603_112908/meli_financial_v4.db,meli_financial_v4.db,131084288,131.08,3939ad54b2442b1d7182aee856265979b6433e04842a6ff7ef7eba957b4915ea,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_iopnl_modernize_20260606_1215/meli_financial_v4.db,meli_financial_v4.db,36450304,36.45,a3ff7bbc6d5cf581a44d884787597a3067513fb49a1094cbbaf2d12263544904,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_ml_xml_fix_20260528_170623/meli_financial_v4.db,meli_financial_v4.db,37498880,37.5,41237ad44cad1f1706f1e0a7214b8c481e31bea5be15f45a00d3965d9ccf46b2,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_persistencia_20260528_162431/meli_financial_v4.db,meli_financial_v4.db,37498880,37.5,e043d1bf72226381aeaec0aa0db5a23750967f3e59895fc7952ae42aa880dc86,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_poscobro_fix_20260605_155052/meli_financial_v4.db,meli_financial_v4.db,94384128,94.38,c142705a54166c778f88214335608530b0e95406b11f05ea72bc5661bece0848,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_ripley_rebuild_20260601_172024/meli_financial_v4.db,meli_financial_v4.db,131346432,131.35,c341b272da889474d4d9d80586efbe887c5ef0547462bf26d87c01829748518a,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+data/db/snapshot_pre_ripley_rebuild_20260601_172043/meli_financial_v4.db,meli_financial_v4.db,131346432,131.35,88082bbc073af49aab625b859d986f8d2f3eb7f8482ce3b2ce198b8e29a7a3bb,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+engine/v4/dte_indexer.py.backup,dte_indexer.py.backup,3340,0.0,0e86972266ba3b762c27151f616a98439e8cacb086625df107275f6b55d147b6,BACKUP,CONSERVED,Resguardo de respaldo
+engine/v4/marketplace_auditor.py.backup,marketplace_auditor.py.backup,27963,0.03,614aaadfaeade80a74be8b1f2820bb4a6a887ec868013c473661fd30e32bff08,BACKUP,CONSERVED,Resguardo de respaldo
+engine/v4/marketplace_auditor.py.pre_paris_patch,marketplace_auditor.py.pre_paris_patch,27963,0.03,614aaadfaeade80a74be8b1f2820bb4a6a887ec868013c473661fd30e32bff08,SNAPSHOT,CONSERVED,Snapshot histórico de resguardo previo a migraciones
+engine/v4/marketplace_engine_v4.db,marketplace_engine_v4.db,12288,0.01,e567c05532671a2c346eef0503609586300eaf7c59ce8c67c0398d6047b8170a,LEGACY,CONSERVED,Archivo histórico de base de datos
+engine/v4/surgical_xml_justifier.py.backup,surgical_xml_justifier.py.backup,3219,0.0,bace7605626d0b682819532c15c541b38b938f26fb57c6baf8ffec1a3ca43e90,BACKUP,CONSERVED,Resguardo de respaldo
+engine/v4/xml_matcher.py.backup,xml_matcher.py.backup,4116,0.0,f24d73aff5e694e5c23e51dc896cc9ebd3e7091f784c2f8755da599fd6fa0c29,BACKUP,CONSERVED,Resguardo de respaldo
+data/db/f5_02_temp.db,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/f5_03_temp.db,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/f5_04_temp.db,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/f5_05_temp.db,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_restored_validated_20260528/meli_financial_v4.db.backup.20260527_154224.bak,,0,35.76,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/meli_financial_v4.db.snapshot_20260622_111145,,0,57.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/meli_financial_v4.db.snapshot_20260623_115557,,0,57.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/meli_financial_v4.db.snapshot_af002_20260623_121855,,0,57.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122024,,0,57.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122032,,0,57.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/baseline_estable_v7_20260715/meli_financial_v4.db.bak,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Duplicado exacto SHA-256 de snapshot (bcb19ab49a2d)
+data/db/baseline_estable_v7_20260715/meli_financial_v4.db.forensic_original,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Duplicado exacto SHA-256 de snapshot (bcb19ab49a2d)
+data/db/tmp_debug/meli_financial_v4.db,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/tmp_test_fe/meli_financial_v4.db,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/tmp_test_check/meli_financial_v4.db,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/tmp_cert_gate_debug/meli_financial_v4.db,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/tmp_cert_gate_debug2/meli_financial_v4.db,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_baseline_v2_20260528_154319/master_marketplace_dictionary_v1.json,,0,0.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_baseline_v2_20260528_154708/master_marketplace_dictionary_v1.json,,0,0.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_baseline_v5_20260529_094447/master_marketplace_dictionary_v1.json,,0,0.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_baseline_v5_20260529_094539/master_marketplace_dictionary_v1.json,,0,0.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_restored_validated_20260528/master_marketplace_dictionary_v1.json,,0,0.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_pre_cierre_rebuild_20260528_163008/master_marketplace_dictionary_v1.json,,0,0.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Duplicado exacto SHA-256 de snapshot (b08fb7fa6c91)
+data/db/snapshot_baseline_v2_20260528_154319/meli_financial_v4.db,,0,35.76,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_baseline_v2_20260528_154708/meli_financial_v4.db,,0,35.76,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_baseline_v3_20260528_163525/meli_financial_v4.db,,0,35.76,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_baseline_v4_20260528_170822/meli_financial_v4.db,,0,35.76,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db,,0,57.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db.wal,,0,0.0,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/snapshot_restored_validated_20260528/meli_financial_v4.db,,0,35.76,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+data/db/tmp_f4_investigate/meli_financial_v4.db,,0,53.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+engine/v4/certification/knowledge/templates/marketplace_dashboard.md,,0,0.0,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+tests/.tmp/paris_310ef9d785ff453383fbd902d70c3181/test_v4.db,,0,1.26,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+tests/golden/copilot_marketplace_impact.json,,0,0.01,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada
+_archive/scratch/test_marketplaces.py,,0,0.0,,DUPLICADO_EXACTO,DELETED_CONFIRMED,Base de datos temporal de pruebas desactualizada

@@ -1,0 +1,10 @@
+{
+  "turn_id": "TURN-f1e2d3c4b5a6",
+  "todo_id": "LOOP-06",
+  "passed": true,
+  "detail": {
+    "schemas": 8,
+    "findings": 0
+  },
+  "created_at": "2026-08-07T20:16:52.681Z"
+}

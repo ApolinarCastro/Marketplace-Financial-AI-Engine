@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-07-28T17:44:06.110459",
+  "summary": {
+    "marketplace": "ALL",
+    "period": "ALL",
+    "total_queries_resolved": 13,
+    "total_records_certified": 150182,
+    "total_monto_certified": 1176180014.27,
+    "classification_coverage": 100.0,
+    "conflicts_detected": 0,
+    "financial_delta": "$0.00",
+    "single_financial_truth": "ACTIVE_VERIFIED"
+  },
+  "per_marketplace": {
+    "ML": {
+      "marketplace": "ML",
+      "period": "ALL",
+      "total_queries_resolved": 13,
+      "total_records_certified": 26183,
+      "total_monto_certified": 231780394.01,
+      "classification_coverage": 100.0,
+      "conflicts_detected": 0,
+      "financial_delta": "$0.00",
+      "single_financial_truth": "ACTIVE_VERIFIED"
+    },
+    "RIPLEY": {
+      "marketplace": "RIPLEY",
+      "period": "ALL",
+      "total_queries_resolved": 13,
+      "total_records_certified": 71732,
+      "total_monto_certified": 729843107.0,
+      "classification_coverage": 100.0,
+      "conflicts_detected": 0,
+      "financial_delta": "$0.00",
+      "single_financial_truth": "ACTIVE_VERIFIED"
+    },
+    "PARIS": {
+      "marketplace": "PARIS",
+      "period": "ALL",
+      "total_queries_resolved": 13,
+      "total_records_certified": 49191,
+      "total_monto_certified": 216596664.0,
+      "classification_coverage": 100.0,
+      "conflicts_detected": 0,
+      "financial_delta": "$0.00",
+      "single_financial_truth": "ACTIVE_VERIFIED"
+    },
+    "FALABELLA": {
+      "marketplace": "FALABELLA",
+      "period": "ALL",
+      "total_queries_resolved": 13,
+      "total_records_certified": 3076,
+      "total_monto_certified": -2040150.74,
+      "classification_coverage": 100.0,
+      "conflicts_detected": 0,
+      "financial_delta": "$0.00",
+      "single_financial_truth": "ACTIVE_VERIFIED"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "source_type": "Evidence_JSON",
+      "source_path": "evidence/fase_2/CAP-F2-001.json",
+      "source_hash": "497c7a09eaf5ffdd33e8305fec6e0a87c9c9805d0f8eafb828e178049c586803",
+      "source_version": "1.0.0",
+      "execution_id": "EXEC-CAP-F2-001-20260727",
+      "ingestion_timestamp": "2026-07-27T17:47:20",
+      "extractor_version": "1.0.0",
+      "certification_status": "VALIDATED"
+    },
+    {
+      "source_type": "Evidence_JSON",
+      "source_path": "evidence/fase_2/CAP-TD-008.json",
+      "source_hash": "eabdc5e6ddd1e9b0d2749549205dc6a920eb7f196a457ab900f6f42ac26803bf",
+      "source_version": "1.0.0",
+      "execution_id": "EXEC-CAP-TD-008-20260727",
+      "ingestion_timestamp": "2026-07-27T17:47:20",
+      "extractor_version": "1.0.0",
+      "certification_status": "VALIDATED"
+    }
+  ]
+}

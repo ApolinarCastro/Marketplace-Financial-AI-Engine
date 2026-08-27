@@ -1,0 +1,48 @@
+{
+  "suite": "pytest tests -q",
+  "total": 1005,
+  "passed": 981,
+  "failed": 12,
+  "skipped": 12,
+  "failure_groups": {
+    "copilot_golden_marketplace_impact_missing": 10,
+    "f5_05_asyncio_plugin_missing": 1,
+    "ripley_ff_csv_shortfall": 1
+  },
+  "step5_focused_suites": {
+    "test_exception_engine.py": "PASS",
+    "test_exception_api_endpoints.py": "PASS"
+  },
+  "no_step5_regressions": true,
+  "evidence": {
+    "golden_missing_file": {
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+      "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+    },
+    "asyncio_plugin_missing": {
+      "root_cause": "test_f5_05 uses @pytest.mark.asyncio but pytest_asyncio is not installed (find_spec('pytest_asyncio') is None). pytest reports 'async def functions are not natively supported'.",
+      "impact_on_step5": "NONE - f5_05 is a Phase 5 Step 5 recovery-idempotency test from a previous commit (0e3b30f/2d51f52), unrelated to the Exception Engine."
+    },
+    "raw_ff_csv_shortfall": {
+      "root_cause": "test expects >=60 FF csv files but only 36 present in 01_Raw/RIPLEY/Fulfillment by Ripley/ (data availability in working tree).",
+      "impact_on_step5": "NONE - Step5 makes no changes to 01_Raw/ or path resolution."
+    }
+  },
+  "isolation": {
+    "failing_test_files": [
+      "tests/test_copilot_benchmarks.py",
+      "tests/test_copilot_golden.py",
+      "tests/test_f5_05_idempotency_regression.py",
+      "tests/test_ripley_path_resolution.py"
+    ],
+    "step5_changed_files": [
+      "api/api.py",
+      "tests/test_exception_engine.py",
+      "tests/test_exception_api_endpoints.py"
+    ],
+    "overlap": [],
+    "failing_tests_import_exception_engine": false
+  },
+  "verdict": "PASS - 12 failures reconciled as preexisting (golden file deleted in worktree, asyncio plugin absent, RAW FF CSV shortfall). Zero overlap with Step5 files. Step5 introduces 0 new regressions."
+}

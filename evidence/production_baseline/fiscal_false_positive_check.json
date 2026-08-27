@@ -1,0 +1,11 @@
+{
+  "rule": "LEDGER_EXISTING != CRYPTOGRAPHIC_CERTIFIED. RIPLEY folio_xml comes from XLSX operational data, NOT SII DTE folios.",
+  "settlement_refs_are_not_sii_folios": true,
+  "evidence": [
+    "RIPLEY folio_xml populated from XLSX files (Sprint A2), not from SII XML DTE parsing.",
+    "No SII folio matching implemented for RIPLEY (DTEIndexer heuristic, DEC-036).",
+    "estado_xml = NULL for all 287,417 RIPLEY rows - no cryptographic DTE certification present.",
+    "P16F-04: 12,822 cargo_sin_respaldo_legal alerts were false positives (order refs != SII folios)."
+  ],
+  "verdict": "FISCAL_CLAIM_BLOCKED"
+}

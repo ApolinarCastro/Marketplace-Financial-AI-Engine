@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-07-28T15:55:08.887106",
+  "validator_version": "PHASE_3_V3_CROSS_VALIDATOR",
+  "official_database_check": {
+    "path": "data/db/meli_financial_v4.db",
+    "expected_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "actual_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "bytes": 58732544,
+    "status": "PASS"
+  },
+  "artifact_existence_checks": {
+    "phase3_structural_audit_summary_v2.json": {
+      "exists": true,
+      "size_bytes": 74872,
+      "valid": true
+    },
+    "phase3_root_inventory_v2.csv": {
+      "exists": true,
+      "size_bytes": 3118,
+      "valid": true
+    },
+    "phase3_file_inventory_v2.csv": {
+      "exists": true,
+      "size_bytes": 173733,
+      "valid": true
+    },
+    "phase3_duplicate_inventory_v2.csv": {
+      "exists": true,
+      "size_bytes": 11853,
+      "valid": true
+    },
+    "phase3_git_large_objects_v2.csv": {
+      "exists": true,
+      "size_bytes": 1164,
+      "valid": true
+    },
+    "phase3_reference_analysis_v2.csv": {
+      "exists": true,
+      "size_bytes": 3550,
+      "valid": true
+    },
+    "phase3_risk_matrix_v2.csv": {
+      "exists": true,
+      "size_bytes": 1004,
+      "valid": true
+    },
+    "phase3_proposed_actions_v2.md": {
+      "exists": true,
+      "size_bytes": 73697,
+      "valid": true
+    },
+    "phase3_raw_comparison_v2.json": {
+      "exists": true,
+      "size_bytes": 327,
+      "valid": true
+    }
+  },
+  "json_validity_checks": {
+    "phase3_structural_audit_summary_v2.json": "PASS",
+    "phase3_raw_comparison_v2.json": "PASS"
+  },
+  "csv_header_checks": {
+    "phase3_root_inventory_v2.csv": "PASS",
+    "phase3_file_inventory_v2.csv": "PASS",
+    "phase3_duplicate_inventory_v2.csv": "PASS",
+    "phase3_git_large_objects_v2.csv": "PASS",
+    "phase3_reference_analysis_v2.csv": "PASS",
+    "phase3_risk_matrix_v2.csv": "PASS"
+  },
+  "cross_artifact_coherence": {
+    "total_files_coherent": true,
+    "total_bytes_coherent": true,
+    "git_unmodified": true,
+    "raw_mutations_zero": true,
+    "raw_verification_method": "PATH_SIZE_SHA256",
+    "verdict_matching": true,
+    "reconciliation_with_v1_present": true,
+    "status": "PASS"
+  },
+  "verdict": "PHASE_3_AUDIT_COMPLETE"
+}

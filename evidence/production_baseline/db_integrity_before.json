@@ -1,0 +1,9 @@
+{
+  "loop": 0,
+  "db_path": "data/db/meli_financial_v4.db",
+  "exists": true,
+  "size_bytes": 58732544,
+  "sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+  "classification": "OFFICIAL",
+  "notes": "Registrada como SOURCE OF TRUTH. No debe mutarse durante la mision (read-only)."
+}

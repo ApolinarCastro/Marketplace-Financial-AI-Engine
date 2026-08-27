@@ -1,0 +1,22 @@
+{
+  "decision_id": "KNOWLEDGEOS_AS_SYSTEM_BRAIN_V1",
+  "implementation_status": "IMPLEMENTED",
+  "certification_status": "PENDING",
+  "sources_processed": 2,
+  "entities_created": 2,
+  "entities_updated": 0,
+  "duplicate_entities": 0,
+  "broken_wikilinks": 0,
+  "orphan_entities": 0,
+  "graph_nodes_created": 2,
+  "graph_edges_created": 2,
+  "copilot_queries_tested": 10,
+  "unsupported_claims": 0,
+  "artifacts_archived": 0,
+  "artifacts_deleted": 0,
+  "knowledge_loss_detected": false,
+  "raw_mutations": 0,
+  "official_database_mutations": 0,
+  "financial_delta": 0,
+  "final_verdict": "PARTIALLY_IMPLEMENTED_NOT_CERTIFIED"
+}

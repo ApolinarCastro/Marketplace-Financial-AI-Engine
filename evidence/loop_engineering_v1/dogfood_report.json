@@ -1,0 +1,112 @@
+{
+  "evidence_id": "LOOP_ENG_V1_DOGFOOD",
+  "goal_id": "LOOP-ENGINEERING-SELF-CERT",
+  "executed_at": "2026-08-07T15:29:36.764Z",
+  "agents_used": [
+    "OPENCODE_ENGINEER",
+    "CODEX_ENGINEER",
+    "AUDITOR"
+  ],
+  "turns": [
+    {
+      "todo": "TODO-001",
+      "agent": "OPENCODE_ENGINEER",
+      "result": "VALIDATED_COMPLETION",
+      "validation": {
+        "command": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\.venv\\Scripts\\python.exe -m pytest tests/test_loop_control.py -q -p no:cacheprovider",
+        "exit_code": 0,
+        "stdout_tail": [
+          ".......................................................                  [100%]",
+          "55 passed in 8.16s"
+        ]
+      }
+    },
+    {
+      "todo": "TODO-002",
+      "agent": "CODEX_ENGINEER",
+      "result": "VALIDATED_COMPLETION",
+      "validation": {
+        "command": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\.venv\\Scripts\\python.exe -m engine.loop_control validate",
+        "exit_code": 0,
+        "stdout_tail": [
+          "    \"verified\": 7,",
+          "    \"missing\": [],",
+          "    \"mismatched\": [],",
+          "    \"status\": \"PASS\"",
+          "  }",
+          "}"
+        ]
+      }
+    },
+    {
+      "todo": "TODO-003",
+      "agent": "AUDITOR",
+      "result": "VALIDATED_COMPLETION",
+      "validation": {
+        "command": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\.venv\\Scripts\\python.exe -m pytest tests/test_coordination_interface.py -q -p no:cacheprovider",
+        "exit_code": 0,
+        "stdout_tail": [
+          ".............                                                            [100%]",
+          "13 passed in 0.45s"
+        ]
+      }
+    }
+  ],
+  "cross_agent_continuation": {
+    "reconstructed_from_disk_only": true,
+    "receiving_agent": "CODEX_ENGINEER",
+    "completed_todos": [
+      "TODO-001"
+    ],
+    "next_todo": "TODO-002",
+    "evidence_count": 5
+  },
+  "goal_final_status": "COMPLETED",
+  "control_plane_validation": {
+    "status": "PASS",
+    "checks_performed": 7,
+    "errors": [],
+    "evidence": {
+      "total": 18,
+      "verified": 18,
+      "missing": [],
+      "mismatched": [],
+      "status": "PASS"
+    }
+  },
+  "quota_consumed": {
+    "goal_id": "LOOP-ENGINEERING-SELF-CERT",
+    "limits": {
+      "max_same_hypothesis_attempts": 3,
+      "max_no_progress_turns": 2,
+      "max_validation_failures": 3,
+      "max_scope_expansions": 0
+    },
+    "turns_consumed": 3,
+    "failed_turns": 0,
+    "no_progress_turns": 0,
+    "validation_failures": 0,
+    "scope_expansions": 0,
+    "hypothesis_attempts": {
+      "kernel-suite-green": 1,
+      "state-schema-valid": 1,
+      "no-coordination-regression": 1
+    },
+    "spent_keys": [
+      "quota:LOOP-ENGINEERING-SELF-CERT:TURN-459d949317e9",
+      "quota:LOOP-ENGINEERING-SELF-CERT:TURN-c39181bc37cb",
+      "quota:LOOP-ENGINEERING-SELF-CERT:TURN-600859f21128"
+    ]
+  },
+  "run_events": 10,
+  "evidence_records": 18,
+  "integrity": {
+    "official_db_sha256_before": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "official_db_sha256_after": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "official_db_unchanged": true,
+    "raw_file_count_before": 1313,
+    "raw_file_count_after": 1313,
+    "raw_mutations": 0
+  },
+  "verdict": "PASS"
+}

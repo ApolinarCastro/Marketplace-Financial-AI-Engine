@@ -1,0 +1,8 @@
+{
+  "official_db": "data/db/meli_financial_v4.db",
+  "official_db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "financial_delta": 0.0,
+  "detail": "Read-only analysis. No mutations to official DB, ledger, cierre, dte tables. All new objects only in controlled DB.",
+  "tables_touched": [],
+  "official_tables_modified": 0
+}

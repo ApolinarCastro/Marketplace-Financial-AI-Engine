@@ -1,0 +1,18 @@
+{
+  "marketplace": "FALABELLA",
+  "timestamp": "2026-07-24T11:14:11.019499",
+  "initial_rows": 678,
+  "final_rows": 3076,
+  "new_rows_inserted": 2398,
+  "classification_count": 3076,
+  "periods_closed": {
+    "neto": -2040150.7400000158,
+    "ingresos": 3512762.0,
+    "devoluciones": -105858.0,
+    "costos_op": -2172663.6870000074,
+    "costos_com": -3286962.4770000083,
+    "ajustes": 12571.423999999997
+  },
+  "financial_delta": 0.0,
+  "status": "PASS"
+}

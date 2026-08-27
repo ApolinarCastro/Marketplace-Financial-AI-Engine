@@ -1,0 +1,20 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "marketplace": "RIPLEY",
+  "settlement_chain_rows": 287417,
+  "settlement_folios_with_folio": 167,
+  "dte_truth_folios": 407,
+  "overlap": 0,
+  "namespace_compatible": false,
+  "forensic_notes": [
+    "settlement folios (167, e.g. 499799, 500346) vs dte_truth folios (407, e.g. 108927) share 0 values",
+    "chain source files SELLER/*.xlsx and Ciclos/*.csv absent from 01_Raw/Ripley",
+    "present sources: Facturacion (472 XML), Fulfillment by Ripley (72 CSV), Historial (8 CSV), Mis extractos (52 CSV)"
+  ],
+  "verification": "VERIFIED",
+  "status": "PROVEN_BLOCKED"
+}

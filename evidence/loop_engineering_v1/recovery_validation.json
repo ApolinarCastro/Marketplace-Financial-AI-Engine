@@ -1,0 +1,58 @@
+{
+  "execution_id": "LOOP_ENG_V1_20260807T152945.116Z",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "branch": "phase5/production-readiness",
+  "timestamp": "2026-08-07T15:29:45.116Z",
+  "protocol_version": "1.0.0",
+  "repository": "Marketplace Financial AI Engine",
+  "decisions": [
+    "RESUME",
+    "REPAIR",
+    "REPLAN",
+    "WAIT",
+    "BLOCK"
+  ],
+  "current_diagnosis": {
+    "goal_id": "LOOP-ENGINEERING-SELF-CERT",
+    "goal_status": "COMPLETED",
+    "unfinished_turn": null,
+    "unfinished_turns": [],
+    "stale_claims": [],
+    "active_claims": [],
+    "in_flight_todos": [],
+    "last_evidence": {
+      "evidence_id": "EV-33c58a805f2e",
+      "goal_id": "LOOP-ENGINEERING-SELF-CERT",
+      "todo_id": "TODO-003",
+      "turn_id": "TURN-600859f21128",
+      "type": "continuation",
+      "path": "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-600859f21128/handoff.json",
+      "sha256": "a59f83e75edfdec988520a6e82644942c2af69f63b721415752ae29356b90ca8",
+      "created_at": "2026-08-07T15:29:36.526Z",
+      "validation_status": "PASS",
+      "idempotency_key": "LOOP-ENGINEERING-SELF-CERT:TURN-600859f21128:handoff.json"
+    },
+    "open_gates": [],
+    "quota": {
+      "result": "OK",
+      "reason": "within budget"
+    },
+    "decision": "BLOCK",
+    "reason": "goal is terminal (COMPLETED); nothing to recover"
+  },
+  "restart_from_zero": false,
+  "scenarios_tested": [
+    "interrupted RUNNING turn -> RESUME",
+    "stale lease -> REPAIR",
+    "open gate -> WAIT",
+    "terminal goal -> BLOCK",
+    "no startable todo -> REPLAN"
+  ],
+  "tests": [
+    "test_recovery",
+    "test_recovery_detects_stale_lease",
+    "test_recovery_waits_on_open_gate",
+    "test_recovery_blocks_on_terminal_goal"
+  ],
+  "result": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "marketplace": "RIPLEY",
+  "timestamp": "2026-07-24T11:13:32.824962",
+  "initial_rows": 219901,
+  "final_rows": 287417,
+  "new_rows_inserted": 67516,
+  "classification_count": 287417,
+  "periods_closed": {
+    "neto": 514479989.0,
+    "ingresos": 804445540.0,
+    "devoluciones": -163297940.0,
+    "costos_op": -29021362.0,
+    "costos_com": -97579369.0,
+    "ajustes": -66880.0
+  },
+  "financial_delta": 0.0,
+  "status": "PASS"
+}

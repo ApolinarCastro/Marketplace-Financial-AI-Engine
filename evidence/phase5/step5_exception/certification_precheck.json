@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-08-07T10:01:09.063347",
+  "branch": "phase5/production-readiness",
+  "git_commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "python_version": "Python 3.14.2",
+  "official_db": "data/db/meli_financial_v4.db",
+  "official_db_size_bytes": 58732544,
+  "official_db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "raw_files_on_disk": 1313,
+  "v_ledger_certified": {
+    "total_rows": 598112,
+    "total_monto": 4430909518.81,
+    "eligible_rows": 598112,
+    "by_marketplace": {
+      "falabella": 3076,
+      "ml": 109799,
+      "paris": 197820,
+      "ripley": 287417
+    },
+    "monto_by_marketplace": {
+      "falabella": -2040150.74,
+      "ml": 937358577.55,
+      "paris": 893566496.0,
+      "ripley": 2602024596.0
+    }
+  },
+  "support_tables": {
+    "dte_truth_v1": 667,
+    "document_match_v1": 9431,
+    "dte_ledger_link": 547812
+  },
+  "step5_modified_files": [
+    "api/api.py",
+    "engine/v4/domain/exception_engine.py",
+    "tests/test_exception_engine.py",
+    "tests/test_exception_api_endpoints.py"
+  ]
+}

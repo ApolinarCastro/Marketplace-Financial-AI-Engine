@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-07-28T17:34:16.990190",
+  "test_files": [
+    "tests/test_financial_classification_engine.py",
+    "tests/test_classification_api_endpoints.py",
+    "tests/test_unified_transaction_ledger.py",
+    "tests/test_ledger_api_endpoints.py",
+    "tests/test_regression_contracts.py"
+  ],
+  "total_tests": 33,
+  "passed": 33,
+  "failed": 0,
+  "execution_time_seconds": 2.25,
+  "status": "ALL_TESTS_PASSED"
+}

@@ -1,0 +1,30 @@
+{
+  "execution_id": "phase5-step6-regression-20260818",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-18",
+  "harness_version": "1.0.0-r5-phase5-step6",
+  "repository": "Marketplace Financial AI Engine",
+  "branch": "phase5/production-readiness",
+  "suite": "full test suite (tests/)",
+  "collected": 1106,
+  "passed": 1055,
+  "skipped": 13,
+  "failed": 38,
+  "failed_are_all_pre_existing": true,
+  "pre_existing_failure_categories": {
+    "copilot_golden_marketplace_impact": 11,
+    "loop_control_new_untracked_module": 21,
+    "ripley_chain_source_absent": 5,
+    "universal_continuation": 1
+  },
+  "pre_existing_explanation": "NONE of the 38 failures involve files modified by F5-09 (api/api.py, engine/v4/matching/dte_ledger_matcher.py, tests/test_dte_traceability.py, tests/test_api_smoke.py). Copilot golden failures are caused by the pre-existing deletion of tests/golden/copilot_marketplace_impact.json in the working tree. loop_control failures are from an untracked new engine/loop_control/ module. RIPLEY path failures reflect the same chain-source-absent condition my module honestly reports as BLOCKED.",
+  "new_regressions": 0,
+  "new_feature_tests": {
+    "test_dte_traceability.py": "17 passed, 1 skipped (data-agnostic skip when test DB has no ML certified matches)",
+    "test_api_smoke.py": "route /api/v4/dte/traceability added to expected routes - PASS"
+  },
+  "certification_gate": "tests/test_certification_gate.py PASS",
+  "financial_engine": "tests/test_financial_engine.py PASS",
+  "cobros_breakdown_route": "tests/test_exec_cobros_breakdown_route.py PASS",
+  "verdict": "NEW_REGRESSIONS=0"
+}

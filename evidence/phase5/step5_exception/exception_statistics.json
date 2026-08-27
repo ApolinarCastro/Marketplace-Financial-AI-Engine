@@ -1,0 +1,47 @@
+{
+  "total_ledger_rows": 598112,
+  "total_exceptions_detected": 598112,
+  "records_with_exception": 598112,
+  "records_without_exception": 0,
+  "exceptions_by_type": {
+    "MISSING_DTE": 111823,
+    "INSUFFICIENT_FISCAL_EVIDENCE": 290493,
+    "TRUTH_CONFLICT": 0,
+    "MISSING_XML": 0,
+    "DOCUMENT_REFERENCE_ONLY": 10949,
+    "LEDGER_REFERENCE_ONLY": 184847,
+    "MISSING_SUPPORT": 0,
+    "AMOUNT_MISMATCH": 0,
+    "DATE_MISMATCH": 0,
+    "CLASSIFICATION_CONFLICT": 0,
+    "RECONCILIATION_FAILED": 0,
+    "SETTLEMENT_MISSING": 0,
+    "PENDING_COLLECTION": 0,
+    "PENDING_PAYMENT": 0,
+    "SAP_MISMATCH": 0,
+    "MARKETPLACE_MISMATCH": 0,
+    "UNMATCHED_TRANSACTION": 0,
+    "UNMATCHED_ORDER": 0,
+    "MANUAL_REVIEW_REQUIRED": 0
+  },
+  "exceptions_by_severity": {
+    "LOW": 195796,
+    "HIGH": 111823,
+    "CRITICAL": 290493
+  },
+  "exceptions_by_priority": {
+    "P4": 195796,
+    "P1": 402316
+  },
+  "exceptions_by_domain": {
+    "DOCUMENTAL": 195796,
+    "TRIBUTARIO": 402316
+  },
+  "certification_states": {
+    "LEDGER_REFERENCE_ONLY": 295308,
+    "DOCUMENT_REFERENCE_ONLY": 12311,
+    "INSUFFICIENT_FISCAL_EVIDENCE": 290493
+  },
+  "catalog_size": 19,
+  "financial_delta": "$0.00"
+}

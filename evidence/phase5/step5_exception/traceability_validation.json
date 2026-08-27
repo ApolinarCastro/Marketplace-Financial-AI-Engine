@@ -1,0 +1,14 @@
+{
+  "unexplained_exceptions": 0,
+  "untraceable_exceptions": 0,
+  "explainability_gate": true,
+  "traceability_gate": true,
+  "source_tables": [
+    "v_ledger_certified",
+    "dte_truth_v1",
+    "document_match_v1"
+  ],
+  "exception_id_scheme": "sha256(marketplace_transaction_id_order_id_exception_type_source_reference)",
+  "financial_delta": "$0.00",
+  "verdict": "PASS"
+}

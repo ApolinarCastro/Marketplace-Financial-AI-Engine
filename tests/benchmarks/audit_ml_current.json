@@ -1,12 +1,12 @@
 {
   "name": "audit_ml",
   "arm": "current",
-  "median_duration_ms": 9.154350002063438,
-  "median_memory_mb": 0.22711658477783203,
+  "median_duration_ms": 12.31944999017287,
+  "median_memory_mb": 0.2270650863647461,
   "median_sql_count": 0.0,
-  "stddev_duration_ms": 1.0937263864034465,
-  "stddev_memory_mb": 2.3638814368941754e-05,
+  "stddev_duration_ms": 0.7854963451750074,
+  "stddev_memory_mb": 4.665494147736618e-05,
   "runs": 10,
   "success_rate": 1.0,
-  "timestamp": 1787070385.6773155
+  "timestamp": 1787860386.7583845
 }

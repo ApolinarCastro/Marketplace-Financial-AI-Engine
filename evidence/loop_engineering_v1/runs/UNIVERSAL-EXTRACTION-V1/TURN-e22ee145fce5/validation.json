@@ -1,0 +1,15 @@
+{
+  "turn_id": "TURN-e22ee145fce5",
+  "todo_id": "LOOP-05",
+  "passed": true,
+  "detail": {
+    "files_changed": [
+      "constants.py",
+      "state_store.py",
+      "kernel.py",
+      "gate_manager.py",
+      "policy.py"
+    ]
+  },
+  "created_at": "2026-08-07T20:15:35.787Z"
+}

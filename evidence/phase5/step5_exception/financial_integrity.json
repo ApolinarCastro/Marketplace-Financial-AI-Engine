@@ -1,0 +1,74 @@
+{
+  "database_sha256_before": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+  "database_sha256_after": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+  "sha_unchanged": true,
+  "per_marketplace_before": {
+    "falabella": {
+      "rows": 3076,
+      "monto": -2040150.7400000012
+    },
+    "ml": {
+      "rows": 109799,
+      "monto": 937358577.5499995
+    },
+    "paris": {
+      "rows": 197820,
+      "monto": 893566496.0
+    },
+    "ripley": {
+      "rows": 287417,
+      "monto": 2602024596.0
+    },
+    "ALL": {
+      "rows": 598112,
+      "monto": 4430909518.810002
+    }
+  },
+  "per_marketplace_after": {
+    "falabella": {
+      "rows": 3076,
+      "monto": -2040150.7400000012
+    },
+    "ml": {
+      "rows": 109799,
+      "monto": 937358577.5499995
+    },
+    "paris": {
+      "rows": 197820,
+      "monto": 893566496.0
+    },
+    "ripley": {
+      "rows": 287417,
+      "monto": 2602024596.0
+    },
+    "ALL": {
+      "rows": 598112,
+      "monto": 4430909518.810003
+    }
+  },
+  "deltas": {
+    "falabella": {
+      "row_delta": 0,
+      "monto_delta": 0.0
+    },
+    "ml": {
+      "row_delta": 0,
+      "monto_delta": 0.0
+    },
+    "paris": {
+      "row_delta": 0,
+      "monto_delta": 0.0
+    },
+    "ripley": {
+      "row_delta": 0,
+      "monto_delta": 0.0
+    },
+    "ALL": {
+      "row_delta": 0,
+      "monto_delta": 0.0
+    }
+  },
+  "financial_delta_total": 0.0,
+  "engine_mutates_db": false,
+  "verdict": "PASS"
+}

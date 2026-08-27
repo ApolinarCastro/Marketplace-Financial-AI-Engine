@@ -1,0 +1,57 @@
+{
+  "CONCILIADO": {
+    "code": "CONCILIADO",
+    "description": "Operaci\u00f3n 100% conciliada y respaldada por evidencia documental certificada.",
+    "severity": "NORMAL"
+  },
+  "DIFERENCIA_MONTO": {
+    "code": "DIFERENCIA_MONTO",
+    "description": "Diferencia detectada en el monto entre fuentes comparadas.",
+    "severity": "ALTA"
+  },
+  "DIFERENCIA_DOCUMENTAL": {
+    "code": "DIFERENCIA_DOCUMENTAL",
+    "description": "Inconsistencia o discrepancia en folios o archivos documentales.",
+    "severity": "MEDIA"
+  },
+  "DIFERENCIA_TRIBUTARIA": {
+    "code": "DIFERENCIA_TRIBUTARIA",
+    "description": "Discrepancia en c\u00e1lculos de IVA, retenciones o tipo DTE SII.",
+    "severity": "ALTA"
+  },
+  "COBRO_PENDIENTE": {
+    "code": "COBRO_PENDIENTE",
+    "description": "Fondos de ventas devengadas no liquidados por el marketplace.",
+    "severity": "MEDIA"
+  },
+  "PAGO_PENDIENTE": {
+    "code": "PAGO_PENDIENTE",
+    "description": "Pagos pendientes de transferencia hacia cuentas bancarias.",
+    "severity": "MEDIA"
+  },
+  "SIN_RESPALDO_XML": {
+    "code": "SIN_RESPALDO_XML",
+    "description": "Movimiento financiero sin archivo XML adjunto.",
+    "severity": "BAJA"
+  },
+  "SIN_RESPALDO_DTE": {
+    "code": "SIN_RESPALDO_DTE",
+    "description": "Movimiento de venta o devoluci\u00f3n sin v\u00ednculo a DTE SII certificado.",
+    "severity": "MEDIA"
+  },
+  "SIN_MATCH_SAP": {
+    "code": "SIN_MATCH_SAP",
+    "description": "Operaci\u00f3n registrada en Marketplace no encontrada en ERP SAP.",
+    "severity": "ALTA"
+  },
+  "SIN_MATCH_MARKETPLACE": {
+    "code": "SIN_MATCH_MARKETPLACE",
+    "description": "Operaci\u00f3n bancaria o SAP no encontrada en los archivos de Marketplace.",
+    "severity": "ALTA"
+  },
+  "REQUIERE_REVISION": {
+    "code": "REQUIERE_REVISION",
+    "description": "Movimiento que presenta m\u00faltiples observaciones y requiere auditor\u00eda manual.",
+    "severity": "CRITICA"
+  }
+}

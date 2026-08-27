@@ -1,0 +1,1001 @@
+rel_path,filename,ext,size_bytes,size_mb,dir,main_folder,mtime
+data/db/snapshot_baseline_v6_20260529_105928/meli_financial_v4.db,meli_financial_v4.db,.db,131346432,131.3464,data/db/snapshot_baseline_v6_20260529_105928,data,2026-05-29T10:22:07.402079
+data/db/snapshot_pre_ripley_rebuild_20260601_172024/meli_financial_v4.db,meli_financial_v4.db,.db,131346432,131.3464,data/db/snapshot_pre_ripley_rebuild_20260601_172024,data,2026-05-30T18:50:12.278065
+data/db/snapshot_pre_ripley_rebuild_20260601_172043/meli_financial_v4.db,meli_financial_v4.db,.db,131346432,131.3464,data/db/snapshot_pre_ripley_rebuild_20260601_172043,data,2026-06-01T17:20:31.223564
+data/db/meli_financial_v4_pre_class.db,meli_financial_v4_pre_class.db,.db,131084288,131.0843,data/db,data,2026-06-02T17:37:55.939329
+data/db/snapshot_pre_classification_20260603_102347/meli_financial_v4.db,meli_financial_v4.db,.db,131084288,131.0843,data/db/snapshot_pre_classification_20260603_102347,data,2026-06-02T17:45:10.905667
+data/db/snapshot_pre_fase2_20260603_112908/meli_financial_v4.db,meli_financial_v4.db,.db,131084288,131.0843,data/db/snapshot_pre_fase2_20260603_112908,data,2026-06-03T11:29:01.781528
+data/db/snapshot_pre_poscobro_fix_20260605_155052/meli_financial_v4.db,meli_financial_v4.db,.db,94384128,94.3841,data/db/snapshot_pre_poscobro_fix_20260605_155052,data,2026-06-05T12:08:17.744667
+.venv/Lib/site-packages/playwright/driver/node.exe,node.exe,.exe,91694408,91.6944,.venv/Lib/site-packages/playwright/driver,.venv,2026-06-09T08:43:07.174397
+Reporte_Marketplaces/Reporte Gerencial 360 Marketplaces.xlsx,Reporte Gerencial 360 Marketplaces.xlsx,.xlsx,69266553,69.2666,Reporte_Marketplaces,Reporte_Marketplaces,2026-07-13T17:03:18.693839
+.git/objects/97/a2000adbe28263de330aa6c6a9d82dcc1cca22,a2000adbe28263de330aa6c6a9d82dcc1cca22,.no_ext,60575988,60.576,.git/objects/97,.git,2026-07-13T17:03:25.534257
+data/db/controlled_cap_f2_001.db,controlled_cap_f2_001.db,.db,60043264,60.0433,data/db,data,2026-07-27T16:18:26.011237
+data/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db,meli_financial_v4.db,.db,60043264,60.0433,data/db/snapshot_pre_falabella_rebuild_20260529_100326,data,2026-05-29T09:48:16.443506
+data/db/meli_financial_v4.db.pre_future_fix_20260623,meli_financial_v4.db.pre_future_fix_20260623,.pre_future_fix_20260623,59781120,59.7811,data/db,data,2026-07-22T16:28:34.563272
+data/db/backups/meli_financial_v4_CERTIFIED_BASELINE_V1_20260624.db,meli_financial_v4_CERTIFIED_BASELINE_V1_20260624.db,.db,59781120,59.7811,data/db/backups,data,2026-06-24T11:51:56.333793
+.git/objects/94/dfd3baab78144119b18534110302560bdcbe1e,dfd3baab78144119b18534110302560bdcbe1e,.no_ext,59693199,59.6932,.git/objects/94,.git,2026-06-08T15:13:57.844736
+data/db/meli_financial_v4.db,meli_financial_v4.db,.db,58732544,58.7325,data/db,data,2026-07-24T11:14:11.424874
+data/db/meli_financial_v4_baseline_v4.db,meli_financial_v4_baseline_v4.db,.db,57946112,57.9461,data/db,data,2026-07-02T17:34:43.848270
+_archive/releases/MARKETPLACE_AUDITOR_V3_5_RC1/meli_financial_v4_backup.db,meli_financial_v4_backup.db,.db,57946112,57.9461,_archive/releases/MARKETPLACE_AUDITOR_V3_5_RC1,_archive,2026-06-26T11:11:35.127871
+.git/objects/57/1f85f7077d1f4ad01c031956f0fd7dc9a90062,1f85f7077d1f4ad01c031956f0fd7dc9a90062,.no_ext,56799328,56.7993,.git/objects/57,.git,2026-06-06T12:06:25.792694
+data/backup/meli_financial_v4_pre_migration_20260724_110819.db,meli_financial_v4_pre_migration_20260724_110819.db,.db,55848960,55.849,data/backup,data,2026-07-23T09:38:05.686264
+data/backup/meli_financial_v4_pre_migration_20260724_110844.db,meli_financial_v4_pre_migration_20260724_110844.db,.db,55848960,55.849,data/backup,data,2026-07-23T09:38:05.686264
+data/backup/meli_financial_v4_pre_migration_20260724_110859.db,meli_financial_v4_pre_migration_20260724_110859.db,.db,55848960,55.849,data/backup,data,2026-07-23T09:38:05.686264
+data/backup/meli_financial_v4_pre_migration_20260724_111106.db,meli_financial_v4_pre_migration_20260724_111106.db,.db,55848960,55.849,data/backup,data,2026-07-23T09:38:05.686264
+data/backup/meli_financial_v4_pre_migration_20260724_111215.db,meli_financial_v4_pre_migration_20260724_111215.db,.db,55848960,55.849,data/backup,data,2026-07-23T09:38:05.686264
+data/backup/meli_financial_v4_pre_migration_20260724_111308.db,meli_financial_v4_pre_migration_20260724_111308.db,.db,55848960,55.849,data/backup,data,2026-07-23T09:38:05.686264
+data/db/meli_financial_v4_pre_truth003_20260720_173842_A9777849.db,meli_financial_v4_pre_truth003_20260720_173842_A9777849.db,.db,55848960,55.849,data/db,data,2026-07-20T14:39:35.706190
+data/db/baseline_estable_v7_20260715/meli_financial_v4.db,meli_financial_v4.db,.db,55848960,55.849,data/db/baseline_estable_v7_20260715,data,2026-07-15T16:36:03.495957
+data/db/baseline_estable_v7_20260715/meli_financial_v4.db.forensic_modificado,meli_financial_v4.db.forensic_modificado,.forensic_modificado,55848960,55.849,data/db/baseline_estable_v7_20260715,data,2026-07-22T16:28:33.556946
+data/db/baseline_estable_v8_candidate_20260717/meli_financial_v4.db,meli_financial_v4.db,.db,55848960,55.849,data/db/baseline_estable_v8_candidate_20260717,data,2026-07-17T21:14:17.318809
+data/db/BASELINE_ESTABLE_V9_TRUTH_RECOVERED/meli_financial_v4.db,meli_financial_v4.db,.db,55848960,55.849,data/db/BASELINE_ESTABLE_V9_TRUTH_RECOVERED,data,2026-07-20T17:37:18.306890
+data/db/snapshot_pre_f003_cleaned_20260715/meli_financial_v4.db,meli_financial_v4.db,.db,55848960,55.849,data/db/snapshot_pre_f003_cleaned_20260715,data,2026-07-15T13:28:40.490117
+Reporte_Marketplaces/Backup/Reporte Gerencial 360 Marketplaces.xlsx,Reporte Gerencial 360 Marketplaces.xlsx,.xlsx,47202707,47.2027,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.324275
+.git/objects/90/534267ed4804f9011140904e5ef89acde96d9b,534267ed4804f9011140904e5ef89acde96d9b,.no_ext,40889739,40.8897,.git/objects/90,.git,2026-07-13T17:03:25.003296
+data/db/meli_financial_v4.db.corrupt_snapshot,meli_financial_v4.db.corrupt_snapshot,.corrupt_snapshot,37761024,37.761,data/db,data,2026-07-13T17:03:19.482592
+data/db/meli_financial_v4.db.backup.20260527_154224.bak,meli_financial_v4.db.backup.20260527_154224.bak,.bak,37498880,37.4989,data/db,data,2026-07-13T17:03:19.283334
+data/db/meli_financial_v4.db.paris_reload.20260527_163143.bak,meli_financial_v4.db.paris_reload.20260527_163143.bak,.bak,37498880,37.4989,data/db,data,2026-07-13T17:03:19.656243
+data/db/meli_financial_v4.db.pre_nan_fix,meli_financial_v4.db.pre_nan_fix,.pre_nan_fix,37498880,37.4989,data/db,data,2026-07-13T17:03:19.831385
+data/db/snapshot_pre_cierre_rebuild_20260528_163008/meli_financial_v4.db,meli_financial_v4.db,.db,37498880,37.4989,data/db/snapshot_pre_cierre_rebuild_20260528_163008,data,2026-05-28T16:24:31.353932
+data/db/snapshot_pre_ml_xml_fix_20260528_170623/meli_financial_v4.db,meli_financial_v4.db,.db,37498880,37.4989,data/db/snapshot_pre_ml_xml_fix_20260528_170623,data,2026-05-28T17:04:07.875894
+data/db/snapshot_pre_persistencia_20260528_162431/meli_financial_v4.db,meli_financial_v4.db,.db,37498880,37.4989,data/db/snapshot_pre_persistencia_20260528_162431,data,2026-05-28T16:24:16.161192
+.venv/Lib/site-packages/_duckdb.cp314-win_amd64.pyd,_duckdb.cp314-win_amd64.pyd,.pyd,37155328,37.1553,.venv/Lib/site-packages,.venv,2026-03-31T15:32:38.571010
+data/db/meli_financial_v4_backup.db,meli_financial_v4_backup.db,.db,36450304,36.4503,data/db,data,2026-06-08T15:26:13.486700
+data/db/snapshot_pre_bpp_residual_fix_20260606_145106/meli_financial_v4.db,meli_financial_v4.db,.db,36450304,36.4503,data/db/snapshot_pre_bpp_residual_fix_20260606_145106,data,2026-06-06T14:37:18.723122
+data/db/snapshot_pre_dec019_20260607_161324/meli_financial_v4.db,meli_financial_v4.db,.db,36450304,36.4503,data/db/snapshot_pre_dec019_20260607_161324,data,2026-06-07T16:13:12.163950
+data/db/snapshot_pre_iopnl_modernize_20260606_1215/meli_financial_v4.db,meli_financial_v4.db,.db,36450304,36.4503,data/db/snapshot_pre_iopnl_modernize_20260606_1215,data,2026-06-06T12:59:13.829645
+Reporte_Marketplaces/Backup/Reporte Gerencial 360 Marketplaces+.xlsx,Reporte Gerencial 360 Marketplaces+.xlsx,.xlsx,33884386,33.8844,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:16.958365
+_archive/database/conciliador.db,conciliador.db,.db,33308672,33.3087,_archive/database,_archive,2026-03-03T12:39:04.407963
+.venv/Scripts/ruff.exe,ruff.exe,.exe,32502272,32.5023,.venv/Scripts,.venv,2026-05-27T09:17:48.500879
+_archive/database/reconciliation.db,reconciliation.db,.db,32256000,32.256,_archive/database,_archive,2026-03-04T12:46:40.915849
+Reporte_Marketplaces/Ripley/Ripley_Finanzas/Historial_Ene25_Jun-16-26.csv,Historial_Ene25_Jun-16-26.csv,.csv,31131722,31.1317,Reporte_Marketplaces/Ripley/Ripley_Finanzas,Reporte_Marketplaces,2026-07-22T16:28:30.233062
+.git/objects/db/85321c431662afdefbf11d63a9a4736d7b76ed,85321c431662afdefbf11d63a9a4736d7b76ed,.no_ext,30194612,30.1946,.git/objects/db,.git,2026-07-13T17:10:20.936033
+.agents/gstack/browse/test/fixtures/security-bench-haiku-responses.json,security-bench-haiku-responses.json,.json,28839964,28.84,.agents/gstack/browse/test/fixtures,.agents,2026-07-22T15:48:18.707713
+.agents/skills/gstack-browse/test/fixtures/security-bench-haiku-responses.json,security-bench-haiku-responses.json,.json,28839964,28.84,.agents/skills/gstack-browse/test/fixtures,.agents,2026-07-22T15:48:19.078641
+_archive/scratch/prototypes/gstack-source/browse/test/fixtures/security-bench-haiku-responses.json,security-bench-haiku-responses.json,.json,28825632,28.8256,_archive/scratch/prototypes/gstack-source/browse/test/fixtures,_archive,2026-05-27T08:57:01.485757
+Reporte_Marketplaces/Backup/ReporteMarketplaces.xlsx,ReporteMarketplaces.xlsx,.xlsx,28779727,28.7797,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.759345
+Reporte_Marketplaces/Backup/Reporte Marketplaces.xlsx,Reporte Marketplaces.xlsx,.xlsx,28534894,28.5349,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.535803
+.git/objects/13/dd829a64738de3c5d329abfeffd0281ac341f7,dd829a64738de3c5d329abfeffd0281ac341f7,.no_ext,27252621,27.2526,.git/objects/13,.git,2026-07-13T17:03:25.202430
+.git/objects/32/fdcb9fcb4b1d118e2780d7f635adf7054c70c8,fdcb9fcb4b1d118e2780d7f635adf7054c70c8,.no_ext,26957213,26.9572,.git/objects/32,.git,2026-07-13T17:03:25.105855
+data/_ripley_ledger_export.csv,_ripley_ledger_export.csv,.csv,25754117,25.7541,data,data,2026-07-22T10:33:38.122640
+.venv/Lib/site-packages/pyarrow/arrow.dll,arrow.dll,.dll,22476288,22.4763,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.156981
+.venv/Lib/site-packages/numpy.libs/libscipy_openblas64_-63c857e738469261263c764a36be9436.dll,libscipy_openblas64_-63c857e738469261263c764a36be9436.dll,.dll,20415488,20.4155,.venv/Lib/site-packages/numpy.libs,.venv,2026-03-31T15:32:25.976439
+data/db/snapshot_pre_poscobro_fix_20260605_155052/backup_clasificacion_ml.csv,backup_clasificacion_ml.csv,.csv,20282966,20.283,data/db/snapshot_pre_poscobro_fix_20260605_155052,data,2026-07-13T17:03:20.284144
+Reporte_Marketplaces/Backup/Historial_Nov2025.csv,Historial_Nov2025.csv,.csv,19660878,19.6609,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:16.658327
+.venv/Lib/site-packages/fb62009ad6f7d3457273__mypyc.cp314-win_amd64.pyd,fb62009ad6f7d3457273__mypyc.cp314-win_amd64.pyd,.pyd,19410432,19.4104,.venv/Lib/site-packages,.venv,2026-05-27T09:17:50.425385
+.git/objects/15/40c8a2210c7d955ca0399579e18ee22ba14fe4,40c8a2210c7d955ca0399579e18ee22ba14fe4,.no_ext,18535686,18.5357,.git/objects/15,.git,2026-07-22T15:15:27.769765
+.git/objects/eb/5aeaa557f344011dbd186c0eb22bd8893be8f5,5aeaa557f344011dbd186c0eb22bd8893be8f5,.no_ext,18524216,18.5242,.git/objects/eb,.git,2026-07-22T15:15:26.957237
+.git/objects/f6/035be1f4c21805140eee7969285bed5f0d07fe,035be1f4c21805140eee7969285bed5f0d07fe,.no_ext,18524059,18.5241,.git/objects/f6,.git,2026-07-22T15:15:26.403105
+.git/objects/dd/a5dfa4de83d74b01295ac9d8b1d5eb210495b4,a5dfa4de83d74b01295ac9d8b1d5eb210495b4,.no_ext,18509576,18.5096,.git/objects/dd,.git,2026-07-22T15:15:26.672820
+.git/objects/50/8b7aa83ca5f9e3e41180e9099b5c0ec0ec14fa,8b7aa83ca5f9e3e41180e9099b5c0ec0ec14fa,.no_ext,16212622,16.2126,.git/objects/50,.git,2026-07-22T15:15:26.128963
+.git/objects/d9/f3e1b6fd7c7c70895830a0f6a61c3386d49f0a,f3e1b6fd7c7c70895830a0f6a61c3386d49f0a,.no_ext,16209124,16.2091,.git/objects/d9,.git,2026-07-22T15:15:25.876967
+.venv/Lib/site-packages/pyarrow/arrow_flight.dll,arrow_flight.dll,.dll,13401600,13.4016,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.262516
+.git/objects/81/7bfd6bf2c74e1e56e05fd759c5c9fe1e2bb8b7,7bfd6bf2c74e1e56e05fd759c5c9fe1e2bb8b7,.no_ext,13170974,13.171,.git/objects/81,.git,2026-07-22T15:15:24.304707
+01_Raw/RIPLEY/Historial de transacciones/Jul-Dic-2025.csv,Jul-Dic-2025.csv,.csv,12457521,12.4575,01_Raw/RIPLEY/Historial de transacciones,01_Raw,2026-07-22T16:28:29.545034
+.git/objects/bd/c07766b1ae45fc3de2025218d2105eacf32995,c07766b1ae45fc3de2025218d2105eacf32995,.no_ext,10629406,10.6294,.git/objects/bd,.git,2026-07-22T15:15:25.299167
+.git/objects/8a/fafcb304e3780d9a936f308a42437d9cdd1d62,fafcb304e3780d9a936f308a42437d9cdd1d62,.no_ext,10308918,10.3089,.git/objects/8a,.git,2026-07-22T15:15:25.004861
+01_Raw/RIPLEY/Historial de transacciones/Ene-Jun-2025.csv,Ene-Jun-2025.csv,.csv,10293779,10.2938,01_Raw/RIPLEY/Historial de transacciones,01_Raw,2026-07-22T16:28:29.507646
+.venv/Lib/site-packages/cryptography/hazmat/bindings/_rust.pyd,_rust.pyd,.pyd,9907712,9.9077,.venv/Lib/site-packages/cryptography/hazmat/bindings,.venv,2026-06-26T15:01:39.631354
+Reporte_Marketplaces/Backup/orders_ENE_Nov2025.csv,orders_ENE_Nov2025.csv,.csv,9716310,9.7163,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.860451
+.venv/Lib/site-packages/pyarrow/arrow_compute.dll,arrow_compute.dll,.dll,9217536,9.2175,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.197438
+_archive/scratch/prototypes/gstack-source/.git/objects/pack/pack-ea8d4c940f4d21b425b724500d4816f2b7424f82.pack,pack-ea8d4c940f4d21b425b724500d4816f2b7424f82.pack,.pack,8817223,8.8172,_archive/scratch/prototypes/gstack-source/.git/objects/pack,_archive,2026-05-27T08:57:01.170395
+01_Raw/SHOPIFY/Pedidos (SF)/orders -  2025-01-01 - 2026-06-24.csv,orders -  2025-01-01 - 2026-06-24.csv,.csv,6752795,6.7528,01_Raw/SHOPIFY/Pedidos (SF),01_Raw,2026-07-22T16:28:29.786783
+.venv/Lib/site-packages/pyarrow/parquet.dll,parquet.dll,.dll,6689792,6.6898,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.329185
+.venv/Lib/site-packages/pydantic_core/_pydantic_core.cp314-win_amd64.pyd,_pydantic_core.cp314-win_amd64.pyd,.pyd,5427712,5.4277,.venv/Lib/site-packages/pydantic_core,.venv,2026-03-31T15:32:40.370227
+Reporte_Marketplaces/Backup/ML_Facturacion_RAW.xlsx,ML_Facturacion_RAW.xlsx,.xlsx,4996050,4.9961,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:16.700936
+.git/objects/5b/29acf40cc0886b958748ec6134bbf1d50639b3,29acf40cc0886b958748ec6134bbf1d50639b3,.no_ext,4959984,4.96,.git/objects/5b,.git,2026-07-13T17:10:20.808274
+.git/objects/bc/8471280a069630ad0103a61c9135514fad9e28,8471280a069630ad0103a61c9135514fad9e28,.no_ext,4677852,4.6779,.git/objects/bc,.git,2026-07-13T17:11:12.287796
+.venv/Lib/site-packages/cramjam/cramjam.cp314-win_amd64.pyd,cramjam.cp314-win_amd64.pyd,.pyd,4216320,4.2163,.venv/Lib/site-packages/cramjam,.venv,2026-03-31T15:32:39.503890
+.venv/Lib/site-packages/pyarrow/arrow.lib,arrow.lib,.lib,4109818,4.1098,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.167795
+01_Raw/PARIS/Transacciones/Dropshipping/06-2026.xlsx,06-2026.xlsx,.xlsx,4089268,4.0893,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-22T16:28:28.779270
+Reporte_Marketplaces/París/Paris_Finanzas/1 ene 2025 - 16 jun 2026.xlsx,1 ene 2025 - 16 jun 2026.xlsx,.xlsx,4089268,4.0893,Reporte_Marketplaces/París/Paris_Finanzas,Reporte_Marketplaces,2026-07-22T16:28:30.060793
+.venv/Lib/site-packages/lxml/etree.cp314-win_amd64.pyd,etree.cp314-win_amd64.pyd,.pyd,4084224,4.0842,.venv/Lib/site-packages/lxml,.venv,2026-06-26T15:01:38.540188
+evidence/phase3_file_inventory_v2.csv,phase3_file_inventory_v2.csv,.csv,4072626,4.0726,evidence,evidence,2026-07-28T15:36:07.203321
+.git/objects/39/4b8dab73bbc9683017a8214c6f35983949075a,4b8dab73bbc9683017a8214c6f35983949075a,.no_ext,3794552,3.7946,.git/objects/39,.git,2026-07-22T15:15:23.624058
+.git/objects/6b/6a760df2ad77e98704859aa9cacaf5bad77b53,6a760df2ad77e98704859aa9cacaf5bad77b53,.no_ext,3738983,3.739,.git/objects/6b,.git,2026-06-08T15:13:58.032192
+.venv/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd,_multiarray_umath.cp314-win_amd64.pyd,.pyd,3724800,3.7248,.venv/Lib/site-packages/numpy/_core,.venv,2026-03-31T15:32:25.730167
+.git/objects/54/34ba9b8ecbfd1505d150e1fda10a3eaf07e9c3,34ba9b8ecbfd1505d150e1fda10a3eaf07e9c3,.no_ext,3574589,3.5746,.git/objects/54,.git,2026-06-06T12:06:25.481821
+.venv/Lib/site-packages/pyarrow/lib.cp314-win_amd64.pyd,lib.cp314-win_amd64.pyd,.pyd,3445248,3.4452,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.307019
+.venv/Lib/site-packages/playwright/driver/package/lib/coreBundle.js,coreBundle.js,.js,3206963,3.207,.venv/Lib/site-packages/playwright/driver/package/lib,.venv,2026-06-09T08:43:07.205020
+.venv/Lib/site-packages/playwright/driver/package/lib/utilsBundle.js,utilsBundle.js,.js,3093405,3.0934,.venv/Lib/site-packages/playwright/driver/package/lib,.venv,2026-06-09T08:43:07.214189
+Reporte_Marketplaces/Backup/transactions_report_20251202_30918256.xlsx,transactions_report_20251202_30918256.xlsx,.xlsx,2883795,2.8838,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.897604
+.git/objects/c1/b1e8877a8fbcbba1f7cc14cb21d8f62c3bce97,b1e8877a8fbcbba1f7cc14cb21d8f62c3bce97,.no_ext,2868684,2.8687,.git/objects/c1,.git,2026-07-22T15:15:23.768764
+.git/objects/91/8957207606e193ef2a1dd445620e818f6c4ed4,8957207606e193ef2a1dd445620e818f6c4ed4,.no_ext,2829822,2.8298,.git/objects/91,.git,2026-06-08T15:13:58.123295
+.venv/Lib/site-packages/playwright/driver/package/api.json,api.json,.json,2824926,2.8249,.venv/Lib/site-packages/playwright/driver/package,.venv,2026-06-09T08:43:07.181965
+00_Config/Mercado Libre/Conoce sobre tu Facturación de Mercado Libre y Mercado Pago.docx,Conoce sobre tu Facturación de Mercado Libre y Mercado Pago.docx,.docx,2726920,2.7269,00_Config/Mercado Libre,00_Config,2026-07-13T17:03:14.358587
+.git/objects/0f/c462d223d42561b148c8c2f35771220d607311,c462d223d42561b148c8c2f35771220d607311,.no_ext,2726769,2.7268,.git/objects/0f,.git,2026-06-06T12:06:25.898720
+.git/objects/3e/2e7a6291deb6cc117fb9f367fb52d47abbba62,2e7a6291deb6cc117fb9f367fb52d47abbba62,.no_ext,2701652,2.7017,.git/objects/3e,.git,2026-07-13T17:03:25.283268
+.venv/Lib/site-packages/pyarrow/arrow_substrait.dll,arrow_substrait.dll,.dll,2692608,2.6926,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.288384
+Reporte_Marketplaces/París/Paris_Finanzas_FF/1 ene 2025 - 16 Jun 2026.xlsx,1 ene 2025 - 16 Jun 2026.xlsx,.xlsx,2626080,2.6261,Reporte_Marketplaces/París/Paris_Finanzas_FF,Reporte_Marketplaces,2026-07-22T16:28:30.128279
+.venv/Lib/site-packages/ast_serialize/ast_serialize.pyd,ast_serialize.pyd,.pyd,2462208,2.4622,.venv/Lib/site-packages/ast_serialize,.venv,2026-05-27T09:17:50.325464
+.git/objects/c5/52208e2177c49b771b4ad133226f761c183742,52208e2177c49b771b4ad133226f761c183742,.no_ext,2444604,2.4446,.git/objects/c5,.git,2026-07-22T15:15:23.641465
+.git/objects/a5/7c25ef168b407b84c0d5569cb74f3b1df4c6db,7c25ef168b407b84c0d5569cb74f3b1df4c6db,.no_ext,2406382,2.4064,.git/objects/a5,.git,2026-05-30T10:09:46.045799
+.git/objects/fb/4d9c4173d6c59e6cfd6cea2f758467980a6f10,4d9c4173d6c59e6cfd6cea2f758467980a6f10,.no_ext,2242612,2.2426,.git/objects/fb,.git,2026-07-13T17:10:55.052303
+00_Config/Paris/Capacitacion-Finanzas2026.pdf,Capacitacion-Finanzas2026.pdf,.pdf,2140351,2.1404,00_Config/Paris,00_Config,2026-07-13T17:03:14.376546
+01_Raw/RIPLEY/Historial de transacciones/Jun-2026.csv,Jun-2026.csv,.csv,2117744,2.1177,01_Raw/RIPLEY/Historial de transacciones,01_Raw,2026-07-22T16:28:29.552449
+01_Raw/ML/Liberaciones/2025-12 Diciembre/Diciembre 2025.xlsx,Diciembre 2025.xlsx,.xlsx,2117096,2.1171,01_Raw/ML/Liberaciones/2025-12 Diciembre,01_Raw,2026-07-13T17:03:14.935672
+.git/objects/a1/6652fa4f59309c49c8cb00d095dbc551c91f39,6652fa4f59309c49c8cb00d095dbc551c91f39,.no_ext,1985449,1.9854,.git/objects/a1,.git,2026-07-13T17:03:25.268084
+.git/objects/05/29d8c366c39eec5a310e92687bef07c1e64596,29d8c366c39eec5a310e92687bef07c1e64596,.no_ext,1953902,1.9539,.git/objects/05,.git,2026-06-08T15:13:58.041308
+.git/objects/aa/56d93f4bc7b1226511d992da8878018ac8fc89,56d93f4bc7b1226511d992da8878018ac8fc89,.no_ext,1932195,1.9322,.git/objects/aa,.git,2026-06-06T12:06:25.489890
+.venv/Lib/site-packages/fastparquet/cencoding.c,cencoding.c,.c,1908579,1.9086,.venv/Lib/site-packages/fastparquet,.venv,2026-03-31T15:33:20.421852
+.git/objects/85/bf73b7f6bb3c35b5ab61809d225b7a6edd2a74,bf73b7f6bb3c35b5ab61809d225b7a6edd2a74,.no_ext,1889554,1.8896,.git/objects/85,.git,2026-07-13T17:10:48.377251
+01_Raw/PARIS/Transacciones/Fulfillment/1 ene 2025 - 31 dic 2025.xlsx,1 ene 2025 - 31 dic 2025.xlsx,.xlsx,1836198,1.8362,01_Raw/PARIS/Transacciones/Fulfillment,01_Raw,2026-07-13T17:03:15.318177
+.git/objects/fd/94a7de01e5642ca2e535a00ef5ce40eec37125,94a7de01e5642ca2e535a00ef5ce40eec37125,.no_ext,1822327,1.8223,.git/objects/fd,.git,2026-07-22T15:15:25.090348
+.git/objects/d9/6b62457024accb9f50271dc674a61734695a5b,6b62457024accb9f50271dc674a61734695a5b,.no_ext,1801289,1.8013,.git/objects/d9,.git,2026-05-30T10:09:45.971362
+.git/objects/79/86805e5f18af38d4507b2648b3d7d28041d7e2,86805e5f18af38d4507b2648b3d7d28041d7e2,.no_ext,1787256,1.7873,.git/objects/79,.git,2026-05-30T10:09:46.445835
+.git/objects/30/3061859730d1977f8995ae23634d836ac51bc9,3061859730d1977f8995ae23634d836ac51bc9,.no_ext,1785277,1.7853,.git/objects/30,.git,2026-07-13T17:10:20.777796
+.venv/Lib/site-packages/pandas/_libs/groupby.cp314-win_amd64.pyd,groupby.cp314-win_amd64.pyd,.pyd,1770496,1.7705,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.696184
+.venv/Lib/site-packages/lxml/objectify.cp314-win_amd64.pyd,objectify.cp314-win_amd64.pyd,.pyd,1753088,1.7531,.venv/Lib/site-packages/lxml,.venv,2026-06-26T15:01:38.552472
+.git/objects/59/38b72bfc5d343402cf0b86f0fcac2cee3bf8f9,38b72bfc5d343402cf0b86f0fcac2cee3bf8f9,.no_ext,1744788,1.7448,.git/objects/59,.git,2026-06-06T12:06:26.204308
+01_Raw/RIPLEY/Historial de transacciones/Mar-2026.csv,Mar-2026.csv,.csv,1716982,1.717,01_Raw/RIPLEY/Historial de transacciones,01_Raw,2026-07-22T16:28:29.557694
+.git/objects/6a/022f321cb05dc054247eea5652a2a2e6771c60,022f321cb05dc054247eea5652a2a2e6771c60,.no_ext,1703991,1.704,.git/objects/6a,.git,2026-07-13T17:10:20.695684
+.git/objects/55/c483f08444298bf5d5a2290177c09811466b6b,c483f08444298bf5d5a2290177c09811466b6b,.no_ext,1684081,1.6841,.git/objects/55,.git,2026-07-22T15:15:23.424553
+01_Raw/ML/Liberaciones/2025-11 Noviembre/Noviembre 2025.xlsx,Noviembre 2025.xlsx,.xlsx,1660192,1.6602,01_Raw/ML/Liberaciones/2025-11 Noviembre,01_Raw,2026-07-13T17:03:14.913399
+01_Raw/ML/Liberaciones/2025-07 Julio/Julio 2025.xlsx,Julio 2025.xlsx,.xlsx,1644304,1.6443,01_Raw/ML/Liberaciones/2025-07 Julio,01_Raw,2026-07-13T17:03:14.857047
+.venv/Lib/site-packages/python_calamine/_python_calamine.cp314-win_amd64.pyd,_python_calamine.cp314-win_amd64.pyd,.pyd,1615360,1.6154,.venv/Lib/site-packages/python_calamine,.venv,2026-03-31T15:55:21.228078
+.git/objects/84/43e1e99df1a42ec02ad4c4db6703d9cd8d1b84,43e1e99df1a42ec02ad4c4db6703d9cd8d1b84,.no_ext,1613505,1.6135,.git/objects/84,.git,2026-05-30T10:09:46.087551
+.venv/Lib/site-packages/pandas/_libs/hashtable.cp314-win_amd64.pyd,hashtable.cp314-win_amd64.pyd,.pyd,1604608,1.6046,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.704209
+.git/objects/84/c74c3fcfde66cdb8f34ba451bc09eccdc5c397,c74c3fcfde66cdb8f34ba451bc09eccdc5c397,.no_ext,1599083,1.5991,.git/objects/84,.git,2026-05-30T10:09:48.046365
+.swarm/hnsw.index,hnsw.index,.index,1589248,1.5892,.swarm,.swarm,2026-07-22T16:28:28.533396
+Reporte_Marketplaces/Backup/transactions_report_20251206_52376863.xlsx,transactions_report_20251206_52376863.xlsx,.xlsx,1557752,1.5578,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.912325
+01_Raw/RIPLEY/Historial de transacciones/Abr-2026.csv,Abr-2026.csv,.csv,1537805,1.5378,01_Raw/RIPLEY/Historial de transacciones,01_Raw,2026-07-22T16:28:29.475572
+.git/objects/33/2c171ea31ae1702736671d8669192f1e8f7597,2c171ea31ae1702736671d8669192f1e8f7597,.no_ext,1508272,1.5083,.git/objects/33,.git,2026-07-13T17:10:55.061144
+01_Raw/SHOPIFY/Ventas totales (SF)/Ventas totales - 2025-01-01 - 2026-06-24.csv,Ventas totales - 2025-01-01 - 2026-06-24.csv,.csv,1505140,1.5051,01_Raw/SHOPIFY/Ventas totales (SF),01_Raw,2026-07-22T16:28:29.803465
+Reporte_Marketplaces/Shopify/Ventas totales - 2025-01-01 - 2026-06-16.csv,Ventas totales - 2025-01-01 - 2026-06-16.csv,.csv,1496721,1.4967,Reporte_Marketplaces/Shopify,Reporte_Marketplaces,2026-07-22T16:28:30.246650
+.git/objects/9b/17e8a546bdadd6012b02fd876b937ec8341723,17e8a546bdadd6012b02fd876b937ec8341723,.no_ext,1482942,1.4829,.git/objects/9b,.git,2026-07-13T17:10:48.368934
+.venv/Lib/site-packages/pandas/_libs/algos.cp314-win_amd64.pyd,algos.cp314-win_amd64.pyd,.pyd,1466368,1.4664,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.687770
+_archive/scratch/audit_results.json,audit_results.json,.json,1465230,1.4652,_archive/scratch,_archive,2026-05-25T13:04:02.671844
+.git/objects/2f/5c74f79d2ba7920c8c69bd5ad09c6a240e97c5,5c74f79d2ba7920c8c69bd5ad09c6a240e97c5,.no_ext,1449089,1.4491,.git/objects/2f,.git,2026-07-13T17:03:25.286505
+01_Raw/RIPLEY/Historial de transacciones/Ene-2026.csv,Ene-2026.csv,.csv,1436977,1.437,01_Raw/RIPLEY/Historial de transacciones,01_Raw,2026-07-22T16:28:29.480884
+.git/objects/ee/a726de7b15b9061fab931cac13e75b631f0516,a726de7b15b9061fab931cac13e75b631f0516,.no_ext,1380567,1.3806,.git/objects/ee,.git,2026-05-30T10:09:45.920507
+.git/objects/80/fda36e333bd58103f8a5258acbba0f67acf964,fda36e333bd58103f8a5258acbba0f67acf964,.no_ext,1374369,1.3744,.git/objects/80,.git,2026-07-13T17:10:48.344120
+.git/objects/9c/010fa4d2f2922eb0a898c9acfaa4dad9de816f,010fa4d2f2922eb0a898c9acfaa4dad9de816f,.no_ext,1372075,1.3721,.git/objects/9c,.git,2026-05-30T10:09:45.885835
+01_Raw/ML/Liberaciones/2026-06 Junio/1jun2026 a 30jun2026.xlsx,1jun2026 a 30jun2026.xlsx,.xlsx,1361274,1.3613,01_Raw/ML/Liberaciones/2026-06 Junio,01_Raw,2026-07-22T16:28:28.729472
+01_Raw/ML/Liberaciones/2025-10 Octubre/Octubre 2025.xlsx,Octubre 2025.xlsx,.xlsx,1326588,1.3266,01_Raw/ML/Liberaciones/2025-10 Octubre,01_Raw,2026-07-13T17:03:14.896966
+.venv/Lib/site-packages/pyarrow/arrow_dataset.dll,arrow_dataset.dll,.dll,1306624,1.3066,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.219212
+01_Raw/ML/Liberaciones/2025-05 Mayo/Mayo 2025.xlsx,Mayo 2025.xlsx,.xlsx,1295445,1.2954,01_Raw/ML/Liberaciones/2025-05 Mayo,01_Raw,2026-07-13T17:03:14.826686
+01_Raw/ML/Liberaciones/2025-06 Junio/Junio 2025.xlsx,Junio 2025.xlsx,.xlsx,1289110,1.2891,01_Raw/ML/Liberaciones/2025-06 Junio,01_Raw,2026-07-13T17:03:14.839718
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Dic2025.xlsx,Reporte_Facturacion_MercadoLibre_Dic2025.xlsx,.xlsx,1248613,1.2486,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.615539
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Dic2025.xlsx,Reporte_Facturacion_MercadoLibre_Dic2025.xlsx,.xlsx,1248613,1.2486,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:17.944399
+.venv/Lib/site-packages/fastparquet/speedups.c,speedups.c,.c,1240337,1.2403,.venv/Lib/site-packages/fastparquet,.venv,2026-03-31T15:33:20.429152
+.git/objects/57/f6b63ad04b22ec2809fb77d473594614d6b2f2,f6b63ad04b22ec2809fb77d473594614d6b2f2,.no_ext,1219660,1.2197,.git/objects/57,.git,2026-07-23T09:18:49.856565
+.venv/Lib/site-packages/pyarrow/arrow_acero.dll,arrow_acero.dll,.dll,1208832,1.2088,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.173143
+01_Raw/RIPLEY/Historial de transacciones/May-2026.csv,May-2026.csv,.csv,1206346,1.2063,01_Raw/RIPLEY/Historial de transacciones,01_Raw,2026-07-22T16:28:29.561616
+01_Raw/ML/Liberaciones/2025-04 Abril/Abril 2025.xlsx,Abril 2025.xlsx,.xlsx,1191122,1.1911,01_Raw/ML/Liberaciones/2025-04 Abril,01_Raw,2026-07-13T17:03:14.813404
+.git/objects/40/5649605272a6f139ff610ce9677129e8bedd04,5649605272a6f139ff610ce9677129e8bedd04,.no_ext,1189575,1.1896,.git/objects/40,.git,2026-05-30T10:09:46.354757
+.git/objects/be/7bca83e7397f343ea09f52ec1ad3468cb5e1e6,7bca83e7397f343ea09f52ec1ad3468cb5e1e6,.no_ext,1181372,1.1814,.git/objects/be,.git,2026-07-13T17:10:48.360775
+.git/objects/e1/09092cc6a11a23075139223fa286dc5b2cc494,09092cc6a11a23075139223fa286dc5b2cc494,.no_ext,1175862,1.1759,.git/objects/e1,.git,2026-07-23T09:18:49.796045
+.venv/Lib/site-packages/pyarrow/arrow_python.dll,arrow_python.dll,.dll,1173504,1.1735,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.272273
+.git/objects/fe/554117138eabfdc48e8183d73b526c93d4d999,554117138eabfdc48e8183d73b526c93d4d999,.no_ext,1154845,1.1548,.git/objects/fe,.git,2026-07-13T17:10:48.332639
+01_Raw/ML/Liberaciones/2025-08 Agosto/Agosto 2025.xlsx,Agosto 2025.xlsx,.xlsx,1148896,1.1489,01_Raw/ML/Liberaciones/2025-08 Agosto,01_Raw,2026-07-13T17:03:14.869718
+.git/objects/e3/10a224b9b7597ad110aff4448d619199bc3437,10a224b9b7597ad110aff4448d619199bc3437,.no_ext,1143522,1.1435,.git/objects/e3,.git,2026-07-22T15:15:23.179888
+.git/objects/e3/db4d636cc0dd3c68b973431adc46407a74e362,db4d636cc0dd3c68b973431adc46407a74e362,.no_ext,1132788,1.1328,.git/objects/e3,.git,2026-05-30T10:09:46.254062
+.git/objects/45/f425dc997dc2884a97eb6eae77d1d3585f299b,f425dc997dc2884a97eb6eae77d1d3585f299b,.no_ext,1132219,1.1322,.git/objects/45,.git,2026-07-13T17:10:48.335983
+docs/archive/POSCOBRO_CLASSIFICATION_AUDIT.md,POSCOBRO_CLASSIFICATION_AUDIT.md,.md,1122003,1.122,docs/archive,docs,2026-07-22T16:28:37.082363
+01_Raw/ML/Liberaciones/2026-05 Mayo/1may2026 a 31may2026.xlsx,1may2026 a 31may2026.xlsx,.xlsx,1111111,1.1111,01_Raw/ML/Liberaciones/2026-05 Mayo,01_Raw,2026-07-13T17:03:14.984471
+data/poscobro_correction_map.json,poscobro_correction_map.json,.json,1107596,1.1076,data,data,2026-07-17T18:24:34.960261
+data/db/snapshot_pre_poscobro_fix_20260605_155052/poscobro_correction_map.json,poscobro_correction_map.json,.json,1107596,1.1076,data/db/snapshot_pre_poscobro_fix_20260605_155052,data,2026-07-17T18:24:34.952993
+01_Raw/RIPLEY/Historial de transacciones/Feb-2026.csv,Feb-2026.csv,.csv,1107326,1.1073,01_Raw/RIPLEY/Historial de transacciones,01_Raw,2026-07-22T16:28:29.512080
+.git/objects/2b/d086e1c9257bd13e169dc5256849afe04748e7,d086e1c9257bd13e169dc5256849afe04748e7,.no_ext,1078320,1.0783,.git/objects/2b,.git,2026-05-30T10:09:46.388076
+.venv/Lib/site-packages/playwright/async_api/__pycache__/_generated.cpython-314.pyc,_generated.cpython-314.pyc,.pyc,1077338,1.0773,.venv/Lib/site-packages/playwright/async_api/__pycache__,.venv,2026-06-09T08:43:07.806864
+.agents/gstack/scripts/app/icon.icns,icon.icns,.icns,1077155,1.0772,.agents/gstack/scripts/app,.agents,2026-07-22T15:48:18.839787
+_archive/scratch/prototypes/gstack-source/scripts/app/icon.icns,icon.icns,.icns,1077155,1.0772,_archive/scratch/prototypes/gstack-source/scripts/app,_archive,2026-05-27T08:57:01.806307
+.venv/Lib/site-packages/playwright/sync_api/__pycache__/_generated.cpython-314.pyc,_generated.cpython-314.pyc,.pyc,1072745,1.0727,.venv/Lib/site-packages/playwright/sync_api/__pycache__,.venv,2026-06-09T08:43:08.031558
+.git/objects/e1/1555dbf0ec40982d08ac6b39e2ce09c8d9bc30,1555dbf0ec40982d08ac6b39e2ce09c8d9bc30,.no_ext,1069079,1.0691,.git/objects/e1,.git,2026-07-13T17:11:12.608604
+.git/objects/3a/39f6a7abafe2579276f2733885e55bdf281ebf,39f6a7abafe2579276f2733885e55bdf281ebf,.no_ext,1046920,1.0469,.git/objects/3a,.git,2026-07-13T17:10:48.326252
+Reporte_Marketplaces/Backup/Ventasbrutasporpedido-2025-01-01-2025-11-30.csv,Ventasbrutasporpedido-2025-01-01-2025-11-30.csv,.csv,1034031,1.034,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.778307
+.git/objects/bc/fae5ae9c972bb0bdb8091df848ccb268a884b1,fae5ae9c972bb0bdb8091df848ccb268a884b1,.no_ext,1033053,1.0331,.git/objects/bc,.git,2026-05-30T10:09:45.838206
+01_Raw/ML/Liberaciones/2026-04 Abril/Abril 2026.xlsx,Abril 2026.xlsx,.xlsx,1027030,1.027,01_Raw/ML/Liberaciones/2026-04 Abril,01_Raw,2026-07-13T17:03:14.975111
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Jun2025.xlsx,Reporte_Facturacion_MercadoLibre_Jun2025.xlsx,.xlsx,1018884,1.0189,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.661587
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Jun2025.xlsx,Reporte_Facturacion_MercadoLibre_Jun2025.xlsx,.xlsx,1018884,1.0189,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:17.986242
+.venv/Lib/site-packages/playwright/driver/package/types/types.d.ts,types.d.ts,.ts,1013672,1.0137,.venv/Lib/site-packages/playwright/driver/package/types,.venv,2026-06-09T08:43:07.281220
+01_Raw/ML/Liberaciones/2025-01 Enero/Enero 2025.xlsx,Enero 2025.xlsx,.xlsx,1009670,1.0097,01_Raw/ML/Liberaciones/2025-01 Enero,01_Raw,2026-07-13T17:03:14.785409
+.git/objects/9d/d0206cf2cb4869791685f30b8e11d6876e0641,d0206cf2cb4869791685f30b8e11d6876e0641,.no_ext,997357,0.9974,.git/objects/9d,.git,2026-07-13T17:10:48.402789
+01_Raw/ML/Liberaciones/2026-01 Enero/Enero 2026.xlsx,Enero 2026.xlsx,.xlsx,995369,0.9954,01_Raw/ML/Liberaciones/2026-01 Enero,01_Raw,2026-07-13T17:03:14.946824
+.git/objects/bf/cf9086a99a6cad38a72dbac5fe8f011ebf5e00,cf9086a99a6cad38a72dbac5fe8f011ebf5e00,.no_ext,990477,0.9905,.git/objects/bf,.git,2026-07-13T17:10:48.351253
+.git/objects/ef/cd6131be8117d41afef8deff7a3ac9beb3671b,cd6131be8117d41afef8deff7a3ac9beb3671b,.no_ext,990318,0.9903,.git/objects/ef,.git,2026-05-30T10:09:46.120641
+data/db/snapshot_pre_poscobro_fix_20260605_155052/backup_ledger_pre_fix.csv,backup_ledger_pre_fix.csv,.csv,980351,0.9804,data/db/snapshot_pre_poscobro_fix_20260605_155052,data,2026-07-17T18:24:34.950987
+.git/objects/90/556d434051d1aa5cf725bdf2d8a8e93bf7783f,556d434051d1aa5cf725bdf2d8a8e93bf7783f,.no_ext,950784,0.9508,.git/objects/90,.git,2026-07-23T09:18:49.812657
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Abr2025.xlsx,Reporte_Facturacion_MercadoLibre_Abr2025.xlsx,.xlsx,943248,0.9432,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.585607
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Abr2025.xlsx,Reporte_Facturacion_MercadoLibre_Abr2025.xlsx,.xlsx,943248,0.9432,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:17.922069
+01_Raw/ML/Poscobro/1 julio 2025 - 1 enero 2026.xlsx,1 julio 2025 - 1 enero 2026.xlsx,.xlsx,931638,0.9316,01_Raw/ML/Poscobro,01_Raw,2026-07-13T17:03:15.151450
+.git/objects/0a/90fe8c69f1540531b98a93bc0d21d1ca62ce81,90fe8c69f1540531b98a93bc0d21d1ca62ce81,.no_ext,931309,0.9313,.git/objects/0a,.git,2026-07-22T15:15:23.115195
+.venv/Lib/site-packages/playwright/sync_api/_generated.py,_generated.py,.py,929413,0.9294,.venv/Lib/site-packages/playwright/sync_api,.venv,2026-06-09T08:43:07.285220
+.venv/Lib/site-packages/playwright/async_api/_generated.py,_generated.py,.py,928842,0.9288,.venv/Lib/site-packages/playwright/async_api,.venv,2026-06-09T08:43:06.888933
+.git/objects/bf/33232a228c23b4006c511499b0f8e56be4d0cc,33232a228c23b4006c511499b0f8e56be4d0cc,.no_ext,921050,0.9211,.git/objects/bf,.git,2026-05-30T10:09:46.178346
+.git/objects/a8/a67d9d570ea221c8d4a0499400fbae4bae1b40,a67d9d570ea221c8d4a0499400fbae4bae1b40,.no_ext,908302,0.9083,.git/objects/a8,.git,2026-07-13T17:10:48.396350
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Ene2026.xlsx,Reporte_Facturacion_MercadoLibre_Ene2026.xlsx,.xlsx,903108,0.9031,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.633308
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Ene2026.xlsx,Reporte_Facturacion_MercadoLibre_Ene2026.xlsx,.xlsx,903108,0.9031,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:17.964716
+.git/objects/2b/9474e40685c24330cfb799eed42737e9c43d5c,9474e40685c24330cfb799eed42737e9c43d5c,.no_ext,887742,0.8877,.git/objects/2b,.git,2026-07-23T09:18:49.789989
+.git/objects/3a/0b07fa9e560351a1315ca1bea119fca82c7437,0b07fa9e560351a1315ca1bea119fca82c7437,.no_ext,883780,0.8838,.git/objects/3a,.git,2026-05-30T10:09:46.279799
+.git/objects/1d/620e4965ab23686e15eb830143d87794f9e65f,620e4965ab23686e15eb830143d87794f9e65f,.no_ext,882675,0.8827,.git/objects/1d,.git,2026-07-13T17:10:48.383622
+.git/objects/70/85804bd7473d31692d5836cdc577db85080436,85804bd7473d31692d5836cdc577db85080436,.no_ext,880068,0.8801,.git/objects/70,.git,2026-07-13T17:10:48.307527
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Jun2026.xlsx,Reporte_Facturacion_MercadoLibre_Jun2026.xlsx,.xlsx,876852,0.8769,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-22T16:28:30.026629
+.git/objects/86/28b02ea30526f3c10586fb300c79491568ea38,28b02ea30526f3c10586fb300c79491568ea38,.no_ext,873721,0.8737,.git/objects/86,.git,2026-05-30T10:09:46.223429
+01_Raw/ML/Liberaciones/2025-09 Septiembre/Septiembre 2025.xlsx,Septiembre 2025.xlsx,.xlsx,871020,0.871,01_Raw/ML/Liberaciones/2025-09 Septiembre,01_Raw,2026-07-13T17:03:14.879458
+.git/objects/10/b9593cb693111298f861a66e1d541049863fdf,b9593cb693111298f861a66e1d541049863fdf,.no_ext,864321,0.8643,.git/objects/10,.git,2026-05-30T10:09:47.902374
+.git/objects/13/2eedefe2e46bab677dea10f56b6b9bc3eb4e3d,2eedefe2e46bab677dea10f56b6b9bc3eb4e3d,.no_ext,853017,0.853,.git/objects/13,.git,2026-05-30T10:09:46.196497
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_May2025.xlsx,Reporte_Facturacion_MercadoLibre_May2025.xlsx,.xlsx,848299,0.8483,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.689666
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_May2025.xlsx,Reporte_Facturacion_MercadoLibre_May2025.xlsx,.xlsx,848299,0.8483,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:18.016723
+.git/objects/4d/03b0a48e0964fdbf615e8f67d028e8683156de,03b0a48e0964fdbf615e8f67d028e8683156de,.no_ext,846727,0.8467,.git/objects/4d,.git,2026-07-23T09:18:49.812657
+.git/objects/f8/fb043d5ab754484d1f48946b0eda58bbcad097,fb043d5ab754484d1f48946b0eda58bbcad097,.no_ext,837572,0.8376,.git/objects/f8,.git,2026-05-30T10:09:46.146523
+.git/objects/46/cfa6293f0675ca09673e5600d8f8d1c70fa044,cfa6293f0675ca09673e5600d8f8d1c70fa044,.no_ext,836886,0.8369,.git/objects/46,.git,2026-05-30T10:09:47.285945
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Jun2026.xlsx,Reporte_Facturacion_MercadoLibre_Jun2026.xlsx,.xlsx,833321,0.8333,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.667583
+.venv/Lib/site-packages/numpy/_core/_simd.cp314-win_amd64.pyd,_simd.cp314-win_amd64.pyd,.pyd,831488,0.8315,.venv/Lib/site-packages/numpy/_core,.venv,2026-03-31T15:32:25.738695
+.venv/Lib/site-packages/pyarrow/parquet.lib,parquet.lib,.lib,822890,0.8229,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.337715
+.venv/Lib/site-packages/pyarrow/_flight.cp314-win_amd64.pyd,_flight.cp314-win_amd64.pyd,.pyd,821760,0.8218,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.379117
+.git/objects/40/877c6f5fa9e483df92735723bb25e14eeaaef8,877c6f5fa9e483df92735723bb25e14eeaaef8,.no_ext,820607,0.8206,.git/objects/40,.git,2026-07-23T09:18:51.042125
+.venv/Lib/site-packages/playwright/driver/package/types/protocol.d.ts,protocol.d.ts,.ts,812393,0.8124,.venv/Lib/site-packages/playwright/driver/package/types,.venv,2026-06-09T08:43:07.277572
+.git/objects/26/b8182c2fbb6958b46f3e1c7ec34a61787b7ddf,b8182c2fbb6958b46f3e1c7ec34a61787b7ddf,.no_ext,810533,0.8105,.git/objects/26,.git,2026-07-23T09:18:49.827906
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Ene2025.xlsx,Reporte_Facturacion_MercadoLibre_Ene2025.xlsx,.xlsx,802844,0.8028,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.625223
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Ene2025.xlsx,Reporte_Facturacion_MercadoLibre_Ene2025.xlsx,.xlsx,802844,0.8028,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:17.950844
+.git/objects/60/0ee638e30c4d3df36aa431eaadf9ec615bb8b8,0ee638e30c4d3df36aa431eaadf9ec615bb8b8,.no_ext,800150,0.8002,.git/objects/60,.git,2026-07-23T09:18:49.827906
+.venv/Lib/site-packages/pandas/_libs/interval.cp314-win_amd64.pyd,interval.cp314-win_amd64.pyd,.pyd,790016,0.79,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.712909
+.venv/Lib/site-packages/pandas/_libs/join.cp314-win_amd64.pyd,join.cp314-win_amd64.pyd,.pyd,783360,0.7834,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.714151
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Jul2025.xlsx,Reporte_Facturacion_MercadoLibre_Jul2025.xlsx,.xlsx,782726,0.7827,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.651737
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Jul2025.xlsx,Reporte_Facturacion_MercadoLibre_Jul2025.xlsx,.xlsx,782726,0.7827,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:17.975081
+01_Raw/ML/Liberaciones/2025-03 Marzo/Marzo 2025.xlsx,Marzo 2025.xlsx,.xlsx,780187,0.7802,01_Raw/ML/Liberaciones/2025-03 Marzo,01_Raw,2026-07-13T17:03:14.801378
+_archive/scratch/prototypes/gstack-source/CHANGELOG.md,CHANGELOG.md,.md,778109,0.7781,_archive/scratch/prototypes/gstack-source,_archive,2026-05-27T08:57:01.271716
+.venv/Lib/site-packages/pandas/_libs/tslibs/offsets.cp314-win_amd64.pyd,offsets.cp314-win_amd64.pyd,.pyd,775168,0.7752,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.753508
+.git/objects/a2/7e4d62955be70c88ab0d6d5dd379c2e7fd41d5,7e4d62955be70c88ab0d6d5dd379c2e7fd41d5,.no_ext,774021,0.774,.git/objects/a2,.git,2026-07-13T17:10:48.352547
+.git/objects/7c/97d11f7761473910ad65140c0f21e6a09391a0,97d11f7761473910ad65140c0f21e6a09391a0,.no_ext,771324,0.7713,.git/objects/7c,.git,2026-05-30T10:09:47.238064
+.venv/Lib/site-packages/pyarrow/_compute.cp314-win_amd64.pyd,_compute.cp314-win_amd64.pyd,.pyd,763904,0.7639,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.364440
+.git/objects/5a/619b0ec9370ca8021aeb96006d63980112bb37,619b0ec9370ca8021aeb96006d63980112bb37,.no_ext,759835,0.7598,.git/objects/5a,.git,2026-07-23T09:18:49.796045
+.git/objects/8e/605627fa2697fa58c754034600668d22bf82dc,605627fa2697fa58c754034600668d22bf82dc,.no_ext,754755,0.7548,.git/objects/8e,.git,2026-06-08T15:13:58.015337
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Oct2025.xlsx,Reporte_Facturacion_MercadoLibre_Oct2025.xlsx,.xlsx,750583,0.7506,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.709810
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Oct2025.xlsx,Reporte_Facturacion_MercadoLibre_Oct2025.xlsx,.xlsx,750583,0.7506,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:18.033340
+.git/objects/8d/e3e471ddf92540e03ccbe33027c968c43c4d7e,e3e471ddf92540e03ccbe33027c968c43c4d7e,.no_ext,748525,0.7485,.git/objects/8d,.git,2026-07-13T17:10:48.476224
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Nov2025.xlsx,Reporte_Facturacion_MercadoLibre_Nov2025.xlsx,.xlsx,746636,0.7466,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.701949
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Nov2025.xlsx,Reporte_Facturacion_MercadoLibre_Nov2025.xlsx,.xlsx,746636,0.7466,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:18.025024
+.git/objects/e1/0fce67e090a1961b8b83a63084fea526dfbee2,0fce67e090a1961b8b83a63084fea526dfbee2,.no_ext,730988,0.731,.git/objects/e1,.git,2026-07-23T09:18:49.812657
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Ago2025.xlsx,Reporte_Facturacion_MercadoLibre_Ago2025.xlsx,.xlsx,724257,0.7243,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.603515
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Ago2025.xlsx,Reporte_Facturacion_MercadoLibre_Ago2025.xlsx,.xlsx,724257,0.7243,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:17.933040
+.git/objects/71/582cecf0fbb6cf8f0b163b479a3b1137f6df15,582cecf0fbb6cf8f0b163b479a3b1137f6df15,.no_ext,723678,0.7237,.git/objects/71,.git,2026-05-30T10:09:46.313119
+01_Raw/ML/Liberaciones/2026-03 Marzo/Marzo 2026.xlsx,Marzo 2026.xlsx,.xlsx,711858,0.7119,01_Raw/ML/Liberaciones/2026-03 Marzo,01_Raw,2026-07-13T17:03:14.964918
+.git/objects/f0/4676477dbeff119e333e4ff87a2c77db0ca77f,4676477dbeff119e333e4ff87a2c77db0ca77f,.no_ext,705961,0.706,.git/objects/f0,.git,2026-07-23T09:18:49.843705
+.git/objects/75/2562dc9488176e8e3dc9c230eb4cb85c097512,2562dc9488176e8e3dc9c230eb4cb85c097512,.no_ext,699153,0.6992,.git/objects/75,.git,2026-07-23T09:18:49.843705
+.git/objects/b8/f66c18d22e0469435f41d9cb3a384635b0a243,f66c18d22e0469435f41d9cb3a384635b0a243,.no_ext,695376,0.6954,.git/objects/b8,.git,2026-07-22T15:40:18.979011
+.git/objects/9e/6041a4cf237b001c3e992617922c704636160b,6041a4cf237b001c3e992617922c704636160b,.no_ext,693900,0.6939,.git/objects/9e,.git,2026-07-13T17:10:48.312104
+.venv/Lib/site-packages/pyarrow/_dataset.cp314-win_amd64.pyd,_dataset.cp314-win_amd64.pyd,.pyd,691712,0.6917,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.370836
+.git/objects/a7/71b4742def2b6539864b7f2773d029a845ba35,71b4742def2b6539864b7f2773d029a845ba35,.no_ext,679876,0.6799,.git/objects/a7,.git,2026-07-23T09:18:49.796045
+.git/objects/91/5b4e6cf96fb1dcf64fba4b827c01b33b77f82f,5b4e6cf96fb1dcf64fba4b827c01b33b77f82f,.no_ext,668655,0.6687,.git/objects/91,.git,2026-05-30T10:09:47.579707
+01_Raw/ML/Poscobro/1 enero 2025 - 1 julio 2025.xlsx,1 enero 2025 - 1 julio 2025.xlsx,.xlsx,659732,0.6597,01_Raw/ML/Poscobro,01_Raw,2026-07-13T17:03:15.133379
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer/assets/defaultSettingsView-D31xz8zv.js,defaultSettingsView-D31xz8zv.js,.js,649133,0.6491,.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer/assets,.venv,2026-06-09T08:43:07.272150
+.git/objects/ea/29707146930875cc4b9ab8ffd62a8ea3557a42,29707146930875cc4b9ab8ffd62a8ea3557a42,.no_ext,641867,0.6419,.git/objects/ea,.git,2026-05-30T10:09:46.331242
+.git/objects/3a/6bad078c6570f85cd71d15fbfba5c1f1f86c1b,6bad078c6570f85cd71d15fbfba5c1f1f86c1b,.no_ext,639576,0.6396,.git/objects/3a,.git,2026-07-03T14:54:02.382849
+.git/objects/31/7db9bc43b276acb3003b23fcf00e2d28e79205,7db9bc43b276acb3003b23fcf00e2d28e79205,.no_ext,637083,0.6371,.git/objects/31,.git,2026-07-13T17:10:48.391911
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_May2026.xlsx,Reporte_Facturacion_MercadoLibre_May2026.xlsx,.xlsx,636611,0.6366,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.691684
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_May2026.xlsx,Reporte_Facturacion_MercadoLibre_May2026.xlsx,.xlsx,636611,0.6366,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:18.025024
+01_Raw/ML/Liberaciones/2025-02 Febrero/Febrero 2025.xlsx,Febrero 2025.xlsx,.xlsx,633001,0.633,01_Raw/ML/Liberaciones/2025-02 Febrero,01_Raw,2026-07-13T17:03:14.791696
+.git/objects/99/1bf8f398dabd3703e83c079566e6ebffb99533,1bf8f398dabd3703e83c079566e6ebffb99533,.no_ext,629878,0.6299,.git/objects/99,.git,2026-05-30T10:09:47.787442
+.venv/Lib/site-packages/sqlglot/__pycache__/parser.cpython-314.pyc,parser.cpython-314.pyc,.pyc,624902,0.6249,.venv/Lib/site-packages/sqlglot/__pycache__,.venv,2026-07-13T12:07:19.519056
+.venv/Lib/site-packages/pandas/_libs/sparse.cp314-win_amd64.pyd,sparse.cp314-win_amd64.pyd,.pyd,621568,0.6216,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.729364
+01_Raw/ML/Liberaciones/2026-02 Febrero/Febrero 2026.xlsx,Febrero 2026.xlsx,.xlsx,617521,0.6175,01_Raw/ML/Liberaciones/2026-02 Febrero,01_Raw,2026-07-13T17:03:14.957301
+.git/objects/2d/243ec07e0bde4f033ffaeafa3899ee39e373b9,243ec07e0bde4f033ffaeafa3899ee39e373b9,.no_ext,609811,0.6098,.git/objects/2d,.git,2026-05-30T10:09:48.946359
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Abr2026.xlsx,Reporte_Facturacion_MercadoLibre_Abr2026.xlsx,.xlsx,598669,0.5987,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.593128
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Abr2026.xlsx,Reporte_Facturacion_MercadoLibre_Abr2026.xlsx,.xlsx,598669,0.5987,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:17.927964
+.venv/Lib/site-packages/numpy/random/_generator.cp314-win_amd64.pyd,_generator.cp314-win_amd64.pyd,.pyd,596480,0.5965,.venv/Lib/site-packages/numpy/random,.venv,2026-03-31T15:32:25.481471
+.git/objects/75/2dbc4e742726966fa16ae65944a6100b24b4e6,2dbc4e742726966fa16ae65944a6100b24b4e6,.no_ext,593398,0.5934,.git/objects/75,.git,2026-07-23T09:18:49.827906
+.git/objects/14/b91ad6a3af1e28a28871bdd6b2e44e3e357809,b91ad6a3af1e28a28871bdd6b2e44e3e357809,.no_ext,593349,0.5933,.git/objects/14,.git,2026-06-06T12:06:25.425684
+.git/objects/0b/018ffc2e2c4b91d2eba63458541020f5451555,018ffc2e2c4b91d2eba63458541020f5451555,.no_ext,588860,0.5889,.git/objects/0b,.git,2026-05-30T10:09:47.886282
+.git/objects/0f/474370d19d6b2e08dc88d2551e5e1a3c2c20fa,474370d19d6b2e08dc88d2551e5e1a3c2c20fa,.no_ext,588323,0.5883,.git/objects/0f,.git,2026-05-30T10:09:47.638043
+.git/objects/02/3e419bf8851061c5b9c5d5ae9538e4059741e6,3e419bf8851061c5b9c5d5ae9538e4059741e6,.no_ext,582364,0.5824,.git/objects/02,.git,2026-05-30T10:09:47.534439
+.git/objects/80/2e0e8ba5f600731098cf40cae8503e0f933522,2e0e8ba5f600731098cf40cae8503e0f933522,.no_ext,581207,0.5812,.git/objects/80,.git,2026-05-30T10:09:47.470703
+.venv/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll,msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll,.dll,575056,0.5751,.venv/Lib/site-packages/numpy.libs,.venv,2026-03-31T15:32:25.983660
+.venv/Lib/site-packages/pandas.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll,msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll,.dll,575056,0.5751,.venv/Lib/site-packages/pandas.libs,.venv,2026-03-31T15:32:50.779155
+.venv/Lib/site-packages/pandas/core/frame.py,frame.py,.py,574119,0.5741,.venv/Lib/site-packages/pandas/core,.venv,2026-03-31T15:32:49.979069
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Sept2025.xlsx,Reporte_Facturacion_MercadoLibre_Sept2025.xlsx,.xlsx,570262,0.5703,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.715328
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Sept2025.xlsx,Reporte_Facturacion_MercadoLibre_Sept2025.xlsx,.xlsx,570262,0.5703,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:18.041655
+"00_Config/Paris/Finanzas, Pagos y Facturación.docx","Finanzas, Pagos y Facturación.docx",.docx,568448,0.5684,00_Config/Paris,00_Config,2026-07-13T17:03:14.376546
+.venv/Lib/site-packages/pandas/core/__pycache__/frame.cpython-314.pyc,frame.cpython-314.pyc,.pyc,565495,0.5655,.venv/Lib/site-packages/pandas/core/__pycache__,.venv,2026-04-16T12:00:52.851181
+.git/objects/30/b665b66b0ed2cd3c9033e659b162dcb29843cd,b665b66b0ed2cd3c9033e659b162dcb29843cd,.no_ext,558551,0.5586,.git/objects/30,.git,2026-07-13T17:10:55.068989
+.git/objects/be/367a307f68d5a7f0993505f185580161578726,367a307f68d5a7f0993505f185580161578726,.no_ext,557898,0.5579,.git/objects/be,.git,2026-07-23T09:18:49.792994
+.venv/Lib/site-packages/pyarrow.libs/msvcp140-2a7008da6f9aae43c7a434835dcaf31e.dll,msvcp140-2a7008da6f9aae43c7a434835dcaf31e.dll,.dll,557640,0.5576,.venv/Lib/site-packages/pyarrow.libs,.venv,2026-03-31T15:32:21.837449
+.git/objects/b3/30f4c55f00f40f8e52ad1513289028879f6f7d,30f4c55f00f40f8e52ad1513289028879f6f7d,.no_ext,548677,0.5487,.git/objects/b3,.git,2026-05-30T10:09:48.078752
+.venv/Lib/site-packages/pandas/_libs/index.cp314-win_amd64.pyd,index.cp314-win_amd64.pyd,.pyd,546816,0.5468,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.704209
+.git/objects/9b/9532a3087452b86a99d25f7b7db8bcff0f202f,9532a3087452b86a99d25f7b7db8bcff0f202f,.no_ext,545794,0.5458,.git/objects/9b,.git,2026-07-13T17:10:48.469920
+.git/objects/15/727221012af0b8241149eda4459dcd9ff669e9,727221012af0b8241149eda4459dcd9ff669e9,.no_ext,535558,0.5356,.git/objects/15,.git,2026-07-23T09:18:49.843705
+.git/objects/9f/68586ea086b6f3e0f4f2a1e675633af4af8cbe,68586ea086b6f3e0f4f2a1e675633af4af8cbe,.no_ext,534885,0.5349,.git/objects/9f,.git,2026-05-30T10:09:47.554662
+.venv/Lib/site-packages/pyarrow/arrow_flight.lib,arrow_flight.lib,.lib,534382,0.5344,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.262516
+.git/objects/e0/28ee3f698753836a19d8e8c98628b978fd68df,28ee3f698753836a19d8e8c98628b978fd68df,.no_ext,532124,0.5321,.git/objects/e0,.git,2026-07-13T17:10:48.385609
+.git/index,index,.no_ext,528945,0.5289,.git,.git,2026-07-28T15:26:25.873884
+.git/objects/e9/7fb50e99ff0e77bb559d234b3432befcd9d2ab,7fb50e99ff0e77bb559d234b3432befcd9d2ab,.no_ext,528196,0.5282,.git/objects/e9,.git,2026-05-30T10:09:47.402321
+.git/objects/0e/067d51b2aa8a222c526e780a77faefea707be7,067d51b2aa8a222c526e780a77faefea707be7,.no_ext,526565,0.5266,.git/objects/0e,.git,2026-07-13T17:10:48.310533
+.git/objects/6c/3b1ee7f6f6595c545acd22a8fbc0e9a90c3a2d,3b1ee7f6f6595c545acd22a8fbc0e9a90c3a2d,.no_ext,518021,0.518,.git/objects/6c,.git,2026-05-30T10:09:47.771434
+.git/objects/15/240973973b38f27accc9a1086d11b42575897c,240973973b38f27accc9a1086d11b42575897c,.no_ext,516944,0.5169,.git/objects/15,.git,2026-05-30T10:09:47.224699
+.venv/Lib/site-packages/mypy/__pycache__/checker.cpython-314.pyc,checker.cpython-314.pyc,.pyc,508517,0.5085,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:51.779966
+.git/objects/3a/ae5492c50a92ead0052383b815c3b33431f2a5,ae5492c50a92ead0052383b815c3b33431f2a5,.no_ext,502849,0.5028,.git/objects/3a,.git,2026-05-30T10:09:47.727249
+.venv/Lib/site-packages/numpy/random/mtrand.cp314-win_amd64.pyd,mtrand.cp314-win_amd64.pyd,.pyd,496128,0.4961,.venv/Lib/site-packages/numpy/random,.venv,2026-03-31T15:32:25.471160
+.git/objects/dc/d5403e975a85ccdfcbe566fb8efa598bf95230,d5403e975a85ccdfcbe566fb8efa598bf95230,.no_ext,491090,0.4911,.git/objects/dc,.git,2026-05-30T10:09:47.486650
+.git/objects/4b/ad8f029f0aeafe02961793149ce854c1e23845,ad8f029f0aeafe02961793149ce854c1e23845,.no_ext,482574,0.4826,.git/objects/4b,.git,2026-05-30T10:09:48.921937
+.git/objects/ff/b80168769a418166f00b901806144dfcaa0637,b80168769a418166f00b901806144dfcaa0637,.no_ext,469053,0.4691,.git/objects/ff,.git,2026-05-30T10:09:47.370503
+.git/objects/20/a213eca2bbb3a65ba4d752c734f007c1696c0f,a213eca2bbb3a65ba4d752c734f007c1696c0f,.no_ext,468186,0.4682,.git/objects/20,.git,2026-05-30T10:09:47.850609
+.git/objects/d9/4deb916c790d73fc7c638ee62963ae80d237ff,4deb916c790d73fc7c638ee62963ae80d237ff,.no_ext,466549,0.4665,.git/objects/d9,.git,2026-05-30T10:09:47.821158
+.venv/Lib/site-packages/pandas/core/generic.py,generic.py,.py,463165,0.4632,.venv/Lib/site-packages/pandas/core,.venv,2026-03-31T15:32:49.979069
+.venv/Lib/site-packages/sqlglot/__pycache__/generator.cpython-314.pyc,generator.cpython-314.pyc,.pyc,462595,0.4626,.venv/Lib/site-packages/sqlglot/__pycache__,.venv,2026-07-13T12:07:17.866723
+.venv/Lib/site-packages/mypy/checker.py,checker.py,.py,456879,0.4569,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.444965
+.venv/Lib/site-packages/mypy/__pycache__/semanal.cpython-314.pyc,semanal.cpython-314.pyc,.pyc,455510,0.4555,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:54.038131
+.venv/Lib/site-packages/pandas/core/__pycache__/generic.cpython-314.pyc,generic.cpython-314.pyc,.pyc,455040,0.455,.venv/Lib/site-packages/pandas/core/__pycache__,.venv,2026-04-16T12:00:52.900279
+.git/objects/b5/c810ba4195835753ade7ee9a0d04f14da37e7d,c810ba4195835753ade7ee9a0d04f14da37e7d,.no_ext,453623,0.4536,.git/objects/b5,.git,2026-05-30T10:09:47.313066
+.git/objects/17/7c388214ef0287056ae025a0cc9ec20ed080ce,7c388214ef0287056ae025a0cc9ec20ed080ce,.no_ext,452840,0.4528,.git/objects/17,.git,2026-05-30T10:09:47.679741
+docs/archive/REFUND_TRACEABILITY_AUDIT.md,REFUND_TRACEABILITY_AUDIT.md,.md,448627,0.4486,docs/archive,docs,2026-07-22T16:28:37.089694
+.venv/Lib/site-packages/pandas/_libs/lib.cp314-win_amd64.pyd,lib.cp314-win_amd64.pyd,.pyd,448000,0.448,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.714151
+.git/objects/8a/6b016555c1e21509c9d7d2564eb0643d2dd8e9,6b016555c1e21509c9d7d2564eb0643d2dd8e9,.no_ext,445612,0.4456,.git/objects/8a,.git,2026-05-30T10:09:47.973372
+.git/objects/84/cd3daefbfb26ec01c64a098b967ba2a9bd3b8a,cd3daefbfb26ec01c64a098b967ba2a9bd3b8a,.no_ext,432097,0.4321,.git/objects/84,.git,2026-05-30T10:09:48.963053
+.venv/Lib/site-packages/numpy/_core/tests/test_multiarray.py,test_multiarray.py,.py,431981,0.432,.venv/Lib/site-packages/numpy/_core/tests,.venv,2026-03-31T15:32:25.813260
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Feb2025.xlsx,Reporte_Facturacion_MercadoLibre_Feb2025.xlsx,.xlsx,429373,0.4294,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.640014
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Feb2025.xlsx,Reporte_Facturacion_MercadoLibre_Feb2025.xlsx,.xlsx,429373,0.4294,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:17.966774
+data/db/f5_04_datasets/ml_facturacion_scaled_20000.xlsx,ml_facturacion_scaled_20000.xlsx,.xlsx,429276,0.4293,data/db/f5_04_datasets,data,2026-07-23T10:32:08.439383
+data/db/f5_04_datasets/ml_scaled_20000.xlsx,ml_scaled_20000.xlsx,.xlsx,429276,0.4293,data/db/f5_04_datasets,data,2026-07-23T10:31:22.468734
+.git/objects/a1/fdd1bdd54683ecb795d68c5b088c94803f108c,fdd1bdd54683ecb795d68c5b088c94803f108c,.no_ext,423631,0.4236,.git/objects/a1,.git,2026-05-30T10:09:47.670715
+01_Raw/PARIS/Transacciones/Dropshipping/12-2025.xlsx,12-2025.xlsx,.xlsx,422467,0.4225,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.298726
+evidence/archive_root/REPOSITORY_REGISTRY.json,REPOSITORY_REGISTRY.json,.json,419213,0.4192,evidence/archive_root,evidence,2026-07-22T16:28:30.018139
+docs/archive/PARIS_ALERT_MASTER_INVENTORY.md,PARIS_ALERT_MASTER_INVENTORY.md,.md,417680,0.4177,docs/archive,docs,2026-07-22T16:28:37.059452
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/htmlReport/report.js,report.js,.js,415587,0.4156,.venv/Lib/site-packages/playwright/driver/package/lib/vite/htmlReport,.venv,2026-06-09T08:43:07.249992
+Reporte_Marketplaces/Backup/Reporte Ventas MP.xlsx,Reporte Ventas MP.xlsx,.xlsx,414193,0.4142,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.541595
+Reporte_Marketplaces/Backup/ReporteVentasMP.xlsx,ReporteVentasMP.xlsx,.xlsx,414193,0.4142,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.768130
+.git/objects/72/96d1b814116fe5f185d6738720b7571c2bd30f,96d1b814116fe5f185d6738720b7571c2bd30f,.no_ext,414175,0.4142,.git/objects/72,.git,2026-07-22T15:15:25.019404
+.venv/Lib/site-packages/pyarrow/arrow_dataset.lib,arrow_dataset.lib,.lib,413512,0.4135,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.220869
+.git/objects/e5/1a958092f8e3b8729b63427e2bc8af70b0906c,1a958092f8e3b8729b63427e2bc8af70b0906c,.no_ext,409236,0.4092,.git/objects/e5,.git,2026-05-30T10:09:49.004717
+.git/objects/ff/e6c0b327c59c50c1b6a09304be10bc75aaaf4a,e6c0b327c59c50c1b6a09304be10bc75aaaf4a,.no_ext,408779,0.4088,.git/objects/ff,.git,2026-05-30T10:09:47.620934
+.git/objects/ac/e924939cd5d5577f7d4b5a3adfd458f184f073,e924939cd5d5577f7d4b5a3adfd458f184f073,.no_ext,407871,0.4079,.git/objects/ac,.git,2026-07-23T09:18:49.812657
+docs/archive/PARIS_ALERT_CLASSIFICATION_MATRIX.md,PARIS_ALERT_CLASSIFICATION_MATRIX.md,.md,405873,0.4059,docs/archive,docs,2026-07-22T16:28:37.055369
+.venv/Lib/site-packages/pyarrow/_parquet.cp314-win_amd64.pyd,_parquet.cp314-win_amd64.pyd,.pyd,404992,0.405,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.389944
+.git/objects/c8/4430d36a93184fb899c1fad32b005a8a9e3d03,4430d36a93184fb899c1fad32b005a8a9e3d03,.no_ext,401491,0.4015,.git/objects/c8,.git,2026-05-30T10:09:48.921383
+01_Raw/PARIS/Transacciones/Dropshipping/10-2025.xlsx,10-2025.xlsx,.xlsx,400054,0.4001,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.289358
+.git/objects/c6/2986fd04dbbf3be4bc1227779f94b2fe68f4f5,2986fd04dbbf3be4bc1227779f94b2fe68f4f5,.no_ext,398810,0.3988,.git/objects/c6,.git,2026-07-22T15:15:23.439229
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Mar2025.xlsx,Reporte_Facturacion_MercadoLibre_Mar2025.xlsx,.xlsx,397304,0.3973,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.675092
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Mar2025.xlsx,Reporte_Facturacion_MercadoLibre_Mar2025.xlsx,.xlsx,397304,0.3973,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:18.003334
+.git/objects/f1/48ab02af17ed432b327fb7044197a15fa899b0,48ab02af17ed432b327fb7044197a15fa899b0,.no_ext,396638,0.3966,.git/objects/f1,.git,2026-07-13T17:03:25.209385
+.git/objects/78/b353fc42d5697f585746eba8d8fed14e78c034,b353fc42d5697f585746eba8d8fed14e78c034,.no_ext,396517,0.3965,.git/objects/78,.git,2026-07-22T15:15:23.785205
+.git/objects/3b/7c82031be6ecd075c73b1ab25340b2ee86224c,7c82031be6ecd075c73b1ab25340b2ee86224c,.no_ext,395339,0.3953,.git/objects/3b,.git,2026-05-30T10:09:48.903682
+.venv/Lib/site-packages/ruff-0.15.14.dist-info/sboms/ruff.cyclonedx.json,ruff.cyclonedx.json,.json,395326,0.3953,.venv/Lib/site-packages/ruff-0.15.14.dist-info/sboms,.venv,2026-05-27T09:17:48.405212
+.git/objects/0b/36391d0eeaefcea5fa52352f6b1521530cef3e,36391d0eeaefcea5fa52352f6b1521530cef3e,.no_ext,392561,0.3926,.git/objects/0b,.git,2026-06-08T15:13:58.132305
+01_Raw/RIPLEY/Mis extractos/28-12-2024 - 13-01-2025.csv,28-12-2024 - 13-01-2025.csv,.csv,389625,0.3896,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.875002
+.git/objects/0e/2f5617c056966a7607dcdd5752c972cc7b7604,2f5617c056966a7607dcdd5752c972cc7b7604,.no_ext,389502,0.3895,.git/objects/0e,.git,2026-06-06T12:06:24.550609
+.git/objects/96/a82da09d926815905ab9d844a095e527f5c65c,a82da09d926815905ab9d844a095e527f5c65c,.no_ext,389320,0.3893,.git/objects/96,.git,2026-06-06T12:06:25.910471
+.git/objects/24/099944d09ce3b0d3738d2b395668cdf86c9289,099944d09ce3b0d3738d2b395668cdf86c9289,.no_ext,388773,0.3888,.git/objects/24,.git,2026-07-13T17:10:20.687615
+.git/objects/24/0d2c277ffee0d0c07adbba5c01d9424b24a99d,0d2c277ffee0d0c07adbba5c01d9424b24a99d,.no_ext,386577,0.3866,.git/objects/24,.git,2026-05-30T10:09:47.421018
+.venv/Lib/site-packages/sqlglot/parser.py,parser.py,.py,385792,0.3858,.venv/Lib/site-packages/sqlglot,.venv,2026-07-13T12:07:15.186106
+.git/objects/17/53b440e0f5a1b904c35e58f3811a6f9a2698f8,53b440e0f5a1b904c35e58f3811a6f9a2698f8,.no_ext,381733,0.3817,.git/objects/17,.git,2026-05-30T10:09:48.870743
+.git/objects/46/3008f6a0e2cc62737a5d92389081127067be6f,3008f6a0e2cc62737a5d92389081127067be6f,.no_ext,380490,0.3805,.git/objects/46,.git,2026-05-30T10:09:47.721032
+.venv/Lib/site-packages/pandas/_libs/tslibs/timestamps.cp314-win_amd64.pyd,timestamps.cp314-win_amd64.pyd,.pyd,377856,0.3779,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.762340
+.git/objects/05/923f67240ea50025dda0ebf042d50ac655290b,923f67240ea50025dda0ebf042d50ac655290b,.no_ext,375057,0.3751,.git/objects/05,.git,2026-05-30T10:09:48.886629
+.venv/Lib/site-packages/lxml/html/_difflib.cp314-win_amd64.pyd,_difflib.cp314-win_amd64.pyd,.pyd,374272,0.3743,.venv/Lib/site-packages/lxml/html,.venv,2026-06-26T15:01:38.571965
+.git/objects/8a/ab9eb4507980496f10979eeea164b46869d883,ab9eb4507980496f10979eeea164b46869d883,.no_ext,371393,0.3714,.git/objects/8a,.git,2026-07-23T09:18:49.827906
+.venv/Lib/site-packages/mypy/semanal.py,semanal.py,.py,371223,0.3712,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.508729
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Mar2026.xlsx,Reporte_Facturacion_MercadoLibre_Mar2026.xlsx,.xlsx,369390,0.3694,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.679851
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Mar2026.xlsx,Reporte_Facturacion_MercadoLibre_Mar2026.xlsx,.xlsx,369390,0.3694,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:18.005346
+.git/objects/46/99479c109d9626decd0575aae091bcd2993dc5,99479c109d9626decd0575aae091bcd2993dc5,.no_ext,367541,0.3675,.git/objects/46,.git,2026-07-13T17:10:20.685609
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/recorder/assets/index-DA10QRaq.js,index-DA10QRaq.js,.js,364880,0.3649,.venv/Lib/site-packages/playwright/driver/package/lib/vite/recorder/assets,.venv,2026-06-09T08:43:07.255992
+.venv/Lib/site-packages/pandas/_libs/tslibs/timedeltas.cp314-win_amd64.pyd,timedeltas.cp314-win_amd64.pyd,.pyd,351744,0.3517,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.761824
+.git/objects/e9/73d0aae4cb06a63b72f4e0bfb893906526c82b,73d0aae4cb06a63b72f4e0bfb893906526c82b,.no_ext,350330,0.3503,.git/objects/e9,.git,2026-05-30T10:09:49.029701
+.git/objects/b8/8c5e0b89af8b44ff54b56661f3c9af709506c5,8c5e0b89af8b44ff54b56661f3c9af709506c5,.no_ext,348669,0.3487,.git/objects/b8,.git,2026-07-23T09:18:49.827906
+.venv/Lib/site-packages/mypy/__pycache__/checkexpr.cpython-314.pyc,checkexpr.cpython-314.pyc,.pyc,347741,0.3477,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:51.900218
+01_Raw/PARIS/Transacciones/Fulfillment/1 jun 2026 - 30 jun 2026.xlsx,1 jun 2026 - 30 jun 2026.xlsx,.xlsx,344666,0.3447,01_Raw/PARIS/Transacciones/Fulfillment,01_Raw,2026-07-22T16:28:28.785108
+.venv/Lib/site-packages/pandas/_libs/window/aggregations.cp314-win_amd64.pyd,aggregations.cp314-win_amd64.pyd,.pyd,341504,0.3415,.venv/Lib/site-packages/pandas/_libs/window,.venv,2026-03-31T15:32:50.770721
+.git/objects/08/00927a910f2130bae1377fc2ab8ec8777d124a,00927a910f2130bae1377fc2ab8ec8777d124a,.no_ext,333830,0.3338,.git/objects/08,.git,2026-05-30T10:09:47.345113
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/dashboard/assets/index-DpEq2p62.js,index-DpEq2p62.js,.js,331408,0.3314,.venv/Lib/site-packages/playwright/driver/package/lib/vite/dashboard/assets,.venv,2026-06-09T08:43:07.245517
+01_Raw/PARIS/Transacciones/Dropshipping/04-2026.xlsx,04-2026.xlsx,.xlsx,330473,0.3305,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.256044
+01_Raw/RIPLEY/Mis extractos/28-03-2025 - 13-04-2025.csv,28-03-2025 - 13-04-2025.csv,.csv,329223,0.3292,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.852428
+01_Raw/FALABELLA/Órdenes y Transacciones/1  junio   2026 - 30  junio   2026.xlsx,1  junio   2026 - 30  junio   2026.xlsx,.xlsx,328120,0.3281,01_Raw/FALABELLA/Órdenes y Transacciones,01_Raw,2026-07-20T11:52:12.823416
+01_Raw/ML/Facturacion/Reporte_Facturacion_MercadoLibre_Feb2026.xlsx,Reporte_Facturacion_MercadoLibre_Feb2026.xlsx,.xlsx,324896,0.3249,01_Raw/ML/Facturacion,01_Raw,2026-07-22T16:28:28.644024
+Reporte_Marketplaces/Mercado Libre/ML_Facturacion/Reporte_Facturacion_MercadoLibre_Feb2026.xlsx,Reporte_Facturacion_MercadoLibre_Feb2026.xlsx,.xlsx,324896,0.3249,Reporte_Marketplaces/Mercado Libre/ML_Facturacion,Reporte_Marketplaces,2026-07-13T17:03:17.970766
+.git/objects/0b/a27e29cc2e37ec237a5f1cb43de74d137fe962,a27e29cc2e37ec237a5f1cb43de74d137fe962,.no_ext,321537,0.3215,.git/objects/0b,.git,2026-07-23T09:18:49.866037
+docs/archive/temp_audit.md,temp_audit.md,.md,319286,0.3193,docs/archive,docs,2026-07-22T16:28:37.114054
+evidence/migration/MASTER_RAW_INVENTORY.csv,MASTER_RAW_INVENTORY.csv,.csv,318945,0.3189,evidence/migration,evidence,2026-07-24T11:14:11.300443
+.venv/Lib/site-packages/mypy/checkexpr.py,checkexpr.py,.py,313227,0.3132,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.444965
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer/assets/codeMirrorModule-Ds_H_9Yq.js,codeMirrorModule-Ds_H_9Yq.js,.js,313054,0.3131,.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer/assets,.venv,2026-06-09T08:43:07.269988
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/recorder/assets/codeMirrorModule-BHYmBp6h.js,codeMirrorModule-BHYmBp6h.js,.js,313009,0.313,.venv/Lib/site-packages/playwright/driver/package/lib/vite/recorder/assets,.venv,2026-06-09T08:43:07.252992
+.git/objects/ac/900e0173ead1fd399cf2da0a79fb5e15cd7ede,900e0173ead1fd399cf2da0a79fb5e15cd7ede,.no_ext,312278,0.3123,.git/objects/ac,.git,2026-05-30T10:09:47.354682
+.git/objects/06/e2ed62fb044cb741b5961fcd2409c4f725bdc5,e2ed62fb044cb741b5961fcd2409c4f725bdc5,.no_ext,310325,0.3103,.git/objects/06,.git,2026-05-30T10:09:47.955261
+.git/objects/9a/4e02f19e3a1ca9e5d0ef72adde899a8e16df59,4e02f19e3a1ca9e5d0ef72adde899a8e16df59,.no_ext,309869,0.3099,.git/objects/9a,.git,2026-07-23T09:18:49.778990
+.venv/Lib/site-packages/pyarrow/_fs.cp314-win_amd64.pyd,_fs.cp314-win_amd64.pyd,.pyd,308736,0.3087,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.383433
+.git/objects/e1/59d899ef5dec7d7c15fdc678c268b079087a8a,59d899ef5dec7d7c15fdc678c268b079087a8a,.no_ext,306127,0.3061,.git/objects/e1,.git,2026-07-13T17:10:20.665576
+.git/objects/26/2aa498857921ad794cbf889b80de48718cb8ec,2aa498857921ad794cbf889b80de48718cb8ec,.no_ext,305459,0.3055,.git/objects/26,.git,2026-07-23T09:18:49.812657
+01_Raw/RIPLEY/Mis extractos/05-12-2025 - 13-12-2025.csv,05-12-2025 - 13-12-2025.csv,.csv,304724,0.3047,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.797347
+01_Raw/RIPLEY/Mis extractos/28-05-2025 - 13-06-2025.csv,28-05-2025 - 13-06-2025.csv,.csv,304175,0.3042,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.858904
+.venv/Lib/site-packages/pandas/core/indexes/__pycache__/base.cpython-314.pyc,base.cpython-314.pyc,.pyc,301843,0.3018,.venv/Lib/site-packages/pandas/core/indexes/__pycache__,.venv,2026-04-16T12:00:52.953323
+.venv/Lib/site-packages/numpy/ma/__pycache__/core.cpython-314.pyc,core.cpython-314.pyc,.pyc,300402,0.3004,.venv/Lib/site-packages/numpy/ma/__pycache__,.venv,2026-04-16T12:00:52.422588
+evidence/f4_suites/F4_20260722_101416.json,F4_20260722_101416.json,.json,299142,0.2991,evidence/f4_suites,evidence,2026-07-22T16:28:37.313946
+evidence/f4_suites/F4_20260722_095654.json,F4_20260722_095654.json,.json,298368,0.2984,evidence/f4_suites,evidence,2026-07-22T16:28:37.307009
+.venv/Lib/site-packages/numpy/ma/core.py,core.py,.py,298184,0.2982,.venv/Lib/site-packages/numpy/ma,.venv,2026-03-31T15:32:25.423366
+evidence/f4_suites/F4_20260721_174308.json,F4_20260721_174308.json,.json,297406,0.2974,evidence/f4_suites,evidence,2026-07-22T16:28:37.298874
+evidence/f4_suites/F4_20260721_174014.json,F4_20260721_174014.json,.json,296676,0.2967,evidence/f4_suites,evidence,2026-07-22T16:28:37.289432
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer/assets/xtermModule-CsJ4vdCR.js,xtermModule-CsJ4vdCR.js,.js,292244,0.2922,.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer/assets,.venv,2026-06-09T08:43:07.274655
+.git/objects/08/3e0c17e1fb68279499ae520eacbee4312205c8,3e0c17e1fb68279499ae520eacbee4312205c8,.no_ext,291446,0.2914,.git/objects/08,.git,2026-07-13T17:03:25.223945
+.venv/Lib/site-packages/pyarrow/arrow_acero.lib,arrow_acero.lib,.lib,287988,0.288,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.175155
+.venv/Lib/site-packages/pyarrow/include/arrow/vendored/xxhash/xxhash.h,xxhash.h,.h,286913,0.2869,.venv/Lib/site-packages/pyarrow/include/arrow/vendored/xxhash,.venv,2026-03-31T15:32:21.678968
+01_Raw/ML/Poscobro/1 enero 2026 - 1 mayo 2026.xlsx,1 enero 2026 - 1 mayo 2026.xlsx,.xlsx,285758,0.2858,01_Raw/ML/Poscobro,01_Raw,2026-07-13T17:03:15.142100
+01_Raw/RIPLEY/Mis extractos/13-10-2025 - 28-10-2025.csv,13-10-2025 - 28-10-2025.csv,.csv,284798,0.2848,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.826597
+.venv/Lib/site-packages/pandas/core/series.py,series.py,.py,280462,0.2805,.venv/Lib/site-packages/pandas/core,.venv,2026-03-31T15:32:49.987408
+.venv/Lib/site-packages/sqlglot/generators/__pycache__/duckdb.cpython-314.pyc,duckdb.cpython-314.pyc,.pyc,280003,0.28,.venv/Lib/site-packages/sqlglot/generators/__pycache__,.venv,2026-07-13T12:07:18.172457
+.venv/Lib/site-packages/pandas/core/__pycache__/series.cpython-314.pyc,series.cpython-314.pyc,.pyc,279566,0.2796,.venv/Lib/site-packages/pandas/core/__pycache__,.venv,2026-04-16T12:00:53.165267
+.venv/Lib/site-packages/pandas/_libs/tslibs/period.cp314-win_amd64.pyd,period.cp314-win_amd64.pyd,.pyd,278016,0.278,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.755016
+.venv/Lib/site-packages/pandas/core/indexes/base.py,base.py,.py,277653,0.2777,.venv/Lib/site-packages/pandas/core/indexes,.venv,2026-03-31T15:32:50.029033
+.venv/Lib/site-packages/pandas/_libs/parsers.cp314-win_amd64.pyd,parsers.cp314-win_amd64.pyd,.pyd,276992,0.277,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.727216
+.venv/Lib/site-packages/numpy/fft/_pocketfft_umath.cp314-win_amd64.pyd,_pocketfft_umath.cp314-win_amd64.pyd,.pyd,276480,0.2765,.venv/Lib/site-packages/numpy/fft,.venv,2026-03-31T15:32:25.337013
+01_Raw/PARIS/Transacciones/Dropshipping/06-2025.xlsx,06-2025.xlsx,.xlsx,271328,0.2713,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.272363
+.venv/Lib/site-packages/pip/_vendor/certifi/cacert.pem,cacert.pem,.pem,270954,0.271,.venv/Lib/site-packages/pip/_vendor/certifi,.venv,2026-03-31T15:31:56.580672
+.swarm/memory.db,memory.db,.db,270336,0.2703,.swarm,.swarm,2026-06-19T09:48:59.963255
+01_Raw/RIPLEY/Mis extractos/13-04-2025 - 28-04-2025.csv,13-04-2025 - 28-04-2025.csv,.csv,268147,0.2681,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.811350
+.venv/Lib/site-packages/mypy/__pycache__/build.cpython-314.pyc,build.cpython-314.pyc,.pyc,267590,0.2676,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:51.475413
+01_Raw/RIPLEY/Mis extractos/13-01-2025 - 28-01-2025.csv,13-01-2025 - 28-01-2025.csv,.csv,266351,0.2664,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.802196
+01_Raw/PARIS/Transacciones/Dropshipping/07-2025.xlsx,07-2025.xlsx,.xlsx,265286,0.2653,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.277433
+.venv/Lib/site-packages/sqlglot/generator.py,generator.py,.py,263943,0.2639,.venv/Lib/site-packages/sqlglot,.venv,2026-07-13T12:07:15.184101
+01_Raw/PARIS/Transacciones/Dropshipping/08-2025.xlsx,08-2025.xlsx,.xlsx,263514,0.2635,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.281431
+.venv/Lib/site-packages/mypy/__pycache__/types.cpython-314.pyc,types.cpython-314.pyc,.pyc,263393,0.2634,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:56.243043
+.venv/Lib/site-packages/mypy/__pycache__/nodes.cpython-314.pyc,nodes.cpython-314.pyc,.pyc,259856,0.2599,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:53.367320
+.venv/Lib/site-packages/yaml/_yaml.cp314-win_amd64.pyd,_yaml.cp314-win_amd64.pyd,.pyd,258560,0.2586,.venv/Lib/site-packages/yaml,.venv,2026-03-31T15:32:20.637266
+01_Raw/PARIS/Transacciones/Dropshipping/04-2025.xlsx,04-2025.xlsx,.xlsx,258485,0.2585,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.256044
+.venv/Lib/site-packages/pyarrow/_csv.cp314-win_amd64.pyd,_csv.cp314-win_amd64.pyd,.pyd,256512,0.2565,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.368461
+.venv/Scripts/python.exe,python.exe,.exe,255320,0.2553,.venv/Scripts,.venv,2025-12-05T18:17:36
+.git/objects/ad/e19c30487efe12bbbbc241491e59fc8c37df1b,e19c30487efe12bbbbc241491e59fc8c37df1b,.no_ext,254997,0.255,.git/objects/ad,.git,2026-05-30T10:09:47.302014
+.venv/Scripts/pythonw.exe,pythonw.exe,.exe,251736,0.2517,.venv/Scripts,.venv,2025-12-05T18:17:38
+.git/objects/18/097ff2d975f951dc1b2bf25bad4f539d93f807,097ff2d975f951dc1b2bf25bad4f539d93f807,.no_ext,251013,0.251,.git/objects/18,.git,2026-07-13T17:10:20.678587
+.venv/Lib/site-packages/pyarrow/_dataset_parquet.cp314-win_amd64.pyd,_dataset_parquet.cp314-win_amd64.pyd,.pyd,249856,0.2499,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.370836
+01_Raw/FALABELLA/Órdenes y Transacciones/1  abril   2026 - 31  mayo   2026.xlsx,1  abril   2026 - 31  mayo   2026.xlsx,.xlsx,249366,0.2494,01_Raw/FALABELLA/Órdenes y Transacciones,01_Raw,2026-07-20T11:50:16.366302
+.venv/Lib/site-packages/pandas-3.0.2.dist-info/RECORD,RECORD,.no_ext,249269,0.2493,.venv/Lib/site-packages/pandas-3.0.2.dist-info,.venv,2026-03-31T15:33:20.412782
+.venv/Lib/site-packages/fastparquet/cencoding.cp314-win_amd64.pyd,cencoding.cp314-win_amd64.pyd,.pyd,248320,0.2483,.venv/Lib/site-packages/fastparquet,.venv,2026-03-31T15:33:20.421852
+01_Raw/PARIS/Transacciones/Dropshipping/11-2025.xlsx,11-2025.xlsx,.xlsx,247261,0.2473,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.293729
+.venv/Lib/site-packages/playwright/driver/package/lib/serverRegistry.js,serverRegistry.js,.js,247054,0.2471,.venv/Lib/site-packages/playwright/driver/package/lib,.venv,2026-06-09T08:43:07.208186
+.git/objects/ba/7db9fdae4de8155ecf1a86ea55cc0ad82ea799,7db9fdae4de8155ecf1a86ea55cc0ad82ea799,.no_ext,246374,0.2464,.git/objects/ba,.git,2026-05-30T10:09:49.313033
+.venv/Lib/site-packages/pyarrow/include/arrow/vendored/datetime/date.h,date.h,.h,246053,0.2461,.venv/Lib/site-packages/pyarrow/include/arrow/vendored/datetime,.venv,2026-03-31T15:32:21.666497
+.git/objects/78/11e786ace76a87921105e1b3bdca585600b8c9,11e786ace76a87921105e1b3bdca585600b8c9,.no_ext,244437,0.2444,.git/objects/78,.git,2026-07-13T17:10:20.681598
+.git/objects/92/94c6dc22ae94c4170265aa3e6cb1836b921960,94c6dc22ae94c4170265aa3e6cb1836b921960,.no_ext,244262,0.2443,.git/objects/92,.git,2026-07-13T17:10:20.680593
+.venv/Lib/site-packages/idna/uts46data.py,uts46data.py,.py,243725,0.2437,.venv/Lib/site-packages/idna,.venv,2026-03-31T15:32:36.637469
+.venv/Lib/site-packages/pip/_vendor/idna/uts46data.py,uts46data.py,.py,243725,0.2437,.venv/Lib/site-packages/pip/_vendor/idna,.venv,2026-03-31T15:31:56.612678
+.venv/Lib/site-packages/numpy/__init__.pyi,__init__.pyi,.pyi,242576,0.2426,.venv/Lib/site-packages/numpy,.venv,2026-03-31T15:32:25.179597
+.git/objects/f2/66076a794b0688f70d96d661a144b9ad74fc80,66076a794b0688f70d96d661a144b9ad74fc80,.no_ext,241474,0.2415,.git/objects/f2,.git,2026-06-08T15:13:59.141697
+01_Raw/ML/Liberaciones/2026-06 Junio/1jun2026 a 5jun 2026.xlsx,1jun2026 a 5jun 2026.xlsx,.xlsx,240244,0.2402,01_Raw/ML/Liberaciones/2026-06 Junio,01_Raw,2026-07-22T10:33:37.846596
+.venv/Lib/site-packages/pandas/io/__pycache__/pytables.cpython-314.pyc,pytables.cpython-314.pyc,.pyc,238928,0.2389,.venv/Lib/site-packages/pandas/io/__pycache__,.venv,2026-04-16T12:00:53.479370
+.git/objects/d8/f20d5c717cb1a3da3f9d4dd1d42131e889643c,f20d5c717cb1a3da3f9d4dd1d42131e889643c,.no_ext,237973,0.238,.git/objects/d8,.git,2026-07-13T17:10:20.665576
+01_Raw/RIPLEY/Mis extractos/28-09-2025 - 13-10-2025.csv,28-09-2025 - 13-10-2025.csv,.csv,236566,0.2366,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.868448
+.venv/Lib/site-packages/certifi/cacert.pem,cacert.pem,.pem,236095,0.2361,.venv/Lib/site-packages/certifi,.venv,2026-05-29T08:51:18.409074
+.venv/Lib/site-packages/lxml/html/diff.cp314-win_amd64.pyd,diff.cp314-win_amd64.pyd,.pyd,236032,0.236,.venv/Lib/site-packages/lxml/html,.venv,2026-06-26T15:01:38.575959
+01_Raw/RIPLEY/Mis extractos/28-11-2025 - 05-12-2025.csv,28-11-2025 - 05-12-2025.csv,.csv,235406,0.2354,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.871826
+.git/worktrees/MarketplaceFinancialAIEngine-release-clean-functional-flow/index,index,.no_ext,235229,0.2352,.git/worktrees/MarketplaceFinancialAIEngine-release-clean-functional-flow,.git,2026-07-21T12:56:07.537576
+.git/worktrees/MarketplaceFinancialAIEngine-repro-7b035389/index,index,.no_ext,235229,0.2352,.git/worktrees/MarketplaceFinancialAIEngine-repro-7b035389,.git,2026-07-21T12:17:28.365139
+01_Raw/RIPLEY/Mis extractos/28-01-2025 - 13-02-2025.csv,28-01-2025 - 13-02-2025.csv,.csv,234177,0.2342,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.840148
+01_Raw/RIPLEY/Mis extractos/28-06-2025 - 13-07-2025.csv,28-06-2025 - 13-07-2025.csv,.csv,234123,0.2341,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.862133
+.git/objects/b9/b0ccad3f1e55c3093030d814225832b920c5c7,b0ccad3f1e55c3093030d814225832b920c5c7,.no_ext,234103,0.2341,.git/objects/b9,.git,2026-07-23T09:18:49.762151
+.git/worktrees/marketplace-financial-phase4-a21143b/index,index,.no_ext,233777,0.2338,.git/worktrees/marketplace-financial-phase4-a21143b,.git,2026-07-22T12:19:32.443663
+.git/objects/de/9d1f062434da30044891c379af39668f937171,9d1f062434da30044891c379af39668f937171,.no_ext,233294,0.2333,.git/objects/de,.git,2026-07-13T17:10:48.472007
+.git/worktrees/marketplace-financial-baseline-v8-d15e94e/index,index,.no_ext,232586,0.2326,.git/worktrees/marketplace-financial-baseline-v8-d15e94e,.git,2026-07-22T10:39:47.251377
+01_Raw/PARIS/Transacciones/Fulfillment/1 ene 2026 - 30 abr 2026.xlsx,1 ene 2026 - 30 abr 2026.xlsx,.xlsx,232394,0.2324,01_Raw/PARIS/Transacciones/Fulfillment,01_Raw,2026-07-13T17:03:15.318177
+01_Raw/RIPLEY/Mis extractos/28-07-2025 - 13-08-2025.csv,28-07-2025 - 13-08-2025.csv,.csv,231488,0.2315,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.865314
+.venv/Lib/site-packages/numpy/ma/tests/test_core.py,test_core.py,.py,230866,0.2309,.venv/Lib/site-packages/numpy/ma/tests,.venv,2026-03-31T15:32:25.437784
+.git/objects/95/37211f0133d10ce84a074586d4b7fb61c23183,37211f0133d10ce84a074586d4b7fb61c23183,.no_ext,228458,0.2285,.git/objects/95,.git,2026-07-13T17:10:20.685609
+.venv/Lib/site-packages/mypy/build.py,build.py,.py,227462,0.2275,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.442124
+.venv/Lib/site-packages/pyarrow/tests/test_dataset.py,test_dataset.py,.py,224266,0.2243,.venv/Lib/site-packages/pyarrow/tests,.venv,2026-03-31T15:32:21.796608
+.venv/Lib/site-packages/pyarrow/_parquet_encryption.cp314-win_amd64.pyd,_parquet_encryption.cp314-win_amd64.pyd,.pyd,224256,0.2243,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.396349
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 diciembre 2025 - 1 enero 2026.xlsx,1 diciembre 2025 - 1 enero 2026.xlsx,.xlsx,224009,0.224,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.055225
+.venv/Lib/site-packages/numpy/_core/_add_newdocs.py,_add_newdocs.py,.py,223247,0.2232,.venv/Lib/site-packages/numpy/_core,.venv,2026-03-31T15:32:25.702472
+data/db/f5_04_datasets/ml_facturacion_scaled_10000.xlsx,ml_facturacion_scaled_10000.xlsx,.xlsx,218314,0.2183,data/db/f5_04_datasets,data,2026-07-23T10:32:03.088656
+data/db/f5_04_datasets/ml_scaled_10000.xlsx,ml_scaled_10000.xlsx,.xlsx,218314,0.2183,data/db/f5_04_datasets,data,2026-07-23T10:31:20.942928
+.git/objects/47/4a9b55ef70ba24906237c89ab00dbb0369461b,4a9b55ef70ba24906237c89ab00dbb0369461b,.no_ext,217206,0.2172,.git/objects/47,.git,2026-07-09T12:04:56.368822
+.git/objects/09/2c9efc45599042aa90cd2ed958bff83536a926,2c9efc45599042aa90cd2ed958bff83536a926,.no_ext,216970,0.217,.git/objects/09,.git,2026-07-13T17:10:20.697430
+.venv/Lib/site-packages/pyarrow/table.pxi,table.pxi,.pxi,215395,0.2154,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.345853
+.venv/Lib/site-packages/numpy/random/_bounded_integers.cp314-win_amd64.pyd,_bounded_integers.cp314-win_amd64.pyd,.pyd,215040,0.215,.venv/Lib/site-packages/numpy/random,.venv,2026-03-31T15:32:25.478719
+.git/objects/97/b9c2b8d6334d5c10be7e2eba5b7d957955a787,b9c2b8d6334d5c10be7e2eba5b7d957955a787,.no_ext,214651,0.2147,.git/objects/97,.git,2026-07-22T10:33:39.520491
+.venv/Lib/site-packages/pandas/_libs/internals.cp314-win_amd64.pyd,internals.cp314-win_amd64.pyd,.pyd,210432,0.2104,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.704209
+01_Raw/RIPLEY/Mis extractos/13-07-2025 - 28-07-2025.csv,13-07-2025 - 28-07-2025.csv,.csv,209933,0.2099,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.822000
+.venv/Lib/site-packages/numpy/_core/__pycache__/_add_newdocs.cpython-314.pyc,_add_newdocs.cpython-314.pyc,.pyc,209646,0.2096,.venv/Lib/site-packages/numpy/_core/__pycache__,.venv,2026-04-16T12:00:51.253067
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 noviembre 2025 - 1 diciembre 2025.xls.xlsx,1 noviembre 2025 - 1 diciembre 2025.xls.xlsx,.xlsx,208281,0.2083,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.074970
+.git/objects/79/50380765915129ea4f74d8f67bd887804a855f,50380765915129ea4f74d8f67bd887804a855f,.no_ext,206858,0.2069,.git/objects/79,.git,2026-07-09T12:04:56.371946
+01_Raw/RIPLEY/Mis extractos/05-06-2026 - 13-06-2026.csv,05-06-2026 - 13-06-2026.csv,.csv,206441,0.2064,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.795498
+.venv/Lib/site-packages/pip/_vendor/rich/__pycache__/_emoji_codes.cpython-314.pyc,_emoji_codes.cpython-314.pyc,.pyc,206022,0.206,.venv/Lib/site-packages/pip/_vendor/rich/__pycache__,.venv,2026-05-26T12:33:05.608907
+01_Raw/RIPLEY/Mis extractos/28-10-2025 - 13-11-2025.csv,28-10-2025 - 13-11-2025.csv,.csv,205742,0.2057,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.870086
+01_Raw/RIPLEY/Mis extractos/28-04-2025 - 13-05-2025.csv,28-04-2025 - 13-05-2025.csv,.csv,204088,0.2041,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.855613
+.venv/Lib/site-packages/pandas/core/groupby/groupby.py,groupby.py,.py,202185,0.2022,.venv/Lib/site-packages/pandas/core/groupby,.venv,2026-03-31T15:32:50.020981
+.venv/Lib/site-packages/pandas/core/groupby/__pycache__/groupby.cpython-314.pyc,groupby.cpython-314.pyc,.pyc,201623,0.2016,.venv/Lib/site-packages/pandas/core/groupby/__pycache__,.venv,2026-04-16T12:00:53.209210
+.venv/Lib/site-packages/numpy/_core/tests/test_umath.py,test_umath.py,.py,201458,0.2015,.venv/Lib/site-packages/numpy/_core/tests,.venv,2026-03-31T15:32:25.837035
+.venv/Lib/site-packages/numpy/lib/__pycache__/_function_base_impl.cpython-314.pyc,_function_base_impl.cpython-314.pyc,.pyc,201175,0.2012,.venv/Lib/site-packages/numpy/lib/__pycache__,.venv,2026-04-16T12:00:51.663328
+governance/coordination/executions/GOV-R002_EXECUTION_REPORT.md,GOV-R002_EXECUTION_REPORT.md,.md,200733,0.2007,governance/coordination/executions,governance,2026-07-22T16:28:37.725129
+.git/objects/0d/741a4f58724912ac295506252bdf4b587dc022,741a4f58724912ac295506252bdf4b587dc022,.no_ext,200589,0.2006,.git/objects/0d,.git,2026-07-22T15:15:23.192972
+.venv/Lib/site-packages/pyarrow/tests/test_pandas.py,test_pandas.py,.py,200459,0.2005,.venv/Lib/site-packages/pyarrow/tests,.venv,2026-03-31T15:32:21.809114
+.venv/Lib/site-packages/numpy/lib/_function_base_impl.py,_function_base_impl.py,.py,199498,0.1995,.venv/Lib/site-packages/numpy/lib,.venv,2026-03-31T15:32:25.360475
+01_Raw/PARIS/Transacciones/Dropshipping/09-2025.xlsx,09-2025.xlsx,.xlsx,198235,0.1982,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.284348
+01_Raw/PARIS/Transacciones/Dropshipping/03-2026.xlsx,03-2026.xlsx,.xlsx,198203,0.1982,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.255530
+.venv/Lib/site-packages/fastapi/routing.py,routing.py,.py,197632,0.1976,.venv/Lib/site-packages/fastapi,.venv,2026-03-31T15:33:20.796750
+.venv/Lib/site-packages/mypy/__pycache__/messages.cpython-314.pyc,messages.cpython-314.pyc,.pyc,197459,0.1975,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:53.042417
+01_Raw/PARIS/Transacciones/Dropshipping/01-2026.xlsx,01-2026.xlsx,.xlsx,196921,0.1969,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.244472
+.git/objects/dc/ea17ddcd372da265b5d8c4e64b1b990b4a1699,ea17ddcd372da265b5d8c4e64b1b990b4a1699,.no_ext,193067,0.1931,.git/objects/dc,.git,2026-07-09T12:04:56.375945
+.venv/Lib/site-packages/mypy/nodes.py,nodes.py,.py,190896,0.1909,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.492372
+01_Raw/RIPLEY/Mis extractos/28-08-2025 - 13-09-2025.csv,28-08-2025 - 13-09-2025.csv,.csv,188999,0.189,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.866889
+.venv/Lib/site-packages/sqlglot/generators/duckdb.py,duckdb.py,.py,188653,0.1887,.venv/Lib/site-packages/sqlglot/generators,.venv,2026-07-13T12:07:15.253492
+.venv/Lib/site-packages/pygments/lexers/__pycache__/_lilypond_builtins.cpython-314.pyc,_lilypond_builtins.cpython-314.pyc,.pyc,188567,0.1886,.venv/Lib/site-packages/pygments/lexers/__pycache__,.venv,2026-05-26T12:33:15.200861
+.git/objects/48/6f59da5347ada93222857f30e84adfa9c2e186,6f59da5347ada93222857f30e84adfa9c2e186,.no_ext,188445,0.1884,.git/objects/48,.git,2026-07-13T17:03:25.336296
+.git/objects/8e/c0eb654bb42405ac80747945ee0b01512922b8,c0eb654bb42405ac80747945ee0b01512922b8,.no_ext,187650,0.1877,.git/objects/8e,.git,2026-07-09T12:04:56.373944
+.venv/Lib/site-packages/pandas/io/__pycache__/stata.cpython-314.pyc,stata.cpython-314.pyc,.pyc,187647,0.1876,.venv/Lib/site-packages/pandas/io/__pycache__,.venv,2026-04-16T12:00:53.373940
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 mayo 2025 - 1 junio 2025.xls.xlsx,1 mayo 2025 - 1 junio 2025.xls.xlsx,.xlsx,187353,0.1874,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.066646
+.git/objects/ec/ad465262a1949b3a28a88bb8629097e86b2c0e,ad465262a1949b3a28a88bb8629097e86b2c0e,.no_ext,187091,0.1871,.git/objects/ec,.git,2026-07-13T17:03:25.350973
+01_Raw/RIPLEY/Mis extractos/13-12-2025 - 20-12-2025.csv,13-12-2025 - 20-12-2025.csv,.csv,186998,0.187,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.832395
+.venv/Lib/site-packages/pyarrow/_acero.cp314-win_amd64.pyd,_acero.cp314-win_amd64.pyd,.pyd,186880,0.1869,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.362380
+.venv/Lib/site-packages/pygments/lexers/__pycache__/_cocoa_builtins.cpython-314.pyc,_cocoa_builtins.cpython-314.pyc,.pyc,186846,0.1868,.venv/Lib/site-packages/pygments/lexers/__pycache__,.venv,2026-05-26T12:33:15.033151
+01_Raw/RIPLEY/Mis extractos/13-06-2025 - 28-06-2025.csv,13-06-2025 - 28-06-2025.csv,.csv,186784,0.1868,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.818995
+.venv/Lib/site-packages/pandas/io/pytables.py,pytables.py,.py,185357,0.1854,.venv/Lib/site-packages/pandas/io,.venv,2026-03-31T15:32:50.079454
+01_Raw/PARIS/Transacciones/Dropshipping/05-2026.xlsx,05-2026.xlsx,.xlsx,185125,0.1851,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.269358
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 julio 2025 - 1 agosto 2025.xls.xlsx,1 julio 2025 - 1 agosto 2025.xls.xlsx,.xlsx,184487,0.1845,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.058306
+.git/objects/8e/acefd57d72f8a62605a03b5ec42fe397b9dfc6,acefd57d72f8a62605a03b5ec42fe397b9dfc6,.no_ext,183954,0.184,.git/objects/8e,.git,2026-07-13T17:10:20.665576
+.git/objects/c7/2bb9887bad5e4f1a8c5d2e0230a3d4cef4b59f,2bb9887bad5e4f1a8c5d2e0230a3d4cef4b59f,.no_ext,183609,0.1836,.git/objects/c7,.git,2026-07-13T17:10:20.683604
+.git/objects/6e/1f18057f9c2bb0733535ae74081c011b5e68ef,1f18057f9c2bb0733535ae74081c011b5e68ef,.no_ext,183441,0.1834,.git/objects/6e,.git,2026-07-13T17:10:20.665576
+.venv/Lib/site-packages/pandas/core/indexes/__pycache__/multi.cpython-314.pyc,multi.cpython-314.pyc,.pyc,183069,0.1831,.venv/Lib/site-packages/pandas/core/indexes/__pycache__,.venv,2026-04-16T12:00:53.020518
+.venv/Lib/site-packages/numpy/lib/tests/test_function_base.py,test_function_base.py,.py,182973,0.183,.venv/Lib/site-packages/numpy/lib/tests,.venv,2026-03-31T15:32:25.391733
+.venv/Lib/site-packages/pip/_vendor/distlib/t64-arm.exe,t64-arm.exe,.exe,182784,0.1828,.venv/Lib/site-packages/pip/_vendor/distlib,.venv,2026-03-31T15:31:56.596015
+.venv/Lib/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn.gz,TestOrcFile.testDate1900.jsn.gz,.gz,182453,0.1825,.venv/Lib/site-packages/pyarrow/tests/data/orc,.venv,2026-03-31T15:32:21.824092
+.venv/Lib/site-packages/duckdb/experimental/spark/sql/functions.py,functions.py,.py,182101,0.1821,.venv/Lib/site-packages/duckdb/experimental/spark/sql,.venv,2026-03-31T15:32:38.588999
+.venv/Lib/site-packages/fastapi/applications.py,applications.py,.py,181470,0.1815,.venv/Lib/site-packages/fastapi,.venv,2026-03-31T15:33:20.779296
+.venv/Lib/site-packages/_cffi_backend.cp314-win_amd64.pyd,_cffi_backend.cp314-win_amd64.pyd,.pyd,181248,0.1812,.venv/Lib/site-packages,.venv,2026-06-26T15:01:39.163974
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 octubre 2025 - 1 noviembre 2025.xls.xlsx,1 octubre 2025 - 1 noviembre 2025.xls.xlsx,.xlsx,180964,0.181,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.074970
+.claude/memory.db,memory.db,.db,180224,0.1802,.claude,.claude,2026-06-19T09:44:35.627321
+.venv/Lib/site-packages/anyio/_backends/__pycache__/_asyncio.cpython-314-pytest-9.0.3.pyc,_asyncio.cpython-314-pytest-9.0.3.pyc,.pyc,179650,0.1797,.venv/Lib/site-packages/anyio/_backends/__pycache__,.venv,2026-05-26T12:33:28.391669
+.venv/Lib/site-packages/pandas/io/formats/style.py,style.py,.py,177431,0.1774,.venv/Lib/site-packages/pandas/io/formats,.venv,2026-03-31T15:32:50.095767
+01_Raw/PARIS/Transacciones/Dropshipping/01-2025.xlsx,01-2025.xlsx,.xlsx,177201,0.1772,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.229964
+.venv/Lib/site-packages/pandas/core/arrays/arrow/__pycache__/array.cpython-314.pyc,array.cpython-314.pyc,.pyc,176366,0.1764,.venv/Lib/site-packages/pandas/core/arrays/arrow/__pycache__,.venv,2026-04-16T12:00:52.540394
+.venv/Lib/site-packages/__pycache__/typing_extensions.cpython-314.pyc,typing_extensions.cpython-314.pyc,.pyc,175547,0.1755,.venv/Lib/site-packages/__pycache__,.venv,2026-04-16T12:00:49.800983
+.git/objects/09/6f8c8dd3acb0126d203b2b52ee56ccc41fbc8f,6f8c8dd3acb0126d203b2b52ee56ccc41fbc8f,.no_ext,175458,0.1755,.git/objects/09,.git,2026-05-30T10:09:48.996368
+.venv/Lib/site-packages/anyio/_backends/__pycache__/_asyncio.cpython-314.pyc,_asyncio.cpython-314.pyc,.pyc,174567,0.1746,.venv/Lib/site-packages/anyio/_backends/__pycache__,.venv,2026-04-16T12:19:35.321695
+.venv/Lib/site-packages/pyarrow/arrow_compute.lib,arrow_compute.lib,.lib,173230,0.1732,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.199447
+.git/objects/62/700f4f630c85755b3e61f5aadcdf950bbe2f97,700f4f630c85755b3e61f5aadcdf950bbe2f97,.no_ext,173092,0.1731,.git/objects/62,.git,2026-07-13T17:10:20.678587
+.venv/Lib/site-packages/numpy/random/_common.cp314-win_amd64.pyd,_common.cp314-win_amd64.pyd,.pyd,173056,0.1731,.venv/Lib/site-packages/numpy/random,.venv,2026-03-31T15:32:25.481471
+01_Raw/FALABELLA/Facturación/21 mayo 2026 - 20 junio 2026.xlsx,21 mayo 2026 - 20 junio 2026.xlsx,.xlsx,170664,0.1707,01_Raw/FALABELLA/Facturación,01_Raw,2026-07-23T11:11:25.527986
+.git/objects/30/7a78d141176dcba7bf0196a810ef307bd84313,7a78d141176dcba7bf0196a810ef307bd84313,.no_ext,169945,0.1699,.git/objects/30,.git,2026-07-13T17:03:25.344841
+.git/objects/b7/f944aac7c4773d411cb3f7b59fb0df45247acd,f944aac7c4773d411cb3f7b59fb0df45247acd,.no_ext,169885,0.1699,.git/objects/b7,.git,2026-07-13T17:03:25.344841
+.agents/skills/gstack-ship/SKILL.md,SKILL.md,.md,169880,0.1699,.agents/skills/gstack-ship,.agents,2026-07-22T15:48:19.344027
+.git/objects/be/8eeb686b529ac6f8945b47edd5a1296ada8d3f,8eeb686b529ac6f8945b47edd5a1296ada8d3f,.no_ext,169027,0.169,.git/objects/be,.git,2026-07-03T14:54:02.409558
+.venv/Lib/site-packages/pyarrow/types.pxi,types.pxi,.pxi,168877,0.1689,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.355183
+.venv/Lib/site-packages/sqlglot/expressions/__pycache__/core.cpython-314.pyc,core.cpython-314.pyc,.pyc,168737,0.1687,.venv/Lib/site-packages/sqlglot/expressions/__pycache__,.venv,2026-07-13T12:07:17.084159
+.venv/Lib/site-packages/mypyc/irbuild/__pycache__/ll_builder.cpython-314.pyc,ll_builder.cpython-314.pyc,.pyc,168663,0.1687,.venv/Lib/site-packages/mypyc/irbuild/__pycache__,.venv,2026-05-27T09:17:57.525513
+.venv/Lib/site-packages/pyarrow/_dataset.pyx,_dataset.pyx,.pyx,168484,0.1685,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.370836
+.venv/Lib/site-packages/pip/_vendor/distlib/w64-arm.exe,w64-arm.exe,.exe,168448,0.1684,.venv/Lib/site-packages/pip/_vendor/distlib,.venv,2026-03-31T15:31:56.602791
+.venv/Lib/site-packages/pyarrow/arrow_python.lib,arrow_python.lib,.lib,168414,0.1684,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.272273
+.venv/Lib/site-packages/mypy/typeshed/stdlib/tkinter/__init__.pyi,__init__.pyi,.pyi,167417,0.1674,.venv/Lib/site-packages/mypy/typeshed/stdlib/tkinter,.venv,2026-05-27T09:17:50.978033
+.venv/Lib/site-packages/pydantic_core/__pycache__/core_schema.cpython-314.pyc,core_schema.cpython-314.pyc,.pyc,167037,0.167,.venv/Lib/site-packages/pydantic_core/__pycache__,.venv,2026-04-16T12:00:49.843585
+.venv/Lib/site-packages/pandas/core/indexes/multi.py,multi.py,.py,166907,0.1669,.venv/Lib/site-packages/pandas/core/indexes,.venv,2026-03-31T15:32:50.029033
+_archive/scratch/prototypes/gstack-source/ship/SKILL.md,SKILL.md,.md,166782,0.1668,_archive/scratch/prototypes/gstack-source/ship,_archive,2026-05-27T08:57:01.867425
+_archive/scratch/prototypes/gstack-source/test/fixtures/golden/claude-ship-SKILL.md,claude-ship-SKILL.md,.md,166782,0.1668,_archive/scratch/prototypes/gstack-source/test/fixtures/golden,_archive,2026-05-27T08:57:01.899404
+.git/objects/92/eac6e788d260bfb1e401511d78d13c2b9d23c7,eac6e788d260bfb1e401511d78d13c2b9d23c7,.no_ext,166130,0.1661,.git/objects/92,.git,2026-07-20T10:48:06.901244
+.git/objects/b4/f1e073217e8511ac6e4c21a535b06592889532,f1e073217e8511ac6e4c21a535b06592889532,.no_ext,166051,0.1661,.git/objects/b4,.git,2026-07-13T17:10:20.665576
+_archive/scratch/prototypes/gstack-source/test/fixtures/golden/factory-ship-SKILL.md,factory-ship-SKILL.md,.md,165938,0.1659,_archive/scratch/prototypes/gstack-source/test/fixtures/golden,_archive,2026-05-27T08:57:01.901407
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 enero 2026 - 1 marzo 2026.xlsx,1 enero 2026 - 1 marzo 2026.xlsx,.xlsx,165782,0.1658,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.058306
+01_Raw/RIPLEY/Mis extractos/13-08-2025 - 28-08-2025.csv,13-08-2025 - 28-08-2025.csv,.csv,165004,0.165,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.824513
+.venv/Lib/site-packages/numpy/_core/tests/test_numeric.py,test_numeric.py,.py,164905,0.1649,.venv/Lib/site-packages/numpy/_core/tests,.venv,2026-03-31T15:32:25.819499
+.venv/Lib/site-packages/mypy/types.py,types.py,.py,164734,0.1647,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.542060
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 junio 2025 - 1 julio 2025.xls.xlsx,1 junio 2025 - 1 julio 2025.xls.xlsx,.xlsx,164578,0.1646,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.058306
+.git/objects/0c/cc4963ffbc7185b0f05de276449e405cca5ee2,cc4963ffbc7185b0f05de276449e405cca5ee2,.no_ext,164443,0.1644,.git/objects/0c,.git,2026-07-22T15:15:23.203404
+.venv/Lib/site-packages/pandas/_libs/tslibs/parsing.cp314-win_amd64.pyd,parsing.cp314-win_amd64.pyd,.pyd,164352,0.1644,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.755016
+.venv/Lib/site-packages/pyarrow/array.pxi,array.pxi,.pxi,164329,0.1643,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.079003
+.git/objects/23/6cafc84f6f68a81cd40e590ceb04c0f44c28e3,6cafc84f6f68a81cd40e590ceb04c0f44c28e3,.no_ext,164227,0.1642,.git/objects/23,.git,2026-07-22T15:40:18.931074
+.venv/Lib/site-packages/pandas/_libs/tslibs/strptime.cp314-win_amd64.pyd,strptime.cp314-win_amd64.pyd,.pyd,163328,0.1633,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.755016
+.venv/Lib/site-packages/elementpath/regex/__pycache__/unicode_categories.cpython-314.pyc,unicode_categories.cpython-314.pyc,.pyc,163264,0.1633,.venv/Lib/site-packages/elementpath/regex/__pycache__,.venv,2026-06-26T12:34:56.530382
+.venv/Lib/site-packages/pandas/core/strings/accessor.py,accessor.py,.py,163190,0.1632,.venv/Lib/site-packages/pandas/core/strings,.venv,2026-03-31T15:32:50.062380
+01_Raw/RIPLEY/Mis extractos/13-05-2025 - 28-05-2025.csv,13-05-2025 - 28-05-2025.csv,.csv,162544,0.1625,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.815991
+.git/objects/77/b6b870616d5558a0c46471797498dbbd9cc63f,b6b870616d5558a0c46471797498dbbd9cc63f,.no_ext,162476,0.1625,.git/objects/77,.git,2026-07-13T17:03:25.352973
+.venv/Lib/site-packages/pyarrow/tests/test_compute.py,test_compute.py,.py,161588,0.1616,.venv/Lib/site-packages/pyarrow/tests,.venv,2026-03-31T15:32:21.795183
+.venv/Lib/site-packages/numpy/random/bit_generator.cp314-win_amd64.pyd,bit_generator.cp314-win_amd64.pyd,.pyd,160768,0.1608,.venv/Lib/site-packages/numpy/random,.venv,2026-03-31T15:32:25.470306
+.venv/Lib/site-packages/typing_extensions.py,typing_extensions.py,.py,160429,0.1604,.venv/Lib/site-packages,.venv,2026-03-31T15:32:20.453916
+.venv/Lib/site-packages/playwright/driver/LICENSE,LICENSE,.no_ext,159872,0.1599,.venv/Lib/site-packages/playwright/driver,.venv,2026-06-09T08:43:06.891082
+.git/objects/e9/e6a511b881924143a65c5617ea0ae8e292e09a,e6a511b881924143a65c5617ea0ae8e292e09a,.no_ext,159503,0.1595,.git/objects/e9,.git,2026-05-30T10:09:48.978822
+.venv/Lib/site-packages/pydantic_core/core_schema.py,core_schema.py,.py,159165,0.1592,.venv/Lib/site-packages/pydantic_core,.venv,2026-03-31T15:32:40.346482
+.venv/Lib/site-packages/pygments/lexers/lisp.py,lisp.py,.py,157903,0.1579,.venv/Lib/site-packages/pygments/lexers,.venv,2026-05-26T12:33:14.366337
+.venv/Lib/site-packages/numpy/_core/lib/npymath.lib,npymath.lib,.lib,156686,0.1567,.venv/Lib/site-packages/numpy/_core/lib,.venv,2026-03-31T15:32:25.778472
+.venv/Lib/site-packages/pandas/core/strings/__pycache__/accessor.cpython-314.pyc,accessor.cpython-314.pyc,.pyc,156473,0.1565,.venv/Lib/site-packages/pandas/core/strings/__pycache__,.venv,2026-04-16T12:00:52.966642
+.venv/Lib/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz,dateutil-zoneinfo.tar.gz,.gz,156400,0.1564,.venv/Lib/site-packages/dateutil/zoneinfo,.venv,2026-03-31T15:32:39.945690
+.venv/Lib/site-packages/cryptography/x509/__pycache__/extensions.cpython-314.pyc,extensions.cpython-314.pyc,.pyc,155925,0.1559,.venv/Lib/site-packages/cryptography/x509/__pycache__,.venv,2026-06-26T15:01:41.069346
+01_Raw/RIPLEY/Mis extractos/13-02-2025 - 28-02-2025.csv,13-02-2025 - 28-02-2025.csv,.csv,154905,0.1549,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.805629
+.venv/Lib/site-packages/pandas/_libs/tslibs/fields.cp314-win_amd64.pyd,fields.cp314-win_amd64.pyd,.pyd,154624,0.1546,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.745699
+.venv/Lib/site-packages/mypy/test/__pycache__/testtypes.cpython-314.pyc,testtypes.cpython-314.pyc,.pyc,154583,0.1546,.venv/Lib/site-packages/mypy/test/__pycache__,.venv,2026-05-27T09:17:55.892520
+.venv/Lib/site-packages/pandas/_libs/tslibs/nattype.cp314-win_amd64.pyd,nattype.cp314-win_amd64.pyd,.pyd,154112,0.1541,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.745699
+.venv/Lib/site-packages/click/__pycache__/core.cpython-314.pyc,core.cpython-314.pyc,.pyc,153958,0.154,.venv/Lib/site-packages/click/__pycache__,.venv,2026-04-16T12:17:25.666611
+.venv/Lib/site-packages/mypy/__pycache__/typeanal.cpython-314.pyc,typeanal.cpython-314.pyc,.pyc,153922,0.1539,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:56.134256
+.venv/Lib/site-packages/mypy-2.1.0.dist-info/RECORD,RECORD,.no_ext,151826,0.1518,.venv/Lib/site-packages/mypy-2.1.0.dist-info,.venv,2026-05-27T09:17:59.618056
+.git/objects/02/cda5dda9eb5ea7f2790d622adfd8463c3c7c55,cda5dda9eb5ea7f2790d622adfd8463c3c7c55,.no_ext,151657,0.1517,.git/objects/02,.git,2026-07-13T17:03:25.344841
+01_Raw/RIPLEY/Mis extractos/13-03-2025 - 28-03-2025.csv,13-03-2025 - 28-03-2025.csv,.csv,151646,0.1516,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.805629
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 abril 2025 - 1 mayo 2025.xls.xlsx,1 abril 2025 - 1 mayo 2025.xls.xlsx,.xlsx,150852,0.1509,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.041655
+.venv/Lib/site-packages/pyarrow/tests/test_array.py,test_array.py,.py,150612,0.1506,.venv/Lib/site-packages/pyarrow/tests,.venv,2026-03-31T15:32:21.787309
+.venv/Lib/site-packages/numpy/f2py/crackfortran.py,crackfortran.py,.py,150604,0.1506,.venv/Lib/site-packages/numpy/f2py,.venv,2026-03-31T15:32:25.212915
+.venv/Lib/site-packages/pygments/lexers/__pycache__/lisp.cpython-314.pyc,lisp.cpython-314.pyc,.pyc,150262,0.1503,.venv/Lib/site-packages/pygments/lexers/__pycache__,.venv,2026-05-26T12:33:17.978542
+.venv/Lib/site-packages/numpy/random/lib/npyrandom.lib,npyrandom.lib,.lib,149644,0.1496,.venv/Lib/site-packages/numpy/random/lib,.venv,2026-03-31T15:32:25.501378
+.git/objects/87/d250487d8f825a8c5e0152dcddd9fafebc0ec3,d250487d8f825a8c5e0152dcddd9fafebc0ec3,.no_ext,149448,0.1494,.git/objects/87,.git,2026-05-30T10:09:48.978822
+01_Raw/ML/Poscobro/1 junio 2026 - 1 julio 2026.xlsx,1 junio 2026 - 1 julio 2026.xlsx,.xlsx,149206,0.1492,01_Raw/ML/Poscobro,01_Raw,2026-07-22T16:28:28.738421
+.git/objects/a4/9a52ba52b0108f1e89cb624d0b34af2576dece,9a52ba52b0108f1e89cb624d0b34af2576dece,.no_ext,149184,0.1492,.git/objects/a4,.git,2026-07-13T17:03:25.342833
+.venv/Lib/site-packages/pandas/_libs/window/indexers.cp314-win_amd64.pyd,indexers.cp314-win_amd64.pyd,.pyd,148992,0.149,.venv/Lib/site-packages/pandas/_libs/window,.venv,2026-03-31T15:32:50.770721
+.venv/Lib/site-packages/pydantic/_internal/__pycache__/_generate_schema.cpython-314.pyc,_generate_schema.cpython-314.pyc,.pyc,148972,0.149,.venv/Lib/site-packages/pydantic/_internal/__pycache__,.venv,2026-04-16T12:00:49.980653
+.agents/gstack/browse/src/server.ts,server.ts,.ts,148389,0.1484,.agents/gstack/browse/src,.agents,2026-07-22T15:48:18.552852
+.agents/skills/gstack-browse/src/server.ts,server.ts,.ts,148389,0.1484,.agents/skills/gstack-browse/src,.agents,2026-07-22T15:48:18.965945
+data/_ripley_xml_export.json,_ripley_xml_export.json,.json,147660,0.1477,data,data,2026-07-22T10:33:38.122640
+.venv/Lib/site-packages/lxml/_elementpath.cp314-win_amd64.pyd,_elementpath.cp314-win_amd64.pyd,.pyd,146944,0.1469,.venv/Lib/site-packages/lxml,.venv,2026-06-26T15:01:38.521358
+.venv/Lib/site-packages/numpy/_core/fromnumeric.py,fromnumeric.py,.py,146891,0.1469,.venv/Lib/site-packages/numpy/_core,.venv,2026-03-31T15:32:25.677407
+.venv/Lib/site-packages/fastparquet/speedups.cp314-win_amd64.pyd,speedups.cp314-win_amd64.pyd,.pyd,146432,0.1464,.venv/Lib/site-packages/fastparquet,.venv,2026-03-31T15:33:20.429152
+.git/objects/61/fd9e1bfcc38d53091e11f82c481056060479da,fd9e1bfcc38d53091e11f82c481056060479da,.no_ext,146278,0.1463,.git/objects/61,.git,2026-07-22T10:33:39.517596
+_archive/scratch/prototypes/gstack-source/browse/src/server.ts,server.ts,.ts,145199,0.1452,_archive/scratch/prototypes/gstack-source/browse/src,_archive,2026-05-27T08:57:01.364103
+.venv/Lib/site-packages/pandas/tests/io/test_sql.py,test_sql.py,.py,145051,0.1451,.venv/Lib/site-packages/pandas/tests/io,.venv,2026-03-31T15:32:50.463868
+.git/objects/79/9b45bd90f0caecd7181be7558c5f4c48133208,9b45bd90f0caecd7181be7558c5f4c48133208,.no_ext,145010,0.145,.git/objects/79,.git,2026-07-22T15:15:23.061752
+_archive/scratch/prototypes/gstack-source/test/fixtures/golden/codex-ship-SKILL.md,codex-ship-SKILL.md,.md,144766,0.1448,_archive/scratch/prototypes/gstack-source/test/fixtures/golden,_archive,2026-05-27T08:57:01.899404
+.venv/Lib/site-packages/mypy/messages.py,messages.py,.py,144692,0.1447,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.492058
+01_Raw/RIPLEY/Mis extractos/05-04-2026 - 13-04-2026.csv,05-04-2026 - 13-04-2026.csv,.csv,144685,0.1447,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.787880
+.venv/Lib/site-packages/pandas/io/stata.py,stata.py,.py,143720,0.1437,.venv/Lib/site-packages/pandas/io,.venv,2026-03-31T15:32:50.086858
+.venv/Lib/site-packages/numpy/_core/tests/test_ufunc.py,test_ufunc.py,.py,143272,0.1433,.venv/Lib/site-packages/numpy/_core/tests,.venv,2026-03-31T15:32:25.836203
+01_Raw/PARIS/Transacciones/Dropshipping/02-2025.xlsx,02-2025.xlsx,.xlsx,143182,0.1432,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.246470
+.venv/Lib/site-packages/pandas/tests/tools/test_to_datetime.py,test_to_datetime.py,.py,142951,0.143,.venv/Lib/site-packages/pandas/tests/tools,.venv,2026-03-31T15:32:50.630489
+.venv/Lib/site-packages/pyarrow/_substrait.cp314-win_amd64.pyd,_substrait.cp314-win_amd64.pyd,.pyd,142848,0.1428,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.398358
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/dashboard/assets/index-BY2S1tHT.css,index-BY2S1tHT.css,.css,142433,0.1424,.venv/Lib/site-packages/playwright/driver/package/lib/vite/dashboard/assets,.venv,2026-06-09T08:43:07.244518
+Reporte_Marketplaces/Backup/pasted_file_gOQS7n_image.png,pasted_file_gOQS7n_image.png,.png,142228,0.1422,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.866597
+.venv/Lib/site-packages/lxml/etree.pyx,etree.pyx,.pyx,142074,0.1421,.venv/Lib/site-packages/lxml,.venv,2026-06-26T15:01:38.542191
+.venv/Lib/site-packages/pandas/_libs/missing.cp314-win_amd64.pyd,missing.cp314-win_amd64.pyd,.pyd,141824,0.1418,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.720125
+.venv/Lib/site-packages/numpy/_core/tests/test_nditer.py,test_nditer.py,.py,141372,0.1414,.venv/Lib/site-packages/numpy/_core/tests,.venv,2026-03-31T15:32:25.813260
+.venv/Lib/site-packages/pandas/_libs/tslibs/tzconversion.cp314-win_amd64.pyd,tzconversion.cp314-win_amd64.pyd,.pyd,141312,0.1413,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.762340
+.git/objects/25/e18f835e89e66c73a9cca50625609534370105,e18f835e89e66c73a9cca50625609534370105,.no_ext,140526,0.1405,.git/objects/25,.git,2026-06-06T12:06:21.385659
+.venv/Lib/site-packages/pip/_vendor/rich/_emoji_codes.py,_emoji_codes.py,.py,140235,0.1402,.venv/Lib/site-packages/pip/_vendor/rich,.venv,2026-03-31T15:31:56.681858
+.venv/Lib/site-packages/pandas/core/groupby/generic.py,generic.py,.py,139394,0.1394,.venv/Lib/site-packages/pandas/core/groupby,.venv,2026-03-31T15:32:50.020981
+.venv/Lib/site-packages/numpy/_core/__pycache__/fromnumeric.cpython-314.pyc,fromnumeric.cpython-314.pyc,.pyc,139089,0.1391,.venv/Lib/site-packages/numpy/_core/__pycache__,.venv,2026-04-16T12:00:51.030018
+.git/objects/be/cfa6d5510d71f0c60b94bba91a6e16d3d7e44f,cfa6d5510d71f0c60b94bba91a6e16d3d7e44f,.no_ext,139038,0.139,.git/objects/be,.git,2026-07-13T17:03:25.336296
+evidence/archive_root/SNAPSHOTS_GOVERNANCE_AUDIT.json,SNAPSHOTS_GOVERNANCE_AUDIT.json,.json,138712,0.1387,evidence/archive_root,evidence,2026-07-27T17:17:51.571811
+.venv/Lib/site-packages/pandas/core/groupby/__pycache__/generic.cpython-314.pyc,generic.cpython-314.pyc,.pyc,138578,0.1386,.venv/Lib/site-packages/pandas/core/groupby/__pycache__,.venv,2026-04-16T12:00:52.772102
+_archive/scratch/prototypes/gstack-source/test/gen-skill-docs.test.ts,gen-skill-docs.test.ts,.ts,138014,0.138,_archive/scratch/prototypes/gstack-source/test,_archive,2026-05-27T08:57:01.943766
+.venv/Lib/site-packages/pip/_vendor/rich/__pycache__/console.cpython-314.pyc,console.cpython-314.pyc,.pyc,137978,0.138,.venv/Lib/site-packages/pip/_vendor/rich/__pycache__,.venv,2026-05-26T12:33:05.942680
+.venv/Lib/site-packages/pydantic/__pycache__/json_schema.cpython-314.pyc,json_schema.cpython-314.pyc,.pyc,137884,0.1379,.venv/Lib/site-packages/pydantic/__pycache__,.venv,2026-04-16T12:00:50.011320
+.venv/Lib/site-packages/pyarrow/_orc.cp314-win_amd64.pyd,_orc.cp314-win_amd64.pyd,.pyd,137728,0.1377,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.389944
+_archive/scratch/prototypes/gstack-source/test/skill-e2e.test.ts,skill-e2e.test.ts,.ts,136478,0.1365,_archive/scratch/prototypes/gstack-source/test,_archive,2026-05-27T08:57:02.096101
+01_Raw/RIPLEY/Mis extractos/20-12-2025 - 28-12-2025.csv,20-12-2025 - 28-12-2025.csv,.csv,136380,0.1364,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.840148
+.git/objects/ed/20b8b36259ec7d51af5b4827e9f2cb490b911e,20b8b36259ec7d51af5b4827e9f2cb490b911e,.no_ext,136353,0.1364,.git/objects/ed,.git,2026-07-22T15:15:23.069712
+.venv/Lib/site-packages/mypy/__pycache__/fastparse.cpython-314.pyc,fastparse.cpython-314.pyc,.pyc,136043,0.136,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:52.544347
+01_Raw/RIPLEY/Mis extractos/28-03-2026 - 05-04-2026.csv,28-03-2026 - 05-04-2026.csv,.csv,136040,0.136,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.854017
+.venv/Lib/site-packages/pyarrow/_s3fs.cp314-win_amd64.pyd,_s3fs.cp314-win_amd64.pyd,.pyd,135680,0.1357,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.398358
+.venv/Lib/site-packages/numpy/ma/core.pyi,core.pyi,.pyi,135211,0.1352,.venv/Lib/site-packages/numpy/ma,.venv,2026-03-31T15:32:25.428498
+01_Raw/RIPLEY/Mis extractos/20-11-2025 - 28-11-2025.csv,20-11-2025 - 28-11-2025.csv,.csv,135111,0.1351,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.840148
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 marzo 2025 - 1 abril 2025.xls.xlsx,1 marzo 2025 - 1 abril 2025.xls.xlsx,.xlsx,134925,0.1349,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.066646
+01_Raw/RIPLEY/Mis extractos/28-02-2025 - 13-03-2025.csv,28-02-2025 - 13-03-2025.csv,.csv,134783,0.1348,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.849180
+.agents/skills/gstack-plan-ceo-review/SKILL.md,SKILL.md,.md,134684,0.1347,.agents/skills/gstack-plan-ceo-review,.agents,2026-07-22T15:48:19.274814
+.venv/Lib/site-packages/pygments/lexers/_lasso_builtins.py,_lasso_builtins.py,.py,134513,0.1345,.venv/Lib/site-packages/pygments/lexers,.venv,2026-05-26T12:33:14.293506
+.venv/Lib/site-packages/pandas/tests/extension/test_arrow.py,test_arrow.py,.py,134406,0.1344,.venv/Lib/site-packages/pandas/tests/extension,.venv,2026-03-31T15:32:50.237376
+01_Raw/RIPLEY/Mis extractos/13-11-2025 - 20-11-2025.csv,13-11-2025 - 20-11-2025.csv,.csv,134066,0.1341,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.826597
+.venv/Lib/site-packages/sqlglot/dialects/__pycache__/dialect.cpython-314.pyc,dialect.cpython-314.pyc,.pyc,133720,0.1337,.venv/Lib/site-packages/sqlglot/dialects/__pycache__,.venv,2026-07-13T12:07:15.864376
+.venv/Lib/site-packages/pandas/_libs/reshape.cp314-win_amd64.pyd,reshape.cp314-win_amd64.pyd,.pyd,133632,0.1336,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.729364
+.git/objects/d3/7226bcec29c5002b98307e0f536708191b2705,7226bcec29c5002b98307e0f536708191b2705,.no_ext,133622,0.1336,.git/objects/d3,.git,2026-07-13T17:10:20.665576
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Oct2025.xlsx,Reporte_Facturacion_MercadoPago_Oct2025.xlsx,.xlsx,133142,0.1331,01_Raw/SHOPIFY/Mercado Pago,01_Raw,2026-07-22T16:28:29.759272
+.venv/Lib/site-packages/pygments/lexers/matlab.py,matlab.py,.py,133030,0.133,.venv/Lib/site-packages/pygments/lexers,.venv,2026-05-26T12:33:14.366337
+.venv/Lib/site-packages/pydantic/_internal/_generate_schema.py,_generate_schema.py,.py,132665,0.1327,.venv/Lib/site-packages/pydantic/_internal,.venv,2026-03-31T15:32:47.404443
+_archive/scratch/prototypes/gstack-source/plan-ceo-review/SKILL.md,SKILL.md,.md,132488,0.1325,_archive/scratch/prototypes/gstack-source/plan-ceo-review,_archive,2026-05-27T08:57:01.772809
+.venv/Lib/site-packages/click/core.py,core.py,.py,132105,0.1321,.venv/Lib/site-packages/click,.venv,2026-03-31T15:32:44.097083
+01_Raw/PARIS/Transacciones/Dropshipping/02-2026.xlsx,02-2026.xlsx,.xlsx,131705,0.1317,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.248472
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 agosto 2025 - 1 septiembre 2025.xls.xlsx,1 agosto 2025 - 1 septiembre 2025.xls.xlsx,.xlsx,131632,0.1316,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.049953
+.git/objects/23/6da138d4d31dbc61f4bdaac8aefc5aad295c8a,6da138d4d31dbc61f4bdaac8aefc5aad295c8a,.no_ext,131204,0.1312,.git/objects/23,.git,2026-07-13T17:03:25.270084
+.venv/Lib/site-packages/mypy/__pycache__/stubtest.cpython-314.pyc,stubtest.cpython-314.pyc,.pyc,130311,0.1303,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:54.812281
+.git/objects/0d/7c8b80e72f3be92d06b557d940fd30f98ea885,7c8b80e72f3be92d06b557d940fd30f98ea885,.no_ext,130122,0.1301,.git/objects/0d,.git,2026-07-23T09:18:50.631322
+.venv/Lib/site-packages/pandas/_libs/_cyutility.cp314-win_amd64.pyd,_cyutility.cp314-win_amd64.pyd,.pyd,130048,0.13,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.737293
+01_Raw/RIPLEY/Mis extractos/05-01-2026 - 13-01-2026.csv,05-01-2026 - 13-01-2026.csv,.csv,130015,0.13,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.785108
+.venv/Lib/site-packages/mypyc/irbuild/ll_builder.py,ll_builder.py,.py,129829,0.1298,.venv/Lib/site-packages/mypyc/irbuild,.venv,2026-05-27T09:17:51.083690
+.venv/Lib/site-packages/pandas/_libs/tslibs/conversion.cp314-win_amd64.pyd,conversion.cp314-win_amd64.pyd,.pyd,129536,0.1295,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.745131
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Jun2025.xlsx,Reporte_Facturacion_MercadoPago_Jun2025.xlsx,.xlsx,128525,0.1285,01_Raw/SHOPIFY/Mercado Pago,01_Raw,2026-07-22T16:28:29.744513
+_archive/scratch/prototypes/gstack-source/test/fixtures/golden-ship-claude.md,golden-ship-claude.md,.md,128236,0.1282,_archive/scratch/prototypes/gstack-source/test/fixtures,_archive,2026-05-27T08:57:01.897400
+.venv/Lib/site-packages/pyarrow/tests/test_table.py,test_table.py,.py,127933,0.1279,.venv/Lib/site-packages/pyarrow/tests,.venv,2026-03-31T15:32:21.812584
+.venv/Lib/site-packages/numpy/_core/tests/test_datetime.py,test_datetime.py,.py,127760,0.1278,.venv/Lib/site-packages/numpy/_core/tests,.venv,2026-03-31T15:32:25.790598
+.git/objects/df/954d2a412504e409c58ce1c46920740ebb8200,954d2a412504e409c58ce1c46920740ebb8200,.no_ext,127027,0.127,.git/objects/df,.git,2026-07-23T09:18:49.861567
+.venv/Lib/site-packages/pandas/core/window/__pycache__/rolling.cpython-314.pyc,rolling.cpython-314.pyc,.pyc,126652,0.1267,.venv/Lib/site-packages/pandas/core/window/__pycache__,.venv,2026-04-16T12:00:53.124537
+.git/objects/70/f48cd64ec5e2f2651939190d0f248ae65da392,f48cd64ec5e2f2651939190d0f248ae65da392,.no_ext,125255,0.1253,.git/objects/70,.git,2026-07-23T09:18:50.631322
+.venv/Lib/site-packages/mypy/__pycache__/stubgen.cpython-314.pyc,stubgen.cpython-314.pyc,.pyc,124974,0.125,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:54.702298
+.venv/Lib/site-packages/mypyc/ir/__pycache__/ops.cpython-314.pyc,ops.cpython-314.pyc,.pyc,124928,0.1249,.venv/Lib/site-packages/mypyc/ir/__pycache__,.venv,2026-05-27T09:17:57.093214
+.venv/Lib/site-packages/pip/_vendor/pkg_resources/__init__.py,__init__.py,.py,124451,0.1245,.venv/Lib/site-packages/pip/_vendor/pkg_resources,.venv,2026-03-31T15:31:56.630266
+.venv/Lib/site-packages/pandas/tests/frame/test_constructors.py,test_constructors.py,.py,124399,0.1244,.venv/Lib/site-packages/pandas/tests/frame,.venv,2026-03-31T15:32:50.262423
+.venv/Lib/site-packages/pyarrow/includes/libarrow.pxd,libarrow.pxd,.pxd,124322,0.1243,.venv/Lib/site-packages/pyarrow/includes,.venv,2026-03-31T15:32:21.716432
+.venv/Lib/site-packages/pydantic/json_schema.py,json_schema.py,.py,123653,0.1237,.venv/Lib/site-packages/pydantic,.venv,2026-03-31T15:32:47.388327
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 enero 2025 - 1 febrero 2025.xls.xlsx,1 enero 2025 - 1 febrero 2025.xls.xlsx,.xlsx,123579,0.1236,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.055225
+.venv/Lib/site-packages/pandas/tests/indexing/test_loc.py,test_loc.py,.py,122941,0.1229,.venv/Lib/site-packages/pandas/tests/indexing,.venv,2026-03-31T15:32:50.446021
+.venv/Lib/site-packages/pandas/core/reshape/__pycache__/merge.cpython-314.pyc,merge.cpython-314.pyc,.pyc,122801,0.1228,.venv/Lib/site-packages/pandas/core/reshape/__pycache__,.venv,2026-04-16T12:00:53.271774
+.git/objects/e9/a6005ffbdc6e24093ed36325f46fd35cf9fa84,a6005ffbdc6e24093ed36325f46fd35cf9fa84,.no_ext,122780,0.1228,.git/objects/e9,.git,2026-07-13T17:10:20.665576
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 septiembre 2025 - 1 octubre 2025.xls.xlsx,1 septiembre 2025 - 1 octubre 2025.xls.xlsx,.xlsx,122743,0.1227,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.074970
+evidence/phase3_duplicate_inventory_v2.csv,phase3_duplicate_inventory_v2.csv,.csv,122724,0.1227,evidence,evidence,2026-07-28T15:36:20.909090
+.git/objects/7c/43e14a7d983ccc505bda9b618d80ee706bbaa4,43e14a7d983ccc505bda9b618d80ee706bbaa4,.no_ext,122610,0.1226,.git/objects/7c,.git,2026-07-13T17:03:25.344841
+.venv/Lib/site-packages/numpy/random/tests/test_generator_mt19937.py,test_generator_mt19937.py,.py,121685,0.1217,.venv/Lib/site-packages/numpy/random/tests,.venv,2026-03-31T15:32:25.504322
+.git/objects/89/0e6711d7992521fbe0abd9e426bc54139a4431,0e6711d7992521fbe0abd9e426bc54139a4431,.no_ext,121523,0.1215,.git/objects/89,.git,2026-07-13T17:03:25.336296
+.venv/Lib/site-packages/numpy/linalg/__pycache__/_linalg.cpython-314.pyc,_linalg.cpython-314.pyc,.pyc,121491,0.1215,.venv/Lib/site-packages/numpy/linalg/__pycache__,.venv,2026-04-16T12:00:51.474608
+.venv/Lib/site-packages/mypy/typeanal.py,typeanal.py,.py,121419,0.1214,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.534035
+.git/objects/17/7748a72ce71d33bcac8c94e5318036d1980e3d,7748a72ce71d33bcac8c94e5318036d1980e3d,.no_ext,121338,0.1213,.git/objects/17,.git,2026-07-03T14:54:02.725171
+.venv/Lib/site-packages/pandas/tests/reshape/merge/test_merge_asof.py,test_merge_asof.py,.py,121009,0.121,.venv/Lib/site-packages/pandas/tests/reshape/merge,.venv,2026-03-31T15:32:50.554219
+.venv/Lib/site-packages/fastapi/__pycache__/routing.cpython-314.pyc,routing.cpython-314.pyc,.pyc,120845,0.1208,.venv/Lib/site-packages/fastapi/__pycache__,.venv,2026-04-16T12:00:49.477713
+.venv/Lib/site-packages/elementpath/__pycache__/xpath_nodes.cpython-314.pyc,xpath_nodes.cpython-314.pyc,.pyc,120155,0.1202,.venv/Lib/site-packages/elementpath/__pycache__,.venv,2026-06-26T12:34:57.373956
+.venv/Lib/site-packages/lxml/sax.cp314-win_amd64.pyd,sax.cp314-win_amd64.pyd,.pyd,119808,0.1198,.venv/Lib/site-packages/lxml,.venv,2026-06-26T15:01:38.558978
+.git/objects/e2/547ab5d7e1ee05afdf61dfc8d8ebee37c6be99,547ab5d7e1ee05afdf61dfc8d8ebee37c6be99,.no_ext,119441,0.1194,.git/objects/e2,.git,2026-06-08T14:53:27.251947
+.venv/Lib/site-packages/pycparser/__pycache__/c_parser.cpython-314.pyc,c_parser.cpython-314.pyc,.pyc,119338,0.1193,.venv/Lib/site-packages/pycparser/__pycache__,.venv,2026-06-26T15:01:38.508553
+.venv/Lib/site-packages/pandas/core/arrays/arrow/array.py,array.py,.py,119249,0.1192,.venv/Lib/site-packages/pandas/core/arrays/arrow,.venv,2026-03-31T15:32:49.995779
+.venv/Lib/site-packages/xmlschema/validators/__pycache__/schemas.cpython-314.pyc,schemas.cpython-314.pyc,.pyc,118993,0.119,.venv/Lib/site-packages/xmlschema/validators/__pycache__,.venv,2026-06-26T12:34:59.012157
+Reporte_Marketplaces/Backup/pasted_file_jZMdzx_image.png,pasted_file_jZMdzx_image.png,.png,118947,0.1189,Reporte_Marketplaces/Backup,Reporte_Marketplaces,2026-07-13T17:03:17.869611
+.venv/Lib/site-packages/pandas/_libs/tslibs/dtypes.cp314-win_amd64.pyd,dtypes.cp314-win_amd64.pyd,.pyd,118784,0.1188,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.745699
+.venv/Lib/site-packages/pandas/io/__pycache__/sql.cpython-314.pyc,sql.cpython-314.pyc,.pyc,118692,0.1187,.venv/Lib/site-packages/pandas/io/__pycache__,.venv,2026-04-16T12:00:53.502135
+.venv/Lib/site-packages/numpy/linalg/_linalg.py,_linalg.py,.py,118474,0.1185,.venv/Lib/site-packages/numpy/linalg,.venv,2026-03-31T15:32:25.416077
+.venv/Lib/site-packages/pyarrow/_flight.pyx,_flight.pyx,.pyx,118065,0.1181,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.383433
+.venv/Lib/site-packages/pyarrow/_compute.pyx,_compute.pyx,.pyx,117659,0.1177,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.366451
+.venv/Lib/site-packages/pandas/core/internals/__pycache__/managers.cpython-314.pyc,managers.cpython-314.pyc,.pyc,117284,0.1173,.venv/Lib/site-packages/pandas/core/internals/__pycache__,.venv,2026-04-16T12:00:53.063430
+.git/objects/a6/1c8172ba8d2fb20c7d82bbd422c2ffcd870a44,1c8172ba8d2fb20c7d82bbd422c2ffcd870a44,.no_ext,116934,0.1169,.git/objects/a6,.git,2026-07-22T15:15:23.211329
+.venv/Lib/site-packages/pandas/core/arrays/__pycache__/datetimelike.cpython-314.pyc,datetimelike.cpython-314.pyc,.pyc,116799,0.1168,.venv/Lib/site-packages/pandas/core/arrays/__pycache__,.venv,2026-04-16T12:00:52.709285
+_archive/scratch/prototypes/gstack-source/TODOS.md,TODOS.md,.md,116148,0.1161,_archive/scratch/prototypes/gstack-source,_archive,2026-05-27T08:57:01.271716
+.venv/Lib/site-packages/pandas/core/window/rolling.py,rolling.py,.py,115918,0.1159,.venv/Lib/site-packages/pandas/core/window,.venv,2026-03-31T15:32:50.070838
+.venv/Lib/site-packages/pyarrow-23.0.1.dist-info/licenses/LICENSE.txt,LICENSE.txt,.txt,115832,0.1158,.venv/Lib/site-packages/pyarrow-23.0.1.dist-info/licenses,.venv,2026-03-31T15:32:21.837449
+01_Raw/RIPLEY/Mis extractos/05-02-2026 - 13-02-2026.csv,05-02-2026 - 13-02-2026.csv,.csv,115699,0.1157,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.787880
+.venv/Lib/site-packages/pandas/core/arrays/__pycache__/categorical.cpython-314.pyc,categorical.cpython-314.pyc,.pyc,115342,0.1153,.venv/Lib/site-packages/pandas/core/arrays/__pycache__,.venv,2026-04-16T12:00:52.684802
+.venv/Lib/site-packages/pygments/lexers/_lilypond_builtins.py,_lilypond_builtins.py,.py,115114,0.1151,.venv/Lib/site-packages/pygments/lexers,.venv,2026-05-26T12:33:14.293506
+docs/archive/RAW_FILE_INVENTORY.md,RAW_FILE_INVENTORY.md,.md,114947,0.1149,docs/archive,docs,2026-07-22T16:28:37.086399
+.agents/skills/gstack-office-hours/SKILL.md,SKILL.md,.md,114907,0.1149,.agents/skills/gstack-office-hours,.agents,2026-07-22T15:48:19.268935
+.git/objects/6a/c8f8a94679738f58953861fd25d6b50e4fff7e,c8f8a94679738f58953861fd25d6b50e4fff7e,.no_ext,114847,0.1148,.git/objects/6a,.git,2026-07-22T15:15:25.106219
+.venv/Lib/site-packages/pandas/core/__pycache__/indexing.cpython-314.pyc,indexing.cpython-314.pyc,.pyc,114803,0.1148,.venv/Lib/site-packages/pandas/core/__pycache__,.venv,2026-04-16T12:00:52.912375
+.venv/Lib/site-packages/pandas/core/reshape/merge.py,merge.py,.py,114541,0.1145,.venv/Lib/site-packages/pandas/core/reshape,.venv,2026-03-31T15:32:50.054666
+.venv/Lib/site-packages/numpy/lib/tests/test_io.py,test_io.py,.py,114257,0.1143,.venv/Lib/site-packages/numpy/lib/tests,.venv,2026-03-31T15:32:25.397829
+.venv/Lib/site-packages/pandas/tests/reshape/merge/test_merge.py,test_merge.py,.py,114204,0.1142,.venv/Lib/site-packages/pandas/tests/reshape/merge,.venv,2026-03-31T15:32:50.554219
+.venv/Lib/site-packages/mypyc/irbuild/__pycache__/builder.cpython-314.pyc,builder.cpython-314.pyc,.pyc,114114,0.1141,.venv/Lib/site-packages/mypyc/irbuild/__pycache__,.venv,2026-05-27T09:17:57.225882
+.git/objects/2f/ea3d16624b017d151ebd20d247cb902b5f0124,ea3d16624b017d151ebd20d247cb902b5f0124,.no_ext,113476,0.1135,.git/objects/2f,.git,2026-07-13T17:03:25.352973
+.venv/Lib/site-packages/mypy/test/__pycache__/teststubtest.cpython-314.pyc,teststubtest.cpython-314.pyc,.pyc,113056,0.1131,.venv/Lib/site-packages/mypy/test/__pycache__,.venv,2026-05-27T09:17:55.792296
+.git/objects/fb/f061e17acc3d98e9e5ccee35e159eae865b122,f061e17acc3d98e9e5ccee35e159eae865b122,.no_ext,112888,0.1129,.git/objects/fb,.git,2026-07-22T10:33:39.510229
+_archive/scratch/prototypes/gstack-source/office-hours/SKILL.md,SKILL.md,.md,112842,0.1128,_archive/scratch/prototypes/gstack-source/office-hours,_archive,2026-05-27T08:57:01.764103
+.git/objects/17/cefcc4ce4742311306da55cc82c84661ba4023,cefcc4ce4742311306da55cc82c84661ba4023,.no_ext,112371,0.1124,.git/objects/17,.git,2026-07-13T17:03:25.336296
+.venv/Lib/site-packages/elementpath/xpath2/__pycache__/_xpath2_functions.cpython-314.pyc,_xpath2_functions.cpython-314.pyc,.pyc,112217,0.1122,.venv/Lib/site-packages/elementpath/xpath2/__pycache__,.venv,2026-06-26T12:34:56.995403
+.venv/Lib/site-packages/numpy-2.4.4.dist-info/RECORD,RECORD,.no_ext,112208,0.1122,.venv/Lib/site-packages/numpy-2.4.4.dist-info,.venv,2026-03-31T15:32:36.622314
+.venv/Lib/site-packages/numpy/linalg/_umath_linalg.cp314-win_amd64.pyd,_umath_linalg.cp314-win_amd64.pyd,.pyd,112128,0.1121,.venv/Lib/site-packages/numpy/linalg,.venv,2026-03-31T15:32:25.420277
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 junio 2026 - 16 junio 2026.xlsx,1 junio 2026 - 16 junio 2026.xlsx,.xlsx,111916,0.1119,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-22T16:28:30.028656
+01_Raw/RIPLEY/Mis extractos/28-05-2026 - 05-06-2026.csv,28-05-2026 - 05-06-2026.csv,.csv,111869,0.1119,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.860534
+01_Raw/PARIS/Transacciones/Dropshipping/05-2025.xlsx,05-2025.xlsx,.xlsx,111557,0.1116,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.256044
+.venv/Lib/site-packages/pyarrow/arrow_substrait.lib,arrow_substrait.lib,.lib,111500,0.1115,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.290393
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer/defaultSettingsView.BDKsFU3c.css,defaultSettingsView.BDKsFU3c.css,.css,110856,0.1109,.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer,.venv,2026-06-09T08:43:07.260038
+.git/objects/2e/7251c3f2d3ab001f80c5f25f79bd0bf93b9502,7251c3f2d3ab001f80c5f25f79bd0bf93b9502,.no_ext,110653,0.1107,.git/objects/2e,.git,2026-07-22T10:33:39.510229
+.venv/Lib/site-packages/librt/vecs.cp314-win_amd64.pyd,vecs.cp314-win_amd64.pyd,.pyd,110080,0.1101,.venv/Lib/site-packages/librt,.venv,2026-05-27T09:17:50.309913
+.venv/Lib/site-packages/pandas/_libs/tslib.cp314-win_amd64.pyd,tslib.cp314-win_amd64.pyd,.pyd,110080,0.1101,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.737293
+.agents/skills/gstack-plan-design-review/SKILL.md,SKILL.md,.md,109782,0.1098,.agents/skills/gstack-plan-design-review,.agents,2026-07-22T15:48:19.282805
+.venv/Lib/site-packages/pydantic/__pycache__/types.cpython-314.pyc,types.cpython-314.pyc,.pyc,109627,0.1096,.venv/Lib/site-packages/pydantic/__pycache__,.venv,2026-04-16T12:00:50.061297
+01_Raw/RIPLEY/Mis extractos/20-03-2026 - 28-03-2026.csv,20-03-2026 - 28-03-2026.csv,.csv,108607,0.1086,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.832395
+.venv/Scripts/pip.exe,pip.exe,.exe,108413,0.1084,.venv/Scripts,.venv,2026-03-31T15:32:02.655266
+.venv/Scripts/pip3.14.exe,pip3.14.exe,.exe,108413,0.1084,.venv/Scripts,.venv,2026-03-31T15:32:02.655266
+.venv/Scripts/pip3.exe,pip3.exe,.exe,108413,0.1084,.venv/Scripts,.venv,2026-03-31T15:32:02.655266
+.venv/Scripts/dmypy.exe,dmypy.exe,.exe,108408,0.1084,.venv/Scripts,.venv,2026-05-27T09:17:59.217043
+.venv/Scripts/mypy.exe,mypy.exe,.exe,108404,0.1084,.venv/Scripts,.venv,2026-05-27T09:17:59.217043
+.venv/Scripts/py.test.exe,py.test.exe,.exe,108395,0.1084,.venv/Scripts,.venv,2026-05-26T12:33:23.568744
+.venv/Scripts/pytest.exe,pytest.exe,.exe,108395,0.1084,.venv/Scripts,.venv,2026-05-26T12:33:23.568744
+.venv/Scripts/xmlschema-json2xml.exe,xmlschema-json2xml.exe,.exe,108394,0.1084,.venv/Scripts,.venv,2026-06-26T12:34:59.137071
+.venv/Scripts/xmlschema-validate.exe,xmlschema-validate.exe,.exe,108394,0.1084,.venv/Scripts,.venv,2026-06-26T12:34:59.139073
+.venv/Scripts/xmlschema-xml2json.exe,xmlschema-xml2json.exe,.exe,108394,0.1084,.venv/Scripts,.venv,2026-06-26T12:34:59.140077
+.venv/Scripts/playwright.exe,playwright.exe,.exe,108392,0.1084,.venv/Scripts,.venv,2026-06-09T08:43:08.031558
+.venv/Scripts/pygmentize.exe,pygmentize.exe,.exe,108389,0.1084,.venv/Scripts,.venv,2026-05-26T12:33:21.618317
+.venv/Scripts/mypyc.exe,mypyc.exe,.exe,108387,0.1084,.venv/Scripts,.venv,2026-05-27T09:17:59.217043
+.venv/Scripts/stubtest.exe,stubtest.exe,.exe,108386,0.1084,.venv/Scripts,.venv,2026-05-27T09:17:59.217043
+.venv/Scripts/stubgen.exe,stubgen.exe,.exe,108385,0.1084,.venv/Scripts,.venv,2026-05-27T09:17:59.217043
+.venv/Scripts/f2py.exe,f2py.exe,.exe,108383,0.1084,.venv/Scripts,.venv,2026-03-31T15:32:36.296632
+.venv/Scripts/numpy-config.exe,numpy-config.exe,.exe,108383,0.1084,.venv/Scripts,.venv,2026-03-31T15:32:36.296632
+.venv/Scripts/tabulate.exe,tabulate.exe,.exe,108383,0.1084,.venv/Scripts,.venv,2026-06-08T16:57:06.664722
+.venv/Scripts/httpx.exe,httpx.exe,.exe,108378,0.1084,.venv/Scripts,.venv,2026-05-29T08:51:19.729687
+.venv/Scripts/uvicorn.exe,uvicorn.exe,.exe,108378,0.1084,.venv/Scripts,.venv,2026-03-31T15:32:46.286920
+.venv/Scripts/fastapi.exe,fastapi.exe,.exe,108377,0.1084,.venv/Scripts,.venv,2026-03-31T15:33:21.862490
+Scripts/normalizer.exe,normalizer.exe,.exe,108365,0.1084,Scripts,Scripts,2026-07-22T10:33:37.978372
+Scripts/pip.exe,pip.exe,.exe,108353,0.1084,Scripts,Scripts,2026-07-22T10:33:37.980380
+Scripts/pip3.14.exe,pip3.14.exe,.exe,108353,0.1084,Scripts,Scripts,2026-07-22T10:33:37.982779
+Scripts/pip3.exe,pip3.exe,.exe,108353,0.1084,Scripts,Scripts,2026-07-22T10:33:37.984789
+Scripts/f2py.exe,f2py.exe,.exe,108348,0.1083,Scripts,Scripts,2026-07-22T10:33:37.971119
+Scripts/numpy-config.exe,numpy-config.exe,.exe,108348,0.1083,Scripts,Scripts,2026-07-22T10:33:37.980380
+Scripts/flask.exe,flask.exe,.exe,108340,0.1083,Scripts,Scripts,2026-07-22T10:33:37.971119
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/htmlReport/report.css,report.css,.css,108330,0.1083,.venv/Lib/site-packages/playwright/driver/package/lib/vite/htmlReport,.venv,2026-06-09T08:43:07.248992
+.agents/skills/gstack-plan-devex-review/SKILL.md,SKILL.md,.md,108285,0.1083,.agents/skills/gstack-plan-devex-review,.agents,2026-07-22T15:48:19.286920
+.venv/Lib/site-packages/tabulate/__init__.py,__init__.py,.py,108269,0.1083,.venv/Lib/site-packages/tabulate,.venv,2026-06-08T16:57:06.627196
+.venv/Lib/site-packages/pygments/lexers/_php_builtins.py,_php_builtins.py,.py,108054,0.1081,.venv/Lib/site-packages/pygments/lexers,.venv,2026-05-26T12:33:14.297333
+.venv/Lib/site-packages/pip/_vendor/distlib/t64.exe,t64.exe,.exe,108032,0.108,.venv/Lib/site-packages/pip/_vendor/distlib,.venv,2026-03-31T15:31:56.596015
+_archive/scratch/prototypes/gstack-source/plan-design-review/SKILL.md,SKILL.md,.md,107855,0.1079,_archive/scratch/prototypes/gstack-source/plan-design-review,_archive,2026-05-27T08:57:01.772809
+.venv/Lib/site-packages/playwright/driver/package/lib/utilsBundle.js.LICENSE,utilsBundle.js.LICENSE,.license,107836,0.1078,.venv/Lib/site-packages/playwright/driver/package/lib,.venv,2026-06-09T08:43:07.215189
+.venv/Lib/site-packages/elementpath/regex/unicode_categories.py,unicode_categories.py,.py,107701,0.1077,.venv/Lib/site-packages/elementpath/regex,.venv,2026-06-26T12:34:55.838567
+.venv/Lib/site-packages/playwright/_impl/__pycache__/_page.cpython-314.pyc,_page.cpython-314.pyc,.pyc,107619,0.1076,.venv/Lib/site-packages/playwright/_impl/__pycache__,.venv,2026-06-09T08:43:07.665535
+.venv/Lib/site-packages/tzdata/zoneinfo/tzdata.zi,tzdata.zi,.zi,107441,0.1074,.venv/Lib/site-packages/tzdata/zoneinfo,.venv,2026-03-31T15:32:20.170943
+.venv/Lib/site-packages/mypy/__pycache__/subtypes.cpython-314.pyc,subtypes.cpython-314.pyc,.pyc,107238,0.1072,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:54.871660
+01_Raw/RIPLEY/Mis extractos/20-04-2026 - 28-04-2026.csv,20-04-2026 - 28-04-2026.csv,.csv,106830,0.1068,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.837065
+.venv/Lib/site-packages/xlrd/sheet.py,sheet.py,.py,106806,0.1068,.venv/Lib/site-packages/xlrd,.venv,2026-03-31T15:32:19.803919
+.venv/Lib/site-packages/mypy/stubtest.py,stubtest.py,.py,106730,0.1067,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.530906
+.venv/Lib/site-packages/pandas/core/dtypes/__pycache__/dtypes.cpython-314.pyc,dtypes.cpython-314.pyc,.pyc,106730,0.1067,.venv/Lib/site-packages/pandas/core/dtypes/__pycache__,.venv,2026-04-16T12:00:52.293618
+.venv/Lib/site-packages/_pytest/config/__pycache__/__init__.cpython-314.pyc,__init__.cpython-314.pyc,.pyc,106485,0.1065,.venv/Lib/site-packages/_pytest/config/__pycache__,.venv,2026-05-26T12:33:22.441319
+.git/objects/e6/fe94410a0fe95474524b37342886330bde7d37,fe94410a0fe95474524b37342886330bde7d37,.no_ext,106381,0.1064,.git/objects/e6,.git,2026-07-13T17:03:25.270084
+.venv/Lib/site-packages/pandas/core/arrays/__pycache__/base.cpython-314.pyc,base.cpython-314.pyc,.pyc,106298,0.1063,.venv/Lib/site-packages/pandas/core/arrays/__pycache__,.venv,2026-04-16T12:00:52.584410
+_archive/scratch/prototypes/gstack-source/plan-devex-review/SKILL.md,SKILL.md,.md,106167,0.1062,_archive/scratch/prototypes/gstack-source/plan-devex-review,_archive,2026-05-27T08:57:01.772809
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 abril 2026 - 1 mayo 2026.xlsx,1 abril 2026 - 1 mayo 2026.xlsx,.xlsx,106106,0.1061,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-13T17:03:18.049953
+.venv/Lib/site-packages/lxml/includes/extlibs/zlib.h,zlib.h,.h,105905,0.1059,.venv/Lib/site-packages/lxml/includes/extlibs,.venv,2026-06-26T15:01:38.594892
+.venv/Lib/site-packages/numpy/typing/tests/data/reveal/random.pyi,random.pyi,.pyi,105842,0.1058,.venv/Lib/site-packages/numpy/typing/tests/data/reveal,.venv,2026-03-31T15:32:25.661954
+.venv/Lib/site-packages/pandas/core/__pycache__/resample.cpython-314.pyc,resample.cpython-314.pyc,.pyc,105763,0.1058,.venv/Lib/site-packages/pandas/core/__pycache__,.venv,2026-04-16T12:00:53.305914
+.venv/Lib/site-packages/pygments/lexers/__pycache__/matlab.cpython-314.pyc,matlab.cpython-314.pyc,.pyc,105639,0.1056,.venv/Lib/site-packages/pygments/lexers/__pycache__,.venv,2026-05-26T12:33:18.141722
+.venv/Lib/site-packages/mypy/test/teststubtest.py,teststubtest.py,.py,105532,0.1055,.venv/Lib/site-packages/mypy/test,.venv,2026-05-27T09:17:50.592771
+.venv/Lib/site-packages/sqlglot/optimizer/__pycache__/simplify.cpython-314.pyc,simplify.cpython-314.pyc,.pyc,105480,0.1055,.venv/Lib/site-packages/sqlglot/optimizer/__pycache__,.venv,2026-07-13T12:07:19.335371
+.venv/Lib/site-packages/pydantic/types.py,types.py,.py,105431,0.1054,.venv/Lib/site-packages/pydantic,.venv,2026-03-31T15:32:47.395967
+.venv/Lib/site-packages/pygments/lexers/_cocoa_builtins.py,_cocoa_builtins.py,.py,105176,0.1052,.venv/Lib/site-packages/pygments/lexers,.venv,2026-05-26T12:33:14.284934
+.venv/Lib/site-packages/pyarrow/tests/test_flight.py,test_flight.py,.py,105069,0.1051,.venv/Lib/site-packages/pyarrow/tests,.venv,2026-03-31T15:32:21.796608
+.agents/skills/gstack-plan-eng-review/SKILL.md,SKILL.md,.md,104770,0.1048,.agents/skills/gstack-plan-eng-review,.agents,2026-07-22T15:48:19.291186
+.agents/skills/gstack-spec/SKILL.md,SKILL.md,.md,104769,0.1048,.agents/skills/gstack-spec,.agents,2026-07-22T15:48:19.351038
+.venv/Lib/site-packages/pandas/io/sql.py,sql.py,.py,104641,0.1046,.venv/Lib/site-packages/pandas/io,.venv,2026-03-31T15:32:50.086858
+.venv/Lib/site-packages/mypy/subtypes.py,subtypes.py,.py,104460,0.1045,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.530906
+01_Raw/RIPLEY/Mis extractos/13-03-2026 - 20-03-2026.csv,13-03-2026 - 20-03-2026.csv,.csv,104347,0.1043,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.809022
+.git/objects/50/db8197f5dacb70498dba53de60b77b3ebb94d4,db8197f5dacb70498dba53de60b77b3ebb94d4,.no_ext,104191,0.1042,.git/objects/50,.git,2026-07-13T17:10:20.665576
+.venv/Lib/site-packages/tabulate/__pycache__/__init__.cpython-314.pyc,__init__.cpython-314.pyc,.pyc,104062,0.1041,.venv/Lib/site-packages/tabulate/__pycache__,.venv,2026-06-08T16:57:06.664722
+01_Raw/RIPLEY/Fulfillment by Seller/000312-2815.xlsx,000312-2815.xlsx,.xlsx,103718,0.1037,01_Raw/RIPLEY/Fulfillment by Seller,01_Raw,2026-07-22T16:28:28.877175
+.git/objects/f7/2c2bb9be9b9231e82f20b19d5ed46725e6ec65,2c2bb9be9b9231e82f20b19d5ed46725e6ec65,.no_ext,103567,0.1036,.git/objects/f7,.git,2026-07-22T15:15:23.119742
+.git/objects/a8/5216176ff45ad7aa4ec3e3c1cfa96f9dfb6359,5216176ff45ad7aa4ec3e3c1cfa96f9dfb6359,.no_ext,103299,0.1033,.git/objects/a8,.git,2026-06-08T11:03:58.546686
+.venv/Lib/site-packages/elementpath/xpath30/__pycache__/_xpath30_functions.cpython-314.pyc,_xpath30_functions.cpython-314.pyc,.pyc,103203,0.1032,.venv/Lib/site-packages/elementpath/xpath30/__pycache__,.venv,2026-06-26T12:34:57.132165
+.venv/Lib/site-packages/pandas/core/arrays/categorical.py,categorical.py,.py,103012,0.103,.venv/Lib/site-packages/pandas/core/arrays,.venv,2026-03-31T15:32:49.987408
+_archive/scratch/prototypes/gstack-source/plan-eng-review/SKILL.md,SKILL.md,.md,103009,0.103,_archive/scratch/prototypes/gstack-source/plan-eng-review,_archive,2026-05-27T08:57:01.772809
+_archive/scratch/prototypes/gstack-source/spec/SKILL.md,SKILL.md,.md,102629,0.1026,_archive/scratch/prototypes/gstack-source/spec,_archive,2026-05-27T08:57:01.867425
+.git/objects/15/9abc782a03138e49eb241370a1f33066bf457e,9abc782a03138e49eb241370a1f33066bf457e,.no_ext,102454,0.1025,.git/objects/15,.git,2026-07-23T09:18:51.042125
+.git/objects/c3/24af00314cb33e3dad3c17be76293e347143f6,24af00314cb33e3dad3c17be76293e347143f6,.no_ext,102243,0.1022,.git/objects/c3,.git,2026-07-22T15:40:18.340123
+.venv/Lib/site-packages/pip/_vendor/distlib/w64.exe,w64.exe,.exe,101888,0.1019,.venv/Lib/site-packages/pip/_vendor/distlib,.venv,2026-03-31T15:31:56.603686
+.venv/Lib/site-packages/pandas/core/arrays/base.py,base.py,.py,101556,0.1016,.venv/Lib/site-packages/pandas/core/arrays,.venv,2026-03-31T15:32:49.987408
+.venv/Lib/site-packages/numpy/testing/_private/utils.py,utils.py,.py,101550,0.1016,.venv/Lib/site-packages/numpy/testing/_private,.venv,2026-03-31T15:32:25.537889
+.venv/Lib/site-packages/pandas/core/resample.py,resample.py,.py,101425,0.1014,.venv/Lib/site-packages/pandas/core,.venv,2026-03-31T15:32:49.986801
+.venv/Lib/site-packages/_pytest/__pycache__/terminal.cpython-314.pyc,terminal.cpython-314.pyc,.pyc,101405,0.1014,.venv/Lib/site-packages/_pytest/__pycache__,.venv,2026-05-26T12:33:23.350875
+.venv/Lib/site-packages/pandas/tests/plotting/frame/test_frame.py,test_frame.py,.py,101332,0.1013,.venv/Lib/site-packages/pandas/tests/plotting/frame,.venv,2026-03-31T15:32:50.529083
+.venv/Lib/site-packages/numpy/lib/_npyio_impl.py,_npyio_impl.py,.py,101219,0.1012,.venv/Lib/site-packages/numpy/lib,.venv,2026-03-31T15:32:25.373609
+.venv/Lib/site-packages/pandas/core/arrays/__pycache__/datetimes.cpython-314.pyc,datetimes.cpython-314.pyc,.pyc,100972,0.101,.venv/Lib/site-packages/pandas/core/arrays/__pycache__,.venv,2026-04-16T12:00:52.700260
+.venv/Lib/site-packages/pip/_vendor/idna/__pycache__/idnadata.cpython-314.pyc,idnadata.cpython-314.pyc,.pyc,100966,0.101,.venv/Lib/site-packages/pip/_vendor/idna/__pycache__,.venv,2026-05-26T12:33:07.618970
+.venv/Lib/site-packages/idna/__pycache__/idnadata.cpython-314.pyc,idnadata.cpython-314.pyc,.pyc,100954,0.101,.venv/Lib/site-packages/idna/__pycache__,.venv,2026-05-29T08:51:25.041030
+.venv/Lib/site-packages/pip/_vendor/rich/console.py,console.py,.py,100849,0.1008,.venv/Lib/site-packages/pip/_vendor/rich,.venv,2026-03-31T15:31:56.696209
+.venv/Lib/site-packages/pandas/tests/io/test_stata.py,test_stata.py,.py,100596,0.1006,.venv/Lib/site-packages/pandas/tests/io,.venv,2026-03-31T15:32:50.463868
+.venv/Lib/site-packages/pandas/tests/frame/test_stack_unstack.py,test_stack_unstack.py,.py,100501,0.1005,.venv/Lib/site-packages/pandas/tests/frame,.venv,2026-03-31T15:32:50.262423
+.venv/Lib/site-packages/mypy/test/__pycache__/teststubgen.cpython-314.pyc,teststubgen.cpython-314.pyc,.pyc,100414,0.1004,.venv/Lib/site-packages/mypy/test/__pycache__,.venv,2026-05-27T09:17:55.733758
+.venv/Lib/site-packages/playwright/driver/package/protocol.yml,protocol.yml,.yml,100404,0.1004,.venv/Lib/site-packages/playwright/driver/package,.venv,2026-06-09T08:43:07.186971
+.venv/Lib/site-packages/pandas/tests/reshape/test_pivot.py,test_pivot.py,.py,100397,0.1004,.venv/Lib/site-packages/pandas/tests/reshape,.venv,2026-03-31T15:32:50.547104
+.venv/Lib/site-packages/pandas/core/arrays/datetimes.py,datetimes.py,.py,100366,0.1004,.venv/Lib/site-packages/pandas/core/arrays,.venv,2026-03-31T15:32:49.987408
+.venv/Lib/site-packages/_pytest/__pycache__/pytester.cpython-314.pyc,pytester.cpython-314.pyc,.pyc,100171,0.1002,.venv/Lib/site-packages/_pytest/__pycache__,.venv,2026-05-26T12:33:23.013150
+.venv/Lib/site-packages/pyarrow/include/arrow/type.h,type.h,.h,99784,0.0998,.venv/Lib/site-packages/pyarrow/include/arrow,.venv,2026-03-31T15:32:21.437572
+.venv/Lib/site-packages/anyio/_backends/_asyncio.py,_asyncio.py,.py,99476,0.0995,.venv/Lib/site-packages/anyio/_backends,.venv,2026-03-31T15:32:44.570791
+.venv/Lib/site-packages/pyarrow/_json.cp314-win_amd64.pyd,_json.cp314-win_amd64.pyd,.pyd,99328,0.0993,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.389944
+.venv/Lib/site-packages/pyarrow/src/arrow/python/arrow_to_pandas.cc,arrow_to_pandas.cc,.cc,99301,0.0993,.venv/Lib/site-packages/pyarrow/src/arrow/python,.venv,2026-03-31T15:32:21.729066
+Reporte_Marketplaces/Mercado Libre/ML_Poscobro/1 mayo 2026 - 1 junio 2026.xlsx,1 mayo 2026 - 1 junio 2026.xlsx,.xlsx,99144,0.0991,Reporte_Marketplaces/Mercado Libre/ML_Poscobro,Reporte_Marketplaces,2026-07-22T16:28:30.031107
+.venv/Lib/site-packages/xmlschema/validators/__pycache__/simple_types.cpython-314.pyc,simple_types.cpython-314.pyc,.pyc,98972,0.099,.venv/Lib/site-packages/xmlschema/validators/__pycache__,.venv,2026-06-26T12:34:59.026264
+.venv/Lib/site-packages/numpy/_core/tests/test_regression.py,test_regression.py,.py,98849,0.0988,.venv/Lib/site-packages/numpy/_core/tests,.venv,2026-03-31T15:32:25.823864
+.venv/Lib/site-packages/pandas/_libs/ops.cp314-win_amd64.pyd,ops.cp314-win_amd64.pyd,.pyd,98816,0.0988,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.720754
+.venv/Lib/site-packages/pandas/io/formats/style_render.py,style_render.py,.py,98616,0.0986,.venv/Lib/site-packages/pandas/io/formats,.venv,2026-03-31T15:32:50.103746
+.git/objects/1c/0fa02eeb2104d512cce7ab1168010edd1e988b,0fa02eeb2104d512cce7ab1168010edd1e988b,.no_ext,98431,0.0984,.git/objects/1c,.git,2026-07-22T15:15:27.846888
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Mar2025.xlsx,Reporte_Facturacion_MercadoPago_Mar2025.xlsx,.xlsx,98344,0.0983,01_Raw/SHOPIFY/Mercado Pago,01_Raw,2026-07-22T16:28:29.748281
+.venv/Lib/site-packages/pandas/_libs/tslibs/timezones.cp314-win_amd64.pyd,timezones.cp314-win_amd64.pyd,.pyd,98304,0.0983,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.762340
+.venv/Lib/site-packages/pyarrow/parquet/core.py,core.py,.py,97995,0.098,.venv/Lib/site-packages/pyarrow/parquet,.venv,2026-03-31T15:32:21.725279
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Nov2025.xlsx,Reporte_Facturacion_MercadoPago_Nov2025.xlsx,.xlsx,97838,0.0978,01_Raw/SHOPIFY/Mercado Pago,01_Raw,2026-07-22T16:28:29.756378
+_archive/scratch/prototypes/gstack-source/.git/index,index,.no_ext,97827,0.0978,_archive/scratch/prototypes/gstack-source/.git,_archive,2026-05-27T08:57:02.118975
+.venv/Lib/site-packages/pip/_vendor/distlib/t32.exe,t32.exe,.exe,97792,0.0978,.venv/Lib/site-packages/pip/_vendor/distlib,.venv,2026-03-31T15:31:56.596015
+.venv/Lib/site-packages/_pytest/__pycache__/fixtures.cpython-314.pyc,fixtures.cpython-314.pyc,.pyc,97605,0.0976,.venv/Lib/site-packages/_pytest/__pycache__,.venv,2026-05-26T12:33:22.643274
+.agents/skills/gstack-design-review/SKILL.md,SKILL.md,.md,97585,0.0976,.agents/skills/gstack-design-review,.agents,2026-07-22T15:48:19.155962
+.venv/Lib/site-packages/ast_serialize-0.5.0.dist-info/sboms/mypy_parser.cyclonedx.json,mypy_parser.cyclonedx.json,.json,97579,0.0976,.venv/Lib/site-packages/ast_serialize-0.5.0.dist-info/sboms,.venv,2026-05-27T09:17:50.333700
+.venv/Lib/site-packages/pandas/core/arrays/datetimelike.py,datetimelike.py,.py,97469,0.0975,.venv/Lib/site-packages/pandas/core/arrays,.venv,2026-03-31T15:32:49.987408
+01_Raw/RIPLEY/Mis extractos/13-09-2025 - 28-09-2025.csv,13-09-2025 - 28-09-2025.csv,.csv,97463,0.0975,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.824513
+.venv/Lib/site-packages/sqlglot/parsers/__pycache__/snowflake.cpython-314.pyc,snowflake.cpython-314.pyc,.pyc,97308,0.0973,.venv/Lib/site-packages/sqlglot/parsers/__pycache__,.venv,2026-07-13T12:07:20.094778
+.venv/Lib/site-packages/xmlschema/validators/__pycache__/elements.cpython-314.pyc,elements.cpython-314.pyc,.pyc,97048,0.097,.venv/Lib/site-packages/xmlschema/validators/__pycache__,.venv,2026-06-26T12:34:58.887174
+01_Raw/RIPLEY/Mis extractos/28-12-2025 - 05-01-2026.csv,28-12-2025 - 05-01-2026.csv,.csv,97037,0.097,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.876121
+.git/objects/d8/c8b728a7f839c8d757b3c408b065dfc13e48a7,c8b728a7f839c8d757b3c408b065dfc13e48a7,.no_ext,96915,0.0969,.git/objects/d8,.git,2026-07-13T17:03:25.336296
+01_Raw/RIPLEY/Mis extractos/05-03-2026 - 13-03-2026.csv,05-03-2026 - 13-03-2026.csv,.csv,96659,0.0967,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.787880
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Abr2025.xlsx,Reporte_Facturacion_MercadoPago_Abr2025.xlsx,.xlsx,96351,0.0964,01_Raw/SHOPIFY/Mercado Pago,01_Raw,2026-07-22T16:28:29.729011
+.venv/Lib/site-packages/anyio/_backends/__pycache__/_trio.cpython-314-pytest-9.0.3.pyc,_trio.cpython-314-pytest-9.0.3.pyc,.pyc,96348,0.0963,.venv/Lib/site-packages/anyio/_backends/__pycache__,.venv,2026-05-26T12:33:28.469027
+.venv/Lib/site-packages/pandas/core/indexing.py,indexing.py,.py,96287,0.0963,.venv/Lib/site-packages/pandas/core,.venv,2026-03-31T15:32:49.979069
+.venv/Lib/site-packages/pandas/io/formats/__pycache__/format.cpython-314.pyc,format.cpython-314.pyc,.pyc,96031,0.096,.venv/Lib/site-packages/pandas/io/formats/__pycache__,.venv,2026-04-16T12:00:53.086152
+01_Raw/SHOPIFY/Mercado Pago/Reporte_Facturacion_MercadoPago_Dic2025.xlsx,Reporte_Facturacion_MercadoPago_Dic2025.xlsx,.xlsx,95878,0.0959,01_Raw/SHOPIFY/Mercado Pago,01_Raw,2026-07-22T16:28:29.731673
+.agents/skills/gstack-review/SKILL.md,SKILL.md,.md,95809,0.0958,.agents/skills/gstack-review,.agents,2026-07-22T15:48:19.310489
+.git/objects/b9/3788a46d5f0ffc0f0b210005e4d53a8465d413,3788a46d5f0ffc0f0b210005e4d53a8465d413,.no_ext,95758,0.0958,.git/objects/b9,.git,2026-07-23T09:18:50.631322
+.venv/Lib/site-packages/pandas/_libs/tslibs/np_datetime.cp314-win_amd64.pyd,np_datetime.cp314-win_amd64.pyd,.pyd,95744,0.0957,.venv/Lib/site-packages/pandas/_libs/tslibs,.venv,2026-03-31T15:32:50.745699
+.git/objects/7a/09572af80a557ef11f4bec65d7dc69bb403cd1,09572af80a557ef11f4bec65d7dc69bb403cd1,.no_ext,95661,0.0957,.git/objects/7a,.git,2026-07-23T09:18:50.631322
+_archive/scratch/prototypes/gstack-source/design-review/SKILL.md,SKILL.md,.md,95654,0.0957,_archive/scratch/prototypes/gstack-source/design-review,_archive,2026-05-27T08:57:01.549390
+.venv/Lib/site-packages/numpy/lib/__pycache__/_npyio_impl.cpython-314.pyc,_npyio_impl.cpython-314.pyc,.pyc,95556,0.0956,.venv/Lib/site-packages/numpy/lib/__pycache__,.venv,2026-04-16T12:00:51.789934
+.git/objects/0e/d2cd260d368728a29f769ad02b5c8c71656655,d2cd260d368728a29f769ad02b5c8c71656655,.no_ext,95489,0.0955,.git/objects/0e,.git,2026-07-22T15:15:22.576721
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer/sw.bundle.js,sw.bundle.js,.js,95469,0.0955,.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer,.venv,2026-06-09T08:43:07.265976
+.agents/gstack/browse/test/commands.test.ts,commands.test.ts,.ts,95383,0.0954,.agents/gstack/browse/test,.agents,2026-07-22T15:48:18.587714
+.agents/skills/gstack-browse/test/commands.test.ts,commands.test.ts,.ts,95383,0.0954,.agents/skills/gstack-browse/test,.agents,2026-07-22T15:48:18.985806
+01_Raw/RIPLEY/Fulfillment by Seller/000356-2815.xlsx,000356-2815.xlsx,.xlsx,95241,0.0952,01_Raw/RIPLEY/Fulfillment by Seller,01_Raw,2026-07-22T16:28:28.912858
+.venv/Lib/site-packages/pandas/tests/groupby/test_groupby.py,test_groupby.py,.py,95083,0.0951,.venv/Lib/site-packages/pandas/tests/groupby,.venv,2026-03-31T15:32:50.329274
+.venv/Lib/site-packages/mypy/typeshed/stdlib/builtins.pyi,builtins.pyi,.pyi,94769,0.0948,.venv/Lib/site-packages/mypy/typeshed/stdlib,.venv,2026-05-27T09:17:50.634731
+.venv/Lib/site-packages/numpy/random/_pcg64.cp314-win_amd64.pyd,_pcg64.cp314-win_amd64.pyd,.pyd,94720,0.0947,.venv/Lib/site-packages/numpy/random,.venv,2026-03-31T15:32:25.490505
+.venv/Lib/site-packages/pyarrow/_hdfs.cp314-win_amd64.pyd,_hdfs.cp314-win_amd64.pyd,.pyd,94720,0.0947,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.387502
+.venv/Lib/site-packages/fastapi/__pycache__/applications.cpython-314.pyc,applications.cpython-314.pyc,.pyc,94640,0.0946,.venv/Lib/site-packages/fastapi/__pycache__,.venv,2026-04-16T12:00:49.447851
+.venv/Lib/site-packages/xlrd/formula.py,formula.py,.py,94460,0.0945,.venv/Lib/site-packages/xlrd,.venv,2026-03-31T15:32:19.803919
+.venv/Lib/site-packages/pandas/io/parsers/__pycache__/readers.cpython-314.pyc,readers.cpython-314.pyc,.pyc,94367,0.0944,.venv/Lib/site-packages/pandas/io/parsers/__pycache__,.venv,2026-04-16T12:00:53.329451
+.venv/Lib/site-packages/sqlglot/expressions/__pycache__/query.cpython-314.pyc,query.cpython-314.pyc,.pyc,94255,0.0943,.venv/Lib/site-packages/sqlglot/expressions/__pycache__,.venv,2026-07-13T12:07:17.270408
+.venv/Lib/site-packages/elementpath/datatypes/__pycache__/datetime.cpython-314.pyc,datetime.cpython-314.pyc,.pyc,94166,0.0942,.venv/Lib/site-packages/elementpath/datatypes/__pycache__,.venv,2026-06-26T12:34:56.040030
+_archive/scratch/prototypes/gstack-source/review/SKILL.md,SKILL.md,.md,94048,0.094,_archive/scratch/prototypes/gstack-source/review,_archive,2026-05-27T08:57:01.788935
+.git/objects/49/2cc979b0f9561a963d23803ea5e06512f7e101,2cc979b0f9561a963d23803ea5e06512f7e101,.no_ext,93985,0.094,.git/objects/49,.git,2026-07-23T09:18:50.620970
+.git/objects/51/f2f362e41708f44558ae79811cad87e58057eb,f2f362e41708f44558ae79811cad87e58057eb,.no_ext,93959,0.094,.git/objects/51,.git,2026-07-23T09:18:50.629280
+.agents/skills/gstack-land-and-deploy/SKILL.md,SKILL.md,.md,93741,0.0937,.agents/skills/gstack-land-and-deploy,.agents,2026-07-22T15:48:19.240615
+.venv/Lib/site-packages/pyarrow/_gcsfs.cp314-win_amd64.pyd,_gcsfs.cp314-win_amd64.pyd,.pyd,93696,0.0937,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.386931
+.venv/Lib/site-packages/sqlglot/dialects/dialect.py,dialect.py,.py,93499,0.0935,.venv/Lib/site-packages/sqlglot/dialects,.venv,2026-07-13T12:07:15.196099
+.venv/Lib/site-packages/pandas/core/internals/__pycache__/blocks.cpython-314.pyc,blocks.cpython-314.pyc,.pyc,93196,0.0932,.venv/Lib/site-packages/pandas/core/internals/__pycache__,.venv,2026-04-16T12:00:53.045844
+.venv/Lib/site-packages/pandas/io/parsers/readers.py,readers.py,.py,92966,0.093,.venv/Lib/site-packages/pandas/io/parsers,.venv,2026-03-31T15:32:50.112457
+_archive/scratch/prototypes/gstack-source/browse/test/commands.test.ts,commands.test.ts,.ts,92956,0.093,_archive/scratch/prototypes/gstack-source/browse/test,_archive,2026-05-27T08:57:01.385948
+.venv/Lib/site-packages/pip/_vendor/distlib/__pycache__/util.cpython-314.pyc,util.cpython-314.pyc,.pyc,92750,0.0927,.venv/Lib/site-packages/pip/_vendor/distlib/__pycache__,.venv,2026-05-26T12:33:08.510706
+.agents/skills/gstack-autoplan/SKILL.md,SKILL.md,.md,92653,0.0927,.agents/skills/gstack-autoplan,.agents,2026-07-22T15:48:18.925392
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/recorder/assets/index-4ZiSSCmn.css,index-4ZiSSCmn.css,.css,92234,0.0922,.venv/Lib/site-packages/playwright/driver/package/lib/vite/recorder/assets,.venv,2026-06-09T08:43:07.254992
+.venv/Lib/site-packages/pyarrow/_dataset_parquet_encryption.cp314-win_amd64.pyd,_dataset_parquet_encryption.cp314-win_amd64.pyd,.pyd,92160,0.0922,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.378534
+01_Raw/RIPLEY/Mis extractos/28-06-2026 - 05-07-2026.csv,28-06-2026 - 05-07-2026.csv,.csv,92105,0.0921,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.863723
+_archive/scratch/prototypes/gstack-source/land-and-deploy/SKILL.md,SKILL.md,.md,91886,0.0919,_archive/scratch/prototypes/gstack-source/land-and-deploy,_archive,2026-05-27T08:57:01.705592
+01_Raw/RIPLEY/Mis extractos/13-01-2026 - 20-01-2026.csv,13-01-2026 - 20-01-2026.csv,.csv,91831,0.0918,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.802196
+.venv/Lib/site-packages/pip/_vendor/distlib/w32.exe,w32.exe,.exe,91648,0.0916,.venv/Lib/site-packages/pip/_vendor/distlib,.venv,2026-03-31T15:31:56.596015
+.git/objects/6e/17a4b003db52bfda120faf3d880f10f26fb030,17a4b003db52bfda120faf3d880f10f26fb030,.no_ext,91392,0.0914,.git/objects/6e,.git,2026-07-23T09:18:51.042125
+.venv/Lib/site-packages/pandas/tests/arithmetic/test_datetime64.py,test_datetime64.py,.py,91277,0.0913,.venv/Lib/site-packages/pandas/tests/arithmetic,.venv,2026-03-31T15:32:50.153535
+.venv/Lib/site-packages/pandas/_libs/sas.cp314-win_amd64.pyd,sas.cp314-win_amd64.pyd,.pyd,91136,0.0911,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.729364
+.git/objects/5c/3ce4fadae8fc77e002912766cc2ef3d6d36e83,3ce4fadae8fc77e002912766cc2ef3d6d36e83,.no_ext,90890,0.0909,.git/objects/5c,.git,2026-07-23T10:36:21.910370
+.git/objects/e8/aab1078a321695fe5a3af4e2ae57eaf30e7f70,aab1078a321695fe5a3af4e2ae57eaf30e7f70,.no_ext,90889,0.0909,.git/objects/e8,.git,2026-07-23T10:36:21.890897
+_archive/scratch/prototypes/gstack-source/autoplan/SKILL.md,SKILL.md,.md,90870,0.0909,_archive/scratch/prototypes/gstack-source/autoplan,_archive,2026-05-27T08:57:01.278845
+.venv/Lib/site-packages/sqlglot/expressions/core.py,core.py,.py,90688,0.0907,.venv/Lib/site-packages/sqlglot/expressions,.venv,2026-07-13T12:07:15.237893
+.venv/Lib/site-packages/pandas/core/__pycache__/apply.cpython-314.pyc,apply.cpython-314.pyc,.pyc,90593,0.0906,.venv/Lib/site-packages/pandas/core/__pycache__,.venv,2026-04-16T12:00:52.782292
+.venv/Lib/site-packages/pydantic-2.12.5.dist-info/METADATA,METADATA,.no_ext,90587,0.0906,.venv/Lib/site-packages/pydantic-2.12.5.dist-info,.venv,2026-03-31T15:32:47.429134
+01_Raw/PARIS/Transacciones/Dropshipping/03-2025.xlsx,03-2025.xlsx,.xlsx,90498,0.0905,01_Raw/PARIS/Transacciones/Dropshipping,01_Raw,2026-07-13T17:03:15.251919
+.venv/Lib/site-packages/pyarrow/parquet/__pycache__/core.cpython-314.pyc,core.cpython-314.pyc,.pyc,90224,0.0902,.venv/Lib/site-packages/pyarrow/parquet/__pycache__,.venv,2026-04-16T15:42:01.971953
+.venv/Lib/site-packages/numpy/random/tests/test_randomstate.py,test_randomstate.py,.py,89848,0.0898,.venv/Lib/site-packages/numpy/random/tests,.venv,2026-03-31T15:32:25.506919
+.venv/Lib/site-packages/mypy/fastparse.py,fastparse.py,.py,89803,0.0898,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.469352
+.venv/Lib/site-packages/pycparser/c_parser.py,c_parser.py,.py,89798,0.0898,.venv/Lib/site-packages/pycparser,.venv,2026-06-26T15:01:38.370696
+.venv/Lib/site-packages/pyarrow/io.pxi,io.pxi,.pxi,89140,0.0891,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.297129
+01_Raw/RIPLEY/Mis extractos/13-04-2026 - 20-04-2026.csv,13-04-2026 - 20-04-2026.csv,.csv,89027,0.089,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.813480
+AGENTS.md,AGENTS.md,.md,88907,0.0889,.,.,2026-07-22T16:28:29.835641
+.venv/Lib/site-packages/pip/_vendor/rich/__pycache__/progress.cpython-314.pyc,progress.cpython-314.pyc,.pyc,88766,0.0888,.venv/Lib/site-packages/pip/_vendor/rich/__pycache__,.venv,2026-05-26T12:33:08.266542
+.venv/Lib/site-packages/pandas/core/arrays/__pycache__/masked.cpython-314.pyc,masked.cpython-314.pyc,.pyc,88716,0.0887,.venv/Lib/site-packages/pandas/core/arrays/__pycache__,.venv,2026-04-16T12:00:52.606492
+.venv/Lib/site-packages/pandas/_libs/writers.cp314-win_amd64.pyd,writers.cp314-win_amd64.pyd,.pyd,88576,0.0886,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.737293
+01_Raw/RIPLEY/Mis extractos/13-06-2026 - 20-06-2026.csv,13-06-2026 - 20-06-2026.csv,.csv,88406,0.0884,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.820997
+.venv/Lib/site-packages/pyarrow/include/arrow/vendored/datetime/tz.h,tz.h,.h,88155,0.0882,.venv/Lib/site-packages/pyarrow/include/arrow/vendored/datetime,.venv,2026-03-31T15:32:21.666497
+.venv/Lib/site-packages/xmlschema/schemas/XSD_1.0/XMLSchema.xsd,XMLSchema.xsd,.xsd,88033,0.088,.venv/Lib/site-packages/xmlschema/schemas/XSD_1.0,.venv,2026-06-26T12:34:57.671294
+.venv/Lib/site-packages/numpy/_core/__pycache__/numeric.cpython-314.pyc,numeric.cpython-314.pyc,.pyc,87975,0.088,.venv/Lib/site-packages/numpy/_core/__pycache__,.venv,2026-04-16T12:00:50.971677
+.venv/Lib/site-packages/lxml/parser.pxi,parser.pxi,.pxi,87905,0.0879,.venv/Lib/site-packages/lxml,.venv,2026-06-26T15:01:38.554469
+.venv/Lib/site-packages/pandas/core/internals/managers.py,managers.py,.py,87865,0.0879,.venv/Lib/site-packages/pandas/core/internals,.venv,2026-03-31T15:32:50.046437
+_archive/scratch/prototypes/gstack-source/test/helpers/claude-pty-runner.ts,claude-pty-runner.ts,.ts,87784,0.0878,_archive/scratch/prototypes/gstack-source/test/helpers,_archive,2026-05-27T08:57:01.964225
+.venv/Lib/site-packages/pygments/lexers/__pycache__/templates.cpython-314.pyc,templates.cpython-314.pyc,.pyc,87724,0.0877,.venv/Lib/site-packages/pygments/lexers/__pycache__,.venv,2026-05-26T12:33:19.873644
+.venv/Lib/site-packages/numpy/linalg/tests/test_linalg.py,test_linalg.py,.py,87492,0.0875,.venv/Lib/site-packages/numpy/linalg/tests,.venv,2026-03-31T15:32:25.423366
+_archive/scratch/audit_database_discovered.json,audit_database_discovered.json,.json,87407,0.0874,_archive/scratch,_archive,2026-05-26T15:07:59.707385
+01_Raw/RIPLEY/Mis extractos/28-01-2026 - 05-02-2026.csv,28-01-2026 - 05-02-2026.csv,.csv,87349,0.0873,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.847501
+.venv/Lib/site-packages/lxml/html/_difflib.py,_difflib.py,.py,87060,0.0871,.venv/Lib/site-packages/lxml/html,.venv,2026-06-26T15:01:38.572961
+.venv/Lib/site-packages/lxml/builder.cp314-win_amd64.pyd,builder.cp314-win_amd64.pyd,.pyd,87040,0.087,.venv/Lib/site-packages/lxml,.venv,2026-06-26T15:01:38.523621
+.venv/Lib/site-packages/_pytest/__pycache__/python.cpython-314.pyc,python.cpython-314.pyc,.pyc,86603,0.0866,.venv/Lib/site-packages/_pytest/__pycache__,.venv,2026-05-26T12:33:23.066554
+.venv/Lib/site-packages/pandas/tests/io/json/test_pandas.py,test_pandas.py,.py,86522,0.0865,.venv/Lib/site-packages/pandas/tests/io/json,.venv,2026-03-31T15:32:50.487391
+.venv/Lib/site-packages/xmlschema/validators/schemas.py,schemas.py,.py,86520,0.0865,.venv/Lib/site-packages/xmlschema/validators,.venv,2026-06-26T12:34:57.695033
+.venv/Lib/site-packages/mypy/__pycache__/traverser.cpython-314.pyc,traverser.cpython-314.pyc,.pyc,86493,0.0865,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:56.008818
+knowledge_index.yaml,knowledge_index.yaml,.yaml,86020,0.086,.,.,2026-07-27T17:40:22.176178
+.venv/Lib/site-packages/xmlschema/validators/__pycache__/groups.cpython-314.pyc,groups.cpython-314.pyc,.pyc,85972,0.086,.venv/Lib/site-packages/xmlschema/validators/__pycache__,.venv,2026-06-26T12:34:58.938718
+.venv/Lib/site-packages/mypy/__pycache__/constraints.cpython-314.pyc,constraints.cpython-314.pyc,.pyc,85858,0.0859,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:52.091452
+.venv/Lib/site-packages/numpy/_core/numeric.py,numeric.py,.py,85809,0.0858,.venv/Lib/site-packages/numpy/_core,.venv,2026-03-31T15:32:25.683430
+.venv/Lib/site-packages/elementpath/xpath31/__pycache__/_xpath31_functions.cpython-314.pyc,_xpath31_functions.cpython-314.pyc,.pyc,85650,0.0857,.venv/Lib/site-packages/elementpath/xpath31/__pycache__,.venv,2026-06-26T12:34:57.268559
+.venv/Lib/site-packages/pandas/core/arrays/__pycache__/interval.cpython-314.pyc,interval.cpython-314.pyc,.pyc,85539,0.0855,.venv/Lib/site-packages/pandas/core/arrays/__pycache__,.venv,2026-04-16T12:00:52.729456
+.venv/Lib/site-packages/pandas/tests/series/test_constructors.py,test_constructors.py,.py,85538,0.0855,.venv/Lib/site-packages/pandas/tests/series,.venv,2026-03-31T15:32:50.579148
+.venv/Lib/site-packages/numpy/_core/tests/test_dtype.py,test_dtype.py,.py,85332,0.0853,.venv/Lib/site-packages/numpy/_core/tests,.venv,2026-03-31T15:32:25.796276
+.venv/Lib/site-packages/pydantic/__pycache__/main.cpython-314.pyc,main.cpython-314.pyc,.pyc,85238,0.0852,.venv/Lib/site-packages/pydantic/__pycache__,.venv,2026-04-16T12:00:49.905082
+.venv/Lib/site-packages/cffi/__pycache__/recompiler.cpython-314.pyc,recompiler.cpython-314.pyc,.pyc,84999,0.085,.venv/Lib/site-packages/cffi/__pycache__,.venv,2026-06-26T15:01:39.441651
+.venv/Lib/site-packages/numpy/random/_mt19937.cp314-win_amd64.pyd,_mt19937.cp314-win_amd64.pyd,.pyd,84992,0.085,.venv/Lib/site-packages/numpy/random,.venv,2026-03-31T15:32:25.487625
+.venv/Lib/site-packages/pyarrow/tests/test_convert_builtin.py,test_convert_builtin.py,.py,84946,0.0849,.venv/Lib/site-packages/pyarrow/tests,.venv,2026-03-31T15:32:21.795600
+.venv/Lib/site-packages/pandas/tests/io/formats/test_format.py,test_format.py,.py,84932,0.0849,.venv/Lib/site-packages/pandas/tests/io/formats,.venv,2026-03-31T15:32:50.471239
+.agents/skills/gstack-retro/SKILL.md,SKILL.md,.md,84638,0.0846,.agents/skills/gstack-retro,.agents,2026-07-22T15:48:19.306606
+.git/objects/a8/1e882ffaa713055b5000da0d06a7e25e144e2f,1e882ffaa713055b5000da0d06a7e25e144e2f,.no_ext,84593,0.0846,.git/objects/a8,.git,2026-07-13T17:10:20.665576
+.venv/Lib/site-packages/pandas/tests/arithmetic/test_timedelta64.py,test_timedelta64.py,.py,84343,0.0843,.venv/Lib/site-packages/pandas/tests/arithmetic,.venv,2026-03-31T15:32:50.154258
+.git/objects/d3/338bf90d5fcfe5a5d72767b9f15c87cba3f776,338bf90d5fcfe5a5d72767b9f15c87cba3f776,.no_ext,84326,0.0843,.git/objects/d3,.git,2026-07-20T10:48:06.901244
+.venv/Lib/site-packages/pydantic/main.py,main.py,.py,84205,0.0842,.venv/Lib/site-packages/pydantic,.venv,2026-03-31T15:32:47.388327
+01_Raw/RIPLEY/Fulfillment by Seller/000348-2815.xlsx,000348-2815.xlsx,.xlsx,83559,0.0836,01_Raw/RIPLEY/Fulfillment by Seller,01_Raw,2026-07-22T16:28:28.903526
+templates/dashboard.html,dashboard.html,.html,83322,0.0833,templates,templates,2026-07-27T12:21:41.107650
+.venv/Lib/site-packages/mypyc/codegen/__pycache__/emit.cpython-314.pyc,emit.cpython-314.pyc,.pyc,83177,0.0832,.venv/Lib/site-packages/mypyc/codegen/__pycache__,.venv,2026-05-27T09:17:56.742230
+.venv/Lib/site-packages/pygments/lexers/scripting.py,scripting.py,.py,82959,0.083,.venv/Lib/site-packages/pygments/lexers,.venv,2026-05-26T12:33:14.399612
+.venv/Lib/site-packages/mypyc/codegen/__pycache__/emitmodule.cpython-314.pyc,emitmodule.cpython-314.pyc,.pyc,82954,0.083,.venv/Lib/site-packages/mypyc/codegen/__pycache__,.venv,2026-05-27T09:17:56.842973
+.venv/Lib/site-packages/pandas/_libs/arrays.cp314-win_amd64.pyd,arrays.cp314-win_amd64.pyd,.pyd,82944,0.0829,.venv/Lib/site-packages/pandas/_libs,.venv,2026-03-31T15:32:50.687770
+_archive/scratch/prototypes/gstack-source/retro/SKILL.md,SKILL.md,.md,82889,0.0829,_archive/scratch/prototypes/gstack-source/retro,_archive,2026-05-27T08:57:01.788935
+.venv/Lib/site-packages/_pytest/_code/__pycache__/code.cpython-314.pyc,code.cpython-314.pyc,.pyc,82850,0.0828,.venv/Lib/site-packages/_pytest/_code/__pycache__,.venv,2026-05-26T12:33:22.049601
+.venv/Lib/site-packages/pandas/core/arrays/sparse/__pycache__/array.cpython-314.pyc,array.cpython-314.pyc,.pyc,82834,0.0828,.venv/Lib/site-packages/pandas/core/arrays/sparse/__pycache__,.venv,2026-04-16T12:00:52.753971
+.venv/Lib/site-packages/pyarrow/_parquet.pyx,_parquet.pyx,.pyx,82470,0.0825,.venv/Lib/site-packages/pyarrow,.venv,2026-03-31T15:32:21.395844
+01_Raw/ML/Poscobro/1 mayo 2026 - 1 junio 2026.xlsx,1 mayo 2026 - 1 junio 2026.xlsx,.xlsx,82423,0.0824,01_Raw/ML/Poscobro,01_Raw,2026-07-13T17:03:15.151450
+.venv/Lib/site-packages/lxml/html/__pycache__/__init__.cpython-314.pyc,__init__.cpython-314.pyc,.pyc,82419,0.0824,.venv/Lib/site-packages/lxml/html/__pycache__,.venv,2026-06-26T15:01:38.832953
+.venv/Lib/site-packages/numpy/_core/include/numpy/random/libdivide.h,libdivide.h,.h,82217,0.0822,.venv/Lib/site-packages/numpy/_core/include/numpy/random,.venv,2026-03-31T15:32:25.771412
+01_Raw/RIPLEY/Mis extractos/05-05-2026 - 13-05-2026.csv,05-05-2026 - 13-05-2026.csv,.csv,81893,0.0819,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.787880
+.venv/Lib/site-packages/numpy/testing/tests/test_utils.py,test_utils.py,.py,81824,0.0818,.venv/Lib/site-packages/numpy/testing/tests,.venv,2026-03-31T15:32:25.535943
+.venv/Lib/site-packages/greenlet/tests/__pycache__/test_greenlet.cpython-314.pyc,test_greenlet.cpython-314.pyc,.pyc,81680,0.0817,.venv/Lib/site-packages/greenlet/tests/__pycache__,.venv,2026-06-09T08:43:06.697252
+.venv/Lib/site-packages/python_calamine-0.6.2.dist-info/sboms/python-calamine.cyclonedx.json,python-calamine.cyclonedx.json,.json,81665,0.0817,.venv/Lib/site-packages/python_calamine-0.6.2.dist-info/sboms,.venv,2026-03-31T15:55:21.236250
+.venv/Lib/site-packages/sqlglot/generators/__pycache__/snowflake.cpython-314.pyc,snowflake.cpython-314.pyc,.pyc,81647,0.0816,.venv/Lib/site-packages/sqlglot/generators/__pycache__,.venv,2026-07-13T12:07:18.545074
+.venv/Lib/site-packages/mypyc/irbuild/__pycache__/specialize.cpython-314.pyc,specialize.cpython-314.pyc,.pyc,81506,0.0815,.venv/Lib/site-packages/mypyc/irbuild/__pycache__,.venv,2026-05-27T09:17:57.726647
+.venv/Lib/site-packages/mypy/__pycache__/nativeparse.cpython-314.pyc,nativeparse.cpython-314.pyc,.pyc,81206,0.0812,.venv/Lib/site-packages/mypy/__pycache__,.venv,2026-05-27T09:17:53.250674
+01_Raw/RIPLEY/Fulfillment by Seller/000324-2815.xlsx,000324-2815.xlsx,.xlsx,81200,0.0812,01_Raw/RIPLEY/Fulfillment by Seller,01_Raw,2026-07-22T16:28:28.885917
+.venv/Lib/site-packages/python_multipart/__pycache__/multipart.cpython-314.pyc,multipart.cpython-314.pyc,.pyc,81181,0.0812,.venv/Lib/site-packages/python_multipart/__pycache__,.venv,2026-07-03T10:46:50.561443
+.agents/skills/gstack-codex/SKILL.md,SKILL.md,.md,81138,0.0811,.agents/skills/gstack-codex,.agents,2026-07-22T15:48:19.136796
+.venv/Lib/site-packages/mypy/constraints.py,constraints.py,.py,80981,0.081,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.452641
+.venv/Lib/site-packages/pandas/core/internals/blocks.py,blocks.py,.py,80959,0.081,.venv/Lib/site-packages/pandas/core/internals,.venv,2026-03-31T15:32:50.037403
+.venv/Lib/site-packages/mypy/stubgen.py,stubgen.py,.py,80900,0.0809,.venv/Lib/site-packages/mypy,.venv,2026-05-27T09:17:50.527633
+.agents/skills/gstack-design-consultation/SKILL.md,SKILL.md,.md,80782,0.0808,.agents/skills/gstack-design-consultation,.agents,2026-07-22T15:48:19.147893
+.venv/Lib/site-packages/pandas/core/dtypes/dtypes.py,dtypes.py,.py,80669,0.0807,.venv/Lib/site-packages/pandas/core/dtypes,.venv,2026-03-31T15:32:50.020188
+01_Raw/RIPLEY/Mis extractos/20-06-2026 - 28-06-2026.csv,20-06-2026 - 28-06-2026.csv,.csv,80415,0.0804,01_Raw/RIPLEY/Mis extractos,01_Raw,2026-07-22T16:28:28.840148
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/dashboard/assets/codicon-DCmgc-ay.ttf,codicon-DCmgc-ay.ttf,.ttf,80340,0.0803,.venv/Lib/site-packages/playwright/driver/package/lib/vite/dashboard/assets,.venv,2026-06-09T08:43:07.241516
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/recorder/assets/codicon-DCmgc-ay.ttf,codicon-DCmgc-ay.ttf,.ttf,80340,0.0803,.venv/Lib/site-packages/playwright/driver/package/lib/vite/recorder/assets,.venv,2026-06-09T08:43:07.254992
+.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer/codicon.DCmgc-ay.ttf,codicon.DCmgc-ay.ttf,.ttf,80340,0.0803,.venv/Lib/site-packages/playwright/driver/package/lib/vite/traceViewer,.venv,2026-06-09T08:43:07.260038
+.venv/Lib/site-packages/pyarrow/include/arrow/util/async_generator.h,async_generator.h,.h,80271,0.0803,.venv/Lib/site-packages/pyarrow/include/arrow/util,.venv,2026-03-31T15:32:21.620675
+templates/documentary_dashboard.html,documentary_dashboard.html,.html,80184,0.0802,templates,templates,2026-07-22T16:28:37.776030
+.agents/skills/gstack-setup-gbrain/SKILL.md,SKILL.md,.md,80097,0.0801,.agents/skills/gstack-setup-gbrain,.agents,2026-07-22T15:48:19.338342
+.venv/Lib/site-packages/pydantic/__pycache__/fields.cpython-314.pyc,fields.cpython-314.pyc,.pyc,79935,0.0799,.venv/Lib/site-packages/pydantic/__pycache__,.venv,2026-04-16T12:00:50.040315
+.git/objects/5f/5b36a9fb5e3b0f0c978919b28ff8c796eb905f,5b36a9fb5e3b0f0c978919b28ff8c796eb905f,.no_ext,79933,0.0799,.git/objects/5f,.git,2026-06-06T12:06:25.457833
+.venv/Lib/site-packages/pyarrow/tests/test_csv.py,test_csv.py,.py,79930,0.0799,.venv/Lib/site-packages/pyarrow/tests,.venv,2026-03-31T15:32:21.796608
+.venv/Lib/site-packages/mypy/typeshed/stdlib/ast.pyi,ast.pyi,.pyi,79925,0.0799,.venv/Lib/site-packages/mypy/typeshed/stdlib,.venv,2026-05-27T09:17:50.625664
+.venv/Lib/site-packages/numpy/random/_philox.cp314-win_amd64.pyd,_philox.cp314-win_amd64.pyd,.pyd,79872,0.0799,.venv/Lib/site-packages/numpy/random,.venv,2026-03-31T15:32:25.490505
+.venv/Lib/site-packages/pandas/tests/frame/test_reductions.py,test_reductions.py,.py,79781,0.0798,.venv/Lib/site-packages/pandas/tests/frame,.venv,2026-03-31T15:32:50.262423
+.venv/Lib/site-packages/idna/idnadata.py,idnadata.py,.py,79623,0.0796,.venv/Lib/site-packages/idna,.venv,2026-03-31T15:32:36.629358

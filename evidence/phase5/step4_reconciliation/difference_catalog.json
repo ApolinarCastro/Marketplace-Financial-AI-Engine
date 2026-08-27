@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-07-28T17:50:20.966857",
+  "difference_categories": [
+    {
+      "code": "DIFERENCIA_MONTO",
+      "type": "MONTO",
+      "description": "Diferencia cuantitativa en monto acumulado"
+    },
+    {
+      "code": "DIFERENCIA_DOCUMENTAL",
+      "type": "DOCUMENTO",
+      "description": "Falta de folio XML o inconsistencia de archivo"
+    },
+    {
+      "code": "DIFERENCIA_TRIBUTARIA",
+      "type": "IMPUESTO",
+      "description": "Falta de DTE SII o discrepancia de tipo tributario"
+    },
+    {
+      "code": "COBRO_PENDIENTE",
+      "type": "LIQUIDACION",
+      "description": "Saldos pendientes de liberar por marketplace"
+    },
+    {
+      "code": "PAGO_PENDIENTE",
+      "type": "TESORERIA",
+      "description": "Transferencia pendiente a cuenta bancaria"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "execution_id": "phase5-step6-functional-contract-20260818",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-18",
+  "harness_version": "1.0.0-r5-phase5-step6",
+  "repository": "Marketplace Financial AI Engine",
+  "branch": "phase5/production-readiness",
+  "module": "F5-09 ELECTRONIC TAX TRACEABILITY — read-only DTE->Ledger traceability capability",
+  "principle": "REUSE certified DTELedgerMatcher; zero persistence; zero financial mutation; honest BLOCKED reporting for RIPLEY",
+  "INPUT": {
+    "endpoint": "GET /api/v4/dte/traceability",
+    "query_params": {
+      "marketplace": "optional string; one of ML|PARIS|FALABELLA|RIPLEY|ALL (default ALL). Case-insensitive.",
+      "transaction_id": "optional string; if provided, returns per-transaction traceability (folio, DTE info, match_status) for that ledger transaction"
+    }
+  },
+  "OUTPUT": {
+    "summary_view": {
+      "_meta": {"engine": "DTELedgerMatcher v1 (certified p0)", "execution_id": "...", "read_only": true, "mode": "computed_at_request"},
+      "marketplaces": {
+        "ML": {"strategy": "DIRECT_MATCH", "status": "CERTIFIED", "folios_certified": 15, "rows_eligible": 97609, "rows_linked": 86898, "match_statuses": {"MATCHED_CERTIFIED": 15}},
+        "PARIS": {"strategy": "DOCUMENT_CHAIN", "status": "CERTIFIED", "folios_certified": 18, "rows_eligible": 168727, "rows_linked": 1915},
+        "FALABELLA": {"strategy": "TRANSACTION_CHAIN", "status": "CERTIFIED", "folios_certified": 5, "rows_linked": 113},
+        "RIPLEY": {"strategy": "SETTLEMENT_CHAIN_V2", "status": "BLOCKED", "blocked_reasons": ["source files absent", "folio namespace overlap=0"]}
+      },
+      "totals": {"total_dte_linked_rows": 88926, "official_db_touched": false, "note": "certified-match rows (stricter than p0 legacy-view 93079; see api_contract_validation.json note_on_totals)"}
+    },
+    "transaction_view": {
+      "transaction_id": "...",
+      "marketplace": "...",
+      "folio_xml": "...",
+      "dte_folio": "...",
+      "dte_monto": 0.0,
+      "dte_fecha": "...",
+      "emisor_rut": "...",
+      "emisor_nombre": "...",
+      "tipo_dte": "...",
+      "match_status": "MATCHED_CERTIFIED|AMOUNT_MISMATCH|NOT_FOUND",
+      "match_rule": "..."
+    }
+  },
+  "SOURCE_OF_TRUTH": {
+    "dte_truth_v1": "DTE facts (folio, monto_total, fecha, emisor, tipo_dte) — read-only",
+    "document_match_v1": "PARIS document chain (MATCHED only) — read-only",
+    "dte_link_v1": "FALABELLA id_transaccion->folio links — read-only",
+    "ripley_settlement_chain": "RIPLEY settlement namespace assessment — read-only",
+    "marketplace_ledger_v1 / _clasificado_v1": "ledger rows (NEVER mutated) — read-only",
+    "01_Raw/Falabella/Órdenes y Transacciones/*.xlsx": "FALABELLA bridge UUID<->IdArticulo — read-only load",
+    "engine/v4/matching/dte_ledger_matcher.py": "certified matching rules (ML folio normalize + 1 CLP tolerance; PARIS DOCUMENT_CHAIN; FALABELLA TRANSACTION_CHAIN; RIPLEY SETTLEMENT_CHAIN_V2)"
+  },
+  "INVARIANTS": [
+    "official DB data/db/meli_financial_v4.db NEVER mutated (SHA 311c78e2... unchanged)",
+    "ledger financial data NEVER modified",
+    "RIPLEY NEVER reported as traceable — stays BLOCKED (no false fiscal inference)",
+    "financial_group / cierre / classification / DEC-019 untouched",
+    "no new table created on official DB; no view rebuilt on official DB",
+    "deterministic output for same inputs (idempotent read)",
+    "no financial logic in frontend"
+  ],
+  "FAILURE_STATES": {
+    "invalid_marketplace": "400 with detail listing valid values",
+    "missing_source_tables": "503/500 with explicit error message (no silent swallow)",
+    "falabella_bridge_unreadable": "FALABELLA reported as UNREACHABLE with reason (no fake zeros)",
+    "unknown_transaction_id": "transaction_view returns match_status NOT_FOUND + empty trace fields"
+  },
+  "API_CONTRACT": {
+    "method": "GET",
+    "path": "/api/v4/dte/traceability",
+    "auth": "none (same as existing /api/v4/dte/* endpoints)",
+    "response_codes": ["200", "400 (invalid marketplace)", "500 (source error, explicit)"],
+    "response_shape": "JSON object; summary_view by default; transaction_view when transaction_id given",
+    "immutability": "read-only; must not change any table"
+  },
+  "EVIDENCE_CONTRACT": {
+    "unit_tests": "module tests: ML/PARIS/FALABELLA certified counts match p0 evidence; RIPLEY BLOCKED; tolerance rule; determinism",
+    "api_tests": "route exists, summary shape, transaction_view shape, invalid marketplace 400, read-only DB assertion",
+    "integration": "Ledger -> Clasificado -> Reconciliation -> Exception -> DTE traceability chain consistent; SINGLE_FINANCIAL_TRUTH preserved",
+    "financial_integrity": "delta $0.00; DB SHA unchanged; RAW count unchanged",
+    "idempotency": "3 identical calls produce identical output",
+    "certification": "3 consecutive clean runs"
+  },
+  "verdict": "CONTRACT_DEFINED"
+}

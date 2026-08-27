@@ -1,0 +1,54 @@
+{
+  "execution_id": "phase5-step6-contract-20260818",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-18",
+  "harness_version": "1.0.0-r5-phase5-step6",
+  "repository": "Marketplace Financial AI Engine",
+  "branch": "phase5/production-readiness",
+  "module": "F5-09 ELECTRONIC TAX TRACEABILITY",
+  "endpoint": "GET /api/v4/dte/traceability",
+  "api_contract": {
+    "query_params": {
+      "marketplace": "optional; one of ML|PARIS|FALABELLA|RIPLEY; invalid -> HTTP 400",
+      "transaction_id": "optional; returns a single transaction trace view"
+    },
+    "response_summary": {
+      "_meta": {"engine": "DTELedgerMatcher v1 (certified p0)", "execution_id": "uuid per call", "read_only": true, "official_db_touched": false},
+      "marketplaces": {
+        "ML": {"strategy": "DIRECT_MATCH", "status": "CERTIFIED|NO_CERTIFIED_MATCHES", "folios_certified": 15, "rows_linked": 86898, "rows_eligible": 97609},
+        "PARIS": {"strategy": "DOCUMENT_CHAIN", "status": "CERTIFIED", "folios_certified": 18, "rows_linked": 1915, "rows_eligible": 168727},
+        "FALABELLA": {"strategy": "TRANSACTION_CHAIN", "status": "CERTIFIED", "folios_certified": 5, "rows_linked": 113, "rows_eligible": 3076},
+        "RIPLEY": {"strategy": "SETTLEMENT_CHAIN_V2", "status": "BLOCKED", "blocked_reasons": ["..."], "namespace_compatible": false}
+      },
+      "totals": {"total_dte_linked_rows": 88926, "official_db_touched": false}
+    },
+    "response_transaction": {
+      "transaction_id": "string",
+      "marketplace": "string",
+      "folio_xml": "string|null",
+      "dte_folio": "string",
+      "dte_monto": "number",
+      "emisor_rut": "string",
+      "emisor_nombre": "string",
+      "tipo_dte": "string",
+      "match_status": "string",
+      "match_rule": "string"
+    }
+  },
+  "http_statuses": {
+    "200": "valid summary or transaction lookup",
+    "400": "invalid marketplace value"
+  },
+  "verified_via": [
+    "tests/test_dte_traceability.py (17 passed)",
+    "tests/test_api_smoke.py expected-routes extension"
+  ],
+  "read_only_invariants": [
+    "no table created/dropped (test_traceability_no_db_mutation, test_route_read_only)",
+    "no view created/dropped",
+    "official DB SHA unchanged",
+    "RIPLEY never reported as fiscal-certified (honest BLOCKED)"
+  ],
+  "note_on_totals": "total_dte_linked_rows = sum of certified-match rows (88,926). The p0 evidence reported 93,079 which was the legacy dte_ledger_link VIEW count (PARIS/FALABELLA view includes extra direct-join rows beyond certified matches). The endpoint reports the stricter certified-match count.",
+  "verdict": "CONTRACT_VALIDATED"
+}

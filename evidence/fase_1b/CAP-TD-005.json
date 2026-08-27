@@ -1,0 +1,62 @@
+{
+  "cap_id": "CAP-TD-005",
+  "technical_debt_id": "TD-005",
+  "timestamp": "2026-07-27T17:05:30Z",
+  "execution_id": "EXEC-CAP-TD-005-20260727",
+  "git_commit": "2d51f52",
+  "harness_version": "1.0.0",
+  "status": "PASS",
+  "certification_status": "CERTIFIED",
+  "problem_description": "Lack of formal, bidirectionally traceable physical mapping in KnowledgeOS for the 12 data lineage links (LIN-001 through LIN-012) connecting source RAW files to Copilot queries.",
+  "root_cause": "Data lineage was documented in governance registries but not physically materialised as a structured, indexable, and Obsidian-compatible domain under knowledge/lineage/.",
+  "strategy": "Created physical master lineage index (knowledge/lineage/INDEX.md), 12 stage specifications (stages/LIN-001.md to LIN-012.md), and 10 question lineage maps (questions/QF-001.md to QF-010.md) under knowledge/lineage/ linking every lineage link to its corresponding contract (CTR-001 to CTR-011), evidence, capability, and financial question without modifying DuckDB or engine code.",
+  "lineage_stages_integrated": [
+    "LIN-001",
+    "LIN-002",
+    "LIN-003",
+    "LIN-004",
+    "LIN-005",
+    "LIN-006",
+    "LIN-007",
+    "LIN-008",
+    "LIN-009",
+    "LIN-010",
+    "LIN-011",
+    "LIN-012"
+  ],
+  "contracts_linked": [
+    "CTR-001",
+    "CTR-002",
+    "CTR-003",
+    "CTR-004",
+    "CTR-005",
+    "CTR-006",
+    "CTR-007",
+    "CTR-008",
+    "CTR-009",
+    "CTR-010",
+    "CTR-011"
+  ],
+  "questions_linked": [
+    "QF-001",
+    "QF-002",
+    "QF-003",
+    "QF-004",
+    "QF-005",
+    "QF-006",
+    "QF-007",
+    "QF-008",
+    "QF-009",
+    "QF-010"
+  ],
+  "base_files_created": 23,
+  "test_results": {
+    "total_tests": 842,
+    "passed": 830,
+    "failed": 0,
+    "skipped": 12,
+    "duration_seconds": 163.45
+  },
+  "sha256_official_db": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "rollback_strategy": "rm -rf knowledge/lineage/INDEX.md knowledge/lineage/stages/ knowledge/lineage/questions/"
+}

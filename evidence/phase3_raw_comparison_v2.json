@@ -1,0 +1,12 @@
+{
+  "baseline_source": "evidence/archive_root/BASELINE_MANIFEST_V1.json",
+  "previous_file_count": 1414,
+  "current_file_count": 1414,
+  "added": [],
+  "deleted": [],
+  "modified": [],
+  "unchanged": 1414,
+  "raw_mutations": 0,
+  "verification_method": "PATH_SIZE_SHA256",
+  "raw_status": "MUTATIONS_VERIFIED_ZERO"
+}

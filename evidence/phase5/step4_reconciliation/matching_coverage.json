@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-07-28T17:50:20.966857",
+  "rules": [
+    {
+      "rule_id": "REC_001_LEDGER_CLASSIFICATION",
+      "name": "Coincidencia Ledger vs Clasificaci\u00f3n",
+      "sources": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1"
+      ],
+      "matching_keys": [
+        "id_transaccion"
+      ],
+      "tolerance": 0.0
+    },
+    {
+      "rule_id": "REC_002_DOCUMENTARY_XML",
+      "name": "Respaldo Documental XML",
+      "sources": [
+        "v_ledger_certified",
+        "01_Raw"
+      ],
+      "matching_keys": [
+        "folio_xml"
+      ],
+      "tolerance": 0.0
+    },
+    {
+      "rule_id": "REC_003_TAX_DTE_SII",
+      "name": "Respaldo Tributario DTE SII",
+      "sources": [
+        "v_ledger_certified",
+        "dte_truth_v1"
+      ],
+      "matching_keys": [
+        "dte_folio"
+      ],
+      "tolerance": 0.0
+    }
+  ],
+  "coverage_metrics": {
+    "total_records_evaluated": 1000,
+    "reconciliation_rate_pct": 100.0,
+    "matching_keys_supported": [
+      "id_transaccion",
+      "id_orden",
+      "folio_xml",
+      "dte_folio"
+    ],
+    "financial_delta": "$0.00"
+  }
+}

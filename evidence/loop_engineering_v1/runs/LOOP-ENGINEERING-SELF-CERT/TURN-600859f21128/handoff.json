@@ -1,0 +1,38 @@
+{
+  "continuation_record": {
+    "from_agent": "AUDITOR",
+    "to_agent": "OPENCODE_ENGINEER",
+    "goal_id": "LOOP-ENGINEERING-SELF-CERT",
+    "completed": [
+      "TODO-001",
+      "TODO-002",
+      "TODO-003"
+    ],
+    "current_state": "turn TURN-600859f21128 ended with VALIDATED_COMPLETION: confirmed the pre-existing coordination interface still passes its suite",
+    "evidence": [
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-600859f21128/precheck.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-600859f21128/action.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-600859f21128/validation.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-600859f21128/tests.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-600859f21128/diff.json"
+    ],
+    "blockers": [],
+    "files_changed": [],
+    "tests": [
+      "suite",
+      "exit_code"
+    ],
+    "next_todo": null,
+    "allowed_scope": [],
+    "forbidden_scope": [
+      "01_Raw/**",
+      "data/db/meli_financial_v4.db",
+      ".git/**",
+      ".agents/**",
+      "governance/coordination/**"
+    ],
+    "created_at": "2026-08-07T15:29:36.512Z",
+    "turn_id": "TURN-600859f21128",
+    "idempotency_key": "handoff:LOOP-ENGINEERING-SELF-CERT:TURN-600859f21128"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-07-28T17:44:06.110459",
+  "official_database_validation": {
+    "path": "data/db/meli_financial_v4.db",
+    "expected_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "actual_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "status": "PASS"
+  },
+  "api_endpoints_validation": {
+    "GET /api/v4/truth/health": "PASS",
+    "GET /api/v4/truth/summary": "PASS",
+    "GET /api/v4/truth/query": "PASS",
+    "POST /api/v4/truth/query": "PASS",
+    "GET /api/v4/truth/transaction/{transaction_id}": "PASS",
+    "GET /api/v4/truth/order/{id_orden}": "PASS"
+  },
+  "determinism_check": "PASS (100% reproducible, $0 delta across 13 canonical queries)"
+}

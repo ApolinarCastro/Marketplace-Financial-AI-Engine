@@ -1,0 +1,43 @@
+{
+  "golden_report_id": "GOLDEN-CAP-F2-001-MELI-202504",
+  "timestamp": "2026-07-27T20:20:00Z",
+  "marketplace": "ML",
+  "period": "2025-04",
+  "period_start": "2025-04-01",
+  "period_end": "2025-04-30",
+  "raw_files": [
+    "ML/Liberaciones/2025-04 Abril/Abril 2025.xlsx",
+    "ML/Liquidacion_FF/2025-04 Abril/liquidacion-2025-04-01--2025-04-06.xlsx",
+    "ML/Liquidacion_FF/2025-04 Abril/liquidacion-2025-04-07--2025-04-13.xlsx",
+    "ML/Liquidacion_FF/2025-04 Abril/liquidacion-2025-04-14--2025-04-20.xlsx",
+    "ML/Liquidacion_FF/2025-04 Abril/liquidacion-2025-04-21--2025-04-27.xlsx",
+    "ML/Liquidacion_FF/2025-04 Abril/liquidacion-2025-04-28--2025-04-30.xlsx"
+  ],
+  "counts": {
+    "raw_files_scanned": 6,
+    "ledger_rows": 7258,
+    "unclassified_rows": 0
+  },
+  "financial_closing": {
+    "ventas_brutas": 71053742.0,
+    "devoluciones": -8229778.0,
+    "costos_operacionales": -4545939.23,
+    "costos_comerciales": -12978987.0,
+    "resultado_neto": 45359027.77,
+    "delta": 0.0
+  },
+  "canonical_questions": {
+    "Q-001": "PASS",
+    "Q-002": "PASS",
+    "Q-003": "PASS",
+    "Q-004": "PASS",
+    "Q-005": "PASS",
+    "Q-006": "PASS",
+    "Q-007": "FALLBACK_INSUFFICIENT_EVIDENCE",
+    "Q-008": "FALLBACK_INSUFFICIENT_EVIDENCE",
+    "Q-009": "PASS",
+    "Q-010": "PASS"
+  },
+  "official_db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "controlled_db_copy": "data/db/controlled_cap_f2_001.db"
+}

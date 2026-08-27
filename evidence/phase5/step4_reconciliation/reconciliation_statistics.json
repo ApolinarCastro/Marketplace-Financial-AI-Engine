@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-07-28T17:50:20.966857",
+  "global_statistics": {
+    "marketplace": "ALL",
+    "period": "ALL",
+    "total_reconciled": 1000,
+    "total_audited": 1000,
+    "reconciliation_rate_pct": 100.0,
+    "financial_delta": "$0.00",
+    "exception_breakdown": {
+      "CONCILIADO": 1000,
+      "DIFERENCIA_MONTO": 0,
+      "DIFERENCIA_DOCUMENTAL": 0,
+      "DIFERENCIA_TRIBUTARIA": 0,
+      "COBRO_PENDIENTE": 0,
+      "PAGO_PENDIENTE": 0,
+      "SIN_RESPALDO_XML": 0,
+      "SIN_RESPALDO_DTE": 0,
+      "SIN_MATCH_SAP": 0,
+      "SIN_MATCH_MARKETPLACE": 0,
+      "REQUIERE_REVISION": 0
+    }
+  },
+  "per_marketplace": {
+    "ML": {
+      "marketplace": "ML",
+      "period": "ALL",
+      "total_reconciled": 583,
+      "total_audited": 1000,
+      "reconciliation_rate_pct": 58.3,
+      "financial_delta": "$0.00",
+      "exception_breakdown": {
+        "CONCILIADO": 583,
+        "DIFERENCIA_MONTO": 0,
+        "DIFERENCIA_DOCUMENTAL": 0,
+        "DIFERENCIA_TRIBUTARIA": 0,
+        "COBRO_PENDIENTE": 0,
+        "PAGO_PENDIENTE": 0,
+        "SIN_RESPALDO_XML": 416,
+        "SIN_RESPALDO_DTE": 1,
+        "SIN_MATCH_SAP": 0,
+        "SIN_MATCH_MARKETPLACE": 0,
+        "REQUIERE_REVISION": 0
+      }
+    },
+    "RIPLEY": {
+      "marketplace": "RIPLEY",
+      "period": "ALL",
+      "total_reconciled": 1000,
+      "total_audited": 1000,
+      "reconciliation_rate_pct": 100.0,
+      "financial_delta": "$0.00",
+      "exception_breakdown": {
+        "CONCILIADO": 1000,
+        "DIFERENCIA_MONTO": 0,
+        "DIFERENCIA_DOCUMENTAL": 0,
+        "DIFERENCIA_TRIBUTARIA": 0,
+        "COBRO_PENDIENTE": 0,
+        "PAGO_PENDIENTE": 0,
+        "SIN_RESPALDO_XML": 0,
+        "SIN_RESPALDO_DTE": 0,
+        "SIN_MATCH_SAP": 0,
+        "SIN_MATCH_MARKETPLACE": 0,
+        "REQUIERE_REVISION": 0
+      }
+    },
+    "PARIS": {
+      "marketplace": "PARIS",
+      "period": "ALL",
+      "total_reconciled": 648,
+      "total_audited": 1000,
+      "reconciliation_rate_pct": 64.8,
+      "financial_delta": "$0.00",
+      "exception_breakdown": {
+        "CONCILIADO": 648,
+        "DIFERENCIA_MONTO": 0,
+        "DIFERENCIA_DOCUMENTAL": 0,
+        "DIFERENCIA_TRIBUTARIA": 0,
+        "COBRO_PENDIENTE": 0,
+        "PAGO_PENDIENTE": 0,
+        "SIN_RESPALDO_XML": 182,
+        "SIN_RESPALDO_DTE": 170,
+        "SIN_MATCH_SAP": 0,
+        "SIN_MATCH_MARKETPLACE": 0,
+        "REQUIERE_REVISION": 0
+      }
+    },
+    "FALABELLA": {
+      "marketplace": "FALABELLA",
+      "period": "ALL",
+      "total_reconciled": 0,
+      "total_audited": 1000,
+      "reconciliation_rate_pct": 0.0,
+      "financial_delta": "$0.00",
+      "exception_breakdown": {
+        "CONCILIADO": 0,
+        "DIFERENCIA_MONTO": 0,
+        "DIFERENCIA_DOCUMENTAL": 0,
+        "DIFERENCIA_TRIBUTARIA": 0,
+        "COBRO_PENDIENTE": 0,
+        "PAGO_PENDIENTE": 0,
+        "SIN_RESPALDO_XML": 1000,
+        "SIN_RESPALDO_DTE": 0,
+        "SIN_MATCH_SAP": 0,
+        "SIN_MATCH_MARKETPLACE": 0,
+        "REQUIERE_REVISION": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "turn_id": "TURN-8b3f2c1d9e7a",
+  "files_changed": [
+    "tools/loop_domain_coupling.py",
+    "evidence/universal_loop_v1/domain_coupling_report.json"
+  ],
+  "created_at": "2026-08-07T16:01:15.566Z"
+}

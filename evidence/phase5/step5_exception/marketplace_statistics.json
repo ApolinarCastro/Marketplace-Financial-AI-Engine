@@ -1,0 +1,18 @@
+{
+  "PARIS": {
+    "records_with_exception": 197820,
+    "ledger_rows": 197820
+  },
+  "FALABELLA": {
+    "records_with_exception": 3076,
+    "ledger_rows": 3076
+  },
+  "ML": {
+    "records_with_exception": 109799,
+    "ledger_rows": 109799
+  },
+  "RIPLEY": {
+    "records_with_exception": 287417,
+    "ledger_rows": 287417
+  }
+}

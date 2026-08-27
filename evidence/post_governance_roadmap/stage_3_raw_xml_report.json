@@ -1,0 +1,16 @@
+{
+  "stage": "ETAPA_3_CHECK_RAW_XML",
+  "timestamp": "2026-07-28T09:43:42.050501",
+  "raw_dir": "01_Raw",
+  "total_raw_xml_files": 971,
+  "marketplace_breakdown": {
+    "SHOPIFY": 220,
+    "RIPLEY": 472,
+    "PARIS": 69,
+    "ML": 202,
+    "FALABELLA": 8
+  },
+  "raw_mutations": 0,
+  "raw_layer_status": "INMUTABLE",
+  "verdict": "PASS"
+}

@@ -1,0 +1,7 @@
+{
+  "turn_id": "TURN-a1b2c3d4e5f6",
+  "files_changed": [
+    "engine/loop_control/policy.py"
+  ],
+  "created_at": "2026-08-07T16:10:53.525Z"
+}

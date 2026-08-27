@@ -1,0 +1,18 @@
+{
+  "marketplace": "SHOPIFY",
+  "timestamp": "2026-07-24T11:14:11.043936",
+  "initial_rows": 0,
+  "final_rows": 0,
+  "new_rows_inserted": 0,
+  "classification_count": 0,
+  "periods_closed": {
+    "neto": 0.0,
+    "ingresos": 0.0,
+    "devoluciones": 0.0,
+    "costos_op": 0.0,
+    "costos_com": 0.0,
+    "ajustes": 0.0
+  },
+  "financial_delta": 0.0,
+  "status": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "false_fiscal_certifications": 0,
+  "certification_states_present": {
+    "LEDGER_REFERENCE_ONLY": 295308,
+    "DOCUMENT_REFERENCE_ONLY": 12311,
+    "INSUFFICIENT_FISCAL_EVIDENCE": 290493
+  },
+  "crypto_certified_rows": 0,
+  "xml_present_not_certified_rows": 0,
+  "truth_conflict_rows": 0,
+  "independent_sql_check": {
+    "ledger_folio_matched_in_dte_truth": 0,
+    "dte_ledger_link_dte_linked_eq_1": 0,
+    "v_ledger_certified_dte_cert_type_LEDGER_EXISTING": 307353
+  },
+  "verdict": "PASS",
+  "note": "v_ledger_certified dte_cert_type='LEDGER_EXISTING' is NOT DTE certification (per DEC-036 / rule LEDGER_EXISTING != DTE_CERTIFIED). 0 real SII DTE links exist in corpus. RIPLEY folio_xml are settlement refs (e.g. 596684) not SII folios."
+}

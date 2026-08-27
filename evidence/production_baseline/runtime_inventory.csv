@@ -1,0 +1,23 @@
+component,declared_location,actual_location,used_by_runtime,status,evidence
+entrypoint,run_app.py (uvicorn api.api:app),run_app.py:29,true,CANONICAL,uvicorn.run api.api:app port 3001
+start_script,START_APP.bat,START_APP.bat,true,ACTIVE,launches backend + opens /app
+venv,.venv,.venv/Scripts/python.exe,true,CANONICAL,run_app.py:15 + START_APP.bat l.18
+api,api/api.py,api/api.py (86 routes),true,CANONICAL,86 @app routes
+official_db,data/db/meli_financial_v4.db,engine/v4/database.py DB_PATH,true,CANONICAL,SHA 311C78E2 size 58732544
+frontend_dashboard,templates/dashboard.html,/app route,true,CANONICAL,@app.get('/app')
+executive_dashboard,templates/executive_dashboard.html,/exec route,true,CANONICAL,@app.get('/exec')
+documentary_dashboard,templates/documentary_dashboard.html,/documentary route,true,CANONICAL,@app.get('/documentary')
+traceability_dashboard,templates/traceability.html,/traceability route,true,CANONICAL,@app.get('/traceability')
+copilot_dashboard,templates/copilot.html,/copilot route,true,CANONICAL,@app.get('/copilot')
+upload_center,templates/upload_center.html,/upload route,true,CANONICAL,@app.get('/upload')
+engines,engine/v4/,20 modules,direct,true,CANONICAL,domain engines present
+tests,tests/,79 files + subdirs,false,ACTIVE,1031/39/12 baseline
+pipeline_cli,Scripts/pipeline_cli.py,Scripts/pipeline_cli.py,UNKNOWN,UNVERIFIED,to audit LOOP 3
+rake_scripts,Scripts/fix_* inject* patch_* f5_*,Scripts/ (16 scripts),UNKNOWN,UNVERIFIED,to audit LOOP 3
+run_tests.py,run_tests.py,AutoClaw python path,false,LEGACY,hardcodes external python
+config,config.py,config.py root,false,LEGACY,no python imports config; refs data/raw (nonexistent)
+frontend_shared,frontend/shared/,mounted /shared api.py:137,true,CANONICAL,api_client.js + financial-formatter.js
+knowledge_index,knowledge_index.yaml,root yaml,true,ACTIVE,/api/v4/knowledge
+frontend_src,src/frontend (React/Vite),NOT FOUND,false,STALE_DOCUMENTATION,no src/frontend
+frontend_dist,frontend/dist,NOT FOUND,false,STALE_DOCUMENTATION,no dist
+antigravity_db,antigravity_v4.db,NOT FOUND,false,STALE_DOCUMENTATION,only meli_financial_v4.db

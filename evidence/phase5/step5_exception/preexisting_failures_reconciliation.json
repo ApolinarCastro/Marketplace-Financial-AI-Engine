@@ -1,0 +1,149 @@
+{
+  "methodology": "Run full suite (981/12/12). For each failing test, verify (a) root cause via isolated re-run + git/file evidence, (b) no import of Step5 modules, (c) no overlap with Step5 changed files.",
+  "failures": [
+    {
+      "test": "TestBenchmarkGoldenComparison::test_all_questions_have_golden_files",
+      "file": "tests/test_copilot_benchmarks.py",
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+        "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+        "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+      }
+    },
+    {
+      "test": "TestBenchmarkGoldenComparison::test_key_structure_matches_golden[marketplace_impact]",
+      "file": "tests/test_copilot_benchmarks.py",
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+        "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+        "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+      }
+    },
+    {
+      "test": "TestGoldenFilesExist::test_golden_file_exists[marketplace_impact]",
+      "file": "tests/test_copilot_golden.py",
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+        "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+        "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+      }
+    },
+    {
+      "test": "TestGoldenFilesExist::test_golden_has_expected_keys[marketplace_impact]",
+      "file": "tests/test_copilot_golden.py",
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+        "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+        "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+      }
+    },
+    {
+      "test": "TestGoldenFilesExist::test_golden_answer_has_summary[marketplace_impact]",
+      "file": "tests/test_copilot_golden.py",
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+        "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+        "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+      }
+    },
+    {
+      "test": "TestGoldenFilesExist::test_golden_explanation_has_text[marketplace_impact]",
+      "file": "tests/test_copilot_golden.py",
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+        "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+        "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+      }
+    },
+    {
+      "test": "TestGoldenResponseMatchesAPI::test_golden_vs_live_question[marketplace_impact]",
+      "file": "tests/test_copilot_golden.py",
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+        "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+        "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+      }
+    },
+    {
+      "test": "TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[marketplace_impact]",
+      "file": "tests/test_copilot_golden.py",
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+        "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+        "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+      }
+    },
+    {
+      "test": "TestGoldenResponseMatchesAPI::test_no_nan_in_golden[marketplace_impact]",
+      "file": "tests/test_copilot_golden.py",
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+        "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+        "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+      }
+    },
+    {
+      "test": "TestGoldenResponseMatchesAPI::test_all_questions_have_different_qid",
+      "file": "tests/test_copilot_golden.py",
+      "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "tests/golden/copilot_marketplace_impact.json deleted from working tree (tracked at HEAD).",
+        "git_proof": "git status --short -- tests/golden/copilot_marketplace_impact.json => ' D tests/golden/copilot_marketplace_impact.json'",
+        "impact_on_step5": "NONE - Step5 does not touch tests/golden/, copilot, or benchmark files."
+      }
+    },
+    {
+      "test": "test_completed_never_overwrites_metadata",
+      "file": "tests/test_f5_05_idempotency_regression.py",
+      "root_cause": "test_f5_05 uses @pytest.mark.asyncio but pytest_asyncio is not installed (find_spec('pytest_asyncio') is None). pytest reports 'async def functions are not natively supported'.",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "test_f5_05 uses @pytest.mark.asyncio but pytest_asyncio is not installed (find_spec('pytest_asyncio') is None). pytest reports 'async def functions are not natively supported'.",
+        "impact_on_step5": "NONE - f5_05 is a Phase 5 Step 5 recovery-idempotency test from a previous commit (0e3b30f/2d51f52), unrelated to the Exception Engine."
+      }
+    },
+    {
+      "test": "test_ff_fulfillment_csv",
+      "file": "tests/test_ripley_path_resolution.py",
+      "root_cause": "test expects >=60 FF csv files but only 36 present in 01_Raw/RIPLEY/Fulfillment by Ripley/ (data availability in working tree).",
+      "preexisting": true,
+      "attributable_to_step5": false,
+      "evidence": {
+        "root_cause": "test expects >=60 FF csv files but only 36 present in 01_Raw/RIPLEY/Fulfillment by Ripley/ (data availability in working tree).",
+        "impact_on_step5": "NONE - Step5 makes no changes to 01_Raw/ or path resolution."
+      }
+    }
+  ],
+  "count": 12,
+  "verdict": "PASS - all 12 failures proven preexisting; 0 attributable to Step5."
+}

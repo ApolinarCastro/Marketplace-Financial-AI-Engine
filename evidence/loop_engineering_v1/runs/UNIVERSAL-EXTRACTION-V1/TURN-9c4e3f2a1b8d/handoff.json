@@ -1,0 +1,44 @@
+{
+  "continuation_record": {
+    "from_agent": "CODEX_ENGINEER",
+    "to_agent": "OPENCODE_ENGINEER",
+    "goal_id": "UNIVERSAL-EXTRACTION-V1",
+    "completed": [
+      "LOOP-00",
+      "LOOP-01",
+      "LOOP-02",
+      "LOOP-03"
+    ],
+    "current_state": "turn TURN-9c4e3f2a1b8d ended with VALIDATED_COMPLETION: created universal core specification document",
+    "evidence": [
+      "evidence/loop_engineering_v1/runs/UNIVERSAL-EXTRACTION-V1/TURN-9c4e3f2a1b8d/validation.json",
+      "evidence/loop_engineering_v1/runs/UNIVERSAL-EXTRACTION-V1/TURN-9c4e3f2a1b8d/action.json",
+      "evidence/loop_engineering_v1/runs/UNIVERSAL-EXTRACTION-V1/TURN-9c4e3f2a1b8d/tests.json",
+      "evidence/loop_engineering_v1/runs/UNIVERSAL-EXTRACTION-V1/TURN-9c4e3f2a1b8d/diff.json"
+    ],
+    "blockers": [],
+    "files_changed": [
+      "governance/UNIVERSAL_LOOP_ENGINEERING_PROTOCOL_V1.md"
+    ],
+    "tests": [
+      "suite",
+      "passed",
+      "failed"
+    ],
+    "next_todo": "LOOP-04",
+    "allowed_scope": [
+      "engine/loop_control/policy.py"
+    ],
+    "forbidden_scope": [
+      "01_Raw/**",
+      "data/db/meli_financial_v4.db",
+      ".git/**",
+      ".agents/**",
+      "governance/coordination/**",
+      "engine/v4/domain/**"
+    ],
+    "created_at": "2026-08-07T16:08:03.289Z",
+    "turn_id": "TURN-9c4e3f2a1b8d",
+    "idempotency_key": "handoff:UNIVERSAL-EXTRACTION-V1:TURN-9c4e3f2a1b8d"
+  }
+}

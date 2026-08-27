@@ -1,0 +1,912 @@
+{
+  "evidence_id": "UNIVERSAL_LOOP_V1_DEP_INVENTORY",
+  "files_scanned": 21,
+  "summary": {
+    "UNIVERSAL": 0,
+    "PROJECT_POLICY": 0,
+    "MARKETPLACE_SPECIFIC": 59,
+    "RUNTIME_SPECIFIC": 97,
+    "LEGACY": 0,
+    "UNKNOWN": 0
+  },
+  "detail": [
+    {
+      "file": "engine\\loop_control\\claim_manager.py",
+      "lines": 176,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\constants.py",
+      "lines": 200,
+      "classified": [
+        {
+          "line": 107,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"01_Raw/**\","
+        },
+        {
+          "line": 108,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"data/db/meli_financial_v4.db\","
+        },
+        {
+          "line": 129,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "\"agent_id\": \"OPENCODE_ENGINEER\","
+        },
+        {
+          "line": 133,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "\"runtime\": \"opencode\","
+        },
+        {
+          "line": 137,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "\"agent_id\": \"CODEX_ENGINEER\","
+        },
+        {
+          "line": 141,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "\"runtime\": \"codex\","
+        }
+      ]
+    },
+    {
+      "file": "engine\\loop_control\\evidence_manager.py",
+      "lines": 151,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\gate_manager.py",
+      "lines": 228,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\goal_manager.py",
+      "lines": 115,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\handoff_manager.py",
+      "lines": 108,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\kernel.py",
+      "lines": 457,
+      "classified": [
+        {
+          "line": 6,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "Explicit non-responsibilities: no financial logic, no DTE matching, no"
+        },
+        {
+          "line": 7,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "reconciliation, no classification, no Truth Engine, no Exception Engine, no SQL."
+        }
+      ]
+    },
+    {
+      "file": "engine\\loop_control\\quota_manager.py",
+      "lines": 156,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\recovery.py",
+      "lines": 112,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\scope.py",
+      "lines": 81,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\state_store.py",
+      "lines": 191,
+      "classified": [
+        {
+          "line": 7,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "This module contains no financial logic and issues no SQL."
+        }
+      ]
+    },
+    {
+      "file": "engine\\loop_control\\todo_manager.py",
+      "lines": 118,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\validation.py",
+      "lines": 108,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\__init__.py",
+      "lines": 60,
+      "classified": [
+        {
+          "line": 6,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "This package contains NO financial logic and issues NO SQL. It coordinates"
+        }
+      ]
+    },
+    {
+      "file": "engine\\loop_control\\__main__.py",
+      "lines": 139,
+      "classified": []
+    },
+    {
+      "file": "engine\\loop_control\\adapters\\CODEX_ADAPTER.md",
+      "lines": 88,
+      "classified": [
+        {
+          "line": 3,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "**Agent id:** `CODEX_ENGINEER`"
+        },
+        {
+          "line": 4,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "**Control plane:** `.loopx/` (the SAME plane OpenCode uses)"
+        },
+        {
+          "line": 7,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "The contract is **identical** to `OPENCODE_ADAPTER.md`. Only `agent_id` differs."
+        },
+        {
+          "line": 13,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "There is no `.codex_state` and no `.opencode_state`."
+        },
+        {
+          "line": 19,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "Creating a Codex-private coordination store is a protocol violation. Both agents"
+        },
+        {
+          "line": 35,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turn = kernel.begin_turn(goal_id=GOAL, agent_id=\"CODEX_ENGINEER\")"
+        },
+        {
+          "line": 38,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "If OpenCode holds a live lease on that todo, `begin_turn` returns"
+        },
+        {
+          "line": 45,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, todo_id, \"CODEX_ENGINEER\","
+        },
+        {
+          "line": 68,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "Set `next_agent=\"OPENCODE_ENGINEER\"` in `end_turn`."
+        },
+        {
+          "line": 75,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "a protected resource. Loop Control never rewrites it automatically. Codex's role"
+        }
+      ]
+    },
+    {
+      "file": "engine\\loop_control\\adapters\\OPENCODE_ADAPTER.md",
+      "lines": 124,
+      "classified": [
+        {
+          "line": 3,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "**Agent id:** `OPENCODE_ENGINEER`"
+        },
+        {
+          "line": 4,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "**Control plane:** `.loopx/` (shared — NOT private to OpenCode)"
+        },
+        {
+          "line": 7,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "This adapter does **not** reimplement the kernel. It tells OpenCode how to call it."
+        },
+        {
+          "line": 51,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turn = kernel.begin_turn(goal_id=GOAL, agent_id=\"OPENCODE_ENGINEER\", hypothesis=\"...\")"
+        },
+        {
+          "line": 65,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "verdict = kernel.check_write_intent(GOAL, todo_id, \"OPENCODE_ENGINEER\", [\"path/a.py\"])"
+        },
+        {
+          "line": 72,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "4. Never touch `01_Raw/`, `data/db/meli_financial_v4.db`, `.git/`, `.agents/`,"
+        },
+        {
+          "line": 85,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "agent_id=\"OPENCODE_ENGINEER\","
+        },
+        {
+          "line": 93,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "next_agent=\"CODEX_ENGINEER\","
+        },
+        {
+          "line": 121,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "- Creating a private `.opencode_state`. There is exactly ONE control plane."
+        },
+        {
+          "line": 124,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "- Editing the financial core (`engine/v4/`) under this protocol without an RFC."
+        }
+      ]
+    },
+    {
+      "file": "governance\\LOOP_ENGINEERING_PROTOCOL_V1.md",
+      "lines": 404,
+      "classified": [
+        {
+          "line": 4,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "**Scope:** Agent control plane. Non-financial."
+        },
+        {
+          "line": 15,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "OpenCode, Codex, Claude Code, or any other agent can execute a multi-session"
+        },
+        {
+          "line": 27,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "- It is **not** a financial engine."
+        },
+        {
+          "line": 30,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "- It does **not** introduce a second financial source of truth."
+        },
+        {
+          "line": 262,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "No secrets and no financial row data may be written into `.loopx/`."
+        },
+        {
+          "line": 315,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "01_Raw/**"
+        },
+        {
+          "line": 316,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "data/db/meli_financial_v4.db"
+        },
+        {
+          "line": 336,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "| `OPENCODE_ENGINEER` | implementation |"
+        },
+        {
+          "line": 337,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "| `CODEX_ENGINEER` | implementation |"
+        }
+      ]
+    },
+    {
+      "file": "tests\\test_loop_control.py",
+      "lines": 754,
+      "classified": [
+        {
+          "line": 4,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "01_Raw/, data/db/meli_financial_v4.db, .git/, or governance/coordination/."
+        },
+        {
+          "line": 51,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "non_goals=[\"financial changes\"],"
+        },
+        {
+          "line": 68,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "def _run_full_turn(kernel: LoopKernel, todo_id: str, agent: str = \"OPENCODE_ENGINEER\", next_agent: str | None = None):"
+        },
+        {
+          "line": 125,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.todos.transition(\"TODO-001\", \"CLAIMED\", claimed_by=\"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 126,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert kernel.todos.get(\"TODO-001\")[\"claimed_by\"] == \"OPENCODE_ENGINEER\""
+        },
+        {
+          "line": 155,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\", [\"engine/loop_control/a.py\"])"
+        },
+        {
+          "line": 158,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-001\", \"CODEX_ENGINEER\", [\"engine/loop_control/a.py\"])"
+        },
+        {
+          "line": 163,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turn = kernel.begin_turn(GOAL, \"CODEX_ENGINEER\", todo_id=\"TODO-001\")"
+        },
+        {
+          "line": 173,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "a = kernel.claims.claim(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\", [\"engine/loop_control/alpha/**\"])"
+        },
+        {
+          "line": 174,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "b = kernel.claims.claim(GOAL, \"TODO-002\", \"CODEX_ENGINEER\", [\"engine/loop_control/beta/**\"])"
+        },
+        {
+          "line": 184,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\", [\"engine/loop_control/**\"])"
+        },
+        {
+          "line": 186,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-002\", \"CODEX_ENGINEER\", [\"engine/loop_control/kernel.py\"])"
+        },
+        {
+          "line": 195,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\", [\"engine/loop_control/a.py\"], lease_seconds=-1)"
+        },
+        {
+          "line": 198,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-001\", \"CODEX_ENGINEER\", [\"engine/loop_control/a.py\"])"
+        },
+        {
+          "line": 204,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "recovered = kernel.claims.claim(GOAL, \"TODO-001\", \"CODEX_ENGINEER\","
+        },
+        {
+          "line": 206,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert recovered[\"agent_id\"] == \"CODEX_ENGINEER\""
+        },
+        {
+          "line": 209,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert any(h[\"agent_id\"] == \"OPENCODE_ENGINEER\" and h[\"release_reason\"] == \"STALE_LEASE_RECOVERED\""
+        },
+        {
+          "line": 225,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turn = kernel.begin_turn(GOAL, \"OPENCODE_ENGINEER\", todo_id=\"TODO-001\")"
+        },
+        {
+          "line": 232,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.gates.resolve(gate[\"gate_id\"], \"APPROVED\", resolved_by=\"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 236,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert kernel.begin_turn(GOAL, \"OPENCODE_ENGINEER\", todo_id=\"TODO-001\")[\"started\"] is True"
+        },
+        {
+          "line": 250,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "[\"01_Raw/ML/Facturacion/x.xlsx\", \"data/db/meli_financial_v4.db\","
+        },
+        {
+          "line": 255,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "verdict = kernel.check_write_intent(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\", [path])"
+        },
+        {
+          "line": 264,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "ok = kernel.check_write_intent(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\", [\"engine/loop_control/kernel.py\"])"
+        },
+        {
+          "line": 267,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "bad = kernel.check_write_intent(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\", [\"api/api.py\"])"
+        },
+        {
+          "line": 278,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "verdict = kernel.gates.check_git_command(GOAL, command, agent_id=\"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 304,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turn = kernel.begin_turn(GOAL, \"OPENCODE_ENGINEER\", todo_id=\"TODO-001\")"
+        },
+        {
+          "line": 354,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "out = _run_full_turn(kernel, \"TODO-001\", agent=\"OPENCODE_ENGINEER\", next_agent=\"CODEX_ENGINEER\")"
+        },
+        {
+          "line": 356,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert record[\"from_agent\"] == \"OPENCODE_ENGINEER\""
+        },
+        {
+          "line": 357,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert record[\"to_agent\"] == \"CODEX_ENGINEER\""
+        },
+        {
+          "line": 369,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "_run_full_turn(kernel, \"TODO-001\", agent=\"OPENCODE_ENGINEER\", next_agent=\"CODEX_ENGINEER\")"
+        },
+        {
+          "line": 377,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert brief[\"receiving_agent\"] == \"CODEX_ENGINEER\""
+        },
+        {
+          "line": 386,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "out = _run_full_turn(fresh, \"TODO-002\", agent=\"CODEX_ENGINEER\", next_agent=\"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 399,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turn = kernel.begin_turn(GOAL, \"OPENCODE_ENGINEER\", todo_id=\"TODO-001\")"
+        },
+        {
+          "line": 418,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\", [\"engine/loop_control/a.py\"], lease_seconds=-1)"
+        },
+        {
+          "line": 419,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.todos.transition(\"TODO-001\", \"CLAIMED\", claimed_by=\"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 428,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"Do you authorize writing to 01_Raw?\")"
+        },
+        {
+          "line": 437,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.complete_goal(GOAL, \"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 452,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\","
+        },
+        {
+          "line": 456,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.log_event(GOAL, \"OPENCODE_ENGINEER\", \"PING\", idempotency_key=\"evt-key-1\")"
+        },
+        {
+          "line": 457,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.handoff.publish(GOAL, \"OPENCODE_ENGINEER\", \"CODEX_ENGINEER\", \"state\","
+        },
+        {
+          "line": 480,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.complete_todo(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 505,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.end_turn(GOAL, \"TURN-x\", \"OPENCODE_ENGINEER\", \"TODO-001\","
+        },
+        {
+          "line": 529,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.todos.transition(\"TODO-001\", \"CLAIMED\", claimed_by=\"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 534,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.complete_todo(GOAL, \"TODO-001\", \"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 539,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turn = kernel.begin_turn(GOAL, \"OPENCODE_ENGINEER\", todo_id=\"TODO-001\")"
+        },
+        {
+          "line": 541,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.end_turn(GOAL, turn[\"turn_id\"], \"OPENCODE_ENGINEER\", \"TODO-001\","
+        },
+        {
+          "line": 548,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turn = kernel.begin_turn(GOAL, \"OPENCODE_ENGINEER\", todo_id=\"TODO-001\")"
+        },
+        {
+          "line": 549,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.end_turn(GOAL, turn[\"turn_id\"], \"OPENCODE_ENGINEER\", \"TODO-001\","
+        },
+        {
+          "line": 590,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-X\", \"OPENCODE_ENGINEER\", [\"engine/loop_control/x/**\"])"
+        },
+        {
+          "line": 593,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-X\", \"CODEX_ENGINEER\", [\"engine/loop_control/x/**\"])"
+        },
+        {
+          "line": 596,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-Y\", \"CODEX_ENGINEER\", [\"engine/loop_control/y/**\"])"
+        },
+        {
+          "line": 600,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.claims.claim(GOAL, \"TODO-Z\", \"CODEX_ENGINEER\", [\"engine/loop_control/x/inner.py\"])"
+        },
+        {
+          "line": 610,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.begin_turn(GOAL, \"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 627,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turn = kernel.begin_turn(GOAL, \"OPENCODE_ENGINEER\", todo_id=\"TODO-001\")"
+        },
+        {
+          "line": 628,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "out = kernel.end_turn(GOAL, turn[\"turn_id\"], \"OPENCODE_ENGINEER\", \"TODO-001\","
+        },
+        {
+          "line": 646,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert {\"OPENCODE_ENGINEER\", \"CODEX_ENGINEER\", \"AUDITOR\", \"QA\", \"RESEARCHER\"} <= ids"
+        },
+        {
+          "line": 649,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "assert set(agent[\"protected_write_scope\"]) >= {\"01_Raw/**\", \"data/db/meli_financial_v4.db\"}"
+        },
+        {
+          "line": 657,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "kernel.complete_goal(GOAL, \"OPENCODE_ENGINEER\")"
+        },
+        {
+          "line": 659,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert kernel.complete_goal(GOAL, \"OPENCODE_ENGINEER\")[\"status\"] == \"COMPLETED\""
+        },
+        {
+          "line": 703,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "def test_kernel_contains_no_financial_logic():"
+        },
+        {
+          "line": 704,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"\"\"The control plane must never become a second financial source of truth."
+        },
+        {
+          "line": 707,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "declaring it a PROTECTED resource; that is a guard, not financial logic."
+        },
+        {
+          "line": 709,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "banned = [\"marketplace_ledger\", \"duckdb\", \"SELECT \", \"financial_group\","
+        },
+        {
+          "line": 710,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"cierre_financiero\", \"import sqlite3\", \"engine.v4\"]"
+        },
+        {
+          "line": 719,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "if \"meli_financial_v4\" in text and path.name != \"constants.py\":"
+        },
+        {
+          "line": 726,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "assert \"data/db/meli_financial_v4.db\" in DEFAULT_PROTECTED_RESOURCES"
+        },
+        {
+          "line": 751,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert main([\"--root\", root, \"claim\", \"TODO-001\", \"--agent\", \"OPENCODE_ENGINEER\"]) == 0"
+        },
+        {
+          "line": 752,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "assert main([\"--root\", root, \"claim\", \"TODO-001\", \"--agent\", \"CODEX_ENGINEER\"]) == 2"
+        }
+      ]
+    },
+    {
+      "file": "tools\\run_loop_dogfood.py",
+      "lines": 203,
+      "classified": [
+        {
+          "line": 9,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "Read-only with respect to 01_Raw/, data/db/, .git/ and governance/coordination/."
+        },
+        {
+          "line": 47,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "db = REPO_ROOT / \"data\" / \"db\" / \"meli_financial_v4.db\""
+        },
+        {
+          "line": 48,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "raw_before = sum(1 for _ in (REPO_ROOT / \"01_Raw\").rglob(\"*\") if _.is_file())"
+        },
+        {
+          "line": 65,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "non_goals=[\"any financial change\", \"any RAW mutation\", \"any official DB mutation\"],"
+        },
+        {
+          "line": 83,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "t1 = kernel.begin_turn(GOAL, \"OPENCODE_ENGINEER\", hypothesis=\"kernel-suite-green\")"
+        },
+        {
+          "line": 89,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "GOAL, t1[\"turn_id\"], \"OPENCODE_ENGINEER\", todo1,"
+        },
+        {
+          "line": 96,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "next_agent=\"CODEX_ENGINEER\","
+        },
+        {
+          "line": 99,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turns.append({\"todo\": todo1, \"agent\": \"OPENCODE_ENGINEER\", \"result\": out1[\"result\"], \"validation\": r1})"
+        },
+        {
+          "line": 106,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "and brief[\"receiving_agent\"] == \"CODEX_ENGINEER\""
+        },
+        {
+          "line": 113,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "t2 = cold.begin_turn(GOAL, \"CODEX_ENGINEER\", hypothesis=\"state-schema-valid\")"
+        },
+        {
+          "line": 119,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "GOAL, t2[\"turn_id\"], \"CODEX_ENGINEER\", todo2,"
+        },
+        {
+          "line": 129,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "turns.append({\"todo\": todo2, \"agent\": \"CODEX_ENGINEER\", \"result\": out2[\"result\"], \"validation\": r2})"
+        },
+        {
+          "line": 146,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "next_agent=\"OPENCODE_ENGINEER\","
+        },
+        {
+          "line": 156,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "raw_after = sum(1 for _ in (REPO_ROOT / \"01_Raw\").rglob(\"*\") if _.is_file())"
+        },
+        {
+          "line": 163,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "\"agents_used\": [\"OPENCODE_ENGINEER\", \"CODEX_ENGINEER\", \"AUDITOR\"],"
+        },
+        {
+          "line": 181,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"raw_file_count_before\": raw_before,"
+        },
+        {
+          "line": 182,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"raw_file_count_after\": raw_after,"
+        },
+        {
+          "line": 183,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"raw_mutations\": raw_after - raw_before,"
+        },
+        {
+          "line": 191,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "and raw_before == raw_after"
+        }
+      ]
+    },
+    {
+      "file": "tools\\generate_loop_evidence.py",
+      "lines": 326,
+      "classified": [
+        {
+          "line": 34,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "BASELINE_SHA = \"311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9\""
+        },
+        {
+          "line": 68,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"protocol_version\": PROTOCOL_VERSION, \"repository\": \"Marketplace Financial AI Engine\"}"
+        },
+        {
+          "line": 80,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"contains_sql\": False, \"contains_financial_logic\": False,"
+        },
+        {
+          "line": 82,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"verified_by\": \"tests/test_loop_control.py::test_kernel_contains_no_financial_logic\"})"
+        },
+        {
+          "line": 125,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"scenarios_tested\": [\"RAW mutation\", \"official DB mutation\","
+        },
+        {
+          "line": 146,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "\"cross_agent_paths_proven\": [\"OPENCODE_ENGINEER -> CODEX_ENGINEER\","
+        },
+        {
+          "line": 147,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "\"CODEX_ENGINEER -> AUDITOR\","
+        },
+        {
+          "line": 148,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "\"AUDITOR -> OPENCODE_ENGINEER\"],"
+        },
+        {
+          "line": 193,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "for agent, name in ((\"OPENCODE_ENGINEER\", \"opencode_validation\"), (\"CODEX_ENGINEER\", \"codex_validation\")):"
+        },
+        {
+          "line": 226,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"classification\": {"
+        },
+        {
+          "line": 229,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"tests/test_copilot_benchmarks.py (2 tests, marketplace_impact golden file absent)\","
+        },
+        {
+          "line": 230,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"tests/test_copilot_golden.py (8 tests, marketplace_impact golden file absent)\","
+        },
+        {
+          "line": 245,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "db = REPO_ROOT / \"data\" / \"db\" / \"meli_financial_v4.db\""
+        },
+        {
+          "line": 247,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "raw_count = sum(1 for p in (REPO_ROOT / \"01_Raw\").rglob(\"*\") if p.is_file())"
+        },
+        {
+          "line": 248,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "raw_status = [line for line in git(\"status\", \"--short\", \"--\", \"01_Raw\").splitlines() if line.strip()]"
+        },
+        {
+          "line": 249,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "raw_modified = [line for line in raw_status if line.startswith(\" M\") or line.startswith(\"M \")]"
+        },
+        {
+          "line": 255,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "dump(\"financial_integrity\", {**meta,"
+        },
+        {
+          "line": 256,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"official_db\": {\"path\": \"data/db/meli_financial_v4.db\","
+        },
+        {
+          "line": 260,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"raw\": {\"path\": \"01_Raw\", \"file_count_baseline\": 1313,"
+        },
+        {
+          "line": 261,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"file_count_now\": raw_count,"
+        },
+        {
+          "line": 262,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"mutations\": raw_count - 1313,"
+        },
+        {
+          "line": 263,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"modified_entries_in_git_status\": len(raw_modified)},"
+        },
+        {
+          "line": 264,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"financial_delta\": \"$0.00\","
+        },
+        {
+          "line": 265,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"financial_delta_basis\": (\"This mission wrote zero SQL, opened zero database \""
+        },
+        {
+          "line": 268,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"which is a stronger guarantee than a query comparison.\"),"
+        },
+        {
+          "line": 292,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "\"opencode_compatible\": True,"
+        },
+        {
+          "line": 293,
+          "category": "RUNTIME_SPECIFIC",
+          "content": "\"codex_compatible\": True,"
+        },
+        {
+          "line": 296,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"raw_intact\": raw_count == 1313,"
+        },
+        {
+          "line": 298,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"financial_delta_zero\": db_sha == BASELINE_SHA,"
+        },
+        {
+          "line": 316,
+          "category": "MARKETPLACE_SPECIFIC",
+          "content": "\"3-consecutive-clean-runs bar applies to financial harnesses; this \""
+        }
+      ]
+    }
+  ],
+  "unknown_count": 0,
+  "gate_passed": true,
+  "generated_at": "2026-08-07T00:00:00Z"
+}

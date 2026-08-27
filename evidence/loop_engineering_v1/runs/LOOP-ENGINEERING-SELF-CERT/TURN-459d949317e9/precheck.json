@@ -1,0 +1,34 @@
+{
+  "turn_id": "TURN-459d949317e9",
+  "goal_id": "LOOP-ENGINEERING-SELF-CERT",
+  "todo_id": "TODO-001",
+  "agent_id": "OPENCODE_ENGINEER",
+  "protocol_version": "1.0.0",
+  "goal_status": "ACTIVE",
+  "todo_write_scope": [
+    "tests/test_loop_control.py"
+  ],
+  "validation_contract": [
+    "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\.venv\\Scripts\\python.exe -m pytest tests/test_loop_control.py -q"
+  ],
+  "lease_expires_at": "2026-08-07T16:29:24.869Z",
+  "hypothesis": "kernel-suite-green",
+  "open_gates": [],
+  "quota": {
+    "goal_id": "LOOP-ENGINEERING-SELF-CERT",
+    "limits": {
+      "max_same_hypothesis_attempts": 3,
+      "max_no_progress_turns": 2,
+      "max_validation_failures": 3,
+      "max_scope_expansions": 0
+    },
+    "turns_consumed": 0,
+    "failed_turns": 0,
+    "no_progress_turns": 0,
+    "validation_failures": 0,
+    "scope_expansions": 0,
+    "hypothesis_attempts": {},
+    "spent_keys": []
+  },
+  "created_at": "2026-08-07T15:29:24.889Z"
+}

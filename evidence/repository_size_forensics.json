@@ -1,0 +1,1469 @@
+{
+  "timestamp": "2026-07-28T12:39:02.807250",
+  "total_files": 24886,
+  "total_bytes": 7368793702,
+  "total_mb": 7027.43,
+  "total_gb": 6.863,
+  "top_30_folders": [
+    {
+      "dir": "data/db",
+      "size_mb": 1080.0,
+      "size_gb": 1.055,
+      "file_count": 23
+    },
+    {
+      "dir": "data/backup",
+      "size_mb": 319.57,
+      "size_gb": 0.312,
+      "file_count": 6
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db",
+      "size_mb": 303.09,
+      "size_gb": 0.296,
+      "file_count": 9
+    },
+    {
+      "dir": "data/db/baseline_estable_v7_20260715",
+      "size_mb": 213.05,
+      "size_gb": 0.208,
+      "file_count": 5
+    },
+    {
+      "dir": "Reporte_Marketplaces/Backup",
+      "size_mb": 171.88,
+      "size_gb": 0.168,
+      "file_count": 80
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db/snapshot_baseline_v6_20260529_105928",
+      "size_mb": 125.28,
+      "size_gb": 0.122,
+      "file_count": 4
+    },
+    {
+      "dir": "data/db/snapshot_baseline_v6_20260529_105928",
+      "size_mb": 125.28,
+      "size_gb": 0.122,
+      "file_count": 4
+    },
+    {
+      "dir": "data/db/snapshot_pre_ripley_rebuild_20260601_172043",
+      "size_mb": 125.27,
+      "size_gb": 0.122,
+      "file_count": 3
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172043",
+      "size_mb": 125.27,
+      "size_gb": 0.122,
+      "file_count": 3
+    },
+    {
+      "dir": "data/db/snapshot_pre_ripley_rebuild_20260601_172024",
+      "size_mb": 125.26,
+      "size_gb": 0.122,
+      "file_count": 2
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172024",
+      "size_mb": 125.26,
+      "size_gb": 0.122,
+      "file_count": 2
+    },
+    {
+      "dir": "data/db/snapshot_pre_classification_20260603_102347",
+      "size_mb": 125.01,
+      "size_gb": 0.122,
+      "file_count": 2
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db/snapshot_pre_classification_20260603_102347",
+      "size_mb": 125.01,
+      "size_gb": 0.122,
+      "file_count": 2
+    },
+    {
+      "dir": "data/db/snapshot_pre_fase2_20260603_112908",
+      "size_mb": 125.01,
+      "size_gb": 0.122,
+      "file_count": 2
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db/snapshot_pre_fase2_20260603_112908",
+      "size_mb": 125.01,
+      "size_gb": 0.122,
+      "file_count": 2
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052",
+      "size_mb": 111.45,
+      "size_gb": 0.109,
+      "file_count": 5
+    },
+    {
+      "dir": "data/db/snapshot_pre_poscobro_fix_20260605_155052",
+      "size_mb": 111.35,
+      "size_gb": 0.109,
+      "file_count": 5
+    },
+    {
+      "dir": "data/db/snapshot_corrupt_20260528",
+      "size_mb": 110.32,
+      "size_gb": 0.108,
+      "file_count": 9
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db/snapshot_corrupt_20260528",
+      "size_mb": 110.32,
+      "size_gb": 0.108,
+      "file_count": 9
+    },
+    {
+      "dir": ".venv/Lib/site-packages/playwright/driver",
+      "size_mb": 87.6,
+      "size_gb": 0.086,
+      "file_count": 3
+    },
+    {
+      "dir": ".venv/Lib/site-packages/pyarrow",
+      "size_mb": 71.88,
+      "size_gb": 0.07,
+      "file_count": 118
+    },
+    {
+      "dir": "data/db/snapshot_restored_validated_20260528",
+      "size_mb": 71.54,
+      "size_gb": 0.07,
+      "file_count": 5
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db/snapshot_restored_validated_20260528",
+      "size_mb": 71.54,
+      "size_gb": 0.07,
+      "file_count": 5
+    },
+    {
+      "dir": "Reporte_Marketplaces",
+      "size_mb": 66.06,
+      "size_gb": 0.065,
+      "file_count": 1
+    },
+    {
+      "dir": "_archive/database",
+      "size_mb": 62.53,
+      "size_gb": 0.061,
+      "file_count": 2
+    },
+    {
+      "dir": ".git/objects/97",
+      "size_mb": 58.03,
+      "size_gb": 0.057,
+      "file_count": 28
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539",
+      "size_mb": 57.3,
+      "size_gb": 0.056,
+      "file_count": 6
+    },
+    {
+      "dir": "data/db/snapshot_baseline_v5_20260529_094539",
+      "size_mb": 57.3,
+      "size_gb": 0.056,
+      "file_count": 6
+    },
+    {
+      "dir": "data/db/snapshot_pre_falabella_rebuild_20260529_100326",
+      "size_mb": 57.27,
+      "size_gb": 0.056,
+      "file_count": 3
+    },
+    {
+      "dir": "_archive/backup_20260608_120239/db/snapshot_pre_falabella_rebuild_20260529_100326",
+      "size_mb": 57.27,
+      "size_gb": 0.056,
+      "file_count": 3
+    }
+  ],
+  "top_100_files": [
+    {
+      "path": "data/db/snapshot_baseline_v6_20260529_105928/meli_financial_v4.db",
+      "size_mb": 125.26,
+      "size_gb": 0.122
+    },
+    {
+      "path": "data/db/snapshot_pre_ripley_rebuild_20260601_172024/meli_financial_v4.db",
+      "size_mb": 125.26,
+      "size_gb": 0.122
+    },
+    {
+      "path": "data/db/snapshot_pre_ripley_rebuild_20260601_172043/meli_financial_v4.db",
+      "size_mb": 125.26,
+      "size_gb": 0.122
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_baseline_v6_20260529_105928/meli_financial_v4.db",
+      "size_mb": 125.26,
+      "size_gb": 0.122
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172024/meli_financial_v4.db",
+      "size_mb": 125.26,
+      "size_gb": 0.122
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172043/meli_financial_v4.db",
+      "size_mb": 125.26,
+      "size_gb": 0.122
+    },
+    {
+      "path": "data/db/meli_financial_v4_pre_class.db",
+      "size_mb": 125.01,
+      "size_gb": 0.122
+    },
+    {
+      "path": "data/db/snapshot_pre_classification_20260603_102347/meli_financial_v4.db",
+      "size_mb": 125.01,
+      "size_gb": 0.122
+    },
+    {
+      "path": "data/db/snapshot_pre_fase2_20260603_112908/meli_financial_v4.db",
+      "size_mb": 125.01,
+      "size_gb": 0.122
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/meli_financial_v4_pre_class.db",
+      "size_mb": 125.01,
+      "size_gb": 0.122
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_classification_20260603_102347/meli_financial_v4.db",
+      "size_mb": 125.01,
+      "size_gb": 0.122
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_fase2_20260603_112908/meli_financial_v4.db",
+      "size_mb": 125.01,
+      "size_gb": 0.122
+    },
+    {
+      "path": "data/db/snapshot_pre_poscobro_fix_20260605_155052/meli_financial_v4.db",
+      "size_mb": 90.01,
+      "size_gb": 0.088
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/meli_financial_v4.db",
+      "size_mb": 90.01,
+      "size_gb": 0.088
+    },
+    {
+      "path": ".venv/Lib/site-packages/playwright/driver/node.exe",
+      "size_mb": 87.45,
+      "size_gb": 0.085
+    },
+    {
+      "path": "Reporte_Marketplaces/Reporte Gerencial 360 Marketplaces.xlsx",
+      "size_mb": 66.06,
+      "size_gb": 0.065
+    },
+    {
+      "path": ".git/objects/97/a2000adbe28263de330aa6c6a9d82dcc1cca22",
+      "size_mb": 57.77,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/controlled_cap_f2_001.db",
+      "size_mb": 57.26,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db",
+      "size_mb": 57.26,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db",
+      "size_mb": 57.26,
+      "size_gb": 0.056
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db",
+      "size_mb": 57.26,
+      "size_gb": 0.056
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db",
+      "size_mb": 57.26,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.pre_future_fix_20260623",
+      "size_mb": 57.01,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.snapshot_20260622_111145",
+      "size_mb": 57.01,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.snapshot_20260623_115557",
+      "size_mb": 57.01,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.snapshot_af002_20260623_121855",
+      "size_mb": 57.01,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122024",
+      "size_mb": 57.01,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122032",
+      "size_mb": 57.01,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/backups/meli_financial_v4_CERTIFIED_BASELINE_V1_20260624.db",
+      "size_mb": 57.01,
+      "size_gb": 0.056
+    },
+    {
+      "path": ".git/objects/94/dfd3baab78144119b18534110302560bdcbe1e",
+      "size_mb": 56.93,
+      "size_gb": 0.056
+    },
+    {
+      "path": "data/db/meli_financial_v4.db",
+      "size_mb": 56.01,
+      "size_gb": 0.055
+    },
+    {
+      "path": "data/db/meli_financial_v4_baseline_v4.db",
+      "size_mb": 55.26,
+      "size_gb": 0.054
+    },
+    {
+      "path": "_archive/releases/MARKETPLACE_AUDITOR_V3_5_RC1/meli_financial_v4_backup.db",
+      "size_mb": 55.26,
+      "size_gb": 0.054
+    },
+    {
+      "path": ".git/objects/57/1f85f7077d1f4ad01c031956f0fd7dc9a90062",
+      "size_mb": 54.17,
+      "size_gb": 0.053
+    },
+    {
+      "path": "data/backup/meli_financial_v4_pre_migration_20260724_110819.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/backup/meli_financial_v4_pre_migration_20260724_110844.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/backup/meli_financial_v4_pre_migration_20260724_110859.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/backup/meli_financial_v4_pre_migration_20260724_111106.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/backup/meli_financial_v4_pre_migration_20260724_111215.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/backup/meli_financial_v4_pre_migration_20260724_111308.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/f5_02_temp.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/f5_03_temp.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/f5_04_temp.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/f5_05_temp.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/meli_financial_v4_pre_truth003_20260720_173842_A9777849.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db.bak",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db.forensic_modificado",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db.forensic_original",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/baseline_estable_v8_candidate_20260717/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/BASELINE_ESTABLE_V9_TRUTH_RECOVERED/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/snapshot_pre_f003_cleaned_20260715/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/tmp_cert_gate_debug/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/tmp_cert_gate_debug2/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/tmp_debug/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/tmp_f4_investigate/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/tmp_test_check/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "data/db/tmp_test_fe/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "size_gb": 0.052
+    },
+    {
+      "path": "Reporte_Marketplaces/Backup/Reporte Gerencial 360 Marketplaces.xlsx",
+      "size_mb": 45.02,
+      "size_gb": 0.044
+    },
+    {
+      "path": ".git/objects/90/534267ed4804f9011140904e5ef89acde96d9b",
+      "size_mb": 39.0,
+      "size_gb": 0.038
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.corrupt_snapshot",
+      "size_mb": 36.01,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_corrupt_20260528/meli_financial_v4.db",
+      "size_mb": 36.01,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/meli_financial_v4.db.corrupt_snapshot",
+      "size_mb": 36.01,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db",
+      "size_mb": 36.01,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.paris_reload.20260527_163143.bak",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.pre_nan_fix",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_baseline_v2_20260528_154319/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_baseline_v2_20260528_154708/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_baseline_v3_20260528_163525/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_baseline_v4_20260528_170822/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_corrupt_20260528/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_corrupt_20260528/meli_financial_v4.db.paris_reload.20260527_163143.bak",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_pre_cierre_rebuild_20260528_163008/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_pre_ml_xml_fix_20260528_170623/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_pre_persistencia_20260528_162431/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_restored_validated_20260528/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/snapshot_restored_validated_20260528/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/meli_financial_v4.db.paris_reload.20260527_163143.bak",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/meli_financial_v4.db.pre_nan_fix",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154319/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154708/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_baseline_v3_20260528_163525/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_baseline_v4_20260528_170822/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db.paris_reload.20260527_163143.bak",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_cierre_rebuild_20260528_163008/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_ml_xml_fix_20260528_170623/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_persistencia_20260528_162431/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_mb": 35.76,
+      "size_gb": 0.035
+    },
+    {
+      "path": ".venv/Lib/site-packages/_duckdb.cp314-win_amd64.pyd",
+      "size_mb": 35.43,
+      "size_gb": 0.035
+    },
+    {
+      "path": "data/db/meli_financial_v4_backup.db",
+      "size_mb": 34.76,
+      "size_gb": 0.034
+    },
+    {
+      "path": "data/db/snapshot_pre_bpp_residual_fix_20260606_145106/meli_financial_v4.db",
+      "size_mb": 34.76,
+      "size_gb": 0.034
+    },
+    {
+      "path": "data/db/snapshot_pre_dec019_20260607_161324/meli_financial_v4.db",
+      "size_mb": 34.76,
+      "size_gb": 0.034
+    },
+    {
+      "path": "data/db/snapshot_pre_iopnl_modernize_20260606_1215/meli_financial_v4.db",
+      "size_mb": 34.76,
+      "size_gb": 0.034
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/meli_financial_v4.db",
+      "size_mb": 34.76,
+      "size_gb": 0.034
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_bpp_residual_fix_20260606_145106/meli_financial_v4.db",
+      "size_mb": 34.76,
+      "size_gb": 0.034
+    },
+    {
+      "path": "_archive/backup_20260608_120239/db/snapshot_pre_dec019_20260607_161324/meli_financial_v4.db",
+      "size_mb": 34.76,
+      "size_gb": 0.034
+    }
+  ],
+  "ext_breakdown": [
+    {
+      "ext": ".db",
+      "count": 94,
+      "size_mb": 4311.51,
+      "size_gb": 4.21,
+      "pct": 61.35
+    },
+    {
+      "ext": ".no_ext",
+      "count": 8210,
+      "size_mb": 598.24,
+      "size_gb": 0.584,
+      "pct": 8.51
+    },
+    {
+      "ext": ".bak",
+      "count": 11,
+      "size_mb": 410.88,
+      "size_gb": 0.401,
+      "pct": 5.85
+    },
+    {
+      "ext": ".xlsx",
+      "count": 303,
+      "size_mb": 281.5,
+      "size_gb": 0.275,
+      "pct": 4.01
+    },
+    {
+      "ext": ".csv",
+      "count": 264,
+      "size_mb": 173.67,
+      "size_gb": 0.17,
+      "pct": 2.47
+    },
+    {
+      "ext": ".exe",
+      "count": 38,
+      "size_mb": 122.54,
+      "size_gb": 0.12,
+      "pct": 1.74
+    },
+    {
+      "ext": ".pyd",
+      "count": 338,
+      "size_mb": 114.06,
+      "size_gb": 0.111,
+      "pct": 1.62
+    },
+    {
+      "ext": ".json",
+      "count": 360,
+      "size_mb": 94.05,
+      "size_gb": 0.092,
+      "pct": 1.34
+    },
+    {
+      "ext": ".dll",
+      "count": 14,
+      "size_mb": 76.66,
+      "size_gb": 0.075,
+      "pct": 1.09
+    },
+    {
+      "ext": ".corrupt_snapshot",
+      "count": 2,
+      "size_mb": 72.02,
+      "size_gb": 0.07,
+      "pct": 1.02
+    },
+    {
+      "ext": ".pre_nan_fix",
+      "count": 2,
+      "size_mb": 71.52,
+      "size_gb": 0.07,
+      "pct": 1.02
+    },
+    {
+      "ext": ".py",
+      "count": 5409,
+      "size_mb": 67.41,
+      "size_gb": 0.066,
+      "pct": 0.96
+    },
+    {
+      "ext": ".pre_future_fix_20260623",
+      "count": 1,
+      "size_mb": 57.01,
+      "size_gb": 0.056,
+      "pct": 0.81
+    },
+    {
+      "ext": ".snapshot_20260622_111145",
+      "count": 1,
+      "size_mb": 57.01,
+      "size_gb": 0.056,
+      "pct": 0.81
+    },
+    {
+      "ext": ".snapshot_20260623_115557",
+      "count": 1,
+      "size_mb": 57.01,
+      "size_gb": 0.056,
+      "pct": 0.81
+    },
+    {
+      "ext": ".snapshot_af002_20260623_121855",
+      "count": 1,
+      "size_mb": 57.01,
+      "size_gb": 0.056,
+      "pct": 0.81
+    },
+    {
+      "ext": ".snapshot_af002_v2_20260623_122024",
+      "count": 1,
+      "size_mb": 57.01,
+      "size_gb": 0.056,
+      "pct": 0.81
+    },
+    {
+      "ext": ".snapshot_af002_v2_20260623_122032",
+      "count": 1,
+      "size_mb": 57.01,
+      "size_gb": 0.056,
+      "pct": 0.81
+    },
+    {
+      "ext": ".pyc",
+      "count": 3242,
+      "size_mb": 55.7,
+      "size_gb": 0.054,
+      "pct": 0.79
+    },
+    {
+      "ext": ".forensic_modificado",
+      "count": 1,
+      "size_mb": 53.26,
+      "size_gb": 0.052,
+      "pct": 0.76
+    }
+  ],
+  "main_folder_breakdown": [
+    {
+      "main_folder": "data",
+      "size_mb": 3564.43,
+      "size_gb": 3.481,
+      "pct": 50.72
+    },
+    {
+      "main_folder": "_archive",
+      "size_mb": 1863.25,
+      "size_gb": 1.82,
+      "pct": 26.51
+    },
+    {
+      "main_folder": ".git",
+      "size_mb": 594.92,
+      "size_gb": 0.581,
+      "pct": 8.47
+    },
+    {
+      "main_folder": ".venv",
+      "size_mb": 473.95,
+      "size_gb": 0.463,
+      "pct": 6.74
+    },
+    {
+      "main_folder": "Reporte_Marketplaces",
+      "size_mb": 290.16,
+      "size_gb": 0.283,
+      "pct": 4.13
+    },
+    {
+      "main_folder": "01_Raw",
+      "size_mb": 110.55,
+      "size_gb": 0.108,
+      "pct": 1.57
+    },
+    {
+      "main_folder": ".agents",
+      "size_mb": 66.85,
+      "size_gb": 0.065,
+      "pct": 0.95
+    },
+    {
+      "main_folder": "logs",
+      "size_mb": 20.77,
+      "size_gb": 0.02,
+      "pct": 0.3
+    },
+    {
+      "main_folder": ".mypy_cache",
+      "size_mb": 14.93,
+      "size_gb": 0.015,
+      "pct": 0.21
+    },
+    {
+      "main_folder": "00_Config",
+      "size_mb": 5.19,
+      "size_gb": 0.005,
+      "pct": 0.07
+    },
+    {
+      "main_folder": "tests",
+      "size_mb": 4.25,
+      "size_gb": 0.004,
+      "pct": 0.06
+    },
+    {
+      "main_folder": "governance",
+      "size_mb": 3.42,
+      "size_gb": 0.003,
+      "pct": 0.05
+    },
+    {
+      "main_folder": "evidence",
+      "size_mb": 3.09,
+      "size_gb": 0.003,
+      "pct": 0.04
+    },
+    {
+      "main_folder": "docs",
+      "size_mb": 2.86,
+      "size_gb": 0.003,
+      "pct": 0.04
+    },
+    {
+      "main_folder": "engine",
+      "size_mb": 2.58,
+      "size_gb": 0.003,
+      "pct": 0.04
+    },
+    {
+      "main_folder": ".claude",
+      "size_mb": 1.8,
+      "size_gb": 0.002,
+      "pct": 0.03
+    },
+    {
+      "main_folder": ".swarm",
+      "size_mb": 1.79,
+      "size_gb": 0.002,
+      "pct": 0.03
+    },
+    {
+      "main_folder": "Scripts",
+      "size_mb": 0.91,
+      "size_gb": 0.001,
+      "pct": 0.01
+    },
+    {
+      "main_folder": "tools",
+      "size_mb": 0.32,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": ".",
+      "size_mb": 0.25,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "templates",
+      "size_mb": 0.25,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "api",
+      "size_mb": 0.24,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "KnowledgeBase",
+      "size_mb": 0.23,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "knowledge",
+      "size_mb": 0.15,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": ".pytest_cache",
+      "size_mb": 0.08,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "taxonomy",
+      "size_mb": 0.05,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "discovery",
+      "size_mb": 0.03,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "AESP",
+      "size_mb": 0.03,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": ".claude-flow",
+      "size_mb": 0.02,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": ".codex",
+      "size_mb": 0.01,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": ".ruff_cache",
+      "size_mb": 0.01,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "database",
+      "size_mb": 0.01,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "frontend",
+      "size_mb": 0.01,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "__pycache__",
+      "size_mb": 0.01,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": ".githooks",
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": "static",
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": ".opencode",
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": ".github",
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "pct": 0.0
+    },
+    {
+      "main_folder": ".agent",
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "pct": 0.0
+    }
+  ],
+  "thresholds": {
+    "gt_10mb_count": 132,
+    "gt_10mb_size_gb": 6.212,
+    "gt_50mb_count": 58,
+    "gt_50mb_size_gb": 4.037,
+    "gt_100mb_count": 12,
+    "gt_100mb_size_gb": 1.466,
+    "gt_500mb_count": 0,
+    "gt_500mb_size_gb": 0.0
+  },
+  "root_items": [
+    {
+      "name": ".agent",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": ".agents",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": ".claude",
+      "is_dir": true,
+      "size_mb": 0.18,
+      "size_gb": 0.0,
+      "count": 2
+    },
+    {
+      "name": ".claude-flow",
+      "is_dir": true,
+      "size_mb": 0.02,
+      "size_gb": 0.0,
+      "count": 5
+    },
+    {
+      "name": ".codex",
+      "is_dir": true,
+      "size_mb": 0.01,
+      "size_gb": 0.0,
+      "count": 2
+    },
+    {
+      "name": ".git",
+      "is_dir": true,
+      "size_mb": 0.5,
+      "size_gb": 0.0,
+      "count": 8
+    },
+    {
+      "name": ".githooks",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 2
+    },
+    {
+      "name": ".github",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": ".gitignore",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": ".mcp.json",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": ".mypy_cache",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 2
+    },
+    {
+      "name": ".opencode",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": ".pytest_cache",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 3
+    },
+    {
+      "name": ".ruff_cache",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 2
+    },
+    {
+      "name": ".swarm",
+      "is_dir": true,
+      "size_mb": 1.79,
+      "size_gb": 0.002,
+      "count": 5
+    },
+    {
+      "name": ".venv",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 2
+    },
+    {
+      "name": "00_Config",
+      "is_dir": true,
+      "size_mb": 0.01,
+      "size_gb": 0.0,
+      "count": 7
+    },
+    {
+      "name": "01_Raw",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "AESP",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "AGENTS.md",
+      "is_dir": false,
+      "size_mb": 0.08,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "api",
+      "is_dir": true,
+      "size_mb": 0.05,
+      "size_gb": 0.0,
+      "count": 3
+    },
+    {
+      "name": "CLAUDE.md",
+      "is_dir": false,
+      "size_mb": 0.07,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "config.py",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "data",
+      "is_dir": true,
+      "size_mb": 25.76,
+      "size_gb": 0.025,
+      "count": 3
+    },
+    {
+      "name": "database",
+      "is_dir": true,
+      "size_mb": 0.01,
+      "size_gb": 0.0,
+      "count": 2
+    },
+    {
+      "name": "discovery",
+      "is_dir": true,
+      "size_mb": 0.03,
+      "size_gb": 0.0,
+      "count": 6
+    },
+    {
+      "name": "docs",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "engine",
+      "is_dir": true,
+      "size_mb": 0.09,
+      "size_gb": 0.0,
+      "count": 16
+    },
+    {
+      "name": "evidence",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "frontend",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "GEMINI.md",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "governance",
+      "is_dir": true,
+      "size_mb": 2.82,
+      "size_gb": 0.003,
+      "count": 469
+    },
+    {
+      "name": "implementation_plan.md",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "knowledge",
+      "is_dir": true,
+      "size_mb": 0.01,
+      "size_gb": 0.0,
+      "count": 2
+    },
+    {
+      "name": "KnowledgeBase",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "knowledge_index.yaml",
+      "is_dir": false,
+      "size_mb": 0.08,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "logs",
+      "is_dir": true,
+      "size_mb": 20.77,
+      "size_gb": 0.02,
+      "count": 1
+    },
+    {
+      "name": "package.json",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "pyproject.toml",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "README.md",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "Reporte_Marketplaces",
+      "is_dir": true,
+      "size_mb": 66.06,
+      "size_gb": 0.065,
+      "count": 1
+    },
+    {
+      "name": "requirements.txt",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "run_app.py",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "run_tests.py",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "Scripts",
+      "is_dir": true,
+      "size_mb": 0.91,
+      "size_gb": 0.001,
+      "count": 40
+    },
+    {
+      "name": "skills-lock.json",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "START_APP.bat",
+      "is_dir": false,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "static",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "taxonomy",
+      "is_dir": true,
+      "size_mb": 0.04,
+      "size_gb": 0.0,
+      "count": 7
+    },
+    {
+      "name": "templates",
+      "is_dir": true,
+      "size_mb": 0.25,
+      "size_gb": 0.0,
+      "count": 6
+    },
+    {
+      "name": "tests",
+      "is_dir": true,
+      "size_mb": 0.39,
+      "size_gb": 0.0,
+      "count": 58
+    },
+    {
+      "name": "tools",
+      "is_dir": true,
+      "size_mb": 0.18,
+      "size_gb": 0.0,
+      "count": 15
+    },
+    {
+      "name": "uploads",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "_archive",
+      "is_dir": true,
+      "size_mb": 0.0,
+      "size_gb": 0.0,
+      "count": 1
+    },
+    {
+      "name": "__pycache__",
+      "is_dir": true,
+      "size_mb": 0.01,
+      "size_gb": 0.0,
+      "count": 4
+    }
+  ],
+  "duplicate_groups_count": 33,
+  "total_duplicate_waste_mb": 2602.37,
+  "total_duplicate_waste_gb": 2.541
+}

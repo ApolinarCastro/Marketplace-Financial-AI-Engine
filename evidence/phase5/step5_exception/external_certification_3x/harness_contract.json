@@ -1,0 +1,34 @@
+{
+  "harness": "tools/certify_phase5_step5_external.py",
+  "harness_independence": "Performs its OWN full-corpus scan over v_ledger_certified (direct SQL), invokes module-under-test detection per row, computes all contract metrics externally, then cross-checks engine.run_full_corpus() field-by-field. Never certifies via assert engine.says_it_is_valid.",
+  "fresh_process_requirement": "Each run launched as a NEW OS process: NEW PROCESS -> LOAD FROM DISK -> READ OFFICIAL DATA -> EXECUTE FULL CORPUS -> VALIDATE -> WRITE ISOLATED EVIDENCE -> TERMINATE.",
+  "contract": {
+    "corpus_rows": "COUNT(*) FROM v_ledger_certified (external SQL)",
+    "processed_rows": "rows actually evaluated (must equal corpus_rows)",
+    "exception_rows": "rows with >=1 primary exception",
+    "distinct_logical_exceptions": "distinct exception_id across corpus",
+    "primary_exception_duplicates": "rows yielding >1 primary category (must be 0)",
+    "exception_id_collisions": "same exception_id from different transaction_id (must be 0)",
+    "catalog_total": "size of EXCEPTION_CATALOG (must be 19)",
+    "catalog_active_with_cases": "categories with >0 emitted cases",
+    "catalog_active_zero_cases": "categories in catalog with 0 cases",
+    "catalog_unreachable": "must be 0",
+    "catalog_broken": "must be 0",
+    "false_fiscal_certifications": "ledger folios matching dte_truth + dte_linked=1 (must be 0)",
+    "financial_delta": "SUM(monto) before/after must be $0.00",
+    "official_db_sha256": "SHA-256 of data/db/meli_financial_v4.db",
+    "official_db_size_bytes": "size of official DB",
+    "raw_file_count": "count of files under 01_Raw",
+    "test_passed": "Step5 focused suites (test_exception_engine + test_exception_api_endpoints + test_reconciliation_engine)",
+    "test_failed": "must be 0",
+    "certification_gate_passed": "41-check gate (must be 41/41)",
+    "certification_gate_total": "41",
+    "distribution_by": ["marketplace", "exception_type", "severity", "priority"]
+  },
+  "canonicalization": {
+    "excluded_fields": ["run_id", "started_at", "finished_at", "duration", "temporary_path", "process_id"],
+    "serialization": "JSON, sort_keys=true, deterministic ordering, UTF-8",
+    "canonical_sha256": "sha256 of canonical_result.json content (sorted keys)"
+  },
+  "per_run_artifacts": ["result.json", "canonical_result.json", "tests.json", "financial_integrity.json", "certification_gate.json", "execution.log"]
+}

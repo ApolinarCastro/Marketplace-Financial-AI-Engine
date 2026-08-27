@@ -1,0 +1,30 @@
+{
+  "cap_id": "CAP-TD-003",
+  "technical_debt_id": "TD-003",
+  "timestamp": "2026-07-27T16:23:00Z",
+  "execution_id": "EXEC-CAP-TD-003-20260727",
+  "git_commit": "2d51f52",
+  "harness_version": "1.0.0",
+  "status": "PASS",
+  "certification_status": "CERTIFIED",
+  "problem_description": "Duplication of UI formatting rules, currency formatting, and percentage calculations across inline JavaScript in dashboard.html, executive_dashboard.html, and copilot.html.",
+  "root_cause": "Independent creation of Auditor, Executive, and Copilot dashboards in prior iterations without a unified UI static utility module.",
+  "strategy": "Extract and unify currency, percentage, and number formatting into a shared, robust static module (frontend/shared/financial-formatter.js and static/js/financial-formatter.js), and update templates/dashboard.html, templates/executive_dashboard.html, and templates/copilot.html to consume the unified formatting functions without altering UI designs or visual contracts.",
+  "modified_files": [
+    "frontend/shared/financial-formatter.js",
+    "static/js/financial-formatter.js",
+    "api/api.py",
+    "templates/dashboard.html",
+    "templates/executive_dashboard.html",
+    "templates/copilot.html"
+  ],
+  "test_results": {
+    "total_tests": 842,
+    "passed": 830,
+    "failed": 0,
+    "skipped": 12,
+    "duration_seconds": 166.72
+  },
+  "sha256_official_db": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "rollback_strategy": "git checkout -- templates/dashboard.html templates/executive_dashboard.html templates/copilot.html api/api.py && rm -rf static/js/financial-formatter.js frontend/shared/financial-formatter.js"
+}

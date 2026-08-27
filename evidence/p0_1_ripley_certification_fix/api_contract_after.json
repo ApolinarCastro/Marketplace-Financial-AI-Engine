@@ -1,0 +1,77 @@
+{
+  "RIPLEY_false_positive_fixed": {
+    "requested_tx": "RIP_596684_24751081101-A_importedelpedido",
+    "status_code": 200,
+    "body": {
+      "tx_id": "RIP_596684_24751081101-A_importedelpedido",
+      "marketplace": "RIPLEY",
+      "estado": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "certification_scope": "UNKNOWN",
+      "evidence_source": "NONE",
+      "blocking_reason": "RIPLEY_LIQUIDATION_IS_NOT_SII_DTE",
+      "tipo_dte": "-",
+      "folio": "596684",
+      "pipeline": {
+        "xml": "FAIL",
+        "xsd": "FAIL",
+        "sig": "FAIL",
+        "caf": "FAIL"
+      },
+      "evidencia": {
+        "hash": "a63b7016caf9e12a41a9bc37f79f31c7da80bd30f710f943b4221f331c29ad85",
+        "confidence": "0%",
+        "level": "INSUFFICIENT_FISCAL_EVIDENCE"
+      }
+    }
+  },
+  "RIPLEY_normal": {
+    "requested_tx": "RIP_602050_24840303701-A_importedelpedido",
+    "status_code": 200,
+    "body": {
+      "tx_id": "RIP_602050_24840303701-A_importedelpedido",
+      "marketplace": "RIPLEY",
+      "estado": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "certification_scope": "UNKNOWN",
+      "evidence_source": "NONE",
+      "blocking_reason": "RIPLEY_LIQUIDATION_IS_NOT_SII_DTE",
+      "tipo_dte": "-",
+      "folio": "602050",
+      "pipeline": {
+        "xml": "FAIL",
+        "xsd": "FAIL",
+        "sig": "FAIL",
+        "caf": "FAIL"
+      },
+      "evidencia": {
+        "hash": "14311edcef3f9e88083667efb483248a2084d823009db74f18159960b9421d10",
+        "confidence": "0%",
+        "level": "INSUFFICIENT_FISCAL_EVIDENCE"
+      }
+    }
+  },
+  "unknown": {
+    "requested_tx": "NON_EXISTENT_TX_99999",
+    "status_code": 200,
+    "body": {
+      "tx_id": "NON_EXISTENT_TX_99999",
+      "status": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "estado": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "certification_scope": "UNKNOWN",
+      "evidence_source": "NONE",
+      "blocking_reason": "TX_NOT_FOUND_IN_LEDGER",
+      "tipo_dte": "-",
+      "folio": "-",
+      "pipeline": {
+        "xml": "FAIL",
+        "xsd": "FAIL",
+        "sig": "FAIL",
+        "caf": "FAIL"
+      },
+      "evidencia": {
+        "hash": "-",
+        "confidence": "0%",
+        "level": "INSUFFICIENT_FISCAL_EVIDENCE"
+      }
+    }
+  }
+}

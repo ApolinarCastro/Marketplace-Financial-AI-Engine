@@ -1,0 +1,49 @@
+{
+  "execution_id": "LOOP_ENG_V1_20260807T152945.116Z",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "branch": "phase5/production-readiness",
+  "timestamp": "2026-08-07T15:29:45.116Z",
+  "protocol_version": "1.0.0",
+  "repository": "Marketplace Financial AI Engine",
+  "limits": {
+    "max_same_hypothesis_attempts": 3,
+    "max_no_progress_turns": 2,
+    "max_validation_failures": 3,
+    "max_scope_expansions": 0
+  },
+  "dogfood_quota": {
+    "goal_id": "LOOP-ENGINEERING-SELF-CERT",
+    "limits": {
+      "max_same_hypothesis_attempts": 3,
+      "max_no_progress_turns": 2,
+      "max_validation_failures": 3,
+      "max_scope_expansions": 0
+    },
+    "turns_consumed": 3,
+    "failed_turns": 0,
+    "no_progress_turns": 0,
+    "validation_failures": 0,
+    "scope_expansions": 0,
+    "hypothesis_attempts": {
+      "kernel-suite-green": 1,
+      "state-schema-valid": 1,
+      "no-coordination-regression": 1
+    },
+    "spent_keys": [
+      "quota:LOOP-ENGINEERING-SELF-CERT:TURN-459d949317e9",
+      "quota:LOOP-ENGINEERING-SELF-CERT:TURN-c39181bc37cb",
+      "quota:LOOP-ENGINEERING-SELF-CERT:TURN-600859f21128"
+    ]
+  },
+  "idempotent_spend": true,
+  "reset_requires_approved_gate": true,
+  "tests": [
+    "test_quota_enforcement",
+    "test_same_hypothesis_blocks_after_three",
+    "test_no_progress_detection",
+    "test_scope_expansion_budget_is_zero",
+    "test_quota_reset_requires_approved_gate",
+    "test_idempotent_quota"
+  ],
+  "result": "PASS"
+}

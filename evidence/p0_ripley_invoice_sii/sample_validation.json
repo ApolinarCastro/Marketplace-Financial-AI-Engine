@@ -1,0 +1,145 @@
+{
+  "sample_size": 20,
+  "samples": [
+    {
+      "invoice_number": "562946",
+      "ledger_rows": 2978,
+      "ledger_total": 27938683.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "569570",
+      "ledger_rows": 2588,
+      "ledger_total": 27630374.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "575911",
+      "ledger_rows": 2506,
+      "ledger_total": 30751512.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "582603",
+      "ledger_rows": 4749,
+      "ledger_total": 53916127.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "589546",
+      "ledger_rows": 2334,
+      "ledger_total": 34258992.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "596684",
+      "ledger_rows": 5360,
+      "ledger_total": 89864355.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "556626",
+      "ledger_rows": 7578,
+      "ledger_total": 81960454.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "503106",
+      "ledger_rows": 6394,
+      "ledger_total": 51136172.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "564540",
+      "ledger_rows": 2206,
+      "ledger_total": 21498279.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "508667",
+      "ledger_rows": 4276,
+      "ledger_total": 36298675.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "571181",
+      "ledger_rows": 1040,
+      "ledger_total": 11482668.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "514115",
+      "ledger_rows": 4232,
+      "ledger_total": 41655362.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "577566",
+      "ledger_rows": 2422,
+      "ledger_total": 33090953.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "519418",
+      "ledger_rows": 7000,
+      "ledger_total": 82435051.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "584269",
+      "ledger_rows": 1495,
+      "ledger_total": 21869471.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "524491",
+      "ledger_rows": 4320,
+      "ledger_total": 64997805.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "591235",
+      "ledger_rows": 1952,
+      "ledger_total": 28310493.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "529315",
+      "ledger_rows": 4914,
+      "ledger_total": 62254248.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "598638",
+      "ledger_rows": 804,
+      "ledger_total": 5579328.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    },
+    {
+      "invoice_number": "533710",
+      "ledger_rows": 6506,
+      "ledger_total": 79737795.0,
+      "folio_sii": null,
+      "status": "NO_DTE_FOUND"
+    }
+  ]
+}

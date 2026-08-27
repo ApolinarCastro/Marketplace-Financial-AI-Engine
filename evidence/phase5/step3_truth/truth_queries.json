@@ -1,0 +1,262 @@
+{
+  "que_vendi": {
+    "title": "\u00bfQu\u00e9 vend\u00ed?",
+    "status": "SUCCESS",
+    "records_count": 45404,
+    "total_monto": 1270130200.0,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 45404,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "que_cobre": {
+    "title": "\u00bfQu\u00e9 cobr\u00e9?",
+    "status": "SUCCESS",
+    "records_count": 57361,
+    "total_monto": 1530322985.0,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 57361,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "que_falta_cobrar": {
+    "title": "\u00bfQu\u00e9 falta cobrar?",
+    "status": "SUCCESS",
+    "records_count": 11957,
+    "total_monto": 260192785.0,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 11957,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "comisiones": {
+    "title": "\u00bfQu\u00e9 comisi\u00f3n cobraron?",
+    "status": "SUCCESS",
+    "records_count": 46473,
+    "total_monto": -111162251.067,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 46473,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "publicidad": {
+    "title": "\u00bfQu\u00e9 publicidad descontaron?",
+    "status": "SUCCESS",
+    "records_count": 46473,
+    "total_monto": -111162251.067,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 46473,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "logistica": {
+    "title": "\u00bfQu\u00e9 log\u00edstica descontaron?",
+    "status": "SUCCESS",
+    "records_count": 33102,
+    "total_monto": -51143655.587,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 33102,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "devoluciones": {
+    "title": "\u00bfQu\u00e9 fue devuelto?",
+    "status": "SUCCESS",
+    "records_count": 7082,
+    "total_monto": -203795557.0,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 7082,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "xml_respaldo": {
+    "title": "\u00bfCu\u00e1l XML respalda cada movimiento?",
+    "status": "SUCCESS",
+    "records_count": 128857,
+    "total_monto": 967893879.51,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 128857,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "dte_respaldo": {
+    "title": "\u00bfCu\u00e1l DTE respalda la venta?",
+    "status": "SUCCESS",
+    "records_count": 60073,
+    "total_monto": 680815677.21,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 60073,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "margen_real": {
+    "title": "\u00bfCu\u00e1l es el margen real?",
+    "status": "SUCCESS",
+    "records_count": 150182,
+    "total_monto": 1176180014.27,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 150182,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "cierre_financiero": {
+    "title": "\u00bfCu\u00e1l es el cierre financiero del per\u00edodo?",
+    "status": "SUCCESS",
+    "records_count": 150182,
+    "total_monto": 1176180014.27,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 150182,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "diferencias_sap_marketplace": {
+    "title": "\u00bfQu\u00e9 diferencias existen entre SAP y Marketplace?",
+    "status": "SUCCESS",
+    "records_count": 150182,
+    "total_monto": 1176180014.27,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 150182,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  },
+  "movimientos_sin_respaldo": {
+    "title": "\u00bfQu\u00e9 movimientos no poseen respaldo?",
+    "status": "SUCCESS",
+    "records_count": 21247,
+    "total_monto": 207520741.76,
+    "evidence_chain": {
+      "tables_used": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1",
+        "dte_ledger_link"
+      ],
+      "records_analyzed": 21247,
+      "financial_delta": "$0.00",
+      "certified_sources": [
+        "01_Raw",
+        "data/db/meli_financial_v4.db"
+      ],
+      "single_financial_truth": "VERIFIED"
+    }
+  }
+}

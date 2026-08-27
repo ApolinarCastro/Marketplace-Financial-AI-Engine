@@ -1,0 +1,23 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "verdict": "PARTIAL_WITH_PROVEN_BLOCKER",
+  "certified_marketplaces": [
+    "ML",
+    "PARIS",
+    "FALABELLA"
+  ],
+  "blocked_marketplace": "RIPLEY",
+  "blocked_reason": "SETTLEMENT_CHAIN_V2 structurally impossible: source files absent + folio namespace overlap=0",
+  "total_dte_linked_rows": 93079,
+  "ml_folios": 15,
+  "paris_folios": 18,
+  "falabella_folios": 5,
+  "ledger_integrity": "INTACT",
+  "official_db": "UNTOUCHED",
+  "idempotent": true,
+  "classification": "VALIDATED"
+}

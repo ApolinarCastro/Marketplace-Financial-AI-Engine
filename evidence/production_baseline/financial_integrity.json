@@ -1,0 +1,24 @@
+{
+  "execution_id": "20260818_101131",
+  "loop": 12,
+  "title": "FINANCIAL INTEGRITY & SINGLE FINANCIAL TRUTH",
+  "git_commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "official_db_sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+  "expected_official_sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+  "checks": {
+    "db_sha_unchanged": true,
+    "db_sha_equals_start": true,
+    "ledger_total": 4430909518.81,
+    "ledger_rows": 598112,
+    "clasificado_total": 4430909518.81,
+    "clasificado_rows": 598112,
+    "ledger_equals_clasificado": true,
+    "operational_pnl_total": 1996649709.67,
+    "excluded_full_minus_op": 2434259809.14,
+    "group_conservation_delta": 0.0,
+    "group_conservation_ok": true
+  },
+  "verdict": "PASS",
+  "financial_delta_usd": "0.00",
+  "note": "No mutation of official DB during LOOPs 0-11. Ledger == Clasificado ( delta). Group conservation holds (financial_group IS NOT NULL + NULL stripped ML == ledger total). Financial Delta = .00."
+}

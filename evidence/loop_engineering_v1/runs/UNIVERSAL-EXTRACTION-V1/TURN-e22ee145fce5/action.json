@@ -1,0 +1,15 @@
+{
+  "turn_id": "TURN-e22ee145fce5",
+  "todo_id": "LOOP-05",
+  "agent_id": "OPENCODE_ENGINEER",
+  "summary": "restructured kernel to remove marketplace-specific logic, added ProjectPolicy integration",
+  "files_changed": [
+    "engine/loop_control/constants.py",
+    "engine/loop_control/state_store.py",
+    "engine/loop_control/kernel.py",
+    "engine/loop_control/gate_manager.py",
+    "engine/loop_control/policy.py"
+  ],
+  "hypothesis": null,
+  "created_at": "2026-08-07T20:15:35.760Z"
+}

@@ -1,0 +1,1487 @@
+# INFORME DINÁMICO DE AUDITORÍA ESTRUCTURAL HARNESS V2 (FASE 3)
+
+---
+fecha: 2026-07-28T15:45:56.733282
+veredicto_auditoria: PHASE_3_AUDIT_COMPLETE
+harness_version: PHASE_3_AUDIT_HARNESS_V2
+---
+
+## 1. ESTADO DE GIT Y VERIFICACIONES PREVIAS
+
+- **Git Status Antes:** `D 0
+ D "01_Raw/FALABELLA/\303\223rdenes y Transacciones/1  abril   2026 - 30  abril   2026.xlsx"
+ D "01_Raw/FALABELLA/\303\223rdenes y Transacciones/1  marzo   2026 - 31  marzo   2026.xlsx"
+ D "01_Raw/FALABELLA/\303\223rdenes y Transacciones/1 junio 2026 al 5 junio 2026.xlsx"
+ D "01_Raw/FALABELLA/\303\223rdenes y Transacciones/1 mayo 2026 al 31 mayo 2026.xlsx"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-01-2026 - 13-01-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-02-2026 - 13-02-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-03-2026 - 13-03-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-04-2026 - 13-04-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-05-2026 - 13-05-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-06-2026 - 13-06-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-12-2025 - 13-12-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-01-2025 - 28-01-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-01-2026 - 20-01-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-02-2025 - 28-02-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-02-2026 - 20-02-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-03-2025 - 28-03-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-03-2026 - 20-03-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-04-2025 - 28-04-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-04-2026 - 20-04-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-05-2025 - 28-05-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-05-2026 - 20-05-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-06-2025 - 28-06-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-06-2026 - 20-06-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-07-2025 - 28-07-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-08-2025 - 28-08-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-09-2025 - 28-09-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-10-2025 - 28-10-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-11-2025 - 20-11-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-12-2025 - 20-12-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-01-2026 - 28-01-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-02-2026 - 28-02-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-03-2026 - 28-03-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-04-2026 - 28-04-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-05-2026 - 28-05-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-06-2026 - 28-06-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-11-2025 - 28-11-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-12-2025 - 28-12-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-01-2025 - 13-02-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-01-2026 - 05-02-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-02-2025 - 13-03-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-02-2026 - 05-03-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-03-2025 - 13-04-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-03-2026 - 05-04-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-04-2025 - 13-05-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-04-2026 - 05-05-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-05-2025 - 13-06-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-05-2026 - 05-06-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-06-2025 - 13-07-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-06-2026 - 05-07-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-07-2025 - 13-08-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-08-2025 - 13-09-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-09-2025 - 13-10-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-10-2025 - 13-11-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-11-2025 - 05-12-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-12-2024 - 13-01-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-12-2025 - 05-01-2026.csv"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000312-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000314-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000316-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000318-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000320-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000322-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000324-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000326-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000328-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000330-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000332-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000334-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000336-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000338-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000340-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000342-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000344-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000346-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000348-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000350-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000352-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000353-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000354-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000355-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000356-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000357-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000358-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000359-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000360-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000361-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000362-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000363-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000364-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000365-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000366-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000367-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000368-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000369-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000370-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000371-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000372-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000374-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000375-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000376-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000377-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000378-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000379-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000380-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000381-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000382-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000383-2815.xlsx"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000001_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000002_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000003_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000004_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000005_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000006_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000007_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000008_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000009_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000010_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000011_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000012_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000013_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000014_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000015_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000016_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000017_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000018_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000019_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000020_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000021_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000022_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000023_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000024_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000025_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000026_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000027_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000028_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000029_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000030_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000031_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000032_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000033_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000034_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000035_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000036_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000001_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000002_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000003_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000004_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000005_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000006_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000007_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000008_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000009_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000010_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000011_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000012_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000013_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000014_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000015_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000016_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000017_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000018_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000019_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000020_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000021_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000022_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000023_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000024_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000025_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000026_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000027_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000028_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000029_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000030_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000031_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000032_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000033_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000034_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000035_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000036_ff_2815.csv"
+ D API_CONTRACT_VALIDATION.md
+ D API_REGRESSION_REPORT.md
+ D ARCHITECTURE_REVIEW.md
+ D BACKLOG.md
+ D BASELINE_MANIFEST_V1.json
+ D BASELINE_MANIFEST_V1_P22Z.json
+ D COMMERCIAL_READINESS.md
+ D COMPETITIVE_ANALYSIS.md
+ D DATABASE_REGISTRY.md
+ D ELECTRONIC_CERTIFICATION_RECOVERY.md
+ D EVIDENCE_MATRIX.md
+ D EXECUTIVE_ASSESSMENT.md
+ D EXECUTIVE_VERDICT.md
+ D FETCH_DUPLICATION_REPORT.md
+ D FINAL_API_STABILITY_CERTIFICATION.md
+ D FINAL_FINANCIAL_CONSISTENCY_CERTIFICATION.md
+ D FINAL_FRONTEND_PERFORMANCE_CERTIFICATION.md
+ D FINAL_STABILITY_CERTIFICATION.md
+ D FINAL_VERDICT.md
+ D FRONTEND_BASELINE.md
+ D FRONTEND_CALL_GRAPH_AFTER.md
+ D FRONTEND_CALL_GRAPH_BEFORE.md
+ D FRONTEND_CONCURRENCY_AUDIT.md
+ D FRONTEND_DIFF_REPORT.md
+ D FRONTEND_FINAL_CERTIFICATION.md
+ D FRONTEND_PERFORMANCE_TRACE.md
+ D FRONTEND_RECOVERY_REPORT.md
+ D FRONTEND_REGRESSION_REPORT.md
+ D FRONTEND_REGRESSION_ROOT_CAUSE.md
+ D FRONTEND_STATE_TRACE.md
+ D INFORME_P27_RESUMEN_EJECUTIVO.md
+ D KnowledgeBase_baseline_v4.zip
+ D LEDGER_CONSISTENCY_AUDIT.md
+ D "MARKETPLACE FINANCIAL CLASSIFICATION DICTIONARY.txt"
+ D MASTER_KNOWLEDGE_INDEX.md
+ D P0_P3_FINDINGS.md
+ D P32R4_API_TRACE.md
+ D P32R4_DOCUMENT_TRACE.md
+ D P32R4_FINAL_CERTIFICATION.md
+ D P32R4_FRONTEND_TRACE.md
+ D P32R4_XML_TRACE.md
+ D P32R5_ENDPOINT_TRACE.md
+ D P32R5_FINAL_CERTIFICATION.md
+ D P32R5_PERIOD_PROPAGATION.md
+ D P32R5_PERIOD_VALIDATION.md
+ D P32R5_SQL_LOG.md
+ D P32R7_BACKEND_HEALTH.md
+ D P32R7_CONTRACT_MATRIX.md
+ D P32R7_FINAL_HEALTH_CERTIFICATION.md
+ D P32R7_FRONTEND_HEALTH.md
+ D P32R7_REGRESSION_MATRIX.md
+ D P32R7_SINGLE_SOURCE_AUDIT.md
+ D P32R7_TRACEABILITY_AUDIT.md
+ D P32R7_TRACEABILITY_CONSUMPTION.md
+ D P32R8_BACKEND_HEALTH.md
+ D P32R8_CONTRACTS.md
+ D P32R8_FINAL_VERDICT.md
+ D P32R8_QUERY_TRACE.md
+ D P32R8_SINGLE_SOURCE.md
+ D P32R8_STRESS_TEST.md
+ D P32R8_TRACEABILITY.md
+ D PLATFORM_BASELINE_V4_HASHES.txt
+ D PLATFORM_MATURITY_SCORECARD.md
+ D PLATFORM_SCORECARD.md
+ D PRODUCT_READINESS.md
+ D REGRESSION_ROOT_CAUSE.md
+ D REPOSITORY_CERTIFICATION.md
+ D REPOSITORY_REGISTRY.json
+ M START_APP.bat
+ D SYSTEM_HEALTH.md
+ M Scripts/f5_05_recovery_certify.py
+ D TECHNICAL_CERTIFICATION.md
+ D TECHNICAL_DEBT_MATRIX.md
+ D TECHNICAL_FINDINGS.md
+ D TOP_50_RECOMMENDATIONS.md
+ D XML_CERTIFICATION_TRACE.md
+ D ]
+ D _archive/backup_20260608_120239/api/__init__.py
+ D _archive/backup_20260608_120239/api/api.py
+ D _archive/backup_20260608_120239/backup_manifest.txt
+ D _archive/backup_20260608_120239/config.py
+ D _archive/backup_20260608_120239/db/MANIFEST_V6.json
+ D _archive/backup_20260608_120239/db/meli_financial_v4.db.backup.20260527_154224.bak
+ D _archive/backup_20260608_120239/db/meli_financial_v4.db.corrupt_snapshot
+ D _archive/backup_20260608_120239/db/meli_financial_v4.db.paris_reload.20260527_163143.bak
+ D _archive/backup_20260608_120239/db/meli_financial_v4.db.pre_nan_fix
+ D _archive/backup_20260608_120239/db/meli_financial_v4.db.wal
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154319/manifest_v2.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154319/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154708/manifest_v2.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154708/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v3_20260528_163525/financial_structure.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v3_20260528_163525/manifest.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v4_20260528_170822/financial_structure.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v4_20260528_170822/manifest.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094447/config.py
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094447/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094447/poscobro_dictionary.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/MANIFEST.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/config.py
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db.wal
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/poscobro_dictionary.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v6_20260529_105928/MANIFEST_V6.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v6_20260529_105928/STATS_V6.md
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v6_20260529_105928/_REPORTE_FALABELLA_REBUILD.md
+ D _archive/backup_20260608_120239/db/snapshot_corrupt_20260528/data_state_duckdb.json
+ D _archive/backup_20260608_120239/db/snapshot_corrupt_20260528/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db.backup.20260527_154224.bak
+ D _archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db.paris_reload.20260527_163143.bak
+ D _archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db.wal
+ D _archive/backup_20260608_120239/db/snapshot_pre_cierre_rebuild_20260528_163008/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_classification_20260603_102347/PRE_STATE.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_dec019_20260607_161324/sha256_pre.txt
+ D _archive/backup_20260608_120239/db/snapshot_pre_falabella_rebuild_20260529_100326/MANIFEST.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db.wal
+ D _archive/backup_20260608_120239/db/snapshot_pre_fase2_20260603_112908/MANIFEST.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_ml_xml_fix_20260528_170623/manifest.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_persistencia_20260528_162431/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_persistencia_20260528_162431/patch_manifest.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/backup_cierre_ml.csv
+ D _archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/backup_clasificacion_ml.csv
+ D _archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/backup_ledger_pre_fix.csv
+ D _archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/poscobro_correction_map.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172024/MANIFEST.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172043/MANIFEST.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172043/PRE_STATE.json
+ D _archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/MANIFEST.txt
+ D _archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/meli_financial_v4.db.backup.20260527_154224.bak
+ D _archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/validation_log_tail.txt
+ D _archive/backup_20260608_120239/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/poscobro_dictionary.json
+ D _archive/backup_20260608_120239/templates/dashboard.html
+ D _archive/backup_20260608_120239/templates/executive_dashboard.html
+ D _audit_db.py
+ D _audit_full_output.txt
+ D _build_dict.py
+ D _check_join.py
+ D _cleanup_cierre.py
+ D _confirm_pagar.py
+ D _count.py
+ D _debug_apagar.py
+ D _debug_apagar2.py
+ D _debug_classified.py
+ D _debug_desglose.py
+ D _debug_detalle.py
+ D _debug_join.py
+ D _debug_row.py
+ D _debug_row2.py
+ D _debug_simple.py
+ D _debug_xlsx.py
+ D _diag_ripley.py
+ D _diagnose_gap.py
+ D _dry_run_classify.py
+ D _dry_run_results.json
+ D _explore_snapshot.py
+ D _fase2_results.json
+ D _fase3_results.json
+ D _final_validate.py
+ D _forensic_phase1.py
+ D _forensic_trace.py
+ D _forensic_trace2.py
+ D _generate_v6.py
+ D _integrate_dictionary.mjs
+ D _inventory_subcategories.py
+ D _killcritic_validate.py
+ D _payable_analysis.py
+ D _rebuild_falabella.py
+ D _reclassify_all.py
+ D _reconcile_e2e.py
+ D _reconcile_final.py
+ D _reload_falabella.py
+ D _reload_falabella2.py
+ D _reload_falabella3.py
+ D _surgical_fixes.py
+ D _surgical_review.py
+ D _surgical_review2.py
+ D _surgical_review3.py
+ D _tc.py
+ D _test_classif.py
+ D _validate_e2e.py
+ M api/api.py
+ D baseline_perf_v4.txt
+ D check_cierre.py
+ D check_contamination.py
+ D check_current_db.py
+ D check_ledger_diff.py
+ D check_pipeline.py
+ D check_snapshot2.py
+ D check_snapshots.py
+ D data/db/baseline_estable_v7_20260715/meli_financial_v4.db.bak
+ D data/db/baseline_estable_v7_20260715/meli_financial_v4.db.forensic_original
+ D data/db/meli_financial_v4.db.snapshot_20260622_111145
+ D data/db/meli_financial_v4.db.snapshot_20260623_115557
+ D data/db/meli_financial_v4.db.snapshot_af002_20260623_121855
+ D data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122024
+ D data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122032
+ D data/db/snapshot_baseline_v2_20260528_154319/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_baseline_v2_20260528_154708/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_baseline_v5_20260529_094447/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_baseline_v5_20260529_094539/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db.wal
+ D data/db/snapshot_corrupt_20260528/data_state_duckdb.json
+ D data/db/snapshot_corrupt_20260528/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_corrupt_20260528/meli_financial_v4.db.backup.20260527_154224.bak
+ D data/db/snapshot_corrupt_20260528/meli_financial_v4.db.paris_reload.20260527_163143.bak
+ D data/db/snapshot_corrupt_20260528/meli_financial_v4.db.wal
+ D data/db/snapshot_pre_cierre_rebuild_20260528_163008/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_restored_validated_20260528/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_restored_validated_20260528/meli_financial_v4.db.backup.20260527_154224.bak
+ D data_state_duckdb.json
+ D debug_temp_db.py
+ D engine/v4/certification/knowledge/templates/marketplace_dashboard.md
+ M engine/v4/copilot/copilot_engine.py
+ M engine/v4/domain/financial_engine.py
+ M engine/v4/dte_indexer.py
+ M engine/v4/ingestion/handlers/integrity_validator.py
+ M engine/v4/ingestion/orchestrator.py
+ M engine/v4/marketplace_auditor.py
+ M engine/v4/surgical_loader.py
+ M engine/v4/surgical_xml_justifier.py
+ M engine/v4/xml_matcher.py
+ D execution_board.json
+ D execution_board.md
+ D f4_traceability_err.txt
+ D f4_traceability_out.txt
+ M knowledge_index.yaml
+ D master_marketplace_dictionary_v1.json
+ D poscobro_dictionary.json
+ M templates/copilot.html
+ M templates/dashboard.html
+ M templates/executive_dashboard.html
+ M tests/benchmarks/audit_ml_current.json
+ M tests/benchmarks/benchmark_report.json
+ M tests/benchmarks/cierre_all_current.json
+ M tests/benchmarks/cobros_breakdown_current.json
+ M tests/benchmarks/exec_summary_all_current.json
+ M tests/benchmarks/exec_summary_ml_current.json
+ M tests/benchmarks/financial_structure_all_current.json
+ M tests/benchmarks/ledger_ml_current.json
+ M tests/benchmarks/operational_intelligence_ml_current.json
+ M tests/benchmarks/waterfall_all_current.json
+ M tests/benchmarks/waterfall_ripley_current.json
+ M tests/conftest.py
+ D tests/golden/copilot_marketplace_impact.json
+ M tests/golden/exec_summary_all.json
+ M tests/golden/exec_summary_all_stability_0.json
+ M tests/golden/exec_summary_all_stability_1.json
+ M tests/golden/exec_summary_all_stability_2.json
+ M tests/golden/exec_summary_all_stability_3.json
+ M tests/golden/exec_summary_all_stability_4.json
+ M tests/golden/exec_summary_all_stability_5.json
+ M tests/golden/exec_summary_all_stability_6.json
+ M tests/golden/exec_summary_all_stability_7.json
+ M tests/golden/exec_summary_all_stability_8.json
+ M tests/golden/exec_summary_all_stability_9.json
+ M tests/golden/exec_summary_ml.json
+ M tests/golden/exec_summary_paris.json
+ M tests/golden/exec_summary_ripley.json
+ M tests/golden/financial_structure_ml.json
+ M tests/golden/financial_structure_paris.json
+ M tests/golden/financial_structure_ripley.json
+ M tests/golden/ledger_ml.json
+ M tests/golden/ledger_paris.json
+ M tests/golden/ledger_ripley.json
+ M tests/golden/waterfall_all.json
+ M tests/golden/waterfall_all_stability_0.json
+ M tests/golden/waterfall_all_stability_1.json
+ M tests/golden/waterfall_all_stability_2.json
+ M tests/golden/waterfall_all_stability_3.json
+ M tests/golden/waterfall_all_stability_4.json
+ M tests/golden/waterfall_all_stability_5.json
+ M tests/golden/waterfall_all_stability_6.json
+ M tests/golden/waterfall_all_stability_7.json
+ M tests/golden/waterfall_all_stability_8.json
+ M tests/golden/waterfall_all_stability_9.json
+ M tests/golden/waterfall_ml.json
+ M tests/golden/waterfall_paris.json
+ M tests/golden/waterfall_ripley.json
+ M tests/golden/xml_certification.json
+ M tests/test_benchmarks.py
+ M tests/test_certification_gate.py
+ M tests/test_f4_traceability.py
+ M tests/test_regression_contracts.py
+ D tmp_g6_f2_out.txt
+ D tmp_g6_f3_out.txt
+ D tmp_g6_full.txt
+ D tmp_g6_out.txt
+ D tmp_out1.txt
+ D tmp_out2.txt
+ D tmp_rfc_causality_out.txt
+ D tmp_rfc_structure_out.txt
+ D traceability_audit_report.txt
+?? "01_Raw/FALABELLA/Facturaci\303\263n/"
+?? "01_Raw/RIPLEY/Fulfillment by Ripley/"
+?? "01_Raw/RIPLEY/Fulfillment by Seller/"
+?? "01_Raw/RIPLEY/Mis extractos/"
+?? Scripts/create_tests.py
+?? Scripts/create_tests_2.py
+?? Scripts/create_tests_3.py
+?? Scripts/fix_orch.py
+?? Scripts/fix_paths.py
+?? Scripts/fix_syntax.py
+?? Scripts/inject2.py
+?? Scripts/inject3.py
+?? Scripts/inject4.py
+?? Scripts/inject5.py
+?? Scripts/inject_api.py
+?? Scripts/tail_log.txt
+?? docs/superpowers/plans/
+?? engine/v4/ingestion/raw_file_indexer.py
+?? engine/v4/knowledge/dual_graph.py
+?? engine/v4/knowledge/knowledge_extraction_engine.py
+?? evidence/archive_root/
+?? evidence/database_rationalization_summary.json
+?? evidence/database_reconciliation_before_after.csv
+?? evidence/database_reconciliation_before_after.json
+?? evidence/database_reconciliation_conflicts.json
+?? evidence/fase_1b/CAP-TD-001.json
+?? evidence/fase_1b/CAP-TD-002.json
+?? evidence/fase_1b/CAP-TD-003.json
+?? evidence/fase_1b/CAP-TD-004.json
+?? evidence/fase_1b/CAP-TD-005.json
+?? evidence/fase_1b/CAP-TD-006.json
+?? evidence/fase_1b/CAP-TD-007.json
+?? evidence/fase_1b/CAP-TD-008.json
+?? evidence/fase_2/
+?? evidence/knowledgeos_system_brain/
+?? evidence/migration/
+?? evidence/phase3_duplicate_inventory.csv
+?? evidence/phase3_duplicate_inventory_v2.csv
+?? evidence/phase3_file_inventory_v2.csv
+?? evidence/phase3_git_large_objects.csv
+?? evidence/phase3_git_large_objects_v2.csv
+?? evidence/phase3_proposed_actions.md
+?? evidence/phase3_proposed_actions_v2.md
+?? evidence/phase3_raw_comparison_v2.json
+?? evidence/phase3_reference_analysis.csv
+?? evidence/phase3_reference_analysis_v2.csv
+?? evidence/phase3_risk_matrix.csv
+?? evidence/phase3_risk_matrix_v2.csv
+?? evidence/phase3_root_inventory.csv
+?? evidence/phase3_root_inventory_v2.csv
+?? evidence/phase3_structural_audit_summary.json
+?? evidence/phase3_structural_audit_summary_v2.json
+?? evidence/post_governance_roadmap/
+?? evidence/repository_size_forensics.json
+?? evidence/xml_dte_certification/
+?? frontend/shared/financial-formatter.js
+?? governance/ACTA_CIERRE_KNOWLEDGEOS_SYSTEM_BRAIN_V1.md
+?? governance/ACTA_MAESTRA_KNOWLEDGEOS_SYSTEM_BRAIN_V1.md
+?? governance/ADR_002_COMMERCIAL_DATASET_DEFINITION.md
+?? governance/ADR_KNOWLEDGEOS_AS_SYSTEM_BRAIN_V1.md
+?? governance/API_CONTRACT_VALIDATION.md
+?? governance/API_REGRESSION_REPORT.md
+?? governance/ARCHITECTURE_REGISTRY_V1.md
+?? governance/ARCHITECTURE_REVIEW.md
+?? governance/AUDIT_SCOPE_RECTIFICATION_20260724.md
+?? governance/BACKLOG.md
+?? governance/BASELINE_POST_SURGICAL_FIX.md
+?? governance/CAPABILITY_REGISTRY_V1.md
+?? governance/COMMERCIAL_READINESS.md
+?? governance/COMPETITIVE_ANALYSIS.md
+?? governance/DATABASE_REGISTRY.md
+?? governance/DATA_CONTRACT_REGISTRY_V1.md
+?? governance/DATA_COVERAGE_FINAL.md
+?? governance/DATA_LINEAGE_REGISTRY_V1.md
+?? governance/DECISION_REGISTRY_V1.md
+?? governance/DUAL_GRAPH_ARCHITECTURE_MODEL_V1.md
+?? governance/ELECTRONIC_CERTIFICATION_RECOVERY.md
+?? governance/END_TO_END_RECONCILIATION_ROADMAP_V1.md
+?? governance/EVIDENCE_MATRIX.md
+?? governance/EVIDENCE_REGISTRY_V1.md
+?? governance/EXECUTIVE_ASSESSMENT.md
+?? governance/EXECUTIVE_CLOSURE_STATEMENT.md
+?? governance/EXECUTIVE_VERDICT.md
+?? governance/EXTERNAL_REFERENCE_ADOPTION_MATRIX_V1.md
+?? governance/EXTERNAL_REFERENCE_ADOPTION_MATRIX_V2.md
+?? governance/F5_07A_DATA_COVERAGE_REPORT.md
+?? governance/F5_07_EXECUTIVE_ACCEPTANCE.md
+?? governance/FETCH_DUPLICATION_REPORT.md
+?? governance/FINAL_API_STABILITY_CERTIFICATION.md
+?? governance/FINAL_ARCHITECTURE_SIGN_OFF.md
+?? governance/FINAL_FINANCIAL_CONSISTENCY_CERTIFICATION.md
+?? governance/FINAL_FRONTEND_PERFORMANCE_CERTIFICATION.md
+?? governance/FINAL_STABILITY_CERTIFICATION.md
+?? governance/FINAL_VERDICT.md
+?? governance/FINANCIAL_COPILOT_QUESTION_REGISTRY_V1.md
+?? governance/FRONTEND_BASELINE.md
+?? governance/FRONTEND_CALL_GRAPH_AFTER.md
+?? governance/FRONTEND_CALL_GRAPH_BEFORE.md
+?? governance/FRONTEND_CONCURRENCY_AUDIT.md
+?? governance/FRONTEND_DIFF_REPORT.md
+?? governance/FRONTEND_FINAL_CERTIFICATION.md
+?? governance/FRONTEND_PERFORMANCE_TRACE.md
+?? governance/FRONTEND_RECOVERY_REPORT.md
+?? governance/FRONTEND_REGRESSION_REPORT.md
+?? governance/FRONTEND_REGRESSION_ROOT_CAUSE.md
+?? governance/FRONTEND_STATE_TRACE.md
+?? governance/GO_LIVE_READINESS.md
+?? governance/INFORME_P27_RESUMEN_EJECUTIVO.md
+?? governance/INITIAL_DATA_MIGRATION_REPORT.md
+?? governance/KNOWLEDGE_CANONICAL_REGISTRY_V1.md
+?? governance/KNOWLEDGE_OS_SPECIFICATION.md
+?? governance/LEDGER_CONSISTENCY_AUDIT.md
+?? governance/MASTER_KNOWLEDGE_INDEX.md
+?? governance/MATURITY_REGISTRY_V1.md
+?? governance/P0_P3_FINDINGS.md
+?? governance/P32R4_API_TRACE.md
+?? governance/P32R4_DOCUMENT_TRACE.md
+?? governance/P32R4_FINAL_CERTIFICATION.md
+?? governance/P32R4_FRONTEND_TRACE.md
+?? governance/P32R4_XML_TRACE.md
+?? governance/P32R5_ENDPOINT_TRACE.md
+?? governance/P32R5_FINAL_CERTIFICATION.md
+?? governance/P32R5_PERIOD_PROPAGATION.md
+?? governance/P32R5_PERIOD_VALIDATION.md
+?? governance/P32R5_SQL_LOG.md
+?? governance/P32R7_BACKEND_HEALTH.md
+?? governance/P32R7_CONTRACT_MATRIX.md
+?? governance/P32R7_FINAL_HEALTH_CERTIFICATION.md
+?? governance/P32R7_FRONTEND_HEALTH.md
+?? governance/P32R7_REGRESSION_MATRIX.md
+?? governance/P32R7_SINGLE_SOURCE_AUDIT.md
+?? governance/P32R7_TRACEABILITY_AUDIT.md
+?? governance/P32R7_TRACEABILITY_CONSUMPTION.md
+?? governance/P32R8_BACKEND_HEALTH.md
+?? governance/P32R8_CONTRACTS.md
+?? governance/P32R8_FINAL_VERDICT.md
+?? governance/P32R8_QUERY_TRACE.md
+?? governance/P32R8_SINGLE_SOURCE.md
+?? governance/P32R8_STRESS_TEST.md
+?? governance/P32R8_TRACEABILITY.md
+?? governance/PENDING_MIGRATION_MATRIX.md
+?? governance/PLATFORM_MATURITY_SCORECARD.md
+?? governance/PLATFORM_SCORECARD.md
+?? governance/PMO_REGISTRY_V1.md
+?? governance/PRODUCTION_DATA_CERTIFICATION.md
+?? governance/PRODUCT_READINESS.md
+?? governance/PROJECT_CURRENT_STATE_REGISTRY_V1.md
+?? governance/RAW_DATA_CONTRACT_V1.md
+?? governance/RAW_OFFICIAL_SPECIFICATION_V1.md
+?? governance/REGISTRO_FINAL_GOBERNANZA_FISCALIZADA_KNOWLEDGEOS_SYSTEM_BRAIN_V1.md
+?? governance/REGRESSION_ROOT_CAUSE.md
+?? governance/REPOSITORY_CERTIFICATION.md
+?? governance/REPOSITORY_SIZE_AUDIT.md
+?? governance/ROADMAP_POST_GOVERNANCE_V1.md
+?? governance/ROOT_CAUSE_MATRIX.md
+?? governance/SNAPSHOTS_GOVERNANCE_AUDIT.md
+?? governance/SURGICAL_FIX_REGISTRY.md
+?? governance/SURGICAL_FRONTEND_DTE_STATUS_FIX.md
+?? governance/SYSTEM_HEALTH.md
+?? governance/SYSTEM_INTELLIGENCE_SPECIFICATION_V1.md
+?? governance/TECHNICAL_CERTIFICATION.md
+?? governance/TECHNICAL_DEBT_MATRIX.md
+?? governance/TECHNICAL_DEBT_REGISTRY_V1.md
+?? governance/TECHNICAL_FINDINGS.md
+?? governance/TOP_50_RECOMMENDATIONS.md
+?? governance/UI_ARCHITECTURE_MASTERPLAN.md
+?? governance/UI_COMPONENT_REGISTRY.md
+?? governance/XML_CERTIFICATION_STATUS.md
+?? governance/XML_CERTIFICATION_TRACE.md
+?? governance/auditoria_quirurgica_mfe_v1_20260724.md
+?? governance/execution_board.md
+?? implementation_plan.md
+?? knowledge/00_Inbox/
+?? knowledge/01_Canonical/
+?? knowledge/02_Governance/
+?? knowledge/03_Evidence/
+?? knowledge/04_Projects/
+?? knowledge/05_References/
+?? knowledge/90_Archive/
+?? knowledge/99_Quarantine/
+?? knowledge/INDEX_MASTER.md
+?? knowledge/OBSIDIAN_INGESTION_AUDIT.md
+?? knowledge/architecture/
+?? knowledge/canonical/
+?? knowledge/capabilities/
+?? knowledge/contracts/
+?? knowledge/copilot/
+?? knowledge/decisions/
+?? knowledge/dte/
+?? knowledge/evidence/
+?? knowledge/execution/
+?? knowledge/glossary/
+?? knowledge/governance/
+?? knowledge/indexes/
+?? knowledge/lineage/
+?? knowledge/marketplace/
+?? knowledge/maturity/
+?? knowledge/projects/
+?? knowledge/references/
+?? knowledge/roadmap/
+?? knowledge/sap/
+?? knowledge/templates/
+?? static/
+?? tests/test_cap_f2_001.py
+?? tests/test_copilot_canonical_qf.py
+?? tests/test_dual_graph.py
+?? tests/test_electronic_certification_api.py
+?? tests/test_f5_06_production_hardening.py
+?? tests/test_knowledge_extraction_engine.py
+?? tests/test_raw_file_indexer.py
+?? tests/test_xml_dte_certification.py
+?? tools/data_coverage_auditor.py
+?? tools/execute_e2e_knowledgeos_certification.py
+?? tools/execute_xml_dte_certification.py
+?? tools/index_raw_files.py
+?? tools/initial_data_migration.py
+?? tools/surgical_migration_orchestrator.py
+?? tools/surgical_migration_phase_2.py`
+- **Git Status Después:** `D 0
+ D "01_Raw/FALABELLA/\303\223rdenes y Transacciones/1  abril   2026 - 30  abril   2026.xlsx"
+ D "01_Raw/FALABELLA/\303\223rdenes y Transacciones/1  marzo   2026 - 31  marzo   2026.xlsx"
+ D "01_Raw/FALABELLA/\303\223rdenes y Transacciones/1 junio 2026 al 5 junio 2026.xlsx"
+ D "01_Raw/FALABELLA/\303\223rdenes y Transacciones/1 mayo 2026 al 31 mayo 2026.xlsx"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-01-2026 - 13-01-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-02-2026 - 13-02-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-03-2026 - 13-03-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-04-2026 - 13-04-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-05-2026 - 13-05-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-06-2026 - 13-06-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/05-12-2025 - 13-12-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-01-2025 - 28-01-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-01-2026 - 20-01-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-02-2025 - 28-02-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-02-2026 - 20-02-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-03-2025 - 28-03-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-03-2026 - 20-03-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-04-2025 - 28-04-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-04-2026 - 20-04-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-05-2025 - 28-05-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-05-2026 - 20-05-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-06-2025 - 28-06-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-06-2026 - 20-06-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-07-2025 - 28-07-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-08-2025 - 28-08-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-09-2025 - 28-09-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-10-2025 - 28-10-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-11-2025 - 20-11-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/13-12-2025 - 20-12-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-01-2026 - 28-01-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-02-2026 - 28-02-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-03-2026 - 28-03-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-04-2026 - 28-04-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-05-2026 - 28-05-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-06-2026 - 28-06-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-11-2025 - 28-11-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/20-12-2025 - 28-12-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-01-2025 - 13-02-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-01-2026 - 05-02-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-02-2025 - 13-03-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-02-2026 - 05-03-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-03-2025 - 13-04-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-03-2026 - 05-04-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-04-2025 - 13-05-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-04-2026 - 05-05-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-05-2025 - 13-06-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-05-2026 - 05-06-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-06-2025 - 13-07-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-06-2026 - 05-07-2026.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-07-2025 - 13-08-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-08-2025 - 13-09-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-09-2025 - 13-10-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-10-2025 - 13-11-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-11-2025 - 05-12-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-12-2024 - 13-01-2025.csv"
+ D "01_Raw/RIPLEY/Ciclos de facturaci\303\263n/28-12-2025 - 05-01-2026.csv"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000312-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000314-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000316-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000318-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000320-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000322-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000324-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000326-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000328-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000330-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000332-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000334-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000336-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000338-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000340-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000342-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000344-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000346-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000348-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000350-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000352-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000353-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000354-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000355-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000356-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000357-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000358-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000359-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000360-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000361-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000362-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000363-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000364-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000365-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000366-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000367-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000368-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000369-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000370-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000371-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000372-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000374-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000375-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000376-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000377-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000378-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000379-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000380-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000381-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000382-2815.xlsx"
+ D "01_Raw/RIPLEY/Cumplimiento vendedor/000383-2815.xlsx"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000001_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000002_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000003_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000004_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000005_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000006_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000007_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000008_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000009_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000010_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000011_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000012_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000013_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000014_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000015_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000016_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000017_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000018_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000019_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000020_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000021_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000022_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000023_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000024_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000025_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000026_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000027_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000028_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000029_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000030_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000031_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000032_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000033_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000034_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000035_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/000036_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000001_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000002_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000003_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000004_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000005_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000006_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000007_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000008_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000009_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000010_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000011_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000012_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000013_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000014_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000015_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000016_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000017_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000018_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000019_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000020_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000021_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000022_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000023_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000024_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000025_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000026_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000027_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000028_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000029_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000030_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000031_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000032_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000033_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000034_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000035_ff_2815.csv"
+ D "01_Raw/RIPLEY/Realizaci\303\263n Ripley/abonos_descuentos_000036_ff_2815.csv"
+ D API_CONTRACT_VALIDATION.md
+ D API_REGRESSION_REPORT.md
+ D ARCHITECTURE_REVIEW.md
+ D BACKLOG.md
+ D BASELINE_MANIFEST_V1.json
+ D BASELINE_MANIFEST_V1_P22Z.json
+ D COMMERCIAL_READINESS.md
+ D COMPETITIVE_ANALYSIS.md
+ D DATABASE_REGISTRY.md
+ D ELECTRONIC_CERTIFICATION_RECOVERY.md
+ D EVIDENCE_MATRIX.md
+ D EXECUTIVE_ASSESSMENT.md
+ D EXECUTIVE_VERDICT.md
+ D FETCH_DUPLICATION_REPORT.md
+ D FINAL_API_STABILITY_CERTIFICATION.md
+ D FINAL_FINANCIAL_CONSISTENCY_CERTIFICATION.md
+ D FINAL_FRONTEND_PERFORMANCE_CERTIFICATION.md
+ D FINAL_STABILITY_CERTIFICATION.md
+ D FINAL_VERDICT.md
+ D FRONTEND_BASELINE.md
+ D FRONTEND_CALL_GRAPH_AFTER.md
+ D FRONTEND_CALL_GRAPH_BEFORE.md
+ D FRONTEND_CONCURRENCY_AUDIT.md
+ D FRONTEND_DIFF_REPORT.md
+ D FRONTEND_FINAL_CERTIFICATION.md
+ D FRONTEND_PERFORMANCE_TRACE.md
+ D FRONTEND_RECOVERY_REPORT.md
+ D FRONTEND_REGRESSION_REPORT.md
+ D FRONTEND_REGRESSION_ROOT_CAUSE.md
+ D FRONTEND_STATE_TRACE.md
+ D INFORME_P27_RESUMEN_EJECUTIVO.md
+ D KnowledgeBase_baseline_v4.zip
+ D LEDGER_CONSISTENCY_AUDIT.md
+ D "MARKETPLACE FINANCIAL CLASSIFICATION DICTIONARY.txt"
+ D MASTER_KNOWLEDGE_INDEX.md
+ D P0_P3_FINDINGS.md
+ D P32R4_API_TRACE.md
+ D P32R4_DOCUMENT_TRACE.md
+ D P32R4_FINAL_CERTIFICATION.md
+ D P32R4_FRONTEND_TRACE.md
+ D P32R4_XML_TRACE.md
+ D P32R5_ENDPOINT_TRACE.md
+ D P32R5_FINAL_CERTIFICATION.md
+ D P32R5_PERIOD_PROPAGATION.md
+ D P32R5_PERIOD_VALIDATION.md
+ D P32R5_SQL_LOG.md
+ D P32R7_BACKEND_HEALTH.md
+ D P32R7_CONTRACT_MATRIX.md
+ D P32R7_FINAL_HEALTH_CERTIFICATION.md
+ D P32R7_FRONTEND_HEALTH.md
+ D P32R7_REGRESSION_MATRIX.md
+ D P32R7_SINGLE_SOURCE_AUDIT.md
+ D P32R7_TRACEABILITY_AUDIT.md
+ D P32R7_TRACEABILITY_CONSUMPTION.md
+ D P32R8_BACKEND_HEALTH.md
+ D P32R8_CONTRACTS.md
+ D P32R8_FINAL_VERDICT.md
+ D P32R8_QUERY_TRACE.md
+ D P32R8_SINGLE_SOURCE.md
+ D P32R8_STRESS_TEST.md
+ D P32R8_TRACEABILITY.md
+ D PLATFORM_BASELINE_V4_HASHES.txt
+ D PLATFORM_MATURITY_SCORECARD.md
+ D PLATFORM_SCORECARD.md
+ D PRODUCT_READINESS.md
+ D REGRESSION_ROOT_CAUSE.md
+ D REPOSITORY_CERTIFICATION.md
+ D REPOSITORY_REGISTRY.json
+ M START_APP.bat
+ D SYSTEM_HEALTH.md
+ M Scripts/f5_05_recovery_certify.py
+ D TECHNICAL_CERTIFICATION.md
+ D TECHNICAL_DEBT_MATRIX.md
+ D TECHNICAL_FINDINGS.md
+ D TOP_50_RECOMMENDATIONS.md
+ D XML_CERTIFICATION_TRACE.md
+ D ]
+ D _archive/backup_20260608_120239/api/__init__.py
+ D _archive/backup_20260608_120239/api/api.py
+ D _archive/backup_20260608_120239/backup_manifest.txt
+ D _archive/backup_20260608_120239/config.py
+ D _archive/backup_20260608_120239/db/MANIFEST_V6.json
+ D _archive/backup_20260608_120239/db/meli_financial_v4.db.backup.20260527_154224.bak
+ D _archive/backup_20260608_120239/db/meli_financial_v4.db.corrupt_snapshot
+ D _archive/backup_20260608_120239/db/meli_financial_v4.db.paris_reload.20260527_163143.bak
+ D _archive/backup_20260608_120239/db/meli_financial_v4.db.pre_nan_fix
+ D _archive/backup_20260608_120239/db/meli_financial_v4.db.wal
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154319/manifest_v2.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154319/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154708/manifest_v2.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154708/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v3_20260528_163525/financial_structure.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v3_20260528_163525/manifest.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v4_20260528_170822/financial_structure.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v4_20260528_170822/manifest.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094447/config.py
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094447/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094447/poscobro_dictionary.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/MANIFEST.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/config.py
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db.wal
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/poscobro_dictionary.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v6_20260529_105928/MANIFEST_V6.json
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v6_20260529_105928/STATS_V6.md
+ D _archive/backup_20260608_120239/db/snapshot_baseline_v6_20260529_105928/_REPORTE_FALABELLA_REBUILD.md
+ D _archive/backup_20260608_120239/db/snapshot_corrupt_20260528/data_state_duckdb.json
+ D _archive/backup_20260608_120239/db/snapshot_corrupt_20260528/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db.backup.20260527_154224.bak
+ D _archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db.paris_reload.20260527_163143.bak
+ D _archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db.wal
+ D _archive/backup_20260608_120239/db/snapshot_pre_cierre_rebuild_20260528_163008/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_classification_20260603_102347/PRE_STATE.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_dec019_20260607_161324/sha256_pre.txt
+ D _archive/backup_20260608_120239/db/snapshot_pre_falabella_rebuild_20260529_100326/MANIFEST.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db.wal
+ D _archive/backup_20260608_120239/db/snapshot_pre_fase2_20260603_112908/MANIFEST.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_ml_xml_fix_20260528_170623/manifest.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_persistencia_20260528_162431/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_persistencia_20260528_162431/patch_manifest.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/backup_cierre_ml.csv
+ D _archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/backup_clasificacion_ml.csv
+ D _archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/backup_ledger_pre_fix.csv
+ D _archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/poscobro_correction_map.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172024/MANIFEST.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172043/MANIFEST.json
+ D _archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172043/PRE_STATE.json
+ D _archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/MANIFEST.txt
+ D _archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/meli_financial_v4.db.backup.20260527_154224.bak
+ D _archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/validation_log_tail.txt
+ D _archive/backup_20260608_120239/master_marketplace_dictionary_v1.json
+ D _archive/backup_20260608_120239/poscobro_dictionary.json
+ D _archive/backup_20260608_120239/templates/dashboard.html
+ D _archive/backup_20260608_120239/templates/executive_dashboard.html
+ D _audit_db.py
+ D _audit_full_output.txt
+ D _build_dict.py
+ D _check_join.py
+ D _cleanup_cierre.py
+ D _confirm_pagar.py
+ D _count.py
+ D _debug_apagar.py
+ D _debug_apagar2.py
+ D _debug_classified.py
+ D _debug_desglose.py
+ D _debug_detalle.py
+ D _debug_join.py
+ D _debug_row.py
+ D _debug_row2.py
+ D _debug_simple.py
+ D _debug_xlsx.py
+ D _diag_ripley.py
+ D _diagnose_gap.py
+ D _dry_run_classify.py
+ D _dry_run_results.json
+ D _explore_snapshot.py
+ D _fase2_results.json
+ D _fase3_results.json
+ D _final_validate.py
+ D _forensic_phase1.py
+ D _forensic_trace.py
+ D _forensic_trace2.py
+ D _generate_v6.py
+ D _integrate_dictionary.mjs
+ D _inventory_subcategories.py
+ D _killcritic_validate.py
+ D _payable_analysis.py
+ D _rebuild_falabella.py
+ D _reclassify_all.py
+ D _reconcile_e2e.py
+ D _reconcile_final.py
+ D _reload_falabella.py
+ D _reload_falabella2.py
+ D _reload_falabella3.py
+ D _surgical_fixes.py
+ D _surgical_review.py
+ D _surgical_review2.py
+ D _surgical_review3.py
+ D _tc.py
+ D _test_classif.py
+ D _validate_e2e.py
+ M api/api.py
+ D baseline_perf_v4.txt
+ D check_cierre.py
+ D check_contamination.py
+ D check_current_db.py
+ D check_ledger_diff.py
+ D check_pipeline.py
+ D check_snapshot2.py
+ D check_snapshots.py
+ D data/db/baseline_estable_v7_20260715/meli_financial_v4.db.bak
+ D data/db/baseline_estable_v7_20260715/meli_financial_v4.db.forensic_original
+ D data/db/meli_financial_v4.db.snapshot_20260622_111145
+ D data/db/meli_financial_v4.db.snapshot_20260623_115557
+ D data/db/meli_financial_v4.db.snapshot_af002_20260623_121855
+ D data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122024
+ D data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122032
+ D data/db/snapshot_baseline_v2_20260528_154319/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_baseline_v2_20260528_154708/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_baseline_v5_20260529_094447/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_baseline_v5_20260529_094539/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db.wal
+ D data/db/snapshot_corrupt_20260528/data_state_duckdb.json
+ D data/db/snapshot_corrupt_20260528/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_corrupt_20260528/meli_financial_v4.db.backup.20260527_154224.bak
+ D data/db/snapshot_corrupt_20260528/meli_financial_v4.db.paris_reload.20260527_163143.bak
+ D data/db/snapshot_corrupt_20260528/meli_financial_v4.db.wal
+ D data/db/snapshot_pre_cierre_rebuild_20260528_163008/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_restored_validated_20260528/master_marketplace_dictionary_v1.json
+ D data/db/snapshot_restored_validated_20260528/meli_financial_v4.db.backup.20260527_154224.bak
+ D data_state_duckdb.json
+ D debug_temp_db.py
+ D engine/v4/certification/knowledge/templates/marketplace_dashboard.md
+ M engine/v4/copilot/copilot_engine.py
+ M engine/v4/domain/financial_engine.py
+ M engine/v4/dte_indexer.py
+ M engine/v4/ingestion/handlers/integrity_validator.py
+ M engine/v4/ingestion/orchestrator.py
+ M engine/v4/marketplace_auditor.py
+ M engine/v4/surgical_loader.py
+ M engine/v4/surgical_xml_justifier.py
+ M engine/v4/xml_matcher.py
+ D execution_board.json
+ D execution_board.md
+ D f4_traceability_err.txt
+ D f4_traceability_out.txt
+ M knowledge_index.yaml
+ D master_marketplace_dictionary_v1.json
+ D poscobro_dictionary.json
+ M templates/copilot.html
+ M templates/dashboard.html
+ M templates/executive_dashboard.html
+ M tests/benchmarks/audit_ml_current.json
+ M tests/benchmarks/benchmark_report.json
+ M tests/benchmarks/cierre_all_current.json
+ M tests/benchmarks/cobros_breakdown_current.json
+ M tests/benchmarks/exec_summary_all_current.json
+ M tests/benchmarks/exec_summary_ml_current.json
+ M tests/benchmarks/financial_structure_all_current.json
+ M tests/benchmarks/ledger_ml_current.json
+ M tests/benchmarks/operational_intelligence_ml_current.json
+ M tests/benchmarks/waterfall_all_current.json
+ M tests/benchmarks/waterfall_ripley_current.json
+ M tests/conftest.py
+ D tests/golden/copilot_marketplace_impact.json
+ M tests/golden/exec_summary_all.json
+ M tests/golden/exec_summary_all_stability_0.json
+ M tests/golden/exec_summary_all_stability_1.json
+ M tests/golden/exec_summary_all_stability_2.json
+ M tests/golden/exec_summary_all_stability_3.json
+ M tests/golden/exec_summary_all_stability_4.json
+ M tests/golden/exec_summary_all_stability_5.json
+ M tests/golden/exec_summary_all_stability_6.json
+ M tests/golden/exec_summary_all_stability_7.json
+ M tests/golden/exec_summary_all_stability_8.json
+ M tests/golden/exec_summary_all_stability_9.json
+ M tests/golden/exec_summary_ml.json
+ M tests/golden/exec_summary_paris.json
+ M tests/golden/exec_summary_ripley.json
+ M tests/golden/financial_structure_ml.json
+ M tests/golden/financial_structure_paris.json
+ M tests/golden/financial_structure_ripley.json
+ M tests/golden/ledger_ml.json
+ M tests/golden/ledger_paris.json
+ M tests/golden/ledger_ripley.json
+ M tests/golden/waterfall_all.json
+ M tests/golden/waterfall_all_stability_0.json
+ M tests/golden/waterfall_all_stability_1.json
+ M tests/golden/waterfall_all_stability_2.json
+ M tests/golden/waterfall_all_stability_3.json
+ M tests/golden/waterfall_all_stability_4.json
+ M tests/golden/waterfall_all_stability_5.json
+ M tests/golden/waterfall_all_stability_6.json
+ M tests/golden/waterfall_all_stability_7.json
+ M tests/golden/waterfall_all_stability_8.json
+ M tests/golden/waterfall_all_stability_9.json
+ M tests/golden/waterfall_ml.json
+ M tests/golden/waterfall_paris.json
+ M tests/golden/waterfall_ripley.json
+ M tests/golden/xml_certification.json
+ M tests/test_benchmarks.py
+ M tests/test_certification_gate.py
+ M tests/test_f4_traceability.py
+ M tests/test_regression_contracts.py
+ D tmp_g6_f2_out.txt
+ D tmp_g6_f3_out.txt
+ D tmp_g6_full.txt
+ D tmp_g6_out.txt
+ D tmp_out1.txt
+ D tmp_out2.txt
+ D tmp_rfc_causality_out.txt
+ D tmp_rfc_structure_out.txt
+ D traceability_audit_report.txt
+?? "01_Raw/FALABELLA/Facturaci\303\263n/"
+?? "01_Raw/RIPLEY/Fulfillment by Ripley/"
+?? "01_Raw/RIPLEY/Fulfillment by Seller/"
+?? "01_Raw/RIPLEY/Mis extractos/"
+?? Scripts/create_tests.py
+?? Scripts/create_tests_2.py
+?? Scripts/create_tests_3.py
+?? Scripts/fix_orch.py
+?? Scripts/fix_paths.py
+?? Scripts/fix_syntax.py
+?? Scripts/inject2.py
+?? Scripts/inject3.py
+?? Scripts/inject4.py
+?? Scripts/inject5.py
+?? Scripts/inject_api.py
+?? Scripts/tail_log.txt
+?? docs/superpowers/plans/
+?? engine/v4/ingestion/raw_file_indexer.py
+?? engine/v4/knowledge/dual_graph.py
+?? engine/v4/knowledge/knowledge_extraction_engine.py
+?? evidence/archive_root/
+?? evidence/database_rationalization_summary.json
+?? evidence/database_reconciliation_before_after.csv
+?? evidence/database_reconciliation_before_after.json
+?? evidence/database_reconciliation_conflicts.json
+?? evidence/fase_1b/CAP-TD-001.json
+?? evidence/fase_1b/CAP-TD-002.json
+?? evidence/fase_1b/CAP-TD-003.json
+?? evidence/fase_1b/CAP-TD-004.json
+?? evidence/fase_1b/CAP-TD-005.json
+?? evidence/fase_1b/CAP-TD-006.json
+?? evidence/fase_1b/CAP-TD-007.json
+?? evidence/fase_1b/CAP-TD-008.json
+?? evidence/fase_2/
+?? evidence/knowledgeos_system_brain/
+?? evidence/migration/
+?? evidence/phase3_duplicate_inventory.csv
+?? evidence/phase3_duplicate_inventory_v2.csv
+?? evidence/phase3_file_inventory_v2.csv
+?? evidence/phase3_git_large_objects.csv
+?? evidence/phase3_git_large_objects_v2.csv
+?? evidence/phase3_proposed_actions.md
+?? evidence/phase3_proposed_actions_v2.md
+?? evidence/phase3_raw_comparison_v2.json
+?? evidence/phase3_reference_analysis.csv
+?? evidence/phase3_reference_analysis_v2.csv
+?? evidence/phase3_risk_matrix.csv
+?? evidence/phase3_risk_matrix_v2.csv
+?? evidence/phase3_root_inventory.csv
+?? evidence/phase3_root_inventory_v2.csv
+?? evidence/phase3_structural_audit_summary.json
+?? evidence/phase3_structural_audit_summary_v2.json
+?? evidence/post_governance_roadmap/
+?? evidence/repository_size_forensics.json
+?? evidence/xml_dte_certification/
+?? frontend/shared/financial-formatter.js
+?? governance/ACTA_CIERRE_KNOWLEDGEOS_SYSTEM_BRAIN_V1.md
+?? governance/ACTA_MAESTRA_KNOWLEDGEOS_SYSTEM_BRAIN_V1.md
+?? governance/ADR_002_COMMERCIAL_DATASET_DEFINITION.md
+?? governance/ADR_KNOWLEDGEOS_AS_SYSTEM_BRAIN_V1.md
+?? governance/API_CONTRACT_VALIDATION.md
+?? governance/API_REGRESSION_REPORT.md
+?? governance/ARCHITECTURE_REGISTRY_V1.md
+?? governance/ARCHITECTURE_REVIEW.md
+?? governance/AUDIT_SCOPE_RECTIFICATION_20260724.md
+?? governance/BACKLOG.md
+?? governance/BASELINE_POST_SURGICAL_FIX.md
+?? governance/CAPABILITY_REGISTRY_V1.md
+?? governance/COMMERCIAL_READINESS.md
+?? governance/COMPETITIVE_ANALYSIS.md
+?? governance/DATABASE_REGISTRY.md
+?? governance/DATA_CONTRACT_REGISTRY_V1.md
+?? governance/DATA_COVERAGE_FINAL.md
+?? governance/DATA_LINEAGE_REGISTRY_V1.md
+?? governance/DECISION_REGISTRY_V1.md
+?? governance/DUAL_GRAPH_ARCHITECTURE_MODEL_V1.md
+?? governance/ELECTRONIC_CERTIFICATION_RECOVERY.md
+?? governance/END_TO_END_RECONCILIATION_ROADMAP_V1.md
+?? governance/EVIDENCE_MATRIX.md
+?? governance/EVIDENCE_REGISTRY_V1.md
+?? governance/EXECUTIVE_ASSESSMENT.md
+?? governance/EXECUTIVE_CLOSURE_STATEMENT.md
+?? governance/EXECUTIVE_VERDICT.md
+?? governance/EXTERNAL_REFERENCE_ADOPTION_MATRIX_V1.md
+?? governance/EXTERNAL_REFERENCE_ADOPTION_MATRIX_V2.md
+?? governance/F5_07A_DATA_COVERAGE_REPORT.md
+?? governance/F5_07_EXECUTIVE_ACCEPTANCE.md
+?? governance/FETCH_DUPLICATION_REPORT.md
+?? governance/FINAL_API_STABILITY_CERTIFICATION.md
+?? governance/FINAL_ARCHITECTURE_SIGN_OFF.md
+?? governance/FINAL_FINANCIAL_CONSISTENCY_CERTIFICATION.md
+?? governance/FINAL_FRONTEND_PERFORMANCE_CERTIFICATION.md
+?? governance/FINAL_STABILITY_CERTIFICATION.md
+?? governance/FINAL_VERDICT.md
+?? governance/FINANCIAL_COPILOT_QUESTION_REGISTRY_V1.md
+?? governance/FRONTEND_BASELINE.md
+?? governance/FRONTEND_CALL_GRAPH_AFTER.md
+?? governance/FRONTEND_CALL_GRAPH_BEFORE.md
+?? governance/FRONTEND_CONCURRENCY_AUDIT.md
+?? governance/FRONTEND_DIFF_REPORT.md
+?? governance/FRONTEND_FINAL_CERTIFICATION.md
+?? governance/FRONTEND_PERFORMANCE_TRACE.md
+?? governance/FRONTEND_RECOVERY_REPORT.md
+?? governance/FRONTEND_REGRESSION_REPORT.md
+?? governance/FRONTEND_REGRESSION_ROOT_CAUSE.md
+?? governance/FRONTEND_STATE_TRACE.md
+?? governance/GO_LIVE_READINESS.md
+?? governance/INFORME_P27_RESUMEN_EJECUTIVO.md
+?? governance/INITIAL_DATA_MIGRATION_REPORT.md
+?? governance/KNOWLEDGE_CANONICAL_REGISTRY_V1.md
+?? governance/KNOWLEDGE_OS_SPECIFICATION.md
+?? governance/LEDGER_CONSISTENCY_AUDIT.md
+?? governance/MASTER_KNOWLEDGE_INDEX.md
+?? governance/MATURITY_REGISTRY_V1.md
+?? governance/P0_P3_FINDINGS.md
+?? governance/P32R4_API_TRACE.md
+?? governance/P32R4_DOCUMENT_TRACE.md
+?? governance/P32R4_FINAL_CERTIFICATION.md
+?? governance/P32R4_FRONTEND_TRACE.md
+?? governance/P32R4_XML_TRACE.md
+?? governance/P32R5_ENDPOINT_TRACE.md
+?? governance/P32R5_FINAL_CERTIFICATION.md
+?? governance/P32R5_PERIOD_PROPAGATION.md
+?? governance/P32R5_PERIOD_VALIDATION.md
+?? governance/P32R5_SQL_LOG.md
+?? governance/P32R7_BACKEND_HEALTH.md
+?? governance/P32R7_CONTRACT_MATRIX.md
+?? governance/P32R7_FINAL_HEALTH_CERTIFICATION.md
+?? governance/P32R7_FRONTEND_HEALTH.md
+?? governance/P32R7_REGRESSION_MATRIX.md
+?? governance/P32R7_SINGLE_SOURCE_AUDIT.md
+?? governance/P32R7_TRACEABILITY_AUDIT.md
+?? governance/P32R7_TRACEABILITY_CONSUMPTION.md
+?? governance/P32R8_BACKEND_HEALTH.md
+?? governance/P32R8_CONTRACTS.md
+?? governance/P32R8_FINAL_VERDICT.md
+?? governance/P32R8_QUERY_TRACE.md
+?? governance/P32R8_SINGLE_SOURCE.md
+?? governance/P32R8_STRESS_TEST.md
+?? governance/P32R8_TRACEABILITY.md
+?? governance/PENDING_MIGRATION_MATRIX.md
+?? governance/PLATFORM_MATURITY_SCORECARD.md
+?? governance/PLATFORM_SCORECARD.md
+?? governance/PMO_REGISTRY_V1.md
+?? governance/PRODUCTION_DATA_CERTIFICATION.md
+?? governance/PRODUCT_READINESS.md
+?? governance/PROJECT_CURRENT_STATE_REGISTRY_V1.md
+?? governance/RAW_DATA_CONTRACT_V1.md
+?? governance/RAW_OFFICIAL_SPECIFICATION_V1.md
+?? governance/REGISTRO_FINAL_GOBERNANZA_FISCALIZADA_KNOWLEDGEOS_SYSTEM_BRAIN_V1.md
+?? governance/REGRESSION_ROOT_CAUSE.md
+?? governance/REPOSITORY_CERTIFICATION.md
+?? governance/REPOSITORY_SIZE_AUDIT.md
+?? governance/ROADMAP_POST_GOVERNANCE_V1.md
+?? governance/ROOT_CAUSE_MATRIX.md
+?? governance/SNAPSHOTS_GOVERNANCE_AUDIT.md
+?? governance/SURGICAL_FIX_REGISTRY.md
+?? governance/SURGICAL_FRONTEND_DTE_STATUS_FIX.md
+?? governance/SYSTEM_HEALTH.md
+?? governance/SYSTEM_INTELLIGENCE_SPECIFICATION_V1.md
+?? governance/TECHNICAL_CERTIFICATION.md
+?? governance/TECHNICAL_DEBT_MATRIX.md
+?? governance/TECHNICAL_DEBT_REGISTRY_V1.md
+?? governance/TECHNICAL_FINDINGS.md
+?? governance/TOP_50_RECOMMENDATIONS.md
+?? governance/UI_ARCHITECTURE_MASTERPLAN.md
+?? governance/UI_COMPONENT_REGISTRY.md
+?? governance/XML_CERTIFICATION_STATUS.md
+?? governance/XML_CERTIFICATION_TRACE.md
+?? governance/auditoria_quirurgica_mfe_v1_20260724.md
+?? governance/execution_board.md
+?? implementation_plan.md
+?? knowledge/00_Inbox/
+?? knowledge/01_Canonical/
+?? knowledge/02_Governance/
+?? knowledge/03_Evidence/
+?? knowledge/04_Projects/
+?? knowledge/05_References/
+?? knowledge/90_Archive/
+?? knowledge/99_Quarantine/
+?? knowledge/INDEX_MASTER.md
+?? knowledge/OBSIDIAN_INGESTION_AUDIT.md
+?? knowledge/architecture/
+?? knowledge/canonical/
+?? knowledge/capabilities/
+?? knowledge/contracts/
+?? knowledge/copilot/
+?? knowledge/decisions/
+?? knowledge/dte/
+?? knowledge/evidence/
+?? knowledge/execution/
+?? knowledge/glossary/
+?? knowledge/governance/
+?? knowledge/indexes/
+?? knowledge/lineage/
+?? knowledge/marketplace/
+?? knowledge/maturity/
+?? knowledge/projects/
+?? knowledge/references/
+?? knowledge/roadmap/
+?? knowledge/sap/
+?? knowledge/templates/
+?? static/
+?? tests/test_cap_f2_001.py
+?? tests/test_copilot_canonical_qf.py
+?? tests/test_dual_graph.py
+?? tests/test_electronic_certification_api.py
+?? tests/test_f5_06_production_hardening.py
+?? tests/test_knowledge_extraction_engine.py
+?? tests/test_raw_file_indexer.py
+?? tests/test_xml_dte_certification.py
+?? tools/data_coverage_auditor.py
+?? tools/execute_e2e_knowledgeos_certification.py
+?? tools/execute_xml_dte_certification.py
+?? tools/index_raw_files.py
+?? tools/initial_data_migration.py
+?? tools/surgical_migration_orchestrator.py
+?? tools/surgical_migration_phase_2.py`
+- **Git Unmodified:** `True`
+- **Official DB SHA-256:** `311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9` (Esperado: `311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9`) — **100% INTACT**
+- **RAW Status:** `VERIFIED_EXACT_FILE_COUNT_STABLE` (Archivos auditados: `1349`, Carpetas: `65`)
+
+---
+
+## 2. MÉTRICAS DINÁMICAS RECONCILIADAS DEL REPOSITORIO
+
+- **Total de Archivos Reales (is_file):** `24165` archivos
+- **Total de Directorios:** `2223` carpetas
+- **Tamaño Total en Bytes:** `4185964575` bytes
+- **Tamaño Total Decimal:** `4185.96 MB` (4.186 GB)
+- **Tamaño Total Binario:** `3992.05 MiB` (3.8985 GiB)
+
+---
+
+## 3. DESGLOSE RECURSIVO POR CARPETA PRINCIPAL (MB DECIMAL)
+
+| Carpeta Principal | Tamaño en MB | % del Repositorio |
+| :--- | :---: | :---: |
+| `./` | 0.27 MB | 0.01% |
+| `.agent/` | 0.0 MB | 0.0% |
+| `.agents/` | 70.1 MB | 1.67% |
+| `.claude/` | 1.87 MB | 0.04% |
+| `.claude-flow/` | 0.02 MB | 0.0% |
+| `.codex/` | 0.01 MB | 0.0% |
+| `.git/` | 623.82 MB | 14.9% |
+| `.githooks/` | 0.0 MB | 0.0% |
+| `.github/` | 0.0 MB | 0.0% |
+| `.opencode/` | 0.0 MB | 0.0% |
+| `.pytest_cache/` | 0.02 MB | 0.0% |
+| `.swarm/` | 1.88 MB | 0.04% |
+| `.venv/` | 496.97 MB | 11.87% |
+| `00_Config/` | 5.44 MB | 0.13% |
+| `01_Raw/` | 115.92 MB | 2.77% |
+| `AESP/` | 0.01 MB | 0.0% |
+| `api/` | 0.14 MB | 0.0% |
+| `data/` | 2367.71 MB | 56.56% |
+| `database/` | 0.01 MB | 0.0% |
+| `discovery/` | 0.03 MB | 0.0% |
+| `docs/` | 3.0 MB | 0.07% |
+| `engine/` | 1.48 MB | 0.04% |
+| `evidence/` | 7.73 MB | 0.18% |
+| `frontend/` | 0.01 MB | 0.0% |
+| `governance/` | 3.59 MB | 0.09% |
+| `knowledge/` | 0.16 MB | 0.0% |
+| `KnowledgeBase/` | 0.24 MB | 0.01% |
+| `Reporte_Marketplaces/` | 304.26 MB | 7.27% |
+| `Scripts/` | 0.95 MB | 0.02% |
+| `static/` | 0.0 MB | 0.0% |
+| `taxonomy/` | 0.05 MB | 0.0% |
+| `templates/` | 0.27 MB | 0.01% |
+| `tests/` | 0.67 MB | 0.02% |
+| `tools/` | 0.2 MB | 0.0% |
+| `_archive/` | 179.13 MB | 4.28% |
+
+---
+
+## 4. DETECCIÓN DE DUPLICADOS EXACTOS (≥ 50 KB)
+
+- **Grupos de Duplicados:** `36` grupos
+- **Desperdicio por Duplicación:** `365.51 MB` (`365508716` bytes)
+
+---
+
+## 5. AUDITORÍA DE OBJETOS GIT (.git/)
+
+- **Tamaño Total de `.git/`:** `623.82 MB` (`623822995` bytes)
+- **Archivos Grandes en `.git/` (≥ 5 MB):** `16` archivos
+
+---
+
+## 6. ANÁLISIS COMPRENSIVO DE REFERENCIAS EN CÓDIGO Y TEXTOS
+
+| Componente Objetivado | Referencias Encontradas | Estado de Referencia |
+| :--- | :---: | :--- |
+| `Reporte_Marketplaces` | 31 | `ACTIVE_REFERENCES` |
+| `Scripts` | 40 | `ACTIVE_REFERENCES` |
+| `_archive` | 17 | `ACTIVE_REFERENCES` |
+| `Knowledge Base` | 23 | `ACTIVE_REFERENCES` |
+| `scratch` | 86 | `ACTIVE_REFERENCES` |
+| `docs` | 276 | `ACTIVE_REFERENCES` |
+| `governance` | 235 | `ACTIVE_REFERENCES` |
+| `evidence` | 346 | `ACTIVE_REFERENCES` |
+| `knowledge` | 322 | `ACTIVE_REFERENCES` |
+
+---
+
+## 7. PLAN ESTRUCTURAL PROPUESTO (FASE 3)
+
+1. **Raíz del Repositorio:** Mantener estrictamente los 6 archivos canónicos de infraestructura.
+2. **Consolidación de Archivo Histórico:** Mover reportes legacy a `_archive/`.
+3. **Inmutabilidad Absoluta:** Preservar `01_Raw/` (1,414 archivos) y `data/db/meli_financial_v4.db` sin ninguna modificación.

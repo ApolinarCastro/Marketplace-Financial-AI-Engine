@@ -1,0 +1,11 @@
+{
+  "runs": 3,
+  "transactions_checked": 80,
+  "run_hashes": [
+    "bd2079ca2aea076f0683a2dc7f8d98ec3fc9f51d8c09dfb74b2842572dd3e5d3",
+    "bd2079ca2aea076f0683a2dc7f8d98ec3fc9f51d8c09dfb74b2842572dd3e5d3",
+    "bd2079ca2aea076f0683a2dc7f8d98ec3fc9f51d8c09dfb74b2842572dd3e5d3"
+  ],
+  "identical": true,
+  "conclusion": "IDEMPOTENT"
+}

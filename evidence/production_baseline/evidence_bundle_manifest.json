@@ -1,0 +1,169 @@
+{
+  "execution_id": "20260818_101230",
+  "loop": 16,
+  "title": "EVIDENCE BUNDLE MANIFEST",
+  "git_commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "evidence_dir": "evidence/production_baseline/",
+  "file_count": 26,
+  "official_db_sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+  "bundle_manifest_sha256": "AF9BD74BE20717BBD055721ABB59A6E241DB17C37CA45E14822461929310F8C9",
+  "files": [
+    {
+      "file": "canonical_docs.json",
+      "sha256": "547027113A46FB2E3EE266C4194C9D189B02873791009FA11B53E08BD5395510",
+      "size_bytes": 3320,
+      "type": "json"
+    },
+    {
+      "file": "certification_gate.json",
+      "sha256": "FE1888189A593981941DB446EBEDB50439B248FACA394E389F89D3B91166F608",
+      "size_bytes": 1624,
+      "type": "json"
+    },
+    {
+      "file": "certification_truth_matrix.json",
+      "sha256": "A818C83CB7AFDBAA46DAA7B0C8A28677ECFB2502D0F0964C6CCB09FC9D300104",
+      "size_bytes": 2054,
+      "type": "json"
+    },
+    {
+      "file": "database_inventory.csv",
+      "sha256": "A1B1DDAC1967CD69BB4C72C91B0EC90BF152C07B5BCA5A51B816366942928B56",
+      "size_bytes": 4443,
+      "type": "csv"
+    },
+    {
+      "file": "database_inventory.json",
+      "sha256": "CC447B5935D60A3844CAEA56B0353C2BB0682C272D7A7865CC0DB58603DA279D",
+      "size_bytes": 8039,
+      "type": "json"
+    },
+    {
+      "file": "db_integrity_before.json",
+      "sha256": "C51388DE429A8B9257967C2A43D3E5289BD7E19DEAE2A37613F22F1A0F43DA57",
+      "size_bytes": 310,
+      "type": "json"
+    },
+    {
+      "file": "db_raw_final.json",
+      "sha256": "787B4294B1222242FB6EA785628C873CFE99C0E06AAB90ECFC385C0054C68E69",
+      "size_bytes": 671,
+      "type": "json"
+    },
+    {
+      "file": "financial_integrity.json",
+      "sha256": "B14F8404EFEC839B4D3D0BBFF470F71AAE784DAD842692B22B0EF9031320AFF8",
+      "size_bytes": 1059,
+      "type": "json"
+    },
+    {
+      "file": "fiscal_false_positive_check.json",
+      "sha256": "BAFE18DBC576035F26A99A5F91F7EAB0217DB8D8DF8AA69B60C0322BD5FB44CF",
+      "size_bytes": 624,
+      "type": "json"
+    },
+    {
+      "file": "git_before.txt",
+      "sha256": "B7630EE7C10C397E347A8EF923EEE993058E2E49020AFF6E3B666FB35C78BCB0",
+      "size_bytes": 89724,
+      "type": "json"
+    },
+    {
+      "file": "idempotency_3x.json",
+      "sha256": "4C9DDCC79B9B8AADCF3C7011AEB9B9F8BC4D58F7AA34122647692D55FB9A1C0F",
+      "size_bytes": 2382,
+      "type": "json"
+    },
+    {
+      "file": "patch_analysis.json",
+      "sha256": "E751DCB1EA40430C42EB9A32E76451D7B026D4C25CFA0EA92D1EF45068DFEC65",
+      "size_bytes": 22898,
+      "type": "json"
+    },
+    {
+      "file": "patch_archive_manifest.csv",
+      "sha256": "1360EFAE1B4B6BBF4B593F3FBF007EC2581B379DE9FCBF779BA97581EF3D502E",
+      "size_bytes": 11310,
+      "type": "csv"
+    },
+    {
+      "file": "patch_archive_summary.json",
+      "sha256": "DBE163B465C9519A2E9E6ECB64063F0E521DC802F81D63A1D7089ABBF6BC5676",
+      "size_bytes": 1999,
+      "type": "json"
+    },
+    {
+      "file": "patch_inventory.csv",
+      "sha256": "49ED9D3D371B1FD34E6BF6A420E671EFFE7B1BB2F8FDC060407407BE97D0B599",
+      "size_bytes": 9243,
+      "type": "csv"
+    },
+    {
+      "file": "precheck.json",
+      "sha256": "4B2EC04BB7BEDC6819620897D35A81B2901996BCE0A39407D97829F5FB8F0A98",
+      "size_bytes": 930,
+      "type": "json"
+    },
+    {
+      "file": "production_gates.json",
+      "sha256": "20BDF2299A3CD391C05646C08FBB8464046BD7F121FC83FE34A916BA1CC61C82",
+      "size_bytes": 3879,
+      "type": "json"
+    },
+    {
+      "file": "raw_before.json",
+      "sha256": "62848F36A321DDB8B8037342C9BB58BD67FF200964E48813CEC144FE06060C79",
+      "size_bytes": 167,
+      "type": "json"
+    },
+    {
+      "file": "raw_before.txt",
+      "sha256": "81628CF614264E10E6B1D68A31939DD572579575E4F3F0F6889BBFF1C69A467C",
+      "size_bytes": 157845,
+      "type": "json"
+    },
+    {
+      "file": "readme_before_after.md",
+      "sha256": "4F9F4A27BBF557A24834EFFDCB67352300F3C0AD8A6A848E715B84F08E620F8D",
+      "size_bytes": 1357,
+      "type": "json"
+    },
+    {
+      "file": "readme_reconciliation.json",
+      "sha256": "CDEE3D3E47934BEFE7DD65DC342DB64950BE8A31288607C9469E8F511219D2B5",
+      "size_bytes": 4210,
+      "type": "json"
+    },
+    {
+      "file": "ripley_capability_matrix.json",
+      "sha256": "9B30910E98FDA0B11326DFAB3C9D09DA3D01FFF9DECA94F2554F78C41B4A48DF",
+      "size_bytes": 3014,
+      "type": "json"
+    },
+    {
+      "file": "runtime_inventory.csv",
+      "sha256": "6E1DFEC74191CFB8612E799C0CAEA835BDDE30A0D03625DBDF14E0817C078185",
+      "size_bytes": 2108,
+      "type": "csv"
+    },
+    {
+      "file": "runtime_inventory.json",
+      "sha256": "87EA0164C205F31E611898F649222C59EEDDBC45CF4D17380CCB7CB1AA4C4CCB",
+      "size_bytes": 5811,
+      "type": "json"
+    },
+    {
+      "file": "tests_after.json",
+      "sha256": "BA2A38161C6CB7EA168F1F6AC02D27DCB4180BCFE4C60EA8DD248ABA006675C4",
+      "size_bytes": 1492,
+      "type": "json"
+    },
+    {
+      "file": "tests_before.json",
+      "sha256": "0B27C4D3C6E68EEF141C18D343CE965D54C7D6D5943F5DF7603EE9B47D7E5735",
+      "size_bytes": 533,
+      "type": "json"
+    }
+  ],
+  "financial_delta_usd": "0.00"
+}

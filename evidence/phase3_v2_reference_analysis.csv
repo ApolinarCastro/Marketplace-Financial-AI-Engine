@@ -1,0 +1,7 @@
+target,total_occurrences,matching_files_count,status,sample_matches
+_archive,37,13,REFERENCED,api/knowledge_api.py;engine/v4/evidence/traceability_engine.py;engine/v4/knowledge/kce.py;engine/v4/knowledge/knowledge_extraction_engine.py;tools/verify_coordination_interface.py
+Reporte_Marketplaces,16,10,REFERENCED,governance/AUDIT_READY_CERTIFICATION.md;governance/DATA_FRESHNESS_REMEDIATION_PLAN.md;governance/GERENCIAL_GAP_ANALYSIS.md;governance/REPOSITORY_SIZE_AUDIT.md;governance/RFC_FINANCIAL_TRUTH_CONSOLIDATION.md
+governance,654,142,REFERENCED,api/knowledge_api.py;engine/v4/marketplace_auditor.py;engine/v4/knowledge/decision_parser.py;engine/v4/knowledge/dual_graph.py;engine/v4/knowledge/kce.py
+scratch,33,13,REFERENCED,governance/COMPETITIVE_ANALYSIS.md;governance/INDEX_VALIDATION_REPORT.md;governance/MATRIZ_REMEDIACION_V6.md;governance/P34_1_FINAL_VERDICT.md;governance/P34_1_KNOWLEDGE_CONSOLIDATION.md
+tools,161,36,REFERENCED,engine/v4/period_utils.py;engine/v4/knowledge/dual_graph.py;tools/bootstrap_runtime.py;tools/evidence_consistency_check.py;tools/generate_execution_board.py
+evidence,1050,187,REFERENCED,api/api.py;api/knowledge_api.py;engine/v4/surgical_xml_justifier.py;engine/v4/certification/certification_engine.py;engine/v4/certification/document_gap_engine.py

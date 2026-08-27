@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-07-28T17:59:10.558839",
+  "official_database_validation": {
+    "path": "data/db/meli_financial_v4.db",
+    "expected_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "actual_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "status": "PASS"
+  },
+  "api_endpoints_validation": {
+    "GET /api/v4/exceptions/health": "PASS",
+    "GET /api/v4/exceptions/summary": "PASS",
+    "GET /api/v4/exceptions/sla": "PASS",
+    "GET /api/v4/exceptions": "PASS",
+    "POST /api/v4/exceptions/rebuild": "PASS",
+    "GET /api/v4/exceptions/transaction/{transaction_id}": "PASS",
+    "GET /api/v4/exceptions/order/{id_orden}": "PASS",
+    "GET /api/v4/exceptions/{exception_id}": "PASS"
+  },
+  "determinism_check": "PASS (100% reproducible SHA-256 exception_id, $0 delta)"
+}

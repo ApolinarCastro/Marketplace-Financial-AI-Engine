@@ -1,0 +1,1861 @@
+{
+  "audit_id": "AUDIT-REPOSITORY-SIZE-V1",
+  "timestamp": "2026-07-27T17:07:53.402172",
+  "total_size_bytes": 7371086040,
+  "total_size_gb": 6.865,
+  "total_files": 24906,
+  "category_breakdown": {
+    "Bases de Datos": {
+      "size_mb": 5268.42,
+      "pct": 74.95,
+      "files_count": 185
+    },
+    "Entorno & Cach\u00e9": {
+      "size_mb": 479.19,
+      "pct": 6.82,
+      "files_count": 11728
+    },
+    "Otros Artefactos": {
+      "size_mb": 418.99,
+      "pct": 5.96,
+      "files_count": 1762
+    },
+    ".git": {
+      "size_mb": 594.92,
+      "pct": 8.46,
+      "files_count": 7094
+    },
+    "Backups & Archivos Obsoletos": {
+      "size_mb": 149.4,
+      "pct": 2.13,
+      "files_count": 1692
+    },
+    "RAW Data": {
+      "size_mb": 110.55,
+      "pct": 1.57,
+      "files_count": 1349
+    },
+    "Evidencias": {
+      "size_mb": 2.41,
+      "pct": 0.03,
+      "files_count": 138
+    },
+    "KnowledgeOS & Gobierno": {
+      "size_mb": 3.33,
+      "pct": 0.05,
+      "files_count": 534
+    },
+    "C\u00f3digo Fuente": {
+      "size_mb": 2.39,
+      "pct": 0.03,
+      "files_count": 424
+    }
+  },
+  "extension_ranking": [
+    {
+      "ext": ".db",
+      "count": 94,
+      "size_mb": 4311.51
+    },
+    {
+      "ext": ".no_ext",
+      "count": 8212,
+      "size_mb": 598.25
+    },
+    {
+      "ext": ".bak",
+      "count": 11,
+      "size_mb": 410.88
+    },
+    {
+      "ext": ".xlsx",
+      "count": 303,
+      "size_mb": 281.5
+    },
+    {
+      "ext": ".csv",
+      "count": 264,
+      "size_mb": 173.67
+    },
+    {
+      "ext": ".exe",
+      "count": 38,
+      "size_mb": 122.54
+    },
+    {
+      "ext": ".pyd",
+      "count": 338,
+      "size_mb": 114.06
+    },
+    {
+      "ext": ".json",
+      "count": 333,
+      "size_mb": 93.83
+    },
+    {
+      "ext": ".dll",
+      "count": 14,
+      "size_mb": 76.66
+    },
+    {
+      "ext": ".corrupt_snapshot",
+      "count": 2,
+      "size_mb": 72.02
+    },
+    {
+      "ext": ".pre_nan_fix",
+      "count": 2,
+      "size_mb": 71.52
+    },
+    {
+      "ext": ".py",
+      "count": 5453,
+      "size_mb": 67.51
+    },
+    {
+      "ext": ".pre_future_fix_20260623",
+      "count": 1,
+      "size_mb": 57.01
+    },
+    {
+      "ext": ".snapshot_20260622_111145",
+      "count": 1,
+      "size_mb": 57.01
+    },
+    {
+      "ext": ".snapshot_20260623_115557",
+      "count": 1,
+      "size_mb": 57.01
+    },
+    {
+      "ext": ".snapshot_af002_20260623_121855",
+      "count": 1,
+      "size_mb": 57.01
+    },
+    {
+      "ext": ".snapshot_af002_v2_20260623_122024",
+      "count": 1,
+      "size_mb": 57.01
+    },
+    {
+      "ext": ".snapshot_af002_v2_20260623_122032",
+      "count": 1,
+      "size_mb": 57.01
+    },
+    {
+      "ext": ".pyc",
+      "count": 3237,
+      "size_mb": 55.65
+    },
+    {
+      "ext": ".forensic_modificado",
+      "count": 1,
+      "size_mb": 53.26
+    },
+    {
+      "ext": ".forensic_original",
+      "count": 1,
+      "size_mb": 53.26
+    },
+    {
+      "ext": ".log",
+      "count": 11,
+      "size_mb": 22.19
+    },
+    {
+      "ext": ".md",
+      "count": 1462,
+      "size_mb": 18.07
+    },
+    {
+      "ext": ".xml",
+      "count": 1020,
+      "size_mb": 13.15
+    },
+    {
+      "ext": ".ts",
+      "count": 1029,
+      "size_mb": 11.89
+    },
+    {
+      "ext": ".js",
+      "count": 52,
+      "size_mb": 9.24
+    },
+    {
+      "ext": ".pack",
+      "count": 1,
+      "size_mb": 8.41
+    },
+    {
+      "ext": ".lib",
+      "count": 76,
+      "size_mb": 6.85
+    },
+    {
+      "ext": ".h",
+      "count": 660,
+      "size_mb": 6.11
+    },
+    {
+      "ext": ".pyi",
+      "count": 1116,
+      "size_mb": 4.65
+    },
+    {
+      "ext": ".wal",
+      "count": 7,
+      "size_mb": 4.19
+    },
+    {
+      "ext": ".c",
+      "count": 96,
+      "size_mb": 3.64
+    },
+    {
+      "ext": ".docx",
+      "count": 8,
+      "size_mb": 3.25
+    },
+    {
+      "ext": ".txt",
+      "count": 117,
+      "size_mb": 2.85
+    },
+    {
+      "ext": ".icns",
+      "count": 2,
+      "size_mb": 2.05
+    },
+    {
+      "ext": ".pdf",
+      "count": 1,
+      "size_mb": 2.04
+    },
+    {
+      "ext": ".tmpl",
+      "count": 111,
+      "size_mb": 1.78
+    },
+    {
+      "ext": ".index",
+      "count": 1,
+      "size_mb": 1.52
+    },
+    {
+      "ext": ".pxi",
+      "count": 43,
+      "size_mb": 1.37
+    },
+    {
+      "ext": ".pyx",
+      "count": 34,
+      "size_mb": 1.1
+    },
+    {
+      "ext": ".png",
+      "count": 13,
+      "size_mb": 0.56
+    },
+    {
+      "ext": ".css",
+      "count": 14,
+      "size_mb": 0.56
+    },
+    {
+      "ext": ".pxd",
+      "count": 52,
+      "size_mb": 0.54
+    },
+    {
+      "ext": ".html",
+      "count": 85,
+      "size_mb": 0.49
+    },
+    {
+      "ext": ".pem",
+      "count": 2,
+      "size_mb": 0.48
+    },
+    {
+      "ext": ".xsd",
+      "count": 31,
+      "size_mb": 0.46
+    },
+    {
+      "ext": ".cc",
+      "count": 24,
+      "size_mb": 0.42
+    },
+    {
+      "ext": ".gz",
+      "count": 8,
+      "size_mb": 0.34
+    },
+    {
+      "ext": ".sh",
+      "count": 79,
+      "size_mb": 0.29
+    },
+    {
+      "ext": ".po",
+      "count": 4,
+      "size_mb": 0.28
+    },
+    {
+      "ext": ".hpp",
+      "count": 16,
+      "size_mb": 0.24
+    },
+    {
+      "ext": ".ttf",
+      "count": 3,
+      "size_mb": 0.23
+    },
+    {
+      "ext": ".mo",
+      "count": 4,
+      "size_mb": 0.19
+    },
+    {
+      "ext": ".cpp",
+      "count": 16,
+      "size_mb": 0.16
+    },
+    {
+      "ext": ".yml",
+      "count": 24,
+      "size_mb": 0.16
+    },
+    {
+      "ext": ".xsl",
+      "count": 7,
+      "size_mb": 0.15
+    },
+    {
+      "ext": ".template",
+      "count": 19,
+      "size_mb": 0.13
+    },
+    {
+      "ext": ".license",
+      "count": 2,
+      "size_mb": 0.12
+    },
+    {
+      "ext": ".yaml",
+      "count": 17,
+      "size_mb": 0.12
+    },
+    {
+      "ext": ".lock",
+      "count": 2,
+      "size_mb": 0.11
+    },
+    {
+      "ext": ".zi",
+      "count": 1,
+      "size_mb": 0.1
+    },
+    {
+      "ext": ".cjs",
+      "count": 8,
+      "size_mb": 0.1
+    },
+    {
+      "ext": ".mjs",
+      "count": 5,
+      "size_mb": 0.08
+    },
+    {
+      "ext": ".swift",
+      "count": 12,
+      "size_mb": 0.07
+    },
+    {
+      "ext": ".sample",
+      "count": 28,
+      "size_mb": 0.05
+    },
+    {
+      "ext": ".dat",
+      "count": 3,
+      "size_mb": 0.05
+    },
+    {
+      "ext": ".orc",
+      "count": 4,
+      "size_mb": 0.05
+    },
+    {
+      "ext": ".tab",
+      "count": 4,
+      "size_mb": 0.05
+    },
+    {
+      "ext": ".svg",
+      "count": 7,
+      "size_mb": 0.04
+    },
+    {
+      "ext": ".apache",
+      "count": 4,
+      "size_mb": 0.04
+    },
+    {
+      "ext": ".backup",
+      "count": 4,
+      "size_mb": 0.04
+    },
+    {
+      "ext": ".thrift",
+      "count": 1,
+      "size_mb": 0.03
+    },
+    {
+      "ext": ".idx",
+      "count": 1,
+      "size_mb": 0.03
+    },
+    {
+      "ext": ".f90",
+      "count": 61,
+      "size_mb": 0.03
+    },
+    {
+      "ext": ".toml",
+      "count": 6,
+      "size_mb": 0.03
+    },
+    {
+      "ext": ".pre_paris_patch",
+      "count": 1,
+      "size_mb": 0.03
+    },
+    {
+      "ext": ".zip",
+      "count": 1,
+      "size_mb": 0.02
+    },
+    {
+      "ext": ".rst",
+      "count": 4,
+      "size_mb": 0.02
+    },
+    {
+      "ext": ".sql",
+      "count": 6,
+      "size_mb": 0.02
+    },
+    {
+      "ext": ".rng",
+      "count": 1,
+      "size_mb": 0.02
+    },
+    {
+      "ext": ".ps1",
+      "count": 10,
+      "size_mb": 0.02
+    },
+    {
+      "ext": ".python",
+      "count": 1,
+      "size_mb": 0.01
+    },
+    {
+      "ext": ".parquet",
+      "count": 4,
+      "size_mb": 0.01
+    },
+    {
+      "ext": ".ci",
+      "count": 2,
+      "size_mb": 0.01
+    },
+    {
+      "ext": ".m",
+      "count": 1,
+      "size_mb": 0.01
+    },
+    {
+      "ext": ".f",
+      "count": 24,
+      "size_mb": 0.01
+    },
+    {
+      "ext": ".tpl",
+      "count": 8,
+      "size_mb": 0.01
+    },
+    {
+      "ext": ".xslt",
+      "count": 2,
+      "size_mb": 0.01
+    },
+    {
+      "ext": ".fits",
+      "count": 1,
+      "size_mb": 0.01
+    },
+    {
+      "ext": ".dot",
+      "count": 1,
+      "size_mb": 0.01
+    },
+    {
+      "ext": ".bsd",
+      "count": 4,
+      "size_mb": 0.01
+    },
+    {
+      "ext": ".build",
+      "count": 3,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".cfg",
+      "count": 3,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".bat",
+      "count": 4,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".rev",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".asm",
+      "count": 2,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".rb",
+      "count": 4,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".psf",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".pyf",
+      "count": 7,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".fish",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".jinja",
+      "count": 2,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".obj",
+      "count": 2,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".plist",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".npy",
+      "count": 5,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".cmake",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".npz",
+      "count": 2,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".ini",
+      "count": 3,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".pkl",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".feather",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".typed",
+      "count": 52,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".webmanifest",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".tag",
+      "count": 3,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".example",
+      "count": 2,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".pc",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".f95",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".cmd",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".5c_classification",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".inc",
+      "count": 1,
+      "size_mb": 0.0
+    },
+    {
+      "ext": ".pid",
+      "count": 1,
+      "size_mb": 0.0
+    }
+  ],
+  "top_100_largest_files": [
+    {
+      "rel_path": "data/db/snapshot_baseline_v6_20260529_105928/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T10:22:07.402079",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_ripley_rebuild_20260601_172024/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-05-30T18:50:12.278065",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_ripley_rebuild_20260601_172043/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-06-01T17:20:31.223564",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_baseline_v6_20260529_105928/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T10:22:07.402079",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172024/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-05-30T18:50:12.278065",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172043/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-06-01T17:20:31.223564",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4_pre_class.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-02T17:37:55.939329",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_classification_20260603_102347/meli_financial_v4.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-02T17:45:10.905667",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_fase2_20260603_112908/meli_financial_v4.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-03T11:29:01.781528",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/meli_financial_v4_pre_class.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-02T17:37:55.939329",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_classification_20260603_102347/meli_financial_v4.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-02T17:45:10.905667",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_fase2_20260603_112908/meli_financial_v4.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-03T11:29:01.781528",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_poscobro_fix_20260605_155052/meli_financial_v4.db",
+      "size_bytes": 94384128,
+      "size_mb": 90.01,
+      "ext": ".db",
+      "mtime": "2026-06-05T12:08:17.744667",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/meli_financial_v4.db",
+      "size_bytes": 94384128,
+      "size_mb": 90.01,
+      "ext": ".db",
+      "mtime": "2026-06-05T12:08:17.744667",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": ".venv/Lib/site-packages/playwright/driver/node.exe",
+      "size_bytes": 91694408,
+      "size_mb": 87.45,
+      "ext": ".exe",
+      "mtime": "2026-06-09T08:43:07.174397",
+      "classification": "REGENERABLE"
+    },
+    {
+      "rel_path": "Reporte_Marketplaces/Reporte Gerencial 360 Marketplaces.xlsx",
+      "size_bytes": 69266553,
+      "size_mb": 66.06,
+      "ext": ".xlsx",
+      "mtime": "2026-07-13T17:03:18.693839",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": ".git/objects/97/a2000adbe28263de330aa6c6a9d82dcc1cca22",
+      "size_bytes": 60575988,
+      "size_mb": 57.77,
+      "ext": ".no_ext",
+      "mtime": "2026-07-13T17:03:25.534257",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/controlled_cap_f2_001.db",
+      "size_bytes": 60043264,
+      "size_mb": 57.26,
+      "ext": ".db",
+      "mtime": "2026-07-27T16:18:26.011237",
+      "classification": "TEMPORAL"
+    },
+    {
+      "rel_path": "data/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db",
+      "size_bytes": 60043264,
+      "size_mb": 57.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T09:37:47.319140",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db",
+      "size_bytes": 60043264,
+      "size_mb": 57.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T09:48:16.443506",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db",
+      "size_bytes": 60043264,
+      "size_mb": 57.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T09:37:47.319140",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db",
+      "size_bytes": 60043264,
+      "size_mb": 57.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T09:48:16.443506",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.pre_future_fix_20260623",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".pre_future_fix_20260623",
+      "mtime": "2026-07-22T16:28:34.563272",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.snapshot_20260622_111145",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".snapshot_20260622_111145",
+      "mtime": "2026-07-22T16:28:35.097208",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.snapshot_20260623_115557",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".snapshot_20260623_115557",
+      "mtime": "2026-07-22T16:28:35.533086",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.snapshot_af002_20260623_121855",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".snapshot_af002_20260623_121855",
+      "mtime": "2026-07-22T16:28:36.013816",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122024",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".snapshot_af002_v2_20260623_122024",
+      "mtime": "2026-07-22T16:28:36.412125",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122032",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".snapshot_af002_v2_20260623_122032",
+      "mtime": "2026-07-22T16:28:36.955482",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/backups/meli_financial_v4_CERTIFIED_BASELINE_V1_20260624.db",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".db",
+      "mtime": "2026-06-24T11:51:56.333793",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": ".git/objects/94/dfd3baab78144119b18534110302560bdcbe1e",
+      "size_bytes": 59693199,
+      "size_mb": 56.93,
+      "ext": ".no_ext",
+      "mtime": "2026-06-08T15:13:57.844736",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db",
+      "size_bytes": 58732544,
+      "size_mb": 56.01,
+      "ext": ".db",
+      "mtime": "2026-07-24T11:14:11.424874",
+      "classification": "CR\u00cdTICO"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4_baseline_v4.db",
+      "size_bytes": 57946112,
+      "size_mb": 55.26,
+      "ext": ".db",
+      "mtime": "2026-07-02T17:34:43.848270",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "_archive/releases/MARKETPLACE_AUDITOR_V3_5_RC1/meli_financial_v4_backup.db",
+      "size_bytes": 57946112,
+      "size_mb": 55.26,
+      "ext": ".db",
+      "mtime": "2026-06-26T11:11:35.127871",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": ".git/objects/57/1f85f7077d1f4ad01c031956f0fd7dc9a90062",
+      "size_bytes": 56799328,
+      "size_mb": 54.17,
+      "ext": ".no_ext",
+      "mtime": "2026-06-06T12:06:25.792694",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_110819.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_110844.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_110859.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_111106.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_111215.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_111308.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/f5_02_temp.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T08:44:22.257862",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/f5_03_temp.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:39:50.140146",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/f5_04_temp.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T10:32:38.618464",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/f5_05_temp.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T14:47:09.132492",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4_pre_truth003_20260720_173842_A9777849.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-20T14:39:35.706190",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-15T16:36:03.495957",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db.bak",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".bak",
+      "mtime": "2026-07-22T16:28:33.069379",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db.forensic_modificado",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".forensic_modificado",
+      "mtime": "2026-07-22T16:28:33.556946",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db.forensic_original",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".forensic_original",
+      "mtime": "2026-07-22T16:28:34.035599",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/baseline_estable_v8_candidate_20260717/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/BASELINE_ESTABLE_V9_TRUTH_RECOVERED/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-20T17:37:18.306890",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_f003_cleaned_20260715/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-15T13:28:40.490117",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/tmp_cert_gate_debug/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/tmp_cert_gate_debug2/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/tmp_debug/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/tmp_f4_investigate/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T14:54:07.805604",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/tmp_test_check/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/tmp_test_fe/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "Reporte_Marketplaces/Backup/Reporte Gerencial 360 Marketplaces.xlsx",
+      "size_bytes": 47202707,
+      "size_mb": 45.02,
+      "ext": ".xlsx",
+      "mtime": "2026-07-13T17:03:17.324275",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": ".git/objects/90/534267ed4804f9011140904e5ef89acde96d9b",
+      "size_bytes": 40889739,
+      "size_mb": 39.0,
+      "ext": ".no_ext",
+      "mtime": "2026-07-13T17:03:25.003296",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.corrupt_snapshot",
+      "size_bytes": 37761024,
+      "size_mb": 36.01,
+      "ext": ".corrupt_snapshot",
+      "mtime": "2026-07-13T17:03:19.482592",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/snapshot_corrupt_20260528/meli_financial_v4.db",
+      "size_bytes": 37761024,
+      "size_mb": 36.01,
+      "ext": ".db",
+      "mtime": "2026-05-28T14:55:55.451652",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/meli_financial_v4.db.corrupt_snapshot",
+      "size_bytes": 37761024,
+      "size_mb": 36.01,
+      "ext": ".corrupt_snapshot",
+      "mtime": "2026-07-22T16:28:31.130963",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db",
+      "size_bytes": 37761024,
+      "size_mb": 36.01,
+      "ext": ".db",
+      "mtime": "2026-05-28T14:55:55.451652",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".bak",
+      "mtime": "2026-07-13T17:03:19.283334",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.paris_reload.20260527_163143.bak",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".bak",
+      "mtime": "2026-07-13T17:03:19.656243",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.pre_nan_fix",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".pre_nan_fix",
+      "mtime": "2026-07-13T17:03:19.831385",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/snapshot_baseline_v2_20260528_154319/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T15:40:56.966410",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_baseline_v2_20260528_154708/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T15:46:59.011764",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_baseline_v3_20260528_163525/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T16:35:04.379681",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_baseline_v4_20260528_170822/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T17:07:08.118873",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_corrupt_20260528/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".bak",
+      "mtime": "2026-07-13T17:03:20.046299",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_corrupt_20260528/meli_financial_v4.db.paris_reload.20260527_163143.bak",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".bak",
+      "mtime": "2026-07-13T17:03:20.207775",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_cierre_rebuild_20260528_163008/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T16:24:31.353932",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_ml_xml_fix_20260528_170623/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T17:04:07.875894",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_persistencia_20260528_162431/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T16:24:16.161192",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_restored_validated_20260528/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T15:27:34.640294",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_restored_validated_20260528/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".bak",
+      "mtime": "2026-07-13T17:03:20.525024",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".bak",
+      "mtime": "2026-07-22T16:28:30.785218",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/meli_financial_v4.db.paris_reload.20260527_163143.bak",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".bak",
+      "mtime": "2026-07-22T16:28:31.361492",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/meli_financial_v4.db.pre_nan_fix",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".pre_nan_fix",
+      "mtime": "2026-07-22T16:28:31.611112",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154319/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T15:40:56.966410",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_baseline_v2_20260528_154708/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T15:46:59.011764",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_baseline_v3_20260528_163525/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T16:35:04.379681",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_baseline_v4_20260528_170822/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T17:07:08.118873",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".bak",
+      "mtime": "2026-07-22T16:28:31.855190",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_corrupt_20260528/meli_financial_v4.db.paris_reload.20260527_163143.bak",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".bak",
+      "mtime": "2026-07-22T16:28:32.090689",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_cierre_rebuild_20260528_163008/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T16:24:31.353932",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_ml_xml_fix_20260528_170623/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T17:04:07.875894",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_persistencia_20260528_162431/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T16:24:16.161192",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/meli_financial_v4.db",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".db",
+      "mtime": "2026-05-28T15:27:34.640294",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_restored_validated_20260528/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_bytes": 37498880,
+      "size_mb": 35.76,
+      "ext": ".bak",
+      "mtime": "2026-07-22T16:28:32.526198",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": ".venv/Lib/site-packages/_duckdb.cp314-win_amd64.pyd",
+      "size_bytes": 37155328,
+      "size_mb": 35.43,
+      "ext": ".pyd",
+      "mtime": "2026-03-31T15:32:38.571010",
+      "classification": "REGENERABLE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4_backup.db",
+      "size_bytes": 36450304,
+      "size_mb": 34.76,
+      "ext": ".db",
+      "mtime": "2026-06-08T15:26:13.486700",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_bpp_residual_fix_20260606_145106/meli_financial_v4.db",
+      "size_bytes": 36450304,
+      "size_mb": 34.76,
+      "ext": ".db",
+      "mtime": "2026-06-06T14:37:18.723122",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_dec019_20260607_161324/meli_financial_v4.db",
+      "size_bytes": 36450304,
+      "size_mb": 34.76,
+      "ext": ".db",
+      "mtime": "2026-06-07T16:13:12.163950",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_iopnl_modernize_20260606_1215/meli_financial_v4.db",
+      "size_bytes": 36450304,
+      "size_mb": 34.76,
+      "ext": ".db",
+      "mtime": "2026-06-06T12:59:13.829645",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/meli_financial_v4.db",
+      "size_bytes": 36450304,
+      "size_mb": 34.76,
+      "ext": ".db",
+      "mtime": "2026-06-07T18:57:32.658467",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_bpp_residual_fix_20260606_145106/meli_financial_v4.db",
+      "size_bytes": 36450304,
+      "size_mb": 34.76,
+      "ext": ".db",
+      "mtime": "2026-06-06T14:37:18.723122",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_dec019_20260607_161324/meli_financial_v4.db",
+      "size_bytes": 36450304,
+      "size_mb": 34.76,
+      "ext": ".db",
+      "mtime": "2026-06-07T16:13:12.163950",
+      "classification": "OBSOLETO"
+    }
+  ],
+  "database_inventory": [
+    {
+      "rel_path": "data/db/snapshot_baseline_v6_20260529_105928/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T10:22:07.402079",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_ripley_rebuild_20260601_172024/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-05-30T18:50:12.278065",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_ripley_rebuild_20260601_172043/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-06-01T17:20:31.223564",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_baseline_v6_20260529_105928/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T10:22:07.402079",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172024/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-05-30T18:50:12.278065",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_ripley_rebuild_20260601_172043/meli_financial_v4.db",
+      "size_bytes": 131346432,
+      "size_mb": 125.26,
+      "ext": ".db",
+      "mtime": "2026-06-01T17:20:31.223564",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4_pre_class.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-02T17:37:55.939329",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_classification_20260603_102347/meli_financial_v4.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-02T17:45:10.905667",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_fase2_20260603_112908/meli_financial_v4.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-03T11:29:01.781528",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/meli_financial_v4_pre_class.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-02T17:37:55.939329",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_classification_20260603_102347/meli_financial_v4.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-02T17:45:10.905667",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_fase2_20260603_112908/meli_financial_v4.db",
+      "size_bytes": 131084288,
+      "size_mb": 125.01,
+      "ext": ".db",
+      "mtime": "2026-06-03T11:29:01.781528",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_poscobro_fix_20260605_155052/meli_financial_v4.db",
+      "size_bytes": 94384128,
+      "size_mb": 90.01,
+      "ext": ".db",
+      "mtime": "2026-06-05T12:08:17.744667",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_poscobro_fix_20260605_155052/meli_financial_v4.db",
+      "size_bytes": 94384128,
+      "size_mb": 90.01,
+      "ext": ".db",
+      "mtime": "2026-06-05T12:08:17.744667",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/controlled_cap_f2_001.db",
+      "size_bytes": 60043264,
+      "size_mb": 57.26,
+      "ext": ".db",
+      "mtime": "2026-07-27T16:18:26.011237",
+      "classification": "TEMPORAL"
+    },
+    {
+      "rel_path": "data/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db",
+      "size_bytes": 60043264,
+      "size_mb": 57.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T09:37:47.319140",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db",
+      "size_bytes": 60043264,
+      "size_mb": 57.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T09:48:16.443506",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db",
+      "size_bytes": 60043264,
+      "size_mb": 57.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T09:37:47.319140",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "_archive/backup_20260608_120239/db/snapshot_pre_falabella_rebuild_20260529_100326/meli_financial_v4.db",
+      "size_bytes": 60043264,
+      "size_mb": 57.26,
+      "ext": ".db",
+      "mtime": "2026-05-29T09:48:16.443506",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.snapshot_20260622_111145",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".snapshot_20260622_111145",
+      "mtime": "2026-07-22T16:28:35.097208",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.snapshot_20260623_115557",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".snapshot_20260623_115557",
+      "mtime": "2026-07-22T16:28:35.533086",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.snapshot_af002_20260623_121855",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".snapshot_af002_20260623_121855",
+      "mtime": "2026-07-22T16:28:36.013816",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122024",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".snapshot_af002_v2_20260623_122024",
+      "mtime": "2026-07-22T16:28:36.412125",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122032",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".snapshot_af002_v2_20260623_122032",
+      "mtime": "2026-07-22T16:28:36.955482",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/backups/meli_financial_v4_CERTIFIED_BASELINE_V1_20260624.db",
+      "size_bytes": 59781120,
+      "size_mb": 57.01,
+      "ext": ".db",
+      "mtime": "2026-06-24T11:51:56.333793",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4.db",
+      "size_bytes": 58732544,
+      "size_mb": 56.01,
+      "ext": ".db",
+      "mtime": "2026-07-24T11:14:11.424874",
+      "classification": "CR\u00cdTICO"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4_baseline_v4.db",
+      "size_bytes": 57946112,
+      "size_mb": 55.26,
+      "ext": ".db",
+      "mtime": "2026-07-02T17:34:43.848270",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "_archive/releases/MARKETPLACE_AUDITOR_V3_5_RC1/meli_financial_v4_backup.db",
+      "size_bytes": 57946112,
+      "size_mb": 55.26,
+      "ext": ".db",
+      "mtime": "2026-06-26T11:11:35.127871",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_110819.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_110844.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_110859.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_111106.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_111215.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/backup/meli_financial_v4_pre_migration_20260724_111308.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:38:05.686264",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/f5_02_temp.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T08:44:22.257862",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/f5_03_temp.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T09:39:50.140146",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/f5_04_temp.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T10:32:38.618464",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/f5_05_temp.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-23T14:47:09.132492",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/meli_financial_v4_pre_truth003_20260720_173842_A9777849.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-20T14:39:35.706190",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-15T16:36:03.495957",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db.bak",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".bak",
+      "mtime": "2026-07-22T16:28:33.069379",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/baseline_estable_v8_candidate_20260717/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/BASELINE_ESTABLE_V9_TRUTH_RECOVERED/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-20T17:37:18.306890",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/snapshot_pre_f003_cleaned_20260715/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-15T13:28:40.490117",
+      "classification": "OBSOLETO"
+    },
+    {
+      "rel_path": "data/db/tmp_cert_gate_debug/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/tmp_cert_gate_debug2/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/tmp_debug/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/tmp_f4_investigate/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T14:54:07.805604",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/tmp_test_check/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    },
+    {
+      "rel_path": "data/db/tmp_test_fe/meli_financial_v4.db",
+      "size_bytes": 55848960,
+      "size_mb": 53.26,
+      "ext": ".db",
+      "mtime": "2026-07-17T21:14:17.318809",
+      "classification": "IMPORTANTE"
+    }
+  ],
+  "cleanup_opportunities": {
+    "db_snapshots_and_backups_mb": 3623.66,
+    "venv_cache_mb": 474.95,
+    "git_objects_mb": 594.92,
+    "estimated_recoverable_space_gb": 4.49
+  }
+}

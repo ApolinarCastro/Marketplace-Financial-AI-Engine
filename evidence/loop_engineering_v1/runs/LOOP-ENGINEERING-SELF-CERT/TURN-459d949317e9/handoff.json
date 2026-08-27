@@ -1,0 +1,38 @@
+{
+  "continuation_record": {
+    "from_agent": "OPENCODE_ENGINEER",
+    "to_agent": "CODEX_ENGINEER",
+    "goal_id": "LOOP-ENGINEERING-SELF-CERT",
+    "completed": [
+      "TODO-001"
+    ],
+    "current_state": "turn TURN-459d949317e9 ended with VALIDATED_COMPLETION: ran the Loop Control certification suite",
+    "evidence": [
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-459d949317e9/precheck.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-459d949317e9/action.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-459d949317e9/validation.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-459d949317e9/tests.json",
+      "evidence/loop_engineering_v1/runs/LOOP-ENGINEERING-SELF-CERT/TURN-459d949317e9/diff.json"
+    ],
+    "blockers": [],
+    "files_changed": [],
+    "tests": [
+      "suite",
+      "exit_code"
+    ],
+    "next_todo": "TODO-002",
+    "allowed_scope": [
+      "evidence/loop_engineering_v1/**"
+    ],
+    "forbidden_scope": [
+      "01_Raw/**",
+      "data/db/meli_financial_v4.db",
+      ".git/**",
+      ".agents/**",
+      "governance/coordination/**"
+    ],
+    "created_at": "2026-08-07T15:29:34.627Z",
+    "turn_id": "TURN-459d949317e9",
+    "idempotency_key": "handoff:LOOP-ENGINEERING-SELF-CERT:TURN-459d949317e9"
+  }
+}

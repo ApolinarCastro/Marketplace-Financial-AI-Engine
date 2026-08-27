@@ -1,0 +1,52 @@
+{
+  "cap_id": "CAP-TD-006",
+  "technical_debt_id": "TD-006",
+  "timestamp": "2026-07-27T18:53:00Z",
+  "execution_id": "EXEC-CAP-TD-006-20260727",
+  "git_commit": "2d51f52",
+  "harness_version": "1.0.0",
+  "status": "PASS",
+  "certification_status": "CERTIFIED",
+  "problem_description": "Absence of canonical normalization, intent resolution, authorized synonym mapping, and anti-hallucination fallback for the 10 Strategic Financial Questions of the Financial Copilot.",
+  "root_cause": "Copilot questions were previously handled via informal text matching without canonical intent mapping or strict anti-hallucination fallback enforcement when evidence was missing.",
+  "strategy": "Normalized the 10 Canonical Strategic Questions (Q-001 through Q-010 / QF-001 through QF-010) in CopilotEngine with deterministic intent resolution (INT-QF-001 to INT-QF-010), non-overlapping authorized synonym matrix, and strict anti-hallucination fallback ('No se puede responder con evidencia suficiente.') for missing evidence without altering DuckDB or financial calculations.",
+  "normalized_questions": [
+    "Q-001",
+    "Q-002",
+    "Q-003",
+    "Q-004",
+    "Q-005",
+    "Q-006",
+    "Q-007",
+    "Q-008",
+    "Q-009",
+    "Q-010"
+  ],
+  "canonical_intents": [
+    "INT-QF-001",
+    "INT-QF-002",
+    "INT-QF-003",
+    "INT-QF-004",
+    "INT-QF-005",
+    "INT-QF-006",
+    "INT-QF-007",
+    "INT-QF-008",
+    "INT-QF-009",
+    "INT-QF-010"
+  ],
+  "fallback_text": "No se puede responder con evidencia suficiente.",
+  "modified_files": [
+    "engine/v4/copilot/copilot_engine.py",
+    "tests/test_copilot_canonical_qf.py"
+  ],
+  "test_results": {
+    "total_tests": 896,
+    "passed": 884,
+    "failed": 0,
+    "skipped": 12,
+    "duration_seconds": 247.37
+  },
+  "sha256_official_db": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "financial_delta": "$0",
+  "rollback_strategy": "git checkout -- engine/v4/copilot/copilot_engine.py && rm -f tests/test_copilot_canonical_qf.py"
+}

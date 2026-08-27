@@ -1,0 +1,22 @@
+{
+  "execution_id": "20260818_101142",
+  "loop": 13,
+  "title": "FINAL DB + RAW INTEGRITY",
+  "git_commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "official_db": {
+    "path": "data/db/meli_financial_v4.db",
+    "sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+    "expected": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+    "match": true,
+    "size_bytes": 58732544
+  },
+  "raw": {
+    "file_count": 1313,
+    "total_size_bytes": 115861425,
+    "baseline_count": 1313,
+    "count_unchanged": true
+  },
+  "unchanged_since_start": true,
+  "verdict": "PASS",
+  "financial_delta_usd": "0.00"
+}

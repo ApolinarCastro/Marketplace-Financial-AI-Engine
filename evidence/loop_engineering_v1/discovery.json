@@ -1,0 +1,145 @@
+{
+  "evidence_id": "LOOP_ENG_V1_DISCOVERY",
+  "capture_method": "real_filesystem_inspection",
+  "inspected_roots": [
+    "AGENTS.md", "CLAUDE.md", "GEMINI.md", "README.md",
+    ".agents/", ".codex/", ".loopx/", "governance/", "evidence/",
+    "tools/", "scratch/", "pyproject.toml", "engine/", "tests/", "AESP/"
+  ],
+  "findings": [
+    {
+      "component": "AGENTS.md / CLAUDE.md / GEMINI.md",
+      "status": "EXISTING",
+      "detail": "Agent instruction files exist at repo root. They encode policy (P37 product-first, R1-R19 governance) but no machine-readable durable state.",
+      "action": "REFERENCE_ONLY. Do not modify."
+    },
+    {
+      "component": ".agents/",
+      "status": "EXISTING",
+      "detail": "Contains only gstack/ and skills/. Skill libraries, no control plane. Git-ignored via .gitignore entry '.agents/'.",
+      "action": "PROTECTED. Do not modify."
+    },
+    {
+      "component": ".codex/",
+      "status": "EXISTING",
+      "detail": "Directory exists but is empty (no files, recursive listing returned nothing).",
+      "action": "LEAVE_EMPTY. Codex adapter will consume the single shared control plane, not a private .codex state."
+    },
+    {
+      "component": ".loopx/",
+      "status": "MISSING",
+      "detail": "Does not exist.",
+      "action": "IMPLEMENT as local mutable runtime control plane."
+    },
+    {
+      "component": "engine/loop_control/",
+      "status": "MISSING",
+      "detail": "Does not exist. engine/ contains only v4/ (20 financial subpackages).",
+      "action": "IMPLEMENT as isolated non-financial kernel."
+    },
+    {
+      "component": "governance/coordination/",
+      "status": "PARTIAL",
+      "detail": "A real coordination interface already exists: COORDINATION_CONTRACT.md, coordination_registry.json, coordination_state.json, runtime_manifest.json, plus executions/ and reviews/. It encodes owners (Codex, OpenCode), protected_core_paths, a single active task, and a handoff block with next_actor. It is human/markdown-driven, has NO executable state machine, NO claims/leases, NO quota, NO bounded turn, NO idempotency, NO recovery, NO schema validation.",
+      "action": "DO NOT DUPLICATE. Loop Control kernel provides the executable layer; governance/coordination remains the canonical human coordination channel. Loop Control MUST NOT create a second coordination_*.json file."
+    },
+    {
+      "component": "tools/verify_coordination_interface.py",
+      "status": "EXISTING_CONFLICTING",
+      "detail": "Repo-wide verifier. FORBIDDEN_STATE_PATTERNS bans four reserved coordination tokens in ANY file outside an allowlist: the uppercase current-task marker and the double-quoted JSON forms of handoff, next_actor and current_owner. It also enforces FORBIDDEN_COORD_FILENAMES and flags any filename containing 'coordination' outside governance/coordination. Its rglob excludes .git, .venv, __pycache__, .pytest_cache, .mypy_cache, node_modules, data, 01_Raw, _archive, backup_*, snapshot_*, uploads. It does NOT exclude .loopx/ or engine/ or evidence/.",
+      "conflict_risk": "HIGH",
+      "mitigation": "Loop Control state files must not emit those reserved keys in their double-quoted form, nor the current-task marker. Loop Control uses distinct vocabulary: continuation_record, receiving_agent, holding_agent. No Loop Control filename contains 'coordination'.",
+      "action": "COMPATIBILITY_CONSTRAINT enforced by test."
+    },
+    {
+      "component": "execution_board.json",
+      "status": "MISSING_ON_DISK",
+      "detail": "Tracked by git but deleted in worktree. This is why the coordination verifier already FAILS pre-mission.",
+      "action": "OUT_OF_SCOPE. Restoring it is a governance decision, not a Loop Engineering decision. Recorded as PRE_EXISTING failure."
+    },
+    {
+      "component": "goal / objective (code)",
+      "status": "MISSING",
+      "detail": "grep across *.py found no goal-lifecycle implementation. 88 textual mentions exist, all in prose markdown/skills.",
+      "action": "IMPLEMENT."
+    },
+    {
+      "component": "todo / task (code)",
+      "status": "MISSING",
+      "detail": "No durable todo store exists. AGENTS.md tracks progress in prose.",
+      "action": "IMPLEMENT."
+    },
+    {
+      "component": "claim / lease",
+      "status": "MISSING",
+      "detail": "247 'claim' and 214 'lease' textual hits, zero are ownership-lease implementations (they are prose claims / release notes).",
+      "action": "IMPLEMENT."
+    },
+    {
+      "component": "gate",
+      "status": "PARTIAL",
+      "detail": "tests/test_certification_gate.py exists (deployment quality gate). governance/coordination declares gate_authority: Codex. Neither is a runtime human-authorization gate for an agent turn.",
+      "action": "IMPLEMENT runtime gate; leave certification gate untouched."
+    },
+    {
+      "component": "handoff (continuation)",
+      "status": "PARTIAL",
+      "detail": "coordination_state.json has a prose handoff block. Not schema-validated, not reconstructible programmatically, not turn-scoped.",
+      "action": "IMPLEMENT executable continuation_record; do not remove the existing prose block."
+    },
+    {
+      "component": "evidence",
+      "status": "EXISTING",
+      "detail": "evidence/ has 18 subdirectories. tools/validate_fase_1b.py is the official harness with execution_id/commit/timestamp metadata (R11-R19).",
+      "action": "REUSE the evidence metadata convention (execution_id, commit, timestamp, sha256). Loop Control evidence follows the same shape."
+    },
+    {
+      "component": "run_history",
+      "status": "MISSING",
+      "detail": "Zero hits.",
+      "action": "IMPLEMENT as append-only JSONL."
+    },
+    {
+      "component": "quota",
+      "status": "MISSING",
+      "detail": "8 textual hits, none are execution budget control.",
+      "action": "IMPLEMENT."
+    },
+    {
+      "component": "heartbeat",
+      "status": "MISSING",
+      "detail": "16 textual hits, all unrelated (health endpoints).",
+      "action": "IMPLEMENT minimally as lease expiry timestamps. No daemon."
+    },
+    {
+      "component": "checkpoint / recovery",
+      "status": "PARTIAL",
+      "detail": "tests/test_f5_05_idempotency_regression.py and an F5-05 recovery mechanism exist for the ingestion pipeline. Domain-specific, not agent-turn recovery.",
+      "action": "IMPLEMENT separately. Do not touch F5-05."
+    },
+    {
+      "component": ".gitignore",
+      "status": "EXISTING",
+      "detail": "Ignores .venv/, Lib/, node_modules/, __pycache__/, *.db, scratch/, .agents/, opencode.json, tmp_*.py. Does NOT ignore .loopx/.",
+      "action": "APPEND .loopx/ so mutable runtime stays out of Git. Spec and schemas remain versioned."
+    },
+    {
+      "component": "pyproject.toml",
+      "status": "EXISTING",
+      "detail": "ruff include list = api/**, engine/v4/**, tests/**. mypy files = api/, engine/v4/. pytest testpaths = tests.",
+      "action": "Loop Control lives at engine/loop_control/, outside ruff/mypy include lists. Tests land in tests/ and are collected automatically. No pyproject change strictly required."
+    },
+    {
+      "component": "jsonschema library",
+      "status": "MISSING",
+      "detail": "Not installed in .venv.",
+      "action": "IMPLEMENT a zero-dependency validator inside the kernel. Do not add a mandatory third-party dependency."
+    }
+  ],
+  "duplication_avoidance_decisions": [
+    "No second coordination channel is created. governance/coordination remains canonical for human/agent governance.",
+    "No second financial source of truth is created. Kernel contains zero SQL and zero financial logic.",
+    "No third-party dependency is added. Schema validation is implemented in-tree.",
+    "No daemon, scheduler, dashboard, or frontend is created."
+  ]
+}

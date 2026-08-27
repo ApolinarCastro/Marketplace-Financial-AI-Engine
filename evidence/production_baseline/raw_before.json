@@ -1,0 +1,8 @@
+{
+  "loop": 0,
+  "raw_baseline_captured": true,
+  "file_count": 1313,
+  "detail_file": "raw_before.txt",
+  "format": "relative_path|size|sha256",
+  "immutable": true
+}

@@ -1,0 +1,69 @@
+{
+  "execution_id": "20260814_163330",
+  "loop": 5,
+  "title": "PATCH ARCHIVE (CONSOLIDATED + OBSOLETE)",
+  "git_commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "archive_dir": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\_archive\\legacy_patches",
+  "moved_count": 25,
+  "moved": [
+    "capture_evidence.py",
+    "check_html.py",
+    "check_ripley_data.py",
+    "create_tests.py",
+    "create_tests_2.py",
+    "create_tests_3.py",
+    "fix_js.py",
+    "fix_orch.py",
+    "fix_paths.py",
+    "fix_syntax.py",
+    "inject_api.py",
+    "inject2.py",
+    "inject3.py",
+    "inject4.py",
+    "inject5.py",
+    "patch_api_validation.py",
+    "patch_dashboard.py",
+    "patch_dashboard_2.py",
+    "patch_ripley.py",
+    "pipeline_cli.py",
+    "refactor_frontend.py",
+    "refactor_frontend_v2.py",
+    "test_endpoints.py",
+    "verify_dashboard.py",
+    "verify_layout_fixes.py"
+  ],
+  "kept_scripts": [
+    {
+      "script": "f5_02_e2e_certify.py",
+      "classification": "UNKNOWN"
+    },
+    {
+      "script": "f5_03_idempotency_certify.py",
+      "classification": "UNKNOWN"
+    },
+    {
+      "script": "f5_03_setup_goldens.py",
+      "classification": "UNKNOWN"
+    },
+    {
+      "script": "f5_04_performance_certify.py",
+      "classification": "UNKNOWN"
+    },
+    {
+      "script": "f5_05_recovery_certify.py",
+      "classification": "UNKNOWN"
+    },
+    {
+      "script": "paris_v2_backfill.py",
+      "classification": "DANGEROUS"
+    }
+  ],
+  "rules_applied": [
+    "Solo CONSOLIDATED/OBSOLETE archivados.",
+    "UNKNOWN y DANGEROUS conservados en Scripts/.",
+    "Manifest con original_path, archive_path, sha256, classification, reason, replacement, test_evidence.",
+    "Ningun script eliminado del repo - movidos a _archive/legacy_patches/ (git preserved)."
+  ],
+  "financial_delta_usd": "0.00",
+  "official_db_sha256": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9"
+}

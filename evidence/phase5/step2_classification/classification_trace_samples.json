@@ -1,0 +1,212 @@
+[
+  {
+    "id_transaccion": "3896862_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "clasificacion": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "regla_aplicada": "R004_ENVIO",
+    "campo_utilizado": "financial_group",
+    "valor_encontrado": "costos_operacionales",
+    "evidencia_utilizada": {
+      "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+      "folio_xml": null,
+      "dte_folio": null,
+      "has_dte_link": false
+    }
+  },
+  {
+    "id_transaccion": "3896826_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "clasificacion": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "regla_aplicada": "R004_ENVIO",
+    "campo_utilizado": "financial_group",
+    "valor_encontrado": "costos_operacionales",
+    "evidencia_utilizada": {
+      "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+      "folio_xml": null,
+      "dte_folio": null,
+      "has_dte_link": false
+    }
+  },
+  {
+    "id_transaccion": "3896825_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -2790.0,
+    "clasificacion": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "regla_aplicada": "R004_ENVIO",
+    "campo_utilizado": "financial_group",
+    "valor_encontrado": "costos_operacionales",
+    "evidencia_utilizada": {
+      "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+      "folio_xml": null,
+      "dte_folio": null,
+      "has_dte_link": false
+    }
+  },
+  {
+    "id_transaccion": "3896802_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "clasificacion": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "regla_aplicada": "R004_ENVIO",
+    "campo_utilizado": "financial_group",
+    "valor_encontrado": "costos_operacionales",
+    "evidencia_utilizada": {
+      "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+      "folio_xml": null,
+      "dte_folio": null,
+      "has_dte_link": false
+    }
+  },
+  {
+    "id_transaccion": "3896762_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "clasificacion": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "regla_aplicada": "R004_ENVIO",
+    "campo_utilizado": "financial_group",
+    "valor_encontrado": "costos_operacionales",
+    "evidencia_utilizada": {
+      "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+      "folio_xml": null,
+      "dte_folio": null,
+      "has_dte_link": false
+    }
+  },
+  {
+    "id_transaccion": "3896727_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -2000.0,
+    "clasificacion": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "regla_aplicada": "R004_ENVIO",
+    "campo_utilizado": "financial_group",
+    "valor_encontrado": "costos_operacionales",
+    "evidencia_utilizada": {
+      "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+      "folio_xml": null,
+      "dte_folio": null,
+      "has_dte_link": false
+    }
+  },
+  {
+    "id_transaccion": "3896688_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "clasificacion": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "regla_aplicada": "R004_ENVIO",
+    "campo_utilizado": "financial_group",
+    "valor_encontrado": "costos_operacionales",
+    "evidencia_utilizada": {
+      "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+      "folio_xml": null,
+      "dte_folio": null,
+      "has_dte_link": false
+    }
+  },
+  {
+    "id_transaccion": "3896617_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "clasificacion": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "regla_aplicada": "R004_ENVIO",
+    "campo_utilizado": "financial_group",
+    "valor_encontrado": "costos_operacionales",
+    "evidencia_utilizada": {
+      "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+      "folio_xml": null,
+      "dte_folio": null,
+      "has_dte_link": false
+    }
+  },
+  {
+    "id_transaccion": "3896615_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "clasificacion": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "regla_aplicada": "R004_ENVIO",
+    "campo_utilizado": "financial_group",
+    "valor_encontrado": "costos_operacionales",
+    "evidencia_utilizada": {
+      "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+      "folio_xml": null,
+      "dte_folio": null,
+      "has_dte_link": false
+    }
+  },
+  {
+    "id_transaccion": "3896428_GROSS",
+    "marketplace": "PARIS",
+    "id_orden": null,
+    "fecha": "2025-09-07",
+    "monto": -1000.0,
+    "clasificacion": {
+      "codigo": "ENVIO",
+      "nombre": "Costos Log\u00edsticos y Env\u00edos",
+      "confianza": 1.0
+    },
+    "regla_aplicada": "R004_ENVIO",
+    "campo_utilizado": "financial_group",
+    "valor_encontrado": "costos_operacionales",
+    "evidencia_utilizada": {
+      "archivo_origen": "1 ene 2025 - 31 dic 2025.xlsx",
+      "folio_xml": null,
+      "dte_folio": null,
+      "has_dte_link": false
+    }
+  }
+]

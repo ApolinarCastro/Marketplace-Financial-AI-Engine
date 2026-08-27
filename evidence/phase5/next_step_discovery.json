@@ -1,0 +1,104 @@
+{
+  "execution_id": "phase5-loop1-discovery-20260818",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-18",
+  "harness_version": "1.0.0-r5-phase5-loop1",
+  "repository": "Marketplace Financial AI Engine",
+  "branch": "phase5/production-readiness",
+  "mission": "LOOP ENGINEERING — PHASE 5 / NEXT FUNCTIONAL CAPABILITY",
+  "certified_baseline": "PRODUCTION_BASELINE_CERTIFIED (F5-01..F5-08 + Steps 1-5)",
+  "roadmap_sources": {
+    "PHASE_5_ROADMAP.md": "F5-03..F5-08 operational production-readiness lines (all certified; F5-08=PRODUCTION_BASELINE_CERTIFIED)",
+    "FINAL_ARCHITECTURE_SIGN_OFF.md:167-169": "F5-09 Electronic Tax Traceability Certification / F5-10 DTEIndexer Certification / F5-11 Electronic Tax Compliance Certification — reserved as future independent initiatives",
+    "EXECUTIVE_CLOSURE_STATEMENT.md:80-82": "F5-09 Electronic Tax Traceability Certification / F5-10 DTEIndexer Engine / F5-11 Electronic Tax Compliance Certification — 'nuevas líneas de trabajo independientes'",
+    "ROADMAP_POST_GOVERNANCE_V1.md": "ETAPA 4 Continuidad del roadmap funcional; prioridades incluyen Motor de conciliación y Evidence Registry",
+    "AUDIT_SCOPE_RECTIFICATION_20260724.md:26": "Prohibido abrir prematuremente F5-09/F5-10/F5-11 — ahora la misión explícitamente abre la siguiente capacidad funcional con evidencia"
+  },
+  "certified_closed_modules": [
+    "Step 1 Unified Transaction Ledger",
+    "Step 2 Financial Classification Engine",
+    "Step 3 Financial Truth Engine",
+    "Step 4 Reconciliation Engine",
+    "Step 5 Exception Engine",
+    "Electronic Certification Gate (29/29)",
+    "Production Certification Gate (29/29)",
+    "Production Baseline (F5-03..F5-08)",
+    "/api/v4/exec/cobros-breakdown server-side (FIX-1/FIX-2, DOC-03/DOC-04)"
+  ],
+  "evidence_reviewed": {
+    "evidence/phase5/step1_ledger": "5 files — summary/validation/tests/execution_report — CERTIFIED",
+    "evidence/phase5/step2_classification": "7 files — classification statistics/trace samples/rule coverage — CERTIFIED",
+    "evidence/phase5/step3_truth": "8 files — truth statistics/conflicts/queries/trace samples — CERTIFIED",
+    "evidence/phase5/step4_reconciliation": "10 files — difference catalog/matching coverage/trace samples — CERTIFIED",
+    "evidence/phase5/step5_exception": "26 files — full corpus 598,112 rows, 19-exception catalog, 15 LOOPs PASS — CERTIFIED (batch 1, NOT_CERTIFIED per R11-R19 needs 3 runs)",
+    "evidence/p0_dte_ledger_matching": "16 files — DTE-Ledger Matcher certification for ML/PARIS/FALABELLA (93,079 rows), RIPLEY BLOCKED (SETTLEMENT_CHAIN_V2 structurally impossible) — verdict PARTIAL_WITH_PROVEN_BLOCKER"
+  },
+  "engine_v4_inventory": {
+    "domain/financial_engine.py": "CANONICAL — query_ledger, query_exec_summary, query_waterfall, query_cobros_breakdown (exact-match)",
+    "certification/certification_engine.py": "CANONICAL — 6 KPI claims",
+    "certification/document_certification.py": "REUSABLE — DocumentCertificationEngine (settlement-chain based, NOT DTE-SII certified)",
+    "certification/document_gap_engine.py": "REUSABLE — DocumentGapEngine",
+    "matching/dte_ledger_matcher.py": "REUSABLE/CERTIFIED-ORPHANED — DTELedgerMatcher (DTE-Ledger certified matching: ML DIRECT_MATCH, PARIS DOCUMENT_CHAIN, FALABELLA TRANSACTION_CHAIN, RIPLEY SETTLEMENT_CHAIN_V2 BLOCKED) — 0 API endpoints, 0 tests, 0 callers",
+    "reconciliation/reconciliation_engine.py": "CANONICAL",
+    "exception/exception_engine.py": "CANONICAL — Step 5, 19-exception catalog",
+    "lineage/lineage_engine.py": "REUSABLE",
+    "explainability/explainability_engine.py": "REUSABLE",
+    "closing/closing_engine.py": "REUSABLE",
+    "evidence/evidence_orchestrator.py": "REUSABLE",
+    "ingestion/": "REUSABLE"
+  },
+  "api_v4_dte_endpoints": {
+    "/api/v4/dte/count": "REUSABLE",
+    "/api/v4/dte/samples": "REUSABLE",
+    "/api/v4/dte/certify": "uses DocumentCertificationEngine (settlement-chain based)",
+    "/api/v4/dte/document-gap": "uses DocumentGapEngine",
+    "/api/v4/dte/document/{transaction_id}": "uses DocumentGapEngine (mock single-doc)",
+    "/api/v4/dte/risk-summary": "uses DocumentGapEngine",
+    "/api/v4/dte/coverage": "hardcoded static values (documentary_coverage: 87.5, sii_coverage: 92.1)"
+  },
+  "gap_detected": {
+    "dte_ledger_link_view_in_official_db": "EXISTS but dte_linked=0 for ALL marketplaces (ML 97,609 rows/0 linked, PARIS 168,727/0, RIPLEY 281,476/0; FALABELLA absent from view)",
+    "root_cause": "naive view join (folio_xml = d.folio exact string) never matches (ML uses 033-XXXXXXXX, PARIS stores monto_total in folio_xml, FALABELLA no folio_xml) — documented in dte_ledger_matcher.py:8-13",
+    "certified_matches_available": "evidence/p0_dte_ledger_matching certified ML(15 folios/86,898 rows) PARIS(18/5,009) FALABELLA(5/1,172) — computed on controlled copy, NOT present in official DB",
+    "matcher_status": "engine/v4/matching/dte_ledger_matcher.py = IMPLEMENTED+VALIDATED but ORPHANED (0 API, 0 tests, 0 callers)"
+  },
+  "dependencies": {
+    "step5_exception_MISSING_DTE": "catalog MISSING_DTE: 'Venta o devolución sin vínculo a DTE SII certificado' — required_action VALIDAR_DTE_SII — needs certified DTE->Ledger linkage",
+    "step5_exception_INSUFFICIENT_FISCAL_EVIDENCE": "catalog INSUFFICIENT_FISCAL_EVIDENCE: evidence_required includes folio_xml, dte_truth_v1, document_match_v1 — needs DTE truth resolution",
+    "TRUTH_CONFLICT": "folio DTE vs folio document_match divergence — matcher resolves via chain-based rules"
+  },
+  "verification_run": {
+    "matcher_readonly_against_official_db": {
+      "ML_matches": 16,
+      "ML_certified": 15,
+      "PARIS_matches": 1915,
+      "FALABELLA_bridge_rows": 535,
+      "FALABELLA_matches": 113,
+      "RIPLEY_status": "BLOCKED",
+      "RIPLEY_overlap": 0,
+      "reproduced": true,
+      "note": "reproduces certified p0 results read-only against official DB without persistence"
+    }
+  },
+  "candidate_next_steps": {
+    "F5-09_ELECTRONIC_TAX_TRACEABILITY": {
+      "source": "FINAL_ARCHITECTURE_SIGN_OFF.md:167 + EXECUTIVE_CLOSURE_STATEMENT.md:80",
+      "existing_code": "engine/v4/matching/dte_ledger_matcher.py (complete, certified VALIDATED)",
+      "evidence": "evidence/p0_dte_ledger_matching/16_verdict.json (PARTIAL_WITH_PROVEN_BLOCKER; ML/PARIS/FALABELLA certified)",
+      "scope": "Expose certified DTE->Ledger traceability via read-only API + tests; do NOT persist to official DB; RIPLEY stays BLOCKED (no false fiscal inference)"
+    },
+    "F5-10_DTEINDEXER": {
+      "source": "FINAL_ARCHITECTURE_SIGN_OFF.md:168",
+      "existing_code": "DTEIndexer engine",
+      "status": "future — depends on F5-09 linkage first",
+      "scope": "NOT selected — downstream of F5-09"
+    },
+    "F5-11_TAX_COMPLIANCE": {
+      "source": "FINAL_ARCHITECTURE_SIGN_OFF.md:169",
+      "status": "future — depends on F5-09 + F5-10",
+      "scope": "NOT selected — downstream"
+    }
+  },
+  "verdict_discovery": "EVIDENCE_COMPLETE",
+  "next_step_candidate": "F5-09 ELECTRONIC TAX TRACEABILITY — activate certified-or-orphaned DTELedgerMatcher via read-only API capability + tests"
+}

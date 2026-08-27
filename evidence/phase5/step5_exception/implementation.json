@@ -1,0 +1,61 @@
+{
+  "execution_id": "f8c9a1b2-3d4e-5f6a-7b8c-9d0e1f2a3b4c",
+  "timestamp": "2026-08-07T09:24:33.135853",
+  "harness_version": "exception_engine-v1.0.0-r5",
+  "git_commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "repository": "Marketplace Financial AI Engine",
+  "official_db": "data/db/meli_financial_v4.db",
+  "module": "engine/v4/domain/exception_engine.py",
+  "catalog_size": 19,
+  "implementation_status": "IMPLEMENTED",
+  "validation_status": "VALIDATED",
+  "certification_status": "NOT_CERTIFIED",
+  "closure_criteria": {
+    "canonical_19_categories": true,
+    "zero_duplicates": true,
+    "100pct_explainable": true,
+    "100pct_traceable": true,
+    "financial_delta_zero": true
+  },
+  "measurements": {
+    "statistics_elapsed_s": 0.89,
+    "catalog_elapsed_s": 0.51,
+    "health_elapsed_s": 0.04,
+    "sample_analyzed": 1000,
+    "total_exceptions_detected": 1000,
+    "duplicate_exceptions_prevented": 0,
+    "by_marketplace": {
+      "RIPLEY": 250,
+      "FALABELLA": 250,
+      "PARIS": 250,
+      "ML": 250
+    },
+    "by_type_nonzero": {
+      "INSUFFICIENT_FISCAL_EVIDENCE": 1000
+    },
+    "by_severity": {
+      "CRITICAL": 1000
+    },
+    "by_priority": {
+      "P1": 1000
+    },
+    "by_domain": {
+      "TRIBUTARIO": 1000
+    }
+  },
+  "health": {
+    "status": "READY",
+    "exception_engine": "ACTIVE",
+    "catalog_size": 19,
+    "catalog_complete": true,
+    "persistence_enabled": false,
+    "database": "PASS"
+  },
+  "persistence_enabled": false,
+  "read_only": true,
+  "delta_verified": "$0.00",
+  "test_suite": {
+    "exception_engine_tests": "25/25 PASS",
+    "full_suite": "981 passed, 12 failed (pre-existing), 12 skipped"
+  }
+}

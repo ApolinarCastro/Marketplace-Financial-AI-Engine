@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-07-28T17:25:38.276414",
+  "step": "STEP_1_UNIFIED_TRANSACTION_LEDGER",
+  "verdict": "PHASE_5_MODULE_COMPLETE",
+  "official_database_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "official_database_intact": true,
+  "ledger_metrics": {
+    "total_records": 150182,
+    "marketplace_counts": {
+      "ML": 26183,
+      "RIPLEY": 71732,
+      "PARIS": 49191,
+      "FALABELLA": 3076
+    },
+    "unassigned_records": 0,
+    "financial_delta": "$0.00"
+  },
+  "schema_compliance": {
+    "origen": true,
+    "documento": true,
+    "fecha": true,
+    "marketplace": true,
+    "orden": true,
+    "tipo_financiero": true,
+    "monto": true,
+    "estado": true,
+    "evidencia": true
+  }
+}

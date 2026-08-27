@@ -1,0 +1,14 @@
+{
+  "audit_id": "AUDIT-KNOWLEDGEOS-FASE2-ENTRY",
+  "timestamp": "2026-07-27T20:00:00Z",
+  "status": "PASS",
+  "knowledgeos_version": "1.0.0",
+  "total_markdown_documents": 58,
+  "yaml_frontmatter_valid": 58,
+  "wikilinks_valid": 58,
+  "orphan_documents": 0,
+  "obsidian_graph_compatibility": "PASS",
+  "dual_graph_integration": "PASS",
+  "evidence_registry_integration": "PASS",
+  "pmo_registry_integration": "PASS"
+}

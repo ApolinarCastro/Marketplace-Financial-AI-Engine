@@ -1,0 +1,852 @@
+{
+  "metadata": {
+    "audit_id": "PHASE_3_STRUCTURAL_AUDIT_001",
+    "timestamp": "2026-07-28T14:43:01.797793",
+    "verdict": "PHASE_3_AUDIT_COMPLETE",
+    "nondestructive": true
+  },
+  "official_database": {
+    "path": "data/db/meli_financial_v4.db",
+    "sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "status": "100% INTACT"
+  },
+  "raw_layer": {
+    "path": "01_Raw/",
+    "files": 1414,
+    "raw_mutations": 0,
+    "status": "INMUTABLE"
+  },
+  "repository_metrics": {
+    "total_files": 24149,
+    "total_folders": 2062,
+    "total_bytes": 4181578760,
+    "total_mb_decimal": 4181.58,
+    "total_mib_binary": 3987.86,
+    "total_gb_decimal": 4.182,
+    "total_gib_binary": 3.894
+  },
+  "top_30_folders": [
+    {
+      "rank": 1,
+      "path": "data/db",
+      "files": 14,
+      "bytes": 610158641,
+      "mib": 581.89,
+      "pct": 14.59
+    },
+    {
+      "rank": 2,
+      "path": "data/backup",
+      "files": 6,
+      "bytes": 335093760,
+      "mib": 319.57,
+      "pct": 8.01
+    },
+    {
+      "rank": 3,
+      "path": "Reporte_Marketplaces/Backup",
+      "files": 80,
+      "bytes": 180227389,
+      "mib": 171.88,
+      "pct": 4.31
+    },
+    {
+      "rank": 4,
+      "path": "data/db/snapshot_baseline_v6_20260529_105928",
+      "files": 4,
+      "bytes": 131369964,
+      "mib": 125.28,
+      "pct": 3.14
+    },
+    {
+      "rank": 5,
+      "path": "data/db/snapshot_pre_ripley_rebuild_20260601_172043",
+      "files": 3,
+      "bytes": 131350141,
+      "mib": 125.27,
+      "pct": 3.14
+    },
+    {
+      "rank": 6,
+      "path": "data/db/snapshot_pre_ripley_rebuild_20260601_172024",
+      "files": 2,
+      "bytes": 131346804,
+      "mib": 125.26,
+      "pct": 3.14
+    },
+    {
+      "rank": 7,
+      "path": "data/db/snapshot_pre_classification_20260603_102347",
+      "files": 2,
+      "bytes": 131085071,
+      "mib": 125.01,
+      "pct": 3.13
+    },
+    {
+      "rank": 8,
+      "path": "data/db/snapshot_pre_fase2_20260603_112908",
+      "files": 2,
+      "bytes": 131084971,
+      "mib": 125.01,
+      "pct": 3.13
+    },
+    {
+      "rank": 9,
+      "path": "data/db/snapshot_pre_poscobro_fix_20260605_155052",
+      "files": 5,
+      "bytes": 116759642,
+      "mib": 111.35,
+      "pct": 2.79
+    },
+    {
+      "rank": 10,
+      "path": "data/db/baseline_estable_v7_20260715",
+      "files": 3,
+      "bytes": 111699074,
+      "mib": 106.52,
+      "pct": 2.67
+    },
+    {
+      "rank": 11,
+      "path": ".venv/Lib/site-packages/playwright/driver",
+      "files": 3,
+      "bytes": 91854308,
+      "mib": 87.6,
+      "pct": 2.2
+    },
+    {
+      "rank": 12,
+      "path": ".venv/Lib/site-packages/pyarrow",
+      "files": 118,
+      "bytes": 75375938,
+      "mib": 71.88,
+      "pct": 1.8
+    },
+    {
+      "rank": 13,
+      "path": "Reporte_Marketplaces",
+      "files": 1,
+      "bytes": 69266553,
+      "mib": 66.06,
+      "pct": 1.66
+    },
+    {
+      "rank": 14,
+      "path": "_archive/database",
+      "files": 2,
+      "bytes": 65564672,
+      "mib": 62.53,
+      "pct": 1.57
+    },
+    {
+      "rank": 15,
+      "path": ".git/objects/97",
+      "files": 28,
+      "bytes": 60845443,
+      "mib": 58.03,
+      "pct": 1.46
+    },
+    {
+      "rank": 16,
+      "path": "data/db/snapshot_pre_falabella_rebuild_20260529_100326",
+      "files": 3,
+      "bytes": 60049596,
+      "mib": 57.27,
+      "pct": 1.44
+    },
+    {
+      "rank": 17,
+      "path": ".git/objects/94",
+      "files": 30,
+      "bytes": 59879106,
+      "mib": 57.11,
+      "pct": 1.43
+    },
+    {
+      "rank": 18,
+      "path": "data/db/backups",
+      "files": 1,
+      "bytes": 59781120,
+      "mib": 57.01,
+      "pct": 1.43
+    },
+    {
+      "rank": 19,
+      "path": ".git/objects/57",
+      "files": 32,
+      "bytes": 58204201,
+      "mib": 55.51,
+      "pct": 1.39
+    },
+    {
+      "rank": 20,
+      "path": "_archive/releases/MARKETPLACE_AUDITOR_V3_5_RC1",
+      "files": 2,
+      "bytes": 57946543,
+      "mib": 55.26,
+      "pct": 1.39
+    },
+    {
+      "rank": 21,
+      "path": ".venv/Lib/site-packages",
+      "files": 7,
+      "bytes": 56950223,
+      "mib": 54.31,
+      "pct": 1.36
+    },
+    {
+      "rank": 22,
+      "path": "data/db/baseline_estable_v8_candidate_20260717",
+      "files": 3,
+      "bytes": 55856963,
+      "mib": 53.27,
+      "pct": 1.34
+    },
+    {
+      "rank": 23,
+      "path": "data/db/BASELINE_ESTABLE_V9_TRUTH_RECOVERED",
+      "files": 2,
+      "bytes": 55854351,
+      "mib": 53.27,
+      "pct": 1.34
+    },
+    {
+      "rank": 24,
+      "path": "data/db/snapshot_pre_f003_cleaned_20260715",
+      "files": 2,
+      "bytes": 55849206,
+      "mib": 53.26,
+      "pct": 1.34
+    },
+    {
+      "rank": 25,
+      "path": ".git/objects/90",
+      "files": 33,
+      "bytes": 41918672,
+      "mib": 39.98,
+      "pct": 1.0
+    },
+    {
+      "rank": 26,
+      "path": "data/db/snapshot_pre_persistencia_20260528_162431",
+      "files": 3,
+      "bytes": 37509022,
+      "mib": 35.77,
+      "pct": 0.9
+    },
+    {
+      "rank": 27,
+      "path": "data/db/snapshot_pre_ml_xml_fix_20260528_170623",
+      "files": 2,
+      "bytes": 37499262,
+      "mib": 35.76,
+      "pct": 0.9
+    },
+    {
+      "rank": 28,
+      "path": "data/db/snapshot_pre_cierre_rebuild_20260528_163008",
+      "files": 1,
+      "bytes": 37498880,
+      "mib": 35.76,
+      "pct": 0.9
+    },
+    {
+      "rank": 29,
+      "path": "data/db/snapshot_pre_dec019_20260607_161324",
+      "files": 2,
+      "bytes": 36450370,
+      "mib": 34.76,
+      "pct": 0.87
+    },
+    {
+      "rank": 30,
+      "path": "data/db/snapshot_pre_bpp_residual_fix_20260606_145106",
+      "files": 1,
+      "bytes": 36450304,
+      "mib": 34.76,
+      "pct": 0.87
+    }
+  ],
+  "root_inventory": [
+    {
+      "name": ".agent",
+      "type": "DIRECTORY",
+      "size_bytes": 0,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": ".agents",
+      "type": "DIRECTORY",
+      "size_bytes": 0,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "AGENT_CONFIGURATION",
+      "recommendation": "DO_NOT_TOUCH"
+    },
+    {
+      "name": ".claude",
+      "type": "DIRECTORY",
+      "size_bytes": 189987,
+      "size_mib": 0.18,
+      "files": 2,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": ".claude-flow",
+      "type": "DIRECTORY",
+      "size_bytes": 18123,
+      "size_mib": 0.02,
+      "files": 5,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": ".codex",
+      "type": "DIRECTORY",
+      "size_bytes": 11830,
+      "size_mib": 0.01,
+      "files": 2,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": ".git",
+      "type": "DIRECTORY",
+      "size_bytes": 529467,
+      "size_mib": 0.5,
+      "files": 8,
+      "classification": "CORE_ACTIVE",
+      "recommendation": "DO_NOT_TOUCH"
+    },
+    {
+      "name": ".githooks",
+      "type": "DIRECTORY",
+      "size_bytes": 2491,
+      "size_mib": 0.0,
+      "files": 2,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": ".github",
+      "type": "DIRECTORY",
+      "size_bytes": 0,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": ".gitignore",
+      "type": "FILE",
+      "size_bytes": 374,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "CONFIG_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": ".mcp.json",
+      "type": "FILE",
+      "size_bytes": 537,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "TEMPORARY",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": ".opencode",
+      "type": "DIRECTORY",
+      "size_bytes": 63,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": ".pytest_cache",
+      "type": "DIRECTORY",
+      "size_bytes": 540,
+      "size_mib": 0.0,
+      "files": 3,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": ".swarm",
+      "type": "DIRECTORY",
+      "size_bytes": 1875294,
+      "size_mib": 1.79,
+      "files": 5,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": ".venv",
+      "type": "DIRECTORY",
+      "size_bytes": 292,
+      "size_mib": 0.0,
+      "files": 2,
+      "classification": "TOOLING_ACTIVE",
+      "recommendation": "DO_NOT_TOUCH"
+    },
+    {
+      "name": "00_Config",
+      "type": "DIRECTORY",
+      "size_bytes": 7551,
+      "size_mib": 0.01,
+      "files": 7,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "01_Raw",
+      "type": "DIRECTORY",
+      "size_bytes": 0,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "PRODUCT_ACTIVE",
+      "recommendation": "DO_NOT_TOUCH"
+    },
+    {
+      "name": "AESP",
+      "type": "DIRECTORY",
+      "size_bytes": 27,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "AGENTS.md",
+      "type": "FILE",
+      "size_bytes": 88907,
+      "size_mib": 0.08,
+      "files": 1,
+      "classification": "CONFIG_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": "api",
+      "type": "DIRECTORY",
+      "size_bytes": 57098,
+      "size_mib": 0.05,
+      "files": 3,
+      "classification": "PRODUCT_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": "CLAUDE.md",
+      "type": "FILE",
+      "size_bytes": 72795,
+      "size_mib": 0.07,
+      "files": 1,
+      "classification": "CONFIG_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": "config.py",
+      "type": "FILE",
+      "size_bytes": 646,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "TEMPORARY",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "data",
+      "type": "DIRECTORY",
+      "size_bytes": 27009373,
+      "size_mib": 25.76,
+      "files": 3,
+      "classification": "PRODUCT_ACTIVE",
+      "recommendation": "DO_NOT_TOUCH"
+    },
+    {
+      "name": "database",
+      "type": "DIRECTORY",
+      "size_bytes": 10859,
+      "size_mib": 0.01,
+      "files": 2,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "discovery",
+      "type": "DIRECTORY",
+      "size_bytes": 31473,
+      "size_mib": 0.03,
+      "files": 6,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "docs",
+      "type": "DIRECTORY",
+      "size_bytes": 1760,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "DOCUMENTATION_CURRENT",
+      "recommendation": "CONSOLIDATE"
+    },
+    {
+      "name": "engine",
+      "type": "DIRECTORY",
+      "size_bytes": 95379,
+      "size_mib": 0.09,
+      "files": 16,
+      "classification": "PRODUCT_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": "evidence",
+      "type": "DIRECTORY",
+      "size_bytes": 107686,
+      "size_mib": 0.1,
+      "files": 6,
+      "classification": "EVIDENCE_ACTIVE",
+      "recommendation": "KEEP_WITH_POLICY"
+    },
+    {
+      "name": "frontend",
+      "type": "DIRECTORY",
+      "size_bytes": 0,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "GEMINI.md",
+      "type": "FILE",
+      "size_bytes": 1498,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "CONFIG_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": "governance",
+      "type": "DIRECTORY",
+      "size_bytes": 2951943,
+      "size_mib": 2.82,
+      "files": 469,
+      "classification": "DOCUMENTATION_LEGACY",
+      "recommendation": "CONSOLIDATE"
+    },
+    {
+      "name": "implementation_plan.md",
+      "type": "FILE",
+      "size_bytes": 2999,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "TEMPORARY",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "knowledge",
+      "type": "DIRECTORY",
+      "size_bytes": 7963,
+      "size_mib": 0.01,
+      "files": 2,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "KnowledgeBase",
+      "type": "DIRECTORY",
+      "size_bytes": 217,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "knowledge_index.yaml",
+      "type": "FILE",
+      "size_bytes": 86020,
+      "size_mib": 0.08,
+      "files": 1,
+      "classification": "TEMPORARY",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "logs",
+      "type": "DIRECTORY",
+      "size_bytes": 0,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "package.json",
+      "type": "FILE",
+      "size_bytes": 355,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "TEMPORARY",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "pyproject.toml",
+      "type": "FILE",
+      "size_bytes": 623,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "CONFIG_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": "README.md",
+      "type": "FILE",
+      "size_bytes": 3569,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "CONFIG_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": "Reporte_Marketplaces",
+      "type": "DIRECTORY",
+      "size_bytes": 69266553,
+      "size_mib": 66.06,
+      "files": 1,
+      "classification": "HISTORICAL_ARCHIVE",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "requirements.txt",
+      "type": "FILE",
+      "size_bytes": 212,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "TEMPORARY",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "run_app.py",
+      "type": "FILE",
+      "size_bytes": 812,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "TEMPORARY",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "run_tests.py",
+      "type": "FILE",
+      "size_bytes": 700,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "TEMPORARY",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "Scripts",
+      "type": "DIRECTORY",
+      "size_bytes": 950330,
+      "size_mib": 0.91,
+      "files": 40,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "skills-lock.json",
+      "type": "FILE",
+      "size_bytes": 3040,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "TEMPORARY",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "START_APP.bat",
+      "type": "FILE",
+      "size_bytes": 2750,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "TEMPORARY",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "static",
+      "type": "DIRECTORY",
+      "size_bytes": 0,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "taxonomy",
+      "type": "DIRECTORY",
+      "size_bytes": 43507,
+      "size_mib": 0.04,
+      "files": 7,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "templates",
+      "type": "DIRECTORY",
+      "size_bytes": 265497,
+      "size_mib": 0.25,
+      "files": 6,
+      "classification": "PRODUCT_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": "tests",
+      "type": "DIRECTORY",
+      "size_bytes": 407883,
+      "size_mib": 0.39,
+      "files": 58,
+      "classification": "TEST_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": "tools",
+      "type": "DIRECTORY",
+      "size_bytes": 186144,
+      "size_mib": 0.18,
+      "files": 15,
+      "classification": "TOOLING_ACTIVE",
+      "recommendation": "KEEP"
+    },
+    {
+      "name": "uploads",
+      "type": "DIRECTORY",
+      "size_bytes": 0,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "UNKNOWN",
+      "recommendation": "REVIEW_REQUIRED"
+    },
+    {
+      "name": "_archive",
+      "type": "DIRECTORY",
+      "size_bytes": 0,
+      "size_mib": 0.0,
+      "files": 1,
+      "classification": "HISTORICAL_ARCHIVE",
+      "recommendation": "CONSOLIDATE"
+    }
+  ],
+  "archive_analysis": {
+    "files": 1638,
+    "size_bytes": 179131653,
+    "size_mb": 179.13
+  },
+  "documentation_analysis": {
+    "files": 1498,
+    "size_bytes": 19093277,
+    "size_mb": 19.09
+  },
+  "reports_analysis": {
+    "files": 120,
+    "size_bytes": 304255226,
+    "size_mb": 304.26
+  },
+  "tools_analysis": {
+    "files": 56,
+    "size_bytes": 1147826,
+    "size_mb": 1.15
+  },
+  "agents_analysis": {
+    "files": 874,
+    "size_bytes": 70100743,
+    "size_mb": 70.1
+  },
+  "evidence_analysis": {
+    "files": 182,
+    "size_bytes": 3348599,
+    "size_mb": 3.35
+  },
+  "git_analysis": {
+    "files": 7094,
+    "size_bytes": 623822995,
+    "size_mb": 623.82,
+    "large_blobs_count": 62
+  },
+  "duplicates": {
+    "duplicate_groups_count": 7,
+    "total_waste_mb": 353.11
+  },
+  "references": [
+    {
+      "target": "_archive",
+      "active_reference_count": 7,
+      "status": "REFERENCED"
+    },
+    {
+      "target": "Reporte_Marketplaces",
+      "active_reference_count": 0,
+      "status": "NO_REFERENCE_FOUND"
+    },
+    {
+      "target": "governance",
+      "active_reference_count": 141,
+      "status": "REFERENCED"
+    },
+    {
+      "target": "scratch",
+      "active_reference_count": 0,
+      "status": "NO_REFERENCE_FOUND"
+    }
+  ],
+  "risk_matrix": [
+    {
+      "element": "_archive/",
+      "risk": "LOW",
+      "recoverability": "RECOVERABLE_FROM_GIT",
+      "value": "HISTORICAL",
+      "recommendation": "ARCHIVE_EXTERNALLY"
+    },
+    {
+      "element": "Reporte_Marketplaces/Backup",
+      "risk": "LOW",
+      "recoverability": "RECOVERABLE_FROM_GIT",
+      "value": "HISTORICAL",
+      "recommendation": "CONSOLIDATE"
+    },
+    {
+      "element": "governance/ (documentaci\u00f3n duplicada)",
+      "risk": "MEDIUM",
+      "recoverability": "REGENERABLE",
+      "value": "DOCUMENTARY",
+      "recommendation": "CONSOLIDATE"
+    },
+    {
+      "element": ".git/ (historial acumulado)",
+      "risk": "HIGH",
+      "recoverability": "NOT_RECOVERABLE",
+      "value": "OPERATIONAL",
+      "recommendation": "KEEP_WITH_POLICY"
+    },
+    {
+      "element": "01_Raw/",
+      "risk": "CRITICAL",
+      "recoverability": "NOT_RECOVERABLE",
+      "value": "OPERATIONAL",
+      "recommendation": "DO_NOT_TOUCH"
+    },
+    {
+      "element": "data/db/meli_financial_v4.db",
+      "risk": "CRITICAL",
+      "recoverability": "NOT_RECOVERABLE",
+      "value": "OPERATIONAL",
+      "recommendation": "DO_NOT_TOUCH"
+    }
+  ],
+  "proposed_policies": {
+    "snapshots": "Max 2 active baselines in data/db, archive rest to _archive/",
+    "evidence": "Retain certified JSON summary artifacts, purge debug scratch files",
+    "git": "Enforce 50MB file size pre-commit hook"
+  },
+  "final_verdict": "PHASE_3_AUDIT_COMPLETE"
+}

@@ -1,0 +1,18 @@
+{
+  "marketplace": "ML",
+  "timestamp": "2026-07-24T11:13:56.843595",
+  "initial_rows": 79648,
+  "final_rows": 109799,
+  "new_rows_inserted": 30151,
+  "classification_count": 109799,
+  "periods_closed": {
+    "neto": 590643375.41,
+    "ingresos": 949473894.0,
+    "devoluciones": -101147976.0,
+    "costos_op": -70467114.79,
+    "costos_com": -187546335.59,
+    "ajustes": 330907.79
+  },
+  "financial_delta": 0.0,
+  "status": "PASS"
+}

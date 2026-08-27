@@ -1,0 +1,6 @@
+{
+  "policy": "SNAPSHOTS_GOVERNANCE_AUDIT",
+  "permanent_retained": 10,
+  "reproducibility_preserved": true,
+  "status": "PASS"
+}

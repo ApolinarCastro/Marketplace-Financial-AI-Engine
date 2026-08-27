@@ -1,0 +1,26 @@
+{
+  "execution_id": "424ecfc0-3c88-4919-aa2b-aa2028b342f4",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:56:03",
+  "harness_version": "1.0.0-r5-p0-ripley-seller-xml",
+  "repository": "Marketplace Financial AI Engine",
+  "marketplace": "RIPLEY",
+  "bridges": {
+    "SELLER.order x CICLOS.order": 11974,
+    "SELLER.order x LEDGER.id_orden": 11956,
+    "CICLOS.order x LEDGER.id_orden": 13646,
+    "FULL chain (SELLER n CICLOS n LEDGER)": 11499,
+    "SELLER.refs subset ledger folio_xml": true,
+    "CICLOS.inv subset ledger folio_xml": true
+  },
+  "blocked_eslabon": {
+    "XML.folio x SELLER.refs": 0,
+    "XML.folio x CICLOS.inv": 0,
+    "XML.folio x LEDGER.folio_xml": 0,
+    "dte_truth.folio x LEDGER.folio_xml": 0,
+    "dte_truth.folio x SELLER.refs": 0,
+    "conclusion": "The XML/DTE -> LEDGER eslabon is IMPOSSIBLE via folio: 0 overlap under all normalization."
+  },
+  "status": "CONFIRMED",
+  "verification": "VERIFIED"
+}

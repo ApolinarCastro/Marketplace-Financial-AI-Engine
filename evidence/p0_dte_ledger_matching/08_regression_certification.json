@@ -1,0 +1,75 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "claim": "traceability engine consumes rebuilt dte_ledger_link without regression",
+  "trace_transaction_ml": "DTE_CERTIFIED",
+  "evidence_chain_ml": "DTE_CERTIFIED",
+  "trace_transaction_falabella": "DTE_CERTIFIED",
+  "document_status_breakdown": [
+    {
+      "marketplace": "FALABELLA",
+      "status": "TRACED",
+      "count": "DTE_CERTIFIED",
+      "with_dte": 14634
+    },
+    {
+      "marketplace": "FALABELLA",
+      "status": "TRACED",
+      "count": "NO_DOCUMENT",
+      "with_dte": 1904
+    },
+    {
+      "marketplace": "ML",
+      "status": "TRACED",
+      "count": "DTE_CERTIFIED",
+      "with_dte": 86898
+    },
+    {
+      "marketplace": "ML",
+      "status": "TRACED",
+      "count": "HAS_FOLIO",
+      "with_dte": 10711
+    },
+    {
+      "marketplace": "ML",
+      "status": "TRACED",
+      "count": "NO_DOCUMENT",
+      "with_dte": 12190
+    },
+    {
+      "marketplace": "PARIS",
+      "status": "TRACED",
+      "count": "DTE_CERTIFIED",
+      "with_dte": 13555
+    },
+    {
+      "marketplace": "PARIS",
+      "status": "TRACED",
+      "count": "HAS_FOLIO",
+      "with_dte": 446190
+    },
+    {
+      "marketplace": "PARIS",
+      "status": "TRACED",
+      "count": "NO_DOCUMENT",
+      "with_dte": 29813
+    },
+    {
+      "marketplace": "RIPLEY",
+      "status": "TRACED",
+      "count": "HAS_FOLIO",
+      "with_dte": 439418
+    },
+    {
+      "marketplace": "RIPLEY",
+      "status": "TRACED",
+      "count": "NO_DOCUMENT",
+      "with_dte": 6129
+    }
+  ],
+  "verification": "VERIFIED",
+  "status": "PASS"
+}

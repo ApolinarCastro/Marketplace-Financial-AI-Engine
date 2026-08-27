@@ -1,0 +1,8 @@
+{
+  "run_1_entities": 3,
+  "run_2_entities": 3,
+  "new_entities_on_rerun": 0,
+  "duplicate_entities": 0,
+  "duplicate_relations": 0,
+  "idempotency_verdict": "PASS"
+}

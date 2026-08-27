@@ -1,0 +1,339 @@
+{
+  "catalog_size": 19,
+  "domains": [
+    "TRIBUTARIO",
+    "FINANCIERO",
+    "DOCUMENTAL",
+    "OPERACIONAL"
+  ],
+  "severities": [
+    "INFO",
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "CRITICAL"
+  ],
+  "priorities": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+  ],
+  "legacy_to_canonical_mapping": {
+    "DIFERENCIA_MONTO": "AMOUNT_MISMATCH",
+    "DIFERENCIA_DOCUMENTAL": "DOCUMENT_REFERENCE_ONLY",
+    "DIFERENCIA_TRIBUTARIA": "INSUFFICIENT_FISCAL_EVIDENCE",
+    "COBRO_PENDIENTE": "PENDING_COLLECTION",
+    "PAGO_PENDIENTE": "PENDING_PAYMENT",
+    "SIN_RESPALDO_XML": "MISSING_XML",
+    "SIN_RESPALDO_DTE": "MISSING_DTE",
+    "SIN_MATCH_SAP": "SAP_MISMATCH",
+    "SIN_MATCH_MARKETPLACE": "MARKETPLACE_MISMATCH",
+    "REQUIERE_REVISION": "MANUAL_REVIEW_REQUIRED"
+  },
+  "priority_matrix": {
+    "CRITICAL": {
+      "TRIBUTARIO": "P1",
+      "FINANCIERO": "P1",
+      "DOCUMENTAL": "P1",
+      "OPERACIONAL": "P1"
+    },
+    "HIGH": {
+      "TRIBUTARIO": "P1",
+      "FINANCIERO": "P2",
+      "DOCUMENTAL": "P2",
+      "OPERACIONAL": "P2"
+    },
+    "MEDIUM": {
+      "TRIBUTARIO": "P2",
+      "FINANCIERO": "P3",
+      "DOCUMENTAL": "P3",
+      "OPERACIONAL": "P3"
+    },
+    "LOW": {
+      "TRIBUTARIO": "P2",
+      "FINANCIERO": "P3",
+      "DOCUMENTAL": "P4",
+      "OPERACIONAL": "P4"
+    },
+    "INFO": {
+      "TRIBUTARIO": "P3",
+      "FINANCIERO": "P4",
+      "DOCUMENTAL": "P4",
+      "OPERACIONAL": "P4"
+    }
+  },
+  "precedence_chain": [
+    "TRUTH_CONFLICT_DETECTED -> TRUTH_CONFLICT",
+    "INSUFFICIENT_FISCAL_EVIDENCE -> INSUFFICIENT_FISCAL_EVIDENCE",
+    "financial_group IN (ingresos, devoluciones) AND NOT has_real_dte -> MISSING_DTE",
+    "DOCUMENT_REFERENCE_ONLY -> DOCUMENT_REFERENCE_ONLY",
+    "LEDGER_REFERENCE_ONLY -> LEDGER_REFERENCE_ONLY",
+    "NOT has_xml -> MISSING_XML",
+    "NOT has_match -> UNMATCHED_TRANSACTION",
+    "has_xml AND NOT has_dte AND NOT has_match -> MISSING_SUPPORT"
+  ],
+  "catalog": {
+    "MISSING_DTE": {
+      "name": "Venta o devolución sin DTE SII certificado",
+      "description": "Movimiento de venta o devolución sin vínculo a DTE SII certificado.",
+      "domain": "TRIBUTARIO",
+      "severity": "HIGH",
+      "owner": "TRIBUTARIO",
+      "required_action": "VALIDAR_DTE_SII",
+      "sla_days": 5,
+      "evidence_required": [
+        "dte_folio",
+        "dte_truth_v1",
+        "has_dte_link"
+      ],
+      "priority_by_matrix": "P1"
+    },
+    "INSUFFICIENT_FISCAL_EVIDENCE": {
+      "name": "Evidencia fiscal insuficiente",
+      "description": "Movimiento sin evidencia fiscal real (XML, DTE o match) que respalde la operación.",
+      "domain": "TRIBUTARIO",
+      "severity": "CRITICAL",
+      "owner": "TRIBUTARIO",
+      "required_action": "SOLICITAR_EVIDENCIA_FISCAL",
+      "sla_days": 2,
+      "evidence_required": [
+        "folio_xml",
+        "dte_truth_v1",
+        "document_match_v1"
+      ],
+      "priority_by_matrix": "P1"
+    },
+    "TRUTH_CONFLICT": {
+      "name": "Conflicto de verdad entre fuentes",
+      "description": "Conflicto de información entre fuentes: folio DTE vs folio document_match divergen.",
+      "domain": "TRIBUTARIO",
+      "severity": "CRITICAL",
+      "owner": "TRIBUTARIO",
+      "required_action": "RESOLVER_CONFLICTO_VERDAD",
+      "sla_days": 1,
+      "evidence_required": [
+        "dte_truth_v1",
+        "document_match_v1",
+        "folio_xml"
+      ],
+      "priority_by_matrix": "P1"
+    },
+    "MISSING_XML": {
+      "name": "XML de origen faltante",
+      "description": "Movimiento financiero sin archivo XML de origen vinculado.",
+      "domain": "DOCUMENTAL",
+      "severity": "MEDIUM",
+      "owner": "CONTABILIDAD",
+      "required_action": "SOLICITAR_XML",
+      "sla_days": 7,
+      "evidence_required": [
+        "01_Raw/XML",
+        "folio_xml"
+      ],
+      "priority_by_matrix": "P3"
+    },
+    "DOCUMENT_REFERENCE_ONLY": {
+      "name": "Solo referencia documental",
+      "description": "Existe match documental (document_match) sin DTE SII real certificado.",
+      "domain": "DOCUMENTAL",
+      "severity": "LOW",
+      "owner": "CONTABILIDAD",
+      "required_action": "CORREGIR_VINCULO_DOCUMENTAL",
+      "sla_days": 5,
+      "evidence_required": [
+        "document_match_v1",
+        "dte_truth_v1"
+      ],
+      "priority_by_matrix": "P4"
+    },
+    "LEDGER_REFERENCE_ONLY": {
+      "name": "Solo referencia de Ledger",
+      "description": "Movimiento con folio en Ledger sin DTE real ni match documental.",
+      "domain": "DOCUMENTAL",
+      "severity": "LOW",
+      "owner": "CONTABILIDAD",
+      "required_action": "VALIDAR_ORIGEN_LEDGER",
+      "sla_days": 5,
+      "evidence_required": [
+        "v_ledger_certified",
+        "folio_xml"
+      ],
+      "priority_by_matrix": "P4"
+    },
+    "MISSING_SUPPORT": {
+      "name": "Respaldo incompleto",
+      "description": "Movimiento con evidencia parcial sin respaldo completo verificable.",
+      "domain": "DOCUMENTAL",
+      "severity": "MEDIUM",
+      "owner": "CONTABILIDAD",
+      "required_action": "COMPLETAR_RESPALDO",
+      "sla_days": 7,
+      "evidence_required": [
+        "folio_xml",
+        "has_dte_link",
+        "document_match_v1"
+      ],
+      "priority_by_matrix": "P3"
+    },
+    "AMOUNT_MISMATCH": {
+      "name": "Diferencia de monto",
+      "description": "Discrepancia entre monto liquidado y monto registrado en Ledger.",
+      "domain": "FINANCIERO",
+      "severity": "HIGH",
+      "owner": "FINANZAS",
+      "required_action": "VALIDAR_MONTO_ORIGEN",
+      "sla_days": 3,
+      "evidence_required": [
+        "v_ledger_certified",
+        "01_Raw"
+      ],
+      "priority_by_matrix": "P2"
+    },
+    "DATE_MISMATCH": {
+      "name": "Desfase de fecha",
+      "description": "Discrepancia de fecha entre el movimiento y su respaldo documental.",
+      "domain": "FINANCIERO",
+      "severity": "HIGH",
+      "owner": "FINANZAS",
+      "required_action": "VALIDAR_FECHA_ORIGEN",
+      "sla_days": 3,
+      "evidence_required": [
+        "v_ledger_certified",
+        "01_Raw"
+      ],
+      "priority_by_matrix": "P2"
+    },
+    "CLASSIFICATION_CONFLICT": {
+      "name": "Conflicto de clasificación",
+      "description": "La clasificación financiera del Ledger difiere de la clasificación oficial.",
+      "domain": "FINANCIERO",
+      "severity": "MEDIUM",
+      "owner": "CONTABILIDAD",
+      "required_action": "REVISAR_CLASIFICACION",
+      "sla_days": 5,
+      "evidence_required": [
+        "v_ledger_certified",
+        "marketplace_ledger_clasificado_v1"
+      ],
+      "priority_by_matrix": "P3"
+    },
+    "RECONCILIATION_FAILED": {
+      "name": "Conciliación fallida",
+      "description": "La operación no logró un estado de conciliación exitoso.",
+      "domain": "FINANCIERO",
+      "severity": "HIGH",
+      "owner": "FINANZAS",
+      "required_action": "REVISAR_CONCILIACION",
+      "sla_days": 4,
+      "evidence_required": [
+        "reconciliation_status"
+      ],
+      "priority_by_matrix": "P2"
+    },
+    "SETTLEMENT_MISSING": {
+      "name": "Liquidación faltante",
+      "description": "Venta devengada sin liquidación de pagos registrada.",
+      "domain": "FINANCIERO",
+      "severity": "HIGH",
+      "owner": "TESORERIA",
+      "required_action": "GESTIONAR_LIQUIDACION",
+      "sla_days": 5,
+      "evidence_required": [
+        "settlement_report"
+      ],
+      "priority_by_matrix": "P2"
+    },
+    "PENDING_COLLECTION": {
+      "name": "Cobro pendiente",
+      "description": "Venta devengada aún no transferida por el marketplace.",
+      "domain": "FINANCIERO",
+      "severity": "MEDIUM",
+      "owner": "TESORERIA",
+      "required_action": "VALIDAR_PAGO_MARKETPLACE",
+      "sla_days": 5,
+      "evidence_required": [
+        "settlement_report"
+      ],
+      "priority_by_matrix": "P3"
+    },
+    "PENDING_PAYMENT": {
+      "name": "Pago pendiente",
+      "description": "Liquidación aprobada pendiente de abono bancario.",
+      "domain": "FINANCIERO",
+      "severity": "MEDIUM",
+      "owner": "TESORERIA",
+      "required_action": "VALIDAR_TRANSFERENCIA_BANCARIA",
+      "sla_days": 5,
+      "evidence_required": [
+        "bank_statement"
+      ],
+      "priority_by_matrix": "P3"
+    },
+    "SAP_MISMATCH": {
+      "name": "Movimiento sin espejo SAP",
+      "description": "Movimiento registrado en Marketplace sin registro espejo en ERP SAP.",
+      "domain": "FINANCIERO",
+      "severity": "HIGH",
+      "owner": "CONTABILIDAD",
+      "required_action": "CONCILIAR_CON_SAP",
+      "sla_days": 4,
+      "evidence_required": [
+        "sap_journal"
+      ],
+      "priority_by_matrix": "P2"
+    },
+    "MARKETPLACE_MISMATCH": {
+      "name": "Movimiento sin origen Marketplace",
+      "description": "Abono bancario o asiento sin registro de venta en Marketplace.",
+      "domain": "FINANCIERO",
+      "severity": "HIGH",
+      "owner": "ECOMMERCE",
+      "required_action": "VALIDAR_ORIGEN_MARKETPLACE",
+      "sla_days": 4,
+      "evidence_required": [
+        "marketplace_orders"
+      ],
+      "priority_by_matrix": "P2"
+    },
+    "UNMATCHED_TRANSACTION": {
+      "name": "Transacción sin match documental",
+      "description": "Transacción del Ledger sin match en document_match_v1.",
+      "domain": "OPERACIONAL",
+      "severity": "MEDIUM",
+      "owner": "TECNOLOGIA",
+      "required_action": "INVESTIGAR_MATCH",
+      "sla_days": 7,
+      "evidence_required": [
+        "document_match_v1"
+      ],
+      "priority_by_matrix": "P3"
+    },
+    "UNMATCHED_ORDER": {
+      "name": "Orden sin traza completa",
+      "description": "Orden de compra cuyos movimientos no presentan evidencia completa.",
+      "domain": "OPERACIONAL",
+      "severity": "MEDIUM",
+      "owner": "ECOMMERCE",
+      "required_action": "VALIDAR_TRAZA_ORDEN",
+      "sla_days": 7,
+      "evidence_required": [
+        "v_ledger_certified"
+      ],
+      "priority_by_matrix": "P3"
+    },
+    "MANUAL_REVIEW_REQUIRED": {
+      "name": "Revisión manual requerida",
+      "description": "Excepción compleja que requiere auditoría manual.",
+      "domain": "OPERACIONAL",
+      "severity": "HIGH",
+      "owner": "REVISION_MANUAL",
+      "required_action": "ESCALAR_REVISION_MANUAL",
+      "sla_days": 1,
+      "evidence_required": [
+        "audit_trail"
+      ],
+      "priority_by_matrix": "P2"
+    }
+  }
+}

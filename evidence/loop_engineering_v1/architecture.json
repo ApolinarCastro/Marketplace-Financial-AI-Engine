@@ -1,0 +1,56 @@
+{
+  "execution_id": "LOOP_ENG_V1_20260807T152945.116Z",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "branch": "phase5/production-readiness",
+  "timestamp": "2026-08-07T15:29:45.116Z",
+  "protocol_version": "1.0.0",
+  "repository": "Marketplace Financial AI Engine",
+  "package": "engine/loop_control",
+  "modules": [
+    "__init__.py",
+    "__main__.py",
+    "claim_manager.py",
+    "constants.py",
+    "evidence_manager.py",
+    "gate_manager.py",
+    "goal_manager.py",
+    "handoff_manager.py",
+    "kernel.py",
+    "quota_manager.py",
+    "recovery.py",
+    "scope.py",
+    "state_store.py",
+    "todo_manager.py",
+    "validation.py"
+  ],
+  "schemas": [
+    "claim.schema.json",
+    "evidence.schema.json",
+    "gate.schema.json",
+    "goal.schema.json",
+    "handoff.schema.json",
+    "quota.schema.json",
+    "run_event.schema.json",
+    "todo.schema.json"
+  ],
+  "adapters": [
+    "CODEX_ADAPTER.md",
+    "OPENCODE_ADAPTER.md"
+  ],
+  "control_plane_root": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\.loopx",
+  "control_plane_files": [
+    "active_goal.json",
+    "claims.json",
+    "evidence_index.json",
+    "gates.json",
+    "handoff.json",
+    "quota.json",
+    "registry.json",
+    "run_history.jsonl",
+    "todos.json"
+  ],
+  "contains_sql": false,
+  "contains_financial_logic": false,
+  "third_party_dependencies": [],
+  "verified_by": "tests/test_loop_control.py::test_kernel_contains_no_financial_logic"
+}

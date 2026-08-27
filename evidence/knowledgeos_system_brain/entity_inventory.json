@@ -1,0 +1,24 @@
+{
+  "entities": [
+    {
+      "entity_id": "execution:CAP-F2-001:EXEC-CAP-F2-001-20260727",
+      "entity_type": "Evidence",
+      "canonical_name": "ENTITY_CAP-F2-001_EXEC-CAP-F2-001-20260727",
+      "path": "knowledge\\03_Evidence\\ENTITY_CAP-F2-001_EXEC-CAP-F2-001-20260727.md",
+      "hash": "8416cb79ae9e85b251b6f0fb7d01e3503494c8fa6997479011b6a79a1849c3c8",
+      "cap_id": "CAP-F2-001",
+      "execution_id": "EXEC-CAP-F2-001-20260727",
+      "ingestion_timestamp": "2026-07-27T17:47:20"
+    },
+    {
+      "entity_id": "execution:CAP-TD-008:EXEC-CAP-TD-008-20260727",
+      "entity_type": "Evidence",
+      "canonical_name": "ENTITY_CAP-TD-008_EXEC-CAP-TD-008-20260727",
+      "path": "knowledge\\03_Evidence\\ENTITY_CAP-TD-008_EXEC-CAP-TD-008-20260727.md",
+      "hash": "8f715246ef9deb513b31c3b25583b266f45b2cee644b5640fde6771ccdec9ae3",
+      "cap_id": "CAP-TD-008",
+      "execution_id": "EXEC-CAP-TD-008-20260727",
+      "ingestion_timestamp": "2026-07-27T17:47:20"
+    }
+  ]
+}

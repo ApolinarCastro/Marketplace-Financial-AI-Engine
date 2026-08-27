@@ -1,0 +1,71 @@
+{
+  "execution_id": "424ecfc0-3c88-4919-aa2b-aa2028b342f4",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:56:03",
+  "harness_version": "1.0.0-r5-p0-ripley-seller-xml",
+  "repository": "Marketplace Financial AI Engine",
+  "marketplace": "RIPLEY",
+  "sources": {
+    "SELLER": {
+      "path": "01_Raw/RIPLEY/Fulfillment by Seller/*.xlsx",
+      "files": 51,
+      "rows": 18678,
+      "distinct_orders": 12543,
+      "key_columns": [
+        "Numero documento liquidacion",
+        "Orden de compra"
+      ],
+      "role": "settlement report to seller"
+    },
+    "CICLOS": {
+      "path": "01_Raw/RIPLEY/Ciclos de facturacion/*.csv (recovered from git 7a94360 to temp)",
+      "files": 52,
+      "rows": 20013,
+      "distinct_orders": 14121,
+      "key_columns": [
+        "Numero de factura",
+        "Order number"
+      ],
+      "role": "billing cycle: order -> settlement invoice"
+    },
+    "FF": {
+      "path": "01_Raw/RIPLEY/Fulfillment by Ripley/*.csv",
+      "files": 72,
+      "key_columns": [
+        "order_commercial_id",
+        "order_id"
+      ],
+      "role": "fulfillment order ids"
+    },
+    "TH": {
+      "path": "01_Raw/RIPLEY/Historial de transacciones/*.csv",
+      "files": 8,
+      "key_columns": [
+        "Numero de factura",
+        "Referencia del pedido del cliente"
+      ],
+      "role": "transaction history (invoice namespace)"
+    },
+    "XML_DTE": {
+      "path": "01_Raw/RIPLEY/Facturacion/*.xml",
+      "files": 472,
+      "distinct_folios": 472,
+      "folio_range": "25272 - 54087142",
+      "families": {
+        "dteproveedor": "455 (ECCSA->NANDA, folios 108927-54087142)",
+        "dtef_c33": "17 (NANDA->ECCSA, folios 25272-147261)"
+      },
+      "role": "SII fiscal DTE (supplier/marketplace-cost invoices)"
+    },
+    "LEDGER": {
+      "path": "marketplace_ledger_v1 (RIPLEY)",
+      "rows": 287417,
+      "distinct_orders": 14138,
+      "distinct_folio_xml": 104,
+      "folio_xml_range": "499799 - 602050",
+      "role": "official financial ledger"
+    }
+  },
+  "status": "PASS",
+  "verification": "VERIFIED"
+}

@@ -1,0 +1,19 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "rule_1": "dte_linked=1 ONLY with match_status IN (MATCHED_CERTIFIED, MATCHED_WITH_TOLERANCE)",
+  "rule_2": "AMBIGUOUS_MATCH never certified",
+  "rule_3": "tolerance = ABS(ledger - dte) <= 1 CLP",
+  "rule_4": "engine writes ONLY dte_certified_match_v1 and rebuilds read-model view",
+  "rule_5": "engine NEVER modifies ledger financial tables",
+  "statuses_used": {
+    "MATCHED_CERTIFIED": "authorized",
+    "MATCHED_WITH_TOLERANCE": "authorized",
+    "AMOUNT_MISMATCH": "excluded"
+  },
+  "verification": "VERIFIED",
+  "status": "PASS"
+}

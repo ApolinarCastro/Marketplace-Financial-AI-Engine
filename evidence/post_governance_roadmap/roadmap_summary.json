@@ -1,0 +1,11 @@
+{
+  "roadmap_id": "ROADMAP_POST_GOVERNANCE_V1",
+  "timestamp": "2026-07-28T09:43:42.052081",
+  "official_db_hash": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "stage_1_cleanup": "PASS",
+  "stage_2_check_xml": "PASS",
+  "stage_3_check_raw_xml": "PASS",
+  "stage_4_functional_roadmap": "READY_TO_EXECUTE",
+  "stage_5_user_value": "READY_TO_EXECUTE",
+  "final_verdict": "STAGES_1_2_3_PASSED"
+}

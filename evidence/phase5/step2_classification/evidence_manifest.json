@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-07-28T17:34:16.990190",
+  "module": "FINANCIAL_CLASSIFICATION_ENGINE",
+  "official_categories": [
+    "VENTA",
+    "COMISION",
+    "PUBLICIDAD",
+    "ENVIO",
+    "DEVOLUCION",
+    "BONIFICACION",
+    "AJUSTE",
+    "IMPUESTO",
+    "RETENCION",
+    "COMPENSACION",
+    "OTROS_CARGOS"
+  ],
+  "underlying_view": "v_ledger_certified",
+  "traceability": "100% deterministic rule trace for every transaction"
+}

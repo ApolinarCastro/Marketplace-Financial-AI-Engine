@@ -1,0 +1,12 @@
+{
+  "query_order": [
+    "KnowledgeOS",
+    "DualGraph",
+    "EvidenceRegistry",
+    "OfficialDB"
+  ],
+  "queries_tested": 10,
+  "unsupported_claims": 0,
+  "confidence_score": 1.0,
+  "status": "PASS"
+}

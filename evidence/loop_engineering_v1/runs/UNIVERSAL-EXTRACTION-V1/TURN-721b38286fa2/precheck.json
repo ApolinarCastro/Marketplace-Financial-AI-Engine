@@ -1,0 +1,44 @@
+{
+  "turn_id": "TURN-721b38286fa2",
+  "goal_id": "UNIVERSAL-EXTRACTION-V1",
+  "todo_id": "LOOP-09",
+  "agent_id": "OPENCODE_ENGINEER",
+  "protocol_version": "1.0.0",
+  "goal_status": "ACTIVE",
+  "todo_write_scope": [
+    "engine/loop_control/handoff.py"
+  ],
+  "validation_contract": [
+    "python -m pytest tests/test_universal_continuation.py -q"
+  ],
+  "lease_expires_at": "2026-08-07T21:35:10.668Z",
+  "hypothesis": null,
+  "open_gates": [],
+  "quota": {
+    "goal_id": "UNIVERSAL-EXTRACTION-V1",
+    "limits": {
+      "max_same_hypothesis_attempts": 3,
+      "max_no_progress_turns": 2,
+      "max_validation_failures": 3,
+      "max_scope_expansions": 0
+    },
+    "turns_consumed": 9,
+    "failed_turns": 0,
+    "no_progress_turns": 0,
+    "validation_failures": 0,
+    "scope_expansions": 0,
+    "hypothesis_attempts": {},
+    "spent_keys": [
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-5fc4a24d028f",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-77f4d02d76b6",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-8b3f2c1d9e7a",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-9c4e3f2a1b8d",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-a1b2c3d4e5f6",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-e22ee145fce5",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-f1e2d3c4b5a6",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-g1h2i3j4k5l6",
+      "quota:UNIVERSAL-EXTRACTION-V1:TURN-h2i3j4k5l6m7"
+    ]
+  },
+  "created_at": "2026-08-07T20:35:10.691Z"
+}

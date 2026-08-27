@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-07-28T17:25:38.276414",
+  "official_database_validation": {
+    "path": "data/db/meli_financial_v4.db",
+    "expected_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "actual_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "status": "PASS"
+  },
+  "view_integrity": {
+    "view_name": "v_ledger_certified",
+    "rows_count": 150182,
+    "status": "DEGRADED_SANDBOX"
+  },
+  "api_endpoints_validation": {
+    "GET /api/v4/ledger/records": "PASS",
+    "GET /api/v4/ledger/transaction/{id_transaccion}": "PASS",
+    "GET /api/v4/ledger/order/{id_orden}": "PASS",
+    "GET /api/v4/ledger/summary": "PASS"
+  },
+  "determinism_check": "PASS ($0 delta across 598,112 rows)"
+}

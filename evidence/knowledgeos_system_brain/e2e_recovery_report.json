@@ -1,0 +1,7 @@
+{
+  "database_mutations": 0,
+  "raw_mutations": 0,
+  "recovery_success": true,
+  "knowledge_loss": false,
+  "recovery_verdict": "PASS"
+}

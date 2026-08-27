@@ -1,0 +1,6 @@
+{
+  "runs": 3,
+  "determinism": "CONTROLLED_DB_REBUILD_IS_DETERMINISTIC",
+  "note": "All objects written only to controlled DB; reads against official DB are read-only. Re-running the generator yields identical map (52 NO_DTE_FOUND rows).",
+  "official_db_unchanged_across_runs": true
+}

@@ -1,0 +1,103 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "marketplace": "ML",
+  "folio_count": 15,
+  "folios": [
+    {
+      "folio": "10648593",
+      "monto_total": 16157793.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "10685467",
+      "monto_total": 13153288.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "10723408",
+      "monto_total": 25669999.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "10762179",
+      "monto_total": 15681185.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "13340496",
+      "monto_total": 8661970.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "13380337",
+      "monto_total": 12667298.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "13423549",
+      "monto_total": 14639674.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "6515063",
+      "monto_total": 11742906.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "8439620",
+      "monto_total": 6762873.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "8463012",
+      "monto_total": 19112430.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "8489518",
+      "monto_total": 19932406.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "8516578",
+      "monto_total": 25904401.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "9544707",
+      "monto_total": 21861480.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "9579511",
+      "monto_total": 15327832.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    },
+    {
+      "folio": "9613966",
+      "monto_total": 13518689.0,
+      "tipo_dte": "33",
+      "emisor_rut": "77398220-1"
+    }
+  ],
+  "verification": "VERIFIED",
+  "status": "PASS"
+}

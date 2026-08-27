@@ -1,0 +1,50 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "claim": "dte_linked=1 rows per marketplace after rebuild",
+  "view_counts_by_marketplace": [
+    {
+      "marketplace": "FALABELLA",
+      "view_rows": 1172,
+      "dte_linked": 1172
+    },
+    {
+      "marketplace": "ML",
+      "view_rows": 97609,
+      "dte_linked": 86898
+    },
+    {
+      "marketplace": "PARIS",
+      "view_rows": 170199,
+      "dte_linked": 5009
+    },
+    {
+      "marketplace": "RIPLEY",
+      "view_rows": 281476,
+      "dte_linked": 0
+    }
+  ],
+  "certified_rows_by_marketplace": [
+    {
+      "marketplace": "FALABELLA",
+      "rows": 113,
+      "folios": 5
+    },
+    {
+      "marketplace": "ML",
+      "rows": 86898,
+      "folios": 15
+    },
+    {
+      "marketplace": "PARIS",
+      "rows": 1915,
+      "folios": 18
+    }
+  ],
+  "total_dte_linked_rows": 93079,
+  "verification": "VERIFIED",
+  "status": "PASS"
+}

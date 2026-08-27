@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-07-28T16:43:17.395714",
+  "verdict": "PHASE_4_STRUCTURAL_CLEANUP_COMPLETE",
+  "official_database_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "official_database_intact": true,
+  "raw_layer_intact": true,
+  "files_moved_count": 81,
+  "bytes_moved": 180230388,
+  "mb_moved": 171.88,
+  "before_metrics": {
+    "total_files": 24169,
+    "total_dirs": 2223,
+    "total_bytes": 4181967666
+  },
+  "after_metrics": {
+    "total_files": 24169,
+    "total_dirs": 2230,
+    "total_bytes": 4181967666
+  },
+  "git_audit": {
+    "before_lines": 695,
+    "after_lines": 776
+  }
+}

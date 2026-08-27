@@ -1,0 +1,158 @@
+{
+  "evidence_id": "UNIVERSAL_LOOP_V1_DOMAIN_COUPLING",
+  "core_modules_scanned": 14,
+  "total_findings": 10,
+  "by_module": {
+    "engine/loop_control/__init__.py": 1,
+    "engine/loop_control/constants.py": 4,
+    "engine/loop_control/state_store.py": 1,
+    "engine/loop_control/kernel.py": 4,
+    "engine/loop_control/goal_manager.py": 0,
+    "engine/loop_control/todo_manager.py": 0,
+    "engine/loop_control/claim_manager.py": 0,
+    "engine/loop_control/gate_manager.py": 0,
+    "engine/loop_control/quota_manager.py": 0,
+    "engine/loop_control/evidence_manager.py": 0,
+    "engine/loop_control/handoff_manager.py": 0,
+    "engine/loop_control/recovery.py": 0,
+    "engine/loop_control/scope.py": 0,
+    "engine/loop_control/validation.py": 0
+  },
+  "by_pattern": {
+    "financial": 4,
+    "raw": 1,
+    "01[_-]?raw": 1,
+    "meli[_-]?financial": 1,
+    "dte": 1,
+    "classification": 1,
+    "reconciliation": 1
+  },
+  "detail": [
+    {
+      "module": "engine/loop_control/__init__.py",
+      "status": "SCANNED",
+      "findings": [
+        {
+          "line": 6,
+          "pattern": "financial",
+          "code": "This package contains NO financial logic and issues NO SQL. It coordinates"
+        }
+      ]
+    },
+    {
+      "module": "engine/loop_control/constants.py",
+      "status": "SCANNED",
+      "findings": [
+        {
+          "line": 107,
+          "pattern": "raw",
+          "code": "\"01_Raw/**\","
+        },
+        {
+          "line": 107,
+          "pattern": "01[_-]?raw",
+          "code": "\"01_Raw/**\","
+        },
+        {
+          "line": 108,
+          "pattern": "financial",
+          "code": "\"data/db/meli_financial_v4.db\","
+        },
+        {
+          "line": 108,
+          "pattern": "meli[_-]?financial",
+          "code": "\"data/db/meli_financial_v4.db\","
+        }
+      ]
+    },
+    {
+      "module": "engine/loop_control/state_store.py",
+      "status": "SCANNED",
+      "findings": [
+        {
+          "line": 7,
+          "pattern": "financial",
+          "code": "This module contains no financial logic and issues no SQL."
+        }
+      ]
+    },
+    {
+      "module": "engine/loop_control/kernel.py",
+      "status": "SCANNED",
+      "findings": [
+        {
+          "line": 6,
+          "pattern": "financial",
+          "code": "Explicit non-responsibilities: no financial logic, no DTE matching, no"
+        },
+        {
+          "line": 6,
+          "pattern": "dte",
+          "code": "Explicit non-responsibilities: no financial logic, no DTE matching, no"
+        },
+        {
+          "line": 7,
+          "pattern": "classification",
+          "code": "reconciliation, no classification, no Truth Engine, no Exception Engine, no SQL."
+        },
+        {
+          "line": 7,
+          "pattern": "reconciliation",
+          "code": "reconciliation, no classification, no Truth Engine, no Exception Engine, no SQL."
+        }
+      ]
+    },
+    {
+      "module": "engine/loop_control/goal_manager.py",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "module": "engine/loop_control/todo_manager.py",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "module": "engine/loop_control/claim_manager.py",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "module": "engine/loop_control/gate_manager.py",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "module": "engine/loop_control/quota_manager.py",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "module": "engine/loop_control/evidence_manager.py",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "module": "engine/loop_control/handoff_manager.py",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "module": "engine/loop_control/recovery.py",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "module": "engine/loop_control/scope.py",
+      "status": "SCANNED",
+      "findings": []
+    },
+    {
+      "module": "engine/loop_control/validation.py",
+      "status": "SCANNED",
+      "findings": []
+    }
+  ],
+  "gate_passed": false,
+  "generated_at": "2026-08-07T00:00:00Z"
+}

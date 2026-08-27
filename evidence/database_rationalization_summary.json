@@ -1,0 +1,194 @@
+{
+  "action": "CAP_DATABASE_RATIONALIZATION_001_PHASE_2",
+  "timestamp": "2026-07-28T13:10:57.985138",
+  "official_db_hash_before": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "official_db_hash_after": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "official_db_status": "MATCH (100% INTACT)",
+  "raw_files_before": 1414,
+  "raw_files_after": 1414,
+  "raw_mutations": 0,
+  "db_files_analyzed": 98,
+  "db_files_kept": 63,
+  "db_files_purged": 35,
+  "initial_repository_size_gb": 5.064,
+  "final_repository_size_gb": 3.894,
+  "space_recovered_mb": 1197.36,
+  "space_recovered_gb": 1.169,
+  "deleted_log": [
+    {
+      "path": "data/db/f5_02_temp.db",
+      "size_mb": 53.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/f5_03_temp.db",
+      "size_mb": 53.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/f5_04_temp.db",
+      "size_mb": 53.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/f5_05_temp.db",
+      "size_mb": 53.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_restored_validated_20260528/meli_financial_v4.db.backup.20260527_154224.bak",
+      "size_mb": 35.76,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.snapshot_20260622_111145",
+      "size_mb": 57.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.snapshot_20260623_115557",
+      "size_mb": 57.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.snapshot_af002_20260623_121855",
+      "size_mb": 57.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122024",
+      "size_mb": 57.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/meli_financial_v4.db.snapshot_af002_v2_20260623_122032",
+      "size_mb": 57.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db.bak",
+      "size_mb": 53.26,
+      "reason": "Duplicado exacto SHA-256 de snapshot (bcb19ab49a2d)"
+    },
+    {
+      "path": "data/db/baseline_estable_v7_20260715/meli_financial_v4.db.forensic_original",
+      "size_mb": 53.26,
+      "reason": "Duplicado exacto SHA-256 de snapshot (bcb19ab49a2d)"
+    },
+    {
+      "path": "data/db/tmp_debug/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/tmp_test_fe/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/tmp_test_check/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/tmp_cert_gate_debug/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/tmp_cert_gate_debug2/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_baseline_v2_20260528_154319/master_marketplace_dictionary_v1.json",
+      "size_mb": 0.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_baseline_v2_20260528_154708/master_marketplace_dictionary_v1.json",
+      "size_mb": 0.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_baseline_v5_20260529_094447/master_marketplace_dictionary_v1.json",
+      "size_mb": 0.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_baseline_v5_20260529_094539/master_marketplace_dictionary_v1.json",
+      "size_mb": 0.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_restored_validated_20260528/master_marketplace_dictionary_v1.json",
+      "size_mb": 0.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_pre_cierre_rebuild_20260528_163008/master_marketplace_dictionary_v1.json",
+      "size_mb": 0.01,
+      "reason": "Duplicado exacto SHA-256 de snapshot (b08fb7fa6c91)"
+    },
+    {
+      "path": "data/db/snapshot_baseline_v2_20260528_154319/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_baseline_v2_20260528_154708/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_baseline_v3_20260528_163525/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_baseline_v4_20260528_170822/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db",
+      "size_mb": 57.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_baseline_v5_20260529_094539/meli_financial_v4.db.wal",
+      "size_mb": 0.0,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/snapshot_restored_validated_20260528/meli_financial_v4.db",
+      "size_mb": 35.76,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "data/db/tmp_f4_investigate/meli_financial_v4.db",
+      "size_mb": 53.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "engine/v4/certification/knowledge/templates/marketplace_dashboard.md",
+      "size_mb": 0.0,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "tests/.tmp/paris_310ef9d785ff453383fbd902d70c3181/test_v4.db",
+      "size_mb": 1.26,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "tests/golden/copilot_marketplace_impact.json",
+      "size_mb": 0.01,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    },
+    {
+      "path": "_archive/scratch/test_marketplaces.py",
+      "size_mb": 0.0,
+      "reason": "Base de datos temporal de pruebas desactualizada"
+    }
+  ]
+}

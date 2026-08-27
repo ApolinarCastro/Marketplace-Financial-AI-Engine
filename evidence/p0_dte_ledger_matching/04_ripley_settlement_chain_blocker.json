@@ -1,0 +1,18 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "marketplace": "RIPLEY",
+  "strategy": "SETTLEMENT_CHAIN_V2",
+  "status": "PROVEN_BLOCKED",
+  "settlement_chain_rows": 287417,
+  "settlement_folios_with_folio": 167,
+  "dte_truth_folios": 407,
+  "blocked_reasons": [
+    "chain source files (SELLER/*.xlsx, Ciclos/*.csv) absent",
+    "folio namespaces incompatible (settlement=167 vs dte_truth=407, overlap=0)"
+  ],
+  "verification": "VERIFIED"
+}

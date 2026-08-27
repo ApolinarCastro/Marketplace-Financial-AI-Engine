@@ -1,0 +1,12 @@
+{
+  "database_hash_before": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "raw_inventory_count_before": 1349,
+  "git_branch": "integration/baseline-v8",
+  "git_commit": "d15e94e",
+  "worktree_clean": true,
+  "adr_governance_found": true,
+  "adr_knowledge_found": true,
+  "engine_found": true,
+  "evidence_framework_found": true,
+  "precheck_verdict": "PASS"
+}

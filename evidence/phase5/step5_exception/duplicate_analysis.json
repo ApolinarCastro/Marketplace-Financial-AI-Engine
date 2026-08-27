@@ -1,0 +1,15 @@
+{
+  "total_exceptions_detected": 598112,
+  "distinct_exception_ids": 409217,
+  "repeated_exception_ids": 188895,
+  "rows_with_multiple_primary": 0,
+  "primary_duplicates_per_record_gate": 0,
+  "repeated_semantics": "100% SAME transaction re-expressed across ledger rows (aggregation by design, per-transaction exception_id). 0 collisions across different transactions.",
+  "semantics_probe": {
+    "repeated_same_transaction_id": 188895,
+    "repeated_different_transaction_id": 0,
+    "collision_examples": []
+  },
+  "PRIMARY_EXCEPTION_DUPLICATES": 0,
+  "verdict": "PASS - max one primary exception per evaluated record (rows_with_multiple_primary=0). Repeated exception_ids are per-transaction aggregation, not row-level primary duplicates."
+}

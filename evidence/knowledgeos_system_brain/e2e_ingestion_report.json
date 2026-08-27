@@ -1,0 +1,12 @@
+{
+  "sources_processed": 5,
+  "entities_created": 3,
+  "source_hashes_missing": 0,
+  "canonical_ids_missing": 0,
+  "ingested_entities": [
+    "knowledge\\03_Evidence\\ENTITY_CAP-F2-001_EXEC-CAP-F2-001-20260727.md",
+    "knowledge\\03_Evidence\\ENTITY_CAP-UNKNOWN_EXEC-20260728.md",
+    "knowledge\\03_Evidence\\ENTITY_CAP-TD-008_EXEC-CAP-TD-008-20260727.md"
+  ],
+  "ingestion_verdict": "PASS"
+}

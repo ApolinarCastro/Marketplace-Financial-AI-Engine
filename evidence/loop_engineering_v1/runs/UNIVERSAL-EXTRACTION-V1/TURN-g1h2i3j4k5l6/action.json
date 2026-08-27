@@ -1,0 +1,13 @@
+{
+  "turn_id": "TURN-g1h2i3j4k5l6",
+  "todo_id": "LOOP-07",
+  "agent_id": "OPENCODE_ENGINEER",
+  "summary": "created universal adapter interface with base class + 3 implementations + 8 tests",
+  "files_changed": [
+    "engine/loop_control/adapter.py",
+    "engine/loop_control/adapters/UNIVERSAL_ADAPTER_INTERFACE.md",
+    "tests/test_universal_adapters.py"
+  ],
+  "hypothesis": null,
+  "created_at": "2026-08-07T20:30:29.943Z"
+}

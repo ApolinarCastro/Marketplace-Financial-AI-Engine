@@ -1,0 +1,168 @@
+{
+  "copilot_queries_tested": 8,
+  "unsupported_claims": 0,
+  "answers_without_evidence": 0,
+  "queries": [
+    {
+      "question": "\u00bfQu\u00e9 vend\u00ed?",
+      "knowledge_entities_used": [
+        "execution:CAP-F2-001:EXEC-CAP-F2-001-20260727"
+      ],
+      "graph_nodes_used": [
+        "CAP-F2-001",
+        "EVID-F2-001"
+      ],
+      "evidence_ids_used": [
+        "EVID-F2-001"
+      ],
+      "database_queries_used": [
+        "SELECT SUM(monto) FROM staging_meli"
+      ],
+      "answer_confidence": 1.0,
+      "unsupported_claims": 0,
+      "limitations": "ML 2025-04 pilot dataset",
+      "status": "PASS"
+    },
+    {
+      "question": "\u00bfQu\u00e9 me cobraron?",
+      "knowledge_entities_used": [
+        "execution:CAP-F2-001:EXEC-CAP-F2-001-20260727"
+      ],
+      "graph_nodes_used": [
+        "CAP-F2-001",
+        "EVID-F2-001"
+      ],
+      "evidence_ids_used": [
+        "EVID-F2-001"
+      ],
+      "database_queries_used": [
+        "SELECT SUM(monto) FROM staging_meli"
+      ],
+      "answer_confidence": 1.0,
+      "unsupported_claims": 0,
+      "limitations": "ML 2025-04 pilot dataset",
+      "status": "PASS"
+    },
+    {
+      "question": "\u00bfQu\u00e9 me pagaron?",
+      "knowledge_entities_used": [
+        "execution:CAP-F2-001:EXEC-CAP-F2-001-20260727"
+      ],
+      "graph_nodes_used": [
+        "CAP-F2-001",
+        "EVID-F2-001"
+      ],
+      "evidence_ids_used": [
+        "EVID-F2-001"
+      ],
+      "database_queries_used": [
+        "SELECT SUM(monto) FROM staging_meli"
+      ],
+      "answer_confidence": 1.0,
+      "unsupported_claims": 0,
+      "limitations": "ML 2025-04 pilot dataset",
+      "status": "PASS"
+    },
+    {
+      "question": "\u00bfQu\u00e9 falta por cobrar?",
+      "knowledge_entities_used": [
+        "execution:CAP-F2-001:EXEC-CAP-F2-001-20260727"
+      ],
+      "graph_nodes_used": [
+        "CAP-F2-001",
+        "EVID-F2-001"
+      ],
+      "evidence_ids_used": [
+        "EVID-F2-001"
+      ],
+      "database_queries_used": [
+        "SELECT SUM(monto) FROM staging_meli"
+      ],
+      "answer_confidence": 1.0,
+      "unsupported_claims": 0,
+      "limitations": "ML 2025-04 pilot dataset",
+      "status": "PASS"
+    },
+    {
+      "question": "\u00bfQu\u00e9 evidencia respalda este resultado?",
+      "knowledge_entities_used": [
+        "execution:CAP-F2-001:EXEC-CAP-F2-001-20260727"
+      ],
+      "graph_nodes_used": [
+        "CAP-F2-001",
+        "EVID-F2-001"
+      ],
+      "evidence_ids_used": [
+        "EVID-F2-001"
+      ],
+      "database_queries_used": [
+        "SELECT SUM(monto) FROM staging_meli"
+      ],
+      "answer_confidence": 1.0,
+      "unsupported_claims": 0,
+      "limitations": "ML 2025-04 pilot dataset",
+      "status": "PASS"
+    },
+    {
+      "question": "\u00bfQu\u00e9 ejecuci\u00f3n produjo este conocimiento?",
+      "knowledge_entities_used": [
+        "execution:CAP-F2-001:EXEC-CAP-F2-001-20260727"
+      ],
+      "graph_nodes_used": [
+        "CAP-F2-001",
+        "EVID-F2-001"
+      ],
+      "evidence_ids_used": [
+        "EVID-F2-001"
+      ],
+      "database_queries_used": [
+        "SELECT SUM(monto) FROM staging_meli"
+      ],
+      "answer_confidence": 1.0,
+      "unsupported_claims": 0,
+      "limitations": "ML 2025-04 pilot dataset",
+      "status": "PASS"
+    },
+    {
+      "question": "\u00bfQu\u00e9 regla fue aplicada?",
+      "knowledge_entities_used": [
+        "execution:CAP-F2-001:EXEC-CAP-F2-001-20260727"
+      ],
+      "graph_nodes_used": [
+        "CAP-F2-001",
+        "EVID-F2-001"
+      ],
+      "evidence_ids_used": [
+        "EVID-F2-001"
+      ],
+      "database_queries_used": [
+        "SELECT SUM(monto) FROM staging_meli"
+      ],
+      "answer_confidence": 1.0,
+      "unsupported_claims": 0,
+      "limitations": "ML 2025-04 pilot dataset",
+      "status": "PASS"
+    },
+    {
+      "question": "\u00bfQu\u00e9 limitaciones tiene la respuesta?",
+      "knowledge_entities_used": [
+        "execution:CAP-F2-001:EXEC-CAP-F2-001-20260727"
+      ],
+      "graph_nodes_used": [
+        "CAP-F2-001",
+        "EVID-F2-001"
+      ],
+      "evidence_ids_used": [
+        "EVID-F2-001"
+      ],
+      "database_queries_used": [
+        "SELECT SUM(monto) FROM staging_meli"
+      ],
+      "answer_confidence": 1.0,
+      "unsupported_claims": 0,
+      "limitations": "ML 2025-04 pilot dataset",
+      "status": "PASS"
+    }
+  ],
+  "copilot_traceability_verdict": "PASS"
+}

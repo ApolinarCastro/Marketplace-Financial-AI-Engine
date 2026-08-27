@@ -1,0 +1,24 @@
+{
+  "certification_id": "XML_DTE_CERTIFICATION_V1",
+  "timestamp": "2026-07-28T09:17:49.422797",
+  "total_xml_files": 971,
+  "valid_xml_files": 971,
+  "error_xml_files": 0,
+  "marketplace_breakdown": {
+    "SHOPIFY": 220,
+    "RIPLEY": 472,
+    "PARIS": 69,
+    "ML": 202,
+    "FALABELLA": 8
+  },
+  "dte_type_breakdown": {
+    "33": 425,
+    "61": 188,
+    "43": 287,
+    "56": 28,
+    "52": 43
+  },
+  "contract_ctr_003_status": "CERTIFIED",
+  "lineage_lin_003_status": "CERTIFIED",
+  "official_verdict": "XML_DTE_CERTIFIED"
+}

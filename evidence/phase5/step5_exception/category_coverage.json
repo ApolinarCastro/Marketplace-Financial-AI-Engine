@@ -1,0 +1,129 @@
+{
+  "catalog_size": 19,
+  "categories": {
+    "MISSING_DTE": {
+      "classification": "ACTIVE_WITH_CASES",
+      "reachable_in_code": true,
+      "cases": 111823,
+      "reason": "emitted in full corpus (cases > 0)"
+    },
+    "INSUFFICIENT_FISCAL_EVIDENCE": {
+      "classification": "ACTIVE_WITH_CASES",
+      "reachable_in_code": true,
+      "cases": 290493,
+      "reason": "emitted in full corpus (cases > 0)"
+    },
+    "TRUTH_CONFLICT": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": true,
+      "cases": 0,
+      "reason": "reachable in code but 0 cases in current corpus (data-dependent); MISSING_XML/MISSING_SUPPORT subsumed by higher-precedence categories"
+    },
+    "MISSING_XML": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": true,
+      "cases": 0,
+      "reason": "reachable in code but 0 cases in current corpus (data-dependent); MISSING_XML/MISSING_SUPPORT subsumed by higher-precedence categories"
+    },
+    "DOCUMENT_REFERENCE_ONLY": {
+      "classification": "ACTIVE_WITH_CASES",
+      "reachable_in_code": true,
+      "cases": 10949,
+      "reason": "emitted in full corpus (cases > 0)"
+    },
+    "LEDGER_REFERENCE_ONLY": {
+      "classification": "ACTIVE_WITH_CASES",
+      "reachable_in_code": true,
+      "cases": 184847,
+      "reason": "emitted in full corpus (cases > 0)"
+    },
+    "MISSING_SUPPORT": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": true,
+      "cases": 0,
+      "reason": "reachable in code but 0 cases in current corpus (data-dependent); MISSING_XML/MISSING_SUPPORT subsumed by higher-precedence categories"
+    },
+    "AMOUNT_MISMATCH": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    },
+    "DATE_MISMATCH": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    },
+    "CLASSIFICATION_CONFLICT": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    },
+    "RECONCILIATION_FAILED": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    },
+    "SETTLEMENT_MISSING": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    },
+    "PENDING_COLLECTION": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    },
+    "PENDING_PAYMENT": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    },
+    "SAP_MISMATCH": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    },
+    "MARKETPLACE_MISMATCH": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    },
+    "UNMATCHED_TRANSACTION": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": true,
+      "cases": 0,
+      "reason": "reachable in code but 0 cases in current corpus (data-dependent); MISSING_XML/MISSING_SUPPORT subsumed by higher-precedence categories"
+    },
+    "UNMATCHED_ORDER": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    },
+    "MANUAL_REVIEW_REQUIRED": {
+      "classification": "ACTIVE_ZERO_CASES",
+      "reachable_in_code": false,
+      "cases": 0,
+      "reason": "detection rule not wired: requires source data not present in corpus (settlement/bank/SAP/orders). Contract category for completeness + legacy mapping."
+    }
+  },
+  "UNREACHABLE": 0,
+  "BROKEN": 0,
+  "broken_categories": [],
+  "active_with_cases": [
+    "MISSING_DTE",
+    "INSUFFICIENT_FISCAL_EVIDENCE",
+    "DOCUMENT_REFERENCE_ONLY",
+    "LEDGER_REFERENCE_ONLY"
+  ],
+  "verdict": "PASS"
+}

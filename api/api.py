@@ -120,6 +120,18 @@ class DteCountResponse(BaseModel):
     count: int = Field(..., description="Cantidad de registros DTE en verdad tributaria")
 
 
+class CertificationStatusResponse(BaseModel):
+    marketplace: str = Field(..., description="Marketplace consultado")
+    period: str = Field(..., description="Período consultado")
+    overall_status: str = Field(..., description="Estado general de certificación: CERTIFIED, DEGRADED, FAILED")
+    pass_rate: float = Field(..., description="Porcentaje de claims PASS")
+    total_delta: float = Field(..., description="Delta total acumulado")
+    claims: list[dict] = Field(default_factory=list, description="Detalle de cada claim de certificación")
+    audit_execution_status: str = Field(..., description="Estado de ejecución de auditoría: COMPLETED, PENDING, FAILED")
+    dte_chain_type: str | None = Field(None, description="Tipo de cadena DTE: DIRECT_LINK, DOCUMENT_CHAIN, TRANSACTION_CHAIN, SETTLEMENT, NOT_RUN")
+    dte_status_per_mp: dict = Field(default_factory=dict, description="Estado DTE por marketplace")
+
+
 app = FastAPI(title="Marketplace Financial Auditor", version="3.5", description="Surgical Financial Truth Engine")
 
 # CORS and basic config
@@ -452,7 +464,6 @@ def get_financial_structure(marketplace: str = "ML", periodo: str | None = None)
         "period": periodo,
         "marketplace": marketplace,
         "neto": round(total_neto, 2),
-        "dashboard_state": {"estado": "CERTIFICADO" if categories else "SIN_DATOS"},
         "categories": categories
     }
 
@@ -581,6 +592,124 @@ def get_certification(marketplace: str = "ALL"):
     if marketplace == "ALL":
         return engine.get_all_certifications()
     return engine.get_certification(marketplace)
+
+
+@app.get("/api/v4/certification/status", response_model=CertificationStatusResponse)
+def get_certification_status(marketplace: str = "ALL", periodo: str | None = None):
+    """Get formal certification status from CertificationEngine.
+    
+    This is the SINGLE AUTHORITY for certification status.
+    Separates certification (overall_status) from audit execution (audit_execution_status).
+    """
+    validate_periodo(periodo)
+    from engine.v4.certification.certification_engine import CertificationEngine
+    from engine.v4.certification.document_certification import DocumentCertificationEngine
+    
+    cert_engine = CertificationEngine()
+    doc_engine = DocumentCertificationEngine()
+    
+    mp = marketplace.upper() if marketplace else "ALL"
+    period_label = periodo or "YTD"
+    
+    # Get formal certification
+    cert_result = cert_engine.certify(marketplace=mp, periodo=periodo)
+    
+    # Get DTE chain type per marketplace
+    dte_status = {}
+    dte_chain_type = None
+    if mp == "ALL":
+        all_certs = doc_engine.get_all_certifications()
+        for m in ["ML", "RIPLEY", "PARIS", "FALABELLA"]:
+            if m in all_certs:
+                dte_status[m] = {
+                    "estado_legal": all_certs[m].get("estado_legal"),
+                    "nivel_evidencia": all_certs[m].get("nivel_evidencia"),
+                    "cobertura": all_certs[m].get("cobertura"),
+                    "monto_elegible": all_certs[m].get("monto_elegible", 0)
+                }
+    else:
+        if mp == "RIPLEY":
+            ripley_cert = doc_engine._certify_ripley()
+            dte_status[mp] = {
+                "estado_legal": ripley_cert.get("estado_legal"),
+                "nivel_evidencia": ripley_cert.get("nivel_evidencia"),
+                "cobertura": ripley_cert.get("cobertura"),
+                "monto_elegible": ripley_cert.get("monto_elegible", 0)
+            }
+            dte_chain_type = "SETTLEMENT"
+        elif mp == "PARIS":
+            paris_cert = doc_engine._certify_paris()
+            dte_status[mp] = {
+                "estado_legal": paris_cert.get("estado_legal"),
+                "nivel_evidencia": paris_cert.get("nivel_evidencia"),
+                "cobertura": paris_cert.get("cobertura"),
+                "monto_elegible": paris_cert.get("monto_elegible", 0)
+            }
+            dte_chain_type = "DOCUMENT_CHAIN"
+        elif mp == "FALABELLA":
+            falabella_cert = doc_engine._certify_falabella_transaction_chain()
+            dte_status[mp] = {
+                "estado_legal": falabella_cert.get("estado_legal"),
+                "nivel_evidencia": falabella_cert.get("nivel_evidencia"),
+                "cobertura": falabella_cert.get("cobertura"),
+                "monto_elegible": falabella_cert.get("monto_elegible", 0)
+            }
+            dte_chain_type = "TRANSACTION_CHAIN"
+        else:
+            direct_cert = doc_engine._certify_direct(mp.lower())
+            dte_status[mp] = {
+                "estado_legal": direct_cert.get("estado_legal"),
+                "nivel_evidencia": direct_cert.get("nivel_evidencia"),
+                "cobertura": direct_cert.get("cobertura"),
+                "monto_elegible": direct_cert.get("monto_elegible", 0)
+            }
+            dte_chain_type = "DIRECT_LINK"
+    
+    # Determine DTE status: NOT_RUN if no XML coverage possible
+    for m in dte_status:
+        if dte_status[m].get("cobertura", 0) == 0 and dte_status[m].get("monto_elegible", 0) == 0:
+            dte_status[m]["estado_legal"] = "NOT_RUN"
+            dte_status[m]["nivel_evidencia"] = "NOT_RUN"
+    
+    # Audit execution status - check if audit has been run recently
+    db = DatabaseV4.get()
+    if mp != "ALL":
+        audit_check = db.query(
+            "SELECT COUNT(*) as cnt, MAX(detected_at) as last_audit FROM marketplace_auditoria_v1 WHERE marketplace = ?",
+            [mp.lower()]
+        )
+    else:
+        audit_check = db.query(
+            "SELECT COUNT(*) as cnt, MAX(detected_at) as last_audit FROM marketplace_auditoria_v1"
+        )
+    audit_count = int(audit_check.iloc[0]["cnt"]) if not audit_check.empty else 0
+    last_audit = str(audit_check.iloc[0]["last_audit"]) if not audit_check.empty and pd.notna(audit_check.iloc[0]["last_audit"]) else None
+    audit_execution_status = "COMPLETED" if audit_count > 0 else "PENDING"
+    
+    # Build claims list
+    claims_list = []
+    for claim in cert_result.claims:
+        claims_list.append({
+            "kpi": claim.kpi,
+            "description": claim.description,
+            "delta": claim.delta,
+            "status": claim.status,
+            "evidence_sql": claim.evidence_sql,
+            "record_count": claim.record_count,
+            "impact_amount": claim.impact_amount
+        })
+    
+    return {
+        "marketplace": mp,
+        "period": period_label,
+        "overall_status": cert_result.status,
+        "pass_rate": cert_result.pass_rate,
+        "total_delta": cert_result.total_delta,
+        "claims": claims_list,
+        "audit_execution_status": audit_execution_status,
+        "dte_chain_type": dte_chain_type,
+        "dte_status_per_mp": dte_status
+    }
 
 @app.get("/api/v4/dte/document-gap")
 def get_document_gaps(marketplace: str = None, limit: int = 500):

@@ -1,0 +1,69 @@
+{
+  "cap_id": "CAP-TD-008",
+  "technical_debt_id": "TD-008",
+  "timestamp": "2026-07-27T19:19:00Z",
+  "execution_id": "EXEC-CAP-TD-008-20260727",
+  "git_commit": "2d51f52",
+  "harness_version": "1.0.0",
+  "status": "PASS",
+  "certification_status": "CERTIFIED",
+  "problem_description": "Absence of a canonical, reproducible, and auditable RAW files indexing and integrity registry across 01_Raw subdirectories.",
+  "root_cause": "RAW files under 01_Raw were scanned on-demand by loaders without a unified, deterministic registry providing streaming SHA-256 computation, relative path normalization, duplicate detection, and idempotency guarantees.",
+  "strategy": "Implemented engine/v4/ingestion/raw_file_indexer.py providing RawFileIndexer for deterministic RAW file discovery, streaming SHA-256 calculation, multiplatform relative path normalization, duplicate content detection, idempotency verification, and Dual Graph integration without mutating RAW files or DuckDB.",
+  "root_dir": "01_Raw",
+  "dry_run": true,
+  "total_files": 1349,
+  "valid_files": 1343,
+  "empty_files": 0,
+  "unsupported_files": 6,
+  "duplicates": {
+    "DUPLICATE_CONTENT": 202,
+    "NOT_DUPLICATE": 1147
+  },
+  "marketplaces": {
+    "FALABELLA": 15,
+    "ML": 341,
+    "PARIS": 91,
+    "RIPLEY": 659,
+    "SHOPIFY": 243
+  },
+  "extensions": {
+    ".xml": 971,
+    ".xlsx": 237,
+    ".csv": 134,
+    ".dat": 3,
+    ".md": 2,
+    ".py": 1,
+    ".json": 1
+  },
+  "periods": {
+    "UNKNOWN": 1233,
+    "2025-01": 8, "2025-02": 6, "2025-03": 7, "2025-04": 6, "2025-05": 6, "2025-06": 7,
+    "2025-07": 6, "2025-08": 6, "2025-09": 6, "2025-10": 6, "2025-11": 8, "2025-12": 6,
+    "2026-01": 6, "2026-02": 6, "2026-03": 7, "2026-04": 6, "2026-05": 6, "2026-06": 7
+  },
+  "idempotency_verification": {
+    "run1_files": 1349,
+    "run2_files": 1349,
+    "new_files": 0,
+    "changed_files": 0,
+    "missing_files": 0,
+    "status": "PASS"
+  },
+  "raw_mutations": 0,
+  "modified_files": [
+    "engine/v4/ingestion/raw_file_indexer.py",
+    "tools/index_raw_files.py",
+    "tests/test_raw_file_indexer.py",
+    "engine/v4/knowledge/dual_graph.py"
+  ],
+  "test_results": {
+    "total_tests": 922,
+    "passed": 910,
+    "failed": 0,
+    "skipped": 12
+  },
+  "sha256_official_db": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "financial_delta": "$0",
+  "rollback_strategy": "rm -f engine/v4/ingestion/raw_file_indexer.py tools/index_raw_files.py tests/test_raw_file_indexer.py"
+}

@@ -1,0 +1,11 @@
+{
+  "turn_id": "TURN-a1b2c3d4e5f6",
+  "todo_id": "LOOP-04",
+  "agent_id": "OPENCODE_ENGINEER",
+  "summary": "created ProjectPolicy ABC + Marketplace/Synthetic implementations",
+  "files_changed": [
+    "engine/loop_control/policy.py"
+  ],
+  "hypothesis": null,
+  "created_at": "2026-08-07T16:10:53.476Z"
+}

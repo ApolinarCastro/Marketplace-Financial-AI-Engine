@@ -1,0 +1,80 @@
+{
+  "execution_id": "phase5-loop2-decision-20260818",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-18",
+  "harness_version": "1.0.0-r5-phase5-loop2",
+  "repository": "Marketplace Financial AI Engine",
+  "branch": "phase5/production-readiness",
+  "mission": "LOOP ENGINEERING — PHASE 5 / NEXT FUNCTIONAL CAPABILITY",
+  "precedence_applied": [
+    "1_canonical_roadmap_explicit: F5-09 Electronic Tax Traceability Certification is explicitly reserved in FINAL_ARCHITECTURE_SIGN_OFF.md:167 and EXECUTIVE_CLOSURE_STATEMENT.md:80 as the next independent line of work",
+    "2_dependency_of_step5: Exception Engine (Step 5, certified) catalog MISSING_DTE requires VALIDAR_DTE_SII (evidence: dte_folio, dte_truth_v1, has_dte_link) and INSUFFICIENT_FISCAL_EVIDENCE requires (folio_xml, dte_truth_v1, document_match_v1) — the DTE->Ledger certified linkage is the missing resolution layer",
+    "3_incomplete_code: engine/v4/matching/dte_ledger_matcher.py is complete and certified VALIDATED (evidence/p0_dte_ledger_matching) but ORPHANED — 0 API endpoints, 0 tests, 0 callers",
+    "4_api_contract_without_engine: existing /api/v4/dte/* endpoints exist but NONE expose the certified matcher; /api/v4/dte/coverage returns hardcoded static values (87.5/92.1/100/95)",
+    "5_demonstrable_functional_need: official DB dte_ledger_link view reports dte_linked=0 for ALL marketplaces (ML 97,609/PARIS 168,727/RIPLEY 281,476 rows with 0 linked) — traceability is broken at read-model level"
+  ],
+  "completed_steps": [
+    "Step 1 Unified Transaction Ledger",
+    "Step 2 Financial Classification Engine",
+    "Step 3 Financial Truth Engine",
+    "Step 4 Reconciliation Engine",
+    "Step 5 Exception Engine",
+    "F5-03 Operational Reliability",
+    "F5-04 Performance & Scalability",
+    "F5-05 Recovery & Rollback",
+    "F5-06 Production Hardening (baseline certified)",
+    "F5-07 Executive Acceptance (baseline certified)",
+    "F5-08 Production Certification (PRODUCTION_BASELINE_CERTIFIED)"
+  ],
+  "selected_next_step": "F5-09 ELECTRONIC TAX TRACEABILITY — activate the certified-but-orphaned DTELedgerMatcher as a read-only API capability (GET /api/v4/dte/traceability) with automated tests, reusing engine/v4/matching/dte_ledger_matcher.py",
+  "reason": "F5-09 is the explicit canonical next roadmap line; its implementation already exists and is certified VALIDATED for ML/PARIS/FALABELLA (93,079 linked rows, evidence/p0_dte_ledger_matching) but is completely orphaned (no API, no tests, no callers) while the official DB read-model (dte_ledger_link) reports dte_linked=0 for all marketplaces. Activating it delivers a real functional capability (certified DTE traceability per transaction) with minimal code, zero financial-logic changes, and RIPLEY honestly reported as BLOCKED (no false fiscal inference). This is the highest-priority, lowest-risk, evidence-backed next functional component.",
+  "evidence": [
+    "governance/FINAL_ARCHITECTURE_SIGN_OFF.md:167-169",
+    "governance/EXECUTIVE_CLOSURE_STATEMENT.md:80-82",
+    "evidence/p0_dte_ledger_matching/16_verdict.json (PARTIAL_WITH_PROVEN_BLOCKER, ML/PARIS/FALABELLA certified)",
+    "evidence/p0_dte_ledger_matching/05_dte_ledger_link_view_rebuild.json (view rebuild + dte_linked logic)",
+    "evidence/p0_dte_ledger_matching/06_ledger_integrity_certification.json (ledger NEVER mutated)",
+    "evidence/p0_dte_ledger_matching/09_dte_linked_coverage.json (93,079 total dte_linked rows)",
+    "evidence/p0_dte_ledger_matching/14_official_db_immutability.json (official DB READ_ONLY, SHA 311c78e2...)",
+    "evidence/p0_dte_ledger_matching/15_matching_rules_certification.json (rules: certified statuses only)",
+    "evidence/phase5/step5_exception/exception_contract.json (MISSING_DTE + INSUFFICIENT_FISCAL_EVIDENCE dependency)",
+    "evidence/phase5/next_step_discovery.json (LOOP 1 discovery)",
+    "readonly verification run: ML 15 certified, PARIS 1,915, FALABELLA 113, RIPLEY BLOCKED overlap=0 (reproduced on official DB, no persistence)"
+  ],
+  "dependencies": {
+    "requires_prior_steps": ["Step 1 Ledger", "Step 4 Reconciliation (document_match_v1)", "dte_truth_v1 ingestion (DTEIndexer output)", "DEC-036 DTEIndexer heuristic limitation accepted"],
+    "unblocked_by": "matcher inputs exist in official DB: dte_truth_v1 (ML 192/PARIS 62/FALABELLA 6/RIPLEY 407), document_match_v1 (PARIS 9,431), dte_link_v1 (all 4 MPs), ripley_settlement_chain",
+    "blocker_ripley": "SETTLEMENT_CHAIN_V2 structurally impossible — source files absent + folio namespace overlap=0 — to be reported honestly, not faked"
+  },
+  "existing_components_reused": [
+    "engine/v4/matching/dte_ledger_matcher.py — DTELedgerMatcher (full reuse, read-only mode)",
+    "dte_truth_v1, document_match_v1, dte_link_v1, ripley_settlement_chain tables (read-only)",
+    "marketplace_ledger_v1, marketplace_ledger_clasificado_v1 (read-only)",
+    "01_Raw/Falabella/Órdenes y Transacciones/*.xlsx bridge (read-only load)",
+    "evidence/p0_dte_ledger_matching certification baseline"
+  ],
+  "new_components_required": [
+    "GET /api/v4/dte/traceability — thin read-only API route delegating to DTELedgerMatcher (no persistence, no financial logic)",
+    "tests/test_dte_traceability_route.py — API contract tests",
+    "evidence/phase5/step6_or_next/ — LOOP 17 evidence bundle"
+  ],
+  "scope": {
+    "in_scope": [
+      "Read-only API endpoint exposing certified DTE->Ledger traceability per marketplace",
+      "Per-marketplace summary: strategy, status, folios, rows_eligible, rows_linked, match statuses",
+      "Transaction-level traceability lookup (folio -> ledger transactions or id_transaccion -> DTE)",
+      "Automated unit + API + integration tests",
+      "Evidence bundle reproducing certification"
+    ],
+    "out_of_scope": [
+      "Persisting dte_certified_match_v1 / rebuilding dte_ledger_link view on official DB (official DB stays immutable)",
+      "Modifying financial_engine.py, ledger, ETL, cierre, classification, DEC-019",
+      "Creating a new matching engine (reuse existing certified one)",
+      "Faking RIPLEY traceability (stays BLOCKED)",
+      "F5-10 DTEIndexer and F5-11 Tax Compliance (downstream, future)",
+      "Frontend changes (no client-side financial logic)"
+    ]
+  },
+  "financial_impact": "NONE — read-only; financial delta $0.00; official DB SHA unchanged; ledger never mutated",
+  "decision_verdict": "SELECTED_WITH_PROVEN_EVIDENCE"
+}

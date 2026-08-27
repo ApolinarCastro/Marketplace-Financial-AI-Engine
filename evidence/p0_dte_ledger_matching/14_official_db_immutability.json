@@ -1,0 +1,14 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "claim": "official data/db/meli_financial_v4.db untouched",
+  "official_db_path": "data/db/meli_financial_v4.db",
+  "access_mode": "READ_ONLY",
+  "sha256_verified_precheck": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "raw_sources_touched": false,
+  "verification": "VERIFIED",
+  "status": "PASS"
+}

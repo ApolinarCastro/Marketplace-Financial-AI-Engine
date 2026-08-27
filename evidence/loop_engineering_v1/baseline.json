@@ -1,0 +1,72 @@
+{
+  "evidence_id": "LOOP_ENG_V1_BASELINE",
+  "captured_at": "2026-08-07T00:00:00Z",
+  "capture_method": "real_execution",
+  "git": {
+    "branch": "phase5/production-readiness",
+    "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+    "status_short_total_lines": 819,
+    "status_deleted_01_raw_entries": 179,
+    "status_other_entries": 636,
+    "note": "Working tree has 819 pending entries, overwhelmingly ' D ' (deleted-in-worktree) markdown/report artifacts and 01_Raw index entries. The 01_Raw deletions correspond to files tracked in git that are not present on disk under those exact tracked paths. No mutation performed by this mission."
+  },
+  "official_db": {
+    "path": "data/db/meli_financial_v4.db",
+    "sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "size_bytes": 58732544,
+    "expected_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "classification": "BASELINE_UNCHANGED"
+  },
+  "raw": {
+    "path": "01_Raw",
+    "file_count_on_disk": 1313,
+    "top_level_dirs": ["FALABELLA", "ML", "PARIS", "RIPLEY", "SHOPIFY"],
+    "ripley_file_count": 623,
+    "mutation_policy": "READ_ONLY"
+  },
+  "python": {
+    "interpreter": ".venv\\Scripts\\python.exe",
+    "version": "3.14.2"
+  },
+  "test_baseline": {
+    "command": ".venv\\Scripts\\python.exe -m pytest tests -q -p no:cacheprovider --tb=no",
+    "collected": 1005,
+    "passed": 981,
+    "failed": 12,
+    "skipped": 12,
+    "duration_seconds": 475.86,
+    "failed_nodeids": [
+      "tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_all_questions_have_golden_files",
+      "tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[marketplace_impact]",
+      "tests/test_copilot_golden.py::TestGoldenFilesExist::test_golden_file_exists[marketplace_impact]",
+      "tests/test_copilot_golden.py::TestGoldenFilesExist::test_golden_has_expected_keys[marketplace_impact]",
+      "tests/test_copilot_golden.py::TestGoldenFilesExist::test_golden_answer_has_summary[marketplace_impact]",
+      "tests/test_copilot_golden.py::TestGoldenFilesExist::test_golden_explanation_has_text[marketplace_impact]",
+      "tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[marketplace_impact]",
+      "tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[marketplace_impact]",
+      "tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_no_nan_in_golden[marketplace_impact]",
+      "tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_all_questions_have_different_qid",
+      "tests/test_f5_05_idempotency_regression.py::test_completed_never_overwrites_metadata",
+      "tests/test_ripley_path_resolution.py::test_ff_fulfillment_csv"
+    ],
+    "classification": "PRE_EXISTING"
+  },
+  "control_plane_preexistence": {
+    ".loopx": false,
+    ".codex": true,
+    ".agents": true,
+    "engine/loop_control": false,
+    "governance/coordination": true,
+    "execution_board.json": false
+  },
+  "existing_coordination_layer": {
+    "root": "governance/coordination",
+    "verifier": "tools/verify_coordination_interface.py",
+    "verifier_status": "FAIL",
+    "verifier_failure": "missing required paths: ['execution_board.json']",
+    "verifier_failure_classification": "PRE_EXISTING",
+    "verifier_test_suite": "tests/test_coordination_interface.py",
+    "verifier_test_result": "13 passed",
+    "note": "The repo-level verifier already fails before this mission because execution_board.json is deleted in the worktree. Its unit tests pass because they operate on synthetic tmp repos."
+  }
+}

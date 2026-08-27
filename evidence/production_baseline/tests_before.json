@@ -1,0 +1,18 @@
+{
+  "loop": 0,
+  "command": ".venv/Scripts/python.exe -m pytest tests -q --tb=no",
+  "passed": 1031,
+  "failed": 39,
+  "skipped": 12,
+  "duration_sec": 460,
+  "failure_groups": {
+    "test_loop_control.py": 22,
+    "test_copilot_golden.py": 9,
+    "test_copilot_benchmarks.py": 2,
+    "test_ripley_path_resolution.py": 3,
+    "test_ripley_seller_xml_matching.py": 2,
+    "test_f5_05_idempotency_regression.py": 1,
+    "test_universal_continuation.py": 1
+  },
+  "note": "LOOP 0 baseline. Falls pre-existentes a comparar en LOOP 10."
+}

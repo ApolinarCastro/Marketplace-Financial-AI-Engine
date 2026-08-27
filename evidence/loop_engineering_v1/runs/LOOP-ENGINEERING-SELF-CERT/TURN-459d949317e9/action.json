@@ -1,0 +1,9 @@
+{
+  "turn_id": "TURN-459d949317e9",
+  "todo_id": "TODO-001",
+  "agent_id": "OPENCODE_ENGINEER",
+  "summary": "ran the Loop Control certification suite",
+  "files_changed": [],
+  "hypothesis": "kernel-suite-green",
+  "created_at": "2026-08-07T15:29:34.404Z"
+}

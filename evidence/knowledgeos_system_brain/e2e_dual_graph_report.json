@@ -1,0 +1,8 @@
+{
+  "knowledge_nodes_count": 71,
+  "execution_nodes_count": 9,
+  "cross_graph_links": 69,
+  "unresolved_graph_links": 0,
+  "orphan_nodes": 0,
+  "dual_graph_verdict": "PASS"
+}

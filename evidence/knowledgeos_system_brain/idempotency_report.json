@@ -1,0 +1,9 @@
+{
+  "test_name": "IDEMPOTENCY_VERIFICATION",
+  "status": "PASS",
+  "run_1_entities": 2,
+  "run_2_entities": 2,
+  "new_entities_on_rerun": 0,
+  "new_relations_on_rerun": 0,
+  "duplicate_entities": 0
+}

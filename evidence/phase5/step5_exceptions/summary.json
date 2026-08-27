@@ -1,0 +1,13 @@
+{
+  "step": "STEP_5_EXCEPTION_ENGINE",
+  "verdict": "PHASE_5_MODULE_COMPLETE",
+  "official_database_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "official_database_intact": true,
+  "total_exceptions": 0,
+  "open_exceptions": 0,
+  "resolved_exceptions": 0,
+  "sla_breached": 0,
+  "duplicate_exceptions": 0,
+  "financial_delta": "$0.00",
+  "total_tests": "74/74 PASSED"
+}

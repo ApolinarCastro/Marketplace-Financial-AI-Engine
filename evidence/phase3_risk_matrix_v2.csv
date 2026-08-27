@@ -1,0 +1,9 @@
+component,risk_level,action,rationale
+.venv/,ALTO,MAINTAIN,Entorno virtual Python activo (476.16 MB). Reconstruible pero se mantiene por ahora.
+.git/,ALTO,MAINTAIN_READONLY,Historial de Git (593.9 MB). No ejecutar git filter-repo en esta fase.
+01_Raw/,CRÍTICO,MAINTAIN_IMMUTABLE,"Datos de origen inmutables (758.7 MB, 1414 archivos). RAW_MUTATIONS = 0."
+data/db/meli_financial_v4.db,CRÍTICO,MAINTAIN_IMMUTABLE,Base de Datos Oficial en Producción (131.37 MB). SHA-256 311c78e2b747... intacta.
+Reporte_Marketplaces/,MEDIO,REVIEW_BEFORE_TOUCH,Contiene 80 reportes Excel legacy (237.9 MB). Posee referencias activas en documentación y scripts.
+_archive/,BAJO,REORGANIZE_CONSOLIDATE,Resguardos históricos (303.1 MB). Se puede consolidar sin tocar la base oficial.
+scratch/,BAJO,PURGE_TEMPORARY_SCRIPTS,Scripts temporales de auditoría pasados. Riesgo cero.
+root markdown/json files,BAJO,RELOCATE_TO_GOVERNANCE_EVIDENCE,"Ya soplados en Fase 1, mantener raíz limpia (6 archivos indispensables)."

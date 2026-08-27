@@ -1,0 +1,44 @@
+{
+  "cap_id": "CAP-TD-007",
+  "technical_debt_id": "TD-007",
+  "timestamp": "2026-07-27T19:10:00Z",
+  "execution_id": "EXEC-CAP-TD-007-20260727",
+  "git_commit": "2d51f52",
+  "harness_version": "1.0.0",
+  "status": "PASS",
+  "certification_status": "CERTIFIED",
+  "problem_description": "Absence of an executable, deterministic Dual Graph representation connecting Knowledge Graph nodes and Execution Graph nodes without graph databases.",
+  "root_cause": "The Dual Graph architecture was previously specified purely in Markdown (DUAL_GRAPH_ARCHITECTURE_MODEL_V1.md) without an in-memory, deterministic Python engine to traverse cross-graph relationships.",
+  "strategy": "Implemented engine/v4/knowledge/dual_graph.py providing DualGraphRegistry for Knowledge and Execution graph nodes, cross-graph bridge relationships, path traversal, orphan node detection, and cycle detection without external graph databases.",
+  "nodos_implementados": [
+    "DOC-001", "DOC-002", "DOC-003", "DOC-004", "DOC-005", "DOC-006", "DOC-007", "DOC-008", "DOC-009", "DOC-010",
+    "CTR-001", "CTR-002", "CTR-003", "CTR-004", "CTR-005", "CTR-006", "CTR-007", "CTR-008", "CTR-009", "CTR-010", "CTR-011",
+    "CAP-TD-001", "CAP-TD-002", "CAP-TD-003", "CAP-TD-004", "CAP-TD-005", "CAP-TD-006", "CAP-TD-007",
+    "EVID-TD-001", "EVID-TD-002", "EVID-TD-003", "EVID-TD-004", "EVID-TD-005", "EVID-TD-006", "EVID-TD-007",
+    "Q-001", "Q-002", "Q-003", "Q-004", "Q-005", "Q-006", "Q-007", "Q-008", "Q-009", "Q-010",
+    "TD-001", "TD-002", "TD-003", "TD-004", "TD-005", "TD-006", "TD-007",
+    "LIN-001", "LIN-002", "LIN-003", "LIN-004", "LIN-005", "LIN-006", "LIN-007", "LIN-008", "LIN-009", "LIN-010", "LIN-011", "LIN-012",
+    "PMO-F1-01", "MAT-001",
+    "EXEC_API_COPILOT", "EXEC_COPILOT_ENGINE", "EXEC_FINANCIAL_ENGINE", "EXEC_SURGICAL_LOADER", "EXEC_DUCKDB_MAIN", "EXEC_VALIDATE_HARNESS", "EXEC_DUAL_GRAPH_ENGINE", "EXEC_PYTEST_SUITE"
+  ],
+  "relaciones_implementadas": [
+    "RESPONDIDA_POR", "IMPLEMENTADA_POR", "USA", "CONSUME", "CUMPLE", "EVIDENCIADA_POR", "CERTIFICA", "RESUELVE", "PRODUCE", "VALIDA", "PERTENECE_A", "DOCUMENTA", "TRANSFORMA", "SOPORTA"
+  ],
+  "nodos_huerfanos": [],
+  "ciclos_encontrados": [],
+  "modified_files": [
+    "engine/v4/knowledge/dual_graph.py",
+    "tests/test_dual_graph.py",
+    "knowledge/indexes/DUAL_GRAPH_INDEX.md"
+  ],
+  "test_results": {
+    "total_tests": 913,
+    "passed": 901,
+    "failed": 0,
+    "skipped": 12,
+    "duration_seconds": 165.40
+  },
+  "sha256_official_db": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "financial_delta": "$0",
+  "rollback_strategy": "rm -f engine/v4/knowledge/dual_graph.py tests/test_dual_graph.py knowledge/indexes/DUAL_GRAPH_INDEX.md"
+}

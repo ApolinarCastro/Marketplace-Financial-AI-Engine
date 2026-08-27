@@ -1,0 +1,29 @@
+{
+  "database": {
+    "path": "data/db/meli_financial_v4.db",
+    "sha256_baseline": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+    "sha256_current": "311C78E2B7471B3E227DF68D17115F7147D9315FEC0C3D6D9CACE9FF73DEFDB9",
+    "sha_unchanged": true,
+    "read_only_via_engine": {
+      "exception_engine_persists": false,
+      "method": "source inspection: run_full_corpus/_detect_for_row/build_exceptions_catalog contain no INSERT/UPDATE/DELETE/CREATE; engine is pure read-only over v_ledger_certified/dte_truth_v1/document_match_v1."
+    }
+  },
+  "raw_files": {
+    "root": "01_Raw",
+    "count_on_disk": 1313,
+    "baseline_count": 1313,
+    "count_unchanged": true
+  },
+  "support_tables_read_only": {
+    "dte_truth_v1_count": 667,
+    "document_match_v1_count": 9431,
+    "v_ledger_certified_count": 598112
+  },
+  "security": {
+    "sql_injection_guard": "ExceptionEngine uses parameterized queries exclusively (db.query with params list); no string interpolation of user input into SQL.",
+    "no_secrets_in_code": "source inspection: no credentials/tokens in exception_engine.py or api.py exception endpoints.",
+    "read_only_endpoints": "GET /api/v4/exceptions/*, POST /evaluate, POST /rebuild are deterministic recomputations with no DB mutation."
+  },
+  "verdict": "PASS"
+}

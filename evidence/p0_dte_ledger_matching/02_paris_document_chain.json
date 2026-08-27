@@ -1,0 +1,105 @@
+{
+  "execution_id": "d29d5bfb-657d-4578-b93b-2047fe75faa6",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:06:02",
+  "harness_version": "1.0.0-r5-p0-dte-ledger-matching",
+  "repository": "Marketplace Financial AI Engine",
+  "marketplace": "PARIS",
+  "strategy": "DOCUMENT_CHAIN",
+  "source": "document_match_v1 MATCHED -> dte_truth_v1 folio join",
+  "certified_folios": 18,
+  "certified_folios_detail": [
+    {
+      "folio": "23983370",
+      "monto_total": 1125162.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "24712148",
+      "monto_total": 197312.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "24716109",
+      "monto_total": 626718.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "25275304",
+      "monto_total": 3210070.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "25277506",
+      "monto_total": 1467352.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "25560385",
+      "monto_total": 6284235.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "25562889",
+      "monto_total": 921366.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "25565042",
+      "monto_total": 2183485.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "25567085",
+      "monto_total": 517554.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "25878367",
+      "monto_total": 1725236.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "25880829",
+      "monto_total": 199252.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "26198375",
+      "monto_total": 2768466.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "26201483",
+      "monto_total": 144140.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "26634277",
+      "monto_total": 4192576.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "26637431",
+      "monto_total": 785333.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "26657831",
+      "monto_total": 3223238.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "26660920",
+      "monto_total": 173302.0,
+      "tipo_dte": "33"
+    },
+    {
+      "folio": "26663860",
+      "monto_total": 125676.0,
+      "tipo_dte": "33"
+    }
+  ],
+  "verification": "VERIFIED",
+  "status": "PASS"
+}

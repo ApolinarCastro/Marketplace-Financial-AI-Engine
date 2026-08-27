@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-07-28T17:44:06.110459",
+  "module": "FINANCIAL_TRUTH_ENGINE",
+  "single_financial_truth": "ACTIVE",
+  "underlying_layers": [
+    "v_ledger_certified",
+    "marketplace_ledger_clasificado_v1",
+    "FinancialClassificationEngine",
+    "dte_ledger_link"
+  ],
+  "guarantee": "0 ad-hoc queries, 100% truth queries resolved via canonical engine"
+}

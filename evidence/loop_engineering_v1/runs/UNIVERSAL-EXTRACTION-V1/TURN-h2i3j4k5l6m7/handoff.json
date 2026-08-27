@@ -1,0 +1,50 @@
+{
+  "continuation_record": {
+    "from_agent": "CODEX_ENGINEER",
+    "to_agent": "OPENCODE_ENGINEER",
+    "goal_id": "UNIVERSAL-EXTRACTION-V1",
+    "completed": [
+      "LOOP-00",
+      "LOOP-01",
+      "LOOP-02",
+      "LOOP-03",
+      "LOOP-04",
+      "LOOP-05",
+      "LOOP-06",
+      "LOOP-07",
+      "LOOP-08"
+    ],
+    "current_state": "turn TURN-h2i3j4k5l6m7 ended with VALIDATED_COMPLETION: verified peer agent model with 5 agents, no permanent leader, authority from goal+claim+policy+gate",
+    "evidence": [
+      "evidence/loop_engineering_v1/runs/UNIVERSAL-EXTRACTION-V1/TURN-h2i3j4k5l6m7/validation.json",
+      "evidence/loop_engineering_v1/runs/UNIVERSAL-EXTRACTION-V1/TURN-h2i3j4k5l6m7/action.json",
+      "evidence/loop_engineering_v1/runs/UNIVERSAL-EXTRACTION-V1/TURN-h2i3j4k5l6m7/tests.json",
+      "evidence/loop_engineering_v1/runs/UNIVERSAL-EXTRACTION-V1/TURN-h2i3j4k5l6m7/diff.json"
+    ],
+    "blockers": [],
+    "files_changed": [
+      "engine/loop_control/state_store.py",
+      "tests/test_universal_agents.py"
+    ],
+    "tests": [
+      "suite",
+      "passed",
+      "failed"
+    ],
+    "next_todo": "LOOP-09",
+    "allowed_scope": [
+      "engine/loop_control/handoff.py"
+    ],
+    "forbidden_scope": [
+      "01_Raw/**",
+      "data/db/meli_financial_v4.db",
+      ".git/**",
+      ".agents/**",
+      "governance/coordination/**",
+      "engine/v4/domain/**"
+    ],
+    "created_at": "2026-08-07T20:35:01.405Z",
+    "turn_id": "TURN-h2i3j4k5l6m7",
+    "idempotency_key": "handoff:UNIVERSAL-EXTRACTION-V1:TURN-h2i3j4k5l6m7"
+  }
+}

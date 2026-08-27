@@ -1,0 +1,4 @@
+﻿source,status,evidence,disk_checked
+transaction-logs.csv,LOGS_NOT_FOUND,0 files matching transaction-logs*/bitacora*/billing-cycle* in disk AND git history (git log --all),"01_Raw/RIPLEY, uploads, data, _archive, evidence, 01_Raw"
+Ciclos de facturación/*.csv,RECOVERED_FROM_GIT_7a94360,"52 files ADDED in commit 7a94360, deleted from working tree (D), recovered to temp ripley_ciclos",
+Historial de transacciones/*.csv,EXISTS_ON_DISK,8 files on disk; Número de factura in field 6 (0000005xxxxx),

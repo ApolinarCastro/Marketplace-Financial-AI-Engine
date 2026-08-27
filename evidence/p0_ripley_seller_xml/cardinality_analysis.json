@@ -1,0 +1,50 @@
+{
+  "execution_id": "424ecfc0-3c88-4919-aa2b-aa2028b342f4",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "timestamp": "2026-08-06T12:56:03",
+  "harness_version": "1.0.0-r5-p0-ripley-seller-xml",
+  "repository": "Marketplace Financial AI Engine",
+  "marketplace": "RIPLEY",
+  "cardinality": {
+    "SELLER": {
+      "files": 51,
+      "rows": 18678,
+      "orders": 12543,
+      "refs": 51
+    },
+    "CICLOS": {
+      "files": 52,
+      "rows": 20013,
+      "orders": 14121,
+      "invoices": 52
+    },
+    "XML_DTE": {
+      "files": 472,
+      "folios": 472
+    },
+    "dte_truth_v1": {
+      "RIPLEY folios": 407
+    },
+    "LEDGER": {
+      "rows": 287417,
+      "orders": 14138,
+      "folio_xml": 104
+    },
+    "ripley_traceability_graph": {
+      "rows": 287417
+    },
+    "ripley_settlement_chain": {
+      "rows": 287417,
+      "has_folio": 281476,
+      "distinct_folios": 167
+    },
+    "dte_link_v1": {
+      "RIPLEY rows": 210232,
+      "cert_type": "all LEDGER_EXISTING",
+      "tipo_dte": "None"
+    }
+  },
+  "chain_ratio": "52 settlement invoices cover 287417 ledger rows (one settlement doc per billing cycle)",
+  "status": "CONFIRMED",
+  "verification": "VERIFIED"
+}

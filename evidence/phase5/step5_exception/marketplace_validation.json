@@ -1,0 +1,25 @@
+{
+  "per_marketplace": {
+    "FALABELLA": {
+      "ledger_rows": 3076,
+      "records_with_exception": 3076,
+      "coverage_pct": 100.0
+    },
+    "ML": {
+      "ledger_rows": 109799,
+      "records_with_exception": 109799,
+      "coverage_pct": 100.0
+    },
+    "PARIS": {
+      "ledger_rows": 197820,
+      "records_with_exception": 197820,
+      "coverage_pct": 100.0
+    },
+    "RIPLEY": {
+      "ledger_rows": 287417,
+      "records_with_exception": 287417,
+      "coverage_pct": 100.0
+    }
+  },
+  "verdict": "PASS"
+}

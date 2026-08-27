@@ -1,0 +1,17 @@
+{
+  "focused_exception_suites": {
+    "tests/test_exception_engine.py": "PASS",
+    "tests/test_exception_api_endpoints.py": "PASS",
+    "tests/test_reconciliation_engine.py": "PASS",
+    "combined": "25/25 PASS"
+  },
+  "full_suite": {
+    "passed": 981,
+    "failed": 12,
+    "skipped": 12,
+    "total": 1005
+  },
+  "failed_reconciled_preexisting": 12,
+  "step5_regressions": 0,
+  "verdict": "PASS"
+}

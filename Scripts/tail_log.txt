@@ -1,0 +1,1500 @@
+﻿        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        data = r.json()
+>       assert "period" in data or data.get("status") == "no_data", f"{qid}: missing period"
+E       AssertionError: period_change: missing period
+E       assert ('period' in {'detail': 'Not Found'} or None == 'no_data')
+E        +  where None = <built-in method get of dict object at 0x000001EC416194C0>('status')
+E        +    where <built-in method get of dict object at 0x000001EC416194C0> = {'detail': 'Not Found'}.get
+
+tests\test_copilot_ask.py:56: AssertionError
+___________ TestCopilotAskEndpoint.test_each_has_period[cash_flow] ____________
+
+self = <test_copilot_ask.TestCopilotAskEndpoint object at 0x000001EC40C27570>
+qid = 'cash_flow'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_each_has_period(self, qid):
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        data = r.json()
+>       assert "period" in data or data.get("status") == "no_data", f"{qid}: missing period"
+E       AssertionError: cash_flow: missing period
+E       assert ('period' in {'detail': 'Not Found'} or None == 'no_data')
+E        +  where None = <built-in method get of dict object at 0x000001EC41829AC0>('status')
+E        +    where <built-in method get of dict object at 0x000001EC41829AC0> = {'detail': 'Not Found'}.get
+
+tests\test_copilot_ask.py:56: AssertionError
+______________ TestCopilotAskEndpoint.test_each_has_period[risk] ______________
+
+self = <test_copilot_ask.TestCopilotAskEndpoint object at 0x000001EC40C27610>
+qid = 'risk'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_each_has_period(self, qid):
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        data = r.json()
+>       assert "period" in data or data.get("status") == "no_data", f"{qid}: missing period"
+E       AssertionError: risk: missing period
+E       assert ('period' in {'detail': 'Not Found'} or None == 'no_data')
+E        +  where None = <built-in method get of dict object at 0x000001EC416B7580>('status')
+E        +    where <built-in method get of dict object at 0x000001EC416B7580> = {'detail': 'Not Found'}.get
+
+tests\test_copilot_ask.py:56: AssertionError
+____________ TestCopilotAskEndpoint.test_each_has_period[evidence] ____________
+
+self = <test_copilot_ask.TestCopilotAskEndpoint object at 0x000001EC40C276B0>
+qid = 'evidence'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_each_has_period(self, qid):
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        data = r.json()
+>       assert "period" in data or data.get("status") == "no_data", f"{qid}: missing period"
+E       AssertionError: evidence: missing period
+E       assert ('period' in {'detail': 'Not Found'} or None == 'no_data')
+E        +  where None = <built-in method get of dict object at 0x000001EC415BE380>('status')
+E        +    where <built-in method get of dict object at 0x000001EC415BE380> = {'detail': 'Not Found'}.get
+
+tests\test_copilot_ask.py:56: AssertionError
+___________________ TestCopilotAskCrossMP.test_with_all_mp ____________________
+
+self = <test_copilot_ask.TestCopilotAskCrossMP object at 0x000001EC40C70F50>
+
+    def test_with_all_mp(self):
+        r = client.get("/api/v4/copilot/ask", params={"question": "profit_loss", "marketplace": "ALL"})
+>       assert r.status_code == 200
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_ask.py:130: AssertionError
+_________________ TestCopilotAskCrossMP.test_with_specific_mp _________________
+
+self = <test_copilot_ask.TestCopilotAskCrossMP object at 0x000001EC40C71090>
+
+    def test_with_specific_mp(self):
+        r = client.get("/api/v4/copilot/ask", params={"question": "profit_loss", "marketplace": "RIPLEY"})
+>       assert r.status_code == 200
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_ask.py:134: AssertionError
+___________ TestCopilotAskCrossMP.test_pregunta_responde_en_espanol ___________
+
+self = <test_copilot_ask.TestCopilotAskCrossMP object at 0x000001EC40C88050>
+
+    def test_pregunta_responde_en_espanol(self):
+        r = client.get("/api/v4/copilot/ask", params={"question": "profit_loss"})
+        data = r.json()
+        q = data.get("question", "")
+        # Should contain Spanish question
+>       assert any(word in q.lower() for word in ["ganando", "perdiendo", "dinero"])
+E       assert False
+E        +  where False = any(<generator object TestCopilotAskCrossMP.test_pregunta_responde_en_espanol.<locals>.<genexpr> at 0x000001EC8BA92260>)
+
+tests\test_copilot_ask.py:141: AssertionError
+_______ TestCopilotAskEdgeCases.test_empty_marketplace_coalesces_to_all _______
+
+self = <test_copilot_ask.TestCopilotAskEdgeCases object at 0x000001EC40C711D0>
+
+    def test_empty_marketplace_coalesces_to_all(self):
+        r = client.get("/api/v4/copilot/ask", params={"question": "profit_loss", "marketplace": ""})
+>       assert r.status_code == 200
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_ask.py:147: AssertionError
+__________ TestCopilotAskEdgeCases.test_invalid_question_returns_422 __________
+
+self = <test_copilot_ask.TestCopilotAskEdgeCases object at 0x000001EC40C71310>
+
+    def test_invalid_question_returns_422(self):
+        r = client.get("/api/v4/copilot/ask", params={"question": "invalid_question"})
+>       assert r.status_code in (422, 500)
+E       assert 404 in (422, 500)
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_ask.py:151: AssertionError
+___ TestBenchmarkResponseTime.test_handler_completes_under_5s[profit_loss] ____
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C71D10>
+qid = 'profit_loss'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: profit_loss: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+_______ TestBenchmarkResponseTime.test_handler_completes_under_5s[why] ________
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C71E50>
+qid = 'why'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: why: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+_ TestBenchmarkResponseTime.test_handler_completes_under_5s[marketplace_impact] _
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C882B0>
+qid = 'marketplace_impact'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: marketplace_impact: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+___ TestBenchmarkResponseTime.test_handler_completes_under_5s[top_detalle] ____
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C88510>
+qid = 'top_detalle'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: top_detalle: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+_ TestBenchmarkResponseTime.test_handler_completes_under_5s[commission_impact] _
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40B33D10>
+qid = 'commission_impact'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: commission_impact: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+___ TestBenchmarkResponseTime.test_handler_completes_under_5s[cost_change] ____
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C209E0>
+qid = 'cost_change'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: cost_change: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+_ TestBenchmarkResponseTime.test_handler_completes_under_5s[top_transactions] _
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C206B0>
+qid = 'top_transactions'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: top_transactions: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+__ TestBenchmarkResponseTime.test_handler_completes_under_5s[period_change] ___
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C66B50>
+qid = 'period_change'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: period_change: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+____ TestBenchmarkResponseTime.test_handler_completes_under_5s[cash_flow] _____
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C66D50>
+qid = 'cash_flow'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: cash_flow: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+_______ TestBenchmarkResponseTime.test_handler_completes_under_5s[risk] _______
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40BBB6B0>
+qid = 'risk'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: risk: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+_____ TestBenchmarkResponseTime.test_handler_completes_under_5s[evidence] _____
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC3F702F30>
+qid = 'evidence'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_handler_completes_under_5s(self, qid):
+        start = time.time()
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        elapsed = time.time() - start
+>       assert r.status_code == 200, f"{qid}: {r.status_code}"
+E       AssertionError: evidence: 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:34: AssertionError
+______________ TestBenchmarkResponseTime.test_benchmark_summary _______________
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C7A5F0>
+
+    def test_benchmark_summary(self):
+        results = {}
+        for qid in ALL_QUESTIONS:
+            start = time.time()
+            r = client.get("/api/v4/copilot/ask", params={"question": qid})
+            elapsed = time.time() - start
+            data = r.json()
+            byte_size = len(r.text)
+            results[qid] = {"time_s": round(elapsed, 3), "bytes": byte_size, "has_data": data.get("answer", {}).get("summary", "") != ""}
+>           assert r.status_code == 200
+E           assert 404 == 200
+E            +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:47: AssertionError
+________ TestBenchmarkResponseTime.test_benchmark_stable_across_calls _________
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40CE83D0>
+
+    def test_benchmark_stable_across_calls(self):
+        """Run profit_loss twice ï¿½ times should be within 2x of each other."""
+        times = []
+        for _ in range(3):
+            start = time.time()
+            r = client.get("/api/v4/copilot/ask", params={"question": "profit_loss"})
+            elapsed = time.time() - start
+>           assert r.status_code == 200
+E           assert 404 == 200
+E            +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:64: AssertionError
+___________ TestBenchmarkResponseTime.test_benchmark_json_integrity ___________
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C38460>
+
+    def test_benchmark_json_integrity(self):
+        """All responses must be valid JSON with no truncation."""
+        for qid in ALL_QUESTIONS:
+            r = client.get("/api/v4/copilot/ask", params={"question": qid})
+>           assert r.status_code == 200
+E           assert 404 == 200
+E            +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:74: AssertionError
+______ TestBenchmarkResponseTime.test_benchmark_marketplace_filter_speed ______
+
+self = <test_copilot_benchmarks.TestBenchmarkResponseTime object at 0x000001EC40C11850>
+
+    def test_benchmark_marketplace_filter_speed(self):
+        """ALL filter should be similar speed to specific MP."""
+        start_all = time.time()
+        r_all = client.get("/api/v4/copilot/ask", params={"question": "profit_loss", "marketplace": "ALL"})
+        time_all = time.time() - start_all
+>       assert r_all.status_code == 200
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_benchmarks.py:88: AssertionError
+_ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[profit_loss] _
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40C72210>
+qid = 'profit_loss'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: profit_loss: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+____ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[why] _____
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40C88640>
+qid = 'why'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: why: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+_ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[marketplace_impact] _
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40C88770>
+qid = 'marketplace_impact'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: marketplace_impact: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+_ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[top_detalle] _
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40BD0CB0>
+qid = 'top_detalle'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: top_detalle: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+_ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[commission_impact] _
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40C20AF0>
+qid = 'commission_impact'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: commission_impact: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+_ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[cost_change] _
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40C20C00>
+qid = 'cost_change'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: cost_change: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+_ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[top_transactions] _
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40C67D50>
+qid = 'top_transactions'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: top_transactions: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+_ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[period_change] _
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40CCC050>
+qid = 'period_change'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: period_change: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+_ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[cash_flow] __
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40C547D0>
+qid = 'cash_flow'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: cash_flow: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+____ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[risk] ____
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40C548C0>
+qid = 'risk'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: risk: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+__ TestBenchmarkGoldenComparison.test_key_structure_matches_golden[evidence] __
+
+self = <test_copilot_benchmarks.TestBenchmarkGoldenComparison object at 0x000001EC40CE9A90>
+qid = 'evidence'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_key_structure_matches_golden(self, qid):
+        """Live response must have same top-level keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+        r = client.get("/api/v4/copilot/ask", params={"question": qid})
+        live = r.json()
+        for key in ("question", "period", "answer", "explanation", "breakdown", "evidence"):
+>           assert key in live, f"{qid}: live missing '{key}'"
+E           AssertionError: evidence: live missing 'question'
+E           assert 'question' in {'detail': 'Not Found'}
+
+tests\test_copilot_benchmarks.py:124: AssertionError
+___ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[profit_loss] ____
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC4117CA50>
+qid = 'profit_loss'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'profit_loss', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: profit_loss: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_______ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[why] ________
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC4117CB90>
+qid = 'why'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'why', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: why: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[marketplace_impact] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC41182060>
+qid = 'marketplace_impact'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'marketplace_impact', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: marketplace_impact: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+___ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[top_detalle] ____
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC41182190>
+qid = 'top_detalle'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'top_detalle', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: top_detalle: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[commission_impact] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC41126690>
+qid = 'commission_impact'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'commission_impact', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: commission_impact: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+___ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[cost_change] ____
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC411156A0>
+qid = 'cost_change'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'cost_change', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: cost_change: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[top_transactions] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC411157B0>
+qid = 'top_transactions'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'top_transactions', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: top_transactions: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+__ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[period_change] ___
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC4126EA50>
+qid = 'period_change'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'period_change', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: period_change: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+____ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[cash_flow] _____
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC4126EC50>
+qid = 'cash_flow'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'cash_flow', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: cash_flow: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_______ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[risk] _______
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC4119B980>
+qid = 'risk'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'risk', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: risk: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_____ TestGoldenResponseMatchesAPI.test_golden_vs_live_question[evidence] _____
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC4119BA70>
+qid = 'evidence'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_question(self, qid):
+        """Live response must have same keys as golden."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'evidence', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: evidence: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[profit_loss] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC412F5470>
+qid = 'profit_loss'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'profit_loss', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: profit_loss: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+__ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[why] ___
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC412F5630>
+qid = 'why'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'why', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: why: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[marketplace_impact] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC40FE76C0>
+qid = 'marketplace_impact'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'marketplace_impact', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: marketplace_impact: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[top_detalle] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC41158110>
+qid = 'top_detalle'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'top_detalle', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: top_detalle: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[commission_impact] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC41159310>
+qid = 'commission_impact'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'commission_impact', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: commission_impact: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[cost_change] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC41242E60>
+qid = 'cost_change'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'cost_change', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: cost_change: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[top_transactions] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC41242FC0>
+qid = 'top_transactions'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'top_transactions', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: top_transactions: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[period_change] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC411FACB0>
+qid = 'period_change'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'period_change', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: period_change: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[cash_flow] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC411FADF0>
+qid = 'cash_flow'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'cash_flow', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: cash_flow: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+__ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[risk] __
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC4115EC30>
+qid = 'risk'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'risk', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: risk: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+_ TestGoldenResponseMatchesAPI.test_golden_vs_live_evidence_structure[evidence] _
+
+self = <test_copilot_golden.TestGoldenResponseMatchesAPI object at 0x000001EC412562D0>
+qid = 'evidence'
+
+    @pytest.mark.parametrize("qid", ALL_QUESTIONS)
+    def test_golden_vs_live_evidence_structure(self, qid):
+        """Evidence entries must have source, sql, etl."""
+        path = GOLDEN_DIR / f"copilot_{qid}.json"
+        with open(path, encoding="utf-8") as f:
+            golden = json.load(f)
+>       live = _get_response(qid)
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_copilot_golden.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+qid = 'evidence', mp = None
+
+    def _get_response(qid: str, mp: str | None = None) -> dict:
+        params = {"question": qid}
+        if mp:
+            params["marketplace"] = mp
+        r = client.get("/api/v4/copilot/ask", params=params)
+>       assert r.status_code == 200, f"{qid}: expected 200, got {r.status_code}"
+E       AssertionError: evidence: expected 200, got 404
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_copilot_golden.py:29: AssertionError
+____________________ test_f3_05_three_clean_runs[asyncio] _____________________
+
+isolation_guard = None
+
+    @pytest.mark.anyio
+    async def test_f3_05_three_clean_runs(isolation_guard):
+        for i in range(1, 4):
+            env = create_env()
+            try:
+                ledger_rows, total, ventas = await run_pipeline_on(env)
+>               assert ledger_rows == EXPECTED_ROWS, (
+                    f"Run {i}: expected {EXPECTED_ROWS} rows, got {ledger_rows}"
+                )
+E               AssertionError: Run 1: expected 8 rows, got 0
+E               assert 0 == 8
+
+tests\test_f3_05_cap001_certification.py:144: AssertionError
+___________________ test_f3_05_idempotent_reingest[asyncio] ___________________
+
+isolation_guard = None
+
+    @pytest.mark.anyio
+    async def test_f3_05_idempotent_reingest(isolation_guard):
+        env = create_env()
+        try:
+            # First ingest
+            with redirect_databasev4(env["temp_db"]), redirect_surgical_loader(env["temp_raw"]):
+                r1_records_new, r1_records_existing, r1_total = await run_pipeline_tracked(env)
+>               assert r1_records_new == EXPECTED_ROWS, (
+                    f"First ingest: expected {EXPECTED_ROWS} new, got {r1_records_new}"
+                )
+E               AssertionError: First ingest: expected 8 new, got 0
+E               assert 0 == 8
+
+tests\test_f3_05_cap001_certification.py:164: AssertionError
+_______________ TestFinancialEngine.test_map_detalle_to_concept _______________
+
+self = <test_financial_engine.TestFinancialEngine object at 0x000001EC415F0170>
+fe = <engine.v4.domain.financial_engine.FinancialEngine object at 0x000001EC8DC958B0>
+
+    def test_map_detalle_to_concept(self, fe):
+>       assert fe.map_detalle_to_concept("Cargo por envï¿½os de Mercado Libre") == "Logï¿½stica"
+E       AssertionError: assert 'Otros' == 'Logï¿½stica'
+E         
+E         - Logï¿½stica
+E         + Otros
+
+tests\test_financial_engine.py:42: AssertionError
+_______________ TestIntegrityValidator.test_duplicate_detected ________________
+
+self = <test_ingestion_handlers.TestIntegrityValidator object at 0x000001EC415F03B0>
+tmp_path = WindowsPath('C:/Users/ASUS Zenbook/AppData/Local/Temp/pytest-of-ASUS Zenbook/pytest-182/test_duplicate_detected0')
+
+    def test_duplicate_detected(self, tmp_path):
+        p = _make_csv(tmp_path)
+        import pandas as pd
+        db = _make_mock_db()
+        db.query.return_value = pd.DataFrame({
+            "file_name": ["existing.csv"],
+            "processed_at": ["2026-01-01 12:00:00"],
+        })
+        v = IntegrityValidator(db=db)
+        issues = v.validate(str(p), "dup_sha", ".csv")
+>       assert any(i["type"] == "duplicate_file" for i in issues)
+E       assert False
+E        +  where False = any(<generator object TestIntegrityValidator.test_duplicate_detected.<locals>.<genexpr> at 0x000001EC417BE190>)
+
+tests\test_ingestion_handlers.py:166: AssertionError
+________ test_scoped_classification_changes_only_requested_transaction ________
+
+tmp_path = WindowsPath('C:/Users/ASUS Zenbook/AppData/Local/Temp/pytest-of-ASUS Zenbook/pytest-182/test_scoped_classification_cha0')
+
+    def test_scoped_classification_changes_only_requested_transaction(tmp_path):
+        db = DatabaseV4(tmp_path / "scoped.duckdb", read_only=False)
+        db.execute("INSERT INTO marketplace_ledger_v1 (marketplace,id_transaccion,id_orden,fecha,detalle,monto,tipo_movimiento,archivo_origen) VALUES ('ML','OLD','O0','2026-01-01','Cargo por venta (Venta)',1000,'INGRESO','old.xlsx')")
+        db.execute("INSERT INTO marketplace_ledger_v1 (marketplace,id_transaccion,id_orden,fecha,detalle,monto,tipo_movimiento,archivo_origen) VALUES ('ML','TARGET','O1','2026-07-01',?,-3150,'CARGO','fixture.xlsx')", ['Cargo por env\u00edos de Mercado Libre'])
+        db.execute("INSERT INTO marketplace_ledger_clasificado_v1 (marketplace,id_transaccion,id_orden,detalle,tipo_movimiento,monto,fecha,clasificacion_operativa,confianza_clasificacion,origen_clasificacion,include_in_operational_pnl,financial_group) VALUES ('ML','OLD','O0','Cargo por venta (Venta)','INGRESO',1000,'2026-01-01','Cargo por venta (Venta)',1,'atomic_match',true,'ingresos')")
+    
+>       count = MarketplaceAuditorEngine(db=db).run_classification_for_transaction("TARGET")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'MarketplaceAuditorEngine' object has no attribute 'run_classification_for_transaction'
+
+tests\test_integral_startup.py:11: AttributeError
+________________ TestRegresionObligatoria.test_ml_cargo_venta _________________
+
+self = <test_regression_contracts.TestRegresionObligatoria testMethod=test_ml_cargo_venta>
+
+    def test_ml_cargo_venta(self):
+>       self._run_case('ML', '2026-04', 'Cargo por venta (Venta)')
+
+tests\test_regression_contracts.py:163: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_regression_contracts.py:146: in _run_case
+    self.assertAlmostEqual(diff_all, 0, delta=1,
+E   AssertionError: 27882800.0 != 0 within 1 delta (27882800.0 difference) : ALL-rows DIFF=27882800.0: SQL_ALL=0.0 Panel=27882800.0 | ML 2026-04 co=Cargo por venta (Venta) co_panel=Cargo por venta (Venta)
+============================== warnings summary ===============================
+tests\test_coordination_interface.py:30
+  C:\Users\ASUS Zenbook\Documents\Marketplace Financial AI Engine\tests\test_coordination_interface.py:30: SyntaxWarning: "\S" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\S"? A raw string is also an option.
+    'verification_command': '.venv\Scripts\python.exe tools\verify_coordination_interface.py',
+
+..\..\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\ASUS Zenbook\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_benchmarks.py::test_benchmark_current[bench0] - AssertionEr...
+FAILED tests/test_benchmarks.py::test_benchmark_current[bench1] - AssertionEr...
+FAILED tests/test_benchmarks.py::test_benchmark_current[bench2] - AssertionEr...
+FAILED tests/test_benchmarks.py::test_benchmark_current[bench3] - AssertionEr...
+FAILED tests/test_benchmarks.py::test_benchmark_current[bench4] - AssertionEr...
+FAILED tests/test_benchmarks.py::test_benchmark_current[bench5] - AssertionEr...
+FAILED tests/test_benchmarks.py::test_benchmark_current[bench6] - AssertionEr...
+FAILED tests/test_benchmarks.py::test_benchmark_current[bench7] - AssertionEr...
+FAILED tests/test_benchmarks.py::test_benchmark_current[bench8] - AssertionEr...
+FAILED tests/test_benchmarks.py::test_benchmark_current[bench9] - AssertionEr...
+FAILED tests/test_copilot.py::TestCopilotPage::test_copilot_page_returns_200
+FAILED tests/test_copilot.py::TestCopilotPage::test_copilot_page_has_question_input
+FAILED tests/test_copilot.py::TestCopilotPage::test_copilot_page_nav_links - ...
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_endpoint_returns_200
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_has_answer
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_answer_has_mp_breakdown
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_has_explanation
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_has_evidence_chain
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_evidence_has_components
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_evidence_has_etl_info
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_evidence_has_raw_sources
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_evidence_has_ledger_samples
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_evidence_has_xml_info
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_has_period
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_has_previous_period
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_cross_mp_coverage
+FAILED tests/test_copilot.py::TestCopilotHealthEndpoint::test_health_profit_consistent
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_unknown_question_returns_error
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[profit_loss]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[why]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[marketplace_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[top_detalle]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[commission_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[cost_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[top_transactions]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[period_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[cash_flow]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[risk]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_question_returns_200[evidence]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[profit_loss]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[why]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[marketplace_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[top_detalle]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[commission_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[cost_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[top_transactions]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[period_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[cash_flow]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[risk]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_question_field[evidence]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[profit_loss]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[why]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[marketplace_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[top_detalle]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[commission_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[cost_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[top_transactions]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[period_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[cash_flow]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[risk]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_answer[evidence]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[profit_loss]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[why]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[marketplace_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[top_detalle]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[commission_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[cost_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[top_transactions]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[period_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[cash_flow]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[risk]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_explanation[evidence]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[profit_loss]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[why]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[marketplace_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[top_detalle]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[commission_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[cost_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[top_transactions]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[period_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[cash_flow]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[risk]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_answers_summary_string[evidence]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[profit_loss]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[why]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[marketplace_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[top_detalle]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[commission_impact]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[cost_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[top_transactions]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[period_change]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[cash_flow]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[risk]
+FAILED tests/test_copilot_ask.py::TestCopilotAskEndpoint::test_each_has_period[evidence]
+FAILED tests/test_copilot_ask.py::TestCopilotAskCrossMP::test_with_all_mp - a...
+FAILED tests/test_copilot_ask.py::TestCopilotAskCrossMP::test_with_specific_mp
+FAILED tests/test_copilot_ask.py::TestCopilotAskCrossMP::test_pregunta_responde_en_espanol
+FAILED tests/test_copilot_ask.py::TestCopilotAskEdgeCases::test_empty_marketplace_coalesces_to_all
+FAILED tests/test_copilot_ask.py::TestCopilotAskEdgeCases::test_invalid_question_returns_422
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[profit_loss]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[why]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[marketplace_impact]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[top_detalle]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[commission_impact]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[cost_change]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[top_transactions]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[period_change]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[cash_flow]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[risk]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_handler_completes_under_5s[evidence]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_benchmark_summary
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_benchmark_stable_across_calls
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_benchmark_json_integrity
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkResponseTime::test_benchmark_marketplace_filter_speed
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[profit_loss]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[why]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[marketplace_impact]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[top_detalle]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[commission_impact]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[cost_change]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[top_transactions]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[period_change]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[cash_flow]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[risk]
+FAILED tests/test_copilot_benchmarks.py::TestBenchmarkGoldenComparison::test_key_structure_matches_golden[evidence]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[profit_loss]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[why]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[marketplace_impact]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[top_detalle]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[commission_impact]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[cost_change]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[top_transactions]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[period_change]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[cash_flow]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[risk]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_question[evidence]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[profit_loss]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[why]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[marketplace_impact]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[top_detalle]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[commission_impact]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[cost_change]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[top_transactions]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[period_change]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[cash_flow]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[risk]
+FAILED tests/test_copilot_golden.py::TestGoldenResponseMatchesAPI::test_golden_vs_live_evidence_structure[evidence]
+FAILED tests/test_f3_05_cap001_certification.py::test_f3_05_three_clean_runs[asyncio]
+FAILED tests/test_f3_05_cap001_certification.py::test_f3_05_idempotent_reingest[asyncio]
+FAILED tests/test_financial_engine.py::TestFinancialEngine::test_map_detalle_to_concept
+FAILED tests/test_ingestion_handlers.py::TestIntegrityValidator::test_duplicate_detected
+FAILED tests/test_integral_startup.py::test_scoped_classification_changes_only_requested_transaction
+FAILED tests/test_regression_contracts.py::TestRegresionObligatoria::test_ml_cargo_venta
+ERROR tests/test_upload_center_e2e.py::TestUploadCenterE2E::test_upload_page_served
+ERROR tests/test_upload_center_e2e.py::TestUploadCenterE2E::test_upload_file_returns_execution_id
+ERROR tests/test_upload_center_e2e.py::TestUploadCenterE2E::test_upload_response_has_metadata
+ERROR tests/test_upload_center_e2e.py::TestUploadCenterE2E::test_upload_creates_file_in_uploads
+ERROR tests/test_upload_center_e2e.py::TestUploadCenterE2E::test_upload_registry_has_record
+ERROR tests/test_upload_center_e2e.py::TestUploadCenterE2E::test_upload_registry_list_includes_record
+ERROR tests/test_upload_center_e2e.py::TestUploadCenterE2E::test_upload_invalid_extension_rejected
+ERROR tests/test_upload_center_e2e.py::TestUploadCenterE2E::test_upload_no_file_returns_400
+ERROR tests/test_upload_center_e2e.py::TestUploadCenterE2E::test_loader_called_with_marketplace
+ERROR tests/test_upload_center_e2e.py::TestUploadCenterE2E::test_upload_pipeline_completes_all_stages
+= 153 failed, 667 passed, 12 skipped, 2 warnings, 10 errors in 51443.27s (14:17:23) =
+Exception ignored in atexit callback <function cleanup_numbered_dir at 0x000001EC0C3E45C0>:
+Traceback (most recent call last):
+  File "C:\Users\ASUS Zenbook\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\_pytest\pathlib.py", line 374, in cleanup_numbered_dir
+    cleanup_dead_symlinks(root)
+  File "C:\Users\ASUS Zenbook\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\_pytest\pathlib.py", line 360, in cleanup_dead_symlinks
+    left_dir.unlink()
+  File "C:\Users\ASUS Zenbook\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 1047, in unlink
+    os.unlink(self)
+PermissionError: [WinError 5] Acceso denegado: 'C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\pytest-of-ASUS Zenbook\\pytest-current'

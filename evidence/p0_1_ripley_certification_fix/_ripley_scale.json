@@ -1,0 +1,8 @@
+{
+  "ripley_ledger_rows": 287417,
+  "ripley_ledger_existing_dte_link": 210232,
+  "ripley_folios_in_dte_truth": 0,
+  "ripley_document_match_matched": 0,
+  "ripley_rows_blocked_to_insufficient": 287417,
+  "conclusion": "ALL RIPLEY → INSUFFICIENT_FISCAL_EVIDENCE (0 CRYPTOGRAPHIC_CERTIFIED)"
+}

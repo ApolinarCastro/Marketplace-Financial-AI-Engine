@@ -1,0 +1,121 @@
+{
+  "cap_id": "CAP-F2-001",
+  "name": "Baseline Ejecutable de Conciliación End-to-End",
+  "phase": "FASE 2 — Motor de Conciliación y Trazabilidad Operativa",
+  "timestamp": "2026-07-27T20:20:00Z",
+  "execution_id": "EXEC-CAP-F2-001-20260727",
+  "git_commit": "2d51f52",
+  "harness_version": "1.0.0",
+  "status": "PASS",
+  "certification_status": "CERTIFIED",
+  "pilot": {
+    "marketplace": "ML",
+    "period": "2025-04",
+    "period_start": "2025-04-01",
+    "period_end": "2025-04-30",
+    "raw_files_total": 6,
+    "raw_files_authorized": 6,
+    "raw_files_excluded": 0,
+    "raw_hashes_valid": 6
+  },
+  "ingestion": {
+    "files_processed": 6,
+    "records_read": 7258,
+    "records_accepted": 7258,
+    "records_rejected": 0,
+    "logical_duplicates": 0,
+    "idempotency_status": "PASS"
+  },
+  "staging": {
+    "rows": 7258,
+    "contract_errors": 0,
+    "critical_nulls": 0
+  },
+  "ledger": {
+    "movements": 7258,
+    "total_monto": 45359027.77,
+    "traceable_to_raw": 7258
+  },
+  "classification": {
+    "classified_rows": 7258,
+    "unclassified_rows": 0,
+    "amount_changes": 0
+  },
+  "reconciliation": {
+    "ventas_brutas": 71053742.0,
+    "cargos_y_deducciones": -17524926.23,
+    "devoluciones": -8229778.0,
+    "ajustes": 59990.0,
+    "neto_esperado": 45359027.77,
+    "neto_pagado": 45359027.77,
+    "pendiente": 0.0,
+    "delta": 0.0
+  },
+  "xml_dte": {
+    "global_status": "NO CONFIRMADA",
+    "pilot_xml": 0,
+    "valid_xml": 0,
+    "linked_xml": 0,
+    "unlinked_xml": 0
+  },
+  "sap": {
+    "linked_records": 0,
+    "status": "FALLBACK_INSUFFICIENT_EVIDENCE"
+  },
+  "banco": {
+    "linked_records": 0,
+    "status": "FALLBACK_INSUFFICIENT_EVIDENCE"
+  },
+  "canonical_questions": {
+    "Q-001": "PASS",
+    "Q-002": "PASS",
+    "Q-003": "PASS",
+    "Q-004": "PASS",
+    "Q-005": "PASS",
+    "Q-006": "PASS",
+    "Q-007": "FALLBACK_INSUFFICIENT_EVIDENCE",
+    "Q-008": "FALLBACK_INSUFFICIENT_EVIDENCE",
+    "Q-009": "PASS",
+    "Q-010": "PASS"
+  },
+  "dual_graph": {
+    "full_path_traversal": "PASS",
+    "orphan_nodes": 0,
+    "invalid_edges": 0
+  },
+  "knowledgeos": {
+    "documents_created": 1,
+    "orphan_documents": 0,
+    "broken_links": 0
+  },
+  "endpoints": {
+    "/api/v4/exec/summary": "PASS",
+    "/api/v4/exec/waterfall": "PASS",
+    "/api/v4/cierre/desglose": "PASS",
+    "/api/v4/periodos": "PASS",
+    "/api/v4/ledger": "PASS",
+    "/api/v4/copilot/ask": "PASS"
+  },
+  "reproducibility": {
+    "run1_neto": 45359027.77,
+    "run2_neto": 45359027.77,
+    "differences": 0
+  },
+  "test_results": {
+    "specific_tests": "20 PASSED",
+    "full_suite": "930 PASSED, 0 FAILED, 12 SKIPPED"
+  },
+  "golden_report": "evidence/fase_2/CAP-F2-001_GOLDEN_REPORT.json",
+  "integrity": {
+    "official_db_modified": false,
+    "official_db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "raw_modified": false,
+    "financial_delta": "$0",
+    "contracts_modified": false,
+    "out_of_scope_changes": false
+  },
+  "rollback": {
+    "strategy": "rm -f tests/test_cap_f2_001.py knowledge/projects/CAP-F2-001.md evidence/fase_2/CAP-F2-001*.json data/db/controlled_cap_f2_001.db"
+  },
+  "verdict": "PASS"
+}

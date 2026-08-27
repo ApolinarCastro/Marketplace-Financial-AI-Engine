@@ -1,0 +1,18 @@
+{
+  "marketplace": "PARIS",
+  "timestamp": "2026-07-24T11:14:09.328297",
+  "initial_rows": 74030,
+  "final_rows": 197820,
+  "new_rows_inserted": 123790,
+  "classification_count": 197820,
+  "periods_closed": {
+    "neto": 893566496.0,
+    "ingresos": 1549339577.0,
+    "devoluciones": -383556623.0,
+    "costos_op": -72153246.0,
+    "costos_com": -202738572.0,
+    "ajustes": 2675360.0
+  },
+  "financial_delta": 0.0,
+  "status": "PASS"
+}

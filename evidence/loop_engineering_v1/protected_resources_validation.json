@@ -1,0 +1,23 @@
+{
+  "execution_id": "LOOP_ENG_V1_20260807T152945.116Z",
+  "commit": "2d51f5216695388839e15c0ab08dd98af4aa6ce2",
+  "branch": "phase5/production-readiness",
+  "timestamp": "2026-08-07T15:29:45.116Z",
+  "protocol_version": "1.0.0",
+  "repository": "Marketplace Financial AI Engine",
+  "registered": [
+    "01_Raw/**",
+    "data/db/meli_financial_v4.db",
+    ".git/**",
+    ".agents/**",
+    "governance/coordination/**"
+  ],
+  "enforcement": "write intent matching a protected glob raises PROTECTED_RESOURCE gate and returns USER_ACTION_REQUIRED",
+  "read_only_allowed_without_gate": true,
+  "destructive_git_always_gated": true,
+  "tests": [
+    "test_protected_resource_gate",
+    "test_destructive_git_gate"
+  ],
+  "result": "PASS"
+}
