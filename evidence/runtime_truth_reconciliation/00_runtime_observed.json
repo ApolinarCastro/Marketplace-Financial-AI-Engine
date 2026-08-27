@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-08-27T10:32:10.110797",
+  "port_3001_open": true,
+  "python_processes": "checked",
+  "project_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine",
+  "expected_runtime": "not running (pre-capture)",
+  "verdict": "RUNTIME NOT RUNNING (expected before fix)"
+}

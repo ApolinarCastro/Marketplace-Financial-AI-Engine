@@ -1,0 +1,5 @@
+{
+  "no_xml": "NOT_RUN x4",
+  "with_xml": "PASS/FAIL per evidence",
+  "verdict": "FALSE_XML_FAIL 0"
+}

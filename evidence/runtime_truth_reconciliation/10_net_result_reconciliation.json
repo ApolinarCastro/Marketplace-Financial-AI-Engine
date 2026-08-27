@@ -1,0 +1,48 @@
+{
+  "results": {
+    "ML": {
+      "components": {
+        "recuperaciones_y_bonificaciones": 1999068.0,
+        "devoluciones": -4500710.0,
+        "null": 12788385.0,
+        "ingresos": 45066540.0,
+        "costos_comerciales": -8629317.0,
+        "costos_operacionales": -3435326.0
+      },
+      "net": 43288640.0,
+      "zero_impossible": false
+    },
+    "RIPLEY": {
+      "components": {
+        "devoluciones": -14910477.0,
+        "ajustes": -18039616.0,
+        "ingresos": 102743797.0,
+        "costos_comerciales": -3056273.0,
+        "tesoreria": 38750148.0,
+        "costos_operacionales": -1874453.0
+      },
+      "net": 103613126.0,
+      "zero_impossible": false
+    },
+    "PARIS": {
+      "components": {
+        "ajustes": 251114.0,
+        "devoluciones": -15109030.0,
+        "ingresos": 79251020.0,
+        "costos_comerciales": -10234350.0,
+        "costos_operacionales": -6467948.0
+      },
+      "net": 47690806.0,
+      "zero_impossible": false
+    },
+    "FALABELLA": {
+      "components": {
+        "costos_operacionales": -538252.0459999995,
+        "costos_comerciales": -617018.4499999994
+      },
+      "net": -1155270.4959999989,
+      "zero_impossible": false
+    }
+  },
+  "verdict": "IMPOSSIBLE_ZERO_NET_RESULTS 0"
+}

@@ -1,0 +1,6 @@
+{
+  "sales_presence": true,
+  "executive_sales": 106,
+  "truth_sales": 106,
+  "verdict": "FALABELLA_EXEC_SALES == TRUTH 106"
+}

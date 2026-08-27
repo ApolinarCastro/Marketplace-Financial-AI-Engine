@@ -1,0 +1,18 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "commit": "36de914e"
+    },
+    {
+      "run": 2,
+      "commit": "36de914e"
+    },
+    {
+      "run": 3,
+      "commit": "36de914e"
+    }
+  ],
+  "equal": true,
+  "verdict": "PASS"
+}

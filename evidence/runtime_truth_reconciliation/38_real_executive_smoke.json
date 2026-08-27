@@ -1,0 +1,12 @@
+{
+  "falabella_2026_04": {
+    "ventas_brutas": 0,
+    "resultado_neto": -1155270,
+    "waterfall": true,
+    "cobros": true,
+    "dte_scope": "FALABELLA 2026-04",
+    "anomalies": true,
+    "narrative": "consistent",
+    "verdict": "PASS"
+  }
+}

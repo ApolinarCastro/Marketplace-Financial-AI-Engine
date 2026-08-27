@@ -1,0 +1,3 @@
+screen,endpoint,method,consumer_page
+dashboard.html,/api/v4/ledger,GET,dashboard.html
+executive_dashboard.html,/api/v4/exec/summary,GET,executive_dashboard.html

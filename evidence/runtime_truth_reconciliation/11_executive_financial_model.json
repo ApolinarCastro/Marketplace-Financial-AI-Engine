@@ -1,0 +1,13 @@
+{
+  "service": "ExecutiveFinancialView",
+  "delegates_to": "FinancialTruthEngine",
+  "fields": [
+    "gross_income",
+    "returns",
+    "operating_costs",
+    "commercial_costs",
+    "adjustments",
+    "net_result"
+  ],
+  "verdict": "PASS"
+}

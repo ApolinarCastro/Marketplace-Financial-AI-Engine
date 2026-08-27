@@ -1,0 +1,18 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "status": 200
+    },
+    {
+      "run": 2,
+      "status": 200
+    },
+    {
+      "run": 3,
+      "status": 200
+    }
+  ],
+  "db_sha_unchanged": true,
+  "verdict": "PASS"
+}

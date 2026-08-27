@@ -1,0 +1,9 @@
+{
+  "monthly": {
+    "2026-03": -785566,
+    "2026-04": -1155270,
+    "2026-05": -267947
+  },
+  "all_six_layers_equal": true,
+  "verdict": "ALL_SIX_LAYERS_EQUAL TRUE"
+}

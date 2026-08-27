@@ -1,0 +1,7 @@
+{
+  "tag": "marketplace-financial-v1.0.0",
+  "tag_commit": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "head": "dd072fb5011ab2a891156bde20bd5beeda314e5a",
+  "expected": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "verdict": "PASS"
+}

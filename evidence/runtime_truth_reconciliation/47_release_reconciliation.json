@@ -1,0 +1,5 @@
+{
+  "final_runtime_commit": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "tag": "marketplace-financial-v1.0.0",
+  "verdict": "FINAL_RUNTIME_COMMIT == RELEASE_TAG_COMMIT PASS"
+}

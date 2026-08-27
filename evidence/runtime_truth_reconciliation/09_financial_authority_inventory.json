@@ -1,0 +1,9 @@
+{
+  "authorities": [
+    "FinancialTruthEngine CANONICAL",
+    "ExecutiveFinancialView DERIVED_FROM_CANONICAL"
+  ],
+  "legacy": 0,
+  "parallel": 0,
+  "verdict": "PARALLEL_FINANCIAL_AUTHORITIES 0"
+}

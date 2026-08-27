@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-08-27T10:33:20.850703",
+  "FINAL_RUNTIME_COMMIT": "dd072fb5011ab2a891156bde20bd5beeda314e5a",
+  "RELEASE_TAG": "marketplace-financial-v1.0.0",
+  "RELEASE_TAG_COMMIT": "dd072fb5011ab2a891156bde20bd5beeda314e5a",
+  "RUNTIME": {
+    "running_commit": "dd072fb5011ab2a891156bde20bd5beeda314e5a",
+    "project_root": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine",
+    "python": "3.14.0",
+    "db_path": "data/db/meli_financial_v4.db",
+    "db_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "ledger_rows": 598112
+  },
+  "AUDITOR": {
+    "runtime_truth": "PASS",
+    "false_certified": 0,
+    "false_xml_fail": 0,
+    "unknown_chain": 0
+  },
+  "EXECUTIVE": {
+    "financial_authority": "ExecutiveFinancialView->FinancialTruthEngine",
+    "zero_net_errors": 0,
+    "narrative_contradictions": 0,
+    "anomaly_duplicates": 0,
+    "zero_count_anomalies": 0,
+    "mojibake": 0
+  },
+  "FALABELLA": {
+    "sales_truth": 106,
+    "auditor_net": -1155270,
+    "executive_net": -1155270,
+    "truth_net": -1155270,
+    "unexplained_delta": 0
+  },
+  "RIPLEY": {
+    "financial": "PASS",
+    "settlement": "PASS",
+    "fiscal": "BLOCKED_EXTERNAL",
+    "external_bridge": "RIPLEY_FISCAL_SII_BRIDGE"
+  },
+  "ML": {
+    "auditor_exec_delta": 0
+  },
+  "PARIS": {
+    "auditor_exec_delta": 0
+  },
+  "SCOPING": {
+    "marketplace_leakage": 0,
+    "period_leakage": 0,
+    "dte_leakage": 0,
+    "anomaly_leakage": 0
+  },
+  "CERTIFICATION": {
+    "false_certifications": 0,
+    "false_xml_failures": 0,
+    "avoidable_unknown": 0
+  },
+  "SYSTEM": {
+    "parallel_financial_authorities": 0,
+    "legacy_runtime_paths": 0,
+    "static_asset_provenance": "36de914",
+    "frontend_financial_logic": 0
+  },
+  "AUDIT": {
+    "delete": 0,
+    "insert": 0,
+    "update": 0
+  },
+  "TESTS": {
+    "passed": 10,
+    "failed": 0
+  },
+  "REGRESSIONS": 0,
+  "ADVERSARIAL": {
+    "critical": 0,
+    "high": 0
+  },
+  "IDEMPOTENCY": "3/3 PASS",
+  "DB": {
+    "sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "ledger_rows": 598112
+  },
+  "RAW": {
+    "files": 1313,
+    "mutations": 0
+  },
+  "EVIDENCE_PATH": "evidence/runtime_truth_reconciliation",
+  "verdict": "RUNTIME_AND_EXECUTIVE_TRUTH_CERTIFIED_WITH_EXTERNAL_RIPLEY_FISCAL_BRIDGE_REQUIRED"
+}

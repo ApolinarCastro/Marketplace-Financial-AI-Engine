@@ -1,0 +1,11 @@
+{
+  "release": "marketplace-financial-v1.0.0",
+  "commit": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "project_root": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine",
+  "python": "3.14.0",
+  "db_path": "data\\db\\meli_financial_v4.db",
+  "db_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "ledger_rows": 598112,
+  "port": 8000,
+  "verdict": "STARTUP SELFCHECK PASS"
+}
