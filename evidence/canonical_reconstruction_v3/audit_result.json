@@ -1,0 +1,8 @@
+{
+  "global": "PARTIALLY_CERTIFIED",
+  "marketplaces": {
+    "ML": "PARTIALLY_CERTIFIED",
+    "RIPLEY": "PARTIALLY_CERTIFIED"
+  },
+  "verdict": "PASS"
+}

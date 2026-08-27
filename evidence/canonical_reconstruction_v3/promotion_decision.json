@@ -1,0 +1,12 @@
+{
+  "decision": "PROMOTE",
+  "tables": [
+    "ripley_settlement_chain (normalized)",
+    "marketplace_cierre_financiero_v1 (rederived)"
+  ],
+  "rows_before": 598112,
+  "rows_after": 598112,
+  "financial_impact": "$0.00 string normalization only",
+  "backup": "data/backup/pre_canonical_v3/meli_financial_v4_pre_canonical_20260827.db",
+  "verdict": "PROMOTION_AUTHORIZED"
+}

@@ -1,0 +1,13 @@
+{
+  "periods": [
+    "2026-03",
+    "2026-04",
+    "2026-05"
+  ],
+  "assertions": [
+    "card==ledger",
+    "closing==truth",
+    "cert semantics"
+  ],
+  "verdict": "FALABELLA_UI_BACKEND_DB_DELTA 0"
+}

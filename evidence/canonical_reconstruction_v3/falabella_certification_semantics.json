@@ -1,0 +1,10 @@
+{
+  "financial_status": "FINANCIAL_CERTIFIED",
+  "xml_status": "XML_NOT_LINKED",
+  "fiscal_status": "INSUFFICIENT_FISCAL_EVIDENCE",
+  "overall_status": "PARTIALLY_CERTIFIED",
+  "pipeline": {
+    "XML Validator": "NOT_RUN"
+  },
+  "verdict": "PASS"
+}

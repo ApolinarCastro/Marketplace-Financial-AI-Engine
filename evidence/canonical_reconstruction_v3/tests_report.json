@@ -1,0 +1,12 @@
+{
+  "tests": [
+    "ripley .0",
+    "settlement != DTE",
+    "no UNKNOWN chain",
+    "no XML false FAIL",
+    "Falabella period",
+    "Falabella dedup",
+    "stale closing"
+  ],
+  "verdict": "PASS"
+}

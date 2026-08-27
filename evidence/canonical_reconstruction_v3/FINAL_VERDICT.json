@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-08-27T09:52:41.946492",
+  "branch": "phase5/production-readiness",
+  "commit": "bdc1e256aaf32e654eb415d7814d6119874850ab",
+  "ripley": {
+    "files": 623,
+    "ledger": 287417,
+    "settlement": 287417,
+    "normalized_references": 0,
+    "unknown_chain_types": 0,
+    "fiscal": "FISCAL_BLOCKED_EXTERNAL",
+    "external_bridge": "RIPLEY_FISCAL_SII_BRIDGE - settlement 168 vs DTE 407 overlap 0, proven external"
+  },
+  "falabella": {
+    "files": 15,
+    "source_rows": 671,
+    "logical_events": 3076,
+    "sales_presence": "SALES_PRESENT (106 ledger rows)",
+    "duplicates": 0,
+    "2026-03": -785566,
+    "2026-04": -1155270,
+    "2026-05": -267947,
+    "other_periods": "none",
+    "unexplained_delta": 0,
+    "lineage": "BROKEN 0"
+  },
+  "certification": {
+    "financial": "FINANCIAL_CERTIFIED",
+    "settlement": "SETTLEMENT_CERTIFIED",
+    "document": "DOCUMENT_REFERENCE_ONLY where applicable",
+    "xml": "XML_NOT_LINKED where no DTE",
+    "fiscal": "FISCAL_BLOCKED_EXTERNAL for Ripley, INSUFFICIENT for Falabella without XML",
+    "overall": "PARTIALLY_CERTIFIED",
+    "false_certifications": 0,
+    "false_xml_failures": 0,
+    "unknown_states": 0
+  },
+  "system": {
+    "ledger_rows": 598112,
+    "financial_delta": "$0.00",
+    "authorized_correction_delta": "$0.00 string normalization (71548 refs .0 -> int, $0 amount)",
+    "parallel_truths": 0,
+    "frontend_financial_logic": 0
+  },
+  "db": {
+    "original_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "rebuilt_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "promoted": false,
+    "rollback_backup": "data/backup/pre_canonical_v3/meli_financial_v4_pre_canonical_20260827.db"
+  },
+  "raw": {
+    "files": 1313,
+    "mutations": 0
+  },
+  "tests": {
+    "passed": 39,
+    "failed": 0,
+    "regressions": 0
+  },
+  "adversarial": {
+    "critical": 0,
+    "high": 0
+  },
+  "idempotency": "3/3 PASS",
+  "clean_checkout": "PASS",
+  "external_limitations": [
+    "RIPLEY_FISCAL_SII_BRIDGE BLOCKED (external, proven, isolated)"
+  ],
+  "evidence_path": "evidence/canonical_reconstruction_v3",
+  "verdict": "CANONICAL_FINANCIAL_AND_CERTIFICATION_TRUTH_CERTIFIED_WITH_EXTERNAL_RIPLEY_FISCAL_BRIDGE_REQUIRED"
+}

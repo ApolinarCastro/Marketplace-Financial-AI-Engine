@@ -1,0 +1,5 @@
+{
+  "lineage": "ledger->event->source row->file hash",
+  "broken": 0,
+  "verdict": "BROKEN_FALABELLA_LINEAGE 0"
+}

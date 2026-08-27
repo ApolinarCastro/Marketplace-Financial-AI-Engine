@@ -1,0 +1,10 @@
+{
+  "tested": 20,
+  "assertions": [
+    "no .0",
+    "no UNKNOWN chain",
+    "no fake FAIL",
+    "fiscal blocker explicit"
+  ],
+  "verdict": "PASS"
+}

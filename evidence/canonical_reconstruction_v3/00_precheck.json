@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-27T09:50:42.526225",
+  "branch": "phase5/production-readiness",
+  "commit": "bdc1e256aaf32e654eb415d7814d6119874850ab",
+  "git_status_lines": 856,
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_size": 58732544,
+  "raw_count": 1313,
+  "ripley_count": 623,
+  "falabella_count": 15,
+  "ledger_rows": 598112,
+  "ledger_total": 4430909518.8099985,
+  "classification_rows": 598112,
+  "closing_rows": 251,
+  "exception_rows": 8362,
+  "dte_rows": 667
+}

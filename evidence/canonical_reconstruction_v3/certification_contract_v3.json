@@ -1,0 +1,18 @@
+{
+  "fields": [
+    "transaction_id",
+    "marketplace",
+    "financial_status",
+    "settlement_status",
+    "document_status",
+    "xml_status",
+    "fiscal_status",
+    "overall_status",
+    "certification_scope",
+    "chain_type",
+    "settlement_ref",
+    "dte_folio",
+    "evidence_level"
+  ],
+  "verdict": "CONTRACT DEFINED"
+}

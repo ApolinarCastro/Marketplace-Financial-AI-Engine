@@ -1,0 +1,15 @@
+{
+  "order": [
+    "SOURCE REGISTRY",
+    "LEDGER",
+    "CLASSIFICATION",
+    "TRUTH",
+    "RECONCILIATION",
+    "EXCEPTIONS",
+    "DOCUMENT",
+    "DTE",
+    "CERTIFICATION",
+    "CLOSING"
+  ],
+  "verdict": "REBUILD PASS"
+}

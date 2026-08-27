@@ -1,0 +1,13 @@
+{
+  "rows": {
+    "before": 598112,
+    "after": 598112
+  },
+  "amounts": {
+    "before": 4430909518.81,
+    "after": 4430909518.81,
+    "delta": 0
+  },
+  "classification": "NORMALIZATION (ripley .0 -> int)",
+  "verdict": "UNKNOWN_DELTA 0"
+}

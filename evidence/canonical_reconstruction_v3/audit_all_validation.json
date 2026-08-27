@@ -1,0 +1,13 @@
+{
+  "gates": [
+    "SourceCompleteness",
+    "TransactionCompleteness",
+    "FinancialIntegrity",
+    "Reconciliation",
+    "Document",
+    "Fiscal",
+    "CertificationSemantics"
+  ],
+  "mode": "READ_ONLY",
+  "verdict": "PASS"
+}

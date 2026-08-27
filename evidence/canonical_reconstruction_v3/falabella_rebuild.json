@@ -1,0 +1,5 @@
+{
+  "controlled_db": "data\\work\\canonical_reconstruction_v3_20260827_095132.db",
+  "ripley_dot_zero_after": "Binder Error: Can only update base table",
+  "note": "Falabella rebuild via RAW->resolver->normalized event->dedup->ledger (simulated, 15 files -> 3076 rows)"
+}

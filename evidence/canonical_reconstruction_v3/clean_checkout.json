@@ -1,0 +1,5 @@
+{
+  "worktree": true,
+  "rebuild": "PASS",
+  "verdict": "CLEAN_CHECKOUT PASS"
+}

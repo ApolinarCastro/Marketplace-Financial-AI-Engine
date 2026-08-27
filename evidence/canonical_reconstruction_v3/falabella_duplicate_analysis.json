@@ -1,0 +1,6 @@
+{
+  "duplicates": 0,
+  "unexplained": 0,
+  "event_key": "falabella_event_key based on order_id+detail+amount",
+  "verdict": "UNEXPLAINED_DUPLICATES 0"
+}

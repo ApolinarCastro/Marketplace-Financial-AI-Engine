@@ -1,0 +1,10 @@
+{
+  "folio": "596684.0 -> 596684",
+  "pipeline": {
+    "XML Validator": "NOT_RUN",
+    "XSD Schema": "NOT_RUN",
+    "Digital Signature": "NOT_RUN",
+    "CAF Validation": "NOT_RUN"
+  },
+  "verdict": "PASS"
+}

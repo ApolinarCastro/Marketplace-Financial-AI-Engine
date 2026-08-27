@@ -1,0 +1,7 @@
+{
+  "financial": "CERTIFIED",
+  "document": "DOCUMENT_REFERENCE_ONLY where applicable",
+  "xml": "XML_NOT_LINKED where no DTE",
+  "fiscal": "INSUFFICIENT_FISCAL_EVIDENCE where no XML",
+  "verdict": "PASS"
+}

@@ -1,0 +1,81 @@
+{
+  "schemas": [
+    {
+      "file": "dteproveedor_7136.xml",
+      "headers": "",
+      "fingerprint": ""
+    },
+    {
+      "file": "dteproveedor_7143.xml",
+      "headers": "",
+      "fingerprint": ""
+    },
+    {
+      "file": "dteproveedor_7265.xml",
+      "headers": "",
+      "fingerprint": ""
+    },
+    {
+      "file": "dteproveedor_7276.xml",
+      "headers": "",
+      "fingerprint": ""
+    },
+    {
+      "file": "dteproveedor_7402.xml",
+      "headers": "",
+      "fingerprint": ""
+    },
+    {
+      "file": "dteproveedor_7404.xml",
+      "headers": "",
+      "fingerprint": ""
+    },
+    {
+      "file": "dteproveedor_7533.xml",
+      "headers": "",
+      "fingerprint": ""
+    },
+    {
+      "file": "dteproveedor_7550.xml",
+      "headers": "",
+      "fingerprint": ""
+    },
+    {
+      "file": "21 abril 2026 - 20 mayo 2026.csv",
+      "headers": "Numero de documento|Tipo de documento|Fecha de Transaccion|Descripcion Factura|Tipo de Transaccion|N",
+      "fingerprint": "06d5ea8fcc40"
+    },
+    {
+      "file": "21 febrero 2026 - 20 marzo 2026.xlsx",
+      "headers": "Numero de documento",
+      "fingerprint": "826df4ace962"
+    },
+    {
+      "file": "21 marzo 2026 - 20 abril 2026.xlsx",
+      "headers": "Numero de documento",
+      "fingerprint": "826df4ace962"
+    },
+    {
+      "file": "21 mayo 2026 - 20 junio 2026.xlsx",
+      "headers": "Numero de documento",
+      "fingerprint": "826df4ace962"
+    },
+    {
+      "file": "1  abril   2026 - 31  mayo   2026.xlsx",
+      "headers": "Fecha de actualización|2026-07-20 11:50:11.347000||||||||||||||||||||||||||||",
+      "fingerprint": "6642091809eb"
+    },
+    {
+      "file": "1  febrero   2026 - 31  marzo   2026.xlsx",
+      "headers": "Fecha de actualización|2026-07-20 11:49:33.995000||||||||||||||||||||||||||||",
+      "fingerprint": "5696783c0b1e"
+    },
+    {
+      "file": "1  junio   2026 - 30  junio   2026.xlsx",
+      "headers": "Fecha de actualización|2026-07-20 11:50:51.125000||||||||||||||||||||||||||||",
+      "fingerprint": "4896d76d3926"
+    }
+  ],
+  "unknown": 0,
+  "verdict": "UNKNOWN_FINANCIAL_DETAIL 0"
+}

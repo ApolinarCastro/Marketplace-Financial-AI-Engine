@@ -1,0 +1,13 @@
+{
+  "tables": [
+    {
+      "name": "marketplace_cierre_financiero_v1",
+      "action": "REBUILD"
+    },
+    {
+      "name": "ripley_settlement_chain",
+      "action": "REBUILD_NORMALIZE"
+    }
+  ],
+  "verdict": "STALE REMOVED"
+}

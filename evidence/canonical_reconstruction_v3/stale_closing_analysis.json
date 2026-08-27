@@ -1,0 +1,25 @@
+{
+  "mismatches": [
+    {
+      "period": "2026-03",
+      "ledger": -785566.327,
+      "closing": 0.0,
+      "delta": -785566.327
+    },
+    {
+      "period": "2026-04",
+      "ledger": -1155270.4960000017,
+      "closing": 0.0,
+      "delta": -1155270.4960000017
+    },
+    {
+      "period": "2026-05",
+      "ledger": -267947.87699999986,
+      "closing": 0.0,
+      "delta": -267947.87699999986
+    }
+  ],
+  "action": "REMOVE stale materialized closing, derive from Financial Truth",
+  "after": "LEDGER==TRUTH==CLOSING==API==UI",
+  "verdict": "LEDGER_TRUTH_CLOSING_API_UI_DELTA 0 after rebuild"
+}

@@ -1,0 +1,12 @@
+{
+  "financial_status": "FINANCIAL_CERTIFIED",
+  "settlement_status": "SETTLEMENT_CERTIFIED",
+  "document_status": "DOCUMENT_MISSING",
+  "xml_status": "XML_NOT_LINKED",
+  "fiscal_status": "FISCAL_BLOCKED_EXTERNAL",
+  "overall_status": "PARTIALLY_CERTIFIED",
+  "settlement_ref": "596684",
+  "dte_folio": null,
+  "chain_type": "SETTLEMENT",
+  "verdict": "RIPLEY_CHAIN_TYPE_UNKNOWN 0"
+}

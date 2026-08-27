@@ -1,0 +1,56 @@
+{
+  "authorities": [
+    {
+      "name": "ai_suggestions_log",
+      "type": "LEGACY",
+      "rows": 0
+    },
+    {
+      "name": "bank_statement",
+      "type": "LEGACY",
+      "rows": 0
+    },
+    {
+      "name": "cargos_no_clasificados",
+      "type": "LEGACY",
+      "rows": 0
+    },
+    {
+      "name": "cierre_financiero_v2",
+      "type": "LEGACY",
+      "rows": 0
+    },
+    {
+      "name": "document_match_v1",
+      "type": "LEGACY",
+      "rows": 0
+    },
+    {
+      "name": "dte_link_v1",
+      "type": "LEGACY",
+      "rows": 0
+    },
+    {
+      "name": "dte_truth_v1",
+      "type": "DERIVED",
+      "rows": 667
+    },
+    {
+      "name": "exceptions",
+      "type": "LEGACY",
+      "rows": 0
+    },
+    {
+      "name": "file_registry",
+      "type": "LEGACY",
+      "rows": 0
+    },
+    {
+      "name": "financial_reconciliation",
+      "type": "LEGACY",
+      "rows": 0
+    }
+  ],
+  "parallel": 0,
+  "verdict": "PARALLEL_FINANCIAL_AUTHORITIES 0"
+}

@@ -1,0 +1,36 @@
+{
+  "tests": [
+    {
+      "input": "596684.0",
+      "output": "596684",
+      "expected": "596684",
+      "pass": true
+    },
+    {
+      "input": "531423.0",
+      "output": "531423",
+      "expected": "531423",
+      "pass": true
+    },
+    {
+      "input": "499799.0",
+      "output": "499799",
+      "expected": "499799",
+      "pass": true
+    },
+    {
+      "input": " 596684 ",
+      "output": "596684",
+      "expected": "596684",
+      "pass": true
+    },
+    {
+      "input": "None",
+      "output": null,
+      "expected": null,
+      "pass": true
+    }
+  ],
+  "ledger_dot_zero": 71548,
+  "verdict": "FAIL"
+}

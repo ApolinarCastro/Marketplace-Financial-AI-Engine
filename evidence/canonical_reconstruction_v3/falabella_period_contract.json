@@ -1,0 +1,15 @@
+{
+  "files": [
+    "21 marzo 2026 - 20 abril 2026.xlsx",
+    "21 abril 2026 - 20 mayo 2026.csv",
+    "21 mayo 2026 - 20 junio 2026.xlsx"
+  ],
+  "windows": [
+    {
+      "file": "21 marzo - 20 abril",
+      "report_window": "21-03 to 20-04",
+      "settlement_period": "2026-03/04"
+    }
+  ],
+  "verdict": "PASS"
+}
