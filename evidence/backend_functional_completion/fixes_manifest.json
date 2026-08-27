@@ -1,0 +1,33 @@
+{
+  "fixes": [
+    {
+      "root_cause": "copilot GET vs POST",
+      "files_changed": [
+        "api/api.py:255 GET"
+      ],
+      "before": "405",
+      "after": "200",
+      "test": "test_hotfix"
+    },
+    {
+      "root_cause": "audit DELETE read-only",
+      "files_changed": [
+        "engine/v4/marketplace_auditor.py run_audit_read_only",
+        "api/api.py POST /run-audit READ_ONLY"
+      ],
+      "before": "DELETE fail",
+      "after": "READ_ONLY",
+      "test": "test_hotfix"
+    },
+    {
+      "root_cause": "certification Chain Type hardcode",
+      "files_changed": [
+        "templates/dashboard.html chain-type dynamic"
+      ],
+      "before": "CRYPTOGRAPHIC hardcode",
+      "after": "certification_scope dynamic",
+      "test": "test_hotfix"
+    }
+  ],
+  "verdict": "MINIMAL_FIXES_APPLIED"
+}

@@ -1,0 +1,7 @@
+{
+  "new_tests": [
+    "test_hotfix_audit_certification.py 10 tests",
+    "test_dte_traceability 17 tests"
+  ],
+  "verdict": "TESTS_GENERATED"
+}

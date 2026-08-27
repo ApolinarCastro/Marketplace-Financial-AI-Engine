@@ -1,0 +1,7 @@
+{
+  "pagination": "PASS",
+  "filters": "PASS",
+  "total_count": 598112,
+  "sorting": "deterministic",
+  "verdict": "LEDGER_CONTRACT PASS"
+}

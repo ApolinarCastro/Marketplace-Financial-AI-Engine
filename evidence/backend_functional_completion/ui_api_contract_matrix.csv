@@ -1,0 +1,146 @@
+ui_action_id,template,expected_endpoint,expected_method,matched_routes,status
+copilot.html:22,copilot.html,,GET,,UNUSED_ROUTE
+copilot.html:23,copilot.html,,GET,,UNUSED_ROUTE
+copilot.html:37,copilot.html,,GET,,UNUSED_ROUTE
+copilot.html:55,copilot.html,,GET,,UNUSED_ROUTE
+copilot.html:57,copilot.html,,GET,,UNUSED_ROUTE
+copilot.html:59,copilot.html,,GET,,UNUSED_ROUTE
+copilot.html:63,copilot.html,,GET,,UNUSED_ROUTE
+copilot.html:69,copilot.html,,GET,,UNUSED_ROUTE
+copilot.html:73,copilot.html,/api/v4/financial-intelligence/health,GET,GET /api/v4/financial-intelligence/health,MATCHED
+dashboard.html:39,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:46,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:53,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:55,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:77,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:79,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:134,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:136,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:175,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:177,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:240,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:242,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:266,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:286,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:288,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:301,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:303,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:475,dashboard.html,/api/v4/correcciones,GET,POST /api/v4/correcciones,METHOD_MISMATCH
+dashboard.html:492,dashboard.html,/api/v4/run-audit?marketplace=,POST,POST /api/v4/run-audit,MATCHED
+dashboard.html:495,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:512,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:522,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:549,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:550,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:558,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:575,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:586,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:631,dashboard.html,/api/v4/ledger?marketplace=,GET,GET /api/v4/ledger;GET /api/v4/ledger/records;GET /api/v4/ledger/transaction/{id_transaccion};GET /api/v4/ledger/order/{id_orden};GET /api/v4/ledger/summary,MATCHED
+dashboard.html:685,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:687,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:695,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:727,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:741,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:889,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:901,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:927,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:942,dashboard.html,/api/v4/financial-structure,GET,GET /api/v4/financial-structure;GET /api/v4/financial-structure,MATCHED
+dashboard.html:944,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:960,dashboard.html,/api/v4/auditoria,GET,GET /api/v4/auditoria,MATCHED
+dashboard.html:995,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1000,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1001,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1006,dashboard.html,/api/v4/run-audit?marketplace=,POST,POST /api/v4/run-audit,MATCHED
+dashboard.html:1007,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1046,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1047,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1060,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1065,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1139,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1157,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1208,dashboard.html,/api/v4/electronic_certification/validate,GET,POST /api/v4/electronic_certification/validate,METHOD_MISMATCH
+dashboard.html:1214,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1215,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1234,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1236,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1283,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1285,dashboard.html,,GET,,UNUSED_ROUTE
+dashboard.html:1291,dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:57,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:82,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:83,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:84,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:85,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:86,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:173,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:275,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:277,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:300,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:301,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:318,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:320,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:328,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:329,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:332,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:417,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:462,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:489,documentary_dashboard.html,/api/v4/electronic_certification/validate,GET,POST /api/v4/electronic_certification/validate,METHOD_MISMATCH
+documentary_dashboard.html:555,documentary_dashboard.html,/api/v4/knowledge/export,GET,POST /api/v4/knowledge/export,METHOD_MISMATCH
+documentary_dashboard.html:583,documentary_dashboard.html,/api/v4/periodos,GET,GET /api/v4/periodos,MATCHED
+documentary_dashboard.html:601,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:610,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:652,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:690,documentary_dashboard.html,,GET,,UNUSED_ROUTE
+documentary_dashboard.html:777,documentary_dashboard.html,/api/v4/intelligence/anomalies?,GET,GET /api/v4/intelligence/anomalies,MATCHED
+documentary_dashboard.html:807,documentary_dashboard.html,/api/v4/intelligence/insights?,GET,GET /api/v4/intelligence/insights,MATCHED
+documentary_dashboard.html:916,documentary_dashboard.html,/api/v4/exec/waterfall-v3?,GET,GET /api/v4/exec/waterfall-v3,MATCHED
+documentary_dashboard.html:976,documentary_dashboard.html,/api/v4/exec/cobros-breakdown?,GET,GET /api/v4/exec/cobros-breakdown,MATCHED
+documentary_dashboard.html:1088,documentary_dashboard.html,/api/v4/exec/waterfall-v3?,GET,GET /api/v4/exec/waterfall-v3,MATCHED
+documentary_dashboard.html:1148,documentary_dashboard.html,/api/v4/exec/cobros-breakdown?,GET,GET /api/v4/exec/cobros-breakdown,MATCHED
+documentary_dashboard.html:1239,documentary_dashboard.html,/api/v4/upload/dte,GET,,MISSING_ROUTE
+executive_dashboard.html:46,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:50,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:52,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:107,executive_dashboard.html,/api/v4/periodos,GET,GET /api/v4/periodos,MATCHED
+executive_dashboard.html:113,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:120,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:126,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:135,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:138,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:139,executive_dashboard.html,,POST,,UNUSED_ROUTE
+executive_dashboard.html:159,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:263,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:304,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:305,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:308,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:384,executive_dashboard.html,/api/v4/periodos,GET,GET /api/v4/periodos,MATCHED
+executive_dashboard.html:402,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:410,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:452,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:490,executive_dashboard.html,,GET,,UNUSED_ROUTE
+executive_dashboard.html:533,executive_dashboard.html,/api/v4/dte/certify?,GET,GET /api/v4/dte/certify,MATCHED
+executive_dashboard.html:612,executive_dashboard.html,/api/v4/intelligence/anomalies?,GET,GET /api/v4/intelligence/anomalies,MATCHED
+executive_dashboard.html:642,executive_dashboard.html,/api/v4/intelligence/insights?,GET,GET /api/v4/intelligence/insights,MATCHED
+executive_dashboard.html:751,executive_dashboard.html,/api/v4/exec/waterfall-v3?,GET,GET /api/v4/exec/waterfall-v3,MATCHED
+executive_dashboard.html:811,executive_dashboard.html,/api/v4/exec/cobros-breakdown?,GET,GET /api/v4/exec/cobros-breakdown,MATCHED
+traceability.html:29,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:30,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:31,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:32,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:74,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:89,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:153,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:154,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:181,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:194,traceability.html,/api/v4/traceability/summary,GET,GET /api/v4/traceability/summary,MATCHED
+traceability.html:239,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:263,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:286,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:287,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:288,traceability.html,,GET,,UNUSED_ROUTE
+traceability.html:304,traceability.html,,GET,,UNUSED_ROUTE
+upload_center.html:48,upload_center.html,,GET,,UNUSED_ROUTE
+upload_center.html:61,upload_center.html,,GET,,UNUSED_ROUTE
+upload_center.html:63,upload_center.html,,GET,,UNUSED_ROUTE
+upload_center.html:164,upload_center.html,,GET,,UNUSED_ROUTE
+upload_center.html:191,upload_center.html,/api/v4/ingestion/upload,POST,POST /api/v4/ingestion/upload,MATCHED

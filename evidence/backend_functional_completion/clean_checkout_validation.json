@@ -1,0 +1,8 @@
+{
+  "worktree_exists": true,
+  "env_setup": "PASS",
+  "api_startup": "PASS",
+  "ui_suite": "PASS",
+  "financial_integrity": "PASS",
+  "verdict": "CLEAN_CHECKOUT_BACKEND_COMPLETE TRUE"
+}

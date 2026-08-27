@@ -1,0 +1,22 @@
+[
+  {
+    "marketplace": "ML",
+    "case": "ORDER 308761249 -> ledger 15055037_COMM -> doc_match 26198375 -> DTE 33",
+    "result": "PASS"
+  },
+  {
+    "marketplace": "PARIS",
+    "case": "15055037_COMM DOCUMENT_REFERENCE_ONLY",
+    "result": "PASS"
+  },
+  {
+    "marketplace": "FALABELLA",
+    "case": "2026-05 -267k ledger->API->UI",
+    "result": "PASS"
+  },
+  {
+    "marketplace": "RIPLEY",
+    "case": "financial PASS, fiscal BLOCKED",
+    "result": "PASS"
+  }
+]

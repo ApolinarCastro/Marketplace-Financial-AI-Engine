@@ -1,0 +1,23 @@
+{
+  "audit_summary": {
+    "api": "/api/v4/auditoria",
+    "match": "PASS"
+  },
+  "classification": {
+    "api": "/api/v4/ledger?clasificacion",
+    "match": "PASS"
+  },
+  "exceptions": {
+    "api": "/api/v4/exceptions/statistics",
+    "match": "PASS"
+  },
+  "certification": {
+    "api": "/api/v4/electronic_certification/status/{tx}",
+    "match": "PASS"
+  },
+  "audit_button": {
+    "api": "POST /run-audit READ_ONLY",
+    "match": "PASS"
+  },
+  "verdict": "VISUAL_CLICK_UNIVERSE_DIFFERENCES 0"
+}

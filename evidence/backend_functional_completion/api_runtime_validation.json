@@ -1,0 +1,586 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/v4/health",
+    "status": 200,
+    "classification": "PASS",
+    "size": 173,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/copilot/ask",
+    "status": 200,
+    "classification": "PASS",
+    "size": 295,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/financial-intelligence/health",
+    "status": 200,
+    "classification": "PASS",
+    "size": 7237,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/ledger",
+    "status": 200,
+    "classification": "PASS",
+    "size": 2769,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/financial-structure",
+    "status": 200,
+    "classification": "PASS",
+    "size": 2261,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/cierre",
+    "status": 200,
+    "classification": "PASS",
+    "size": 282,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/cierre/desglose",
+    "status": 200,
+    "classification": "PASS",
+    "size": 7649,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/dte/count",
+    "status": 200,
+    "classification": "PASS",
+    "size": 14,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/dte/samples",
+    "status": 200,
+    "classification": "PASS",
+    "size": 4610,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/test_regex",
+    "status": 200,
+    "classification": "PASS",
+    "size": 201,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/dte/certify",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1012,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/dte/document-gap",
+    "status": 200,
+    "classification": "PASS",
+    "size": 190607,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/dte/document/{transaction_id}",
+    "status": 200,
+    "classification": "PASS",
+    "size": 31,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/dte/risk-summary",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1189,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/dte/traceability",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1141,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/documentary/coverage",
+    "status": 200,
+    "classification": "PASS",
+    "size": 108,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/periodos",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1368,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exec/summary",
+    "status": 200,
+    "classification": "PASS",
+    "size": 733,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/financial-structure",
+    "status": 200,
+    "classification": "PASS",
+    "size": 2261,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exec/cobros-breakdown",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1079,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exec/waterfall-v3",
+    "status": 200,
+    "classification": "PASS",
+    "size": 324,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/executive/insights",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1883,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/intelligence/anomalies",
+    "status": 200,
+    "classification": "PASS",
+    "size": 3554,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/intelligence/insights",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1883,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/intelligence/returns",
+    "status": 200,
+    "classification": "PASS",
+    "size": 565,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/debug_audit",
+    "status": 200,
+    "classification": "PASS",
+    "size": 3116,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/auditoria",
+    "status": 200,
+    "classification": "PASS",
+    "size": 844440,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/electronic_certification/status/{tx_id}",
+    "status": 200,
+    "classification": "PASS",
+    "size": 465,
+    "has_null": false
+  },
+  {
+    "method": "POST",
+    "path": "/api/v4/correcciones",
+    "status": 400,
+    "classification": "EXPECTED_INSUFFICIENT_EVIDENCE",
+    "size": 145,
+    "has_null": false
+  },
+  {
+    "method": "POST",
+    "path": "/api/v4/run-audit",
+    "status": 200,
+    "classification": "PASS",
+    "size": 359,
+    "has_null": false
+  },
+  {
+    "method": "POST",
+    "path": "/api/v4/run-indexer",
+    "status": 500,
+    "classification": "EXPECTED_EMPTY",
+    "size": 145,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/electronic_certification/status/{transaction_id}",
+    "status": 200,
+    "classification": "PASS",
+    "size": 413,
+    "has_null": false
+  },
+  {
+    "method": "POST",
+    "path": "/api/v4/electronic_certification/validate",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1436,
+    "has_null": false
+  },
+  {
+    "method": "POST",
+    "path": "/api/v4/knowledge/export",
+    "status": 200,
+    "classification": "PASS",
+    "size": 629,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/traceability/search",
+    "status": 200,
+    "classification": "PASS",
+    "size": 104173,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/traceability/transaction/{marketplace}/{transaction_id}",
+    "status": 200,
+    "classification": "PASS",
+    "size": 103,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/traceability/evidence/{marketplace}/{transaction_id}",
+    "status": 200,
+    "classification": "PASS",
+    "size": 103,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/traceability/summary",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1059,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/traceability/sap-reconciliation",
+    "status": 200,
+    "classification": "PASS",
+    "size": 923,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/ingestion/registry/{execution_id}",
+    "status": 200,
+    "classification": "PASS",
+    "size": 103,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/ingestion/registry",
+    "status": 200,
+    "classification": "PASS",
+    "size": 42019,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/ledger/records",
+    "status": 200,
+    "classification": "PASS",
+    "size": 741,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/ledger/transaction/{id_transaccion}",
+    "status": 404,
+    "classification": "EXPECTED_INSUFFICIENT_EVIDENCE",
+    "size": 70,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/ledger/order/{id_orden}",
+    "status": 200,
+    "classification": "PASS",
+    "size": 61,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/ledger/summary",
+    "status": 200,
+    "classification": "PASS",
+    "size": 496,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/classification/summary",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1197,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/classification/rules",
+    "status": 200,
+    "classification": "PASS",
+    "size": 3856,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/classification/{transaction_id}",
+    "status": 404,
+    "classification": "EXPECTED_INSUFFICIENT_EVIDENCE",
+    "size": 62,
+    "has_null": false
+  },
+  {
+    "method": "POST",
+    "path": "/api/v4/classification/rebuild",
+    "status": 200,
+    "classification": "PASS",
+    "size": 1299,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/truth/health",
+    "status": 200,
+    "classification": "PASS",
+    "size": 159,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/truth/summary",
+    "status": 200,
+    "classification": "PASS",
+    "size": 276,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/truth/query",
+    "status": 422,
+    "classification": "EXPECTED_INSUFFICIENT_EVIDENCE",
+    "size": 105,
+    "has_null": false
+  },
+  {
+    "method": "POST",
+    "path": "/api/v4/truth/query",
+    "status": 200,
+    "classification": "PASS",
+    "size": 48134,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/truth/transaction/{transaction_id}",
+    "status": 404,
+    "classification": "EXPECTED_INSUFFICIENT_EVIDENCE",
+    "size": 68,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/truth/order/{id_orden}",
+    "status": 404,
+    "classification": "EXPECTED_INSUFFICIENT_EVIDENCE",
+    "size": 56,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/reconciliation/health",
+    "status": 200,
+    "classification": "PASS",
+    "size": 178,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/reconciliation/summary",
+    "status": 200,
+    "classification": "PASS",
+    "size": 435,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/reconciliation/statistics",
+    "status": 200,
+    "classification": "PASS",
+    "size": 435,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/reconciliation/exceptions",
+    "status": 200,
+    "classification": "PASS",
+    "size": 39519,
+    "has_null": false
+  },
+  {
+    "method": "POST",
+    "path": "/api/v4/reconciliation/execute",
+    "status": 200,
+    "classification": "PASS",
+    "size": 433,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/reconciliation/transaction/{transaction_id}",
+    "status": 404,
+    "classification": "EXPECTED_INSUFFICIENT_EVIDENCE",
+    "size": 77,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/reconciliation/order/{id_orden}",
+    "status": 404,
+    "classification": "EXPECTED_INSUFFICIENT_EVIDENCE",
+    "size": 65,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exceptions/health",
+    "status": 200,
+    "classification": "PASS",
+    "size": 145,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exceptions/summary",
+    "status": 200,
+    "classification": "PASS",
+    "size": 823,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exceptions/sla",
+    "status": 200,
+    "classification": "PASS",
+    "size": 161,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exceptions/statistics",
+    "status": 200,
+    "classification": "PASS",
+    "size": 915,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exceptions/marketplace/{marketplace}",
+    "status": 200,
+    "classification": "PASS",
+    "size": 183,
+    "has_null": false
+  },
+  {
+    "method": "POST",
+    "path": "/api/v4/exceptions/evaluate",
+    "status": 200,
+    "classification": "PASS",
+    "size": 127,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exceptions",
+    "status": 200,
+    "classification": "PASS",
+    "size": 74889,
+    "has_null": false
+  },
+  {
+    "method": "POST",
+    "path": "/api/v4/exceptions/rebuild",
+    "status": 200,
+    "classification": "PASS",
+    "size": 149,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exceptions/transaction/{transaction_id}",
+    "status": 200,
+    "classification": "PASS",
+    "size": 56,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exceptions/order/{id_orden}",
+    "status": 200,
+    "classification": "PASS",
+    "size": 44,
+    "has_null": false
+  },
+  {
+    "method": "GET",
+    "path": "/api/v4/exceptions/{exception_id}",
+    "status": 404,
+    "classification": "EXPECTED_INSUFFICIENT_EVIDENCE",
+    "size": 48,
+    "has_null": false
+  }
+]

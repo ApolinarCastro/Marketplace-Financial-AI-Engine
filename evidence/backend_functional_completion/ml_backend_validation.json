@@ -1,0 +1,5 @@
+{
+  "flow": "sale->commission->shipping->refund->settlement->DTE->result PASS",
+  "drill_down": "PASS",
+  "verdict": "ML_BACKEND_CONSISTENCY PASS"
+}

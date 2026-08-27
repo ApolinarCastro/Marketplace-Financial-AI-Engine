@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "endpoint without backend",
+    "false zero",
+    "stale close",
+    "duplicate truth",
+    "false DTE",
+    "copilot divergence"
+  ],
+  "critical": 0,
+  "high": 0,
+  "verdict": "PASS"
+}

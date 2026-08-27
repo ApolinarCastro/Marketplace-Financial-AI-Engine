@@ -1,0 +1,7 @@
+{
+  "financial": "PASS",
+  "settlement": "PASS",
+  "fiscal": "BLOCKED honest",
+  "false_coverage": 0,
+  "verdict": "RIPLEY_FALSE_DTE_COVERAGE 0"
+}

@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "ui": "exec summary cards",
+    "api": "/api/v4/exec/summary",
+    "engine": "FinancialTruthEngine",
+    "table": "marketplace_cierre_financiero_v1",
+    "match": "UI==API==DB PASS"
+  },
+  "waterfall": {
+    "api": "/api/v4/exec/waterfall or financial-structure",
+    "match": "PASS"
+  },
+  "cobros_breakdown": {
+    "api": "/api/v4/exec/cobros-breakdown",
+    "match": "PASS"
+  },
+  "verdict": "EXECUTIVE_DISCREPANCIES 0"
+}

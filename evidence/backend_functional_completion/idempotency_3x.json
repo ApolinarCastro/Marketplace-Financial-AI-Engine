@@ -1,0 +1,18 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "total": 88926
+    },
+    {
+      "run": 2,
+      "total": 88926
+    },
+    {
+      "run": 3,
+      "total": 88926
+    }
+  ],
+  "equal": true,
+  "verdict": "PASS"
+}

@@ -1,0 +1,27 @@
+{
+  "marketplace": {
+    "canonical": "ML|PARIS|RIPLEY|FALABELLA|SHOPIFY (uppercase)",
+    "aliases": [
+      "ml",
+      "paris"
+    ],
+    "normalized": "upper"
+  },
+  "period": {
+    "canonical": "YYYY-MM",
+    "aliases": [
+      "YYYY-MM-01",
+      "periodo",
+      "period"
+    ],
+    "normalized": "YYYY-MM"
+  },
+  "transaction_id": {
+    "canonical": "id_transaccion",
+    "aliases": [
+      "order_id",
+      "folio"
+    ]
+  },
+  "verdict": "PARAMETER_AMBIGUITY 0 (backend normalizes via LOWER(marketplace) and period parsing)"
+}

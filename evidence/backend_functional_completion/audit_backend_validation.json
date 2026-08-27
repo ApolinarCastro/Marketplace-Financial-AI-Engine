@@ -1,0 +1,24 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "status": 200,
+      "mode": "READ_ONLY"
+    },
+    {
+      "run": 2,
+      "status": 200,
+      "mode": "READ_ONLY"
+    },
+    {
+      "run": 3,
+      "status": 200,
+      "mode": "READ_ONLY"
+    }
+  ],
+  "delete": 0,
+  "insert": 0,
+  "update": 0,
+  "sha_unchanged": true,
+  "verdict": "AUDIT_BACKEND_PASS 3/3"
+}

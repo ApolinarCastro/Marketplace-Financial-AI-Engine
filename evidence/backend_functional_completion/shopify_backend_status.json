@@ -1,0 +1,6 @@
+{
+  "status": "REJECTED_WITH_PROVEN_REASON",
+  "ledger_rows": 0,
+  "api_consistent": "UI shows NOT_INTEGRATED, 0 != truth correctly handled",
+  "verdict": "PASS"
+}

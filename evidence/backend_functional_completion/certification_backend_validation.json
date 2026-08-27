@@ -1,0 +1,14 @@
+{
+  "cases": {
+    "real_DTE": "PASS",
+    "XML_PRESENT": "PASS",
+    "DOCUMENT_REFERENCE_ONLY": "PASS (15055037 DOCUMENTAL)",
+    "LEDGER_REFERENCE": "PASS",
+    "INSUFFICIENT": "PASS",
+    "TRUTH_CONFLICT": 0
+  },
+  "false_fiscal": 0,
+  "null_status": 0,
+  "semantic_contradictions": 0,
+  "verdict": "PASS"
+}
