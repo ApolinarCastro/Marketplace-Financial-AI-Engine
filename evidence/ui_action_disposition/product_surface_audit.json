@@ -1,0 +1,13 @@
+{
+  "screens": [
+    "Executive",
+    "Auditor",
+    "Ledger",
+    "Exceptions",
+    "Certification",
+    "Copilot"
+  ],
+  "dead_buttons": 0,
+  "orphan_dropdown": 0,
+  "verdict": "VISIBLE_DEAD_CONTROLS 0"
+}

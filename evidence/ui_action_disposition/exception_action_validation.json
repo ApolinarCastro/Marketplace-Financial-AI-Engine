@@ -1,0 +1,8 @@
+{
+  "actions": [
+    "open exception",
+    "filter",
+    "evidence"
+  ],
+  "verdict": "EXCEPTION_UI_ACTIONS PASS"
+}

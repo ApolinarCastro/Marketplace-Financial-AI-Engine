@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-27T08:50:21.613416",
+  "branch": "phase5/production-readiness",
+  "commit": "08cc2d90c300bd660a66fe152ddc9edee4c0f6be",
+  "git_status_lines": 856,
+  "db_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_match": true,
+  "raw_count": 1313,
+  "ui_inventoried": 145,
+  "ui_pass": 26,
+  "ui_blocked": 119,
+  "ui_broken": 0,
+  "api_active": 73,
+  "verdict": "BASELINE CONFIRMED 145/26/119/0"
+}

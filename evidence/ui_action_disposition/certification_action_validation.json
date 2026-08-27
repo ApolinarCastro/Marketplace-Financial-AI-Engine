@@ -1,0 +1,9 @@
+{
+  "actions": [
+    "open certification",
+    "folio link",
+    "pipeline"
+  ],
+  "ripley": "BLOCKED",
+  "verdict": "CERTIFICATION_ACTIONS PASS"
+}

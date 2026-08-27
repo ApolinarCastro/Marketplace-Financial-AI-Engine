@@ -1,0 +1,7 @@
+{
+  "exports": [
+    "ledger CSV"
+  ],
+  "classification": "HIDE (not advertised)",
+  "verdict": "EXPORT_ACTIONS PASS"
+}

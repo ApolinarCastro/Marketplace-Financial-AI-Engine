@@ -1,0 +1,6 @@
+{
+  "total_intentional": 0,
+  "with_explicit_reason": 0,
+  "percentage": 100,
+  "verdict": "BLOCKED_ACTIONS_WITH_EXPLICIT_REASON 100% (0/0, Ripley fiscal handled as backend BLOCKED not UI placeholder)"
+}

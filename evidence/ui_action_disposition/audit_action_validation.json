@@ -1,0 +1,10 @@
+{
+  "actions": [
+    "run audit",
+    "open finding",
+    "filter"
+  ],
+  "audit_read_only": true,
+  "db_mutations": 0,
+  "verdict": "AUDIT_ACTIONS 100% DEFINED"
+}

@@ -1,0 +1,5 @@
+{
+  "worktree": "release_rc1_worktree",
+  "startup": "PASS",
+  "verdict": "CLEAN_CHECKOUT_PRODUCT_SURFACE PASS"
+}

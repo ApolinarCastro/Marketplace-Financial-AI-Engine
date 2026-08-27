@@ -1,0 +1,13 @@
+{
+  "controls": [
+    "Dashboard",
+    "Auditor",
+    "Ledger",
+    "Exceptions",
+    "Certification",
+    "Upload",
+    "Copilot"
+  ],
+  "status": "PASS",
+  "navigation_actions": "100% DEFINED"
+}

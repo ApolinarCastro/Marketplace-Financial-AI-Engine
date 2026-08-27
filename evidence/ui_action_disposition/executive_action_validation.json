@@ -1,0 +1,8 @@
+{
+  "actions": [
+    "period selector",
+    "marketplace selector",
+    "KPI click"
+  ],
+  "verdict": "EXECUTIVE_UI_ACTIONS PASS"
+}

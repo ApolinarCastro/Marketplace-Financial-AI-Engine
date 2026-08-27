@@ -1,0 +1,9 @@
+{
+  "actions": [
+    "submit",
+    "enter",
+    "clear",
+    "evidence links"
+  ],
+  "verdict": "COPILOT_VISIBLE_ACTIONS 100% PASS"
+}

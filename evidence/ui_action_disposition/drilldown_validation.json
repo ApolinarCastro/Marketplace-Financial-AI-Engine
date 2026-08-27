@@ -1,0 +1,9 @@
+{
+  "drilldowns": [
+    "KPI->ledger",
+    "waterfall->ledger",
+    "exception->transaction",
+    "DTE->evidence"
+  ],
+  "verdict": "DRILLDOWN_UNIVERSE_DIFFERENCES 0"
+}

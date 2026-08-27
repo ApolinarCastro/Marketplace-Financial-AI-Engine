@@ -1,0 +1,9 @@
+{
+  "actions": [
+    "pagination",
+    "filters",
+    "search",
+    "detail"
+  ],
+  "verdict": "LEDGER_UI_ACTIONS PASS"
+}

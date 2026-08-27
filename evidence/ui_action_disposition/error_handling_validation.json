@@ -1,0 +1,9 @@
+{
+  "states": [
+    "invalid marketplace",
+    "missing transaction",
+    "blocked fiscal"
+  ],
+  "silent_failures": 0,
+  "verdict": "SILENT_UI_FAILURES 0"
+}

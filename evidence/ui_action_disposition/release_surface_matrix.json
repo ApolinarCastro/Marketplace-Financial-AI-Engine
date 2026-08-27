@@ -1,0 +1,51 @@
+{
+  "Executive": {
+    "total": 20,
+    "PASS": 5,
+    "INTENTIONAL_BLOCK": 0,
+    "HIDDEN": 15,
+    "BROKEN": 0
+  },
+  "Auditor": {
+    "total": 30,
+    "PASS": 8,
+    "INTENTIONAL_BLOCK": 0,
+    "HIDDEN": 22,
+    "BROKEN": 0
+  },
+  "Ledger": {
+    "total": 25,
+    "PASS": 6,
+    "INTENTIONAL_BLOCK": 0,
+    "HIDDEN": 19,
+    "BROKEN": 0
+  },
+  "Exceptions": {
+    "total": 15,
+    "PASS": 3,
+    "INTENTIONAL_BLOCK": 0,
+    "HIDDEN": 12,
+    "BROKEN": 0
+  },
+  "Certification": {
+    "total": 10,
+    "PASS": 2,
+    "INTENTIONAL_BLOCK": 0,
+    "HIDDEN": 8,
+    "BROKEN": 0
+  },
+  "Upload": {
+    "total": 5,
+    "PASS": 0,
+    "INTENTIONAL_BLOCK": 0,
+    "HIDDEN": 5,
+    "BROKEN": 0
+  },
+  "Copilot": {
+    "total": 15,
+    "PASS": 2,
+    "INTENTIONAL_BLOCK": 0,
+    "HIDDEN": 13,
+    "BROKEN": 0
+  }
+}

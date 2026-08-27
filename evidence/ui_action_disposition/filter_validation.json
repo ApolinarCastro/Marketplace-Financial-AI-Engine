@@ -1,0 +1,10 @@
+{
+  "filters": [
+    "marketplace",
+    "period",
+    "financial group",
+    "status",
+    "search"
+  ],
+  "verdict": "FILTER_ACTIONS PASS"
+}
