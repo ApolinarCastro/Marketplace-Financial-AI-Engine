@@ -1,0 +1,20 @@
+Authority,Object,Filter,Rows,Amount
+HealthEndpoint,marketplace_ledger_v1,none,598112,1636831936
+HealthEndpoint,marketplace_ledger_clasificado_v1,none,598112,1636831936
+HealthEndpoint,marketplace_cierre_financiero_v1,none,251,0
+FinancialStructureAPI,marketplace_ledger_v1,"financial_group IN (ingresos, devoluciones, costos_operacionales, costos_comerciales, ajustes, recuperaciones_y_bonificaciones)",542983,
+FinancialStructureAPI,marketplace_ledger_v1,"financial_group IN (...) AND COALESCE(include_in_operational_pnl,1)=1",410669,
+CertificationEngine,marketplace_ledger_clasificado_v1,"financial_group=ingresos",598112,
+CertificationEngine,marketplace_ledger_clasificado_v1,"financial_group=devoluciones",598112,
+CertificationEngine,marketplace_ledger_clasificado_v1,"classification coverage",598112,
+DocumentCertificationEngine,marketplace_ledger_v1,"RIPLEY settlement chain",287417,
+DocumentCertificationEngine,marketplace_ledger_v1,"PARIS document chain",197820,
+DocumentCertificationEngine,marketplace_ledger_v1,"FALABELLA transaction chain",3076,
+DocumentCertificationEngine,marketplace_ledger_v1,"ML direct link",109799,
+ReconciliationEngine,marketplace_ledger_v1,"RIPLEY validation",287417,
+ReconciliationEngine,marketplace_ledger_v1,"PARIS validation",197820,
+ReconciliationEngine,marketplace_ledger_v1,"FALABELLA validation",3076,
+ReconciliationEngine,marketplace_ledger_v1,"ML validation",109799,
+Snapshot_B25C_PreClassification,marketplace_ledger_v1,"pre-classification state",207600,
+Snapshot_B25C_PreClassification,marketplace_ledger_clasificado_v1,"pre-classification state",207600,
+Snapshot_BaselineV6,marketplace_ledger_v1,"BASELINE_V6 tag",414314,

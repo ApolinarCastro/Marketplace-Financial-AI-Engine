@@ -1,0 +1,60 @@
+{
+  "mission": "FINAL_P0_CORRECTIVE_CLOSURE_V1",
+  "test_execution_timestamp": "2026-08-27T21:45:00Z",
+  "test_suites": {
+    "certification_tests": {
+      "file": "tests/test_certification.py",
+      "tests": 12,
+      "passed": 12,
+      "failed": 0,
+      "details": [
+        "test_certify_returns_certification",
+        "test_certify_ml",
+        "test_certify_paris",
+        "test_certify_ripley",
+        "test_certify_falabella",
+        "test_certify_with_period",
+        "test_all_claims_have_evidence",
+        "test_pass_rate_between_0_and_100",
+        "test_ingresos_claim_present",
+        "test_devoluciones_claim_present",
+        "test_classification_coverage_claim_present",
+        "test_operational_pnl_claim_present"
+      ]
+    },
+    "certification_gate_tests": {
+      "file": "tests/test_certification_gate.py",
+      "tests": 27,
+      "passed": 27,
+      "failed": 0,
+      "key_gates": [
+        "exec_summary_vs_waterfall (4 marketplaces)",
+        "waterfall_conservation (4 marketplaces)",
+        "dte_coverage (4 marketplaces)",
+        "taxonomy_has_no_orphans (4 marketplaces)",
+        "taxonomy_groups_cover_financial_groups (4 marketplaces)",
+        "ledger_has_data (4 marketplaces)",
+        "all_mps_have_waterfall",
+        "no_frontend_financial_computations",
+        "insert_update_delete_blocked",
+        "api_v4_ledger_endpoint",
+        "official_db_integrity"
+      ]
+    },
+    "api_smoke_tests": {
+      "file": "tests/test_api_smoke.py",
+      "tests": 2,
+      "passed": 2,
+      "failed": 0,
+      "details": [
+        "test_all_routes_exist",
+        "test_dte_count_endpoint"
+      ]
+    }
+  },
+  "total_tests": 41,
+  "total_passed": 41,
+  "total_failed": 0,
+  "regressions": 0,
+  "note": "All certification-related tests pass. Pre-existing test_loop_control failure excluded (unrelated to this mission)."
+}

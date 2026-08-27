@@ -383,12 +383,20 @@ window.ApiClient = {
 
         function getCertificationLabel(status) {
             const labels = {
+                // V3 Canonical states
+                'FULLY_CERTIFIED': { text: 'CERTIFICADO TOTAL', bg: 'bg-emerald-50', border: 'border-emerald-200', textColor: 'text-emerald-700', dotColor: 'bg-emerald-500' },
+                'PARTIALLY_CERTIFIED': { text: 'CERTIFICACIÓN PARCIAL', bg: 'bg-amber-50', border: 'border-amber-200', textColor: 'text-amber-700', dotColor: 'bg-amber-500' },
+                'FINANCIAL_ONLY': { text: 'SOLO FINANCIERO', bg: 'bg-blue-50', border: 'border-blue-200', textColor: 'text-blue-700', dotColor: 'bg-blue-500' },
+                'BLOCKED': { text: 'BLOQUEADO', bg: 'bg-rose-50', border: 'border-rose-200', textColor: 'text-rose-700', dotColor: 'bg-rose-500' },
+                'CONFLICT': { text: 'CONFLICTO', bg: 'bg-red-50', border: 'border-red-200', textColor: 'text-red-700', dotColor: 'bg-red-500' },
+                'NO_EVIDENCE': { text: 'SIN EVIDENCIA', bg: 'bg-slate-50', border: 'border-slate-200', textColor: 'text-slate-500', dotColor: 'bg-slate-400' },
+                // Legacy states (for backward compatibility)
                 'CERTIFIED': { text: 'CERTIFICADO', bg: 'bg-emerald-50', border: 'border-emerald-200', textColor: 'text-emerald-700', dotColor: 'bg-emerald-500' },
                 'DEGRADED': { text: 'CERTIFICACIÓN PARCIAL', bg: 'bg-amber-50', border: 'border-amber-200', textColor: 'text-amber-700', dotColor: 'bg-amber-500' },
                 'FAILED': { text: 'NO CERTIFICADO', bg: 'bg-rose-50', border: 'border-rose-200', textColor: 'text-rose-700', dotColor: 'bg-rose-500' },
                 'PENDING': { text: 'PENDIENTE', bg: 'bg-slate-50', border: 'border-slate-200', textColor: 'text-slate-500', dotColor: 'bg-slate-400' }
             };
-            return labels[status] || labels['PENDING'];
+            return labels[status] || labels['NO_EVIDENCE'];
         }
 
         function getAuditStatusLabel(status) {

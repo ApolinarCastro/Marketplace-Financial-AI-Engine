@@ -825,12 +825,20 @@
 
         function getCertificationLabel(status) {
             const labels = {
+                // V3 Canonical states
+                'FULLY_CERTIFIED': { text: 'CERTIFICADO TOTAL', bg: 'bg-emerald-50', border: 'border-emerald-200', textColor: 'text-emerald-800', icon: 'fa-check-circle' },
+                'PARTIALLY_CERTIFIED': { text: 'CERTIFICACIÓN PARCIAL', bg: 'bg-amber-50', border: 'border-amber-200', textColor: 'text-amber-800', icon: 'fa-exclamation-triangle' },
+                'FINANCIAL_ONLY': { text: 'SOLO FINANCIERO', bg: 'bg-blue-50', border: 'border-blue-200', textColor: 'text-blue-800', icon: 'fa-chart-line' },
+                'BLOCKED': { text: 'BLOQUEADO', bg: 'bg-rose-50', border: 'border-rose-200', textColor: 'text-rose-800', icon: 'fa-ban' },
+                'CONFLICT': { text: 'CONFLICTO', bg: 'bg-red-50', border: 'border-red-200', textColor: 'text-red-800', icon: 'fa-exclamation-circle' },
+                'NO_EVIDENCE': { text: 'SIN EVIDENCIA', bg: 'bg-slate-50', border: 'border-slate-200', textColor: 'text-slate-700', icon: 'fa-question-circle' },
+                // Legacy states (for backward compatibility)
                 'CERTIFIED': { text: 'CERTIFICADO', bg: 'bg-emerald-50', border: 'border-emerald-200', textColor: 'text-emerald-800', icon: 'fa-check-circle' },
                 'DEGRADED': { text: 'CERTIFICACIÓN PARCIAL', bg: 'bg-amber-50', border: 'border-amber-200', textColor: 'text-amber-800', icon: 'fa-exclamation-triangle' },
                 'FAILED': { text: 'NO CERTIFICADO', bg: 'bg-rose-50', border: 'border-rose-200', textColor: 'text-rose-800', icon: 'fa-times-circle' },
                 'PENDING': { text: 'PENDIENTE', bg: 'bg-slate-50', border: 'border-slate-200', textColor: 'text-slate-700', icon: 'fa-clock' }
             };
-            return labels[status] || labels['PENDING'];
+            return labels[status] || labels['NO_EVIDENCE'];
         }
 
         function getAuditStatusLabel(status) {

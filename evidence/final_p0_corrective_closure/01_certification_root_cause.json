@@ -1,0 +1,47 @@
+{
+  "mission": "FINAL_P0_CORRECTIVE_CLOSURE_V1",
+  "p0_id": "P0-1_CANONICAL_CERTIFICATION_SEMANTICS",
+  "analysis_timestamp": "2026-08-27T18:30:00Z",
+  "root_cause": {
+    "description": "The /api/v4/certification/status endpoint returns internal CertificationEngine states (CERTIFIED, DEGRADED, FAILED) as the public overall_status instead of the canonical CertificationResultV3 contract states (FULLY_CERTIFIED, PARTIALLY_CERTIFIED, FINANCIAL_ONLY, BLOCKED, CONFLICT, NO_EVIDENCE).",
+    "location": "api/api.py:597-712 get_certification_status()",
+    "flow": "DOM -> JS -> /api/v4/certification/status -> CertificationEngine.certify() -> MarketplacesCertification.status -> overall_status in response",
+    "evidence": {
+      "certification_engine_internal_states": ["CERTIFIED", "DEGRADED", "FAILED"],
+      "canonical_public_contract_states": ["FULLY_CERTIFIED", "PARTIALLY_CERTIFIED", "FINANCIAL_ONLY", "BLOCKED", "CONFLICT", "NO_EVIDENCE"],
+      "current_api_response_field": "overall_status",
+      "current_values_returned": ["DEGRADED", "FAILED"]
+    }
+  },
+  "certification_engine_results_2026_05": {
+    "ML": {"overall": "DEGRADED", "pass_rate": 66.7, "reconciliation": "FAIL (delta=40.7M)", "classification_coverage": "FAIL (6.3%)"},
+    "RIPLEY": {"overall": "DEGRADED", "pass_rate": 83.3, "reconciliation": "FAIL (delta=95.1M)", "classification_coverage": "PASS"},
+    "PARIS": {"overall": "DEGRADED", "pass_rate": 83.3, "reconciliation": "FAIL (delta=77.7M)", "classification_coverage": "PASS"},
+    "FALABELLA": {"overall": "FAILED", "pass_rate": 50.0, "reconciliation": "FAIL (delta=7.3M)", "operational_pnl": "FAIL"}
+  },
+  "certification_engine_results_2026_04": {
+    "FALABELLA": {"overall": "FAILED", "pass_rate": 50.0, "reconciliation": "FAIL (delta=2.9M)", "operational_pnl": "FAIL"}
+  },
+  "document_certification_status": {
+    "ML": {"estado_legal": "LEGAL_DOCUMENT", "nivel_evidencia": "DIRECT_LINK", "cobertura": 97.6, "chain_type": "DIRECT_LINK"},
+    "RIPLEY": {"estado_legal": "SETTLEMENT_CERTIFIED", "nivel_evidencia": "SETTLEMENT_CHAIN_V2", "cobertura": 0.0, "chain_type": "SETTLEMENT", "monto_elegible": 826645222},
+    "PARIS": {"estado_legal": "DOCUMENT_CHAIN_CERTIFIED", "nivel_evidencia": "DOCUMENT_CHAIN", "cobertura": 89.2, "chain_type": "DOCUMENT_CHAIN"},
+    "FALABELLA": {"estado_legal": "TRANSACTION_CHAIN_CERTIFIED", "nivel_evidencia": "TRANSACTION_CHAIN", "cobertura": 37.0, "chain_type": "TRANSACTION_CHAIN"}
+  },
+  "canonical_mapping_required": {
+    "financial_layer": "Derived from CertificationEngine claims (reconciliation, ingresos, devoluciones, coverage, PNL equivalence, operational PNL)",
+    "settlement_layer": "Derived from document_certification estado_legal/nivel_evidencia (SETTLEMENT_CERTIFIED for RIPLEY, NOT_APPLICABLE for others)",
+    "document_layer": "Derived from document_certification estado_legal (LEGAL_DOCUMENT, DOCUMENT_CHAIN_CERTIFIED, TRANSACTION_CHAIN_CERTIFIED)",
+    "xml_layer": "Derived from DTE coverage (XML_CERTIFIED if coverage=100%, XML_PRESENT_NOT_CERTIFIED if partial, XML_NOT_APPLICABLE if no DTE expected)",
+    "fiscal_layer": "Derived from DTE/settlement evidence (FISCAL_BLOCKED_EXTERNAL for RIPLEY, FISCAL_CERTIFIED for ML/PARIS/FALABELLA with DTE coverage)",
+    "overall_derivation": "Precedence: CONFLICT > BLOCKED > FULLY_CERTIFIED > PARTIALLY_CERTIFIED > FINANCIAL_ONLY > NO_EVIDENCE"
+  },
+  "critical_rule": "financial valid + fiscal evidence absent/incomplete = PARTIALLY_CERTIFIED (NOT FAILED)",
+  "affected_marketplaces": {
+    "RIPLEY": "Must return PARTIALLY_CERTIFIED (financial=FINANCIAL_CERTIFIED, settlement=SETTLEMENT_CERTIFIED, fiscal=FISCAL_BLOCKED_EXTERNAL)",
+    "FALABELLA_2026_05": "Must return PARTIALLY_CERTIFIED or FINANCIAL_ONLY (not FAILED)",
+    "FALABELLA_2026_04": "Must return PARTIALLY_CERTIFIED or FINANCIAL_ONLY (not FAILED)",
+    "ML": "Must return PARTIALLY_CERTIFIED (reconciliation fails, classification fails)",
+    "PARIS": "Must return PARTIALLY_CERTIFIED (reconciliation fails)"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "mission": "FINAL_P0_CORRECTIVE_CLOSURE_V1",
+  "baseline": "marketplace-financial-v1.0.2 @ 65b5860",
+  "evidence_files": [
+    "01_certification_root_cause.json",
+    "02_certification_v3_contract.json",
+    "03_certification_real_cases.json",
+    "04_runtime_db_identity.json",
+    "05_ledger_207600_origin.json",
+    "06_ledger_authority_inventory.csv",
+    "07_ledger_marketplace_reconciliation.csv",
+    "08_db_integrity.json",
+    "09_runtime_fingerprint.json",
+    "10_browser_app_validation.json",
+    "11_browser_exec_validation.json",
+    "12_browser_reload_validation.json",
+    "13_tests.json",
+    "evidence_manifest.json",
+    "FINAL_VERDICT.json"
+  ],
+  "created_at": "2026-08-27T22:00:00Z",
+  "total_files": 15
+}

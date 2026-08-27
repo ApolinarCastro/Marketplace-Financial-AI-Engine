@@ -1,0 +1,24 @@
+{
+  "mission": "FINAL_P0_CORRECTIVE_CLOSURE_V1",
+  "p0_id": "P0-2_LEDGER_COUNT_RECONCILIATION",
+  "analysis_timestamp": "2026-08-27T20:15:00Z",
+  "investigation": "Identify the exact code/query that produced '207,600 rows' reporting",
+  "findings": {
+    "207600_not_in_current_runtime": true,
+    "source_of_207600": "B2.5C pre-classification snapshot (data/db/snapshot_pre_fase2_20260603_112908/)",
+    "snapshot_sha256": "3939ad54b2442b1d7182aee856265979b6433e04842a6ff7ef7eba957b4915ea",
+    "snapshot_date": "2026-06-03 (pre-B2.5C classification execution)",
+    "current_runtime_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "current_ledger_rows": 598112,
+    "delta_rows": 390512,
+    "delta_explanation": "B2.5C classification execution (run_classification()) processed all marketplaces, adding classification data and completing the ledger. The 207,600 was the pre-classification state."
+  },
+  "queries_tested_that_do_NOT_produce_207600": [
+    "SELECT COUNT(*) FROM marketplace_ledger_v1 -> 598112",
+    "SELECT COUNT(*) FROM marketplace_ledger_v1 WHERE financial_group IN (...) -> 542983",
+    "SELECT COUNT(*) FROM marketplace_ledger_v1 WHERE financial_group IN (...) AND COALESCE(include_in_operational_pnl,1)=1 -> 410669",
+    "SELECT COUNT(*) FROM marketplace_ledger_clasificado_v1 -> 598112",
+    "Per-marketplace counts: RIPLEY=287417, PARIS=197820, ML=109799, FALABELLA=3076"
+  ],
+  "conclusion": "The '207,600' figure does not exist in the current runtime. It is a historical reference from documentation that was not updated post-B2.5C. No code in the current system produces 207,600 as a ledger count."
+}

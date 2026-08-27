@@ -1,0 +1,50 @@
+{
+  "mission": "FINAL_P0_CORRECTIVE_CLOSURE_V1",
+  "p0_id": "P0-2_LEDGER_COUNT_RECONCILIATION",
+  "analysis_timestamp": "2026-08-27T20:00:00Z",
+  "runtime_db_verification": {
+    "expected_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "actual_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "sha256_match": true,
+    "db_path": "data/db/meli_financial_v4.db",
+    "db_size_bytes": 131678208
+  },
+  "ledger_count_analysis": {
+    "canonical_ledger_rows": 598112,
+    "marketplace_breakdown": {
+      "RIPLEY": 287417,
+      "PARIS": 197820,
+      "ML": 109799,
+      "FALABELLA": 3076,
+      "SHOPIFY": 0
+    },
+    "total_verified": 598112,
+    "sum_matches_canonical": true
+  },
+  "origin_of_207600": {
+    "source": "B2.5C snapshot (pre-classification execution)",
+    "snapshot_path": "data/db/snapshot_pre_fase2_20260603_112908/meli_financial_v4.db",
+    "snapshot_sha256": "3939ad54b2442b1d7182aee856265979b6433e04842a6ff7ef7eba957b4915ea",
+    "snapshot_ledger_rows": 207600,
+    "documented_in": [
+      "AGENTS.md (line 582)",
+      "CLAUDE.md (line 389)",
+      "governance/RIPLEY_CLASSIFICATION_EXECUTION_REPORT.md",
+      "governance/RIPLEY_POST_CLASSIFICATION_CERTIFICATION.md",
+      "governance/MARKETPLACE_ECONOMIC_DICTIONARY.md",
+      "governance/MARKETPLACE_TAX_SUPPORT_MATRIX.md",
+      "governance/PLATFORM_READINESS_CERTIFICATION.md"
+    ],
+    "note": "These documents reference the pre-B2.5C snapshot state. The current official DB has since been updated with full classification and additional data."
+  },
+  "discrepancy_explanation": "The '207,600 vs 598,112' discrepancy is a DOCUMENTATION ARTIFACT, not a runtime data issue. The AGENTS.md and CLAUDE.md files were not updated after the B2.5C classification execution which increased ledger rows from 207,600 to 598,112 (full classification coverage across all marketplaces). The current runtime DB (SHA: 311c78e2...) correctly contains 598,112 rows.",
+  "gate_verification": {
+    "RUNTIME_DB_SHA_PROVEN": true,
+    "DB_SHA256_FULL_LENGTH": 64,
+    "CANONICAL_LEDGER_ROWS": 598112,
+    "LEDGER_207600_EXPLAINED": true,
+    "UNEXPLAINED_LEDGER_ROWS": 0,
+    "RAW_MUTATIONS": 0,
+    "DB_MUTATIONS": 0
+  }
+}

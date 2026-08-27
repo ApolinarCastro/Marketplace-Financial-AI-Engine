@@ -1,0 +1,76 @@
+{
+  "mission": "FINAL_P0_CORRECTIVE_CLOSURE_V1",
+  "p0_id": "P0-1_CANONICAL_CERTIFICATION_SEMANTICS",
+  "contract_name": "CertificationResultV3",
+  "description": "Canonical public certification contract for Marketplace Financial AI Engine",
+  "layer_states": {
+    "Financial": {
+      "states": ["FINANCIAL_CERTIFIED", "FINANCIAL_PARTIAL", "FINANCIAL_BLOCKED", "FINANCIAL_CONFLICT"],
+      "description": "Core financial truth certification (ingresos, devoluciones, PNL equivalence, operational PNL)"
+    },
+    "Settlement": {
+      "states": ["SETTLEMENT_CERTIFIED", "SETTLEMENT_NOT_APPLICABLE", "SETTLEMENT_MISSING", "SETTLEMENT_CONFLICT"],
+      "description": "Settlement chain certification (RIPLEY settlement chain, others N/A)"
+    },
+    "Document": {
+      "states": ["DOCUMENT_LINKED", "DOCUMENT_REFERENCE_ONLY", "DOCUMENT_MISSING", "DOCUMENT_CONFLICT"],
+      "description": "Document linkage certification (DTE coverage, transaction chains)"
+    },
+    "XML": {
+      "states": ["XML_CERTIFIED", "XML_PRESENT_NOT_CERTIFIED", "XML_INVALID", "XML_NOT_LINKED", "XML_NOT_APPLICABLE"],
+      "description": "XML/DTE fiscal certification status"
+    },
+    "Fiscal": {
+      "states": ["FISCAL_CERTIFIED", "INSUFFICIENT_FISCAL_EVIDENCE", "FISCAL_BLOCKED_EXTERNAL", "FISCAL_CONFLICT", "FISCAL_NOT_APPLICABLE"],
+      "description": "Fiscal/SII certification status"
+    }
+  },
+  "overall_states": {
+    "states": ["FULLY_CERTIFIED", "PARTIALLY_CERTIFIED", "FINANCIAL_ONLY", "BLOCKED", "CONFLICT", "NO_EVIDENCE"],
+    "precedence": [
+      "CONFLICT (highest)",
+      "BLOCKED",
+      "FULLY_CERTIFIED",
+      "PARTIALLY_CERTIFIED",
+      "FINANCIAL_ONLY",
+      "NO_EVIDENCE (lowest)"
+    ],
+    "critical_rule": "financial valid + fiscal evidence absent/incomplete = PARTIALLY_CERTIFIED (NOT FAILED/BLOCKED)"
+  },
+  "legacy_states_eliminated": ["CERTIFIED", "DEGRADED", "FAILED"],
+  "implementation": {
+    "adapter_file": "engine/v4/certification/certification_result_v3.py",
+    "api_endpoint": "/api/v4/certification/status",
+    "response_model": "CertificationStatusResponse",
+    "key_functions": [
+      "derive_financial_status",
+      "derive_settlement_status",
+      "derive_document_status",
+      "derive_xml_status",
+      "derive_fiscal_status",
+      "derive_overall_status",
+      "build_certification_result_v3"
+    ]
+  },
+  "field_mapping": {
+    "marketplace": "string",
+    "period": "string",
+    "financial_status": "FinancialStatus enum",
+    "settlement_status": "SettlementStatus enum",
+    "document_status": "DocumentStatus enum",
+    "xml_status": "XmlStatus enum",
+    "fiscal_status": "FiscalStatus enum",
+    "overall_status": "OverallStatus enum",
+    "overall_label": "string (human readable)",
+    "overall_reason": "string (explanation)",
+    "chain_type": "string (DIRECT_LINK, DOCUMENT_CHAIN, TRANSACTION_CHAIN, SETTLEMENT, NOT_RUN)",
+    "legacy_overall_status": "string (CERTIFIED|DEGRADED|FAILED for backward compat)",
+    "pass_rate": "float",
+    "total_delta": "float",
+    "claims": "array of CertificationClaim",
+    "audit_execution_status": "string (COMPLETED|PENDING|FAILED)",
+    "dte_chain_type": "string",
+    "dte_status_per_mp": "object",
+    "evidence": "object"
+  }
+}

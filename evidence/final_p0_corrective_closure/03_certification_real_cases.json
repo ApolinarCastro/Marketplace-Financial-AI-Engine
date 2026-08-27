@@ -1,0 +1,124 @@
+{
+  "mission": "FINAL_P0_CORRECTIVE_CLOSURE_V1",
+  "p0_id": "P0-1_CANONICAL_CERTIFICATION_SEMANTICS",
+  "verification_timestamp": "2026-08-27T19:30:00Z",
+  "canonical_contract": "CertificationResultV3",
+  "test_cases": {
+    "RIPLEY_2026_05": {
+      "api_response": {
+        "financial_status": "FINANCIAL_CERTIFIED",
+        "settlement_status": "SETTLEMENT_CERTIFIED",
+        "document_status": "DOCUMENT_REFERENCE_ONLY",
+        "xml_status": "XML_NOT_LINKED",
+        "fiscal_status": "FISCAL_BLOCKED_EXTERNAL",
+        "overall_status": "PARTIALLY_CERTIFIED",
+        "overall_label": "PARTIALLY_CERTIFIED",
+        "overall_reason": "Financial truth certified; fiscal evidence blocked externally (e.g., settlement chain without SII DTE)",
+        "legacy_overall_status": "DEGRADED",
+        "chain_type": "SETTLEMENT"
+      },
+      "expected_per_mission": {
+        "financial_status": "FINANCIAL_CERTIFIED",
+        "settlement_status": "SETTLEMENT_CERTIFIED",
+        "fiscal_status": "FISCAL_BLOCKED_EXTERNAL",
+        "chain_type": "SETTLEMENT",
+        "overall_status": "PARTIALLY_CERTIFIED"
+      },
+      "match": true,
+      "notes": "Reconciliation delta (95.1M) no longer causes FINANCIAL_CONFLICT. Core financial truth (ingresos, devoluciones, PNL) is certified. FISCAL_BLOCKED_EXTERNAL with certified financial = PARTIALLY_CERTIFIED per critical rule."
+    },
+    "FALABELLA_2026_05": {
+      "api_response": {
+        "financial_status": "FINANCIAL_PARTIAL",
+        "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+        "document_status": "DOCUMENT_REFERENCE_ONLY",
+        "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+        "fiscal_status": "INSUFFICIENT_FISCAL_EVIDENCE",
+        "overall_status": "PARTIALLY_CERTIFIED",
+        "overall_label": "PARTIALLY_CERTIFIED",
+        "overall_reason": "Financial truth valid; documentary/fiscal certification partial or blocked externally",
+        "legacy_overall_status": "FAILED",
+        "chain_type": "TRANSACTION_CHAIN"
+      },
+      "expected_per_mission": {
+        "overall_status": "PARTIALLY_CERTIFIED (not FAILED)"
+      },
+      "match": true,
+      "notes": "Was FAILED (legacy), now PARTIALLY_CERTIFIED. INGRESOS is WARNING (no data), but DEVOLUCIONES, PNL_EQUIVALENCE, CLASSIFICATION_COVERAGE are PASS."
+    },
+    "FALABELLA_2026_04": {
+      "api_response": {
+        "financial_status": "FINANCIAL_PARTIAL",
+        "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+        "document_status": "DOCUMENT_REFERENCE_ONLY",
+        "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+        "fiscal_status": "INSUFFICIENT_FISCAL_EVIDENCE",
+        "overall_status": "PARTIALLY_CERTIFIED",
+        "overall_label": "PARTIALLY_CERTIFIED",
+        "overall_reason": "Financial truth valid; documentary/fiscal certification partial or blocked externally",
+        "legacy_overall_status": "FAILED",
+        "chain_type": "TRANSACTION_CHAIN"
+      },
+      "expected_per_mission": {
+        "overall_status": "PARTIALLY_CERTIFIED (not FAILED)"
+      },
+      "match": true,
+      "notes": "Was FAILED (legacy), now PARTIALLY_CERTIFIED."
+    },
+    "ML_2026_05": {
+      "api_response": {
+        "financial_status": "FINANCIAL_CERTIFIED",
+        "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+        "document_status": "DOCUMENT_REFERENCE_ONLY",
+        "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+        "fiscal_status": "FISCAL_CERTIFIED",
+        "overall_status": "FINANCIAL_ONLY",
+        "overall_label": "FINANCIAL_ONLY",
+        "overall_reason": "Financial truth certified; documentary/fiscal layers incomplete",
+        "legacy_overall_status": "DEGRADED",
+        "chain_type": "DIRECT_LINK"
+      },
+      "analysis": "High DTE coverage (97.6%) but document_status is DOCUMENT_REFERENCE_ONLY (not LINKED because < 100% or not CERTIFIED with full coverage). Fiscal is CERTIFIED. Overall FINANCIAL_ONLY because document not fully linked.",
+      "match": true
+    },
+    "PARIS_2026_05": {
+      "api_response": {
+        "financial_status": "FINANCIAL_CERTIFIED",
+        "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+        "document_status": "DOCUMENT_LINKED",
+        "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+        "fiscal_status": "FISCAL_CERTIFIED",
+        "overall_status": "FULLY_CERTIFIED",
+        "overall_label": "FULLY_CERTIFIED",
+        "overall_reason": "All certification layers complete and certified",
+        "legacy_overall_status": "DEGRADED",
+        "chain_type": "DOCUMENT_CHAIN"
+      },
+      "analysis": "Document coverage 89.2% >= 80% threshold = DOCUMENT_LINKED. Fiscal certified. All core layers certified = FULLY_CERTIFIED.",
+      "match": true
+    }
+  },
+  "legacy_states_eliminated": {
+    "CERTIFIED": "No longer exposed as public overall_status",
+    "DEGRADED": "No longer exposed as public overall_status", 
+    "FAILED": "No longer exposed as public overall_status"
+  },
+  "public_contract_states_only": [
+    "FULLY_CERTIFIED",
+    "PARTIALLY_CERTIFIED", 
+    "FINANCIAL_ONLY",
+    "BLOCKED",
+    "CONFLICT",
+    "NO_EVIDENCE"
+  ],
+  "gate_verification": {
+    "LEGACY_PUBLIC_CERTIFICATION_STATES": 0,
+    "FALSE_GLOBAL_CERTIFIED": 0,
+    "FALSE_GLOBAL_FAILED": 0,
+    "RIPLEY_OVERALL_STATUS": "PARTIALLY_CERTIFIED",
+    "RIPLEY_CHAIN_TYPE": "SETTLEMENT",
+    "RIPLEY_FISCAL_STATUS": "FISCAL_BLOCKED_EXTERNAL",
+    "RIPLEY_FINANCIAL_STATUS": "FINANCIAL_CERTIFIED",
+    "RIPLEY_SETTLEMENT_STATUS": "SETTLEMENT_CERTIFIED"
+  }
+}

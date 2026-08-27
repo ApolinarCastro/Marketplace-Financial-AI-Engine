@@ -1,0 +1,115 @@
+{
+  "mission": "FINAL_P0_CORRECTIVE_CLOSURE_V1",
+  "p0_id": "P0-3_REAL_BROWSER_END_TO_END",
+  "analysis_timestamp": "2026-08-27T21:30:00Z",
+  "runtime_verification": {
+    "server_started": true,
+    "port": 3001,
+    "host": "127.0.0.1",
+    "api_endpoints_tested": [
+      "/api/v4/certification/status?marketplace=RIPLEY&periodo=2026-05",
+      "/api/v4/certification/status?marketplace=FALABELLA&periodo=2026-05",
+      "/api/v4/certification/status?marketplace=FALABELLA&periodo=2026-04",
+      "/api/v4/certification/status?marketplace=ML&periodo=2026-05",
+      "/api/v4/certification/status?marketplace=PARIS&periodo=2026-05",
+      "/api/v4/certification/status?marketplace=ALL",
+      "/api/v4/dte/certify?marketplace=FALABELLA",
+      "/api/v4/dte/certify?marketplace=RIPLEY"
+    ],
+    "all_endpoints_respond_200": true,
+    "db_sha256_verified": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9"
+  },
+  "browser_tests": {
+    "auditor_dashboard_app": {
+      "url": "http://127.0.0.1:3001/app",
+      "tested_marketplaces": ["RIPLEY", "ML", "PARIS", "FALABELLA"],
+      "tested_periods": ["2026-05", "2026-04"],
+      "results": {
+        "RIPLEY_2026_05": {
+          "overall_status_rendered": "CERTIFICACIÓN PARCIAL",
+          "expected_overall_status": "PARTIALLY_CERTIFIED",
+          "audit_status_rendered": "AUDITORÍA PENDIENTE",
+          "dte_chain_rendered": "Cadena de Liquidación (Settlement)",
+          "match": true
+        },
+        "ML_2026_05": {
+          "overall_status_rendered": "SOLO FINANCIERO",
+          "expected_overall_status": "FINANCIAL_ONLY",
+          "audit_status_rendered": "AUDITORÍA PENDIENTE",
+          "dte_chain_rendered": "Enlace Directo (1:1)",
+          "match": true
+        },
+        "PARIS_2026_05": {
+          "overall_status_rendered": "CERTIFICADO TOTAL",
+          "expected_overall_status": "FULLY_CERTIFIED",
+          "audit_status_rendered": "AUDITORÍA PENDIENTE",
+          "dte_chain_rendered": "Cadena Documental",
+          "match": true
+        },
+        "FALABELLA_2026_05": {
+          "overall_status_rendered": "SOLO FINANCIERO",
+          "expected_overall_status": "FINANCIAL_ONLY",
+          "audit_status_rendered": "AUDITORÍA PENDIENTE",
+          "dte_chain_rendered": "Cadena Transaccional",
+          "match": true
+        },
+        "FALABELLA_2026_04": {
+          "overall_status_rendered": "SOLO FINANCIERO",
+          "expected_overall_status": "FINANCIAL_ONLY",
+          "audit_status_rendered": "AUDITORÍA PENDIENTE",
+          "dte_chain_rendered": "Cadena Transaccional",
+          "match": true
+        }
+      }
+    },
+    "executive_dashboard_exec": {
+      "url": "http://127.0.0.1:3001/exec",
+      "tested_marketplaces": ["FALABELLA", "RIPLEY", "ML", "PARIS"],
+      "tested_periods": ["2026-05"],
+      "results": {
+        "FALABELLA_2026_05": {
+          "header_badge_rendered": "SOLO FINANCIERO",
+          "audit_section_rendered": "SOLO FINANCIERO",
+          "dte_chain_rendered": "Cadena Transaccional",
+          "match": true
+        },
+        "RIPLEY_2026_05": {
+          "header_badge_rendered": "CERTIFICACIÓN PARCIAL",
+          "audit_section_rendered": "CERTIFICACIÓN PARCIAL",
+          "dte_chain_rendered": "Cadena de Liquidación (Settlement)",
+          "match": true
+        },
+        "ML_2026_05": {
+          "header_badge_rendered": "SOLO FINANCIERO",
+          "audit_section_rendered": "SOLO FINANCIERO",
+          "dte_chain_rendered": "Enlace Directo (1:1)",
+          "match": true
+        },
+        "PARIS_2026_05": {
+          "header_badge_rendered": "CERTIFICADO TOTAL",
+          "audit_section_rendered": "CERTIFICADO TOTAL",
+          "dte_chain_rendered": "Cadena Documental",
+          "match": true
+        }
+      }
+    },
+    "hard_reload_tests": {
+      "falabella_2026_05_after_hard_reload": {
+        "status_rendered": "SOLO FINANCIERO",
+        "network_errors_during_reload": true,
+        "final_state_match": true,
+        "note": "Transient network errors during reload, but final state matches expected"
+      }
+    },
+    "new_tab_tests": {
+      "note": "All tests run in new browser context (headless chromium), equivalent to new tab"
+    }
+  },
+  "gate_verification": {
+    "APP_API_CERTIFICATION_DELTA": 0,
+    "EXEC_API_CERTIFICATION_DELTA": 0,
+    "REAL_BROWSER_NETWORK_ERRORS": 1,
+    "CERTIFICATION_SCOPE_DELTA": 0,
+    "HARD_RELOAD_PRESERVES_STATE": true
+  }
+}

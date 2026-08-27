@@ -1,0 +1,70 @@
+{
+  "mission": "FINAL_P0_CORRECTIVE_CLOSURE_V1",
+  "p0_id": "P0-3_REAL_BROWSER_END_TO_END",
+  "dashboard": "/app (Auditor Dashboard)",
+  "url": "http://127.0.0.1:3001/app",
+  "test_timestamp": "2026-08-27T21:15:00Z",
+  "test_cases": [
+    {
+      "marketplace": "RIPLEY",
+      "period": "2026-05",
+      "api_overall_status": "PARTIALLY_CERTIFIED",
+      "ui_rendered": "CERTIFICACIÓN PARCIAL",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Cadena de Liquidación (Settlement)",
+      "match": true,
+      "notes": "Financial certified, fiscal blocked external → PARTIALLY_CERTIFIED per critical rule"
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-05",
+      "api_overall_status": "FINANCIAL_ONLY",
+      "ui_rendered": "SOLO FINANCIERO",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Enlace Directo (1:1)",
+      "match": true,
+      "notes": "Financial certified, document partial (97.6% coverage) → FINANCIAL_ONLY"
+    },
+    {
+      "marketplace": "PARIS",
+      "period": "2026-05",
+      "api_overall_status": "FULLY_CERTIFIED",
+      "ui_rendered": "CERTIFICADO TOTAL",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Cadena Documental",
+      "match": true,
+      "notes": "Financial certified, document linked (89.2% coverage), fiscal certified → FULLY_CERTIFIED"
+    },
+    {
+      "marketplace": "FALABELLA",
+      "period": "2026-05",
+      "api_overall_status": "FINANCIAL_ONLY",
+      "ui_rendered": "SOLO FINANCIERO",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Cadena Transaccional",
+      "match": true,
+      "notes": "Financial partial (INGRESOS warning, OPERATIONAL_PNL fail), document partial → FINANCIAL_ONLY"
+    },
+    {
+      "marketplace": "FALABELLA",
+      "period": "2026-04",
+      "api_overall_status": "FINANCIAL_ONLY",
+      "ui_rendered": "SOLO FINANCIERO",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Cadena Transaccional",
+      "match": true,
+      "notes": "Same as 2026-05: financial partial, document partial → FINANCIAL_ONLY"
+    }
+  ],
+  "hard_reload_tests": {
+    "falabella_2026_05": {
+      "initial_load": "SOLO FINANCIERO",
+      "hard_reload_errors": "Transient network errors (TypeError: Failed to fetch)",
+      "final_state": "SOLO FINANCIERO",
+      "state_preserved": true
+    }
+  },
+  "no_legacy_certificado_found": true,
+  "no_false_global_certified": true,
+  "no_false_global_failed": true
+}

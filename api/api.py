@@ -123,13 +123,28 @@ class DteCountResponse(BaseModel):
 class CertificationStatusResponse(BaseModel):
     marketplace: str = Field(..., description="Marketplace consultado")
     period: str = Field(..., description="Período consultado")
-    overall_status: str = Field(..., description="Estado general de certificación: CERTIFIED, DEGRADED, FAILED")
+    
+    # Layer statuses (canonical V3 contract)
+    financial_status: str = Field(..., description="Estado financiero: FINANCIAL_CERTIFIED, FINANCIAL_PARTIAL, FINANCIAL_BLOCKED, FINANCIAL_CONFLICT")
+    settlement_status: str = Field(..., description="Estado liquidación: SETTLEMENT_CERTIFIED, SETTLEMENT_NOT_APPLICABLE, SETTLEMENT_MISSING, SETTLEMENT_CONFLICT")
+    document_status: str = Field(..., description="Estado documental: DOCUMENT_LINKED, DOCUMENT_REFERENCE_ONLY, DOCUMENT_MISSING, DOCUMENT_CONFLICT")
+    xml_status: str = Field(..., description="Estado XML: XML_CERTIFIED, XML_PRESENT_NOT_CERTIFIED, XML_INVALID, XML_NOT_LINKED, XML_NOT_APPLICABLE")
+    fiscal_status: str = Field(..., description="Estado fiscal: FISCAL_CERTIFIED, INSUFFICIENT_FISCAL_EVIDENCE, FISCAL_BLOCKED_EXTERNAL, FISCAL_CONFLICT, FISCAL_NOT_APPLICABLE")
+    
+    # Overall derived status
+    overall_status: str = Field(..., description="Estado general: FULLY_CERTIFIED, PARTIALLY_CERTIFIED, FINANCIAL_ONLY, BLOCKED, CONFLICT, NO_EVIDENCE")
+    overall_label: str = Field(..., description="Etiqueta legible del estado general")
+    overall_reason: str = Field(..., description="Razón del estado general")
+    
+    # Legacy compatibility (internal engine states)
+    legacy_overall_status: str = Field(..., description="Estado interno del motor: CERTIFIED, DEGRADED, FAILED")
     pass_rate: float = Field(..., description="Porcentaje de claims PASS")
     total_delta: float = Field(..., description="Delta total acumulado")
     claims: list[dict] = Field(default_factory=list, description="Detalle de cada claim de certificación")
     audit_execution_status: str = Field(..., description="Estado de ejecución de auditoría: COMPLETED, PENDING, FAILED")
     dte_chain_type: str | None = Field(None, description="Tipo de cadena DTE: DIRECT_LINK, DOCUMENT_CHAIN, TRANSACTION_CHAIN, SETTLEMENT, NOT_RUN")
     dte_status_per_mp: dict = Field(default_factory=dict, description="Estado DTE por marketplace")
+    evidence: dict = Field(default_factory=dict, description="Evidencia completa por capa")
 
 
 app = FastAPI(title="Marketplace Financial Auditor", version="3.5", description="Surgical Financial Truth Engine")
@@ -591,7 +606,16 @@ def get_certification(marketplace: str = "ALL"):
     engine = DocumentCertificationEngine()
     if marketplace == "ALL":
         return engine.get_all_certifications()
-    return engine.get_certification(marketplace)
+    
+    mp = marketplace.upper()
+    if mp == "RIPLEY":
+        return engine._certify_ripley()
+    elif mp == "PARIS":
+        return engine._certify_paris()
+    elif mp == "FALABELLA":
+        return engine._certify_falabella_transaction_chain()
+    else:
+        return engine._certify_direct(mp.lower())
 
 
 @app.get("/api/v4/certification/status", response_model=CertificationStatusResponse)
@@ -599,11 +623,13 @@ def get_certification_status(marketplace: str = "ALL", periodo: str | None = Non
     """Get formal certification status from CertificationEngine.
     
     This is the SINGLE AUTHORITY for certification status.
+    Returns CertificationResultV3 canonical contract with layer statuses.
     Separates certification (overall_status) from audit execution (audit_execution_status).
     """
     validate_periodo(periodo)
     from engine.v4.certification.certification_engine import CertificationEngine
     from engine.v4.certification.document_certification import DocumentCertificationEngine
+    from engine.v4.certification.certification_result_v3 import build_certification_result_v3
     
     cert_engine = CertificationEngine()
     doc_engine = DocumentCertificationEngine()
@@ -611,7 +637,7 @@ def get_certification_status(marketplace: str = "ALL", periodo: str | None = Non
     mp = marketplace.upper() if marketplace else "ALL"
     period_label = periodo or "YTD"
     
-    # Get formal certification
+    # Get formal certification from internal engine
     cert_result = cert_engine.certify(marketplace=mp, periodo=periodo)
     
     # Get DTE chain type per marketplace
@@ -686,6 +712,18 @@ def get_certification_status(marketplace: str = "ALL", periodo: str | None = Non
     last_audit = str(audit_check.iloc[0]["last_audit"]) if not audit_check.empty and pd.notna(audit_check.iloc[0]["last_audit"]) else None
     audit_execution_status = "COMPLETED" if audit_count > 0 else "PENDING"
     
+    # Build canonical V3 result for single marketplace
+    v3_result = None
+    if mp != "ALL":
+        doc_cert = dte_status.get(mp, {})
+        v3_result = build_certification_result_v3(
+            marketplace=mp,
+            period=period_label,
+            cert_result=cert_result,
+            doc_cert=doc_cert,
+            chain_type=dte_chain_type or "UNKNOWN"
+        )
+    
     # Build claims list
     claims_list = []
     for claim in cert_result.claims:
@@ -699,17 +737,54 @@ def get_certification_status(marketplace: str = "ALL", periodo: str | None = Non
             "impact_amount": claim.impact_amount
         })
     
-    return {
-        "marketplace": mp,
-        "period": period_label,
-        "overall_status": cert_result.status,
-        "pass_rate": cert_result.pass_rate,
-        "total_delta": cert_result.total_delta,
-        "claims": claims_list,
-        "audit_execution_status": audit_execution_status,
-        "dte_chain_type": dte_chain_type,
-        "dte_status_per_mp": dte_status
-    }
+    # Return V3 canonical contract for single MP, legacy format for ALL
+    if v3_result:
+        v3_dict = v3_result.to_dict()
+        return {
+            "marketplace": mp,
+            "period": period_label,
+            # V3 canonical layer statuses
+            "financial_status": v3_dict["financial_status"],
+            "settlement_status": v3_dict["settlement_status"],
+            "document_status": v3_dict["document_status"],
+            "xml_status": v3_dict["xml_status"],
+            "fiscal_status": v3_dict["fiscal_status"],
+            # V3 overall
+            "overall_status": v3_dict["overall_status"],
+            "overall_label": v3_dict["overall_label"],
+            "overall_reason": v3_dict["overall_reason"],
+            # Legacy compatibility
+            "legacy_overall_status": cert_result.status,
+            "pass_rate": cert_result.pass_rate,
+            "total_delta": cert_result.total_delta,
+            "claims": claims_list,
+            "audit_execution_status": audit_execution_status,
+            "dte_chain_type": dte_chain_type,
+            "dte_status_per_mp": dte_status,
+            "evidence": v3_dict["evidence"]
+        }
+    else:
+        # ALL marketplaces - return legacy format
+        return {
+            "marketplace": mp,
+            "period": period_label,
+            "financial_status": "FINANCIAL_PARTIAL",
+            "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+            "document_status": "DOCUMENT_REFERENCE_ONLY",
+            "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+            "fiscal_status": "INSUFFICIENT_FISCAL_EVIDENCE",
+            "overall_status": "PARTIALLY_CERTIFIED",
+            "overall_label": "PARTIALLY_CERTIFIED",
+            "overall_reason": "Mixed status across marketplaces",
+            "legacy_overall_status": cert_result.status,
+            "pass_rate": cert_result.pass_rate,
+            "total_delta": cert_result.total_delta,
+            "claims": claims_list,
+            "audit_execution_status": audit_execution_status,
+            "dte_chain_type": None,
+            "dte_status_per_mp": dte_status,
+            "evidence": {"financial": {"pass_rate": cert_result.pass_rate, "total_delta": cert_result.total_delta, "claims": claims_list}}
+        }
 
 @app.get("/api/v4/dte/document-gap")
 def get_document_gaps(marketplace: str = None, limit: int = 500):
