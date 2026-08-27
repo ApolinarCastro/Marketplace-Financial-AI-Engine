@@ -1,0 +1,17 @@
+{
+  "files": 623,
+  "ledger": 287417,
+  "settlement": 287417,
+  "xml": 472,
+  "dte": 407,
+  "dot_zero": 0,
+  "unknown_chain": 0,
+  "false_fiscal": 0,
+  "verdict": "RIPLEY_PREFLIGHT PASS",
+  "control_case": {
+    "settlement_ref": 596684,
+    "dte_folio": null,
+    "chain_type": "SETTLEMENT",
+    "overall": "PARTIALLY_CERTIFIED"
+  }
+}

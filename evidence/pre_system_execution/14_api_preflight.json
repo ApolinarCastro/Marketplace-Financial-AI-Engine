@@ -1,0 +1,37 @@
+{
+  "routes": [
+    {
+      "route": "/api/v4/ledger",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/financial-structure",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/dte/traceability",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/electronic_certification/status/15055037_COMM",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/copilot/ask",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/api/v4/run-audit",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "http_500": 0,
+  "broken": 0,
+  "verdict": "PASS"
+}

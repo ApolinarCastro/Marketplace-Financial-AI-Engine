@@ -1,0 +1,11 @@
+{
+  "TH": 20,
+  "SELLER": 20,
+  "BILLING": 20,
+  "FF": 20,
+  "dot_zero": 0,
+  "unknown_chain": 0,
+  "generic_certified": 0,
+  "false_xml_fail": 0,
+  "verdict": "PASS"
+}

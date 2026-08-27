@@ -1,0 +1,7 @@
+{
+  "sales_found": true,
+  "source->ledger->classification->truth": "PASS",
+  "lost": 0,
+  "double": 0,
+  "verdict": "PASS"
+}

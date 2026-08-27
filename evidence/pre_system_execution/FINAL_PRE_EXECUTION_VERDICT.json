@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-08-27T10:16:50.795145",
+  "FINAL_COMMIT": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "CLEAN_CHECKOUT_COMMIT": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "RELEASE_TAG": "marketplace-financial-v1.0.0",
+  "RELEASE_TAG_COMMIT": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "STARTUP_CODE_COMMIT": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "DB": {
+    "sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "ledger_rows": 598112,
+    "integrity": "PASS"
+  },
+  "RAW": {
+    "files": 1313,
+    "mutations": 0
+  },
+  "RIPLEY": {
+    "files": 623,
+    "ledger": 287417,
+    "settlement": 287417,
+    "normalized_refs": 0,
+    "unknown_chain": 0,
+    "financial": "PASS",
+    "fiscal": "BLOCKED_EXTERNAL",
+    "false_certifications": 0
+  },
+  "FALABELLA": {
+    "files": 15,
+    "source_rows": 671,
+    "logical_events": 3076,
+    "sales": true,
+    "duplicates": 0,
+    "lineage": 0,
+    "2026-03": -785566,
+    "2026-04": -1155270,
+    "2026-05": -267947,
+    "unexplained_delta": 0
+  },
+  "CERTIFICATION": {
+    "generic_certified": 0,
+    "false_xml_failures": 0,
+    "avoidable_unknown": 0,
+    "api_authorities": 1
+  },
+  "AUDIT": {
+    "delete": 0,
+    "insert": 0,
+    "update": 0
+  },
+  "TESTS": {
+    "passed": 39,
+    "failed": 0
+  },
+  "REGRESSIONS": 0,
+  "ADVERSARIAL": {
+    "critical": 0,
+    "high": 0
+  },
+  "IDEMPOTENCY": "3/3 PASS",
+  "BACKUP": "data/backup/pre_canonical_v3/meli_financial_v4_pre_canonical_20260827.db",
+  "STARTUP_COMMAND": "START_APP.bat",
+  "EXTERNAL_LIMITATIONS": [
+    "RIPLEY_FISCAL_SII_BRIDGE BLOCKED"
+  ],
+  "EVIDENCE_PATH": "evidence/pre_system_execution",
+  "SYSTEM_EXECUTION": "AUTHORIZED"
+}

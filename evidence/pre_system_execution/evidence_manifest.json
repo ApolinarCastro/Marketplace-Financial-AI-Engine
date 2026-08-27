@@ -1,0 +1,33 @@
+{
+  "files": {
+    "00_precheck.json": "8b2e9c856848665b",
+    "01_clean_checkout.json": "57e33cc10f576378",
+    "02_db_integrity.json": "851c81d2c19039be",
+    "03_raw_integrity.json": "44760786aea177cc",
+    "04_source_resolver_preflight.json": "9888f611daf58b67",
+    "05_ripley_preflight.json": "bbb5cf0c3bffc596",
+    "06_falabella_preflight.json": "68be060adce46ff5",
+    "07_falabella_sales_integrity.json": "f74398fc1f80b8af",
+    "08_closing_consistency.json": "1c496fe2b20ae52e",
+    "09_certification_contract.json": "ad81e6fd5d1384d6",
+    "10_xml_semantics.json": "bbeda5dda939ffb9",
+    "11_global_status_semantics.json": "5e05065046d0e5b7",
+    "12_ui_static_contract.json": "d3288a640f3b34eb",
+    "13_legal_truth_contract.json": "8771e092a192daea",
+    "14_api_preflight.json": "906e8c2b6b624f34",
+    "15_ripley_api_assertions.json": "69be1190f472039d",
+    "16_falabella_api_assertions.json": "b3178b0c45297232",
+    "17_audit_read_only.json": "65adf8531593302d",
+    "18_tests_report.json": "3a29f19928473a3c",
+    "19_adversarial_preflight.json": "590efefba5758512",
+    "20_idempotency_3x.json": "4e124bc167e1120e",
+    "21_startup_configuration.json": "af021cfac114061f",
+    "22_backup_manifest.json": "9bdad53af710cd15",
+    "23_release_commit_reconciliation.json": "946eb86bc28031e1",
+    "24_stable_tag.json": "7ba92e9566a3ba12",
+    "25_final_pre_execution_matrix.json": "08f3ff3726eb30c7",
+    "evidence_manifest.json": "75128ad85d93965d",
+    "FINAL_PRE_EXECUTION_VERDICT.json": "ff55830646377c53"
+  },
+  "count": 28
+}

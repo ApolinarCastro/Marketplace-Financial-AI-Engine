@@ -1,0 +1,6 @@
+{
+  "START_APP.bat": "@echo off\nsetlocal EnableExtensions\ncd /d \"%~dp0\"\nchcp 65001 >nul\n\ntitle Marketplace Financial AI Engine v1.0\n\necho.\necho =========================================================\necho   Marketplace F",
+  "code_path": "FINAL_COMMIT 36de914",
+  "db_path": "data/db/meli_financial_v4.db OFFICIAL_DB",
+  "verdict": "STARTUP_CODE_PATH FINAL_COMMIT, STARTUP_DB_PATH OFFICIAL_DB"
+}

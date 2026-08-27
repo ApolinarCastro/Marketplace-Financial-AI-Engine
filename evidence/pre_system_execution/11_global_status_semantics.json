@@ -1,0 +1,9 @@
+{
+  "cases": {
+    "full": "FULLY_CERTIFIED",
+    "partial": "PARTIALLY_CERTIFIED",
+    "blocked": "BLOCKED"
+  },
+  "unscoped": 0,
+  "verdict": "UNSCOPED_GLOBAL_CERTIFICATION 0"
+}

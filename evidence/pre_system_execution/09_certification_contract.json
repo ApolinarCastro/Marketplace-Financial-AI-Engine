@@ -1,0 +1,12 @@
+{
+  "authorities": 1,
+  "fields": [
+    "financial_status",
+    "settlement_status",
+    "document_status",
+    "xml_status",
+    "fiscal_status",
+    "overall_status"
+  ],
+  "verdict": "CERTIFICATION_API_AUTHORITIES 1"
+}

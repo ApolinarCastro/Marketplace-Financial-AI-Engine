@@ -1,0 +1,8 @@
+{
+  "backup_path": "data\\backup\\pre_canonical_v3\\meli_financial_v4_pre_canonical_20260827.db",
+  "backup_sha": "311c78e2b7471b3e",
+  "source_sha": "311c78e2b7471b3e",
+  "match": true,
+  "ledger_rows": 598112,
+  "verdict": "PASS"
+}

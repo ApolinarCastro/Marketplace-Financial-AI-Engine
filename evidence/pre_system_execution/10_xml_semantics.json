@@ -1,0 +1,7 @@
+{
+  "no_xml": "XML_NOT_LINKED -> NOT_RUN x4",
+  "with_xml_pass": "PASS",
+  "with_xml_fail": "FAIL",
+  "false_failures": 0,
+  "verdict": "FALSE_XML_FAILURES 0"
+}

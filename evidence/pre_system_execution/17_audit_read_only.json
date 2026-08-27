@@ -1,0 +1,23 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "status": 200
+    },
+    {
+      "run": 2,
+      "status": 200
+    },
+    {
+      "run": 3,
+      "status": 200
+    }
+  ],
+  "delete": 0,
+  "insert": 0,
+  "update": 0,
+  "sha_before": "311c78e2b747",
+  "sha_after": "311c78e2b747",
+  "unchanged": true,
+  "verdict": "PASS"
+}

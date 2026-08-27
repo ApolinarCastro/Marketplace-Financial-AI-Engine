@@ -1,0 +1,23 @@
+[
+  {
+    "period": "2026-03",
+    "api_status": 200,
+    "ledger": -785566.327,
+    "match": true,
+    "verdict": "PASS"
+  },
+  {
+    "period": "2026-04",
+    "api_status": 200,
+    "ledger": -1155270.4960000017,
+    "match": true,
+    "verdict": "PASS"
+  },
+  {
+    "period": "2026-05",
+    "api_status": 200,
+    "ledger": -267947.87699999986,
+    "match": true,
+    "verdict": "PASS"
+  }
+]

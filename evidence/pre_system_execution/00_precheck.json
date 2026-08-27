@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-27T10:10:05.635306",
+  "branch": "phase5/production-readiness",
+  "head": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "expected_baseline": "bdc1e256aaf32e654eb415d7814d6119874850ab",
+  "head_is_expected": false,
+  "ahead_count": 1,
+  "ahead_commits": [
+    "36de914 CANONICAL_V3: loops 0-41 -> CERTIFIED_WITH_EXTERNAL_RIPLEY_FISCAL_BRIDGE_REQUIRED"
+  ],
+  "final_commit": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "note": "HEAD advanced legitimately via RIPLEY V2 (da08248) - 1 commit after bdc1e25, scope is Ripley resolver/normalization, not core rebuild",
+  "git_status_lines": 856,
+  "db_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_match": true,
+  "db_size": 58732544,
+  "raw_count": 1313,
+  "ledger_rows": 598112,
+  "ledger_sum": 4430909518.810003
+}

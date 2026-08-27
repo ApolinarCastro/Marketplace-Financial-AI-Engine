@@ -1,0 +1,35 @@
+{
+  "FINAL_COMMIT": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "CLEAN_CHECKOUT_COMMIT": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "RELEASE_TAG_COMMIT": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "STARTUP_CODE_COMMIT": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "DB_INTEGRITY": "PASS",
+  "RAW_INTEGRITY": "PASS",
+  "RIPLEY": {
+    "financial": "PASS",
+    "settlement": "PASS",
+    "fiscal": "BLOCKED_EXTERNAL",
+    "false_fiscal": 0
+  },
+  "FALABELLA": {
+    "source_integrity": "PASS",
+    "sales_integrity": "PASS",
+    "dedup": "PASS",
+    "lineage": "PASS",
+    "monthly_truth": "PASS",
+    "unexplained_delta": 0
+  },
+  "CERTIFICATION": {
+    "generic_certified": 0,
+    "avoidable_unknown": 0,
+    "false_xml_fail": 0,
+    "false_fiscal": 0
+  },
+  "SYSTEM": {
+    "parallel_truths": 0,
+    "frontend_financial_logic": 0,
+    "new_regressions": 0,
+    "adversarial": 0,
+    "idempotency": "3/3"
+  }
+}

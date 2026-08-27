@@ -1,0 +1,6 @@
+{
+  "final_commit": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "clean_checkout_commit": "36de914e7b75ab1a243b35200e2fb508483bc35e",
+  "match": true,
+  "verdict": "FINAL_COMMIT_REPRODUCIBLE TRUE"
+}

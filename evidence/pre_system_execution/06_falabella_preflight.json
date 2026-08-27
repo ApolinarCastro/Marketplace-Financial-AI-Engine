@@ -1,0 +1,14 @@
+{
+  "files": 15,
+  "source_rows": 671,
+  "logical_events": 3076,
+  "sales": true,
+  "duplicates": 0,
+  "lineage": 0,
+  "monthly": {
+    "2026-03": -785566,
+    "2026-04": -1155270,
+    "2026-05": -267947
+  },
+  "verdict": "FALABELLA_CANONICAL_CONSISTENCY PASS"
+}

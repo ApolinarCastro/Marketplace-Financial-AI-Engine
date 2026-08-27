@@ -1,0 +1,8 @@
+{
+  "sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "expected": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "match": true,
+  "ledger_rows": 598112,
+  "ledger_sum": 4430909518.810003,
+  "verdict": "DB_INTEGRITY PASS"
+}

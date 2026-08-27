@@ -1,0 +1,11 @@
+{
+  "roles": {
+    "SELLER_SETTLEMENT": 51,
+    "BILLING_CYCLE": 52,
+    "TRANSACTION_HISTORY": 8,
+    "FULFILLMENT": 36,
+    "FISCAL_XML": 472
+  },
+  "hardcoded": 0,
+  "verdict": "ACTIVE_HARDCODED 0, VALID 100%"
+}
