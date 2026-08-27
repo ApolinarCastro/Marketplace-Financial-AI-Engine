@@ -1,0 +1,20 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "status": 200
+    },
+    {
+      "run": 2,
+      "status": 200
+    },
+    {
+      "run": 3,
+      "status": 200
+    }
+  ],
+  "sha_before": "311c78e2b747",
+  "sha_after": "311c78e2b747",
+  "match": true,
+  "verdict": "PASS"
+}

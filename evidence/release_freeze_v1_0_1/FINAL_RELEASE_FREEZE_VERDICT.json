@@ -1,0 +1,44 @@
+{
+  "FINAL_RUNTIME_COMMIT": "dd072fb5011ab2a891156bde20bd5beeda314e5a",
+  "FINAL_RELEASE_TAG": "marketplace-financial-v1.0.1",
+  "FINAL_RELEASE_TAG_COMMIT": "dd072fb5011ab2a891156bde20bd5beeda314e5a",
+  "CLEAN_CHECKOUT_COMMIT": "dd072fb5011ab2a891156bde20bd5beeda314e5a",
+  "RUNNING_COMMIT": "dd072fb5011ab2a891156bde20bd5beeda314e5a",
+  "RUNTIME_PROJECT_ROOT": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\opencode\\release_freeze_v1_0_1",
+  "PYTHON": "3.14.0",
+  "STARTUP_COMMAND": "START_APP.bat (in release worktree)",
+  "DB_SHA": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "LEDGER_ROWS": 598112,
+  "RAW_FILES": 1313,
+  "FALABELLA": {
+    "auditor_net": -1155270,
+    "executive_net": -1155270,
+    "sales_events": 106,
+    "verdict": "PASS"
+  },
+  "ML": {
+    "auditor": 43288640,
+    "executive": 43288640,
+    "verdict": "PASS"
+  },
+  "PARIS": {
+    "auditor": 47690806,
+    "executive": 47690806,
+    "verdict": "PASS"
+  },
+  "RIPLEY": {
+    "financial": "PASS",
+    "settlement": "PASS",
+    "fiscal": "BLOCKED_EXTERNAL",
+    "overall": "PARTIALLY_CERTIFIED",
+    "chain_type": "SETTLEMENT"
+  },
+  "FALSE_CERTIFICATIONS": 0,
+  "FALSE_XML_FAILURES": 0,
+  "SCOPE_LEAKAGE": 0,
+  "PARALLEL_TRUTHS": 0,
+  "AUDIT_MUTATIONS": 0,
+  "EXTERNAL_LIMITATION": "RIPLEY_FISCAL_SII_BRIDGE BLOCKED_EXTERNAL",
+  "EVIDENCE_PATH": "evidence/release_freeze_v1_0_1",
+  "FINAL_STATE": "STABLE_RUNTIME_RELEASE_FROZEN_AND_OPERATIONAL"
+}

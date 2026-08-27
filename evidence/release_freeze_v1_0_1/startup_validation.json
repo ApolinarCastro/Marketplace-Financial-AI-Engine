@@ -1,0 +1,9 @@
+{
+  "start_app_path": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\opencode\\release_freeze_v1_0_1\\START_APP.bat",
+  "uses_relative": true,
+  "project_root": "C:\\Users\\ASUS Zenbook\\AppData\\Local\\Temp\\opencode\\release_freeze_v1_0_1",
+  "commit": "dd072fb5011ab2a891156bde20bd5beeda314e5a",
+  "db": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\data\\db\\meli_financial_v4.db",
+  "port": 3001,
+  "verdict": "PASS"
+}

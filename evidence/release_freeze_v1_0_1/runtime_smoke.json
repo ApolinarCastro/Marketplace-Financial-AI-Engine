@@ -1,0 +1,25 @@
+{
+  "smoke": [
+    {
+      "marketplace": "FALABELLA",
+      "period": "2026-04",
+      "status": 200
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-04",
+      "status": 200
+    },
+    {
+      "marketplace": "PARIS",
+      "period": "2026-04",
+      "status": 200
+    },
+    {
+      "marketplace": "RIPLEY",
+      "period": "2026-04",
+      "status": 200
+    }
+  ],
+  "verdict": "PASS"
+}

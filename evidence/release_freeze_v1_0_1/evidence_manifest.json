@@ -1,0 +1,17 @@
+{
+  "files": {
+    "audit_read_only.json": "f612de071c0f6928",
+    "clean_checkout.json": "874deb55c1a92f4c",
+    "db_integrity.json": "88ee4b914eb6b391",
+    "evidence_manifest.json": "af8fc3199ded4b0d",
+    "FINAL_RELEASE_FREEZE_VERDICT.json": "751a353f0bb2ffc9",
+    "raw_integrity.json": "d667adb5d57955e8",
+    "release_freeze.json": "6229b47a5b405c38",
+    "runtime_fingerprint.json": "90f7ea2f7fdf0188",
+    "runtime_smoke.json": "465da584d72781a8",
+    "scope_smoke.json": "48b0bd5cdfe5f342",
+    "startup_validation.json": "93056c195f115018",
+    "tag_validation.json": "5550042bf0dd380a"
+  },
+  "count": 12
+}

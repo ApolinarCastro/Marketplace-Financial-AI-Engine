@@ -1,0 +1,7 @@
+{
+  "commit_sha": "dd072fb5011ab2a891156bde20bd5beeda314e5a",
+  "release_tag": "marketplace-financial-v1.0.1",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "ledger_rows": 598112,
+  "verdict": "PASS"
+}
