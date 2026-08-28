@@ -1,0 +1,3 @@
+{
+  "cause": "SurgicalLoader globs **/*.xlsx but Ordenes files have header row 5 not 0, and file_registry mis-tags Falabella as ML, and CSV excluded. DB stale (2026-07-24) vs disk mtime 2026-08-07. 196 price rows omitted."
+}

@@ -1,0 +1,10 @@
+{
+  "verdict": "FALABELLA_ANTI_OMISSION_SOURCE_TO_RUNTIME_CERTIFIED",
+  "falabella_ingresos": {
+    "2026-04": 80,
+    "2026-05": 116,
+    "2026-06": 106
+  },
+  "omission_tolerance": 0,
+  "reconstruction": "all 532 sales accounted"
+}

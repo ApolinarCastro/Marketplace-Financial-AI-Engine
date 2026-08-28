@@ -1,0 +1,3 @@
+{
+  "trace": "RAW Ordenes header=5 -> read_excel_auto -> 196 price rows -> would map to financial_group=ingresos, 80 Apr +116 May, sum 7,500,041. Currently ledger has 0 for those periods, delta -7.5M. File_registry bug source='ML' hides coverage."
+}

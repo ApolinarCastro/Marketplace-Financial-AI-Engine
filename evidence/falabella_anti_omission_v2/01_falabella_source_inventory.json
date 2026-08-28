@@ -1,0 +1,15 @@
+{
+  "files": [
+    {
+      "path": "01_Raw/FALABELLA/Facturación/21 abril -20 mayo.csv",
+      "rows": 656,
+      "ingresos": 0
+    },
+    {
+      "path": "01_Raw/FALABELLA/Órdenes y Transacciones/1 abril -31 mayo.xlsx",
+      "rows": 1568,
+      "ingresos": 196
+    }
+  ],
+  "total_sales_raw": 532
+}
