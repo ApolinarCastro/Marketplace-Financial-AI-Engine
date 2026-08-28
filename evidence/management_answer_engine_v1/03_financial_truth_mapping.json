@@ -1,0 +1,28 @@
+{
+  "mappings": [
+    {
+      "question": "que_vendi",
+      "truth_query": "que_vendi"
+    },
+    {
+      "question": "que_cobre",
+      "truth_query": "que_cobre"
+    },
+    {
+      "question": "que_falta_cobrar",
+      "truth_query": "que_falta_cobrar"
+    },
+    {
+      "question": "comisiones",
+      "truth_query": "comisiones"
+    },
+    {
+      "question": "logistica",
+      "truth_query": "logistica"
+    },
+    {
+      "question": "devoluciones",
+      "truth_query": "devoluciones"
+    }
+  ]
+}

@@ -108,6 +108,29 @@ class CopilotEngine:
         raise ValueError(f"Unknown question: {query}")
 
     def ask(self, question_id: str, marketplace: str | None = None, periodo: str | None = None) -> dict[str, Any]:
+        # Management question delegation — canonical
+        if question_id and question_id.upper().startswith("Q"):
+            from engine.v4.management.management_answer_engine import ManagementAnswerEngine, QUESTION_REGISTRY
+            mgmt = ManagementAnswerEngine(db=self.db)
+            # Q01..Q17 format
+            qid = question_id.upper()
+            if qid in QUESTION_REGISTRY or qid in ["Q01","Q02","Q03","Q04","Q05","Q06","Q07","Q08","Q09","Q10","Q11","Q12","Q13","Q14","Q15","Q16","Q17"]:
+                try:
+                    ans = mgmt.answer(qid, marketplace or "ALL", periodo or "2026-05")
+                    # map ManagementAnswerV1 to copilot response structure with evidence
+                    return self._response({
+                        "question": qid,
+                        "period": periodo,
+                        "answer": {"summary": ans["answer_text"], "amount": ans["amount"], "status": ans["answer_status"]},
+                        "explanation": {"text": ans["answer_text"], "bullet_points": [ans["overall_status"] if "overall_status" in ans else ""]},
+                        "breakdown": ans.get("components",[]),
+                        "evidence": [ans.get("evidence",{})],
+                        "copilot_management_delegate": True,
+                        "question_id": qid,
+                        "management_contract": ans.get("contract_version","ManagementAnswerV1")
+                    })
+                except Exception as e:
+                    pass
         resolved_qid = self.resolve_question(question_id)
         handler = getattr(self, self.QUESTIONS[resolved_qid]["handler"])
         res = handler(marketplace, periodo)

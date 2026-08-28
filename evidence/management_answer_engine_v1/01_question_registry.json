@@ -1,0 +1,327 @@
+{
+  "questions": [
+    {
+      "question_id": "Q01",
+      "canonical_name": "que_vendimos",
+      "description": "Que vendimos (gross sales)",
+      "financial_scope": "ingresos",
+      "transaction_scope": "canonical_transaction_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM monto where financial_group=ingresos",
+      "evidence_requirement": "ledger lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA"
+      ]
+    },
+    {
+      "question_id": "Q02",
+      "canonical_name": "cuanto_vendimos",
+      "description": "Cuanto vendimos (amount)",
+      "financial_scope": "ingresos",
+      "transaction_scope": "canonical_transaction_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA"
+      ],
+      "evidence_requirement": "lineage"
+    },
+    {
+      "question_id": "Q03",
+      "canonical_name": "que_cobramos",
+      "description": "Que cobramos (collected)",
+      "financial_scope": "settlement",
+      "transaction_scope": "settlement_chain",
+      "required_sources": [
+        "marketplace_ledger_v1",
+        "settlement refs"
+      ],
+      "aggregation_rule": "SUM settlement certified",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q04",
+      "canonical_name": "que_fue_pagado_liquidado",
+      "description": "Que ya fue pagado o liquidado",
+      "financial_scope": "settlement",
+      "transaction_scope": "settlement_chain",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q05",
+      "canonical_name": "que_falta_cobrar",
+      "description": "Que falta cobrar (receivables)",
+      "financial_scope": "settlement",
+      "transaction_scope": "settlement_chain",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q06",
+      "canonical_name": "devoluciones",
+      "description": "Devoluciones/cancelaciones",
+      "financial_scope": "devoluciones",
+      "transaction_scope": "canonical_transaction_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q07",
+      "canonical_name": "comisiones",
+      "description": "Comisiones",
+      "financial_scope": "costos_comerciales",
+      "transaction_scope": "canonical_transaction_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q08",
+      "canonical_name": "logistica",
+      "description": "Logistica",
+      "financial_scope": "costos_operacionales",
+      "transaction_scope": "canonical_transaction_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q09",
+      "canonical_name": "ajustes_retenciones",
+      "description": "Otros cargos, ajustes o retenciones",
+      "financial_scope": "ajustes",
+      "transaction_scope": "canonical_transaction_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q10",
+      "canonical_name": "recuperaciones",
+      "description": "Recuperaciones o abonos",
+      "financial_scope": "recuperaciones",
+      "transaction_scope": "canonical_transaction_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q11",
+      "canonical_name": "resultado_neto",
+      "description": "Resultado neto",
+      "financial_scope": "net",
+      "transaction_scope": "canonical_ledger_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q12",
+      "canonical_name": "respaldo_documental",
+      "description": "Transacciones con respaldo documental",
+      "financial_scope": "document",
+      "transaction_scope": "document_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q13",
+      "canonical_name": "xml_dte",
+      "description": "Transacciones con XML/DTE",
+      "financial_scope": "xml",
+      "transaction_scope": "fiscal_required_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q14",
+      "canonical_name": "sin_respaldo",
+      "description": "Movimientos sin respaldo suficiente",
+      "financial_scope": "document",
+      "transaction_scope": "document_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q15",
+      "canonical_name": "excepciones",
+      "description": "Excepciones requieren atencion",
+      "financial_scope": "alert",
+      "transaction_scope": "alert_instance_universe",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q16",
+      "canonical_name": "nivel_certificacion",
+      "description": "Nivel de certificacion por marketplace/periodo",
+      "financial_scope": "overall",
+      "transaction_scope": "certification",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    },
+    {
+      "question_id": "Q17",
+      "canonical_name": "que_falta_para_cerrar",
+      "description": "Que falta para cerrar completamente el periodo",
+      "financial_scope": "overall",
+      "transaction_scope": "traceability",
+      "required_sources": [
+        "marketplace_ledger_v1"
+      ],
+      "aggregation_rule": "SUM",
+      "evidence_requirement": "lineage",
+      "supported_marketplaces": [
+        "ML",
+        "PARIS",
+        "RIPLEY",
+        "FALABELLA",
+        "SHOPIFY"
+      ]
+    }
+  ],
+  "total": 17
+}

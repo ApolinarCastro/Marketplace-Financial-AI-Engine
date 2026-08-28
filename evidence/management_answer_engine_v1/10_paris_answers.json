@@ -1,0 +1,42 @@
+{
+  "question": "Q11",
+  "marketplace": "PARIS",
+  "answer": {
+    "question_id": "Q11",
+    "question": "resultado_neto",
+    "marketplace": "PARIS",
+    "period": "2026-05",
+    "answer_status": "ANSWERED_CERTIFIED",
+    "answer_text": "resultado_neto for PARIS 2026-05: 24850008.0",
+    "amount": 24850008.0,
+    "currency": "CLP",
+    "transaction_count": 6998,
+    "universe_id": "canonical_ledger_universe",
+    "scope": "net",
+    "financial_status": "FINANCIAL_CERTIFIED",
+    "overall_status": "FULLY_CERTIFIED",
+    "coverage": {
+      "total": 6998,
+      "accounted": 6998,
+      "certified": 6998,
+      "partial": 0,
+      "blocked": 0,
+      "exceptions": 0
+    },
+    "components": [],
+    "evidence": {
+      "transaction_count": 6998,
+      "document_count": 0,
+      "xml_count": 0,
+      "source_file_count": 1
+    },
+    "exceptions": {
+      "total": 0,
+      "actionable": 0,
+      "blocked_external": 0
+    },
+    "drilldown_available": true,
+    "generated_from": "FinancialTruthEngine+TransactionLineage+Certification",
+    "contract_version": "ManagementAnswerV1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "marketplace": "RIPLEY",
+  "period": "2026-05",
+  "exceptions": [
+    {
+      "id": "FISCAL_BRIDGE_MISSING",
+      "severity": "HIGH"
+    }
+  ]
+}

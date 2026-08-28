@@ -1,0 +1,9 @@
+{
+  "endpoints": [
+    "/api/v4/management/questions",
+    "/api/v4/management/answer",
+    "/api/v4/management/answer/{id}/transactions",
+    "/api/v4/transactions/{id}/trace"
+  ],
+  "contract_version": "ManagementAnswerV1"
+}

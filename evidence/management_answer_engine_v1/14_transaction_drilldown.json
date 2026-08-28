@@ -1,0 +1,9 @@
+{
+  "sample": {
+    "transaction_id": "7a85aa4c",
+    "ledger_id": "7a85aa4c",
+    "amount": -3352,
+    "certification": "FINANCIAL_ONLY",
+    "lineage": "canonical"
+  }
+}

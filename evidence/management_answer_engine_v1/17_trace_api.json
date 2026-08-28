@@ -1,0 +1,4 @@
+{
+  "endpoint": "/api/v4/transactions/{id}/trace",
+  "contract": "TransactionLineageV1+Certification"
+}

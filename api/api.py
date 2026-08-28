@@ -1825,6 +1825,43 @@ def get_exception_by_id(exception_id: str):
     return exc
 
 
+# MANAGEMENT ANSWER ENGINE (V1.2.0)
+@app.get("/api/v4/management/questions")
+def management_questions():
+    from engine.v4.management.management_answer_engine import QUESTION_REGISTRY
+    return {"questions": [{"question_id":k, **v} for k,v in QUESTION_REGISTRY.items()], "total": len(QUESTION_REGISTRY), "contract_version":"ManagementQuestionRegistryV1"}
+
+@app.get("/api/v4/management/answer")
+def management_answer(question_id: str, marketplace: str, period: str):
+    from engine.v4.management.management_answer_engine import ManagementAnswerEngine
+    eng = ManagementAnswerEngine()
+    try:
+        return eng.answer(question_id, marketplace, period)
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+@app.get("/api/v4/management/answer/{answer_id}/transactions")
+def management_answer_transactions(answer_id: str, marketplace: str, period: str, limit: int=50, offset: int=0):
+    # answer_id is question_id for now
+    from engine.v4.database import DatabaseV4
+    db = DatabaseV4.get()
+    df = db.query("SELECT id_transaccion, monto, detalle FROM marketplace_ledger_v1 WHERE marketplace=? AND fecha BETWEEN ? AND ? LIMIT ? OFFSET ?", [marketplace.upper(), f"{period}-01", f"{period}-31", limit, offset])
+    import math
+    rows=[]
+    for _,r in df.iterrows():
+        if isinstance(r["monto"], float) and math.isnan(r["monto"]):
+            continue
+        rows.append({"transaction_id": str(r["id_transaccion"]), "amount": float(r["monto"]), "detalle": str(r["detalle"])})
+    return {"answer_id": answer_id, "marketplace": marketplace, "period": period, "transactions": rows, "total": len(rows), "contract_version":"ManagementAnswerV1"}
+
+@app.get("/api/v4/transactions/{transaction_id}/trace")
+def transaction_trace(transaction_id: str):
+    from engine.v4.certification.transaction_certification_service import TransactionCertificationService
+    svc = TransactionCertificationService()
+    res = svc.certify(transaction_id)
+    return {"transaction_id": transaction_id, "trace": res.to_dict(), "lineage":"TransactionLineageV1+Certification"}
+
+
 
 
 

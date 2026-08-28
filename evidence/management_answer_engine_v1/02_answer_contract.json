@@ -1,0 +1,22 @@
+{
+  "contract": "ManagementAnswerV1",
+  "fields": [
+    "question_id",
+    "question",
+    "marketplace",
+    "period",
+    "answer_status",
+    "answer_text",
+    "amount",
+    "currency",
+    "transaction_count",
+    "universe_id",
+    "scope",
+    "financial_status",
+    "overall_status",
+    "coverage",
+    "components",
+    "evidence",
+    "exceptions"
+  ]
+}

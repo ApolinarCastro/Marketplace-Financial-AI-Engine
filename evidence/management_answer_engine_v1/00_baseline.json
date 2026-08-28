@@ -1,0 +1,9 @@
+{
+  "HEAD": "1a9f60e4489ea8e4ad2a48f1a44019f8b768dfa4",
+  "release_tag": "marketplace-financial-v1.1.2",
+  "DB_SHA256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "RAW_files": 1378,
+  "ledger_rows": 598112,
+  "financial_authority": "FinancialTruthEngine",
+  "certification_authority": "TransactionCertificationResultV3+CertificationResultV3"
+}
