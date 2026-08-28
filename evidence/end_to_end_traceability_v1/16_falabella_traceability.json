@@ -1,0 +1,9 @@
+{
+  "files": 45,
+  "source_rows": 4022,
+  "transactions": 476,
+  "full_chain": 10,
+  "partial_chain": 300,
+  "xml_gaps": 166,
+  "fiscal": "FINANCIAL_ONLY"
+}

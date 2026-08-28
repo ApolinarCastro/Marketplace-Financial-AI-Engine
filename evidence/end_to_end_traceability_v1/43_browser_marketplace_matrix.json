@@ -1,0 +1,14 @@
+{
+  "matrix": [
+    {
+      "mp": "FALABELLA",
+      "period": "2026-05",
+      "status": "PARTIALLY_CERTIFIED"
+    },
+    {
+      "mp": "RIPLEY",
+      "period": "2026-05",
+      "status": "PARTIALLY_CERTIFIED"
+    }
+  ]
+}

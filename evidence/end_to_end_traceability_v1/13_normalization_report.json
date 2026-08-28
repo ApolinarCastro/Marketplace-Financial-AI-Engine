@@ -1,0 +1,10 @@
+{
+  "normalizers": [
+    "order_id",
+    "transaction_id",
+    "folio",
+    "Transbank"
+  ],
+  "version": "v1",
+  "deterministic": true
+}

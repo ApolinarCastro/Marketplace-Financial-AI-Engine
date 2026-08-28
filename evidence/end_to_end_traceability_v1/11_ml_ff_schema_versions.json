@@ -1,0 +1,13 @@
+{
+  "pre": {
+    "files": 32,
+    "rows": 34778
+  },
+  "post": {
+    "files": 3,
+    "rows": 459,
+    "sales": 416,
+    "ids_new": 411
+  },
+  "silent_loss": 0
+}

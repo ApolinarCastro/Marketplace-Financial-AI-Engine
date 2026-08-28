@@ -1,0 +1,10 @@
+{
+  "registry": "SourceRegistryV2",
+  "total_files": 1313,
+  "primary_sources": 950,
+  "duplicate_physical": 120,
+  "cross_marketplace_duplicate": 45,
+  "non_source": 180,
+  "unsupported": 10,
+  "unknown": 0
+}

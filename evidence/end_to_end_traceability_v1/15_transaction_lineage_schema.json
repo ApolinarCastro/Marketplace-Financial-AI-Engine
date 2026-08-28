@@ -1,0 +1,16 @@
+{
+  "lineage": "TransactionLineageV1",
+  "fields": [
+    "marketplace",
+    "period",
+    "transaction_id",
+    "order_id",
+    "source_events",
+    "ledger_ids",
+    "payment_refs",
+    "settlement_refs",
+    "document_refs",
+    "xml_refs",
+    "financial_status"
+  ]
+}

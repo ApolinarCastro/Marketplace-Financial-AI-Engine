@@ -1,0 +1,20 @@
+{
+  "alerts": [
+    {
+      "type": "DUPLICATE_FILE_SHA",
+      "severity": "INFO",
+      "count": 120
+    },
+    {
+      "type": "DTE_IDENTITY_CONFLICT",
+      "severity": "CRITICAL",
+      "count": 0
+    },
+    {
+      "type": "CROSS_MARKETPLACE_XML_CONTAMINATION",
+      "severity": "HIGH",
+      "count": 45
+    }
+  ],
+  "total": 250
+}

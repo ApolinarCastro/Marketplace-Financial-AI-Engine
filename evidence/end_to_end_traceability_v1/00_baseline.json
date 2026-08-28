@@ -1,0 +1,10 @@
+{
+  "commit": "0d9da88fa37162aa44480789e6b628cd2d15a687",
+  "release_tag": "marketplace-financial-v1.0.4",
+  "runtime_commit": "0d9da88fa37162aa44480789e6b628cd2d15a687",
+  "db_path": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\data\\db\\meli_financial_v4.db",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "raw_file_count": 1378,
+  "raw_total_bytes": 116070667,
+  "captured_at": "2026-08-28T12:09:41.256289"
+}

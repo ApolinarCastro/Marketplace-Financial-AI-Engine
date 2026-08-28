@@ -1,0 +1,10 @@
+{
+  "physical": 1313,
+  "primary": 950,
+  "duplicate": 120,
+  "cross": 45,
+  "non_source": 180,
+  "unsupported": 10,
+  "conflict": 8,
+  "unclassified": 0
+}

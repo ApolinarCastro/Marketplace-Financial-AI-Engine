@@ -1,0 +1,11 @@
+{
+  "schemas": [
+    {
+      "family": "ML Liquidacion_FF",
+      "versions": [
+        "v1 pre-2026-06-15",
+        "v2 post-2026-06-15"
+      ]
+    }
+  ]
+}
