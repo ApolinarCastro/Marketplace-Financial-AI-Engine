@@ -1,10 +1,10 @@
 {
   "final_verdict": "MANAGEMENT_ANSWER_ENGINE_END_TO_END_OPERATIONAL_AND_CERTIFIED_WITH_EXTERNAL_RIPLEY_FISCAL_BRIDGE_REQUIRED",
-  "final_commit": "08c4f91bfdebb10aad4c86f107f2d07d1688bd6e",
+  "final_commit": "ac43b572911e1d025356965baf47de317e1d11f4",
   "final_release_tag": "marketplace-financial-v1.2.1",
-  "release_tag_commit": "08c4f91bfdebb10aad4c86f107f2d07d1688bd6e",
-  "clean_checkout_commit": "08c4f91bfdebb10aad4c86f107f2d07d1688bd6e",
-  "running_commit": "08c4f91bfdebb10aad4c86f107f2d07d1688bd6e",
+  "release_tag_commit": "ac43b572911e1d025356965baf47de317e1d11f4",
+  "clean_checkout_commit": "ac43b572911e1d025356965baf47de317e1d11f4",
+  "running_commit": "ac43b572911e1d025356965baf47de317e1d11f4",
   "closing_contract": "ManagementClosingStatusV1",
   "closing_authorities": 1,
   "paris": {

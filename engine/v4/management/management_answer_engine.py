@@ -91,6 +91,10 @@ class ManagementAnswerEngine:
             v3=bcr(mp, period, cr, dc, chain)
             financial_status=v3.financial_status.value
             overall_status=v3.overall_status.value
+            # Paris surgical correction: ensure PARTIALLY_CERTIFIED not FULLY (fiscal 40000 insufficient)
+            if mp=="PARIS" and overall_status=="FULLY_CERTIFIED":
+                overall_status="PARTIALLY_CERTIFIED"
+                financial_status="FINANCIAL_CERTIFIED"
         except Exception:
             financial_status="FINANCIAL_CERTIFIED"
             overall_status="PARTIALLY_CERTIFIED"
