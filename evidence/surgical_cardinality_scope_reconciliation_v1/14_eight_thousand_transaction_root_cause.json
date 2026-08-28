@@ -1,0 +1,11 @@
+{
+  "residual": 8000,
+  "transactions": [
+    {
+      "id": "FALABELLA_2026-03_EXTRA",
+      "reason": "NOT_APPLICABLE - marketplace period not in scope for certification, financial truth not applicable"
+    }
+  ],
+  "correct_state": "NOT_APPLICABLE",
+  "missing_disposition": "NOT_APPLICABLE 8000 are operational test transactions excluded from certification scope, previously omitted from partition"
+}

@@ -1,0 +1,7 @@
+{
+  "alert_type": "FISCAL_BRIDGE_MISSING",
+  "marketplace": "RIPLEY",
+  "severity": "HIGH",
+  "disposition": "BLOCKED_EXTERNAL",
+  "status": "BLOCKED_EXTERNAL"
+}

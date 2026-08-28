@@ -1,0 +1,18 @@
+{
+  "ledger": {
+    "ML": 109799,
+    "PARIS": 197820,
+    "RIPLEY": 287417,
+    "FALABELLA": 3076,
+    "SHOPIFY": 0,
+    "TOTAL": 598112,
+    "residual": 0
+  },
+  "operational": {
+    "ML_orders": 35237,
+    "RIPLEY_orders": 20901,
+    "FALABELLA_orders": 476,
+    "SHOPIFY_orders": 7407
+  },
+  "cross_universe_summation_errors": 0
+}

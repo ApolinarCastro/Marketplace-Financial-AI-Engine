@@ -1,0 +1,12 @@
+{
+  "physical": 1313,
+  "PRIMARY_SOURCE": 950,
+  "EXCLUDED_DUPLICATE": 120,
+  "EXCLUDED_NON_SOURCE": 180,
+  "EXCLUDED_CROSS_MARKETPLACE": 45,
+  "SCHEMA_CONFLICT": 8,
+  "UNSUPPORTED": 10,
+  "FILE_PARTITION_RESIDUAL": 0,
+  "flags_separate": true,
+  "note": "exclusive sum 950+120+180+45+8+10=1313; flags not summed"
+}

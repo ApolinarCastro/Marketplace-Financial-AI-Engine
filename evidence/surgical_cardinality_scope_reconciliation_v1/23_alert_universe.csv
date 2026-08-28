@@ -1,0 +1,2 @@
+alert_id,severity,disposition,marketplace
+A001,CRITICAL,BLOCKED_EXTERNAL,RIPLEY

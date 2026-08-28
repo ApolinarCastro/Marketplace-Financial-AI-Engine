@@ -1,0 +1,13 @@
+{
+  "exceptions": [
+    {
+      "id": 16375,
+      "status": "DOCUMENT_GAP"
+    },
+    {
+      "id": 16569,
+      "status": "XML_GAP"
+    }
+  ],
+  "accounted": 2
+}

@@ -1,0 +1,65 @@
+{
+  "physical_file_universe": {
+    "name": "physical_file_universe",
+    "primary_key": "file_id (filesystem path)",
+    "source": "01_Raw/** rglob is_file",
+    "scope": "all physical files, no filter",
+    "expected_cardinality": 1313
+  },
+  "canonical_file_universe": {
+    "name": "canonical_file_universe",
+    "primary_key": "canonical_file_id (1 per SHA group)",
+    "source": "physical_file_universe after exclusive disposition",
+    "scope": "PRIMARY_SOURCE only",
+    "expected_cardinality": 950
+  },
+  "source_row_universe": {
+    "name": "source_row_universe",
+    "primary_key": "source_row_id (file_id+sheet+row_number)",
+    "source": "canonical_file_universe rows",
+    "expected_cardinality": 598112
+  },
+  "canonical_event_universe": {
+    "name": "canonical_event_universe",
+    "primary_key": "event_id (file+row+parser_version)",
+    "source": "source_row after normalization+dedup",
+    "expected_cardinality": 598112
+  },
+  "canonical_transaction_universe": {
+    "name": "canonical_transaction_universe",
+    "primary_key": "transaction_id (marketplace+period+order/transaction)",
+    "source": "ledger marketplace_ledger_v1",
+    "expected_cardinality": 598112,
+    "note": "same as canonical_ledger_rows for this baseline; marketplace aggregates share same PK"
+  },
+  "canonical_ledger_universe": {
+    "name": "canonical_ledger_universe",
+    "primary_key": "ledger_id",
+    "source": "marketplace_ledger_v1",
+    "expected_cardinality": 598112
+  },
+  "marketplace_transaction_universe": {
+    "name": "marketplace_transaction_universe",
+    "primary_key": "marketplace+transaction_id",
+    "scope": "per marketplace ledger slice",
+    "expected_cardinality": {
+      "ML": 109799,
+      "PARIS": 197820,
+      "RIPLEY": 287417,
+      "FALABELLA": 3076,
+      "SHOPIFY": 0
+    }
+  },
+  "operational_order_universe": {
+    "name": "operational_order_universe",
+    "primary_key": "order_id (Shopify)",
+    "source": "Shopify 01_Raw/Shopify orders",
+    "scope": "operational, not ledger",
+    "expected_cardinality": 7407
+  },
+  "alert_universe": {
+    "name": "alert_universe",
+    "primary_key": "alert_id (type+marketplace+period+evidence)",
+    "expected_cardinality": 430
+  }
+}

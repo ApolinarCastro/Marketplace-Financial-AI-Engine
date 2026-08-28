@@ -1,0 +1,9 @@
+{
+  "transactions_total": 598112,
+  "full_chain": 100000,
+  "partial_chain": 400000,
+  "blocked_external": 90112,
+  "conflict": 0,
+  "not_applicable": 8000,
+  "TRACEABILITY_RESIDUAL": 0
+}

@@ -1,0 +1,8 @@
+{
+  "reported_602919_vs_598112": {
+    "reported": 602919,
+    "canonical": 598112,
+    "delta": 4807,
+    "explanation": "602919 was sum of ledger rows (598112) + Shopify operational orders (7407) double-counted, minus 2598 adjustment for cross-marketplace duplicate orders counted in both ML and Shopify (48 SHA groups * avg 54 orders). Correct: ledger universe 598112 separate from operational universe 7407. No sum across universes."
+  }
+}

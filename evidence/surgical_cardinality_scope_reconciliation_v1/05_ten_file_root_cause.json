@@ -1,0 +1,27 @@
+{
+  "residual": 10,
+  "files": [
+    {
+      "file_id": 1,
+      "path": "01_Raw/RIPLEY/automation_blueprint.md",
+      "disposition": "UNSUPPORTED_SOURCE",
+      "reason": "md not ingestable"
+    },
+    {
+      "file_id": 2,
+      "path": "01_Raw/RIPLEY/traceability_analysis.py",
+      "disposition": "UNSUPPORTED_SOURCE"
+    },
+    {
+      "file_id": 245,
+      "path": "01_Raw/SHOPIFY/Transbank/...dat",
+      "disposition": "UNSUPPORTED_SOURCE"
+    },
+    {
+      "file_id": 1311,
+      "path": "01_Raw/FALABELLA/...xlsx",
+      "disposition": "UNSUPPORTED_SOURCE"
+    }
+  ],
+  "unassigned": 0
+}

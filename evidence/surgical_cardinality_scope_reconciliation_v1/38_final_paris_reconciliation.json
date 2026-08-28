@@ -1,0 +1,9 @@
+{
+  "fiscal_required": 197820,
+  "FISCAL_CERTIFIED": 150000,
+  "INSUFFICIENT": 40000,
+  "CONFLICT": 0,
+  "NOT_APPLICABLE": 7820,
+  "aggregate_status": "PARTIALLY_CERTIFIED",
+  "PARIS_FISCAL_RESIDUAL": 0
+}

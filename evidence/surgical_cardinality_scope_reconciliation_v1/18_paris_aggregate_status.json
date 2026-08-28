@@ -1,0 +1,5 @@
+{
+  "rule": "aggregate FISCAL_CERTIFIED only if all fiscal-required transactions are FISCAL_CERTIFIED",
+  "actual_aggregate": "PARTIALLY_CERTIFIED",
+  "false_fiscal_certification": 0
+}

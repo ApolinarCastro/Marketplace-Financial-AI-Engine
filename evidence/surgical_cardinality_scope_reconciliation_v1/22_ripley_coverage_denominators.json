@@ -1,0 +1,16 @@
+{
+  "history_extract": {
+    "numerator": 14094,
+    "denominator": 287417,
+    "metric": "orders matched"
+  },
+  "extract_seller": {
+    "numerator": 12394,
+    "denominator": 287417
+  },
+  "fulfillment": {
+    "numerator": 1639,
+    "denominator": 1639,
+    "metric": "rows eligible"
+  }
+}

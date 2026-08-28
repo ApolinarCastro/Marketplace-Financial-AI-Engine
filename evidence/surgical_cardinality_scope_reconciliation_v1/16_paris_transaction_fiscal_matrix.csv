@@ -1,0 +1,2 @@
+transaction_id,document_status,xml_status,fiscal_status,overall
+paris_tx_001,DOCUMENT_LINKED,XML_PRESENT_NOT_CERTIFIED,FISCAL_CERTIFIED,PARTIALLY_CERTIFIED

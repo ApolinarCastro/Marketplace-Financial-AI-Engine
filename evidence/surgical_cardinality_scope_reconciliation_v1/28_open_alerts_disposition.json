@@ -1,0 +1,13 @@
+{
+  "open": 5,
+  "each": [
+    {
+      "id": "A001",
+      "marketplace": "RIPLEY",
+      "type": "FISCAL_BRIDGE_MISSING",
+      "severity": "HIGH",
+      "status": "BLOCKED_EXTERNAL",
+      "reason": "SII bridge missing"
+    }
+  ]
+}

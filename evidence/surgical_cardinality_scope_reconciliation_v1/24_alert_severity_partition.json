@@ -1,0 +1,8 @@
+{
+  "CRITICAL": 2,
+  "HIGH": 45,
+  "MEDIUM": 45,
+  "INFO": 338,
+  "TOTAL_ALERTS": 430,
+  "ALERT_SEVERITY_RESIDUAL": 0
+}

@@ -1,0 +1,22 @@
+{
+  "M_ML": {
+    "metric": "ledger rows",
+    "count": 109799,
+    "in_ledger": true
+  },
+  "M_PARIS": {
+    "count": 197820
+  },
+  "M_RIPLEY": {
+    "count": 287417
+  },
+  "M_FALABELLA": {
+    "count": 3076
+  },
+  "M_SHOPIFY": {
+    "metric": "operational orders",
+    "count": 7407,
+    "in_ledger": false,
+    "note": "Shopify orders are operational universe, not ledger"
+  }
+}

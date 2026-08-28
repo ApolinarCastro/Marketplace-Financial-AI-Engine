@@ -1,0 +1,10 @@
+{
+  "dispositions": {
+    "PRIMARY": 950,
+    "DUPLICATE": 120
+  },
+  "flags": {
+    "CROSS": 45
+  },
+  "separate": true
+}
