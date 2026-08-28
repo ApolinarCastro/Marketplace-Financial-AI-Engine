@@ -1,0 +1,4 @@
+{
+  "executive_reconstruction": "Both /app and /exec now consume FinancialTruthEngine via /api/v4/financial-structure and /api/v4/exec/summary which delegate to FinancialTruthEngine, no parallel authority",
+  "frontend_financial_logic": 0
+}

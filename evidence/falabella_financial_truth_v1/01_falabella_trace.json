@@ -1,0 +1,12 @@
+{
+  "marketplace": "FALABELLA",
+  "period": "2026-04",
+  "ingresos_brutos": 0,
+  "reason": "RAW has no sales for April 2026 per Facturaci\u00f3n files (only commissions), correct per raw evidence",
+  "raw_files": [
+    "21 marzo -20 abril.xlsx",
+    "21 abril -20 mayo.csv"
+  ],
+  "ingresos_rows": 0,
+  "costs": -1155270
+}
