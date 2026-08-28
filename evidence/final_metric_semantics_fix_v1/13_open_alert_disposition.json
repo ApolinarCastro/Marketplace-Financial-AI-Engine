@@ -1,0 +1,10 @@
+{
+  "open_before": 5,
+  "reclassified": {
+    "RESOLVED": 2,
+    "BLOCKED_EXTERNAL": 2,
+    "NOT_APPLICABLE": 1
+  },
+  "open_after": 0,
+  "internal_action_required": 0
+}

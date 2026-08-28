@@ -1,0 +1,6 @@
+{
+  "alert_type_count": 250,
+  "alert_instance_count": 430,
+  "confusion": "CROSS_UNIVERSE_COMPARISON if compared as same universe",
+  "clarification": "250 distinct alert_type universe vs 430 alert_instance universe, not residual"
+}

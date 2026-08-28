@@ -1,0 +1,29 @@
+{
+  "old_bad_total": {
+    "components": {
+      "Falabella_orders": 476,
+      "ML_ledger": 109799,
+      "Paris_ledger": 197820,
+      "Ripley_ledger": 287417,
+      "Shopify_orders": 7407
+    },
+    "total": 602919,
+    "method": "sum operational orders + ledger rows CROSS_UNIVERSE"
+  },
+  "canonical_ledger_total": {
+    "ML": 109799,
+    "Paris": 197820,
+    "Ripley": 287417,
+    "Falabella": 3076,
+    "Shopify": 0,
+    "total": 598112
+  },
+  "delta": 4807,
+  "decomposition": {
+    "shopify_operational_effect": 7407,
+    "falabella_metric_effect": 2600,
+    "exact_delta": 4807,
+    "formula": "7407 - (3076-476) = 7407-2600 = 4807"
+  },
+  "cross_universe_error": true
+}

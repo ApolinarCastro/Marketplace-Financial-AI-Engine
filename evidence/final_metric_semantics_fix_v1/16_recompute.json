@@ -1,0 +1,18 @@
+{
+  "marketplace_cardinalities": {
+    "ML": 109799,
+    "Paris": 197820,
+    "Ripley": 287417,
+    "Falabella": 3076,
+    "Shopify": 0,
+    "TOTAL": 598112
+  },
+  "paris_fiscal": {
+    "required": 190000,
+    "certified": 150000,
+    "insufficient": 40000
+  },
+  "alerts": {
+    "total": 430
+  }
+}

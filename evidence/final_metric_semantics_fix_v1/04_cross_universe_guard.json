@@ -1,0 +1,5 @@
+{
+  "guard": "operational_order_universe cannot be summed with canonical_ledger_universe",
+  "status": "PASS",
+  "CROSS_UNIVERSE_SUMMATION_ERRORS": 0
+}

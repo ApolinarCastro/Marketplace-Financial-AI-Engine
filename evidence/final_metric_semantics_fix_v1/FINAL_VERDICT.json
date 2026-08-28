@@ -1,0 +1,75 @@
+{
+  "final_verdict": "FINAL_METRIC_SEMANTICS_AND_ALERT_DISPOSITION_CERTIFIED_WITH_EXTERNAL_RIPLEY_FISCAL_BRIDGE_REQUIRED",
+  "final_commit": "afb7f42065c72f18bec3653790b4463c3f1e89f4",
+  "final_release_tag": "marketplace-financial-v1.1.1",
+  "release_tag_commit": "afb7f42065c72f18bec3653790b4463c3f1e89f4",
+  "clean_checkout_commit": "afb7f42065c72f18bec3653790b4463c3f1e89f4",
+  "running_commit": "afb7f42065c72f18bec3653790b4463c3f1e89f4",
+  "ROOT_CAUSE_4807": {
+    "old_total": 602919,
+    "canonical_ledger_total": 598112,
+    "shopify_operational_effect": 7407,
+    "falabella_metric_effect": 2600,
+    "exact_delta": 4807,
+    "cross_universe_error": true
+  },
+  "ROOT_CAUSE_PARIS_DENOMINATOR": {
+    "transactions_total": 197820,
+    "fiscal_required": 190000,
+    "fiscal_not_applicable": 7820,
+    "fiscal_certified": 150000,
+    "insufficient": 40000,
+    "conflict": 0,
+    "blocked_external": 0,
+    "required_residual": 0,
+    "total_residual": 0,
+    "aggregate_status": "PARTIALLY_CERTIFIED"
+  },
+  "ALERTS": {
+    "alert_type_count": 250,
+    "alert_instance_count": 430,
+    "critical": 2,
+    "high": 45,
+    "medium": 45,
+    "info": 338,
+    "severity_residual": 0,
+    "open": 0,
+    "resolved": 200,
+    "excluded": 180,
+    "blocked_external": 45,
+    "not_applicable": 5,
+    "disposition_residual": 0,
+    "internal_action_required_open": 0,
+    "unexplained_open": 0
+  },
+  "RIPLEY_EXTERNAL_BLOCKER": {
+    "alert_id": "FISCAL_BRIDGE_MISSING",
+    "severity": "HIGH",
+    "disposition": "BLOCKED_EXTERNAL",
+    "actionability": "WAITING_EXTERNAL"
+  },
+  "CANONICAL_LEDGER": {
+    "ML": 109799,
+    "Paris": 197820,
+    "Ripley": 287417,
+    "Falabella": 3076,
+    "Shopify": 0,
+    "total": 598112,
+    "residual": 0
+  },
+  "OPERATIONAL_UNIVERSES": {
+    "Falabella_orders": 476,
+    "Shopify_orders": 7407
+  },
+  "CROSS_UNIVERSE_SUMMATION_ERRORS": 0,
+  "DB_SHA256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "RAW_FILES": 1378,
+  "DB_MUTATIONS": 0,
+  "RAW_MUTATIONS": 0,
+  "TESTS": 18,
+  "REGRESSIONS": 0,
+  "ADVERSARIAL": 0,
+  "IDEMPOTENCY": "3/3",
+  "EVIDENCE_PATH": "evidence/final_metric_semantics_fix_v1/",
+  "FINAL_STATE": "FINAL_METRIC_SEMANTICS_AND_ALERT_DISPOSITION_CERTIFIED_WITH_EXTERNAL_RIPLEY_FISCAL_BRIDGE_REQUIRED"
+}

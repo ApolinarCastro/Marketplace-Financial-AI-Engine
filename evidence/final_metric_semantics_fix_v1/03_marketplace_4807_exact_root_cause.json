@@ -1,0 +1,4 @@
+{
+  "ROOT_CAUSE_MARKETPLACE_4807": "Cross-universe aggregation error: +7407 Shopify operational orders were incorrectly added to canonical ledger totals. Falabella used 476 operational orders instead of 3076 canonical ledger rows, producing -2600 offset. 7407-2600=4807. No financial duplicate caused residual.",
+  "MARKETPLACE_4807_ARITHMETIC_PROOF": "PASS"
+}

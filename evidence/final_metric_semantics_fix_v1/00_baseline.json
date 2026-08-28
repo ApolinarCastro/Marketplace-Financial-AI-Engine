@@ -1,0 +1,9 @@
+{
+  "HEAD": "afb7f42065c72f18bec3653790b4463c3f1e89f4",
+  "tag": "marketplace-financial-v1.1.1",
+  "DB_SHA256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "DB_size": 58732544,
+  "ledger_rows": 598112,
+  "RAW_files": 1378,
+  "captured_at": "2026-08-28T13:29:21.336844"
+}

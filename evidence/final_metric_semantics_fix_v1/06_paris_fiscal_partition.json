@@ -1,0 +1,9 @@
+{
+  "fiscal_required": 190000,
+  "certified": 150000,
+  "insufficient": 40000,
+  "conflict": 0,
+  "blocked": 0,
+  "residual": 0,
+  "total_residual": 0
+}

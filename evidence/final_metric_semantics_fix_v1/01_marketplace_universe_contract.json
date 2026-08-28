@@ -1,0 +1,38 @@
+{
+  "canonical_ledger_universe": {
+    "name": "canonical_ledger_universe",
+    "primary_key": "ledger_id",
+    "unit": "ledger_rows",
+    "scope": "marketplace_ledger_v1",
+    "counts": {
+      "ML": 109799,
+      "Paris": 197820,
+      "Ripley": 287417,
+      "Falabella": 3076,
+      "Shopify": 0,
+      "TOTAL": 598112
+    }
+  },
+  "operational_order_universe": {
+    "name": "operational_order_universe",
+    "primary_key": "order_id",
+    "unit": "orders",
+    "Falabella_orders": 476,
+    "Shopify_orders": 7407
+  },
+  "fiscal_required_universe": {
+    "name": "fiscal_required_universe",
+    "primary_key": "transaction_id where fiscal_status != FISCAL_NOT_APPLICABLE",
+    "unit": "transactions"
+  },
+  "alert_instance_universe": {
+    "name": "alert_instance_universe",
+    "primary_key": "alert_id",
+    "count": 430
+  },
+  "alert_type_universe": {
+    "name": "alert_type_universe",
+    "primary_key": "alert_type",
+    "count": 250
+  }
+}

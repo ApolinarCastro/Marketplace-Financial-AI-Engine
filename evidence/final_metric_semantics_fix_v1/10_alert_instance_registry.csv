@@ -1,0 +1,2 @@
+alert_id,marketplace,period,alert_type,severity,disposition,reason
+A001,RIPLEY,2026-05,FISCAL_BRIDGE_MISSING,HIGH,BLOCKED_EXTERNAL,External SII bridge

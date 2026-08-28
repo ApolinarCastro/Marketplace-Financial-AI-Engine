@@ -1,0 +1,26 @@
+{
+  "files": [
+    "00_baseline.json",
+    "01_marketplace_universe_contract.json",
+    "02_marketplace_4807_reproduction.json",
+    "03_marketplace_4807_exact_root_cause.json",
+    "04_cross_universe_guard.json",
+    "05_paris_fiscal_sets.json",
+    "06_paris_fiscal_partition.json",
+    "07_paris_aggregate_status.json",
+    "08_paris_exceptions.json",
+    "09_alert_type_vs_instance_universe.json",
+    "10_alert_instance_registry.csv",
+    "11_alert_matrix.csv",
+    "12_open_alerts.csv",
+    "13_open_alert_disposition.json",
+    "14_internal_actionable_alert_gate.json",
+    "15_db_raw_integrity.json",
+    "16_recompute.json",
+    "17_tests.json",
+    "18_adversarial.json",
+    "19_idempotency.json",
+    "20_release_decision.json"
+  ],
+  "total": 21
+}

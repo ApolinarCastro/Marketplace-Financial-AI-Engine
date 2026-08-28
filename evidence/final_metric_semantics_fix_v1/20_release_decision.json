@@ -1,0 +1,4 @@
+{
+  "decision": "No productive code change required; metric semantics corrected in evidence/reporting layer only. Keep marketplace-financial-v1.1.1 @ afb7f420",
+  "new_release_needed": false
+}
