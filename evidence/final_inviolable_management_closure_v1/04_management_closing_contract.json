@@ -1,0 +1,12 @@
+{
+  "contract": "ManagementClosingStatusV1",
+  "states": [
+    "CLOSED_FULLY_CERTIFIED",
+    "CLOSED_PARTIALLY_CERTIFIED",
+    "CLOSED_FINANCIAL_ONLY",
+    "OPEN_INTERNAL_ACTION",
+    "WAITING_EXTERNAL",
+    "NOT_APPLICABLE",
+    "CONFLICT"
+  ]
+}

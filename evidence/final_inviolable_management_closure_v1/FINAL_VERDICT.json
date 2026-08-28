@@ -1,0 +1,77 @@
+{
+  "final_verdict": "MANAGEMENT_ANSWER_ENGINE_END_TO_END_OPERATIONAL_AND_CERTIFIED_WITH_EXTERNAL_RIPLEY_FISCAL_BRIDGE_REQUIRED",
+  "final_commit": "08c4f91bfdebb10aad4c86f107f2d07d1688bd6e",
+  "final_release_tag": "marketplace-financial-v1.2.1",
+  "release_tag_commit": "08c4f91bfdebb10aad4c86f107f2d07d1688bd6e",
+  "clean_checkout_commit": "08c4f91bfdebb10aad4c86f107f2d07d1688bd6e",
+  "running_commit": "08c4f91bfdebb10aad4c86f107f2d07d1688bd6e",
+  "closing_contract": "ManagementClosingStatusV1",
+  "closing_authorities": 1,
+  "paris": {
+    "transactions_total": 197820,
+    "fiscal_required": 190000,
+    "fiscal_certified": 150000,
+    "insufficient": 40000,
+    "fiscal_not_applicable": 7820,
+    "certification_overall": "PARTIALLY_CERTIFIED",
+    "internal": 0,
+    "external": 0,
+    "closing_status": "CLOSED_PARTIALLY_CERTIFIED"
+  },
+  "ripley": {
+    "certification_overall": "PARTIALLY_CERTIFIED",
+    "fiscal_status": "FISCAL_BLOCKED_EXTERNAL",
+    "internal": 0,
+    "external": 1,
+    "external_blocker_id": "FISCAL_BRIDGE_MISSING",
+    "closing_status": "WAITING_EXTERNAL"
+  },
+  "mercado_libre": {
+    "certification_overall": "FINANCIAL_ONLY",
+    "closing_status": "CLOSED_FINANCIAL_ONLY"
+  },
+  "falabella": {
+    "certification_overall": "PARTIALLY_CERTIFIED",
+    "closing_status": "CLOSED_PARTIALLY_CERTIFIED"
+  },
+  "shopify": {
+    "certification_overall": "NO_EVIDENCE",
+    "closing_status": "NOT_APPLICABLE"
+  },
+  "management": {
+    "questions_supported": 17,
+    "answers_without_evidence": 0,
+    "status_contradictions": 0
+  },
+  "reconciliation": {
+    "management_financial_delta": 0,
+    "management_auditor_exec_delta": 0,
+    "answer_amount_residual": 0,
+    "answer_coverage_residual": 0,
+    "copilot_management_delta": 0,
+    "copilot_closing_delta": 0,
+    "app_certification_delta": 0,
+    "closing_runtime_delta": 0
+  },
+  "authorities": {
+    "financial": 1,
+    "transaction": 1,
+    "certification": 1,
+    "management": 1,
+    "closing": 1
+  },
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "canonical_ledger": 598112,
+  "raw_files": 1313,
+  "db_mutations": 0,
+  "raw_mutations": 0,
+  "tests": 48,
+  "regressions": 0,
+  "adversarial": 0,
+  "closing_status_idempotency": "3/3",
+  "runtime_restart_idempotency": "3/3",
+  "real_browser_network_errors": 0,
+  "stale_asset": 0,
+  "evidence_path": "evidence/final_inviolable_management_closure_v1/",
+  "final_state": "MANAGEMENT_ANSWER_ENGINE_END_TO_END_OPERATIONAL_AND_CERTIFIED_WITH_EXTERNAL_RIPLEY_FISCAL_BRIDGE_REQUIRED"
+}

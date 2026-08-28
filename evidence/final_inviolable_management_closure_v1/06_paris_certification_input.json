@@ -1,0 +1,16 @@
+{
+  "marketplace": "PARIS",
+  "period": "2026-05",
+  "financial_status": "FINANCIAL_CERTIFIED",
+  "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+  "document_status": "DOCUMENT_LINKED",
+  "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+  "fiscal_status": "FISCAL_CERTIFIED",
+  "overall_status": "PARTIALLY_CERTIFIED",
+  "fiscal_distribution": {
+    "fiscal_required": 190000,
+    "fiscal_certified": 150000,
+    "insufficient": 40000,
+    "fiscal_not_applicable": 7820
+  }
+}

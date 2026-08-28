@@ -1,0 +1,11 @@
+{
+  "route": "ManagementAnswer -> ManagementClosingStatusService -> API -> /exec",
+  "file": "engine/v4/management/management_closing_status_service.py",
+  "function": "derive",
+  "inputs": [
+    "CertificationResultV3.overall_status",
+    "internal_actionable_alerts",
+    "external_blockers"
+  ],
+  "output": "ManagementClosingStatusV1"
+}

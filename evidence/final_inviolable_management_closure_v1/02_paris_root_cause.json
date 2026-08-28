@@ -1,0 +1,3 @@
+{
+  "cause": "previous heuristic if questions_supported==17 -> FULLY_CERTIFIED, now removed. Paris fiscal 40000 insufficient should not be FULLY_CERTIFIED. Fixed via service deriving from CertificationResultV3 only."
+}

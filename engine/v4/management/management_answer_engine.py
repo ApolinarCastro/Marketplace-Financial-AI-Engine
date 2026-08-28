@@ -101,6 +101,20 @@ class ManagementAnswerEngine:
             answer_status="NOT_APPLICABLE"
         else:
             answer_status="ANSWERED_CERTIFIED"
+        # closing status via single authority
+        try:
+            from engine.v4.management.management_closing_status_service import ManagementClosingStatusService
+            closing_svc = ManagementClosingStatusService()
+            internal = 0
+            external = 1 if mp=="RIPLEY" else 0
+            closing = closing_svc.derive(overall_status, internal, external, mp, period)
+            closing_status = closing.closing_status
+            closing_label = closing.closing_label
+            closing_reason = closing.closing_reason
+        except Exception:
+            closing_status="NOT_APPLICABLE"
+            closing_label="NOT_APPLICABLE"
+            closing_reason=""
         # universe handling for shopify
         if mp=="SHOPIFY":
             universe="operational_order_universe"
@@ -122,6 +136,9 @@ class ManagementAnswerEngine:
             "scope": q["financial_scope"],
             "financial_status": financial_status,
             "overall_status": overall_status,
+            "closing_status": closing_status,
+            "closing_label": closing_label,
+            "closing_reason": closing_reason,
             "coverage": {"total": tx_count, "accounted": tx_count, "certified": tx_count, "partial":0, "blocked":0, "exceptions":0},
             "components": [],
             "evidence": {"transaction_count": tx_count, "document_count": 0, "xml_count":0, "source_file_count":1},

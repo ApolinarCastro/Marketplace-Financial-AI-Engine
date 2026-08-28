@@ -1,0 +1,4 @@
+{
+  "check": "ManagementAnswer.overall == CertificationResultV3.overall",
+  "status": "PASS"
+}

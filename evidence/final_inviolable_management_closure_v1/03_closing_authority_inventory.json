@@ -1,0 +1,12 @@
+{
+  "authorities": [
+    {
+      "impl": "ManagementClosingStatusService",
+      "status": "CANONICAL"
+    },
+    {
+      "impl": "legacy heuristic in evidence generator",
+      "status": "LEGACY_REMOVED"
+    }
+  ]
+}
