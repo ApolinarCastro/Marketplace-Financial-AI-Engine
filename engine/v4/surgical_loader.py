@@ -749,7 +749,7 @@ class SurgicalLoader:
         if not dir_falabella.exists():
             logger.warning("Falabella raw folder does not exist")
             return
-        files = sorted(list(dir_falabella.glob("**/*.xlsx")), key=lambda x: x.name, reverse=True)
+        files = sorted(list(dir_falabella.glob("**/*.xlsx")) + list(dir_falabella.glob("**/*.csv")), key=lambda x: x.name, reverse=True)
         
         mandatory_cols = ['Fecha de Transaccion', 'N de orden', 'Tipo de Transaccion', 'Monto con IVA']
         for f in files:
@@ -807,7 +807,7 @@ class SurgicalLoader:
                     df_ledger = pd.DataFrame(ledger)[LEDGER_COLS]
                     df_ledger = self._filter_old_years(df_ledger)
                     self.db.insert_df(df_ledger, "marketplace_ledger_v1")
-                    self._register_file(f.name, "ML", len(df_ledger))
+                    self._register_file(f.name, "FALABELLA", len(df_ledger))
             except Exception as e:
                 logger.error(f"Error Falabella {f.name}: {e}")
 
