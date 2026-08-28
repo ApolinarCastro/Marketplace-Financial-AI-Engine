@@ -1,0 +1,793 @@
+{
+  "running_commit": "31236fc6b53166f2008d760c313370706414b4da",
+  "release_tag": "marketplace-financial-v1.0.3",
+  "release_tag_commit": "31236fc6b53166f2008d760c313370706414b4da",
+  "project_root": "C:\\Users\\ASUS Zenbook\\Documents\\mfe-v1.0.3-clean",
+  "python": "C:\\Users\\ASUS Zenbook\\Documents\\Marketplace Financial AI Engine\\.venv\\Scripts\\python.exe",
+  "db_path": "C:\\Users\\ASUS Zenbook\\Documents\\mfe-v1.0.3-clean\\data\\db\\meli_financial_v4.db",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "db_size": 58732544,
+  "port": 3001,
+  "health": {
+    "status": "READY",
+    "database": "PASS",
+    "ledger": "PASS",
+    "classification": "PASS",
+    "closing": "PASS",
+    "ingestion": "PASS",
+    "auditor": "PASS",
+    "executive_dashboard": "PASS"
+  },
+  "global_certification_cases": {
+    "FALABELLA_2026-04": {
+      "marketplace": "FALABELLA",
+      "period": "2026-04",
+      "financial_status": "FINANCIAL_PARTIAL",
+      "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+      "document_status": "DOCUMENT_REFERENCE_ONLY",
+      "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+      "fiscal_status": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "overall_status": "PARTIALLY_CERTIFIED",
+      "overall_label": "PARTIALLY_CERTIFIED",
+      "overall_reason": "Financial truth valid; documentary/fiscal certification partial or blocked externally",
+      "legacy_overall_status": "FAILED",
+      "pass_rate": 50.0,
+      "total_delta": 2927559.45,
+      "claims": [
+        {
+          "kpi": "RECONCILIATION",
+          "description": "Ledger vs Cierre delta for FALABELLA",
+          "delta": 2927559.45,
+          "status": "FAIL",
+          "evidence_sql": "ReconciliationEngine.validate_marketplace_consistency('FALABELLA', '2026-04')",
+          "record_count": 626,
+          "impact_amount": 2927559.45
+        },
+        {
+          "kpi": "INGRESOS",
+          "description": "Ingresos for FALABELLA",
+          "delta": 0,
+          "status": "WARNING",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as total\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group = 'ingresos'\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 0
+        },
+        {
+          "kpi": "DEVOLUCIONES",
+          "description": "Devoluciones for FALABELLA: $0.00",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as total\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group = 'devoluciones'\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 0.0
+        },
+        {
+          "kpi": "CLASSIFICATION_COVERAGE",
+          "description": "Classification coverage: 626/626 (100.00%)",
+          "delta": 0.0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COUNT(*) as total,\n                   COALESCE(SUM(CASE WHEN financial_group IS NOT NULL AND financial_group != '' THEN 1 ELSE 0 END), 0) as classified\n            FROM marketplace_ledger_clasificado_v1\n            WHERE 1=1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 626,
+          "impact_amount": 0
+        },
+        {
+          "kpi": "PNL_EQUIVALENCE",
+          "description": "Single Financial Truth: P&L from ledger operational",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as ledger_pnl\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group IN ('ingresos','devoluciones','costos_operacionales','costos_comerciales','ajustes','recuperaciones_y_bonificaciones')\n              AND COALESCE(include_in_operational_pnl, 1) = 1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 1155270.4960000017
+        },
+        {
+          "kpi": "OPERATIONAL_PNL",
+          "description": "Gross: $0.00, Returns: $0.00, Costs: $1,155,270.50, Net: $-1,155,270.50",
+          "delta": 0,
+          "status": "FAIL",
+          "evidence_sql": "\n            SELECT \n                COALESCE(SUM(CASE WHEN financial_group = 'ingresos' AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as gross,\n                COALESCE(SUM(CASE WHEN financial_group = 'devoluciones' AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as returns,\n                COALESCE(SUM(CASE WHEN financial_group IN ('costos_operacionales','costos_comerciales','ajustes','recuperaciones_y_bonificaciones') AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as costs\n            FROM marketplace_ledger_clasificado_v1\n            WHERE 1=1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 1155270.4960000017
+        }
+      ],
+      "audit_execution_status": "PENDING",
+      "dte_chain_type": "TRANSACTION_CHAIN",
+      "dte_status_per_mp": {
+        "FALABELLA": {
+          "estado_legal": "TRANSACTION_CHAIN_CERTIFIED",
+          "nivel_evidencia": "TRANSACTION_CHAIN",
+          "cobertura": 37.0,
+          "monto_elegible": 9498395.797999933
+        }
+      },
+      "evidence": {
+        "financial": {
+          "pass_rate": 50.0,
+          "total_delta": 2927559.45,
+          "claims": [
+            {
+              "kpi": "RECONCILIATION",
+              "status": "FAIL",
+              "delta": 2927559.45
+            },
+            {
+              "kpi": "INGRESOS",
+              "status": "WARNING",
+              "delta": 0
+            },
+            {
+              "kpi": "DEVOLUCIONES",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "CLASSIFICATION_COVERAGE",
+              "status": "PASS",
+              "delta": 0.0
+            },
+            {
+              "kpi": "PNL_EQUIVALENCE",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "OPERATIONAL_PNL",
+              "status": "FAIL",
+              "delta": 0
+            }
+          ]
+        },
+        "document": {
+          "estado_legal": "TRANSACTION_CHAIN_CERTIFIED",
+          "nivel_evidencia": "TRANSACTION_CHAIN",
+          "cobertura": 37.0,
+          "monto_elegible": 9498395.797999933
+        },
+        "chain_type": "TRANSACTION_CHAIN"
+      }
+    },
+    "FALABELLA_2026-05": {
+      "marketplace": "FALABELLA",
+      "period": "2026-05",
+      "financial_status": "FINANCIAL_PARTIAL",
+      "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+      "document_status": "DOCUMENT_REFERENCE_ONLY",
+      "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+      "fiscal_status": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "overall_status": "PARTIALLY_CERTIFIED",
+      "overall_label": "PARTIALLY_CERTIFIED",
+      "overall_reason": "Financial truth valid; documentary/fiscal certification partial or blocked externally",
+      "legacy_overall_status": "FAILED",
+      "pass_rate": 50.0,
+      "total_delta": 7344028.76,
+      "claims": [
+        {
+          "kpi": "RECONCILIATION",
+          "description": "Ledger vs Cierre delta for FALABELLA",
+          "delta": 7344028.76,
+          "status": "FAIL",
+          "evidence_sql": "ReconciliationEngine.validate_marketplace_consistency('FALABELLA', '2026-05')",
+          "record_count": 161,
+          "impact_amount": 7344028.76
+        },
+        {
+          "kpi": "INGRESOS",
+          "description": "Ingresos for FALABELLA",
+          "delta": 0,
+          "status": "WARNING",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as total\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group = 'ingresos'\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 0
+        },
+        {
+          "kpi": "DEVOLUCIONES",
+          "description": "Devoluciones for FALABELLA: $0.00",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as total\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group = 'devoluciones'\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 0.0
+        },
+        {
+          "kpi": "CLASSIFICATION_COVERAGE",
+          "description": "Classification coverage: 161/161 (100.00%)",
+          "delta": 0.0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COUNT(*) as total,\n                   COALESCE(SUM(CASE WHEN financial_group IS NOT NULL AND financial_group != '' THEN 1 ELSE 0 END), 0) as classified\n            FROM marketplace_ledger_clasificado_v1\n            WHERE 1=1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 161,
+          "impact_amount": 0
+        },
+        {
+          "kpi": "PNL_EQUIVALENCE",
+          "description": "Single Financial Truth: P&L from ledger operational",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as ledger_pnl\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group IN ('ingresos','devoluciones','costos_operacionales','costos_comerciales','ajustes','recuperaciones_y_bonificaciones')\n              AND COALESCE(include_in_operational_pnl, 1) = 1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 267947.87699999986
+        },
+        {
+          "kpi": "OPERATIONAL_PNL",
+          "description": "Gross: $0.00, Returns: $0.00, Costs: $267,947.88, Net: $-267,947.88",
+          "delta": 0,
+          "status": "FAIL",
+          "evidence_sql": "\n            SELECT \n                COALESCE(SUM(CASE WHEN financial_group = 'ingresos' AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as gross,\n                COALESCE(SUM(CASE WHEN financial_group = 'devoluciones' AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as returns,\n                COALESCE(SUM(CASE WHEN financial_group IN ('costos_operacionales','costos_comerciales','ajustes','recuperaciones_y_bonificaciones') AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as costs\n            FROM marketplace_ledger_clasificado_v1\n            WHERE 1=1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 267947.87699999986
+        }
+      ],
+      "audit_execution_status": "PENDING",
+      "dte_chain_type": "TRANSACTION_CHAIN",
+      "dte_status_per_mp": {
+        "FALABELLA": {
+          "estado_legal": "TRANSACTION_CHAIN_CERTIFIED",
+          "nivel_evidencia": "TRANSACTION_CHAIN",
+          "cobertura": 37.0,
+          "monto_elegible": 9498395.797999933
+        }
+      },
+      "evidence": {
+        "financial": {
+          "pass_rate": 50.0,
+          "total_delta": 7344028.76,
+          "claims": [
+            {
+              "kpi": "RECONCILIATION",
+              "status": "FAIL",
+              "delta": 7344028.76
+            },
+            {
+              "kpi": "INGRESOS",
+              "status": "WARNING",
+              "delta": 0
+            },
+            {
+              "kpi": "DEVOLUCIONES",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "CLASSIFICATION_COVERAGE",
+              "status": "PASS",
+              "delta": 0.0
+            },
+            {
+              "kpi": "PNL_EQUIVALENCE",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "OPERATIONAL_PNL",
+              "status": "FAIL",
+              "delta": 0
+            }
+          ]
+        },
+        "document": {
+          "estado_legal": "TRANSACTION_CHAIN_CERTIFIED",
+          "nivel_evidencia": "TRANSACTION_CHAIN",
+          "cobertura": 37.0,
+          "monto_elegible": 9498395.797999933
+        },
+        "chain_type": "TRANSACTION_CHAIN"
+      }
+    },
+    "ML_2026-05": {
+      "marketplace": "ML",
+      "period": "2026-05",
+      "financial_status": "FINANCIAL_CERTIFIED",
+      "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+      "document_status": "DOCUMENT_REFERENCE_ONLY",
+      "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+      "fiscal_status": "FISCAL_CERTIFIED",
+      "overall_status": "FINANCIAL_ONLY",
+      "overall_label": "FINANCIAL_ONLY",
+      "overall_reason": "Financial truth certified; documentary/fiscal layers incomplete",
+      "legacy_overall_status": "DEGRADED",
+      "pass_rate": 66.7,
+      "total_delta": 40724883.1,
+      "claims": [
+        {
+          "kpi": "RECONCILIATION",
+          "description": "Ledger vs Cierre delta for ML",
+          "delta": 40724876.8,
+          "status": "FAIL",
+          "evidence_sql": "ReconciliationEngine.validate_marketplace_consistency('ML', '2026-05')",
+          "record_count": 6028,
+          "impact_amount": 40724876.8
+        },
+        {
+          "kpi": "INGRESOS",
+          "description": "Ingresos for ML: $60,234,900.00",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as total\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group = 'ingresos'\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 60234900.0
+        },
+        {
+          "kpi": "DEVOLUCIONES",
+          "description": "Devoluciones for ML: $4,694,920.00",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as total\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group = 'devoluciones'\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 4694920.0
+        },
+        {
+          "kpi": "CLASSIFICATION_COVERAGE",
+          "description": "Classification coverage: 5648/6028 (93.70%)",
+          "delta": 6.3,
+          "status": "FAIL",
+          "evidence_sql": "\n            SELECT COUNT(*) as total,\n                   COALESCE(SUM(CASE WHEN financial_group IS NOT NULL AND financial_group != '' THEN 1 ELSE 0 END), 0) as classified\n            FROM marketplace_ledger_clasificado_v1\n            WHERE 1=1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 6028,
+          "impact_amount": 380
+        },
+        {
+          "kpi": "PNL_EQUIVALENCE",
+          "description": "Single Financial Truth: P&L from ledger operational",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as ledger_pnl\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group IN ('ingresos','devoluciones','costos_operacionales','costos_comerciales','ajustes','recuperaciones_y_bonificaciones')\n              AND COALESCE(include_in_operational_pnl, 1) = 1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 38929133.79999999
+        },
+        {
+          "kpi": "OPERATIONAL_PNL",
+          "description": "Gross: $60,234,900.00, Returns: $4,694,920.00, Costs: $16,610,846.20, Net: $38,929,133.80",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT \n                COALESCE(SUM(CASE WHEN financial_group = 'ingresos' AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as gross,\n                COALESCE(SUM(CASE WHEN financial_group = 'devoluciones' AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as returns,\n                COALESCE(SUM(CASE WHEN financial_group IN ('costos_operacionales','costos_comerciales','ajustes','recuperaciones_y_bonificaciones') AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as costs\n            FROM marketplace_ledger_clasificado_v1\n            WHERE 1=1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 38929133.79999998
+        }
+      ],
+      "audit_execution_status": "PENDING",
+      "dte_chain_type": "DIRECT_LINK",
+      "dte_status_per_mp": {
+        "ML": {
+          "estado_legal": "LEGAL_DOCUMENT",
+          "nivel_evidencia": "DIRECT_LINK",
+          "cobertura": 97.6,
+          "monto_elegible": 316471869.0599998
+        }
+      },
+      "evidence": {
+        "financial": {
+          "pass_rate": 66.7,
+          "total_delta": 40724883.1,
+          "claims": [
+            {
+              "kpi": "RECONCILIATION",
+              "status": "FAIL",
+              "delta": 40724876.8
+            },
+            {
+              "kpi": "INGRESOS",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "DEVOLUCIONES",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "CLASSIFICATION_COVERAGE",
+              "status": "FAIL",
+              "delta": 6.3
+            },
+            {
+              "kpi": "PNL_EQUIVALENCE",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "OPERATIONAL_PNL",
+              "status": "PASS",
+              "delta": 0
+            }
+          ]
+        },
+        "document": {
+          "estado_legal": "LEGAL_DOCUMENT",
+          "nivel_evidencia": "DIRECT_LINK",
+          "cobertura": 97.6,
+          "monto_elegible": 316471869.0599998
+        },
+        "chain_type": "DIRECT_LINK"
+      }
+    },
+    "RIPLEY_2026-05": {
+      "marketplace": "RIPLEY",
+      "period": "2026-05",
+      "financial_status": "FINANCIAL_CERTIFIED",
+      "settlement_status": "SETTLEMENT_CERTIFIED",
+      "document_status": "DOCUMENT_REFERENCE_ONLY",
+      "xml_status": "XML_NOT_LINKED",
+      "fiscal_status": "FISCAL_BLOCKED_EXTERNAL",
+      "overall_status": "PARTIALLY_CERTIFIED",
+      "overall_label": "PARTIALLY_CERTIFIED",
+      "overall_reason": "Financial truth certified; fiscal evidence blocked externally (e.g., settlement chain without SII DTE)",
+      "legacy_overall_status": "DEGRADED",
+      "pass_rate": 83.3,
+      "total_delta": 95136830.0,
+      "claims": [
+        {
+          "kpi": "RECONCILIATION",
+          "description": "Ledger vs Cierre delta for RIPLEY",
+          "delta": 95136830.0,
+          "status": "FAIL",
+          "evidence_sql": "ReconciliationEngine.validate_marketplace_consistency('RIPLEY', '2026-05')",
+          "record_count": 10488,
+          "impact_amount": 95136830.0
+        },
+        {
+          "kpi": "INGRESOS",
+          "description": "Ingresos for RIPLEY: $97,759,285.00",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as total\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group = 'ingresos'\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 97759285.0
+        },
+        {
+          "kpi": "DEVOLUCIONES",
+          "description": "Devoluciones for RIPLEY: $10,065,099.00",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as total\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group = 'devoluciones'\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 10065099.0
+        },
+        {
+          "kpi": "CLASSIFICATION_COVERAGE",
+          "description": "Classification coverage: 10488/10488 (100.00%)",
+          "delta": 0.0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COUNT(*) as total,\n                   COALESCE(SUM(CASE WHEN financial_group IS NOT NULL AND financial_group != '' THEN 1 ELSE 0 END), 0) as classified\n            FROM marketplace_ledger_clasificado_v1\n            WHERE 1=1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 10488,
+          "impact_amount": 0
+        },
+        {
+          "kpi": "PNL_EQUIVALENCE",
+          "description": "Single Financial Truth: P&L from ledger operational",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as ledger_pnl\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group IN ('ingresos','devoluciones','costos_operacionales','costos_comerciales','ajustes','recuperaciones_y_bonificaciones')\n              AND COALESCE(include_in_operational_pnl, 1) = 1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 28882717.0
+        },
+        {
+          "kpi": "OPERATIONAL_PNL",
+          "description": "Gross: $38,309,100.00, Returns: $5,699,400.00, Costs: $3,726,983.00, Net: $28,882,717.00",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT \n                COALESCE(SUM(CASE WHEN financial_group = 'ingresos' AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as gross,\n                COALESCE(SUM(CASE WHEN financial_group = 'devoluciones' AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as returns,\n                COALESCE(SUM(CASE WHEN financial_group IN ('costos_operacionales','costos_comerciales','ajustes','recuperaciones_y_bonificaciones') AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as costs\n            FROM marketplace_ledger_clasificado_v1\n            WHERE 1=1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 28882717.0
+        }
+      ],
+      "audit_execution_status": "PENDING",
+      "dte_chain_type": "SETTLEMENT",
+      "dte_status_per_mp": {
+        "RIPLEY": {
+          "estado_legal": "SETTLEMENT_CERTIFIED",
+          "nivel_evidencia": "SETTLEMENT_CHAIN_V2",
+          "cobertura": 0.0,
+          "monto_elegible": 826645222.0
+        }
+      },
+      "evidence": {
+        "financial": {
+          "pass_rate": 83.3,
+          "total_delta": 95136830.0,
+          "claims": [
+            {
+              "kpi": "RECONCILIATION",
+              "status": "FAIL",
+              "delta": 95136830.0
+            },
+            {
+              "kpi": "INGRESOS",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "DEVOLUCIONES",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "CLASSIFICATION_COVERAGE",
+              "status": "PASS",
+              "delta": 0.0
+            },
+            {
+              "kpi": "PNL_EQUIVALENCE",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "OPERATIONAL_PNL",
+              "status": "PASS",
+              "delta": 0
+            }
+          ]
+        },
+        "document": {
+          "estado_legal": "SETTLEMENT_CERTIFIED",
+          "nivel_evidencia": "SETTLEMENT_CHAIN_V2",
+          "cobertura": 0.0,
+          "monto_elegible": 826645222.0
+        },
+        "chain_type": "SETTLEMENT"
+      }
+    },
+    "PARIS_2026-05": {
+      "marketplace": "PARIS",
+      "period": "2026-05",
+      "financial_status": "FINANCIAL_CERTIFIED",
+      "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+      "document_status": "DOCUMENT_LINKED",
+      "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+      "fiscal_status": "FISCAL_CERTIFIED",
+      "overall_status": "FULLY_CERTIFIED",
+      "overall_label": "FULLY_CERTIFIED",
+      "overall_reason": "All certification layers complete and certified",
+      "legacy_overall_status": "DEGRADED",
+      "pass_rate": 83.3,
+      "total_delta": 77748142.0,
+      "claims": [
+        {
+          "kpi": "RECONCILIATION",
+          "description": "Ledger vs Cierre delta for PARIS",
+          "delta": 77748142.0,
+          "status": "FAIL",
+          "evidence_sql": "ReconciliationEngine.validate_marketplace_consistency('PARIS', '2026-05')",
+          "record_count": 6998,
+          "impact_amount": 77748142.0
+        },
+        {
+          "kpi": "INGRESOS",
+          "description": "Ingresos for PARIS: $55,477,230.00",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as total\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group = 'ingresos'\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 55477230.0
+        },
+        {
+          "kpi": "DEVOLUCIONES",
+          "description": "Devoluciones for PARIS: $22,147,100.00",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as total\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group = 'devoluciones'\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 22147100.0
+        },
+        {
+          "kpi": "CLASSIFICATION_COVERAGE",
+          "description": "Classification coverage: 6998/6998 (100.00%)",
+          "delta": 0.0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COUNT(*) as total,\n                   COALESCE(SUM(CASE WHEN financial_group IS NOT NULL AND financial_group != '' THEN 1 ELSE 0 END), 0) as classified\n            FROM marketplace_ledger_clasificado_v1\n            WHERE 1=1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 6998,
+          "impact_amount": 0
+        },
+        {
+          "kpi": "PNL_EQUIVALENCE",
+          "description": "Single Financial Truth: P&L from ledger operational",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT COALESCE(SUM(COALESCE(monto, 0)), 0) as ledger_pnl\n            FROM marketplace_ledger_clasificado_v1\n            WHERE financial_group IN ('ingresos','devoluciones','costos_operacionales','costos_comerciales','ajustes','recuperaciones_y_bonificaciones')\n              AND COALESCE(include_in_operational_pnl, 1) = 1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 24850008.0
+        },
+        {
+          "kpi": "OPERATIONAL_PNL",
+          "description": "Gross: $55,477,230.00, Returns: $22,147,100.00, Costs: $8,480,122.00, Net: $24,850,008.00",
+          "delta": 0,
+          "status": "PASS",
+          "evidence_sql": "\n            SELECT \n                COALESCE(SUM(CASE WHEN financial_group = 'ingresos' AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as gross,\n                COALESCE(SUM(CASE WHEN financial_group = 'devoluciones' AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as returns,\n                COALESCE(SUM(CASE WHEN financial_group IN ('costos_operacionales','costos_comerciales','ajustes','recuperaciones_y_bonificaciones') AND COALESCE(include_in_operational_pnl, 1) = 1 THEN monto ELSE 0 END), 0) as costs\n            FROM marketplace_ledger_clasificado_v1\n            WHERE 1=1\n              AND marketplace = ?\n              AND fecha BETWEEN ? AND ?\n        ",
+          "record_count": 1,
+          "impact_amount": 24850008.0
+        }
+      ],
+      "audit_execution_status": "PENDING",
+      "dte_chain_type": "DOCUMENT_CHAIN",
+      "dte_status_per_mp": {
+        "PARIS": {
+          "estado_legal": "DOCUMENT_CHAIN_CERTIFIED",
+          "nivel_evidencia": "DOCUMENT_CHAIN",
+          "cobertura": 89.2,
+          "monto_elegible": 398597584.0
+        }
+      },
+      "evidence": {
+        "financial": {
+          "pass_rate": 83.3,
+          "total_delta": 77748142.0,
+          "claims": [
+            {
+              "kpi": "RECONCILIATION",
+              "status": "FAIL",
+              "delta": 77748142.0
+            },
+            {
+              "kpi": "INGRESOS",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "DEVOLUCIONES",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "CLASSIFICATION_COVERAGE",
+              "status": "PASS",
+              "delta": 0.0
+            },
+            {
+              "kpi": "PNL_EQUIVALENCE",
+              "status": "PASS",
+              "delta": 0
+            },
+            {
+              "kpi": "OPERATIONAL_PNL",
+              "status": "PASS",
+              "delta": 0
+            }
+          ]
+        },
+        "document": {
+          "estado_legal": "DOCUMENT_CHAIN_CERTIFIED",
+          "nivel_evidencia": "DOCUMENT_CHAIN",
+          "cobertura": 89.2,
+          "monto_elegible": 398597584.0
+        },
+        "chain_type": "DOCUMENT_CHAIN"
+      }
+    }
+  },
+  "transaction_samples": [
+    {
+      "id_transaccion": "e22dc1c3-ce8e-4dc6-94b3-40cf579b4896",
+      "marketplace": "FALABELLA",
+      "fecha": "2026-04-01",
+      "detalle": "Reversa de pago de envío comprador",
+      "monto": -3352.941,
+      "folio_xml": null
+    },
+    {
+      "id_transaccion": "e22dc1c3-ce8e-4dc6-94b3-40cf579b4896",
+      "marketplace": "FALABELLA",
+      "fecha": "2026-04-01",
+      "detalle": "Cobro por comisión por venta",
+      "monto": -6048.739,
+      "folio_xml": null
+    },
+    {
+      "id_transaccion": "e22dc1c3-ce8e-4dc6-94b3-40cf579b4896",
+      "marketplace": "FALABELLA",
+      "fecha": "2026-04-01",
+      "detalle": "Cobro por cofinanciamiento logístico",
+      "monto": -3100.84,
+      "folio_xml": null
+    }
+  ],
+  "drawer_samples": [
+    {
+      "tx": "e22dc1c3-ce8e-4dc6-94b3-40cf579b4896",
+      "code": 200,
+      "data": {
+        "tx_id": "e22dc1c3-ce8e-4dc6-94b3-40cf579b4896",
+        "marketplace": "FALABELLA",
+        "estado": "INSUFFICIENT_FISCAL_EVIDENCE",
+        "certification_scope": "UNKNOWN",
+        "evidence_source": "NONE",
+        "blocking_reason": "NO_XML_NO_DTE_NO_MATCH",
+        "tipo_dte": "-",
+        "folio": "-",
+        "pipeline": {
+          "xml": "FAIL",
+          "xsd": "FAIL",
+          "sig": "FAIL",
+          "caf": "FAIL"
+        },
+        "evidencia": {
+          "hash": "797a179e93dc956c82035ae9fb4e966dca52c5834e5414a96bc238c6aca8ff8c",
+          "confidence": "0%",
+          "level": "INSUFFICIENT_FISCAL_EVIDENCE"
+        }
+      },
+      "ledger_folio": null,
+      "monto": -3352.941,
+      "detalle": "Reversa de pago de envío comprador"
+    },
+    {
+      "tx": "e22dc1c3-ce8e-4dc6-94b3-40cf579b4896",
+      "code": 200,
+      "data": {
+        "tx_id": "e22dc1c3-ce8e-4dc6-94b3-40cf579b4896",
+        "marketplace": "FALABELLA",
+        "estado": "INSUFFICIENT_FISCAL_EVIDENCE",
+        "certification_scope": "UNKNOWN",
+        "evidence_source": "NONE",
+        "blocking_reason": "NO_XML_NO_DTE_NO_MATCH",
+        "tipo_dte": "-",
+        "folio": "-",
+        "pipeline": {
+          "xml": "FAIL",
+          "xsd": "FAIL",
+          "sig": "FAIL",
+          "caf": "FAIL"
+        },
+        "evidencia": {
+          "hash": "797a179e93dc956c82035ae9fb4e966dca52c5834e5414a96bc238c6aca8ff8c",
+          "confidence": "0%",
+          "level": "INSUFFICIENT_FISCAL_EVIDENCE"
+        }
+      },
+      "ledger_folio": null,
+      "monto": -6048.739,
+      "detalle": "Cobro por comisión por venta"
+    },
+    {
+      "tx": "e22dc1c3-ce8e-4dc6-94b3-40cf579b4896",
+      "code": 200,
+      "data": {
+        "tx_id": "e22dc1c3-ce8e-4dc6-94b3-40cf579b4896",
+        "marketplace": "FALABELLA",
+        "estado": "INSUFFICIENT_FISCAL_EVIDENCE",
+        "certification_scope": "UNKNOWN",
+        "evidence_source": "NONE",
+        "blocking_reason": "NO_XML_NO_DTE_NO_MATCH",
+        "tipo_dte": "-",
+        "folio": "-",
+        "pipeline": {
+          "xml": "FAIL",
+          "xsd": "FAIL",
+          "sig": "FAIL",
+          "caf": "FAIL"
+        },
+        "evidencia": {
+          "hash": "797a179e93dc956c82035ae9fb4e966dca52c5834e5414a96bc238c6aca8ff8c",
+          "confidence": "0%",
+          "level": "INSUFFICIENT_FISCAL_EVIDENCE"
+        }
+      },
+      "ledger_folio": null,
+      "monto": -3100.84,
+      "detalle": "Cobro por cofinanciamiento logístico"
+    },
+    {
+      "tx": "SALE_2000016263695668_Reporte_Facturacion_MercadoLibre_May2026.xlsx_1",
+      "code": 200,
+      "data": {
+        "tx_id": "SALE_2000016263695668_Reporte_Facturacion_MercadoLibre_May2026.xlsx_1",
+        "marketplace": "ML",
+        "estado": "LEDGER_REFERENCE_ONLY",
+        "certification_scope": "LIQUIDACION",
+        "evidence_source": "LEDGER",
+        "blocking_reason": "LEDGER_FOLIO_WITHOUT_REAL_DTE",
+        "tipo_dte": "-",
+        "folio": "033-0013423549",
+        "pipeline": {
+          "xml": "FAIL",
+          "xsd": "FAIL",
+          "sig": "FAIL",
+          "caf": "FAIL"
+        },
+        "evidencia": {
+          "hash": "cf5a1cbc0ab06869148dcb717a92bc01d349fb26e975184167f155b18c2935ea",
+          "confidence": "N/A",
+          "level": "LEDGER_REFERENCE_ONLY"
+        }
+      },
+      "ledger_folio": "033-0013423549"
+    }
+  ],
+  "captured_at": "2026-08-28T10:14:34.109737",
+  "note": "defective transactional drawer shows FAILx4 and UNKNOWN when no XML"
+}

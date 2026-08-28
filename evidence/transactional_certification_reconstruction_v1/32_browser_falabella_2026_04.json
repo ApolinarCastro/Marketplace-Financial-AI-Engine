@@ -1,0 +1,25 @@
+{
+  "marketplace": "FALABELLA",
+  "period": "2026-04",
+  "transaction_sample": "7a85aa4c-68f6-4fba-b9d0-11d9241da090",
+  "document": {
+    "type": "-",
+    "folio": "-"
+  },
+  "pipeline": {
+    "xml": "NOT_RUN",
+    "xsd": "NOT_RUN",
+    "sig": "NOT_RUN",
+    "caf": "NOT_RUN"
+  },
+  "fiscal_status": "INSUFFICIENT_FISCAL_EVIDENCE",
+  "overall_status": "FINANCIAL_ONLY",
+  "chain_type": "TRANSACTION_CHAIN",
+  "amount": {
+    "canonical_value": -1155270,
+    "selected_total": -1155270,
+    "financial_truth": -1155270,
+    "executive": -1155270,
+    "delta": 0
+  }
+}

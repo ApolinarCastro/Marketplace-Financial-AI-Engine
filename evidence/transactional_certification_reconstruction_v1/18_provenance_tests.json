@@ -1,0 +1,25 @@
+{
+  "tests": [
+    {
+      "mp": "RIPLEY",
+      "chain": "SETTLEMENT",
+      "status": "PASS"
+    },
+    {
+      "mp": "ML",
+      "chain": "DIRECT_LINK",
+      "status": "PASS"
+    },
+    {
+      "mp": "PARIS",
+      "chain": "DOCUMENT_CHAIN",
+      "status": "PASS"
+    },
+    {
+      "mp": "FALABELLA",
+      "chain": "TRANSACTION_CHAIN",
+      "status": "PASS"
+    }
+  ],
+  "avoidable_unknown": 0
+}

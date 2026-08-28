@@ -1,0 +1,78 @@
+{
+  "mission": "FINAL_RELEASE_EVIDENCE_CLOSURE_V1",
+  "runtime_fingerprint": {
+    "server_started": true,
+    "port": 3001,
+    "host": "127.0.0.1",
+    "clean_checkout_path": "C:\\Users\\ASUS Zenbook\\Documents\\mfe-v1.0.3-clean",
+    "api_endpoints_tested": [
+      "/api/v4/certification/status?marketplace=FALABELLA&periodo=2026-05",
+      "/api/v4/certification/status?marketplace=FALABELLA&periodo=2026-04",
+      "/api/v4/certification/status?marketplace=RIPLEY&periodo=2026-05",
+      "/api/v4/certification/status?marketplace=ML&periodo=2026-05",
+      "/api/v4/certification/status?marketplace=PARIS&periodo=2026-05",
+      "/api/v4/certification/status?marketplace=ALL",
+      "/api/v4/dte/certify?marketplace=FALABELLA",
+      "/api/v4/dte/certify?marketplace=RIPLEY",
+      "/api/v4/health"
+    ],
+    "all_endpoints_respond_200": true,
+    "health_check": {
+      "status": "READY",
+      "database": "PASS",
+      "ledger": "PASS",
+      "classification": "PASS",
+      "closing": "PASS",
+      "ingestion": "PASS",
+      "auditor": "PASS",
+      "executive_dashboard": "PASS"
+    }
+  },
+  "api_verification": {
+    "FALABELLA_2026_05": {
+      "overall_status": "PARTIALLY_CERTIFIED",
+      "overall_label": "PARTIALLY_CERTIFIED",
+      "financial_status": "FINANCIAL_PARTIAL",
+      "settlement_status": "SETTLEMENT_NOT_APPLICABLE",
+      "document_status": "DOCUMENT_REFERENCE_ONLY",
+      "xml_status": "XML_PRESENT_NOT_CERTIFIED",
+      "fiscal_status": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "audit_execution_status": "PENDING",
+      "dte_chain_type": "TRANSACTION_CHAIN"
+    },
+    "FALABELLA_2026_04": {
+      "overall_status": "PARTIALLY_CERTIFIED",
+      "overall_label": "PARTIALLY_CERTIFIED",
+      "financial_status": "FINANCIAL_PARTIAL",
+      "dte_chain_type": "TRANSACTION_CHAIN"
+    },
+    "RIPLEY_2026_05": {
+      "overall_status": "PARTIALLY_CERTIFIED",
+      "overall_label": "PARTIALLY_CERTIFIED",
+      "financial_status": "FINANCIAL_CERTIFIED",
+      "settlement_status": "SETTLEMENT_CERTIFIED",
+      "fiscal_status": "FISCAL_BLOCKED_EXTERNAL",
+      "dte_chain_type": "SETTLEMENT"
+    },
+    "ML_2026_05": {
+      "overall_status": "FINANCIAL_ONLY",
+      "financial_status": "FINANCIAL_CERTIFIED",
+      "fiscal_status": "FISCAL_CERTIFIED",
+      "dte_chain_type": "DIRECT_LINK"
+    },
+    "PARIS_2026_05": {
+      "overall_status": "FULLY_CERTIFIED",
+      "financial_status": "FINANCIAL_CERTIFIED",
+      "document_status": "DOCUMENT_LINKED",
+      "fiscal_status": "FISCAL_CERTIFIED",
+      "dte_chain_type": "DOCUMENT_CHAIN"
+    }
+  },
+  "gate_verification": {
+    "RUNTIME_DB_SHA256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "DB_SHA256_FULL_LENGTH": 64,
+    "CANONICAL_LEDGER_ROWS": 598112,
+    "DB_MUTATIONS": 0,
+    "RAW_MUTATIONS": 0
+  }
+}

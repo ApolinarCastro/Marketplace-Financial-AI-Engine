@@ -1,0 +1,6 @@
+{
+  "frontend": "templates/dashboard.html",
+  "logic": 0,
+  "render_only": "document.type/folio, pipeline xml/xsd/sig/caf, fiscal_status, evidence_level/hash, chain_type",
+  "no_compute": "no if (!xml) FAIL, no chain_type UNKNOWN fallback, no Math.round"
+}

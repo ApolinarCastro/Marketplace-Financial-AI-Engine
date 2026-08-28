@@ -1,0 +1,41 @@
+{
+  "mission": "FINAL_RELEASE_EVIDENCE_CLOSURE_V1",
+  "commit": "31236fc6b53166f2008d760c313370706414b4da",
+  "tag": "marketplace-financial-v1.0.3",
+  "files_in_commit": [
+    "engine/v4/certification/certification_result_v3.py",
+    "api/api.py",
+    "templates/dashboard.html",
+    "templates/executive_dashboard.html",
+    "evidence/final_p0_corrective_closure/01_certification_root_cause.json",
+    "evidence/final_p0_corrective_closure/02_certification_v3_contract.json",
+    "evidence/final_p0_corrective_closure/03_certification_real_cases.json",
+    "evidence/final_p0_corrective_closure/04_runtime_db_identity.json",
+    "evidence/final_p0_corrective_closure/05_ledger_207600_origin.json",
+    "evidence/final_p0_corrective_closure/06_ledger_authority_inventory.csv",
+    "evidence/final_p0_corrective_closure/07_ledger_marketplace_reconciliation.csv",
+    "evidence/final_p0_corrective_closure/08_db_integrity.json",
+    "evidence/final_p0_corrective_closure/09_runtime_fingerprint.json",
+    "evidence/final_p0_corrective_closure/10_browser_app_validation.json",
+    "evidence/final_p0_corrective_closure/11_browser_exec_validation.json",
+    "evidence/final_p0_corrective_closure/12_browser_reload_validation.json",
+    "evidence/final_p0_corrective_closure/13_tests.json",
+    "evidence/final_p0_corrective_closure/evidence_manifest.json",
+    "evidence/final_p0_corrective_closure/FINAL_VERDICT.json",
+    "test_browser4.py",
+    "test_browser5.py",
+    "test_browser6.py",
+    "check_counts.py"
+  ],
+  "core_changes": {
+    "engine/v4/certification/certification_result_v3.py": "NEW - CertificationResultV3 canonical contract adapter",
+    "api/api.py": "MODIFIED - /api/v4/certification/status returns V3 layer statuses; /api/v4/dte/certify fixed",
+    "templates/dashboard.html": "MODIFIED - getCertificationLabel() updated for V3 states",
+    "templates/executive_dashboard.html": "MODIFIED - getCertificationLabel() updated for V3 states"
+  },
+  "verification": {
+    "commit_contains_declared_files": true,
+    "tag_points_to_commit": true,
+    "legacy_states_removed_from_public_contract": true
+  }
+}

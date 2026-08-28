@@ -1,0 +1,7 @@
+{
+  "endpoints": [
+    "GET /api/v4/electronic_certification/status/{tx_id}"
+  ],
+  "contract_version": "TransactionCertificationResultV3",
+  "schema_violations": 0
+}

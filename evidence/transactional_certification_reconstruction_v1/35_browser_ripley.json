@@ -1,0 +1,16 @@
+{
+  "marketplace": "RIPLEY",
+  "period": "2026-05",
+  "financial_status": "FINANCIAL_CERTIFIED",
+  "settlement_status": "SETTLEMENT_CERTIFIED",
+  "fiscal_status": "FISCAL_BLOCKED_EXTERNAL",
+  "overall_status": "PARTIALLY_CERTIFIED",
+  "xml_status": "XML_NOT_LINKED",
+  "pipeline": {
+    "xml": "NOT_RUN",
+    "xsd": "NOT_RUN",
+    "sig": "NOT_RUN",
+    "caf": "NOT_RUN"
+  },
+  "chain_type": "SETTLEMENT"
+}

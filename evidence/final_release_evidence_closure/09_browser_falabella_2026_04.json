@@ -1,0 +1,32 @@
+{
+  "mission": "FINAL_RELEASE_EVIDENCE_CLOSURE_V1",
+  "test_cases": [
+    {
+      "marketplace": "FALABELLA",
+      "period": "2026-04",
+      "dashboard": "/app",
+      "api_overall_status": "PARTIALLY_CERTIFIED",
+      "ui_rendered": "CERTIFICACIÓN PARCIAL",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Cadena Transaccional",
+      "match": true
+    },
+    {
+      "marketplace": "FALABELLA",
+      "period": "2026-04",
+      "dashboard": "/exec",
+      "header_badge_rendered": "CERTIFICACIÓN PARCIAL",
+      "audit_section_rendered": "CERTIFICACIÓN PARCIAL",
+      "dte_chain_rendered": "Cadena Transaccional",
+      "match": true
+    }
+  ],
+  "financial_truth_preserved": {
+    "auditor_net_equals_executive_net": true,
+    "no_financial_calculations_modified": true
+  },
+  "gate_verification": {
+    "APP_EXEC_CERTIFICATION_DELTA": 0,
+    "FINANCIAL_TRUTH_DELTA": 0
+  }
+}

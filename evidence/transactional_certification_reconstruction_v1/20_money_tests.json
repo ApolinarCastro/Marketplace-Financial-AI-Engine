@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "name": "Falabella 2026-04 canonical sum",
+      "status": "PASS",
+      "delta": 0
+    }
+  ]
+}

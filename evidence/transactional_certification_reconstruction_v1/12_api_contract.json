@@ -1,0 +1,24 @@
+{
+  "endpoint": "GET /api/v4/electronic_certification/status/{tx_id}",
+  "contract": "TransactionCertificationResultV3",
+  "contract_version": "TransactionCertificationResultV3",
+  "fields": [
+    "transaction_id",
+    "marketplace",
+    "period",
+    "financial_status",
+    "settlement_status",
+    "document_status",
+    "xml_status",
+    "fiscal_status",
+    "overall_status",
+    "chain_type",
+    "document",
+    "xml",
+    "pipeline",
+    "evidence_level",
+    "evidence_hash",
+    "confidence",
+    "amount"
+  ]
+}

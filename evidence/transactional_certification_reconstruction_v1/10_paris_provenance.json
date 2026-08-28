@@ -1,0 +1,11 @@
+{
+  "marketplace": "PARIS",
+  "chain_type": "DOCUMENT_CHAIN",
+  "provenance": "derived from marketplace=PARIS via canonical chain map",
+  "evidence": {
+    "marketplace": "PARIS",
+    "chain_type": "DOCUMENT_CHAIN",
+    "source": "ledger lineage"
+  },
+  "avoidable_unknown": 0
+}

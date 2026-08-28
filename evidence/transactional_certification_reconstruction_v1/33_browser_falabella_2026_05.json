@@ -1,0 +1,12 @@
+{
+  "marketplace": "FALABELLA",
+  "period": "2026-05",
+  "pipeline": {
+    "xml": "NOT_RUN",
+    "xsd": "NOT_RUN",
+    "sig": "NOT_RUN",
+    "caf": "NOT_RUN"
+  },
+  "chain_type": "TRANSACTION_CHAIN",
+  "delta": 0
+}

@@ -1,0 +1,66 @@
+{
+  "mission": "FINAL_RELEASE_EVIDENCE_CLOSURE_V1",
+  "dashboard": "/app (Auditor Dashboard)",
+  "url": "http://127.0.0.1:3001/app",
+  "test_timestamp": "2026-08-27T22:30:00Z",
+  "test_cases": [
+    {
+      "marketplace": "FALABELLA",
+      "period": "2026-05",
+      "api_overall_status": "PARTIALLY_CERTIFIED",
+      "ui_rendered": "CERTIFICACIÓN PARCIAL",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Cadena Transaccional",
+      "match": true,
+      "notes": "API overall_status=PARTIALLY_CERTIFIED, UI shows CERTIFICACIÓN PARCIAL label"
+    },
+    {
+      "marketplace": "FALABELLA",
+      "period": "2026-04",
+      "api_overall_status": "PARTIALLY_CERTIFIED",
+      "ui_rendered": "CERTIFICACIÓN PARCIAL",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Cadena Transaccional",
+      "match": true
+    },
+    {
+      "marketplace": "RIPLEY",
+      "period": "2026-05",
+      "api_overall_status": "PARTIALLY_CERTIFIED",
+      "ui_rendered": "CERTIFICACIÓN PARCIAL",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Cadena de Liquidación (Settlement)",
+      "match": true,
+      "notes": "financial=FINANCIAL_CERTIFIED, settlement=SETTLEMENT_CERTIFIED, fiscal=FISCAL_BLOCKED_EXTERNAL, chain_type=SETTLEMENT"
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-05",
+      "api_overall_status": "FINANCIAL_ONLY",
+      "ui_rendered": "SOLO FINANCIERO",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Enlace Directo (1:1)",
+      "match": true
+    },
+    {
+      "marketplace": "PARIS",
+      "period": "2026-05",
+      "api_overall_status": "FULLY_CERTIFIED",
+      "ui_rendered": "CERTIFICADO TOTAL",
+      "audit_status_rendered": "AUDITORÍA PENDIENTE",
+      "dte_chain_rendered": "Cadena Documental",
+      "match": true
+    }
+  ],
+  "legacy_states_verified_absent": {
+    "CERTIFICADO": false,
+    "NO CERTIFICADO": false,
+    "FAILED": false,
+    "DEGRADED": false,
+    "CERTIFIED": false
+  },
+  "gate_verification": {
+    "APP_API_CERTIFICATION_DELTA": 0,
+    "NO_LEGACY_STATES_IN_UI": true
+  }
+}

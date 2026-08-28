@@ -1,0 +1,44 @@
+{
+  "states": [
+    "NOT_RUN",
+    "PASS",
+    "FAIL",
+    "NOT_APPLICABLE"
+  ],
+  "rules": [
+    {
+      "condition": "xml.linked=false",
+      "xml_status": "XML_NOT_LINKED",
+      "pipeline": {
+        "xml": "NOT_RUN",
+        "xsd": "NOT_RUN",
+        "sig": "NOT_RUN",
+        "caf": "NOT_RUN"
+      }
+    },
+    {
+      "condition": "xml.linked=true and real_dte+match",
+      "xml_status": "XML_CERTIFIED",
+      "pipeline": {
+        "xml": "PASS",
+        "xsd": "PASS",
+        "sig": "PASS",
+        "caf": "PASS"
+      }
+    },
+    {
+      "condition": "xml.linked=true and real_dte without match",
+      "pipeline": {
+        "xml": "PASS",
+        "xsd": "PASS",
+        "sig": "FAIL",
+        "caf": "FAIL"
+      }
+    },
+    {
+      "condition": "monto_elegible=0",
+      "xml_status": "XML_NOT_APPLICABLE"
+    }
+  ],
+  "never": "no XML -> FAIL"
+}

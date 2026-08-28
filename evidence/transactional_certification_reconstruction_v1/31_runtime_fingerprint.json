@@ -1,0 +1,8 @@
+{
+  "running_commit": "ba2beb30d82800aefe08d9045bbc749444809fe5",
+  "release_tag": "marketplace-financial-v1.0.4",
+  "release_tag_commit": "ba2beb30d82800aefe08d9045bbc749444809fe5",
+  "clean_checkout_commit": "ba2beb30d82800aefe08d9045bbc749444809fe5",
+  "db_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+  "canonical_ledger_rows": 598112
+}

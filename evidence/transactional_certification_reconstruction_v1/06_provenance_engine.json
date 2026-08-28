@@ -1,0 +1,21 @@
+{
+  "engine": "TransactionCertificationService as provenance authority",
+  "chain_map": {
+    "ML": "DIRECT_LINK",
+    "RIPLEY": "SETTLEMENT",
+    "PARIS": "DOCUMENT_CHAIN",
+    "FALABELLA": "TRANSACTION_CHAIN",
+    "SHOPIFY": "DIRECT_LINK"
+  },
+  "sources_checked": [
+    "marketplace_ledger_v1.id_transaccion",
+    "marketplace_ledger_v1.id_orden",
+    "marketplace_ledger_v1.folio_xml",
+    "marketplace_ledger_v1.archivo_origen",
+    "dte_truth_v1",
+    "document_match_v1",
+    "file_registry"
+  ],
+  "derivation": "marketplace.upper() -> CHAIN_BY_MARKETPLACE deterministic; no hardcode per transaction; evidence stored in chain_evidence",
+  "unresolved": "only if marketplace not in map => UNRESOLVED_PROVENANCE with chain_reason and missing_evidence"
+}

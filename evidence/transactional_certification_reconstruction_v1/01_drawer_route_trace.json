@@ -1,0 +1,27 @@
+{
+  "click_transaction": "openInspector(window._ledgerRowMap[index]) -> openCertificationDrawer(txId, estado_xml)",
+  "frontend_function": "templates/dashboard.html:1214 openCertificationDrawer(txId,estado)",
+  "http_request": "GET /api/v4/electronic_certification/status/{txId} via ApiClient.safeFetch",
+  "endpoint_candidates": [
+    {
+      "route": "GET /api/v4/electronic_certification/status/{tx_id}",
+      "handler": "api.api:get_electronic_certification_status (line 1210)",
+      "service": "_resolve_certification_status + _CERTIFICATION_PIPELINE",
+      "serializer": "returns pipeline {xml,xsd,sig,caf}"
+    },
+    {
+      "route": "GET /api/v4/electronic_certification/status/{transaction_id}",
+      "handler": "api.api:get_electronic_certification_status (line 1369) DOCUMENT_GAP",
+      "service": "DocumentGapEngine.get_document_gaps",
+      "serializer": "returns status NOT_FOUND/BLOCKED",
+      "note": "DUPLICATE ROUTE - overwrites first handler in FastAPI"
+    }
+  ],
+  "serializer": "_CERTIFICATION_PIPELINE dict maps estados to xml/xsd/sig/caf PASS/FAIL",
+  "db_views_engines": [
+    "marketplace_ledger_v1 (folio_xml, id_transaccion)",
+    "dte_truth_v1",
+    "document_match_v1"
+  ],
+  "produces_defect": "FAIL x4 + UNKNOWN + INSUFFICIENT_FISCAL_EVIDENCE when no XML"
+}

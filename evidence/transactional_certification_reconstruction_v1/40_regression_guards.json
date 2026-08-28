@@ -1,0 +1,10 @@
+{
+  "guards_created": [
+    "no_xml_fail",
+    "missing_chain_unknown",
+    "frontend_cert_logic",
+    "frontend_money_logic",
+    "legacy_serializer"
+  ],
+  "status": "PASS"
+}

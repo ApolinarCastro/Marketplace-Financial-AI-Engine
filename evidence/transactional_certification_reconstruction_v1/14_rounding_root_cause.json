@@ -1,0 +1,6 @@
+{
+  "defect": "Falabella 2026-04 card -1,155,271 vs selected total -1,155,270 delta 1",
+  "root": "binary float sum vs integer CLP, per-row float aggregation vs canonical integer sum",
+  "location": "api/api.py financial_structure and ledger total_sum using float",
+  "fix": "engine/v4/money_canonical.py canonical_clp() Decimal half-up, api/api.py aggregates via canonical_clp"
+}

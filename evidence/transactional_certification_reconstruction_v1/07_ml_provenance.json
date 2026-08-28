@@ -1,0 +1,11 @@
+{
+  "marketplace": "ML",
+  "chain_type": "DIRECT_LINK",
+  "provenance": "derived from marketplace=ML via canonical chain map",
+  "evidence": {
+    "marketplace": "ML",
+    "chain_type": "DIRECT_LINK",
+    "source": "ledger lineage"
+  },
+  "avoidable_unknown": 0
+}

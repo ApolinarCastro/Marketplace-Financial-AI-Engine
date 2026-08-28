@@ -1,0 +1,24 @@
+{
+  "mission": "FINAL_RELEASE_EVIDENCE_CLOSURE_V1",
+  "baseline": "marketplace-financial-v1.0.2 @ 65b5860",
+  "git_state_at_baseline": {
+    "status_short": "NOT_EMPTY",
+    "changes_detected": true,
+    "changed_files": ["api/api.py", "templates/dashboard.html", "templates/executive_dashboard.html"],
+    "untracked_files": ["engine/v4/certification/certification_result_v3.py", "evidence/final_p0_corrective_closure/", "test_browser*.py", "check_counts.py"]
+  },
+  "case": "B - HAY CAMBIOS NO VERSIONADOS",
+  "decision": "Crear nuevo commit 31236fc y tag marketplace-financial-v1.0.3",
+  "reasoning": "Los 4 archivos declarados no estaban en 65b5860; git status --short != EMPTY. Los cambios corresponden exclusivamente al cierre de certificación V3.",
+  "actions_taken": [
+    "git add -A",
+    "git commit -m 'FINAL_RELEASE_EVIDENCE_CLOSURE_V1...'",
+    "git tag marketplace-financial-v1.0.3 31236fc",
+    "git worktree add ../mfe-v1.0.3-clean marketplace-financial-v1.0.3",
+    "Copied official DB to clean checkout"
+  ],
+  "prohibited_actions_avoided": [
+    "git tag -f marketplace-financial-v1.0.2 NOT executed",
+    "No existing tags moved"
+  ]
+}

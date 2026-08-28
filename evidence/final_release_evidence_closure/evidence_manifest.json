@@ -1,0 +1,23 @@
+{
+  "mission": "FINAL_RELEASE_EVIDENCE_CLOSURE_V1",
+  "baseline": "marketplace-financial-v1.0.2 @ 65b5860",
+  "evidence_files": [
+    "01_git_state.json",
+    "02_commit_file_proof.json",
+    "03_release_decision.json",
+    "04_clean_checkout.json",
+    "05_db_raw_integrity.json",
+    "06_runtime_fingerprint.json",
+    "07_browser_app_falabella_2026_05.json",
+    "08_browser_exec_falabella_2026_05.json",
+    "09_browser_falabella_2026_04.json",
+    "10_browser_ripley.json",
+    "11_browser_network_reload.json",
+    "12_asset_provenance.json",
+    "13_tests.json",
+    "evidence_manifest.json",
+    "FINAL_VERDICT.json"
+  ],
+  "created_at": "2026-08-27T23:00:00Z",
+  "total_files": 15
+}

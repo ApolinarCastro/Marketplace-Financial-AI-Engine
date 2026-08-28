@@ -1,0 +1,10 @@
+{
+  "canonical": "engine/v4/money_canonical.py",
+  "functions": [
+    "canonical_clp",
+    "canonical_sum",
+    "canonical_sum_sql_result"
+  ],
+  "rule": "aggregate exact integer CLP before formatting",
+  "no_float_authority": true
+}

@@ -1,0 +1,11 @@
+{
+  "marketplace": "FALABELLA",
+  "chain_type": "TRANSACTION_CHAIN",
+  "provenance": "derived from marketplace=FALABELLA via canonical chain map",
+  "evidence": {
+    "marketplace": "FALABELLA",
+    "chain_type": "TRANSACTION_CHAIN",
+    "source": "ledger lineage"
+  },
+  "avoidable_unknown": 0
+}

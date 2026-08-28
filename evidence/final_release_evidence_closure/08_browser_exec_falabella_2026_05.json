@@ -1,0 +1,46 @@
+{
+  "mission": "FINAL_RELEASE_EVIDENCE_CLOSURE_V1",
+  "dashboard": "/exec (Executive Dashboard / Reporte Gerencial)",
+  "url": "http://127.0.0.1:3001/exec",
+  "test_timestamp": "2026-08-27T22:35:00Z",
+  "test_cases": [
+    {
+      "marketplace": "FALABELLA",
+      "period": "2026-05",
+      "header_badge_rendered": "CERTIFICACIÓN PARCIAL",
+      "audit_section_rendered": "CERTIFICACIÓN PARCIAL",
+      "dte_chain_rendered": "Cadena Transaccional",
+      "match": true
+    },
+    {
+      "marketplace": "RIPLEY",
+      "period": "2026-05",
+      "header_badge_rendered": "CERTIFICACIÓN PARCIAL",
+      "audit_section_rendered": "CERTIFICACIÓN PARCIAL",
+      "dte_chain_rendered": "Cadena de Liquidación (Settlement)",
+      "match": true
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-05",
+      "header_badge_rendered": "SOLO FINANCIERO",
+      "audit_section_rendered": "SOLO FINANCIERO",
+      "dte_chain_rendered": "Enlace Directo (1:1)",
+      "match": true
+    },
+    {
+      "marketplace": "PARIS",
+      "period": "2026-05",
+      "header_badge_rendered": "CERTIFICADO TOTAL",
+      "audit_section_rendered": "CERTIFICADO TOTAL",
+      "dte_chain_rendered": "Cadena Documental",
+      "match": true
+    }
+  ],
+  "dte_certify_endpoint_fixed": true,
+  "no_500_errors_after_fix": true,
+  "gate_verification": {
+    "APP_EXEC_CERTIFICATION_DELTA": 0,
+    "CERTIFICATION_SCOPE_DELTA": 0
+  }
+}

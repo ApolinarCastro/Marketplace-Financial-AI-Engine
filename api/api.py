@@ -22,6 +22,7 @@ from engine.v4.database import DatabaseV4
 from engine.v4.marketplace_auditor import MarketplaceAuditorEngine
 from engine.v4.dte_indexer import DTEIndexer
 from engine.v4.traceability import traceability_engine as tx
+from engine.v4.money_canonical import canonical_clp
 
 ROOT = Path(__file__).resolve().parent.parent
 UPLOAD_DIR = ROOT / "uploads"
@@ -360,7 +361,7 @@ def get_marketplace_ledger(
         params
     )
     total_count = int(agg.iloc[0, 0])
-    total_sum = float(agg.iloc[0, 1])
+    total_sum = canonical_clp(agg.iloc[0, 1])
 
     df = db.query(
         f"SELECT * FROM marketplace_ledger_v1 WHERE {where} ORDER BY fecha DESC LIMIT ? OFFSET ?",
@@ -444,15 +445,15 @@ def get_financial_structure(marketplace: str = "ML", periodo: str | None = None)
     }
 
     groups = {}
-    total_neto = 0.0
+    total_neto = 0
 
     if not df.empty:
         for _, row in df.iterrows():
             fg = str(row['financial_group']).strip().lower()
             if fg not in category_metadata:
                 continue
-            monto = float(row['total'])
-            total_neto += monto
+            monto = canonical_clp(row['total'])
+            total_neto = canonical_clp(total_neto + monto)
             cnt = int(row['cantidad'])
             det = str(row['detalle']) if not pd.isna(row['detalle']) else "Sin detalle"
 
@@ -466,7 +467,7 @@ def get_financial_structure(marketplace: str = "ML", periodo: str | None = None)
                     "subcategories": []
                 }
 
-            groups[fg]["total"] += monto
+            groups[fg]["total"] = canonical_clp(groups[fg]["total"] + monto)
             groups[fg]["subcategories"].append({
                 "detalle": det,
                 "total": monto,
@@ -911,7 +912,7 @@ def get_exec_summary(periodo: str | None = None, marketplace: str | None = None)
     op_filters = get_operational_filters(marketplace)
     
     sql_neto = f"SELECT COALESCE(SUM(monto), 0) as neto FROM marketplace_ledger_v1 WHERE {ld_where} {op_filters}"
-    neto = float(db.query(sql_neto, ld_params).iloc[0]["neto"])
+    neto = canonical_clp(db.query(sql_neto, ld_params).iloc[0]["neto"])
     
     r = db.query(f"SELECT COALESCE(SUM(CASE WHEN financial_group='ingresos' THEN monto ELSE 0 END), 0) as gross_sales, COALESCE(SUM(CASE WHEN financial_group='devoluciones' THEN monto ELSE 0 END), 0) as devoluciones, COALESCE(SUM(CASE WHEN financial_group IN ('costos_operacionales','costos_comerciales') THEN monto ELSE 0 END), 0) as costos_op, COALESCE(SUM(CASE WHEN financial_group='comisiones' THEN monto ELSE 0 END), 0) as comisiones, COALESCE(SUM(CASE WHEN financial_group='ajustes' THEN monto ELSE 0 END), 0) as ajustes, COALESCE(SUM(CASE WHEN financial_group='recuperaciones_y_bonificaciones' THEN monto ELSE 0 END), 0) as recuperaciones FROM marketplace_ledger_v1 WHERE {ld_where} {op_filters}", ld_params).iloc[0]
     gross = float(r["gross_sales"])
@@ -1000,12 +1001,12 @@ def get_exec_waterfall_v3(marketplace: str | None = None, periodo: str | None = 
     
     for display_name, fg, sign in stages:
         r = db.query(f"SELECT COALESCE(SUM(monto), 0) as total FROM marketplace_ledger_v1 WHERE financial_group = ? {op_filters} AND {ld_where}", [fg] + ld_params).iloc[0]
-        val = float(r["total"])
+        val = canonical_clp(r["total"])
         values.append(val)
         labels_list.append(display_name)
         
     sql_neto = f"SELECT COALESCE(SUM(monto), 0) as neto FROM marketplace_ledger_v1 WHERE {ld_where} {op_filters}"
-    running = float(db.query(sql_neto, ld_params).iloc[0]["neto"])
+    running = canonical_clp(db.query(sql_neto, ld_params).iloc[0]["neto"])
     
     return {"period": label, "marketplace": marketplace or "ALL", "labels": labels_list, "values": values, "resultado_neto": running}
 
@@ -1101,9 +1102,9 @@ _CERTIFICATION_STATES = (
 _CERTIFICATION_PIPELINE = {
     "CRYPTOGRAPHIC_CERTIFIED": {"xml": "PASS", "xsd": "PASS", "sig": "PASS", "caf": "PASS"},
     "XML_PRESENT_NOT_CERTIFIED": {"xml": "PASS", "xsd": "PASS", "sig": "FAIL", "caf": "FAIL"},
-    "DOCUMENT_REFERENCE_ONLY": {"xml": "FAIL", "xsd": "FAIL", "sig": "FAIL", "caf": "FAIL"},
-    "LEDGER_REFERENCE_ONLY": {"xml": "FAIL", "xsd": "FAIL", "sig": "FAIL", "caf": "FAIL"},
-    "INSUFFICIENT_FISCAL_EVIDENCE": {"xml": "FAIL", "xsd": "FAIL", "sig": "FAIL", "caf": "FAIL"},
+    "DOCUMENT_REFERENCE_ONLY": {"xml": "NOT_RUN", "xsd": "NOT_RUN", "sig": "NOT_RUN", "caf": "NOT_RUN"},
+    "LEDGER_REFERENCE_ONLY": {"xml": "NOT_RUN", "xsd": "NOT_RUN", "sig": "NOT_RUN", "caf": "NOT_RUN"},
+    "INSUFFICIENT_FISCAL_EVIDENCE": {"xml": "NOT_RUN", "xsd": "NOT_RUN", "sig": "NOT_RUN", "caf": "NOT_RUN"},
     "TRUTH_CONFLICT_DETECTED": {"xml": "FAIL", "xsd": "FAIL", "sig": "FAIL", "caf": "FAIL"},
 }
 
@@ -1112,8 +1113,8 @@ _CERTIFICATION_SCOPE = {
     "XML_PRESENT_NOT_CERTIFIED": "FISCAL",
     "DOCUMENT_REFERENCE_ONLY": "DOCUMENTAL",
     "LEDGER_REFERENCE_ONLY": "LIQUIDACION",
-    "INSUFFICIENT_FISCAL_EVIDENCE": "UNKNOWN",
-    "TRUTH_CONFLICT_DETECTED": "UNKNOWN",
+    "INSUFFICIENT_FISCAL_EVIDENCE": "FISCAL",
+    "TRUTH_CONFLICT_DETECTED": "FISCAL",
 }
 
 _CERTIFICATION_SOURCE = {
@@ -1209,59 +1210,13 @@ def _resolve_certification_status(db, row):
 
 @app.get("/api/v4/electronic_certification/status/{tx_id}")
 def get_electronic_certification_status(tx_id: str):
-    db = DatabaseV4.get()
-    df = db.query(
-        "SELECT id_transaccion, id_orden, marketplace, fecha, detalle, monto, folio_xml, estado_xml "
-        "FROM marketplace_ledger_v1 "
-        "WHERE id_transaccion = ? OR id_orden = ? LIMIT 1",
-        [tx_id, tx_id]
-    )
-    if df.empty:
-        # Fallback query by contains or exact match
-        df = db.query(
-            "SELECT id_transaccion, id_orden, marketplace, fecha, detalle, monto, folio_xml, estado_xml "
-            "FROM marketplace_ledger_v1 "
-            "WHERE id_transaccion LIKE ? LIMIT 1",
-            [f"%{tx_id}%"]
-        )
-
-    if df.empty:
-        return {
-            "tx_id": tx_id,
-            "status": "INSUFFICIENT_FISCAL_EVIDENCE",
-            "estado": "INSUFFICIENT_FISCAL_EVIDENCE",
-            "certification_scope": "UNKNOWN",
-            "evidence_source": "NONE",
-            "blocking_reason": "TX_NOT_FOUND_IN_LEDGER",
-            "tipo_dte": "-",
-            "folio": "-",
-            "pipeline": {"xml": "FAIL", "xsd": "FAIL", "sig": "FAIL", "caf": "FAIL"},
-            "evidencia": {"hash": "-", "confidence": "0%", "level": "INSUFFICIENT_FISCAL_EVIDENCE"}
-        }
-
-    row = df.iloc[0]
-    mp = str(row.get("marketplace", "")).upper()
-    decision = _resolve_certification_status(db, row)
-    folio = decision["folio"]
-    import hashlib
-    tx_hash = hashlib.sha256(f"{tx_id}_{folio}_{mp}".encode()).hexdigest()
-
-    return {
-        "tx_id": str(row.get("id_transaccion")),
-        "marketplace": mp,
-        "estado": decision["estado"],
-        "certification_scope": decision["certification_scope"],
-        "evidence_source": decision["evidence_source"],
-        "blocking_reason": decision["blocking_reason"],
-        "tipo_dte": decision["tipo_dte"],
-        "folio": folio,
-        "pipeline": decision["pipeline"],
-        "evidencia": {
-            "hash": tx_hash,
-            "confidence": decision["confidence"],
-            "level": decision["estado"]
-        }
-    }
+    # Single transactional authority — TransactionCertificationService
+    from engine.v4.certification.transaction_certification_service import TransactionCertificationService
+    svc = TransactionCertificationService(db=DatabaseV4.get())
+    result = svc.certify(tx_id)
+    d = result.to_dict()
+    # keep legacy fallback _resolve path for unknown edge only via service; service already handles TX_NOT_FOUND
+    return d
 
 @app.post("/api/v4/correcciones")
 def post_marketplace_correccion(data: dict):
@@ -1366,24 +1321,7 @@ def run_query(data: dict):
     except Exception as e:
         return {"error": str(e)}
 
-@app.get("/api/v4/electronic_certification/status/{transaction_id}")
-def get_electronic_certification_status(transaction_id: str, response: __import__("fastapi").Response):
-    from engine.v4.certification.document_gap_engine import DocumentGapEngine
-    engine = DocumentGapEngine()
-    gaps = engine.get_document_gaps(limit=1000)
-    doc = next((g for g in gaps if g.get("transaction_id") == transaction_id), None)
-    
-    if not doc:
-        response.status_code = 404
-        return {"status": "NOT_FOUND", "reason": "XML_NOT_AVAILABLE"}
-    
-    # If the document has a state implying XML is associated but we don't have the engine completely ready
-    if doc.get("estado_xml") in ("CONCILIADO", "DOCUMENTADO"):
-        response.status_code = 409
-        return {"status": "BLOCKED", "reason": "BACKEND_CONTRACT_INCOMPLETE"}
-        
-    response.status_code = 404
-    return {"status": "NOT_FOUND", "reason": "XML_NOT_AVAILABLE"}
+# LEGACY DUPLICATE REMOVED — second handler for same route deleted (was DocumentGapEngine NOT_FOUND). Single authority is get_electronic_certification_status(tx_id) at line 1210.
 
 
 @app.post("/api/v4/electronic_certification/validate")

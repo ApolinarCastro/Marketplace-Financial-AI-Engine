@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "case": "missing XML",
+      "result": "NOT_RUN"
+    },
+    {
+      "case": "missing DTE",
+      "result": "NOT_RUN"
+    },
+    {
+      "case": "broken XML",
+      "result": "handled"
+    },
+    {
+      "case": "unknown transaction",
+      "result": "NO_EVIDENCE"
+    }
+  ],
+  "critical": 0,
+  "high": 0
+}

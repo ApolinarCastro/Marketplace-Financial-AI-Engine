@@ -1,0 +1,11 @@
+{
+  "marketplace": "RIPLEY",
+  "chain_type": "SETTLEMENT",
+  "provenance": "derived from marketplace=RIPLEY via canonical chain map",
+  "evidence": {
+    "marketplace": "RIPLEY",
+    "chain_type": "SETTLEMENT",
+    "source": "ledger lineage"
+  },
+  "avoidable_unknown": 0
+}

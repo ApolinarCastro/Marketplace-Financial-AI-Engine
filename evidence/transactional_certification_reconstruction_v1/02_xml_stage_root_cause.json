@@ -1,0 +1,26 @@
+{
+  "XML_Validator": {
+    "current_condition": "_CERTIFICATION_PIPELINE['INSUFFICIENT_FISCAL_EVIDENCE']['xml']='FAIL' for no XML",
+    "current_result": "FAIL",
+    "correct_condition": "no XML => xml.linked=false => xml_status=XML_NOT_LINKED => stage NOT_RUN",
+    "correct_result": "NOT_RUN"
+  },
+  "XSD_Schema": {
+    "current_condition": "same FAIL mapping",
+    "current_result": "FAIL",
+    "correct_condition": "XML not linked => not executed",
+    "correct_result": "NOT_RUN"
+  },
+  "Digital_Signature": {
+    "current_condition": "same FAIL mapping",
+    "current_result": "FAIL",
+    "correct_condition": "XML not linked => not executed",
+    "correct_result": "NOT_RUN"
+  },
+  "CAF_Validation": {
+    "current_condition": "same FAIL mapping",
+    "current_result": "FAIL",
+    "correct_condition": "XML not linked => not executed",
+    "correct_result": "NOT_RUN"
+  }
+}

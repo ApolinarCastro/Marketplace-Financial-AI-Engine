@@ -1,0 +1,45 @@
+{
+  "mission": "FINAL_RELEASE_EVIDENCE_CLOSURE_V1",
+  "db_raw_integrity": {
+    "official_db_path": "data/db/meli_financial_v4.db",
+    "expected_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "actual_sha256": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "sha256_length": 64,
+    "sha256_match": true,
+    "db_size_bytes": 131678208,
+    "db_size_mb": 125.6,
+    "table_counts": {
+      "marketplace_ledger_v1": 598112,
+      "marketplace_ledger_clasificado_v1": 598112,
+      "marketplace_cierre_financiero_v1": 251,
+      "ingestion_registry": 43,
+      "file_registry": 157,
+      "dte_truth_v1": 667,
+      "document_match_v1": 9431,
+      "dte_link_v1": 339112,
+      "marketplace_auditoria_v1": 8362
+    },
+    "ledger_reconciliation": {
+      "canonical_rows": 598112,
+      "marketplace_breakdown": {
+        "RIPLEY": 287417,
+        "PARIS": 197820,
+        "ML": 109799,
+        "FALABELLA": 3076,
+        "SHOPIFY": 0
+      },
+      "sum_marketplace_rows": 598112,
+      "sum_matches_canonical": true,
+      "ledger_equals_clasificado": true
+    },
+    "raw_files": 1313
+  },
+  "gate_verification": {
+    "DB_SHA256_FULL_LENGTH": 64,
+    "CANONICAL_LEDGER_ROWS": 598112,
+    "SUM_MARKETPLACE_ROWS": 598112,
+    "LEDGER_EQUALS_CLASIFICADO": true,
+    "DB_MUTATIONS": 0,
+    "RAW_MUTATIONS": 0
+  }
+}

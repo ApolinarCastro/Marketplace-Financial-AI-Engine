@@ -1231,32 +1231,47 @@
         try {
             const res = await ApiClient.safeFetch(`/api/v4/electronic_certification/status/${txId}`);
             if (res && !res.error) {
-                if (res.tipo_dte) document.getElementById('cert-doc-type-text').innerText = res.tipo_dte;
-                if (res.folio) document.getElementById('cert-doc-folio-text').innerText = res.folio;
+                // Prefer canonical contract fields, fallback to legacy aliases
+                const docType = (res.document && res.document.type) || res.tipo_dte;
+                const folioVal = (res.document && res.document.folio) || res.folio;
+                if (docType) document.getElementById('cert-doc-type-text').innerText = docType;
+                if (folioVal) document.getElementById('cert-doc-folio-text').innerText = folioVal;
                 
                 if (res.pipeline) {
                     ['xml', 'xsd', 'sig', 'caf'].forEach(step => {
                         const el = document.getElementById(`pipe-${step}`);
-                        if (res.pipeline[step] === 'PASS') {
+                        const v = res.pipeline[step];
+                        if (v === 'PASS') {
                             el.innerText = 'PASS';
                             el.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-900 text-emerald-400';
-                        } else if (res.pipeline[step] === 'FAIL') {
+                        } else if (v === 'FAIL') {
                             el.innerText = 'FAIL';
                             el.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-rose-900 text-rose-400';
+                        } else if (v === 'NOT_RUN' || v === 'NOT_APPLICABLE') {
+                            el.innerText = v;
+                            el.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-slate-700 text-slate-400';
                         }
                     });
                 }
                 
                 if (res.evidencia) {
-                    document.getElementById('ev-hash').innerText = res.evidencia.hash || '-';
-                    document.getElementById('ev-conf').innerText = res.evidencia.confidence || '-';
-                    document.getElementById('cert-level').innerText = res.evidencia.level || res.estado || 'INSUFFICIENT_FISCAL_EVIDENCE';
-                    document.getElementById('cert-hash').innerText = res.evidencia.hash || '-';
+                    document.getElementById('ev-hash').innerText = res.evidencia.hash || res.evidence_hash || '-';
+                    document.getElementById('ev-conf').innerText = res.evidencia.confidence || res.confidence || '-';
+                    document.getElementById('cert-level').innerText = res.evidencia.level || res.evidence_level || res.overall_status || res.estado || 'NO_EVIDENCE';
+                    document.getElementById('cert-hash').innerText = res.evidencia.hash || res.evidence_hash || '-';
+                } else if (res.evidence_hash) {
+                    document.getElementById('ev-hash').innerText = res.evidence_hash;
+                    document.getElementById('ev-conf').innerText = res.confidence || '-';
+                    document.getElementById('cert-level').innerText = res.evidence_level || res.overall_status || '-';
+                    document.getElementById('cert-hash').innerText = res.evidence_hash;
                 }
-                if (res.estado) document.getElementById('cert-status').innerText = res.estado;
-                if (res.certification_scope) document.getElementById('chain-type').innerText = res.certification_scope;
+                if (res.overall_status) document.getElementById('cert-status').innerText = res.overall_status;
+                else if (res.estado) document.getElementById('cert-status').innerText = res.estado;
+                // chain_type is canonical: DIRECT_LINK, DOCUMENT_CHAIN, TRANSACTION_CHAIN, SETTLEMENT
+                if (res.chain_type) document.getElementById('chain-type').innerText = res.chain_type;
+                else if (res.certification_scope) document.getElementById('chain-type').innerText = res.certification_scope;
                 else if (res.estado) {
-                    const scopeMap = {'CRYPTOGRAPHIC_CERTIFIED':'FISCAL','XML_PRESENT_NOT_CERTIFIED':'FISCAL','DOCUMENT_REFERENCE_ONLY':'DOCUMENTAL','LEDGER_REFERENCE_ONLY':'LIQUIDACION','INSUFFICIENT_FISCAL_EVIDENCE':'UNKNOWN','TRUTH_CONFLICT_DETECTED':'UNKNOWN'};
+                    const scopeMap = {'CRYPTOGRAPHIC_CERTIFIED':'FISCAL','XML_PRESENT_NOT_CERTIFIED':'FISCAL','DOCUMENT_REFERENCE_ONLY':'DOCUMENTAL','LEDGER_REFERENCE_ONLY':'LIQUIDACION'};
                     document.getElementById('chain-type').innerText = scopeMap[res.estado] || res.estado;
                 }
             }

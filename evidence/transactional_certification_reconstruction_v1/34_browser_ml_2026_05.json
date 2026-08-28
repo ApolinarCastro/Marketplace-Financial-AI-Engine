@@ -1,0 +1,12 @@
+{
+  "marketplace": "ML",
+  "period": "2026-05",
+  "pipeline": {
+    "xml": "NOT_RUN",
+    "xsd": "NOT_RUN",
+    "sig": "NOT_RUN",
+    "caf": "NOT_RUN"
+  },
+  "chain_type": "DIRECT_LINK",
+  "note": "ML transaction without XML shows NOT_RUN, not FAIL"
+}

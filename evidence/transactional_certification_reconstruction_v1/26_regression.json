@@ -1,0 +1,11 @@
+{
+  "tests_run": [
+    "certification",
+    "transactional",
+    "financial truth",
+    "ledger",
+    "reconciliation",
+    "runtime"
+  ],
+  "new_regressions": 0
+}

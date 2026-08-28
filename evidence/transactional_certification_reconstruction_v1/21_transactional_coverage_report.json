@@ -1,0 +1,10 @@
+{
+  "transaction_rows_checked": 598112,
+  "missing_transaction_ids": 0,
+  "invalid_pipeline_state": 0,
+  "no_xml_fail_violations": 0,
+  "silent_unknown_chain": 0,
+  "schema_violations": 0,
+  "total": 598112,
+  "uniq": 399189
+}

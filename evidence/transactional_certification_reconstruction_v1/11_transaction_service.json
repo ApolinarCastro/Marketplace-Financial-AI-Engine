@@ -1,0 +1,14 @@
+{
+  "service": "TransactionCertificationService",
+  "file": "engine/v4/certification/transaction_certification_service.py",
+  "authority": 1,
+  "delegates": [
+    "fetch lineage",
+    "determine chain",
+    "determine document",
+    "XML pipeline only when linked",
+    "fiscal",
+    "compose TransactionCertificationResultV3"
+  ],
+  "status": "CANONICAL"
+}

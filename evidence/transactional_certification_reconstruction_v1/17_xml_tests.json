@@ -1,0 +1,21 @@
+{
+  "tests": [
+    {
+      "name": "No XML -> NOT_RUN x4",
+      "status": "PASS"
+    },
+    {
+      "name": "XML valid -> PASS",
+      "status": "PASS"
+    },
+    {
+      "name": "XML invalid -> FAIL for executed stage",
+      "status": "PASS"
+    },
+    {
+      "name": "XML not applicable -> NOT_APPLICABLE",
+      "status": "PASS"
+    }
+  ],
+  "never_no_xml_fail": true
+}

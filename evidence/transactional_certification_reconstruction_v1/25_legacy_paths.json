@@ -1,0 +1,7 @@
+{
+  "active_legacy_paths": 0,
+  "removed": [
+    "duplicate electronic_certification/status handler",
+    "FAIL fallback serializer"
+  ]
+}

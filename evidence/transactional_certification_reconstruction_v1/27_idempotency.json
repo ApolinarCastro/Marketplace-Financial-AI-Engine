@@ -1,0 +1,9 @@
+{
+  "runs": [
+    "RUN1",
+    "RUN2",
+    "RUN3"
+  ],
+  "equal": true,
+  "idempotency": "3/3"
+}

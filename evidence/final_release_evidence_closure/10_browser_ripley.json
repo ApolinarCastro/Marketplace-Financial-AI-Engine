@@ -1,0 +1,44 @@
+{
+  "mission": "FINAL_RELEASE_EVIDENCE_CLOSURE_V1",
+  "marketplace": "RIPLEY",
+  "period": "2026-05",
+  "api_verification": {
+    "financial_status": "FINANCIAL_CERTIFIED",
+    "settlement_status": "SETTLEMENT_CERTIFIED",
+    "fiscal_status": "FISCAL_BLOCKED_EXTERNAL",
+    "overall_status": "PARTIALLY_CERTIFIED",
+    "overall_label": "PARTIALLY_CERTIFIED",
+    "overall_reason": "Financial truth certified; fiscal evidence blocked externally (e.g., settlement chain without SII DTE)",
+    "chain_type": "SETTLEMENT",
+    "audit_execution_status": "PENDING",
+    "legacy_overall_status": "DEGRADED"
+  },
+  "browser_verification": {
+    "app_dashboard": {
+      "ui_rendered": "CERTIFICACIÓN PARCIAL",
+      "dte_chain_rendered": "Cadena de Liquidación (Settlement)",
+      "match": true
+    },
+    "exec_dashboard": {
+      "header_badge_rendered": "CERTIFICACIÓN PARCIAL",
+      "audit_section_rendered": "CERTIFICACIÓN PARCIAL",
+      "dte_chain_rendered": "Cadena de Liquidación (Settlement)",
+      "match": true
+    }
+  },
+  "xml_not_run_verification": {
+    "xml_status": "XML_NOT_LINKED",
+    "not_run_count": 4,
+    "note": "RIPLEY has settlement chain but no SII DTE; XML layer correctly shows NOT_APPLICABLE/NOT_LINKED"
+  },
+  "gate_verification": {
+    "RIPLEY_OVERALL_STATUS": "PARTIALLY_CERTIFIED",
+    "RIPLEY_CHAIN_TYPE": "SETTLEMENT",
+    "RIPLEY_FINANCIAL_STATUS": "FINANCIAL_CERTIFIED",
+    "RIPLEY_SETTLEMENT_STATUS": "SETTLEMENT_CERTIFIED",
+    "RIPLEY_FISCAL_STATUS": "FISCAL_BLOCKED_EXTERNAL",
+    "LEGACY_PUBLIC_CERTIFICATION_STATES": 0,
+    "FALSE_GLOBAL_CERTIFIED": 0,
+    "FALSE_GLOBAL_FAILED": 0
+  }
+}

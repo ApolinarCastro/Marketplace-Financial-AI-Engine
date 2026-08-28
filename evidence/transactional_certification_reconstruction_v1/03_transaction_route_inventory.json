@@ -1,0 +1,233 @@
+{
+  "routes": [
+    "/api/v4/health",
+    "/",
+    "/app",
+    "/exec",
+    "/upload",
+    "/documentary",
+    "/traceability",
+    "/copilot",
+    "/api/v4/copilot/ask",
+    "/api/v4/financial-intelligence/health",
+    "/api/v4/ledger",
+    "/api/v4/financial-structure",
+    "/api/v4/cierre",
+    "/api/v4/cierre/desglose",
+    "/api/v4/dte/count",
+    "/api/v4/dte/samples",
+    "/api/v4/test_regex",
+    "/api/v4/dte/certify",
+    "/api/v4/certification/status",
+    "/api/v4/dte/document-gap",
+    "/api/v4/dte/document/{transaction_id}",
+    "/api/v4/dte/risk-summary",
+    "/api/v4/dte/traceability",
+    "/api/v4/documentary/coverage",
+    "/api/v4/periodos",
+    "/api/v4/exec/summary",
+    "/api/v4/financial-structure",
+    "/api/v4/exec/cobros-breakdown",
+    "/api/v4/exec/waterfall-v3",
+    "/api/v4/executive/insights",
+    "/api/v4/intelligence/anomalies",
+    "/api/v4/intelligence/insights",
+    "/api/v4/intelligence/returns",
+    "/api/v4/debug_audit",
+    "/api/v4/auditoria",
+    "/api/v4/electronic_certification/status/{tx_id}",
+    "/api/v4/correcciones",
+    "/",
+    "/app",
+    "/documentary-dashboard",
+    "/executive-dashboard",
+    "/api/v4/run-audit",
+    "/api/v4/run-indexer",
+    "/api/v4/query",
+    "/api/v4/electronic_certification/status/{transaction_id}",
+    "/api/v4/electronic_certification/validate",
+    "/api/v4/knowledge/export",
+    "/api/v4/traceability/search",
+    "/api/v4/traceability/transaction/{marketplace}/{transaction_id}",
+    "/api/v4/traceability/evidence/{marketplace}/{transaction_id}",
+    "/api/v4/traceability/summary",
+    "/api/v4/traceability/sap-reconciliation",
+    "/traceability",
+    "/upload",
+    "/api/v4/ingestion/upload",
+    "/api/v4/ingestion/registry/{execution_id}",
+    "/api/v4/ingestion/registry",
+    "/api/v4/ledger/records",
+    "/api/v4/ledger/transaction/{id_transaccion}",
+    "/api/v4/ledger/order/{id_orden}",
+    "/api/v4/ledger/summary",
+    "/api/v4/classification/summary",
+    "/api/v4/classification/rules",
+    "/api/v4/classification/{transaction_id}",
+    "/api/v4/classification/rebuild",
+    "/api/v4/truth/health",
+    "/api/v4/truth/summary",
+    "/api/v4/truth/query",
+    "/api/v4/truth/query",
+    "/api/v4/truth/transaction/{transaction_id}",
+    "/api/v4/truth/order/{id_orden}",
+    "/api/v4/reconciliation/health",
+    "/api/v4/reconciliation/summary",
+    "/api/v4/reconciliation/statistics",
+    "/api/v4/reconciliation/exceptions",
+    "/api/v4/reconciliation/execute",
+    "/api/v4/reconciliation/transaction/{transaction_id}",
+    "/api/v4/reconciliation/order/{id_orden}",
+    "/api/v4/exceptions/health",
+    "/api/v4/exceptions/summary",
+    "/api/v4/exceptions/sla",
+    "/api/v4/exceptions/statistics",
+    "/api/v4/exceptions/marketplace/{marketplace}",
+    "/api/v4/exceptions/evaluate",
+    "/api/v4/exceptions",
+    "/api/v4/exceptions/rebuild",
+    "/api/v4/exceptions/transaction/{transaction_id}",
+    "/api/v4/exceptions/order/{id_orden}",
+    "/api/v4/exceptions/{exception_id}"
+  ],
+  "keyword_hits": [
+    {
+      "keyword": "electronic_certification",
+      "sample_hits": [
+        "api\\api.py:1210:@app.get(\"/api/v4/electronic_certification/status/{tx_id}\")",
+        "api\\api.py:1211:def get_electronic_certification_status(tx_id: str):",
+        "api\\api.py:1369:@app.get(\"/api/v4/electronic_certification/status/{transaction_id}\")"
+      ]
+    },
+    {
+      "keyword": "dte/certify",
+      "sample_hits": [
+        "api\\api.py:603:@app.get(\"/api/v4/dte/certify\")"
+      ]
+    },
+    {
+      "keyword": "certification/status",
+      "sample_hits": [
+        "api\\api.py:621:@app.get(\"/api/v4/certification/status\", response_model=CertificationStatusResponse)",
+        "api\\api.py:1210:@app.get(\"/api/v4/electronic_certification/status/{tx_id}\")",
+        "api\\api.py:1369:@app.get(\"/api/v4/electronic_certification/status/{transaction_id}\")"
+      ]
+    },
+    {
+      "keyword": "xml_validator",
+      "sample_hits": []
+    },
+    {
+      "keyword": "xsd",
+      "sample_hits": [
+        "api\\api.py:1102:\"CRYPTOGRAPHIC_CERTIFIED\": {\"xml\": \"PASS\", \"xsd\": \"PASS\", \"sig\": \"PASS\", \"caf\": \"PASS\"},",
+        "api\\api.py:1103:\"XML_PRESENT_NOT_CERTIFIED\": {\"xml\": \"PASS\", \"xsd\": \"PASS\", \"sig\": \"FAIL\", \"caf\": \"FAIL\"},",
+        "api\\api.py:1104:\"DOCUMENT_REFERENCE_ONLY\": {\"xml\": \"FAIL\", \"xsd\": \"FAIL\", \"sig\": \"FAIL\", \"caf\": \"FAIL\"},"
+      ]
+    },
+    {
+      "keyword": "signature",
+      "sample_hits": []
+    },
+    {
+      "keyword": "caf",
+      "sample_hits": [
+        "api\\api.py:1102:\"CRYPTOGRAPHIC_CERTIFIED\": {\"xml\": \"PASS\", \"xsd\": \"PASS\", \"sig\": \"PASS\", \"caf\": \"PASS\"},",
+        "api\\api.py:1103:\"XML_PRESENT_NOT_CERTIFIED\": {\"xml\": \"PASS\", \"xsd\": \"PASS\", \"sig\": \"FAIL\", \"caf\": \"FAIL\"},",
+        "api\\api.py:1104:\"DOCUMENT_REFERENCE_ONLY\": {\"xml\": \"FAIL\", \"xsd\": \"FAIL\", \"sig\": \"FAIL\", \"caf\": \"FAIL\"},"
+      ]
+    },
+    {
+      "keyword": "chain_type",
+      "sample_hits": [
+        "api\\api.py:145:dte_chain_type: str | None = Field(None, description=\"Tipo de cadena DTE: DIRECT_LINK, DOCUMENT_CHAIN, TRANSACTION_CHAIN",
+        "api\\api.py:645:dte_chain_type = None",
+        "api\\api.py:665:dte_chain_type = \"SETTLEMENT\""
+      ]
+    },
+    {
+      "keyword": "INSUFFICIENT_FISCAL_EVIDENCE",
+      "sample_hits": [
+        "api\\api.py:132:fiscal_status: str = Field(..., description=\"Estado fiscal: FISCAL_CERTIFIED, INSUFFICIENT_FISCAL_EVIDENCE, FISCAL_BLOCK",
+        "api\\api.py:775:\"fiscal_status\": \"INSUFFICIENT_FISCAL_EVIDENCE\",",
+        "api\\api.py:1097:\"INSUFFICIENT_FISCAL_EVIDENCE\","
+      ]
+    },
+    {
+      "keyword": "UNKNOWN",
+      "sample_hits": [
+        "api\\api.py:724:chain_type=dte_chain_type or \"UNKNOWN\"",
+        "api\\api.py:1115:\"INSUFFICIENT_FISCAL_EVIDENCE\": \"UNKNOWN\",",
+        "api\\api.py:1116:\"TRUTH_CONFLICT_DETECTED\": \"UNKNOWN\","
+      ]
+    },
+    {
+      "keyword": "FAIL",
+      "sample_hits": [
+        "api\\api.py:140:legacy_overall_status: str = Field(..., description=\"Estado interno del motor: CERTIFIED, DEGRADED, FAILED\")",
+        "api\\api.py:144:audit_execution_status: str = Field(..., description=\"Estado de ejecución de auditoría: COMPLETED, PENDING, FAILED\")",
+        "api\\api.py:195:logger.error(\"DB health check failed\", exc_info=True)"
+      ]
+    },
+    {
+      "keyword": "NOT_RUN",
+      "sample_hits": [
+        "api\\api.py:145:dte_chain_type: str | None = Field(None, description=\"Tipo de cadena DTE: DIRECT_LINK, DOCUMENT_CHAIN, TRANSACTION_CHAIN",
+        "api\\api.py:694:# Determine DTE status: NOT_RUN if no XML coverage possible",
+        "api\\api.py:697:dte_status[m][\"estado_legal\"] = \"NOT_RUN\""
+      ]
+    },
+    {
+      "keyword": "folio_xml",
+      "sample_hits": [
+        "api\\api.py:579:JOIN dte_truth_v1 t ON l.folio_xml LIKE '%' || t.folio",
+        "api\\api.py:580:WHERE l.folio_xml = ?",
+        "api\\api.py:585:sql_sum = \"SELECT SUM(ABS(monto)) as total_ledger FROM marketplace_ledger_v1 WHERE folio_xml = ?\""
+      ]
+    },
+    {
+      "keyword": "folio_dte",
+      "sample_hits": []
+    },
+    {
+      "keyword": "tipo_dte",
+      "sample_hits": [
+        "api\\api.py:1153:tipo_dte = \"-\"",
+        "api\\api.py:1158:\"SELECT tipo_dte FROM dte_truth_v1 \"",
+        "api\\api.py:1164:tipo_dte = str(truth.iloc[0].get(\"tipo_dte\"))"
+      ]
+    }
+  ],
+  "route_table": [
+    {
+      "Route/Service": "GET /api/v4/electronic_certification/status/{tx_id}",
+      "Consumer": "drawer openCertificationDrawer",
+      "Authority": "_resolve_certification_status + _CERTIFICATION_PIPELINE",
+      "Status": "LEGACY_ACTIVE"
+    },
+    {
+      "Route/Service": "GET /api/v4/electronic_certification/status/{transaction_id} (dup)",
+      "Consumer": "drawer (overwrites)",
+      "Authority": "DocumentGapEngine",
+      "Status": "LEGACY_ACTIVE_DUPLICATE"
+    },
+    {
+      "Route/Service": "GET /api/v4/certification/status",
+      "Consumer": "/app global + /exec",
+      "Authority": "CertificationResultV3 (canonical)",
+      "Status": "CANONICAL"
+    },
+    {
+      "Route/Service": "GET /api/v4/dte/certify",
+      "Consumer": "/exec DTE coverage",
+      "Authority": "DocumentCertificationEngine",
+      "Status": "CANONICAL"
+    },
+    {
+      "Route/Service": "POST /api/v4/electronic_certification/validate",
+      "Consumer": "drawer XML upload",
+      "Authority": "ECCAdapter",
+      "Status": "CANONICAL"
+    }
+  ]
+}
