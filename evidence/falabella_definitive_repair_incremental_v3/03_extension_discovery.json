@@ -1,0 +1,8 @@
+{
+  "supported": [
+    "xlsx",
+    "csv",
+    "xml"
+  ],
+  "skipped": 0
+}

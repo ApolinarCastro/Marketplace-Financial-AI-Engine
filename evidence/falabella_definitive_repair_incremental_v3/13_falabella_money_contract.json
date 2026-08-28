@@ -1,0 +1,7 @@
+{
+  "gross_sales_column": "Monto (Sin IVA)",
+  "currency": "CLP",
+  "tax": "Sin IVA",
+  "sign": "positive for sales",
+  "rounding": "HALF_UP"
+}

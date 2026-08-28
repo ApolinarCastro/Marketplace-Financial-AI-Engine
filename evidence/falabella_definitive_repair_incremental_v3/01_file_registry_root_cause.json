@@ -1,0 +1,4 @@
+{
+  "cause": "file_registry marketplace hardcode ML for Falabella",
+  "fix": "changed to FALABELLA at line 810, added CSV glob"
+}

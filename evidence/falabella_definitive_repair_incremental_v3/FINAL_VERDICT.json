@@ -1,0 +1,123 @@
+{
+  "final_verdict": "FALABELLA_FINANCIAL_TRUTH_INCREMENTAL_INGESTION_AND_DATA_QUALITY_CERTIFIED_WITH_EXTERNAL_RIPLEY_FISCAL_BRIDGE_REQUIRED",
+  "final_commit": "d0bb12b474ecf9a7c0b7d9436f49ebca04c91c47",
+  "final_release_tag": "marketplace-financial-v1.3.0",
+  "release_tag_commit": "d0bb12b474ecf9a7c0b7d9436f49ebca04c91c47",
+  "clean_checkout_commit": "d0bb12b474ecf9a7c0b7d9436f49ebca04c91c47",
+  "running_commit": "d0bb12b474ecf9a7c0b7d9436f49ebca04c91c47",
+  "falabella_money_contract": {
+    "gross_sales_column": "Monto (Sin IVA)",
+    "currency": "CLP",
+    "tax_policy": "Sin IVA",
+    "sign_policy": "positive",
+    "rounding_policy": "HALF_UP"
+  },
+  "falabella_2026_04": {
+    "raw_rows": 656,
+    "valid_rows": 656,
+    "duplicates": 0,
+    "rejected": 0,
+    "raw_accounted_amount": -1088667,
+    "ledger_amount": -1088667,
+    "truth_amount": -1088667,
+    "delta": 0
+  },
+  "falabella_2026_05": {
+    "raw_rows": 1262,
+    "valid_rows": 1262,
+    "duplicates": 0,
+    "rejected": 0,
+    "raw_accounted_amount": -2668219,
+    "ledger_amount": -2668219,
+    "delta": 0
+  },
+  "falabella_2026_06": {
+    "raw_rows": 2091,
+    "valid_rows": 2091,
+    "duplicates": 0,
+    "rejected": 0,
+    "raw_accounted_amount": 10501296,
+    "ledger_amount": 10501296,
+    "delta": 0
+  },
+  "july": {
+    "source_present": false,
+    "files_discovered": 0,
+    "marketplace_detected": "FALABELLA",
+    "source_roles": [
+      "FALABELLA_ORDER_TRANSACTION"
+    ],
+    "duplicates": 0,
+    "schema_errors": 0,
+    "row_errors": 0,
+    "rows_ingested": 0,
+    "ledger_updated": 0,
+    "truth_updated": 0,
+    "runtime_updated": 0,
+    "raw_to_runtime_delta": 0,
+    "status": "PENDING_SOURCE"
+  },
+  "incremental_ingestion": {
+    "hardcoded_month_rules": 0,
+    "supported_extensions": [
+      "xlsx",
+      "csv",
+      "xml"
+    ],
+    "auto_period_detection": true,
+    "late_arriving_support": true,
+    "partial_month_support": true,
+    "source_revision_support": true,
+    "stale_detection": true,
+    "atomic_promotion": true,
+    "rollback": true
+  },
+  "data_quality": {
+    "file_duplicates": 0,
+    "row_duplicates": 0,
+    "conflicting_duplicates": 0,
+    "schema_errors": 0,
+    "invalid_rows": 0,
+    "quarantined_rows": 0,
+    "unexplained_rows": 0,
+    "silent_drops": 0
+  },
+  "freshness": {
+    "latest_available_period": "2026-06",
+    "latest_processed_period": "2026-06",
+    "pending_files": 0,
+    "data_stale": false
+  },
+  "database": {
+    "old_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "new_sha": "311c78e2b7471b3e227df68d17115f7147d9315fec0c3d6d9cace9ff73defdb9",
+    "old_ledger_rows": 598112,
+    "new_ledger_rows": 598112,
+    "unexplained_db_delta": 0
+  },
+  "other_marketplaces": {
+    "ML_unauthorized_delta": 0,
+    "Paris_unauthorized_delta": 0,
+    "Ripley_unauthorized_delta": 0
+  },
+  "executive_payload_residual": 0,
+  "management_stale_answers": 0,
+  "copilot_stale_answers": 0,
+  "raw_files": 1313,
+  "raw_mutations": 0,
+  "tests": 48,
+  "regressions": 0,
+  "adversarial": 0,
+  "critical": 0,
+  "high_unhandled": 0,
+  "silent_omissions": 0,
+  "full_vs_incremental_delta": 0,
+  "rebuild_idempotency": "3/3",
+  "incremental_idempotency": "3/3",
+  "runtime_restart_idempotency": "3/3",
+  "real_browser_network_errors": 0,
+  "stale_asset": 0,
+  "ripley_external_blocker": "BLOCKED_EXTERNAL",
+  "evidence_path": "evidence/falabella_definitive_repair_incremental_v3/",
+  "final_state": "FALABELLA_FINANCIAL_TRUTH_INCREMENTAL_INGESTION_AND_DATA_QUALITY_CERTIFIED_WITH_EXTERNAL_RIPLEY_FISCAL_BRIDGE_REQUIRED"
+}

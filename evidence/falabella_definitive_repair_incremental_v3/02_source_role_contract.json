@@ -1,0 +1,7 @@
+{
+  "roles": [
+    "FALABELLA_ORDER_TRANSACTION",
+    "FALABELLA_BILLING",
+    "FALABELLA_SETTLEMENT"
+  ]
+}
