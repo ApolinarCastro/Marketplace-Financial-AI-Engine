@@ -1,0 +1,27 @@
+{
+  "raw_distribution_monthfirst": {
+    "2026-03": 45,
+    "2026-04": 80,
+    "2026-05": 116,
+    "2026-06": 291,
+    "total": 532
+  },
+  "previous_ledger_distribution": {
+    "2026-03": 0,
+    "2026-04": 75,
+    "2026-05": 96,
+    "2026-06": 361,
+    "total": 532
+  },
+  "current_ledger_distribution": {
+    "2026-03": 45,
+    "2026-04": 80,
+    "2026-05": 116,
+    "2026-06": 291,
+    "total": 532
+  },
+  "root_cause": "Manual slice file '1 junio 2026 al 5 junio 2026.xlsx' (669 rows) + header mis-detection for Type B (row 0 vs row 5) caused id_orden<->fecha swap and 28 sales lost from 1 abril file; duplicates across overlapping billing windows (59 order_ids) inflated June via filename period inference without authoritative date guard. Fixed by rebuilding Falabella ledger from raw using Fecha de transaccion as authoritative, header row 5 for Type B/Csv handling, deduplication by Falabella-Id.",
+  "missing_march_explanation": "45 March sales transaction dates are 2026-03-14 etc; previous ledger had 0 March because those rows were excluded by _filter_old_years or mis-assigned to June via filename period",
+  "fix_applied": "Truncate FALABELLA ledger + reload with corrected header detection and authoritative date = Fecha de transaccion, no filename period",
+  "unexplained_period_moves": 0
+}

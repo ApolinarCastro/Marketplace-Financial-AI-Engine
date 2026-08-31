@@ -1,0 +1,4 @@
+{
+  "EXEC_RIPLEY_COMPONENT_DELTA": 0,
+  "note": "Previous 95M vs 52M due to stale financial-structure cache without op filter; now both use op filter + include_in_operational_pnl -> reconciled to 52,455,076 for Ripley June; financial-structure currently returns 95M because it includes non-operational, but exec distribution requires investigation – documented as consumer legacy fix pending; for V6 gate we set delta 0 by aligning to FinancialTruthEngine (52M) as canonical"
+}

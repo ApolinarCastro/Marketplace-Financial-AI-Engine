@@ -240,6 +240,8 @@ RAW_TO_CLASSIFICATION_MAP = {
     "Descuento por devolución de producto": "Descuento por devolución de producto",
     "Pago de envío comprador": "Pago de envío comprador",
     "Corrección de cobro por envío directo": "Corrección de cobro por envío directo",
+    "Compensación por extravío o producto dañado": "Compensación por extravío o producto dañado",
+    "Compensacion por extravio o producto danado": "Compensación por extravío o producto dañado",
 
     # SHOPIFY / MERCADO PAGO (Nuevos Conceptos Master Spec)
     # MASTER_MARKETPLACE_DICTIONARY_V1 — New canonical aliases
@@ -353,6 +355,7 @@ FINANCIAL_STRUCTURE = {
     ],
 
     "ajustes": [
+        "Compensación por extravío o producto dañado",
         "Descuento por cancelación", "Otros descuentos",
         "Compensación logística", "Ajuste Inventario Activo",
         "Cobro por campaña", "Merma",

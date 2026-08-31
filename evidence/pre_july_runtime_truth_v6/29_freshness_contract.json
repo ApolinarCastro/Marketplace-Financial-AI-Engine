@@ -1,0 +1,18 @@
+{
+  "DataFreshnessV1": {
+    "fields": [
+      "marketplace",
+      "latest_available_period",
+      "latest_processed_period",
+      "latest_available_source_hash",
+      "latest_processed_source_hash",
+      "pending_files",
+      "pending_file_ids",
+      "data_stale",
+      "data_version",
+      "ingestion_run_id",
+      "last_processed_at",
+      "status"
+    ]
+  }
+}

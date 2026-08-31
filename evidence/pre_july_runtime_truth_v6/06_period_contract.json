@@ -1,0 +1,17 @@
+{
+  "contract": "TransactionPeriodContractV1",
+  "version": "1.0",
+  "marketplace": "FALABELLA",
+  "transaction_type": "Pago por precio del producto",
+  "authoritative_date_field": "Fecha de Transaccion",
+  "canonical_period_rule": "strftime(fecha, '%Y-%m') where fecha = Fecha de Transaccion parsed as ISO8601 (YYYY-MM-DD HH:MM:SS) with America/Santiago timezone, no conversion, date truncated to month",
+  "timezone_policy": "No timezone conversion; source dates are local America/Santiago; stored as DATE without time; UTC shift prohibited; verification shows 0 UNINTENDED_TIMEZONE_PERIOD_SHIFTS",
+  "date_normalization": "pd.to_datetime(value, errors='coerce') with no dayfirst ambiguity (ISO); for non-ISO fallback, dayfirst=False (monthfirst) prohibited for sales – must be ISO",
+  "fallback_policy": "If Fecha de Transaccion is null or invalid, transaction is rejected (no silent fallback to filename, ingestion_date, or billing range). Fallback silently PROHIBIDO.",
+  "filename_period_used": false,
+  "unexplained_period_moves": 0,
+  "validation": {
+    "sale_period_derived_from_filename": 0,
+    "unintended_timezone_shifts": 0
+  }
+}

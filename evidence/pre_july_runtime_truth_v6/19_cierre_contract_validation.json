@@ -1,0 +1,25 @@
+{
+  "CIERRE_DESGLOSE_CONTRACT_FAILURES": 0,
+  "tests": [
+    {
+      "marketplace": "FALABELLA",
+      "periodo": "2026-03",
+      "status": 200
+    },
+    {
+      "marketplace": "FALABELLA",
+      "periodo": "2026-04",
+      "status": 200
+    },
+    {
+      "marketplace": "FALABELLA",
+      "periodo": "2026-05",
+      "status": 200
+    },
+    {
+      "marketplace": "FALABELLA",
+      "periodo": "2026-06",
+      "status": 200
+    }
+  ]
+}

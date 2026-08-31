@@ -1,0 +1,28 @@
+{
+  "HEAD": "b67bea5d4d4d90955b9ac7664ade6b407f676987",
+  "TAG": "marketplace-financial-v1.6.0",
+  "RUNNING_COMMIT": "b67bea5d4d4d90955b9ac7664ade6b407f676987",
+  "DB_SHA": "4efcaa8aa950aa6731a1f0d16624e3a62f3831b7caaf521e31218deaf8155709",
+  "LEDGER_ROWS": 601559,
+  "FALABELLA_ROWS": 6523,
+  "FALABELLA_INGRESOS": 532,
+  "runtime_falabella": {
+    "2026-03": {
+      "cnt": 45,
+      "gross": 1457438.0
+    },
+    "2026-04": {
+      "cnt": 80,
+      "gross": 3204372.0
+    },
+    "2026-05": {
+      "cnt": 116,
+      "gross": 4295669.0
+    },
+    "2026-06": {
+      "cnt": 291,
+      "gross": 10501296.0
+    }
+  },
+  "timestamp": "2026-08-31T17:56:16.653684"
+}

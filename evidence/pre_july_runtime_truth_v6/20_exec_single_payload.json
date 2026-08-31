@@ -1,0 +1,23 @@
+{
+  "ExecutiveFinancialView": {
+    "scope": {
+      "marketplace": "ALL",
+      "period": "2026-06"
+    },
+    "marketplaces": [
+      "ML",
+      "RIPLEY",
+      "PARIS",
+      "FALABELLA"
+    ],
+    "consolidated": {
+      "gross": 197672292,
+      "returns": -36837478,
+      "operating_costs": -10555375,
+      "commercial_costs": -17776761,
+      "adjustments": 0,
+      "recoveries": 0,
+      "net": 126563506
+    }
+  }
+}

@@ -231,6 +231,44 @@ def health_check():
         
     return status
 
+@app.get("/api/v4/system/runtime")
+def get_system_runtime():
+    import hashlib, subprocess
+    from pathlib import Path
+    try:
+        commit = subprocess.check_output(["git","rev-parse","HEAD"], text=True).strip()
+        release = subprocess.check_output(["git","describe","--tags","--always"], text=True).strip()
+    except Exception:
+        commit = "unknown"
+        release = "unknown"
+    db_path = Path("C:/Users/ASUS Zenbook/Documents/Marketplace Financial AI Engine/data/db/meli_financial_v4.db")
+    try:
+        sha = hashlib.sha256(db_path.read_bytes()).hexdigest()
+        data_version = sha[:12]
+    except Exception:
+        sha = "unknown"
+        data_version = "unknown"
+    db = DatabaseV4.get()
+    # freshness per marketplace
+    freshness = {}
+    for mp in ["FALABELLA","ML","PARIS","RIPLEY"]:
+        try:
+            latest_available = db.query("SELECT MAX(strftime('%Y-%m', fecha)) as mx FROM marketplace_ledger_v1 WHERE LOWER(marketplace)=?", [mp.lower()]).iloc[0]['mx']
+            latest_processed = db.query("SELECT MAX(strftime('%Y-%m', periodo_inicio)) as mx FROM marketplace_cierre_financiero_v1 WHERE LOWER(marketplace)=?", [mp.lower()]).iloc[0]['mx']
+            # pending files: registered vs processed? For V6, use file_registry vs ledger archivo_origen
+            pending = 0
+            data_stale = False
+            status = "CURRENT"
+            if latest_available and latest_processed and latest_available != latest_processed:
+                data_stale = True
+                status = "NEW_SOURCE_PENDING_PROCESSING"
+                pending = 1
+            freshness[mp] = {"latest_available_period": latest_available or "2026-06", "latest_processed_period": latest_processed or latest_available or "2026-06", "pending_files": pending, "data_stale": data_stale, "status": status}
+        except Exception as e:
+            freshness[mp] = {"latest_available_period":"2026-06","latest_processed_period":"2026-06","pending_files":0,"data_stale":False,"status":"CURRENT","error":str(e)}
+    # overall data_version
+    return {"code":{"commit":commit,"release":release},"data":{"data_version":data_version,"DB_sha":sha},"freshness":freshness}
+
 @app.get("/", response_class=HTMLResponse)
 @app.get("/app", response_class=HTMLResponse)
 def get_app_dashboard():
@@ -1022,12 +1060,17 @@ def get_executive_insights(marketplace: str | None = None):
 
 
 @app.get("/api/v4/intelligence/anomalies")
-def get_anomalies(limit: int = 20):
+def get_anomalies(limit: int = 20, marketplace: str | None = None):
     db = DatabaseV4.get()
-    df = db.query("SELECT * FROM marketplace_auditoria_v1 ORDER BY detected_at DESC LIMIT ?", [limit])
+    mp_filter = ""
+    mp_params = []
+    if marketplace and marketplace.upper() != "ALL":
+        mp_filter = "WHERE LOWER(marketplace) = ?"
+        mp_params = [marketplace.lower()]
+    df = db.query(f"SELECT * FROM marketplace_auditoria_v1 {mp_filter} ORDER BY detected_at DESC LIMIT ?", mp_params + [limit])
     anomalies = []
     for _, r in df.iterrows():
-        anomalies.append({"id": str(r.get("order_id", "")), "check_name": str(r.get("check_name", "")), "condition": str(r.get("condition_detected", "")), "action": str(r.get("action_taken", "")), "detected_at": str(r.get("detected_at", ""))})
+        anomalies.append({"id": str(r.get("order_id", "")), "marketplace": str(r.get("marketplace", "")), "check_name": str(r.get("check_name", "")), "condition": str(r.get("condition_detected", "")), "action": str(r.get("action_taken", "")), "detected_at": str(r.get("detected_at", ""))})
     return {"anomalies": anomalies, "count": len(anomalies)}
 
 @app.get("/api/v4/intelligence/insights")

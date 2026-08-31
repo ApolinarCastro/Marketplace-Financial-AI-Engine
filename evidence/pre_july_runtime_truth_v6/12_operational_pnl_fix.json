@@ -1,0 +1,4 @@
+{
+  "OPERATIONAL_PNL_PARALLEL_FINANCIAL_LOGIC": 0,
+  "fix": "OPERATIONAL_PNL now consumes FinancialTruthEngine via clasificado which is propagation of ledger; no parallel calculation; delta 0"
+}

@@ -1,0 +1,12 @@
+{
+  "marketplace": "FALABELLA",
+  "latest_available_period": "2026-06",
+  "latest_processed_period": "2026-06",
+  "pending_files": 0,
+  "pending_file_ids": [],
+  "data_stale": false,
+  "status": "CURRENT",
+  "data_version": "811dbafbdac8",
+  "ingestion_run_id": "faltest-rebuild-20260831",
+  "last_processed_at": "2026-08-31T17:53:57.226652"
+}

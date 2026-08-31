@@ -1,0 +1,5 @@
+{
+  "CIERRE_DESGLOSE_HTTP_500": 0,
+  "previous_cause": "Missing clasificacion_operativa propagation for FALABELLA after manual slice; cierre_desglose query expected clasificado but ledger had NULL financial_group for 2 rows -> GROUP BY null + detail caused exception when detail null? Now fixed by reclassification; HTTP 200 for all 4 periods",
+  "verified": "TestClient GET /api/v4/cierre/desglose FALABELLA 2026-03..06 all 200"
+}

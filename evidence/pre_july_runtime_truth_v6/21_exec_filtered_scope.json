@@ -1,0 +1,10 @@
+{
+  "EXEC_FILTERED_MARKETPLACE_SCOPE_LEAKAGE": 0,
+  "test": {
+    "marketplace": "FALABELLA",
+    "period": "2026-04",
+    "topCards": "only FALABELLA",
+    "distribution": "only FALABELLA",
+    "waterfall": "only FALABELLA"
+  }
+}

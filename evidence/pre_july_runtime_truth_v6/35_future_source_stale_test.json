@@ -1,0 +1,4 @@
+{
+  "test": "add 2026-07 source without processing => latest_available 2026-07 pending>0 data_stale true",
+  "result": true
+}

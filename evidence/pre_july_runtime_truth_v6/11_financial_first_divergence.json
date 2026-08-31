@@ -1,0 +1,15 @@
+{
+  "FIRST_DIVERGENCE": null,
+  "APRIL": {
+    "FinancialTruth": 3204372,
+    "financial_structure": 3204372,
+    "OPERATIONAL_PNL": 3204372,
+    "cierre": 3204372,
+    "delta": 0
+  },
+  "JUNE": {
+    "FinancialTruth": 10501296,
+    "claim": 3512762,
+    "previous_delta": 6990000
+  }
+}

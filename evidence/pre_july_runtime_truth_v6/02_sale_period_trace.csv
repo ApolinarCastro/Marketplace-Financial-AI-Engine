@@ -1,0 +1,533 @@
+id_orden,fecha,monto,archivo_origen,id_transaccion
+2026-03-30 16:17:14,2026-04-01,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,819180e2-8a94-4355-9f4a-04743dc8e017
+2026-03-30 18:02:25,2026-04-01,26882.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,9d1462aa-90a9-4461-bb7d-8b8e0b99dbff
+2026-03-31 00:54:30,2026-04-01,23521.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,485530b6-e563-4c40-b3ab-5ba86edfe988
+2026-03-29 15:28:59,2026-04-01,43689.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,5a858455-d4c7-4877-bddc-6bb2ca201f49
+2026-03-27 13:20:05,2026-04-01,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,22be52c1-6773-4584-a1fb-d70b56ad123c
+MISSING_0,2026-04-01,0.0,reconstructed,9967350b-961b-4df6-8108-0c7fec9744d1
+MISSING_1,2026-04-01,0.0,reconstructed,53061098-be2a-4adf-9403-b6b90e7c7463
+MISSING_2,2026-04-01,0.0,reconstructed,b2ff8a60-3cea-4553-b813-4aba808eabec
+2026-03-29 16:03:39,2026-04-02,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,d73dd6cc-ad4e-4bd5-a4fd-5267c52fe46c
+2026-03-31 15:00:13,2026-04-02,22176.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,6a387811-ca98-4db9-ba5d-5e2015e071fd
+2026-03-31 21:42:44,2026-04-02,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,9e3f179b-2fdf-47d9-9bec-b5aebdfad236
+2026-03-31 13:34:54,2026-04-02,28227.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,4515cf0f-0045-4c3b-8962-60301b65ec66
+2026-04-01 00:11:39,2026-04-02,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,dd6b76c6-84d6-4f43-857b-59de8d18f02a
+2026-03-31 23:57:59,2026-04-02,28227.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,7dca1e0c-5880-4de8-8370-41fd09159ed1
+2026-04-01 20:20:31,2026-04-06,28227.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,3adfc436-26bf-47b8-8e1f-02cd2904c4cb
+2026-04-05 20:18:28,2026-04-07,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,0709c4b4-a96b-439a-a622-7b81bc875eda
+2026-04-04 15:37:11,2026-04-07,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,1fcc9b92-8b99-4158-8458-c11d2cc4d050
+2026-04-05 20:35:29,2026-04-07,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ddc45785-06a4-4708-8181-a437304cff84
+2026-04-03 14:29:08,2026-04-07,31924.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,d40fb486-4624-4434-a7ea-907c02179edd
+2026-04-02 12:57:26,2026-04-07,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,bd1ffcf1-068f-4d3e-bc55-2bcbe56b0431
+2026-04-05 22:27:11,2026-04-07,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,4ce987c4-15e8-4c69-a2b3-683e5077c90d
+2026-03-26 16:30:40,2026-04-08,26882.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,cd22e9fc-b197-471a-a33a-5e1085e51f86
+2026-04-06 21:45:47,2026-04-08,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,4901f3f0-71de-434b-8068-0c0adaced989
+2026-04-01 23:36:48,2026-04-08,21504.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,1e60eb50-180c-47fb-bf04-c4598f92d887
+2026-04-02 22:23:29,2026-04-08,19487.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,992e531c-83da-4725-b5ec-dff18c235fd4
+2026-04-07 08:54:39,2026-04-09,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,5d3d5a45-82d6-411f-a911-d8bfe270b3b5
+2026-04-06 11:06:59,2026-04-10,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,06cc4dc1-b369-4ba3-aa10-e33d9887fdef
+2026-04-05 18:19:24,2026-04-10,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,203133a8-ed58-4d9b-bf5c-101885c82c44
+2026-04-08 11:38:45,2026-04-10,67218.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,9dedf2d0-96c8-4a5c-a848-e4baba69d591
+2026-04-07 16:11:21,2026-04-10,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,061937e5-29af-4734-ae89-4ea7484a360d
+2026-04-06 22:09:34,2026-04-10,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,e9d4f451-8cd2-4c86-99ca-4ef4ce1a07fa
+2026-04-08 20:28:52,2026-04-10,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,75cdef2b-5b4a-4ab7-a013-36b3aa0b2ce3
+2026-04-08 20:12:07,2026-04-10,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,16780079-ef5e-422b-932e-c6ed070a6f19
+2026-04-10 06:47:20,2026-04-13,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,6b7d1283-fb76-4cde-8de7-e359fcd4fb9b
+2026-04-10 23:04:08,2026-04-14,67218.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,841b4bc1-42b2-4041-84da-2abd2d31f47a
+2026-04-10 21:13:56,2026-04-14,26882.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,03ce6fbe-becc-4c35-a54d-e193f23a60e1
+2026-04-12 23:01:01,2026-04-14,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,028a8c9a-5e88-45ea-b3a0-6f700003aeea
+2026-04-12 12:28:53,2026-04-14,27723.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,8629cfa6-91c3-455c-ae84-4df77388915d
+2026-04-11 20:29:23,2026-04-14,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,23909d13-4be2-42f0-82e7-c8eea6101b91
+2026-04-13 21:47:47,2026-04-16,26882.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,4b7b46c8-0051-4352-b5fe-8fd2b411eedf
+2026-04-14 17:52:23,2026-04-16,32765.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,b20e8023-1a80-4467-ac27-08005dabbc88
+2026-04-10 15:53:28,2026-04-16,33605.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,5a14bfb6-00d1-4cd4-96c1-fc3e3df68df9
+2026-04-14 22:08:46,2026-04-16,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,55bbee9f-4418-4c1d-80ab-74423c9633ff
+2026-04-10 23:02:13,2026-04-17,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,f6fdf519-24eb-46c1-aaf0-854ed7b4d5cc
+2026-04-15 10:24:02,2026-04-17,67218.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,af0dba1f-f8ea-4c34-97ab-43c15ae790ab
+2026-04-15 15:00:38,2026-04-17,36126.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,20acd8bc-e52a-4b57-864b-e43331f7b989
+2026-04-15 23:36:42,2026-04-17,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,beb4b716-9a25-4b8d-9aeb-90dfd0ba3eb4
+2026-04-15 09:03:58,2026-04-18,75622.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,5dde232a-fcc7-48ee-b86d-d3fc0278cc06
+2026-04-16 13:41:07,2026-04-18,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ef2f58cb-9832-4136-a153-a6550146036d
+2026-04-16 12:58:00,2026-04-20,54613.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,da2c0276-89f3-4c23-bffa-f9fdbf5dd521
+2026-04-16 14:15:57,2026-04-20,27723.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,e3fadb71-1de9-4f04-8c6f-46955f503b79
+2026-04-15 12:20:30,2026-04-20,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,cffe8b3f-da1c-43d1-89f3-3e8edcb660d2
+2026-04-17 11:16:09,2026-04-20,48731.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,3b2d9993-61f1-4855-a69b-3a3334641403
+2026-04-18 21:37:30,2026-04-21,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,9a56fa62-74d9-4306-b4bd-86aa2836401a
+2026-04-16 15:16:11,2026-04-21,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,5a3046db-9bb8-4aa0-ae22-45107f5f6018
+2026-04-18 20:14:40,2026-04-21,31924.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ddcf16a7-f9cc-4286-82a1-338ef9bfe5e4
+2026-04-18 22:19:03,2026-04-21,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,f5961211-208b-4743-9ff1-7ebcc33c7b08
+2026-04-18 22:01:49,2026-04-22,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,490bca44-43f1-477f-b4ee-0ba7454ffdf5
+2026-04-20 18:34:54,2026-04-22,27723.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,edf38d8e-46bc-4a4f-af2d-b637489371ad
+2026-04-20 22:26:46,2026-04-22,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,719d2e4c-cad6-4946-8bde-a3bffd01a816
+2026-04-21 10:18:34,2026-04-22,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,c0ff5a36-d4d5-4052-a9ec-defe0a49d184
+2026-04-20 19:57:29,2026-04-22,33605.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,e6cf793d-b1f4-4e8b-b23a-b233f50be836
+2026-04-22 13:19:44,2026-04-24,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,36bfe62a-3afc-4f96-83ad-ec57c08e2976
+2026-04-22 23:14:29,2026-04-24,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,7aeae7ea-c2bc-4cde-904d-7a4bc29ea184
+2026-04-23 06:30:09,2026-04-24,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,8ca17c28-2984-47af-b394-6a312b526bb4
+2026-04-24 01:16:03,2026-04-25,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ebced02c-0e15-4c16-9e71-affc6f56ba1e
+2026-04-23 18:17:48,2026-04-25,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,d02f2771-485f-48b3-9468-d046a516269b
+2026-04-25 13:20:49,2026-04-28,31924.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,8a88a5bc-5884-4347-9701-4f590e3c50ac
+2026-04-25 15:07:26,2026-04-28,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,64abbb52-e54c-473c-bd8a-7e5e80823a21
+2026-04-24 20:56:33,2026-04-28,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,2f7a0c40-51c7-4e69-b14d-3eb4e49bca6b
+2026-04-25 20:43:21,2026-04-28,26882.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,df2ef93d-d6e4-4d6b-8b49-c39cb9a41bf2
+2026-04-24 15:15:32,2026-04-28,67218.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,4116bb2d-bf98-455c-b56a-a924780abf84
+2026-04-25 13:14:09,2026-04-28,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,2c585cde-87b4-465f-98af-4c25ff1f8c3d
+2026-04-27 22:54:26,2026-04-29,71420.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,779708d9-bc28-4d50-a902-7ae3258b1cfa
+2026-04-27 23:26:03,2026-04-29,35286.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,b1ea1b3f-ea51-4de4-8e1f-d18461ce9cf7
+2026-04-29 21:10:13,2026-05-02,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,28217a02-ad24-428a-97d6-a33620892573
+2026-04-30 08:26:25,2026-05-02,36126.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,04b191c1-28a1-400f-acdc-e4e8cf1bf7cd
+2026-04-28 19:43:15,2026-05-02,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,5f6bce4b-7ba1-4c40-a2e5-604189add0a3
+2026-04-28 18:46:38,2026-05-02,35286.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,48e15760-a9fd-4194-9fbd-9766da34070f
+2026-04-29 17:17:35,2026-05-04,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,172fc33e-8794-4e79-95f7-788bbe6fdd58
+2026-04-29 19:47:57,2026-05-04,31924.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,8d3370f9-58e8-4726-a1de-e9a338e5bccc
+2026-05-03 10:40:36,2026-05-05,75622.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,5e1703f9-509a-4f12-a59f-80635d0b70b5
+2026-04-30 16:27:53,2026-05-05,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,96efc647-8e23-4d4a-bd75-5e5fc73bcb58
+2026-05-04 06:59:31,2026-05-05,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ec894add-a003-4499-b4ff-c990f7e816ab
+2026-05-02 20:14:33,2026-05-05,29403.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,8efec241-4bad-4d62-b633-9fedf5f10010
+2026-05-03 22:40:20,2026-05-06,24361.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,82399249-5cd2-4bc4-8a1e-e608cdce71d8
+2026-05-01 18:20:08,2026-05-06,16798.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,fdf4ee98-833c-4c68-9926-1507a4b4d6b9
+2026-05-03 22:09:29,2026-05-06,16798.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,effb5607-f929-42ef-bf32-d9e8f2306d1b
+2026-05-03 22:52:23,2026-05-06,16798.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,f5ffb335-9973-4d1e-98fa-fdac907a5ee2
+2026-05-04 00:09:40,2026-05-06,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,70c0d24f-d5d6-480b-a98e-1bb1e001e731
+2026-04-30 10:05:22,2026-05-06,33605.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,a91ffe8d-99ca-4c00-9154-47a68865d77b
+2026-05-02 18:19:16,2026-05-06,23521.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,dde3f9da-1b22-44b5-813e-bd732cae566b
+2026-05-05 09:27:53,2026-05-06,50412.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,65fc431a-4516-4c17-bc74-68ec471df6a6
+2026-05-03 10:36:39,2026-05-06,115118.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,10588c27-72a0-44c2-ac8a-65314cb1ba99
+2026-05-04 16:12:23,2026-05-06,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,a33b7734-222a-44cd-99c4-5012f410e7be
+2026-05-05 12:27:43,2026-05-06,67218.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,6bf6ab80-5998-4f2e-b4b3-e61cfc4ff6ff
+2026-05-04 17:43:07,2026-05-06,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,dd1d51bd-c03a-4a7f-8088-0833e7c02695
+2026-05-05 22:25:15,2026-05-06,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,8c8edd44-ec7b-42fb-9e8c-d737f47363a3
+2026-05-03 12:18:53,2026-05-06,16798.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ab1508b4-28ce-40e9-97b7-175417962cfe
+2026-05-03 10:40:30,2026-05-06,24361.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,5b5f79e8-859c-41fd-83b4-31a06692c39b
+2026-05-05 19:05:42,2026-05-06,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,33959be5-5c13-45b9-bdd2-2818eecea6ad
+2026-05-06 11:00:38,2026-05-06,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,40bd2fdb-5c4d-413c-845f-ca8983f546c8
+2026-05-06 09:00:48,2026-05-06,27723.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,a7a7a5f5-fcc2-49fb-95a9-dfb50ec83228
+2026-05-05 20:37:43,2026-05-06,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,884d6489-c240-4878-ad14-bca364973d23
+2026-05-05 17:21:39,2026-05-07,23521.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ec02924b-c784-4b14-b38a-9753548c676f
+2026-05-06 09:55:14,2026-05-07,50412.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,a6f9a009-b43d-474e-ba10-d0c147f04ff5
+2026-05-07 10:51:50,2026-05-07,21000.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,99285c76-1fc6-4ce4-bc26-6a014d2b42e7
+2026-05-07 09:48:38,2026-05-07,50412.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,594045f6-bb01-43fd-b278-212d183b81fe
+2026-05-06 16:10:40,2026-05-08,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,359f955b-ba57-47ce-86e3-8864f9524015
+2026-05-07 18:10:13,2026-05-08,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,6fd4a7e4-980a-4325-a5b8-94fa66582315
+2026-05-08 12:13:45,2026-05-08,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,0efab604-decf-4ef9-9794-45662c5f1dfd
+2026-05-05 00:26:39,2026-05-09,21840.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ad0a80f9-cd7f-4dba-9f7c-1eaec3e087b3
+2026-05-09 16:18:22,2026-05-11,23521.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,2de32a2d-a8ba-4f89-82d2-3b8106ee10cc
+2026-05-10 13:56:28,2026-05-11,24361.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,a3eb09b1-b4b7-45cb-bea7-44e24b0d16b7
+2026-05-10 14:05:48,2026-05-11,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,dcb4f052-1cfd-4935-86c9-90cbb124df10
+2026-05-08 23:34:02,2026-05-11,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,26f4983d-63c4-4136-82bd-f57402bf7371
+2026-05-09 23:52:20,2026-05-12,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,40fafd9d-66e5-4cd7-adf8-dfa49dae859d
+2026-05-11 23:23:16,2026-05-12,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,00bed51d-3ff7-433c-974b-a72d988e06fb
+2026-05-10 22:00:29,2026-05-12,29403.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,48f80f55-c31c-4d4b-a22d-dc8485828671
+2026-05-11 23:41:42,2026-05-12,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,0572e97c-eb55-4ded-be2b-1bec2caca8ac
+2026-05-13 11:35:24,2026-05-13,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,1b8d3733-969c-4fd4-93bf-f0ba026ce50e
+2026-05-13 07:37:59,2026-05-13,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,3fd558fe-3054-46c1-81b6-56830642fe5a
+2026-05-12 22:00:28,2026-05-14,29403.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,545bbd8f-10f9-4655-a946-a61ecc7ca71e
+2026-05-12 23:10:29,2026-05-14,67218.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,b369acab-3a1b-4d3c-b2f4-ad85e5d6b24a
+2026-05-12 19:45:57,2026-05-14,21840.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,071834d9-ad44-4881-a67a-c85e2669aaa3
+2026-05-13 11:31:08,2026-05-14,29403.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ed381806-9641-401d-adc2-bef6838fe8c2
+2026-05-13 13:11:22,2026-05-14,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ce03b097-bdf6-4890-8a03-6cc22452e3d5
+2026-05-13 21:15:17,2026-05-14,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,6ae9992b-5cc6-425b-830a-38760893c52c
+2026-05-13 21:55:14,2026-05-15,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,b5d064a3-6a8d-4d28-b202-d573e5eabaa9
+2026-05-13 19:21:59,2026-05-15,20160.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,74f33f1a-0ba2-4632-8a21-fce3df2bc9fe
+2026-05-14 17:41:48,2026-05-15,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,8505aabd-432b-4b3a-8057-f522b39d1032
+2026-05-13 13:24:13,2026-05-15,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,c13793c6-c184-4ff8-b583-c617f7d19e3a
+2026-05-14 10:19:17,2026-05-15,29403.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,fc3f05c2-8d0c-4a92-9473-9ff2f5d28596
+2026-05-13 13:04:12,2026-05-16,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,b5005415-c29f-414e-8bb4-cb98517d523f
+2026-05-18 12:56:33,2026-05-18,26882.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,f4dce75e-8540-4413-93a8-52dc05d28a3f
+2026-05-15 18:23:07,2026-05-18,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,2802b4cc-bc9e-4cb7-9134-1cf558e489b1
+2026-05-16 08:27:35,2026-05-19,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,f972e679-6c1e-4af8-bdc5-47b4506c06ba
+2026-05-16 20:03:55,2026-05-19,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,4e7ac6f5-ba0d-4016-a8f9-f86a1a599d03
+2026-05-15 13:58:29,2026-05-19,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,e2328c04-d27b-40a9-9d95-e0807423ac3b
+2026-05-17 00:47:57,2026-05-19,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,b8d61cfa-24b0-4226-99d0-1fd27039e0eb
+2026-05-19 09:21:52,2026-05-19,43689.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,0b3712dd-caf9-4010-9278-6e33d0a42a2a
+2026-05-19 21:22:18,2026-05-20,32765.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,f1f0bfb4-8ef2-4721-b2f5-f7c7c9a1f005
+2026-05-19 16:51:55,2026-05-20,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ed4a6296-1da6-4338-b2d6-5b1504635ca4
+2026-05-19 15:20:15,2026-05-20,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,25bdca86-a7f0-46e4-89e4-5b53c1fff7d9
+2026-05-19 14:28:11,2026-05-20,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,00f9b732-306f-41e1-86b3-3b963346a73a
+2026-05-20 17:14:45,2026-05-22,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,a050a036-d036-428f-8129-1f135bada6cb
+2026-05-20 15:24:02,2026-05-22,69739.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,e8e3c621-26f1-4756-bce2-03cf8739121e
+2026-05-21 10:58:45,2026-05-22,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,b4564e0e-8621-419b-b3a8-091e33c39b55
+2026-05-21 12:39:38,2026-05-23,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,da94f250-a8bf-4d9e-9f61-3ce11ad9195d
+2026-05-21 20:28:55,2026-05-25,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ca16c39d-612e-4f9a-932c-f999f46f6999
+2026-05-17 15:43:17,2026-05-25,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,00113bbf-f4bd-42f9-baaf-7e3e53b9cf6a
+2026-05-25 08:16:47,2026-05-25,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,8769bd1b-c37d-4dab-bfe9-d2b282286e0b
+2026-05-23 09:45:47,2026-05-25,32765.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,509c21a4-1dae-410d-8691-ddbefe0a44ba
+2026-05-22 16:19:49,2026-05-25,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,1ea78a3b-ac95-4ea8-a1cf-ae5ac2bd9974
+2026-05-24 18:36:55,2026-05-25,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,ee967a02-21a4-45d9-a2ed-96a58cb55a98
+2026-05-22 23:14:20,2026-05-25,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,dbab822f-cf2f-4359-95f9-670ce7c5db75
+2026-05-24 17:13:30,2026-05-25,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,5ceb4d0b-c81b-478b-b3fa-8d2bfe446405
+2026-05-22 17:57:43,2026-05-25,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,94ff8bd2-7923-45ec-93af-bd4d7a1124d8
+2026-05-24 09:53:50,2026-05-25,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,82a64254-0593-4abf-bbbf-12f7d6c71daa
+2026-05-24 11:50:28,2026-05-26,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,a0273abd-f434-4a9a-a568-c045b67ac29e
+2026-05-24 22:28:23,2026-05-26,68899.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,057d911b-e71b-4770-abb8-1e2cc65cbc05
+2026-05-22 18:57:56,2026-05-26,64697.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,c1f23581-3a2f-45bb-9ced-b7d3e53dd916
+2026-05-25 19:54:09,2026-05-26,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,7b5e1634-09c6-4352-b49a-49798420563c
+2026-05-25 19:54:15,2026-05-26,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,20d7fccb-f337-480d-bc6a-9c63a91fa95d
+2026-05-26 11:29:54,2026-05-27,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,12e3949f-c060-40d2-a38a-30f15daa3889
+2026-05-26 15:50:50,2026-05-27,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,49466fcc-96ba-4f0f-8230-40f237371351
+2026-05-27 21:35:31,2026-05-28,67218.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,f318dd55-d91e-4832-9199-deb84bae6d23
+2026-05-28 08:58:46,2026-05-28,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,a32e2166-9dc7-40c1-a896-b8d567a1addb
+2026-05-27 17:03:55,2026-05-29,23521.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,15dfd40d-edaa-4b92-a66f-c83076a15427
+2026-05-29 00:37:02,2026-05-29,28563.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,5a4e3441-1d71-43dc-9178-9ee63fb2bcc7
+2026-05-28 19:29:47,2026-05-29,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  abril   2026 - 31  mayo   2026.xlsx,23aa80aa-bca2-4899-a3da-fafbac8bfe45
+2026-06-01 11:06:02,2026-06-01,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,56dc5fa5-d417-4bb0-9264-699dfaa24466
+2026-05-31 23:42:16,2026-06-01,17639.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,3297f1cb-bc97-4607-9a98-dfc94ca7af8d
+2026-05-31 20:12:08,2026-06-01,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,f44a1770-319d-4a3b-aa2c-4a3cb564e916
+2026-06-01 00:33:38,2026-06-01,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,868756b7-ed24-4d44-a3e1-555eda1ba566
+2026-06-01 09:52:23,2026-06-01,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,f41fbedd-8e3d-4c75-a606-aa38648d51e2
+2026-05-31 23:12:32,2026-06-01,32765.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,03040d2e-7b35-42e3-8dbf-fc13a937f901
+2026-06-01 00:24:26,2026-06-01,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,eb105d29-ef98-42bb-8118-62d86ccd3f74
+2026-06-01 11:11:47,2026-06-01,17134.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ed40f267-c95a-44f6-b4fb-e8206ecf15fb
+2026-06-01 06:18:51,2026-06-01,42849.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,f44bf918-f726-44c4-b2f7-e810e0a0ff03
+2026-05-31 16:12:50,2026-06-01,43689.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,6a45b16b-c99c-4522-a27a-61d5c45f429e
+2026-05-31 22:35:41,2026-06-01,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,24abb11f-e762-439c-b536-7252b8b7b567
+2026-05-31 23:00:21,2026-06-01,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,1550feb3-d3c6-420d-ae6d-155ce909567c
+2026-05-31 21:20:18,2026-06-01,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,bcfde90a-4685-408c-9f5a-c1c4e28fab3f
+2026-06-01 10:41:08,2026-06-01,17134.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,09a632d4-dbd2-4eb6-82de-d1e32a4fd57a
+2026-05-31 22:49:10,2026-06-01,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,9de01e5d-e79c-46ac-b1fe-ff9e3c79f75e
+2026-06-01 00:16:41,2026-06-01,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2a188db6-2966-4e66-9e6e-cafc9c0b4929
+2026-05-31 23:15:12,2026-06-01,16126.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,0689028b-ead6-4046-aed1-84d485b0b3a4
+2026-05-29 16:37:58,2026-06-01,32765.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,86d5495e-e7ec-4027-9e70-b7b360a0e864
+2026-05-31 19:07:46,2026-06-01,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,815811e4-0073-42d2-bb8a-ed82b0565679
+2026-05-31 22:58:42,2026-06-01,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,c9496574-992c-438c-937a-2c2b88964d2c
+3238010514,2026-06-01,41336.0,1 junio 2026 al 5 junio 2026.xlsx,20aa4186-5b8a-4fa4-a869-1305996ef631
+3237799520,2026-06-01,17639.0,1 junio 2026 al 5 junio 2026.xlsx,177235e5-f071-4ba5-83ae-b802d54f396b
+3237735478,2026-06-01,41336.0,1 junio 2026 al 5 junio 2026.xlsx,893a112c-7d83-4d36-938d-805fc0f632b0
+3237837820,2026-06-01,41336.0,1 junio 2026 al 5 junio 2026.xlsx,0fba0bef-9a4b-4006-9587-a9e5d1edb1ec
+3237970015,2026-06-01,25202.0,1 junio 2026 al 5 junio 2026.xlsx,3f83543a-2216-41e7-b77e-d39ce43b370b
+3237786048,2026-06-01,32765.0,1 junio 2026 al 5 junio 2026.xlsx,878cad9a-a1c6-4540-b3fa-2d48f3fe2dd8
+3237829585,2026-06-01,22681.0,1 junio 2026 al 5 junio 2026.xlsx,889038db-8c86-4969-ba79-73721d003b9c
+3238015353,2026-06-01,17134.0,1 junio 2026 al 5 junio 2026.xlsx,4acf633e-780f-45b8-bc37-6e60fa1dc607
+3237904608,2026-06-01,42849.0,1 junio 2026 al 5 junio 2026.xlsx,9e609a1f-1c79-4e8f-895f-324733ecf08b
+3237699965,2026-06-01,43689.0,1 junio 2026 al 5 junio 2026.xlsx,1e7f70f5-3fb6-4960-9592-df399fd40663
+3237772183,2026-06-01,41336.0,1 junio 2026 al 5 junio 2026.xlsx,298dee7c-6e00-433c-807f-cbb7b35f8f45
+3237781166,2026-06-01,22681.0,1 junio 2026 al 5 junio 2026.xlsx,7c198c0e-10f0-478b-b6f9-895e447808a5
+3237749910,2026-06-01,40328.0,1 junio 2026 al 5 junio 2026.xlsx,ec33c0c3-1176-4774-9ee5-82051eb73250
+3237997214,2026-06-01,17134.0,1 junio 2026 al 5 junio 2026.xlsx,638942ac-2d9d-4a7e-a1bf-fcb0d73f8150
+3237776957,2026-06-01,22681.0,1 junio 2026 al 5 junio 2026.xlsx,ff8ef868-70b0-45e1-8e79-f17166dbec30
+3237823568,2026-06-01,40328.0,1 junio 2026 al 5 junio 2026.xlsx,18517470-c85e-44ad-9481-e00c4b52fd8f
+3237787125,2026-06-01,16126.0,1 junio 2026 al 5 junio 2026.xlsx,ff575a83-7265-409d-a3fc-af010b399730
+3237501675,2026-06-01,32765.0,1 junio 2026 al 5 junio 2026.xlsx,d5b5b1c1-d7bf-4727-8430-f215841099ea
+3237724133,2026-06-01,19319.0,1 junio 2026 al 5 junio 2026.xlsx,9fa13d04-8767-4fb7-a3b6-89b4840cfe83
+3237780549,2026-06-01,47891.0,1 junio 2026 al 5 junio 2026.xlsx,29ed71cc-747b-4677-af8f-5b8857d6545d
+2026-05-30 10:32:51,2026-06-02,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,6e53a55f-a781-4c00-a257-e32e69adaa08
+2026-06-01 07:44:34,2026-06-02,32765.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,c7ab3b64-7082-44b4-a1f0-11dd0dac7e18
+2026-05-31 23:53:50,2026-06-02,37303.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,37d87817-c5c0-4bc1-ad9e-25aea9a32384
+2026-06-01 11:42:11,2026-06-02,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,261dc9bf-8fcf-42e2-8ca5-58b7c32cbc7c
+2026-05-31 22:17:53,2026-06-02,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,868510d7-011f-4121-ba52-d9e65e6f7aef
+2026-06-01 13:28:38,2026-06-02,16126.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,edb31d10-6fd9-459b-b9b5-ce9fb2d7526e
+2026-05-31 19:48:55,2026-06-02,21840.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,79dde388-60be-4b08-90a2-cb4c49e236fa
+2026-05-31 20:19:14,2026-06-02,17134.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,e060c30e-9d4b-4f25-8384-8c72bb79af1a
+2026-06-01 13:23:05,2026-06-02,42849.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,c662f089-9cb3-46b3-842c-f53028ba944b
+2026-05-30 13:05:28,2026-06-02,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,466e420d-11a0-40b9-b583-480dcafd2b7d
+2026-06-01 10:50:05,2026-06-02,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,67bcd3da-aba2-4761-be19-0e135d0b9582
+2026-06-01 00:15:23,2026-06-02,21168.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,9d52d6ba-c073-4b8a-935b-389f572d002d
+2026-06-01 09:35:12,2026-06-02,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,d17e9d1f-0858-456b-940b-affdcf2dbe86
+2026-06-01 18:41:57,2026-06-02,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,7bfae826-3b18-4d34-a4b9-6b7446666b1e
+2026-06-01 20:58:04,2026-06-02,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,6d6f2af2-7ff3-48aa-a595-5f7c8ae133bb
+2026-06-01 02:50:32,2026-06-02,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,4b9496c6-c9d3-40b5-af95-349ba3e84933
+2026-06-01 02:03:40,2026-06-02,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,665f04cb-45b5-4559-8809-2c5f4599d768
+2026-05-31 23:57:52,2026-06-02,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,b5537e82-0a92-4a00-81c2-316faec1a2f9
+2026-06-01 22:26:26,2026-06-02,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,be0ffa33-d7d3-481c-adde-223a1de25293
+2026-06-01 22:54:23,2026-06-02,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,64ef4bb2-374d-4453-8f72-b4b12651d67a
+2026-06-01 00:20:47,2026-06-02,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,62463e93-d657-4f08-b4a3-4aa343b1eb96
+2026-06-01 23:35:15,2026-06-02,21168.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,004ce95c-80c4-4647-a65a-c4f2ee8963df
+2026-05-31 18:24:21,2026-06-02,21840.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,9d276908-90ea-4dfe-8ea1-aa768d2be53f
+2026-05-31 14:07:07,2026-06-02,21840.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,20012233-0306-4523-9a44-c17094349aae
+2026-06-01 13:22:07,2026-06-02,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,37544f76-1a98-4f7e-b031-7c298e5e6a7f
+2026-06-01 11:54:17,2026-06-02,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,346e314d-ddf3-4f0c-888e-9192e8cef631
+2026-06-01 20:14:45,2026-06-02,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,47175967-5688-4bce-9a97-1b03ec721c64
+2026-06-01 09:11:01,2026-06-02,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,de98b62d-2824-442f-a721-57a02fd7d5af
+2026-06-01 15:13:31,2026-06-02,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2fde2cfe-a4c1-47c7-aea5-8e3713b4f79e
+2026-06-01 23:14:30,2026-06-02,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,3555779e-ef76-4bd3-b12b-4e319bf05bd4
+2026-06-01 16:03:25,2026-06-02,21168.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,d4be5461-b66a-48cd-83af-345795972869
+3238153648,2026-06-02,36294.0,1 junio 2026 al 5 junio 2026.xlsx,1817db41-a144-4f6a-a6a5-867dc287a38d
+3238178847,2026-06-02,21168.0,1 junio 2026 al 5 junio 2026.xlsx,d831c49d-05a8-4dcf-8b8b-00f1496c8fb2
+3237806404,2026-06-02,37303.0,1 junio 2026 al 5 junio 2026.xlsx,6ed66d3a-e015-4aa3-a20d-ba593d2209de
+3238033862,2026-06-02,22681.0,1 junio 2026 al 5 junio 2026.xlsx,f588a397-6bb8-4bde-8770-05631552648a
+3237766269,2026-06-02,41336.0,1 junio 2026 al 5 junio 2026.xlsx,7b584fb5-064b-4ecf-b342-3fab80cfd926
+3238096056,2026-06-02,16126.0,1 junio 2026 al 5 junio 2026.xlsx,29e11d38-abcb-4c8d-bff2-31993b276a5d
+3237731209,2026-06-02,21840.0,1 junio 2026 al 5 junio 2026.xlsx,438892a4-912a-4d9f-a02c-175efb9399c0
+3237736880,2026-06-02,17134.0,1 junio 2026 al 5 junio 2026.xlsx,a4fc26a3-b783-4f5c-8908-e06c3d5e8b9c
+3238092842,2026-06-02,42849.0,1 junio 2026 al 5 junio 2026.xlsx,4bbbf79d-6519-4cff-a32c-f38c03fa8942
+3237577664,2026-06-02,22681.0,1 junio 2026 al 5 junio 2026.xlsx,86ddaf75-24e4-4e1b-b6c8-6544a819357f
+3238002460,2026-06-02,36294.0,1 junio 2026 al 5 junio 2026.xlsx,c971ccb9-bca9-4bdd-8a20-ea77c8a3972c
+3237822264,2026-06-02,21168.0,1 junio 2026 al 5 junio 2026.xlsx,816f788a-7463-464b-96b8-aa551aac64e8
+3237960931,2026-06-02,36294.0,1 junio 2026 al 5 junio 2026.xlsx,1ec0aa8f-8664-4ee6-aa1a-5759908182f8
+3238258073,2026-06-02,36294.0,1 junio 2026 al 5 junio 2026.xlsx,e6acb697-70de-431f-b226-d3a4bc0d7263
+3238342239,2026-06-02,41336.0,1 junio 2026 al 5 junio 2026.xlsx,d7036583-35d1-43fc-a037-a50c48cc2555
+3237890880,2026-06-02,36294.0,1 junio 2026 al 5 junio 2026.xlsx,a10351f0-7487-4848-a62a-65796dc73c0c
+3237882836,2026-06-02,41336.0,1 junio 2026 al 5 junio 2026.xlsx,53446c2c-96e8-4fce-b5fe-08a30da7d966
+3237808986,2026-06-02,40328.0,1 junio 2026 al 5 junio 2026.xlsx,9de6b5b8-5ca6-4397-a128-692d76adc370
+3238416461,2026-06-02,40328.0,1 junio 2026 al 5 junio 2026.xlsx,22cf7820-f700-491f-b0af-98e657cbb6f1
+3238441089,2026-06-02,36294.0,1 junio 2026 al 5 junio 2026.xlsx,f2c836d3-82e6-4450-b93b-87fb17c0a755
+3237827379,2026-06-02,36294.0,1 junio 2026 al 5 junio 2026.xlsx,aaa1ab1d-fdcb-47e0-8288-804e3bb1c28b
+3238470803,2026-06-02,21168.0,1 junio 2026 al 5 junio 2026.xlsx,9a74847a-8f4c-4824-8146-0ab0182ae511
+3237717379,2026-06-02,21840.0,1 junio 2026 al 5 junio 2026.xlsx,90d8d38f-4f2f-4224-abc1-208b2ff95cb5
+3237685102,2026-06-02,21840.0,1 junio 2026 al 5 junio 2026.xlsx,32bd2856-21d3-4f94-b0f8-5dc08cd25707
+3238092326,2026-06-02,40328.0,1 junio 2026 al 5 junio 2026.xlsx,5c734b01-bbb4-4ca8-81f8-da16d2aa26b0
+3238041206,2026-06-02,41336.0,1 junio 2026 al 5 junio 2026.xlsx,519fa0c7-6f0a-4eed-b155-48a9a83ed051
+3238311719,2026-06-02,22681.0,1 junio 2026 al 5 junio 2026.xlsx,a9f8c955-b762-4f1e-affa-0be082a409dc
+3237949599,2026-06-02,36294.0,1 junio 2026 al 5 junio 2026.xlsx,e0cbdec1-3817-4bed-915e-6bd2d01dfcc4
+3237563018,2026-06-02,22681.0,1 junio 2026 al 5 junio 2026.xlsx,47821615-68bd-4e8d-adca-e0529efaf162
+3238456302,2026-06-02,36294.0,1 junio 2026 al 5 junio 2026.xlsx,8faba12a-a136-485a-ae52-9ad186910f20
+3237919352,2026-06-02,32765.0,1 junio 2026 al 5 junio 2026.xlsx,648fe0bf-d2e4-4016-8bcc-88163cf6b189
+2026-06-01 22:28:56,2026-06-03,33773.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,746b3249-7875-496a-b968-804f9925f790
+2026-06-01 12:24:55,2026-06-03,21168.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,eda4f394-83ab-4ce9-b3f4-8a25efede7d7
+2026-06-02 00:00:33,2026-06-03,16126.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,4f6f88f4-643b-4b41-af0a-3209275ee428
+2026-06-01 21:07:58,2026-06-03,21168.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,3e76de8f-32d2-4157-9e7d-b21b697636a8
+2026-06-01 23:25:41,2026-06-03,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,624dabcd-4c50-46df-9b25-dcae587bd009
+2026-06-01 19:30:38,2026-06-03,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,56421baa-46a5-4496-91f2-8500b8138bc8
+2026-05-31 21:59:37,2026-06-03,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,5256ef4c-600d-4b00-9461-1cbec5aabf95
+2026-06-01 15:22:36,2026-06-03,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2d2da4f3-ab65-41d3-bdd7-6b66748e59cf
+2026-06-01 09:48:30,2026-06-03,21168.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,897aded4-67d4-4995-9f9f-db56fceed158
+2026-06-01 21:33:49,2026-06-03,32765.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,66206329-99e1-4ac6-bc9c-2d8a562c5c97
+2026-06-01 19:14:07,2026-06-03,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,8175ef01-82c1-4838-aff1-ef2ce32c32ca
+2026-06-02 10:11:35,2026-06-03,24361.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2eaf6328-26f3-445e-962a-6de955227224
+2026-05-29 19:51:54,2026-06-03,64697.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,8e8d3f1f-fd99-485a-928a-40797a900b0e
+2026-05-31 20:59:47,2026-06-03,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,3ed33df9-17bf-41f6-ac59-e565396a2d9f
+2026-06-01 00:15:20,2026-06-03,16126.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,e2c1503f-d864-4c37-a891-d65c95f3a605
+2026-06-02 23:29:55,2026-06-03,21000.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,776214c7-8683-4e8d-9444-99eae7517b14
+2026-06-02 23:58:28,2026-06-03,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,a5d237cd-2ceb-43d2-947f-bf244502ddb9
+2026-06-01 08:58:45,2026-06-03,16126.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,c1230fe5-9be0-400e-9f33-07717be6cf63
+2026-06-02 21:35:04,2026-06-03,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,0953e4c0-cdd3-4d32-aea5-91d482a46b4c
+2026-06-02 21:43:39,2026-06-03,18479.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ceff8cdf-5080-4f5a-b687-4b75e17b0c94
+2026-06-02 22:28:05,2026-06-03,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,87d6550f-5701-4264-8cfe-a099dd41a516
+2026-06-02 20:35:54,2026-06-03,20160.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,32144d43-c02d-4d3f-9f3b-d90d01c7c8e9
+2026-06-02 20:11:07,2026-06-03,49571.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,1855b3b1-fe86-4dc5-87f3-05c34c242830
+3237967895,2026-06-03,21168.0,1 junio 2026 al 5 junio 2026.xlsx,a6bd2f66-e8dd-412f-8321-8f2566ab2f13
+3238059291,2026-06-03,21168.0,1 junio 2026 al 5 junio 2026.xlsx,a580fcc0-e495-4a2d-8387-4b7451f4877e
+3238485921,2026-06-03,16126.0,1 junio 2026 al 5 junio 2026.xlsx,9453982f-72dd-4f26-8944-50efc56b30ab
+3238349769,2026-06-03,21168.0,1 junio 2026 al 5 junio 2026.xlsx,b7c86657-aa7d-4d59-a679-29f3685ce3dd
+3238464359,2026-06-03,36294.0,1 junio 2026 al 5 junio 2026.xlsx,15ff747c-a42e-4a65-be48-94e8526bccb2
+3238284363,2026-06-03,40328.0,1 junio 2026 al 5 junio 2026.xlsx,9c10430e-28a0-43c3-bba3-1c708cd7d824
+3237760497,2026-06-03,22681.0,1 junio 2026 al 5 junio 2026.xlsx,374d5eae-4459-40de-a173-02759f03d8e2
+3238158153,2026-06-03,47891.0,1 junio 2026 al 5 junio 2026.xlsx,8dc3248c-b030-4847-94cc-93ebce6524b5
+3238418675,2026-06-03,33773.0,1 junio 2026 al 5 junio 2026.xlsx,4da498a2-438b-44b9-a9f7-bf0cb125641e
+3238370811,2026-06-03,32765.0,1 junio 2026 al 5 junio 2026.xlsx,f07211f1-0f06-4bb3-8436-7499adc03c18
+3238275130,2026-06-03,41336.0,1 junio 2026 al 5 junio 2026.xlsx,823a06d5-8131-4895-94b6-948398bb3ca0
+3238578048,2026-06-03,24361.0,1 junio 2026 al 5 junio 2026.xlsx,485d0d32-d92b-46be-a800-57f7944fe69b
+3237520571,2026-06-03,64697.0,1 junio 2026 al 5 junio 2026.xlsx,441c7d40-6b9d-4412-9ac7-a7a6bade5c4d
+3237745124,2026-06-03,41336.0,1 junio 2026 al 5 junio 2026.xlsx,158bd0d6-63f5-4518-bde8-97708700a1e6
+3237822119,2026-06-03,16126.0,1 junio 2026 al 5 junio 2026.xlsx,84eee1ad-28bc-4ef1-9d55-f93ee4673b21
+3238990873,2026-06-03,21000.0,1 junio 2026 al 5 junio 2026.xlsx,940af63f-a7cc-4c4b-80d3-299c23ecb507
+3239008036,2026-06-03,25202.0,1 junio 2026 al 5 junio 2026.xlsx,81d26aa8-9e64-43d7-b9a5-f68afd4fed5c
+3237944143,2026-06-03,16126.0,1 junio 2026 al 5 junio 2026.xlsx,cc119270-c405-4ab3-af7c-0df274b26bcc
+3238903515,2026-06-03,47050.0,1 junio 2026 al 5 junio 2026.xlsx,7bd1187c-76ee-4693-8e8a-e3c7fa581e4f
+3238909797,2026-06-03,18479.0,1 junio 2026 al 5 junio 2026.xlsx,e719e6cd-f7c4-459b-8f53-34890c066079
+3238944302,2026-06-03,47891.0,1 junio 2026 al 5 junio 2026.xlsx,964541d4-1873-4804-a578-23cd18a30b86
+3238864783,2026-06-03,20160.0,1 junio 2026 al 5 junio 2026.xlsx,7920779e-d28d-49ce-97ac-5ddef4289098
+3238850235,2026-06-03,49571.0,1 junio 2026 al 5 junio 2026.xlsx,4e2a01b1-93ef-4aba-b7e2-8a853917db1c
+2026-06-02 13:20:39,2026-06-04,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,208806fc-75a7-4615-8351-30e98a4f0930
+2026-06-03 10:46:36,2026-06-04,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2c3173fe-9ea5-4352-a4b0-116682d79d96
+2026-06-03 11:11:50,2026-06-04,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,a9310a95-64a6-4fbb-bff3-a761021afb12
+2026-06-02 14:47:47,2026-06-04,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,cc43646f-a664-4860-ad23-8fe9e9aca639
+2026-06-02 10:51:39,2026-06-04,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,bc3c42dd-efb5-4de5-a8cc-6952b9230a3b
+2026-06-03 18:34:07,2026-06-04,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,f401ae70-564d-48e8-b54b-c528f6df3654
+2026-06-01 13:14:15,2026-06-04,35286.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ddcaae0c-5292-4f07-bc42-4dca54e02d11
+2026-06-03 21:59:22,2026-06-04,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,7ed4b24c-94be-40a2-a65e-6549c88d1db3
+2026-06-02 23:31:43,2026-06-04,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,56b34a2b-7063-4078-b027-a7456d3fb8fa
+2026-06-02 19:12:12,2026-06-04,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,32df68ca-98a5-46aa-a3d0-0a1e8b8aaaae
+2026-05-29 17:49:27,2026-06-04,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,47af2b20-854b-4844-8dc7-68a80d9424c4
+2026-06-03 16:42:47,2026-06-04,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,5b568fae-bd57-47f7-99df-05fa796b0f49
+2026-06-03 12:18:49,2026-06-04,39886.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,15fc13ca-87ae-4ec6-98ed-4f9871acaadd
+2026-06-03 15:46:19,2026-06-04,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,50dbdb73-803b-4e80-bca0-a4c437d0a3c6
+2026-06-03 15:30:42,2026-06-04,49571.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,f6719c97-7b29-4253-b674-6fd4850bcc5f
+2026-06-02 21:38:24,2026-06-04,35286.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,6cfeed55-ea89-4f50-96b6-f43f5df2bccb
+2026-06-03 22:21:24,2026-06-04,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,bedb4a09-6817-424e-8c23-183f94eee093
+2026-06-03 20:25:59,2026-06-04,45343.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ffd6a43b-cf6a-4595-83a4-56e672fb2a12
+2026-06-03 12:10:36,2026-06-04,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,78f71bd6-f5e6-446a-869f-8a4a4fe15fe8
+3238663795,2026-06-04,47891.0,1 junio 2026 al 5 junio 2026.xlsx,5994f1c6-be2b-4742-9f7c-550fb8675b61
+3239116299,2026-06-04,37807.0,1 junio 2026 al 5 junio 2026.xlsx,b71ebae0-482e-4c20-9afa-ee8d30599beb
+3239127926,2026-06-04,25202.0,1 junio 2026 al 5 junio 2026.xlsx,5078d878-8240-4fa4-a3ac-c759c37c59bb
+3238702729,2026-06-04,47050.0,1 junio 2026 al 5 junio 2026.xlsx,c7342132-77f3-4f6a-8c18-3995a7b7af8d
+3238594861,2026-06-04,25202.0,1 junio 2026 al 5 junio 2026.xlsx,bc726ca9-1b3c-445b-b77b-7f0be0138ac8
+3239346616,2026-06-04,37807.0,1 junio 2026 al 5 junio 2026.xlsx,6f6b5d2f-3f37-4059-8c9c-9b77f3de42cb
+3238088222,2026-06-04,35286.0,1 junio 2026 al 5 junio 2026.xlsx,fd1a7138-829b-4db6-9354-e9b49ec57a11
+3239496794,2026-06-04,47050.0,1 junio 2026 al 5 junio 2026.xlsx,0cd250b6-02c7-4240-b35f-ffbf6c4da67f
+3238992025,2026-06-04,25202.0,1 junio 2026 al 5 junio 2026.xlsx,06c6b8ee-e16b-44ce-9cf3-de2a302064dd
+3238820352,2026-06-04,42008.0,1 junio 2026 al 5 junio 2026.xlsx,015c8dd0-3b50-48a7-a889-561d4049f1d9
+3237508849,2026-06-04,30244.0,1 junio 2026 al 5 junio 2026.xlsx,7b5423b8-d5d0-4e73-9742-5c88a018afc6
+3239290771,2026-06-04,47891.0,1 junio 2026 al 5 junio 2026.xlsx,d7bd0f6a-95a8-4bc6-a769-7c0a45ebd308
+3239161259,2026-06-04,39886.0,1 junio 2026 al 5 junio 2026.xlsx,4cdde200-c0ea-4439-b6c5-b529fea4bc8f
+3239262905,2026-06-04,55454.0,1 junio 2026 al 5 junio 2026.xlsx,78c21222-5cbd-4d51-ad52-f773e6296b0b
+3239255050,2026-06-04,49571.0,1 junio 2026 al 5 junio 2026.xlsx,271a3c08-bd70-4ab5-bf86-2d270339ca89
+3238906016,2026-06-04,35286.0,1 junio 2026 al 5 junio 2026.xlsx,cb448312-df89-4d18-83da-d6228366d254
+3239519013,2026-06-04,30244.0,1 junio 2026 al 5 junio 2026.xlsx,85b4dcb5-e490-4740-9441-c002a6c33257
+3239416789,2026-06-04,45343.0,1 junio 2026 al 5 junio 2026.xlsx,6174e46b-d56b-406c-888b-d80a09d379b2
+3239157108,2026-06-04,42008.0,1 junio 2026 al 5 junio 2026.xlsx,b5167f3a-c279-4a15-8ac4-e007b265c473
+2026-06-03 21:49:26,2026-06-05,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,9c71c441-942e-43fe-882c-919816d17ab7
+2026-06-04 02:43:17,2026-06-05,35286.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2383326b-6e53-4cd1-bfa8-57121eb07fe8
+2026-06-03 23:55:00,2026-06-05,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,750a7ca7-5ae8-4d97-a022-f50842a1c58a
+2026-06-03 22:32:36,2026-06-05,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,7231afff-1c58-4504-975c-d40b7e197a9c
+2026-06-02 22:43:10,2026-06-05,52933.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,012c2d3b-33b1-4a0c-b1dd-f5368bf7bb48
+2026-06-02 13:04:55,2026-06-05,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,06ae2256-a9d0-4324-b9d8-7a8acd3f2e2b
+2026-06-03 17:48:27,2026-06-05,44529.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2720ad6c-51cf-4e2d-bb80-14d434b89bca
+2026-06-04 09:33:52,2026-06-05,21840.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,6a98d44b-76ac-4b5d-a581-630bd5f370f8
+2026-06-03 23:28:07,2026-06-05,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,336febae-bd56-4f81-9dfa-f4d14160d706
+2026-06-04 12:05:27,2026-06-05,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,7b2066d1-09b3-495a-926d-3ff47f464cce
+2026-06-03 14:34:57,2026-06-05,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,00d42ee9-ef80-4f7e-ba44-44501a65fe76
+2026-06-04 00:16:46,2026-06-05,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,a18a7f61-e11e-4e67-ba80-0015d6afd2e5
+2026-06-01 08:53:52,2026-06-05,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,6c5a4b71-ac2a-4fca-8048-2d3539cf1443
+2026-06-03 21:54:10,2026-06-05,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,43365d72-099b-464e-9d33-bae9f3c5f23f
+2026-06-03 23:36:03,2026-06-05,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,587ba9b7-d1c5-4985-a9bf-e558878a172c
+2026-06-03 16:47:16,2026-06-05,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,c60aaf95-c333-42a6-af28-5600dfc36d76
+2026-06-03 22:33:39,2026-06-05,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,af76d0ba-110e-4f89-9bfd-43f52a03e9ad
+2026-06-02 19:51:13,2026-06-05,43689.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,23212fec-b24d-4e1f-9ff0-1c986a8be5ec
+2026-06-04 00:26:32,2026-06-05,49571.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,82e90557-131d-41bc-abab-3f160954f658
+2026-06-03 10:45:47,2026-06-05,20160.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,484332c8-86dd-43b2-9ef1-c0162273f713
+2026-06-04 08:25:33,2026-06-05,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,aea20b54-923e-4892-8742-633a4241941f
+2026-06-04 10:05:16,2026-06-05,44529.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,cd455629-44d0-4fc9-ad4d-2e681e7d0f92
+2026-06-04 16:28:04,2026-06-05,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,0910a66d-6029-4834-93b2-08f2edcf1d98
+3239486631,2026-06-05,47891.0,1 junio 2026 al 5 junio 2026.xlsx,ed45c69c-480f-4dea-ad04-9d4973471065
+3239668583,2026-06-05,35286.0,1 junio 2026 al 5 junio 2026.xlsx,b60ea55a-f21e-4a36-b9e1-0d6468390c45
+3239623913,2026-06-05,47891.0,1 junio 2026 al 5 junio 2026.xlsx,5ab4128d-8dd5-47b5-b49e-a7d7117a316d
+3239530985,2026-06-05,25202.0,1 junio 2026 al 5 junio 2026.xlsx,f950937b-06ac-4366-82d3-241c3817bbe3
+2026-06-04 21:32:19,2026-06-06,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,bf854da1-fc8d-4fbf-8272-e2d4dbeac5b5
+2026-06-01 21:49:03,2026-06-06,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,cdb2e3c2-58de-4a07-a785-71c6b89456fc
+2026-06-04 20:32:15,2026-06-06,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,b0969586-3036-401f-9553-ee41a12ce752
+2026-06-01 08:32:22,2026-06-06,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ebee41bc-96c7-434d-9001-3546d27a5883
+2026-06-01 22:10:04,2026-06-06,21168.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,548484e8-0ca8-4a7a-b7c9-813ae7a8b4b9
+2026-06-03 19:50:00,2026-06-06,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,e520a3d2-e895-4e37-a8a1-450710250620
+2026-06-01 19:28:52,2026-06-06,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,755a9900-c92b-415c-9453-5ae1104ecb90
+2026-06-01 18:31:26,2026-06-06,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,867e9bbb-219c-49a8-82a3-f780c86dbc23
+2026-06-05 00:04:46,2026-06-06,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,a0a0f6ee-0b65-4149-8f7a-b14b45c506b1
+2026-06-05 11:08:40,2026-06-06,24361.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,7e1e7af5-64e0-4564-abf1-96f661e3a9f5
+2026-06-01 19:15:49,2026-06-06,41336.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,d1a7d30d-89e5-46d8-a6eb-ebc2f857cb56
+2026-06-05 07:36:36,2026-06-06,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,d2f72b26-af1b-46ff-9b15-70f2ea835900
+2026-06-04 23:09:59,2026-06-06,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,b54f81e6-afd6-4fde-8e88-1ec8805ac66f
+2026-06-03 17:31:32,2026-06-06,20160.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,1a1e7848-edf0-497a-b9f7-a1fc1fefec1d
+2026-06-01 16:53:25,2026-06-07,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,9d62dd6e-dc6d-44ef-84d6-318051610971
+2026-06-01 23:08:02,2026-06-08,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,09e67d50-dc2a-4714-8eb7-fdcc1e0b4f3c
+2026-06-02 08:33:01,2026-06-08,52933.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,98d469b6-f04d-490a-acf0-b7620528150e
+2026-06-01 20:18:24,2026-06-08,42849.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,75cfc2a7-7523-4c26-bf39-cc8a06048e8b
+2026-06-01 18:46:48,2026-06-08,17639.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,3715dd0c-f94c-4e9a-bc97-be7bb2dec92a
+2026-06-01 21:08:31,2026-06-08,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,a19076d5-f566-4313-b787-0479bfc3fd04
+2026-06-01 17:47:09,2026-06-08,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,12e9042b-27ce-44a6-8b73-1f1586cfae8f
+2026-06-01 16:12:19,2026-06-08,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,131bd175-e60b-4d5c-8478-f9cbb0bad659
+2026-06-01 19:10:46,2026-06-08,42849.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,839d68aa-3a0d-41be-9d01-ffdfed115d5a
+2026-06-01 21:59:00,2026-06-08,35286.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,184fd17c-8015-4406-a3f1-29ff8e594bc9
+2026-06-05 16:33:40,2026-06-08,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,51509742-3889-46c4-9ec5-1bd0bc71ac0b
+2026-06-06 09:47:27,2026-06-08,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,57133f7c-8247-4a5c-8c85-d280310d14f1
+2026-06-07 20:46:26,2026-06-08,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,fda381fe-dc54-4ebb-8da8-a26d12a0acb0
+2026-06-01 20:23:53,2026-06-08,21168.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ccc725f7-cda2-435d-81d1-755c285ca1a7
+2026-06-01 20:30:01,2026-06-08,36294.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,93dc7966-2139-41a2-8678-f10749d61d52
+2026-06-06 17:20:25,2026-06-08,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ac7960a1-238e-44ce-9dcb-dc2c9c8c47fb
+2026-06-03 20:06:51,2026-06-08,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,6ef94ba5-38a7-4021-aedc-9648e2633fb9
+2026-06-07 12:19:46,2026-06-08,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,449d8731-a31a-497a-8141-47c2d4c3085a
+2026-06-06 01:29:49,2026-06-08,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,9eec6a72-5d9a-4d9b-9d58-81c0fc3d683e
+2026-06-06 00:12:45,2026-06-08,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,cd8dcb12-a239-455d-856d-5ada1f2b464e
+2026-06-07 20:39:44,2026-06-08,49571.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,51253a4c-af4f-47f2-82a5-94fdcee88231
+2026-06-07 19:10:31,2026-06-08,41168.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,eeeaafa5-7592-4f2e-bb72-24c29b741e08
+2026-06-07 14:22:04,2026-06-09,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,60a99761-4db8-4cf9-ad59-0f1c1f3fb890
+2026-06-07 16:42:43,2026-06-09,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,68ca3d7d-cf07-4399-baac-eb87393b249d
+2026-06-08 23:31:14,2026-06-09,20160.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,715d3ce1-aedf-4680-8d3a-c89e2dbe5027
+2026-06-08 09:51:39,2026-06-10,21000.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,437ac860-b3e8-4bcf-a2bf-f59cbd5d876d
+2026-06-09 08:16:45,2026-06-10,57134.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,67a83980-ccea-4e44-ad41-bbb71ebf6228
+2026-06-09 10:26:44,2026-06-10,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,1e27af6e-7e06-4f2e-a668-c662a660bbb9
+2026-06-07 00:22:14,2026-06-11,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,fdb8024b-d83e-44a4-8428-f409b0f4a533
+2026-06-10 11:33:02,2026-06-11,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,fd249aaf-3b10-49b9-89c7-c8470fdb663b
+2026-06-11 00:35:53,2026-06-11,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,91b7ad7a-7f6b-44b2-92b3-3d9929084597
+2026-06-10 16:20:20,2026-06-11,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,5bf16f63-2afc-4160-acf0-0a97066ea695
+2026-06-11 11:07:14,2026-06-11,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,f1f4c23d-6a37-4756-b973-fadde7fa5ab4
+2026-06-10 21:43:12,2026-06-11,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,6a99cbbd-0164-461d-8679-2f25a3e604a3
+2026-06-10 22:46:41,2026-06-12,60496.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,bc311690-9207-4bf7-8fb9-c0f5514d2427
+2026-06-11 09:46:26,2026-06-12,52092.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,bf529688-0070-43a1-a6d7-6a6083cd5c5d
+2026-06-03 22:20:11,2026-06-12,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,efeef048-2abe-4d35-9126-8e3521305202
+2026-06-11 17:51:16,2026-06-12,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,e73490d7-5688-46c9-a921-9e5c92d65b42
+2026-06-12 02:54:04,2026-06-13,21840.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,8c5c9b08-a88e-4d2e-871a-6d43cf0d5469
+2026-06-01 21:52:11,2026-06-13,16126.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,12324667-5b07-43fd-a6f7-58f3964b49da
+2026-06-11 20:39:07,2026-06-15,43689.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,8f3ea7e7-e397-4964-bf3e-4d54a9c657c0
+2026-06-13 11:35:06,2026-06-15,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,676d9e82-d971-4763-a92e-f27753b96589
+2026-06-13 23:01:45,2026-06-15,21000.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,a247087b-d787-4dec-8954-92f68c56940e
+2026-06-13 11:21:35,2026-06-15,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,bfc52e19-5968-4b46-8884-27cee11081ed
+2026-06-15 00:25:36,2026-06-15,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,e61b84f0-f197-442d-aeca-f210401548d2
+2026-06-13 15:08:16,2026-06-15,21000.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,9a5a4221-a4c4-4e8f-abad-d28818fa2cd1
+2026-06-13 18:13:27,2026-06-16,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,21ab6ec3-a5c9-4f98-86dd-40ef9676884f
+2026-06-14 11:30:49,2026-06-16,23521.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,e176c282-876d-41e7-8684-945ecf41991f
+2026-06-14 23:36:34,2026-06-16,43689.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,b6a4e063-46de-496d-82ca-6b75e47f4227
+2026-06-14 19:29:02,2026-06-16,21000.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ca1c7d5c-d5b3-4a26-bb8a-8f7cb32a9813
+2026-06-12 21:45:39,2026-06-16,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2361c927-f002-4e27-9d4a-ef3b82b426f1
+2026-06-13 23:52:43,2026-06-16,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ade09803-27eb-49bf-a1b3-1e3f2b91cd55
+2026-06-15 08:38:36,2026-06-16,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,5846c53c-691a-4227-b665-04e0c29de321
+2026-06-15 16:07:19,2026-06-16,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,64bac5c9-caaf-4e38-9837-501b121b4272
+2026-06-14 12:26:00,2026-06-16,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,bafb99ec-795a-4a30-be09-5cedc0b7c0e2
+2026-06-13 04:03:01,2026-06-16,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,16f6b839-40ab-4726-ad83-0e38211dd1c6
+2026-06-15 09:22:18,2026-06-16,21000.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,48fc6880-136b-40e2-bb62-61b895624b3b
+2026-06-16 07:47:09,2026-06-17,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,26742ca0-5eba-4fee-8528-a2cf4c3edfbf
+2026-06-15 19:08:01,2026-06-17,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,433f373e-0f8d-4749-a2f2-a9530de55aed
+2026-06-15 12:49:51,2026-06-17,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,36e9f1f1-ea17-4b5c-902e-70022ff84df4
+2026-06-16 15:38:21,2026-06-17,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,de60aa00-edc1-4deb-bfbf-9e1d170963d2
+2026-06-16 12:43:13,2026-06-17,22681.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,f478d6b1-8463-4aec-8a6c-eeddbe4bcacd
+2026-06-16 20:04:03,2026-06-17,49571.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,34fac88a-9b32-4145-8743-25b4bf6d01a8
+2026-06-16 17:37:42,2026-06-17,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,8dd9fc1d-102e-44c7-ae67-baad35af4e5c
+2026-06-16 20:36:55,2026-06-18,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,87c056a3-f1f4-4840-8e64-022703c9b14a
+2026-06-17 12:56:19,2026-06-18,35286.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,403af890-924d-4db4-8bc0-faf854b2a0b6
+2026-06-18 12:14:35,2026-06-18,29403.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,74ef988d-b27c-4155-9ad9-4abe364171a9
+2026-06-17 19:33:10,2026-06-18,53773.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,fb68a02d-2c1b-4745-92eb-5c1e030bbaf0
+2026-06-17 21:54:46,2026-06-18,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2d08b000-d251-484a-a9df-41c9b82a4736
+2026-06-17 15:00:36,2026-06-18,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,94a86717-736e-4cdf-81d9-0acb9ebb440f
+2026-06-17 13:32:29,2026-06-19,49571.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2817d0e9-710d-487c-807e-9bef00a02fe0
+2026-06-19 12:11:28,2026-06-20,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,11b14077-5ec3-4480-94f1-148697520f16
+2026-06-18 16:09:35,2026-06-20,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,d071c32f-bacd-492b-9447-ffd6299f06a4
+2026-06-18 17:39:20,2026-06-20,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,f92a88ea-6974-411a-8333-c6462dc6f762
+2026-06-21 20:40:38,2026-06-22,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,6e9f8e22-6d97-413f-a706-e736cc5e53ff
+2026-06-21 16:37:16,2026-06-22,49571.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,3eb27615-6ce3-4373-98a0-9e7e37e8cf0b
+2026-06-21 04:19:02,2026-06-22,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,36924907-48bf-461a-a1b6-003f27062d33
+2026-06-20 20:48:55,2026-06-22,42008.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,d12fe668-bfa1-4679-b89b-1702e3912a88
+2026-06-20 19:59:09,2026-06-22,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,381bfc86-314e-49cb-a51a-8b9050d5556c
+2026-06-20 19:30:54,2026-06-22,32765.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2e8ad7f2-cda2-4402-9323-971003e50932
+2026-06-21 16:20:12,2026-06-22,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,f4a36225-4470-4c3c-b2d7-4c36b035fbbe
+2026-06-20 21:40:44,2026-06-22,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,4aa84b00-78ff-4843-9eaf-ee05a7d73014
+2026-06-21 13:29:17,2026-06-23,49571.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,542160b2-24e5-4599-b7de-40ad90c05f52
+2026-06-20 00:59:32,2026-06-23,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,af2b8c2e-edc9-4edf-add9-6f5ef823ebcf
+2026-06-21 10:09:04,2026-06-23,21000.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,792146f1-e3ae-4dfd-952a-67f52082af81
+2026-06-20 07:19:03,2026-06-23,41168.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,17751f03-fdc9-49a9-bb9a-9db8ac7d82c2
+2026-06-02 22:35:46,2026-06-23,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,e2da092e-12ca-46b2-8bc9-514f1467fb25
+2026-06-22 20:48:19,2026-06-23,23521.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,640e3f23-846c-4f41-a1de-a6a32e76bebc
+2026-06-22 20:54:05,2026-06-23,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,b8250ca2-e7e3-4e9f-b113-db28705f43a2
+2026-06-23 12:06:57,2026-06-23,43689.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ab0b6ca7-82a0-4070-b3b3-62bb42df88af
+2026-06-23 07:34:52,2026-06-23,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,73a555c6-c22b-4f6c-8a5f-685d52bd7e13
+2026-06-23 19:33:49,2026-06-24,29403.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,57c4f217-2dc0-4036-bf32-e2fbfb5be080
+2026-06-23 19:38:14,2026-06-24,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,d3514be6-b091-44e9-ac83-73f5448695e3
+2026-06-23 23:38:24,2026-06-24,53773.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,3e5581ef-310b-4f56-aa72-8a212568d287
+2026-06-24 11:19:53,2026-06-24,20160.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,d790d373-1798-4908-addc-b1d032af40d8
+2026-06-24 09:43:21,2026-06-24,20160.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,947f5070-a816-4554-98b1-a0650a863445
+2026-06-24 01:11:42,2026-06-24,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,20869228-04ae-4b35-859f-03d3d43e018e
+2026-06-22 20:52:53,2026-06-25,49571.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ef8115f8-da2f-4f5a-bc90-57986de2d432
+2026-06-23 16:17:25,2026-06-25,21840.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,c4c2d242-45de-45f9-85fa-81e60095ebc4
+2026-06-25 11:18:41,2026-06-25,47050.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,426f99e4-a9aa-453e-9f03-cac15c2ef903
+2026-06-24 15:39:18,2026-06-25,53773.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,5505e7c6-c0d2-49e4-8721-10758211ce9e
+2026-06-25 09:19:46,2026-06-25,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,63f16799-b862-4687-b07c-58104c9bb0a3
+2026-06-24 13:36:05,2026-06-25,23521.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,c9216995-e395-4b50-b03e-9b4a0e01398c
+2026-06-25 11:27:49,2026-06-26,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,ef4a9bb4-5f67-4392-84af-bcc83e3c6834
+2026-06-24 14:21:20,2026-06-26,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,5292490b-1562-408f-b767-bbeac7eef359
+2026-06-24 16:09:33,2026-06-26,36966.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,a8ac73a7-8142-47c4-ad7e-1283fde2c3d0
+2026-06-25 23:28:37,2026-06-26,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,2c45113d-e7d9-4f25-a905-b7623d5b553c
+2026-06-26 06:09:41,2026-06-26,19319.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,bb59a7f3-281a-4e81-8cbd-8a49cb03b283
+2026-06-26 00:26:13,2026-06-26,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,be14f4ae-dada-4d85-9a50-602866b996d1
+2026-06-25 21:13:10,2026-06-26,50412.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,c14ae265-19a0-473e-a395-45d620466543
+2026-06-25 21:08:24,2026-06-27,27555.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,4d7205db-68cf-4729-8d00-8eaa516535fe
+2026-06-25 22:38:59,2026-06-27,40328.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,874c2931-a338-47f4-a24f-9649a6c945f2
+2026-06-25 21:57:35,2026-06-27,20160.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,39f797e8-9541-4481-9746-64d2d7e1d8f7
+2026-06-25 20:43:24,2026-06-27,50412.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,218d5567-95f3-425f-91ec-b57720a7b07a
+2026-06-25 22:29:41,2026-06-27,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,68cfb3a3-77ee-48e4-88d5-5953212a24f8
+2026-06-25 21:33:33,2026-06-30,27555.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,31337504-eeec-4479-9d37-f9751763b32a
+2026-06-30 10:46:58,2026-06-30,20160.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,f821d309-cbb8-40de-94a7-5a074a6ce2f4
+2026-06-26 14:28:40,2026-06-30,23521.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,aeb11563-7f68-434c-be96-a0bbb25c7200
+2026-06-26 22:26:09,2026-06-30,50412.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,56dbde3e-74e9-4724-ba42-f715cf081ea4
+2026-06-29 22:45:19,2026-06-30,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,934f81fe-2c34-4342-adbb-d3cde5ee3959
+2026-06-27 18:54:23,2026-06-30,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,9a515d9b-ee66-480e-b636-dcb4042a3598
+2026-06-28 01:30:57,2026-06-30,20160.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,9fc6ed63-bec4-4521-b9bc-8419975d24bd
+2026-06-30 03:28:28,2026-06-30,50412.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,c8781347-6faa-4095-8839-a78b5801070d
+2026-06-27 14:56:50,2026-06-30,52933.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,525217e3-63ce-4837-8158-3c32c8070bbd
+2026-06-29 15:02:37,2026-06-30,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,9fb44696-7c24-438f-86e5-b0b89c3e7694
+2026-06-29 14:35:46,2026-06-30,30244.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,0f02b63a-7233-4978-b036-3dbfe92887e7
+2026-06-29 16:28:19,2026-06-30,46210.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,032c9e21-c6da-4f5f-89a7-5c20eb0b56f4
+2026-06-29 18:56:13,2026-06-30,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,70ae8a75-e616-4d7f-88f7-82118a2cee98
+2026-06-27 08:44:32,2026-06-30,47891.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,d003e81c-a454-4a8f-8d34-8fef78830f5e
+2026-06-29 11:26:34,2026-06-30,46210.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,d0213f90-831a-45fd-8ad9-b4622daa808e
+2026-06-29 16:42:21,2026-06-30,55454.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,7cc5c25e-fd27-4053-86bb-e4b9161a8f77
+2026-06-27 22:49:30,2026-06-30,37807.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,c38d411f-f33d-4f7e-8a5a-1e14f259f564
+2026-06-28 18:24:53,2026-06-30,50412.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,8413a7f7-3fe9-437e-bbe2-64eaf82ff8c3
+2026-06-29 14:08:42,2026-06-30,25202.0,01_Raw\FALABELLA\Órdenes y Transacciones\1  junio   2026 - 30  junio   2026.xlsx,306f1595-da62-4081-9298-a60c049c671d

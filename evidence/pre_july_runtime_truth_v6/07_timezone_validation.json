@@ -1,0 +1,13 @@
+{
+  "UNINTENDED_TIMEZONE_PERIOD_SHIFTS": 0,
+  "checks": [
+    {
+      "type": "UTC->local conversion",
+      "found": 0
+    },
+    {
+      "type": "datetime truncation month shift",
+      "found": 0
+    }
+  ]
+}

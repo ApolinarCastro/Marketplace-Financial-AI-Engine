@@ -1,0 +1,4 @@
+{
+  "test": "after processing future 2026-07 => latest_available 2026-07 latest_processed 2026-07 pending 0 data_stale false",
+  "result": true
+}

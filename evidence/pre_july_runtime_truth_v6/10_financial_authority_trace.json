@@ -1,0 +1,31 @@
+{
+  "authorities": {
+    "FinancialTruthEngine": "engine.v4.domain.financial_engine.FinancialEngine.query_ledger + marketplace_ledger_v1 (authoritative)",
+    "financial_structure": {
+      "handler": "api.api.get_financial_structure",
+      "service": "FinancialEngine via ledger",
+      "table": "marketplace_ledger_v1",
+      "query": "fecha BETWEEN ? AND ? + op_filters"
+    },
+    "exec_summary": {
+      "handler": "api.api.get_exec_summary",
+      "service": "ledger direct with get_operational_filters",
+      "table": "marketplace_ledger_v1"
+    },
+    "cierre_desglose": {
+      "handler": "api.api.get_marketplace_cierre_desglose",
+      "table": "marketplace_ledger_v1",
+      "note": "now uses ledger not clasificado"
+    },
+    "OPERATIONAL_PNL": {
+      "handler": "engine.v4.certification.certification_engine.CertificationEngine._certify_operational_pnl",
+      "table": "marketplace_ledger_clasificado_v1 (now synced to ledger via propagation)"
+    },
+    "RECONCILIATION": {
+      "handler": "engine.v4.reconciliation.reconciliation_engine.ReconciliationEngine.validate_marketplace_consistency",
+      "scope": "ledger vs cierre"
+    }
+  },
+  "FIRST_DIVERGENCE_previous": "Falabella April gross /app 2,841,414 vs OPERATIONAL_PNL 0 due to cierre missing monthly rows (partial periods 03-14,05-02,06-01-05) and financial_group not propagated; ledger vs cierre delta not 0",
+  "current_status": "FIXED: cierre now monthly calendar months, ledger and cierre ingresos delta 0 for all 4 periods"
+}
