@@ -75,6 +75,7 @@ tmp/
 temp/
 scratch/
 *.tmp
+.loopx/
 
 # ── OS & Editor ─────────────────────────────────────────────────────
 .DS_Store
