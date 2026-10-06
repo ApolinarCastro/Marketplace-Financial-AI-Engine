@@ -1,0 +1,42 @@
+{
+  "dataset_id": "XML_DTE_E2E",
+  "source_type": "SYNTHETIC",
+  "xml_fixture": "PFO_SYNTH_DTE_90000001.xml",
+  "xml_expected_fields": {
+    "folio": "90000001",
+    "tipo_dte": "33",
+    "monto_neto": 4789.0,
+    "monto_iva": 911.0,
+    "monto_total": 5700.0,
+    "fecha_emision": "2026-06-02",
+    "emisor_rut": "76000000-0",
+    "emisor_nombre": "PFO SYNTHETIC"
+  },
+  "dte_truth_expected": {
+    "folio": "90000001",
+    "monto_total": 5700.0,
+    "marketplace": "ML",
+    "tipo_dte": "33"
+  },
+  "ledger_link": {
+    "target_tipo_movimiento": "EGRESO_COMISION",
+    "target_abs_amount": 5700.0,
+    "folio_xml": "033-90000001",
+    "normalized_folio": "90000001"
+  },
+  "match_expected": {
+    "match_rule": "DIRECT_MATCH",
+    "match_status": "MATCHED_CERTIFIED",
+    "delta": 0.0,
+    "tolerance_clp": 1.0
+  },
+  "negative_control": {
+    "xml_fixture": "PFO_SYNTH_DTE_90000002_NEG.xml",
+    "folio": "90000002",
+    "monto_total": 5702.0,
+    "delta_vs_5700": 2.0,
+    "expected_status": "AMOUNT_MISMATCH",
+    "must_not_certify": true
+  },
+  "electronic_certification": "NOT_TESTED (out of scope until traceability passes)"
+}

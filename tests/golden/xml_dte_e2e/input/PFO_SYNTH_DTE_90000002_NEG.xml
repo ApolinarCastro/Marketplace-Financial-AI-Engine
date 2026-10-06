@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+  <Documento ID="PFO-SYNTH-90000002">
+    <Encabezado>
+      <IdDoc>
+        <TipoDTE>33</TipoDTE>
+        <Folio>90000002</Folio>
+        <FchEmis>2026-06-03</FchEmis>
+      </IdDoc>
+      <Emisor>
+        <RUTEmisor>76000000-0</RUTEmisor>
+        <RznSoc>PFO SYNTHETIC</RznSoc>
+      </Emisor>
+      <Totales>
+        <MntNeto>4791</MntNeto>
+        <IVA>911</IVA>
+        <MntTotal>5702</MntTotal>
+      </Totales>
+    </Encabezado>
+  </Documento>
+</DTE>
