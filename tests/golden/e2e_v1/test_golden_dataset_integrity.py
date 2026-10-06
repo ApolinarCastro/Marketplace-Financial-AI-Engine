@@ -69,7 +69,12 @@ class TestGoldenDatasetIntegrity:
         assert abs(total - 20800.0) < 0.01, f"Ledger total mismatch: {total} != 20800.0"
 
     def test_expected_reconciliation_structure(self):
-        """Validate expected_reconciliation.csv has 5 levels all CERTIFICADO."""
+        """Validate expected_reconciliation.csv: 5 levels, PENDIENTE (no DTE/XML).
+
+        Per engine/v4/reconciliation/reconciliation_engine.py _determine_status():
+        document_coverage (0.0) < 10  =>  PENDIENTE (CERTIFICADO requires >= 95).
+        LEVEL_4 delta = 100.0 - coverage = 100.0 (engine line 578).
+        """
         recon_path = EXPECTED_DIR / "expected_reconciliation.csv"
         with open(recon_path, newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
@@ -79,10 +84,45 @@ class TestGoldenDatasetIntegrity:
 
         for row in rows:
             assert row["marketplace"] == "ML"
-            assert row["status"] == "CERTIFICADO", f"Non-CERTIFICADO status: {row}"
-            assert float(row["delta"]) == 0.0, f"Non-zero delta: {row}"
+            # No DTE/XML in E2E_V1 => document_coverage must be 0.0
+            assert float(row["document_coverage"]) == 0.0, (
+                f"document_coverage must be 0.0 (no DTE/XML in dataset): {row}"
+            )
+            # Per _determine_status: doc 0 < 10 => PENDIENTE, never CERTIFICADO
+            assert row["status"] == "PENDIENTE", (
+                f"status must be PENDIENTE without document evidence: {row}"
+            )
             assert float(row["taxonomy_coverage"]) == 100.0
-            assert float(row["document_coverage"]) == 100.0
+
+        # Per-level delta validation derived from engine rules
+        by_level = {row["level"]: row for row in rows}
+        # Financial internal-consistency levels: delta 0 (ledger sums to itself)
+        for lvl in ("LEVEL_1", "LEVEL_2", "LEVEL_3", "LEVEL_5"):
+            assert float(by_level[lvl]["delta"]) == 0.0, f"{lvl} delta must be 0.0"
+        # Documentary level: delta = 100 - coverage = 100.0 (engine line 578)
+        assert float(by_level["LEVEL_4"]["delta"]) == 100.0
+        assert float(by_level["LEVEL_4"]["impact_amount"]) == 8.0
+        assert int(by_level["LEVEL_4"]["record_count"]) == 8
+
+    def test_readme_reconciliation_consistency(self):
+        """README document-coverage claim must match expected_reconciliation.csv."""
+        readme_path = GOLDEN_DIR / "README.md"
+        readme_text = readme_path.read_text(encoding="utf-8")
+
+        # README must state 0% document coverage (no DTE/XML)
+        assert "document coverage will be 0%" in readme_text, (
+            "README must document 0% document coverage"
+        )
+
+        # CSV must agree: every row document_coverage == 0.0
+        recon_path = EXPECTED_DIR / "expected_reconciliation.csv"
+        with open(recon_path, newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                assert float(row["document_coverage"]) == 0.0
+                assert row["status"] != "CERTIFICADO", (
+                    "CSV status must never be CERTIFICADO without document evidence"
+                )
 
     def test_expected_summary_structure(self):
         """Validate expected_summary.json has required fields and consistent values."""

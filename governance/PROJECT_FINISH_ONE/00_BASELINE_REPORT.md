@@ -61,8 +61,10 @@ MARKETPLACE: ML
 STRUCTURE: tests/golden/e2e_v1/ with input/ and expected/
 INPUT_FILES: 1 (ML_Facturacion_E2E_V1.xlsx)
 EXPECTED_FILES: 3 (expected_ledger.csv, expected_reconciliation.csv, expected_summary.json)
-INTEGRITY_TESTS: 10/10 PASS
+INTEGRITY_TESTS: 11/11 PASS
 SECURITY_GATE: PASS (no production paths, no sensitive data)
+RECONCILIATION_EXPECTATION: 5 levels PENDIENTE (document_coverage=0.0, no DTE/XML)
+KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 ```
 
 ## FA Status
@@ -80,11 +82,10 @@ SECURITY_GATE: PASS (no production paths, no sensitive data)
 ## First Blocker
 
 ```
-FIRST_BLOCKER_ID: FA-003
-FIRST_BLOCKER_PHASE: 1.9 — DATASET IMPORT
-FIRST_BLOCKER_COMMAND: N/A
-FIRST_BLOCKER_ERROR: Golden Dataset lacks input/expected structure
-FIRST_BLOCKER_EVIDENCE: tests/golden/ contains 47 JSON files with endpoint outputs, not E2E input/output pairs
+FIRST_BLOCKER_ID: NONE (FA-003 unblocked by E2E_V1 dataset creation)
+PREVIOUS_BLOCKER: FA-003 (RESOLVED — Golden Dataset E2E_V1 now exists with input/expected structure)
+KNOWN_NEXT_BLOCKER: FA-005 — Golden Dataset lacks required DTE/XML document evidence for CERTIFICADO
+  (Not active until FA-003 and FA-004 execute successfully)
 ```
 
 ## Commands Executed
@@ -109,9 +110,10 @@ python -m pytest tests/golden/e2e_v1/test_golden_dataset_integrity.py -v
 - DB verified read-only: 39 tables, 4 core tables with 601,559 ledger rows
 - Golden Dataset E2E_V1: tests/golden/e2e_v1/ with input/expected structure
   - Input: ML_Facturacion_E2E_V1.xlsx (5 rows, synthetic ML Facturacion)
-  - Expected: 8 ledger rows, 5 reconciliation levels, net 20800.0
-  - Integrity tests: 10/10 PASS
+  - Expected: 8 ledger rows (net 20800.0), 5 reconciliation levels PENDIENTE (doc_coverage=0.0)
+  - Integrity tests: 11/11 PASS (incl. README↔CSV consistency check)
   - Security gate: PASS (no production paths, no sensitive data)
+  - Reconciliation corrected per _determine_status(): doc 0 < 10 => PENDIENTE
 - Architecture: FastAPI backend, DuckDB storage, server-side templates
 - FA-001: START_APP.bat executed → uvicorn on port 3001 → HTTP 200 on /app (88,952 bytes) and /api/v4/health (status READY)
 
@@ -128,4 +130,4 @@ Execute FA-003 (DATASET IMPORT) using the Golden Dataset E2E_V1:
 1. Copy `tests/golden/e2e_v1/input/ML_Facturacion_E2E_V1.xlsx` to `01_Raw/ML/Facturacion/`
 2. Run ingestion pipeline via `engine/v4/ingestion/orchestrator.py`
 3. Validate ledger output matches `expected_ledger.csv` (8 rows, total 20800.0)
-4. Run reconciliation and validate matches `expected_reconciliation.csv` (5 levels CERTIFICADO)
+4. Run reconciliation and validate matches `expected_reconciliation.csv` (5 levels PENDIENTE, doc_coverage=0.0)
