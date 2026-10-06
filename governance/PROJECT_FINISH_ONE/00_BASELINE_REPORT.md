@@ -126,6 +126,7 @@ python tmp_fa003_run.py (isolated FA-003 execution, TEMP_DB only)
 - FA-004: R0 FAIL on ids (__ vs _) → golden repaired → R1 FAIL on financial_group NULL + mojibake (RCA: GOLDEN_OVER_SPECIFICATION + SOURCE_LITERAL_CORRUPTION) → 2 literals + golden scope repaired → R2 PASS (8/8, 20800.0, 0 mismatches, U+00F3 parity); NO financial-logic modification; regression: golden 11/11 + f4_traceability 22 passed
 - FA-005: engine executed correctly (5/5 levels present, taxonomy 100%, doc_cov 0.0 match, L4 delta 100 match) → FAIL on 15 fields (baseline cierre pollution L1/L2, treasury mirror L3, status vocabulary ALERTA/BROKEN vs PENDIENTE, 2 mapping artifacts); engine behavior deterministic and correct; golden re-scope required; NO engine modification
 - FA-005 full-chain design (E2E_V2): BLOCKED — treasury path PROVEN (Retiro de dinero → tesoreria, mirror -20800 derived), document path MISSING (no writer component/fixture/test for document_match_v1; DTE chain requires real SII; fresh DB lacks the table); E2E_V2 NOT built, E2E_V1 preserved; NO expectation degradation
+- Document-match infrastructure: RESOLVED — fresh DatabaseV4 creates document_match_v1 (15/15 cols, empty, compatible); DocumentMatchWriter persists validated matches deterministically (idempotent, validated, tested 10/10); reconciliation coverage consumption proven 100.0; regression golden 11/11 + ingestion 46/46; NO engine-rule changes
 
 ## Final Status
 
@@ -141,3 +142,7 @@ Re-scope golden reconciliation expectations to the engine real output contract
 and use fresh empty TEMP_DB, or (b) redefine expected levels in engine
 vocabulary (PASS/ALERTA per level + aggregate status via _determine_status).
 Then re-execute FA-005. No engine modification required.
+
+Document-match infrastructure RESOLVED (writer + fresh-DB DDL tested):
+resume E2E_V2 full-chain construction using DocumentMatchWriter for
+synthetic CONCILIATED matches on fresh TEMP_DB.

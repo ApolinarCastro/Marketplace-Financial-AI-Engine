@@ -164,6 +164,10 @@ class DatabaseV4:
             
             # Files Registry
             "CREATE TABLE IF NOT EXISTS file_registry (file_hash TEXT PRIMARY KEY, file_name TEXT, source TEXT, rows_processed INTEGER, processed_at TIMESTAMP DEFAULT current_timestamp)",
+
+            # Document Match Registry (reconciliation Level 4 + coverage helpers read this;
+            # populated by DocumentMatchWriter with validated, non-financial match records)
+            "CREATE TABLE IF NOT EXISTS document_match_v1 (match_id VARCHAR, marketplace VARCHAR, ledger_id VARCHAR, order_id VARCHAR, folio_xml VARCHAR, tipo_dte VARCHAR, match_rule VARCHAR, match_source VARCHAR, match_timestamp TIMESTAMP, match_status VARCHAR, document_date DATE, document_amount DOUBLE, reference_document VARCHAR, created_by VARCHAR, execution_id VARCHAR)",
  
             # Views for Dashboard
             """
