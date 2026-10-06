@@ -75,20 +75,22 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 | FA-002 | PASS | DB opens read-only, core tables verified |
 | FA-003 | PASS | Isolated ingestion COMPLETED: 8 read, 8 new, 0 errors, TEMP_DB only, no contamination |
 | FA-004 | PASS (R2) | 8/8 rows, 20800.0=20800.0, 0 missing/0 unexpected/0 mismatches, REVCOMM U+00F3 parity, movement delta 0 |
-| FA-005 | BLOCKED | Depends on FA-004 |
-| FA-006 | BLOCKED | Depends on FA-005 |
+| FA-005 | FAIL | Engine executed correctly (5/5 levels, doc_cov 0.0 match); 15 field mismatches: baseline cierre pollution (L1/L2), treasury mirror gap (L3), status vocabulary ALERTA/BROKEN vs PENDIENTE, 2 mapping artifacts |
+| FA-006 | BLOCKED | Depends on FA-005 PASS |
 | FA-007 | BLOCKED | Depends on FA-006 |
 
 ## First Blocker
 
 ```
-FIRST_BLOCKER_ID: NONE (FA-004 R2 PASS — row-by-row parity proven)
+FIRST_BLOCKER_ID: FA-005
+FIRST_BLOCKER_PHASE: FA-005 reconciliation parity
+FIRST_BLOCKER_ERROR: 15 field mismatches despite correct engine execution; golden simplified contract vs engine real contract gap
+FIRST_BLOCKER_EVIDENCE: governance/PROJECT_FINISH_ONE/05_FA005_RECONCILIATION_EVIDENCE.md + 05_FA005_RECONCILIATION_COMPARISON.json
 PREVIOUS_BLOCKERS_RESOLVED:
   - FA-003 (isolated ingestion COMPLETED)
   - FA-004 R0 ids (golden repaired, R1 confirmed match)
   - FA-004 R1 financial_group + mojibake (RCA demonstrated; golden scope + 2 literals repaired; R2 parity TRUE)
-KNOWN_NEXT_BLOCKER: FA-005 — Golden Dataset lacks required DTE/XML document evidence for CERTIFICADO
-  (Not active until FA-005 executes; E2E_V1 expects PENDIENTE/doc_coverage=0)
+  - FA-005 golden-vs-engine contract gap documented (engine correct; re-scope required)
 ```
 
 ## Commands Executed
@@ -122,6 +124,7 @@ python tmp_fa003_run.py (isolated FA-003 execution, TEMP_DB only)
 - FA-001: START_APP.bat executed → uvicorn on port 3001 → HTTP 200 on /app (88,952 bytes) and /api/v4/health (status READY)
 - FA-003: isolated ingestion via f3_03 pattern → COMPLETED, exec cb8ee20a, 8 read / 8 new / 0 errors, ledger 8 rows total 20800.0, production DB + real RAW untouched, TEMP_DIR removed
 - FA-004: R0 FAIL on ids (__ vs _) → golden repaired → R1 FAIL on financial_group NULL + mojibake (RCA: GOLDEN_OVER_SPECIFICATION + SOURCE_LITERAL_CORRUPTION) → 2 literals + golden scope repaired → R2 PASS (8/8, 20800.0, 0 mismatches, U+00F3 parity); NO financial-logic modification; regression: golden 11/11 + f4_traceability 22 passed
+- FA-005: engine executed correctly (5/5 levels present, taxonomy 100%, doc_cov 0.0 match, L4 delta 100 match) → FAIL on 15 fields (baseline cierre pollution L1/L2, treasury mirror L3, status vocabulary ALERTA/BROKEN vs PENDIENTE, 2 mapping artifacts); engine behavior deterministic and correct; golden re-scope required; NO engine modification
 
 ## Final Status
 
@@ -132,6 +135,8 @@ E2E_STATUS: BLOCKED
 
 ## Next Exact Action
 
-Execute FA-005 reconciliation against E2E_V1 (expects 5 levels PENDIENTE,
-document_coverage=0.0 per corrected golden — the documented known limitation,
-not a failure).
+Re-scope golden reconciliation expectations to the engine real output contract
+(dedicated task): either (a) expand E2E_V1 with treasury/settlement + DTE data
+and use fresh empty TEMP_DB, or (b) redefine expected levels in engine
+vocabulary (PASS/ALERTA per level + aggregate status via _determine_status).
+Then re-execute FA-005. No engine modification required.

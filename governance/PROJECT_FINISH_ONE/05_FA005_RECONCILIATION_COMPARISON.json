@@ -1,0 +1,322 @@
+{
+  "task_id": "PFO-FA005-RECONCILIATION-001",
+  "dataset_id": "E2E_V1",
+  "head": "a6ecc119f03a2cf9c756e1e85f7072eed2383db8",
+  "source_db": "data\\db\\baseline_estable_v8_candidate_20260717\\meli_financial_v4.db",
+  "source_db_sha256_before": "733c759f8ea179d8bcadf4897d8a2998826acab693171636f04ae0653c236e00",
+  "ingestion_status": "COMPLETED",
+  "records_new": 8,
+  "ingestion_errors": [],
+  "ledger_precondition_rows": 8,
+  "ledger_precondition_total": 20800.0,
+  "classification_required": "YES",
+  "classification_component": "MarketplaceAuditorEngine.run_classification_for_transaction x8 (scoped to E2E_V1 ids only; baseline rows untouched)",
+  "classification_result": "PASS (8 E2E_V1 rows in clasificado_v1, 8 with financial_group)",
+  "closing_component": "MarketplaceAuditorEngine.run_financial_closing(ML, 2026-06-01, 2026-06-30) — derives cierre from clasificado_v1",
+  "closing_result": {
+    "neto": 20800.0,
+    "ingresos": 80000.0,
+    "devoluciones": -50000.0,
+    "costos_op": -1500.0,
+    "costos_com": -7700.0,
+    "ajustes": 0.0
+  },
+  "document_match_rows_for_e2e": 0,
+  "reconciliation_command": "ReconciliationEngine(db=TEMP_DB).validate_marketplace_consistency('ML', '2026-06')",
+  "reconciliation_executed": true,
+  "engine_period": "Jun 2026",
+  "engine_certification_status": "FINANCIAL_INTEGRITY_BROKEN",
+  "engine_delta": 54944885.22,
+  "engine_taxonomy_coverage": 100.0,
+  "engine_document_coverage": 0.0,
+  "engine_total_records": 8,
+  "engine_levels": {
+    "INTERNA": {
+      "status": "ALERTA",
+      "delta": 24537650.0,
+      "source_total": 20800.0,
+      "target_total": 30407235.22,
+      "alerts": 3
+    },
+    "OPERACIONAL": {
+      "status": "ALERTA",
+      "delta": 30386435.22,
+      "source_total": 20800.0,
+      "target_total": 30407235.22,
+      "alerts": 1
+    },
+    "TESORERÍA": {
+      "status": "ALERTA",
+      "delta": 20800.0,
+      "source_total": 0.0,
+      "target_total": -20800.0,
+      "alerts": 1
+    },
+    "DOCUMENTAL": {
+      "status": "ALERTA",
+      "delta": 100.0,
+      "source_total": 0.0,
+      "target_total": 8.0,
+      "alerts": 1
+    }
+  },
+  "actual_mapped_rows": [
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_1",
+      "rule": "ledger_vs_clasificado_delta",
+      "delta": 24537650.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 0.0,
+      "status": "ALERTA",
+      "impact_amount": 24537650.0,
+      "record_count": 8
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_2",
+      "rule": "operational_pnl_vs_ledger",
+      "delta": 30386435.22,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 0.0,
+      "status": "ALERTA",
+      "impact_amount": 30386435.22,
+      "record_count": 8
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_3",
+      "rule": "treasury_vs_ledger",
+      "delta": 20800.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 0.0,
+      "status": "ALERTA",
+      "impact_amount": 20800.0,
+      "record_count": 8
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_4",
+      "rule": "cash_vs_pnl",
+      "delta": 100.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 0.0,
+      "status": "ALERTA",
+      "impact_amount": 100.0,
+      "record_count": 8
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_5",
+      "rule": "full_chain",
+      "delta": 54944885.22,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 0.0,
+      "status": "FINANCIAL_INTEGRITY_BROKEN",
+      "impact_amount": 54944885.22,
+      "record_count": 8
+    }
+  ],
+  "expected_rows": [
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_1",
+      "rule": "ledger_vs_clasificado_delta",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 0.0,
+      "status": "PENDIENTE",
+      "impact_amount": 0.0,
+      "record_count": 8
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_2",
+      "rule": "operational_pnl_vs_ledger",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 0.0,
+      "status": "PENDIENTE",
+      "impact_amount": 0.0,
+      "record_count": 8
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_3",
+      "rule": "treasury_vs_ledger",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 0.0,
+      "status": "PENDIENTE",
+      "impact_amount": 0.0,
+      "record_count": 0
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_4",
+      "rule": "cash_vs_pnl",
+      "delta": 100.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 0.0,
+      "status": "PENDIENTE",
+      "impact_amount": 8.0,
+      "record_count": 8
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_5",
+      "rule": "full_chain",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 0.0,
+      "status": "PENDIENTE",
+      "impact_amount": 0.0,
+      "record_count": 8
+    }
+  ],
+  "expected_levels": 5,
+  "actual_levels": 5,
+  "missing_levels": [],
+  "unexpected_levels": [],
+  "field_mismatches": [
+    {
+      "level": "LEVEL_1",
+      "field": "delta",
+      "expected": 0.0,
+      "actual": 24537650.0
+    },
+    {
+      "level": "LEVEL_1",
+      "field": "status",
+      "expected": "PENDIENTE",
+      "actual": "ALERTA"
+    },
+    {
+      "level": "LEVEL_1",
+      "field": "impact_amount",
+      "expected": 0.0,
+      "actual": 24537650.0
+    },
+    {
+      "level": "LEVEL_2",
+      "field": "delta",
+      "expected": 0.0,
+      "actual": 30386435.22
+    },
+    {
+      "level": "LEVEL_2",
+      "field": "status",
+      "expected": "PENDIENTE",
+      "actual": "ALERTA"
+    },
+    {
+      "level": "LEVEL_2",
+      "field": "impact_amount",
+      "expected": 0.0,
+      "actual": 30386435.22
+    },
+    {
+      "level": "LEVEL_3",
+      "field": "delta",
+      "expected": 0.0,
+      "actual": 20800.0
+    },
+    {
+      "level": "LEVEL_3",
+      "field": "status",
+      "expected": "PENDIENTE",
+      "actual": "ALERTA"
+    },
+    {
+      "level": "LEVEL_3",
+      "field": "impact_amount",
+      "expected": 0.0,
+      "actual": 20800.0
+    },
+    {
+      "level": "LEVEL_3",
+      "field": "record_count",
+      "expected": 0,
+      "actual": 8
+    },
+    {
+      "level": "LEVEL_4",
+      "field": "status",
+      "expected": "PENDIENTE",
+      "actual": "ALERTA"
+    },
+    {
+      "level": "LEVEL_4",
+      "field": "impact_amount",
+      "expected": 8.0,
+      "actual": 100.0
+    },
+    {
+      "level": "LEVEL_5",
+      "field": "delta",
+      "expected": 0.0,
+      "actual": 54944885.22
+    },
+    {
+      "level": "LEVEL_5",
+      "field": "status",
+      "expected": "PENDIENTE",
+      "actual": "FINANCIAL_INTEGRITY_BROKEN"
+    },
+    {
+      "level": "LEVEL_5",
+      "field": "impact_amount",
+      "expected": 0.0,
+      "actual": 54944885.22
+    }
+  ],
+  "row_by_row_equal": false,
+  "expected_document_coverage": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "actual_document_coverage": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "expected_statuses": [
+    "PENDIENTE"
+  ],
+  "actual_statuses": [
+    "ALERTA",
+    "FINANCIAL_INTEGRITY_BROKEN"
+  ],
+  "source_db_sha256_after": "733c759f8ea179d8bcadf4897d8a2998826acab693171636f04ae0653c236e00",
+  "production_db_modified": false,
+  "real_raw_modified": false,
+  "checks": {
+    "reconciliation_executed": true,
+    "levels_5_5": true,
+    "row_by_row_equal": false,
+    "missing_zero": true,
+    "unexpected_zero": true,
+    "mismatches_zero": false,
+    "expected_all_pendiente": true,
+    "actual_all_pendiente": false,
+    "doc_coverage_zero": true,
+    "production_db_unmodified": true,
+    "real_raw_unmodified": true
+  },
+  "fa005": "FAIL"
+}
