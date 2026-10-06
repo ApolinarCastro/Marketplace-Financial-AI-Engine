@@ -83,9 +83,8 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 
 ```
 FIRST_BLOCKER_ID: FA-005 (E2E_V2 execution)
-FIRST_BLOCKER_PHASE: fresh-DB ingestion
-FIRST_BLOCKER_ERROR: FRESH_DB_LEDGER_MISSING_EXECUTION_ID — init-order schema gap (ALTER line 116 runs before CREATE line 141 on fresh DB); Binder Error, 0 rows, clean failure
-FIRST_BLOCKER_EVIDENCE: governance/PROJECT_FINISH_ONE/09_FA005_E2E_V2_EVIDENCE.md + 09_FA005_E2E_V2_COMPARISON.json
+FIRST_BLOCKER_PHASE: fresh-DB ingestion — RESOLVED (execution_id DDL aligned; fresh ingestion proven)
+FIRST_BLOCKER_EVIDENCE: governance/PROJECT_FINISH_ONE/10_FRESH_DB_EXECUTION_ID_EVIDENCE.md
 PREVIOUS_BLOCKERS_RESOLVED:
   - FA-003 (isolated ingestion COMPLETED)
   - FA-004 R0 ids (golden repaired, R1 confirmed match)
@@ -126,6 +125,7 @@ python tmp_fa003_run.py (isolated FA-003 execution, TEMP_DB only)
 - FA-004: R0 FAIL on ids (__ vs _) → golden repaired → R1 FAIL on financial_group NULL + mojibake (RCA: GOLDEN_OVER_SPECIFICATION + SOURCE_LITERAL_CORRUPTION) → 2 literals + golden scope repaired → R2 PASS (8/8, 20800.0, 0 mismatches, U+00F3 parity); NO financial-logic modification; regression: golden 11/11 + f4_traceability 22 passed
 - FA-005: engine executed correctly (5/5 levels present, taxonomy 100%, doc_cov 0.0 match, L4 delta 100 match) → FAIL on 15 fields (baseline cierre pollution L1/L2, treasury mirror L3, status vocabulary ALERTA/BROKEN vs PENDIENTE, 2 mapping artifacts); engine behavior deterministic and correct; golden re-scope required; NO engine modification
 - FA-005 E2E_V2 attempt: golden BUILT (9-row ledger, treasury -20800, 9 matches, CERTIFICADO precomputed, integrity 8/8) → execution FAIL at ingestion on fresh DB: ledger_v1 DDL lacks execution_id (ALTER-before-CREATE init-order bug); 0 rows, clean failure; E2E_V1 preserved; NO engine modification per protocol
+- Fresh-DB execution_id repair: RESOLVED — execution_id TEXT added to canonical ledger_v1 DDL (nullable, legacy-compatible; hot migration preserved); fresh ingestion COMPLETED (8 new, execution_id propagated 8/8 = record id, total 20800.0); tests 3/3; regression golden 11/11 + docmatch/writer+ingestion 67 total; NO loader/auditor/reconciliation changes
 - FA-005 full-chain design (E2E_V2): BLOCKED — treasury path PROVEN (Retiro de dinero → tesoreria, mirror -20800 derived), document path MISSING (no writer component/fixture/test for document_match_v1; DTE chain requires real SII; fresh DB lacks the table); E2E_V2 NOT built, E2E_V1 preserved; NO expectation degradation
 - Document-match infrastructure: RESOLVED — fresh DatabaseV4 creates document_match_v1 (15/15 cols, empty, compatible); DocumentMatchWriter persists validated matches deterministically (idempotent, validated, tested 10/10); reconciliation coverage consumption proven 100.0; regression golden 11/11 + ingestion 46/46; NO engine-rule changes
 - Level 1 vs treasury scope conflict: RESOLVED — RCA demonstrated (L1 ALERTA on valid treasury + L3 PASS); closing proven op_pnl-only; ML exception removed → uniform op_filter; post-repair L1+L3 PASS, negative control ALERTA 5800; regression 2+6+21+1 green; NO formula/closing/golden changes
@@ -152,6 +152,6 @@ synthetic CONCILIATED matches on fresh TEMP_DB.
 Level 1 treasury conflict RESOLVED (uniform op_filter; post-repair L1+L3
 PASS; negative control green).
 Document-match infrastructure RESOLVED (writer + fresh-DB DDL tested).
-E2E_V2 golden BUILT (integrity 8/8); execution BLOCKED on fresh-DB
-execution_id schema defect (dedicated repair task required).
-NEXT: schema repair → re-execute E2E_V2 → then PFO-XML-DTE-E2E-001.
+E2E_V2 golden BUILT (integrity 8/8); fresh-DB execution_id RESOLVED
+(DDL aligned, fresh ingestion proven 8/8 with propagation).
+NEXT: re-execute E2E_V2 full chain → then PFO-XML-DTE-E2E-001.

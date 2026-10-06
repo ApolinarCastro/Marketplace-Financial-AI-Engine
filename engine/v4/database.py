@@ -138,7 +138,7 @@ class DatabaseV4:
             # ── Marketplace Financial Auditor v3.5 Layers ──
             
             # Layer 1: Source (marketplace_ledger_v1)
-            "CREATE TABLE IF NOT EXISTS marketplace_ledger_v1 (marketplace TEXT, id_transaccion TEXT, id_orden TEXT, fecha DATE, detalle TEXT, monto DOUBLE, tipo_movimiento TEXT, archivo_origen TEXT, folio_xml TEXT, estado_xml TEXT, clasificacion_operativa TEXT, include_in_operational_pnl BOOLEAN, financial_group TEXT, load_ts TIMESTAMP DEFAULT current_timestamp)",
+            "CREATE TABLE IF NOT EXISTS marketplace_ledger_v1 (marketplace TEXT, id_transaccion TEXT, id_orden TEXT, fecha DATE, detalle TEXT, monto DOUBLE, tipo_movimiento TEXT, archivo_origen TEXT, folio_xml TEXT, estado_xml TEXT, clasificacion_operativa TEXT, include_in_operational_pnl BOOLEAN, financial_group TEXT, execution_id TEXT, load_ts TIMESTAMP DEFAULT current_timestamp)",
             
             # Layer 2: Classification (marketplace_ledger_clasificado_v1)
             "CREATE TABLE IF NOT EXISTS marketplace_ledger_clasificado_v1 (marketplace TEXT, id_transaccion TEXT, id_orden TEXT, detalle TEXT, tipo_movimiento TEXT, monto DOUBLE, fecha DATE, clasificacion_operativa TEXT, confianza_clasificacion DOUBLE, origen_clasificacion TEXT, include_in_operational_pnl BOOLEAN, financial_group TEXT, financial_subgroup TEXT)",
