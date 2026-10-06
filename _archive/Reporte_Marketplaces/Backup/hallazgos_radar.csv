@@ -1,4 +1,0 @@
-Marketplace,Error
-París,"Columna TIPO no encontrada. Columnas: ['id', 'descripción', 'tipo', 'número orden', 'sku', 'monto', 'acuerdo comercial', 'comisión', 'monto a pagar', 'monto total factura', 'fecha', 'estado', 'estado del pago', 'nro solicitud pago', 'nro solicitud factura', 'número factura', 'link factura', 'fecha factura', 'categoria', 'nro suborden', 'nro solicitud nota crédito', 'número nota crédito', 'link nota crédito', 'seller sku', 'fecha de entrega', 'reputacion', 'Descuento Comercial', 'Tipo de Transporte']"
-Ripley,"Error tokenizing data. C error: Expected 1 fields in line 6, saw 2
-"

@@ -1,12 +1,12 @@
 {
   "name": "financial_structure_all",
   "arm": "current",
-  "median_duration_ms": 5.680199989001267,
+  "median_duration_ms": 3.5330999817233533,
   "median_memory_mb": 0.28518199920654297,
   "median_sql_count": 0.0,
-  "stddev_duration_ms": 1.295674236201729,
-  "stddev_memory_mb": 1.8697854512256575e-05,
+  "stddev_duration_ms": 0.6450941244256572,
+  "stddev_memory_mb": 0.0,
   "runs": 10,
   "success_rate": 1.0,
-  "timestamp": 1787860386.099561
+  "timestamp": 1791229047.2824202
 }

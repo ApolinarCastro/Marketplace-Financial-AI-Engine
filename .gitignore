@@ -1,37 +1,93 @@
-.venv/
-Lib/
-node_modules/
-src/frontend/node_modules/
-src/frontend/dist/
-__pycache__/
-**/__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.pytest_cache/
-tests/.tmp/
-scratch/
-*.duckdb
-*.db
-*.log
+# ── Secrets & Credentials ───────────────────────────────────────────
 .env
+.env.*
+!.env.example
+*.pem
 *.key
-secrets.*
-credentials.*
-config_local.*
+credentials
+tokens
+secrets
+passwords
+cookies
+sessions
+*.cookie
+*.session
 
-# Temporales
+# ── Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# ── Virtual Environments ────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+lib/
+Lib/
+site-packages/
+node_modules/
+
+# ── Raw Data & Financial Sources ────────────────────────────────────
+01_Raw/
+raw/
+backups/
+*.wal
+*.db-wal
+*.db-shm
+*.db-journal
+*.db.backup.*
+*.db.corrupt_snapshot
+*.db.pre_*
+*.bak
+
+# ── Production Databases ────────────────────────────────────────────
+data/db/*.db
+data/db/*.db.backup.*
+data/db/*.db.corrupt_snapshot
+data/db/*.db.pre_*
+data/db/*.db.wal
+data/db/*.db-shm
+data/db/*.db-journal
+data/db/snapshot_*/
+data/db/baseline_*/
+data/db/f5_*_uploads/
+data/db/f5_*_datasets/
+data/db/tmp_*/
+
+# ── Logs & Temp ─────────────────────────────────────────────────────
+*.log
+logs/
 tmp/
-temp_obscura/
-tmp_*.py
+temp/
+scratch/
+*.tmp
 
-# Codex & Antigravity
-opencode.json
-.agents/
+# ── OS & Editor ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
 
-# Artefactos
-graphify-out/
-
-# Loop Engineering Protocol V1 - mutable runtime control plane.
-# Spec (governance/) and schemas (engine/loop_control/) stay versioned.
-.loopx/
+# ── Large Generated Artifacts ───────────────────────────────────────
+*.parquet
+*.feather
+*.pkl
+*.pickle

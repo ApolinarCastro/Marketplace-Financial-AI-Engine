@@ -27,6 +27,7 @@ from engine.loop_control.constants import CONTINUATION_SCHEMA as CONTINUATION_SC
 from engine.loop_control.scope import scopes_overlap
 from engine.loop_control.state_store import StateStore
 from engine.loop_control.validation import validate
+from engine.loop_control.policy import MarketplaceProjectPolicy
 
 GOAL = "TEST-GOAL-001"
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -34,7 +35,8 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 @pytest.fixture()
 def kernel(tmp_path: Path) -> LoopKernel:
-    k = LoopKernel(root=tmp_path, repo_root=tmp_path)
+    policy = MarketplaceProjectPolicy(project_root=tmp_path)
+    k = LoopKernel(root=tmp_path, repo_root=tmp_path, project_policy=policy)
     k.initialize()
     return k
 
