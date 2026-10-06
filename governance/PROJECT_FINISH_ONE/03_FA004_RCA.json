@@ -1,0 +1,48 @@
+{
+  "task_id": "PFO-FA004-RCA-001",
+  "head": "580096dd4791a653b8bd0bcdeb86846d17cb5cd0",
+  "dataset_id": "E2E_V1",
+  "financial_group": {
+    "raw_ledger_contract": [
+      "marketplace",
+      "id_transaccion",
+      "id_orden",
+      "fecha",
+      "detalle",
+      "monto",
+      "tipo_movimiento",
+      "archivo_origen",
+      "folio_xml"
+    ],
+    "raw_ledger_has_financial_group": false,
+    "classified_ledger_has_financial_group": true,
+    "financial_group_owner": "MarketplaceAuditor (marketplace_auditor.py:591)",
+    "classification_stage": "separate from ingestion PERSIST; skipped with post_persist_stages=False",
+    "f3_03_compare_fields": [
+      "id_transaccion",
+      "id_orden",
+      "tipo_movimiento",
+      "monto",
+      "detalle"
+    ],
+    "scope_decision": "RAW_LEDGER_DOES_NOT_OWN_FINANCIAL_GROUP",
+    "root_cause": "GOLDEN_OVER_SPECIFICATION",
+    "engine_defect": false
+  },
+  "mojibake": {
+    "affected_lines": [72, 217],
+    "source_file_bytes": "Anulaci\\xc3\\x83\\xc2\\xb3n",
+    "source_codepoints": ["0x41", "0x6e", "0x75", "0x6c", "0x61", "0x63", "0x69", "0xc3", "0xb3", "0x6e"],
+    "correct_codepoints": ["0x41", "0x6e", "0x75", "0x6c", "0x61", "0x63", "0x69", "0xf3", "0x6e"],
+    "xlsx_input_codepoints": ["0x41", "0x6e", "0x75", "0x6c", "0x61", "0x63", "0x69", "0xf3", "0x6e"],
+    "calamine_read_codepoints": ["0x41", "0x6e", "0x75", "0x6c", "0x61", "0x63", "0x69", "0xf3", "0x6e"],
+    "direct_duckdb_utf8_roundtrip": "PASS",
+    "last_correct_stage": "LOADER_MATCHING",
+    "first_corrupted_stage": "SOURCE_LITERAL",
+    "root_cause": "SOURCE_LITERAL_CORRUPTION"
+  },
+  "engine_change_required": true,
+  "golden_change_required": true,
+  "fa004_status": "FAIL",
+  "fa005_status": "BLOCKED"
+}

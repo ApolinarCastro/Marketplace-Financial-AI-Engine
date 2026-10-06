@@ -122,6 +122,7 @@ python tmp_fa003_run.py (isolated FA-003 execution, TEMP_DB only)
 - FA-001: START_APP.bat executed → uvicorn on port 3001 → HTTP 200 on /app (88,952 bytes) and /api/v4/health (status READY)
 - FA-003: isolated ingestion via f3_03 pattern → COMPLETED, exec cb8ee20a, 8 read / 8 new / 0 errors, ledger 8 rows total 20800.0, production DB + real RAW untouched, TEMP_DIR removed
 - FA-004: R0 isolated re-ingestion COMPLETED → FAIL on id_transaccion separator only (__ vs _); R1 golden repaired → re-ingestion COMPLETED → FAIL on new classes (financial_group NULL in raw ledger + detalle mojibake); all financial values + movement subtotals exact in both runs; engine ID derivation verified correct; NO engine logic modified
+- RCA: BOTH root causes demonstrated — (A) GOLDEN_OVER_SPECIFICATION for financial_group (LEDGER_COLS excludes it, MarketplaceAuditor owns it, f3_03 precedent = 5 fields); (B) SOURCE_LITERAL_CORRUPTION for mojibake (file bytes C3 83 C2 B3, XLSX/calamine/DuckDB all correct, AST confirms); engine + golden repairs scoped as separate tasks
 
 ## Final Status
 
