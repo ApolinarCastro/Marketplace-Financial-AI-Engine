@@ -1,0 +1,26 @@
+{
+  "dataset_id": "E2E_V1",
+  "marketplace": "ML",
+  "period": "2026-06",
+  "source_type": "SYNTHETIC",
+  "input_files": [
+    "ML_Facturacion_E2E_V1.xlsx"
+  ],
+  "expected_ledger_rows": 8,
+  "expected_reconciliation_rows": 5,
+  "expected_gross_amount": 80000.0,
+  "expected_charges": 18700.0,
+  "expected_refunds": 50000.0,
+  "expected_commission_reversals": 9500.0,
+  "expected_net_result": 20800.0,
+  "expected_ledger_total": 20800.0,
+  "financial_breakdown": {
+    "ingresos_venta": 80000.0,
+    "egreso_comision": -15200.0,
+    "cargos_operacionales": -3500.0,
+    "devoluciones": -50000.0,
+    "reversa_comision": 9500.0
+  },
+  "sign_convention": "positivo = a favor del vendedor, negativo = costo/pérdida",
+  "manual_calculation": "80000 - 15200 - 3500 - 50000 + 9500 = 20800"
+}

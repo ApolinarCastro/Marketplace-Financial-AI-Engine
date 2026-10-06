@@ -55,9 +55,14 @@ CORE_TABLES_FOUND: 4/4
 ## Golden Dataset Status
 
 ```
-GOLDEN_DATASET_STATUS: BLOCKED
-REASON: tests/golden/ exists with 47 JSON files but lacks input/expected structure
-FILES_FOUND: 47 JSON files (expected outputs for endpoints, not E2E input/output pairs)
+GOLDEN_DATASET_STATUS: READY
+DATASET_ID: E2E_V1
+MARKETPLACE: ML
+STRUCTURE: tests/golden/e2e_v1/ with input/ and expected/
+INPUT_FILES: 1 (ML_Facturacion_E2E_V1.xlsx)
+EXPECTED_FILES: 3 (expected_ledger.csv, expected_reconciliation.csv, expected_summary.json)
+INTEGRITY_TESTS: 10/10 PASS
+SECURITY_GATE: PASS (no production paths, no sensitive data)
 ```
 
 ## FA Status
@@ -66,8 +71,8 @@ FILES_FOUND: 47 JSON files (expected outputs for endpoints, not E2E input/output
 |----|--------|-------|
 | FA-001 | PASS | Application boots: START_APP.bat → uvicorn on 3001 → HTTP 200 on /app and /api/v4/health |
 | FA-002 | PASS | DB opens read-only, core tables verified |
-| FA-003 | BLOCKED | No valid Golden Dataset (input/expected structure missing) |
-| FA-004 | BLOCKED | Depends on FA-003 |
+| FA-003 | READY | Golden Dataset E2E_V1 created and validated (10/10 integrity tests PASS) |
+| FA-004 | BLOCKED | Depends on FA-003 execution |
 | FA-005 | BLOCKED | Depends on FA-004 |
 | FA-006 | BLOCKED | Depends on FA-005 |
 | FA-007 | BLOCKED | Depends on FA-006 |
@@ -95,12 +100,18 @@ python tmp_db_check.py
 cmd /c START_APP.bat
 python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:3001/app', timeout=10)"
 python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:3001/api/v4/health', timeout=10)"
+python tests/golden/e2e_v1/create_input.py
+python -m pytest tests/golden/e2e_v1/test_golden_dataset_integrity.py -v
 ```
 
 ## Evidence
 
 - DB verified read-only: 39 tables, 4 core tables with 601,559 ledger rows
-- Golden Dataset: 47 JSON files in tests/golden/ (no input/expected structure)
+- Golden Dataset E2E_V1: tests/golden/e2e_v1/ with input/expected structure
+  - Input: ML_Facturacion_E2E_V1.xlsx (5 rows, synthetic ML Facturacion)
+  - Expected: 8 ledger rows, 5 reconciliation levels, net 20800.0
+  - Integrity tests: 10/10 PASS
+  - Security gate: PASS (no production paths, no sensitive data)
 - Architecture: FastAPI backend, DuckDB storage, server-side templates
 - FA-001: START_APP.bat executed → uvicorn on port 3001 → HTTP 200 on /app (88,952 bytes) and /api/v4/health (status READY)
 
@@ -113,4 +124,8 @@ E2E_STATUS: BLOCKED
 
 ## Next Exact Action
 
-Create a valid Golden Dataset with `input/` and `expected/` structure to unblock FA-003 through FA-007.
+Execute FA-003 (DATASET IMPORT) using the Golden Dataset E2E_V1:
+1. Copy `tests/golden/e2e_v1/input/ML_Facturacion_E2E_V1.xlsx` to `01_Raw/ML/Facturacion/`
+2. Run ingestion pipeline via `engine/v4/ingestion/orchestrator.py`
+3. Validate ledger output matches `expected_ledger.csv` (8 rows, total 20800.0)
+4. Run reconciliation and validate matches `expected_reconciliation.csv` (5 levels CERTIFICADO)
