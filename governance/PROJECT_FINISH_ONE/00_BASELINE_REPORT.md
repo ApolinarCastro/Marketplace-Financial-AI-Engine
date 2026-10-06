@@ -82,7 +82,7 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 ## First Blocker
 
 ```
-FIRST_BLOCKER_ID: PFO-XML-DTE-E2E-001 re-execution pending (metadata repair landed; steps 6-12 not yet re-run)
+FIRST_BLOCKER_ID: NONE (XML/DTE R1 PASS — traceability proven; electronic signature remains NOT_IMPLEMENTED as known boundary)
 PREVIOUS_BLOCKERS_RESOLVED:
   - FA-003 (isolated ingestion COMPLETED)
   - FA-004 R0 ids (golden repaired, R1 confirmed match)
@@ -124,6 +124,7 @@ python tmp_fa003_run.py (isolated FA-003 execution, TEMP_DB only)
 - FA-005: E2E_V1 execution FAIL root-caused (15 fields) → E2E_V2 golden built → fresh-DB schema defect blocked execution → schema repaired → E2E_V2 R1 PASS (9-row parity, 8op+1tes, mirror 0, 9 matches, L1-L4 PASS, CERTIFICADO); synthetic-match boundary recorded; NO financial-logic modification
 - XML/DTE checkpoint FAIL: fixture valid 4/4, parse PASS, dte_truth populated BUT marketplace=NULL + tipo_dte=NULL (load_dtes INSERT gap, matcher needs marketplace='ML'); fresh DB also lacks dte_certified_match_v1; signature validator exists yet unwired to match path + fail-open degraded PASS (deps missing); electronic certification NOT_IMPLEMENTED
 - XML/DTE metadata + certified DDL repair: RESOLVED — DTEMatcher takes db/marketplace/root (ML default), extracts TipoDTE, persists 9 cols, marketplace-scoped DELETE (PARIS preservation proven); fresh DDL adds dte_certified_match_v1 (exact _ensure_schema contract, compatible); tests 5/5; regression 60 passed + 1 skipped; signatures untouched
+- XML/DTE R1: PASS — COMM -5700 ↔ DTE 5700 delta 0 DIRECT_MATCH MATCHED_CERTIFIED persisted + traced; negative AMOUNT_MISMATCH delta 2.0, 0 certified; ML branch byte-identical to run(); fresh-DB RIPLEY-table gap + trace KeyError-on-empty recorded as findings; electronic certification still NOT_IMPLEMENTED
 - FA-005 E2E_V2 attempt: golden BUILT (9-row ledger, treasury -20800, 9 matches, CERTIFICADO precomputed, integrity 8/8) → execution FAIL at ingestion on fresh DB: ledger_v1 DDL lacks execution_id (ALTER-before-CREATE init-order bug); 0 rows, clean failure; E2E_V1 preserved; NO engine modification per protocol
 - Fresh-DB execution_id repair: RESOLVED — execution_id TEXT added to canonical ledger_v1 DDL (nullable, legacy-compatible; hot migration preserved); fresh ingestion COMPLETED (8 new, execution_id propagated 8/8 = record id, total 20800.0); tests 3/3; regression golden 11/11 + docmatch/writer+ingestion 67 total; NO loader/auditor/reconciliation changes
 - FA-005 full-chain design (E2E_V2): BLOCKED — treasury path PROVEN (Retiro de dinero → tesoreria, mirror -20800 derived), document path MISSING (no writer component/fixture/test for document_match_v1; DTE chain requires real SII; fresh DB lacks the table); E2E_V2 NOT built, E2E_V1 preserved; NO expectation degradation
@@ -142,5 +143,7 @@ E2E_STATUS: BLOCKED
 E2E_V2 R1 PASS (full-chain parity proven on fresh DB; synthetic-match
 boundary recorded — NOT electronic certification).
 XML/DTE metadata + certified DDL RESOLVED (repair tested 5/5).
-NEXT: re-execute PFO-XML-DTE-E2E-001 steps 6-12; separately harden
-signature degraded-PASS bypass + wire validation into match chain.
+XML/DTE R1 PASS (traceability proven; MATCHED_CERTIFIED + negative control;
+electronic certification still NOT_IMPLEMENTED).
+NEXT: PFO-ELECTRONIC-SIGNATURE-HARDENING-001 (fix degraded-PASS bypass,
+wire validation into match chain, decide TED/FRMT/CAF/XSD/SII scope).

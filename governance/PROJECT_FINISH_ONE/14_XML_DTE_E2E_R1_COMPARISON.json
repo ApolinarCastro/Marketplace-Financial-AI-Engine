@@ -1,0 +1,144 @@
+{
+  "task_id": "PFO-XML-DTE-E2E-R1-001",
+  "dataset": "XML_DTE_E2E",
+  "production_sha_before": "4efcaa8aa950aa6731a1f0d16624e3a62f3831b7caaf521e31218deaf8155709",
+  "positive": {
+    "scenario": "positive",
+    "xml_sha256": "a245fbe53370bbc03fe8134b4f49d16fe887c8ce2006e7ec243c6bfe6a404473",
+    "ingestion_status": "COMPLETED",
+    "records_new": 8,
+    "target_transaction_id": "COMM_E2E-002_ML_Facturacion_E2E_V1.xlsx_2",
+    "target_ledger_amount": -5700.0,
+    "target_ledger_folio": "033-90000001",
+    "classified_rows": 8,
+    "folio_after_classify": "033-90000001",
+    "dte_truth_rows_ml": 1,
+    "dte_truth_folio": "90000001",
+    "dte_truth_monto": 5700.0,
+    "dte_truth_tipo": "33",
+    "normalized_folio": "90000001",
+    "pre_trace_marketplace": {
+      "strategy": "DIRECT_MATCH",
+      "status": "CERTIFIED",
+      "folios_certified": 1,
+      "rows_linked": 1,
+      "rows_eligible": 1,
+      "match_statuses": {
+        "MATCHED_CERTIFIED": 1
+      }
+    },
+    "pre_trace_transaction": {
+      "transaction_id": "COMM_E2E-002_ML_Facturacion_E2E_V1.xlsx_2",
+      "marketplace": "ML",
+      "folio_xml": "033-90000001",
+      "dte_folio": "90000001",
+      "dte_monto": 5700.0,
+      "dte_fecha": "2026-06-02 00:00:00",
+      "emisor_rut": "76000000-0",
+      "emisor_nombre": "PFO SYNTHETIC",
+      "tipo_dte": "33",
+      "match_status": "MATCHED_CERTIFIED",
+      "match_rule": "DIRECT_MATCH"
+    },
+    "run_scope_note": "ML branch of DTELedgerMatcher.run() executed directly (_match_ml_direct + _persist_certified); full run() requires PARIS/FALABELLA/RIPLEY tables absent on fresh DB (ripley_settlement_chain missing → CatalogException).",
+    "run_summary_ml": {
+      "strategy": "DIRECT_MATCH",
+      "folio_matches": 1,
+      "rows_linked": 1,
+      "rows_eligible": 1
+    },
+    "ml_match_detail": [
+      {
+        "folio": "90000001",
+        "ledger_amount": 5700.0,
+        "dte_monto": 5700.0,
+        "delta": 0.0,
+        "match_status": "MATCHED_CERTIFIED",
+        "match_rule": "DIRECT_MATCH"
+      }
+    ],
+    "certified_rows_target": 1,
+    "certified_record": {
+      "marketplace": "ML",
+      "id_transaccion": "COMM_E2E-002_ML_Facturacion_E2E_V1.xlsx_2",
+      "folio_xml": "033-90000001",
+      "dte_folio": "90000001",
+      "dte_monto": "5700.0",
+      "dte_fecha": "2026-06-02 00:00:00",
+      "emisor_nombre": "PFO SYNTHETIC",
+      "emisor_rut": "76000000-0",
+      "tipo_dte": "33",
+      "match_rule": "DIRECT_MATCH",
+      "match_status": "MATCHED_CERTIFIED",
+      "match_source": "dte_ledger_matcher",
+      "execution_id": "393330e4-b6c0-40c4-b19c-4167197d75f7"
+    },
+    "post_trace_marketplace": {
+      "strategy": "DIRECT_MATCH",
+      "status": "CERTIFIED",
+      "folios_certified": 1,
+      "rows_linked": 1,
+      "rows_eligible": 1,
+      "match_statuses": {
+        "MATCHED_CERTIFIED": 1
+      }
+    },
+    "post_trace_transaction": {
+      "transaction_id": "COMM_E2E-002_ML_Facturacion_E2E_V1.xlsx_2",
+      "marketplace": "ML",
+      "folio_xml": "033-90000001",
+      "dte_folio": "90000001",
+      "dte_monto": 5700.0,
+      "dte_fecha": "2026-06-02 00:00:00",
+      "emisor_rut": "76000000-0",
+      "emisor_nombre": "PFO SYNTHETIC",
+      "tipo_dte": "33",
+      "match_status": "MATCHED_CERTIFIED",
+      "match_rule": "DIRECT_MATCH"
+    }
+  },
+  "negative": {
+    "scenario": "negative",
+    "xml_sha256": "645af2b587df9fcbb6861e536186406ddbb8e411992d8bc241a17f39033a7b41",
+    "ingestion_status": "COMPLETED",
+    "records_new": 8,
+    "target_transaction_id": "COMM_E2E-002_ML_Facturacion_E2E_V1.xlsx_2",
+    "target_ledger_amount": -5700.0,
+    "target_ledger_folio": "033-90000002",
+    "classified_rows": 8,
+    "folio_after_classify": "033-90000002",
+    "dte_truth_rows_ml": 1,
+    "dte_truth_folio": "90000002",
+    "dte_truth_monto": 5702.0,
+    "dte_truth_tipo": "33",
+    "normalized_folio": "90000002",
+    "pre_trace_skipped": "engine _trace_transaction raises KeyError('id_transaccion') on empty certified set instead of NOT_FOUND; negative verdict rests on match_statuses + certified row count",
+    "run_scope_note": "ML branch of DTELedgerMatcher.run() executed directly (_match_ml_direct + _persist_certified); full run() requires PARIS/FALABELLA/RIPLEY tables absent on fresh DB (ripley_settlement_chain missing → CatalogException).",
+    "run_summary_ml": {
+      "strategy": "DIRECT_MATCH",
+      "folio_matches": 0,
+      "rows_linked": 0,
+      "rows_eligible": 1
+    },
+    "ml_match_detail": [
+      {
+        "folio": "90000002",
+        "ledger_amount": 5700.0,
+        "dte_monto": 5702.0,
+        "delta": 2.0,
+        "match_status": "AMOUNT_MISMATCH",
+        "match_rule": "DIRECT_MATCH"
+      }
+    ],
+    "certified_rows_target": 0,
+    "certified_record": null,
+    "post_trace_skipped": true
+  },
+  "positive_pass": true,
+  "negative_pass": true,
+  "production_sha_after": "4efcaa8aa950aa6731a1f0d16624e3a62f3831b7caaf521e31218deaf8155709",
+  "production_db_modified": false,
+  "real_raw_modified": false,
+  "fa005_untouched": true,
+  "pass": true
+}
