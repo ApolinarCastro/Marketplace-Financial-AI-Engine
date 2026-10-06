@@ -74,7 +74,7 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 | FA-001 | PASS | Application boots: START_APP.bat → uvicorn on 3001 → HTTP 200 on /app and /api/v4/health |
 | FA-002 | PASS | DB opens read-only, core tables verified |
 | FA-003 | PASS | Isolated ingestion COMPLETED: 8 read, 8 new, 0 errors, TEMP_DB only, no contamination |
-| FA-004 | READY | Golden ledger expected available (8 rows, 20800.0); row-by-row comparison pending |
+| FA-004 | FAIL | 8/8 rows, totals 20800.0=20800.0, all movement subtotals exact; systematic id_transaccion separator mismatch (__ expected vs _ actual), 0 financial deltas |
 | FA-005 | BLOCKED | Depends on FA-004 |
 | FA-006 | BLOCKED | Depends on FA-005 |
 | FA-007 | BLOCKED | Depends on FA-006 |
@@ -82,10 +82,13 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 ## First Blocker
 
 ```
-FIRST_BLOCKER_ID: NONE (FA-003 executed PASS in isolation)
+FIRST_BLOCKER_ID: FA-004
+FIRST_BLOCKER_PHASE: FA-004 LEDGER parity
+FIRST_BLOCKER_ERROR: Systematic id_transaccion separator mismatch (__ expected vs _ actual), all 8 rows; 0 financial deltas
+FIRST_BLOCKER_EVIDENCE: governance/PROJECT_FINISH_ONE/02_FA004_LEDGER_EVIDENCE.md + 02_FA004_COMPARISON.json
 PREVIOUS_BLOCKER: FA-003 (RESOLVED — isolated ingestion COMPLETED, 8/8 rows persisted)
 KNOWN_NEXT_BLOCKER: FA-005 — Golden Dataset lacks required DTE/XML document evidence for CERTIFICADO
-  (Not active until FA-004 executes successfully)
+  (Not active until FA-004 passes)
 ```
 
 ## Commands Executed
@@ -118,6 +121,7 @@ python tmp_fa003_run.py (isolated FA-003 execution, TEMP_DB only)
 - Architecture: FastAPI backend, DuckDB storage, server-side templates
 - FA-001: START_APP.bat executed → uvicorn on port 3001 → HTTP 200 on /app (88,952 bytes) and /api/v4/health (status READY)
 - FA-003: isolated ingestion via f3_03 pattern → COMPLETED, exec cb8ee20a, 8 read / 8 new / 0 errors, ledger 8 rows total 20800.0, production DB + real RAW untouched, TEMP_DIR removed
+- FA-004: isolated re-ingestion COMPLETED (8 new, 0 errors) → row-by-row FAIL on id_transaccion separator only (__ vs _); all financial values + movement subtotals exact; engine ID derivation verified correct per surgical_loader.py line 228; golden transcription error documented, NOT repaired
 
 ## Final Status
 
@@ -128,7 +132,5 @@ E2E_STATUS: BLOCKED
 
 ## Next Exact Action
 
-Execute FA-004 (LEDGER): compare isolated ingestion ledger output row-by-row
-against tests/golden/e2e_v1/expected/expected_ledger.csv
-(8 rows, total 20800.0, per-tipo_movimiento montos).
-Re-run isolated ingestion if TEMP_DB evidence expired (TEMP_DIR was removed after FA-003).
+Execute FA-004 repair: fix golden expected_ledger.csv id_transaccion values
+(single underscore per engine derivation) in a dedicated task, then re-execute FA-004.
