@@ -73,8 +73,8 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 |----|--------|-------|
 | FA-001 | PASS | Application boots: START_APP.bat → uvicorn on 3001 → HTTP 200 on /app and /api/v4/health |
 | FA-002 | PASS | DB opens read-only, core tables verified |
-| FA-003 | READY | Golden Dataset E2E_V1 created and validated (10/10 integrity tests PASS) |
-| FA-004 | BLOCKED | Depends on FA-003 execution |
+| FA-003 | PASS | Isolated ingestion COMPLETED: 8 read, 8 new, 0 errors, TEMP_DB only, no contamination |
+| FA-004 | READY | Golden ledger expected available (8 rows, 20800.0); row-by-row comparison pending |
 | FA-005 | BLOCKED | Depends on FA-004 |
 | FA-006 | BLOCKED | Depends on FA-005 |
 | FA-007 | BLOCKED | Depends on FA-006 |
@@ -82,10 +82,10 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 ## First Blocker
 
 ```
-FIRST_BLOCKER_ID: NONE (FA-003 unblocked by E2E_V1 dataset creation)
-PREVIOUS_BLOCKER: FA-003 (RESOLVED — Golden Dataset E2E_V1 now exists with input/expected structure)
+FIRST_BLOCKER_ID: NONE (FA-003 executed PASS in isolation)
+PREVIOUS_BLOCKER: FA-003 (RESOLVED — isolated ingestion COMPLETED, 8/8 rows persisted)
 KNOWN_NEXT_BLOCKER: FA-005 — Golden Dataset lacks required DTE/XML document evidence for CERTIFICADO
-  (Not active until FA-003 and FA-004 execute successfully)
+  (Not active until FA-004 executes successfully)
 ```
 
 ## Commands Executed
@@ -103,6 +103,7 @@ python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:3001/
 python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:3001/api/v4/health', timeout=10)"
 python tests/golden/e2e_v1/create_input.py
 python -m pytest tests/golden/e2e_v1/test_golden_dataset_integrity.py -v
+python tmp_fa003_run.py (isolated FA-003 execution, TEMP_DB only)
 ```
 
 ## Evidence
@@ -116,6 +117,7 @@ python -m pytest tests/golden/e2e_v1/test_golden_dataset_integrity.py -v
   - Reconciliation corrected per _determine_status(): doc 0 < 10 => PENDIENTE
 - Architecture: FastAPI backend, DuckDB storage, server-side templates
 - FA-001: START_APP.bat executed → uvicorn on port 3001 → HTTP 200 on /app (88,952 bytes) and /api/v4/health (status READY)
+- FA-003: isolated ingestion via f3_03 pattern → COMPLETED, exec cb8ee20a, 8 read / 8 new / 0 errors, ledger 8 rows total 20800.0, production DB + real RAW untouched, TEMP_DIR removed
 
 ## Final Status
 
@@ -126,8 +128,7 @@ E2E_STATUS: BLOCKED
 
 ## Next Exact Action
 
-Execute FA-003 (DATASET IMPORT) using the Golden Dataset E2E_V1:
-1. Copy `tests/golden/e2e_v1/input/ML_Facturacion_E2E_V1.xlsx` to `01_Raw/ML/Facturacion/`
-2. Run ingestion pipeline via `engine/v4/ingestion/orchestrator.py`
-3. Validate ledger output matches `expected_ledger.csv` (8 rows, total 20800.0)
-4. Run reconciliation and validate matches `expected_reconciliation.csv` (5 levels PENDIENTE, doc_coverage=0.0)
+Execute FA-004 (LEDGER): compare isolated ingestion ledger output row-by-row
+against tests/golden/e2e_v1/expected/expected_ledger.csv
+(8 rows, total 20800.0, per-tipo_movimiento montos).
+Re-run isolated ingestion if TEMP_DB evidence expired (TEMP_DIR was removed after FA-003).
