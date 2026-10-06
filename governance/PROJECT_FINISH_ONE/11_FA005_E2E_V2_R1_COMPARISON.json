@@ -1,0 +1,240 @@
+{
+  "task_id": "PFO-FA005-E2E-V2-R1-001",
+  "dataset_id": "E2E_V2",
+  "run": "R1",
+  "production_sha_before": "4efcaa8aa950aa6731a1f0d16624e3a62f3831b7caaf521e31218deaf8155709",
+  "fresh_db_document_match_table": true,
+  "fresh_db_ledger_has_execution_id": true,
+  "fresh_db_zero_checks": {
+    "marketplace_ledger_v1": 0,
+    "marketplace_ledger_clasificado_v1": 0,
+    "marketplace_cierre_financiero_v1": 0,
+    "document_match_v1": 0
+  },
+  "fresh_db_clean": true,
+  "ingestion_status": "COMPLETED",
+  "records_new": 9,
+  "ingestion_errors": [],
+  "raw_ledger_rows": 9,
+  "raw_ledger_total": 0.0,
+  "raw_ledger_row_by_row_equal": true,
+  "raw_ledger_missing": [],
+  "raw_ledger_unexpected": [],
+  "raw_ledger_mismatches": [],
+  "classified_rows": 9,
+  "treasury_rows": 1,
+  "operational_rows": 8,
+  "classification_nulls": 0,
+  "treasury_detail": [
+    {
+      "monto": -20800.0,
+      "op_pnl": false,
+      "clasificacion": "Retiro de dinero",
+      "group": "tesoreria"
+    }
+  ],
+  "closing_result": {
+    "neto": 20800.0,
+    "ingresos": 80000.0,
+    "devoluciones": -50000.0,
+    "costos_op": -1500.0,
+    "costos_com": -7700.0,
+    "ajustes": 0.0
+  },
+  "operational_net": 20800.0,
+  "treasury_total": -20800.0,
+  "treasury_mirror_delta": 0.0,
+  "document_matches_expected": 9,
+  "classified_denominator": 9,
+  "document_matches_actual": 9,
+  "document_orphans": 0,
+  "coverage_total": 9,
+  "coverage_matched": 9,
+  "actual_document_coverage": 100.0,
+  "reconciliation_command": "ReconciliationEngine(db=TEMP_DB).validate_marketplace_consistency('ML', '2026-06')",
+  "reconciliation_executed": true,
+  "engine_period": "Jun 2026",
+  "engine_certification_status": "CERTIFICADO",
+  "engine_delta": 0.0,
+  "engine_taxonomy_coverage": 100.0,
+  "engine_document_coverage": 100.0,
+  "engine_total_records": 9,
+  "engine_levels": {
+    "INTERNA": {
+      "status": "PASS",
+      "delta": 0.0,
+      "source_total": 20800.0,
+      "target_total": 20800.0,
+      "alerts": 0
+    },
+    "OPERACIONAL": {
+      "status": "PASS",
+      "delta": 0.0,
+      "source_total": 20800.0,
+      "target_total": 20800.0,
+      "alerts": 0
+    },
+    "TESORERÍA": {
+      "status": "PASS",
+      "delta": 0.0,
+      "source_total": -20800.0,
+      "target_total": -20800.0,
+      "alerts": 0
+    },
+    "DOCUMENTAL": {
+      "status": "PASS",
+      "delta": 0.0,
+      "source_total": 9.0,
+      "target_total": 9.0,
+      "alerts": 0
+    }
+  },
+  "actual_mapped_rows": [
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_1",
+      "rule": "ledger_vs_clasificado_delta",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 100.0,
+      "status": "PASS",
+      "impact_amount": 0.0,
+      "record_count": 9
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_2",
+      "rule": "operational_pnl_vs_ledger",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 100.0,
+      "status": "PASS",
+      "impact_amount": 0.0,
+      "record_count": 9
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_3",
+      "rule": "treasury_vs_ledger",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 100.0,
+      "status": "PASS",
+      "impact_amount": 0.0,
+      "record_count": 9
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_4",
+      "rule": "cash_vs_pnl",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 100.0,
+      "status": "PASS",
+      "impact_amount": 0.0,
+      "record_count": 9
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_5",
+      "rule": "full_chain",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 100.0,
+      "status": "CERTIFICADO",
+      "impact_amount": 0.0,
+      "record_count": 9
+    }
+  ],
+  "expected_rows_out": [
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_1",
+      "rule": "ledger_vs_clasificado_delta",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 100.0,
+      "status": "PASS",
+      "impact_amount": 0.0,
+      "record_count": 9
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_2",
+      "rule": "operational_pnl_vs_ledger",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 100.0,
+      "status": "PASS",
+      "impact_amount": 0.0,
+      "record_count": 9
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_3",
+      "rule": "treasury_vs_ledger",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 100.0,
+      "status": "PASS",
+      "impact_amount": 0.0,
+      "record_count": 9
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_4",
+      "rule": "cash_vs_pnl",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 100.0,
+      "status": "PASS",
+      "impact_amount": 0.0,
+      "record_count": 9
+    },
+    {
+      "marketplace": "ML",
+      "period": "2026-06",
+      "level": "LEVEL_5",
+      "rule": "full_chain",
+      "delta": 0.0,
+      "taxonomy_coverage": 100.0,
+      "document_coverage": 100.0,
+      "status": "CERTIFICADO",
+      "impact_amount": 0.0,
+      "record_count": 9
+    }
+  ],
+  "missing_levels": [],
+  "unexpected_levels": [],
+  "field_mismatches": [],
+  "row_by_row_equal": true,
+  "expected_aggregate_status": "CERTIFICADO",
+  "actual_aggregate_status": "CERTIFICADO",
+  "production_sha_after": "4efcaa8aa950aa6731a1f0d16624e3a62f3831b7caaf521e31218deaf8155709",
+  "production_db_modified": false,
+  "real_raw_modified": false,
+  "checks": {
+    "fresh_db_clean": true,
+    "ingestion_9_rows": true,
+    "raw_parity": true,
+    "classification_8op_1tes": true,
+    "closing_neto_20800": true,
+    "treasury_mirror_zero": true,
+    "documents_9_0orphans_100": true,
+    "levels_5_5": true,
+    "row_by_row_equal": true,
+    "aggregate_certificado": true,
+    "production_db_unmodified": true,
+    "real_raw_unmodified": true
+  },
+  "fa005": "PASS"
+}

@@ -75,16 +75,14 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 | FA-002 | PASS | DB opens read-only, core tables verified |
 | FA-003 | PASS | Isolated ingestion COMPLETED: 8 read, 8 new, 0 errors, TEMP_DB only, no contamination |
 | FA-004 | PASS (R2) | 8/8 rows, 20800.0=20800.0, 0 missing/0 unexpected/0 mismatches, REVCOMM U+00F3 parity, movement delta 0 |
-| FA-005 | FAIL | Engine executed correctly (5/5 levels, doc_cov 0.0 match); 15 field mismatches: baseline cierre pollution (L1/L2), treasury mirror gap (L3), status vocabulary ALERTA/BROKEN vs PENDIENTE, 2 mapping artifacts |
-| FA-006 | BLOCKED | Depends on FA-005 PASS |
+| FA-005 | PASS (E2E_V2 R1) | Fresh DB zero-pollution; 9-row parity; 8op+1tes classified; cierre 20800; mirror 0; 9 CONCILIATED/0 orphans/100.0; L1-L4 PASS delta 0; aggregate CERTIFICADO=CERTIFICADO; 0 mismatches |
+| FA-006 | READY | Unblocked by FA-005 PASS |
 | FA-007 | BLOCKED | Depends on FA-006 |
 
 ## First Blocker
 
 ```
-FIRST_BLOCKER_ID: FA-005 (E2E_V2 execution)
-FIRST_BLOCKER_PHASE: fresh-DB ingestion — RESOLVED (execution_id DDL aligned; fresh ingestion proven)
-FIRST_BLOCKER_EVIDENCE: governance/PROJECT_FINISH_ONE/10_FRESH_DB_EXECUTION_ID_EVIDENCE.md
+FIRST_BLOCKER_ID: NONE (FA-005 E2E_V2 R1 PASS — full-chain parity proven)
 PREVIOUS_BLOCKERS_RESOLVED:
   - FA-003 (isolated ingestion COMPLETED)
   - FA-004 R0 ids (golden repaired, R1 confirmed match)
@@ -123,7 +121,7 @@ python tmp_fa003_run.py (isolated FA-003 execution, TEMP_DB only)
 - FA-001: START_APP.bat executed → uvicorn on port 3001 → HTTP 200 on /app (88,952 bytes) and /api/v4/health (status READY)
 - FA-003: isolated ingestion via f3_03 pattern → COMPLETED, exec cb8ee20a, 8 read / 8 new / 0 errors, ledger 8 rows total 20800.0, production DB + real RAW untouched, TEMP_DIR removed
 - FA-004: R0 FAIL on ids (__ vs _) → golden repaired → R1 FAIL on financial_group NULL + mojibake (RCA: GOLDEN_OVER_SPECIFICATION + SOURCE_LITERAL_CORRUPTION) → 2 literals + golden scope repaired → R2 PASS (8/8, 20800.0, 0 mismatches, U+00F3 parity); NO financial-logic modification; regression: golden 11/11 + f4_traceability 22 passed
-- FA-005: engine executed correctly (5/5 levels present, taxonomy 100%, doc_cov 0.0 match, L4 delta 100 match) → FAIL on 15 fields (baseline cierre pollution L1/L2, treasury mirror L3, status vocabulary ALERTA/BROKEN vs PENDIENTE, 2 mapping artifacts); engine behavior deterministic and correct; golden re-scope required; NO engine modification
+- FA-005: E2E_V1 execution FAIL root-caused (15 fields) → E2E_V2 golden built → fresh-DB schema defect blocked execution → schema repaired → E2E_V2 R1 PASS (9-row parity, 8op+1tes, mirror 0, 9 matches, L1-L4 PASS, CERTIFICADO); synthetic-match boundary recorded; NO financial-logic modification
 - FA-005 E2E_V2 attempt: golden BUILT (9-row ledger, treasury -20800, 9 matches, CERTIFICADO precomputed, integrity 8/8) → execution FAIL at ingestion on fresh DB: ledger_v1 DDL lacks execution_id (ALTER-before-CREATE init-order bug); 0 rows, clean failure; E2E_V1 preserved; NO engine modification per protocol
 - Fresh-DB execution_id repair: RESOLVED — execution_id TEXT added to canonical ledger_v1 DDL (nullable, legacy-compatible; hot migration preserved); fresh ingestion COMPLETED (8 new, execution_id propagated 8/8 = record id, total 20800.0); tests 3/3; regression golden 11/11 + docmatch/writer+ingestion 67 total; NO loader/auditor/reconciliation changes
 - FA-005 full-chain design (E2E_V2): BLOCKED — treasury path PROVEN (Retiro de dinero → tesoreria, mirror -20800 derived), document path MISSING (no writer component/fixture/test for document_match_v1; DTE chain requires real SII; fresh DB lacks the table); E2E_V2 NOT built, E2E_V1 preserved; NO expectation degradation
@@ -139,19 +137,7 @@ E2E_STATUS: BLOCKED
 
 ## Next Exact Action
 
-Re-scope golden reconciliation expectations to the engine real output contract
-(dedicated task): either (a) expand E2E_V1 with treasury/settlement + DTE data
-and use fresh empty TEMP_DB, or (b) redefine expected levels in engine
-vocabulary (PASS/ALERTA per level + aggregate status via _determine_status).
-Then re-execute FA-005. No engine modification required.
-
-Document-match infrastructure RESOLVED (writer + fresh-DB DDL tested):
-resume E2E_V2 full-chain construction using DocumentMatchWriter for
-synthetic CONCILIATED matches on fresh TEMP_DB.
-
-Level 1 treasury conflict RESOLVED (uniform op_filter; post-repair L1+L3
-PASS; negative control green).
-Document-match infrastructure RESOLVED (writer + fresh-DB DDL tested).
-E2E_V2 golden BUILT (integrity 8/8); fresh-DB execution_id RESOLVED
-(DDL aligned, fresh ingestion proven 8/8 with propagation).
-NEXT: re-execute E2E_V2 full chain → then PFO-XML-DTE-E2E-001.
+E2E_V2 R1 PASS (full-chain parity proven on fresh DB; synthetic-match
+boundary recorded — NOT electronic certification).
+XML_ELECTRONIC_CERTIFICATION = NOT_TESTED.
+NEXT: PFO-XML-DTE-E2E-001 (electronic certification checkpoint).
