@@ -1,0 +1,107 @@
+{
+  "task_id": "PFO-FA004-GOLDEN-REPAIR-001",
+  "dataset_id": "E2E_V1",
+  "run": "R1",
+  "source_db": "data\\db\\baseline_estable_v8_candidate_20260717\\meli_financial_v4.db",
+  "source_db_sha256_before": "733c759f8ea179d8bcadf4897d8a2998826acab693171636f04ae0653c236e00",
+  "ingestion_status": "COMPLETED",
+  "records_new": 8,
+  "ingestion_errors": [],
+  "expected_rows": 8,
+  "actual_rows": 8,
+  "expected_total": 20800.0,
+  "actual_total": 20800.0,
+  "missing_rows": [],
+  "unexpected_rows": [],
+  "field_mismatches": [
+    {
+      "row": "CHG_ML_Facturacion_E2E_V1.xlsx_4",
+      "field": "financial_group",
+      "expected": "costos_operacionales",
+      "actual": "None"
+    },
+    {
+      "row": "CHG_ML_Facturacion_E2E_V1.xlsx_5",
+      "field": "financial_group",
+      "expected": "costos_operacionales",
+      "actual": "None"
+    },
+    {
+      "row": "COMM_E2E-001_ML_Facturacion_E2E_V1.xlsx_1",
+      "field": "financial_group",
+      "expected": "costos_comerciales",
+      "actual": "None"
+    },
+    {
+      "row": "COMM_E2E-002_ML_Facturacion_E2E_V1.xlsx_2",
+      "field": "financial_group",
+      "expected": "costos_comerciales",
+      "actual": "None"
+    },
+    {
+      "row": "REFUND_E2E-001_ML_Facturacion_E2E_V1.xlsx_3",
+      "field": "financial_group",
+      "expected": "devoluciones",
+      "actual": "None"
+    },
+    {
+      "row": "REVCOMM_E2E-001_ML_Facturacion_E2E_V1.xlsx_3",
+      "field": "detalle",
+      "expected": "Anulaci\u00f3n del cargo por venta",
+      "actual": "Anulaci\u00c3\u00b3n del cargo por venta"
+    },
+    {
+      "row": "REVCOMM_E2E-001_ML_Facturacion_E2E_V1.xlsx_3",
+      "field": "financial_group",
+      "expected": "ajustes",
+      "actual": "None"
+    },
+    {
+      "row": "SALE_E2E-001_ML_Facturacion_E2E_V1.xlsx_1",
+      "field": "financial_group",
+      "expected": "ingresos",
+      "actual": "None"
+    },
+    {
+      "row": "SALE_E2E-002_ML_Facturacion_E2E_V1.xlsx_2",
+      "field": "financial_group",
+      "expected": "ingresos",
+      "actual": "None"
+    }
+  ],
+  "duplicate_id_transaccion": 0,
+  "null_id_transaccion": 0,
+  "row_by_row_equal": false,
+  "movement_totals_expected": {
+    "CARGO": -3500.0,
+    "EGRESO_COMISION": -15200.0,
+    "DEVOLUCION": -50000.0,
+    "AJUSTE": 9500.0,
+    "INGRESO_VENTA": 80000.0
+  },
+  "movement_totals_actual": {
+    "CARGO": -3500.0,
+    "EGRESO_COMISION": -15200.0,
+    "DEVOLUCION": -50000.0,
+    "AJUSTE": 9500.0,
+    "INGRESO_VENTA": 80000.0
+  },
+  "movement_totals_delta": 0.0,
+  "source_db_sha256_after": "733c759f8ea179d8bcadf4897d8a2998826acab693171636f04ae0653c236e00",
+  "production_db_modified": false,
+  "real_raw_modified": false,
+  "checks": {
+    "rows_equal_8": true,
+    "totals_equal_20800": true,
+    "row_by_row_equal": false,
+    "missing_zero": true,
+    "unexpected_zero": true,
+    "mismatches_zero": false,
+    "duplicates_zero": true,
+    "nulls_zero": true,
+    "movement_delta_zero": true,
+    "production_db_unmodified": true,
+    "real_raw_unmodified": true
+  },
+  "fa004": "FAIL"
+}

@@ -74,7 +74,7 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 | FA-001 | PASS | Application boots: START_APP.bat → uvicorn on 3001 → HTTP 200 on /app and /api/v4/health |
 | FA-002 | PASS | DB opens read-only, core tables verified |
 | FA-003 | PASS | Isolated ingestion COMPLETED: 8 read, 8 new, 0 errors, TEMP_DB only, no contamination |
-| FA-004 | FAIL | 8/8 rows, totals 20800.0=20800.0, all movement subtotals exact; systematic id_transaccion separator mismatch (__ expected vs _ actual), 0 financial deltas |
+| FA-004 | FAIL (R1) | IDs repaired and matching (0 missing/0 unexpected); new classes: financial_group NULL in raw ledger (golden over-spec) + detalle mojibake (encoding path); 0 financial deltas |
 | FA-005 | BLOCKED | Depends on FA-004 |
 | FA-006 | BLOCKED | Depends on FA-005 |
 | FA-007 | BLOCKED | Depends on FA-006 |
@@ -82,11 +82,11 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 ## First Blocker
 
 ```
-FIRST_BLOCKER_ID: FA-004
-FIRST_BLOCKER_PHASE: FA-004 LEDGER parity
-FIRST_BLOCKER_ERROR: Systematic id_transaccion separator mismatch (__ expected vs _ actual), all 8 rows; 0 financial deltas
-FIRST_BLOCKER_EVIDENCE: governance/PROJECT_FINISH_ONE/02_FA004_LEDGER_EVIDENCE.md + 02_FA004_COMPARISON.json
-PREVIOUS_BLOCKER: FA-003 (RESOLVED — isolated ingestion COMPLETED, 8/8 rows persisted)
+FIRST_BLOCKER_ID: FA-004 (R1)
+FIRST_BLOCKER_PHASE: FA-004 LEDGER parity re-execution
+FIRST_BLOCKER_ERROR: financial_group NULL in raw ledger_v1 (7 rows, golden over-specification) + detalle mojibake (1 row, encoding path issue); IDs now match; 0 financial deltas
+FIRST_BLOCKER_EVIDENCE: governance/PROJECT_FINISH_ONE/02_FA004_LEDGER_EVIDENCE_R1.md + 02_FA004_COMPARISON_R1.json (R0 evidence preserved)
+PREVIOUS_BLOCKER: FA-004 R0 id_transaccion separator (RESOLVED — golden repaired, IDs match in R1)
 KNOWN_NEXT_BLOCKER: FA-005 — Golden Dataset lacks required DTE/XML document evidence for CERTIFICADO
   (Not active until FA-004 passes)
 ```
@@ -121,7 +121,7 @@ python tmp_fa003_run.py (isolated FA-003 execution, TEMP_DB only)
 - Architecture: FastAPI backend, DuckDB storage, server-side templates
 - FA-001: START_APP.bat executed → uvicorn on port 3001 → HTTP 200 on /app (88,952 bytes) and /api/v4/health (status READY)
 - FA-003: isolated ingestion via f3_03 pattern → COMPLETED, exec cb8ee20a, 8 read / 8 new / 0 errors, ledger 8 rows total 20800.0, production DB + real RAW untouched, TEMP_DIR removed
-- FA-004: isolated re-ingestion COMPLETED (8 new, 0 errors) → row-by-row FAIL on id_transaccion separator only (__ vs _); all financial values + movement subtotals exact; engine ID derivation verified correct per surgical_loader.py line 228; golden transcription error documented, NOT repaired
+- FA-004: R0 isolated re-ingestion COMPLETED → FAIL on id_transaccion separator only (__ vs _); R1 golden repaired → re-ingestion COMPLETED → FAIL on new classes (financial_group NULL in raw ledger + detalle mojibake); all financial values + movement subtotals exact in both runs; engine ID derivation verified correct; NO engine logic modified
 
 ## Final Status
 
@@ -132,5 +132,7 @@ E2E_STATUS: BLOCKED
 
 ## Next Exact Action
 
-Execute FA-004 repair: fix golden expected_ledger.csv id_transaccion values
-(single underscore per engine derivation) in a dedicated task, then re-execute FA-004.
+Investigate FA-004 R1 difference classes in a dedicated task:
+1. financial_group scope (exclude from raw-ledger parity per f3_03 precedent, or extend FA-004 to classification stage).
+2. detalle mojibake in pipeline write/DuckDB path.
+Then re-execute FA-004 as R2.
