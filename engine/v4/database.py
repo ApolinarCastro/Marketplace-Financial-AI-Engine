@@ -168,6 +168,10 @@ class DatabaseV4:
             # Document Match Registry (reconciliation Level 4 + coverage helpers read this;
             # populated by DocumentMatchWriter with validated, non-financial match records)
             "CREATE TABLE IF NOT EXISTS document_match_v1 (match_id VARCHAR, marketplace VARCHAR, ledger_id VARCHAR, order_id VARCHAR, folio_xml VARCHAR, tipo_dte VARCHAR, match_rule VARCHAR, match_source VARCHAR, match_timestamp TIMESTAMP, match_status VARCHAR, document_date DATE, document_amount DOUBLE, reference_document VARCHAR, created_by VARCHAR, execution_id VARCHAR)",
+
+            # DTE Certified Match (DTELedgerMatcher._ensure_schema canonical definition;
+            # populated by certified DTE->ledger matching; fresh DB must include it)
+            "CREATE TABLE IF NOT EXISTS dte_certified_match_v1 (marketplace VARCHAR, id_transaccion VARCHAR, folio_xml VARCHAR, dte_folio VARCHAR, dte_monto DOUBLE, dte_fecha DATE, emisor_nombre VARCHAR, emisor_rut VARCHAR, tipo_dte VARCHAR, match_rule VARCHAR, match_status VARCHAR, match_source VARCHAR, execution_id VARCHAR, PRIMARY KEY (marketplace, id_transaccion))",
  
             # Views for Dashboard
             """
