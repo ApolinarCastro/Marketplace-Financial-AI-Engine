@@ -69,7 +69,7 @@ class SurgicalLoader:
       â†’ INGRESO_VENTA  = +Total de la venta (lo que pagÃ³ el comprador)
       â†’ EGRESO_COMISION = -Valor del cargo  (comisiÃ³n que ML cobra)
 
-    Para "AnulaciÃ³n del cargo por venta":
+    Para "Anulación del cargo por venta":
       â†’ DEVOLUCION_VENTA  = -Total de la venta  (se pierde la venta)
       â†’ REVERSA_COMISION  = -Valor del cargo     (Valor ya es negativo â†’ -(-x) = +x, ML devuelve)
 
@@ -214,7 +214,7 @@ class SurgicalLoader:
                         ledger.append({
                             'marketplace': 'ML', 'id_transaccion': f"REVCOMM_{order_id}_{f.name}_{idx}",
                             'id_orden': order_id, 'fecha': fecha,
-                            'detalle': "AnulaciÃ³n del cargo por venta",
+                            'detalle': "Anulación del cargo por venta",
                             'monto': -valor_cargo,  # valor_cargo=-5199 â†’ monto=+5199 (ML devuelve)
                             'tipo_movimiento': 'AJUSTE',
                             'archivo_origen': f.name, 'folio_xml': folio
