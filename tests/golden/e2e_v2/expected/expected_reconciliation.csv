@@ -1,0 +1,6 @@
+marketplace,period,level,rule,delta,taxonomy_coverage,document_coverage,status,impact_amount,record_count
+ML,2026-06,LEVEL_1,ledger_vs_clasificado_delta,0.0,100.0,100.0,PASS,0.0,9
+ML,2026-06,LEVEL_2,operational_pnl_vs_ledger,0.0,100.0,100.0,PASS,0.0,9
+ML,2026-06,LEVEL_3,treasury_vs_ledger,0.0,100.0,100.0,PASS,0.0,9
+ML,2026-06,LEVEL_4,cash_vs_pnl,0.0,100.0,100.0,PASS,0.0,9
+ML,2026-06,LEVEL_5,full_chain,0.0,100.0,100.0,CERTIFICADO,0.0,9

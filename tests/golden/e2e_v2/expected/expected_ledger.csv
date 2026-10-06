@@ -1,0 +1,10 @@
+id_transaccion,id_orden,tipo_movimiento,monto,detalle,financial_group,marketplace,fecha,archivo_origen
+CHG_ML_Facturacion_E2E_V2.xlsx_4,E2E-003,CARGO,-1500.0,Envío,,ML,2026-06-03,ML_Facturacion_E2E_V2.xlsx
+CHG_ML_Facturacion_E2E_V2.xlsx_5,E2E-004,CARGO,-2000.0,Publicidad,,ML,2026-06-04,ML_Facturacion_E2E_V2.xlsx
+CHG_ML_Facturacion_E2E_V2.xlsx_6,E2E-TES,CARGO,-20800.0,Retiro de dinero,,ML,2026-06-20,ML_Facturacion_E2E_V2.xlsx
+COMM_E2E-001_ML_Facturacion_E2E_V2.xlsx_1,E2E-001,EGRESO_COMISION,-9500.0,Cargo por venta (Comisión),,ML,2026-06-01,ML_Facturacion_E2E_V2.xlsx
+COMM_E2E-002_ML_Facturacion_E2E_V2.xlsx_2,E2E-002,EGRESO_COMISION,-5700.0,Cargo por venta (Comisión),,ML,2026-06-02,ML_Facturacion_E2E_V2.xlsx
+REFUND_E2E-001_ML_Facturacion_E2E_V2.xlsx_3,E2E-001,DEVOLUCION,-50000.0,Devolución de venta,,ML,2026-06-15,ML_Facturacion_E2E_V2.xlsx
+REVCOMM_E2E-001_ML_Facturacion_E2E_V2.xlsx_3,E2E-001,AJUSTE,9500.0,Anulación del cargo por venta,,ML,2026-06-15,ML_Facturacion_E2E_V2.xlsx
+SALE_E2E-001_ML_Facturacion_E2E_V2.xlsx_1,E2E-001,INGRESO_VENTA,50000.0,Cargo por venta (Venta),,ML,2026-06-01,ML_Facturacion_E2E_V2.xlsx
+SALE_E2E-002_ML_Facturacion_E2E_V2.xlsx_2,E2E-002,INGRESO_VENTA,30000.0,Cargo por venta (Venta),,ML,2026-06-02,ML_Facturacion_E2E_V2.xlsx

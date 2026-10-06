@@ -1,0 +1,22 @@
+{
+  "task_id": "PFO-FA005-E2E-V2-001",
+  "dataset_id": "E2E_V2",
+  "production_sha_before": "4efcaa8aa950aa6731a1f0d16624e3a62f3831b7caaf521e31218deaf8155709",
+  "fresh_db_document_match_table": true,
+  "fresh_db_zero_checks": {
+    "marketplace_ledger_v1": 0,
+    "marketplace_ledger_clasificado_v1": 0,
+    "marketplace_cierre_financiero_v1": 0,
+    "document_match_v1": 0
+  },
+  "fresh_db_clean": true,
+  "ingestion_status": "FAILED",
+  "records_new": 0,
+  "ingestion_errors": [
+    "PERSIST: NO_DATA: 0 records inserted"
+  ],
+  "raw_ledger_rows": 0,
+  "raw_ledger_total": 0.0,
+  "status": "FAIL",
+  "reason": "INGESTION_PRECONDITION_FAILED"
+}
