@@ -238,9 +238,12 @@ class ReconciliationEngine:
             date_clause = "AND fecha <= ?"
             params_clasif.append(end)
             
-        op_filter = ""
-        if marketplace != "ML":
-            op_filter = "AND include_in_operational_pnl = TRUE"
+        # Source A is scoped to the same operational universe as the cierre
+        # target (run_financial_closing aggregates include_in_operational_pnl
+        # = TRUE only). Non-operational groups (e.g. tesoreria, op_pnl = FALSE)
+        # must not raise UNEXPECTED_GROUP: Level 3 requires them while Level 1
+        # must not flag them.
+        op_filter = "AND include_in_operational_pnl = TRUE"
             
         sql_clasif_full = sql_clasif.format(date_end=date_clause, op_filter=op_filter)
 
