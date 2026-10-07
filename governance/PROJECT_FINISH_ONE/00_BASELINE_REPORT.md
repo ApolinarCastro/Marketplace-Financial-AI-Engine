@@ -76,13 +76,13 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 | FA-003 | PASS | Isolated ingestion COMPLETED: 8 read, 8 new, 0 errors, TEMP_DB only, no contamination |
 | FA-004 | PASS (R2) | 8/8 rows, 20800.0=20800.0, 0 missing/0 unexpected/0 mismatches, REVCOMM U+00F3 parity, movement delta 0 |
 | FA-005 | PASS (E2E_V2 R1) | Fresh DB zero-pollution; 9-row parity; 8op+1tes classified; cierre 20800; mirror 0; 9 CONCILIATED/0 orphans/100.0; L1-L4 PASS delta 0; aggregate CERTIFICADO=CERTIFICADO; 0 mismatches |
-| FA-006 | READY | Unblocked by FA-005 PASS |
-| FA-007 | BLOCKED | Depends on FA-006 |
+| FA-006 | PASS | E2E_V2 expected=actual certified from 11_ evidence (no re-execution): ledger 9/9 parity, financials exact, L1-L4 PASS, aggregate CERTIFICADO, 0 mismatches |
+| FA-007 | READY | Unblocked by FA-006 PASS |
 
 ## First Blocker
 
 ```
-FIRST_BLOCKER_ID: NONE (XML/DTE R1 PASS; electronic hardening RESOLVED with certification honestly NOT_IMPLEMENTED)
+FIRST_BLOCKER_ID: NONE (FA-006 PASS — expected=actual certified; FA-007 ready)
 PREVIOUS_BLOCKERS_RESOLVED:
   - FA-003 (isolated ingestion COMPLETED)
   - FA-004 R0 ids (golden repaired, R1 confirmed match)
@@ -146,6 +146,5 @@ boundary recorded — NOT electronic certification).
 XML/DTE metadata + certified DDL RESOLVED (repair tested 5/5).
 XML/DTE R1 PASS (traceability proven; MATCHED_CERTIFIED + negative control;
 electronic certification still NOT_IMPLEMENTED).
-NEXT: PFO-SIGNED-DTE-GOLDEN-001 is BLOCKED on missing crypto deps
-(signxml/cryptography/xmlschema) — record PFO-ELECTRONIC-CERT-DEPS-001 only
-if genuinely needed/compatible. Otherwise FA-006 per its formal definition.
+NEXT: PFO-FA007-RESTART-REPRODUCIBILITY-001. Electronic certification
+remains NOT_IMPLEMENTED (independent track).
