@@ -329,7 +329,18 @@
         try {
             const resp = await postUpload(f, '?dry_run=false&confirm_write=true');
             f.progress = 100;
-            if (!resp.ok) {
+            if (resp.status === 409) {
+                let detail = '';
+                try { detail = (await resp.json()).detail || ''; } catch (e) { /* ignore body parse errors */ }
+                if (detail === 'WRITE_IN_PROGRESS') {
+                    f.status = 'validated';
+                    f.result = { status: 'BUSY_RETRY_LATER',
+                        errors: ['Otro procesamiento está en curso. Intenta nuevamente cuando finalice.'] };
+                } else {
+                    f.status = 'failed';
+                    f.result = { status: 'HTTP ' + resp.status, errors: [await resp.text()] };
+                }
+            } else if (!resp.ok) {
                 f.status = 'failed';
                 f.result = { status: 'HTTP ' + resp.status, errors: [await resp.text()] };
             } else {

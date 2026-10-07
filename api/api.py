@@ -1555,7 +1555,8 @@ async def handle_upload(
                 "details": {"stages_completed": ["DETECT", "VALIDATE", "CLASSIFY"]},
             }
 
-        # Confirmed write path: guard first, real orchestrator second.
+        # Confirmed write path: confirm -> authorize -> exclusive writer
+        # lease -> writer DB -> orchestrator -> release (always in finally).
         target_path = getattr(db, "db_path", None)
         verdict = authorize_db_write(target_path, confirmed=confirm_write)
         if not verdict["allowed"]:
@@ -1567,23 +1568,42 @@ async def handle_upload(
                 "production_target": verdict["production_target"],
             })
 
-        writer_db = DatabaseV4(db_path=db.db_path, read_only=False)
-        registry = IngestionRegistry(db=writer_db)
-        registry.ensure_schema()
+        from engine.v4.write_guard import acquire as acquire_writer_lease
+        from engine.v4.write_guard import release as release_writer_lease
 
-        record = await IngestionOrchestrator(db=writer_db, registry=registry).run(
-            file_path=str(dest), user="api_upload")
-        _cleanup()
-        details = record.details if isinstance(record.details, dict) else {}
-        return {
-            "execution_id": record.execution_id,
-            "marketplace": record.marketplace,
-            "document_type": record.document_type,
-            "period": record.period,
-            "file_name": file.filename,
-            "status": record.status,
-            "details": {"stages_completed": details.get("stages_completed", [])},
-        }
+        lease = acquire_writer_lease(str(target_path), request_id=execution_id)
+        if lease["status"] != "ACQUIRED":
+            _cleanup()
+            return JSONResponse(status_code=409, content={
+                "detail": "WRITE_IN_PROGRESS",
+            })
+
+        writer_db = None
+        try:
+            writer_db = DatabaseV4(db_path=db.db_path, read_only=False)
+            registry = IngestionRegistry(db=writer_db)
+            registry.ensure_schema()
+
+            record = await IngestionOrchestrator(db=writer_db, registry=registry).run(
+                file_path=str(dest), user="api_upload")
+            _cleanup()
+            details = record.details if isinstance(record.details, dict) else {}
+            return {
+                "execution_id": record.execution_id,
+                "marketplace": record.marketplace,
+                "document_type": record.document_type,
+                "period": record.period,
+                "file_name": file.filename,
+                "status": record.status,
+                "details": {"stages_completed": details.get("stages_completed", [])},
+            }
+        finally:
+            try:
+                if writer_db is not None:
+                    writer_db.close()
+            except Exception:
+                pass
+            release_writer_lease(str(target_path))
     except Exception as e:
         logger.error("Upload failed", exc_info=True)
         _cleanup()

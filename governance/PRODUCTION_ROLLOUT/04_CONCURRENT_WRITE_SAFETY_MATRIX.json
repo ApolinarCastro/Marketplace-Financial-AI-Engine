@@ -1,0 +1,59 @@
+{
+  "task_id": "PFO-CONCURRENT-WRITE-SAFETY-001",
+  "date": "2026-10-07",
+  "branch": "main",
+  "head_before": "af64e4523987b8ecd10247bb1f25469b51b0bfcf",
+  "status": "PASS",
+  "rca": {
+    "current_lock_scope_before": "CONNECTION_INSTANCE_ONLY",
+    "lock_scope_after": "CROSS_PROCESS_FILESYSTEM_LEASE",
+    "root_cause": "DatabaseV4 self.lock is per-instance threading.Lock; two instances on same DB do not share it"
+  },
+  "implementation": {
+    "file": "engine/v4/write_guard.py",
+    "mechanism": "O_CREAT | O_EXCL atomic file creation",
+    "lock_path_rule": "<db_path>.writer.lock (resolved absolute path)",
+    "lock_identity": "resolved absolute DB path only",
+    "stale_lock_auto_recovery": "NOT_IMPLEMENTED",
+    "crash_safety": "PARTIAL"
+  },
+  "tests": {
+    "same_process_second_writer": "PASS",
+    "cross_process_second_writer": "PASS",
+    "api_concurrent_busy": "PASS",
+    "different_db_concurrent": "PASS",
+    "dry_run_no_lock": "PASS",
+    "unconfirmed_no_lock": "PASS",
+    "failure_releases_lock": "PASS",
+    "exception_releases_lock": "PASS",
+    "duplicate_releases_lock": "PASS",
+    "production_test_mode_blocked": "PASS"
+  },
+  "api_busy_status": 409,
+  "ui_busy_message": "Otro procesamiento está en curso. Intenta nuevamente cuando finalice.",
+  "ui_busy_autoretry": false,
+  "ui_write_mode": "SEQUENTIAL",
+  "non_contamination": {
+    "production_db_modified": false,
+    "real_raw_modified": false,
+    "financial_core_modified": false,
+    "golden_files_modified": false
+  },
+  "regression": {
+    "test_write_guard": "7/7 PASS",
+    "test_upload_concurrency": "6/6 PASS",
+    "test_upload_center_controlled_ux": "19/19 PASS",
+    "test_upload_center_e2e": "13/13 PASS",
+    "test_ingestion_handlers": "56/56 PASS",
+    "e2e_v1_golden_integrity": "11/11 PASS",
+    "e2e_v2_golden_integrity": "8/8 PASS",
+    "total": "120/120 PASS"
+  },
+  "result": {
+    "controlled_upload_concurrent_write_safety": "PASS",
+    "concurrent_write_safety": "PASS_FOR_CONTROLLED_UPLOAD_PATH",
+    "crash_safety": "PARTIAL",
+    "electronic_signature_certification": "NOT_IMPLEMENTED",
+    "readiness_decision": "READY_FOR_CONTROLLED_ROLLOUT"
+  }
+}

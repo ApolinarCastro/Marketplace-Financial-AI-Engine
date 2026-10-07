@@ -138,5 +138,20 @@ def test_badge_counts(script: str):
         assert token in script, token
 
 
+def test_busy_reverts_to_validated_no_autoretry(script: str):
+    assert "WRITE_IN_PROGRESS" in script
+    assert "Otro procesamiento está en curso. Intenta nuevamente cuando finalice." in script
+    assert "f.status = 'validated'" in script
+    assert "Promise.all" not in script
+    # No retry timers anywhere: user decides when to reprocess manually.
+    assert "setTimeout" not in script
+    assert "setInterval" not in script
+
+
+def test_ui_write_mode_sequential(script: str):
+    assert "for (const f of targets)" in script
+    assert "await processFile(f)" in script
+
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
