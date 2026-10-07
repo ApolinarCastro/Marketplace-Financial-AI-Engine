@@ -1,0 +1,431 @@
+{
+  "task_id": "PFO-FA007-RESTART-REPRODUCIBILITY-001",
+  "production_sha_before": "4efcaa8aa950aa6731a1f0d16624e3a62f3831b7caaf521e31218deaf8155709",
+  "run_1": {
+    "tag": "RUN_1",
+    "temp_db": "data\\db\\tmp_pfo_fa007_restart\\meli_financial_v4.db",
+    "fresh_zero_checks": {
+      "marketplace_ledger_v1": 0,
+      "marketplace_ledger_clasificado_v1": 0,
+      "marketplace_cierre_financiero_v1": 0,
+      "document_match_v1": 0
+    },
+    "fresh_clean": true,
+    "execution_id": "bd776dd6-b036-4680-bf68-e4b9655e5ed3",
+    "ingestion_status": "COMPLETED",
+    "records_new": 9,
+    "ingestion_errors": [],
+    "raw_ledger_rows": 9,
+    "raw_ledger_total": 0.0,
+    "classified_rows": 9,
+    "treasury_rows": 1,
+    "operational_rows": 8,
+    "classification_nulls": 0,
+    "treasury_total": -20800.0,
+    "closing_result": {
+      "neto": 20800.0,
+      "ingresos": 80000.0,
+      "devoluciones": -50000.0,
+      "costos_op": -1500.0,
+      "costos_com": -7700.0,
+      "ajustes": 0.0
+    },
+    "operational_net": 20800.0,
+    "treasury_mirror_delta": 0.0,
+    "document_matches_actual": 9,
+    "document_orphans": 0,
+    "actual_document_coverage": 100.0,
+    "engine_levels": {
+      "INTERNA": {
+        "status": "PASS",
+        "delta": 0.0,
+        "source_total": 20800.0,
+        "target_total": 20800.0
+      },
+      "OPERACIONAL": {
+        "status": "PASS",
+        "delta": 0.0,
+        "source_total": 20800.0,
+        "target_total": 20800.0
+      },
+      "TESORERÍA": {
+        "status": "PASS",
+        "delta": 0.0,
+        "source_total": -20800.0,
+        "target_total": -20800.0
+      },
+      "DOCUMENTAL": {
+        "status": "PASS",
+        "delta": 0.0,
+        "source_total": 9.0,
+        "target_total": 9.0
+      }
+    },
+    "engine_certification_status": "CERTIFICADO",
+    "engine_delta": 0.0,
+    "engine_taxonomy_coverage": 100.0,
+    "engine_document_coverage": 100.0,
+    "engine_total_records": 9,
+    "ledger_business_rows": [
+      {
+        "id_transaccion": "CHG_ML_Facturacion_E2E_V2.xlsx_4",
+        "id_orden": "E2E-003",
+        "tipo_movimiento": "CARGO",
+        "monto": -1500.0,
+        "detalle": "Envío",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-03",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "CHG_ML_Facturacion_E2E_V2.xlsx_5",
+        "id_orden": "E2E-004",
+        "tipo_movimiento": "CARGO",
+        "monto": -2000.0,
+        "detalle": "Publicidad",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-04",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "CHG_ML_Facturacion_E2E_V2.xlsx_6",
+        "id_orden": "E2E-TES",
+        "tipo_movimiento": "CARGO",
+        "monto": -20800.0,
+        "detalle": "Retiro de dinero",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-20",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "COMM_E2E-001_ML_Facturacion_E2E_V2.xlsx_1",
+        "id_orden": "E2E-001",
+        "tipo_movimiento": "EGRESO_COMISION",
+        "monto": -9500.0,
+        "detalle": "Cargo por venta (Comisión)",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-01",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "COMM_E2E-002_ML_Facturacion_E2E_V2.xlsx_2",
+        "id_orden": "E2E-002",
+        "tipo_movimiento": "EGRESO_COMISION",
+        "monto": -5700.0,
+        "detalle": "Cargo por venta (Comisión)",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-02",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "REFUND_E2E-001_ML_Facturacion_E2E_V2.xlsx_3",
+        "id_orden": "E2E-001",
+        "tipo_movimiento": "DEVOLUCION",
+        "monto": -50000.0,
+        "detalle": "Devolución de venta",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-15",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "REVCOMM_E2E-001_ML_Facturacion_E2E_V2.xlsx_3",
+        "id_orden": "E2E-001",
+        "tipo_movimiento": "AJUSTE",
+        "monto": 9500.0,
+        "detalle": "Anulación del cargo por venta",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-15",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "SALE_E2E-001_ML_Facturacion_E2E_V2.xlsx_1",
+        "id_orden": "E2E-001",
+        "tipo_movimiento": "INGRESO_VENTA",
+        "monto": 50000.0,
+        "detalle": "Cargo por venta (Venta)",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-01",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "SALE_E2E-002_ML_Facturacion_E2E_V2.xlsx_2",
+        "id_orden": "E2E-002",
+        "tipo_movimiento": "INGRESO_VENTA",
+        "monto": 30000.0,
+        "detalle": "Cargo por venta (Venta)",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-02",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      }
+    ],
+    "level_summary": {
+      "LEVEL_1": {
+        "status": "PASS",
+        "delta": 0.0
+      },
+      "LEVEL_2": {
+        "status": "PASS",
+        "delta": 0.0
+      },
+      "LEVEL_3": {
+        "status": "PASS",
+        "delta": 0.0
+      },
+      "LEVEL_4": {
+        "status": "PASS",
+        "delta": 0.0
+      }
+    },
+    "actual_aggregate_status": "CERTIFICADO",
+    "business_sha256": "dc9e149c2b9559192b59686644d06d50553f12c8ed9995d9c34f6fec1559e0e3",
+    "outcome": "EXECUTED",
+    "golden_mismatches": [],
+    "equals_golden": true,
+    "equals_prior_certified_run": true
+  },
+  "run_2": {
+    "tag": "RUN_2",
+    "temp_db": "data\\db\\tmp_pfo_fa007_restart_r2\\meli_financial_v4.db",
+    "fresh_zero_checks": {
+      "marketplace_ledger_v1": 0,
+      "marketplace_ledger_clasificado_v1": 0,
+      "marketplace_cierre_financiero_v1": 0,
+      "document_match_v1": 0
+    },
+    "fresh_clean": true,
+    "execution_id": "5d2d3b9f-72b8-4da7-b2d8-c662bc1390eb",
+    "ingestion_status": "COMPLETED",
+    "records_new": 9,
+    "ingestion_errors": [],
+    "raw_ledger_rows": 9,
+    "raw_ledger_total": 0.0,
+    "classified_rows": 9,
+    "treasury_rows": 1,
+    "operational_rows": 8,
+    "classification_nulls": 0,
+    "treasury_total": -20800.0,
+    "closing_result": {
+      "neto": 20800.0,
+      "ingresos": 80000.0,
+      "devoluciones": -50000.0,
+      "costos_op": -1500.0,
+      "costos_com": -7700.0,
+      "ajustes": 0.0
+    },
+    "operational_net": 20800.0,
+    "treasury_mirror_delta": 0.0,
+    "document_matches_actual": 9,
+    "document_orphans": 0,
+    "actual_document_coverage": 100.0,
+    "engine_levels": {
+      "INTERNA": {
+        "status": "PASS",
+        "delta": 0.0,
+        "source_total": 20800.0,
+        "target_total": 20800.0
+      },
+      "OPERACIONAL": {
+        "status": "PASS",
+        "delta": 0.0,
+        "source_total": 20800.0,
+        "target_total": 20800.0
+      },
+      "TESORERÍA": {
+        "status": "PASS",
+        "delta": 0.0,
+        "source_total": -20800.0,
+        "target_total": -20800.0
+      },
+      "DOCUMENTAL": {
+        "status": "PASS",
+        "delta": 0.0,
+        "source_total": 9.0,
+        "target_total": 9.0
+      }
+    },
+    "engine_certification_status": "CERTIFICADO",
+    "engine_delta": 0.0,
+    "engine_taxonomy_coverage": 100.0,
+    "engine_document_coverage": 100.0,
+    "engine_total_records": 9,
+    "ledger_business_rows": [
+      {
+        "id_transaccion": "CHG_ML_Facturacion_E2E_V2.xlsx_4",
+        "id_orden": "E2E-003",
+        "tipo_movimiento": "CARGO",
+        "monto": -1500.0,
+        "detalle": "Envío",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-03",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "CHG_ML_Facturacion_E2E_V2.xlsx_5",
+        "id_orden": "E2E-004",
+        "tipo_movimiento": "CARGO",
+        "monto": -2000.0,
+        "detalle": "Publicidad",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-04",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "CHG_ML_Facturacion_E2E_V2.xlsx_6",
+        "id_orden": "E2E-TES",
+        "tipo_movimiento": "CARGO",
+        "monto": -20800.0,
+        "detalle": "Retiro de dinero",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-20",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "COMM_E2E-001_ML_Facturacion_E2E_V2.xlsx_1",
+        "id_orden": "E2E-001",
+        "tipo_movimiento": "EGRESO_COMISION",
+        "monto": -9500.0,
+        "detalle": "Cargo por venta (Comisión)",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-01",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "COMM_E2E-002_ML_Facturacion_E2E_V2.xlsx_2",
+        "id_orden": "E2E-002",
+        "tipo_movimiento": "EGRESO_COMISION",
+        "monto": -5700.0,
+        "detalle": "Cargo por venta (Comisión)",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-02",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "REFUND_E2E-001_ML_Facturacion_E2E_V2.xlsx_3",
+        "id_orden": "E2E-001",
+        "tipo_movimiento": "DEVOLUCION",
+        "monto": -50000.0,
+        "detalle": "Devolución de venta",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-15",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "REVCOMM_E2E-001_ML_Facturacion_E2E_V2.xlsx_3",
+        "id_orden": "E2E-001",
+        "tipo_movimiento": "AJUSTE",
+        "monto": 9500.0,
+        "detalle": "Anulación del cargo por venta",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-15",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "SALE_E2E-001_ML_Facturacion_E2E_V2.xlsx_1",
+        "id_orden": "E2E-001",
+        "tipo_movimiento": "INGRESO_VENTA",
+        "monto": 50000.0,
+        "detalle": "Cargo por venta (Venta)",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-01",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      },
+      {
+        "id_transaccion": "SALE_E2E-002_ML_Facturacion_E2E_V2.xlsx_2",
+        "id_orden": "E2E-002",
+        "tipo_movimiento": "INGRESO_VENTA",
+        "monto": 30000.0,
+        "detalle": "Cargo por venta (Venta)",
+        "financial_group": "",
+        "marketplace": "ML",
+        "fecha": "2026-06-02",
+        "archivo_origen": "ML_Facturacion_E2E_V2.xlsx"
+      }
+    ],
+    "level_summary": {
+      "LEVEL_1": {
+        "status": "PASS",
+        "delta": 0.0
+      },
+      "LEVEL_2": {
+        "status": "PASS",
+        "delta": 0.0
+      },
+      "LEVEL_3": {
+        "status": "PASS",
+        "delta": 0.0
+      },
+      "LEVEL_4": {
+        "status": "PASS",
+        "delta": 0.0
+      }
+    },
+    "actual_aggregate_status": "CERTIFICADO",
+    "business_sha256": "dc9e149c2b9559192b59686644d06d50553f12c8ed9995d9c34f6fec1559e0e3",
+    "outcome": "EXECUTED",
+    "golden_mismatches": [],
+    "equals_golden": true,
+    "equals_prior_certified_run": true
+  },
+  "prior_run_business": {
+    "ledger_rows": 9,
+    "op_net": 20800.0,
+    "tes": -20800.0,
+    "mirror": 0.0,
+    "coverage": 100.0,
+    "levels": {
+      "LEVEL_1": {
+        "status": "PASS",
+        "delta": 0.0
+      },
+      "LEVEL_2": {
+        "status": "PASS",
+        "delta": 0.0
+      },
+      "LEVEL_3": {
+        "status": "PASS",
+        "delta": 0.0
+      },
+      "LEVEL_4": {
+        "status": "PASS",
+        "delta": 0.0
+      }
+    },
+    "agg": "CERTIFICADO"
+  },
+  "run_1_equals_run_2": true,
+  "execution_ids_differ": true,
+  "prior_fa005_execution_note": "11_FA005 comparison JSON carries no execution_id field; restart boundary proven by fresh TEMP_DB paths + distinct RUN_1/RUN_2 execution_ids",
+  "production_sha_after": "4efcaa8aa950aa6731a1f0d16624e3a62f3831b7caaf521e31218deaf8155709",
+  "production_db_modified": false,
+  "real_raw_modified": false,
+  "total_field_mismatches": 0,
+  "checks": {
+    "run1_golden": true,
+    "run2_golden": true,
+    "run1_run2_equal": true,
+    "run1_prior_equal": true,
+    "run2_prior_equal": true,
+    "exec_ids_differ": true,
+    "mismatches_zero": true,
+    "production_db_unmodified": true,
+    "real_raw_unmodified": true
+  },
+  "fa007": "PASS"
+}
