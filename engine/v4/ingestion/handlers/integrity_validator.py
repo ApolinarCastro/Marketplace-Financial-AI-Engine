@@ -88,14 +88,21 @@ class IntegrityValidator:
         import pandas as pd
         issues: list[dict[str, Any]] = []
         xls = pd.ExcelFile(path)
-        if len(xls.sheet_names) == 0:
-            issues.append({"type": "empty_xlsx", "detail": "XLSX file has no sheets"})
-        for sheet in xls.sheet_names:
-            df = pd.read_excel(path, sheet_name=sheet, nrows=0)
-            if df.columns.tolist():
-                break
-        else:
-            issues.append({"type": "all_sheets_empty", "detail": "All XLSX sheets are empty"})
+        try:
+            if len(xls.sheet_names) == 0:
+                issues.append({"type": "empty_xlsx", "detail": "XLSX file has no sheets"})
+            for sheet in xls.sheet_names:
+                df = pd.read_excel(path, sheet_name=sheet, nrows=0)
+                if df.columns.tolist():
+                    break
+            else:
+                issues.append({"type": "all_sheets_empty", "detail": "All XLSX sheets are empty"})
+        finally:
+            # Release the file handle: staged uploads must be deletable on Windows.
+            try:
+                xls.close()
+            except Exception:
+                pass
         return issues
 
     def _check_xml(self, path: Path) -> list[dict[str, Any]]:

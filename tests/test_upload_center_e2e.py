@@ -1,22 +1,20 @@
-"""CAP-001: Upload Center E2E Test — Isolated with temp DB and temp uploads.
+"""Upload hardening tests — corrected contract (PFO-UPLOAD-CONFIG-GUARD-001).
 
-Verifies the complete upload flow end-to-end:
-1. File upload via POST /api/v4/ingestion/upload returns execution_id
-2. File is physically saved in temp uploads/
-3. Ingestion registry has the record in temp DB
-4. File registry has the record in temp DB
-5. Upload page HTML is served correctly
+Default upload is a NON-WRITING dry run. Confirmed writes require
+dry_run=false + confirm_write=true and run the real IngestionOrchestrator.
+Registry endpoints never fabricate records. All tests isolated (temp DB +
+temp uploads + temp knowledge index). Production never touched.
 """
 from __future__ import annotations
+
+import shutil
 from pathlib import Path
-import uuid
-from unittest.mock import patch
 
 import pytest
-
 from fastapi.testclient import TestClient
 
 ROOT = Path(__file__).resolve().parent.parent
+E2E_V1_INPUT = ROOT / "tests" / "golden" / "e2e_v1" / "input" / "ML_Facturacion_E2E_V1.xlsx"
 
 
 def _make_csv(tmp_path, name, content=None):
@@ -27,12 +25,10 @@ def _make_csv(tmp_path, name, content=None):
     return p
 
 
-@pytest.fixture
-def mock_loader():
-    with patch("engine.v4.ingestion.handlers.persistence_engine.SurgicalLoader") as m:
-        instance = m.return_value
-        instance.load_file.return_value = 4
-        yield instance
+def _copy_e2e_v1(tmp_path, name="ML_Facturacion_E2E_V1.xlsx"):
+    dest = tmp_path / name
+    shutil.copy2(E2E_V1_INPUT, dest)
+    return dest
 
 
 @pytest.fixture
@@ -57,7 +53,7 @@ def isolated_db(tmp_path):
 
 
 @pytest.fixture
-def isolated_app(isolated_db, isolated_uploads, tmp_path, monkeypatch, mock_loader):
+def isolated_app(isolated_db, isolated_uploads, tmp_path, monkeypatch):
     import api.api as api_module
     import engine.v4.knowledge.knowledge_indexer as knowledge_indexer_module
 
@@ -67,93 +63,135 @@ def isolated_app(isolated_db, isolated_uploads, tmp_path, monkeypatch, mock_load
         "DEFAULT_PATH",
         tmp_path / "knowledge_index.yaml",
     )
+    monkeypatch.setenv("MF_RUNTIME_MODE", "CONTROLLED")
     with TestClient(api_module.app) as client:
         yield client
 
 
-class TestUploadCenterE2E:
+def _ledger_count(isolated_db):
+    return int(isolated_db.query(
+        "SELECT COUNT(*) AS n FROM marketplace_ledger_v1")["n"].iloc[0])
 
+
+class TestUploadHardenedContract:
     def test_upload_page_served(self, isolated_app):
         resp = isolated_app.get("/upload")
         assert resp.status_code == 200
         assert "Upload Center" in resp.text
-        assert "Subir Archivos" in resp.text
 
-    def test_upload_file_returns_execution_id(self, isolated_app, tmp_path):
-        csv = _make_csv(tmp_path, "ML_Facturacion_2026-01_A.csv")
-        with open(csv, "rb") as f:
+    def test_a_default_request_is_dry_run_no_write(self, isolated_app, tmp_path, isolated_db):
+        src = _copy_e2e_v1(tmp_path)
+        before = _ledger_count(isolated_db)
+        with open(src, "rb") as f:
             resp = isolated_app.post(
                 "/api/v4/ingestion/upload",
-                files={"file": (csv.name, f, "text/csv")},
+                files={"file": (src.name, f, "application/vnd.ms-excel")},
             )
         assert resp.status_code == 200
         data = resp.json()
-        assert "execution_id" in data
-        assert data["execution_id"] is not None
-        assert len(data["execution_id"]) > 0
+        assert data["status"] == "DRY_RUN"
+        assert data["status"] != "COMPLETED"
+        assert "DETECT" in data["details"]["stages_completed"]
+        assert "PERSIST" not in data["details"]["stages_completed"]
+        assert _ledger_count(isolated_db) == before
+        # registry holds no record for dry runs
+        reg = isolated_app.get(f"/api/v4/ingestion/registry/{data['execution_id']}")
+        assert reg.status_code == 404
 
-    def test_upload_response_has_metadata(self, isolated_app, tmp_path, mock_loader):
-        csv = _make_csv(tmp_path, "ML_Facturacion_2026-01_B.csv")
-        with open(csv, "rb") as f:
+    def test_b_write_without_confirmation_rejected(self, isolated_app, tmp_path, isolated_db):
+        src = _copy_e2e_v1(tmp_path)
+        before = _ledger_count(isolated_db)
+        with open(src, "rb") as f:
             resp = isolated_app.post(
-                "/api/v4/ingestion/upload",
-                files={"file": (csv.name, f, "text/csv")},
+                "/api/v4/ingestion/upload?dry_run=false",
+                files={"file": (src.name, f, "application/vnd.ms-excel")},
+            )
+        assert resp.status_code == 409
+        assert resp.json()["detail"] == "WRITE_NOT_CONFIRMED"
+        assert _ledger_count(isolated_db) == before
+
+    def test_c_controlled_confirmed_runs_real_orchestrator(self, isolated_app, tmp_path, isolated_db):
+        from engine.v4.ingestion.handlers.marketplace_classifier import MarketplaceClassifier
+
+        src = _copy_e2e_v1(tmp_path)
+        with open(src, "rb") as f:
+            resp = isolated_app.post(
+                "/api/v4/ingestion/upload?dry_run=false&confirm_write=true",
+                files={"file": (src.name, f, "application/vnd.ms-excel")},
             )
         assert resp.status_code == 200
         data = resp.json()
-        assert data.get("marketplace") == "ML"
-        assert data.get("document_type") == "facturacion"
-        assert data.get("period") == "2026-01"
-        assert data.get("file_name") == csv.name
-        assert data.get("status") == "COMPLETED"
+        expected = MarketplaceClassifier().classify(str(src), src.name)
+        assert data["marketplace"] == expected["marketplace"]
+        assert data["document_type"] == expected["document_type"]
+        assert (data["period"] or "") == (expected["period"] or "")
+        stages = data["details"]["stages_completed"]
+        for s in ("DETECT", "VALIDATE", "CLASSIFY", "PERSIST"):
+            assert s in stages
+        assert data["status"] == "COMPLETED"
+        assert _ledger_count(isolated_db) == 8
 
-    def test_upload_creates_file_in_uploads(self, isolated_app, tmp_path, isolated_uploads):
-        csv = _make_csv(tmp_path, "ML_Facturacion_2026-01_C.csv")
-        with open(csv, "rb") as f:
+    def test_d_test_mode_blocks_production_path(self, isolated_app, tmp_path, isolated_db, monkeypatch):
+        import api.api as api_module
+        from engine.v4 import config_guard
+
+        monkeypatch.setenv("MF_RUNTIME_MODE", "TEST")
+        monkeypatch.setattr(
+            config_guard, "is_production_db_path", lambda p: True)
+        src = _copy_e2e_v1(tmp_path)
+        with open(src, "rb") as f:
+            resp = isolated_app.post(
+                "/api/v4/ingestion/upload?dry_run=false&confirm_write=true",
+                files={"file": (src.name, f, "application/vnd.ms-excel")},
+            )
+        assert resp.status_code == 403
+        assert resp.json()["detail"] == "PRODUCTION_WRITE_BLOCKED_IN_TEST"
+        assert _ledger_count(isolated_db) == 0
+
+    def test_e_classification_comes_from_classifier(self, isolated_app, tmp_path, isolated_db):
+        from engine.v4.ingestion.handlers.marketplace_classifier import MarketplaceClassifier
+
+        src = _copy_e2e_v1(tmp_path)
+        expected = MarketplaceClassifier().classify(str(src), src.name)
+        with open(src, "rb") as f:
             resp = isolated_app.post(
                 "/api/v4/ingestion/upload",
-                files={"file": (csv.name, f, "text/csv")},
+                files={"file": (src.name, f, "application/vnd.ms-excel")},
             )
-        assert resp.status_code == 200
-        candidates = list(isolated_uploads.glob(f"*{csv.name}"))
-        assert len(candidates) >= 1
-        saved = candidates[0]
-        assert saved.exists()
-        assert saved.stat().st_size > 0
+        data = resp.json()
+        assert (data["marketplace"], data["document_type"], data["period"] or "") == (
+            expected["marketplace"], expected["document_type"], expected["period"] or "")
 
-    def test_upload_registry_has_record(self, isolated_app, tmp_path, mock_loader):
-        csv = _make_csv(tmp_path, "ML_Facturacion_2026-01_D.csv")
-        with open(csv, "rb") as f:
+    def test_f_pipeline_failure_never_completed(self, isolated_app, tmp_path, isolated_db):
+        bad = _make_csv(tmp_path, "BAD_ML.csv", content="Nope\n")
+        with open(bad, "rb") as f:
             resp = isolated_app.post(
-                "/api/v4/ingestion/upload",
-                files={"file": (csv.name, f, "text/csv")},
+                "/api/v4/ingestion/upload?dry_run=false&confirm_write=true",
+                files={"file": (bad.name, f, "text/csv")},
             )
         assert resp.status_code == 200
-        execution_id = resp.json()["execution_id"]
+        data = resp.json()
+        assert data["status"] == "FAILED"
+        assert data["status"] != "COMPLETED"
+        assert "PERSIST" not in data["details"]["stages_completed"]
 
-        reg_resp = isolated_app.get(f"/api/v4/ingestion/registry/{execution_id}")
-        assert reg_resp.status_code == 200
-        reg_data = reg_resp.json()
-        assert reg_data["execution_id"] == execution_id
-        assert reg_data["file_name"] == csv.name
-        assert reg_data["marketplace"] == "ML"
-        assert reg_data["status"] == "COMPLETED"
+    def test_g_unknown_execution_returns_404(self, isolated_app):
+        resp = isolated_app.get("/api/v4/ingestion/registry/does-not-exist-123")
+        assert resp.status_code == 404
+        assert resp.json()["detail"] == "EXECUTION_NOT_FOUND"
 
-    def test_upload_registry_list_includes_record(self, isolated_app, tmp_path):
-        csv = _make_csv(tmp_path, "ML_Facturacion_2026-01_E.csv")
-        with open(csv, "rb") as f:
-            resp = isolated_app.post(
-                "/api/v4/ingestion/upload",
-                files={"file": (csv.name, f, "text/csv")},
-            )
-        assert resp.status_code == 200
-        execution_id = resp.json()["execution_id"]
+    def test_h_list_error_returns_500_without_fake(self, isolated_app, monkeypatch):
+        import api.api as api_module
 
-        reg_resp = isolated_app.get("/api/v4/ingestion/registry?limit=100")
-        assert reg_resp.status_code == 200
-        body = reg_resp.json()
-        ids = [r["execution_id"] for r in body.get("records", [])]
-        assert execution_id in ids
+        class Boom:
+            def __init__(self, *a, **k):
+                raise RuntimeError("controlled registry failure")
+
+        monkeypatch.setattr(api_module, "IngestionRegistry", Boom)
+        resp = isolated_app.get("/api/v4/ingestion/registry?limit=10")
+        assert resp.status_code == 500
+        body = resp.json()
+        assert body.get("detail") == "Registry unavailable"
 
     def test_upload_invalid_extension_rejected(self, isolated_app, tmp_path):
         p = tmp_path / "test.txt"
@@ -170,34 +208,34 @@ class TestUploadCenterE2E:
         resp = isolated_app.post("/api/v4/ingestion/upload")
         assert resp.status_code == 400
 
-    def test_loader_called_with_marketplace(self, isolated_app, tmp_path):
-        from unittest.mock import patch
-        csv = _make_csv(tmp_path, "ML_Facturacion_2026-01_F.csv")
-        with patch("engine.v4.ingestion.handlers.persistence_engine.SurgicalLoader") as MockLoader:
-            instance = MockLoader.return_value
-            instance.load_file.return_value = 4
-
-            with open(csv, "rb") as f:
-                isolated_app.post(
-                    "/api/v4/ingestion/upload",
-                    files={"file": (csv.name, f, "text/csv")},
-                )
-
-            instance.load_file.assert_called_once()
-            args, kwargs = instance.load_file.call_args
-            assert args[1] == "ML"
-            assert kwargs["execution_id"]
-
-    def test_upload_pipeline_completes_all_stages(self, isolated_app, tmp_path, mock_loader):
-        csv = _make_csv(tmp_path, "ML_Facturacion_2026-01_G.csv")
-        with open(csv, "rb") as f:
+    def test_staged_files_cleaned_up(self, isolated_app, tmp_path, isolated_uploads):
+        src = _copy_e2e_v1(tmp_path)
+        with open(src, "rb") as f:
             resp = isolated_app.post(
                 "/api/v4/ingestion/upload",
-                files={"file": (csv.name, f, "text/csv")},
+                files={"file": (src.name, f, "application/vnd.ms-excel")},
             )
         assert resp.status_code == 200
-        data = resp.json()
-        stages = data.get("details", {}).get("stages_completed", [])
-        expected = ["DETECT", "VALIDATE", "CLASSIFY", "PERSIST", "CERTIFY", "KNOWLEDGE"]
-        for s in expected:
-            assert s in stages, f"Stage {s} not completed"
+        leftover = list(isolated_uploads.iterdir())
+        assert leftover == [], f"staged artifacts left: {leftover}"
+
+    def test_registry_returns_real_record_after_confirmed_write(
+        self, isolated_app, tmp_path, isolated_db
+    ):
+        src = _copy_e2e_v1(tmp_path)
+        with open(src, "rb") as f:
+            resp = isolated_app.post(
+                "/api/v4/ingestion/upload?dry_run=false&confirm_write=true",
+                files={"file": (src.name, f, "application/vnd.ms-excel")},
+            )
+        execution_id = resp.json()["execution_id"]
+        reg_resp = isolated_app.get(f"/api/v4/ingestion/registry/{execution_id}")
+        assert reg_resp.status_code == 200
+        reg_data = reg_resp.json()
+        assert reg_data["execution_id"] == execution_id
+        assert reg_data["file_name"].endswith(src.name)
+        assert reg_data["status"] == "COMPLETED"
+
+        reg_list = isolated_app.get("/api/v4/ingestion/registry?limit=100")
+        ids = [r["execution_id"] for r in reg_list.json().get("records", [])]
+        assert execution_id in ids

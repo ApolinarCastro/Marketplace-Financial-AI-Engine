@@ -1481,84 +1481,145 @@ def upload_page():
     return HTMLResponse("<html><body>Upload Center Subir Archivos</body></html>")
 
 @app.post("/api/v4/ingestion/upload")
-def handle_upload(file: UploadFile = File(None)):
+async def handle_upload(
+    file: UploadFile = File(None),
+    dry_run: bool = True,
+    confirm_write: bool = False,
+):
+    """Ingest an uploaded marketplace file through the real pipeline.
+
+    Default is a non-writing dry run (DETECT + VALIDATE + CLASSIFY only,
+    status DRY_RUN). A confirmed write (dry_run=false + confirm_write=true)
+    executes the real IngestionOrchestrator and returns its record fields.
+    Production writes additionally require a non-TEST runtime mode.
+    """
+    from engine.v4.config_guard import authorize_db_write, get_runtime_mode
+
     if file is None:
         return JSONResponse(status_code=400, content={"detail": "No file uploaded"})
-        
+
     if not file.filename.endswith(('.csv', '.xlsx', '.xls', '.xml')):
         return JSONResponse(status_code=400, content={"detail": "File type not allowed"})
-        
-    # Copy file to UPLOAD_DIR
+
+    # Stage file to UPLOAD_DIR (always cleaned up before returning)
     execution_id = uuid.uuid4().hex
     safe_name = f"{execution_id}_{file.filename}"
     dest = UPLOAD_DIR / safe_name
-    
+
     with open(dest, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
-        
+
+    def _cleanup():
+        try:
+            dest.unlink(missing_ok=True)
+        except Exception:
+            pass
+
     try:
+        from engine.v4.ingestion.handlers.file_detector import FileDetector
+        from engine.v4.ingestion.handlers.integrity_validator import IntegrityValidator
+        from engine.v4.ingestion.handlers.marketplace_classifier import MarketplaceClassifier
+
         db = DatabaseV4.get()
+        detector = FileDetector()
+        detection = detector.detect(str(dest), file.filename)
+
+        import hashlib
+        sha256 = hashlib.sha256(dest.read_bytes()).hexdigest()
+        extension = Path(file.filename).suffix.lower()
+        validator = IntegrityValidator(db=db)
+        issues = validator.validate(str(dest), sha256, extension)
+        classification = MarketplaceClassifier().classify(str(dest), file.filename)
+
+        if dry_run:
+            if issues:
+                _cleanup()
+                return {
+                    "execution_id": execution_id,
+                    "marketplace": classification.get("marketplace"),
+                    "document_type": classification.get("document_type"),
+                    "period": classification.get("period"),
+                    "file_name": file.filename,
+                    "status": "FAILED",
+                    "errors": [i.get("detail", str(i)) for i in issues],
+                    "details": {"stages_completed": ["DETECT", "VALIDATE", "CLASSIFY"]},
+                }
+            _cleanup()
+            return {
+                "execution_id": execution_id,
+                "marketplace": classification.get("marketplace"),
+                "document_type": classification.get("document_type"),
+                "period": classification.get("period"),
+                "file_name": file.filename,
+                "status": "DRY_RUN",
+                "details": {"stages_completed": ["DETECT", "VALIDATE", "CLASSIFY"]},
+            }
+
+        # Confirmed write path: guard first, real orchestrator second.
+        target_path = getattr(db, "db_path", None)
+        verdict = authorize_db_write(target_path, confirmed=confirm_write)
+        if not verdict["allowed"]:
+            _cleanup()
+            code = 409 if verdict["code"] == "WRITE_NOT_CONFIRMED" else 403
+            return JSONResponse(status_code=code, content={
+                "detail": verdict["code"],
+                "mode": verdict["mode"],
+                "production_target": verdict["production_target"],
+            })
+
         writer_db = DatabaseV4(db_path=db.db_path, read_only=False)
         registry = IngestionRegistry(db=writer_db)
         registry.ensure_schema()
-        
-        # Test loader patching: the test patches engine.v4.ingestion.handlers.persistence_engine.SurgicalLoader
-        # But wait, orchestrator might use it. If not, we just call loader directly if it's a test?
-        # Actually, let's just create a record and call load_file manually so we satisfy the test.
-        record = registry.create_record(file_name=file.filename, file_path=str(dest))
-        registry.update_classification(record, marketplace="ML", document_type="facturacion", period="2026-01", loader="SurgicalLoader", pipeline="engine")
-        registry.update_status(record, "COMPLETED")
-        
-        from engine.v4.ingestion.handlers.persistence_engine import SurgicalLoader
-        loader = SurgicalLoader(db=writer_db)
-        loader.load_file(str(dest), "ML", execution_id=execution_id)
-        
+
+        record = await IngestionOrchestrator(db=writer_db, registry=registry).run(
+            file_path=str(dest), user="api_upload")
+        _cleanup()
+        details = record.details if isinstance(record.details, dict) else {}
         return {
             "execution_id": record.execution_id,
-            "marketplace": "ML",
-            "document_type": "facturacion",
-            "period": "2026-01",
+            "marketplace": record.marketplace,
+            "document_type": record.document_type,
+            "period": record.period,
             "file_name": file.filename,
-            "status": "COMPLETED",
-            "details": {"stages_completed": ["DETECT", "VALIDATE", "CLASSIFY", "PERSIST", "CERTIFY", "KNOWLEDGE"]}
+            "status": record.status,
+            "details": {"stages_completed": details.get("stages_completed", [])},
         }
     except Exception as e:
         logger.error("Upload failed", exc_info=True)
-        return JSONResponse(status_code=500, content={"detail": str(e)})
+        _cleanup()
+        return JSONResponse(status_code=500, content={"detail": "Upload failed"})
 
 @app.get("/api/v4/ingestion/registry/{execution_id}")
 def get_registry(execution_id: str):
     db = DatabaseV4.get()
     try:
         registry = IngestionRegistry(db=db)
+        registry.ensure_schema()
         res = registry.get(execution_id)
-        if res:
-            d = res.dict() if hasattr(res, 'dict') else (res.model_dump() if hasattr(res, 'model_dump') else res.__dict__)
-            import math
-            for k, v in d.items():
-                if isinstance(v, float) and math.isnan(v):
-                    d[k] = None
-            d["details"] = {"stages_completed": ["DETECT", "VALIDATE", "CLASSIFY", "PERSIST", "CERTIFY", "KNOWLEDGE"]}
-            return d
-    except Exception as e:
-        pass
-    
-    return {
-        "execution_id": execution_id,
-        "file_name": "test.csv",
-        "marketplace": "ML",
-        "status": "COMPLETED"
-    }
+        if res is None:
+            return JSONResponse(status_code=404, content={
+                "detail": "EXECUTION_NOT_FOUND", "execution_id": execution_id})
+        d = res.dict() if hasattr(res, 'dict') else (res.model_dump() if hasattr(res, 'model_dump') else res.__dict__)
+        import math
+        for k, v in d.items():
+            if isinstance(v, float) and math.isnan(v):
+                d[k] = None
+        return d
+    except Exception:
+        logger.error("Registry lookup failed", exc_info=True)
+        return JSONResponse(status_code=500, content={"detail": "Registry unavailable"})
 
 @app.get("/api/v4/ingestion/registry")
 def list_registry(limit: int = 100):
     db = DatabaseV4.get()
     try:
         registry = IngestionRegistry(db=db)
+        registry.ensure_schema()
         records = registry.list(limit=limit)
         return {"records": [r.__dict__ for r in records]}
-    except:
-        return {"records": [{"execution_id": "test"}]}
+    except Exception:
+        logger.error("Registry list failed", exc_info=True)
+        return JSONResponse(status_code=500, content={"detail": "Registry unavailable"})
 
 
 # ==============================================================================
