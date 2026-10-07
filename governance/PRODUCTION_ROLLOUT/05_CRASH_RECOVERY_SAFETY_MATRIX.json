@@ -1,0 +1,72 @@
+{
+  "task_id": "PFO-CRASH-RECOVERY-SAFETY-001",
+  "date": "2026-10-07",
+  "branch": "main",
+  "head_before": "68b7342aaf26646f3ffbac879676e620a3fb1f66",
+  "status": "PASS",
+  "crash_boundary_before": "PARTIAL",
+  "lease_inspection": {
+    "implementation": "engine/v4/write_guard.py::inspect_writer_lease()",
+    "fields": ["LOCK_EXISTS", "LOCK_PATH", "PID", "CREATED_AT", "REQUEST_ID", "PROCESS_STATE", "AGE_SECONDS"],
+    "read_only": true
+  },
+  "process_state_detection": {
+    "implementation": "engine/v4/write_guard.py::_pid_alive()",
+    "method": "ctypes.windll.kernel32.OpenProcess",
+    "states": ["ALIVE", "NOT_FOUND", "UNKNOWN"]
+  },
+  "registry_correlation": {
+    "implementation": "tools/recover_stale_writer_lock.py::_registry_active_count()",
+    "active_states": ["STARTED", "PROCESSING", "CLASSIFIED"]
+  },
+  "wal_check": {
+    "implementation": "engine/v4/write_guard.py::check_wal()",
+    "patterns": ["<db>.wal", "<db>-wal", "<db>.db-wal", "<db>.journal"]
+  },
+  "recovery_eligibility_rule": {
+    "conditions": [
+      "LOCK_EXISTS = TRUE",
+      "PROCESS_STATE = NOT_FOUND",
+      "NO active ingestion in registry",
+      "NO WAL files present"
+    ],
+    "fail_closed": true
+  },
+  "stale_lock_auto_recovery": "NOT_IMPLEMENTED",
+  "explicit_recovery_confirmation": "REQUIRED (--confirm flag)",
+  "crash_tests": {
+    "A_before_write": "PASS",
+    "B_after_registry_start": "PASS",
+    "C_partial_persist": "NOT_TESTED",
+    "D_active_process": "PASS",
+    "E_wal": "PASS"
+  },
+  "retry_result": "PASS",
+  "idempotency_result": "PASS",
+  "golden_parity": "PASS",
+  "normal_failure_lock_release": "PASS",
+  "non_contamination": {
+    "production_db_modified": false,
+    "real_raw_modified": false,
+    "financial_core_modified": false,
+    "golden_files_modified": false
+  },
+  "regression": {
+    "test_write_guard": "7/7 PASS",
+    "test_upload_concurrency": "6/6 PASS",
+    "test_crash_recovery": "10/10 PASS",
+    "test_upload_center_controlled_ux": "19/19 PASS",
+    "test_upload_center_e2e": "13/13 PASS",
+    "test_ingestion_handlers": "56/56 PASS",
+    "e2e_v1_golden_integrity": "11/11 PASS",
+    "e2e_v2_golden_integrity": "8/8 PASS",
+    "total": "130/130 PASS"
+  },
+  "result": {
+    "controlled_upload_crash_recovery": "PASS",
+    "crash_safety": "PASS_FOR_CONTROLLED_UPLOAD_RECOVERY",
+    "concurrent_write_safety": "PASS_FOR_CONTROLLED_UPLOAD_PATH",
+    "electronic_signature_certification": "NOT_IMPLEMENTED",
+    "readiness_decision": "READY_FOR_CONTROLLED_ROLLOUT"
+  }
+}

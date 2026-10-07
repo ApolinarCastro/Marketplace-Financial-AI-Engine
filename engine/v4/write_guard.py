@@ -95,3 +95,78 @@ def read_lease(db_path: str | Path) -> dict[str, Any] | None:
         return json.loads(lock_path_for(db_path).read_text(encoding="utf-8"))
     except Exception:
         return None
+
+
+def _pid_alive(pid: int) -> str:
+    """Minimal Windows PID liveness check. Returns ALIVE | NOT_FOUND | UNKNOWN."""
+    if not isinstance(pid, int) or pid <= 0:
+        return "UNKNOWN"
+    try:
+        import ctypes
+        kernel32 = ctypes.windll.kernel32
+        # Try PROCESS_QUERY_LIMITED_INFORMATION (0x1000) first
+        handle = kernel32.OpenProcess(0x1000, False, pid)
+        if handle:
+            kernel32.CloseHandle(handle)
+            return "ALIVE"
+        # If that fails, try PROCESS_QUERY_INFORMATION (0x0400)
+        handle = kernel32.OpenProcess(0x0400, False, pid)
+        if handle:
+            kernel32.CloseHandle(handle)
+            return "ALIVE"
+        # Process cannot be opened — check error code
+        err = ctypes.get_last_error()
+        # ERROR_INVALID_PARAMETER (87) or error 0 (ctypes quirk) → not found
+        # ERROR_ACCESS_DENIED (5) → process exists but we can't query it
+        if err in (0, 87):
+            return "NOT_FOUND"
+        if err == 5:  # ACCESS_DENIED → process likely exists
+            return "ALIVE"
+        return "UNKNOWN"
+    except Exception:
+        return "UNKNOWN"
+
+
+def inspect_writer_lease(db_path: str | Path) -> dict[str, Any]:
+    """Read-only assessment of a writer lease. Never modifies the lock.
+
+    Returns: LOCK_EXISTS, LOCK_PATH, PID, CREATED_AT, REQUEST_ID,
+             PROCESS_STATE, AGE_SECONDS
+    """
+    lock_path = lock_path_for(db_path)
+    if not lock_path.exists():
+        return {"LOCK_EXISTS": False, "LOCK_PATH": str(lock_path)}
+    meta = read_lease(db_path) or {}
+    pid = meta.get("pid")
+    created_at = meta.get("created_at")
+    age_seconds = None
+    if created_at:
+        try:
+            dt = datetime.datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+            age_seconds = (datetime.datetime.now(datetime.timezone.utc) - dt).total_seconds()
+        except Exception:
+            pass
+    return {
+        "LOCK_EXISTS": True,
+        "LOCK_PATH": str(lock_path),
+        "PID": pid,
+        "CREATED_AT": created_at,
+        "REQUEST_ID": meta.get("request_id"),
+        "PROCESS_STATE": _pid_alive(pid) if pid else "UNKNOWN",
+        "AGE_SECONDS": age_seconds,
+    }
+
+
+def check_wal(db_path: str | Path) -> dict[str, Any]:
+    """Check for WAL/journal files near the DB. Returns WAL_EXISTS + paths."""
+    resolved = Path(db_path).resolve()
+    parent = resolved.parent
+    name = resolved.name
+    candidates = [
+        parent / (name + ".wal"),
+        parent / (name + "-wal"),
+        parent / (name + ".db-wal"),
+        parent / (name + ".journal"),
+    ]
+    found = [str(p) for p in candidates if p.exists()]
+    return {"WAL_EXISTS": bool(found), "WAL_PATHS": found}
