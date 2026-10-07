@@ -82,7 +82,7 @@ KNOWN_NEXT_BLOCKER: FA-005 cannot reach CERTIFICADO without DTE/XML evidence
 ## First Blocker
 
 ```
-FIRST_BLOCKER_ID: NONE (FA-007 PASS — restart reproducibility proven; PROJECT_FINISH_ONE core DoD complete)
+FIRST_BLOCKER_ID: PRODUCTION_ROLLOUT_TRACK — NOT_READY (CONFIG_ISOLATION PARTIAL: upload-endpoint hardening + config guard required; FA core DoD remains PASS, untouched)
 PREVIOUS_BLOCKERS_RESOLVED:
   - FA-003 (isolated ingestion COMPLETED)
   - FA-004 R0 ids (golden repaired, R1 confirmed match)
@@ -125,6 +125,7 @@ python tmp_fa003_run.py (isolated FA-003 execution, TEMP_DB only)
 - XML/DTE checkpoint FAIL: fixture valid 4/4, parse PASS, dte_truth populated BUT marketplace=NULL + tipo_dte=NULL (load_dtes INSERT gap, matcher needs marketplace='ML'); fresh DB also lacks dte_certified_match_v1; signature validator exists yet unwired to match path + fail-open degraded PASS (deps missing); electronic certification NOT_IMPLEMENTED
 - XML/DTE metadata + certified DDL repair: RESOLVED — DTEMatcher takes db/marketplace/root (ML default), extracts TipoDTE, persists 9 cols, marketplace-scoped DELETE (PARIS preservation proven); fresh DDL adds dte_certified_match_v1 (exact _ensure_schema contract, compatible); tests 5/5; regression 60 passed + 1 skipped; signatures untouched
 - XML/DTE R1: PASS — COMM -5700 ↔ DTE 5700 delta 0 DIRECT_MATCH MATCHED_CERTIFIED persisted + traced; negative AMOUNT_MISMATCH delta 2.0, 0 certified; ML branch byte-identical to run(); fresh-DB RIPLEY-table gap + trace KeyError-on-empty recorded as findings; electronic certification still NOT_IMPLEMENTED
+- PRODUCTION ROLLOUT READINESS: AUDITED → NOT_READY_FOR_CONTROLLED_ROLLOUT — app/db boot PASS, idempotency PASS (SHA dedup), fail-closed + restart PASS, auditability PASS, secrets NO, rollback verified; blockers: CONFIG_ISOLATION PARTIAL (unguarded upload writer + scaffolding), BACKUP/RESTORE MISSING, concurrency NOT_PROVEN; e-sign NOT_IMPLEMENTED boundary held; zero engine/golden changes
 - Electronic hardening: RESOLVED — 4 fail-open degraded-PASS branches (signature/xsd/caf/vat) → NOT_IMPLEMENTED; engine PARTIAL/FAIL aggregation verified; can_claim_electronic_certification gate added; semantics tests 6/6; MATCHED_CERTIFIED untouched (financial match ≠ e-sign); certification still NOT_IMPLEMENTED by design (deps missing)
 - FA-005 E2E_V2 attempt: golden BUILT (9-row ledger, treasury -20800, 9 matches, CERTIFICADO precomputed, integrity 8/8) → execution FAIL at ingestion on fresh DB: ledger_v1 DDL lacks execution_id (ALTER-before-CREATE init-order bug); 0 rows, clean failure; E2E_V1 preserved; NO engine modification per protocol
 - Fresh-DB execution_id repair: RESOLVED — execution_id TEXT added to canonical ledger_v1 DDL (nullable, legacy-compatible; hot migration preserved); fresh ingestion COMPLETED (8 new, execution_id propagated 8/8 = record id, total 20800.0); tests 3/3; regression golden 11/11 + docmatch/writer+ingestion 67 total; NO loader/auditor/reconciliation changes
@@ -150,3 +151,6 @@ NEXT: none within PROJECT FINISH ONE core DoD (FA-001..FA-007 ALL PASS;
 FIRST END-TO-END CERTIFIED PASS ACHIEVED with ELECTRONIC_SIGNATURE_
 CERTIFICATION = NOT_IMPLEMENTED). Independent tracks: e-sign hardening,
 production rollout. No auto-start.
+
+PROJECT_FINISH_ONE_CORE_DOD: PASS (unchanged; this audit modified nothing certified).
+PRODUCTION_ROLLOUT_TRACK: STARTED → audited NOT_READY (single §23 blocker above).
