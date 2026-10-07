@@ -16,6 +16,7 @@
         .drop-zone.drag-over { border-color: #6366f1; background: #eef2ff; }
         .file-item { transition: all 0.2s ease; }
         .progress-bar { transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1); }
+        .modal-backdrop { background: rgba(15, 23, 42, 0.55); }
     </style>
 </head>
 <body>
@@ -38,7 +39,7 @@
     <main class="p-8 max-w-4xl mx-auto space-y-6 fade-in">
         <div class="card p-8">
             <h2 class="text-lg font-bold text-slate-800 mb-2">Subir Archivos</h2>
-            <p class="text-sm text-slate-500 mb-6">Arrastra archivos XLSX, CSV, XML o ZIP para procesarlos automáticamente.</p>
+            <p class="text-sm text-slate-500 mb-6">Arrastra archivos XLSX, CSV o XML para validarlos. Nada se escribe hasta que confirmes el procesamiento.</p>
 
             <div id="drop-zone"
                  class="drop-zone border-2 border-dashed border-slate-300 rounded-xl p-12 text-center cursor-pointer hover:border-indigo-400 hover:bg-indigo-50/30"
@@ -48,36 +49,65 @@
                  onclick="document.getElementById('file-input').click()">
                 <i class="fas fa-cloud-upload-alt text-4xl text-slate-300 mb-3"></i>
                 <p class="text-sm font-semibold text-slate-600">Arrastra archivos aquí o haz clic para seleccionar</p>
-                <p class="text-xs text-slate-400 mt-1">Solo XLSX, CSV, XML, ZIP</p>
+                <p class="text-xs text-slate-400 mt-1">Solo XLSX, CSV, XML</p>
             </div>
-            <input id="file-input" type="file" multiple accept=".xlsx,.csv,.xml,.zip" class="hidden" onchange="onFileSelect(event)">
+            <input id="file-input" type="file" multiple accept=".xlsx,.csv,.xml" class="hidden" onchange="onFileSelect(event)">
         </div>
 
         <div id="files-section" class="hidden">
             <div class="flex items-center justify-between mb-3">
                 <h2 class="text-lg font-bold text-slate-800">Archivos</h2>
-                <div class="flex gap-2">
+                <div class="flex gap-2 items-center">
                     <span id="upload-status-badge" class="pill bg-slate-100 text-slate-600 text-xs font-semibold px-3 py-1.5 rounded-full"></span>
-                    <button id="btn-upload-all" onclick="uploadAll()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-1.5 rounded-lg transition-all">
-                        <i class="fas fa-cloud-upload-alt mr-1.5"></i>Subir Todo
+                    <button id="btn-validate" onclick="validateAll()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-1.5 rounded-lg transition-all">
+                        <i class="fas fa-check-double mr-1.5"></i>Validar archivos
+                    </button>
+                    <button id="btn-process" onclick="openConfirmModal()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-1.5 rounded-lg transition-all" disabled>
+                        <i class="fas fa-cogs mr-1.5"></i>Procesar archivos validados
                     </button>
                 </div>
             </div>
             <div id="file-list" class="space-y-2"></div>
         </div>
 
+        <div id="validation-section" class="hidden">
+            <h2 class="text-lg font-bold text-slate-800 mb-3">Validación</h2>
+            <div id="validation-list" class="space-y-2"></div>
+        </div>
+
         <div id="results-section" class="hidden">
-            <h2 class="text-lg font-bold text-slate-800 mb-3">Resultados</h2>
+            <h2 class="text-lg font-bold text-slate-800 mb-3">Procesamiento</h2>
             <div id="results-stats" class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4"></div>
             <div id="results-list" class="space-y-2"></div>
         </div>
     </main>
 
+    <div id="confirm-modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center modal-backdrop p-4">
+        <div class="card max-w-lg w-full p-6" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+            <h3 id="confirm-title" class="text-base font-bold text-slate-800">Confirmar procesamiento</h3>
+            <p class="text-sm text-red-600 font-semibold mt-2">Esta acción escribirá datos en la base activa.</p>
+            <div id="confirm-list" class="mt-4 space-y-1 max-h-64 overflow-auto"></div>
+            <div class="mt-6 flex justify-end gap-2">
+                <button id="btn-cancel-confirm" onclick="closeConfirmModal()" class="text-xs font-bold px-4 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700">Cancelar</button>
+                <button id="btn-confirm-process" onclick="confirmProcess()" class="text-xs font-bold px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white">Confirmar procesamiento</button>
+            </div>
+        </div>
+    </div>
+
     <script>
+    // Canonical frontend states: pending → validating → validated|failed → processing → completed|duplicate|failed
     let files = [];
+
+    // Central HTML escape: every interpolated external value must pass through esc().
+    function esc(value) {
+        return String(value ?? '').replace(/[&<>"']/g, c => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        }[c]));
+    }
 
     function onFileSelect(e) {
         addFiles(Array.from(e.target.files));
+        e.target.value = '';
     }
 
     function onDrop(e) {
@@ -89,7 +119,7 @@
     function addFiles(newFiles) {
         for (const f of newFiles) {
             const ext = '.' + f.name.split('.').pop().toLowerCase();
-            if (!['.xlsx','.csv','.xml','.zip'].includes(ext)) continue;
+            if (!['.xlsx', '.csv', '.xml'].includes(ext)) continue;
             if (files.some(ex => ex.name === f.name && ex.size === f.size)) continue;
             files.push({ file: f, id: crypto.randomUUID(), status: 'pending', progress: 0, result: null });
         }
@@ -99,13 +129,44 @@
     function removeFile(id) {
         files = files.filter(f => f.id !== id);
         render();
+        updateResults();
+    }
+
+    const STATUS_META = {
+        pending:    { icon: 'fa-hourglass-half text-slate-400',  text: 'Pendiente',               cls: 'text-slate-500' },
+        validating: { icon: 'fa-spinner fa-spin text-indigo-500', text: 'Validando...',          cls: 'text-indigo-600' },
+        validated:  { icon: 'fa-check text-sky-500',              text: 'Validado · No se han escrito datos', cls: 'text-sky-600' },
+        processing: { icon: 'fa-spinner fa-spin text-indigo-500', text: 'Procesando...',           cls: 'text-indigo-600' },
+        completed:  { icon: 'fa-check-circle text-emerald-500',   text: 'Procesado',               cls: 'text-emerald-600' },
+        duplicate:  { icon: 'fa-copy text-amber-500',            text: 'Ya procesado anteriormente', cls: 'text-amber-600' },
+        failed:     { icon: 'fa-times-circle text-red-500',      text: 'Fallido',                 cls: 'text-red-600' },
+    };
+
+    function borderFor(status) {
+        return { completed: 'border-l-emerald-500', failed: 'border-l-red-500',
+                 duplicate: 'border-l-amber-500', validated: 'border-l-sky-500',
+                 validating: 'border-l-indigo-500', processing: 'border-l-indigo-500' }[status]
+               || 'border-l-slate-300';
+    }
+
+    function classificationHtml(result) {
+        if (!result) return '';
+        const rows = [
+            ['Marketplace', result.marketplace],
+            ['Documento', result.document_type],
+            ['Período', result.period],
+        ].map(([label, value]) => `<p><span class="font-semibold">${esc(label)}:</span> ${esc(value ?? '-')}</p>`).join('');
+        const errors = (result.errors || []).map(e => `<p class="text-red-600"><span class="font-semibold">Errores:</span> ${esc(e)}</p>`).join('');
+        const warnings = (result.warnings || []).map(w => `<p class="text-amber-600"><span class="font-semibold">Alertas:</span> ${esc(w)}</p>`).join('');
+        return `<div class="mt-2 text-xs space-y-1">${rows}${errors}${warnings}</div>`;
     }
 
     function render() {
         const section = document.getElementById('files-section');
         const list = document.getElementById('file-list');
         const badge = document.getElementById('upload-status-badge');
-        const btn = document.getElementById('btn-upload-all');
+        const btnValidate = document.getElementById('btn-validate');
+        const btnProcess = document.getElementById('btn-process');
 
         if (files.length === 0) {
             section.classList.add('hidden');
@@ -113,131 +174,225 @@
         }
         section.classList.remove('hidden');
 
-        const pending = files.filter(f => f.status === 'pending').length;
-        const uploading = files.filter(f => f.status === 'uploading').length;
-        const done = files.filter(f => f.status === 'done').length;
-        const failed = files.filter(f => f.status === 'failed').length;
+        const count = s => files.filter(f => f.status === s).length;
+        const pending = count('pending'), validated = count('validated'),
+              completed = count('completed'), failed = count('failed'),
+              duplicate = count('duplicate'),
+              busy = count('validating') + count('processing');
 
-        badge.textContent = `${done} ok · ${failed} fail · ${pending} pendientes`;
-        btn.disabled = pending === 0 || uploading > 0;
-        btn.className = btn.disabled
-            ? 'bg-slate-300 text-slate-500 text-xs font-bold px-4 py-1.5 rounded-lg cursor-not-allowed'
-            : 'bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-1.5 rounded-lg transition-all';
+        badge.textContent = `${pending} pendientes · ${validated} validados · ${completed} procesados · ${failed} fallidos` +
+            (duplicate ? ` · ${duplicate} ya procesados` : '');
 
-        list.innerHTML = files.map(f => {
-            const isPending = f.status === 'pending';
-            const isUploading = f.status === 'uploading';
-            const isDone = f.status === 'done';
-            const isFailed = f.status === 'failed';
+        const canValidate = pending > 0 && busy === 0;
+        btnValidate.disabled = !canValidate;
+        btnValidate.className = canValidate
+            ? 'bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-1.5 rounded-lg transition-all'
+            : 'bg-slate-300 text-slate-500 text-xs font-bold px-4 py-1.5 rounded-lg cursor-not-allowed';
 
-            let icon = 'fa-hourglass-half text-slate-400';
-            let statusText = 'Pendiente';
-            let statusColor = 'text-slate-500';
+        const canProcess = validated > 0 && busy === 0;
+        btnProcess.disabled = !canProcess;
+        btnProcess.className = canProcess
+            ? 'bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-1.5 rounded-lg transition-all'
+            : 'bg-slate-300 text-slate-500 text-xs font-bold px-4 py-1.5 rounded-lg cursor-not-allowed';
 
-            if (isUploading) { icon = 'fa-spinner fa-spin text-indigo-500'; statusText = 'Subiendo...'; statusColor = 'text-indigo-600'; }
-            if (isDone) { icon = 'fa-check-circle text-emerald-500'; statusText = 'Completado'; statusColor = 'text-emerald-600'; }
-            if (isFailed) { icon = 'fa-times-circle text-red-500'; statusText = 'Error'; statusColor = 'text-red-600'; }
-
-            const resultHtml = f.result ? `
-                <div class="mt-2 text-xs space-y-1">
-                    <p><span class="font-semibold">Estado:</span> ${f.result.status || '-'}</p>
-                    <p><span class="font-semibold">Marketplace:</span> ${f.result.marketplace || '-'}</p>
-                    <p><span class="font-semibold">Documento:</span> ${f.result.document_type || '-'}</p>
-                    <p><span class="font-semibold">Período:</span> ${f.result.period || '-'}</p>
-                    <p><span class="font-semibold">Registros:</span> ${f.result.records_inserted ?? '-'}</p>
-                    <p><span class="font-semibold">Duración:</span> ${f.result.execution_time_seconds ? f.result.execution_time_seconds.toFixed(1) + 's' : '-'}</p>
-                    ${f.result.errors?.length ? `<p class="text-red-600"><span class="font-semibold">Errores:</span> ${f.result.errors.join('; ')}</p>` : ''}
-                    ${f.result.warnings?.length ? `<p class="text-amber-600"><span class="font-semibold">Alertas:</span> ${f.result.warnings.join('; ')}</p>` : ''}
-                </div>
-            ` : '';
-
-            return `<div class="file-item card p-4 border-l-4 ${isDone ? 'border-l-emerald-500' : isFailed ? 'border-l-red-500' : isUploading ? 'border-l-indigo-500' : 'border-l-slate-300'}">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-3 min-w-0">
-                        <i class="fas ${icon} text-lg flex-shrink-0"></i>
-                        <div class="min-w-0">
-                            <p class="text-sm font-semibold text-slate-800 truncate">${f.file.name}</p>
-                            <p class="text-xs ${statusColor}">${statusText}</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-2 flex-shrink-0">
-                        ${isPending ? `<button onclick="removeFile('${f.id}')" class="text-xs text-slate-400 hover:text-red-500"><i class="fas fa-times"></i></button>` : ''}
-                        <span class="text-[10px] text-slate-400">${(f.file.size / 1024).toFixed(0)} KB</span>
-                    </div>
-                </div>
-                ${isUploading ? `<div class="mt-2 w-full bg-slate-100 rounded-full h-1.5"><div class="progress-bar h-1.5 rounded-full bg-indigo-500" style="width:${f.progress}%"></div></div>` : ''}
-                ${resultHtml}
-            </div>`;
-        }).join('');
+        const items = [];
+        for (const f of files) {
+            const meta = STATUS_META[f.status] || STATUS_META.pending;
+            const removable = (f.status === 'pending' || f.status === 'validated' || f.status === 'failed');
+            items.push(
+                `<div class="file-item card p-4 border-l-4 ${borderFor(f.status)}">` +
+                `<div class="flex items-center justify-between">` +
+                `<div class="flex items-center gap-3 min-w-0">` +
+                `<i class="fas ${esc(meta.icon)} text-lg flex-shrink-0"></i>` +
+                `<div class="min-w-0"><p class="text-sm font-semibold text-slate-800 truncate">${esc(f.file.name)}</p>` +
+                `<p class="text-xs ${esc(meta.cls)}">${esc(meta.text)}</p></div></div>` +
+                `<div class="flex items-center gap-2 flex-shrink-0">` +
+                (removable ? `<button data-remove-id="${esc(f.id)}" class="btn-remove text-xs text-slate-400 hover:text-red-500"><i class="fas fa-times"></i></button>` : '') +
+                `<span class="text-[10px] text-slate-400">${esc((f.file.size / 1024).toFixed(0))} KB</span>` +
+                `</div></div>` +
+                ((f.status === 'validating' || f.status === 'processing')
+                    ? `<div class="mt-2 w-full bg-slate-100 rounded-full h-1.5"><div class="progress-bar h-1.5 rounded-full bg-indigo-500" style="width:${esc(String(f.progress))}%"></div></div>` : '') +
+                classificationHtml(f.result) +
+                `</div>`
+            );
+        }
+        list.innerHTML = items.join('');
+        list.querySelectorAll('.btn-remove').forEach(btn => {
+            btn.addEventListener('click', () => removeFile(btn.getAttribute('data-remove-id')));
+        });
+        renderValidationSection();
     }
 
-    async function uploadAll() {
+    function renderValidationSection() {
+        const section = document.getElementById('validation-section');
+        const list = document.getElementById('validation-list');
+        const validated = files.filter(f => f.status === 'validated' || f.status === 'failed');
+        if (validated.length === 0) {
+            section.classList.add('hidden');
+            return;
+        }
+        section.classList.remove('hidden');
+        const items = [];
+        for (const f of validated) {
+            const ok = f.status === 'validated';
+            items.push(
+                `<div class="card p-3 flex items-center justify-between">` +
+                `<div class="flex items-center gap-3 min-w-0">` +
+                `<i class="fas ${ok ? 'fa-check text-sky-500' : 'fa-times text-red-500'}"></i>` +
+                `<p class="text-sm font-semibold text-slate-800 truncate">${esc(f.file.name)}</p></div>` +
+                `<span class="text-xs font-semibold ${ok ? 'text-sky-600' : 'text-red-600'}">` +
+                `${esc(f.result?.marketplace ?? '-')}` + ' · ' +
+                `${esc(f.result?.document_type ?? '-')}` + ' · ' +
+                `${esc(f.result?.period ?? '-')}` +
+                (ok ? '' : ' · Fallido') +
+                `</span></div>`
+            );
+        }
+        list.innerHTML = items.join('');
+    }
+
+    async function postUpload(f, query) {
+        const formData = new FormData();
+        formData.append('file', f.file);
+        return fetch('/api/v4/ingestion/upload' + query, { method: 'POST', body: formData });
+    }
+
+    async function validateAll() {
         const pending = files.filter(f => f.status === 'pending');
         for (const f of pending) {
-            await uploadFile(f);
+            await validateFile(f);
         }
         render();
     }
 
-    async function uploadFile(f) {
-        f.status = 'uploading';
+    async function validateFile(f) {
+        f.status = 'validating';
         f.progress = 30;
         render();
-
-        const formData = new FormData();
-        formData.append('file', f.file);
-
         try {
-            const resp = await fetch('/api/v4/ingestion/upload', { method: 'POST', body: formData });
+            const resp = await postUpload(f, '?dry_run=true');
             f.progress = 100;
             if (!resp.ok) {
-                const err = await resp.text();
                 f.status = 'failed';
-                f.result = { status: `HTTP ${resp.status}: ${err}` };
+                f.result = { status: 'HTTP ' + resp.status, errors: [await resp.text()] };
             } else {
-                f.result = await resp.json();
-                f.status = 'done';
+                const data = await resp.json();
+                f.result = data;
+                f.status = (data && data.status === 'DRY_RUN') ? 'validated' : 'failed';
             }
         } catch (e) {
             f.status = 'failed';
-            f.result = { status: e.message };
+            f.result = { status: String((e && e.message) || e) };
+        }
+        render();
+    }
+
+    function validatedFiles() {
+        return files.filter(f => f.status === 'validated');
+    }
+
+    function openConfirmModal() {
+        const targets = validatedFiles();
+        if (targets.length === 0) return;
+        const list = document.getElementById('confirm-list');
+        const rows = [];
+        for (const f of targets) {
+            const r = f.result || {};
+            rows.push(
+                `<div class="text-xs text-slate-700 border border-slate-200 rounded-lg px-3 py-2">` +
+                `<p class="font-semibold">${esc(f.file.name)}</p>` +
+                `<p>${esc(r.marketplace ?? '-')} · ${esc(r.document_type ?? '-')} · ${esc(r.period ?? '-')}</p></div>`
+            );
+        }
+        list.innerHTML = rows.join('');
+        document.getElementById('confirm-modal').classList.remove('hidden');
+    }
+
+    function closeConfirmModal() {
+        document.getElementById('confirm-modal').classList.add('hidden');
+    }
+
+    async function confirmProcess() {
+        closeConfirmModal();
+        const targets = validatedFiles();
+        for (const f of targets) {
+            await processFile(f);
+        }
+        render();
+        updateResults();
+    }
+
+    async function processFile(f) {
+        f.status = 'processing';
+        f.progress = 30;
+        render();
+        try {
+            const resp = await postUpload(f, '?dry_run=false&confirm_write=true');
+            f.progress = 100;
+            if (!resp.ok) {
+                f.status = 'failed';
+                f.result = { status: 'HTTP ' + resp.status, errors: [await resp.text()] };
+            } else {
+                const data = await resp.json();
+                f.result = data;
+                if (data && data.status === 'COMPLETED') {
+                    f.status = 'completed';
+                } else if (data && data.status === 'SKIPPED_DUPLICATE') {
+                    f.status = 'duplicate';
+                } else {
+                    f.status = 'failed';
+                }
+            }
+        } catch (e) {
+            f.status = 'failed';
+            f.result = { status: String((e && e.message) || e) };
         }
         render();
         updateResults();
     }
 
     function updateResults() {
-        const done = files.filter(f => f.status === 'done');
+        const completed = files.filter(f => f.status === 'completed');
         const failed = files.filter(f => f.status === 'failed');
+        const duplicate = files.filter(f => f.status === 'duplicate');
         const section = document.getElementById('results-section');
         const stats = document.getElementById('results-stats');
         const list = document.getElementById('results-list');
 
-        if (done.length + failed.length === 0) {
+        if (completed.length + failed.length + duplicate.length === 0) {
             section.classList.add('hidden');
             return;
         }
         section.classList.remove('hidden');
 
-        stats.innerHTML = `
-            <div class="card p-3 text-center"><p class="kpi-label">Completados</p><p class="text-lg font-bold text-emerald-600">${done.length}</p></div>
-            <div class="card p-3 text-center"><p class="kpi-label">Fallidos</p><p class="text-lg font-bold text-red-600">${failed.length}</p></div>
-            <div class="card p-3 text-center"><p class="kpi-label">Registros Insertados</p><p class="text-lg font-bold text-slate-800">${done.reduce((s, f) => s + (f.result?.records_inserted || 0), 0)}</p></div>
-            <div class="card p-3 text-center"><p class="kpi-label">Tiempo Total</p><p class="text-lg font-bold text-slate-800">${done.reduce((s, f) => s + (f.result?.execution_time_seconds || 0), 0).toFixed(1)}s</p></div>
-        `;
+        const statCards = [
+            ['Procesados', completed.length, 'text-emerald-600'],
+            ['Fallidos', failed.length, 'text-red-600'],
+            ['Ya procesados', duplicate.length, 'text-amber-600'],
+            ['Registros nuevos', completed.reduce((s, f) => s + (Number(f.result?.records_new) || 0), 0), 'text-slate-800'],
+        ];
+        stats.innerHTML = statCards.map(([label, value, cls]) =>
+            `<div class="card p-3 text-center"><p class="kpi-label">${esc(label)}</p>` +
+            `<p class="text-lg font-bold ${esc(cls)}">${esc(String(value))}</p></div>`
+        ).join('');
 
-        const allResults = [...done, ...failed];
-        list.innerHTML = allResults.map(f => {
-            const cls = f.status === 'done' ? 'text-emerald-600' : 'text-red-600';
-            const icon = f.status === 'done' ? 'fa-check-circle' : 'fa-times-circle';
-            return `<div class="card p-3 flex items-center justify-between">
-                <div class="flex items-center gap-3 min-w-0">
-                    <i class="fas ${icon} ${cls}"></i>
-                    <p class="text-sm font-semibold text-slate-800 truncate">${f.file.name}</p>
-                </div>
-                <span class="text-xs ${cls} font-semibold">${f.result?.marketplace || '-'} · ${f.result?.document_type || '-'} · ${f.result?.period || '-'}</span>
-            </div>`;
-        }).join('');
+        const rows = [];
+        for (const f of [...completed, ...failed, ...duplicate]) {
+            const cls = f.status === 'completed' ? 'text-emerald-600'
+                : f.status === 'duplicate' ? 'text-amber-600' : 'text-red-600';
+            const icon = f.status === 'completed' ? 'fa-check-circle'
+                : f.status === 'duplicate' ? 'fa-copy' : 'fa-times-circle';
+            rows.push(
+                `<div class="card p-3 flex items-center justify-between">` +
+                `<div class="flex items-center gap-3 min-w-0">` +
+                `<i class="fas ${esc(icon)} ${esc(cls)}"></i>` +
+                `<p class="text-sm font-semibold text-slate-800 truncate">${esc(f.file.name)}</p></div>` +
+                `<span class="text-xs ${esc(cls)} font-semibold">` +
+                `${esc(f.result?.marketplace ?? '-')} · ${esc(f.result?.document_type ?? '-')} · ${esc(f.result?.period ?? '-')}` +
+                `</span></div>`
+            );
+        }
+        list.innerHTML = rows.join('');
     }
     </script>
 </body>
