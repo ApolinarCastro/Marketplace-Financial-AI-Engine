@@ -35,8 +35,10 @@ class SignatureValidator:
         }
 
         if not self.has_deps:
-            result["status"] = "PASS"
-            result["warnings"].append("Missing required dependencies (lxml, signxml, cryptography). Skipping strict signature validation (Degraded Mode).")
+            # Missing lxml/signxml/cryptography: cryptographic verification
+            # cannot execute. NEVER report PASS for unexecuted validation.
+            result["status"] = "NOT_IMPLEMENTED"
+            result["warnings"].append("Missing required dependencies (lxml, signxml, cryptography). Signature validation not executed.")
             return result
 
         try:

@@ -7,6 +7,20 @@ from .signature_validator import SignatureValidator
 from .caf_validator import CafValidator
 from .vat_validator import VatValidator
 
+
+def can_claim_electronic_certification(result: Dict[str, Any] | None) -> bool:
+    """Gate: TRUE only when electronic certification actually executed and passed.
+
+    Requires overall_status == "PASS", which the engine emits solely when
+    every mandatory stage executed with PASS/WARNING and none returned
+    NOT_IMPLEMENTED (→ PARTIAL) or a hard failure (→ FAIL). Missing
+    dependencies, missing XSD, or unexecuted crypto validation can never
+    satisfy this gate.
+    """
+    if not isinstance(result, dict):
+        return False
+    return result.get("overall_status") == "PASS"
+
 class ElectronicCertificationEngine:
     def __init__(self):
         self.xml_validator = XmlValidator()

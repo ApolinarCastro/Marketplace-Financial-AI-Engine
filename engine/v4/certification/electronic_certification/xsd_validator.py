@@ -28,9 +28,9 @@ class XsdValidator:
         }
 
         if not self.safe_mode:
-            result["warnings"].append("xmlschema module is not available. Skipping strict XSD validation (Degraded Mode).")
-            # We must not fail if we are gracefully degrading.
-            result["status"] = "PASS"
+            result["warnings"].append("xmlschema module is not available. XSD validation not executed.")
+            # We must not claim PASS for validation that never ran.
+            result["status"] = "NOT_IMPLEMENTED"
             return result
 
         # Extract basic info first via XmlValidator to know which XSD to apply

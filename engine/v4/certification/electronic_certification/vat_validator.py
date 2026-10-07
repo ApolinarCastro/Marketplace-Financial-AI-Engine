@@ -57,8 +57,8 @@ class VatValidator:
         }
 
         if not self.has_deps:
-            result["status"] = "PASS"
-            result["warnings"].append("Missing required dependency (lxml). Skipping strict VAT validation (Degraded Mode).")
+            result["status"] = "NOT_IMPLEMENTED"
+            result["warnings"].append("Missing required dependency (lxml). VAT validation not executed.")
             return result
 
         try:
